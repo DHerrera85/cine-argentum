@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <title>Resultados de búsqueda - Argentina Content</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .wrap { max-width:1000px; margin:24px auto; padding:16px; }
+    .search-box { display:flex; gap:8px; margin-bottom:12px; }
+    .result { display:flex; gap:12px; padding:10px; border-bottom:1px solid #efefef; }
+    .result img { width:84px; height:auto; border-radius:6px; }
+    .facets { display:flex; gap:8px; margin-bottom:12px; }
+    .pager { margin-top:12px; }
+    /* opcional: estilo del back */
+    .back-link { display:inline-block; margin-bottom:8px; color:#333; text-decoration:none; }
+    .back-link:hover { text-decoration:underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <!-- Back inteligente: usa history.back() o cae al fallback -->
+    <a id="js-back" class="back-link" href="index.html" data-fallback="/index.html" aria-label="Volver a la página anterior">← Volver</a>
+
+    <h1>Resultados</h1>
+    <div class="search-box">
+      <input id="q" placeholder="Buscar..." style="flex:1;padding:8px;" />
+      <select id="year"><option value="">Año</option></select>
+      <select id="channel"><option value="">Canal</option></select>
+      <select id="actor"><option value="">Actor</option></select>
+      <button id="do">Buscar</button>
+    </div>
+    <div id="count"></div>
+    <div id="results"></div>
+    <div class="pager" id="pager"></div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.6.2/fuse.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script>
+    var items = [];
+    var fuse;
+    var perPage = 12;
+
+    function buildFacetOptions() {
+      var years = Array.from(new Set(items.map(i=>String(i.year || '')))).filter(Boolean).sort(function(a,b){return parseInt(b)-parseInt(a);});
+      var channels = Array.from(new Set(items.map(i=> (i.channel||'').trim() ))).filter(Boolean).sort(function(a,b){return a.toLowerCase().localeCompare(b.toLowerCase());});
+      var actors = Array.from(new Set(items.reduce((a,i)=>a.concat((i.actors||[]).slice(0,6).map(function(x){return (x||'').trim();})),[]))).filter(Boolean).sort(function(a,b){return a.toLowerCase().localeCompare(b.toLowerCase());});
+      var $y = $('#year'); years.forEach(function(y){ $y.append($('<option>').attr('value',y).text(y)); });
+      var $c = $('#channel'); channels.forEach(function(c){ $c.append($('<option>').attr('value',c).text(c)); });
+      var $a = $('#actor'); actors.forEach(function(a){ $a.append($('<option>').attr('value',a).text(a)); });
+    }
+
+    function paramsFromURL() { var p = new URLSearchParams(window.location.search); return { q: p.get('q') || '', year: p.get('year')||'', channel: p.get('channel')||'', actor: p.get('actor')||'', page: parseInt(p.get('page')||'1',10) }; }
+    function updateURL(params) { var u = new URL(window.location); Object.keys(params).forEach(function(k){ if(params[k]) u.searchParams.set(k,params[k]); else u.searchParams.delete(k); }); history.replaceState({}, '', u); }
+
+    function normalizeString(s){ return (s||'').toString().trim().toLowerCase(); }
+
+    function renderResults(list, page) {
+      page = page || 1; var start=(page-1)*perPage; var out = list.slice(start,start+perPage);
+      $('#results').empty();
+      out.forEach(function(it){
+        var $r = $('<div>').addClass('result');
+        var img = $('<img>').attr('src', it.image).attr('alt', it.title);
+        var $m = $('<div>');
+        var html = '<a href="show.html?id='+encodeURIComponent(it.id)+'"><strong>'+it.title+'</strong></a> '+(it.year?'<span>('+it.year+')</span>':'')+'<div style="color:#666">'+(it.channel||'')+' • '+(it.genre||'')+'</div>';
+        html += '<div style="margin-top:6px; font-size:13px; color:#444;">' + ((it.actors||[]).slice(0,6).join(', ')) + '</div>';
+        $m.html(html);
+        $r.append(img).append($m);
+        $('#results').append($r);
+      });
+      // pager
+      var pages = Math.ceil(list.length / perPage) || 1; var $p = $('#pager'); $p.empty();
+      for(var i=1;i<=pages;i++){ (function(i){ var $b=$('<button>').text(i).on('click', function(){ doSearch(i); }); if(i===page) $b.attr('disabled','disabled'); $p.append($b); })(i); }
+      $('#count').text(list.length + ' resultados');
+    }
+
+    function doSearch(page) {
+      var q = $('#q').val() || '';
+      var year=$('#year').val() || '';
+      var channel=$('#channel').val() || '';
+      var actor=$('#actor').val() || '';
+      updateURL({ q:q, year:year, channel:channel, actor:actor, page: page });
+      var results = [];
+      if (q) {
+        var res = fuse.search(q, {limit: 1000}).map(function(r){return r.item;});
+        results = res;
+      } else { results = items.slice(); }
+      // apply filters (case-insensitive)
+      results = results.filter(function(it){
+        if (year) {
+          if (!it.year) return false;
+          if (String(it.year).trim() !== String(year).trim()) return false;
+        }
+        if (channel) {
+          if (!it.channel) return false;
+          if (normalizeString(it.channel) !== normalizeString(channel)) return false;
+        }
+        if (actor) {
+          var actorLower = normalizeString(actor);
+          var found = (it.actors||[]).slice(0,6).some(function(a){ return normalizeString(a).indexOf(actorLower) !== -1; });
+          if (!found) return false;
+        }
+        return true;
+      });
+
+      // sort by year desc (most recent first), fallback to title
+      results.sort(function(a,b){
+        var ya = parseInt(a.year) || 0; var yb = parseInt(b.year) || 0;
+        if (ya !== yb) return yb - ya; // descending
+        return (a.title||'').localeCompare(b.title||'');
+      });
+
+      renderResults(results, page);
+    }
+
+    $(function(){
+      var qparams = paramsFromURL();
+      fetch('data.json').then(r=>r.json()).then(function(d){ items = (d && d.items) || []; buildFacetOptions();
+        fuse = new Fuse(items, { keys: ['title','actors','channel','genre','subtitle','year'], threshold: 0.35, includeScore: true });
+        $('#q').val(qparams.q); $('#year').val(qparams.year); $('#channel').val(qparams.channel); $('#actor').val(qparams.actor);
+        doSearch(qparams.page);
+        $('#do').on('click', function(){ doSearch(1); });
+        // Enter key triggers search
+        $('#q').on('keypress', function(e){ if(e.which === 13) { e.preventDefault(); doSearch(1); } });
+        // filters trigger search
+        $('#year, #channel, #actor').on('change', function(){ doSearch(1); });
+      }).catch(function(){ $('#results').html('<p>Error cargando data.json</p>'); });
+    });
+  </script>
+
+  <!-- Back inteligente (vanilla JS) -->
+  <script>
+    (function () {
+      function isSameOrigin(url) {
+        try {
+          var u = new URL(url, window.location.href);
+          return u.origin === window.location.origin;
+        } catch (e) { return false; }
+      }
+      function bindBack() {
+        var el = document.getElementById('js-back');
+        if (!el) return;
+        el.addEventListener('click', function (evt) {
+          evt.preventDefault();
+          var hasHistory = window.history.length > 1;
+          var ref = document.referrer;
+          if (hasHistory && ref && isSameOrigin(ref)) {
+            window.history.back();
+            return;
+          }
+          var fallback = el.getAttribute('data-fallback') || el.getAttribute('href') || '/index.html';
+          window.location.assign(fallback);
+        });
+      }
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', bindBack);
+      } else {
+        bindBack();
+      }
+    })();
+  </script>
+</body>
+</html>
