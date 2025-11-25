@@ -1,270 +1,62 @@
-/* ========== Reset & base ========== */
+/* ========== RESET & BASE ========== */
 *{ box-sizing:border-box; }
 html,body{ margin:0; padding:0; }
 body{
   font-family:Poppins,system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-  background-color:rgba(151,151,151,0.03);
-  color:#1a1a1a;
+  background:#f7f7f7;
+  color:#111;
 }
 img{ max-width:100%; height:auto; display:block; }
 ul{ list-style:none; padding:0; margin:0; }
 a{ text-decoration:none; color:inherit; }
 
-/* ========== Top nav ========== */
+/* ========== NAVIGATION ========== */
 nav{
   position:fixed; inset:0 0 auto 0; z-index:100;
   display:flex; align-items:center; justify-content:space-around;
-  width:100%; background:#fff; border:1px solid rgba(0,0,0,0.04);
+  width:100%; background:#fff;
+  box-shadow:0 6px 20px rgba(18,18,18,0.06);
+  padding:14px 18px;
 }
-.logo img{ height:70px; }
+.logo img{ height:auto; max-height:80px; width:auto; }
 
-/* buscador */
+/* Buscador */
 .search{
-  width:250px; height:40px; padding:0 20px;
-  background:rgba(245,245,245,0.8);
-  display:flex; align-items:center; gap:10px; border-radius:20px;
+  position:relative;
+  display:flex; align-items:center; gap:10px;
+  height:40px; padding:0 12px;
+  background:#f1f3f5; border-radius:20px;
+  flex:1 1 auto; min-width:160px; max-width:400px;
 }
-.search input{
-  width:100%; height:30px; border:none; outline:none; background:transparent;
+.search input[type="search"]{
+  width:100%; height:28px; border:none; outline:none; background:transparent;
+}
+.search input::placeholder{ color:#9aa0a6; }
+.search .search-btn{
+  width:32px; height:32px; border:0; cursor:pointer;
+  display:inline-flex; align-items:center; justify-content:center;
+  background:#eee; border-radius:50%;
 }
 .search i{ color:#3a3a3a; }
 
-/* menú */
+/* Menú desktop */
 nav .menu{ display:flex; }
 nav .menu li a{
-  display:flex; align-items:center; height:40px; line-height:43px;
-  padding:0 22px; margin:0;
-  font-size:.8rem; letter-spacing:1px; text-transform:uppercase;
-  color:#585858; font-weight:500;
+  display:flex; align-items:center; height:40px;
+  padding:0 22px; font-size:.8rem; letter-spacing:1px;
+  text-transform:uppercase; color:#585858; font-weight:500;
 }
 nav .menu li a:hover{
   background:#242424; color:#fff;
   box-shadow:5px 10px 30px rgba(53,53,53,.1); transition:.2s ease;
 }
 
-/* ========== Sections ========== */
-#main{ padding-top:90px; background:#fff; } /* deja espacio para la nav fija */
-.showcase-heading{
-  padding:24px 30px 10px; font-weight:600; letter-spacing:1px;
-  text-transform:uppercase; font-size:1.2rem;
-}
-#latest{ border-top:1px solid rgba(53,53,53,0.1); background:#fff; }
-.latest-heading{
-  margin:30px; font-weight:600; font-size:1.15rem; letter-spacing:.5px;
-}
-
-/* ========== Sliders (clases nuevas) ========== */
-/* Contenedor general: dejar overflow visible para el “peek” */
-.cs-hidden{ overflow:visible !important; }
-
-/* --- HORIZONTALES --- */
-.slider-h .showcase-box{
-  width:430px; height:250px; margin:0 20px 14px; border-radius:12px;
-  box-shadow:5px 15px 30px rgba(0,0,0,.25); overflow:hidden; background:#000;
-}
-.slider-h .showcase-box img{
-  width:100%; height:100%; object-fit:cover; object-position:center top;
-}
-.latest-b-text{
-  display:flex; flex-direction:column; align-items:center; justify-content:center;
-  gap:4px; margin:8px 0 18px; text-align:center;
-}
-.latest-b-text strong{ color:#3a3a3a; font-weight:600; }
-.latest-b-text p{ color:#979797; margin:0; }
-
-/* --- VERTICALES (posters) --- */
-.slider-v .latest-box{
-  width:200px; margin:20px 10px; border-radius:10px; overflow:hidden; background:#fff;
-  box-shadow:2px 2px 30px rgba(0,0,0,.18); display:flex; flex-direction:column; align-items:center;
-}
-.slider-v .latest-b-img{ width:100%; height:270px; overflow:hidden; }
-.slider-v .latest-b-img img{ width:100%; height:100%; object-fit:cover; }
-
-/* Reemplazo / mejora de la regla de verticales para subir el borde superior manteniendo el border-radius */
-.vertical-gallery li .latest-b-img,
-.slider-v li .latest-b-img {
-  /* asegurar que el contenedor tiene bordes redondeados y recorte el contenido */
-  border-radius: 10px;
-  overflow: hidden;
-  position: relative;
-  height: 100%;
-  display: block;
-}
-
-/* Imagen: cubrir contenedor pero alineada hacia arriba + ligera subida visual */
-.vertical-gallery li img,
-.slider-v li img,
-.vertical-gallery li .latest-b-img img,
-.slider-v li .latest-b-img img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;            /* ocupa el contenedor recortando si es necesario */
-  object-position: 50% 8%;     /* prioriza la zona superior (ajustable) */
-  transform: translateY(:0);  /* sube la imagen ligeramente para mostrar el logo superior */
-  transition: transform 220ms ease, object-position 220ms ease;
-  display: block;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  will-change: transform;
-  /* opcional: si quieres que la imagen también tenga border-radius, no es necesario porque el contenedor ya lo recorta */
-  border-radius: 0;
-}
-
-/* Ajuste responsivo: menos desplazamiento en pantallas pequeñas */
-@media (max-width: 600px) {
-  .vertical-gallery li img,
-  .slider-v li img,
-  .vertical-gallery li .latest-b-img img,
-  .slider-v li .latest-b-img img {
-    object-position: 50% 6%;
-    transform: translateY(-3%);
-  }
-}
-
-/* ========== LightSlider overrides (flechas, dots, alturas) ========== */
-/* Flechas: sin controls.png, usamos Font Awesome */
-.lSSlideOuter .lSAction a{
-  width:44px; height:44px; border-radius:50%; background:rgba(255,255,255,.95);
-  box-shadow:0 6px 18px rgba(0,0,0,.15);
-  top:45%; transform:translateY(-50%); opacity:1 !important;
-}
-.lSSlideOuter .lSAction > .lSPrev,
-.lSSlideOuter .lSAction > .lSNext{ background:none !important; }
-.lSSlideOuter .lSAction > a::before{
-  font-family:"Font Awesome 6 Free"; font-weight:900; font-size:18px; line-height:44px;
-  display:block; text-align:center; color:#333;
-  content:"";
-}
-.lSSlideOuter .lSAction > .lSPrev::before{ content:"\f104"; } /* fa-angle-left */
-.lSSlideOuter .lSAction > .lSNext::before{ content:"\f105"; } /* fa-angle-right */
-
-/* Dots (cuando no hay thumbs) */
-.lSSlideOuter .lSPager.lSpg li a{
-  width:8px; height:8px; background:#d9d9d9; border-radius:50%;
-}
-.lSSlideOuter .lSPager.lSpg li.active a,
-.lSSlideOuter .lSPager.lSpg li:hover a{ background:#3963f0; }
-
-/* Altura adaptable suave para modo slide horizontal */
-.lSSlideWrapper{ transition:height .25s ease; }
-
-/* ========== Buttons (si los usás) ========== */
-.btns{ display:flex; justify-content:center; gap:12px; margin:10px 0 28px; }
-.btns a{
-  display:flex; justify-content:center; align-items:center;
-  width:130px; height:40px; color:#fff; background:#3963f0; border-radius:6px;
-  font-size:1rem;
-}
-.btns a:hover{ background:#284fd1; }
-
-/* ========== Footer ========== */
-footer{
-  display:flex; justify-content:space-around; align-items:center;
-  border-top:1px solid rgba(0,0,0,.08); background:#fff;
-}
-footer p{ color:#5e5e5e; margin:10px 0; font-size:.9rem; }
-
-/* ========== Responsive ========== */
-@media (max-width:1100px){
-  nav{ justify-content:space-between; height:70px; padding:0 10px; }
-  /* menú hamburguesa */
-  nav .menu{ display:none; position:absolute; top:65px; left:0; width:100%; background:#fff; border-bottom:4px solid #242424; }
-  nav .menu li{ width:100%; }
-  nav .menu li a{ width:100%; padding:25px; border:1px solid rgba(38,38,38,.03); }
-  nav .menu-icon{ cursor:pointer; padding:28px 20px; display:block; }
-  nav .menu-icon .nav-icon{
-    width:18px; height:2px; background:#333; position:relative; transition:background .2s ease-out;
-  }
-  nav .menu-icon .nav-icon::before,
-  nav .menu-icon .nav-icon::after{
-    content:""; position:absolute; width:100%; height:100%; background:#333; transition:all .2s ease-out;
-  }
-  nav .menu-icon .nav-icon::before{ top:5px; }
-  nav .menu-icon .nav-icon::after{ top:-5px; }
-  nav .menu-btn:checked ~ .menu-icon .nav-icon{ background:transparent; }
-  nav .menu-btn:checked ~ .menu-icon .nav-icon::before{ transform:rotate(-45deg); top:0; }
-  nav .menu-btn:checked ~ .menu-icon .nav-icon::after{ transform:rotate(45deg); top:0; }
-  nav .menu-btn:checked ~ .menu{ display:block; }
-
-  /* sliders más compactos*/
-  .slider-h .showcase-box{ width:360px; height:210px; }
-}
-
-@media (max-width:680px){
-  .logo img{ height:36px; }
-  .search{ width:90%; height:40px; }
-
-  .slider-h .showcase-box{ max-width:300px; height:180px; margin:10px; }
-  .slider-v .latest-box{ width:190px; margin:18px 6px; }
-
-  footer{ justify-content:space-between; padding:0 20px; text-align:center; }
-}
-
-@media (max-width:440px){
-  .slider-h .showcase-box{ width:94vw; height:54vw; } /* 16:9 aproximado */
-  .slider-v .latest-box{ width:76vw; }
-}
-
-/* ====== OVERRIDES NAV (aplicar al final del CSS) ====== */
-
-/* 1) Ocultar checkbox (evita que se vea el “tilde”) */
-.menu-btn{
-  position:absolute !important;
-  left:-9999px !important;
-}
-
-/* 2) Reducir logo en el header (desktop) */
-.sa-nav .logo img{
-  height:auto !important;
-  max-height:80px !important;    /* antes 70px */
-  width:auto;
-}
-
-/* 3) Buscador compacto y alineado */
-.sa-nav .search{
-  position:relative;
-  display:flex;
-  align-items:center;
-  gap:10px;
-  height:40px;                    /* altura visual del control */
-  padding:0 12px;
-  background:rgba(245,245,245,0.8);
-  border-radius:20px;
-  flex:1 1 auto;                  /* que crezca en el espacio central */
-  min-width:160px;
-}
-.sa-nav .search input[type="search"]{
-  height:28px;                    /* interior del input */
-  border:none; outline:none; background:transparent;
-  width:100%;
-}
-.sa-nav .search .search-btn{
-  width:32px; height:32px; border:0; cursor:pointer;
-  display:inline-flex; align-items:center; justify-content:center;
-  background:#eee; border-radius:50%;
-}
-
-/* 4) Dropdown de resultados del buscador */
-.sa-nav .search .search-results{
-  position:absolute;
-  top:calc(100% + 6px);
-  left:0; right:0;
-  background:#fff;
-  border:1px solid #eee;
-  border-radius:10px;
-  box-shadow:0 10px 28px rgba(0,0,0,.08);
-  max-height:320px;
-  overflow-y:auto;
-  z-index:1300;                   /* por encima del menú móvil */
-}
-
-/* 5) Icono hamburguesa (desktop oculto; móvil 40x40 centrado) */
+/* Hamburguesa (oculta en desktop) */
+.menu-btn{ position:absolute !important; left:-9999px !important; }
 .menu-icon{
-  display:none;                   /* desktop */
-  width:40px; height:40px;
-  padding:0;
+  display:none; width:40px; height:40px; padding:0;
   align-items:center; justify-content:center;
-  background:transparent; border:0;
+  background:transparent; border:0; cursor:pointer;
 }
 .menu-icon .nav-icon{
   width:22px; height:2px; background:#222; position:relative; transition:background .2s;
@@ -275,169 +67,161 @@ footer p{ color:#5e5e5e; margin:10px 0; font-size:.9rem; }
   transition:transform .2s, top .2s, bottom .2s;
 }
 .menu-icon .nav-icon::before{ top:-7px; }
-.menu-icon .nav-icon::after { bottom:-7px; }
+.menu-icon .nav-icon::after{ bottom:-7px; }
 .menu-btn:checked + .menu-icon .nav-icon{ background:transparent; }
 .menu-btn:checked + .menu-icon .nav-icon::before{ transform:rotate(45deg); top:0; }
-.menu-btn:checked + .menu-icon .nav-icon::after { transform:rotate(-45deg); bottom:0; }
+.menu-btn:checked + .menu-icon .nav-icon::after{ transform:rotate(-45deg); bottom:0; }
 
-/* 6) Menú de secciones (hereda tus estilos; solo z-index y despliegue móvil) */
-@media (max-width: 1100px){
-  /* Ajuste: que el menú desplegado quede justo debajo del header fijo */
-  nav .menu{
-    top: calc(60px + 5px);        /* separa un poco del header; ajusta si tu header es más alto */
-    z-index: 1200;
-  }
-}
+/* ========== SECTIONS ========== */
+#main{ padding-top:90px; background:#fff; }
+#latest{ background:#fff; }
 
-/* 7) Alineación en móvil: logo | buscador | hamburguesa en la misma fila */
-@media (max-width: 768px){
-  .sa-nav{
-    display:grid !important;
-    grid-template-columns:auto 1fr auto;  /* logo | search | menu */
-    align-items:center;
-    gap:8px;
-    padding:8px 10px;
-  }
-  .sa-nav .logo img{
-    max-height:36px !important;   /* logo más chico en móvil */
-  }
-  .menu-icon{ display:inline-flex; }  /* mostrar hamburguesa */
-  /* Tu lista de secciones se muestra al abrir la hamburguesa */
-  nav .menu{
-    top: calc(100% + 2px) !important;
-    left: 0; right: 0;
-    border-bottom: 4px solid #242424;
-  }
-  /* Asegurar que el buscador no se deforme en mobile */
-  .sa-nav .search{ height:40px; }
-  .sa-nav .search .search-btn{ width:32px; height:32px; }
-}
-
-/* ===== Adaptación visual según captura proporcionada ===== */
-/* cuerpo claro, secciones con fondo blanco y separación */
-body{
-  background: #f7f7f7;
-  color: #111;
-}
-
-/* Header: fondo blanco, sombra sutil, espacio superior para contenido */
-nav.sa-nav, nav{
-  background:#fff;
-  box-shadow: 0 6px 20px rgba(18,18,18,0.06);
-  padding:14px 18px;
-  align-items:center;
-}
-
+.showcase-heading,
+.latest-heading,
 .section-heading{
-  font-size:1.05rem;
-  font-weight:700;
-  text-transform:uppercase;
-  letter-spacing:0.6px;
-  color:#222;
-  margin:28px 18px 10px;
+  font-size:1.05rem; font-weight:700; text-transform:uppercase;
+  letter-spacing:0.6px; color:#222; margin:28px 18px 10px; padding:0;
 }
 
-/* Slider track items: tarjetas grandes tipo 'hero' con borde redondeado y sombra */
-.slider-track{ padding:18px 12px; }
-.slider-track li{
-  flex: 0 0 86%;
-  max-width: 980px;
-  margin-right:18px;
-  border-radius:14px;
-  overflow:hidden;
-  background:#fff;
-  box-shadow: 0 18px 40px rgba(15,15,15,0.08);
-  display:flex;
-  flex-direction:column;
+/* ========== SLIDERS - LIGHTSLIDER OVERRIDES ========== */
+.cs-hidden{ overflow:visible !important; }
+.lSSlideWrapper{ transition:height .25s ease; }
+
+/* Flechas con Font Awesome */
+.lSSlideOuter .lSAction a{
+  width:44px; height:44px; border-radius:50%;
+  background:rgba(255,255,255,.95);
+  box-shadow:0 6px 18px rgba(0,0,0,.15);
+  top:45%; transform:translateY(-50%); opacity:1 !important;
 }
-.slider-track li img{
-  width:100%;
-  height: auto;
-  aspect-ratio: 16/9;
-  object-fit:cover;
+.lSSlideOuter .lSAction > .lSPrev,
+.lSSlideOuter .lSAction > .lSNext{ background:none !important; }
+.lSSlideOuter .lSAction > a::before{
+  font-family:"Font Awesome 6 Free"; font-weight:900; font-size:18px; line-height:44px;
+  display:block; text-align:center; color:#333; content:"";
+}
+.lSSlideOuter .lSAction > .lSPrev::before{ content:"\f104"; }
+.lSSlideOuter .lSAction > .lSNext::before{ content:"\f105"; }
+
+/* Dots */
+.lSSlideOuter .lSPager.lSpg li a{
+  width:8px; height:8px; background:#d9d9d9; border-radius:50%;
+}
+.lSSlideOuter .lSPager.lSpg li.active a,
+.lSSlideOuter .lSPager.lSpg li:hover a{ background:#3963f0; }
+
+/* ========== SLIDER HORIZONTALES (Desktop: lightSlider controla) ========== */
+.slider-h .showcase-box{
+  border-radius:14px; overflow:hidden; background:#fff;
+  box-shadow:0 18px 40px rgba(15,15,15,0.08);
+  margin:0 10px 14px;
+}
+.slider-h .showcase-box img{
+  width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; display:block;
+}
+.slider-h .latest-b-text{
+  display:flex; flex-direction:column; align-items:center; justify-content:center;
+  gap:4px; margin:14px 18px 22px; text-align:center;
+}
+.slider-h .latest-b-text strong{ color:#222; font-weight:600; }
+.slider-h .latest-b-text p{ color:#444; margin:0; }
+
+/* ========== SLIDER VERTICALES (Desktop: lightSlider controla) ========== */
+.slider-v .latest-box{
+  border-radius:12px; overflow:hidden; background:#fff;
+  box-shadow:0 10px 26px rgba(12,12,12,0.08);
+  display:flex; flex-direction:column; align-items:center;
+  margin:10px 8px;
+}
+.slider-v .latest-b-img{
+  width:100%; height:270px; overflow:hidden; position:relative;
+  border-radius:10px 10px 0 0;
+}
+.slider-v .latest-b-img img{
+  width:100%; height:100%; object-fit:cover;
+  object-position:50% 8%;
   display:block;
 }
-.slider-track li p{
-  margin:14px 18px 22px;
-  text-align:center;
-  color:#444;
-  font-weight:600;
+.slider-v .latest-b-text{
+  padding:12px; text-align:center; width:100%;
 }
+.slider-v .latest-b-text strong{ color:#222; font-weight:600; font-size:0.95rem; display:block; }
+.slider-v .latest-b-text p{ color:#444; margin:4px 0 0; font-size:0.85rem; }
 
-/* Cards (vertical posters) styled as white cards with image on top and caption */
-.slider-v .slider-track li{
-  flex:0 0 180px;
-  max-width:220px;
-  border-radius:12px;
-  background:#fff;
-  box-shadow: 0 10px 26px rgba(12,12,12,0.08);
-  overflow:hidden;
+/* ========== FOOTER ========== */
+footer{
+  display:flex; justify-content:space-around; align-items:center;
+  border-top:1px solid rgba(0,0,0,.08); background:#fff; padding:20px 10px;
 }
-.slider-v .slider-track li img{
-  width:100%; height:270px; object-fit:cover; display:block;
-}
-.slider-v .slider-track li p{
-  padding:12px; text-align:center; color:#333; font-weight:600; font-size:0.95rem;
-}
+footer p{ color:#5e5e5e; margin:10px 0; font-size:.9rem; }
 
-/* Ajustes para el héroe grande (cuando quieres centrar) */
-.slider-h { display:flex; align-items:center; }
-.slider-h .slider-track li:first-child{ margin-left:6px; }
-
-/* Tamaños responsivos: en pantallas amplias mostrar hero más estrecho (centro) */
-@media (min-width: 1024px){
-  .slider-track li{ flex:0 0 60%; }
-  .slider-v .slider-track li{ flex:0 0 200px; }
-}
-
-@media (max-width: 640px){
-  .slider-track li{ flex:0 0 92%; border-radius:12px; }
-  .slider-v .slider-track li{ 
-    flex: 0 0 48%; 
-    width: 48%;
-    min-width: 160px;
-    max-width: 48%;
+/* ========== RESPONSIVE: TABLET (768px - 1100px) ========== */
+@media (max-width:1100px){
+  nav{ justify-content:space-between; padding:10px 15px; }
+  
+  /* Menú móvil desplegable */
+  nav .menu{
+    display:none; position:absolute;
+    top:calc(100% + 2px); left:0; right:0;
+    background:#fff; border-bottom:4px solid #242424; z-index:1200;
   }
-  .section-heading{ margin-left:14px; }
+  nav .menu li{ width:100%; }
+  nav .menu li a{
+    width:100%; padding:20px 25px;
+    border-bottom:1px solid rgba(38,38,38,.03);
+  }
+  .menu-btn:checked ~ .menu{ display:block; }
+  
+  .menu-icon{ display:inline-flex; }
+  .logo img{ max-height:50px !important; }
 }
 
-/* MÓVIL: Ajuste fino para sliders verticales - 2 pósters visibles */
-@media (max-width: 480px){
-  /* Verticales: 2 pósters completos por vista */
-  .slider-v .latest-box,
-  .slider-v .slider-track li {
-    flex: 0 0 47%;
-    width: 47%;
-    min-width: 150px;
-    max-width: 48%;
-    margin: 18px 1.5%;
+/* ========== RESPONSIVE: MÓVIL (< 768px) ========== */
+@media (max-width:768px){
+  nav{
+    display:grid !important;
+    grid-template-columns:auto 1fr auto;
+    align-items:center; gap:8px; padding:8px 10px;
+  }
+  .logo img{ max-height:36px !important; }
+  .search{ height:40px; max-width:none; }
+  
+  /* HORIZONTALES: 1 imagen completa + peek (85% del viewport) */
+  .slider-h .showcase-box{
+    width:85vw;
+    max-width:500px;
+    margin:0 8px 14px;
   }
   
-  /* Horizontales: 1 imagen + peek (reforzar) */
-  .slider-h .showcase-box,
-  .slider-h .slider-track li:not(.slider-v li) {
-    flex: 0 0 85%;
-    width: 85%;
-    max-width: 90%;
+  /* VERTICALES: 2 pósters completos (47% cada uno) */
+  .slider-v .latest-box{
+    width:47vw;
+    max-width:220px;
+    margin:10px 1.5%;
   }
+  .slider-v .latest-b-img{ height:240px; }
 }
 
-/* Extra pequeño: ajuste adicional */
-@media (max-width: 380px){
-  .slider-v .latest-box,
-  .slider-v .slider-track li {
-    flex: 0 0 46%;
-    width: 46%;
-    margin: 18px 2%;
+/* ========== RESPONSIVE: MÓVIL PEQUEÑO (< 480px) ========== */
+@media (max-width:480px){
+  /* HORIZONTALES: 1 + peek más ajustado */
+  .slider-h .showcase-box{
+    width:88vw;
+    margin:0 6px 14px;
   }
+  
+  /* VERTICALES: 2 pósters más compactos */
+  .slider-v .latest-box{
+    width:46vw;
+    min-width:160px;
+    max-width:200px;
+    margin:10px 2%;
+  }
+  .slider-v .latest-b-img{ height:220px; }
+  .slider-v .latest-b-text{ padding:10px 8px; }
+  .slider-v .latest-b-text strong{ font-size:0.88rem; }
+  .slider-v .latest-b-text p{ font-size:0.78rem; }
 }
-
-/* Search: placeholder gris claro y botón integrado */
-.sa-nav .search input::placeholder{ color:#9aa0a6; }
-.sa-nav .search{ background: #f1f3f5; }
-
-/* pequeñas mejoras de contraste para texto en cards */
-.latest-b-text strong, .slider-track li p{ color:#222; }
 
 
 

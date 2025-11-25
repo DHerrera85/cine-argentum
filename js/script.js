@@ -233,44 +233,49 @@
       document.getElementsByTagName('head')[0].appendChild(style);
     })();
 
-    // ----- Horizontales: detectar las UL usadas en tu HTML y configurarlas -----
-    initLightSlider($('.slider-h, .horizontal-gallery, .js-slider-h, #autoWidth, #heroSlider'), {
-      autoWidth: true,                 // usar autoWidth true para que el CSS controle el ancho (peek)
-      item: 3,                 // valor lógico para responsive; autoWidth obliga a usar widths CSS
-      responsive: [
-        { breakpoint: 1400, settings: { item: 3 } },
-        { breakpoint: 1100, settings: { item: 3 } },
-        { breakpoint: 900,  settings: { item: 2 } },
-        { breakpoint: 600,  settings: { item: 1 } }
-      ],
-      slideMove: 1,           // mover de a 1
-      slideMargin: 24,       // espacio entre items
-      loop: true,
-      controls: true,
-      pager: false,
-      prevHtml: '<button class="ls-btn-prev" aria-label="Anterior" type="button"><i class="fas fa-chevron-left" aria-hidden="true"></i></button>',
-      nextHtml: '<button class="ls-btn-next" aria-label="Siguiente" type="button"><i class="fas fa-chevron-right" aria-hidden="true"></i></button>'
+    // ===============================
+    // Cine Argentum – LightSlider init
+    // H: Desktop 3, Tablet 2, Móvil 1 + peek
+    // V: Desktop 6, Tablet 4, Móvil 2 (mueve de a 1)
+    // ===============================
+    $(function () {
+
+      // HORIZONTALES
+      $('.slider-h').lightSlider({
+        item: 3,
+        slideMove: 1,
+        slideMargin: 14,
+        loop: false,
+        pager: false,
+        controls: true,
+        enableTouch: true,
+        enableDrag: true,
+        freeMove: false,
+        responsive: [
+          { breakpoint: 1100, settings: { item: 2, slideMove: 1 } },
+          { breakpoint: 768,  settings: { item: 1, slideMove: 1 } }
+        ]
+      });
+
+      // VERTICALES
+      $('.slider-v').lightSlider({
+        item: 6,
+        slideMove: 1,
+        slideMargin: 12,
+        loop: false,
+        pager: false,
+        controls: true,
+        enableTouch: true,
+        enableDrag: true,
+        freeMove: false,
+        responsive: [
+          { breakpoint: 1100, settings: { item: 4, slideMove: 1 } },
+          { breakpoint: 768,  settings: { item: 2, slideMove: 1 } }
+        ]
+      });
+
     });
 
-    // ----- Verticales / posters: detectar las UL usadas en tu HTML y configurarlas -----
-    initLightSlider($('.slider-v, .vertical-gallery, .js-slider-v, #autoWidth2'), {
-      autoWidth: false,
-      item: 6,
-      responsive: [
-        { breakpoint: 1400, settings: { item: 5 } },
-        { breakpoint: 1100, settings: { item: 4 } },
-        { breakpoint: 900,  settings: { item: 3 } },
-        { breakpoint: 600,  settings: { item: 3 } },
-        { breakpoint: 400,  settings: { item: 2 } }
-      ],
-      slideMove: 1,
-      slideMargin: 12,
-      loop: true,
-      controls: true,
-      pager: false,
-      prevHtml: '<button class="ls-btn-prev" aria-label="Anterior" type="button"><i class="fas fa-chevron-left" aria-hidden="true"></i></button>',
-      nextHtml: '<button class="ls-btn-next" aria-label="Siguiente" type="button"><i class="fas fa-chevron-right" aria-hidden="true"></i></button>'
-    });
 
     // Forzar refresh tras load de imágenes para evitar fallback apilado
     $(window).on('load', function () {
