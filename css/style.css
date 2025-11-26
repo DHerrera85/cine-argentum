@@ -148,6 +148,17 @@ nav .menu li a:hover{
 .slider-v .latest-b-text strong{ color:#222; font-weight:600; font-size:0.95rem; display:block; }
 .slider-v .latest-b-text p{ color:#444; margin:4px 0 0; font-size:0.85rem; }
 
+/* Reemplazo / mejora de la regla de verticales para subir el borde superior manteniendo el border-radius */
+.vertical-gallery li .latest-b-img,
+.slider-v li .latest-b-img {
+  /* asegurar que el contenedor tiene bordes redondeados y recorte el contenido */
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+  display: block;
+}
+
 /* ========== FOOTER ========== */
 footer{
   display:flex; justify-content:space-around; align-items:center;
