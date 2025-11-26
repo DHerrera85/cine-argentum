@@ -3,8 +3,8 @@
 html,body{ margin:0; padding:0; }
 body{
   font-family:Poppins,system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-  background:#f7f7f7;
-  color:#111;
+  background:#141a21;
+  color:#e5e5e5;
 }
 img{ max-width:100%; height:auto; display:block; }
 ul{ list-style:none; padding:0; margin:0; }
@@ -73,14 +73,21 @@ nav .menu li a:hover{
 .menu-btn:checked + .menu-icon .nav-icon::after{ transform:rotate(-45deg); bottom:0; }
 
 /* ========== SECTIONS ========== */
-#main{ padding-top:90px; background:#fff; }
-#latest{ background:#fff; }
+#main{ padding-top:90px; background:#141a21; }
+#latest{ background:#141a21; }
 
 .showcase-heading,
 .latest-heading,
 .section-heading{
   font-size:1.05rem; font-weight:700; text-transform:uppercase;
-  letter-spacing:0.6px; color:#222; margin:28px 18px 10px; padding:0;
+  letter-spacing:0.6px; color:#f0f0f0; margin:28px 18px 10px; padding:0;
+}
+
+/* Reducir espaciado entre galerías consecutivas (V → H o H → V) */
+#latest + #main,
+#main + #latest{
+  padding-top:8px;
+  margin-top:-18px;
 }
 
 /* ========== SLIDERS - LIGHTSLIDER OVERRIDES ========== */
@@ -112,8 +119,8 @@ nav .menu li a:hover{
 
 /* ========== SLIDER HORIZONTALES (Desktop: lightSlider controla) ========== */
 .slider-h .showcase-box{
-  border-radius:14px; overflow:hidden; background:#fff;
-  box-shadow:0 18px 40px rgba(15,15,15,0.08);
+  border-radius:14px; overflow:hidden; background:#1a2129;
+  box-shadow:0 18px 40px rgba(0,0,0,0.4);
   margin:0 10px 14px;
 }
 .slider-h .showcase-box img{
@@ -123,13 +130,13 @@ nav .menu li a:hover{
   display:flex; flex-direction:column; align-items:center; justify-content:center;
   gap:4px; margin:14px 18px 22px; text-align:center;
 }
-.slider-h .latest-b-text strong{ color:#222; font-weight:600; }
-.slider-h .latest-b-text p{ color:#444; margin:0; }
+.slider-h .latest-b-text strong{ color:#f0f0f0; font-weight:600; }
+.slider-h .latest-b-text p{ color:#9ca3af; margin:0; }
 
 /* ========== SLIDER VERTICALES (Desktop: lightSlider controla) ========== */
 .slider-v .latest-box{
-  border-radius:12px; overflow:hidden; background:#fff;
-  box-shadow:0 10px 26px rgba(12,12,12,0.08);
+  border-radius:12px; overflow:hidden; background:#1a2129;
+  box-shadow:0 10px 26px rgba(0,0,0,0.5);
   display:flex; flex-direction:column; align-items:center;
   margin:10px 8px;
 }
@@ -145,8 +152,8 @@ nav .menu li a:hover{
 .slider-v .latest-b-text{
   padding:12px; text-align:center; width:100%;
 }
-.slider-v .latest-b-text strong{ color:#222; font-weight:600; font-size:0.95rem; display:block; }
-.slider-v .latest-b-text p{ color:#444; margin:4px 0 0; font-size:0.85rem; }
+.slider-v .latest-b-text strong{ color:#f0f0f0; font-weight:600; font-size:0.95rem; display:block; }
+.slider-v .latest-b-text p{ color:#9ca3af; margin:4px 0 0; font-size:0.85rem; }
 
 /* Reemplazo / mejora de la regla de verticales para subir el borde superior manteniendo el border-radius */
 .vertical-gallery li .latest-b-img,
@@ -161,10 +168,12 @@ nav .menu li a:hover{
 
 /* ========== FOOTER ========== */
 footer{
-  display:flex; justify-content:space-around; align-items:center;
-  border-top:1px solid rgba(0,0,0,.08); background:#fff; padding:20px 10px;
+  display:flex; flex-direction:row; justify-content:center; align-items:center;
+  gap:20px; flex-wrap:wrap;
+  border-top:1px solid rgba(255,255,255,.1); background:#0f1419; 
+  padding:24px 20px; margin-top:40px;
 }
-footer p{ color:#5e5e5e; margin:10px 0; font-size:.9rem; }
+footer p{ color:#b0b0b0; margin:0; font-size:.9rem; }
 
 /* ========== RESPONSIVE: TABLET (768px - 1100px) ========== */
 @media (max-width:1100px){
@@ -211,6 +220,12 @@ footer p{ color:#5e5e5e; margin:10px 0; font-size:.9rem; }
     margin:10px 1.5%;
   }
   .slider-v .latest-b-img{ height:240px; }
+  
+  /* Footer móvil */
+  footer{
+    flex-direction:column; gap:8px; padding:20px 15px; text-align:center;
+  }
+  footer p{ font-size:.85rem; }
 }
 
 /* ========== RESPONSIVE: MÓVIL PEQUEÑO (< 480px) ========== */
