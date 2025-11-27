@@ -239,12 +239,12 @@
     // V: Desktop 6, Tablet 4, Móvil 2 (mueve de a 1)
     // ===============================
     $(function () {
-
       // HORIZONTALES
       $('.slider-h').lightSlider({
         item: 3,
+        autoWidth: false,
         slideMove: 1,
-        slideMargin: 14,
+        slideMargin: 20,
         loop: false,
         pager: false,
         controls: true,
@@ -252,13 +252,13 @@
         enableDrag: true,
         freeMove: false,
         responsive: [
-          { breakpoint: 1100, settings: { item: 2, slideMove: 1 } },
-          { breakpoint: 768,  settings: { item: 1, slideMove: 1 } }
+          { breakpoint: 1100, settings: { item: 2, slideMove: 1, slideMargin: 14 } },
+          { breakpoint: 768,  settings: { item: 1, slideMove: 1, slideMargin: 12 } }
         ]
       });
 
-      // VERTICALES
-      $('.slider-v').lightSlider({
+      // VERTICALES (genéricos - NO Top 10)
+      $('.slider-v:not(.top10)').lightSlider({
         item: 6,
         slideMove: 1,
         slideMargin: 12,
@@ -274,6 +274,22 @@
         ]
       });
 
+      // VERTICALES (Top 10 - estilo HBO Max)
+      $('.slider-v.top10').lightSlider({
+        item: 4, // 4 en desktop
+        slideMove: 1,
+        slideMargin: 8,
+        loop: false,
+        pager: false,
+        controls: true,
+        enableTouch: true,
+        enableDrag: true,
+        freeMove: false,
+        responsive: [
+          { breakpoint: 1100, settings: { item: 3, slideMove: 1, slideMargin: 8 } },
+          { breakpoint: 768,  settings: { item: 2, slideMove: 1, slideMargin: 6 } }
+        ]
+      });
     });
 
 
