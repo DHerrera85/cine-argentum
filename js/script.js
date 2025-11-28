@@ -290,6 +290,35 @@
           { breakpoint: 768,  settings: { item: 2, slideMove: 1, slideMargin: 6 } }
         ]
       });
+
+      // ACTORES (Circular Gallery)
+      $('.slider-actors').lightSlider({
+        item: 5, // 5 en desktop
+        autoWidth: false,
+        slideMove: 1,
+        slideMargin: 12,
+        loop: false,
+        pager: false,
+        controls: true,
+        enableTouch: true,
+        enableDrag: true,
+        freeMove: false,
+        onSliderLoad: function(el) {
+          $('.slider-actors').removeClass('cs-hidden');
+          // Forzar recalculo después de carga
+          setTimeout(function() {
+            var sliderInstance = $('.slider-actors').data('lightSlider');
+            if (sliderInstance && sliderInstance.refresh) {
+              sliderInstance.refresh();
+            }
+          }, 100);
+        },
+        responsive: [
+          { breakpoint: 1100, settings: { item: 5, slideMove: 1, slideMargin: 10 } },
+          { breakpoint: 768,  settings: { item: 4, slideMove: 1, slideMargin: 8 } },
+          { breakpoint: 480,  settings: { item: 4, slideMove: 1, slideMargin: 6 } }
+        ]
+      });
     });
 
 
