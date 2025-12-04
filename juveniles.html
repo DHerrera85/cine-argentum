@@ -86,10 +86,66 @@
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
     
-    /* Footer con fondo semi-transparente */
-    footer {
-      background: rgba(255, 255, 255, 0.8) !important;
-      backdrop-filter: blur(10px);
+    /* IMPORTANTE: Asegurar que los títulos debajo de las imágenes horizontales se vean */
+    .slider-h .latest-b-text {
+      display: block !important;
+      visibility: visible !important;
+      opacity: 1 !important;
+      margin: 0 !important;
+      padding: 14px 18px !important;
+      text-align: center !important;
+      background: rgba(26, 33, 41, 0.98) !important;
+      border-radius: 0 !important;
+    }
+    
+    .slider-h .latest-b-text strong {
+      display: block !important;
+      color: #f0f0f0 !important;
+      font-size: 15px !important;
+      font-weight: 600 !important;
+      line-height: 1.4 !important;
+    }
+    
+    /* IMPORTANTE: Ajustar estructura del slider horizontal */
+    .slider-h .showcase-box {
+      background: rgba(26, 33, 41, 0.95) !important;
+      backdrop-filter: blur(5px);
+      border-radius: 12px !important;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      overflow: hidden !important;
+      display: flex !important;
+      flex-direction: column !important;
+    }
+    
+    .slider-h .showcase-box img {
+      width: 100% !important;
+      display: block !important;
+      border-radius: 0 !important;
+    }
+    
+    /* Títulos dentro del showcase-box */
+    .slider-h .showcase-box .latest-b-text {
+      display: block !important;
+      visibility: visible !important;
+      opacity: 1 !important;
+      margin: 0 !important;
+      padding: 14px 18px !important;
+      text-align: center !important;
+      background: rgba(26, 33, 41, 0.98) !important;
+      border-radius: 0 0 12px 12px !important;
+    }
+    
+    .slider-h .showcase-box .latest-b-text strong {
+      display: block !important;
+      color: #f0f0f0 !important;
+      font-size: 15px !important;
+      font-weight: 600 !important;
+      line-height: 1.4 !important;
+    }
+    
+    /* Ocultar latest-b-text que está fuera del showcase-box */
+    .slider-h > li > .latest-b-text {
+      display: none !important;
     }
     
     img{ height:auto; }
@@ -171,12 +227,54 @@
 <section id="main">
   <h1 class="showcase-heading">Éxitos en Streaming</h1>
   <ul class="slider-h cs-hidden">
-    <li class="item-f"><div class="showcase-box"><img src="images/horizontals-1024x576/playback-slide-1024x576.png" loading="lazy" alt="Playback: Una Somos Dos"/></div><div class="latest-b-text"><strong>Playback: Una Somos Dos</strong><p></p></div></li>
-    <li class="item-f"><div class="showcase-box"><img src="images/horizontals-1024x576/margarita-slide-1024x576.png" loading="lazy" alt="Margarita"/></div><div class="latest-b-text"><strong>Margarita</strong><p></p></div></li>
-    <li class="item-f"><div class="showcase-box"><img src="images/horizontals-1024x576/cielo-grande-slide-1024x576.png" loading="lazy" alt="Cielo Grande"/></div><div class="latest-b-text"><strong>Cielo Grande</strong><p></p></div></li>
-    <li class="item-f"><div class="showcase-box"><img src="images/horizontals-1024x576/entrelazados-slide-1024x576.png" loading="lazy" alt="Entrelazados"/></div><div class="latest-b-text"><strong>Entrelazados</strong><p></p></div></li>
-    <li class="item-f"><div class="showcase-box"><img src="images/horizontals-1024x576/dias-de-gallos-slide-1024x576.png" loading="lazy" alt="Días de Gallos"/></div><div class="latest-b-text"><strong>Días de Gallos</strong><p></p></div></li>
-    <li class="item-f"><div class="showcase-box"><img src="images/horizontals-1024x576/go-vive-a-tu-manera.png" loading="lazy" alt="Go! Vive a tu Manera"/></div><div class="latest-b-text"><strong>Go! Vive a tu Manera</strong><p></p></div></li>
+    <li class="item-f">
+      <div class="showcase-box">
+        <img src="images/horizontals-1024x576/playback-slide-1024x576.png" loading="lazy" alt="Playback: Una Somos Dos"/>
+        <div class="latest-b-text">
+          <strong>Playback: Una Somos Dos</strong>
+        </div>
+      </div>
+    </li>
+    <li class="item-f">
+      <div class="showcase-box">
+        <img src="images/horizontals-1024x576/margarita-slide-1024x576.png" loading="lazy" alt="Margarita"/>
+        <div class="latest-b-text">
+          <strong>Margarita</strong>
+        </div>
+      </div>
+    </li>
+    <li class="item-f">
+      <div class="showcase-box">
+        <img src="images/horizontals-1024x576/cielo-grande-slide-1024x576.png" loading="lazy" alt="Cielo Grande"/>
+        <div class="latest-b-text">
+          <strong>Cielo Grande</strong>
+        </div>
+      </div>
+    </li>
+    <li class="item-f">
+      <div class="showcase-box">
+        <img src="images/horizontals-1024x576/entrelazados-slide-1024x576.png" loading="lazy" alt="Entrelazados"/>
+        <div class="latest-b-text">
+          <strong>Entrelazados</strong>
+        </div>
+      </div>
+    </li>
+    <li class="item-f">
+      <div class="showcase-box">
+        <img src="images/horizontals-1024x576/dias-de-gallos-slide-1024x576.png" loading="lazy" alt="Días de Gallos"/>
+        <div class="latest-b-text">
+          <strong>Días de Gallos</strong>
+        </div>
+      </div>
+    </li>
+    <li class="item-f">
+      <div class="showcase-box">
+        <img src="images/horizontals-1024x576/go-vive-a-tu-manera.png" loading="lazy" alt="Go! Vive a tu Manera"/>
+        <div class="latest-b-text">
+          <strong>Go! Vive a tu Manera</strong>
+        </div>
+      </div>
+    </li>
   </ul>
 </section>
 
@@ -219,12 +317,54 @@
 <section id="main">
   <h1 class="showcase-heading">Éxitos del 2010</h1>
   <ul class="slider-h cs-hidden">
-    <li class="item-f"><div class="showcase-box"><img src="images/horizontals-1024x576/suena-conmigo-slide-1024x576.png" loading="lazy" alt="Sueña Conmigo"/></div><div class="latest-b-text"><strong>Sueña Conmigo</strong><p></p></div></li>
-    <li class="item-f"><div class="showcase-box"><img src="images/horizontals-1024x576/violetta-slide-1024x576.png" loading="lazy" alt="Violetta"/></div><div class="latest-b-text"><strong>Violetta</strong><p></p></div></li>
-    <li class="item-f"><div class="showcase-box"><img src="images/horizontals-1024x576/aliados-slide-1024x576.png" loading="lazy" alt="Aliados"/></div><div class="latest-b-text"><strong>Aliados</strong><p></p></div></li>
-    <li class="item-f"><div class="showcase-box"><img src="images/horizontals-1024x576/soy-luna-slide-1024x576.png" loading="lazy" alt="Soy Luna"/></div><div class="latest-b-text"><strong>Soy Luna</strong><p></p></div></li>
-    <li class="item-f"><div class="showcase-box"><img src="images/horizontals-1024x576/o11ce-slide-1024x576.png" loading="lazy" alt="O11ce"/></div><div class="latest-b-text"><strong>O11ce</strong><p></p></div></li>
-    <li class="item-f"><div class="showcase-box"><img src="images/horizontals-1024x576/kallys-mashup-slide-1024x576.png" loading="lazy" alt="Kally's Mashup"/></div><div class="latest-b-text"><strong>Kally's Mashup</strong><p></p></div></li>
+    <li class="item-f">
+      <div class="showcase-box">
+        <img src="images/horizontals-1024x576/suena-conmigo-slide-1024x576.png" loading="lazy" alt="Sueña Conmigo"/>
+        <div class="latest-b-text">
+          <strong>Sueña Conmigo</strong>
+        </div>
+      </div>
+    </li>
+    <li class="item-f">
+      <div class="showcase-box">
+        <img src="images/horizontals-1024x576/violetta-slide-1024x576.png" loading="lazy" alt="Violetta"/>
+        <div class="latest-b-text">
+          <strong>Violetta</strong>
+        </div>
+      </div>
+    </li>
+    <li class="item-f">
+      <div class="showcase-box">
+        <img src="images/horizontals-1024x576/aliados-slide-1024x576.png" loading="lazy" alt="Aliados"/>
+        <div class="latest-b-text">
+          <strong>Aliados</strong>
+        </div>
+      </div>
+    </li>
+    <li class="item-f">
+      <div class="showcase-box">
+        <img src="images/horizontals-1024x576/soy-luna-slide-1024x576.png" loading="lazy" alt="Soy Luna"/>
+        <div class="latest-b-text">
+          <strong>Soy Luna</strong>
+        </div>
+      </div>
+    </li>
+    <li class="item-f">
+      <div class="showcase-box">
+        <img src="images/horizontals-1024x576/o11ce-slide-1024x576.png" loading="lazy" alt="O11ce"/>
+        <div class="latest-b-text">
+          <strong>O11ce</strong>
+        </div>
+      </div>
+    </li>
+    <li class="item-f">
+      <div class="showcase-box">
+        <img src="images/horizontals-1024x576/kallys-mashup-slide-1024x576.png" loading="lazy" alt="Kally's Mashup"/>
+        <div class="latest-b-text">
+          <strong>Kally's Mashup</strong>
+        </div>
+      </div>
+    </li>
   </ul>
 </section>
 
@@ -260,12 +400,54 @@
 <section id="main">
   <h1 class="showcase-heading">Éxitos del 2000</h1>
   <ul class="slider-h cs-hidden">
-    <li class="item-f"><div class="showcase-box"><img src="images/horizontals-1024x576/verano-del-98-slide-1024x576.png" loading="lazy" alt="Verano del '98"/></div><div class="latest-b-text"><strong>Verano del '98</strong><p></p></div></li>
-    <li class="item-f"><div class="showcase-box"><img src="images/horizontals-1024x576/rebelde-way-slide-1024x576.png" loading="lazy" alt="Rebelde Way"/></div><div class="latest-b-text"><strong>Rebelde Way</strong><p></p></div></li>
-    <li class="item-f"><div class="showcase-box"><img src="images/horizontals-1024x576/floricienta-slide-1024x576.png" loading="lazy" alt="Floricienta"/></div><div class="latest-b-text"><strong>Floricienta</strong><p></p></div></li>
-    <li class="item-f"><div class="showcase-box"><img src="images/horizontals-1024x576/chiquititas-slide-1024x576.png" loading="lazy" alt="Chiquititas"/></div><div class="latest-b-text"><strong>Chiquititas</strong><p></p></div></li>
-    <li class="item-f"><div class="showcase-box"><img src="images/horizontals-1024x576/casi-angeles-slide-1024x576.png" loading="lazy" alt="Casi Ángeles"/></div><div class="latest-b-text"><strong>Casi Ángeles</strong><p></p></div></li>
-    <li class="item-f"><div class="showcase-box"><img src="images/horizontals-1024x576/patito-feo-slide-1024x576.png" loading="lazy" alt="Patito Feo"/></div><div class="latest-b-text"><strong>Patito Feo</strong><p></p></div></li>
+    <li class="item-f">
+      <div class="showcase-box">
+        <img src="images/horizontals-1024x576/verano-del-98-slide-1024x576.png" loading="lazy" alt="Verano del '98"/>
+        <div class="latest-b-text">
+          <strong>Verano del '98</strong>
+        </div>
+      </div>
+    </li>
+    <li class="item-f">
+      <div class="showcase-box">
+        <img src="images/horizontals-1024x576/rebelde-way-slide-1024x576.png" loading="lazy" alt="Rebelde Way"/>
+        <div class="latest-b-text">
+          <strong>Rebelde Way</strong>
+        </div>
+      </div>
+    </li>
+    <li class="item-f">
+      <div class="showcase-box">
+        <img src="images/horizontals-1024x576/floricienta-slide-1024x576.png" loading="lazy" alt="Floricienta"/>
+        <div class="latest-b-text">
+          <strong>Floricienta</strong>
+        </div>
+      </div>
+    </li>
+    <li class="item-f">
+      <div class="showcase-box">
+        <img src="images/horizontals-1024x576/chiquititas-slide-1024x576.png" loading="lazy" alt="Chiquititas"/>
+        <div class="latest-b-text">
+          <strong>Chiquititas</strong>
+        </div>
+      </div>
+    </li>
+    <li class="item-f">
+      <div class="showcase-box">
+        <img src="images/horizontals-1024x576/casi-angeles-slide-1024x576.png" loading="lazy" alt="Casi Ángeles"/>
+        <div class="latest-b-text">
+          <strong>Casi Ángeles</strong>
+        </div>
+      </div>
+    </li>
+    <li class="item-f">
+      <div class="showcase-box">
+        <img src="images/horizontals-1024x576/patito-feo-slide-1024x576.png" loading="lazy" alt="Patito Feo"/>
+        <div class="latest-b-text">
+          <strong>Patito Feo</strong>
+        </div>
+      </div>
+    </li>
   </ul>
 </section>
 
