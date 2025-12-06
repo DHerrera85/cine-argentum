@@ -4,6 +4,7 @@ Portal de cine argentino con información de películas, actores y directores.
 
 ## Demo en vivo
 [Ver sitio](https://github.com/DHerrera85/cine-argentum)
+![Preview del sitio](github/preview.png)
 
 ## Características
 - Diseño responsive (móvil y desktop)
@@ -16,5 +17,4 @@ Portal de cine argentino con información de películas, actores y directores.
 - CSS3
 - JavaScript
 - LightSlider## Vista Previa
-![Preview del sitio](github/preview.png)
 - Font Awesome
