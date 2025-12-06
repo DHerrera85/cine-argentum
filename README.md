@@ -16,5 +16,5 @@ Portal de cine argentino con información de películas, actores y directores.
 - CSS3
 - JavaScript
 - LightSlider## Vista Previa
-![Preview del sitio](.github/preview.png)
+![Preview del sitio](github/preview.png)
 - Font Awesome
