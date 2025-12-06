@@ -2,30 +2,48 @@
 <html lang="es">
 <head>
   <meta charset="utf-8" />
-  <title>Argentina Content</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tiras 2010 - Argentina Content</title>
 
   <!-- CSS -->
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="css/lightslider.css" />
+  <link rel="stylesheet" href="css/style.css?v=2.0" />
+  <link rel="stylesheet" href="css/lightslider.css?v=2.0" />
 
   <!-- Fuente -->
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins&display=swap" />
 
-  <!-- Fav icon -->
-  <link rel="shortcut icon" href="images/fav icon.png" />
+  <!-- Favicons para todos los dispositivos -->
+  <link rel="icon" type="image/png" sizes="32x32" href="images/fav_icon.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="images/fav_icon.png" />
+  <link rel="shortcut icon" href="images/fav_icon.png" />
+  
+  <!-- Apple Touch Icons (iOS/iPad) -->
+  <link rel="apple-touch-icon" sizes="180x180" href="images/fav_icon.png" />
+  <link rel="apple-touch-icon" sizes="152x152" href="images/fav_icon.png" />
+  <link rel="apple-touch-icon" sizes="120x120" href="images/fav_icon.png" />
+  <link rel="apple-touch-icon" sizes="76x76" href="images/fav_icon.png" />
+  
+  <!-- Android Chrome -->
+  <link rel="icon" type="image/png" sizes="192x192" href="images/fav_icon.png" />
+  <link rel="icon" type="image/png" sizes="512x512" href="images/fav_icon.png" />
+  
+  <!-- Meta tags para PWA y móviles -->
+  <meta name="theme-color" content="#141a21" />
+  <meta name="msapplication-TileColor" content="#141a21" />
+  <meta name="msapplication-TileImage" content="images/fav_icon.png" />
 
-  <!-- Font Awesome (CSS, sin kit) -->
+  <!-- Font Awesome (CSS) -->
   <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         referrerpolicy="no-referrer" />
 
-  <!-- Tipografía base segura -->
+  <!-- Tipografía base segura + hamburguesa -->
   <style>
     body{ font-family: Poppins, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
     img{ height:auto; }
 
-    /* Nuevo: hamburguesa accesible y sin la flecha/tilde nativa */
+    /* Hamburguesa accesible */
     .menu-btn{
       position: absolute !important;
       width: 1px; height: 1px;
@@ -33,78 +51,43 @@
       overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap;
       border: 0;
     }
-
     .menu-icon{
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      width: 48px;
-      height: 48px;
-      cursor: pointer;
-      user-select: none;
+      display: inline-flex; align-items: center; justify-content: center;
+      width: 48px; height: 48px; cursor: pointer; user-select: none;
     }
-
     .nav-icon{
-      position: relative;
-      width: 26px;
-      height: 2px;
-      background: #555;
-      display: inline-block;
-      transition: transform 0.25s ease, background 0.25s ease;
+      position: relative; width: 26px; height: 2px; background: #555; display: inline-block;
+      transition: transform .25s ease, background .25s ease;
     }
-    .nav-icon::before,
-    .nav-icon::after{
-      content: "";
-      position: absolute;
-      left: 0;
-      width: 26px;
-      height: 2px;
-      background: #555;
-      transition: transform 0.25s ease, top 0.25s ease, opacity 0.25s ease;
+    .nav-icon::before, .nav-icon::after{
+      content: ""; position: absolute; left: 0; width: 26px; height: 2px; background: #555;
+      transition: transform .25s ease, top .25s ease, opacity .25s ease;
     }
     .nav-icon::before{ top: -8px; }
     .nav-icon::after{ top: 8px; }
+    .menu-btn:checked + .menu-icon .nav-icon{ background: transparent; }
+    .menu-btn:checked + .menu-icon .nav-icon::before{ transform: rotate(45deg); top: 0; }
+    .menu-btn:checked + .menu-icon .nav-icon::after{ transform: rotate(-45deg); top: 0; }
+    @media (min-width: 768px){ .menu-icon{ display:none; } }
 
-    .menu-btn:checked + .menu-icon .nav-icon{
-      background: transparent;
-    }
-    .menu-btn:checked + .menu-icon .nav-icon::before{
-      transform: rotate(45deg);
-      top: 0;
-    }
-    .menu-btn:checked + .menu-icon .nav-icon::after{
-      transform: rotate(-45deg);
-      top: 0;
-    }
-
-    @media (min-width: 768px){
-      .menu-icon{ display:none; }
-    }
-
-    /* Evita arrastrar/ mover horizontalmente las imágenes de sliders horizontales en móviles */
-    .slider-h img,
-    .showcase-box img {
-      touch-action: pan-y;
-      -ms-touch-action: pan-y;
-      -webkit-user-drag: none;
-      -user-drag: none;
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      -ms-user-select: none;
-      user-select: none;
+    /* Reducir espaciado entre galerías consecutivas */
+    #latest + #main,
+    #main + #latest,
+    #main + #main {  /* ← AGREGAR ESTA LÍNEA */
+      padding-top:8px;
+      margin-top:-18px;
     }
   </style>
 </head>
 <body>
 
-<!---navigation-->
 <!-- NAV -->
 <nav class="sa-nav">
   <a href="index.html" class="logo" aria-label="Argentina Content">
     <img src="images/logos/argentina-content-logo.PNG" alt="Argentina Content">
   </a>
 
-  <!-- Buscador (FORM) -->
+  <!-- Buscador -->
   <form class="search" role="search" id="headerSearch">
     <input type="search" name="q" placeholder="Encontrá tu Serie Favorita" aria-label="Buscar series" />
     <button type="submit" class="search-btn" aria-label="Buscar">
@@ -120,19 +103,18 @@
 
   <!-- Menú -->
   <ul class="menu nav-options">
-    <li><a href="index.html">Streaming</a></li>
+    <li><a href="streaming.html">Streaming</a></li>
     <li><a href="tiras_2000.html">Tiras 2000</a></li>
-    <li><a href="tiras_2010.html">Tiras 2010</a></li>
+    <li><a href="tiras_2010.html" aria-current="page">Tiras 2010</a></li>
     <li><a href="juveniles.html">Juveniles</a></li>
-    <li><a href="unitarios.html" aria-current="page">Unitarios</a></li>
+    <li><a href="unitarios.html">Unitarios</a></li>
   </ul>
 </nav>
 
-<!-- Destacadas (H) -->
+<!-- ÚLTIMAS (H) -->
 <section id="main">
   <h1 class="showcase-heading">ÚLTIMAS</h1>
   <ul class="slider-h cs-hidden">
-
     <li class="item-a">
       <div class="showcase-box">
         <img src="images/horizontals-1024x576/atav2-slide-1024x576.png" loading="lazy" alt="Argentina, Tierra de Amor y Venganza 2"/>
@@ -142,21 +124,18 @@
         <p></p>
       </div>
     </li>
-
     <li class="item-b">
       <div class="showcase-box">
         <img src="images/horizontals-1024x576/el-primero-de-nosotros-slide-1024x576.png" loading="lazy" alt="El Primero de Nosotros"/>
       </div>
       <div class="latest-b-text"><strong>El Primero de Nosotros</strong><p></p></div>
     </li>
-
     <li class="item-d">
       <div class="showcase-box">
         <img src="images/horizontals-1024x576/la-1-5-18-slide-1024x576.png" loading="lazy" alt="La 1-5-18: Somos Uno"/>
       </div>
       <div class="latest-b-text"><strong>La 1-5/18: Somos Uno</strong><p></p></div>
     </li>
-
     <li class="item-f">
       <div class="showcase-box">
         <img src="images/horizontals-1024x576/buenos-chicos-1024x576.png" loading="lazy" alt="Buenos Chicos"/>
@@ -177,12 +156,12 @@
     <li class="item-e"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/senores-papis-poster-280x420.png" loading="lazy" alt="Señores Papis"></div><div class="latest-b-text"><strong>Señores Papis</strong><p></p></div></div></li>
     <li class="item-g"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/viudas-e-hijos-del-rock-and-roll-poster-280x420.png" loading="lazy" alt="Viudas e Hijos del Rock &amp; Roll"></div><div class="latest-b-text"><strong>Viudas e Hijos del Rock &amp; Roll</strong><p></p></div></div></li>
     <li class="item-g"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/los-vecinos-en-guerra-poster-280x420.png" loading="lazy" alt="Los Vecinos en Guerra"></div><div class="latest-b-text"><strong>Mi Amor, Mi Amor</strong><p></p></div></div></li>
-    <li class="item-g"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/srysracamas-poster-280x420.png" loading="lazy" alt="Los Vecinos en Guerra"></div><div class="latest-b-text"><strong>Sr. y Sra. Camas</strong><p></p></div></div></li>
+    <li class="item-g"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/srysracamas-poster-280x420.png" loading="lazy" alt="Sr. y Sra. Camas"></div><div class="latest-b-text"><strong>Sr. y Sra. Camas</strong><p></p></div></div></li>
     <li class="item-c"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/un-ano-para-recordar-poster-280x420.png" loading="lazy" alt="Un Año para Recordar"></div><div class="latest-b-text"><strong>Un Año para Recordar</strong><p></p></div></div></li>
   </ul>
 </section>
 
-<!-- Thrillers (V) -->
+<!-- Thrillers y Dramas (V) -->
 <section id="latest">
   <h2 class="latest-heading">Thrillers y Dramas</h2>
   <ul class="slider-v cs-hidden">
@@ -190,21 +169,21 @@
     <li class="item-f"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/campanas-en-la-noche-poster-280x420.png" loading="lazy" alt="Campanas en la Noche"></div><div class="latest-b-text"><strong>Campanas en la Noche</strong><p></p></div></div></li>
     <li class="item-b"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/cuentame-como-paso-poster-280x420.png" loading="lazy" alt="Cuéntame como Pasó"></div><div class="latest-b-text"><strong>Cuéntame como Pasó</strong><p></p></div></div></li>
     <li class="item-a"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/amar-despues-de-amar-poster-280x420.png" loading="lazy" alt="Amar Después de Amar"></div><div class="latest-b-text"><strong>Amar Después de Amar</strong><p></p></div></div></li>
-    <li class="item-d"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/entre-canibales-poster-280x420.png" loading="lazy" alt="Entre Caníbales"></div><div class="latest-b-text"><strong>Entre Canibales</strong><p></p></div></div></li>
+    <li class="item-d"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/entre-canibales-poster-280x420.png" loading="lazy" alt="Entre Caníbales"></div><div class="latest-b-text"><strong>Entre Caníbales</strong><p></p></div></div></li>
     <li class="item-a"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/noche-y-dia-junto-a-vos-poster-280x420.png" loading="lazy" alt="Noche y Día"></div><div class="latest-b-text"><strong>Noche y Dia</strong><p></p></div></div></li>
     <li class="item-b"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/farsantes-poster-280x420.png" loading="lazy" alt="Farsantes"></div><div class="latest-b-text"><strong>Farsantes</strong><p></p></div></div></li>
-    <li class="item-b"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/en-terapia-poster-280x420.png" loading="lazy" alt="Farsantes"></div><div class="latest-b-text"><strong>En Terapia</strong><p></p></div></div></li>
+    <li class="item-b"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/en-terapia-poster-280x420.png" loading="lazy" alt="En Terapia"></div><div class="latest-b-text"><strong>En Terapia</strong><p></p></div></div></li>
     <li class="item-g"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/el-elegido-poster-280x420.png" loading="lazy" alt="El Elegido"></div><div class="latest-b-text"><strong>El Elegido</strong><p></p></div></div></li>
     <li class="item-g"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/contra-las-cuerdas-poster-280x420.png" loading="lazy" alt="Contra las Cuerdas"></div><div class="latest-b-text"><strong>Contra las Cuerdas</strong><p></p></div></div></li>
     <li class="item-g"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/cain-abel-poster-280x420.png" loading="lazy" alt="Caín y Abel"></div><div class="latest-b-text"><strong>Caín y Abel</strong><p></p></div></div></li>
   </ul>
 </section>
 
-<!-- Grandes Éxitos (H) -->
+<!-- Historias de Época (H) -->
 <section id="main">
   <h1 class="showcase-heading">Historias de Época</h1>
   <ul class="slider-h cs-hidden">
-    <li class="item-a"><div class="showcase-box"><img src="images/horizontals-1024x576/atav2-slide-1024x576.png" loading="lazy" alt="Argentina, Tierra de Amor y Venganza"/></div><div class="latest-b-text"><strong>Argentina, Tierra de Amor y Venganza 2</strong><p></p></div></li>
+    <li class="item-a"><div class="showcase-box"><img src="images/horizontals-1024x576/atav2-slide-1024x576.png" loading="lazy" alt="Argentina, Tierra de Amor y Venganza 2"/></div><div class="latest-b-text"><strong>Argentina, Tierra de Amor y Venganza 2</strong><p></p></div></li>
     <li class="item-a"><div class="showcase-box"><img src="images/horizontals-1024x576/atav-slide-1024x576.png" loading="lazy" alt="Argentina, Tierra de Amor y Venganza (2019)"/></div><div class="latest-b-text"><strong>Argentina, Tierra de Amor y Venganza</strong><p></p></div></li>
     <li class="item-b"><div class="showcase-box"><img src="images/horizontals-1024x576/cuentame-como-paso-slide-1024x576.png" loading="lazy" alt="Cuéntame como Pasó"/></div><div class="latest-b-text"><strong>Cuéntame como Pasó</strong><p></p></div></li>
   </ul>
@@ -258,7 +237,7 @@
     <li class="item-d"><div class="showcase-box"><img src="images/horizontals-1024x576/dulce-amor-slide-1024x576.png" loading="lazy" alt="Dulce Amor"/></div><div class="latest-b-text"><strong>Dulce Amor</strong><p></p></div></li>
     <li class="item-e"><div class="showcase-box"><img src="images/horizontals-1024x576/golpe-al-corazon-slide-1024x576.png" loading="lazy" alt="Golpe al Corazón"/></div><div class="latest-b-text"><strong>Golpe al Corazón</strong><p></p></div></li>
     <li class="item-f"><div class="showcase-box"><img src="images/horizontals-1024x576/malparida-slide-1024x576.png" loading="lazy" alt="Malparida"/></div><div class="latest-b-text"><strong>Malparida</strong><p></p></div></li>
-    <li class="item-e"><div class="showcase-box"><img src="images/horizontals-1024x576/camino-al-amor-slide-1024x576.png" loading="lazy" alt="Camino al Amor"/></div><div class="latest-b-text"><strong>Camino al Amor</strong><p></p></div></div>
+    <li class="item-e"><div class="showcase-box"><img src="images/horizontals-1024x576/camino-al-amor-slide-1024x576.png" loading="lazy" alt="Camino al Amor"/></div><div class="latest-b-text"><strong>Camino al Amor</strong><p></p></div></li>
   </ul>
 </section>
 
@@ -268,7 +247,7 @@
   <ul class="slider-h cs-hidden">
     <li class="item-a"><div class="showcase-box"><img src="images/horizontals-1024x576/la-1-5-18-slide-1024x576.png" loading="lazy" alt="La 1-5-18: Somos Uno"/></div><div class="latest-b-text"><strong>La 1-5/18: Somos Uno</strong><p></p></div></li>
     <li class="item-b"><div class="showcase-box"><img src="images/horizontals-1024x576/la-leona-slide-1024x576.png" loading="lazy" alt="La Leona"/></div><div class="latest-b-text"><strong>La Leona</strong><p></p></div></li>
-    <li class="item-c"><div class="showcase-box"><img src="images/horizontals-1024x576/sos-mi-hombre-slide-1024x576.png" loading="lazy" alt="Sos Mi Hombre"/></div><div class="latest-b-text"><strong>Sos Mi Hombre</strong><p></p></div></div></li>
+    <li class="item-c"><div class="showcase-box"><img src="images/horizontals-1024x576/sos-mi-hombre-slide-1024x576.png" loading="lazy" alt="Sos Mi Hombre"/></div><div class="latest-b-text"><strong>Sos Mi Hombre</strong><p></p></div></li>
     <li class="item-d"><div class="showcase-box"><img src="images/horizontals-1024x576/contra-las-cuerdas-slide-1024x576.png" loading="lazy" alt="Contra las Cuerdas"/></div><div class="latest-b-text"><strong>Contra las Cuerdas</strong><p></p></div></div></li>
   </ul>
 </section>
@@ -287,11 +266,11 @@
     <li class="item-e"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/lobo-poster-280x420.png" loading="lazy" alt="Lobo"></div><div class="latest-b-text"><strong>Lobo</strong><p></p></div></div></li>
     <li class="item-e"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/dulce-amor-poster-280x420.png" loading="lazy" alt="Dulce Amor"></div><div class="latest-b-text"><strong>Dulce Amor</strong><p></p></div></div></li>
     <li class="item-e"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/herederos-de-una-venganza-poster-280x420.png" loading="lazy" alt="Herederos de una Venganza"></div><div class="latest-b-text"><strong>Herederos de una Venganza</strong><p></p></div></div></li>
-    <li class="item-e"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/malparida-poster-280x420.png" loading="lazy" alt="Lobo"></div><div class="latest-b-text"><strong>Malparida</strong><p></p></div></div></li>
+    <li class="item-e"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/malparida-poster-280x420.png" loading="lazy" alt="Malparida"></div><div class="latest-b-text"><strong>Malparida</strong><p></p></div></div></li>
   </ul>
 </section>
 
-<!-- Telenovelas de la Tarde 2000-2019 (V) -->
+<!-- Telenovelas de la Tarde 2010-2019 (V) -->
 <section id="latest">
   <h2 class="latest-heading">Telenovelas de la Tarde 2010-2019</h2>
   <ul class="slider-v cs-hidden">
@@ -300,11 +279,9 @@
     <li class="item-b"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/esa-mujer-poster-280x420.png" loading="lazy" alt="Esa Mujer"></div><div class="latest-b-text"><strong>Esa Mujer</strong><p></p></div></div></li>
     <li class="item-b"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/taxxi-amores-cruzados-280x420.png" loading="lazy" alt="Taxxi Amores Cruzados"></div><div class="latest-b-text"><strong>Taxxi Amores Cruzados</strong><p></p></div></div></li>
     <li class="item-e"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/secretos-de-amor-poster-280x420.png" loading="lazy" alt="Secretos de Amor"></div><div class="latest-b-text"><strong>Secretos de Amor</strong><p></p></div></div></li>
-    <li class="item-e"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/alguien-que-me-quiera-poster-280x420.png" loading="lazy" alt="Lobo"></div><div class="latest-b-text"><strong>Alguien que me Quiera</strong><p></p></div></div></li>
+    <li class="item-e"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/alguien-que-me-quiera-poster-280x420.png" loading="lazy" alt="Alguien que me Quiera"></div><div class="latest-b-text"><strong>Alguien que me Quiera</strong><p></p></div></div></li>
   </ul>
 </section>
-
-
 
 <!-- footer -->
 <footer>
@@ -312,15 +289,7 @@
   <p>Copyright 2025 by Dherrera</p>
 </footer>
 
-<!-- JS: jQuery → LightSlider → tu init -->
-<script>
-  document.querySelectorAll('.slider-h img, .showcase-box img').forEach(function(img){
-    try { img.draggable = false; } catch(e){}
-    img.style.touchAction = img.style.touchAction || 'pan-y';
-    img.style.webkitUserDrag = 'none';
-    img.style.userSelect = 'none';
-  });
-</script>
+<!-- JS: jQuery → LightSlider → init -->
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <script src="js/lightslider.js"></script>
 <script src="js/script.js"></script>
