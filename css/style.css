@@ -256,10 +256,9 @@ nav .menu li a:hover{
   text-align:center;
   width:100%;
   max-width:100px;
-  overflow:hidden;
-  text-overflow:ellipsis;
-  white-space:nowrap;
-  line-height:1.3;
+  overflow:visible;
+  white-space:normal;
+  line-height:1.2;
   display:block !important;
   visibility:visible !important;
   opacity:1 !important;
