@@ -267,6 +267,7 @@
     { "id": "V281", "title": "Yiya", "year": "2025", "channel": "Flow", "genre": "Miniseries", "actors": ["Julieta Zylberberg", "Cristina Banegas", "Pablo Rago"], "orientation": "vertical", "image": "images/verticals/yiya-poster-280x420.png", "subtitle": "Miniseries"},
     { "id": "V282", "title": "Hija del Fuego: La Venganza de la Bastarda", "year": "2025", "channel": "Disney+", "genre": "Thriller", "actors": ["Eugenia Suárez", "Eleonora Wexler", "Diego Cremonesi", "Jerónimo Bosia"], "orientation": "vertical", "image": "images/verticals/hija-del-fuego-poster-280x420.png", "subtitle": "Thriller"},
     { "id": "V283", "title": "Argentina, Tierra de Amor y Venganza 2", "year": "2023", "channel": "Canal 13", "genre": "Telenovela", "actors": ["Justina Bustos", "Federico Amador", "Juan Gil Navarro", "Federico D'Elia"], "orientation": "vertical", "image": "images/verticals/atav-2-poster-280x420.png", "subtitle": "Telenovela"},
+    { "id": "V284", "title": "El Tiempo de las Moscas", "year": "2026", "channel": "Netflix", "genre": "Miniseries", "actors": ["Nancy Dupláa", "Carla Peterson", "Valeria Lois"], "orientation": "vertical", "image": "images/verticals/el-tiempo-de-las-moscas-poster-280x420.png", "subtitle": "Miniseries"},
 
 
 
