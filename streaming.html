@@ -78,6 +78,39 @@
     .slider-v .latest-b-text {
       background: transparent !important;
     }
+    /* CTA simple hacia artículos */
+    .articles-cta-banner {
+      padding: 28px 5vw;
+      background: #0f1319;
+      color: #f5f7fa;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      margin-top: 12px;
+      border-top: 1px solid rgba(255,255,255,0.06);
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    .articles-cta-banner h2 { margin: 0; font-size: 22px; }
+    .articles-cta-banner p { margin: 4px 0 0; color: #d8e2f0; }
+    .articles-cta-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 16px;
+      background: #9ec5ff;
+      color: #0c1118;
+      font-weight: 700;
+      border-radius: 10px;
+      text-decoration: none;
+      white-space: nowrap;
+      transition: transform .1s ease, box-shadow .1s ease;
+    }
+    .articles-cta-link:hover { transform: translateY(-1px); box-shadow: 0 8px 20px rgba(0,0,0,0.25); }
+    @media (max-width: 640px){
+      .articles-cta-banner { flex-direction: column; align-items: flex-start; }
+      .articles-cta-link { width: 100%; justify-content: center; }
+    }
     
     @media (min-width: 768px){ .menu-icon{ display:none; } }
   </style>
@@ -107,6 +140,7 @@
   <!-- Menú -->
   <ul class="menu nav-options">
     <li><a href="streaming.html" aria-current="page">Streaming</a></li>
+    <li><a href="articulos.html">Artículos</a></li>
     <li><a href="tiras_2000.html">Tiras 2000</a></li>
     <li><a href="tiras_2010.html">Tiras 2010</a></li>
     <li><a href="juveniles.html">Juveniles</a></li>
@@ -289,6 +323,15 @@
     <li class="item-d"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/pequenas-victorias-poster-280x420.png" loading="lazy" alt="Pequeñas Victorias, Perdidxs en la Tierra"></div><div class="latest-b-text"><strong>Pequeñas Victorias, Perdidxs en la Tierra</strong><p></p></div></div></li>
     <li class="item-d"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/los-internacionales-poster-280x420.png" loading="lazy" alt="Los Internacionales"></div><div class="latest-b-text"><strong>Los Internacionales</strong><p></p></div></div></li>
   </ul>
+</section>
+
+<!-- CTA hacia artículos -->
+<section class="articles-cta-banner">
+  <div>
+    <h2>¿Buscás notas y entrevistas?</h2>
+    <p>Mirá las reseñas, análisis y entrevistas en nuestra sección de artículos.</p>
+  </div>
+  <a class="articles-cta-link" href="articulos.html">Ir a Artículos <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
 </section>
 
 <!-- footer -->
