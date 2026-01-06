@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Unitarios - Argentina Content</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css?v=2.0" />
+  <link rel="stylesheet" href="css/lightslider.css?v=2.0" />
+
+  <!-- Fuente -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins&display=swap" />
+
+  <!-- Favicons para todos los dispositivos -->
+  <link rel="icon" type="image/png" sizes="32x32" href="images/fav_icon.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="images/fav_icon.png" />
+  <link rel="shortcut icon" href="images/fav_icon.png" />
+  
+  <!-- Apple Touch Icons (iOS/iPad) -->
+  <link rel="apple-touch-icon" sizes="180x180" href="images/fav_icon.png" />
+  <link rel="apple-touch-icon" sizes="152x152" href="images/fav_icon.png" />
+  <link rel="apple-touch-icon" sizes="120x120" href="images/fav_icon.png" />
+  <link rel="apple-touch-icon" sizes="76x76" href="images/fav_icon.png" />
+  
+  <!-- Android Chrome -->
+  <link rel="icon" type="image/png" sizes="192x192" href="images/fav_icon.png" />
+  <link rel="icon" type="image/png" sizes="512x512" href="images/fav_icon.png" />
+  
+  <!-- Meta tags para PWA y móviles -->
+  <meta name="theme-color" content="#2d1b4e" />
+  <meta name="msapplication-TileColor" content="#2d1b4e" />
+  <meta name="msapplication-TileImage" content="images/fav_icon.png" />
+
+  <!-- Font Awesome (CSS) -->
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        referrerpolicy="no-referrer" />
+
+  <!-- Tipografía base segura + hamburguesa + fondo púrpura-azul oscuro para unitarios -->
+  <style>
+    /* IMPORTANTE: Fondo púrpura-azul oscuro para toda la página unitarios.html */
+    body, 
+    html { 
+      font-family: Poppins, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: linear-gradient(135deg, #1a0a2e 0%, #16213e 25%, #0f3460 50%, #16213e 75%, #1a0a2e 100%) !important;
+      background-attachment: fixed !important;
+      min-height: 100vh !important;
+    }
+    
+    /* Eliminar cualquier imagen de fondo que pueda venir del CSS principal */
+    body::before,
+    body::after {
+      display: none !important;
+    }
+    
+    /* Asegurar que todas las secciones mantengan el fondo transparente */
+    section,
+    #main,
+    #latest {
+      background: transparent !important;
+      background-image: none !important;
+    }
+    
+    /* Ajustar el nav para que tenga un fondo semi-transparente sobre el púrpura-azul */
+    .sa-nav {
+      background: rgba(26, 10, 46, 0.95) !important;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    }
+    
+    /* Mejorar contraste de headings sobre fondo púrpura-azul oscuro */
+    .showcase-heading,
+    .latest-heading {
+      color: #e3e6ff !important;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    }
+    
+    /* Texto claro en sliders HORIZONTALES */
+    .slider-h .latest-b-text strong {
+      color: #e3e6ff !important;
+    }
+    
+    .slider-h .latest-b-text p {
+      color: #b8bfde !important;
+    }
+    
+    /* Hacer transparente el fondo completo de sliders verticales */
+    .slider-v .latest-box {
+      background: transparent !important;
+      box-shadow: none !important;
+    }
+    
+    .slider-v .latest-b-text {
+      background: transparent !important;
+    }
+    
+    .slider-v .latest-b-text strong {
+      color: #e3e6ff !important;
+    }
+    
+    .slider-v .latest-b-text p {
+      color: #b8bfde !important;
+    }
+    
+    img{ height:auto; }
+
+    /* Hamburguesa accesible */
+    .menu-btn{
+      position: absolute !important;
+      width: 1px; height: 1px;
+      padding: 0; margin: -1px;
+      overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap;
+      border: 0;
+    }
+    .menu-icon{
+      display: inline-flex; align-items: center; justify-content: center;
+      width: 48px; height: 48px; cursor: pointer; user-select: none;
+    }
+    .nav-icon{
+      position: relative; width: 26px; height: 2px; background: #e3e6ff; display: inline-block;
+      transition: transform .25s ease, background .25s ease;
+    }
+    .nav-icon::before, .nav-icon::after{
+      content: ""; position: absolute; left: 0; width: 26px; height: 2px; background: #e3e6ff;
+      transition: transform .25s ease, top .25s ease, opacity .25s ease;
+    }
+    .nav-icon::before{ top: -8px; }
+    .nav-icon::after{ top: 8px; }
+    .menu-btn:checked + .menu-icon .nav-icon{ background: transparent; }
+    .menu-btn:checked + .menu-icon .nav-icon::before{ transform: rotate(45deg); top: 0; }
+    .menu-btn:checked + .menu-icon .nav-icon::after{ transform: rotate(-45deg); top: 0; }
+    @media (min-width: 768px){ .menu-icon{ display:none; } }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="sa-nav">
+  <a href="index.html" class="logo" aria-label="Argentina Content">
+    <img src="images/logos/argentina-content-logo.PNG" alt="Argentina Content">
+  </a>
+
+  <!-- Buscador -->
+  <form class="search" role="search" id="headerSearch">
+    <input type="search" name="q" placeholder="Encontrá tu Serie Favorita" aria-label="Buscar series" />
+    <button type="submit" class="search-btn" aria-label="Buscar">
+      <i class="fas fa-search" aria-hidden="true"></i>
+    </button>
+  </form>
+
+  <!-- Toggle móvil -->
+  <input class="menu-btn" type="checkbox" id="menu-btn" aria-hidden="true" />
+  <label class="menu-icon" for="menu-btn" aria-label="Abrir menú">
+    <span class="nav-icon" aria-hidden="true"></span>
+  </label>
+
+  <!-- Menú -->
+  <ul class="menu nav-options">
+    <li><a href="streaming.html">Streaming</a></li>
+    <li><a href="tiras_2000.html">Tiras 2000</a></li>
+    <li><a href="tiras_2010.html">Tiras 2010</a></li>
+    <li><a href="juveniles.html">Juveniles</a></li>
+    <li><a href="unitarios.html" aria-current="page">Unitarios</a></li>
+  </ul>
+</nav>
+
+<!-- Destacadas (H) -->
+<section id="main">
+  <h1 class="showcase-heading">ÚLTIMAS</h1>
+  <ul class="slider-h cs-hidden">
+
+    <li class="item-a">
+      <div class="showcase-box">
+        <img src="images/horizontals-1024x576/el-tigre-veron-slide-20124x576.png" loading="lazy" alt="El Tigre Verón"/>
+      </div>
+      <div class="latest-b-text">
+        <strong>El Tigre Verón</strong>
+        <p></p>
+      </div>
+    </li>
+
+    <li class="item-b">
+      <div class="showcase-box">
+        <img src="images/horizontals-1024x576/monzon-slide-1024x576.png" loading="lazy" alt="Monzón"/>
+      </div>
+      <div class="latest-b-text"><strong>Monzón</strong><p></p></div>
+    </li>
+
+    <li class="item-f">
+      <div class="showcase-box">
+        <img src="images/horizontals-1024x576/sandro-la-serie-slide-1024x576.png" loading="lazy" alt="Sandro: La Serie"/>
+      </div>
+      <div class="latest-b-text"><strong>Sandro: La Serie</strong><p></p></div>
+    </li>
+
+    <li class="item-f">
+      <div class="showcase-box">
+        <img src="images/horizontals-1024x576/el-jardin-de-bronce-slide-1024x576.png" loading="lazy" alt="El Jardín de Bronce"/>
+      </div>
+      <div class="latest-b-text"><strong>El Jardín de Bronce</strong><p></p></div>
+    </li>
+
+    <li class="item-d">
+      <div class="showcase-box">
+        <img src="images/horizontals-1024x576/el-marginal-slide-1024x576.png" loading="lazy" alt="El Marginal"/>
+      </div>
+      <div class="latest-b-text"><strong>El Marginal</strong><p></p></div>
+    </li>
+
+    <li class="item-f">
+      <div class="showcase-box">
+        <img src="images/horizontals-1024x576/historia-de-un-clan-slide-1024x576.png" loading="lazy" alt="Historia de un Clan"/>
+      </div>
+      <div class="latest-b-text"><strong>Historia de un Clan</strong><p></p></div>
+    </li>
+
+    <li class="item-f">
+      <div class="showcase-box">
+        <img src="images/horizontals-1024x576/el-puntero-slide-1024x576.png" loading="lazy" alt="El Puntero"/>
+      </div>
+      <div class="latest-b-text"><strong>El Puntero</strong><p></p></div>
+    </li>
+
+    <li class="item-f">
+      <div class="showcase-box">
+        <img src="images/horizontals-1024x576/el-hombre-de-tu-vida-slide-1024x576.png" loading="lazy" alt="El Hombre de tu Vida"/>
+      </div>
+      <div class="latest-b-text"><strong>El Hombre de tu Vida</strong><p></p></div>
+    </li>    
+
+  </ul>
+</section>
+
+<!-- De la TV al streaming (V) -->
+<section id="latest">
+  <h2 class="latest-heading">De la TV al streaming</h2>
+  <ul class="slider-v cs-hidden">
+    <li class="item-b"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/atrapa-un-ladron-poster-280x420.png" loading="lazy" alt="Atrapa a un Ladrón"></div><div class="latest-b-text"><strong>Atrapa a un Ladrón</strong><p></p></div></div></li>
+    <li class="item-d"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/inconvivencia-poster-280x420.png" loading="lazy" alt="Inconvivencia"></div><div class="latest-b-text"><strong>Inconvivencia</strong><p></p></div></div></li>
+    <li class="item-a"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/el-tigre-veron-poster-280x420.png" loading="lazy" alt="El Tigre Verón"></div><div class="latest-b-text"><strong>El Tigre Verón</strong><p></p></div></div></li>
+    <li class="item-d"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/el-mundo-de-mateo-poster-280x420.png" loading="lazy" alt="El Mundo de Mateo"></div><div class="latest-b-text"><strong>El Mundo de Mateo</strong><p></p></div></div></li>
+    <li class="item-a"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/tu-parte-del-trato-poster-280x420.png" loading="lazy" alt="Tu Parte del Trato"></div><div class="latest-b-text"><strong>Tu Parte del Trato</strong><p></p></div></div></li>
+    <li class="item-a"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/otros-pecados-poster-280x420.png" loading="lazy" alt="Otros Pecados"></div><div class="latest-b-text"><strong>Otros Pecados</strong><p></p></div></div></li>
+    <li class="item-e"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/morir-de-amor-poster-280x420.png" loading="lazy" alt="Morir de Amor"></div><div class="latest-b-text"><strong>Morir de Amor</strong><p></p></div></div></li>
+    <li class="item-e"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/el-lobista-poster-280x420.png" loading="lazy" alt="El Lobista"></div><div class="latest-b-text"><strong>El Lobista</strong><p></p></div></div></li>
+    <li class="item-g"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/rizhoma-hotel-poster-280x420.png" loading="lazy" alt="Rizhoma Hotel"></div><div class="latest-b-text"><strong>Rizhoma Hotel</strong><p></p></div></div></li>
+    <li class="item-g"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/el-maestro-poster-280x420.png" loading="lazy" alt="El Maestro"></div><div class="latest-b-text"><strong>El Maestro</strong><p></p></div></div></li>
+    <li class="item-g"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/la-fragilidad-cuerpos-poster-280x420.png" loading="lazy" alt="La Fragilidad de los Cuerpos"></div><div class="latest-b-text"><strong>La Fragilidad de los Cuerpos</strong><p></p></div></div></li>
+    <li class="item-c"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/supermax-poster-280x420.png" loading="lazy" alt="Supermax"></div><div class="latest-b-text"><strong>Supermax</strong><p></p></div></div></li>
+    <li class="item-c"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/un-gallo-para-esculapio-poster-280x420.png" loading="lazy" alt="Un Gallo para Esculapio"></div><div class="latest-b-text"><strong>Un Gallo para Esculapio</strong><p></p></div></div></li>
+    <li class="item-c"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/el-marginal-poster-280x420.png" loading="lazy" alt="El Marginal"></div><div class="latest-b-text"><strong>El Marginal</strong><p></p></div></div></li>
+    <li class="item-c"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/signos-poster-280x420.png" loading="lazy" alt="Signos"></div><div class="latest-b-text"><strong>Signos</strong><p></p></div></div></li>
+    <li class="item-c"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/historia-de-un-clan-poster-280x420.png" loading="lazy" alt="Historia de un Clan"></div><div class="latest-b-text"><strong>Historia de un Clan</strong><p></p></div></div></li>
+  </ul>
+</section>
+
+<!-- Lanzamientos del cable (V) -->
+<section id="latest">
+  <h2 class="latest-heading">Lanzamientos del cable</h2>
+  <ul class="slider-v cs-hidden">
+    <li class="item-f"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/monzon-poster-280x420.png" loading="lazy" alt="Monzón"></div><div class="latest-b-text"><strong>Monzón</strong><p></p></div></div></li>
+    <li class="item-b"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/el-host-poster-280x420.png" loading="lazy" alt="El Host"></div><div class="latest-b-text"><strong>El Host</strong><p></p></div></div></li>
+    <li class="item-a"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/el-jardin-de-bronce-poster-280x420.png" loading="lazy" alt="El Jardín de Bronce"></div><div class="latest-b-text"><strong>El Jardín de Bronce</strong><p></p></div></div></li>
+    <li class="item-d"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/psiconautas-poster-280x420.png" loading="lazy" alt="Psiconautas"></div><div class="latest-b-text"><strong>Psiconautas</strong><p></p></div></div></li>
+    <li class="item-d"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/vigilantes-poster-280x420.png" loading="lazy" alt="Vigilantes"></div><div class="latest-b-text"><strong>Vigilantes</strong><p></p></div></div></li>
+    <li class="item-a"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/nafta-super-poster-280x420.png" loading="lazy" alt="Nafta Súper"></div><div class="latest-b-text"><strong>Nafta Súper</strong><p></p></div></div></li>
+    <li class="item-b"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/30-dias-juntos-poster-280x420.png" loading="lazy" alt="30 Días Juntos"></div><div class="latest-b-text"><strong>30 Días Juntos</strong><p></p></div></div></li>
+    <li class="item-b"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/impostores-poster-280x420.png" loading="lazy" alt="Impostores"></div><div class="latest-b-text"><strong>Impostores</strong><p></p></div></div></li>
+    <li class="item-g"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/epitafios-poster-280x420.png" loading="lazy" alt="Epitafios"></div><div class="latest-b-text"><strong>Epitafios</strong><p></p></div></div></li>
+  </ul>
+</section>
+
+<!-- Grandes Éxitos (H) -->
+<section id="main">
+  <h1 class="showcase-heading">Exitos del 2000</h1>
+  <ul class="slider-h cs-hidden">
+    <li class="item-a"><div class="showcase-box"><img src="images/horizontals-1024x576/para-vestir-santos-slide-1024x576.png" loading="lazy" alt="Para Vestir Santos"/></div><div class="latest-b-text"><strong>Para Vestir Santos</strong><p></p></div></li>
+    <li class="item-b"><div class="showcase-box"><img src="images/horizontals-1024x576/hermanos-detectives-slide-1024x576.png" loading="lazy" alt="Hermanos y Detectives"/></div><div class="latest-b-text"><strong>Hermanos y Detectives</strong><p></p></div></li>
+    <li class="item-b"><div class="showcase-box"><img src="images/horizontals-1024x576/los-simuladores-slide-1024x576.png" loading="lazy" alt="Los Simuladores"/></div><div class="latest-b-text"><strong>Los Simuladores</strong><p></p></div></li>
+    <li class="item-b"><div class="showcase-box"><img src="images/horizontals-1024x576/tumberos-slide-1024x576.png" loading="lazy" alt="Tumberos"/></div><div class="latest-b-text"><strong>Tumberos</strong><p></p></div></li>
+    <li class="item-b"><div class="showcase-box"><img src="images/horizontals-1024x576/okupas-slide-1024x576.png" loading="lazy" alt="Okupas"/></div><div class="latest-b-text"><strong>Okupas</strong><p></p></div></li>
+    <li class="item-b"><div class="showcase-box"><img src="images/horizontals-1024x576/tiempo-final-slide-1024x576.png" loading="lazy" alt="Tiempo Final"/></div><div class="latest-b-text"><strong>Tiempo Final</strong><p></p></div></li>
+    <li class="item-b"><div class="showcase-box"><img src="images/horizontals-1024x576/vulnerables-slide-1024x576.png" loading="lazy" alt="Vulnerables"/></div><div class="latest-b-text"><strong>Vulnerables</strong><p></p></div></li>
+  </ul>
+</section>
+
+<!-- Dramas (V) -->
+<section id="latest">
+  <h2 class="latest-heading">Suspenso/Crimen</h2>
+  <ul class="slider-v cs-hidden">
+    <li class="item-c"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/el-puntero-poster-280x420.png" loading="lazy" alt="El Puntero"></div><div class="latest-b-text"><strong>El Puntero</strong><p></p></div></div></li>
+    <li class="item-d"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/el-hombre-que-volvio-de-la-muerte-poster-280x420.png" loading="lazy" alt="El Hombre que volvió de la Muerte"></div><div class="latest-b-text"><strong>El Hombre que volvió de la Muerte</strong><p></p></div></div></li>
+    <li class="item-e"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/hermanos-y-detectives-poster-280x420.png" loading="lazy" alt="Hermanos y Detectives"></div><div class="latest-b-text"><strong>Hermanos y Detectives</strong><p></p></div></div></li>
+    <li class="item-e"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/criminal-poster-280x420.png" loading="lazy" alt="Criminal"></div><div class="latest-b-text"><strong>Criminal</strong><p></p></div></div></li>
+    <li class="item-b"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/sangre-fria-poster-280x420.png" loading="lazy" alt="Sangre Fria"></div><div class="latest-b-text"><strong>Sangre Fria</strong><p></p></div></div></li>
+    <li class="item-e"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/tumberos-poster-280x420.png" loading="lazy" alt="Tumberos"></div><div class="latest-b-text"><strong>Tumberos</strong><p></p></div></div></li>
+    <li class="item-e"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/los-simuladores-poster-280x420.png" loading="lazy" alt="Los Simuladores"></div><div class="latest-b-text"><strong>Los Simuladores</strong><p></p></div></div></li>
+    <li class="item-a"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/el-hacker-poster-280x420.png" loading="lazy" alt="El Hacker"></div><div class="latest-b-text"><strong>El Hacker</strong><p></p></div></div></li>
+    <li class="item-a"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/okupas-poster-280x420.png" loading="lazy" alt="Okupas"></div><div class="latest-b-text"><strong>Okupas</strong><p></p></div></div></li>
+  </ul>
+</section>
+
+<!-- Miniseries -->
+<section id="latest">
+  <h2 class="latest-heading">Dramas</h2>
+  <ul class="slider-v cs-hidden">
+    <li class="item-a"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/sandro-la-serie-poster-280x420.png" loading="lazy" alt="Sandro: La Serie"></div><div class="latest-b-text"><strong>Sandro: La Serie</strong><p></p></div></div></li>
+    <li class="item-a"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/condicionados-poster-280x420.png" loading="lazy" alt="Condicionados"></div><div class="latest-b-text"><strong>Condicionados</strong><p></p></div></div></li>
+    <li class="item-a"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/tiempos-compulsivos-poster-280x420.png" loading="lazy" alt="Tiempos Compulsivos"></div><div class="latest-b-text"><strong>Tiempos Compulsivos</strong><p></p></div></div></li>
+    <li class="item-b"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/para-vestir-santos-poster-280x420.png" loading="lazy" alt="Para Vestir Santos"></div><div class="latest-b-text"><strong>Para Vestir Santos</strong><p></p></div></div></li>
+    <li class="item-c"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/tratame-bien-poster-280x420.png" loading="lazy" alt="Tratame Bien"></div><div class="latest-b-text"><strong>Tratame Bien</strong><p></p></div></div></li>
+    <li class="item-d"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/mitos-poster-280x420.png" loading="lazy" alt="Mitos"></div><div class="latest-b-text"><strong>Mitos</strong><p></p></div></div></li>
+    <li class="item-d"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/ambiciones-poster-280x420.png" loading="lazy" alt="Ambiciones"></div><div class="latest-b-text"><strong>Ambiciones</strong><p></p></div></div></li>
+    <li class="item-d"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/locas-de-amor-poster-280x420.png" loading="lazy" alt="Locas de Amor"></div><div class="latest-b-text"><strong>Locas de Amor</strong><p></p></div></div></li>
+    <li class="item-d"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/historias-de-sexo-gente-comun-poster-280x420.png" loading="lazy" alt="Historias de Sexo de Gente Común"></div><div class="latest-b-text"><strong>Historias de Sexo de Gente Común</strong><p></p></div></div></li>
+    <li class="item-d"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/disputas-poster-280x420.png" loading="lazy" alt="Disputas"></div><div class="latest-b-text"><strong>Disputas</strong><p></p></div></div></li>
+    <li class="item-d"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/culpables-poster-280x420.png" loading="lazy" alt="Culpables"></div><div class="latest-b-text"><strong>Culpables</strong><p></p></div></div></li>
+    <li class="item-d"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/cuatro-amigas-poster-280x420.png" loading="lazy" alt="Cuatro Amigas"></div><div class="latest-b-text"><strong>Cuatro Amigas</strong><p></p></div></div></li>
+    <li class="item-d"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/vulnerables-poster-280x420.png" loading="lazy" alt="Vulnerables"></div><div class="latest-b-text"><strong>Vulnerables</strong><p></p></div></div></li>
+  </ul>
+</section>
+
+<!-- Comedias -->
+<section id="latest">
+  <h2 class="latest-heading">Comedias</h2>
+  <ul class="slider-v cs-hidden">
+    <li class="item-d"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/silencios-de-familia-poster-280x420.png" loading="lazy" alt="Silencios de Familia"></div><div class="latest-b-text"><strong>Silencios de Familia</strong><p></p></div></div></li>
+    <li class="item-d"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/qitapenas-poster-280x420.png" loading="lazy" alt="Qitapenas"></div><div class="latest-b-text"><strong>Qitapenas</strong><p></p></div></div></li>
+    <li class="item-d"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/el-donante-poster-280x420.png" loading="lazy" alt="El Donante"></div><div class="latest-b-text"><strong>El Donante</strong><p></p></div></div></li>
+    <li class="item-d"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/mi-problema-con-las-mujeres-poster-280x420.png" loading="lazy" alt="Mi Problema con las Mujeres"></div><div class="latest-b-text"><strong>Mi Problema con las Mujeres</strong><p></p></div></div></li>
+    <li class="item-d"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/el-hombre-de-tu-vida-poster-280x420.png" loading="lazy" alt="El Hombre de tu Vida"></div><div class="latest-b-text"><strong>El Hombre de tu Vida</strong><p></p></div></div></li>
+    <li class="item-d"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/acompanantes-poster-280x420.png" loading="lazy" alt="Acompañantes"></div><div class="latest-b-text"><strong>Acompañantes</strong><p></p></div></div></li>
+    <li class="item-d"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/todos-contra-juan-poster-280x420.png" loading="lazy" alt="Todos contra Juan"></div><div class="latest-b-text"><strong>Todos contra Juan</strong><p></p></div></div></li>
+    <li class="item-d"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/socias-poster-280x420.png" loading="lazy" alt="Socias"></div><div class="latest-b-text"><strong>Socias</strong><p></p></div></div></li>
+    <li class="item-d"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/soy-tu-fan-poster-280x420.png" loading="lazy" alt="Soy Tu Fan"></div><div class="latest-b-text"><strong>Soy Tu Fan</strong><p></p></div></div></li>
+    <li class="item-d"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/amas-de-casa-desesperadas-poster-280x420.png" loading="lazy" alt="Amas de Casa Desesperadas"></div><div class="latest-b-text"><strong>Amas de Casa Desesperadas</strong><p></p></div></div></li>
+    <li class="item-d"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/mosca-smith-poster-280x420.png" loading="lazy" alt="Mosca & Smith"></div><div class="latest-b-text"><strong>Mosca & Smith</strong><p></p></div></div></li>
+    <li class="item-d"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/tres-padres-solteros-poster-280x420.png" loading="lazy" alt="Tres Padres Solteros"></div><div class="latest-b-text"><strong>Tres Padres Solteros</strong><p></p></div></div></li>
+    <li class="item-d"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/durmiendo-con-mi-jefe-poster-280x420.png" loading="lazy" alt="Durmiendo con mi Jefe"></div><div class="latest-b-text"><strong>Durmiendo con mi Jefe</strong><p></p></div></div></li>
+    <li class="item-d"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/femenino-masculino-poster-280x420.png" loading="lazy" alt="Femenino/Masculino"></div><div class="latest-b-text"><strong>Femenino/Masculino</strong><p></p></div></div></li>
+  </ul>
+</section>
+
+<!-- Elencos Rotativos -->
+<section id="latest">
+  <h2 class="latest-heading">Elencos Rotativos</h2>
+  <ul class="slider-v cs-hidden">
+    <li class="item-d"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/historias-de-divan-poster-280x420.png" loading="lazy" alt="Historias de Diván"></div><div class="latest-b-text"><strong>Historias de Diván</strong><p></p></div></div></li>
+    <li class="item-d"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/historias-de-corazon-poster-280x420.png" loading="lazy" alt="Historias de Corazón"></div><div class="latest-b-text"><strong>Historias de Corazón</strong><p></p></div></div></li>
+    <li class="item-d"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/al-limite-poster-280x420.png" loading="lazy" alt="Al Límite"></div><div class="latest-b-text"><strong>Al Límite</strong><p></p></div></div></li>
+    <li class="item-d"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/botines-poster-280x420.png" loading="lazy" alt="Botines"></div><div class="latest-b-text"><strong>Botines</strong><p></p></div></div></li>
+    <li class="item-d"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/mujeres-asesinas-poster-280x420.png" loading="lazy" alt="Mujeres Asesinas"></div><div class="latest-b-text"><strong>Mujeres Asesinas</strong><p></p></div></div></li>
+    <li class="item-d"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/infieles-poster-280x420.png" loading="lazy" alt="Infieles"></div><div class="latest-b-text"><strong>Infieles</strong><p></p></div></div></li>
+    <li class="item-d"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/tiempo-final-poster-280x420.png" loading="lazy" alt="Tiempo Final"></div><div class="latest-b-text"><strong>Tiempo Final</strong><p></p></div></div></li>
+  </ul>
+</section>
+
+<!-- footer -->
+<footer>
+  <p>Argentina Content</p>
+  <p>Copyright 2025 by Dherrera</p>
+</footer>
+
+<!-- JS: jQuery → LightSlider → init -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="js/lightslider.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

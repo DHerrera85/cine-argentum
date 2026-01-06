@@ -1,0 +1,452 @@
+/* ========== RESET & BASE ========== */
+*{ box-sizing:border-box; }
+html,body{ margin:0; padding:0; }
+body{
+  font-family:Poppins,system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  background:#141a21;
+  color:#e5e5e5;
+}
+img{ max-width:100%; height:auto; display:block; }
+ul{ list-style:none; padding:0; margin:0; }
+a{ text-decoration:none; color:inherit; }
+
+/* ========== NAVIGATION ========== */
+nav{
+  position:fixed; inset:0 0 auto 0; z-index:100;
+  display:flex; align-items:center; justify-content:space-around;
+  width:100%; background:#fff;
+  box-shadow:0 6px 20px rgba(18,18,18,0.06);
+  padding:14px 18px;
+}
+.logo img{ height:auto; max-height:80px; width:auto; }
+
+/* Buscador */
+.search{
+  position:relative;
+  display:flex; align-items:center; gap:10px;
+  height:40px; padding:0 12px;
+  background:#f1f3f5; border-radius:20px;
+  flex:1 1 auto; min-width:160px; max-width:400px;
+}
+.search input[type="search"]{
+  width:100%; height:28px; border:none; outline:none; background:transparent;
+}
+.search input::placeholder{ color:#9aa0a6; }
+.search .search-btn{
+  width:32px; height:32px; border:0; cursor:pointer;
+  display:inline-flex; align-items:center; justify-content:center;
+  background:#eee; border-radius:50%;
+}
+.search i{ color:#3a3a3a; }
+
+/* Menú desktop */
+nav .menu{ display:flex; }
+nav .menu li a{
+  display:flex; align-items:center; height:40px;
+  padding:0 22px; font-size:.8rem; letter-spacing:1px;
+  text-transform:uppercase; color:#585858; font-weight:500;
+}
+nav .menu li a:hover{
+  background:#242424; color:#fff;
+  box-shadow:5px 10px 30px rgba(53,53,53,.1); transition:.2s ease;
+}
+
+/* Hamburguesa (oculta en desktop) */
+.menu-btn{ position:absolute !important; left:-9999px !important; }
+.menu-icon{
+  display:none; width:40px; height:40px; padding:0;
+  align-items:center; justify-content:center;
+  background:transparent; border:0; cursor:pointer;
+}
+.menu-icon .nav-icon{
+  width:22px; height:2px; background:#222; position:relative; transition:background .2s;
+}
+.menu-icon .nav-icon::before,
+.menu-icon .nav-icon::after{
+  content:""; position:absolute; left:0; width:22px; height:2px; background:#222;
+  transition:transform .2s, top .2s, bottom .2s;
+}
+.menu-icon .nav-icon::before{ top:-7px; }
+.menu-icon .nav-icon::after{ bottom:-7px; }
+.menu-btn:checked + .menu-icon .nav-icon{ background:transparent; }
+.menu-btn:checked + .menu-icon .nav-icon::before{ transform:rotate(45deg); top:0; }
+.menu-btn:checked + .menu-icon .nav-icon::after{ transform:rotate(-45deg); bottom:0; }
+
+/* ========== SECTIONS ========== */
+#main{ padding-top:90px; background:#141a21; }
+#latest{ background:#141a21; }
+
+.showcase-heading,
+.latest-heading,
+.section-heading{
+  font-size:1.05rem; font-weight:700; text-transform:uppercase;
+  letter-spacing:0.6px; color:#f0f0f0; margin:28px 18px 10px; padding:0;
+}
+
+/* Reducir espaciado entre galerías consecutivas (V → H o H → V) */
+#latest + #main,
+#main + #latest{
+  padding-top:8px;
+  margin-top:-18px;
+}
+
+/* ========== SLIDERS - LIGHTSLIDER OVERRIDES ========== */
+.cs-hidden{ overflow:visible !important; }
+.lSSlideWrapper{ transition:height .25s ease; }
+
+/* Flechas con Font Awesome */
+.lSSlideOuter .lSAction a{
+  width:44px; height:44px; border-radius:50%;
+  background:rgba(255,255,255,.95);
+  box-shadow:0 6px 18px rgba(0,0,0,.15);
+  top:45%; transform:translateY(-50%); opacity:1 !important;
+}
+.lSSlideOuter .lSAction > .lSPrev,
+.lSSlideOuter .lSAction > .lSNext{ background:none !important; }
+.lSSlideOuter .lSAction > a::before{
+  font-family:"Font Awesome 6 Free"; font-weight:900; font-size:18px; line-height:44px;
+  display:block; text-align:center; color:#333; content:"";
+}
+.lSSlideOuter .lSAction > .lSPrev::before{ content:"\f104"; }
+.lSSlideOuter .lSAction > .lSNext::before{ content:"\f105"; }
+
+/* Dots */
+.lSSlideOuter .lSPager.lSpg li a{
+  width:8px; height:8px; background:#d9d9d9; border-radius:50%;
+}
+.lSSlideOuter .lSPager.lSpg li.active a,
+.lSSlideOuter .lSPager.lSpg li:hover a{ background:#3963f0; }
+
+/* ========== SLIDER HORIZONTALES (Desktop: lightSlider controla) ========== */
+.slider-h .showcase-box{
+  border-radius:14px; overflow:hidden; background:#1a2129;
+  box-shadow:0 18px 40px rgba(0,0,0,0.4);
+  margin:0 10px 14px;
+}
+.slider-h .showcase-box img{
+  width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; display:block;
+}
+.slider-h .latest-b-text{
+  display:flex; flex-direction:column; align-items:center; justify-content:center;
+  gap:4px; margin:14px 18px 22px; text-align:center;
+}
+.slider-h .latest-b-text strong{ color:#f0f0f0; font-weight:600; }
+.slider-h .latest-b-text p{ color:#9ca3af; margin:0; }
+
+/* ========== SLIDER VERTICALES (Desktop: lightSlider controla) ========== */
+.slider-v .latest-box{
+  border-radius:12px; overflow:hidden; background:#1a2129;
+  box-shadow:0 10px 26px rgba(0,0,0,0.5);
+  display:flex; flex-direction:column; align-items:center;
+  margin:10px 8px;
+}
+.slider-v .latest-b-img{
+  width:100%; 
+  aspect-ratio: 2/3; /* Cambio: usar aspect-ratio en lugar de altura fija */
+  overflow:hidden; 
+  position:relative;
+  border-radius:12px;
+}
+.slider-v .latest-b-img img{
+  width:100%; height:100%; object-fit:cover;
+  object-position:center top; /* Cambio: priorizar la parte superior de la imagen */
+  display:block;
+  border-radius:12px;
+}
+.slider-v .latest-b-text{
+  padding:12px; text-align:center; width:100%;
+  background:#1a2129;
+  border-radius:0 0 12px 12px;
+}
+.slider-v .latest-b-text strong{ color:#f0f0f0; font-weight:600; font-size:0.95rem; display:block; }
+.slider-v .latest-b-text p{ color:#9ca3af; margin:4px 0 0; font-size:0.85rem; }
+
+/* --- TOP 10 ESTILO HBO MAX --- */
+.slider-v.top10 .latest-box{
+  width:200px;
+  margin:10px 6px;
+  position:relative;
+  padding-left:0;
+  border-radius:12px;
+}
+.slider-v.top10 .latest-b-img{
+  aspect-ratio: 2/3; /* Cambio: usar aspect-ratio en lugar de altura fija */
+  position:relative;
+  border-radius:12px;
+}
+.slider-v.top10 .latest-b-img img{
+  object-position:center top; /* Cambio: priorizar la parte superior */
+  border-radius:12px;
+}
+.slider-v.top10 .latest-b-text{
+  border-radius:0 0 12px 12px;
+}
+
+/* Número en esquina superior izquierda */
+.slider-v.top10 .latest-box::before{
+  content: attr(data-rank);
+  position:absolute;
+  left:8px;
+  top:8px;
+  font-size:48px;
+  font-weight:900;
+  color:#fff;
+  font-family:Impact, "Arial Black", sans-serif;
+  line-height:1;
+  z-index:10;
+  text-shadow:
+    2px 2px 4px rgba(0,0,0,0.9),
+    -1px -1px 2px rgba(0,0,0,0.7);
+  padding:4px 8px;
+  background:linear-gradient(135deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.5) 100%);
+  border-radius:4px;
+}
+
+/* ========== SLIDER ACTORES (Circular Gallery HBO Max style) ========== */
+.slider-actors{
+  padding:20px 0 30px;
+  margin:0;
+  display:block;
+  height:auto !important;
+  min-height:160px;
+}
+.slider-actors li{
+  list-style:none;
+  display:inline-block;
+  vertical-align:top;
+  height:auto !important;
+}
+.slider-actors .actor-box{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:flex-start;
+  padding:0;
+  margin:0 auto;
+  width:100px;
+  height:auto !important;
+  min-height:140px;
+}
+.slider-actors .actor-img{
+  width:100px;
+  height:100px;
+  border-radius:50%;
+  overflow:hidden;
+  background:#1a2129;
+  border:2px solid #2a3139;
+  transition:transform 0.3s ease, border-color 0.3s ease;
+  flex-shrink:0;
+  margin-bottom:8px;
+}
+.slider-actors .actor-img:hover{
+  transform:scale(1.05);
+  border-color:#3963f0;
+}
+.slider-actors .actor-img img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center;
+  display:block;
+}
+.slider-actors .actor-name{
+  color:#f0f0f0;
+  font-size:0.72rem;
+  font-weight:600;
+  text-align:center;
+  width:100%;
+  max-width:100px;
+  overflow:visible;
+  white-space:normal;
+  line-height:1.2;
+  display:block !important;
+  visibility:visible !important;
+  opacity:1 !important;
+}
+
+/* Asegurar que el wrapper del slider tenga altura suficiente */
+.slider-actors.lSSlide{
+  height:auto !important;
+}
+.lSSlideOuter.lSrtl .slider-actors,
+.lSSlideOuter .slider-actors{
+  height:auto !important;
+  min-height:160px !important;
+}
+
+/* Ocultar scrollbar horizontal del contenedor del slider */
+.lSSlideOuter{
+  overflow:hidden !important;
+}
+.lSSlideWrapper{
+  overflow:hidden !important;
+  height:auto !important;
+}
+
+/* ========== FOOTER ========== */
+footer{
+  display:flex; flex-direction:row; justify-content:center; align-items:center;
+  gap:20px; flex-wrap:wrap;
+  border-top:1px solid rgba(255,255,255,.1); background:#0f1419; 
+  padding:24px 20px; margin-top:40px;
+}
+footer p{ color:#b0b0b0; margin:0; font-size:.9rem; }
+
+/* ========== RESPONSIVE: TABLET (768px - 1100px) ========== */
+@media (max-width:1100px){
+  nav{ justify-content:space-between; padding:10px 15px; }
+  
+  /* Menú móvil desplegable */
+  nav .menu{
+    display:none; position:absolute;
+    top:calc(100% + 2px); left:0; right:0;
+    background:#fff; border-bottom:4px solid #242424; z-index:1200;
+  }
+  nav .menu li{ width:100%; }
+  nav .menu li a{
+    width:100%; padding:20px 25px;
+    border-bottom:1px solid rgba(38,38,38,.03);
+  }
+  .menu-btn:checked ~ .menu{ display:block; }
+  
+  .menu-icon{ display:inline-flex; }
+  .logo img{ max-height:50px !important; }
+}
+
+/* ========== RESPONSIVE: MÓVIL (< 768px) ========== */
+@media (max-width:768px){
+  nav{
+    display:grid !important;
+    grid-template-columns:auto 1fr auto;
+    align-items:center; gap:8px; padding:8px 10px;
+  }
+  .logo img{ max-height:36px !important; }
+  .search{ height:40px; max-width:none; }
+  
+  /* HORIZONTALES: 1 imagen completa + peek (85% del viewport) */
+  .slider-h .showcase-box{
+    width:85vw;
+    max-width:500px;
+    margin:0 8px 14px;
+  }
+  
+  /* VERTICALES: 2 pósters completos (47% cada uno) */
+  .slider-v .latest-box{
+    width:47vw;
+    max-width:220px;
+    margin:10px 1.5%;
+  }
+  .slider-v .latest-b-img{ 
+    aspect-ratio: 2/3; /* Mantener aspect-ratio */
+    border-radius:12px;
+  }
+  .slider-v .latest-b-img img{
+    object-position:center top; /* Priorizar parte superior */
+    border-radius:12px;
+  }
+  
+  /* TOP 10 MÓVIL: 2 pósters con números en esquina superior */
+  .slider-v.top10 .latest-box{
+    width:42vw;
+    min-width:150px;
+    max-width:170px;
+    padding-left:0;
+    margin:10px 1%;
+  }
+  .slider-v.top10 .latest-b-img{
+    aspect-ratio: 2/3; /* Mantener aspect-ratio */
+    border-radius:12px;
+  }
+  .slider-v.top10 .latest-b-img img{
+    object-position:center top; /* Priorizar parte superior */
+    border-radius:12px;
+  }
+  
+  /* ACTORES MÓVIL: 4 círculos visibles */
+  .slider-actors{
+    min-height:130px;
+    padding:20px 0 25px;
+  }
+  .slider-actors .actor-box{
+    width:65px;
+    min-height:110px;
+  }
+  .slider-actors .actor-img{
+    width:65px;
+    height:65px;
+    border-width:2px;
+    margin-bottom:6px;
+  }
+  .slider-actors .actor-name{
+    font-size:0.65rem;
+    max-width:65px;
+  }
+  
+  /* Footer móvil */
+  footer{
+    flex-direction:column; gap:8px; padding:20px 15px; text-align:center;
+  }
+  footer p{ font-size:.85rem; }
+}
+
+/* ========== RESPONSIVE: MÓVIL PEQUEÑO (< 480px) ========== */
+@media (max-width:480px){
+  /* HORIZONTALES: 1 + peek más ajustado */
+  .slider-h .showcase-box{
+    width:88vw;
+    margin:0 6px 14px;
+  }
+  
+  /* VERTICALES: 2 pósters más compactos */
+  .slider-v .latest-box{
+    width:46vw;
+    min-width:160px;
+    max-width:200px;
+    margin:10px 2%;
+  }
+  .slider-v .latest-b-img{ 
+    aspect-ratio: 2/3; /* Mantener aspect-ratio */
+    border-radius:12px;
+  }
+  .slider-v .latest-b-img img{
+    object-position:center top; /* Priorizar parte superior */
+    border-radius:12px;
+  }
+  
+  /* TOP 10 MÓVIL PEQUEÑO */
+  .slider-v.top10 .latest-box{
+    width:43vw;
+    min-width:145px;
+    max-width:160px;
+    padding-left:0;
+  }
+  .slider-v.top10 .latest-b-img{
+    aspect-ratio: 2/3; /* Mantener aspect-ratio */
+    border-radius:12px;
+  }
+  .slider-v.top10 .latest-b-img img{
+    object-position:center top; /* Priorizar parte superior */
+    border-radius:12px;
+  }
+  
+  /* ACTORES MÓVIL PEQUEÑO: 4 círculos */
+  .slider-actors{
+    min-height:120px;
+  }
+  .slider-actors .actor-box{
+    width:62px;
+    min-height:100px;
+  }
+  .slider-actors .actor-img{
+    width:62px;
+    height:62px;
+    margin-bottom:5px;
+  }
+  .slider-actors .actor-name{
+    font-size:0.62rem;
+    max-width:62px;
+  }
+}
+
+
+

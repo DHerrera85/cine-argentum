@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tiras 2000 - Argentina Content</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css?v=2.0" />
+  <link rel="stylesheet" href="css/lightslider.css?v=2.0" />
+
+  <!-- Fuente -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins&display=swap" />
+
+  <!-- Favicons para todos los dispositivos -->
+  <link rel="icon" type="image/png" sizes="32x32" href="images/fav_icon.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="images/fav_icon.png" />
+  <link rel="shortcut icon" href="images/fav_icon.png" />
+  
+  <!-- Apple Touch Icons (iOS/iPad) -->
+  <link rel="apple-touch-icon" sizes="180x180" href="images/fav_icon.png" />
+  <link rel="apple-touch-icon" sizes="152x152" href="images/fav_icon.png" />
+  <link rel="apple-touch-icon" sizes="120x120" href="images/fav_icon.png" />
+  <link rel="apple-touch-icon" sizes="76x76" href="images/fav_icon.png" />
+  
+  <!-- Android Chrome -->
+  <link rel="icon" type="image/png" sizes="192x192" href="images/fav_icon.png" />
+  <link rel="icon" type="image/png" sizes="512x512" href="images/fav_icon.png" />
+  
+  <!-- Meta tags para PWA y móviles -->
+  <meta name="theme-color" content="#141a21" />
+  <meta name="msapplication-TileColor" content="#141a21" />
+  <meta name="msapplication-TileImage" content="images/fav_icon.png" />
+
+  <!-- Font Awesome (CSS) -->
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        referrerpolicy="no-referrer" />
+
+  <!-- Tipografía base segura + hamburguesa -->
+  <style>
+    body{ font-family: Poppins, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+    img{ height:auto; }
+
+    /* Hamburguesa accesible */
+    .menu-btn{
+      position: absolute !important;
+      width: 1px; height: 1px;
+      padding: 0; margin: -1px;
+      overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap;
+      border: 0;
+    }
+    .menu-icon{
+      display: inline-flex; align-items: center; justify-content: center;
+      width: 48px; height: 48px; cursor: pointer; user-select: none;
+    }
+    .nav-icon{
+      position: relative; width: 26px; height: 2px; background: #555; display: inline-block;
+      transition: transform .25s ease, background .25s ease;
+    }
+    .nav-icon::before, .nav-icon::after{
+      content: ""; position: absolute; left: 0; width: 26px; height: 2px; background: #555;
+      transition: transform .25s ease, top .25s ease, opacity .25s ease;
+    }
+    .nav-icon::before{ top: -8px; }
+    .nav-icon::after{ top: 8px; }
+    .menu-btn:checked + .menu-icon .nav-icon{ background: transparent; }
+    .menu-btn:checked + .menu-icon .nav-icon::before{ transform: rotate(45deg); top: 0; }
+    .menu-btn:checked + .menu-icon .nav-icon::after{ transform: rotate(-45deg); top: 0; }
+    
+    /* Hacer transparente el fondo completo de sliders verticales */
+    .slider-v .latest-box {
+      background: transparent !important;
+      box-shadow: none !important;
+    }
+    
+    .slider-v .latest-b-text {
+      background: transparent !important;
+    }
+    
+    @media (min-width: 768px){ .menu-icon{ display:none; } }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="sa-nav">
+  <a href="index.html" class="logo" aria-label="Argentina Content">
+    <img src="images/logos/argentina-content-logo.PNG" alt="Argentina Content">
+  </a>
+
+  <!-- Buscador -->
+  <form class="search" role="search" id="headerSearch">
+    <input type="search" name="q" placeholder="Encontrá tu Serie Favorita" aria-label="Buscar series" />
+    <button type="submit" class="search-btn" aria-label="Buscar">
+      <i class="fas fa-search" aria-hidden="true"></i>
+    </button>
+  </form>
+
+  <!-- Toggle móvil -->
+  <input class="menu-btn" type="checkbox" id="menu-btn" aria-hidden="true" />
+  <label class="menu-icon" for="menu-btn" aria-label="Abrir menú">
+    <span class="nav-icon" aria-hidden="true"></span>
+  </label>
+
+  <!-- Menú -->
+  <ul class="menu nav-options">
+    <li><a href="streaming.html">Streaming</a></li>
+    <li><a href="tiras_2000.html" aria-current="page">Tiras 2000</a></li>
+    <li><a href="tiras_2010.html">Tiras 2010</a></li>
+    <li><a href="juveniles.html">Juveniles</a></li>
+    <li><a href="unitarios.html">Unitarios</a></li>
+  </ul>
+</nav>
+
+<!-- Comedias Exitosas (H) -->
+<section id="main">
+  <h1 class="showcase-heading">Comedias Exitosas</h1>
+  <ul class="slider-h cs-hidden">
+    <li class="item-f"><div class="showcase-box"><img src="images/horizontals-1024x576/los-exitosos-pells-slide-1024x576.png" loading="lazy" alt="Los Exitosos Pells"/></div><div class="latest-b-text"><strong>Los Exitosos Pells</strong><p></p></div></li>
+    <li class="item-f"><div class="showcase-box"><img src="images/horizontals-1024x576/por-amor-a-vos-slide-1024x576.png" loading="lazy" alt="Por Amor a Vos"/></div><div class="latest-b-text"><strong>Por Amor a Vos</strong><p></p></div></li>
+    <li class="item-f"><div class="showcase-box"><img src="images/horizontals-1024x576/lalola-slide-1024x576.png" loading="lazy" alt="Lalola"/></div><div class="latest-b-text"><strong>Lalola</strong><p></p></div></li>
+    <li class="item-f"><div class="showcase-box"><img src="images/horizontals-1024x576/son-de-fierro-slide-1024x576.png" loading="lazy" alt="Son de Fierro"/></div><div class="latest-b-text"><strong>Son de Fierro</strong><p></p></div></li>
+    <li class="item-f"><div class="showcase-box"><img src="images/horizontals-1024x576/casados-con-hijos-slide-1024x576.png" loading="lazy" alt="Casados con Hijos"/></div><div class="latest-b-text"><strong>Casados con Hijos</strong><p></p></div></li>
+    <li class="item-e"><div class="showcase-box"><img src="images/horizontals-1024x576/sos-mi-vida-slide-1024x576.png" loading="lazy" alt="Sos Mi Vida"/></div><div class="latest-b-text"><strong>Sos Mi Vida</strong><p></p></div></li>
+    <li class="item-c"><div class="showcase-box"><img src="images/horizontals-1024x576/los-roldan-slide-1024x576.png" loading="lazy" alt="Los Roldán"/></div><div class="latest-b-text"><strong>Los Roldán</strong><p></p></div></li>
+    <li class="item-e"><div class="showcase-box"><img src="images/horizontals-1024x576/son-amores-slide-1024x576.png" loading="lazy" alt="Son Amores"/></div><div class="latest-b-text"><strong>Son Amores</strong><p></p></div></li>
+  </ul>
+</section>
+
+<!-- Comedias Estelares (V) -->
+<section id="latest">
+  <h2 class="latest-heading">Comedias Estelares</h2>
+  <ul class="slider-v cs-hidden">
+    <li class="item-d"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/ciega-a-citas-poster-280x420.png" loading="lazy" alt="Ciega a Citas"></div><div class="latest-b-text"><strong>Ciega a Citas</strong><p></p></div></div></li>
+    <li class="item-d"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/los-exitosos-pells-poster-280x420.png" loading="lazy" alt="Los Exitosos Pells"></div><div class="latest-b-text"><strong>Los Exitosos Pells</strong><p></p></div></div></li>
+    <li class="item-d"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/por-amor-a-vos-poster-280x420.png" loading="lazy" alt="Por Amor a Vos"></div><div class="latest-b-text"><strong>Por Amor a Vos</strong><p></p></div></div></li>
+    <li class="item-c"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/lalola-poster-280x420.png" loading="lazy" alt="Lalola"></div><div class="latest-b-text"><strong>Lalola</strong><p></p></div></div></li>
+    <li class="item-f"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/son-de-fierro-poster-280x420.png" loading="lazy" alt="Son de Fierro"></div><div class="latest-b-text"><strong>Son de Fierro</strong><p></p></div></div></li>
+    <li class="item-b"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/gladiadores-de-pompeya-poster-280x420.png" loading="lazy" alt="Gladiadores de Pompeya"></div><div class="latest-b-text"><strong>Gladiadores de Pompeya</strong><p></p></div></div></li>
+    <li class="item-b"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/sos-mi-vida-poster-280x420.png" loading="lazy" alt="Sos Mi Vida"></div><div class="latest-b-text"><strong>Sos Mi Vida</strong><p></p></div></div></li>
+    <li class="item-d"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/sin-codigo-2-poster-280x420.png" loading="lazy" alt="Sin Código"></div><div class="latest-b-text"><strong>Sin Código</strong><p></p></div></div></li>
+    <li class="item-d"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/una-familia-especial-poster-280x420px.png" loading="lazy" alt="Una Familia Especial"></div><div class="latest-b-text"><strong>Una Familia Especial</strong><p></p></div></div></li>
+    <li class="item-f"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/los-secretos-de-papa-poster-280x420.png" loading="lazy" alt="Los Secretos de Papá"></div><div class="latest-b-text"><strong>Los Secretos de Papá</strong><p></p></div></div></li>
+    <li class="item-b"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/los-pensionados-poster-280x420.png" loading="lazy" alt="Los Pensionados"></div><div class="latest-b-text"><strong>Los Pensionados</strong><p></p></div></div></li>
+    <li class="item-b"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/los-roldan-poster-280x-420.png" loading="lazy" alt="Los Roldán"></div><div class="latest-b-text"><strong>Los Roldán</strong><p></p></div></div></li>
+    <li class="item-b"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/costumbres-argentinas-poster-280x420.png" loading="lazy" alt="Costumbres Argentinas"></div><div class="latest-b-text"><strong>Costumbres Argentinas</strong><p></p></div></div></li>
+    <li class="item-b"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/son-amores-poster-280x420.png" loading="lazy" alt="Son Amores"></div><div class="latest-b-text"><strong>Son Amores</strong><p></p></div></div></li>
+    <li class="item-b"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/maridos-a-domicilio-poster-280x420.png" loading="lazy" alt="Maridos a Domicilio"></div><div class="latest-b-text"><strong>Maridos a Domicilio</strong><p></p></div></div></li>
+    <li class="item-e"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/ph-propiedad-horizontal-poster-280x420.png" loading="lazy" alt="PH (Propiedad Horizontal)"></div><div class="latest-b-text"><strong>PH (Propiedad Horizontal)</strong><p></p></div></div></li>
+    <li class="item-e"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/el-sodero-de-mi-vida-poster-280x420.png" loading="lazy" alt="El Sodero de mi Vida"></div><div class="latest-b-text"><strong>El Sodero de mi Vida</strong><p></p></div></div></li>
+    <li class="item-e"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/ilusiones-poster-280x420.png" loading="lazy" alt="Ilusiones Compartidas"></div><div class="latest-b-text"><strong>Ilusiones Compartidas</strong><p></p></div></div></li>
+    <li class="item-e"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/campeones-poster-280x420.png" loading="lazy" alt="Campeones de la Vida"></div><div class="latest-b-text"><strong>Campeones de la Vida</strong><p></p></div></div></li>
+  </ul>
+</section>
+
+<!-- Dramas Exitosos (H) -->
+<section id="main">
+  <h1 class="showcase-heading">DRAMAS EXITOSOS</h1>
+  <ul class="slider-h cs-hidden">
+    <li class="item-f"><div class="showcase-box"><img src="images/horizontals-1024x576/valientes-slide-1024x576.png" loading="lazy" alt="Valientes"/></div><div class="latest-b-text"><strong>Valientes</strong><p></p></div></li>
+    <li class="item-f"><div class="showcase-box"><img src="images/horizontals-1024x576/vidas-robadas-slide-1024x576.png" loading="lazy" alt="Vidas Robadas"/></div><div class="latest-b-text"><strong>Vidas Robadas</strong><p></p></div></li>
+    <li class="item-f"><div class="showcase-box"><img src="images/horizontals-1024x576/montecristo-slide-1024x576.png" loading="lazy" alt="Montecristo"/></div><div class="latest-b-text"><strong>Montecristo</strong><p></p></div></li>
+    <li class="item-f"><div class="showcase-box"><img src="images/horizontals-1024x576/amor-en-custodia-slide-1024x576.png" loading="lazy" alt="Amor en Custodia"/></div><div class="latest-b-text"><strong>Amor en Custodia</strong><p></p></div></li>
+    <li class="item-f"><div class="showcase-box"><img src="images/horizontals-1024x576/padre-coraje-slide-1024x576.png" loading="lazy" alt="Padre Coraje"/></div><div class="latest-b-text"><strong>Padre Coraje</strong><p></p></div></li>
+    <li class="item-d"><div class="showcase-box"><img src="images/horizontals-1024x576/resistire-slide-1024x576.png" loading="lazy" alt="Resistiré"/></div><div class="latest-b-text"><strong>Resistiré</strong><p></p></div></li>
+  </ul>
+</section>
+
+<!-- Telenovelas Estelares (V) -->
+<section id="latest">
+  <h2 class="latest-heading">Telenovelas Estelares</h2>
+  <ul class="slider-v cs-hidden">
+    <li class="item-b"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/valientes-poster-280x420.png" loading="lazy" alt="Valientes"></div><div class="latest-b-text"><strong>Valientes</strong><p></p></div></div></li>
+    <li class="item-e"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/montecristo-poster-280x420.png" loading="lazy" alt="Montecristo"></div><div class="latest-b-text"><strong>Montecristo</strong><p></p></div></div></li>
+    <li class="item-e"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/el-tiempo-no-para-poster-280x420.png" loading="lazy" alt="El Tiempo no Para"></div><div class="latest-b-text"><strong>El Tiempo no Para</strong><p></p></div></div></li>
+    <li class="item-b"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/hombres-de-honor-poster-280x420.png" loading="lazy" alt="Hombres de Honor"></div><div class="latest-b-text"><strong>Hombres de Honor</strong><p></p></div></div></li>
+    <li class="item-a"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/padre-coraje-poster-280x420.png" loading="lazy" alt="Padre Coraje"></div><div class="latest-b-text"><strong>Padre Coraje</strong><p></p></div></div></li>
+    <li class="item-e"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/soy-gitano-poster-280x420.png" loading="lazy" alt="Soy Gitano"></div><div class="latest-b-text"><strong>Soy Gitano</strong><p></p></div></div></li>
+    <li class="item-e"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/franco-buenaventura-poster-280x420.png" loading="lazy" alt="Franco Buenaventura, el Profe"></div><div class="latest-b-text"><strong>Franco Buenaventura, el Profe</strong><p></p></div></div></li>
+    <li class="item-e"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/los-buscas-poster-280x420.png" loading="lazy" alt="Los Buscas de Siempre"></div><div class="latest-b-text"><strong>Los Buscas de Siempre</strong><p></p></div></div></li>
+  </ul>
+</section>
+
+<!-- Policiales (V) -->
+<section id="latest">
+  <h2 class="latest-heading">Policiales</h2>
+  <ul class="slider-v cs-hidden">
+    <li class="item-c"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/botineras-poster-280x420.png" loading="lazy" alt="Botineras"></div><div class="latest-b-text"><strong>Botineras</strong><p></p></div></div></li>
+    <li class="item-b"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/vidas-robadas-poster-280x420.png" loading="lazy" alt="Vidas Robadas"></div><div class="latest-b-text"><strong>Vidas Robadas</strong><p></p></div></div></li>
+    <li class="item-c"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/el-capo-poster-280x420.png" loading="lazy" alt="El Capo"></div><div class="latest-b-text"><strong>El Capo</strong><p></p></div></div></li>
+    <li class="item-c"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/doble-venganza-poster-280x420.png" loading="lazy" alt="Doble Venganza"></div><div class="latest-b-text"><strong>Doble Venganza</strong><p></p></div></div></li>
+    <li class="item-c"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/doble-vida-poster-280x420.png" loading="lazy" alt="Doble Vida"></div><div class="latest-b-text"><strong>Doble Vida</strong><p></p></div></div></li>
+    <li class="item-a"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/el-deseo-poster-280x420.png" loading="lazy" alt="El Deseo"></div><div class="latest-b-text"><strong>El Deseo</strong><p></p></div></div></li>
+    <li class="item-a"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/resistire-poster-280x420.png" loading="lazy" alt="Resistiré"></div><div class="latest-b-text"><strong>Resistiré</strong><p></p></div></div></li>
+    <li class="item-d"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/malandras-poster-280x420.png" loading="lazy" alt="Malandras"></div><div class="latest-b-text"><strong>Malandras</strong><p></p></div></div></li>
+    <li class="item-d"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/099-central-poster-280x420.png" loading="lazy" alt="099 Central"></div><div class="latest-b-text"><strong>099 Central</strong><p></p></div></div></li>
+    <li class="item-d"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/22-el-loco-poster-280x420.png" loading="lazy" alt="22, El Loco"></div><div class="latest-b-text"><strong>22, El Loco</strong><p></p></div></div></li>
+    <li class="item-d"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/primicias-poster-280x420.png" loading="lazy" alt="Primicias"></div><div class="latest-b-text"><strong>Primicias</strong><p></p></div></div></li>
+  </ul>
+</section>
+
+<!-- Sitcoms (V) -->
+<section id="latest">
+  <h2 class="latest-heading">Sitcoms</h2>
+  <ul class="slider-v cs-hidden">
+    <li class="item-d"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/cuando-me-sonreis-poster-420x280.png" loading="lazy" alt="Cuando me Sonreís"></div><div class="latest-b-text"><strong>Cuando me Sonreis</strong><p></p></div></div></li>
+    <li class="item-e"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/aqui-no-hay-quien-viva-poster-420x280.png" loading="lazy" alt="Aquí No Hay Quien Viva"></div><div class="latest-b-text"><strong>Aquí No Hay Quien Viva</strong><p></p></div></div></li>
+    <li class="item-e"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/una-de-dos-poster-280x420.png" loading="lazy" alt="Una de Dos"></div><div class="latest-b-text"><strong>Una de Dos</strong><p></p></div></div></li>
+    <li class="item-a"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/hechizada-poster-280x420.png" loading="lazy" alt="Hechizada"></div><div class="latest-b-text"><strong>Hechizada</strong><p></p></div></div></li>
+    <li class="item-e"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/amo-de-casa-poster-280x420.png" loading="lazy" alt="Amo de Casa"></div><div class="latest-b-text"><strong>Amo de Casa</strong><p></p></div></div></li>
+    <li class="item-a"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/casados-con-hijos-poster-280x420.png" loading="lazy" alt="Casados con Hijos"></div><div class="latest-b-text"><strong>Casados con Hijos</strong><p></p></div></div></li>
+    <li class="item-e"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/quien-es-el-jefe-poster-280x420.png" loading="lazy" alt="¿Quién es el Jefe?"></div><div class="latest-b-text"><strong>¿Quién es el Jefe?</strong><p></p></div></div></li>
+    <li class="item-e"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/amor-mio-poster-280x420.png" loading="lazy" alt="Amor Mío"></div><div class="latest-b-text"><strong>Amor Mio</strong><p></p></div></div></li>
+    <li class="item-c"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/la-ninera-poster-280x420.png" loading="lazy" alt="La Niñera"></div><div class="latest-b-text"><strong>La Niñera</strong><p></p></div></div></li>
+  </ul>
+</section>
+
+<!-- Telenovelas de la Tarde 2000-2009 (V) -->
+<section id="latest">
+  <h2 class="latest-heading">Telenovelas de la Tarde 2000-2009</h2>
+  <ul class="slider-v cs-hidden">
+    <li class="item-e"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/herencia-de-amor-poster-280x420.png" loading="lazy" alt="Herencia de Amor"></div><div class="latest-b-text"><strong>Herencia de Amor</strong><p></p></div></div></li>
+    <li class="item-e"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/valentino-el-argentino-280x420.png" loading="lazy" alt="Valentino, el Argentino"></div><div class="latest-b-text"><strong>Valentino, el Argentino</strong><p></p></div></div></li>
+    <li class="item-e"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/mujeres-de-nadie-segunda-temporada-poster-280x420.png" loading="lazy" alt="Mujeres de Nadie 2008"></div><div class="latest-b-text"><strong>Mujeres de Nadie 2008</strong><p></p></div></div></li>
+    <li class="item-d"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/don-juan-y-su-bella-dama-poster-280x420.png" loading="lazy" alt="Don Juan y su Bella Dama"></div><div class="latest-b-text"><strong>Don Juan y su Bella Dama</strong><p></p></div></div></li>
+    <li class="item-e"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/mujeres-de-nadie-primer-temporada-poster-280x420.png" loading="lazy" alt="Mujeres de Nadie 2007"></div><div class="latest-b-text"><strong>Mujeres de Nadie 2007</strong><p></p></div></div></li>
+    <li class="item-c"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/la-ley-del-amor-poster-280x420.png" loading="lazy" alt="La Ley del Amor"></div><div class="latest-b-text"><strong>La Ley del Amor</strong><p></p></div></div></li>
+    <li class="item-e"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/juanita-la-soltera-poster-280x420.png" loading="lazy" alt="Juanita, la Soltera"></div><div class="latest-b-text"><strong>Juanita, la Soltera</strong><p></p></div></div></li>
+    <li class="item-e"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/collar-de-esmeraldas-poster-280x420.png" loading="lazy" alt="Collar de Esmeraldas"></div><div class="latest-b-text"><strong>Collar de Esmeraldas</strong><p></p></div></div></li>
+    <li class="item-e"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/se-dice-amor-poster-280x420.png" loading="lazy" alt="Se Dice Amor"></div><div class="latest-b-text"><strong>Se Dice Amor</strong><p></p></div></div></li>
+    <li class="item-a"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/salvame-maria-poster-280x420.png" loading="lazy" alt="Sálvame María"></div><div class="latest-b-text"><strong>Sálvame María</strong><p></p></div></div></li>
+    <li class="item-a"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/el-patron-de-la-vereda-poster-280x420.png" loading="lazy" alt="El Patrón de la Vereda"></div><div class="latest-b-text"><strong>El Patrón de la Vereda</strong><p></p></div></div></li>
+    <li class="item-a"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/amor-en-custodia-poster-280x420.png" loading="lazy" alt="Amor en Custodia"></div><div class="latest-b-text"><strong>Amor en Custodia</strong><p></p></div></div></li>
+    <li class="item-e"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/jesus-el-heredero-poster-280x420.png" loading="lazy" alt="Jesús, el Heredero"></div><div class="latest-b-text"><strong>Jesús, el Heredero</strong><p></p></div></div></li>
+    <li class="item-e"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/culpable-de-este-amor-poster-280x420.png" loading="lazy" alt="Culpable de este Amor"></div><div class="latest-b-text"><strong>Culpable de este Amor</strong><p></p></div></div></li>
+    <li class="item-e"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/abre-tus-ojos-poster-280x420.png" loading="lazy" alt="Abre tus Ojos"></div><div class="latest-b-text"><strong>Abre tus Ojos</strong><p></p></div></div></li>
+    <li class="item-e"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/dr-amor-280x420.png" loading="lazy" alt="Dr. Amor"></div><div class="latest-b-text"><strong>Dr. Amor</strong><p></p></div></div></li>
+    <li class="item-e"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/maximo-corazon-poster-280x420.png" loading="lazy" alt="Máximo Corazón"></div><div class="latest-b-text"><strong>Máximo Corazón</strong><p></p></div></div></li>
+    <li class="item-e"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/kachorra-poster-280x420.png" loading="lazy" alt="Kachorra"></div><div class="latest-b-text"><strong>Kachorra</strong><p></p></div></div></li>
+    <li class="item-e"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/mil-millones-poster-280x420.png" loading="lazy" alt="Mil Millones"></div><div class="latest-b-text"><strong>Mil Millones</strong><p></p></div></div></li>
+    <li class="item-d"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/provocame-280x420.png" loading="lazy" alt="Provócame"></div><div class="latest-b-text"><strong>Provócame</strong><p></p></div></div></li>
+    <li class="item-d"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/yago-pasion-morena-280x420.png" loading="lazy" alt="Yago, Pasión Morena"></div><div class="latest-b-text"><strong>Yago, Pasión Morena</strong><p></p></div></div></li>
+    <li class="item-e"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/luna-salvaje-poster-280x420.png" loading="lazy" alt="Luna Salvaje"></div><div class="latest-b-text"><strong>Luna Salvaje</strong><p></p></div></div></li>
+    <li class="item-e"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/amor-latino-280x420.png" loading="lazy" alt="Amor Latino"></div><div class="latest-b-text"><strong>Amor Latino</strong><p></p></div></div></li>
+    <li class="item-e"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/los-medicos-de-hoy-poster-280x420.png" loading="lazy" alt="Los Médicos de Hoy"></div><div class="latest-b-text"><strong>Los Médicos de Hoy</strong><p></p></div></div></li>
+  </ul>
+</section>
+
+<!-- Protagonistas de Latinoamérica (V) -->
+<section id="latest">
+  <h2 class="latest-heading">Protagonistas de Latinoamérica</h2>
+  <ul class="slider-v cs-hidden">
+    <li class="item-c"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/valentino-el-argentino-280x420.png" loading="lazy" alt="Valentino, el Argentino"></div><div class="latest-b-text"><strong>Valentino, el Argentino</strong><p></p></div></div></li>
+    <li class="item-d"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/yago-pasion-morena-280x420.png" loading="lazy" alt="Yago, Pasión Morena"></div><div class="latest-b-text"><strong>Yago, Pasión Morena</strong><p></p></div></div></li>
+    <li class="item-d"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/provocame-280x420.png" loading="lazy" alt="Provócame"></div><div class="latest-b-text"><strong>Provócame</strong><p></p></div></div></li>
+    <li class="item-e"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/dr-amor-280x420.png" loading="lazy" alt="Dr. Amor"></div><div class="latest-b-text"><strong>Dr. Amor</strong><p></p></div></div></li>
+    <li class="item-e"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/amor-latino-280x420.png" loading="lazy" alt="Amor Latino"></div><div class="latest-b-text"><strong>Amor Latino</strong><p></p></div></div></li>
+  </ul>
+</section>
+
+<!-- footer -->
+<footer>
+  <p>Argentina Content</p>
+  <p>Copyright 2025 by Dherrera</p>
+</footer>
+
+<!-- JS: jQuery → LightSlider → init -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="js/lightslider.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
