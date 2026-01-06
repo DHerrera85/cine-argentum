@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{{ title }}</title>
+  <meta name="description" content="{{ description }}" />
+  <link rel="stylesheet" href="/css/style.css?v=2.0" />
+  <link rel="stylesheet" href="/css/articles.css?v=1.0" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/fav_icon.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/fav_icon.png" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="{{ title }}" />
+  <meta property="og:description" content="{{ description }}" />
+  {% if featured_image %}<meta property="og:image" content="{{ featured_image }}" />{% endif %}
+  <meta property="article:published_time" content="{{ date | date("yyyy-MM-dd") }}" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "NewsArticle",
+    "headline": "{{ title }}",
+    "description": "{{ description }}",
+    "image": "{{ featured_image }}",
+    "datePublished": "{{ date | date("yyyy-MM-dd") }}",
+    "dateModified": "{{ date | date("yyyy-MM-dd") }}",
+    "author": { "@type": "Organization", "name": "Argentina Content" },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Argentina Content",
+      "logo": {"@type": "ImageObject", "url": "/images/logos/argentina-content-logo.PNG"}
+    }
+  }
+  </script>
+</head>
+<body class="articles-page">
+  {% include "partials/nav.njk" %}
+  <main class="articles-layout" style="padding-top: 32px;">
+    <article class="article-card" style="max-width: 880px; margin: 0 auto; box-shadow:none; border:0; background:transparent;">
+      {% if featured_image %}
+      <div class="article-media" style="border-radius:14px; overflow:hidden; margin-bottom:16px;">
+        <img src="{{ featured_image }}" alt="{{ title }}" loading="lazy" />
+      </div>
+      {% endif %}
+      <div class="article-body" style="padding:0;">
+        <div class="article-tags">
+          {% for tag in tags %}<span class="article-tag">{{ tag }}</span>{% endfor %}
+        </div>
+        <h1 class="article-title" style="font-size: clamp(28px, 4vw, 36px);">{{ title }}</h1>
+        <p class="article-excerpt">{{ description }}</p>
+        <div class="article-meta">
+          <span><i class="fa-regular fa-clock" aria-hidden="true"></i> {{ reading_time }} min</span>
+          <span>{{ date | date("dd/MM/yyyy") }}</span>
+        </div>
+        <div class="article-body" style="padding:16px 0 0;">
+          {{ content | safe }}
+        </div>
+      </div>
+    </article>
+  </main>
+  {% include "partials/footer.njk" %}
+</body>
+</html>
