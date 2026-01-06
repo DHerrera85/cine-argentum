@@ -37,6 +37,6 @@ module.exports = function(eleventyConfig) {
     markdownTemplateEngine: "njk",
     htmlTemplateEngine: "njk",
     templateFormats: ["njk", "md", "html"],
-    pathPrefix: "/cine-argentum/"
+    pathPrefix: "/cine-argentum/" // GitHub Pages path prefix
   };
 };
