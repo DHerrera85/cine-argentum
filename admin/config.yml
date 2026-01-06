@@ -4,6 +4,7 @@ backend:
   branch: main
   auth_endpoint: https://auth.github.com/login
   cms_label_prefix: decap-cms/
+  client_id: Ov23liHAwTo7FUbgJ1cM
 media_folder: "images/articulos"
 public_folder: "/images/articulos"
 publish_mode: editorial_workflow
