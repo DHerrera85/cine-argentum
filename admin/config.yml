@@ -1,6 +1,9 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: DHerrera85/cine-argentum
   branch: main
+  auth_endpoint: https://auth.github.com/login
+  cms_label_prefix: decap-cms/
 media_folder: "images/articulos"
 public_folder: "/images/articulos"
 publish_mode: editorial_workflow
