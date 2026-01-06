@@ -5,6 +5,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ "js": "js" });
   eleventyConfig.addPassthroughCopy({ "admin": "admin" });
   eleventyConfig.addPassthroughCopy({ "data.json": "data.json" });
+  eleventyConfig.addPassthroughCopy("*.html");
 
   // Date filter
   eleventyConfig.addFilter("date", function(date, format) {
@@ -36,7 +37,7 @@ module.exports = function(eleventyConfig) {
     },
     markdownTemplateEngine: "njk",
     htmlTemplateEngine: "njk",
-    templateFormats: ["njk", "md", "html"],
+    templateFormats: ["njk", "md"],
     pathPrefix: "/"
   };
 };
