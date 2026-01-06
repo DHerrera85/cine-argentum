@@ -1,20 +1,12 @@
 backend:
-  name: github
-  repo: DHerrera85/cine-argentum
-  branch: main
-  base_url: https://api.github.com
-  auth_endpoint: api/auth
-  cms_label_prefix: decap-cms/
-  client_id: Ov23liHAwTo7FUbgJ1cM
+  name: disabled
 media_folder: "images/articulos"
 public_folder: "/images/articulos"
-publish_mode: editorial_workflow
 collections:
   - name: "articulos"
     label: "Articulos"
     folder: "content/articulos"
-    create: true
-    slug: "{{slug}}"
+    create: false
     extension: "md"
     format: "frontmatter"
     fields:
