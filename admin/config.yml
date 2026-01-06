@@ -2,7 +2,8 @@ backend:
   name: github
   repo: DHerrera85/cine-argentum
   branch: main
-  auth_endpoint: https://auth.github.com/login
+  base_url: https://api.github.com
+  auth_endpoint: api/auth
   cms_label_prefix: decap-cms/
   client_id: Ov23liHAwTo7FUbgJ1cM
 media_folder: "images/articulos"
