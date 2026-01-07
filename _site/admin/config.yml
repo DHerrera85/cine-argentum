@@ -1,15 +1,12 @@
 backend:
-  name: git-gateway
-  branch: main
+  name: disabled
 media_folder: "images/articulos"
 public_folder: "/images/articulos"
-publish_mode: editorial_workflow
 collections:
   - name: "articulos"
     label: "Articulos"
     folder: "content/articulos"
-    create: true
-    slug: "{{slug}}"
+    create: false
     extension: "md"
     format: "frontmatter"
     fields:
