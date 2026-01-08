@@ -293,7 +293,7 @@
 
       // ACTORES (Circular Gallery)
       $('.slider-actors').lightSlider({
-        item: 5, // 5 en desktop
+        item: 4, // 4 en desktop
         autoWidth: false,
         slideMove: 1,
         slideMargin: 12,
@@ -314,9 +314,9 @@
           }, 100);
         },
         responsive: [
-          { breakpoint: 1100, settings: { item: 5, slideMove: 1, slideMargin: 10 } },
-          { breakpoint: 768,  settings: { item: 4, slideMove: 1, slideMargin: 8 } },
-          { breakpoint: 480,  settings: { item: 4, slideMove: 1, slideMargin: 6 } }
+          { breakpoint: 1100, settings: { item: 4, slideMove: 1, slideMargin: 10 } },
+          { breakpoint: 768,  settings: { item: 3, slideMove: 1, slideMargin: 8 } },
+          { breakpoint: 480,  settings: { item: 3, slideMove: 1, slideMargin: 6 } }
         ]
       });
     });

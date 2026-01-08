@@ -18,3 +18,26 @@
 <li>LightSlider</li>
 <li>Font Awesome</li>
 </ul>
+<h2>Gestión de imágenes</h2>
+<ul>
+<li>Ubicación: usar carpetas dedicadas como <code>images/round-actores</code>, <code>images/verticals</code>, <code>images/horizontals-1024x576</code>.</li>
+<li>Tamaño recomendado: 16:9 para horizontales (~1024x576) y 1:1 para retratos circulares (~100x100 a 400x400); mantener archivos en ~100–300 KB.</li>
+<li>Formatos: preferir JPG/WebP para fotos; PNG solo si hay transparencia imprescindible.</li>
+<li>Nombres: minúsculas y guiones (<code>ricardo-darin.jpg</code>), sin espacios ni acentos en el nombre del archivo.</li>
+<li>Rutas: usar rutas relativas (por ejemplo <code>images/...</code>) para que funcionen tanto en desarrollo local como en GitHub Pages.</li>
+<li>Accesibilidad: completar <code>alt</code> descriptivo en cada imagen.</li>
+<li>Cacheo: si reemplazas un archivo con el mismo nombre y no ves cambios, limpia caché del navegador o versiona el nombre del archivo.</li>
+</ul>
+<h2>Commits y flujo de trabajo</h2>
+<ul>
+<li>Versionar imágenes en el repositorio es conveniente: quedan históricas, viajan con el sitio y se publican automáticamente en GitHub Pages.</li>
+<li>Evitar archivos muy grandes (&gt;1–2 MB) para no inflar el repo; comprimir antes de hacer commit.</li>
+<li>Usar ramas para cambios de contenido: crear <code>content/actores</code> o similar y hacer PR a <code>main</code>.</li>
+<li>Mensajes de commit claros: ejemplo <code>feat(actors): agrega retratos redondos y corrige alt</code>.</li>
+<li>Publicación: al fusionar en <code>main</code>, GitHub Pages despliega automáticamente.</li>
+</ul>
+<h3>Tips de optimización rápida (opcional)</h3>
+<ul>
+<li>PowerShell + ImageMagick instalado: <code>magick mogrify -path images/round-actores -resize 400x400^ -quality 82 images/round-actores/*.jpg</code></li>
+<li>Node + sharp (script aparte): comprimir lote antes de commit.</li>
+</ul>
