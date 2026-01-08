@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cine Argentum</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css?v=2.0" />
+  <link rel="stylesheet" href="css/lightslider.css?v=2.0" />
+
+  <!-- Fuente -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins&display=swap" />
+
+  <!-- Favicons para todos los dispositivos -->
+  <link rel="icon" type="image/png" sizes="32x32" href="images/fav_icon.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="images/fav_icon.png" />
+  <link rel="shortcut icon" href="images/fav_icon.png" />
+  
+  <!-- Apple Touch Icons (iOS/iPad) -->
+  <link rel="apple-touch-icon" sizes="180x180" href="images/fav_icon.png" />
+  <link rel="apple-touch-icon" sizes="152x152" href="images/fav_icon.png" />
+  <link rel="apple-touch-icon" sizes="120x120" href="images/fav_icon.png" />
+  <link rel="apple-touch-icon" sizes="76x76" href="images/fav_icon.png" />
+  
+  <!-- Android Chrome -->
+  <link rel="icon" type="image/png" sizes="192x192" href="images/fav_icon.png" />
+  <link rel="icon" type="image/png" sizes="512x512" href="images/fav_icon.png" />
+  
+  <!-- Meta tags para PWA y móviles -->
+  <meta name="theme-color" content="#141a21" />
+  <meta name="msapplication-TileColor" content="#141a21" />
+  <meta name="msapplication-TileImage" content="images/fav_icon.png" />
+
+  <!-- Font Awesome (CSS) -->
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        referrerpolicy="no-referrer" />
+
+  <!-- Tipografía base segura + hamburguesa -->
+  <style>
+    body{ font-family: Poppins, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+    img{ height:auto; }
+
+    /* Hamburguesa accesible */
+    .menu-btn{
+      position: absolute !important;
+      width: 1px; height: 1px;
+      padding: 0; margin: -1px;
+      overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap;
+      border: 0;
+    }
+    .menu-icon{
+      display: inline-flex; align-items: center; justify-content: center;
+      width: 48px; height: 48px; cursor: pointer; user-select: none;
+    }
+    .nav-icon{
+      position: relative; width: 26px; height: 2px; background: #555; display: inline-block;
+      transition: transform .25s ease, background .25s ease;
+    }
+    .nav-icon::before, .nav-icon::after{
+      content: ""; position: absolute; left: 0; width: 26px; height: 2px; background: #555;
+      transition: transform .25s ease, top .25s ease, opacity .25s ease;
+    }
+    .nav-icon::before{ top: -8px; }
+    .nav-icon::after{ top: 8px; }
+    .menu-btn:checked + .menu-icon .nav-icon{ background: transparent; }
+    .menu-btn:checked + .menu-icon .nav-icon::before{ transform: rotate(45deg); top: 0; }
+    .menu-btn:checked + .menu-icon .nav-icon::after{ transform: rotate(-45deg); top: 0; }
+
+    /* Hacer transparente el fondo completo de sliders verticales */
+    .slider-v .latest-box {
+      background: transparent !important;
+      box-shadow: none !important;
+    }
+    
+    .slider-v .latest-b-text {
+      background: transparent !important;
+    }
+    
+    @media (min-width: 768px){ .menu-icon{ display:none; } }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="sa-nav">
+  <a href="index.html" class="logo" aria-label="Argentina Content">
+    <img src="images/logos/cine-argentum-logo.png" alt="Argentina Content">
+  </a>
+
+  <!-- Buscador -->
+  <form class="search" role="search" id="headerSearch">
+    <input type="search" name="q" placeholder="Encontrá tu Película Favorita" aria-label="Buscar series" />
+    <button type="submit" class="search-btn" aria-label="Buscar">
+      <i class="fas fa-search" aria-hidden="true"></i>
+    </button>
+  </form>
+
+  <!-- Toggle móvil -->
+  <input class="menu-btn" type="checkbox" id="menu-btn" aria-hidden="true" />
+  <label class="menu-icon" for="menu-btn" aria-label="Abrir menú">
+    <span class="nav-icon" aria-hidden="true"></span>
+  </label>
+
+  <!-- Menú -->
+  <ul class="menu nav-options">
+    <li><a href="streaming.html">Streaming</a></li>
+    <li><a href="tiras_2000.html">Tiras 2000</a></li>
+    <li><a href="tiras_2010.html">Tiras 2010</a></li>
+    <li><a href="juveniles.html">Juveniles</a></li>
+    <li><a href="unitarios.html" aria-current="page">Unitarios</a></li>
+  </ul>
+</nav>
+
+<!-- Las Más Taquilleras del 2025 (H) -->
+<section id="main">
+  <h1 class="showcase-heading">LAS MÁS TAQUILLERAS DEL 2025</h1>
+  <ul class="slider-h cs-hidden">
+
+    <li class="item-a">
+      <div class="showcase-box">
+        <img src="images/horizontals-1024x576/homo-argentum-2025-slide-1024x576.png" loading="lazy" alt="Homo Argentum"/>
+      </div>
+      <div class="latest-b-text">
+        <strong>Homo Argentum</strong>
+        <p></p>
+      </div>
+    </li>
+
+    <li class="item-a">
+      <div class="showcase-box">
+        <img src="images/horizontals-1024x576/mazel-tov-2025-slide-1024x576.png" loading="lazy" alt="Mazel Tov"/>
+      </div>
+      <div class="latest-b-text">
+        <strong>Mazel Tov</strong>
+        <p></p>
+      </div>
+    </li>
+
+    <li class="item-a">
+      <div class="showcase-box">
+        <img src="images/horizontals-1024x576/belen-2025-slide-1024x576.png" loading="lazy" alt="Belén"/>
+      </div>
+      <div class="latest-b-text">
+        <strong>Belén</strong>
+        <p></p>
+      </div>
+    </li>
+
+    <li class="item-b">
+      <div class="showcase-box">
+        <img src="images/horizontals-1024x576/el-novio-de-mama-2025-slide-1024x576.png" loading="lazy" alt="El Novio de Mamá"/>
+      </div>
+      <div class="latest-b-text"><strong>El Novio de Mamá</strong><p></p></div>
+    </li>
+
+  </ul>
+</section>
+
+<!-- Las 10 Películas con más espectadoras (2001-2025) (V) -->
+<section id="latest">
+  <h2 class="latest-heading">Las 10 Películas con más espectadores (2001-2025)</h2>
+  <ul class="slider-v top10 cs-hidden">
+    <li class="item-b"><div class="latest-box" data-rank="1"><div class="latest-b-img"><img src="images/verticals/relatos-salvajes-2014-poster-280x420.png" loading="lazy" alt="Relatos Salvajes"></div><div class="latest-b-text"><strong>Relatos Salvajes (2014)</strong><p>4.003.595 espectadores</p></div></div></li>
+    <li class="item-d"><div class="latest-box" data-rank="2"><div class="latest-b-img"><img src="images/verticals/el-clan-2015-poster-280x420.png" loading="lazy" alt="El Clan"></div><div class="latest-b-text"><strong>El Clan (2015)</strong><p>2.652.757 espectadores</p></div></div></li>
+    <li class="item-a"><div class="latest-box" data-rank="3"><div class="latest-b-img"><img src="images/verticals/el-secreto-de-sus-ojos-2009-poster-280x420.png" loading="lazy" alt="El Secreto de sus Ojos"></div><div class="latest-b-text"><strong>El Secreto de sus Ojos (2009)</strong><p>2.457.396 espectadores</p></div></div></li>
+    <li class="item-d"><div class="latest-box" data-rank="4"><div class="latest-b-img"><img src="images/verticals/metegol-2013-poster-280x420.png" loading="lazy" alt="Metegol"></div><div class="latest-b-text"><strong>Metegol (2013)</strong><p>2.139.844 espectadores</p></div></div></li>
+    <li class="item-a"><div class="latest-box" data-rank="5"><div class="latest-b-img"><img src="images/verticals/el-robo-del-siglo-2020-poster-280x420.png" loading="lazy" alt="El Robo del Siglo"></div><div class="latest-b-text"><strong>El Robo del Siglo (2020)</strong><p>2.085.915 espectadores</p></div></div></li>
+    <li class="item-a"><div class="latest-box" data-rank="6"><div class="latest-b-img"><img src="images/verticals/me-case-con-un-boludo-2016-poster-280x420.png" loading="lazy" alt="Me Casé con un Boludo"></div><div class="latest-b-text"><strong>Me Casé con un Boludo (2016)</strong><p>2.027.880 espectadores</p></div></div></li>
+    <li class="item-e"><div class="latest-box" data-rank="7"><div class="latest-b-img"><img src="images/verticals/patoruzito-2004-poster-280x420.png" loading="lazy" alt="Patoruzito"></div><div class="latest-b-text"><strong>Patoruzito (2004)</strong><p>1.966.738 espectadores</p></div></div></li>
+    <li class="item-e"><div class="latest-box" data-rank="8"><div class="latest-b-img"><img src="images/verticals/la-odisea-de-los-giles-2019-poster-280x420.png" loading="lazy" alt="La Odisea de los Giles"></div><div class="latest-b-text"><strong>La Odisea de los Giles (2019)</strong><p>1.841.886 espectadores</p></div></div></li>
+    <li class="item-g"><div class="latest-box" data-rank="9"><div class="latest-b-img"><img src="images/verticals/homo-argentum-2025-poster-280x420.png" loading="lazy" alt="Homo Argentum"></div><div class="latest-b-text"><strong>Homo Argentum (2025)</strong><p>1.827.144 espectadores</p></div></div></li>
+    <li class="item-g"><div class="latest-box" data-rank="10"><div class="latest-b-img"><img src="images/verticals/corazon-de-leon-2013-poster-280x420.png" loading="lazy" alt="Corazón de León"></div><div class="latest-b-text"><strong>Corazón de León (2013)</strong><p>1.746.547 espectadores</p></div></div></li>
+  </ul>
+</section>
+
+<!-- Actores Destacados (Circular Gallery) -->
+<section id="latest">
+  <h2 class="latest-heading">Actores Destacados</h2>
+  <ul class="slider-actors cs-hidden">
+    <li><div class="actor-box"><div class="actor-img"><img src="images/round-actores/ricardo-darin.jpg" loading="lazy" alt="Ricardo Darín"></div><div class="actor-name">Ricardo<br>Darín</div></div></li>
+    <li><div class="actor-box"><div class="actor-img"><img src="images/round-actores/guillermo-francella.jpg" loading="lazy" alt="Guillermo Francella"></div><div class="actor-name">Guillermo<br>Francella</div></div></li>
+    <li><div class="actor-box"><div class="actor-img"><img src="images/round-actores/adrian-suar.jpg" loading="lazy" alt="Adrián Suar"></div><div class="actor-name">Adrián<br>Suar</div></div></li>
+    <li><div class="actor-box"><div class="actor-img"><img src="images/round-actores/natalia-oreiro.jpg" loading="lazy" alt="Natalia Oreiro"></div><div class="actor-name">Natalia<br>Oreiro</div></div></li>
+    <li><div class="actor-box"><div class="actor-img"><img src="images/round-actores/leonardo-sbaraglia.jpg" loading="lazy" alt="Leonardo Sbaraglia"></div><div class="actor-name">Leonardo<br>Sbaraglia</div></div></li>
+    <li><div class="actor-box"><div class="actor-img"><img src="images/round-actores/mercedes-moran.jpg" loading="lazy" alt="Mercedes Morán"></div><div class="actor-name">Mercedes<br>Morán</div></div></li>
+    <li><div class="actor-box"><div class="actor-img"><img src="images/round-actores/cecilia-roth.jpg" loading="lazy" alt="Cecilia Roth"></div><div class="actor-name">Cecilia<br>Roth</div></div></li>
+    <li><div class="actor-box"><div class="actor-img"><img src="images/round-actores/diego-peretti.jpg" loading="lazy" alt="Diego Peretti"></div><div class="actor-name">Diego<br>Peretti</div></div></li>
+    <li><div class="actor-box"><div class="actor-img"><img src="images/round-actores/joaquin-furriel.jpg" loading="lazy" alt="Joaquín Furriel"></div><div class="actor-name">Joaquín<br>Furriel</div></div></li>
+    <li><div class="actor-box"><div class="actor-img"><img src="images/round-actores/valeria-bertucelli.jpg" loading="lazy" alt="Valeria Bertucelli"></div><div class="actor-name">Valeria<br>Bertucelli</div></div></li>
+  </ul>
+</section>
+
+<!-- Thrillers y Policiales (V) -->
+<section id="latest">
+  <h2 class="latest-heading">Thrillers y Policiales</h2>
+  <ul class="slider-v cs-hidden">
+    <li class="item-f"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/hija-del-fuego-poster-280x420.png" loading="lazy" alt="Hija del Fuego: La Venganza de la Bastarda"></div><div class="latest-b-text"><strong>Hija del Fuego: La Venganza de la Bastarda</strong><p></p></div></div></li>
+    <li class="item-f"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/en-el-barro-poster-280x420.png" loading="lazy" alt="En el Barro"></div><div class="latest-b-text"><strong>En el Barro</strong><p></p></div></div></li>
+    <li class="item-b"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/atrapados-poster-280x420.png" loading="lazy" alt="Atrapados"></div><div class="latest-b-text"><strong>Atrapados</strong><p></p></div></div></li>
+    <li class="item-a"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/cromanon-poster-280x420.png" loading="lazy" alt="Cromañón"></div><div class="latest-b-text"><strong>Cromañón</strong><p></p></div></div></li>
+    <li class="item-d"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/diciembre-2001-poster-280x420.png" loading="lazy" alt="Diciembre 2001"></div><div class="latest-b-text"><strong>Diciembre 2001</strong><p></p></div></div></li>
+    <li class="item-d"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/barrabrava-poster-280x420.png" loading="lazy" alt="Barrabrava"></div><div class="latest-b-text"><strong>Barrabrava</strong><p></p></div></div></li>
+    <li class="item-a"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/maria-marta-poster-280x420.png" loading="lazy" alt="María Marta: El Crimen del Country"></div><div class="latest-b-text"><strong>María Marta: El Crimen del Country</strong><p></p></div></div></li>
+    <li class="item-b"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/ultimo-primer-dia-poster-280x420.png" loading="lazy" alt="Último Primer Día"></div><div class="latest-b-text"><strong>Último Primer Día</strong><p></p></div></div></li>
+    <li class="item-b"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/post-mortem-poster-280x420.png" loading="lazy" alt="Post Mortem"></div><div class="latest-b-text"><strong>Post Mortem</strong><p></p></div></div></li>
+    <li class="item-g"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/puerta-7-poster-280x420.png" loading="lazy" alt="Puerta 7"></div><div class="latest-b-text"><strong>Puerta 7</strong><p></p></div></div></li>
+    <li class="item-g"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/el-mundo-de-mateo-poster-280x420.png" loading="lazy" alt="El Mundo de Mateo"></div><div class="latest-b-text"><strong>El Mundo de Mateo</strong><p></p></div></div></li>
+    <li class="item-g"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/el-jardin-de-bronce-poster-280x420.png" loading="lazy" alt="El Jardin de Bronce"></div><div class="latest-b-text"><strong>El Jardin de Bronce</strong><p></p></div></div></li>
+    <li class="item-g"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/el-marginal-poster-280x420.png" loading="lazy" alt="El Marginal"></div><div class="latest-b-text"><strong>El Marginal</strong><p></p></div></div></li>
+  </ul>
+</section>
+
+<!-- Bioseries (H) -->
+<section id="main">
+  <h1 class="showcase-heading">Bioseries</h1>
+  <ul class="slider-h cs-hidden">
+    <li class="item-a"><div class="showcase-box"><img src="images/horizontals-1024x576/cris-miro-slide-1024x576.png" loading="lazy" alt="Cris Miró (Ella)"/></div><div class="latest-b-text"><strong>Cris Miró (Ella)</strong><p></p></div></li>
+    <li class="item-a"><div class="showcase-box"><img src="images/horizontals-1024x576/coppola-slide-1024x576.png" loading="lazy" alt="Coppola, el Representante"/></div><div class="latest-b-text"><strong>Coppola, el Representante</strong><p></p></div></li>
+    <li class="item-b"><div class="showcase-box"><img src="images/horizontals-1024x576/el-amor-despues-del-amor-slide-1024x576.png" loading="lazy" alt="El Amor Después del Amor"/></div><div class="latest-b-text"><strong>El Amor Después del Amor</strong><p></p></div></li>
+    <li class="item-b"><div class="showcase-box"><img src="images/horizontals-1024x576/ringo-slide-1024x576.png" loading="lazy" alt="Ringo: Gloria y Muerte"/></div><div class="latest-b-text"><strong>Ringo: Gloria y Muerte</strong><p></p></div></li>
+    <li class="item-b"><div class="showcase-box"><img src="images/horizontals-1024x576/maradona-slide-1024x576.png" loading="lazy" alt="Maradona: Sueño Bendito"/></div><div class="latest-b-text"><strong>Maradona: Sueño Bendito</strong><p></p></div></li>
+    <li class="item-b"><div class="showcase-box"><img src="images/horizontals-1024x576/apache-slide-1024x576.png" loading="lazy" alt="Apache: La Vida de Carlos Tevez"/></div><div class="latest-b-text"><strong>Apache: La Vida de Carlos Tevez</strong><p></p></div></li>
+  </ul>
+</section>
+
+<!-- Dramas (V) -->
+<section id="latest">
+  <h2 class="latest-heading">Dramas</h2>
+  <ul class="slider-v cs-hidden">
+    <li class="item-c"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/menem-poster-280x420.png" loading="lazy" alt="Menem: El Show del Presidente"></div><div class="latest-b-text"><strong>Menem: El Show del Presidente</strong><p></p></div></div></li>
+    <li class="item-d"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/el-eternauta-poster-280x420.png" loading="lazy" alt="El Eternauta"></div><div class="latest-b-text"><strong>El Eternauta</strong><p></p></div></div></li>
+    <li class="item-e"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/un-leon-en-el-bosque-poster-280x420.png" loading="lazy" alt="Un León en el Bosque"></div><div class="latest-b-text"><strong>Un León en el Bosque</strong><p></p></div></div></li>
+    <li class="item-e"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/coppola-poster-280x420.png" loading="lazy" alt="Coppola, el Representante"></div><div class="latest-b-text"><strong>Coppola, el Representante</strong><p></p></div></div></li>
+    <li class="item-b"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/planners-poster-280x420.png" loading="lazy" alt="Planners"></div><div class="latest-b-text"><strong>Planners</strong><p></p></div></div></li>
+    <li class="item-e"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/el-fin-del-amor-poster-280x420.png" loading="lazy" alt="El Fin del Amor"></div><div class="latest-b-text"><strong>El Fin del Amor</strong><p></p></div></div></li>
+    <li class="item-a"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/limbo-poster-280x420.png" loading="lazy" alt="Limbo...hasta que lo Decida"></div><div class="latest-b-text"><strong>Limbo...hasta que lo Decida</strong><p></p></div></div></li>
+    <li class="item-a"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/el-buen-retiro-poster-280x420.png" loading="lazy" alt="El Buen Retiro"></div><div class="latest-b-text"><strong>El Buen Retiro</strong><p></p></div></div></li>
+    <li class="item-a"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/iosi-poster-280x420.png" loading="lazy" alt="Iosi, el Espía Arrepentido"></div><div class="latest-b-text"><strong>Iosi, el Espía Arrepentido</strong><p></p></div></div></li>
+    <li class="item-a"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/el-reino-poster-280x420.png" loading="lazy" alt="El Reino"></div><div class="latest-b-text"><strong>El Reino</strong><p></p></div></div></li>
+    <li class="item-a"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/edha-poster-280x420.png" loading="lazy" alt="Edha"></div><div class="latest-b-text"><strong>Edha</strong><p></p></div></div></li>
+  </ul>
+</section>
+
+<!-- Thrillers Políticos (H) -->
+<section id="main">
+  <h1 class="showcase-heading">Thrillers Políticos</h1>
+  <ul class="slider-h cs-hidden">
+    <li class="item-a"><div class="showcase-box"><img src="images/horizontals-1024x576/menem-slide-1024x576.png" loading="lazy" alt="Menem: El Show del Presidente"/></div><div class="latest-b-text"><strong>Menem: El Show del Presidente</strong><p></p></div></li>
+    <li class="item-b"><div class="showcase-box"><img src="images/horizontals-1024x576/la-mente-del-poder-slide-1024x576.png" loading="lazy" alt="La Mente del Poder"/></div><div class="latest-b-text"><strong>La Mente del Poder</strong><p></p></div></li>
+    <li class="item-d"><div class="showcase-box"><img src="images/horizontals-1024x576/el-sabor-del-silencio-slide-1024x576.png" loading="lazy" alt="El Sabor del Silencio"/></div><div class="latest-b-text"><strong>El Sabor del Silencio</strong><p></p></div></div></li>
+    <li class="item-e"><div class="showcase-box"><img src="images/horizontals-1024x576/diciembre-2001-slide-1024x576.png" loading="lazy" alt="Diciembre 2001"/></div><div class="latest-b-text"><strong>Diciembre 2001</strong><p></p></div></li>
+    <li class="item-f"><div class="showcase-box"><img src="images/horizontals-1024x576/santa-evita-slide-1024x576.png" loading="lazy" alt="Santa Evita"/></div><div class="latest-b-text"><strong>Santa Evita</strong><p></p></div></li>
+    <li class="item-e"><div class="showcase-box"><img src="images/horizontals-1024x576/iosi-slide-1024x576.png" loading="lazy" alt="Iosi, el Espía Arrepentido"/></div><div class="latest-b-text"><strong>Iosi, el Espía Arrepentido</strong><p></p></div></div></li>
+    <li class="item-e"><div class="showcase-box"><img src="images/horizontals-1024x576/el-reino-slide-1024x576.png" loading="lazy" alt="El Reino"/></div><div class="latest-b-text"><strong>El Reino</strong><p></p></div></li>
+  </ul>
+</section>
+
+<!-- Cine Animado Argentino -->
+<section id="latest">
+  <h2 class="latest-heading">Cine Animado Argentino</h2>
+  <ul class="slider-v cs-hidden">
+    <li class="item-d"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/gigantes-aventura-extraordinaria-2024-poster-280x420.png" loading="lazy" alt="Gigantes: Una Aventura Extraordinaria (2024)"></div><div class="latest-b-text"><strong>Gigantes: Una Aventura Extraordinaria (2024)</strong><p></p></div></div></li>
+    <li class="item-d"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/mini-beat-power-rockers-2022-poster-280x420.png" loading="lazy" alt="Mini Beat Power Rockers (2022)"></div><div class="latest-b-text"><strong>Mini Beat Power Rockers (2022)</strong><p></p></div></div></li>
+    <li class="item-d"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/la-gallina-turuleca-2019-poster-280x420.png" loading="lazy" alt="La Gallina Turuleca (2019)"></div><div class="latest-b-text"><strong>La Gallina Turuleca (2019)</strong><p></p></div></div></li>
+    <li class="item-d"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/la-maquina-que-hace-estrellas-2013-poster-280x420.png" loading="lazy" alt="La Máquina que Hace Estrellas (2013)"></div><div class="latest-b-text"><strong>La Máquina que Hace Estrellas (2013)</strong><p></p></div></div></li>
+    <li class="item-d"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/metegol-2013-poster-280x420.png" loading="lazy" alt="Metegol (2013)"></div><div class="latest-b-text"><strong>Metegol (2013)</strong><p></p></div></div></li>
+    <li class="item-d"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/rodencia-y-el-diente-de-la-princesa-2012-poster-280x420.png" loading="lazy" alt="Rodencia y el Diente de la Princesa (2013)"></div><div class="latest-b-text"><strong>Rodencia y el Diente de la Princesa (2013)</strong><p></p></div></div></li>
+    <li class="item-d"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/soledad-y-larguirucho-2012-poster-280x420.png" loading="lazy" alt="Soledad y Larguirucho (2012)"></div><div class="latest-b-text"><strong>Soledad y Larguirucho (2012)</strong><p></p></div></div></li>
+    <li class="item-d"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/gaturro-2010-poster-280x420.png" loading="lazy" alt="Gaturro: La Película (2010)"></div><div class="latest-b-text"><strong>Gaturro: La Película (2010)</strong><p></p></div></div></li>
+    <li class="item-d"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/plumiferos-2010-poster-280x420.png" loading="lazy" alt="Plumíferos, Aventuras Voladoras (2010)"></div><div class="latest-b-text"><strong>Plumíferos, Aventuras Voladoras (2010)</strong><p></p></div></div></li>
+    <li class="item-d"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/boogie-2009-poster-280x420.png" loading="lazy" alt="Boogie, el Aceitoso (2009)"></div><div class="latest-b-text"><strong>Boogie, el Aceitoso (2009)</strong><p></p></div></div></li>
+    <li class="item-d"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/valentina-2008-poster-280x420.png" loading="lazy" alt="Valentina: La Película (2008)"></div><div class="latest-b-text"><strong>Valentina: La Película (2008)</strong><p></p></div></div></li>
+    <li class="item-d"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/el-raton-perez-2-2008-poster-280x420.png" loading="lazy" alt="El Ratón Pérez (2008)"></div><div class="latest-b-text"><strong>El Ratón Pérez (2008)</strong><p></p></div></div></li>
+    <li class="item-d"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/isidoro-2007-poster-280x420.png" loading="lazy" alt="Isidoro (2007)"></div><div class="latest-b-text"><strong>Isidoro (2007)</strong><p></p></div></div></li>
+    <li class="item-d"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/el-arca-2007-poster-280x420.png" loading="lazy" alt="El Arca (2007)"></div><div class="latest-b-text"><strong>El Arca (2007)</strong><p></p></div></div></li>
+    <li class="item-d"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/el-raton-perez-2006-poster-280x420.png" loading="lazy" alt="El Ratón Pérez (2006)"></div><div class="latest-b-text"><strong>El Ratón Pérez (2006)</strong><p></p></div></div></li>
+    <li class="item-d"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/patoruzito2-pelicula-2006-poster-280x420.png" loading="lazy" alt="Patoruzito 2: La Gran Aventura (2006)"></div><div class="latest-b-text"><strong>Patoruzito 2: La Gran Aventura (2006)</strong><p></p></div></div></li>
+    <li class="item-d"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/teo-cazador-intergalactico-2004-poster-280x420.png" loading="lazy" alt="Teo: Cazador Intergaláctico (2004)"></div><div class="latest-b-text"><strong>Teo: Cazador Intergaláctico (2004)</strong><p></p></div></div></li>
+    <li class="item-d"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/patoruzito-2004-poster-280x420.png" loading="lazy" alt="Patoruzito (2004)"></div><div class="latest-b-text"><strong>Patoruzito (2004)</strong><p></p></div></div></li>
+    <li class="item-d"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/mercano-el-marciano-2002-poster-280x420.png" loading="lazy" alt="Mercano: El Marciano (2002)"></div><div class="latest-b-text"><strong>Mercano: El Marciano (2002)</strong><p></p></div></div></li>
+    <li class="item-d"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/micaela-2002-poster-280x420.png" loading="lazy" alt="Micaela: Una Película Mágica (2002)"></div><div class="latest-b-text"><strong>Micaela: Una Película Mágica (2002)</strong><p></p></div></div></li>
+    <li class="item-d"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/dibu-3-gran-aventura-2002-poster-280x420.png" loading="lazy" alt="Dibu 3: La Gran Aventura (2002)"></div><div class="latest-b-text"><strong>Dibu 3: La Gran Aventura (2002)</strong><p></p></div></div></li>
+    <li class="item-d"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/los-pintin-al-rescate-2000-poster-280x420.png" loading="lazy" alt="Los Pintín al Rescate"></div><div class="latest-b-text"><strong>Los Pintín al Rescate (2000)</strong><p></p></div></div></li>
+    <li class="item-d"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/corazon-pantriste-poster-2000-280x420.png" loading="lazy" alt="Corazón: Las Aventuras de Pantriste (2000)"></div><div class="latest-b-text"><strong>Corazón: Las Aventuras de Pantriste (2000)</strong><p></p></div></div></li>
+    <li class="item-d"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/manuelita-1999-poster-280x420.png" loading="lazy" alt="Manuelita (1999)"></div><div class="latest-b-text"><strong>Manuelita (1999)</strong><p></p></div></div></li>
+    <li class="item-d"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/dibu-2-1998-poster-280x420.png" loading="lazy" alt="Dibu 2: La Venganza de Nasty (1998)"></div><div class="latest-b-text"><strong>Dibu 2: La Venganza de Nasty (1998)</strong><p></p></div></div></li>
+    <li class="item-d"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/dibu-1997-poster-280x420.png" loading="lazy" alt="Dibu, la Película (1997)"></div><div class="latest-b-text"><strong>Dibu, la Película (1997)</strong><p></p></div></div></li>
+  </ul>
+</section>
+
+<!-- footer -->
+<footer>
+  <p>Argentina Content</p>
+  <p>Copyright 2025 by Dherrera</p>
+</footer>
+
+<!-- JS: jQuery → LightSlider → init -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="js/lightslider.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
