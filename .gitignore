@@ -9,10 +9,6 @@ desktop.ini
 *.swp
 *.swo
 
-# Temporales
-*.log
-*.tmp
+# Node/npm (si los necesitas en futuro)
 node_modules/
-
-# Build output (GitHub Actions will build it)
-_site/
+npm-debug.log

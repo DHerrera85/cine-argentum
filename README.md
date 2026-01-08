@@ -1,40 +1,110 @@
-# Cine Argentum
+# Cine Argentum - Argentina Content
 
-Portal de cine argentino con información de películas, actores y directores.
+Portal de contenido audiovisual argentino con información de películas, series, actores y análisis.
 
-## Demo en vivo
-[Ver sitio](https://github.com/DHerrera85/cine-argentum)
-![Preview del sitio](github/preview.png)
+## 🔗 Demo en vivo
+[Ver sitio en GitHub Pages](https://dherrera85.github.io/cine-argentum/)
 
-## Características
+## ✨ Características
 - Diseño responsive (móvil y desktop)
-- Sliders horizontales y verticales
-- Buscador de películas
-- Información de espectadores
+- Sliders de actores y contenido
+- Sección de artículos dinámicos
+- Información de series y películas
+- Buscador integrado
 
-## Tecnologías
-- HTML5
-- CSS3
-- JavaScript
-- LightSlider
-- Font Awesome
+## 🛠 Tecnologías
+- **HTML5 / CSS3 / JavaScript** - Puro y simple
+- **LightSlider** - Para sliders responsivos
+- **Font Awesome** - Iconografía
+- **GitHub Pages** - Hosting estático gratuito
 
-## Gestión de imágenes
-- Ubicación: usar carpetas dedicadas como `images/round-actores`, `images/verticals`, `images/horizontals-1024x576`.
-- Tamaño recomendado: 16:9 para horizontales (~1024x576) y 1:1 para retratos circulares (~100x100 a 400x400); mantener archivos en ~100–300 KB.
-- Formatos: preferir JPG/WebP para fotos; PNG solo si hay transparencia imprescindible.
-- Nombres: minúsculas y guiones (`ricardo-darin.jpg`), sin espacios ni acentos en el nombre del archivo.
-- Rutas: usar rutas relativas (por ejemplo `images/...`) para que funcionen tanto en desarrollo local como en GitHub Pages.
-- Accesibilidad: completar `alt` descriptivo en cada imagen.
-- Cacheo: si reemplazas un archivo con el mismo nombre y no ves cambios, limpia caché del navegador o versiona el nombre del archivo.
+## 📝 Agregar Artículos
 
-## Commits y flujo de trabajo
-- Versionar imágenes en el repositorio es conveniente: quedan históricas, viajan con el sitio y se publican automáticamente en GitHub Pages.
-- Evitar archivos muy grandes (>1–2 MB) para no inflar el repo; comprimir antes de hacer commit.
-- Usar ramas para cambios de contenido: crear `content/actores` o similar y hacer PR a `main`.
-- Mensajes de commit claros: ejemplo `feat(actors): agrega retratos redondos y corrige alt`.
-- Publicación: al fusionar en `main`, GitHub Pages despliega automáticamente.
+### 1. Edita `data/articulos.json`
 
-### Tips de optimización rápida (opcional)
-- PowerShell + ImageMagick instalado: `magick mogrify -path images/round-actores -resize 400x400^ -quality 82 images/round-actores/*.jpg`
-- Node + sharp (script aparte): comprimir lote antes de commit.
+Agrega un nuevo objeto al array:
+
+```json
+{
+  "id": "slug-unico-articulo",
+  "title": "Título del artículo",
+  "description": "Resumen breve (2-3 líneas)",
+  "date": "2026-01-08",
+  "author": "Argentina Content",
+  "featured_image": "/images/articulos/nombre-imagen.jpg",
+  "tags": ["tag1", "tag2", "tag3"],
+  "reading_time": 8,
+  "content": "<h2>Subtítulo</h2><p>Contenido aquí...</p>"
+}
+```
+
+### 2. Contenido HTML
+
+El campo `content` acepta HTML puro:
+- `<h2>`, `<h3>` para subtítulos
+- `<p>` para párrafos
+- `<strong>` para destacar
+
+Ejemplo:
+```html
+"<h2>Título sección</h2>
+<p>Párrafo de contenido.</p>
+<h3>Subsección</h3>
+<p>Más contenido con <strong>énfasis</strong>.</p>"
+```
+
+### 3. Imágenes
+
+- Guardar en `images/articulos/`
+- Formato: JPG (~800x450px, 16:9)
+- Tamaño: ~100-200 KB
+- Nombres: minúsculas, guiones: `perspectivas-series.jpg`
+
+## 📁 Estructura de archivos
+
+```
+articulos.html           # Página de artículos (HTML puro)
+data/
+  └─ articulos.json     # Data de artículos (edita aquí)
+js/
+  ├─ articulos.js       # Script que renderiza artículos
+  ├─ lightslider.js
+  └─ script.js
+css/
+  ├─ style.css          # Estilos globales
+  └─ articles.css       # Estilos de artículos
+images/
+  ├─ articulos/         # Imágenes de artículos
+  ├─ round-actores/
+  ├─ horizontals-*/
+  └─ verticals/
+```
+
+## 🚀 Publicar cambios
+
+```bash
+git add .
+git commit -m "feat: agrega nuevo artículo sobre..."
+git push origin main
+```
+
+Cambios están en vivo en ~30 segundos en GitHub Pages.
+
+## 📸 Gestión de imágenes
+
+| Tipo | Ubicación | Tamaño recomendado | Formato |
+|------|-----------|-------------------|---------|
+| Artículos | `images/articulos/` | 800x450 (16:9) | JPG |
+| Actores | `images/round-actores/` | 300x300 (1:1) | JPG |
+| Horizontales | `images/horizontals-*/` | 1024x576 | JPG |
+| Verticales | `images/verticals/` | Variable | JPG |
+
+**Optimización:** Mantener < 200 KB por imagen.
+
+## 🎯 Notas
+
+- Sin build tools, sin npm, sin dependencias complejas
+- HTML + CSS + JavaScript estándar
+- GitHub Pages hospeda gratis
+- Cambios inmediatos (no requiere build)
+
