@@ -9,11 +9,6 @@ tags: ["análisis", "streaming", "netflix", "disney-plus", "mercado"]
 reading_time: 8
 ---
 
-# Streaming en Argentina 2025: menos series, alianzas estratégicas y las apuestas que llegan en 2026 y 2027
-
-## Tras el boom de producción entre 2021 y 2024, el mercado argentino de streaming atraviesa una etapa de ajuste: menos estrenos originales, más coproducciones, doble ventana con TV abierta y un foco creciente en IP probadas y proyectos "evento"
-
-### Netflix lidera con El Eternauta, Disney+ reorganiza su estrategia local, Flow gana peso con coproducciones y Amazon y HBO Max reducen volumen sin abandonar el mercado
 
 ## Un freno después del boom
 
