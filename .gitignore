@@ -13,3 +13,6 @@ desktop.ini
 *.log
 *.tmp
 node_modules/
+
+# Build output (GitHub Actions will build it)
+_site/
