@@ -56,7 +56,7 @@ permalink: /articulos/
           <div class="article-tags">
             {% for tag in post.data.tags %}<span class="article-tag">{{ tag }}</span>{% endfor %}
           </div>
-          <h2 class="article-title"><a href="{{ post.url | url }}">{{ post.data.title }}</a></h2>
+          <h2 class="article-title"><a href="/cine-argentum{{ post.url }}">{{ post.data.title }}</a></h2>
           <p class="article-excerpt">{{ post.data.description }}</p>
           <div class="article-meta">
             <span><i class="fa-regular fa-clock" aria-hidden="true"></i> {{ post.data.reading_time }} min</span>

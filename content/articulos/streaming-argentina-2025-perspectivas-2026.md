@@ -1,4 +1,5 @@
 ---
+layout: article.njk
 title: "Streaming en Argentina 2025: menos series, alianzas estratégicas y las apuestas que llegan en 2026 y 2027"
 description: "Tras el boom de producción entre 2021 y 2024, el mercado argentino de streaming atraviesa una etapa de ajuste: menos estrenos originales, más coproducciones, doble ventana con TV abierta y un foco creciente en IP probadas y proyectos evento."
 date: 2026-01-08
