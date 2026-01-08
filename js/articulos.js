@@ -1,7 +1,13 @@
 // Cargar y renderizar artículos desde JSON
 async function loadArticulos() {
   try {
-    const response = await fetch('/data/articulos.json');
+    // Detectar ruta base (para GitHub Pages /cine-argentum/)
+    const basePath = window.location.pathname.includes('/cine-argentum/') ? '/cine-argentum' : '';
+    const dataUrl = `${basePath}/data/articulos.json`;
+    
+    const response = await fetch(dataUrl);
+    if (!response.ok) throw new Error('Error loading data');
+    
     const articulos = await response.json();
     
     const container = document.getElementById('articulos-list');
@@ -12,7 +18,7 @@ async function loadArticulos() {
       container.innerHTML = articulos.map(art => `
         <article class="article-card" onclick="showDetail('${art.id}')">
           <div class="article-media">
-            <img src="${art.featured_image}" alt="${art.title}" loading="lazy" />
+            <img src="${basePath}${art.featured_image}" alt="${art.title}" loading="lazy" />
           </div>
           <div class="article-body">
             <div class="article-tags">
@@ -43,7 +49,7 @@ async function loadArticulos() {
           </p>
         </div>
         <div class="article-featured">
-          <img src="${articulo.featured_image}" alt="${articulo.title}" />
+          <img src="${basePath}${articulo.featured_image}" alt="${articulo.title}" />
         </div>
         <div class="article-tags">
           ${articulo.tags.map(tag => `<span class="article-tag">${tag}</span>`).join('')}
@@ -78,7 +84,7 @@ async function loadArticulos() {
     
   } catch (error) {
     console.error('Error loading artículos:', error);
-    document.getElementById('articulos-list').innerHTML = '<p>Error cargando artículos</p>';
+    document.getElementById('articulos-list').innerHTML = '<p style="color: #ccc; padding: 20px;">Error cargando artículos. Asegúrate de abrir la página desde un servidor web (no file://)</p>';
   }
 }
 
