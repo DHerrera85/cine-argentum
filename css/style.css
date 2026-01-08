@@ -223,20 +223,20 @@ nav .menu li a:hover{
   justify-content:flex-start;
   padding:0;
   margin:0 auto;
-  width:100px;
+  width:110px;
   height:auto !important;
-  min-height:140px;
+  min-height:160px;
 }
 .slider-actors .actor-img{
-  width:100px;
-  height:100px;
+  width:110px;
+  height:110px;
   border-radius:50%;
   overflow:hidden;
   background:#1a2129;
   border:2px solid #2a3139;
   transition:transform 0.3s ease, border-color 0.3s ease;
   flex-shrink:0;
-  margin-bottom:8px;
+  margin-bottom:10px;
 }
 .slider-actors .actor-img:hover{
   transform:scale(1.05);
@@ -251,11 +251,11 @@ nav .menu li a:hover{
 }
 .slider-actors .actor-name{
   color:#f0f0f0;
-  font-size:0.72rem;
+  font-size:0.8rem;
   font-weight:600;
   text-align:center;
   width:100%;
-  max-width:100px;
+  max-width:110px;
   overflow:visible;
   white-space:normal;
   line-height:1.2;
@@ -362,24 +362,24 @@ footer p{ color:#b0b0b0; margin:0; font-size:.9rem; }
     border-radius:12px;
   }
   
-  /* ACTORES MÓVIL: 4 círculos visibles */
+  /* ACTORES MÓVIL: 3 círculos visibles, tamaño aumentado */
   .slider-actors{
-    min-height:130px;
+    min-height:140px;
     padding:20px 0 25px;
   }
   .slider-actors .actor-box{
-    width:65px;
-    min-height:110px;
+    width:90px;
+    min-height:130px;
   }
   .slider-actors .actor-img{
-    width:65px;
-    height:65px;
+    width:90px;
+    height:90px;
     border-width:2px;
-    margin-bottom:6px;
+    margin-bottom:8px;
   }
   .slider-actors .actor-name{
-    font-size:0.65rem;
-    max-width:65px;
+    font-size:0.75rem;
+    max-width:90px;
   }
   
   /* Footer móvil */
@@ -429,22 +429,22 @@ footer p{ color:#b0b0b0; margin:0; font-size:.9rem; }
     border-radius:12px;
   }
   
-  /* ACTORES MÓVIL PEQUEÑO: 4 círculos */
+  /* ACTORES MÓVIL PEQUEÑO: 3 círculos, ajuste de tamaño */
   .slider-actors{
-    min-height:120px;
+    min-height:150px;
   }
   .slider-actors .actor-box{
-    width:62px;
-    min-height:100px;
+    width:100px;
+    min-height:140px;
   }
   .slider-actors .actor-img{
-    width:62px;
-    height:62px;
-    margin-bottom:5px;
+    width:100px;
+    height:100px;
+    margin-bottom:8px;
   }
   .slider-actors .actor-name{
-    font-size:0.62rem;
-    max-width:62px;
+    font-size:0.78rem;
+    max-width:100px;
   }
 }
 
