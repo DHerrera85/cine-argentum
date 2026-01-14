@@ -13,14 +13,19 @@
     }
 
     var $ = jQuery;
+    window.faConfig = window.faConfig || { showSynopsisInSearch: false, filterMissingPosters: false };
     var verticalItems = [];
     var horizontalItems = [];
+    var PLACEHOLDER_V = 'images/verticals/placeholder-280x420.svg';
+    var PLACEHOLDER_H = 'images/horizontals-320x180/placeholder-320x180.svg';
 
     // Render helpers
     function renderHorizontalItems($container, items) {
       items.forEach(function (item) {
+        if (window.faConfig.filterMissingPosters && !(item.image && String(item.image).trim())) return;
         var $li = $('<li>').addClass('item-js cs-hidden');
-        var img = '<div class="showcase-box"><img src="' + item.image + '" loading="lazy" alt="' + (item.title || '') + '" /></div>';
+        var src = (item.image && String(item.image).trim()) ? item.image : PLACEHOLDER_H;
+        var img = '<div class="showcase-box"><img src="' + src + '" loading="lazy" alt="' + (item.title || '') + '" /></div>';
         var text = '<div class="latest-b-text"><strong>' + (item.title || '') + '</strong><p>' + (item.subtitle || '') + '</p></div>';
         $li.append(img + text);
         $container.append($li);
@@ -29,8 +34,10 @@
 
     function renderVerticalItems($container, items) {
       items.forEach(function (item) {
+        if (window.faConfig.filterMissingPosters && !(item.image && String(item.image).trim())) return;
         var $li = $('<li>').addClass('item-js cs-hidden');
-        var img = '<div class="latest-box"><div class="latest-b-img"><img src="' + item.image + '" loading="lazy" alt="' + (item.title || '') + '" /></div>';
+        var src = (item.image && String(item.image).trim()) ? item.image : PLACEHOLDER_V;
+        var img = '<div class="latest-box"><div class="latest-b-img"><img src="' + src + '" loading="lazy" alt="' + (item.title || '') + '" /></div>';
         var text = '<div class="latest-b-text"><strong>' + (item.title || '') + '</strong><p>' + (item.subtitle || '') + '</p></div></div>';
         $li.append(img + text);
         $container.append($li);
@@ -114,6 +121,11 @@
           var $link = $('<a>').attr('href', href).css({color:'#222', textDecoration:'none', display:'block'});
           var html = '<strong>' + (it.title||'') + '</strong>' + (it.year ? ' ('+it.year+')' : '');
           html += '<div style="font-size:12px;color:#666;">' + (it.channel||'') + ' • ' + (it.genre||'') + ' • ' + ((it.actors||[]).slice(0,3).join(', ')) + '</div>';
+          if (window.faConfig.showSynopsisInSearch && it.synopsis) {
+            var syn = String(it.synopsis).trim();
+            if (syn.length > 140) syn = syn.slice(0, 140) + '…';
+            html += '<div style="font-size:12px;color:#555;margin-top:4px;">' + syn + '</div>';
+          }
           $link.html(html);
           $link.on('click', function () { $res.hide(); });
           $row.append($link);

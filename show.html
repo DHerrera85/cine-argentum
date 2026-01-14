@@ -51,11 +51,15 @@
         if (!item) { renderNotFound(); return; }
         document.title = item.title + ' — Series Argentinas';
         var actors = (item.actors && item.actors.join(', ')) || '';
+        var placeholderV = 'images/verticals/placeholder-280x420.svg';
+        var imgSrc = (item.image && String(item.image).trim()) ? item.image : placeholderV;
+        var synopsis = (item.synopsis && String(item.synopsis).trim()) ? item.synopsis : 'Próximamente';
         var html = '<div class="card">'
-          + '<div class="poster"><img src="' + item.image + '" alt="' + (item.title||'') + '"></div>'
+          + '<div class="poster"><img src="' + imgSrc + '" alt="' + (item.title||'') + '"></div>'
           + '<div class="meta">'
             + '<h1>' + (item.title || '') + '</h1>'
             + '<div class="sub">' + (item.subtitle || '') + '</div>'
+            + '<div class="synopsis" style="margin:10px 0 16px;line-height:1.5;color:#333;"><strong>Sinopsis:</strong> ' + synopsis + '</div>'
             + '<dl>'
               + '<dt>Año</dt><dd>' + (item.year || '') + '</dd>'
               + '<dt>Canal / Plataforma</dt><dd>' + (item.channel || '') + '</dd>'

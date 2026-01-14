@@ -78,6 +78,69 @@ images/
   ├─ round-actores/
   ├─ horizontals-*/
   └─ verticals/
+
+## ▶️ Servidor local (pruebas)
+
+Para probar `fetch('data.json')` en local, usa el servidor de Python:
+
+```powershell
+& ".\.venv\Scripts\python.exe" -m http.server 5500 -b 127.0.0.1
+# Abrí: http://127.0.0.1:5500/index.html
+```
+
+## 🗃️ Base unificada de series y películas
+
+- El archivo `data.json` contiene la clave `items` con series y películas.
+- Los nuevos registros de películas importados desde Excel incluyen `type: "pelicula"` y, cuando está disponible, `synopsis`.
+- Si falta imagen, se muestra un placeholder automático.
+
+## 🔧 Scripts de mantenimiento (carpeta `tools/`)
+
+1. Importar Excel → `data.json`
+
+```powershell
+& ".\.venv\Scripts\python.exe" ".\tools\merge_excel_to_datajson.py" ".\data\Cine Argentino.xlsx"
+```
+
+2. Asignar posters automáticamente (por título)
+
+```powershell
+# Simulación (no modifica data.json)
+& ".\.venv\Scripts\python.exe" ".\tools\assign_posters.py" --dry-run
+# Actualizar data.json
+& ".\.venv\Scripts\python.exe" ".\tools\assign_posters.py"
+```
+
+3. Sinopsis placeholder para series/TV
+
+```powershell
+& ".\.venv\Scripts\python.exe" ".\tools\set_synopsis_placeholders.py"
+```
+
+4. Arreglar IDs duplicados
+
+```powershell
+# Simulación
+& ".\.venv\Scripts\python.exe" ".\tools\fix_duplicate_ids.py" --dry-run
+# Aplicar cambios
+& ".\.venv\Scripts\python.exe" ".\tools\fix_duplicate_ids.py"
+```
+
+## ⚙️ Config opcional (sliders y búsqueda)
+
+En `js/script.js` podés activar/desactivar:
+
+- `window.faConfig.filterMissingPosters`: `false` por defecto. Si `true`, oculta ítems sin poster real en sliders.
+- `window.faConfig.showSynopsisInSearch`: `false` por defecto. Si `true`, muestra un snippet de sinopsis en resultados de búsqueda.
+
+Ejemplo:
+
+```html
+<script>
+  window.faConfig = { filterMissingPosters: false, showSynopsisInSearch: false };
+  // incluir luego js/script.js
+</script>
+```
 ```
 
 ## 🚀 Publicar cambios
