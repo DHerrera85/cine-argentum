@@ -6,15 +6,32 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <link rel="stylesheet" href="css/style.css" />
   <style>
+    body { color:#e8ecf5; }
     .wrap { max-width:1000px; margin:24px auto; padding:16px; }
     .search-box { display:flex; gap:8px; margin-bottom:12px; }
-    .result { display:flex; gap:12px; padding:10px; border-bottom:1px solid #efefef; }
-    .result img { width:84px; height:auto; border-radius:6px; }
+    .result { display:flex; gap:12px; padding:12px 10px; border-bottom:1px solid rgba(255,255,255,0.07); }
+    .result img { width:84px; height:auto; border-radius:6px; flex:0 0 84px; object-fit:cover; }
     .facets { display:flex; gap:8px; margin-bottom:12px; }
     .pager { margin-top:12px; }
-    /* opcional: estilo del back */
-    .back-link { display:inline-block; margin-bottom:8px; color:#333; text-decoration:none; }
+    h1 { color:#e8ecf5; }
+    #count { color:#d0d6e3; margin-bottom:8px; }
+    .back-link { display:inline-block; margin-bottom:12px; color:#f25c4c; text-decoration:none; font-weight:600; }
     .back-link:hover { text-decoration:underline; }
+    .result a { color:#e9edf7; text-decoration:none; }
+    .result a:hover { text-decoration:underline; }
+    .result .meta-line { color:#b8c2d1; font-size:15px; }
+    .result .actors-line { color:#d7dde8; font-size:13px; }
+    @media (max-width: 900px) {
+      .search-box { flex-direction:column; }
+      .search-box input, .search-box select, .search-box button { width:100%; }
+      .result { align-items:flex-start; }
+    }
+    @media (max-width: 540px) {
+      .wrap { padding:12px; }
+      h1 { font-size:28px; }
+      .result img { width:92px; flex:0 0 92px; }
+      .result { padding:10px 0; }
+    }
   </style>
 </head>
 <body>
@@ -63,8 +80,8 @@
         var $r = $('<div>').addClass('result');
         var img = $('<img>').attr('src', it.image).attr('alt', it.title);
         var $m = $('<div>');
-        var html = '<a href="show.html?id='+encodeURIComponent(it.id)+'"><strong>'+it.title+'</strong></a> '+(it.year?'<span>('+it.year+')</span>':'')+'<div style="color:#666">'+(it.channel||'')+' • '+(it.genre||'')+'</div>';
-        html += '<div style="margin-top:6px; font-size:13px; color:#444;">' + ((it.actors||[]).slice(0,6).join(', ')) + '</div>';
+        var html = '<a href="show.html?id='+encodeURIComponent(it.id)+'"><strong>'+it.title+'</strong></a> '+(it.year?'<span>('+it.year+')</span>':'')+'<div class="meta-line">'+(it.channel||'')+' • '+(it.genre||'')+'</div>';
+        html += '<div class="actors-line" style="margin-top:6px;">' + ((it.actors||[]).slice(0,6).join(', ')) + '</div>';
         $m.html(html);
         $r.append(img).append($m);
         $('#results').append($r);
