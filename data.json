@@ -3815,7 +3815,7 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/educando-a-nina-poster-280x420.png",
-      "subtitle": "Comedia rom├íntica"
+      "subtitle": "Comedia romíntica"
     },
     {
       "id": "v2",
@@ -3835,7 +3835,7 @@
       "id": "v3",
       "title": "Lalola",
       "year": "2007",
-      "channel": "Am├®rica",
+      "channel": "América",
       "genre": "Comedia",
       "actors": [
         "Carla Peterson",
@@ -3850,25 +3850,25 @@
       "title": "Los Exitosos Pells",
       "year": "2008",
       "channel": "Telefe",
-      "genre": "Comedia Dram├ítica",
+      "genre": "Comedia Dramítica",
       "actors": [
         "Carla Peterson",
         "Mike Amigorena"
       ],
       "orientation": "vertical",
       "image": "images/verticals/los-exitosos-pells-poster-280x420.png",
-      "subtitle": "Comedia dram├ítica"
+      "subtitle": "Comedia dramítica"
     },
     {
       "id": "v5",
-      "title": "Se├▒ores Papis",
+      "title": "Señores Papis",
       "year": "2014",
       "channel": "Telefe",
-      "genre": "Comedia Dram├ítica",
+      "genre": "Comedia Dramítica",
       "actors": [
         "Luciano Castro",
-        "Joaqu├¡n Furriel",
-        "Luciano C├íceres"
+        "Joaquán Furriel",
+        "Luciano Cíceres"
       ],
       "orientation": "vertical",
       "image": "images/verticals/senores-papis-poster-280x420.png",
@@ -3879,11 +3879,11 @@
       "title": "Son de Fierro",
       "year": "2007",
       "channel": "Canal 13",
-      "genre": "Comedia Dram├ítica",
+      "genre": "Comedia Dramítica",
       "actors": [
         "Osvaldo Laport",
-        "Mariano Mart├¡nez",
-        "Mar├¡a Valenzuela"
+        "Mariano Martánez",
+        "Maráa Valenzuela"
       ],
       "orientation": "vertical",
       "image": "images/verticals/son-de-fierro-poster-280x420.png",
@@ -3896,7 +3896,7 @@
       "channel": "Telefe",
       "genre": "Comedia",
       "actors": [
-        "Dami├ín De Santo",
+        "Damiín De Santo",
         "Paola Barrientos",
         "Celeste Cid"
       ],
@@ -3921,12 +3921,12 @@
     },
     {
       "id": "v9",
-      "title": "Amar Despu├®s de Amar",
+      "title": "Amar Después de Amar",
       "year": "2017",
       "channel": "Telefe",
       "genre": "Thriller",
       "actors": [
-        "Mariano Mart├¡nez",
+        "Mariano Martánez",
         "Isabel Macedo",
         "Eleonora Wexler",
         "Federico Amador"
@@ -3937,7 +3937,7 @@
     },
     {
       "id": "v10",
-      "title": "Resistir├®",
+      "title": "Resistiré",
       "year": "2003",
       "channel": "Telefe",
       "genre": "Telenovela",
@@ -3958,7 +3958,7 @@
       "actors": [
         "Pablo Echarri",
         "Paola Krum",
-        "Joaqu├¡n Furriel"
+        "Joaquán Furriel"
       ],
       "orientation": "vertical",
       "image": "images/verticals/montecristo-poster-280x420.png",
@@ -3966,14 +3966,14 @@
     },
     {
       "id": "v12",
-      "title": "Entre Can├¡bales",
+      "title": "Entre Canábales",
       "year": "2015",
       "channel": "Telefe",
       "genre": "Policial",
       "actors": [
         "Natalia Oreiro",
-        "Benjam├¡n Vicu├▒a",
-        "Joaqu├¡n Furriel"
+        "Benjamán Vicuña",
+        "Joaquán Furriel"
       ],
       "orientation": "vertical",
       "image": "images/verticals/entre-canibales-poster-280x420.png",
@@ -3986,13 +3986,13 @@
       "channel": "Canal 13",
       "genre": "Telenovela",
       "actors": [
-        "Benjam├¡n Vicu├▒a",
+        "Benjamán Vicuña",
         "Gonzalo Heredia",
-        "Eugenia Su├írez"
+        "Eugenia Suírez"
       ],
       "orientation": "vertical",
       "image": "images/verticals/argentina-tierra-de-amor-y-venganza-2019-poster-280x420.png",
-      "subtitle": "Telenovela hist├│rica"
+      "subtitle": "Telenovela histórica"
     },
     {
       "id": "h2",
@@ -4001,12 +4001,12 @@
       "channel": "Telefe",
       "genre": "Drama",
       "actors": [
-        "Benjam├¡n Vicu├▒a",
+        "Benjamán Vicuña",
         "Paola Krum",
         "Luciano Castro",
         "Mercedes Funes",
         "Jorgelina Aruzzi",
-        "Dami├ín De Santo"
+        "Damiín De Santo"
       ],
       "orientation": "vertical",
       "image": "images/verticals/el-primero-de-nosotros-poster-280x420.png",
@@ -4020,9 +4020,9 @@
       "genre": "Sitcom",
       "actors": [
         "Guillermo Francella",
-        "Florencia Pe├▒a",
+        "Florencia Peña",
         "Luisana Lopilato",
-        "Dar├¡o Lopilato"
+        "Daráo Lopilato"
       ],
       "orientation": "vertical",
       "image": "images/verticals/casados-con-hijos-poster-280x420.png",
@@ -4038,8 +4038,8 @@
         "Gonzalo Heredia",
         "Agustina Cherri",
         "Esteban Lamothe",
-        "Lali Gonz├ílez",
-        "Luciano C├íceres",
+        "Lali Gonzílez",
+        "Luciano Cíceres",
         "Romina Gaetani"
       ],
       "orientation": "vertical",
@@ -4053,9 +4053,9 @@
       "channel": "Canal 13",
       "genre": "Policial",
       "actors": [
-        "Jer├│nimo Bosia",
+        "Jerónimo Bosia",
         "Gabriela Toscano",
-        "Luciano C├íceres",
+        "Luciano Cíceres",
         "Juan Palomino",
         "Romina Gaetani",
         "Gina Mastronicola"
@@ -4066,19 +4066,19 @@
     },
     {
       "id": "h6",
-      "title": "Cien D├¡as para Enamorarse",
+      "title": "Cien Dáas para Enamorarse",
       "year": "2018",
       "channel": "Telefe",
-      "genre": "Comedia Rom├íntica",
+      "genre": "Comedia Romíntica",
       "actors": [
         "Carla Peterson",
-        "Nancy Dupl├ía",
+        "Nancy Duplía",
         "Luciano Castro",
-        "Juan Minuj├¡n"
+        "Juan Minuján"
       ],
       "orientation": "vertical",
       "image": "images/verticals/100-Dias-para-enamorarse-poster-280x420.png",
-      "subtitle": "Comedia rom├íntica"
+      "subtitle": "Comedia romíntica"
     },
     {
       "id": "h7",
@@ -4087,9 +4087,9 @@
       "channel": "Telefe",
       "genre": "Comedia",
       "actors": [
-        "Nancy Dupl├ía",
+        "Nancy Duplía",
         "Daniel Hendler",
-        "Luciano C├íceres",
+        "Luciano Cíceres",
         "Isabel Macedo"
       ],
       "orientation": "vertical",
@@ -4098,12 +4098,12 @@
     },
     {
       "id": "h8",
-      "title": "Los Rold├ín",
+      "title": "Los Roldín",
       "year": "2004",
       "channel": "Telefe",
       "genre": "Comedia",
       "actors": [
-        "Miguel ├üngel Rodr├¡guez",
+        "Miguel üngel Rodráguez",
         "Claribel Medina",
         "Gabriel Goity",
         "Florencia de la V"
@@ -4120,7 +4120,7 @@
       "genre": "Thriller",
       "actors": [
         "Facundo Arana",
-        "Monna Anton├│pulos",
+        "Monna Antonópulos",
         "Soledad Silveyra"
       ],
       "orientation": "vertical",
@@ -4158,14 +4158,14 @@
     },
     {
       "id": "v16",
-      "title": "Ca├¡n y Abel",
+      "title": "Caán y Abel",
       "year": "2010",
       "channel": "Telefe",
       "genre": "Thriller",
       "actors": [
-        "Joaqu├¡n Furriel",
+        "Joaquán Furriel",
         "Julieta Cardinali",
-        "Fabi├ín Vena"
+        "Fabiín Vena"
       ],
       "orientation": "vertical",
       "image": "images/verticals/cain-abel-poster-280x420.png",
@@ -4173,12 +4173,12 @@
     },
     {
       "id": "v17",
-      "title": "Cu├®ntame c├│mo Pas├│",
+      "title": "Cuéntame cómo Pasó",
       "year": "2017",
-      "channel": "TV P├║blica",
+      "channel": "TV Püblica",
       "genre": "Drama",
       "actors": [
-        "Nicol├ís Cabr├®",
+        "Nicolís Cabré",
         "Malena Solda"
       ],
       "orientation": "vertical",
@@ -4193,7 +4193,7 @@
       "genre": "Drama",
       "actors": [
         "Facundo Arana",
-        "Nancy Dupl├ía",
+        "Nancy Duplía",
         "Carina Zampini"
       ],
       "orientation": "vertical",
@@ -4218,13 +4218,13 @@
     },
     {
       "id": "v20",
-      "title": "Esperanza M├¡a",
+      "title": "Esperanza Máa",
       "year": "2015",
       "channel": "Canal 13",
       "genre": "Musical",
       "actors": [
-        "Mariano Mart├¡nez",
-        "Lali Esp├│sito"
+        "Mariano Martánez",
+        "Lali Espósito"
       ],
       "orientation": "vertical",
       "image": "images/verticals/esperanza-mia-poster-280x420.png",
@@ -4237,11 +4237,11 @@
       "channel": "Canal 13",
       "genre": "Comedia",
       "actors": [
-        "Adri├ín Suar",
+        "Adriín Suar",
         "Natalia Oreiro",
-        "Juan Minuj├¡n",
-        "Lali Esp├│sito",
-        "Eugenia Su├írez"
+        "Juan Minuján",
+        "Lali Espósito",
+        "Eugenia Suírez"
       ],
       "orientation": "vertical",
       "image": "images/verticals/solamente-vos-poster-280x420.png",
@@ -4254,9 +4254,9 @@
       "channel": "Canal 13",
       "genre": "Musical",
       "actors": [
-        "├üngela Torres",
-        "Juan Darth├®s",
-        "Ana Mar├¡a Orozco",
+        "üngela Torres",
+        "Juan Darthés",
+        "Ana Maráa Orozco",
         "Romina Gaetani"
       ],
       "orientation": "vertical",
@@ -4272,7 +4272,7 @@
       "actors": [
         "Agustina Cherri",
         "Nico Furtado",
-        "Luciano C├íceres"
+        "Luciano Cíceres"
       ],
       "orientation": "vertical",
       "image": "images/verticals/fanny-la-fan-poster-280x420.png",
@@ -4285,8 +4285,8 @@
       "channel": "Telefe",
       "genre": "Drama",
       "actors": [
-        "Gustavo Berm├║dez",
-        "Ana Mar├¡a Orozco",
+        "Gustavo Bermüdez",
+        "Ana Maráa Orozco",
         "Eva De Dominici"
       ],
       "orientation": "vertical",
@@ -4300,8 +4300,8 @@
       "channel": "Canal 13",
       "genre": "Drama",
       "actors": [
-        "Nicol├ís Cabr├®",
-        "Nico V├ísquez",
+        "Nicolís Cabré",
+        "Nico Vísquez",
         "Gonzalo Heredia",
         "Agustina Cherri",
         "Calu Rivero",
@@ -4333,11 +4333,11 @@
       "title": "Las Estrellas",
       "year": "2017",
       "channel": "Canal 13",
-      "genre": "Comedia Rom├íntica",
+      "genre": "Comedia Romíntica",
       "actors": [
         "Celeste Cid",
         "Marcela Kloosterboer",
-        "Natalie P├®rez",
+        "Natalie Pérez",
         "Violeta Urtizberea",
         "Justina Bustos"
       ],
@@ -4347,17 +4347,17 @@
     },
     {
       "id": "v28",
-      "title": "Peque├▒a Victoria",
+      "title": "Pequeña Victoria",
       "year": "2019",
       "channel": "Telefe",
-      "genre": "Comedia Dram├ítica",
+      "genre": "Comedia Dramítica",
       "actors": [
-        "Julieta D├¡az",
-        "Natalie P├®rez",
+        "Julieta Dáaz",
+        "Natalie Pérez",
         "Facundo Arana",
         "Luciano Castro",
         "Mariana Genesio",
-        "In├®s Estevez"
+        "Inés Estevez"
       ],
       "orientation": "vertical",
       "image": "images/verticals/pequena-victoria-poster-280x420.png",
@@ -4368,30 +4368,30 @@
       "title": "Guapas",
       "year": "2014",
       "channel": "Canal 13",
-      "genre": "Comedia Dram├ítica",
+      "genre": "Comedia Dramítica",
       "actors": [
-        "Mercedes Mor├ín",
+        "Mercedes Morín",
         "Carla Peterson",
         "Florencia Bertotti",
         "Isabel Macedo",
-        "Araceli Gonz├ílez"
+        "Araceli Gonzílez"
       ],
       "orientation": "vertical",
       "image": "images/verticals/guapas-poster-280x420.png",
-      "subtitle": "Comedia dram├ítica"
+      "subtitle": "Comedia dramítica"
     },
     {
       "id": "v30",
       "title": "Separadas",
       "year": "2020",
       "channel": "Canal 13",
-      "genre": "Comedia Dram├ítica",
+      "genre": "Comedia Dramítica",
       "actors": [
         "Celeste Cid",
         "Marcela Kloosterboer",
         "Agustina Cherri",
         "Gimena Accardi",
-        "Monna Anton├│pulos",
+        "Monna Antonópulos",
         "Julieta Zylberberg",
         "Julieta Nair Calvo"
       ],
@@ -4403,15 +4403,15 @@
       "id": "v31",
       "title": "Ciega a Citas",
       "year": "2009",
-      "channel": "TV P├║blica",
-      "genre": "Comedia Rom├íntica",
+      "channel": "TV Püblica",
+      "genre": "Comedia Romíntica",
       "actors": [
         "Muriel Santa Ana",
         "Rafael Ferro"
       ],
       "orientation": "vertical",
       "image": "images/verticals/ciega-a-citas-poster-280x420.png",
-      "subtitle": "Comedia rom├íntica"
+      "subtitle": "Comedia romíntica"
     },
     {
       "id": "v67",
@@ -4436,8 +4436,8 @@
       "actors": [
         "Luciano Castro",
         "Gonzalo Heredia",
-        "Araceli Gonz├ílez",
-        "Juan Darth├®s",
+        "Araceli Gonzílez",
+        "Juan Darthés",
         "Agustina Cherri",
         "Sabrina Garciarena",
         "Julieta Cardinali"
@@ -4470,8 +4470,8 @@
       "genre": "Telenovela",
       "actors": [
         "Luciano Castro",
-        "Julieta D├¡az",
-        "Mariano Mart├¡nez",
+        "Julieta Dáaz",
+        "Mariano Martánez",
         "Marcela Kloosterboer",
         "Eleonora Wexler",
         "Gonzalo Heredia"
@@ -4487,9 +4487,9 @@
       "channel": "Telefe",
       "genre": "Telenovela",
       "actors": [
-        "Sebasti├ín Estevanez",
+        "Sebastiín Estevanez",
         "Carina Zampini",
-        "Juan Darth├®s",
+        "Juan Darthés",
         "Calu Rivero",
         "Segundo Cernadas"
       ],
@@ -4499,12 +4499,12 @@
     },
     {
       "id": "v72",
-      "title": "Golpe al Coraz├│n",
+      "title": "Golpe al Corazón",
       "year": "2017",
       "channel": "Telefe",
       "genre": "Telenovela",
       "actors": [
-        "Sebasti├ín Estevanez",
+        "Sebastiín Estevanez",
         "Eleonora Wexler"
       ],
       "orientation": "vertical",
@@ -4518,7 +4518,7 @@
       "channel": "Telefe",
       "genre": "Telenovela",
       "actors": [
-        "Sebasti├ín Estevanez",
+        "Sebastiín Estevanez",
         "Carina Zampini"
       ],
       "orientation": "vertical",
@@ -4527,7 +4527,7 @@
     },
     {
       "id": "v74",
-      "title": "Los M├®dicos de Hoy",
+      "title": "Los Médicos de Hoy",
       "year": "2000",
       "channel": "Canal 13",
       "genre": "Telenovela",
@@ -4560,8 +4560,8 @@
       "channel": "Canal 13",
       "genre": "Telenovela",
       "actors": [
-        "Gustavo Berm├║dez",
-        "Araceli Gonz├ílez"
+        "Gustavo Bermüdez",
+        "Araceli Gonzílez"
       ],
       "orientation": "vertical",
       "image": "images/verticals/mil-millones-poster-280x420.png",
@@ -4572,18 +4572,18 @@
       "title": "Kachorra",
       "year": "2002",
       "channel": "Telefe",
-      "genre": "Comedia Rom├íntica",
+      "genre": "Comedia Romíntica",
       "actors": [
         "Natalia Oreiro",
         "Pablo Rago"
       ],
       "orientation": "vertical",
       "image": "images/verticals/kachorra-poster-280x420.png",
-      "subtitle": "Comedia rom├íntica"
+      "subtitle": "Comedia romíntica"
     },
     {
       "id": "v78",
-      "title": "M├íximo Coraz├│n",
+      "title": "Míximo Corazón",
       "year": "2002",
       "channel": "Telefe",
       "genre": "Telenovela",
@@ -4603,7 +4603,7 @@
       "genre": "Telenovela",
       "actors": [
         "Romina Yan",
-        "Iv├ín Espeche"
+        "Ivín Espeche"
       ],
       "orientation": "vertical",
       "image": "images/verticals/abre-tus-ojos-poster-280x420.png",
@@ -4616,7 +4616,7 @@
       "channel": "Telefe",
       "genre": "Telenovela",
       "actors": [
-        "Juan Darth├®s",
+        "Juan Darthés",
         "Gianella Neyra"
       ],
       "orientation": "vertical",
@@ -4625,12 +4625,12 @@
     },
     {
       "id": "v81",
-      "title": "Jes├║s, el Heredero",
+      "title": "Jesüs, el Heredero",
       "year": "2004",
       "channel": "Canal 13",
       "genre": "Telenovela",
       "actors": [
-        "Joaqu├¡n Furriel",
+        "Joaquán Furriel",
         "Malena Solda"
       ],
       "orientation": "vertical",
@@ -4639,21 +4639,21 @@
     },
     {
       "id": "v82",
-      "title": "El Patr├│n de la Vereda",
+      "title": "El Patrón de la Vereda",
       "year": "2005",
-      "channel": "Am├®rica",
-      "genre": "Comedia Dram├ítica",
+      "channel": "América",
+      "genre": "Comedia Dramítica",
       "actors": [
-        "Gustavo Berm├║dez",
+        "Gustavo Bermüdez",
         "Camila Bordonaba"
       ],
       "orientation": "vertical",
       "image": "images/verticals/el-patron-de-la-vereda-poster-280x420.png",
-      "subtitle": "Comedia dram├ítica"
+      "subtitle": "Comedia dramítica"
     },
     {
       "id": "v83",
-      "title": "S├ílvame Mar├¡a",
+      "title": "Sílvame Maráa",
       "year": "2005",
       "channel": "Canal 9/Azul TV",
       "genre": "Telenovela",
@@ -4672,7 +4672,7 @@
       "channel": "Telefe",
       "genre": "Telenovela",
       "actors": [
-        "Juan Darth├®s",
+        "Juan Darthés",
         "Eugenia Tobal"
       ],
       "orientation": "vertical",
@@ -4698,14 +4698,14 @@
       "title": "Juanita, la Soltera",
       "year": "2006",
       "channel": "Canal 13",
-      "genre": "Comedia Rom├íntica",
+      "genre": "Comedia Romíntica",
       "actors": [
         "Gabriel Corrado",
-        "Soledad Fandi├▒o"
+        "Soledad Fandiño"
       ],
       "orientation": "vertical",
       "image": "images/verticals/juanita-la-soltera-poster-280x420.png",
-      "subtitle": "Comedia rom├íntica"
+      "subtitle": "Comedia romíntica"
     },
     {
       "id": "v87",
@@ -4714,10 +4714,10 @@
       "channel": "Canal 13",
       "genre": "Telenovela",
       "actors": [
-        "Sus├║ Pecoraro",
+        "Susü Pecoraro",
         "Claribel Medina",
         "Agustina Cherri",
-        "Mar├¡a Leal"
+        "Maráa Leal"
       ],
       "orientation": "vertical",
       "image": "images/verticals/mujeres-de-nadie-primer-temporada-poster-280x420.png",
@@ -4742,7 +4742,7 @@
       "id": "v89",
       "title": "Esa Mujer",
       "year": "2013",
-      "channel": "TV P├║blica",
+      "channel": "TV Püblica",
       "genre": "Telenovela",
       "actors": [
         "Andrea del Boca",
@@ -4760,7 +4760,7 @@
       "genre": "Telenovela",
       "actors": [
         "Pablo Echarri",
-        "Nancy Dupl├ía"
+        "Nancy Duplía"
       ],
       "orientation": "vertical",
       "image": "images/verticals/los-buscas-poster-280x420.png",
@@ -4771,43 +4771,43 @@
       "title": "Ilusiones Compartidas",
       "year": "2000",
       "channel": "Canal 13",
-      "genre": "Comedia Dram├ítica",
+      "genre": "Comedia Dramítica",
       "actors": [
-        "Oscar Mart├¡nez",
+        "Oscar Martánez",
         "Catherine Fulop"
       ],
       "orientation": "vertical",
       "image": "images/verticals/ilusiones-poster-280x420.png",
-      "subtitle": "Comedia rom├íntica"
+      "subtitle": "Comedia romíntica"
     },
     {
       "id": "v92",
       "title": "El Sodero de mi Vida",
       "year": "2001",
       "channel": "Canal 13",
-      "genre": "Comedia Rom├íntica",
+      "genre": "Comedia Romíntica",
       "actors": [
         "Dady Brieva",
         "Andrea del Boca"
       ],
       "orientation": "vertical",
       "image": "images/verticals/el-sodero-de-mi-vida-poster-280x420.png",
-      "subtitle": "Comedia rom├íntica"
+      "subtitle": "Comedia romíntica"
     },
     {
       "id": "v93",
       "title": "PH (Propiedad Horizontal)",
       "year": "2001",
       "channel": "Canal 9/Azul TV",
-      "genre": "Comedia Dram├ítica",
+      "genre": "Comedia Dramítica",
       "actors": [
         "Gerardo Romano",
-        "Mar├¡a Valenzuela",
+        "Maráa Valenzuela",
         "Juan Palomino"
       ],
       "orientation": "vertical",
       "image": "images/verticals/ph-propiedad-horizontal-poster-280x420.png",
-      "subtitle": "Comedia rom├íntica"
+      "subtitle": "Comedia romíntica"
     },
     {
       "id": "v94",
@@ -4817,9 +4817,9 @@
       "genre": "Telenovela",
       "actors": [
         "Arturo Puig",
-        "Mar├¡a Valenzuela",
-        "Gustavo Garz├│n",
-        "Araceli Gonz├ílez"
+        "Maráa Valenzuela",
+        "Gustavo Garzón",
+        "Araceli Gonzílez"
       ],
       "orientation": "vertical",
       "image": "images/verticals/primicias-poster-280x420.png",
@@ -4847,7 +4847,7 @@
       "channel": "Canal 9/Azul TV",
       "genre": "Policial",
       "actors": [
-        "Dami├ín De Santo",
+        "Damiín De Santo",
         "Lito Cruz",
         "Julieta Cardinali"
       ],
@@ -4863,7 +4863,7 @@
       "genre": "Comedia",
       "actors": [
         "Juan Leyrado",
-        "Fabi├ín Gianola"
+        "Fabiín Gianola"
       ],
       "orientation": "vertical",
       "image": "images/verticals/maridos-a-domicilio-poster-280x420.png",
@@ -4877,7 +4877,7 @@
       "genre": "Telenovela",
       "actors": [
         "Osvaldo Laport",
-        "Julieta D├¡az",
+        "Julieta Dáaz",
         "Romina Gaetani"
       ],
       "orientation": "vertical",
@@ -4889,16 +4889,16 @@
       "title": "Costumbres Argentinas",
       "year": "2003",
       "channel": "Telefe",
-      "genre": "Comedia Dram├ítica",
+      "genre": "Comedia Dramítica",
       "actors": [
         "Carlos Calvo",
-        "Fabi├ín Gianola",
-        "Mar├¡a Valenzuela",
-        "Ana Mar├¡a Picchio"
+        "Fabiín Gianola",
+        "Maráa Valenzuela",
+        "Ana Maráa Picchio"
       ],
       "orientation": "vertical",
       "image": "images/verticals/costumbres-argentinas-poster-280x420.png",
-      "subtitle": "Comedia dram├ítica"
+      "subtitle": "Comedia dramítica"
     },
     {
       "id": "v100",
@@ -4907,7 +4907,7 @@
       "channel": "Canal 13",
       "genre": "Comedia",
       "actors": [
-        "Dami├ín De Santo",
+        "Damiín De Santo",
         "Cecilia Dopazo",
         "Marcela Kloosterboer",
         "Guido Kackzca"
@@ -4934,7 +4934,7 @@
     },
     {
       "id": "v102",
-      "title": "Los Secretos de Pap├í",
+      "title": "Los Secretos de Papí",
       "year": "2004",
       "channel": "Canal 13",
       "genre": "Comedia",
@@ -4950,10 +4950,10 @@
       "id": "v103",
       "title": "Doble Vida",
       "year": "2005",
-      "channel": "Am├®rica",
+      "channel": "América",
       "genre": "Policial",
       "actors": [
-        "Moria Cas├ín",
+        "Moria Casín",
         "Jorge Marrale",
         "Felipe Colombo",
         "Romina Ricci"
@@ -4967,14 +4967,14 @@
       "title": "Gladiadores de Pompeya",
       "year": "2006",
       "channel": "Canal 9/Azul TV",
-      "genre": "Comedia Rom├íntica",
+      "genre": "Comedia Romíntica",
       "actors": [
         "Andrea del Boca",
         "Gabriel Goity"
       ],
       "orientation": "vertical",
       "image": "images/verticals/gladiadores-de-pompeya-poster-280x420.png",
-      "subtitle": "Comedia rom├íntica"
+      "subtitle": "Comedia romíntica"
     },
     {
       "id": "v105",
@@ -4985,7 +4985,7 @@
       "actors": [
         "Gerardo Romano",
         "Carolina Papaleo",
-        "Tom├ís Fonzi",
+        "Tomís Fonzi",
         "Marcela Kloosterboer"
       ],
       "orientation": "vertical",
@@ -4999,8 +4999,8 @@
       "channel": "Telefe",
       "genre": "Sitcom",
       "actors": [
-        "Florencia Pe├▒a",
-        "Gustavo Garz├│n"
+        "Florencia Peña",
+        "Gustavo Garzón"
       ],
       "orientation": "vertical",
       "image": "images/verticals/hechizada-poster-280x420.png",
@@ -5013,7 +5013,7 @@
       "channel": "Telefe",
       "genre": "Policial",
       "actors": [
-        "Miguel ├üngel Rodr├¡guez",
+        "Miguel üngel Rodráguez",
         "Gianella Neyra"
       ],
       "orientation": "vertical",
@@ -5027,8 +5027,8 @@
       "channel": "Telefe",
       "genre": "Sitcom",
       "actors": [
-        "Florencia Pe├▒a",
-        "Fabi├ín Vena",
+        "Florencia Peña",
+        "Fabiín Vena",
         "Luis Luque"
       ],
       "orientation": "vertical",
@@ -5061,7 +5061,7 @@
         "Pilar Pascual",
         "Abril Di Yorio",
         "Victor Varona",
-        "Tha├¡s Rippel"
+        "Thaás Rippel"
       ],
       "orientation": "vertical",
       "image": "images/verticals/cielo-grande-poster-280x420.png",
@@ -5085,14 +5085,14 @@
     },
     {
       "id": "v112",
-      "title": "D├¡as de Gallos",
+      "title": "Dáas de Gallos",
       "year": "2021",
       "channel": "HBO Max",
       "genre": "Drama",
       "actors": [
-        "├üngela Torres",
+        "üngela Torres",
         "Ecko",
-        "Tom├ís Wicz"
+        "Tomís Wicz"
       ],
       "orientation": "vertical",
       "image": "images/verticals/dias-de-gallos-poster-280x420.png",
@@ -5121,7 +5121,7 @@
       "genre": "Juvenil",
       "actors": [
         "Juli Castro",
-        "Antonella Podest├í",
+        "Antonella Podestí",
         "Valen G"
       ],
       "orientation": "vertical",
@@ -5138,7 +5138,7 @@
         "Gina Mastronicola",
         "Manuel Ramos",
         "Alejandro Paker",
-        "Valent├¡n Villafa├▒e"
+        "Valentán Villafañe"
       ],
       "orientation": "vertical",
       "image": "images/verticals/selenkay-poster-280x420.png",
@@ -5146,14 +5146,14 @@
     },
     {
       "id": "v116",
-      "title": "STM: S├® Tu Misma",
+      "title": "STM: Sé Tu Misma",
       "year": "2023",
       "channel": "Disney+",
       "genre": "Juvenil",
       "actors": [
         "Renata Laveaga",
         "Joe Torbell",
-        "Sof├¡a Carrera",
+        "Sofáa Carrera",
         "Pablo Turturiello"
       ],
       "orientation": "vertical",
@@ -5168,10 +5168,10 @@
       "genre": "Drama",
       "actors": [
         "Guido Pennelli",
-        "Juli├ín Cerati",
+        "Juliín Cerati",
         "Alan Madanes",
         "Pablo Turturiello",
-        "Gast├│n Vietto"
+        "Gastón Vietto"
       ],
       "orientation": "vertical",
       "image": "images/verticals/freeks-poster-280x420.png",
@@ -5184,7 +5184,7 @@
       "channel": "Disney+",
       "genre": "Comedia",
       "actors": [
-        "Dar├¡o Barassi",
+        "Daráo Barassi",
         "Consuelo Duval",
         "Maryel Abrego",
         "Santiago Torres",
@@ -5196,7 +5196,7 @@
     },
     {
       "id": "v119",
-      "title": "Tierra Inc├│gnita",
+      "title": "Tierra Incógnita",
       "year": "2022",
       "channel": "Disney+",
       "genre": "Juvenil",
@@ -5204,7 +5204,7 @@
         "Pedro Maurizi",
         "Mora Fisz",
         "Thomas Lepera",
-        "Tom├ís Kirzner",
+        "Tomís Kirzner",
         "Lautaro Delgado",
         "Carla Pandolfi"
       ],
@@ -5231,14 +5231,14 @@
     },
     {
       "id": "v121",
-      "title": "Abejas, el Arte del Enga├▒o",
+      "title": "Abejas, el Arte del Engaño",
       "year": "2021",
       "channel": "Flow",
       "genre": "Comedia",
       "actors": [
-        "Fabi├ín Vena",
+        "Fabiín Vena",
         "Pedro Alfonso",
-        "Sof├¡a Morandi"
+        "Sofáa Morandi"
       ],
       "orientation": "vertical",
       "image": "images/verticals/abejas-el-arte-del-engano-poster-280x420.png",
@@ -5246,7 +5246,7 @@
     },
     {
       "id": "v122",
-      "title": "WTF! Con la m├║sica a otra parte",
+      "title": "WTF! Con la müsica a otra parte",
       "year": "2021",
       "channel": "Flow",
       "genre": "Drama",
@@ -5266,11 +5266,11 @@
       "channel": "Canal 13",
       "genre": "Comedia",
       "actors": [
-        "Nicol├ís Cabr├®",
-        "Nico V├ísquez",
+        "Nicolís Cabré",
+        "Nico Vísquez",
         "Marco Antonio Caponi",
         "Emilia Attias",
-        "Eugenia Su├írez",
+        "Eugenia Suírez",
         "Brenda Asnicar"
       ],
       "orientation": "vertical",
@@ -5279,10 +5279,10 @@
     },
     {
       "id": "V124",
-      "title": "Ens├®├▒ame a Vivir",
+      "title": "Enséñame a Vivir",
       "year": "2009",
       "channel": "Canal 13",
-      "genre": "Comedia Rom├íntica",
+      "genre": "Comedia Romíntica",
       "actors": [
         "Pablo Rago",
         "Violeta Urtizberea",
@@ -5290,7 +5290,7 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/ensename-a-vivir-poster-280x420.png",
-      "subtitle": "Comedia rom├íntica"
+      "subtitle": "Comedia romíntica"
     },
     {
       "id": "V125",
@@ -5317,8 +5317,8 @@
         "Carina Zampini",
         "Andrea Politti",
         "Erica Rivas",
-        "Joaqu├¡n Furriel",
-        "Nico V├ísquez",
+        "Joaquán Furriel",
+        "Nico Vísquez",
         "Mercedes Funes",
         "Melina Petriella"
       ],
@@ -5352,7 +5352,7 @@
         "Chiara Francia",
         "Mercedes Lambre",
         "Victorio D'Alessandro",
-        "Sof├¡a Morandi",
+        "Sofáa Morandi",
         "Santiago Talledo"
       ],
       "orientation": "vertical",
@@ -5361,15 +5361,15 @@
     },
     {
       "id": "V129",
-      "title": "Sue├▒a Conmigo",
+      "title": "Sueña Conmigo",
       "year": "2010",
       "channel": "Nickelodeon",
       "genre": "Juvenil",
       "actors": [
-        "Eiza Gonz├ílez",
+        "Eiza Gonzílez",
         "Santiago Ramundo",
         "Brenda Asnicar",
-        "Valent├¡n Villafa├▒e"
+        "Valentán Villafañe"
       ],
       "orientation": "vertical",
       "image": "images/verticals/sue├▒a-conmigo-poster-280x420.png",
@@ -5396,7 +5396,7 @@
       "channel": "Disney Channel",
       "genre": "Comedia",
       "actors": [
-        "Miguel ├üngel Rodr├¡guez",
+        "Miguel üngel Rodráguez",
         "Florencia Torrente",
         "Maida Andrenacci"
       ],
@@ -5412,7 +5412,7 @@
       "genre": "Juvenil",
       "actors": [
         "Isabela Souza",
-        "Julio Pe├▒a",
+        "Julio Peña",
         "Fernando Dente",
         "Guido Messina"
       ],
@@ -5427,11 +5427,11 @@
       "channel": "Disney XD",
       "genre": "Juvenil",
       "actors": [
-        "Mariano Gonz├ílez-Guerineau",
-        "Sebasti├ín Athi├®",
+        "Mariano Gonzílez-Guerineau",
+        "Sebastiín Athié",
         "Paulina Vetrano",
         "Guido Pennelli",
-        "Nicol├ís Pauls",
+        "Nicolís Pauls",
         "Guido Pennelli",
         "Renato Quattordio"
       ],
@@ -5462,9 +5462,9 @@
       "channel": "Disney XD",
       "genre": "Juvenil",
       "actors": [
-        "Santiago Magari├▒os",
+        "Santiago Magariños",
         "Tupac Larriera",
-        "Valent├¡n Villafa├▒e",
+        "Valentán Villafañe",
         "Esteban Prol"
       ],
       "orientation": "vertical",
@@ -5482,7 +5482,7 @@
         "Tini Stoeseel",
         "Pablo Espinosa",
         "Jorge Blanco",
-        "Diego Dom├¡nguez",
+        "Diego Dománguez",
         "Mercedes Lambre"
       ],
       "orientation": "vertical",
@@ -5497,7 +5497,7 @@
       "genre": "Juvenil",
       "actors": [
         "Juan Ciancio",
-        "Gast├│n Vietto",
+        "Gastón Vietto",
         "Guido Pennelli",
         "Franco Masini"
       ],
@@ -5512,7 +5512,7 @@
       "channel": "Disney Channel",
       "genre": "Juvenil",
       "actors": [
-        "Mariana Maga├▒a",
+        "Mariana Magaña",
         "Leonel Deluglio",
         "Nicole Luis",
         "Jorge Blanco"
@@ -5530,8 +5530,8 @@
       "actors": [
         "Peter Lanzani",
         "Oriana Sabatini",
-        "Pablo Mart├¡nez",
-        "Agust├¡n Bernasconi",
+        "Pablo Martánez",
+        "Agustán Bernasconi",
         "Caro Domenech"
       ],
       "orientation": "vertical",
@@ -5557,29 +5557,29 @@
       "title": "B&B: Bella y Bestia",
       "year": "2008",
       "channel": "Telefe",
-      "genre": "Comedia Rom├íntica",
+      "genre": "Comedia Romíntica",
       "actors": [
         "Romina Yan",
-        "Dami├ín De Santo"
+        "Damiín De Santo"
       ],
       "orientation": "vertical",
       "image": "images/verticals/byb-poster-280x420.png",
-      "subtitle": "Comedia rom├íntica"
+      "subtitle": "Comedia romíntica"
     },
     {
       "id": "V142",
-      "title": "Casi ├üngeles",
+      "title": "Casi üngeles",
       "year": "2007",
       "channel": "Telefe",
       "genre": "Juvenil",
       "actors": [
-        "Nico V├ísquez",
+        "Nico Vísquez",
         "Emilia Attias",
         "Peter Lanzani",
-        "Lali Esp├│sito",
-        "Eugenia Su├írez",
+        "Lali Espósito",
+        "Eugenia Suírez",
         "Nico Riera",
-        "Gast├│n Dalmau"
+        "Gastón Dalmau"
       ],
       "orientation": "vertical",
       "image": "images/verticals/casi-angeles-poster-280x420.png",
@@ -5592,7 +5592,7 @@
       "channel": "Telefe",
       "genre": "Juvenil",
       "actors": [
-        "Mariano Mart├¡nez",
+        "Mariano Martánez",
         "Luisana Lopilato",
         "Isabel Macedo",
         "Benjamin Rojas"
@@ -5609,8 +5609,8 @@
       "genre": "Juvenil",
       "actors": [
         "Jorgelina Aruzzi",
-        "Gast├│n Ricaud",
-        "Lali Esp├│sito",
+        "Gastón Ricaud",
+        "Lali Espósito",
         "Peter Lanzani"
       ],
       "orientation": "vertical",
@@ -5633,7 +5633,7 @@
     },
     {
       "id": "V146",
-      "title": "Rinc├│n de Luz",
+      "title": "Rincón de Luz",
       "year": "2003",
       "channel": "Canal 9/Azul TV",
       "genre": "Juvenil",
@@ -5666,16 +5666,16 @@
       "title": "Campeones de la Vida",
       "year": "2000",
       "channel": "Canal 13",
-      "genre": "Comedia Dram├ítica",
+      "genre": "Comedia Dramítica",
       "actors": [
         "Osvaldo Laport",
         "Soledad Silveyra",
-        "Mariano Mart├¡nez",
-        "Mar├¡a Valenzuela"
+        "Mariano Martánez",
+        "Maráa Valenzuela"
       ],
       "orientation": "vertical",
       "image": "images/verticals/campeones-poster-280x420.png",
-      "subtitle": "Comedia dram├ítica"
+      "subtitle": "Comedia dramítica"
     },
     {
       "id": "V149",
@@ -5685,7 +5685,7 @@
       "genre": "Juvenil",
       "actors": [
         "Romina Gaetani",
-        "Iv├ín Espeche",
+        "Ivín Espeche",
         "Patricia Sosa"
       ],
       "orientation": "vertical",
@@ -5694,7 +5694,7 @@
     },
     {
       "id": "V150",
-      "title": "Divina, est├í en tu Coraz├│n",
+      "title": "Divina, estí en tu Corazón",
       "year": "2017",
       "channel": "Canal 13",
       "genre": "Juvenil",
@@ -5709,7 +5709,7 @@
     },
     {
       "id": "V151",
-      "title": "Nin├¡",
+      "title": "Niná",
       "year": "2009",
       "channel": "Telefe",
       "genre": "Juvenil",
@@ -5725,11 +5725,11 @@
       "id": "V152",
       "title": "Champs 12",
       "year": "2009",
-      "channel": "Am├®rica",
+      "channel": "América",
       "genre": "Juvenil",
       "actors": [
         "Liz Solari",
-        "Tom├ís De las Heras"
+        "Tomís De las Heras"
       ],
       "orientation": "vertical",
       "image": "images/verticals/champs-12-poster-280x420.png",
@@ -5744,7 +5744,7 @@
       "actors": [
         "Claribel Medina",
         "Marcelo De Bellis",
-        "Natalie P├®rez",
+        "Natalie Pérez",
         "Michel Noher",
         "Mica Riera"
       ],
@@ -5754,7 +5754,7 @@
     },
     {
       "id": "V154",
-      "title": "Atracci├│n X 4",
+      "title": "Atracción X 4",
       "year": "2008",
       "channel": "Canal 13",
       "genre": "Juvenil",
@@ -5763,7 +5763,7 @@
         "Camila Bordonaba",
         "Gabriel Goity",
         "Rodrigo Guirao",
-        "Dar├¡o Lopilato"
+        "Daráo Lopilato"
       ],
       "orientation": "vertical",
       "image": "images/verticals/atraccion-x-4-poster-280x420.png",
@@ -5776,11 +5776,11 @@
       "channel": "Canal 13",
       "genre": "Juvenil",
       "actors": [
-        "Juan Darth├®s",
+        "Juan Darthés",
         "Griselda Siciliani",
         "Laura Esquivel",
         "Brenda Asnicar",
-        "Gast├│n Soffriti"
+        "Gastón Soffriti"
       ],
       "orientation": "vertical",
       "image": "images/verticals/patito-feo-poster-280x420.png",
@@ -5793,7 +5793,7 @@
       "channel": "Canal 9/Azul TV",
       "genre": "Juvenil",
       "actors": [
-        "El├¡as Vi├▒oles",
+        "Eláas Viñoles",
         "Brenda Gandini"
       ],
       "orientation": "vertical",
@@ -5808,7 +5808,7 @@
       "genre": "Juvenil",
       "actors": [
         "Luz Cipriota",
-        "Pablo Gel├│s",
+        "Pablo Gelós",
         "Irene Goldszer"
       ],
       "orientation": "vertical",
@@ -5823,9 +5823,9 @@
       "genre": "Juvenil",
       "actors": [
         "Fran Bass",
-        "Piru S├íez",
+        "Piru Síez",
         "Coco Maggio",
-        "Bel├®n Scalella",
+        "Belén Scalella",
         "Fernanda Neill"
       ],
       "orientation": "vertical",
@@ -5834,12 +5834,12 @@
     },
     {
       "id": "V159",
-      "title": "Sue├▒os M├ígicos",
+      "title": "Sueños Mígicos",
       "year": "2005",
       "channel": "Canal 9/Azul TV",
       "genre": "Juvenil",
       "actors": [
-        "Iv├ín Espeche",
+        "Ivín Espeche",
         "Valeria Lorca"
       ],
       "orientation": "vertical",
@@ -5848,7 +5848,7 @@
     },
     {
       "id": "V160",
-      "title": "Para├¡so Rock",
+      "title": "Paraáso Rock",
       "year": "2005",
       "channel": "Canal 9/Azul TV",
       "genre": "Juvenil",
@@ -5870,9 +5870,9 @@
       "genre": "Juvenil",
       "actors": [
         "Florencia Otero",
-        "Natalie P├®rez",
+        "Natalie Pérez",
         "Ludovico Di Santo",
-        "Gast├│n Dalmau",
+        "Gastón Dalmau",
         "Arturo Frutos"
       ],
       "orientation": "vertical",
@@ -5897,10 +5897,10 @@
       "id": "V163",
       "title": "Cancheritos",
       "year": "2001",
-      "channel": "Am├®rica",
+      "channel": "América",
       "genre": "Juvenil",
       "actors": [
-        "Andr├®s Vicente",
+        "Andrés Vicente",
         "Claudia De la Calle"
       ],
       "orientation": "vertical",
@@ -5915,7 +5915,7 @@
       "genre": "Juvenil",
       "actors": [
         "Candela Vetrano",
-        "Pablo Mart├¡nez"
+        "Pablo Martánez"
       ],
       "orientation": "vertical",
       "image": "images/verticals/supertorpe-poster-280x420.png",
@@ -5928,7 +5928,7 @@
       "channel": "Telefe",
       "genre": "Comedia",
       "actors": [
-        "Miguel ├üngel Rodr├¡guez",
+        "Miguel üngel Rodráguez",
         "Silvia Kutika"
       ],
       "orientation": "vertical",
@@ -5939,7 +5939,7 @@
       "id": "V166",
       "title": "Cata y el Misterio de la Esfera",
       "year": "2013",
-      "channel": "TV P├║blica",
+      "channel": "TV Püblica",
       "genre": "Juvenil",
       "actors": [
         "Mica Riera",
@@ -5984,15 +5984,15 @@
       "title": "Envidiosa",
       "year": "2024",
       "channel": "Netflix",
-      "genre": "Comedia Rom├íntica",
+      "genre": "Comedia Romíntica",
       "actors": [
         "Griselda Siciliani",
         "Esteban Lamothe",
-        "Benjam├¡n Vicu├▒a"
+        "Benjamán Vicuña"
       ],
       "orientation": "vertical",
       "image": "images/verticals/envidiosa-poster-280x420.png",
-      "subtitle": "Comedia rom├íntica"
+      "subtitle": "Comedia romíntica"
     },
     {
       "id": "V170",
@@ -6030,8 +6030,8 @@
       "channel": "Netflix",
       "genre": "Comedia",
       "actors": [
-        "Sebasti├ín Wainraich",
-        "Natalie P├®rez"
+        "Sebastiín Wainraich",
+        "Natalie Pérez"
       ],
       "orientation": "vertical",
       "image": "images/verticals/casi-feliz-poster-280x420.png",
@@ -6046,8 +6046,8 @@
       "actors": [
         "Carla Peterson",
         "Griselda Siciliani",
-        "Benjam├¡n Vicu├▒a",
-        "Eugenia Su├írez"
+        "Benjamán Vicuña",
+        "Eugenia Suírez"
       ],
       "orientation": "vertical",
       "image": "images/verticals/terapia-alternativa-poster-280x420.png",
@@ -6060,9 +6060,9 @@
       "channel": "Disney+",
       "genre": "Comedia",
       "actors": [
-        "Adri├ín Suar",
-        "Andr├®s Parra",
-        "Gustavo Berm├║dez"
+        "Adriín Suar",
+        "Andrés Parra",
+        "Gustavo Bermüdez"
       ],
       "orientation": "vertical",
       "image": "images/verticals/los-protectores-poster-280x420.png",
@@ -6075,9 +6075,9 @@
       "channel": "Prime Video",
       "genre": "Comedia",
       "actors": [
-        "Mart├¡n Piroyanski",
+        "Martán Piroyanski",
         "Nachito Saralegui",
-        "Sof├¡a Morandi"
+        "Sofáa Morandi"
       ],
       "orientation": "vertical",
       "image": "images/verticals/porno-y-helado-poster-280x420.png",
@@ -6085,7 +6085,7 @@
     },
     {
       "id": "V176",
-      "title": "Divisi├│n Palermo",
+      "title": "División Palermo",
       "year": "2023",
       "channel": "Netflix",
       "genre": "Comedia",
@@ -6114,7 +6114,7 @@
     },
     {
       "id": "V178",
-      "title": "Familia de Div├ín",
+      "title": "Familia de Divín",
       "year": "2023",
       "channel": "Flow",
       "genre": "Comedia",
@@ -6134,8 +6134,8 @@
       "genre": "Policial",
       "actors": [
         "Renato Quattordio",
-        "Fern├ín Mir├ís",
-        "Luciano C├íceres"
+        "Fernín Mirís",
+        "Luciano Cíceres"
       ],
       "orientation": "vertical",
       "image": "images/verticals/el-mundo-de-mateo-poster-280x420.png",
@@ -6149,8 +6149,8 @@
       "genre": "Policial",
       "actors": [
         "Nico Furtado",
-        "Juan Minuj├¡n",
-        "Martina Gusm├ín",
+        "Juan Minuján",
+        "Martina Gusmín",
         "Claudio Rissi",
         "Esteban Lamothe"
       ],
@@ -6176,7 +6176,7 @@
     },
     {
       "id": "V182",
-      "title": "├Ültimo Primer D├¡a",
+      "title": "├Ültimo Primer Dáa",
       "year": "2022",
       "channel": "Flow",
       "genre": "Policial",
@@ -6192,14 +6192,14 @@
     },
     {
       "id": "V183",
-      "title": "Mar├¡a Marta: El Crimen del Country",
+      "title": "Maráa Marta: El Crimen del Country",
       "year": "2022",
       "channel": "HBO Max",
       "genre": "Policial",
       "actors": [
         "Laura Novoa",
         "Jorge Marrale",
-        "Nicol├ís Francella",
+        "Nicolís Francella",
         "Carlos Portaluppi"
       ],
       "orientation": "vertical",
@@ -6213,9 +6213,9 @@
       "channel": "Prime Video",
       "genre": "Policial",
       "actors": [
-        "Gast├│n Pauls",
-        "Mat├¡as Mayer",
-        "Gustavo Garz├│n",
+        "Gastón Pauls",
+        "Matáas Mayer",
+        "Gustavo Garzón",
         "Liz Solari"
       ],
       "orientation": "vertical",
@@ -6224,7 +6224,7 @@
     },
     {
       "id": "V185",
-      "title": "Croma├▒on",
+      "title": "Cromañon",
       "year": "2024",
       "channel": "Prime Video",
       "genre": "Policial",
@@ -6233,7 +6233,7 @@
         "El Purre",
         "Kevsho",
         "Soledad Villamil",
-        "Luis Mach├¡n",
+        "Luis Machán",
         "Paola Barrientos"
       ],
       "orientation": "vertical",
@@ -6248,10 +6248,10 @@
       "genre": "Policial",
       "actors": [
         "Soledad Villamil",
-        "Juan Minuj├¡n",
+        "Juan Minuján",
         "Kevsho",
         "Alberto Amman",
-        "Mat├¡as Recalt"
+        "Matáas Recalt"
       ],
       "orientation": "vertical",
       "image": "images/verticals/atrapados-poster-280x420.png",
@@ -6266,9 +6266,9 @@
       "actors": [
         "Ana Garibaldi",
         "Rita Cortese",
-        "Carolina Ram├¡rez",
+        "Carolina Ramárez",
         "Valentina Zenere",
-        "Eugenia Su├írez",
+        "Eugenia Suírez",
         "Lorena Vega"
       ],
       "orientation": "vertical",
@@ -6285,9 +6285,9 @@
         "Leonardo Sbaraglia",
         "Griselda Siciliani",
         "Marco Antonio Caponi",
-        "Monna Anton├│pulos",
-        "Agust├¡n Sullivan",
-        "Juan Minuj├¡n"
+        "Monna Antonópulos",
+        "Agustán Sullivan",
+        "Juan Minuján"
       ],
       "orientation": "vertical",
       "image": "images/verticals/menem-poster-280x420.png",
@@ -6300,7 +6300,7 @@
       "channel": "Netflix",
       "genre": "Drama",
       "actors": [
-        "Ricardo Dar├¡n",
+        "Ricardo Darán",
         "Carla Peterson",
         "Marcelo Subiotto",
         "Ariel Staltari",
@@ -6320,9 +6320,9 @@
       "actors": [
         "Luciano Castro",
         "Mirta Busnelli",
-        "Claudia Lapac├│",
+        "Claudia Lapacó",
         "Betiana Blum",
-        "Mar├¡a Leal"
+        "Maráa Leal"
       ],
       "orientation": "vertical",
       "image": "images/verticals/el-buen-retiro-poster-280x420.png",
@@ -6330,14 +6330,14 @@
     },
     {
       "id": "V191",
-      "title": "Un Le├│n en el Bosque",
+      "title": "Un León en el Bosque",
       "year": "2024",
       "channel": "Flow",
       "genre": "Drama",
       "actors": [
         "Federico D'Elia",
         "Julieta Cardinali",
-        "Juli├ín Cerati"
+        "Juliín Cerati"
       ],
       "orientation": "vertical",
       "image": "images/verticals/un-leon-en-el-bosque-poster-280x420.png",
@@ -6351,7 +6351,7 @@
       "genre": "Drama",
       "actors": [
         "Juana Viale",
-        "Andr├®s Velencoso",
+        "Andrés Velencoso",
         "Pablo Echarri"
       ],
       "orientation": "vertical",
@@ -6380,9 +6380,9 @@
       "channel": "Prime Video",
       "genre": "Drama",
       "actors": [
-        "Lali Esp├│sito",
-        "Ver├│nica Llin├ís",
-        "Andr├®s Gil",
+        "Lali Espósito",
+        "Verónica Llinís",
+        "Andrés Gil",
         "Candela Vetrano"
       ],
       "orientation": "vertical",
@@ -6398,7 +6398,7 @@
       "actors": [
         "Leonardo Sbaraglia",
         "Gustavo Bassani",
-        "Monna Anton├│pulos",
+        "Monna Antonópulos",
         "Alejandra Flechner"
       ],
       "orientation": "vertical",
@@ -6413,7 +6413,7 @@
       "genre": "Miniseries",
       "actors": [
         "Nazareno Casero",
-        "Mariano Mart├¡nez",
+        "Mariano Martánez",
         "Justina Bustos",
         "Juan Gil Navarro"
       ],
@@ -6423,12 +6423,12 @@
     },
     {
       "id": "V197",
-      "title": "Camale├│n: El Pasado No Cambia",
+      "title": "Camaleón: El Pasado No Cambia",
       "year": "2025",
       "channel": "Disney+",
       "genre": "Miniseries",
       "actors": [
-        "Eugenia Su├írez",
+        "Eugenia Suírez",
         "Pablo Echarri"
       ],
       "orientation": "vertical",
@@ -6459,7 +6459,7 @@
       "channel": "Disney+",
       "genre": "Miniseries",
       "actors": [
-        "Benjam├¡n Vicu├▒a",
+        "Benjamán Vicuña",
         "Gimena Accardi",
         "Federico Olivera"
       ],
@@ -6475,8 +6475,8 @@
       "genre": "Miniseries",
       "actors": [
         "Nico Furtado",
-        "Delfina Ch├íves",
-        "Malena S├ínchez",
+        "Delfina Chíves",
+        "Malena Sínchez",
         "Juan Sorini"
       ],
       "orientation": "vertical",
@@ -6485,15 +6485,15 @@
     },
     {
       "id": "V201",
-      "title": "Fr├ígiles",
+      "title": "Frígiles",
       "year": "2023",
       "channel": "Flow",
       "genre": "Miniseries",
       "actors": [
-        "Luciano C├íceres",
+        "Luciano Cíceres",
         "Carla Quevedo",
-        "Malena S├ínchez",
-        "Andr├®s Gil"
+        "Malena Sínchez",
+        "Andrés Gil"
       ],
       "orientation": "vertical",
       "image": "images/verticals/fragiles-poster-280x420.png",
@@ -6506,9 +6506,9 @@
       "channel": "Disney+",
       "genre": "Miniseries",
       "actors": [
-        "Joaqu├¡n Furriel",
+        "Joaquán Furriel",
         "Carla Quevedo",
-        "Benjam├¡n Amadeo"
+        "Benjamán Amadeo"
       ],
       "orientation": "vertical",
       "image": "images/verticals/robo-mundial-poster-280x420.png",
@@ -6536,10 +6536,10 @@
       "channel": "Disney+",
       "genre": "Drama",
       "actors": [
-        "Juan Minuj├¡n",
-        "Monna Anton├│pulos",
-        "Joaqu├¡n Ferreira",
-        "Agust├¡n Sullivan"
+        "Juan Minuján",
+        "Monna Antonópulos",
+        "Joaquán Ferreira",
+        "Agustán Sullivan"
       ],
       "orientation": "vertical",
       "image": "images/verticals/coppola-poster-280x420.png",
@@ -6547,12 +6547,12 @@
     },
     {
       "id": "V205",
-      "title": "El Amor Despu├®s del Amor",
+      "title": "El Amor Después del Amor",
       "year": "2023",
       "channel": "Netflix",
       "genre": "Miniseries",
       "actors": [
-        "Iv├ín Hochman",
+        "Ivín Hochman",
         "Mica Riera",
         "Andy Chango"
       ],
@@ -6568,10 +6568,10 @@
       "genre": "Drama",
       "actors": [
         "Diego Peretti",
-        "Mercedes Mor├ín",
+        "Mercedes Morín",
         "Peter Lanzani",
-        "Chino Dar├¡n",
-        "Joaqu├¡n Furriel"
+        "Chino Darán",
+        "Joaquán Furriel"
       ],
       "orientation": "vertical",
       "image": "images/verticals/el-reino-poster-280x420.png",
@@ -6579,14 +6579,14 @@
     },
     {
       "id": "V207",
-      "title": "Iosi, el Esp├¡a Arrepentido",
+      "title": "Iosi, el Espáa Arrepentido",
       "year": "2022",
       "channel": "Prime Video",
       "genre": "Drama",
       "actors": [
         "Gustavo Bassani",
         "Natalia Oreiro",
-        "Mercedes Mor├ín",
+        "Mercedes Morín",
         "Marco Antonio Caponi",
         "Alejandro Awada"
       ],
@@ -6602,8 +6602,8 @@
       "genre": "Thriller",
       "actors": [
         "Jean Pierre Noher",
-        "Luis Mach├¡n",
-        "C├®sar Troncoso",
+        "Luis Machán",
+        "César Troncoso",
         "Luis Luque",
         "Nico Furtado",
         "Diego Cremonesi"
@@ -6614,15 +6614,15 @@
     },
     {
       "id": "V209",
-      "title": "Maradona: Sue├▒o Bendito",
+      "title": "Maradona: Sueño Bendito",
       "year": "2021",
       "channel": "Prime Video",
       "genre": "Miniseries",
       "actors": [
         "Nazareno Casero",
         "Juan Palomino",
-        "Nicol├ís Goldschmidt",
-        "Mercedes Mor├ín",
+        "Nicolís Goldschmidt",
+        "Mercedes Morín",
         "Julieta Cardinali"
       ],
       "orientation": "vertical",
@@ -6631,15 +6631,15 @@
     },
     {
       "id": "V210",
-      "title": "Apache: la Vida de Carlos T├®vez",
+      "title": "Apache: la Vida de Carlos Tévez",
       "year": "2019",
       "channel": "Netflix",
       "genre": "Miniseries",
       "actors": [
         "Balthazar Murilio",
-        "Vanesa Gonz├ílez",
+        "Vanesa Gonzílez",
         "Alberto Ajaka",
-        "Sof├¡a Gala"
+        "Sofáa Gala"
       ],
       "orientation": "vertical",
       "image": "images/verticals/apache-poster-280x420.png",
@@ -6647,7 +6647,7 @@
     },
     {
       "id": "V211",
-      "title": "Cris Mir├│ (Ella)",
+      "title": "Cris Miró (Ella)",
       "year": "2024",
       "channel": "Flow",
       "genre": "Miniseries",
@@ -6655,7 +6655,7 @@
         "Mina Serrano",
         "Victorio D'Alessandro",
         "Katja Alemann",
-        "Agust├¡n Aristar├ín"
+        "Agustán Aristarín"
       ],
       "orientation": "vertical",
       "image": "images/verticals/cris-miro-ella-poster-280x420.png",
@@ -6669,9 +6669,9 @@
       "genre": "Miniseries",
       "actors": [
         "Natalia Oreiro",
-        "Dar├¡o Grandinetti",
+        "Daráo Grandinetti",
         "Ernesto Alterio",
-        "Diego Vel├ízquez",
+        "Diego Velízquez",
         "Francesc Orella"
       ],
       "orientation": "vertical",
@@ -6685,10 +6685,10 @@
       "channel": "Disney+",
       "genre": "Miniseries",
       "actors": [
-        "Jer├│nimo Bosia",
-        "Delfina Ch├íves",
+        "Jerónimo Bosia",
+        "Delfina Chíves",
         "Renato Quattordio",
-        "Mart├¡n Slipak"
+        "Martán Slipak"
       ],
       "orientation": "vertical",
       "image": "images/verticals/ringo-poster-280x420.png",
@@ -6717,9 +6717,9 @@
       "genre": "Miniseries",
       "actors": [
         "Victorio D'Alessandro",
-        "Nico Garc├¡a Hume",
+        "Nico Garcáa Hume",
         "Valentina Bassi",
-        "Mat├¡as Desiderio"
+        "Matáas Desiderio"
       ],
       "orientation": "vertical",
       "image": "images/verticals/el-hincha-poster-280x420.png",
@@ -6735,7 +6735,7 @@
         "Gonzalo Heredia",
         "Violeta Urtizberea",
         "Luciano Castro",
-        "Agust├¡n Sullivan"
+        "Agustán Sullivan"
       ],
       "orientation": "vertical",
       "image": "images/verticals/el-sabor-del-silencio-poster-280x420.png",
@@ -6749,7 +6749,7 @@
       "genre": "Thriller",
       "actors": [
         "Mike Amigorena",
-        "Diego Vel├ízquez",
+        "Diego Velízquez",
         "Elena Roger"
       ],
       "orientation": "vertical",
@@ -6764,7 +6764,7 @@
       "genre": "Miniseries",
       "actors": [
         "Michael Aloni",
-        "Malena S├ínchez"
+        "Malena Sínchez"
       ],
       "orientation": "vertical",
       "image": "images/verticals/amia-poster-280x420.png",
@@ -6772,13 +6772,13 @@
     },
     {
       "id": "V219",
-      "title": "Atrapa a un Ladr├│n",
+      "title": "Atrapa a un Ladrón",
       "year": "2019",
       "channel": "Flow",
       "genre": "Comedia",
       "actors": [
         "Pablo Echarri",
-        "Alexandra Jim├®nez"
+        "Alexandra Jiménez"
       ],
       "orientation": "vertical",
       "image": "images/verticals/atrapa-un-ladron-poster-280x420.png",
@@ -6791,8 +6791,8 @@
       "channel": "Flow",
       "genre": "Drama",
       "actors": [
-        "Tom├ís Fonzi",
-        "Laurita Fern├índez"
+        "Tomís Fonzi",
+        "Laurita Ferníndez"
       ],
       "orientation": "vertical",
       "image": "images/verticals/inconvivencia-poster-280x420.png",
@@ -6800,12 +6800,12 @@
     },
     {
       "id": "V221",
-      "title": "El Tigre Ver├│n",
+      "title": "El Tigre Verón",
       "year": "2019",
       "channel": "Flow",
       "genre": "Thriller",
       "actors": [
-        "Julio Ch├ívez",
+        "Julio Chívez",
         "Marco Antonio Caponi",
         "Andrea Pietra",
         "Muriel Santa Ana"
@@ -6821,9 +6821,9 @@
       "channel": "Flow",
       "genre": "Thriller",
       "actors": [
-        "Nicol├ís Cabr├®",
+        "Nicolís Cabré",
         "Eleonora Wexler",
-        "Jazm├¡n Stuart"
+        "Jazmán Stuart"
       ],
       "orientation": "vertical",
       "image": "images/verticals/tu-parte-del-trato-poster-280x420.png",
@@ -6864,8 +6864,8 @@
       "genre": "Thriller",
       "actors": [
         "Rodrigo De la Serna",
-        "Dar├¡o Grandinetti",
-        "Leticia Br├®dice",
+        "Daráo Grandinetti",
+        "Leticia Brédice",
         "Julieta Nair Calvo"
       ],
       "orientation": "vertical",
@@ -6892,9 +6892,9 @@
       "channel": "Flow",
       "genre": "Drama",
       "actors": [
-        "Julio Ch├ívez",
+        "Julio Chívez",
         "Carla Quevedo",
-        "In├®s Estevez",
+        "Inés Estevez",
         "Luz Cipriota"
       ],
       "orientation": "vertical",
@@ -6908,7 +6908,7 @@
       "channel": "Flow",
       "genre": "Thriller",
       "actors": [
-        "Germ├ín Palacios",
+        "Germín Palacios",
         "Eva De Dominici",
         "Juan Gil Navarro"
       ],
@@ -6920,7 +6920,7 @@
       "id": "V229",
       "title": "Supermax",
       "year": "2017",
-      "channel": "TV P├║blica",
+      "channel": "TV Püblica",
       "genre": "Thriller",
       "actors": [
         "Santiago Segura",
@@ -6954,8 +6954,8 @@
       "channel": "Canal 13",
       "genre": "Policial",
       "actors": [
-        "Julio Ch├ívez",
-        "Claudia Font├ín",
+        "Julio Chívez",
+        "Claudia Fontín",
         "Alberto Ajaka"
       ],
       "orientation": "vertical",
@@ -6971,7 +6971,7 @@
       "actors": [
         "Alejandro Awada",
         "Cecilia Roth",
-        "Chino Dar├¡n",
+        "Chino Darán",
         "Nazareno Casero"
       ],
       "orientation": "vertical",
@@ -6980,12 +6980,12 @@
     },
     {
       "id": "V280",
-      "title": "Monz├│n",
+      "title": "Monzón",
       "year": "2019",
       "channel": "Space",
       "genre": "Policial",
       "actors": [
-        "Jorge Rom├ín",
+        "Jorge Romín",
         "Mauricio Paniagua",
         "Carla Quevedo",
         "Diego Cremonesi"
@@ -7001,11 +7001,11 @@
       "channel": "Fox",
       "genre": "Comedia",
       "actors": [
-        "Adri├ín Suar",
-        "Nico V├ísquez",
-        "Mart├¡n Bossi",
+        "Adriín Suar",
+        "Nico Vísquez",
+        "Martán Bossi",
         "Soledad Villamil",
-        "Natalie P├®rez"
+        "Natalie Pérez"
       ],
       "orientation": "vertical",
       "image": "images/verticals/el-host-poster-280x420.png",
@@ -7018,10 +7018,10 @@
       "channel": "TBS",
       "genre": "Comedia",
       "actors": [
-        "Florencia Pe├▒a",
+        "Florencia Peña",
         "Gabriel Goity",
         "Guillermo Toledo",
-        "Ver├│nica Llin├ís",
+        "Verónica Llinís",
         "Julieta Zylberberg"
       ],
       "orientation": "vertical",
@@ -7036,7 +7036,7 @@
       "genre": "Comedia",
       "actors": [
         "Carlos Belloso",
-        "Edda D├¡az",
+        "Edda Dáaz",
         "Alejandro Muller",
         "Mariana Prommel"
       ],
@@ -7046,7 +7046,7 @@
     },
     {
       "id": "V236",
-      "title": "Nafta S├║per",
+      "title": "Nafta Süper",
       "year": "2016",
       "channel": "Space",
       "genre": "Comedia",
@@ -7062,18 +7062,18 @@
     },
     {
       "id": "V237",
-      "title": "30 D├¡as Juntos",
+      "title": "30 Dáas Juntos",
       "year": "2012",
       "channel": "Cosmopolitan TV",
-      "genre": "Comedia Rom├íntica",
+      "genre": "Comedia Romíntica",
       "actors": [
-        "Eugenia Su├írez",
-        "Nicol├ís Pauls",
-        "Valent├¡n Villafa├▒e"
+        "Eugenia Suírez",
+        "Nicolís Pauls",
+        "Valentán Villafañe"
       ],
       "orientation": "vertical",
       "image": "images/verticals/30-dias-juntos-poster-280x420.png",
-      "subtitle": "Comedia rom├íntica"
+      "subtitle": "Comedia romíntica"
     },
     {
       "id": "V238",
@@ -7083,7 +7083,7 @@
       "genre": "Policial",
       "actors": [
         "Leonardo Sbaraglia",
-        "Leticia Br├®dice"
+        "Leticia Brédice"
       ],
       "orientation": "vertical",
       "image": "images/verticals/impostores-poster-280x420.png",
@@ -7096,7 +7096,7 @@
       "channel": "HBO Max",
       "genre": "Policial",
       "actors": [
-        "Julio Ch├ívez",
+        "Julio Chívez",
         "Cecilia Roth",
         "Paola Krum",
         "Antonio Birabent"
@@ -7112,7 +7112,7 @@
       "channel": "Canal 13",
       "genre": "Policial",
       "actors": [
-        "Julio Ch├ívez",
+        "Julio Chívez",
         "Gabriela Toscano",
         "Rodrigo De la Serna",
         "Luis Luque"
@@ -7123,15 +7123,15 @@
     },
     {
       "id": "V241",
-      "title": "El Hombre que volvi├│ de la Muerte",
+      "title": "El Hombre que volvió de la Muerte",
       "year": "2007",
       "channel": "Canal 13",
       "genre": "Policial",
       "actors": [
         "Diego Peretti",
-        "Nancy Dupl├ía",
+        "Nancy Duplía",
         "Mario Pasik",
-        "Luis Mach├¡n"
+        "Luis Machán"
       ],
       "orientation": "vertical",
       "image": "images/verticals/el-hombre-que-volvio-de-la-muerte-poster-280x420.png",
@@ -7160,7 +7160,7 @@
       "genre": "Policial",
       "actors": [
         "Diego Peretti",
-        "In├®s Estevez",
+        "Inés Estevez",
         "Walter Quiroz"
       ],
       "orientation": "vertical",
@@ -7174,9 +7174,9 @@
       "channel": "Telefe",
       "genre": "Thriller",
       "actors": [
-        "Mariano Mart├¡nez",
+        "Mariano Martánez",
         "Dolores Fonzi",
-        "Nicol├ís Pauls"
+        "Nicolís Pauls"
       ],
       "orientation": "vertical",
       "image": "images/verticals/sangre-fria-poster-280x420.png",
@@ -7208,7 +7208,7 @@
         "Carlos Calvo",
         "Patricia Viggiano",
         "Boy Olmi",
-        "Nicol├ís Pauls"
+        "Nicolís Pauls"
       ],
       "orientation": "vertical",
       "image": "images/verticals/el-hacker-poster-280x420.png",
@@ -7218,7 +7218,7 @@
       "id": "V247",
       "title": "Okupas",
       "year": "2000",
-      "channel": "TV P├║blica",
+      "channel": "TV Püblica",
       "genre": "Policial",
       "actors": [
         "Rodrigo De la Serna",
@@ -7236,7 +7236,7 @@
       "channel": "Telefe",
       "genre": "Drama",
       "actors": [
-        "Agust├¡n Sullivan",
+        "Agustán Sullivan",
         "Marco Antonio Caponi",
         "Antonio Grimau"
       ],
@@ -7251,9 +7251,9 @@
       "channel": "Canal 13",
       "genre": "Drama",
       "actors": [
-        "Oscar Mart├¡nez",
+        "Oscar Martánez",
         "Soledad Silveyra",
-        "Leticia Br├®dice",
+        "Leticia Brédice",
         "Julieta Zylberberg"
       ],
       "orientation": "vertical",
@@ -7269,8 +7269,8 @@
       "actors": [
         "Rodrigo De la Serna",
         "Paola Krum",
-        "Fern├ín Mir├ís",
-        "Gloria Carr├í"
+        "Fernín Mirís",
+        "Gloria Carrí"
       ],
       "orientation": "vertical",
       "image": "images/verticals/tiempos-compulsivos-poster-280x420.png",
@@ -7298,7 +7298,7 @@
       "channel": "Canal 13",
       "genre": "Drama",
       "actors": [
-        "Julio Ch├ívez",
+        "Julio Chívez",
         "Cecilia Roth"
       ],
       "orientation": "vertical",
@@ -7307,12 +7307,12 @@
     },
     {
       "id": "V253",
-      "title": "Mitos (Cr├│nica del Amor Descartable)",
+      "title": "Mitos (Crónica del Amor Descartable)",
       "year": "2009",
-      "channel": "Am├®rica",
+      "channel": "América",
       "genre": "Drama",
       "actors": [
-        "Germ├ín Palacios",
+        "Germín Palacios",
         "Florencia Raggi"
       ],
       "orientation": "vertical",
@@ -7326,10 +7326,10 @@
       "channel": "Telefe",
       "genre": "Drama",
       "actors": [
-        "Sus├║ Pecoraro",
+        "Susü Pecoraro",
         "Celeste Cid",
-        "Fern├ín Mir├ís",
-        "Joaqu├¡n Furriel"
+        "Fernín Mirís",
+        "Joaquán Furriel"
       ],
       "orientation": "vertical",
       "image": "images/verticals/ambiciones-poster-280x420.png",
@@ -7343,8 +7343,8 @@
       "genre": "Drama",
       "actors": [
         "Soledad Villamil",
-        "Julieta D├¡az",
-        "Leticia Br├®dice"
+        "Julieta Dáaz",
+        "Leticia Brédice"
       ],
       "orientation": "vertical",
       "image": "images/verticals/locas-de-amor-poster-280x420.png",
@@ -7352,15 +7352,15 @@
     },
     {
       "id": "V256",
-      "title": "Historias de Sexo de Gente Com├║n",
+      "title": "Historias de Sexo de Gente Comün",
       "year": "2004",
       "channel": "Telefe",
       "genre": "Drama",
       "actors": [
-        "Carlos Santamar├¡a",
+        "Carlos Santamaráa",
         "Carolina Peleritti",
         "Juan Gil Navarro",
-        "Jazm├¡n Stuart"
+        "Jazmán Stuart"
       ],
       "orientation": "vertical",
       "image": "images/verticals/historias-de-sexo-gente-comun-poster-280x420.png",
@@ -7373,10 +7373,10 @@
       "channel": "Telefe",
       "genre": "Drama",
       "actors": [
-        "Florencia Pe├▒a",
+        "Florencia Peña",
         "Mirta Busnelli",
         "Dolores Fonzi",
-        "Bel├®n Blanco"
+        "Belén Blanco"
       ],
       "orientation": "vertical",
       "image": "images/verticals/disputas-poster-280x420.png",
@@ -7391,10 +7391,10 @@
       "actors": [
         "Diego Peretti",
         "Gabriela Toscano",
-        "Sus├║ Pecoraro",
+        "Susü Pecoraro",
         "Soledad Villamil",
-        "Fern├ín Mir├ís",
-        "Mercedes Mor├ín"
+        "Fernín Mirís",
+        "Mercedes Morín"
       ],
       "orientation": "vertical",
       "image": "images/verticals/culpables-poster-280x420.png",
@@ -7408,7 +7408,7 @@
       "genre": "Drama",
       "actors": [
         "Mirta Busnelli",
-        "In├®s Estevez",
+        "Inés Estevez",
         "Paola Krum",
         "Valeria Bertucelli"
       ],
@@ -7424,9 +7424,9 @@
       "genre": "Drama",
       "actors": [
         "Jorge Marrale",
-        "In├®s Estevez",
+        "Inés Estevez",
         "Soledad Villamil",
-        "Dami├ín De Santo",
+        "Damiín De Santo",
         "Maria Leal",
         "Alfredo Casero"
       ],
@@ -7439,15 +7439,15 @@
       "title": "Silencios de Familia",
       "year": "2016",
       "channel": "Canal 13",
-      "genre": "Comedia Dram├ítica",
+      "genre": "Comedia Dramítica",
       "actors": [
-        "Adri├ín Suar",
-        "Julieta D├¡az",
+        "Adriín Suar",
+        "Julieta Dáaz",
         "Florencia Bertotti"
       ],
       "orientation": "vertical",
       "image": "images/verticals/silencios-de-familia-poster-280x420.png",
-      "subtitle": "Comedia dram├ítica"
+      "subtitle": "Comedia dramítica"
     },
     {
       "id": "V262",
@@ -7470,8 +7470,8 @@
       "channel": "Telefe",
       "genre": "Comedia",
       "actors": [
-        "Mariano Mart├¡nez",
-        "Ana Mar├¡a Orozco"
+        "Mariano Martánez",
+        "Ana Maráa Orozco"
       ],
       "orientation": "vertical",
       "image": "images/verticals/mi-problema-con-las-mujeres-poster-280x420.png",
@@ -7486,7 +7486,7 @@
       "actors": [
         "Guillermo Francella",
         "Luis Brandoni",
-        "Mercedes Mor├ín"
+        "Mercedes Morín"
       ],
       "orientation": "vertical",
       "image": "images/verticals/el-hombre-de-tu-vida-poster-280x420.png",
@@ -7494,15 +7494,15 @@
     },
     {
       "id": "V265",
-      "title": "Acompa├▒antes",
+      "title": "Acompañantes",
       "year": "2009",
       "channel": "Telefe",
       "genre": "Comedia",
       "actors": [
         "Jorge Marrale",
         "Pablo Rago",
-        "Nicol├ís Pauls",
-        "Fabi├ín Gianola"
+        "Nicolís Pauls",
+        "Fabiín Gianola"
       ],
       "orientation": "vertical",
       "image": "images/verticals/acompanantes-poster-280x420.png",
@@ -7512,10 +7512,10 @@
       "id": "V266",
       "title": "Todos contra Juan",
       "year": "2008",
-      "channel": "Am├®rica",
+      "channel": "América",
       "genre": "Comedia",
       "actors": [
-        "Gast├│n Pauls",
+        "Gastón Pauls",
         "Mercedes Oviedo"
       ],
       "orientation": "vertical",
@@ -7529,8 +7529,8 @@
       "channel": "Canal 13",
       "genre": "Comedia",
       "actors": [
-        "Mercedes Mor├ín",
-        "Nancy Dupl├ía",
+        "Mercedes Morín",
+        "Nancy Duplía",
         "Andrea Pietra"
       ],
       "orientation": "vertical",
@@ -7545,7 +7545,7 @@
       "genre": "Comedia",
       "actors": [
         "Dolores Fonzi",
-        "Gast├│n Pauls"
+        "Gastón Pauls"
       ],
       "orientation": "vertical",
       "image": "images/verticals/soy-tu-fan-poster-280x420.png",
@@ -7558,8 +7558,8 @@
       "channel": "Canal 13",
       "genre": "Comedia",
       "actors": [
-        "Mercedes Mor├ín",
-        "Araceli Gonz├ílez",
+        "Mercedes Morín",
+        "Araceli Gonzílez",
         "Gabriela Toscano",
         "Carola Reyna",
         "Romina Gaetani"
@@ -7576,7 +7576,7 @@
       "genre": "Comedia",
       "actors": [
         "Pablo Rago",
-        "Fabi├ín Vena"
+        "Fabiín Vena"
       ],
       "orientation": "vertical",
       "image": "images/verticals/mosca-smith-poster-280x420.png",
@@ -7587,15 +7587,15 @@
       "title": "Tres Padres Solteros",
       "year": "2003",
       "channel": "Telefe",
-      "genre": "Comedia Dram├ítica",
+      "genre": "Comedia Dramítica",
       "actors": [
-        "Gustavo Garz├│n",
+        "Gustavo Garzón",
         "Juan Leyrado",
-        "Gast├│n Pauls"
+        "Gastón Pauls"
       ],
       "orientation": "vertical",
       "image": "images/verticals/tres-padres-solteros-poster-280x420.png",
-      "subtitle": "Comedia dram├ítica"
+      "subtitle": "Comedia dramítica"
     },
     {
       "id": "V272",
@@ -7618,7 +7618,7 @@
       "channel": "Canal 9/Azul TV",
       "genre": "Comedia",
       "actors": [
-        "Fern├ín Mir├ís",
+        "Fernín Mirís",
         "Gabriel Goity",
         "Viviana Saccone",
         "Maria Socas"
@@ -7629,7 +7629,7 @@
     },
     {
       "id": "V274",
-      "title": "Historias de Div├ín",
+      "title": "Historias de Divín",
       "year": "2013",
       "channel": "Telefe",
       "genre": "Drama",
@@ -7643,14 +7643,14 @@
     },
     {
       "id": "V275",
-      "title": "Al L├¡mite",
+      "title": "Al Lámite",
       "year": "2006",
       "channel": "Telefe",
       "genre": "Drama",
       "actors": [
         "Juan Gil Navarro",
-        "Nicol├ís Cabr├®",
-        "Claudia Lapac├│"
+        "Nicolís Cabré",
+        "Claudia Lapacó"
       ],
       "orientation": "vertical",
       "image": "images/verticals/al-limite-poster-280x420.png",
@@ -7730,10 +7730,10 @@
       "channel": "Disney+",
       "genre": "Thriller",
       "actors": [
-        "Eugenia Su├írez",
+        "Eugenia Suírez",
         "Eleonora Wexler",
         "Diego Cremonesi",
-        "Jer├│nimo Bosia"
+        "Jerónimo Bosia"
       ],
       "orientation": "vertical",
       "image": "images/verticals/hija-del-fuego-poster-280x420.png",
@@ -7762,7 +7762,7 @@
       "channel": "Netflix",
       "genre": "Miniseries",
       "actors": [
-        "Nancy Dupl├ía",
+        "Nancy Duplía",
         "Carla Peterson",
         "Valeria Lois"
       ],
@@ -7772,7 +7772,7 @@
     },
     {
       "id": "v32",
-      "title": "Noche & D├¡a: Junto a Vos",
+      "title": "Noche & Dáa: Junto a Vos",
       "year": "2014",
       "channel": "Canal 13",
       "genre": "Policial",
@@ -7793,10 +7793,10 @@
       "channel": "Canal 13",
       "genre": "Drama",
       "actors": [
-        "Julio Ch├ívez",
+        "Julio Chívez",
         "Facundo Arana",
         "Griselda Siciliani",
-        "Benjam├¡n Vicu├▒a"
+        "Benjamán Vicuña"
       ],
       "orientation": "vertical",
       "image": "images/verticals/farsantes-poster-280x420.png",
@@ -7810,9 +7810,9 @@
       "genre": "Drama",
       "actors": [
         "Romina Gaetani",
-        "Nicol├ís Cabr├®",
-        "Dami├ín De Santo",
-        "Florencia Pe├▒a",
+        "Nicolís Cabré",
+        "Damiín De Santo",
+        "Florencia Peña",
         "Gonzalo Valenzuela",
         "Isabel Macedo"
       ],
@@ -7827,10 +7827,10 @@
       "channel": "Canal 13",
       "genre": "Policial",
       "actors": [
-        "Adri├ín Suar",
-        "Nancy Dupl├ía",
-        "Leticia Br├®dice",
-        "Mariano Mart├¡nez",
+        "Adriín Suar",
+        "Nancy Duplía",
+        "Leticia Brédice",
+        "Mariano Martánez",
         "Claribel Medina"
       ],
       "orientation": "vertical",
@@ -7845,7 +7845,7 @@
       "genre": "Policial",
       "actors": [
         "Facundo Arana",
-        "Nancy Dupl├ía",
+        "Nancy Duplía",
         "Paola Krum"
       ],
       "orientation": "vertical",
@@ -7854,14 +7854,14 @@
     },
     {
       "id": "v37",
-      "title": "Sin C├│digo 2",
+      "title": "Sin Código 2",
       "year": "2005",
       "channel": "Canal 13",
       "genre": "Policial",
       "actors": [
-        "Adri├ín Suar",
-        "Nancy Dupl├ía",
-        "Nicol├ís Cabr├®"
+        "Adriín Suar",
+        "Nancy Duplía",
+        "Nicolís Cabré"
       ],
       "orientation": "vertical",
       "image": "images/verticals/sin-codigo-2-poster-280x420.png",
@@ -7874,9 +7874,9 @@
       "channel": "Canal 13",
       "genre": "Comedia",
       "actors": [
-        "Miguel ├üngel Rodr├¡guez",
-        "Mariano Mart├¡nez",
-        "Nicol├ís Cabr├®",
+        "Miguel üngel Rodráguez",
+        "Mariano Martánez",
+        "Nicolís Cabré",
         "Marcela Kloosterboer",
         "Florencia Bertotti"
       ],
@@ -7891,10 +7891,10 @@
       "channel": "Canal 13",
       "genre": "Comedia",
       "actors": [
-        "Miguel ├üngel Rodr├¡guez",
+        "Miguel üngel Rodráguez",
         "Claribel Medina",
-        "Nicol├ís Cabr├®",
-        "Soledad Fandi├▒o"
+        "Nicolís Cabré",
+        "Soledad Fandiño"
       ],
       "orientation": "vertical",
       "image": "images/verticals/por-amor-a-vos-poster-280x420.png",
@@ -7909,7 +7909,7 @@
       "actors": [
         "Paola Krum",
         "Mike Amigorena",
-        "Florencia Pe├▒a",
+        "Florencia Peña",
         "Alberto Ajaka",
         "Muriel Santa Ana",
         "Gabriela Toscano"
@@ -7925,7 +7925,7 @@
       "channel": "Telefe",
       "genre": "Comedia",
       "actors": [
-        "Juan Minuj├¡n",
+        "Juan Minuján",
         "Julieta Zylberberg"
       ],
       "orientation": "vertical",
@@ -7934,12 +7934,12 @@
     },
     {
       "id": "v43",
-      "title": "La Ni├▒era",
+      "title": "La Niñera",
       "year": "2004",
       "channel": "Telefe",
       "genre": "Sitcom",
       "actors": [
-        "Florencia Pe├▒a",
+        "Florencia Peña",
         "Boy Olmi"
       ],
       "orientation": "vertical",
@@ -7948,13 +7948,13 @@
     },
     {
       "id": "v44",
-      "title": "Cuando me Sonre├¡s",
+      "title": "Cuando me Sonreás",
       "year": "2011",
       "channel": "Telefe",
-      "genre": "Comedia Rom├íntica",
+      "genre": "Comedia Romíntica",
       "actors": [
         "Facundo Arana",
-        "Julieta D├¡az"
+        "Julieta Dáaz"
       ],
       "orientation": "vertical",
       "image": "images/verticals/cuando-me-sonreis-poster-420x280.png",
@@ -7962,7 +7962,7 @@
     },
     {
       "id": "v45",
-      "title": "Aqu├¡ No Hay Quien Viva",
+      "title": "Aquá No Hay Quien Viva",
       "year": "2008",
       "channel": "Telefe",
       "genre": "Sitcom",
@@ -7977,13 +7977,13 @@
     },
     {
       "id": "v46",
-      "title": "Amor M├¡o",
+      "title": "Amor Máo",
       "year": "2005",
       "channel": "Telefe",
       "genre": "Sitcom",
       "actors": [
         "Romina Yan",
-        "Dami├ín De Santo"
+        "Damiín De Santo"
       ],
       "orientation": "vertical",
       "image": "images/verticals/amor-mio-poster-280x420.png",
@@ -7991,12 +7991,12 @@
     },
     {
       "id": "v47",
-      "title": "┬┐Qui├®n es el Jefe?",
+      "title": "┬┐Quién es el Jefe?",
       "year": "2005",
       "channel": "Telefe",
       "genre": "Sitcom",
       "actors": [
-        "Nico V├ísquez",
+        "Nico Vísquez",
         "Gianella Neyra"
       ],
       "orientation": "vertical",
@@ -8024,7 +8024,7 @@
       "channel": "Telefe",
       "genre": "Thriller",
       "actors": [
-        "Nancy Dupl├ía",
+        "Nancy Duplía",
         "Pablo Echarri"
       ],
       "orientation": "vertical",
@@ -8049,11 +8049,11 @@
       "id": "h11",
       "title": "Contra las Cuerdas",
       "year": "2010",
-      "channel": "TV P├║blica",
+      "channel": "TV Püblica",
       "genre": "Thriller",
       "actors": [
         "Rodrigo De la Serna",
-        "Soledad Fandi├▒o",
+        "Soledad Fandiño",
         "Maxi Ghione"
       ],
       "orientation": "vertical",
@@ -8076,7 +8076,7 @@
     },
     {
       "id": "v50",
-      "title": "Por Amarte As├¡",
+      "title": "Por Amarte Asá",
       "year": "2016",
       "channel": "Telefe",
       "genre": "Telenovela",
@@ -8084,7 +8084,7 @@
         "Gabriel Corrado",
         "Catherine Fulop",
         "Brenda Asnicar",
-        "Gast├│n Soffriti"
+        "Gastón Soffriti"
       ],
       "orientation": "vertical",
       "image": "images/verticals/por-amarte-asi-poster-280x420.png",
@@ -8098,8 +8098,8 @@
       "genre": "Telenovela",
       "actors": [
         "Soledad Silveyra",
-        "Sebasti├ín Estevanez",
-        "Ra├║l Taibo",
+        "Sebastiín Estevanez",
+        "Raül Taibo",
         "Sabrina Garciarena"
       ],
       "orientation": "vertical",
@@ -8113,9 +8113,9 @@
       "channel": "Telefe",
       "genre": "Telenovela",
       "actors": [
-        "Joaqu├¡n Furriel",
+        "Joaquán Furriel",
         "Romina Gaetani",
-        "Benjam├¡n Vicu├▒a",
+        "Benjamán Vicuña",
         "Isabel Macedo"
       ],
       "orientation": "vertical",
@@ -8129,7 +8129,7 @@
       "channel": "Telefe",
       "genre": "Telenovela",
       "actors": [
-        "Sebasti├ín Estevanez",
+        "Sebastiín Estevanez",
         "Diego Olivera",
         "Luz Cipriota",
         "Natalia Lobo"
@@ -8147,7 +8147,7 @@
       "actors": [
         "Soledad Silveyra",
         "Juan Gil Navarro",
-        "Adri├ín Navarro"
+        "Adriín Navarro"
       ],
       "orientation": "vertical",
       "image": "images/verticals/secretos-de-amor-poster-280x420.png",
@@ -8160,14 +8160,14 @@
       "channel": "Canal 13",
       "genre": "Comedia",
       "actors": [
-        "Mariano Mart├¡nez",
-        "Nicol├ís Cabr├®",
+        "Mariano Martánez",
+        "Nicolís Cabré",
         "Griselda Siciliani",
-        "Nico V├ísquez"
+        "Nico Vísquez"
       ],
       "orientation": "vertical",
       "image": "images/verticals/los-unicos-2011-poster-280x420.png",
-      "subtitle": "Acci├│n"
+      "subtitle": "Acción"
     },
     {
       "id": "v56",
@@ -8176,7 +8176,7 @@
       "channel": "Canal 13",
       "genre": "Comedia",
       "actors": [
-        "Nicol├ís Cabr├®",
+        "Nicolís Cabré",
         "Gimena Accardi",
         "Flor Vigna"
       ],
@@ -8186,13 +8186,13 @@
     },
     {
       "id": "v57",
-      "title": "Un A├▒o para Recordar",
+      "title": "Un Año para Recordar",
       "year": "2011",
       "channel": "Telefe",
-      "genre": "Comedia Dram├ítica",
+      "genre": "Comedia Dramítica",
       "actors": [
         "Carla Peterson",
-        "Gast├│n Pauls",
+        "Gastón Pauls",
         "Gonzalo Valenzuela",
         "Eleonora Wexler"
       ],
@@ -8208,7 +8208,7 @@
       "genre": "Comedia",
       "actors": [
         "Luis Brandoni",
-        "Mariano Mart├¡nez",
+        "Mariano Martánez",
         "Sabrina Garciarena",
         "Muriel Santa Ana"
       ],
@@ -8224,7 +8224,7 @@
       "genre": "Drama",
       "actors": [
         "Gonzalo Heredia",
-        "Vanesa Gonz├ílez",
+        "Vanesa Gonzílez",
         "Osvaldo Laport",
         "Luisana Lopilato"
       ],
@@ -8239,7 +8239,7 @@
       "channel": "Telefe",
       "genre": "Thriller",
       "actors": [
-        "Ana Mar├¡a Orozco",
+        "Ana Maráa Orozco",
         "Salvador del Solar"
       ],
       "orientation": "vertical",
@@ -8256,7 +8256,7 @@
         "Gabriel Corrado",
         "Catherine Fulop",
         "Nico Riera",
-        "Roc├¡o Igarzabal"
+        "Rocáo Igarzabal"
       ],
       "orientation": "vertical",
       "image": "images/verticals/taxxi-amores-cruzados-280x420.png",
@@ -8267,19 +8267,19 @@
       "title": "Valentino, el Argentino",
       "year": "2008",
       "channel": "Canal 13",
-      "genre": "Comedia Rom├íntica",
+      "genre": "Comedia Romíntica",
       "actors": [
-        "Juli├ín Rom├ín",
-        "Liliana Gonz├ílez",
+        "Juliín Romín",
+        "Liliana Gonzílez",
         "Segundo Cernadas"
       ],
       "orientation": "vertical",
       "image": "images/verticals/valentino-el-argentino-280x420.png",
-      "subtitle": "Comedia rom├íntica"
+      "subtitle": "Comedia romíntica"
     },
     {
       "id": "v63",
-      "title": "Yago, Pasi├│n Morena",
+      "title": "Yago, Pasión Morena",
       "year": "2001",
       "channel": "Telefe",
       "genre": "Telenovela",
@@ -8293,13 +8293,13 @@
     },
     {
       "id": "v64",
-      "title": "Prov├│came",
+      "title": "Provócame",
       "year": "2001",
       "channel": "Telefe",
       "genre": "Telenovela",
       "actors": [
         "Chayanne",
-        "Araceli Gonz├ílez",
+        "Araceli Gonzílez",
         "Romina Yan"
       ],
       "orientation": "vertical",
@@ -8311,11 +8311,11 @@
       "title": "Dr. Amor",
       "year": "2003",
       "channel": "Canal 13",
-      "genre": "Comedia Rom├íntica",
+      "genre": "Comedia Romíntica",
       "actors": [
         "Arturo Puig",
         "Lorna Paz",
-        "Natalia Ram├¡rez",
+        "Natalia Ramárez",
         "Segundo Cernadas"
       ],
       "orientation": "vertical",
@@ -8332,7 +8332,7 @@
         "Diego Ramos",
         "Mario Cimarro",
         "Coraima Torres",
-        "Ana Claudia Talanc├│n"
+        "Ana Claudia Talancón"
       ],
       "orientation": "vertical",
       "image": "images/verticals/amor-latino-280x420.png",
