@@ -1,0 +1,66 @@
+VERIFICACIÓN DE DATOS DE ESPECTADORES
+======================================================================
+
+RESUMEN:
+  Total de items: 522
+  - Películas: 228
+  - Series: 294
+
+  Películas con datos de espectadores: 211
+  Películas SIN datos (streaming): 17
+
+CAMBIOS REALIZADOS:
+======================================================================
+
+1. Archivo: show.html
+   - Modificado función renderItem()
+   - Agregado campo 'Cantidad de Espectadores' debajo de 'Actores'
+   - Solo se muestra si item.viewers existe
+   - Películas de streaming sin valor no mostrarán nada
+
+2. Base de datos: data.json
+   - 211 películas actualizadas con campo 'viewers'
+   - 17 películas sin datos (mantienen sin campo)
+
+PELÍCULAS CON ESPECTADORES (TOP 20):
+======================================================================
+ 1. Relatos salvajes                                    4,003,395
+ 2. El clan                                             2,652,757
+ 3. El secreto de sus ojos                              2,457,396
+ 4. Manuelita                                           2,210,600
+ 5. Metegol                                             2,139,844
+ 6. El robo del siglo                                   2,085,915
+ 7. Me casé con un boludo                               2,027,880
+ 8. Patoruzito                                          1,996,738
+ 9. La odisea de los giles                              1,841,886
+10. Homo Argentum                                       1,829,245
+11. Corazón de león                                     1,746,547
+12. Mamá se fue de viaje                                1,713,804
+13. Un argentino en Nueva York                          1,592,130
+14. Papá se Volvió Loco                                 1,579,224
+15. El Hijo de la Novia                                 1,555,626
+16. Un Novio para mi Mujer                              1,408,276
+17. El Ángel                                            1,367,803
+18. Papá es un ídolo                                    1,357,107
+19. Nueve Reinas                                        1,194,633
+20. Argentina, 1985                                     1,160,067
+
+PELÍCULAS SIN ESPECTADORES (17):
+======================================================================
+  - Campamento con Mamá
+  - Corazón Delator
+  - Corazón Loco
+  - Crimenes de Familia
+  - Descansar en Paz
+  - El Cuaderno de Tomy
+  - El Hombre que Amaba los Platos Voladores
+  - Elena Sabe
+  - Goyo
+  - Granizo
+  - La Corazonada
+  - La Ira de Dios
+  - Las Hermanas Fantásticas
+  - Matrimillas
+  - No Puedo Vivir Sin Ti
+  - Pipa
+  - Yo, Adolescente

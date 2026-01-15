@@ -1,0 +1,632 @@
+REPORTE DE ACTUALIZACIÓN DE ESPECTADORES
+Fecha: 2026-01-15 14:32:13
+======================================================================
+
+RESUMEN:
+  Películas en reporte: 229
+  Películas encontradas en JSON: 228
+  Películas actualizadas: 211
+  Películas sin reporte: 0
+  Valores conflictivos: 124
+
+VALORES CONFLICTIVOS:
+  P1137 - Dos más dos
+    Anterior: 998
+    Nuevo: 1,004,288
+    Diferencia: 1,003,290
+
+  P1050 - Séptimo
+    Anterior: 957
+    Nuevo: 972,595
+    Diferencia: 971,638
+
+  P1127 - Gilda, no me arrepiento de este amor
+    Anterior: 953
+    Nuevo: 955,298
+    Diferencia: 954,345
+
+  P1053 - Bañeros 4: los rompeolas
+    Anterior: 927
+    Nuevo: 936,024
+    Diferencia: 935,097
+
+  P1189 - Un cuento chino
+    Anterior: 905
+    Nuevo: 917,212
+    Diferencia: 916,307
+
+  P1005 - Esa maldita costilla
+    Anterior: 907
+    Nuevo: 907,364
+    Diferencia: 906,457
+
+  P1041 - Igualita a mí
+    Anterior: 832
+    Nuevo: 849,429
+    Diferencia: 848,597
+
+  P1055 - Abzurdah
+    Anterior: 784
+    Nuevo: 809,470
+    Diferencia: 808,686
+
+  P1207 - El amor menos pensado
+    Anterior: 784
+    Nuevo: 787,130
+    Diferencia: 786,346
+
+  P1007 - Apariencias
+    Anterior: 782
+    Nuevo: 782,348
+    Diferencia: 781,566
+
+  P1135 - Elefante blanco
+    Anterior: 756
+    Nuevo: 773,155
+    Diferencia: 772,399
+
+  P1072 - Re loca
+    Anterior: 759
+    Nuevo: 762,184
+    Diferencia: 761,425
+
+  P1130 - Mi obra maestra
+    Anterior: 731
+    Nuevo: 733,486
+    Diferencia: 732,755
+
+  P1108 - Alma mía
+    Anterior: 715
+    Nuevo: 715,302
+    Diferencia: 714,587
+
+  P1165 - El hilo rojo
+    Anterior: 714
+    Nuevo: 715,265
+    Diferencia: 714,551
+
+  P1121 - Nieve negra
+    Anterior: 712
+    Nuevo: 714,645
+    Diferencia: 713,933
+
+  P1062 - El ciudadano ilustre
+    Anterior: 664
+    Nuevo: 665,007
+    Diferencia: 664,343
+
+  P1151 - La cordillera
+    Anterior: 656
+    Nuevo: 658,082
+    Diferencia: 657,426
+
+  P1039 - Carancho
+    Anterior: 614
+    Nuevo: 626,251
+    Diferencia: 625,637
+
+  P1215 - Cohen vs Rosi
+    Anterior: 615
+    Nuevo: 615,483
+    Diferencia: 614,868
+
+  P1132 - El misterio de la felicidad
+    Anterior: 600
+    Nuevo: 614,037
+    Diferencia: 613,437
+
+  P1077 - El cuento de las comadrejas
+    Anterior: 585
+    Nuevo: 586,483
+    Diferencia: 585,898
+
+  P1181 - Relatos salvajes
+    Anterior: 3,425,668
+    Nuevo: 4,003,395
+    Diferencia: 577,727
+
+  P1162 - Atraco
+    Anterior: 558
+    Nuevo: 568,983
+    Diferencia: 568,425
+
+  P1150 - Socios por accidente
+    Anterior: 559
+    Nuevo: 565,629
+    Diferencia: 565,070
+
+  P1071 - El Potro: lo mejor del amor
+    Anterior: 546
+    Nuevo: 548,749
+    Diferencia: 548,203
+
+  P1003 - Dibu 2: la venganza de Nasty
+    Anterior: 526
+    Nuevo: 526,340
+    Diferencia: 525,814
+
+  P1009 - Plata quemada
+    Anterior: 525
+    Nuevo: 525,188
+    Diferencia: 524,663
+
+  P1004 - La edad del sol
+    Anterior: 512
+    Nuevo: 512,178
+    Diferencia: 511,666
+
+  P1117 - Sin hijos
+    Anterior: 484
+    Nuevo: 508,643
+    Diferencia: 508,159
+
+  P1171 - La venganza
+    Anterior: 488
+    Nuevo: 488,808
+    Diferencia: 488,320
+
+  P1052 - Muerte en Buenos Aires
+    Anterior: 464
+    Nuevo: 484,893
+    Diferencia: 484,429
+
+  P1175 - Animal
+    Anterior: 481
+    Nuevo: 481,617
+    Diferencia: 481,136
+
+  P1033 - Papá por un día
+    Anterior: 496
+    Nuevo: 480,568
+    Diferencia: 480,072
+
+  P1036 - Dos hermanos
+    Anterior: 460
+    Nuevo: 474,449
+    Diferencia: 473,989
+
+  P1040 - Gaturro
+    Anterior: 418
+    Nuevo: 428,949
+    Diferencia: 428,531
+
+  P1164 - Wakolda, el Médico Alemán
+    Anterior: 402
+    Nuevo: 423,762
+    Diferencia: 423,360
+
+  P1204 - Los padecientes
+    Anterior: 413
+    Nuevo: 414,318
+    Diferencia: 413,905
+
+  P1056 - Papeles en el viento
+    Anterior: 383
+    Nuevo: 397,744
+    Diferencia: 397,361
+
+  P1161 - Viudas
+    Anterior: 390
+    Nuevo: 397,131
+    Diferencia: 396,741
+
+  P1191 - Truman
+    Anterior: 377
+    Nuevo: 393,599
+    Diferencia: 393,222
+
+  P1106 - Acusada
+    Anterior: 383
+    Nuevo: 385,313
+    Diferencia: 384,930
+
+  P1064 - Inseparables
+    Anterior: 363
+    Nuevo: 363,835
+    Diferencia: 363,472
+
+  P1059 - 100 años de perdón
+    Anterior: 358
+    Nuevo: 358,808
+    Diferencia: 358,450
+
+  P1065 - Los que aman, odian
+    Anterior: 356
+    Nuevo: 357,716
+    Diferencia: 357,360
+
+  P1060 - Permitidos
+    Anterior: 355
+    Nuevo: 356,348
+    Diferencia: 355,993
+
+  P1078 - 4×4
+    Anterior: 331
+    Nuevo: 332,080
+    Diferencia: 331,749
+
+  P1116 - Kóblic
+    Anterior: 309
+    Nuevo: 309,289
+    Diferencia: 308,980
+
+  P1043 - Revolución, el cruce de los andes
+    Anterior: 278
+    Nuevo: 303,331
+    Diferencia: 303,053
+
+  P1042 - Mi primera boda
+    Anterior: 299
+    Nuevo: 302,088
+    Diferencia: 301,789
+
+  P1051 - El inventor de juegos
+    Anterior: 282
+    Nuevo: 292,226
+    Diferencia: 291,944
+
+  P1179 - Al final del túnel
+    Anterior: 283
+    Nuevo: 283,305
+    Diferencia: 283,022
+
+  P1198 - Peter Capusoto y sus 3 dimensiones
+    Anterior: 270
+    Nuevo: 274,205
+    Diferencia: 273,935
+
+  P1068 - Perdida
+    Anterior: 274
+    Nuevo: 274,109
+    Diferencia: 273,835
+
+  P1163 - Música en espera
+    Anterior: 234
+    Nuevo: 241,007
+    Diferencia: 240,773
+
+  P1032 - El ratón Perez 2
+    Anterior: 225
+    Nuevo: 231,610
+    Diferencia: 231,385
+
+  P1079 - No soy tu mami
+    Anterior: 227
+    Nuevo: 229,692
+    Diferencia: 229,465
+
+  P1195 - Una noche de amor
+    Anterior: 220
+    Nuevo: 220,290
+    Diferencia: 220,070
+
+  P1140 - Infancia clandestina
+    Anterior: 187
+    Nuevo: 201,830
+    Diferencia: 201,643
+
+  P1220 - La suerte en tus manos
+    Anterior: 188
+    Nuevo: 193,242
+    Diferencia: 193,054
+
+  P1049 - Vino para robar
+    Anterior: 168
+    Nuevo: 180,007
+    Diferencia: 179,839
+
+  P1199 - Casi leyendas
+    Anterior: 169
+    Nuevo: 178,260
+    Diferencia: 178,091
+
+  P1133 - Cuentos de la selva
+    Anterior: 20
+    Nuevo: 155,988
+    Diferencia: 155,968
+
+  P1045 - Extraños en la noche
+    Anterior: 143
+    Nuevo: 155,485
+    Diferencia: 155,342
+
+  P1076 - Bañeros 5: Lentos y cargosos
+    Anterior: 152
+    Nuevo: 153,218
+    Diferencia: 153,066
+
+  P1159 - La patota
+    Anterior: 145
+    Nuevo: 144,710
+    Diferencia: 144,565
+
+  P1031 - Leonera
+    Anterior: 129
+    Nuevo: 142,984
+    Diferencia: 142,855
+
+  P1038 - Pájaros volando
+    Anterior: 115
+    Nuevo: 139,669
+    Diferencia: 139,554
+
+  P1227 - Todos tenemos un Plan
+    Anterior: 130
+    Nuevo: 134,173
+    Diferencia: 134,043
+
+  P1109 - Los Pintín al rescate
+    Anterior: 133
+    Nuevo: 133,761
+    Diferencia: 133,628
+
+  P1035 - Felicitas
+    Anterior: 127
+    Nuevo: 131,788
+    Diferencia: 131,661
+
+  P1154 - La reina del miedo
+    Anterior: 127
+    Nuevo: 127,179
+    Diferencia: 127,052
+
+  P1136 - 100% lucha: el amo de los clones
+    Anterior: 79
+    Nuevo: 123,656
+    Diferencia: 123,577
+
+  P1139 - El mismo amor, la misma lluvia
+    Anterior: 122
+    Nuevo: 122,032
+    Diferencia: 121,910
+
+  P1054 - Kryptonita
+    Anterior: 100
+    Nuevo: 119,972
+    Diferencia: 119,872
+
+  P1107 - Don Gato y su pandilla
+    Anterior: 113
+    Nuevo: 116,962
+    Diferencia: 116,849
+
+  P1058 - Tini: el gran cambio de Violetta
+    Anterior: 116
+    Nuevo: 116,700
+    Diferencia: 116,584
+
+  P1061 - La última fiesta
+    Anterior: 115
+    Nuevo: 115,650
+    Diferencia: 115,535
+
+  P1057 - Voley
+    Anterior: 103
+    Nuevo: 112,526
+    Diferencia: 112,423
+
+  P1069 - No dormirás
+    Anterior: 99
+    Nuevo: 99,381
+    Diferencia: 99,282
+
+  P1183 - Boogie el aceitoso
+    Anterior: 85
+    Nuevo: 96,460
+    Diferencia: 96,375
+
+  P1123 - Sólo se vive una vez
+    Anterior: 94
+    Nuevo: 96,075
+    Diferencia: 95,981
+
+  P1210 - Yo soy así, Tita de Buenos Aires
+    Anterior: 90
+    Nuevo: 94,116
+    Diferencia: 94,026
+
+  P1201 - Días de vinilo
+    Anterior: 89
+    Nuevo: 93,365
+    Diferencia: 93,276
+
+  P1214 - La misma sangre
+    Anterior: 92
+    Nuevo: 92,091
+    Diferencia: 91,999
+
+  P1158 - Caídos del mapa
+    Anterior: 80
+    Nuevo: 91,639
+    Diferencia: 91,559
+
+  P1156 - Plumíferos
+    Anterior: 52
+    Nuevo: 89,257
+    Diferencia: 89,205
+
+  P1196 - El último Elvis
+    Anterior: 82
+    Nuevo: 88,476
+    Diferencia: 88,394
+
+  P1119 - Hermanitos del fin del mundo
+    Anterior: 86
+    Nuevo: 86,455
+    Diferencia: 86,369
+
+  P1046 - La pelea de mi vida
+    Anterior: 74
+    Nuevo: 83,509
+    Diferencia: 83,435
+
+  P1228 - La Quietud
+    Anterior: 81
+    Nuevo: 82,150
+    Diferencia: 82,069
+
+  P1157 - Paco
+    Anterior: 52
+    Nuevo: 74,828
+    Diferencia: 74,776
+
+  P1048 - Soledad y Larguirucho
+    Anterior: 65
+    Nuevo: 72,019
+    Diferencia: 71,954
+
+  P1063 - El rey del Once
+    Anterior: 65
+    Nuevo: 65,193
+    Diferencia: 65,128
+
+  P1044 - Selkirk, el verdadero Robinson Crusoe
+    Anterior: 50
+    Nuevo: 58,832
+    Diferencia: 58,782
+
+  P1008 - Condor Crux
+    Anterior: 56
+    Nuevo: 56,958
+    Diferencia: 56,902
+
+  P1221 - El desafío
+    Anterior: 28
+    Nuevo: 53,744
+    Diferencia: 53,716
+
+  P1037 - Miss Tacuarembó
+    Anterior: 46
+    Nuevo: 49,325
+    Diferencia: 49,279
+
+  P1111 - El secreto de sus ojos
+    Anterior: 2,410,592
+    Nuevo: 2,457,396
+    Diferencia: 46,804
+
+  P1074 - Recreo
+    Anterior: 46
+    Nuevo: 46,380
+    Diferencia: 46,334
+
+  P1125 - Corazón de león
+    Anterior: 1,704,779
+    Nuevo: 1,746,547
+    Diferencia: 41,768
+
+  P1190 - Valentina, la película
+    Anterior: 100,523
+    Nuevo: 142,052
+    Diferencia: 41,529
+
+  P1185 - Aballay, el hombre sin miedo
+    Anterior: 31
+    Nuevo: 40,598
+    Diferencia: 40,567
+
+  P1110 - Fase 7
+    Anterior: 36
+    Nuevo: 39,027
+    Diferencia: 38,991
+
+  P1112 - El clan
+    Anterior: 2,613,941
+    Nuevo: 2,652,757
+    Diferencia: 38,816
+
+  P1070 - 27: El club de los malditos
+    Anterior: 33
+    Nuevo: 33,414
+    Diferencia: 33,381
+
+  P1101 - La Mujer de la Fila
+    Anterior: 32
+    Nuevo: 32,605
+    Diferencia: 32,573
+
+  P1047 - Rodencia y el diente de la princesa
+    Anterior: 26
+    Nuevo: 31,963
+    Diferencia: 31,937
+
+  P1084 - Ex Casados
+    Anterior: 29
+    Nuevo: 29,137
+    Diferencia: 29,108
+
+  P1160 - Metegol
+    Anterior: 2,113,764
+    Nuevo: 2,139,844
+    Diferencia: 26,080
+
+  P1144 - Tesis sobre un homicidio
+    Anterior: 1,023,424
+    Nuevo: 1,047,647
+    Diferencia: 24,223
+
+  P1149 - Natacha, la película
+    Anterior: 21
+    Nuevo: 23,098
+    Diferencia: 23,077
+
+  P1113 - Muere, monstruo, muere
+    Anterior: 11
+    Nuevo: 11,933
+    Diferencia: 11,922
+
+  P1073 - Yanka y el espíritu del volcán
+    Anterior: 11
+    Nuevo: 11,321
+    Diferencia: 11,310
+
+  P1122 - La odisea de los giles
+    Anterior: 1,832,408
+    Nuevo: 1,841,886
+    Diferencia: 9,478
+
+  P1066 - Mamá se fue de viaje
+    Anterior: 1,704,886
+    Nuevo: 1,713,804
+    Diferencia: 8,918
+
+  P1075 - El Ángel
+    Anterior: 1,364,123
+    Nuevo: 1,367,803
+    Diferencia: 3,680
+
+  P1034 - Las viudas de los jueves
+    Anterior: 537,802
+    Nuevo: 541,279
+    Diferencia: 3,477
+
+  P1128 - El robo del siglo
+    Anterior: 2,082,542
+    Nuevo: 2,085,915
+    Diferencia: 3,373
+
+  P1153 - Belén
+    Anterior: 144,126
+    Nuevo: 147,468
+    Diferencia: 3,342
+
+  P1155 - Motivos para no enamorarse
+    Anterior: 143,753
+    Nuevo: 146,988
+    Diferencia: 3,235
+
+  P1067 - El fútbol o yo
+    Anterior: 1,095,225
+    Nuevo: 1,097,893
+    Diferencia: 2,668
+
+  P1115 - Homo Argentum
+    Anterior: 1,827,144
+    Nuevo: 1,829,245
+    Diferencia: 2,101
+
+  P1147 - Me casé con un boludo
+    Anterior: 2,026,917
+    Nuevo: 2,027,880
+    Diferencia: 963
+

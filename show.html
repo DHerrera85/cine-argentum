@@ -54,6 +54,19 @@
         var placeholderV = 'images/verticals/placeholder-280x420.svg';
         var imgSrc = (item.image && String(item.image).trim()) ? item.image : placeholderV;
         var synopsis = (item.synopsis && String(item.synopsis).trim()) ? item.synopsis : 'Próximamente';
+        var viewersRow = '';
+        if (item.viewers) {
+          var viewersFormatted = item.viewers.toLocaleString('es-AR');
+          viewersRow = '<dt>Cantidad de Espectadores</dt><dd>' + viewersFormatted + '</dd>';
+        }
+        var producerRow = '';
+        if (item.producer) {
+          producerRow = '<dt>Productora / Distribuidora</dt><dd>' + item.producer + '</dd>';
+        }
+        var directorRow = '';
+        if (item.director) {
+          directorRow = '<dt>Director</dt><dd>' + item.director + '</dd>';
+        }
         var html = '<div class="card">'
           + '<div class="poster"><img src="' + imgSrc + '" alt="' + (item.title||'') + '"></div>'
           + '<div class="meta">'
@@ -65,6 +78,9 @@
               + '<dt>Canal / Plataforma</dt><dd>' + (item.channel || '') + '</dd>'
               + '<dt>Género</dt><dd>' + (item.genre || '') + '</dd>'
               + '<dt>Actores</dt><dd>' + actors + '</dd>'
+              + viewersRow
+              + producerRow
+              + directorRow
             + '</dl>'
           + '</div>'
         + '</div>';

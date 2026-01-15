@@ -1,4 +1,4 @@
-﻿{
+{
   "items": [
     {
       "title": "La furia",
@@ -15,7 +15,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Policial",
-      "id": "P1000"
+      "id": "P1000",
+      "viewers": 660273,
+      "producer": "Argentina Sono Film",
+      "director": "Juan Bautista Stagnaro"
     },
     {
       "title": "Cenizas de paraíso",
@@ -34,7 +37,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Policial",
-      "id": "P1001"
+      "id": "P1001",
+      "viewers": 635591,
+      "producer": "Patagonik Film Group",
+      "director": "Marcelo Piñeyro"
     },
     {
       "title": "Dibu la película",
@@ -52,7 +58,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Familiar",
-      "id": "P1002"
+      "id": "P1002",
+      "viewers": 706410,
+      "producer": "Patagonik, Telefe",
+      "director": "Alejandro Stoessel"
     },
     {
       "title": "Dibu 2: la venganza de Nasty",
@@ -69,7 +78,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Familiar",
-      "id": "P1003"
+      "id": "P1003",
+      "viewers": 526340,
+      "producer": "Patagonik, Telefe",
+      "director": "Carlos Galettini"
     },
     {
       "title": "La edad del sol",
@@ -84,7 +96,9 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Familiar",
-      "id": "P1004"
+      "id": "P1004",
+      "viewers": 512178,
+      "director": "Ariel Piluso"
     },
     {
       "title": "Esa maldita costilla",
@@ -103,22 +117,26 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Comedia",
-      "id": "P1005"
+      "id": "P1005",
+      "viewers": 907364,
+      "producer": "Argentina Sono Film, Telefe",
+      "director": "Juan José Jusid"
     },
     {
       "title": "Manuelita",
       "genre": "Animación",
       "year": "1999",
-      "actors": [
-        "-"
-      ],
+      "actors": [],
       "synopsis": "Manuelita, una tortuga curiosa y carismática, deja su isla para viajar en globo a París tras enamorarse de un galápago. Su aventura la llevará a descubrir el mundo y a sí misma.",
       "channel": "",
       "image": "images/verticals/manuelita-1999-poster-280x420.png",
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Animación",
-      "id": "P1006"
+      "id": "P1006",
+      "viewers": 2210600,
+      "producer": "Telefe, García Ferré Entertainment",
+      "director": "Manuel García Ferré"
     },
     {
       "title": "Apariencias",
@@ -134,14 +152,19 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Romance",
-      "id": "P1007"
+      "id": "P1007",
+      "viewers": 782348,
+      "producer": "Naya Films, Patagonik Film Group, Pol-ka Producciones",
+      "director": "Alberto Lecchi"
     },
     {
       "title": "Condor Crux",
       "genre": "Animación",
       "year": "2000",
       "actors": [
-        "Leticia Bredice\nDamián De Santo\nArturo Maly"
+        "Leticia Brédice",
+        "Damián De Santo",
+        "Arturo Maly"
       ],
       "synopsis": "En el año 2068, la ciudad de Darwin vive sometida al control totalitario de Phizar y su corporación. El científico rebelde Doctor Crux escapa de prisión y lucha por despertar a la población usando un satélite, desafiando al régimen.",
       "channel": "",
@@ -149,7 +172,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Animación",
-      "id": "P1008"
+      "id": "P1008",
+      "viewers": 56958,
+      "producer": "Patagonik Film Group",
+      "director": "Juan Pablo Buscarini"
     },
     {
       "title": "Plata quemada",
@@ -167,7 +193,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Policial",
-      "id": "P1009"
+      "id": "P1009",
+      "viewers": 525188,
+      "producer": "Oscar Kramer S. A., Cuatro Cabezas, Tornasol Films, Mandarin Films, Taxi Films",
+      "director": "Marcelo Piñeyro"
     },
     {
       "title": "Antigua vida mía",
@@ -185,7 +214,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Drama",
-      "id": "P1010"
+      "id": "P1010",
+      "viewers": 54097,
+      "producer": "Aries Cinematográfica",
+      "director": "Héctor Olivera"
     },
     {
       "title": "Déjala Correr",
@@ -204,7 +236,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Comedia",
-      "id": "P1011"
+      "id": "P1011",
+      "viewers": 68251,
+      "producer": "Pol-Ka",
+      "director": "Alberto Lecchi"
     },
     {
       "title": "Chiquititas",
@@ -221,7 +256,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Familiar",
-      "id": "P1012"
+      "id": "P1012",
+      "viewers": 682441,
+      "producer": "Telefe",
+      "director": "José Luis Massa"
     },
     {
       "title": "Sólo por Hoy",
@@ -230,7 +268,7 @@
       "actors": [
         "Federico Esquerro",
         "Sergio Boris",
-        "Mariano Martinez"
+        "Mariano Martínez"
       ],
       "synopsis": "Narra las situaciones cotidianas de cinco amigos que comparten una casa en Buenos Aires.",
       "channel": "",
@@ -238,7 +276,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Comedia",
-      "id": "P1013"
+      "id": "P1013",
+      "viewers": 26422,
+      "producer": "Universidad del Cine",
+      "director": "Ariel Rotter"
     },
     {
       "title": "La Cienaga",
@@ -254,7 +295,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Drama",
-      "id": "P1015"
+      "id": "P1015",
+      "viewers": 131585,
+      "producer": "Lita Stantic",
+      "director": "Lucrecia Martel"
     },
     {
       "title": "Mercano, el marciano",
@@ -271,7 +315,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Animación",
-      "id": "P1016"
+      "id": "P1016",
+      "viewers": 13805,
+      "producer": "Universidad del Cine",
+      "director": "Juan Antín"
     },
     {
       "title": "Apasionados",
@@ -279,7 +326,7 @@
       "year": "2002",
       "actors": [
         "Pablo Echarri",
-        "Nancy Duplaá",
+        "Nancy Dupláa",
         "Natalia Verbeke"
       ],
       "synopsis": "Una azafata que decide ser madre por inseminación artificial le pide al novio de su amiga ser el donante",
@@ -288,7 +335,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Romance",
-      "id": "P1017"
+      "id": "P1017",
+      "viewers": 1054475,
+      "producer": "Patagonik",
+      "director": "Juan José Jusid"
     },
     {
       "title": "Un Día en el Paraíso",
@@ -304,7 +354,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Romance",
-      "id": "P1018"
+      "id": "P1018",
+      "viewers": 296566,
+      "producer": "Patagonik",
+      "director": "Juan Bautista Stagnaro"
     },
     {
       "title": "Vivir Intentando",
@@ -323,7 +376,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Familiar",
-      "id": "P1019"
+      "id": "P1019",
+      "viewers": 948040,
+      "producer": "Patagonik",
+      "director": "Tomás Yankelevich"
     },
     {
       "title": "El Día que me Amen",
@@ -339,7 +395,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Romance",
-      "id": "P1020"
+      "id": "P1020",
+      "viewers": 524569,
+      "producer": "Patagonik",
+      "director": "Daniel Barone"
     },
     {
       "title": "Erreway: 4 Caminos",
@@ -357,22 +416,26 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Familiar",
-      "id": "P1021"
+      "id": "P1021",
+      "viewers": 342627,
+      "producer": "Cris Morena",
+      "director": "Ezequiel Crupnicoff"
     },
     {
       "title": "Patoruzito",
       "genre": "Animación",
       "year": "2004",
-      "actors": [
-        "-"
-      ],
+      "actors": [],
       "synopsis": "Patoruzito está destinado a ser un gran cacique, pero para ello deberá superar tres pruebas que demostrarán su habilidad, su valentía y su honor.",
       "channel": "",
       "image": "images/verticals/patoruzito-2004-poster-280x420.png",
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Animación",
-      "id": "P1022"
+      "id": "P1022",
+      "viewers": 1996738,
+      "producer": "Patagonik",
+      "director": "José Luis Massa"
     },
     {
       "title": "Teo, cazador intergaláctico",
@@ -388,7 +451,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Animación",
-      "id": "P1023"
+      "id": "P1023",
+      "viewers": 102447,
+      "producer": "Amazonia Films",
+      "director": "Sergio Bayo"
     },
     {
       "title": "Papá se Volvió Loco",
@@ -405,7 +471,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Comedia",
-      "id": "P1024"
+      "id": "P1024",
+      "viewers": 1579224,
+      "producer": "Argentina Sono Film",
+      "director": "Rodolfo Ledo"
     },
     {
       "title": "Iluminados por el Fuego",
@@ -423,7 +492,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Histórica",
-      "id": "P1025"
+      "id": "P1025",
+      "viewers": 344281,
+      "producer": "INCAA",
+      "director": "Tristán Bauer"
     },
     {
       "title": "Los Incorregibles",
@@ -439,37 +511,42 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Comedia",
-      "id": "P1026"
+      "id": "P1026",
+      "viewers": 768755,
+      "producer": "Argentina Sono Film",
+      "director": "Rodolfo Ledo"
     },
     {
       "title": "El Arca",
       "genre": "Animación",
       "year": "2007",
-      "actors": [
-        "-"
-      ],
+      "actors": [],
       "synopsis": "Dios decide enviar un gran diluvio y encarga a Noé construir un arca para salvar a una pareja de cada especie. Durante el viaje, Noé debe enfrentar disputas entre los animales y la ambición de un tigre que busca el poder, mientras la convivencia a bordo se vuelve tan caótica como divertida.",
       "channel": "",
       "image": "images/verticals/el-arca-2007-poster-280x420.png",
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Animación",
-      "id": "P1027"
+      "id": "P1027",
+      "viewers": 340356,
+      "producer": "Patagonik Film Group",
+      "director": "Juan Pablo Buscarini"
     },
     {
       "title": "Isidoro",
       "genre": "Animación",
       "year": "2007",
-      "actors": [
-        "-"
-      ],
+      "actors": [],
       "synopsis": "Isidoro, un holgazán que vive de la herencia familiar, disfruta de las fiestas y los casinos sin trabajar jamás. Pero cuando su tío, el Coronel Cañones, es acusado de un grave delito, debe ponerse en acción por primera vez para descubrir al verdadero culpable.",
       "channel": "",
       "image": "images/verticals/isidoro-2007-poster-280x420.png",
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Animación",
-      "id": "P1028"
+      "id": "P1028",
+      "viewers": 275235,
+      "producer": "Indiecito Studios",
+      "director": "José Luis Massa"
     },
     {
       "title": "¿Quién Dice qué es Fácil?",
@@ -485,22 +562,26 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Romance",
-      "id": "P1029"
+      "id": "P1029",
+      "viewers": 421751,
+      "producer": "Film Suez",
+      "director": "Juan Taratuto"
     },
     {
       "title": "Martín Fierro, la Película",
       "genre": "Animación",
       "year": "2007",
-      "actors": [
-        "-"
-      ],
+      "actors": [],
       "synopsis": "Martín Fierro es un renegado que lucha contra la corrupción que intenta someterlo y quitarle lo más preciado de su vida: La libertad.",
       "channel": "",
       "image": "images/verticals/martin-fierro-la-pelicula-2007-poster-280x420.png",
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Animación",
-      "id": "P1030"
+      "id": "P1030",
+      "viewers": 102721,
+      "producer": "Aleph Media",
+      "director": "Liliana Romero"
     },
     {
       "title": "Leonera",
@@ -516,7 +597,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Policial",
-      "id": "P1031"
+      "id": "P1031",
+      "viewers": 142984,
+      "producer": "Patagonik Film Group",
+      "director": "Pablo Trapero"
     },
     {
       "title": "El ratón Perez 2",
@@ -534,7 +618,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Familiar",
-      "id": "P1032"
+      "id": "P1032",
+      "viewers": 231610,
+      "producer": "Patagonik",
+      "director": "Andrés G. Schaer"
     },
     {
       "title": "Papá por un día",
@@ -551,7 +638,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Familiar",
-      "id": "P1033"
+      "id": "P1033",
+      "viewers": 480568,
+      "producer": "Telefe, INCAA, Pampa Films, Royal Cinema Group, Runa Films",
+      "director": "Raúl Rodríguez Peila"
     },
     {
       "title": "Las viudas de los jueves",
@@ -569,7 +659,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Policial",
-      "id": "P1034"
+      "id": "P1034",
+      "viewers": 541279,
+      "producer": "Tornasol",
+      "director": "Marcelo Piñeyro"
     },
     {
       "title": "Felicitas",
@@ -585,7 +678,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Romance",
-      "id": "P1035"
+      "id": "P1035",
+      "viewers": 131788,
+      "producer": "Buenos Aires Producciones",
+      "director": "María Teresa Costantini"
     },
     {
       "title": "Dos hermanos",
@@ -601,7 +697,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Comedia",
-      "id": "P1036"
+      "id": "P1036",
+      "viewers": 474449,
+      "producer": "Patagonik",
+      "director": "Daniel Burman"
     },
     {
       "title": "Miss Tacuarembó",
@@ -618,7 +717,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Familiar",
-      "id": "P1037"
+      "id": "P1037",
+      "viewers": 49325,
+      "producer": "Oriental Films, Royal Cinema Group, CoolShot Films",
+      "director": "Martín Sastre"
     },
     {
       "title": "Pájaros volando",
@@ -635,7 +737,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Comedia",
-      "id": "P1038"
+      "id": "P1038",
+      "viewers": 139669,
+      "producer": "INCAA",
+      "director": "Néstor Montalbano"
     },
     {
       "title": "Carancho",
@@ -652,22 +757,26 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Policial",
-      "id": "P1039"
+      "id": "P1039",
+      "viewers": 626251,
+      "producer": "Patagonik",
+      "director": "Pablo Trapero"
     },
     {
       "title": "Gaturro",
       "genre": "Animación",
       "year": "2010",
-      "actors": [
-        "-"
-      ],
+      "actors": [],
       "synopsis": "Gaturro alcanza la fama televisiva pero se distancia de sus seres queridos y de Agatha. Con la ayuda de sus amigos, intentará recuperar el amor y volver a ser quien era.",
       "channel": "",
       "image": "images/verticals/gaturro-2010-poster-280x420.png",
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Animación",
-      "id": "P1040"
+      "id": "P1040",
+      "viewers": 428949,
+      "producer": "Illusion Studios, Toonz Entertainment, Ánima Estudios",
+      "director": "Cristian Dzwonik"
     },
     {
       "title": "Igualita a mí",
@@ -683,7 +792,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Comedia",
-      "id": "P1041"
+      "id": "P1041",
+      "viewers": 849429,
+      "producer": "Patagonik Film Group",
+      "director": "Diego Kaplan"
     },
     {
       "title": "Mi primera boda",
@@ -700,7 +812,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Comedia",
-      "id": "P1042"
+      "id": "P1042",
+      "viewers": 302088,
+      "producer": "Buena Vista Internacional",
+      "director": "Ariel Winograd"
     },
     {
       "title": "Revolución, el cruce de los andes",
@@ -717,22 +832,26 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Histórica",
-      "id": "P1043"
+      "id": "P1043",
+      "viewers": 303331,
+      "producer": "INCAA",
+      "director": "Leandro Ipiña"
     },
     {
       "title": "Selkirk, el verdadero Robinson Crusoe",
       "genre": "Animación",
       "year": "2012",
-      "actors": [
-        "-"
-      ],
+      "actors": [],
       "synopsis": "Selkirk, un pirata egoísta y ambicioso, es abandonado en una isla desierta por su tripulación tras ganarse su enemistad. Aislado, deberá replantear su vida y aprender una nueva forma de ver el mundo.",
       "channel": "",
       "image": "images/verticals/selkirk-robinson-crusoe-2012-poster-280x420.png",
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Animación",
-      "id": "P1044"
+      "id": "P1044",
+      "viewers": 58832,
+      "producer": "Patagonik Film Group, Cineanimadores",
+      "director": "Walter Tournier"
     },
     {
       "title": "Extraños en la noche",
@@ -749,7 +868,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Comedia",
-      "id": "P1045"
+      "id": "P1045",
+      "viewers": 155485,
+      "producer": "MyS Producción",
+      "director": "Alejandro Montiel"
     },
     {
       "title": "La pelea de mi vida",
@@ -766,22 +888,26 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Drama",
-      "id": "P1046"
+      "id": "P1046",
+      "viewers": 83509,
+      "producer": "Argentina Sono Film",
+      "director": "Jorge Nisco"
     },
     {
       "title": "Rodencia y el diente de la princesa",
       "genre": "Animación",
       "year": "2014",
-      "actors": [
-        "-"
-      ],
+      "actors": [],
       "synopsis": "En el reino fantástico de Rodencia, el joven aprendiz de mago Edam y la valiente Brie emprenden una peligrosa aventura. Junto a grandes guerreros, buscarán un poder legendario para detener al malvado hechicero Rotex y salvar el reino.",
       "channel": "",
       "image": "images/verticals/rodencia-y-el-diente-de-la-princesa-2012-poster-280x420.png",
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Animación",
-      "id": "P1047"
+      "id": "P1047",
+      "viewers": 31963,
+      "producer": "Vista Sur Films, Red Post Studio",
+      "director": "David Bisbano"
     },
     {
       "title": "Soledad y Larguirucho",
@@ -796,7 +922,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Familiar",
-      "id": "P1048"
+      "id": "P1048",
+      "viewers": 72019,
+      "producer": "San Luis Cine",
+      "director": "Manuel García Ferré"
     },
     {
       "title": "Vino para robar",
@@ -804,7 +933,7 @@
       "year": "2013",
       "actors": [
         "Daniel Hendler",
-        "Valeria Bertucelli"
+        "Valeria Bertuccelli"
       ],
       "synopsis": "Sebastián y Natalia, dos ladrones expertos, se ven obligados a trabajar juntos en un golpe de alto riesgo. Su misión es robar una valiosa botella de Malbec del siglo XIX de un banco mendocino, con sus vidas en juego.",
       "channel": "",
@@ -812,7 +941,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Comedia",
-      "id": "P1049"
+      "id": "P1049",
+      "viewers": 180007,
+      "producer": "Patagonik, Cine Ar",
+      "director": "Ariel Winograd"
     },
     {
       "title": "Séptimo",
@@ -828,7 +960,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Policial",
-      "id": "P1050"
+      "id": "P1050",
+      "viewers": 972595,
+      "producer": "Telefe Contenidos, Telecinco Cinema, Hugo Sigman (K&S Films)",
+      "director": "Patxi Amezcúa"
     },
     {
       "title": "El inventor de juegos",
@@ -845,7 +980,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Familiar",
-      "id": "P1051"
+      "id": "P1051",
+      "viewers": 292226,
+      "producer": "Buena Vista International, Pampa Films, Benteveo Producciones, Telefe",
+      "director": "Juan Pablo Buscarini"
     },
     {
       "title": "Muerte en Buenos Aires",
@@ -861,14 +999,20 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Policial",
-      "id": "P1052"
+      "id": "P1052",
+      "viewers": 484893,
+      "producer": "Distribution Company",
+      "director": "Natalia Meta"
     },
     {
       "title": "Bañeros 4: los rompeolas",
       "genre": "Comedia",
       "year": "2014",
       "actors": [
-        "Emilio Disi\nPablo Granados\nPachu Peña\nFreddy Villarreal"
+        "Emilio Disi",
+        "Pablo Granados",
+        "Pachu Peña",
+        "Freddy Villarreal"
       ],
       "synopsis": "Los nuevos bañeros llegan a Mar del Plata con gags, inventos y trampas en la playa. Con ayuda de los animales marinos, enfrentarán a un empresario malvado en un final divertido.",
       "channel": "",
@@ -876,7 +1020,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Comedia",
-      "id": "P1053"
+      "id": "P1053",
+      "viewers": 936024,
+      "producer": "Argentina Sono Film",
+      "director": "Rodolfo Ledo"
     },
     {
       "title": "Kryptonita",
@@ -886,7 +1033,7 @@
         "Juan Palomino",
         "Pablo Rago",
         "Lautaro Delgado",
-        "Nicolás Vásquez"
+        "Nicolás Vázquez"
       ],
       "synopsis": "La historia imagina a Superman criado no en Smallville, sino en Isidro Casanova, en el conurbano bonaerense. Desde ese contexto real y marginal, el mito se resignifica y enfrenta una realidad muy distinta.",
       "channel": "",
@@ -894,7 +1041,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Comedia",
-      "id": "P1054"
+      "id": "P1054",
+      "viewers": 119972,
+      "producer": "Crudo Films, Hermanos Dawidson Films, Energía",
+      "director": "Nicanor Loreti"
     },
     {
       "title": "Abzurdah",
@@ -910,7 +1060,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Drama",
-      "id": "P1055"
+      "id": "P1055",
+      "viewers": 809470,
+      "producer": "MyS Producción, HC Films, Telefe, Fénix",
+      "director": "Daniela Goggi"
     },
     {
       "title": "Papeles en el viento",
@@ -928,14 +1081,20 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Drama",
-      "id": "P1056"
+      "id": "P1056",
+      "viewers": 397744,
+      "producer": "Cinear, Telefe, Endemol, INCAA",
+      "director": "Juan Taratuto"
     },
     {
       "title": "Voley",
       "genre": "Comedia",
       "year": "2015",
       "actors": [
-        "Martín Piroyansky\nVioleta Urtizberea\nChino Darín\nJustina Bustos"
+        "Martín Piroyansky",
+        "Violeta Urtizberea",
+        "Chino Darín",
+        "Justina Bustos"
       ],
       "synopsis": "Cuatro amigos celebran Año Nuevo en el Tigre, pero la llegada inesperada de Belén altera el equilibrio del grupo. Entre tensiones y revelaciones, saldrán a la luz traiciones que pondrán a prueba su amistad.",
       "channel": "",
@@ -943,7 +1102,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Comedia",
-      "id": "P1057"
+      "id": "P1057",
+      "viewers": 112526,
+      "producer": "Patagonik, MyS, Gazz",
+      "director": "Martín Piroyansky"
     },
     {
       "title": "Tini: el gran cambio de Violetta",
@@ -961,14 +1123,21 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Romance",
-      "id": "P1058"
+      "id": "P1058",
+      "viewers": 116700,
+      "producer": "Buena Vista International, Gloriamundi Producciones, The Walt Disney Company Argentina",
+      "director": "Juan Pablo Buscarini"
     },
     {
       "title": "100 años de perdón",
       "genre": "Policial",
       "year": "2016",
       "actors": [
-        "Luis Tosar\nRodrigo De la Serna\nRaúl Arévalo\nJosé Coronado\nJoaquín Furriel"
+        "Luis Tosar",
+        "Rodrigo de la Serna",
+        "Raúl Arévalo",
+        "José Coronado",
+        "Joaquín Furriel"
       ],
       "synopsis": "Una banda de ladrones liderada por “El Uruguayo” planea asaltar un banco en Valencia para vaciar sus cajas de seguridad. Con una vía de escape por una estación de metro abandonada, el golpe parece perfecto.",
       "channel": "",
@@ -976,14 +1145,18 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Policial",
-      "id": "P1059"
+      "id": "P1059",
+      "viewers": 358808,
+      "producer": "Morena Films, Telecinco Cinema, K&S Films, Telefónica Studios",
+      "director": "Daniel Calparsoro"
     },
     {
       "title": "Permitidos",
       "genre": "Comedia",
       "year": "2016",
       "actors": [
-        "Martín Piroyansky\nLali Espósito",
+        "Martín Piroyansky",
+        "Lali Espósito",
         "Benjamín Vicuña"
       ],
       "synopsis": "Mateo y Camila, una pareja que promete darse una infidelidad permitida en la relación nada más que con un personaje inalcanzable elegido por cada uno.",
@@ -992,7 +1165,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Comedia",
-      "id": "P1060"
+      "id": "P1060",
+      "viewers": 356348,
+      "producer": "Tresplanos Cine, Patagonik Film Group, INCAA",
+      "director": "Ariel Winograd"
     },
     {
       "title": "La última fiesta",
@@ -1001,7 +1177,7 @@
       "actors": [
         "Nicolás Vázquez",
         "Alan Sabbagh",
-        "Benjamin Amadeo"
+        "Benjamín Amadeo"
       ],
       "synopsis": "Tres amigos organizan una fiesta descontrolada para animar a uno de ellos tras una ruptura. Cuando roban sin querer un valioso cuadro, deberán recuperarlo antes de enfrentar graves consecuencias.",
       "channel": "",
@@ -1009,7 +1185,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Comedia",
-      "id": "P1061"
+      "id": "P1061",
+      "viewers": 115650,
+      "producer": "Buffalo Films, MG Films",
+      "director": "Nicolás Silbert"
     },
     {
       "title": "El ciudadano ilustre",
@@ -1026,7 +1205,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Drama",
-      "id": "P1062"
+      "id": "P1062",
+      "viewers": 665007,
+      "producer": "Aleph Media, Magma Cine",
+      "director": "Gastón Duprat, Mariano Cohn"
     },
     {
       "title": "El rey del Once",
@@ -1042,14 +1224,19 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Comedia",
-      "id": "P1063"
+      "id": "P1063",
+      "viewers": 65193,
+      "producer": "BD Cine Telefe",
+      "director": "Daniel Burman"
     },
     {
       "title": "Inseparables",
       "genre": "Drama",
       "year": "2016",
       "actors": [
-        "Rodrigo De La Serna\nOscar Martínez\nCarla Peterson"
+        "Rodrigo de la Serna",
+        "Oscar Martínez",
+        "Carla Peterson"
       ],
       "synopsis": "Felipe, un empresario tetrapléjico, elige como asistente a Tito, un hombre sin experiencia pero sincero. Su vínculo transforma la vida de ambos al romper con la compasión y abrir paso a una amistad inesperada.",
       "channel": "",
@@ -1057,7 +1244,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Drama",
-      "id": "P1064"
+      "id": "P1064",
+      "viewers": 363835,
+      "producer": "Argentina Sono Film",
+      "director": "Marcos Carnevale"
     },
     {
       "title": "Los que aman, odian",
@@ -1073,7 +1263,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Drama",
-      "id": "P1065"
+      "id": "P1065",
+      "viewers": 357716,
+      "producer": "Patagonik",
+      "director": "Alejandro Maci"
     },
     {
       "title": "Mamá se fue de viaje",
@@ -1089,7 +1282,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Familiar",
-      "id": "P1066"
+      "id": "P1066",
+      "viewers": 1713804,
+      "producer": "Patagonik",
+      "director": "Ariel Winograd"
     },
     {
       "title": "El fútbol o yo",
@@ -1105,7 +1301,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Comedia",
-      "id": "P1067"
+      "id": "P1067",
+      "viewers": 1097893,
+      "producer": "Patagonik, Lihuen Andina S.A., Creative Andina",
+      "director": "Marcos Carnevale"
     },
     {
       "title": "Perdida",
@@ -1122,7 +1321,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Policial",
-      "id": "P1068"
+      "id": "P1068",
+      "viewers": 274109,
+      "producer": "INCAA, MyS Producción, Telefe, Tondero Producciones",
+      "director": "Alejandro Montiel"
     },
     {
       "title": "No dormirás",
@@ -1139,7 +1341,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Terror",
-      "id": "P1069"
+      "id": "P1069",
+      "viewers": 99381,
+      "producer": "Pampa Films, Gloriamundi",
+      "director": "Gustavo Hernández"
     },
     {
       "title": "27: El club de los malditos",
@@ -1155,7 +1360,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Comedia",
-      "id": "P1070"
+      "id": "P1070",
+      "viewers": 33414,
+      "producer": "Del Toro Films",
+      "director": "Nicanor Loreti"
     },
     {
       "title": "El Potro: lo mejor del amor",
@@ -1174,7 +1382,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Biográficas",
-      "id": "P1071"
+      "id": "P1071",
+      "viewers": 548749,
+      "producer": "FAM Contenidos, Telefe, DirecTV, INCAA",
+      "director": "Lorena Muñoz"
     },
     {
       "title": "Re loca",
@@ -1190,7 +1401,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Comedia",
-      "id": "P1072"
+      "id": "P1072",
+      "viewers": 762184,
+      "producer": "Aeroplano, Telefe, INCAA",
+      "director": "Martino Zaidelis"
     },
     {
       "title": "Yanka y el espíritu del volcán",
@@ -1207,7 +1421,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Familiar",
-      "id": "P1073"
+      "id": "P1073",
+      "viewers": 11321,
+      "producer": "Cine Ar, INCAA, Sudestada",
+      "director": "Iván Abello"
     },
     {
       "title": "Recreo",
@@ -1226,7 +1443,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Drama",
-      "id": "P1074"
+      "id": "P1074",
+      "viewers": 46380,
+      "producer": "HC Films, Benteveo, Chinita Films",
+      "director": "Hernán Guerschuny, Jazmín Stuart"
     },
     {
       "title": "El Ángel",
@@ -1246,7 +1466,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Histórica",
-      "id": "P1075"
+      "id": "P1075",
+      "viewers": 1367803,
+      "producer": "K&S Films, Underground, Telefe",
+      "director": "Luis Ortega"
     },
     {
       "title": "Bañeros 5: Lentos y cargosos",
@@ -1264,7 +1487,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Comedia",
-      "id": "P1076"
+      "id": "P1076",
+      "viewers": 153218,
+      "producer": "Argentina Sono Film",
+      "director": "Rodolfo Ledo"
     },
     {
       "title": "El cuento de las comadrejas",
@@ -1282,7 +1508,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Comedia",
-      "id": "P1077"
+      "id": "P1077",
+      "viewers": 586483,
+      "producer": "100 Bares, Telefé, Tornasol Films, INCAA",
+      "director": "Juan José Campanella"
     },
     {
       "title": "4×4",
@@ -1299,7 +1528,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Policial",
-      "id": "P1078"
+      "id": "P1078",
+      "viewers": 332080,
+      "producer": "MediaPro",
+      "director": "Mariano Cohn"
     },
     {
       "title": "No soy tu mami",
@@ -1316,7 +1548,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Comedia",
-      "id": "P1079"
+      "id": "P1079",
+      "viewers": 229692,
+      "producer": "Patagonik",
+      "director": "Marcos Carnevale"
     },
     {
       "title": "La Gallina Turuleca",
@@ -1331,7 +1566,9 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Animación",
-      "id": "P1081"
+      "id": "P1081",
+      "viewers": 135158,
+      "director": "Eduardo Gondell"
     },
     {
       "title": "Yo, Adolescente",
@@ -1348,7 +1585,9 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Drama",
-      "id": "P1082"
+      "id": "P1082",
+      "producer": "Cine Tren",
+      "director": "Lucas Santa Ana"
     },
     {
       "title": "Corazón Loco",
@@ -1365,7 +1604,9 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Comedia",
-      "id": "P1083"
+      "id": "P1083",
+      "producer": "Netflix",
+      "director": "Marcos Carnevale"
     },
     {
       "title": "Ex Casados",
@@ -1381,7 +1622,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Comedia",
-      "id": "P1084"
+      "id": "P1084",
+      "viewers": 29137,
+      "producer": "Zoelle Producciones, RGB Entertainment",
+      "director": "Sabrina Farji"
     },
     {
       "title": "Errante Corazón",
@@ -1390,7 +1634,7 @@
       "actors": [
         "Leonardo Sbaraglia",
         "Alberto Ajaka",
-        "Miranda de la Serna"
+        "Miranda De la Serna"
       ],
       "synopsis": "Un verano caótico en Argentina y Brasil se convierte en un punto de inflexión en la vida de un hombre destrozado y su hija adolescente.",
       "channel": "",
@@ -1398,14 +1642,19 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Drama",
-      "id": "P1085"
+      "id": "P1085",
+      "viewers": 3630,
+      "producer": "Cinetren, HBO Max",
+      "director": "Leonardo Brzezicki"
     },
     {
       "title": "La Chica Más Rara del Mundo",
       "genre": "Familiar",
       "year": "2021",
       "actors": [
-        "Gina Mastronicola\nDenise Barbara\nCelina Font"
+        "Gina Mastronicola",
+        "Denise Barbara",
+        "Celina Font"
       ],
       "synopsis": "Melién, una adolescente solitaria y creativa, refugia su mundo en el dibujo y la lectura. Convencida de que sus creaciones han cobrado vida, su imaginación se convierte en el centro de su realidad.",
       "channel": "",
@@ -1413,7 +1662,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Familiar",
-      "id": "P1086"
+      "id": "P1086",
+      "viewers": 1656,
+      "producer": "Crep Films, Lahaye Media",
+      "director": "Mariano Cattaneo"
     },
     {
       "title": "La Noche Mágica",
@@ -1429,7 +1681,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Familiar",
-      "id": "P1087"
+      "id": "P1087",
+      "viewers": 26156,
+      "producer": "Buena Vista International",
+      "director": "Gastón Portal"
     },
     {
       "title": "Matrimillas",
@@ -1437,7 +1692,7 @@
       "year": "2022",
       "actors": [
         "Luisana Lopilato",
-        "Juan Minuji"
+        "Juan Minujín"
       ],
       "synopsis": "Un matrimonio infeliz encuentra esperanza en una aplicación que recompensa las cosas buenas que hacen por el otro. Hasta que la obsesión enfermiza se apodera de todo...",
       "channel": "",
@@ -1445,14 +1700,17 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Comedia",
-      "id": "P1088"
+      "id": "P1088",
+      "producer": "Netflix",
+      "director": "Sebastián De Caro"
     },
     {
       "title": "Más Respeto que soy Tu Madre",
       "genre": "Comedia",
       "year": "2022",
       "actors": [
-        "Florencia Peña\nDiego Peretti"
+        "Florencia Peña",
+        "Diego Peretti"
       ],
       "synopsis": "Una familia de Mercedes intenta sostenerse entre conflictos y frustraciones, con una madre al frente, un padre repartidor y dos hijos inseguros. La convivencia se vuelve aún más caótica con la presencia del nono, un rockero drogadicto dueño de la pizzería familiar.",
       "channel": "",
@@ -1460,7 +1718,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Comedia",
-      "id": "P1089"
+      "id": "P1089",
+      "viewers": 121166,
+      "producer": "Pampa Films, Gloriamundi Producciones, Star Distribution",
+      "director": "Marcos Carnevale"
     },
     {
       "title": "30 Noches con mi Ex",
@@ -1476,7 +1737,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Comedia",
-      "id": "P1090"
+      "id": "P1090",
+      "viewers": 811569,
+      "producer": "Patagonik, Star Distribution",
+      "director": "Adrián Suar"
     },
     {
       "title": "Blondi",
@@ -1494,7 +1758,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Comedia",
-      "id": "P1091"
+      "id": "P1091",
+      "viewers": 72612,
+      "producer": "Amazon Studios, Gran Via Productions, La Unión de los Ríos, Setembro Cine",
+      "director": "Dolores Fonzi"
     },
     {
       "title": "Puan",
@@ -1510,7 +1777,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Comedia",
-      "id": "P1092"
+      "id": "P1092",
+      "viewers": 141115,
+      "producer": "Pasto Cine, Pucara Cine, Infinity Hill",
+      "director": "María Alché, Benjamín Naishtat"
     },
     {
       "title": "La Extorsión",
@@ -1528,7 +1798,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Policial",
-      "id": "P1093"
+      "id": "P1093",
+      "viewers": 547917,
+      "producer": "100 Bares, Cimarrón Cine, Infinity Hill, Particular Crowd HBO Max",
+      "director": "Martino Zaidelis"
     },
     {
       "title": "Casi Muerta",
@@ -1536,7 +1809,7 @@
       "year": "2023",
       "actors": [
         "Natalia Oreiro",
-        "Diego Velásquez",
+        "Diego Velázquez",
         "Paola Barrientos"
       ],
       "synopsis": "Tras un grave accidente que deja a María al borde de la muerte, ella y Javi, amigos de toda la vida, se reencuentran y revelan un amor oculto. Javi deberá elegir entre su presente o un sentimiento del pasado que podría perder para siempre.",
@@ -1545,7 +1818,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Comedia",
-      "id": "P1094"
+      "id": "P1094",
+      "viewers": 154028,
+      "producer": "Cinema 7 Films, Non Stop, Particular Crowd, HBO Max",
+      "director": "Fernán Mirás"
     },
     {
       "title": "Cuando Acecha la Maldad",
@@ -1561,14 +1837,20 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Terror",
-      "id": "P1095"
+      "id": "P1095",
+      "viewers": 314467,
+      "producer": "Machaco Films",
+      "director": "Demián Rugna"
     },
     {
       "title": "Campamento con Mamá",
       "genre": "Familiar",
       "year": "2024",
       "actors": [
-        "Natalia Oreiro\nMilo Zeus Lis\nPablo Rago\nSofi Morandi"
+        "Natalia Oreiro",
+        "Milo Zeus Lis",
+        "Pablo Rago",
+        "Sofía Morandi"
       ],
       "synopsis": "Para salvar la acampada de fin de curso de su hijo, una madre soltera decide conducir el autobús mientras intenta demostrarle que puede ser una madre guay.",
       "channel": "",
@@ -1576,7 +1858,9 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Familiar",
-      "id": "P1096"
+      "id": "P1096",
+      "producer": "Netflix",
+      "director": "Martino Zaidelis"
     },
     {
       "title": "Culpa Cero",
@@ -1593,7 +1877,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Comedia",
-      "id": "P1097"
+      "id": "P1097",
+      "viewers": 74191,
+      "producer": "Pampa Films, Star Distribution",
+      "director": "Valeria Bertuccelli"
     },
     {
       "title": "Gigantes",
@@ -1609,7 +1896,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Animación",
-      "id": "P1098"
+      "id": "P1098",
+      "viewers": 35551,
+      "producer": "Studio Isar Animation, 3Doubles Producciones",
+      "director": "Gonzalo Gutiérrez"
     },
     {
       "title": "Transmitvah",
@@ -1617,7 +1907,7 @@
       "year": "2024",
       "actors": [
         "Penélope Guerrero",
-        "Juan Minujin",
+        "Juan Minujín",
         "Gustavo Bassani"
       ],
       "synopsis": "Una célebre cantante iddish regresa a sus orígenes en Buenos Aires para confrontarse con su familia y su pasado.",
@@ -1626,7 +1916,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Comedia",
-      "id": "P1099"
+      "id": "P1099",
+      "viewers": 5164,
+      "producer": "Oficina Burman, The Mediapro Studio, Star Distribution",
+      "director": "Daniel Burman"
     },
     {
       "title": "El Hombre que Amaba los Platos Voladores",
@@ -1643,7 +1936,9 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Comedia",
-      "id": "P1100"
+      "id": "P1100",
+      "producer": "Netflix",
+      "director": "Diego Lerman"
     },
     {
       "title": "La Mujer de la Fila",
@@ -1660,7 +1955,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Drama",
-      "id": "P1101"
+      "id": "P1101",
+      "viewers": 32605,
+      "producer": "Netflix",
+      "director": "Benjamín Ávila"
     },
     {
       "title": "Hoy se Arregla el Mundo",
@@ -1678,7 +1976,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Drama",
-      "id": "P1102"
+      "id": "P1102",
+      "viewers": 72032,
+      "producer": "Buena Vista International, Patagonik Film Group",
+      "director": "Ariel Winograd"
     },
     {
       "title": "Bañeros 3, todopoderosos",
@@ -1697,7 +1998,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Comedia",
-      "id": "P1103"
+      "id": "P1103",
+      "viewers": 1148667,
+      "producer": "Argentina Sono Film, Telefe",
+      "director": "Rodolfo Ledo"
     },
     {
       "title": "El Ratón Pérez",
@@ -1706,7 +2010,7 @@
       "actors": [
         "Alejandro Awada",
         "Mariano Chiesa",
-        "Ana María Orozco",
+        "Ana Maria Orozco",
         "Fabián Mazzei",
         "Delfina Varni"
       ],
@@ -1716,7 +2020,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Familiar",
-      "id": "P1104"
+      "id": "P1104",
+      "viewers": 956050,
+      "producer": "Patagonik Film Group",
+      "director": "Juan Pablo Buscarini"
     },
     {
       "title": "La Señal",
@@ -1733,7 +2040,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Histórica",
-      "id": "P1105"
+      "id": "P1105",
+      "viewers": 378220,
+      "producer": "Patagonik Film Group",
+      "director": "Martín Hodara"
     },
     {
       "title": "Acusada",
@@ -1751,22 +2061,26 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Policial",
-      "id": "P1106"
+      "id": "P1106",
+      "viewers": 385313,
+      "producer": "K&S Films, Piano, Rei Cine",
+      "director": "Gonzalo Tobal"
     },
     {
       "title": "Don Gato y su pandilla",
       "genre": "Animación",
       "year": "2011",
-      "actors": [
-        "-"
-      ],
+      "actors": [],
       "synopsis": "Don Gato y su pandilla enfrentan a un nuevo y ambicioso jefe de policía que busca controlar la ciudad con tecnología y leyes absurdas. Entre enredos y desafíos, deberán unir fuerzas para frenar sus planes y salvar a Matute.",
       "channel": "",
       "image": "images/verticals/don-gato-y-su-pandilla-2011-poster-280x420.png",
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Animación",
-      "id": "P1107"
+      "id": "P1107",
+      "viewers": 116962,
+      "producer": "Ánima Estudios, Illusion Studios",
+      "director": "Alberto Mar"
     },
     {
       "title": "Alma mía",
@@ -1782,22 +2096,26 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Romance",
-      "id": "P1108"
+      "id": "P1108",
+      "viewers": 715302,
+      "producer": "Patagonik, Pol-Ka",
+      "director": "Daniel Barone"
     },
     {
       "title": "Los Pintín al rescate",
       "genre": "Animación",
       "year": "2000",
-      "actors": [
-        "-"
-      ],
+      "actors": [],
       "synopsis": "La familia Pintín debe rescatar a la pequeña Luna, secuestrada y llevada a un zoológico privado en una isla. Para salvarla, Ada, Bepo y el abuelo Fierro enfrentarán una peligrosa aventura.",
       "channel": "",
       "image": "images/verticals/los-pintin-al-rescate-2000-poster-280x420.png",
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Animación",
-      "id": "P1109"
+      "id": "P1109",
+      "viewers": 133761,
+      "producer": "Patagonik Film Group",
+      "director": "Franco Bíttolo"
     },
     {
       "title": "Fase 7",
@@ -1815,7 +2133,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Policial",
-      "id": "P1110"
+      "id": "P1110",
+      "viewers": 39027,
+      "producer": "Aeroplano Cine, INCAA, Telefe",
+      "director": "Nicolás Goldbart"
     },
     {
       "title": "El secreto de sus ojos",
@@ -1832,7 +2153,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Policial",
-      "id": "P1111"
+      "id": "P1111",
+      "viewers": 2457396,
+      "producer": "Haddock Films, Tornasol Films, 100 Bares, Telefe, Televisión Española (TVE), Canal+",
+      "director": "Juan José Campanella"
     },
     {
       "title": "El clan",
@@ -1848,7 +2172,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Histórica",
-      "id": "P1112"
+      "id": "P1112",
+      "viewers": 2652757,
+      "producer": "Kramer & Sigman Films, El Deseo, Telefé, Fox International Productions",
+      "director": "Pablo Trapero"
     },
     {
       "title": "Muere, monstruo, muere",
@@ -1864,7 +2191,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Terror",
-      "id": "P1113"
+      "id": "P1113",
+      "viewers": 11933,
+      "producer": "La Unión de los Ríos",
+      "director": "Alejandro Fadel"
     },
     {
       "title": "Un Novio para mi Mujer",
@@ -1872,7 +2202,7 @@
       "year": "2008",
       "actors": [
         "Adrián Suar",
-        "Valeria Bertucelli"
+        "Valeria Bertuccelli"
       ],
       "synopsis": "El Tenso quiere separarse pero no se anima a decírselo a la Tana, cuya constante malhumor vuelve la convivencia imposible. Siguiendo el consejo de un amigo, contrata al seductor Cuervo Flores para que enamore a su mujer y sea ella quien decida dejarlo.",
       "channel": "",
@@ -1880,7 +2210,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Comedia",
-      "id": "P1114"
+      "id": "P1114",
+      "viewers": 1408276,
+      "producer": "Patagonik Film Group",
+      "director": "Juan Taratuto"
     },
     {
       "title": "Homo Argentum",
@@ -1895,7 +2228,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Comedia",
-      "id": "P1115"
+      "id": "P1115",
+      "viewers": 1829245,
+      "producer": "Pampa Films",
+      "director": "Mariano Cohn, Gastón Duprat"
     },
     {
       "title": "Kóblic",
@@ -1903,7 +2239,7 @@
       "year": "2016",
       "actors": [
         "Ricardo Darín",
-        "Oscar Martinez",
+        "Oscar Martínez",
         "Inma Cuesta"
       ],
       "synopsis": "Tomás Kóblic, un ex piloto de la Armada, vive oculto como fumigador mientras carga con un pasado oscuro. En un pueblo marcado por la corrupción policial, su historia vuelve a alcanzarlo.",
@@ -1912,7 +2248,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Policial",
-      "id": "P1116"
+      "id": "P1116",
+      "viewers": 309289,
+      "producer": "Pampa Films, Telefe, Endemol Shine Argentina, DirecTV, INCAA",
+      "director": "Sebastián Borensztein"
     },
     {
       "title": "Sin hijos",
@@ -1928,14 +2267,18 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Comedia",
-      "id": "P1117"
+      "id": "P1117",
+      "viewers": 508643,
+      "producer": "Patagonik, Tornasol Films",
+      "director": "Ariel Winograd"
     },
     {
       "title": "XXY",
       "genre": "Drama",
       "year": "2007",
       "actors": [
-        "Ricardo Darín. Valeria Bertucelli",
+        "Ricardo Darín",
+        "Valeria Bertuccelli",
         "Inés Efron"
       ],
       "synopsis": "Alex, una adolescente intersexual de 15 años, vive aislada junto a sus padres en una cabaña frente al mar para crecer lejos de prejuicios. Esa calma se altera cuando llega el momento de enfrentar decisiones sobre su identidad y su futuro.",
@@ -1944,7 +2287,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Drama",
-      "id": "P1118"
+      "id": "P1118",
+      "viewers": 203885,
+      "producer": "Cinéfondation",
+      "director": "Lucía Puenzo"
     },
     {
       "title": "Hermanitos del fin del mundo",
@@ -1961,7 +2307,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Familiar",
-      "id": "P1119"
+      "id": "P1119",
+      "viewers": 86455,
+      "producer": "Argentina Sono Film",
+      "director": "Julio Midú"
     },
     {
       "title": "Cleopatra",
@@ -1978,7 +2327,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Romance",
-      "id": "P1120"
+      "id": "P1120",
+      "viewers": 496357,
+      "producer": "Patagonik",
+      "director": "Eduardo Mignogna"
     },
     {
       "title": "Nieve negra",
@@ -1995,7 +2347,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Policial",
-      "id": "P1121"
+      "id": "P1121",
+      "viewers": 714645,
+      "producer": "Patagonik, Morena Films",
+      "director": "Martín Hodara"
     },
     {
       "title": "La odisea de los giles",
@@ -2004,7 +2359,7 @@
       "actors": [
         "Ricardo Darín",
         "Luis Brandoni",
-        "Chino Darin"
+        "Chino Darín"
       ],
       "synopsis": "Un grupo de vecinos del interior bonaerense pierde sus ahorros tras el Corralito y un fraude bancario. Unidos, planean un audaz golpe para recuperar lo que les fue arrebatado y hacer justicia.",
       "channel": "",
@@ -2012,7 +2367,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Comedia",
-      "id": "P1122"
+      "id": "P1122",
+      "viewers": 1841886,
+      "producer": "Mod Producciones, K&S Films, Kenya Films",
+      "director": "Sebastián Borensztein"
     },
     {
       "title": "Sólo se vive una vez",
@@ -2030,7 +2388,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Policial",
-      "id": "P1123"
+      "id": "P1123",
+      "viewers": 96075,
+      "producer": "Pampa Films",
+      "director": "Federico Cueva"
     },
     {
       "title": "La Ira de Dios",
@@ -2038,7 +2399,7 @@
       "year": "2022",
       "actors": [
         "Diego Peretti",
-        "Juan Minujin",
+        "Juan Minujín",
         "Macarena Achaga",
         "Monna Antonópulos"
       ],
@@ -2048,7 +2409,9 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Policial",
-      "id": "P1124"
+      "id": "P1124",
+      "producer": "Netflix",
+      "director": "Sebastián Schindel"
     },
     {
       "title": "Corazón de león",
@@ -2064,7 +2427,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Comedia",
-      "id": "P1125"
+      "id": "P1125",
+      "viewers": 1746547,
+      "producer": "Argentina Sono Film, Telefé, Patagonik Film Group",
+      "director": "Marcos Carnevale"
     },
     {
       "title": "El Aura",
@@ -2081,7 +2447,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Drama",
-      "id": "P1126"
+      "id": "P1126",
+      "viewers": 632750,
+      "producer": "Patagonik Film Group",
+      "director": "Fabián Bielinsky"
     },
     {
       "title": "Gilda, no me arrepiento de este amor",
@@ -2097,7 +2466,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Biográficas",
-      "id": "P1127"
+      "id": "P1127",
+      "viewers": 955298,
+      "producer": "Habitación 1520, Smilehood, INCAA",
+      "director": "Lorena Muñoz"
     },
     {
       "title": "El robo del siglo",
@@ -2113,7 +2485,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Policial",
-      "id": "P1128"
+      "id": "P1128",
+      "viewers": 2085915,
+      "producer": "AZ Films, MarVista Entertainment, Telefé",
+      "director": "Ariel Winograd"
     },
     {
       "title": "El Hijo de la Novia",
@@ -2130,7 +2505,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Drama",
-      "id": "P1129"
+      "id": "P1129",
+      "viewers": 1555626,
+      "producer": "Patagonik",
+      "director": "Juan José Campanella"
     },
     {
       "title": "Mi obra maestra",
@@ -2146,7 +2524,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Comedia",
-      "id": "P1130"
+      "id": "P1130",
+      "viewers": 733486,
+      "producer": "Televisión Abierta, Arco Libre, Mediapro",
+      "director": "Gastón Duprat"
     },
     {
       "title": "Peligrosa Obsesión",
@@ -2164,7 +2545,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Policial",
-      "id": "P1131"
+      "id": "P1131",
+      "viewers": 937735,
+      "producer": "Patagonik",
+      "director": "Raúl Rodríguez Peila"
     },
     {
       "title": "El misterio de la felicidad",
@@ -2180,7 +2564,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Drama",
-      "id": "P1132"
+      "id": "P1132",
+      "viewers": 614037,
+      "producer": "Cirko Film",
+      "director": "Daniel Burman"
     },
     {
       "title": "Cuentos de la selva",
@@ -2196,7 +2583,9 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Animación",
-      "id": "P1133"
+      "id": "P1133",
+      "viewers": 155988,
+      "director": "Norman Ruíz"
     },
     {
       "title": "Elena Sabe",
@@ -2214,7 +2603,9 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Drama",
-      "id": "P1134"
+      "id": "P1134",
+      "producer": "Netflix",
+      "director": "Anahí Berneri"
     },
     {
       "title": "Elefante blanco",
@@ -2231,7 +2622,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Policial",
-      "id": "P1135"
+      "id": "P1135",
+      "viewers": 773155,
+      "producer": "INCAA, Patagonik Film Group, Televisión Española (TVE)",
+      "director": "Pablo Trapero"
     },
     {
       "title": "100% lucha: el amo de los clones",
@@ -2240,7 +2634,7 @@
       "actors": [
         "Daniel Casablanca",
         "Pablo Rago",
-        "Norbero Adrián Fernández"
+        "Norberto Adrián Fernández"
       ],
       "synopsis": "Damián, celoso del luchador Viloni, crea clones idénticos de las estrellas de 100% Lucha para vengarse. Ante la amenaza, Viloni deberá unirse a sus rivales para detener al científico y salvar el espectáculo.",
       "channel": "",
@@ -2248,7 +2642,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Familiar",
-      "id": "P1136"
+      "id": "P1136",
+      "viewers": 123656,
+      "producer": "Telefe",
+      "director": "Pablo Parés"
     },
     {
       "title": "Dos más dos",
@@ -2258,7 +2655,7 @@
         "Adrián Suar",
         "Julieta Díaz",
         "Carla Peterson",
-        "Juan Minujin",
+        "Juan Minujín",
         "Alfredo Casero"
       ],
       "synopsis": "Dos parejas amigas y exitosas ven alterada su rutina cuando una de ellas confiesa practicar el intercambio de parejas. La propuesta despierta deseos ocultos y pone a prueba la estabilidad del matrimonio de Diego y Emilia.",
@@ -2267,7 +2664,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Comedia",
-      "id": "P1137"
+      "id": "P1137",
+      "viewers": 1004288,
+      "producer": "Pol-ka Producciones, Patagonik Film Group",
+      "director": "Diego Kaplan"
     },
     {
       "title": "No Puedo Vivir Sin Ti",
@@ -2283,7 +2683,9 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Comedia",
-      "id": "P1138"
+      "id": "P1138",
+      "producer": "Netflix",
+      "director": "Santiago Requejo"
     },
     {
       "title": "El mismo amor, la misma lluvia",
@@ -2300,7 +2702,9 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Romance",
-      "id": "P1139"
+      "id": "P1139",
+      "viewers": 122032,
+      "director": "Juan José Campanella"
     },
     {
       "title": "Infancia clandestina",
@@ -2317,7 +2721,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Histórica",
-      "id": "P1140"
+      "id": "P1140",
+      "viewers": 201830,
+      "producer": "INCAA",
+      "director": "Benjamín Ávila"
     },
     {
       "title": "Mazel Tov",
@@ -2335,7 +2742,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Comedia",
-      "id": "P1141"
+      "id": "P1141",
+      "viewers": 368009,
+      "producer": "Star Distribution",
+      "director": "Adrián Suar"
     },
     {
       "title": "High School Musical: El Desafío",
@@ -2353,7 +2763,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Familiar",
-      "id": "P1142"
+      "id": "P1142",
+      "viewers": 477125,
+      "producer": "Patagonik Film Group, Buena Vista International, Artear",
+      "director": "Jorge Nisco"
     },
     {
       "title": "El Novio de Mamá",
@@ -2371,7 +2784,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Familiar",
-      "id": "P1143"
+      "id": "P1143",
+      "viewers": 78946,
+      "producer": "Star Distribution",
+      "director": "Nicolás Silbert, Leandro Mark"
     },
     {
       "title": "Tesis sobre un homicidio",
@@ -2379,7 +2795,7 @@
       "year": "2013",
       "actors": [
         "Ricardo Darín",
-        "Alberto Amman",
+        "Alberto Ammann",
         "Calu Rivero"
       ],
       "synopsis": "Roberto, un profesor de Derecho, sospecha que uno de sus alumnos más brillantes cometió un asesinato. Obsesionado con la verdad, inicia una investigación que pondrá en riesgo su vida y sus certezas.",
@@ -2388,7 +2804,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Policial",
-      "id": "P1144"
+      "id": "P1144",
+      "viewers": 1047647,
+      "producer": "Telefe, Haddock Films, Tornasol Films, INCAA",
+      "director": "Hernán Goldfrid"
     },
     {
       "title": "Kamchatka",
@@ -2405,7 +2824,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Histórica",
-      "id": "P1145"
+      "id": "P1145",
+      "viewers": 408763,
+      "producer": "Patagonik",
+      "director": "Marcelo Piñeyro"
     },
     {
       "title": "27 Noches",
@@ -2422,7 +2844,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Drama",
-      "id": "P1146"
+      "id": "P1146",
+      "viewers": 3640,
+      "producer": "Netflix",
+      "director": "Daniel Hendler"
     },
     {
       "title": "Me casé con un boludo",
@@ -2430,7 +2855,7 @@
       "year": "2016",
       "actors": [
         "Adrián Suar",
-        "Valeria Bertucelli"
+        "Valeria Bertuccelli"
       ],
       "synopsis": "Fabián, un actor famoso, y Florencia, una desconocida, se casan tras un romance impulsivo surgido en un rodaje. Al descubrir el error, ella provoca que él urda un plan con ayuda de su guionista para enfrentar la situación.",
       "channel": "",
@@ -2438,7 +2863,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Comedia",
-      "id": "P1147"
+      "id": "P1147",
+      "viewers": 2027880,
+      "producer": "Patagonik Film Group",
+      "director": "Juan Taratuto"
     },
     {
       "title": "Papá es un ídolo",
@@ -2456,7 +2884,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Familiar",
-      "id": "P1148"
+      "id": "P1148",
+      "viewers": 1357107,
+      "producer": "Argentina Sono Film, Telefe",
+      "director": "Juan José Jusid"
     },
     {
       "title": "Natacha, la película",
@@ -2473,7 +2904,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Familiar",
-      "id": "P1149"
+      "id": "P1149",
+      "viewers": 23098,
+      "producer": "INCAA, Magoya Films",
+      "director": "Eduardo Pinto"
     },
     {
       "title": "Socios por accidente",
@@ -2489,7 +2923,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Comedia",
-      "id": "P1150"
+      "id": "P1150",
+      "viewers": 565629,
+      "producer": "Cinemagroup",
+      "director": "Fabián Forte"
     },
     {
       "title": "La cordillera",
@@ -2506,7 +2943,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Policial",
-      "id": "P1151"
+      "id": "P1151",
+      "viewers": 658082,
+      "producer": "K&S Films, Haddock Films, Telefe",
+      "director": "Santiago Mitre"
     },
     {
       "title": "Dibu 3",
@@ -2524,7 +2964,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Familiar",
-      "id": "P1152"
+      "id": "P1152",
+      "viewers": 238504,
+      "producer": "Patagonik",
+      "director": "Raúl Rodríguez Peila"
     },
     {
       "title": "Belén",
@@ -2532,7 +2975,7 @@
       "year": "2025",
       "actors": [
         "Dolores Fonzi",
-        "Camila Pláate",
+        "Camila Plaate",
         "Laura Paredes",
         "Julieta Cardinali"
       ],
@@ -2542,7 +2985,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Drama",
-      "id": "P1153"
+      "id": "P1153",
+      "viewers": 147468,
+      "producer": "Amazon MGM Studios",
+      "director": "Dolores Fonzi"
     },
     {
       "title": "La reina del miedo",
@@ -2558,7 +3004,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Drama",
-      "id": "P1154"
+      "id": "P1154",
+      "viewers": 127179,
+      "producer": "Pampa Films",
+      "director": "Valeria Bertuccelli, Fabiana Tiscornia"
     },
     {
       "title": "Motivos para no enamorarse",
@@ -2574,22 +3023,25 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Romance",
-      "id": "P1155"
+      "id": "P1155",
+      "viewers": 146988,
+      "director": "Mariano Mucci"
     },
     {
       "title": "Plumíferos",
       "genre": "Animación",
       "year": "2010",
-      "actors": [
-        "-"
-      ],
+      "actors": [],
       "synopsis": "En un mundo urbano visto desde las aves, Juan, un gorrión inseguro, y Feifi, un canario que huye de su jaula, buscan una vida en libertad. Juntos enfrentan peligros y aventuras para descubrir quiénes son y forjar su propio destino.",
       "channel": "",
       "image": "images/verticals/plumiferos-2010-poster-280x420.png",
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Animación",
-      "id": "P1156"
+      "id": "P1156",
+      "viewers": 89257,
+      "producer": "Manos Digitales Animation Studio",
+      "director": "Daniel De Felippo"
     },
     {
       "title": "Paco",
@@ -2605,14 +3057,19 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Policial",
-      "id": "P1157"
+      "id": "P1157",
+      "viewers": 74828,
+      "producer": "Zazen Producciones, San Luis Cine, INCAA",
+      "director": "Diego Rafecas"
     },
     {
       "title": "Caídos del mapa",
       "genre": "Familiar",
       "year": "2013",
       "actors": [
-        "Felipe Corrado\nSofía Calzetti\nAilen Caffieri"
+        "Felipe Corrado",
+        "Sofía Calzetti",
+        "Ailen Caffieri"
       ],
       "synopsis": "Cuatro alumnos se esconden en el sótano para faltar a clase y se ven obligados a aceptar a una compañera indeseada. Mientras afloran tensiones y secretos entre ellos, los adultos reaccionan de distintas maneras ante la situación.",
       "channel": "",
@@ -2620,7 +3077,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Familiar",
-      "id": "P1158"
+      "id": "P1158",
+      "viewers": 91639,
+      "producer": "INCAA",
+      "director": "Leandro Mark"
     },
     {
       "title": "La patota",
@@ -2637,22 +3097,26 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Drama",
-      "id": "P1159"
+      "id": "P1159",
+      "viewers": 144710,
+      "producer": "Telefé, Story Lab",
+      "director": "Santiago Mitre"
     },
     {
       "title": "Metegol",
       "genre": "Animación",
       "year": "2013",
-      "actors": [
-        "-"
-      ],
+      "actors": [],
       "synopsis": "Amadeo, un tímido experto en metegol, debe enfrentar al Crack, un futbolista famoso que regresa para vengarse de una vieja derrota. Con la ayuda mágica de los jugadores de su mesa, emprende una aventura para salvar a Laura y a su pueblo, descubriendo el valor del trabajo en equipo y el amor.",
       "channel": "",
       "image": "images/verticals/metegol-2013-poster-280x420.png",
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Animación",
-      "id": "P1160"
+      "id": "P1160",
+      "viewers": 2139844,
+      "producer": "100 Bares, Antena 3 Films, Mundoloco CGI Animation Studios, Telefe, Canal+",
+      "director": "Juan José Campanella"
     },
     {
       "title": "Viudas",
@@ -2668,7 +3132,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Drama",
-      "id": "P1161"
+      "id": "P1161",
+      "viewers": 397131,
+      "producer": "Aleph Media",
+      "director": "Marcos Carnevale"
     },
     {
       "title": "Atraco",
@@ -2686,7 +3153,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Histórica",
-      "id": "P1162"
+      "id": "P1162",
+      "viewers": 568983,
+      "producer": "Argentina Sono Film, Tornasol Films",
+      "director": "Eduard Cortés"
     },
     {
       "title": "Música en espera",
@@ -2703,7 +3173,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Romance",
-      "id": "P1163"
+      "id": "P1163",
+      "viewers": 241007,
+      "producer": "INCAA",
+      "director": "Hernán Goldfrid"
     },
     {
       "title": "Wakolda, el Médico Alemán",
@@ -2720,7 +3193,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Histórica",
-      "id": "P1164"
+      "id": "P1164",
+      "viewers": 423762,
+      "producer": "Pyramide Productions, Wanda Films, Telefe",
+      "director": "Lucía Puenzo"
     },
     {
       "title": "El hilo rojo",
@@ -2737,7 +3213,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Romance",
-      "id": "P1165"
+      "id": "P1165",
+      "viewers": 715265,
+      "producer": "MyS Producción, Telefe",
+      "director": "Daniela Goggi"
     },
     {
       "title": "Comodines",
@@ -2754,29 +3233,33 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Policial",
-      "id": "P1166"
+      "id": "P1166",
+      "viewers": 869077,
+      "producer": "Patagonik, Pol-Ka",
+      "director": "Jorge Nisco"
     },
     {
       "title": "Corazón, las alegrías de Pantriste",
       "genre": "Animación",
       "year": "2000",
-      "actors": [
-        "-"
-      ],
+      "actors": [],
       "synopsis": "Pantriste, un niño sensible con talento musical, enfrenta el deseo de su padre de que sea leñador. Junto a sus amigos, deberá enfrentarse a los hechizos de Neurus y Cachavacha para seguir su propio camino.",
       "channel": "",
       "image": "images/verticals/corazon-pantriste-poster-2000-280x420.png",
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Animación",
-      "id": "P1167"
+      "id": "P1167",
+      "viewers": 1030126,
+      "producer": "Telefe, García Ferré Entertainment",
+      "director": "Manuel García Ferré"
     },
     {
       "title": "Linda",
       "genre": "Drama",
       "year": "2024",
       "actors": [
-        "Eugenia Suarez",
+        "Eugenia Suárez",
         "Julieta Cardinali",
         "Rafael Spregelburd"
       ],
@@ -2786,7 +3269,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Drama",
-      "id": "P1168"
+      "id": "P1168",
+      "viewers": 31105,
+      "producer": "Pampa Films, Star Distribution, Gloriamundi Producciones",
+      "director": "Mariana Wainstein"
     },
     {
       "title": "Luna de Avellaneda",
@@ -2804,7 +3290,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Drama",
-      "id": "P1169"
+      "id": "P1169",
+      "viewers": 1099044,
+      "producer": "Pol-Ka",
+      "director": "Juan José Campanella"
     },
     {
       "title": "El Gerente",
@@ -2820,7 +3309,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Comedia",
-      "id": "P1170"
+      "id": "P1170",
+      "viewers": 6026,
+      "producer": "Viacom International Studios, Infinity Hill, Tresplanos Cine Paramount+",
+      "director": "Ariel Winograd"
     },
     {
       "title": "La venganza",
@@ -2836,7 +3328,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Policial",
-      "id": "P1171"
+      "id": "P1171",
+      "viewers": 488808,
+      "producer": "Telefe",
+      "director": "Juan Carlos Desanzo"
     },
     {
       "title": "Crimenes de Familia",
@@ -2854,7 +3349,9 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Policial",
-      "id": "P1172"
+      "id": "P1172",
+      "producer": "Netflix",
+      "director": "Sebastián Schindel"
     },
     {
       "title": "Todas las Azafatas van al Cielo",
@@ -2871,14 +3368,18 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Romance",
-      "id": "P1173"
+      "id": "P1173",
+      "viewers": 33954,
+      "producer": "Patagonik",
+      "director": "Daniel Burman"
     },
     {
       "title": "Whisky, Romeo, Zulú",
       "genre": "Histórica",
       "year": "2005",
       "actors": [
-        "Mercedes Morán\nAlejandro Awada"
+        "Mercedes Morán",
+        "Alejandro Awada"
       ],
       "synopsis": "Aborda los antecedentes del accidente del Boeing 737 de LAPA ocurrido el 31 de agosto de 1999 en Buenos Aires, que dejó 67 víctimas y marcó un antes y un después en la aviación argentina. A través de la mirada de un ex piloto, la película revela las graves fallas y la precariedad en los sistemas de seguridad aérea de la época.",
       "channel": "",
@@ -2886,7 +3387,9 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Histórica",
-      "id": "P1174"
+      "id": "P1174",
+      "viewers": 201675,
+      "director": "Marcelo Piñeyro"
     },
     {
       "title": "Animal",
@@ -2902,7 +3405,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Policial",
-      "id": "P1175"
+      "id": "P1175",
+      "viewers": 481617,
+      "producer": "Telefe, Rebolución",
+      "director": "Armando Bó"
     },
     {
       "title": "No Me Rompan",
@@ -2912,7 +3418,7 @@
         "Carla Peterson",
         "Julieta Díaz",
         "Esteban Lamothe",
-        "Martin Garabal"
+        "Martín Garabal"
       ],
       "synopsis": "Tras conocerse en un grupo de manejo de la irá, dos mujeres emprenden un viaje de empoderamiento y amistad cuando se proponen exponer a un cirujano platicó de duda reputación.",
       "channel": "",
@@ -2920,7 +3426,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Comedia",
-      "id": "P1176"
+      "id": "P1176",
+      "viewers": 96152,
+      "producer": "Habitación 1520, Pan Contenidos",
+      "director": "Azul Lombardía"
     },
     {
       "title": "Un Hijo Genial",
@@ -2936,7 +3445,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Familiar",
-      "id": "P1177"
+      "id": "P1177",
+      "viewers": 241645,
+      "producer": "Telefe",
+      "director": "José Luis Massa"
     },
     {
       "title": "Descansar en Paz",
@@ -2954,14 +3466,20 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Policial",
-      "id": "P1178"
+      "id": "P1178",
+      "producer": "Netflix",
+      "director": "Sebastián Borensztein"
     },
     {
       "title": "Al final del túnel",
       "genre": "Policial",
       "year": "2016",
       "actors": [
-        "Leonardo Sbaraglia\nPablo Echarri\nClara Lago\nJavier Godino\nFederico Luppi"
+        "Leonardo Sbaraglia",
+        "Pablo Echarri",
+        "Clara Lago",
+        "Javier Godino",
+        "Federico Luppi"
       ],
       "synopsis": "Joaquín, un hombre en silla de ruedas, recupera algo de vida al alquilar una habitación a Berta y su hija. Todo cambia cuando descubre que delincuentes están cavando un túnel bajo su casa para robar un banco.",
       "channel": "",
@@ -2969,7 +3487,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Policial",
-      "id": "P1179"
+      "id": "P1179",
+      "viewers": 283305,
+      "producer": "Haddock Films, Televisión Española, Telefe, Tornasol Films",
+      "director": "Rodrigo Grande"
     },
     {
       "title": "Un argentino en Nueva York",
@@ -2985,7 +3506,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Familiar",
-      "id": "P1180"
+      "id": "P1180",
+      "viewers": 1592130,
+      "producer": "Argentina Sono Film, Telefe",
+      "director": "Juan José Jusid"
     },
     {
       "title": "Relatos salvajes",
@@ -3005,7 +3529,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Policial",
-      "id": "P1181"
+      "id": "P1181",
+      "viewers": 4003395,
+      "producer": "Kramer & Sigman Films, El Deseo, Telefe",
+      "director": "Damián Szifron"
     },
     {
       "title": "Corazón de Fuego",
@@ -3023,7 +3550,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Drama",
-      "id": "P1182"
+      "id": "P1182",
+      "viewers": 27256,
+      "producer": "Patagonik",
+      "director": "Diego Arsuaga"
     },
     {
       "title": "Boogie el aceitoso",
@@ -3039,7 +3569,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Animación",
-      "id": "P1183"
+      "id": "P1183",
+      "viewers": 96460,
+      "producer": "Illusion Studios",
+      "director": "Gustavo Cova"
     },
     {
       "title": "Gallito Ciego",
@@ -3055,7 +3588,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Policial",
-      "id": "P1184"
+      "id": "P1184",
+      "viewers": 25349,
+      "producer": "INCAA",
+      "director": "Santiago Carlos Oves"
     },
     {
       "title": "Aballay, el hombre sin miedo",
@@ -3073,7 +3609,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Histórica",
-      "id": "P1185"
+      "id": "P1185",
+      "viewers": 40598,
+      "producer": "INCAA",
+      "director": "Fernando Spiner"
     },
     {
       "title": "La Fuga",
@@ -3091,7 +3630,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Histórica",
-      "id": "P1186"
+      "id": "P1186",
+      "viewers": 784800,
+      "producer": "Telefe",
+      "director": "Eduardo Mignogna"
     },
     {
       "title": "Los Super Agentes: La Nueva Generación",
@@ -3109,14 +3651,17 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Comedia",
-      "id": "P1187"
+      "id": "P1187",
+      "viewers": 254262,
+      "producer": "Argentina Sono Film, Telefe",
+      "director": "Daniel De Felippo"
     },
     {
       "title": "El Cuaderno de Tomy",
       "genre": "Drama",
       "year": "2020",
       "actors": [
-        "Valeria Bertucelli",
+        "Valeria Bertuccelli",
         "Esteban Lamothe",
         "Julián Sorín"
       ],
@@ -3126,7 +3671,9 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Drama",
-      "id": "P1188"
+      "id": "P1188",
+      "producer": "Netflix",
+      "director": "Carlos Sorín"
     },
     {
       "title": "Un cuento chino",
@@ -3143,7 +3690,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Comedia",
-      "id": "P1189"
+      "id": "P1189",
+      "viewers": 917212,
+      "producer": "Buena Vista International, Pampa Films, Tornasol Films",
+      "director": "Sebastián Borensztein"
     },
     {
       "title": "Valentina, la película",
@@ -3159,7 +3709,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Animación",
-      "id": "P1190"
+      "id": "P1190",
+      "viewers": 142052,
+      "producer": "Telefe",
+      "director": "Eduardo Gondell"
     },
     {
       "title": "Truman",
@@ -3176,7 +3729,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Drama",
-      "id": "P1191"
+      "id": "P1191",
+      "viewers": 393599,
+      "producer": "Kramer & Sigman Films, Telefe, TVE",
+      "director": "Cesc Gay"
     },
     {
       "title": "Vidas Privadas",
@@ -3193,14 +3749,19 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Drama",
-      "id": "P1192"
+      "id": "P1192",
+      "viewers": 37895,
+      "director": "Fito Paéz"
     },
     {
       "title": "Un Crimen Argentino",
       "genre": "Policial",
       "year": "2022",
       "actors": [
-        "Nicolás Francella\nMatías Mayer\nMalena Sánchez Dario Grandinetti"
+        "Nicolás Francella",
+        "Matías Mayer",
+        "Malena Sánchez",
+        "Darío Grandinetti"
       ],
       "synopsis": "Basada en un caso real ocurrido durante la dictadura, la investigación por la desaparición de un empresario enfrenta a dos jóvenes judiciales contra el poder represivo. En una carrera contrarreloj, intentan resolver el caso antes de que uno de ellos deba exiliarse.",
       "channel": "",
@@ -3208,7 +3769,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Policial",
-      "id": "P1193"
+      "id": "P1193",
+      "viewers": 77322,
+      "producer": "Pampa Films, Particular Crowd HBO Max",
+      "director": "Lucas Combina"
     },
     {
       "title": "Jaque Mate",
@@ -3226,14 +3790,18 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Policial",
-      "id": "P1194"
+      "id": "P1194",
+      "viewers": 63372,
+      "producer": "Patagonik, Amazon Studios",
+      "director": "Jorge Nisco"
     },
     {
       "title": "Una noche de amor",
       "genre": "Romance",
       "year": "2016",
       "actors": [
-        "Sebastián Wainraich\nCarla Peterson"
+        "Sebastián Wainraich",
+        "Carla Peterson"
       ],
       "synopsis": "Leonel y Paola llevan 12 años casados y su vida familiar funciona a la perfección, pero la pasión parece haberse apagado. Una noche a solas los enfrenta a la pregunta de si aún queda amor y deseo entre ellos.",
       "channel": "",
@@ -3241,7 +3809,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Romance",
-      "id": "P1195"
+      "id": "P1195",
+      "viewers": 220290,
+      "producer": "HC Films, MyS Producción, Patagonik Film Group",
+      "director": "Hernán Guerschuny"
     },
     {
       "title": "El último Elvis",
@@ -3257,7 +3828,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Drama",
-      "id": "P1196"
+      "id": "P1196",
+      "viewers": 88476,
+      "producer": "Anonymous Content, Kramer & Sigman Films",
+      "director": "Armando Bó"
     },
     {
       "title": "El Jockey",
@@ -3273,7 +3847,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Drama",
-      "id": "P1197"
+      "id": "P1197",
+      "viewers": 132430,
+      "producer": "Caramel Films",
+      "director": "Luis Ortega"
     },
     {
       "title": "Peter Capusoto y sus 3 dimensiones",
@@ -3288,7 +3865,9 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Comedia",
-      "id": "P1198"
+      "id": "P1198",
+      "viewers": 274205,
+      "director": "Pedro Saborido"
     },
     {
       "title": "Casi leyendas",
@@ -3305,14 +3884,19 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Comedia",
-      "id": "P1199"
+      "id": "P1199",
+      "viewers": 178260,
+      "producer": "Pampa Films",
+      "director": "Gabriel Nesci"
     },
     {
       "title": "El Rapto",
       "genre": "Policial",
       "year": "2023",
       "actors": [
-        "Rodrigo de la Serna\nJulieta Zylberberg\nGermán Palacios"
+        "Rodrigo de la Serna",
+        "Julieta Zylberberg",
+        "Germán Palacios"
       ],
       "synopsis": "Basada en el libro de Martín Sivak, reconstruye la vida y caída de Jorge Sivak, marcada por la militancia política, el exilio y el peso de una empresa familiar atravesada por la violencia. Desde la mirada de su hijo, el film indaga en una biografía intensa que se apaga trágicamente.",
       "channel": "",
@@ -3320,7 +3904,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Policial",
-      "id": "P1200"
+      "id": "P1200",
+      "viewers": 12137,
+      "producer": "Rei Cine, Infinity Hill Paramount+",
+      "director": "Daniela Goggi"
     },
     {
       "title": "Días de vinilo",
@@ -3338,14 +3925,20 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Comedia",
-      "id": "P1201"
+      "id": "P1201",
+      "viewers": 93365,
+      "producer": "Patagonik Film Group, Sudestada Cine",
+      "director": "Gabriel Nesci"
     },
     {
       "title": "Ecos de un Crimen",
       "genre": "Policial",
       "year": "2022",
       "actors": [
-        "Diego Peretti\nJulieta Cardinali\nCarla Quevedo\nDiego Cremonesi"
+        "Diego Peretti",
+        "Julieta Cardinali",
+        "Carla Quevedo",
+        "Diego Cremonesi"
       ],
       "synopsis": "Un escritor de thrillers pasa unas vacaciones familiares que se transforman en pesadilla cuando una mujer irrumpe pidiendo ayuda durante una tormenta. Desde ese momento, el peligro y el engaño lo arrastran a una noche límite donde nada es lo que parece.",
       "channel": "",
@@ -3353,7 +3946,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Policial",
-      "id": "P1202"
+      "id": "P1202",
+      "viewers": 102482,
+      "producer": "Particular Crowd, Tieless Media, HBO Max",
+      "director": "Cristian Bernard"
     },
     {
       "title": "Crónica de una Fuga",
@@ -3370,14 +3966,18 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Histórica",
-      "id": "P1203"
+      "id": "P1203",
+      "viewers": 203331,
+      "producer": "20th Century Fox Argentina",
+      "director": "Adrián Caetano"
     },
     {
       "title": "Los padecientes",
       "genre": "Drama",
       "year": "2017",
       "actors": [
-        "Benjamín Vicuña\nEugenia Suárez"
+        "Benjamín Vicuña",
+        "Eugenia Suárez"
       ],
       "synopsis": "Pablo Rouviot, un reconocido psicoanalista, recibe a una joven que le formula un pedido bastante particular: el cuerpo de su padre, un poderoso empresario, fue encontrado asesinado a la orillas de un río, y su hermano, Javier, 22, un joven con graves problemas psicológicos, está acusado de haber sido el responsable del crimen.",
       "channel": "",
@@ -3385,7 +3985,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Drama",
-      "id": "P1204"
+      "id": "P1204",
+      "viewers": 414318,
+      "producer": "Jempsa, Fox International Productions",
+      "director": "Nicolás Tuozzo"
     },
     {
       "title": "Goyo",
@@ -3404,7 +4007,9 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Romance",
-      "id": "P1205"
+      "id": "P1205",
+      "producer": "Netflix",
+      "director": "Marcos Carnevale"
     },
     {
       "title": "Pipa",
@@ -3423,7 +4028,9 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Policial",
-      "id": "P1206"
+      "id": "P1206",
+      "producer": "Netflix",
+      "director": "Alejandro Montiel"
     },
     {
       "title": "El amor menos pensado",
@@ -3439,7 +4046,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Drama",
-      "id": "P1207"
+      "id": "P1207",
+      "viewers": 787130,
+      "producer": "Patagonik",
+      "director": "Juan Vera"
     },
     {
       "title": "Hermanas",
@@ -3457,14 +4067,20 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Histórica",
-      "id": "P1208"
+      "id": "P1208",
+      "viewers": 53023,
+      "producer": "Patagonik Film Group",
+      "director": "Julia Solomonoff"
     },
     {
       "title": "En la Mira",
       "genre": "Policial",
       "year": "2022",
       "actors": [
-        "Nicolás Francella\nGabriel Goity\nEmilia Attias\nPaula Reca"
+        "Nicolás Francella",
+        "Gabriel Goity",
+        "Emilia Attias",
+        "Paula Reca"
       ],
       "synopsis": "Axel, un joven operador de call center, lleva una vida rutinaria mientras sostiene una relación secreta con su jefa. Todo se descontrola cuando un cliente lo amenaza de muerte en plena jornada laboral, convirtiendo su día en una pesadilla.",
       "channel": "",
@@ -3472,7 +4088,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Policial",
-      "id": "P1209"
+      "id": "P1209",
+      "viewers": 57692,
+      "producer": "AZ Films HBO Max, Cimarrón Cine, MarVista Entertainment",
+      "director": "Ricardo Hornos, Carlos Gil"
     },
     {
       "title": "Yo soy así, Tita de Buenos Aires",
@@ -3488,7 +4107,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Biográficas",
-      "id": "P1210"
+      "id": "P1210",
+      "viewers": 94116,
+      "producer": "Habano Films, Patagonik",
+      "director": "Teresa Costantini"
     },
     {
       "title": "Una Flor en el Barro",
@@ -3504,7 +4126,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Drama",
-      "id": "P1211"
+      "id": "P1211",
+      "viewers": 6451,
+      "producer": "Lahaye Media, Buen Destino Films Star Distribution",
+      "director": "Nicolás Tuozzo"
     },
     {
       "title": "No Sos Vos, Soy Yo",
@@ -3521,7 +4146,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Romance",
-      "id": "P1212"
+      "id": "P1212",
+      "viewers": 220721,
+      "producer": "Primer Plano Film Group",
+      "director": "Juan Taratuto"
     },
     {
       "title": "Micaela, una película mágica",
@@ -3537,7 +4165,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Animación",
-      "id": "P1213"
+      "id": "P1213",
+      "viewers": 78383,
+      "producer": "Juan José Stagnaro",
+      "director": "Rosanna Manfredi"
     },
     {
       "title": "La misma sangre",
@@ -3553,7 +4184,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Drama",
-      "id": "P1214"
+      "id": "P1214",
+      "viewers": 92091,
+      "producer": "Patagonik, AZ Films, Wildhorse Studios, Cimarrón, Rizoma Films",
+      "director": "Miguel Cohan"
     },
     {
       "title": "Cohen vs Rosi",
@@ -3569,7 +4203,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Comedia",
-      "id": "P1215"
+      "id": "P1215",
+      "viewers": 615483,
+      "producer": "Patagonik Film Group",
+      "director": "Daniel Barone"
     },
     {
       "title": "La Corazonada",
@@ -3587,7 +4224,9 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Policial",
-      "id": "P1216"
+      "id": "P1216",
+      "producer": "Netflix",
+      "director": "Alejandro Montiel"
     },
     {
       "title": "Elsa y Fred",
@@ -3603,37 +4242,42 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Drama",
-      "id": "P1217"
+      "id": "P1217",
+      "viewers": 574052,
+      "producer": "Alta Films",
+      "director": "Marcos Carnevale"
     },
     {
       "title": "Patoruzito 2: La Gran Aventura",
       "genre": "Animación",
       "year": "2006",
-      "actors": [
-        "-"
-      ],
+      "actors": [],
       "synopsis": "Patoruzito viaja a Buenos Aires para representar a su raza en una fiesta nacional, y allí hay una mansión donde una bruja intenta hacer prisionera a un hada.",
       "channel": "",
       "image": "images/verticals/patoruzito2-pelicula-2006-poster-280x420.png",
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Animación",
-      "id": "P1218"
+      "id": "P1218",
+      "viewers": 348665,
+      "producer": "Patagonik Film Group",
+      "director": "José Luis Massa"
     },
     {
       "title": "Robotia",
       "genre": "Animación",
       "year": "2024",
-      "actors": [
-        "-"
-      ],
+      "actors": [],
       "synopsis": "En un mundo dominado por androides, una chica sueña con jugar al fútbol pese a la prohibición familiar. Con la ayuda de sus amigos, luchará por cumplir su deseo y demostrar su talento dentro y fuera de la cancha.",
       "channel": "",
       "image": "images/verticals/robotia-2024-poster-280x420.png",
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Animación",
-      "id": "P1219"
+      "id": "P1219",
+      "viewers": 11733,
+      "producer": "INCAA",
+      "director": "Diego Lucero"
     },
     {
       "title": "La suerte en tus manos",
@@ -3649,7 +4293,9 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Romance",
-      "id": "P1220"
+      "id": "P1220",
+      "viewers": 193242,
+      "director": "Daniel Burman"
     },
     {
       "title": "El desafío",
@@ -3666,7 +4312,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Romance",
-      "id": "P1221"
+      "id": "P1221",
+      "viewers": 53744,
+      "producer": "INCAA, Telefe, MyS Producción",
+      "director": "Juan Manuel Rampoldi"
     },
     {
       "title": "Tiempo de Valientes",
@@ -3682,7 +4331,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Policial",
-      "id": "P1222"
+      "id": "P1222",
+      "viewers": 480414,
+      "producer": "20th Century Fox Argentina",
+      "director": "Damián Szifron"
     },
     {
       "title": "Argentina, 1985",
@@ -3698,7 +4350,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Histórica",
-      "id": "P1223"
+      "id": "P1223",
+      "viewers": 1160067,
+      "producer": "La Unión de los Ríos, Kenya Films, Infinity Hill Amazon",
+      "director": "Santiago Mitre"
     },
     {
       "title": "Granizo",
@@ -3716,7 +4371,9 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Comedia",
-      "id": "P1224"
+      "id": "P1224",
+      "producer": "Netflix",
+      "director": "Marcos Carnevale"
     },
     {
       "title": "Corazón Delator",
@@ -3732,7 +4389,9 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Romance",
-      "id": "P1226"
+      "id": "P1226",
+      "producer": "Netflix",
+      "director": "Marcos Carnevale"
     },
     {
       "title": "Todos tenemos un Plan",
@@ -3748,14 +4407,17 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Policial",
-      "id": "P1227"
+      "id": "P1227",
+      "viewers": 134173,
+      "producer": "Telefe, Tornasol Films",
+      "director": "Ana Piterbarg"
     },
     {
       "title": "La Quietud",
       "genre": "Drama",
       "year": "2018",
       "actors": [
-        "Martina Gusman",
+        "Martina Gusmán",
         "Bérénice Bejo",
         "Joaquin Furriel",
         "Graciela Borges",
@@ -3767,14 +4429,17 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Drama",
-      "id": "P1228"
+      "id": "P1228",
+      "viewers": 82150,
+      "producer": "Matanza Cine, Macassar Productions, Telefé, Sony",
+      "director": "Pablo Trapero"
     },
     {
       "title": "Las Hermanas Fantásticas",
       "genre": "Comedia",
       "year": "2024",
       "actors": [
-        "Sofi Morandi",
+        "Sofía Morandi",
         "Leticia Siciliani"
       ],
       "synopsis": "Jesi y Ángela, dos hermanas desconocidas entre sí, se reencuentran tras la muerte de su padre y heredan un departamento en Puerto Madero. Al hallar millones de euros ocultos, deberán decidir qué hacer mientras construyen un vínculo marcado por la ambición y la necesidad.",
@@ -3783,7 +4448,9 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Comedia",
-      "id": "P1229"
+      "id": "P1229",
+      "producer": "Netflix",
+      "director": "Fabiana Tiscornia"
     },
     {
       "title": "Nueve Reinas",
@@ -3800,7 +4467,10 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Policial",
-      "id": "P1230"
+      "id": "P1230",
+      "viewers": 1194633,
+      "producer": "Patagonik Film Group",
+      "director": "Fabián Bielinsky"
     },
     {
       "id": "v1",
@@ -3815,7 +4485,7 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/educando-a-nina-poster-280x420.png",
-      "subtitle": "Comedia romíntica"
+      "subtitle": "Comedia romántica"
     },
     {
       "id": "v2",
@@ -3850,25 +4520,25 @@
       "title": "Los Exitosos Pells",
       "year": "2008",
       "channel": "Telefe",
-      "genre": "Comedia Dramítica",
+      "genre": "Comedia Dramática",
       "actors": [
         "Carla Peterson",
         "Mike Amigorena"
       ],
       "orientation": "vertical",
       "image": "images/verticals/los-exitosos-pells-poster-280x420.png",
-      "subtitle": "Comedia dramítica"
+      "subtitle": "Comedia dramática"
     },
     {
       "id": "v5",
       "title": "Señores Papis",
       "year": "2014",
       "channel": "Telefe",
-      "genre": "Comedia Dramítica",
+      "genre": "Comedia Dramática",
       "actors": [
         "Luciano Castro",
-        "Joaquán Furriel",
-        "Luciano Cíceres"
+        "Joaquín Furriel",
+        "Luciano Cáceres"
       ],
       "orientation": "vertical",
       "image": "images/verticals/senores-papis-poster-280x420.png",
@@ -3879,11 +4549,11 @@
       "title": "Son de Fierro",
       "year": "2007",
       "channel": "Canal 13",
-      "genre": "Comedia Dramítica",
+      "genre": "Comedia Dramática",
       "actors": [
         "Osvaldo Laport",
-        "Mariano Martánez",
-        "Maráa Valenzuela"
+        "Mariano Martínez",
+        "María Valenzuela"
       ],
       "orientation": "vertical",
       "image": "images/verticals/son-de-fierro-poster-280x420.png",
@@ -3896,7 +4566,7 @@
       "channel": "Telefe",
       "genre": "Comedia",
       "actors": [
-        "Damiín De Santo",
+        "Damián De Santo",
         "Paola Barrientos",
         "Celeste Cid"
       ],
@@ -3926,7 +4596,7 @@
       "channel": "Telefe",
       "genre": "Thriller",
       "actors": [
-        "Mariano Martánez",
+        "Mariano Martínez",
         "Isabel Macedo",
         "Eleonora Wexler",
         "Federico Amador"
@@ -3958,7 +4628,7 @@
       "actors": [
         "Pablo Echarri",
         "Paola Krum",
-        "Joaquán Furriel"
+        "Joaquín Furriel"
       ],
       "orientation": "vertical",
       "image": "images/verticals/montecristo-poster-280x420.png",
@@ -3966,14 +4636,14 @@
     },
     {
       "id": "v12",
-      "title": "Entre Canábales",
+      "title": "Entre Caníbales",
       "year": "2015",
       "channel": "Telefe",
       "genre": "Policial",
       "actors": [
         "Natalia Oreiro",
-        "Benjamán Vicuña",
-        "Joaquán Furriel"
+        "Benjamín Vicuña",
+        "Joaquín Furriel"
       ],
       "orientation": "vertical",
       "image": "images/verticals/entre-canibales-poster-280x420.png",
@@ -3986,9 +4656,9 @@
       "channel": "Canal 13",
       "genre": "Telenovela",
       "actors": [
-        "Benjamán Vicuña",
+        "Benjamín Vicuña",
         "Gonzalo Heredia",
-        "Eugenia Suírez"
+        "Eugenia Suárez"
       ],
       "orientation": "vertical",
       "image": "images/verticals/argentina-tierra-de-amor-y-venganza-2019-poster-280x420.png",
@@ -4001,12 +4671,12 @@
       "channel": "Telefe",
       "genre": "Drama",
       "actors": [
-        "Benjamán Vicuña",
+        "Benjamín Vicuña",
         "Paola Krum",
         "Luciano Castro",
         "Mercedes Funes",
         "Jorgelina Aruzzi",
-        "Damiín De Santo"
+        "Damián De Santo"
       ],
       "orientation": "vertical",
       "image": "images/verticals/el-primero-de-nosotros-poster-280x420.png",
@@ -4022,7 +4692,7 @@
         "Guillermo Francella",
         "Florencia Peña",
         "Luisana Lopilato",
-        "Daráo Lopilato"
+        "Darío Lopilato"
       ],
       "orientation": "vertical",
       "image": "images/verticals/casados-con-hijos-poster-280x420.png",
@@ -4038,8 +4708,8 @@
         "Gonzalo Heredia",
         "Agustina Cherri",
         "Esteban Lamothe",
-        "Lali Gonzílez",
-        "Luciano Cíceres",
+        "Lali González",
+        "Luciano Cáceres",
         "Romina Gaetani"
       ],
       "orientation": "vertical",
@@ -4055,7 +4725,7 @@
       "actors": [
         "Jerónimo Bosia",
         "Gabriela Toscano",
-        "Luciano Cíceres",
+        "Luciano Cáceres",
         "Juan Palomino",
         "Romina Gaetani",
         "Gina Mastronicola"
@@ -4066,19 +4736,19 @@
     },
     {
       "id": "h6",
-      "title": "Cien Dáas para Enamorarse",
+      "title": "Cien Días para Enamorarse",
       "year": "2018",
       "channel": "Telefe",
-      "genre": "Comedia Romíntica",
+      "genre": "Comedia Romántica",
       "actors": [
         "Carla Peterson",
-        "Nancy Duplía",
+        "Nancy Dupláa",
         "Luciano Castro",
         "Juan Minujín"
       ],
       "orientation": "vertical",
       "image": "images/verticals/100-Dias-para-enamorarse-poster-280x420.png",
-      "subtitle": "Comedia romíntica"
+      "subtitle": "Comedia romántica"
     },
     {
       "id": "h7",
@@ -4087,9 +4757,9 @@
       "channel": "Telefe",
       "genre": "Comedia",
       "actors": [
-        "Nancy Duplía",
+        "Nancy Dupláa",
         "Daniel Hendler",
-        "Luciano Cíceres",
+        "Luciano Cáceres",
         "Isabel Macedo"
       ],
       "orientation": "vertical",
@@ -4103,7 +4773,7 @@
       "channel": "Telefe",
       "genre": "Comedia",
       "actors": [
-        "Miguel üngel Rodráguez",
+        "Miguel Ángel Rodríguez",
         "Claribel Medina",
         "Gabriel Goity",
         "Florencia de la V"
@@ -4163,9 +4833,9 @@
       "channel": "Telefe",
       "genre": "Thriller",
       "actors": [
-        "Joaquán Furriel",
+        "Joaquín Furriel",
         "Julieta Cardinali",
-        "Fabiín Vena"
+        "Fabián Vena"
       ],
       "orientation": "vertical",
       "image": "images/verticals/cain-abel-poster-280x420.png",
@@ -4175,10 +4845,10 @@
       "id": "v17",
       "title": "Cuéntame cómo Pasó",
       "year": "2017",
-      "channel": "TV Püblica",
+      "channel": "TV Pública",
       "genre": "Drama",
       "actors": [
-        "Nicolís Cabré",
+        "Nicolás Cabré",
         "Malena Solda"
       ],
       "orientation": "vertical",
@@ -4193,7 +4863,7 @@
       "genre": "Drama",
       "actors": [
         "Facundo Arana",
-        "Nancy Duplía",
+        "Nancy Dupláa",
         "Carina Zampini"
       ],
       "orientation": "vertical",
@@ -4218,12 +4888,12 @@
     },
     {
       "id": "v20",
-      "title": "Esperanza Máa",
+      "title": "Esperanza Mía",
       "year": "2015",
       "channel": "Canal 13",
       "genre": "Musical",
       "actors": [
-        "Mariano Martánez",
+        "Mariano Martínez",
         "Lali Espósito"
       ],
       "orientation": "vertical",
@@ -4237,11 +4907,11 @@
       "channel": "Canal 13",
       "genre": "Comedia",
       "actors": [
-        "Adriín Suar",
+        "Adrián Suar",
         "Natalia Oreiro",
         "Juan Minujín",
         "Lali Espósito",
-        "Eugenia Suírez"
+        "Eugenia Suárez"
       ],
       "orientation": "vertical",
       "image": "images/verticals/solamente-vos-poster-280x420.png",
@@ -4254,9 +4924,9 @@
       "channel": "Canal 13",
       "genre": "Musical",
       "actors": [
-        "üngela Torres",
+        "Ángela Torres",
         "Juan Darthés",
-        "Ana Maráa Orozco",
+        "Ana Maria Orozco",
         "Romina Gaetani"
       ],
       "orientation": "vertical",
@@ -4272,7 +4942,7 @@
       "actors": [
         "Agustina Cherri",
         "Nico Furtado",
-        "Luciano Cíceres"
+        "Luciano Cáceres"
       ],
       "orientation": "vertical",
       "image": "images/verticals/fanny-la-fan-poster-280x420.png",
@@ -4285,8 +4955,8 @@
       "channel": "Telefe",
       "genre": "Drama",
       "actors": [
-        "Gustavo Bermüdez",
-        "Ana Maráa Orozco",
+        "Gustavo Bermúdez",
+        "Ana Maria Orozco",
         "Eva De Dominici"
       ],
       "orientation": "vertical",
@@ -4300,8 +4970,8 @@
       "channel": "Canal 13",
       "genre": "Drama",
       "actors": [
-        "Nicolís Cabré",
-        "Nico Vísquez",
+        "Nicolás Cabré",
+        "Nico Vázquez",
         "Gonzalo Heredia",
         "Agustina Cherri",
         "Calu Rivero",
@@ -4333,7 +5003,7 @@
       "title": "Las Estrellas",
       "year": "2017",
       "channel": "Canal 13",
-      "genre": "Comedia Romíntica",
+      "genre": "Comedia Romántica",
       "actors": [
         "Celeste Cid",
         "Marcela Kloosterboer",
@@ -4350,14 +5020,14 @@
       "title": "Pequeña Victoria",
       "year": "2019",
       "channel": "Telefe",
-      "genre": "Comedia Dramítica",
+      "genre": "Comedia Dramática",
       "actors": [
-        "Julieta Dáaz",
+        "Julieta Díaz",
         "Natalie Pérez",
         "Facundo Arana",
         "Luciano Castro",
         "Mariana Genesio",
-        "Inés Estevez"
+        "Inés Estévez"
       ],
       "orientation": "vertical",
       "image": "images/verticals/pequena-victoria-poster-280x420.png",
@@ -4368,24 +5038,24 @@
       "title": "Guapas",
       "year": "2014",
       "channel": "Canal 13",
-      "genre": "Comedia Dramítica",
+      "genre": "Comedia Dramática",
       "actors": [
-        "Mercedes Morín",
+        "Mercedes Morán",
         "Carla Peterson",
         "Florencia Bertotti",
         "Isabel Macedo",
-        "Araceli Gonzílez"
+        "Araceli González"
       ],
       "orientation": "vertical",
       "image": "images/verticals/guapas-poster-280x420.png",
-      "subtitle": "Comedia dramítica"
+      "subtitle": "Comedia dramática"
     },
     {
       "id": "v30",
       "title": "Separadas",
       "year": "2020",
       "channel": "Canal 13",
-      "genre": "Comedia Dramítica",
+      "genre": "Comedia Dramática",
       "actors": [
         "Celeste Cid",
         "Marcela Kloosterboer",
@@ -4403,15 +5073,15 @@
       "id": "v31",
       "title": "Ciega a Citas",
       "year": "2009",
-      "channel": "TV Püblica",
-      "genre": "Comedia Romíntica",
+      "channel": "TV Pública",
+      "genre": "Comedia Romántica",
       "actors": [
         "Muriel Santa Ana",
         "Rafael Ferro"
       ],
       "orientation": "vertical",
       "image": "images/verticals/ciega-a-citas-poster-280x420.png",
-      "subtitle": "Comedia romíntica"
+      "subtitle": "Comedia romántica"
     },
     {
       "id": "v67",
@@ -4436,7 +5106,7 @@
       "actors": [
         "Luciano Castro",
         "Gonzalo Heredia",
-        "Araceli Gonzílez",
+        "Araceli González",
         "Juan Darthés",
         "Agustina Cherri",
         "Sabrina Garciarena",
@@ -4470,8 +5140,8 @@
       "genre": "Telenovela",
       "actors": [
         "Luciano Castro",
-        "Julieta Dáaz",
-        "Mariano Martánez",
+        "Julieta Díaz",
+        "Mariano Martínez",
         "Marcela Kloosterboer",
         "Eleonora Wexler",
         "Gonzalo Heredia"
@@ -4487,7 +5157,7 @@
       "channel": "Telefe",
       "genre": "Telenovela",
       "actors": [
-        "Sebastiín Estevanez",
+        "Sebastián Estevanez",
         "Carina Zampini",
         "Juan Darthés",
         "Calu Rivero",
@@ -4504,7 +5174,7 @@
       "channel": "Telefe",
       "genre": "Telenovela",
       "actors": [
-        "Sebastiín Estevanez",
+        "Sebastián Estevanez",
         "Eleonora Wexler"
       ],
       "orientation": "vertical",
@@ -4518,7 +5188,7 @@
       "channel": "Telefe",
       "genre": "Telenovela",
       "actors": [
-        "Sebastiín Estevanez",
+        "Sebastián Estevanez",
         "Carina Zampini"
       ],
       "orientation": "vertical",
@@ -4560,8 +5230,8 @@
       "channel": "Canal 13",
       "genre": "Telenovela",
       "actors": [
-        "Gustavo Bermüdez",
-        "Araceli Gonzílez"
+        "Gustavo Bermúdez",
+        "Araceli González"
       ],
       "orientation": "vertical",
       "image": "images/verticals/mil-millones-poster-280x420.png",
@@ -4572,14 +5242,14 @@
       "title": "Kachorra",
       "year": "2002",
       "channel": "Telefe",
-      "genre": "Comedia Romíntica",
+      "genre": "Comedia Romántica",
       "actors": [
         "Natalia Oreiro",
         "Pablo Rago"
       ],
       "orientation": "vertical",
       "image": "images/verticals/kachorra-poster-280x420.png",
-      "subtitle": "Comedia romíntica"
+      "subtitle": "Comedia romántica"
     },
     {
       "id": "v78",
@@ -4589,7 +5259,7 @@
       "genre": "Telenovela",
       "actors": [
         "Gabriel Corrado",
-        "Valeria Bertucelli"
+        "Valeria Bertuccelli"
       ],
       "orientation": "vertical",
       "image": "images/verticals/maximo-corazon-poster-280x420.png",
@@ -4603,7 +5273,7 @@
       "genre": "Telenovela",
       "actors": [
         "Romina Yan",
-        "Ivín Espeche"
+        "Iván Espeche"
       ],
       "orientation": "vertical",
       "image": "images/verticals/abre-tus-ojos-poster-280x420.png",
@@ -4625,12 +5295,12 @@
     },
     {
       "id": "v81",
-      "title": "Jesüs, el Heredero",
+      "title": "Jesús, el Heredero",
       "year": "2004",
       "channel": "Canal 13",
       "genre": "Telenovela",
       "actors": [
-        "Joaquán Furriel",
+        "Joaquín Furriel",
         "Malena Solda"
       ],
       "orientation": "vertical",
@@ -4642,18 +5312,18 @@
       "title": "El Patrón de la Vereda",
       "year": "2005",
       "channel": "América",
-      "genre": "Comedia Dramítica",
+      "genre": "Comedia Dramática",
       "actors": [
-        "Gustavo Bermüdez",
+        "Gustavo Bermúdez",
         "Camila Bordonaba"
       ],
       "orientation": "vertical",
       "image": "images/verticals/el-patron-de-la-vereda-poster-280x420.png",
-      "subtitle": "Comedia dramítica"
+      "subtitle": "Comedia dramática"
     },
     {
       "id": "v83",
-      "title": "Sílvame Maráa",
+      "title": "Sálvame María",
       "year": "2005",
       "channel": "Canal 9/Azul TV",
       "genre": "Telenovela",
@@ -4698,14 +5368,14 @@
       "title": "Juanita, la Soltera",
       "year": "2006",
       "channel": "Canal 13",
-      "genre": "Comedia Romíntica",
+      "genre": "Comedia Romántica",
       "actors": [
         "Gabriel Corrado",
         "Soledad Fandiño"
       ],
       "orientation": "vertical",
       "image": "images/verticals/juanita-la-soltera-poster-280x420.png",
-      "subtitle": "Comedia romíntica"
+      "subtitle": "Comedia romántica"
     },
     {
       "id": "v87",
@@ -4714,10 +5384,10 @@
       "channel": "Canal 13",
       "genre": "Telenovela",
       "actors": [
-        "Susü Pecoraro",
+        "Susú Pecoraro",
         "Claribel Medina",
         "Agustina Cherri",
-        "Maráa Leal"
+        "María Leal"
       ],
       "orientation": "vertical",
       "image": "images/verticals/mujeres-de-nadie-primer-temporada-poster-280x420.png",
@@ -4742,7 +5412,7 @@
       "id": "v89",
       "title": "Esa Mujer",
       "year": "2013",
-      "channel": "TV Püblica",
+      "channel": "TV Pública",
       "genre": "Telenovela",
       "actors": [
         "Andrea del Boca",
@@ -4760,7 +5430,7 @@
       "genre": "Telenovela",
       "actors": [
         "Pablo Echarri",
-        "Nancy Duplía"
+        "Nancy Dupláa"
       ],
       "orientation": "vertical",
       "image": "images/verticals/los-buscas-poster-280x420.png",
@@ -4771,43 +5441,43 @@
       "title": "Ilusiones Compartidas",
       "year": "2000",
       "channel": "Canal 13",
-      "genre": "Comedia Dramítica",
+      "genre": "Comedia Dramática",
       "actors": [
-        "Oscar Martánez",
+        "Oscar Martínez",
         "Catherine Fulop"
       ],
       "orientation": "vertical",
       "image": "images/verticals/ilusiones-poster-280x420.png",
-      "subtitle": "Comedia romíntica"
+      "subtitle": "Comedia romántica"
     },
     {
       "id": "v92",
       "title": "El Sodero de mi Vida",
       "year": "2001",
       "channel": "Canal 13",
-      "genre": "Comedia Romíntica",
+      "genre": "Comedia Romántica",
       "actors": [
         "Dady Brieva",
         "Andrea del Boca"
       ],
       "orientation": "vertical",
       "image": "images/verticals/el-sodero-de-mi-vida-poster-280x420.png",
-      "subtitle": "Comedia romíntica"
+      "subtitle": "Comedia romántica"
     },
     {
       "id": "v93",
       "title": "PH (Propiedad Horizontal)",
       "year": "2001",
       "channel": "Canal 9/Azul TV",
-      "genre": "Comedia Dramítica",
+      "genre": "Comedia Dramática",
       "actors": [
         "Gerardo Romano",
-        "Maráa Valenzuela",
+        "María Valenzuela",
         "Juan Palomino"
       ],
       "orientation": "vertical",
       "image": "images/verticals/ph-propiedad-horizontal-poster-280x420.png",
-      "subtitle": "Comedia romíntica"
+      "subtitle": "Comedia romántica"
     },
     {
       "id": "v94",
@@ -4817,9 +5487,9 @@
       "genre": "Telenovela",
       "actors": [
         "Arturo Puig",
-        "Maráa Valenzuela",
+        "María Valenzuela",
         "Gustavo Garzón",
-        "Araceli Gonzílez"
+        "Araceli González"
       ],
       "orientation": "vertical",
       "image": "images/verticals/primicias-poster-280x420.png",
@@ -4847,7 +5517,7 @@
       "channel": "Canal 9/Azul TV",
       "genre": "Policial",
       "actors": [
-        "Damiín De Santo",
+        "Damián De Santo",
         "Lito Cruz",
         "Julieta Cardinali"
       ],
@@ -4863,7 +5533,7 @@
       "genre": "Comedia",
       "actors": [
         "Juan Leyrado",
-        "Fabiín Gianola"
+        "Fabián Gianola"
       ],
       "orientation": "vertical",
       "image": "images/verticals/maridos-a-domicilio-poster-280x420.png",
@@ -4877,7 +5547,7 @@
       "genre": "Telenovela",
       "actors": [
         "Osvaldo Laport",
-        "Julieta Dáaz",
+        "Julieta Díaz",
         "Romina Gaetani"
       ],
       "orientation": "vertical",
@@ -4889,16 +5559,16 @@
       "title": "Costumbres Argentinas",
       "year": "2003",
       "channel": "Telefe",
-      "genre": "Comedia Dramítica",
+      "genre": "Comedia Dramática",
       "actors": [
         "Carlos Calvo",
-        "Fabiín Gianola",
-        "Maráa Valenzuela",
-        "Ana Maráa Picchio"
+        "Fabián Gianola",
+        "María Valenzuela",
+        "Ana Maria Picchio"
       ],
       "orientation": "vertical",
       "image": "images/verticals/costumbres-argentinas-poster-280x420.png",
-      "subtitle": "Comedia dramítica"
+      "subtitle": "Comedia dramática"
     },
     {
       "id": "v100",
@@ -4907,10 +5577,10 @@
       "channel": "Canal 13",
       "genre": "Comedia",
       "actors": [
-        "Damiín De Santo",
+        "Damián De Santo",
         "Cecilia Dopazo",
         "Marcela Kloosterboer",
-        "Guido Kackzca"
+        "Guido Kaczka"
       ],
       "orientation": "vertical",
       "image": "images/verticals/los-pensionados-poster-280x420.png",
@@ -4953,7 +5623,7 @@
       "channel": "América",
       "genre": "Policial",
       "actors": [
-        "Moria Casín",
+        "Moria Casán",
         "Jorge Marrale",
         "Felipe Colombo",
         "Romina Ricci"
@@ -4967,14 +5637,14 @@
       "title": "Gladiadores de Pompeya",
       "year": "2006",
       "channel": "Canal 9/Azul TV",
-      "genre": "Comedia Romíntica",
+      "genre": "Comedia Romántica",
       "actors": [
         "Andrea del Boca",
         "Gabriel Goity"
       ],
       "orientation": "vertical",
       "image": "images/verticals/gladiadores-de-pompeya-poster-280x420.png",
-      "subtitle": "Comedia romíntica"
+      "subtitle": "Comedia romántica"
     },
     {
       "id": "v105",
@@ -4985,7 +5655,7 @@
       "actors": [
         "Gerardo Romano",
         "Carolina Papaleo",
-        "Tomís Fonzi",
+        "Tomás Fonzi",
         "Marcela Kloosterboer"
       ],
       "orientation": "vertical",
@@ -5013,7 +5683,7 @@
       "channel": "Telefe",
       "genre": "Policial",
       "actors": [
-        "Miguel üngel Rodráguez",
+        "Miguel Ángel Rodríguez",
         "Gianella Neyra"
       ],
       "orientation": "vertical",
@@ -5028,7 +5698,7 @@
       "genre": "Sitcom",
       "actors": [
         "Florencia Peña",
-        "Fabiín Vena",
+        "Fabián Vena",
         "Luis Luque"
       ],
       "orientation": "vertical",
@@ -5060,8 +5730,8 @@
       "actors": [
         "Pilar Pascual",
         "Abril Di Yorio",
-        "Victor Varona",
-        "Thaás Rippel"
+        "Víctor Varona",
+        "Thaís Rippel"
       ],
       "orientation": "vertical",
       "image": "images/verticals/cielo-grande-poster-280x420.png",
@@ -5085,14 +5755,14 @@
     },
     {
       "id": "v112",
-      "title": "Dáas de Gallos",
+      "title": "Días de Gallos",
       "year": "2021",
       "channel": "HBO Max",
       "genre": "Drama",
       "actors": [
-        "üngela Torres",
+        "Ángela Torres",
         "Ecko",
-        "Tomís Wicz"
+        "Tomás Wicz"
       ],
       "orientation": "vertical",
       "image": "images/verticals/dias-de-gallos-poster-280x420.png",
@@ -5121,7 +5791,7 @@
       "genre": "Juvenil",
       "actors": [
         "Juli Castro",
-        "Antonella Podestí",
+        "Antonella Podestá",
         "Valen G"
       ],
       "orientation": "vertical",
@@ -5138,7 +5808,7 @@
         "Gina Mastronicola",
         "Manuel Ramos",
         "Alejandro Paker",
-        "Valentán Villafañe"
+        "Valentín Villafañe"
       ],
       "orientation": "vertical",
       "image": "images/verticals/selenkay-poster-280x420.png",
@@ -5153,7 +5823,7 @@
       "actors": [
         "Renata Laveaga",
         "Joe Torbell",
-        "Sofáa Carrera",
+        "Sofía Carrera",
         "Pablo Turturiello"
       ],
       "orientation": "vertical",
@@ -5168,7 +5838,7 @@
       "genre": "Drama",
       "actors": [
         "Guido Pennelli",
-        "Juliín Cerati",
+        "Julián Cerati",
         "Alan Madanes",
         "Pablo Turturiello",
         "Gastón Vietto"
@@ -5184,7 +5854,7 @@
       "channel": "Disney+",
       "genre": "Comedia",
       "actors": [
-        "Daráo Barassi",
+        "Darío Barassi",
         "Consuelo Duval",
         "Maryel Abrego",
         "Santiago Torres",
@@ -5204,7 +5874,7 @@
         "Pedro Maurizi",
         "Mora Fisz",
         "Thomas Lepera",
-        "Tomís Kirzner",
+        "Tomás Kirzner",
         "Lautaro Delgado",
         "Carla Pandolfi"
       ],
@@ -5236,9 +5906,9 @@
       "channel": "Flow",
       "genre": "Comedia",
       "actors": [
-        "Fabiín Vena",
+        "Fabián Vena",
         "Pedro Alfonso",
-        "Sofáa Morandi"
+        "Sofía Morandi"
       ],
       "orientation": "vertical",
       "image": "images/verticals/abejas-el-arte-del-engano-poster-280x420.png",
@@ -5246,7 +5916,7 @@
     },
     {
       "id": "v122",
-      "title": "WTF! Con la müsica a otra parte",
+      "title": "WTF! Con la música a otra parte",
       "year": "2021",
       "channel": "Flow",
       "genre": "Drama",
@@ -5261,16 +5931,16 @@
     },
     {
       "id": "V123",
-      "title": "Los ├Ünicos",
+      "title": "Los Únicos",
       "year": "2012",
       "channel": "Canal 13",
       "genre": "Comedia",
       "actors": [
-        "Nicolís Cabré",
-        "Nico Vísquez",
+        "Nicolás Cabré",
+        "Nico Vázquez",
         "Marco Antonio Caponi",
         "Emilia Attias",
-        "Eugenia Suírez",
+        "Eugenia Suárez",
         "Brenda Asnicar"
       ],
       "orientation": "vertical",
@@ -5282,7 +5952,7 @@
       "title": "Enséñame a Vivir",
       "year": "2009",
       "channel": "Canal 13",
-      "genre": "Comedia Romíntica",
+      "genre": "Comedia Romántica",
       "actors": [
         "Pablo Rago",
         "Violeta Urtizberea",
@@ -5290,7 +5960,7 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/ensename-a-vivir-poster-280x420.png",
-      "subtitle": "Comedia romíntica"
+      "subtitle": "Comedia romántica"
     },
     {
       "id": "V125",
@@ -5317,8 +5987,8 @@
         "Carina Zampini",
         "Andrea Politti",
         "Erica Rivas",
-        "Joaquán Furriel",
-        "Nico Vísquez",
+        "Joaquín Furriel",
+        "Nico Vázquez",
         "Mercedes Funes",
         "Melina Petriella"
       ],
@@ -5352,7 +6022,7 @@
         "Chiara Francia",
         "Mercedes Lambre",
         "Victorio D'Alessandro",
-        "Sofáa Morandi",
+        "Sofía Morandi",
         "Santiago Talledo"
       ],
       "orientation": "vertical",
@@ -5366,13 +6036,13 @@
       "channel": "Nickelodeon",
       "genre": "Juvenil",
       "actors": [
-        "Eiza Gonzílez",
+        "Eiza González",
         "Santiago Ramundo",
         "Brenda Asnicar",
-        "Valentán Villafañe"
+        "Valentín Villafañe"
       ],
       "orientation": "vertical",
-      "image": "images/verticals/sue├▒a-conmigo-poster-280x420.png",
+      "image": "images/verticals/sueña-conmigo-poster-280x420.png",
       "subtitle": "Juvenil"
     },
     {
@@ -5396,7 +6066,7 @@
       "channel": "Disney Channel",
       "genre": "Comedia",
       "actors": [
-        "Miguel üngel Rodráguez",
+        "Miguel Ángel Rodríguez",
         "Florencia Torrente",
         "Maida Andrenacci"
       ],
@@ -5427,12 +6097,11 @@
       "channel": "Disney XD",
       "genre": "Juvenil",
       "actors": [
-        "Mariano Gonzílez-Guerineau",
-        "Sebastiín Athié",
+        "Mariano González-Guerineau",
+        "Sebastián Athié",
         "Paulina Vetrano",
         "Guido Pennelli",
-        "Nicolís Pauls",
-        "Guido Pennelli",
+        "Nicolás Pauls",
         "Renato Quattordio"
       ],
       "orientation": "vertical",
@@ -5464,7 +6133,7 @@
       "actors": [
         "Santiago Magariños",
         "Tupac Larriera",
-        "Valentán Villafañe",
+        "Valentín Villafañe",
         "Esteban Prol"
       ],
       "orientation": "vertical",
@@ -5479,10 +6148,10 @@
       "genre": "Juvenil",
       "actors": [
         "Diego Ramos",
-        "Tini Stoeseel",
+        "Tini Stoessel",
         "Pablo Espinosa",
         "Jorge Blanco",
-        "Diego Dománguez",
+        "Diego Domínguez",
         "Mercedes Lambre"
       ],
       "orientation": "vertical",
@@ -5530,8 +6199,8 @@
       "actors": [
         "Peter Lanzani",
         "Oriana Sabatini",
-        "Pablo Martánez",
-        "Agustán Bernasconi",
+        "Pablo Martínez",
+        "Agustín Bernasconi",
         "Caro Domenech"
       ],
       "orientation": "vertical",
@@ -5545,8 +6214,8 @@
       "channel": "Disney Channel",
       "genre": "Juvenil",
       "actors": [
-        "Benjamin Rojas",
-        "Sofia Reca"
+        "Benjamín Rojas",
+        "Sofía Reca"
       ],
       "orientation": "vertical",
       "image": "images/verticals/jakeblake-poster-280x420.png",
@@ -5557,27 +6226,27 @@
       "title": "B&B: Bella y Bestia",
       "year": "2008",
       "channel": "Telefe",
-      "genre": "Comedia Romíntica",
+      "genre": "Comedia Romántica",
       "actors": [
         "Romina Yan",
-        "Damiín De Santo"
+        "Damián De Santo"
       ],
       "orientation": "vertical",
       "image": "images/verticals/byb-poster-280x420.png",
-      "subtitle": "Comedia romíntica"
+      "subtitle": "Comedia romántica"
     },
     {
       "id": "V142",
-      "title": "Casi üngeles",
+      "title": "Casi Ángeles",
       "year": "2007",
       "channel": "Telefe",
       "genre": "Juvenil",
       "actors": [
-        "Nico Vísquez",
+        "Nico Vázquez",
         "Emilia Attias",
         "Peter Lanzani",
         "Lali Espósito",
-        "Eugenia Suírez",
+        "Eugenia Suárez",
         "Nico Riera",
         "Gastón Dalmau"
       ],
@@ -5592,10 +6261,10 @@
       "channel": "Telefe",
       "genre": "Juvenil",
       "actors": [
-        "Mariano Martánez",
+        "Mariano Martínez",
         "Luisana Lopilato",
         "Isabel Macedo",
-        "Benjamin Rojas"
+        "Benjamín Rojas"
       ],
       "orientation": "vertical",
       "image": "images/verticals/alma-pirata-poster-280x420.png",
@@ -5638,7 +6307,7 @@
       "channel": "Canal 9/Azul TV",
       "genre": "Juvenil",
       "actors": [
-        "Guido Kackzca",
+        "Guido Kaczka",
         "Soledad"
       ],
       "orientation": "vertical",
@@ -5654,7 +6323,7 @@
       "actors": [
         "Luisana Lopilato",
         "Felipe Colombo",
-        "Benjamin Rojas",
+        "Benjamín Rojas",
         "Camila Bordonaba"
       ],
       "orientation": "vertical",
@@ -5666,16 +6335,16 @@
       "title": "Campeones de la Vida",
       "year": "2000",
       "channel": "Canal 13",
-      "genre": "Comedia Dramítica",
+      "genre": "Comedia Dramática",
       "actors": [
         "Osvaldo Laport",
         "Soledad Silveyra",
-        "Mariano Martánez",
-        "Maráa Valenzuela"
+        "Mariano Martínez",
+        "María Valenzuela"
       ],
       "orientation": "vertical",
       "image": "images/verticals/campeones-poster-280x420.png",
-      "subtitle": "Comedia dramítica"
+      "subtitle": "Comedia dramática"
     },
     {
       "id": "V149",
@@ -5685,7 +6354,7 @@
       "genre": "Juvenil",
       "actors": [
         "Romina Gaetani",
-        "Ivín Espeche",
+        "Iván Espeche",
         "Patricia Sosa"
       ],
       "orientation": "vertical",
@@ -5694,7 +6363,7 @@
     },
     {
       "id": "V150",
-      "title": "Divina, estí en tu Corazón",
+      "title": "Divina, está en tu Corazón",
       "year": "2017",
       "channel": "Canal 13",
       "genre": "Juvenil",
@@ -5729,7 +6398,7 @@
       "genre": "Juvenil",
       "actors": [
         "Liz Solari",
-        "Tomís De las Heras"
+        "Tomás De las Heras"
       ],
       "orientation": "vertical",
       "image": "images/verticals/champs-12-poster-280x420.png",
@@ -5763,7 +6432,7 @@
         "Camila Bordonaba",
         "Gabriel Goity",
         "Rodrigo Guirao",
-        "Daráo Lopilato"
+        "Darío Lopilato"
       ],
       "orientation": "vertical",
       "image": "images/verticals/atraccion-x-4-poster-280x420.png",
@@ -5793,7 +6462,7 @@
       "channel": "Canal 9/Azul TV",
       "genre": "Juvenil",
       "actors": [
-        "Eláas Viñoles",
+        "Elías Viñoles",
         "Brenda Gandini"
       ],
       "orientation": "vertical",
@@ -5823,7 +6492,7 @@
       "genre": "Juvenil",
       "actors": [
         "Fran Bass",
-        "Piru Síez",
+        "Piru Sáez",
         "Coco Maggio",
         "Belén Scalella",
         "Fernanda Neill"
@@ -5834,12 +6503,12 @@
     },
     {
       "id": "V159",
-      "title": "Sueños Mígicos",
+      "title": "Sueños Mágicos",
       "year": "2005",
       "channel": "Canal 9/Azul TV",
       "genre": "Juvenil",
       "actors": [
-        "Ivín Espeche",
+        "Iván Espeche",
         "Valeria Lorca"
       ],
       "orientation": "vertical",
@@ -5848,7 +6517,7 @@
     },
     {
       "id": "V160",
-      "title": "Paraáso Rock",
+      "title": "Paraíso Rock",
       "year": "2005",
       "channel": "Canal 9/Azul TV",
       "genre": "Juvenil",
@@ -5915,7 +6584,7 @@
       "genre": "Juvenil",
       "actors": [
         "Candela Vetrano",
-        "Pablo Martánez"
+        "Pablo Martínez"
       ],
       "orientation": "vertical",
       "image": "images/verticals/supertorpe-poster-280x420.png",
@@ -5928,7 +6597,7 @@
       "channel": "Telefe",
       "genre": "Comedia",
       "actors": [
-        "Miguel üngel Rodráguez",
+        "Miguel Ángel Rodríguez",
         "Silvia Kutika"
       ],
       "orientation": "vertical",
@@ -5939,7 +6608,7 @@
       "id": "V166",
       "title": "Cata y el Misterio de la Esfera",
       "year": "2013",
-      "channel": "TV Püblica",
+      "channel": "TV Pública",
       "genre": "Juvenil",
       "actors": [
         "Mica Riera",
@@ -5984,15 +6653,15 @@
       "title": "Envidiosa",
       "year": "2024",
       "channel": "Netflix",
-      "genre": "Comedia Romíntica",
+      "genre": "Comedia Romántica",
       "actors": [
         "Griselda Siciliani",
         "Esteban Lamothe",
-        "Benjamán Vicuña"
+        "Benjamín Vicuña"
       ],
       "orientation": "vertical",
       "image": "images/verticals/envidiosa-poster-280x420.png",
-      "subtitle": "Comedia romíntica"
+      "subtitle": "Comedia romántica"
     },
     {
       "id": "V170",
@@ -6030,7 +6699,7 @@
       "channel": "Netflix",
       "genre": "Comedia",
       "actors": [
-        "Sebastiín Wainraich",
+        "Sebastián Wainraich",
         "Natalie Pérez"
       ],
       "orientation": "vertical",
@@ -6046,8 +6715,8 @@
       "actors": [
         "Carla Peterson",
         "Griselda Siciliani",
-        "Benjamán Vicuña",
-        "Eugenia Suírez"
+        "Benjamín Vicuña",
+        "Eugenia Suárez"
       ],
       "orientation": "vertical",
       "image": "images/verticals/terapia-alternativa-poster-280x420.png",
@@ -6060,9 +6729,9 @@
       "channel": "Disney+",
       "genre": "Comedia",
       "actors": [
-        "Adriín Suar",
+        "Adrián Suar",
         "Andrés Parra",
-        "Gustavo Bermüdez"
+        "Gustavo Bermúdez"
       ],
       "orientation": "vertical",
       "image": "images/verticals/los-protectores-poster-280x420.png",
@@ -6075,9 +6744,9 @@
       "channel": "Prime Video",
       "genre": "Comedia",
       "actors": [
-        "Martán Piroyanski",
+        "Martín Piroyansky",
         "Nachito Saralegui",
-        "Sofáa Morandi"
+        "Sofía Morandi"
       ],
       "orientation": "vertical",
       "image": "images/verticals/porno-y-helado-poster-280x420.png",
@@ -6114,7 +6783,7 @@
     },
     {
       "id": "V178",
-      "title": "Familia de Divín",
+      "title": "Familia de Diván",
       "year": "2023",
       "channel": "Flow",
       "genre": "Comedia",
@@ -6134,8 +6803,8 @@
       "genre": "Policial",
       "actors": [
         "Renato Quattordio",
-        "Fernín Mirís",
-        "Luciano Cíceres"
+        "Fernán Mirás",
+        "Luciano Cáceres"
       ],
       "orientation": "vertical",
       "image": "images/verticals/el-mundo-de-mateo-poster-280x420.png",
@@ -6150,7 +6819,7 @@
       "actors": [
         "Nico Furtado",
         "Juan Minujín",
-        "Martina Gusmín",
+        "Martina Gusmán",
         "Claudio Rissi",
         "Esteban Lamothe"
       ],
@@ -6176,7 +6845,7 @@
     },
     {
       "id": "V182",
-      "title": "├Ültimo Primer Dáa",
+      "title": "Último Primer Día",
       "year": "2022",
       "channel": "Flow",
       "genre": "Policial",
@@ -6192,14 +6861,14 @@
     },
     {
       "id": "V183",
-      "title": "Maráa Marta: El Crimen del Country",
+      "title": "María Marta: El Crimen del Country",
       "year": "2022",
       "channel": "HBO Max",
       "genre": "Policial",
       "actors": [
         "Laura Novoa",
         "Jorge Marrale",
-        "Nicolís Francella",
+        "Nicolás Francella",
         "Carlos Portaluppi"
       ],
       "orientation": "vertical",
@@ -6214,7 +6883,7 @@
       "genre": "Policial",
       "actors": [
         "Gastón Pauls",
-        "Matáas Mayer",
+        "Matías Mayer",
         "Gustavo Garzón",
         "Liz Solari"
       ],
@@ -6233,7 +6902,7 @@
         "El Purre",
         "Kevsho",
         "Soledad Villamil",
-        "Luis Machán",
+        "Luis Machín",
         "Paola Barrientos"
       ],
       "orientation": "vertical",
@@ -6249,9 +6918,8 @@
       "actors": [
         "Soledad Villamil",
         "Juan Minujín",
-        "Kevsho",
-        "Alberto Amman",
-        "Matáas Recalt"
+        "Alberto Ammann",
+        "Matías Recalt"
       ],
       "orientation": "vertical",
       "image": "images/verticals/atrapados-poster-280x420.png",
@@ -6266,9 +6934,9 @@
       "actors": [
         "Ana Garibaldi",
         "Rita Cortese",
-        "Carolina Ramárez",
+        "Carolina Ramírez",
         "Valentina Zenere",
-        "Eugenia Suírez",
+        "Eugenia Suárez",
         "Lorena Vega"
       ],
       "orientation": "vertical",
@@ -6286,7 +6954,7 @@
         "Griselda Siciliani",
         "Marco Antonio Caponi",
         "Monna Antonópulos",
-        "Agustán Sullivan",
+        "Agustín Sullivan",
         "Juan Minujín"
       ],
       "orientation": "vertical",
@@ -6300,7 +6968,7 @@
       "channel": "Netflix",
       "genre": "Drama",
       "actors": [
-        "Ricardo Darán",
+        "Ricardo Darín",
         "Carla Peterson",
         "Marcelo Subiotto",
         "Ariel Staltari",
@@ -6322,7 +6990,7 @@
         "Mirta Busnelli",
         "Claudia Lapacó",
         "Betiana Blum",
-        "Maráa Leal"
+        "María Leal"
       ],
       "orientation": "vertical",
       "image": "images/verticals/el-buen-retiro-poster-280x420.png",
@@ -6337,7 +7005,7 @@
       "actors": [
         "Federico D'Elia",
         "Julieta Cardinali",
-        "Juliín Cerati"
+        "Julián Cerati"
       ],
       "orientation": "vertical",
       "image": "images/verticals/un-leon-en-el-bosque-poster-280x420.png",
@@ -6381,7 +7049,7 @@
       "genre": "Drama",
       "actors": [
         "Lali Espósito",
-        "Verónica Llinís",
+        "Verónica Llinás",
         "Andrés Gil",
         "Candela Vetrano"
       ],
@@ -6413,7 +7081,7 @@
       "genre": "Miniseries",
       "actors": [
         "Nazareno Casero",
-        "Mariano Martánez",
+        "Mariano Martínez",
         "Justina Bustos",
         "Juan Gil Navarro"
       ],
@@ -6428,7 +7096,7 @@
       "channel": "Disney+",
       "genre": "Miniseries",
       "actors": [
-        "Eugenia Suírez",
+        "Eugenia Suárez",
         "Pablo Echarri"
       ],
       "orientation": "vertical",
@@ -6459,7 +7127,7 @@
       "channel": "Disney+",
       "genre": "Miniseries",
       "actors": [
-        "Benjamán Vicuña",
+        "Benjamín Vicuña",
         "Gimena Accardi",
         "Federico Olivera"
       ],
@@ -6475,8 +7143,8 @@
       "genre": "Miniseries",
       "actors": [
         "Nico Furtado",
-        "Delfina Chíves",
-        "Malena Sínchez",
+        "Delfina Cháves",
+        "Malena Sánchez",
         "Juan Sorini"
       ],
       "orientation": "vertical",
@@ -6490,9 +7158,9 @@
       "channel": "Flow",
       "genre": "Miniseries",
       "actors": [
-        "Luciano Cíceres",
+        "Luciano Cáceres",
         "Carla Quevedo",
-        "Malena Sínchez",
+        "Malena Sánchez",
         "Andrés Gil"
       ],
       "orientation": "vertical",
@@ -6506,9 +7174,9 @@
       "channel": "Disney+",
       "genre": "Miniseries",
       "actors": [
-        "Joaquán Furriel",
+        "Joaquín Furriel",
         "Carla Quevedo",
-        "Benjamán Amadeo"
+        "Benjamín Amadeo"
       ],
       "orientation": "vertical",
       "image": "images/verticals/robo-mundial-poster-280x420.png",
@@ -6538,8 +7206,8 @@
       "actors": [
         "Juan Minujín",
         "Monna Antonópulos",
-        "Joaquán Ferreira",
-        "Agustán Sullivan"
+        "Joaquín Ferreira",
+        "Agustín Sullivan"
       ],
       "orientation": "vertical",
       "image": "images/verticals/coppola-poster-280x420.png",
@@ -6552,7 +7220,7 @@
       "channel": "Netflix",
       "genre": "Miniseries",
       "actors": [
-        "Ivín Hochman",
+        "Iván Hochman",
         "Mica Riera",
         "Andy Chango"
       ],
@@ -6568,10 +7236,10 @@
       "genre": "Drama",
       "actors": [
         "Diego Peretti",
-        "Mercedes Morín",
+        "Mercedes Morán",
         "Peter Lanzani",
-        "Chino Darán",
-        "Joaquán Furriel"
+        "Chino Darín",
+        "Joaquín Furriel"
       ],
       "orientation": "vertical",
       "image": "images/verticals/el-reino-poster-280x420.png",
@@ -6579,14 +7247,14 @@
     },
     {
       "id": "V207",
-      "title": "Iosi, el Espáa Arrepentido",
+      "title": "Iosi, el Espía Arrepentido",
       "year": "2022",
       "channel": "Prime Video",
       "genre": "Drama",
       "actors": [
         "Gustavo Bassani",
         "Natalia Oreiro",
-        "Mercedes Morín",
+        "Mercedes Morán",
         "Marco Antonio Caponi",
         "Alejandro Awada"
       ],
@@ -6602,7 +7270,7 @@
       "genre": "Thriller",
       "actors": [
         "Jean Pierre Noher",
-        "Luis Machán",
+        "Luis Machín",
         "César Troncoso",
         "Luis Luque",
         "Nico Furtado",
@@ -6621,8 +7289,8 @@
       "actors": [
         "Nazareno Casero",
         "Juan Palomino",
-        "Nicolís Goldschmidt",
-        "Mercedes Morín",
+        "Nicolás Goldschmidt",
+        "Mercedes Morán",
         "Julieta Cardinali"
       ],
       "orientation": "vertical",
@@ -6637,9 +7305,9 @@
       "genre": "Miniseries",
       "actors": [
         "Balthazar Murilio",
-        "Vanesa Gonzílez",
+        "Vanesa González",
         "Alberto Ajaka",
-        "Sofáa Gala"
+        "Sofía Gala"
       ],
       "orientation": "vertical",
       "image": "images/verticals/apache-poster-280x420.png",
@@ -6655,7 +7323,7 @@
         "Mina Serrano",
         "Victorio D'Alessandro",
         "Katja Alemann",
-        "Agustán Aristarín"
+        "Agustín Aristarán"
       ],
       "orientation": "vertical",
       "image": "images/verticals/cris-miro-ella-poster-280x420.png",
@@ -6669,9 +7337,9 @@
       "genre": "Miniseries",
       "actors": [
         "Natalia Oreiro",
-        "Daráo Grandinetti",
+        "Darío Grandinetti",
         "Ernesto Alterio",
-        "Diego Velízquez",
+        "Diego Velázquez",
         "Francesc Orella"
       ],
       "orientation": "vertical",
@@ -6686,9 +7354,9 @@
       "genre": "Miniseries",
       "actors": [
         "Jerónimo Bosia",
-        "Delfina Chíves",
+        "Delfina Cháves",
         "Renato Quattordio",
-        "Martán Slipak"
+        "Martín Slipak"
       ],
       "orientation": "vertical",
       "image": "images/verticals/ringo-poster-280x420.png",
@@ -6717,9 +7385,9 @@
       "genre": "Miniseries",
       "actors": [
         "Victorio D'Alessandro",
-        "Nico Garcáa Hume",
+        "Nico García Hume",
         "Valentina Bassi",
-        "Matáas Desiderio"
+        "Matías Desiderio"
       ],
       "orientation": "vertical",
       "image": "images/verticals/el-hincha-poster-280x420.png",
@@ -6735,7 +7403,7 @@
         "Gonzalo Heredia",
         "Violeta Urtizberea",
         "Luciano Castro",
-        "Agustán Sullivan"
+        "Agustín Sullivan"
       ],
       "orientation": "vertical",
       "image": "images/verticals/el-sabor-del-silencio-poster-280x420.png",
@@ -6749,7 +7417,7 @@
       "genre": "Thriller",
       "actors": [
         "Mike Amigorena",
-        "Diego Velízquez",
+        "Diego Velázquez",
         "Elena Roger"
       ],
       "orientation": "vertical",
@@ -6764,7 +7432,7 @@
       "genre": "Miniseries",
       "actors": [
         "Michael Aloni",
-        "Malena Sínchez"
+        "Malena Sánchez"
       ],
       "orientation": "vertical",
       "image": "images/verticals/amia-poster-280x420.png",
@@ -6791,8 +7459,8 @@
       "channel": "Flow",
       "genre": "Drama",
       "actors": [
-        "Tomís Fonzi",
-        "Laurita Ferníndez"
+        "Tomás Fonzi",
+        "Laurita Fernández"
       ],
       "orientation": "vertical",
       "image": "images/verticals/inconvivencia-poster-280x420.png",
@@ -6805,7 +7473,7 @@
       "channel": "Flow",
       "genre": "Thriller",
       "actors": [
-        "Julio Chívez",
+        "Julio Chávez",
         "Marco Antonio Caponi",
         "Andrea Pietra",
         "Muriel Santa Ana"
@@ -6821,9 +7489,9 @@
       "channel": "Flow",
       "genre": "Thriller",
       "actors": [
-        "Nicolís Cabré",
+        "Nicolás Cabré",
         "Eleonora Wexler",
-        "Jazmán Stuart"
+        "Jazmín Stuart"
       ],
       "orientation": "vertical",
       "image": "images/verticals/tu-parte-del-trato-poster-280x420.png",
@@ -6863,8 +7531,8 @@
       "channel": "Flow",
       "genre": "Thriller",
       "actors": [
-        "Rodrigo De la Serna",
-        "Daráo Grandinetti",
+        "Rodrigo de la Serna",
+        "Darío Grandinetti",
         "Leticia Brédice",
         "Julieta Nair Calvo"
       ],
@@ -6892,9 +7560,9 @@
       "channel": "Flow",
       "genre": "Drama",
       "actors": [
-        "Julio Chívez",
+        "Julio Chávez",
         "Carla Quevedo",
-        "Inés Estevez",
+        "Inés Estévez",
         "Luz Cipriota"
       ],
       "orientation": "vertical",
@@ -6908,7 +7576,7 @@
       "channel": "Flow",
       "genre": "Thriller",
       "actors": [
-        "Germín Palacios",
+        "Germán Palacios",
         "Eva De Dominici",
         "Juan Gil Navarro"
       ],
@@ -6920,7 +7588,7 @@
       "id": "V229",
       "title": "Supermax",
       "year": "2017",
-      "channel": "TV Püblica",
+      "channel": "TV Pública",
       "genre": "Thriller",
       "actors": [
         "Santiago Segura",
@@ -6954,8 +7622,8 @@
       "channel": "Canal 13",
       "genre": "Policial",
       "actors": [
-        "Julio Chívez",
-        "Claudia Fontín",
+        "Julio Chávez",
+        "Claudia Fontán",
         "Alberto Ajaka"
       ],
       "orientation": "vertical",
@@ -6971,7 +7639,7 @@
       "actors": [
         "Alejandro Awada",
         "Cecilia Roth",
-        "Chino Darán",
+        "Chino Darín",
         "Nazareno Casero"
       ],
       "orientation": "vertical",
@@ -6985,7 +7653,7 @@
       "channel": "Space",
       "genre": "Policial",
       "actors": [
-        "Jorge Romín",
+        "Jorge Román",
         "Mauricio Paniagua",
         "Carla Quevedo",
         "Diego Cremonesi"
@@ -7001,9 +7669,9 @@
       "channel": "Fox",
       "genre": "Comedia",
       "actors": [
-        "Adriín Suar",
-        "Nico Vísquez",
-        "Martán Bossi",
+        "Adrián Suar",
+        "Nico Vázquez",
+        "Martín Bossi",
         "Soledad Villamil",
         "Natalie Pérez"
       ],
@@ -7021,7 +7689,7 @@
         "Florencia Peña",
         "Gabriel Goity",
         "Guillermo Toledo",
-        "Verónica Llinís",
+        "Verónica Llinás",
         "Julieta Zylberberg"
       ],
       "orientation": "vertical",
@@ -7036,7 +7704,7 @@
       "genre": "Comedia",
       "actors": [
         "Carlos Belloso",
-        "Edda Dáaz",
+        "Edda Díaz",
         "Alejandro Muller",
         "Mariana Prommel"
       ],
@@ -7046,7 +7714,7 @@
     },
     {
       "id": "V236",
-      "title": "Nafta Süper",
+      "title": "Nafta Súper",
       "year": "2016",
       "channel": "Space",
       "genre": "Comedia",
@@ -7062,18 +7730,18 @@
     },
     {
       "id": "V237",
-      "title": "30 Dáas Juntos",
+      "title": "30 Días Juntos",
       "year": "2012",
       "channel": "Cosmopolitan TV",
-      "genre": "Comedia Romíntica",
+      "genre": "Comedia Romántica",
       "actors": [
-        "Eugenia Suírez",
-        "Nicolís Pauls",
-        "Valentán Villafañe"
+        "Eugenia Suárez",
+        "Nicolás Pauls",
+        "Valentín Villafañe"
       ],
       "orientation": "vertical",
       "image": "images/verticals/30-dias-juntos-poster-280x420.png",
-      "subtitle": "Comedia romíntica"
+      "subtitle": "Comedia romántica"
     },
     {
       "id": "V238",
@@ -7096,7 +7764,7 @@
       "channel": "HBO Max",
       "genre": "Policial",
       "actors": [
-        "Julio Chívez",
+        "Julio Chávez",
         "Cecilia Roth",
         "Paola Krum",
         "Antonio Birabent"
@@ -7112,9 +7780,9 @@
       "channel": "Canal 13",
       "genre": "Policial",
       "actors": [
-        "Julio Chívez",
+        "Julio Chávez",
         "Gabriela Toscano",
-        "Rodrigo De la Serna",
+        "Rodrigo de la Serna",
         "Luis Luque"
       ],
       "orientation": "vertical",
@@ -7129,9 +7797,9 @@
       "genre": "Policial",
       "actors": [
         "Diego Peretti",
-        "Nancy Duplía",
+        "Nancy Dupláa",
         "Mario Pasik",
-        "Luis Machán"
+        "Luis Machín"
       ],
       "orientation": "vertical",
       "image": "images/verticals/el-hombre-que-volvio-de-la-muerte-poster-280x420.png",
@@ -7144,9 +7812,9 @@
       "channel": "Telefe",
       "genre": "Policial",
       "actors": [
-        "Rodrigo De la Serna",
-        "Rodrigo Naya",
-        "Maria Marull"
+        "Rodrigo de la Serna",
+        "Rodrigo Noya",
+        "María Marull"
       ],
       "orientation": "vertical",
       "image": "images/verticals/hermanos-y-detectives-poster-280x420.png",
@@ -7160,7 +7828,7 @@
       "genre": "Policial",
       "actors": [
         "Diego Peretti",
-        "Inés Estevez",
+        "Inés Estévez",
         "Walter Quiroz"
       ],
       "orientation": "vertical",
@@ -7174,9 +7842,9 @@
       "channel": "Telefe",
       "genre": "Thriller",
       "actors": [
-        "Mariano Martánez",
+        "Mariano Martínez",
         "Dolores Fonzi",
-        "Nicolís Pauls"
+        "Nicolás Pauls"
       ],
       "orientation": "vertical",
       "image": "images/verticals/sangre-fria-poster-280x420.png",
@@ -7191,7 +7859,7 @@
       "actors": [
         "Federico D'Elia",
         "Diego Peretti",
-        "Martin Seefeld",
+        "Martín Seefeld",
         "Alejandro Fiore"
       ],
       "orientation": "vertical",
@@ -7208,7 +7876,7 @@
         "Carlos Calvo",
         "Patricia Viggiano",
         "Boy Olmi",
-        "Nicolís Pauls"
+        "Nicolás Pauls"
       ],
       "orientation": "vertical",
       "image": "images/verticals/el-hacker-poster-280x420.png",
@@ -7218,10 +7886,10 @@
       "id": "V247",
       "title": "Okupas",
       "year": "2000",
-      "channel": "TV Püblica",
+      "channel": "TV Pública",
       "genre": "Policial",
       "actors": [
-        "Rodrigo De la Serna",
+        "Rodrigo de la Serna",
         "Diego Alonso",
         "Ariel Staltari"
       ],
@@ -7236,7 +7904,7 @@
       "channel": "Telefe",
       "genre": "Drama",
       "actors": [
-        "Agustán Sullivan",
+        "Agustín Sullivan",
         "Marco Antonio Caponi",
         "Antonio Grimau"
       ],
@@ -7251,7 +7919,7 @@
       "channel": "Canal 13",
       "genre": "Drama",
       "actors": [
-        "Oscar Martánez",
+        "Oscar Martínez",
         "Soledad Silveyra",
         "Leticia Brédice",
         "Julieta Zylberberg"
@@ -7267,10 +7935,10 @@
       "channel": "Canal 13",
       "genre": "Drama",
       "actors": [
-        "Rodrigo De la Serna",
+        "Rodrigo de la Serna",
         "Paola Krum",
-        "Fernín Mirís",
-        "Gloria Carrí"
+        "Fernán Mirás",
+        "Gloria Carrá"
       ],
       "orientation": "vertical",
       "image": "images/verticals/tiempos-compulsivos-poster-280x420.png",
@@ -7298,7 +7966,7 @@
       "channel": "Canal 13",
       "genre": "Drama",
       "actors": [
-        "Julio Chívez",
+        "Julio Chávez",
         "Cecilia Roth"
       ],
       "orientation": "vertical",
@@ -7312,7 +7980,7 @@
       "channel": "América",
       "genre": "Drama",
       "actors": [
-        "Germín Palacios",
+        "Germán Palacios",
         "Florencia Raggi"
       ],
       "orientation": "vertical",
@@ -7326,10 +7994,10 @@
       "channel": "Telefe",
       "genre": "Drama",
       "actors": [
-        "Susü Pecoraro",
+        "Susú Pecoraro",
         "Celeste Cid",
-        "Fernín Mirís",
-        "Joaquán Furriel"
+        "Fernán Mirás",
+        "Joaquín Furriel"
       ],
       "orientation": "vertical",
       "image": "images/verticals/ambiciones-poster-280x420.png",
@@ -7343,7 +8011,7 @@
       "genre": "Drama",
       "actors": [
         "Soledad Villamil",
-        "Julieta Dáaz",
+        "Julieta Díaz",
         "Leticia Brédice"
       ],
       "orientation": "vertical",
@@ -7357,10 +8025,10 @@
       "channel": "Telefe",
       "genre": "Drama",
       "actors": [
-        "Carlos Santamaráa",
+        "Carlos Santamaría",
         "Carolina Peleritti",
         "Juan Gil Navarro",
-        "Jazmán Stuart"
+        "Jazmín Stuart"
       ],
       "orientation": "vertical",
       "image": "images/verticals/historias-de-sexo-gente-comun-poster-280x420.png",
@@ -7391,10 +8059,10 @@
       "actors": [
         "Diego Peretti",
         "Gabriela Toscano",
-        "Susü Pecoraro",
+        "Susú Pecoraro",
         "Soledad Villamil",
-        "Fernín Mirís",
-        "Mercedes Morín"
+        "Fernán Mirás",
+        "Mercedes Morán"
       ],
       "orientation": "vertical",
       "image": "images/verticals/culpables-poster-280x420.png",
@@ -7408,9 +8076,9 @@
       "genre": "Drama",
       "actors": [
         "Mirta Busnelli",
-        "Inés Estevez",
+        "Inés Estévez",
         "Paola Krum",
-        "Valeria Bertucelli"
+        "Valeria Bertuccelli"
       ],
       "orientation": "vertical",
       "image": "images/verticals/cuatro-amigas-poster-280x420.png",
@@ -7424,10 +8092,10 @@
       "genre": "Drama",
       "actors": [
         "Jorge Marrale",
-        "Inés Estevez",
+        "Inés Estévez",
         "Soledad Villamil",
-        "Damiín De Santo",
-        "Maria Leal",
+        "Damián De Santo",
+        "María Leal",
         "Alfredo Casero"
       ],
       "orientation": "vertical",
@@ -7439,15 +8107,15 @@
       "title": "Silencios de Familia",
       "year": "2016",
       "channel": "Canal 13",
-      "genre": "Comedia Dramítica",
+      "genre": "Comedia Dramática",
       "actors": [
-        "Adriín Suar",
-        "Julieta Dáaz",
+        "Adrián Suar",
+        "Julieta Díaz",
         "Florencia Bertotti"
       ],
       "orientation": "vertical",
       "image": "images/verticals/silencios-de-familia-poster-280x420.png",
-      "subtitle": "Comedia dramítica"
+      "subtitle": "Comedia dramática"
     },
     {
       "id": "V262",
@@ -7470,8 +8138,8 @@
       "channel": "Telefe",
       "genre": "Comedia",
       "actors": [
-        "Mariano Martánez",
-        "Ana Maráa Orozco"
+        "Mariano Martínez",
+        "Ana Maria Orozco"
       ],
       "orientation": "vertical",
       "image": "images/verticals/mi-problema-con-las-mujeres-poster-280x420.png",
@@ -7486,7 +8154,7 @@
       "actors": [
         "Guillermo Francella",
         "Luis Brandoni",
-        "Mercedes Morín"
+        "Mercedes Morán"
       ],
       "orientation": "vertical",
       "image": "images/verticals/el-hombre-de-tu-vida-poster-280x420.png",
@@ -7501,8 +8169,8 @@
       "actors": [
         "Jorge Marrale",
         "Pablo Rago",
-        "Nicolís Pauls",
-        "Fabiín Gianola"
+        "Nicolás Pauls",
+        "Fabián Gianola"
       ],
       "orientation": "vertical",
       "image": "images/verticals/acompanantes-poster-280x420.png",
@@ -7529,8 +8197,8 @@
       "channel": "Canal 13",
       "genre": "Comedia",
       "actors": [
-        "Mercedes Morín",
-        "Nancy Duplía",
+        "Mercedes Morán",
+        "Nancy Dupláa",
         "Andrea Pietra"
       ],
       "orientation": "vertical",
@@ -7558,8 +8226,8 @@
       "channel": "Canal 13",
       "genre": "Comedia",
       "actors": [
-        "Mercedes Morín",
-        "Araceli Gonzílez",
+        "Mercedes Morán",
+        "Araceli González",
         "Gabriela Toscano",
         "Carola Reyna",
         "Romina Gaetani"
@@ -7576,7 +8244,7 @@
       "genre": "Comedia",
       "actors": [
         "Pablo Rago",
-        "Fabiín Vena"
+        "Fabián Vena"
       ],
       "orientation": "vertical",
       "image": "images/verticals/mosca-smith-poster-280x420.png",
@@ -7587,7 +8255,7 @@
       "title": "Tres Padres Solteros",
       "year": "2003",
       "channel": "Telefe",
-      "genre": "Comedia Dramítica",
+      "genre": "Comedia Dramática",
       "actors": [
         "Gustavo Garzón",
         "Juan Leyrado",
@@ -7595,7 +8263,7 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/tres-padres-solteros-poster-280x420.png",
-      "subtitle": "Comedia dramítica"
+      "subtitle": "Comedia dramática"
     },
     {
       "id": "V272",
@@ -7618,10 +8286,10 @@
       "channel": "Canal 9/Azul TV",
       "genre": "Comedia",
       "actors": [
-        "Fernín Mirís",
+        "Fernán Mirás",
         "Gabriel Goity",
         "Viviana Saccone",
-        "Maria Socas"
+        "María Socas"
       ],
       "orientation": "vertical",
       "image": "images/verticals/femenino-masculino-poster-280x420.png",
@@ -7629,7 +8297,7 @@
     },
     {
       "id": "V274",
-      "title": "Historias de Divín",
+      "title": "Historias de Diván",
       "year": "2013",
       "channel": "Telefe",
       "genre": "Drama",
@@ -7649,7 +8317,7 @@
       "genre": "Drama",
       "actors": [
         "Juan Gil Navarro",
-        "Nicolís Cabré",
+        "Nicolás Cabré",
         "Claudia Lapacó"
       ],
       "orientation": "vertical",
@@ -7730,7 +8398,7 @@
       "channel": "Disney+",
       "genre": "Thriller",
       "actors": [
-        "Eugenia Suírez",
+        "Eugenia Suárez",
         "Eleonora Wexler",
         "Diego Cremonesi",
         "Jerónimo Bosia"
@@ -7762,7 +8430,7 @@
       "channel": "Netflix",
       "genre": "Miniseries",
       "actors": [
-        "Nancy Duplía",
+        "Nancy Dupláa",
         "Carla Peterson",
         "Valeria Lois"
       ],
@@ -7772,7 +8440,7 @@
     },
     {
       "id": "v32",
-      "title": "Noche & Dáa: Junto a Vos",
+      "title": "Noche & Día: Junto a Vos",
       "year": "2014",
       "channel": "Canal 13",
       "genre": "Policial",
@@ -7793,10 +8461,10 @@
       "channel": "Canal 13",
       "genre": "Drama",
       "actors": [
-        "Julio Chívez",
+        "Julio Chávez",
         "Facundo Arana",
         "Griselda Siciliani",
-        "Benjamán Vicuña"
+        "Benjamín Vicuña"
       ],
       "orientation": "vertical",
       "image": "images/verticals/farsantes-poster-280x420.png",
@@ -7810,8 +8478,8 @@
       "genre": "Drama",
       "actors": [
         "Romina Gaetani",
-        "Nicolís Cabré",
-        "Damiín De Santo",
+        "Nicolás Cabré",
+        "Damián De Santo",
         "Florencia Peña",
         "Gonzalo Valenzuela",
         "Isabel Macedo"
@@ -7827,10 +8495,10 @@
       "channel": "Canal 13",
       "genre": "Policial",
       "actors": [
-        "Adriín Suar",
-        "Nancy Duplía",
+        "Adrián Suar",
+        "Nancy Dupláa",
         "Leticia Brédice",
-        "Mariano Martánez",
+        "Mariano Martínez",
         "Claribel Medina"
       ],
       "orientation": "vertical",
@@ -7845,7 +8513,7 @@
       "genre": "Policial",
       "actors": [
         "Facundo Arana",
-        "Nancy Duplía",
+        "Nancy Dupláa",
         "Paola Krum"
       ],
       "orientation": "vertical",
@@ -7859,9 +8527,9 @@
       "channel": "Canal 13",
       "genre": "Policial",
       "actors": [
-        "Adriín Suar",
-        "Nancy Duplía",
-        "Nicolís Cabré"
+        "Adrián Suar",
+        "Nancy Dupláa",
+        "Nicolás Cabré"
       ],
       "orientation": "vertical",
       "image": "images/verticals/sin-codigo-2-poster-280x420.png",
@@ -7874,9 +8542,9 @@
       "channel": "Canal 13",
       "genre": "Comedia",
       "actors": [
-        "Miguel üngel Rodráguez",
-        "Mariano Martánez",
-        "Nicolís Cabré",
+        "Miguel Ángel Rodríguez",
+        "Mariano Martínez",
+        "Nicolás Cabré",
         "Marcela Kloosterboer",
         "Florencia Bertotti"
       ],
@@ -7891,9 +8559,9 @@
       "channel": "Canal 13",
       "genre": "Comedia",
       "actors": [
-        "Miguel üngel Rodráguez",
+        "Miguel Ángel Rodríguez",
         "Claribel Medina",
-        "Nicolís Cabré",
+        "Nicolás Cabré",
         "Soledad Fandiño"
       ],
       "orientation": "vertical",
@@ -7951,10 +8619,10 @@
       "title": "Cuando me Sonreás",
       "year": "2011",
       "channel": "Telefe",
-      "genre": "Comedia Romíntica",
+      "genre": "Comedia Romántica",
       "actors": [
         "Facundo Arana",
-        "Julieta Dáaz"
+        "Julieta Díaz"
       ],
       "orientation": "vertical",
       "image": "images/verticals/cuando-me-sonreis-poster-420x280.png",
@@ -7962,7 +8630,7 @@
     },
     {
       "id": "v45",
-      "title": "Aquá No Hay Quien Viva",
+      "title": "Aquí No Hay Quien Viva",
       "year": "2008",
       "channel": "Telefe",
       "genre": "Sitcom",
@@ -7977,13 +8645,13 @@
     },
     {
       "id": "v46",
-      "title": "Amor Máo",
+      "title": "Amor Mío",
       "year": "2005",
       "channel": "Telefe",
       "genre": "Sitcom",
       "actors": [
         "Romina Yan",
-        "Damiín De Santo"
+        "Damián De Santo"
       ],
       "orientation": "vertical",
       "image": "images/verticals/amor-mio-poster-280x420.png",
@@ -7991,12 +8659,12 @@
     },
     {
       "id": "v47",
-      "title": "┬┐Quién es el Jefe?",
+      "title": "¿Quién es el Jefe?",
       "year": "2005",
       "channel": "Telefe",
       "genre": "Sitcom",
       "actors": [
-        "Nico Vísquez",
+        "Nico Vázquez",
         "Gianella Neyra"
       ],
       "orientation": "vertical",
@@ -8024,7 +8692,7 @@
       "channel": "Telefe",
       "genre": "Thriller",
       "actors": [
-        "Nancy Duplía",
+        "Nancy Dupláa",
         "Pablo Echarri"
       ],
       "orientation": "vertical",
@@ -8049,10 +8717,10 @@
       "id": "h11",
       "title": "Contra las Cuerdas",
       "year": "2010",
-      "channel": "TV Püblica",
+      "channel": "TV Pública",
       "genre": "Thriller",
       "actors": [
-        "Rodrigo De la Serna",
+        "Rodrigo de la Serna",
         "Soledad Fandiño",
         "Maxi Ghione"
       ],
@@ -8076,7 +8744,7 @@
     },
     {
       "id": "v50",
-      "title": "Por Amarte Asá",
+      "title": "Por Amarte Así",
       "year": "2016",
       "channel": "Telefe",
       "genre": "Telenovela",
@@ -8098,8 +8766,8 @@
       "genre": "Telenovela",
       "actors": [
         "Soledad Silveyra",
-        "Sebastiín Estevanez",
-        "Raül Taibo",
+        "Sebastián Estevanez",
+        "Raúl Taibo",
         "Sabrina Garciarena"
       ],
       "orientation": "vertical",
@@ -8113,9 +8781,9 @@
       "channel": "Telefe",
       "genre": "Telenovela",
       "actors": [
-        "Joaquán Furriel",
+        "Joaquín Furriel",
         "Romina Gaetani",
-        "Benjamán Vicuña",
+        "Benjamín Vicuña",
         "Isabel Macedo"
       ],
       "orientation": "vertical",
@@ -8129,7 +8797,7 @@
       "channel": "Telefe",
       "genre": "Telenovela",
       "actors": [
-        "Sebastiín Estevanez",
+        "Sebastián Estevanez",
         "Diego Olivera",
         "Luz Cipriota",
         "Natalia Lobo"
@@ -8147,7 +8815,7 @@
       "actors": [
         "Soledad Silveyra",
         "Juan Gil Navarro",
-        "Adriín Navarro"
+        "Adrián Navarro"
       ],
       "orientation": "vertical",
       "image": "images/verticals/secretos-de-amor-poster-280x420.png",
@@ -8155,15 +8823,15 @@
     },
     {
       "id": "v55",
-      "title": "Los ├Ünicos",
+      "title": "Los Únicos",
       "year": "2011",
       "channel": "Canal 13",
       "genre": "Comedia",
       "actors": [
-        "Mariano Martánez",
-        "Nicolís Cabré",
+        "Mariano Martínez",
+        "Nicolás Cabré",
         "Griselda Siciliani",
-        "Nico Vísquez"
+        "Nico Vázquez"
       ],
       "orientation": "vertical",
       "image": "images/verticals/los-unicos-2011-poster-280x420.png",
@@ -8176,7 +8844,7 @@
       "channel": "Canal 13",
       "genre": "Comedia",
       "actors": [
-        "Nicolís Cabré",
+        "Nicolás Cabré",
         "Gimena Accardi",
         "Flor Vigna"
       ],
@@ -8189,7 +8857,7 @@
       "title": "Un Año para Recordar",
       "year": "2011",
       "channel": "Telefe",
-      "genre": "Comedia Dramítica",
+      "genre": "Comedia Dramática",
       "actors": [
         "Carla Peterson",
         "Gastón Pauls",
@@ -8208,7 +8876,7 @@
       "genre": "Comedia",
       "actors": [
         "Luis Brandoni",
-        "Mariano Martánez",
+        "Mariano Martínez",
         "Sabrina Garciarena",
         "Muriel Santa Ana"
       ],
@@ -8224,7 +8892,7 @@
       "genre": "Drama",
       "actors": [
         "Gonzalo Heredia",
-        "Vanesa Gonzílez",
+        "Vanesa González",
         "Osvaldo Laport",
         "Luisana Lopilato"
       ],
@@ -8239,7 +8907,7 @@
       "channel": "Telefe",
       "genre": "Thriller",
       "actors": [
-        "Ana Maráa Orozco",
+        "Ana Maria Orozco",
         "Salvador del Solar"
       ],
       "orientation": "vertical",
@@ -8256,7 +8924,7 @@
         "Gabriel Corrado",
         "Catherine Fulop",
         "Nico Riera",
-        "Rocáo Igarzabal"
+        "Rocío Igarzabal"
       ],
       "orientation": "vertical",
       "image": "images/verticals/taxxi-amores-cruzados-280x420.png",
@@ -8267,15 +8935,15 @@
       "title": "Valentino, el Argentino",
       "year": "2008",
       "channel": "Canal 13",
-      "genre": "Comedia Romíntica",
+      "genre": "Comedia Romántica",
       "actors": [
-        "Juliín Romín",
+        "Julián Román",
         "Liliana Gonzílez",
         "Segundo Cernadas"
       ],
       "orientation": "vertical",
       "image": "images/verticals/valentino-el-argentino-280x420.png",
-      "subtitle": "Comedia romíntica"
+      "subtitle": "Comedia romántica"
     },
     {
       "id": "v63",
@@ -8299,7 +8967,7 @@
       "genre": "Telenovela",
       "actors": [
         "Chayanne",
-        "Araceli Gonzílez",
+        "Araceli González",
         "Romina Yan"
       ],
       "orientation": "vertical",
@@ -8311,11 +8979,11 @@
       "title": "Dr. Amor",
       "year": "2003",
       "channel": "Canal 13",
-      "genre": "Comedia Romíntica",
+      "genre": "Comedia Romántica",
       "actors": [
         "Arturo Puig",
         "Lorna Paz",
-        "Natalia Ramárez",
+        "Natalia Ramírez",
         "Segundo Cernadas"
       ],
       "orientation": "vertical",

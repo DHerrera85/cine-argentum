@@ -1,0 +1,230 @@
+LISTADO DE PELÍCULAS
+============================================================
+P1000 | La furia | 1997 |  | Policial | actores:3
+P1001 | Cenizas de paraíso | 1997 |  | Policial | actores:5
+P1002 | Dibu la película | 1997 |  | Familiar | actores:4
+P1003 | Dibu 2: la venganza de Nasty | 1998 |  | Familiar | actores:3
+P1004 | La edad del sol | 1999 |  | Familiar | actores:1
+P1005 | Esa maldita costilla | 1999 |  | Comedia | actores:5
+P1006 | Manuelita | 1999 |  | Animación | actores:0
+P1007 | Apariencias | 2000 |  | Romance | actores:2
+P1008 | Condor Crux | 2000 |  | Animación | actores:3
+P1009 | Plata quemada | 2000 |  | Policial | actores:4
+P1010 | Antigua vida mía | 2001 |  | Drama | actores:4
+P1011 | Déjala Correr | 2001 |  | Comedia | actores:5
+P1012 | Chiquititas | 2001 |  | Familiar | actores:3
+P1013 | Sólo por Hoy | 2001 |  | Comedia | actores:3
+P1015 | La Cienaga | 2001 |  | Drama | actores:2
+P1016 | Mercano, el marciano | 2002 |  | Animación | actores:3
+P1017 | Apasionados | 2002 |  | Romance | actores:3
+P1018 | Un Día en el Paraíso | 2003 |  | Romance | actores:2
+P1019 | Vivir Intentando | 2003 |  | Familiar | actores:5
+P1020 | El Día que me Amen | 2003 |  | Romance | actores:2
+P1021 | Erreway: 4 Caminos | 2004 |  | Familiar | actores:4
+P1022 | Patoruzito | 2004 |  | Animación | actores:0
+P1023 | Teo, cazador intergaláctico | 2004 |  | Animación | actores:2
+P1024 | Papá se Volvió Loco | 2005 |  | Comedia | actores:3
+P1025 | Iluminados por el Fuego | 2005 |  | Histórica | actores:4
+P1026 | Los Incorregibles | 2007 |  | Comedia | actores:2
+P1027 | El Arca | 2007 |  | Animación | actores:0
+P1028 | Isidoro | 2007 |  | Animación | actores:0
+P1029 | ¿Quién Dice qué es Fácil? | 2007 |  | Romance | actores:2
+P1030 | Martín Fierro, la Película | 2007 |  | Animación | actores:0
+P1031 | Leonera | 2008 |  | Policial | actores:2
+P1032 | El ratón Perez 2 | 2009 |  | Familiar | actores:4
+P1033 | Papá por un día | 2009 |  | Familiar | actores:3
+P1034 | Las viudas de los jueves | 2009 |  | Policial | actores:4
+P1035 | Felicitas | 2009 |  | Romance | actores:2
+P1036 | Dos hermanos | 2010 |  | Comedia | actores:2
+P1037 | Miss Tacuarembó | 2010 |  | Familiar | actores:3
+P1038 | Pájaros volando | 2010 |  | Comedia | actores:3
+P1039 | Carancho | 2010 |  | Policial | actores:3
+P1040 | Gaturro | 2010 |  | Animación | actores:0
+P1041 | Igualita a mí | 2010 |  | Comedia | actores:2
+P1042 | Mi primera boda | 2011 |  | Comedia | actores:3
+P1043 | Revolución, el cruce de los andes | 2011 |  | Histórica | actores:3
+P1044 | Selkirk, el verdadero Robinson Crusoe | 2012 |  | Animación | actores:0
+P1045 | Extraños en la noche | 2012 |  | Comedia | actores:3
+P1046 | La pelea de mi vida | 2012 |  | Drama | actores:3
+P1047 | Rodencia y el diente de la princesa | 2014 |  | Animación | actores:0
+P1048 | Soledad y Larguirucho | 2012 |  | Familiar | actores:1
+P1049 | Vino para robar | 2013 |  | Comedia | actores:2
+P1050 | Séptimo | 2013 |  | Policial | actores:2
+P1051 | El inventor de juegos | 2014 |  | Familiar | actores:3
+P1052 | Muerte en Buenos Aires | 2014 |  | Policial | actores:2
+P1053 | Bañeros 4: los rompeolas | 2014 |  | Comedia | actores:4
+P1054 | Kryptonita | 2015 |  | Comedia | actores:4
+P1055 | Abzurdah | 2015 |  | Drama | actores:2
+P1056 | Papeles en el viento | 2015 |  | Drama | actores:4
+P1057 | Voley | 2015 |  | Comedia | actores:4
+P1058 | Tini: el gran cambio de Violetta | 2016 |  | Romance | actores:4
+P1059 | 100 años de perdón | 2016 |  | Policial | actores:5
+P1060 | Permitidos | 2016 |  | Comedia | actores:3
+P1061 | La última fiesta | 2016 |  | Comedia | actores:3
+P1062 | El ciudadano ilustre | 2016 |  | Drama | actores:3
+P1063 | El rey del Once | 2016 |  | Comedia | actores:2
+P1064 | Inseparables | 2016 |  | Drama | actores:3
+P1065 | Los que aman, odian | 2017 |  | Drama | actores:2
+P1066 | Mamá se fue de viaje | 2017 |  | Familiar | actores:2
+P1067 | El fútbol o yo | 2017 |  | Comedia | actores:2
+P1068 | Perdida | 2018 |  | Policial | actores:3
+P1069 | No dormirás | 2018 |  | Terror | actores:3
+P1070 | 27: El club de los malditos | 2018 |  | Comedia | actores:2
+P1071 | El Potro: lo mejor del amor | 2018 |  | Biográficas | actores:5
+P1072 | Re loca | 2018 |  | Comedia | actores:2
+P1073 | Yanka y el espíritu del volcán | 2018 |  | Familiar | actores:3
+P1074 | Recreo | 2018 |  | Drama | actores:5
+P1075 | El Ángel | 2018 |  | Histórica | actores:6
+P1076 | Bañeros 5: Lentos y cargosos | 2018 |  | Comedia | actores:4
+P1077 | El cuento de las comadrejas | 2019 |  | Comedia | actores:4
+P1078 | 4×4 | 2019 |  | Policial | actores:3
+P1079 | No soy tu mami | 2019 |  | Comedia | actores:3
+P1081 | La Gallina Turuleca | 2019 |  | Animación | actores:1
+P1082 | Yo, Adolescente | 2019 |  | Drama | actores:3
+P1083 | Corazón Loco | 2020 |  | Comedia | actores:3
+P1084 | Ex Casados | 2021 |  | Comedia | actores:2
+P1085 | Errante Corazón | 2021 |  | Drama | actores:3
+P1086 | La Chica Más Rara del Mundo | 2021 |  | Familiar | actores:3
+P1087 | La Noche Mágica | 2021 |  | Familiar | actores:2
+P1088 | Matrimillas | 2022 |  | Comedia | actores:2
+P1089 | Más Respeto que soy Tu Madre | 2022 |  | Comedia | actores:2
+P1090 | 30 Noches con mi Ex | 2022 |  | Comedia | actores:2
+P1091 | Blondi | 2023 |  | Comedia | actores:4
+P1092 | Puan | 2023 |  | Comedia | actores:2
+P1093 | La Extorsión | 2023 |  | Policial | actores:4
+P1094 | Casi Muerta | 2023 |  | Comedia | actores:3
+P1095 | Cuando Acecha la Maldad | 2023 |  | Terror | actores:2
+P1096 | Campamento con Mamá | 2024 |  | Familiar | actores:4
+P1097 | Culpa Cero | 2024 |  | Comedia | actores:3
+P1098 | Gigantes | 2024 |  | Animación | actores:2
+P1099 | Transmitvah | 2024 |  | Comedia | actores:3
+P1100 | El Hombre que Amaba los Platos Voladores | 2024 |  | Comedia | actores:3
+P1101 | La Mujer de la Fila | 2025 |  | Drama | actores:3
+P1102 | Hoy se Arregla el Mundo | 2022 |  | Drama | actores:4
+P1103 | Bañeros 3, todopoderosos | 2006 |  | Comedia | actores:5
+P1104 | El Ratón Pérez | 2006 |  | Familiar | actores:5
+P1105 | La Señal | 2007 |  | Histórica | actores:3
+P1106 | Acusada | 2018 |  | Policial | actores:4
+P1107 | Don Gato y su pandilla | 2011 |  | Animación | actores:0
+P1108 | Alma mía | 1999 |  | Romance | actores:2
+P1109 | Los Pintín al rescate | 2000 |  | Animación | actores:0
+P1110 | Fase 7 | 2011 |  | Policial | actores:4
+P1111 | El secreto de sus ojos | 2009 |  | Policial | actores:3
+P1112 | El clan | 2015 |  | Histórica | actores:2
+P1113 | Muere, monstruo, muere | 2019 |  | Terror | actores:2
+P1114 | Un Novio para mi Mujer | 2008 |  | Comedia | actores:2
+P1115 | Homo Argentum | 2025 |  | Comedia | actores:1
+P1116 | Kóblic | 2016 |  | Policial | actores:3
+P1117 | Sin hijos | 2015 |  | Comedia | actores:2
+P1118 | XXY | 2007 |  | Drama | actores:3
+P1119 | Hermanitos del fin del mundo | 2011 |  | Familiar | actores:3
+P1120 | Cleopatra | 2003 |  | Romance | actores:3
+P1121 | Nieve negra | 2017 |  | Policial | actores:3
+P1122 | La odisea de los giles | 2019 |  | Comedia | actores:3
+P1123 | Sólo se vive una vez | 2017 |  | Policial | actores:4
+P1124 | La Ira de Dios | 2022 |  | Policial | actores:4
+P1125 | Corazón de león | 2013 |  | Comedia | actores:2
+P1126 | El Aura | 2005 |  | Drama | actores:3
+P1127 | Gilda, no me arrepiento de este amor | 2016 |  | Biográficas | actores:2
+P1128 | El robo del siglo | 2020 |  | Policial | actores:2
+P1129 | El Hijo de la Novia | 2001 |  | Drama | actores:3
+P1130 | Mi obra maestra | 2018 |  | Comedia | actores:2
+P1131 | Peligrosa Obsesión | 2004 |  | Policial | actores:4
+P1132 | El misterio de la felicidad | 2014 |  | Drama | actores:2
+P1133 | Cuentos de la selva | 2010 |  | Animación | actores:2
+P1134 | Elena Sabe | 2023 |  | Drama | actores:4
+P1135 | Elefante blanco | 2012 |  | Policial | actores:3
+P1136 | 100% lucha: el amo de los clones | 2009 |  | Familiar | actores:3
+P1137 | Dos más dos | 2012 |  | Comedia | actores:5
+P1138 | No Puedo Vivir Sin Ti | 2024 |  | Comedia | actores:2
+P1139 | El mismo amor, la misma lluvia | 1999 |  | Romance | actores:3
+P1140 | Infancia clandestina | 2012 |  | Histórica | actores:3
+P1141 | Mazel Tov | 2025 |  | Comedia | actores:4
+P1142 | High School Musical: El Desafío | 2008 |  | Familiar | actores:4
+P1143 | El Novio de Mamá | 2025 |  | Familiar | actores:4
+P1144 | Tesis sobre un homicidio | 2013 |  | Policial | actores:3
+P1145 | Kamchatka | 2002 |  | Histórica | actores:3
+P1146 | 27 Noches | 2025 |  | Drama | actores:3
+P1147 | Me casé con un boludo | 2016 |  | Comedia | actores:2
+P1148 | Papá es un ídolo | 2000 |  | Familiar | actores:4
+P1149 | Natacha, la película | 2017 |  | Familiar | actores:3
+P1150 | Socios por accidente | 2014 |  | Comedia | actores:2
+P1151 | La cordillera | 2017 |  | Policial | actores:3
+P1152 | Dibu 3 | 2002 |  | Familiar | actores:4
+P1153 | Belén | 2025 |  | Drama | actores:4
+P1154 | La reina del miedo | 2018 |  | Drama | actores:2
+P1155 | Motivos para no enamorarse | 2008 |  | Romance | actores:2
+P1156 | Plumíferos | 2010 |  | Animación | actores:0
+P1157 | Paco | 2010 |  | Policial | actores:2
+P1158 | Caídos del mapa | 2013 |  | Familiar | actores:3
+P1159 | La patota | 2015 |  | Drama | actores:3
+P1160 | Metegol | 2013 |  | Animación | actores:0
+P1161 | Viudas | 2011 |  | Drama | actores:2
+P1162 | Atraco | 2012 |  | Histórica | actores:4
+P1163 | Música en espera | 2009 |  | Romance | actores:3
+P1164 | Wakolda, el Médico Alemán | 2013 |  | Histórica | actores:3
+P1165 | El hilo rojo | 2016 |  | Romance | actores:3
+P1166 | Comodines | 1997 |  | Policial | actores:3
+P1167 | Corazón, las alegrías de Pantriste | 2000 |  | Animación | actores:0
+P1168 | Linda | 2024 |  | Drama | actores:3
+P1169 | Luna de Avellaneda | 2004 |  | Drama | actores:4
+P1170 | El Gerente | 2022 |  | Comedia | actores:2
+P1171 | La venganza | 1999 |  | Policial | actores:2
+P1172 | Crimenes de Familia | 2020 |  | Policial | actores:4
+P1173 | Todas las Azafatas van al Cielo | 2002 |  | Romance | actores:3
+P1174 | Whisky, Romeo, Zulú | 2005 |  | Histórica | actores:2
+P1175 | Animal | 2018 |  | Policial | actores:2
+P1176 | No Me Rompan | 2023 |  | Comedia | actores:4
+P1177 | Un Hijo Genial | 2003 |  | Familiar | actores:2
+P1178 | Descansar en Paz | 2024 |  | Policial | actores:4
+P1179 | Al final del túnel | 2016 |  | Policial | actores:5
+P1180 | Un argentino en Nueva York | 1998 |  | Familiar | actores:2
+P1181 | Relatos salvajes | 2014 |  | Policial | actores:6
+P1182 | Corazón de Fuego | 2002 |  | Drama | actores:4
+P1183 | Boogie el aceitoso | 2009 |  | Animación | actores:2
+P1184 | Gallito Ciego | 2001 |  | Policial | actores:2
+P1185 | Aballay, el hombre sin miedo | 2011 |  | Histórica | actores:4
+P1186 | La Fuga | 2001 |  | Histórica | actores:4
+P1187 | Los Super Agentes: La Nueva Generación | 2008 |  | Comedia | actores:4
+P1188 | El Cuaderno de Tomy | 2020 |  | Drama | actores:3
+P1189 | Un cuento chino | 2011 |  | Comedia | actores:3
+P1190 | Valentina, la película | 2008 |  | Animación | actores:2
+P1191 | Truman | 2015 |  | Drama | actores:3
+P1192 | Vidas Privadas | 2002 |  | Drama | actores:3
+P1193 | Un Crimen Argentino | 2022 |  | Policial | actores:4
+P1194 | Jaque Mate | 2024 |  | Policial | actores:4
+P1195 | Una noche de amor | 2016 |  | Romance | actores:2
+P1196 | El último Elvis | 2012 |  | Drama | actores:2
+P1197 | El Jockey | 2024 |  | Drama | actores:2
+P1198 | Peter Capusoto y sus 3 dimensiones | 2012 |  | Comedia | actores:1
+P1199 | Casi leyendas | 2017 |  | Comedia | actores:3
+P1200 | El Rapto | 2023 |  | Policial | actores:3
+P1201 | Días de vinilo | 2012 |  | Comedia | actores:4
+P1202 | Ecos de un Crimen | 2022 |  | Policial | actores:4
+P1203 | Crónica de una Fuga | 2006 |  | Histórica | actores:3
+P1204 | Los padecientes | 2017 |  | Drama | actores:2
+P1205 | Goyo | 2024 |  | Romance | actores:5
+P1206 | Pipa | 2022 |  | Policial | actores:5
+P1207 | El amor menos pensado | 2018 |  | Drama | actores:2
+P1208 | Hermanas | 2005 |  | Histórica | actores:4
+P1209 | En la Mira | 2022 |  | Policial | actores:4
+P1210 | Yo soy así, Tita de Buenos Aires | 2017 |  | Biográficas | actores:2
+P1211 | Una Flor en el Barro | 2023 |  | Drama | actores:2
+P1212 | No Sos Vos, Soy Yo | 2004 |  | Romance | actores:3
+P1213 | Micaela, una película mágica | 2002 |  | Animación | actores:2
+P1214 | La misma sangre | 2019 |  | Drama | actores:2
+P1215 | Cohen vs Rosi | 1998 |  | Comedia | actores:2
+P1216 | La Corazonada | 2020 |  | Policial | actores:4
+P1217 | Elsa y Fred | 2005 |  | Drama | actores:2
+P1218 | Patoruzito 2: La Gran Aventura | 2006 |  | Animación | actores:0
+P1219 | Robotia | 2024 |  | Animación | actores:0
+P1220 | La suerte en tus manos | 2012 |  | Romance | actores:2
+P1221 | El desafío | 2015 |  | Romance | actores:3
+P1222 | Tiempo de Valientes | 2005 |  | Policial | actores:2
+P1223 | Argentina, 1985 | 2022 |  | Histórica | actores:2
+P1224 | Granizo | 2022 |  | Comedia | actores:4
+P1226 | Corazón Delator | 2025 |  | Romance | actores:2
+P1227 | Todos tenemos un Plan | 2012 |  | Policial | actores:2
+P1228 | La Quietud | 2018 |  | Drama | actores:5
+P1229 | Las Hermanas Fantásticas | 2024 |  | Comedia | actores:2
+P1230 | Nueve Reinas | 2000 |  | Policial | actores:3

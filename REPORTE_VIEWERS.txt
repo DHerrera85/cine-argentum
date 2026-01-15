@@ -1,0 +1,232 @@
+REPORTE DE ACTUALIZACIÓN DE ESPECTADORES
+Fecha: 2026-01-15 00:52:48
+============================================================
+
+Películas actualizadas: 225
+
+PELÍCULAS ACTUALIZADAS:
+  P1226 - Corazón Delator: 22,000,000 espectadores
+  P1096 - Campamento con Mamá: 5,900,000 espectadores
+  P1181 - Relatos salvajes: 3,425,668 espectadores
+  P1112 - El clan: 2,613,941 espectadores
+  P1111 - El secreto de sus ojos: 2,410,592 espectadores
+  P1006 - Manuelita: 2,210,600 espectadores
+  P1160 - Metegol: 2,113,764 espectadores
+  P1128 - El robo del siglo: 2,082,542 espectadores
+  P1147 - Me casé con un boludo: 2,026,917 espectadores
+  P1229 - Las Hermanas Fantásticas: 2,000,000 espectadores
+  P1022 - Patoruzito: 1,996,738 espectadores
+  P1178 - Descansar en Paz: 1,900,000 espectadores
+  P1122 - La odisea de los giles: 1,832,408 espectadores
+  P1115 - Homo Argentum: 1,827,144 espectadores
+  P1066 - Mamá se fue de viaje: 1,704,886 espectadores
+  P1125 - Corazón de león: 1,704,779 espectadores
+  P1124 - La Ira de Dios: 1,600,000 espectadores
+  P1180 - Un argentino en Nueva York: 1,592,130 espectadores
+  P1024 - Papá se Volvió Loco: 1,579,224 espectadores
+  P1129 - El Hijo de la Novia: 1,555,626 espectadores
+  P1114 - Un Novio para mi Mujer: 1,408,276 espectadores
+  P1205 - Goyo: 1,400,000 espectadores
+  P1075 - El Ángel: 1,364,123 espectadores
+  P1148 - Papá es un ídolo: 1,357,107 espectadores
+  P1138 - No Puedo Vivir Sin Ti: 1,200,000 espectadores
+  P1206 - Pipa: 1,200,000 espectadores
+  P1230 - Nueve Reinas: 1,194,633 espectadores
+  P1223 - Argentina, 1985: 1,160,067 espectadores
+  P1103 - Bañeros 3, todopoderosos: 1,148,667 espectadores
+  P1169 - Luna de Avellaneda: 1,099,044 espectadores
+  P1067 - El fútbol o yo: 1,095,225 espectadores
+  P1017 - Apasionados: 1,054,475 espectadores
+  P1167 - Corazón, las alegrías de Pantriste: 1,030,126 espectadores
+  P1144 - Tesis sobre un homicidio: 1,023,424 espectadores
+  P1083 - Corazón Loco: 1,000,000 espectadores
+  P1104 - El Ratón Pérez: 956,050 espectadores
+  P1019 - Vivir Intentando: 948,040 espectadores
+  P1131 - Peligrosa Obsesión: 937,735 espectadores
+  P1166 - Comodines: 869,077 espectadores
+  P1090 - 30 Noches con mi Ex: 811,569 espectadores
+  P1186 - La Fuga: 784,800 espectadores
+  P1026 - Los Incorregibles: 768,755 espectadores
+  P1002 - Dibu la película: 706,410 espectadores
+  P1012 - Chiquititas: 682,441 espectadores
+  P1000 - La furia: 660,273 espectadores
+  P1001 - Cenizas de paraíso: 635,591 espectadores
+  P1126 - El Aura: 632,750 espectadores
+  P1217 - Elsa y Fred: 574,052 espectadores
+  P1093 - La Extorsión: 547,917 espectadores
+  P1034 - Las viudas de los jueves: 537,802 espectadores
+  P1020 - El Día que me Amen: 524,569 espectadores
+  P1120 - Cleopatra: 496,357 espectadores
+  P1222 - Tiempo de Valientes: 480,414 espectadores
+  P1142 - High School Musical: El Desafío: 477,125 espectadores
+  P1029 - ¿Quién Dice qué es Fácil?: 421,751 espectadores
+  P1145 - Kamchatka: 408,763 espectadores
+  P1105 - La Señal: 378,220 espectadores
+  P1141 - Mazel Tov: 368,009 espectadores
+  P1218 - Patoruzito 2: La Gran Aventura: 348,665 espectadores
+  P1025 - Iluminados por el Fuego: 344,281 espectadores
+  P1021 - Erreway: 4 Caminos: 342,627 espectadores
+  P1027 - El Arca: 340,356 espectadores
+  P1095 - Cuando Acecha la Maldad: 314,467 espectadores
+  P1018 - Un Día en el Paraíso: 296,566 espectadores
+  P1028 - Isidoro: 275,235 espectadores
+  P1187 - Los Super Agentes: La Nueva Generación: 254,262 espectadores
+  P1177 - Un Hijo Genial: 241,645 espectadores
+  P1152 - Dibu 3: 238,504 espectadores
+  P1212 - No Sos Vos, Soy Yo: 220,721 espectadores
+  P1118 - XXY: 203,885 espectadores
+  P1203 - Crónica de una Fuga: 203,331 espectadores
+  P1174 - Whisky, Romeo, Zulú: 201,675 espectadores
+  P1094 - Casi Muerta: 154,028 espectadores
+  P1153 - Belén: 144,126 espectadores
+  P1155 - Motivos para no enamorarse: 143,753 espectadores
+  P1092 - Puan: 141,115 espectadores
+  P1081 - La Gallina Turuleca: 135,158 espectadores
+  P1197 - El Jockey: 132,430 espectadores
+  P1015 - La Cienaga: 131,585 espectadores
+  P1089 - Más Respeto que soy Tu Madre: 121,166 espectadores
+  P1030 - Martín Fierro, la Película: 102,721 espectadores
+  P1202 - Ecos de un Crimen: 102,482 espectadores
+  P1023 - Teo, cazador intergaláctico: 102,447 espectadores
+  P1190 - Valentina, la película: 100,523 espectadores
+  P1176 - No Me Rompan: 96,152 espectadores
+  P1143 - El Novio de Mamá: 78,946 espectadores
+  P1213 - Micaela, una película mágica: 78,383 espectadores
+  P1193 - Un Crimen Argentino: 77,322 espectadores
+  P1097 - Culpa Cero: 74,191 espectadores
+  P1091 - Blondi: 72,612 espectadores
+  P1102 - Hoy se Arregla el Mundo: 72,032 espectadores
+  P1011 - Déjala Correr: 68,251 espectadores
+  P1194 - Jaque Mate: 63,372 espectadores
+  P1209 - En la Mira: 57,692 espectadores
+  P1010 - Antigua vida mía: 54,097 espectadores
+  P1208 - Hermanas: 53,023 espectadores
+  P1192 - Vidas Privadas: 37,895 espectadores
+  P1098 - Gigantes: 35,551 espectadores
+  P1173 - Todas las Azafatas van al Cielo: 33,954 espectadores
+  P1168 - Linda: 31,105 espectadores
+  P1182 - Corazón de Fuego: 27,256 espectadores
+  P1013 - Sólo por Hoy: 26,422 espectadores
+  P1087 - La Noche Mágica: 26,156 espectadores
+  P1184 - Gallito Ciego: 25,349 espectadores
+  P1016 - Mercano, el marciano: 13,805 espectadores
+  P1200 - El Rapto: 12,137 espectadores
+  P1219 - Robotia: 11,733 espectadores
+  P1211 - Una Flor en el Barro: 6,451 espectadores
+  P1170 - El Gerente: 6,026 espectadores
+  P1099 - Transmitvah: 5,164 espectadores
+  P1085 - Errante Corazón: 3,630 espectadores
+  P1086 - La Chica Más Rara del Mundo: 1,656 espectadores
+  P1137 - Dos más dos: 998 espectadores
+  P1050 - Séptimo: 957 espectadores
+  P1127 - Gilda, no me arrepiento de este amor: 953 espectadores
+  P1053 - Bañeros 4: los rompeolas: 927 espectadores
+  P1005 - Esa maldita costilla: 907 espectadores
+  P1189 - Un cuento chino: 905 espectadores
+  P1041 - Igualita a mí: 832 espectadores
+  P1055 - Abzurdah: 784 espectadores
+  P1207 - El amor menos pensado: 784 espectadores
+  P1007 - Apariencias: 782 espectadores
+  P1072 - Re loca: 759 espectadores
+  P1135 - Elefante blanco: 756 espectadores
+  P1130 - Mi obra maestra: 731 espectadores
+  P1108 - Alma mía: 715 espectadores
+  P1165 - El hilo rojo: 714 espectadores
+  P1121 - Nieve negra: 712 espectadores
+  P1062 - El ciudadano ilustre: 664 espectadores
+  P1151 - La cordillera: 656 espectadores
+  P1215 - Cohen vs Rosi: 615 espectadores
+  P1039 - Carancho: 614 espectadores
+  P1132 - El misterio de la felicidad: 600 espectadores
+  P1077 - El cuento de las comadrejas: 585 espectadores
+  P1150 - Socios por accidente: 559 espectadores
+  P1162 - Atraco: 558 espectadores
+  P1071 - El Potro: lo mejor del amor: 546 espectadores
+  P1003 - Dibu 2: la venganza de Nasty: 526 espectadores
+  P1009 - Plata quemada: 525 espectadores
+  P1004 - La edad del sol: 512 espectadores
+  P1134 - Elena Sabe: 500 espectadores
+  P1216 - La Corazonada: 500 espectadores
+  P1224 - Granizo: 500 espectadores
+  P1033 - Papá por un día: 496 espectadores
+  P1171 - La venganza: 488 espectadores
+  P1117 - Sin hijos: 484 espectadores
+  P1175 - Animal: 481 espectadores
+  P1052 - Muerte en Buenos Aires: 464 espectadores
+  P1036 - Dos hermanos: 460 espectadores
+  P1040 - Gaturro: 418 espectadores
+  P1204 - Los padecientes: 413 espectadores
+  P1164 - Wakolda, el Médico Alemán: 402 espectadores
+  P1188 - El Cuaderno de Tomy: 400 espectadores
+  P1161 - Viudas: 390 espectadores
+  P1056 - Papeles en el viento: 383 espectadores
+  P1106 - Acusada: 383 espectadores
+  P1191 - Truman: 377 espectadores
+  P1064 - Inseparables: 363 espectadores
+  P1059 - 100 años de perdón: 358 espectadores
+  P1065 - Los que aman, odian: 356 espectadores
+  P1060 - Permitidos: 355 espectadores
+  P1078 - 4×4: 331 espectadores
+  P1116 - Kóblic: 309 espectadores
+  P1088 - Matrimillas: 300 espectadores
+  P1042 - Mi primera boda: 299 espectadores
+  P1179 - Al final del túnel: 283 espectadores
+  P1051 - El inventor de juegos: 282 espectadores
+  P1043 - Revolución, el cruce de los andes: 278 espectadores
+  P1068 - Perdida: 274 espectadores
+  P1198 - Peter Capusoto y sus 3 dimensiones: 270 espectadores
+  P1163 - Música en espera: 234 espectadores
+  P1079 - No soy tu mami: 227 espectadores
+  P1032 - El ratón Perez 2: 225 espectadores
+  P1195 - Una noche de amor: 220 espectadores
+  P1220 - La suerte en tus manos: 188 espectadores
+  P1140 - Infancia clandestina: 187 espectadores
+  P1199 - Casi leyendas: 169 espectadores
+  P1049 - Vino para robar: 168 espectadores
+  P1076 - Bañeros 5: Lentos y cargosos: 152 espectadores
+  P1159 - La patota: 145 espectadores
+  P1045 - Extraños en la noche: 143 espectadores
+  P1109 - Los Pintín al rescate: 133 espectadores
+  P1227 - Todos tenemos un Plan: 130 espectadores
+  P1031 - Leonera: 129 espectadores
+  P1035 - Felicitas: 127 espectadores
+  P1154 - La reina del miedo: 127 espectadores
+  P1139 - El mismo amor, la misma lluvia: 122 espectadores
+  P1058 - Tini: el gran cambio de Violetta: 116 espectadores
+  P1038 - Pájaros volando: 115 espectadores
+  P1061 - La última fiesta: 115 espectadores
+  P1107 - Don Gato y su pandilla: 113 espectadores
+  P1057 - Voley: 103 espectadores
+  P1054 - Kryptonita: 100 espectadores
+  P1100 - El Hombre que Amaba los Platos Voladores: 100 espectadores
+  P1069 - No dormirás: 99 espectadores
+  P1123 - Sólo se vive una vez: 94 espectadores
+  P1214 - La misma sangre: 92 espectadores
+  P1210 - Yo soy así, Tita de Buenos Aires: 90 espectadores
+  P1201 - Días de vinilo: 89 espectadores
+  P1119 - Hermanitos del fin del mundo: 86 espectadores
+  P1183 - Boogie el aceitoso: 85 espectadores
+  P1196 - El último Elvis: 82 espectadores
+  P1228 - La Quietud: 81 espectadores
+  P1158 - Caídos del mapa: 80 espectadores
+  P1136 - 100% lucha: el amo de los clones: 79 espectadores
+  P1046 - La pelea de mi vida: 74 espectadores
+  P1048 - Soledad y Larguirucho: 65 espectadores
+  P1063 - El rey del Once: 65 espectadores
+  P1008 - Condor Crux: 56 espectadores
+  P1156 - Plumíferos: 52 espectadores
+  P1157 - Paco: 52 espectadores
+  P1044 - Selkirk, el verdadero Robinson Crusoe: 50 espectadores
+  P1037 - Miss Tacuarembó: 46 espectadores
+  P1074 - Recreo: 46 espectadores
+  P1110 - Fase 7: 36 espectadores
+  P1070 - 27: El club de los malditos: 33 espectadores
+  P1101 - La Mujer de la Fila: 32 espectadores
+  P1185 - Aballay, el hombre sin miedo: 31 espectadores
+  P1084 - Ex Casados: 29 espectadores
+  P1221 - El desafío: 28 espectadores
+  P1047 - Rodencia y el diente de la princesa: 26 espectadores
+  P1149 - Natacha, la película: 21 espectadores
+  P1133 - Cuentos de la selva: 20 espectadores
+  P1073 - Yanka y el espíritu del volcán: 11 espectadores
+  P1113 - Muere, monstruo, muere: 11 espectadores

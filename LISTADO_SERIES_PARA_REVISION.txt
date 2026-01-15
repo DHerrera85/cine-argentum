@@ -1,0 +1,363 @@
+LISTADO DE SERIES PARA REVISIÓN DE TYPOS
+============================================================================================================================================
+
+ID     TÍTULO                                             AÑO    CANAL                GÉNERO
+--------------------------------------------------------------------------------------------------------------------------------------------
+V123   Los Únicos                                         2012   Canal 13             Comedia
+       Actores: Nicolás Cabré, Nico Vázquez
+V124   Enséñame a Vivir                                   2009   Canal 13             Comedia Romántica
+       Actores: Pablo Rago, Violeta Urtizberea
+V125   Media Falta                                        2005   Canal 13             Juvenil
+       Actores: Gabriela Toscano, Federico D'Elia
+V126   Calientes                                          2000   Canal 13             Juvenil
+       Actores: Carina Zampini, Andrea Politti
+V127   Kally's Mashup                                     2017   Nickelodeon          Juvenil
+       Actores: Maia Reficco, Sara Cobo
+V128   Heidi, Bienvenida a Casa                           2017   Nickelodeon          Juvenil
+       Actores: Chiara Francia, Mercedes Lambre
+V129   Sueña Conmigo                                      2010   Nickelodeon          Juvenil
+       Actores: Eiza González, Santiago Ramundo
+V130   La Maga y el Camino Dorado                         2008   Nickelodeon          Juvenil
+       Actores: Florencia Otero, Pato Arellano
+V131   Los Macanimals                                     2025   Disney Channel       Comedia
+       Actores: Miguel Ángel Rodríguez, Florencia Torrente
+V132   Bia                                                2019   Disney Channel       Juvenil
+       Actores: Isabela Souza, Julio Peña
+V133   O11CE                                              2017   Disney XD            Juvenil
+       Actores: Mariano González-Guerineau, Sebastián Athié
+V134   Soy Luna                                           2016   Disney Channel       Juvenil
+       Actores: Karol Sevilla, Ruggero Pasquarelli
+V135   Jungle Nest                                        2016   Disney XD            Juvenil
+       Actores: Santiago Magariños, Tupac Larriera
+V136   Violetta                                           2012   Disney Channel       Juvenil
+       Actores: Diego Ramos, Tini Stoessel
+V137   Peter Punk                                         2011   Disney XD            Juvenil
+       Actores: Juan Ciancio, Gastón Vietto
+V138   Cuando Toca la Campana                             2011   Disney Channel       Juvenil
+       Actores: Mariana Magaña, Leonel Deluglio
+V139   Aliados                                            2013   Telefe               Drama
+       Actores: Peter Lanzani, Oriana Sabatini
+V140   Jake & Blake                                       2009   Disney Channel       Juvenil
+       Actores: Benjamín Rojas, Sofía Reca
+V141   B&B: Bella y Bestia                                2008   Telefe               Comedia Romántica
+       Actores: Romina Yan, Damián De Santo
+V142   Casi Ángeles                                       2007   Telefe               Juvenil
+       Actores: Nico Vázquez, Emilia Attias
+V143   Alma Pirata                                        2006   Telefe               Juvenil
+       Actores: Mariano Martínez, Luisana Lopilato
+V144   Chiquititas                                        2006   Telefe               Juvenil
+       Actores: Jorgelina Aruzzi, Gastón Ricaud
+V145   Floricienta                                        2004   Canal 13             Juvenil
+       Actores: Florencia Bertotti, Juan Gil Navarro
+V146   Rincón de Luz                                      2003   Canal 9/Azul TV      Juvenil
+       Actores: Guido Kaczka, Soledad
+V147   Rebelde Way                                        2002   Canal 9/Azul TV      Juvenil
+       Actores: Luisana Lopilato, Felipe Colombo
+V148   Campeones de la Vida                               2000   Canal 13             Comedia Dramática
+       Actores: Osvaldo Laport, Soledad Silveyra
+V149   Chiquititas (2000)                                 2000   Telefe               Juvenil
+       Actores: Romina Gaetani, Iván Espeche
+V150   Divina, está en tu Corazón                         2017   Canal 13             Juvenil
+       Actores: Laura Esquivel, Ingrid Martz
+V151   Niná                                               2009   Telefe               Juvenil
+       Actores: Florencia Bertotti, Federico Amador
+V152   Champs 12                                          2009   América              Juvenil
+       Actores: Liz Solari, Tomás De las Heras
+V153   Consentidos                                        2009   Canal 13             Juvenil
+       Actores: Claribel Medina, Marcelo De Bellis
+V154   Atracción X 4                                      2008   Canal 13             Juvenil
+       Actores: Luisana Lopilato, Camila Bordonaba
+V155   Patito Feo                                         2007   Canal 13             Juvenil
+       Actores: Juan Darthés, Griselda Siciliani
+V156   Romeo y Julieta                                    2007   Canal 9/Azul TV      Juvenil
+       Actores: Elías Viñoles, Brenda Gandini
+V157   Reinas Magas                                       2007   Canal 13             Juvenil
+       Actores: Luz Cipriota, Pablo Gelós
+V158   El Refugio                                         2006   Canal 13             Juvenil
+       Actores: Fran Bass, Piru Sáez
+V159   Sueños Mágicos                                     2005   Canal 9/Azul TV      Juvenil
+       Actores: Iván Espeche, Valeria Lorca
+V160   Paraíso Rock                                       2005   Canal 9/Azul TV      Juvenil
+       Actores: Laura Azcurra, Nazareno Casero
+V161   Frecuencia 04                                      2004   Telefe               Juvenil
+       Actores: Florencia Otero, Natalie Pérez
+V162   Enamorarte                                         2001   Telefe               Juvenil
+       Actores: Emanuel Ortega, Celeste Cid
+V163   Cancheritos                                        2001   América              Juvenil
+       Actores: Andrés Vicente, Claudia De la Calle
+V164   Super Torpe                                        2011   Telefe               Juvenil
+       Actores: Candela Vetrano, Pablo Martínez
+V165   Qitapenas                                          2013   Telefe               Comedia
+       Actores: Miguel Ángel Rodríguez, Silvia Kutika
+V166   Cata y el Misterio de la Esfera                    2013   TV Pública           Juvenil
+       Actores: Mica Riera, Santiago Ramundo
+V167   Los Mufas: Suerte para la Desgracia                2025   Disney+              Comedia
+       Actores: Daniel Hendler, Diego Cremonesi
+V168   Viudas Negras: P*tas y Chorras                     2025   Flow                 Comedia
+       Actores: Pilar Gamboa, Malena Pichot
+V169   Envidiosa                                          2024   Netflix              Comedia Romántica
+       Actores: Griselda Siciliani, Esteban Lamothe
+V170   El Mejor Infarto de mi Vida                        2025   Disney+              Comedia
+       Actores: Alan Sabbagh, Olivia Molina
+V171   El Encargado                                       2022   Disney+              Comedia
+       Actores: Guillermo Francella, Gabriel Goity
+V172   Casi Feliz                                         2020   Netflix              Comedia
+       Actores: Sebastián Wainraich, Natalie Pérez
+V173   Terapia Alternativa                                2021   Disney+              Comedia
+       Actores: Carla Peterson, Griselda Siciliani
+V174   Los Protectores                                    2022   Disney+              Comedia
+       Actores: Adrián Suar, Andrés Parra
+V175   Porno y Helado                                     2022   Prime Video          Comedia
+       Actores: Martín Piroyansky, Nachito Saralegui
+V176   División Palermo                                   2023   Netflix              Comedia
+       Actores: Santiago Korovsky, Daniel Hendler
+V177   Nada                                               2023   Disney+              Comedia
+       Actores: Luis Brandoni, Robert De Niro
+V178   Familia de Diván                                   2023   Flow                 Comedia
+       Actores: Boy Olmi, Carola Reyna
+V179   El Mundo de Mateo                                  2019   Flow                 Policial
+       Actores: Renato Quattordio, Fernán Mirás
+V180   El Marginal                                        2016   Netflix              Policial
+       Actores: Nico Furtado, Juan Minujín
+v1     Educando a Nina                                    2016   Telefe               Comedia
+       Actores: Griselda Siciliani, Esteban Lamothe
+v10    Resistiré                                          2003   Telefe               Telenovela
+       Actores: Pablo Echarri, Celeste Cid
+v100   Los Pensionados                                    2004   Canal 13             Comedia
+       Actores: Damián De Santo, Cecilia Dopazo
+v101   El Deseo                                           2004   Telefe               Policial
+       Actores: Natalia Oreiro, Soledad Silveyra
+v102   Los Secretos de Papí                               2004   Canal 13             Comedia
+       Actores: Dady Brieva, Romina Gaetani
+v103   Doble Vida                                         2005   América              Policial
+       Actores: Moria Casán, Jorge Marrale
+v104   Gladiadores de Pompeya                             2006   Canal 9/Azul TV      Comedia Romántica
+       Actores: Andrea del Boca, Gabriel Goity
+v105   Doble Venganza                                     2006   Canal 9/Azul TV      Policial
+       Actores: Gerardo Romano, Carolina Papaleo
+v106   Hechizada                                          2007   Telefe               Sitcom
+       Actores: Florencia Peña, Gustavo Garzón
+v107   El Capo                                            2007   Telefe               Policial
+       Actores: Miguel Ángel Rodríguez, Gianella Neyra
+v108   Una de Dos                                         2008   Telefe               Sitcom
+       Actores: Florencia Peña, Fabián Vena
+v109   Margarita                                          2024   HBO Max              Juvenil
+       Actores: Isabel Macedo, Mora Bianchi
+v11    Montecristo                                        2006   Telefe               Thriller
+       Actores: Pablo Echarri, Paola Krum
+v110   Cielo Grande                                       2022   Netflix              Juvenil
+       Actores: Pilar Pascual, Abril Di Yorio
+v111   Entrelazados                                       2021   Disney+              Juvenil
+       Actores: Caro Domenech, El Purre
+v112   Días de Gallos                                     2021   HBO Max              Drama
+       Actores: Ángela Torres, Ecko
+v113   GO! Vive a tu Manera                               2019   Netflix              Juvenil
+       Actores: Pilar Pascual, El Purre
+v114   Playback, una somos dos                            2025   Disney+              Juvenil
+       Actores: Juli Castro, Antonella Podestá
+v115   Selenkay                                           2024   Disney+              Juvenil
+       Actores: Gina Mastronicola, Manuel Ramos
+v116   STM: Sé Tu Misma                                   2023   Disney+              Juvenil
+       Actores: Renata Laveaga, Joe Torbell
+v117   Freeks                                             2023   Disney+              Drama
+       Actores: Guido Pennelli, Julián Cerati
+v118   C.h.u.e.c.o.                                       2023   Disney+              Comedia
+       Actores: Darío Barassi, Consuelo Duval
+v119   Tierra Incógnita                                   2022   Disney+              Juvenil
+       Actores: Pedro Maurizi, Mora Fisz
+v12    Entre Caníbales                                    2015   Telefe               Policial
+       Actores: Natalia Oreiro, Benjamín Vicuña
+v120   Melody, la Chica del Metro                         2023   Prime Video          Juvenil
+       Actores: Yas Gagliardi, Sarah Lenore
+v121   Abejas, el Arte del Engaño                         2021   Flow                 Comedia
+       Actores: Fabián Vena, Pedro Alfonso
+v122   WTF! Con la música a otra parte                    2021   Flow                 Drama
+       Actores: Jimena Crash Gioffre, Majo Chicar
+v13    Vidas Robadas                                      2008   Telefe               Thriller
+       Actores: Facundo Arana, Monna Antonópulos
+v14    Campanas en la Noche                               2019   Telefe               Drama
+       Actores: Esteban Lamothe, Federico Amador
+v15    El Elegido                                         2011   Telefe               Thriller
+       Actores: Pablo Echarri, Paola Krum
+v16    Caán y Abel                                        2010   Telefe               Thriller
+       Actores: Joaquín Furriel, Julieta Cardinali
+v17    Cuéntame cómo Pasó                                 2017   TV Pública           Drama
+       Actores: Nicolás Cabré, Malena Solda
+v18    Padre Coraje                                       2004   Canal 13             Drama
+       Actores: Facundo Arana, Nancy Dupláa
+v19    Hombres de Honor                                   2005   Canal 13             Telenovela
+       Actores: Gabriel Corrado, Laura Novoa
+v2     Sos Mi Vida                                        2006   Canal 13             Comedia
+       Actores: Natalia Oreiro, Facundo Arana
+v20    Esperanza Mía                                      2015   Canal 13             Musical
+       Actores: Mariano Martínez, Lali Espósito
+v21    Solamente Vos                                      2013   Canal 13             Comedia
+       Actores: Adrián Suar, Natalia Oreiro
+v22    Simona                                             2018   Canal 13             Musical
+       Actores: Ángela Torres, Juan Darthés
+v23    Fanny, la Fan                                      2017   Telefe               Comedia
+       Actores: Agustina Cherri, Nico Furtado
+v24    Somos Familia                                      2014   Telefe               Drama
+       Actores: Gustavo Bermúdez, Ana Maria Orozco
+v25    Mis Amigos de Siempre                              2013   Canal 13             Drama
+       Actores: Nicolás Cabré, Nico Vázquez
+v26    El Tiempo no Para                                  2006   Canal 9/Azul TV      Drama
+       Actores: Dolores Fonzi, Nacha Guevara
+v27    Las Estrellas                                      2017   Canal 13             Comedia Romántica
+       Actores: Celeste Cid, Marcela Kloosterboer
+v28    Pequeña Victoria                                   2019   Telefe               Comedia Dramática
+       Actores: Julieta Díaz, Natalie Pérez
+v29    Guapas                                             2014   Canal 13             Comedia Dramática
+       Actores: Mercedes Morán, Carla Peterson
+v3     Lalola                                             2007   América              Comedia
+       Actores: Carla Peterson, Luciano Castro
+v30    Separadas                                          2020   Canal 13             Comedia Dramática
+       Actores: Celeste Cid, Marcela Kloosterboer
+v31    Ciega a Citas                                      2009   TV Pública           Comedia Romántica
+       Actores: Muriel Santa Ana, Rafael Ferro
+v32    Noche & Día: Junto a Vos                           2014   Canal 13             Policial
+       Actores: Facundo Arana, Romina Gaetani
+v33    Farsantes                                          2013   Canal 13             Drama
+       Actores: Julio Chávez, Facundo Arana
+v34    Botineras                                          2009   Telefe               Drama
+       Actores: Romina Gaetani, Nicolás Cabré
+v35    22, El Loco                                        2001   Canal 13             Policial
+       Actores: Adrián Suar, Nancy Dupláa
+v36    099 Central                                        2002   Canal 13             Policial
+       Actores: Facundo Arana, Nancy Dupláa
+v37    Sin Código 2                                       2005   Canal 13             Policial
+       Actores: Adrián Suar, Nancy Dupláa
+v39    Son Amores                                         2002   Canal 13             Comedia
+       Actores: Miguel Ángel Rodríguez, Mariano Martínez
+v4     Los Exitosos Pells                                 2008   Telefe               Comedia Dramática
+       Actores: Carla Peterson, Mike Amigorena
+v40    Por Amor a Vos                                     2008   Canal 13             Comedia
+       Actores: Miguel Ángel Rodríguez, Claribel Medina
+v41    Quiero Vivir a tu Lado                             2017   Canal 13             Comedia
+       Actores: Paola Krum, Mike Amigorena
+v42    Loco por Vos                                       2016   Telefe               Comedia
+       Actores: Juan Minujín, Julieta Zylberberg
+v43    La Niñera                                          2004   Telefe               Sitcom
+       Actores: Florencia Peña, Boy Olmi
+v44    Cuando me Sonreás                                  2011   Telefe               Comedia Romántica
+       Actores: Facundo Arana, Julieta Díaz
+v45    Aquá No Hay Quien Viva                             2008   Telefe               Sitcom
+       Actores: Daniel Hendler, Eduardo Blanco
+v46    Amor Máo                                           2005   Telefe               Sitcom
+       Actores: Romina Yan, Damián De Santo
+v47    ┬┐Quién es el Jefe?                                2005   Telefe               Sitcom
+       Actores: Nico Vázquez, Gianella Neyra
+v48    Amo de Casa                                        2006   Canal 9/Azul TV      Sitcom
+       Actores: Carlos Calvo, Andrea Bonelli
+v49    Amor en Custodia                                   2005   Telefe               Telenovela
+       Actores: Osvaldo Laport, Soledad Silveyra
+v5     Señores Papis                                      2014   Telefe               Comedia Dramática
+       Actores: Luciano Castro, Joaquín Furriel
+v50    Por Amarte Asá                                     2016   Telefe               Telenovela
+       Actores: Gabriel Corrado, Catherine Fulop
+v51    La Ley del Amor                                    2007   Telefe               Telenovela
+       Actores: Soledad Silveyra, Sebastián Estevanez
+v52    Don Juan y su Bella Dama                           2008   Telefe               Telenovela
+       Actores: Joaquín Furriel, Romina Gaetani
+v53    Herencia de Amor                                   2009   Telefe               Telenovela
+       Actores: Sebastián Estevanez, Diego Olivera
+v54    Secretos de Amor                                   2010   Telefe               Telenovela
+       Actores: Soledad Silveyra, Juan Gil Navarro
+v55    Los Únicos                                         2011   Canal 13             Comedia
+       Actores: Mariano Martínez, Nicolás Cabré
+v56    Mi Hermano es un Clon                              2018   Canal 13             Comedia
+       Actores: Nicolás Cabré, Gimena Accardi
+v57    Un Año para Recordar                               2011   Telefe               Comedia Dramática
+       Actores: Carla Peterson, Gastón Pauls
+v58    Una Familia Especial                               2005   Canal 13             Comedia
+       Actores: Luis Brandoni, Mariano Martínez
+v59    Lobo                                               2012   Canal 13             Drama
+       Actores: Gonzalo Heredia, Vanesa González
+v6     Son de Fierro                                      2007   Canal 13             Comedia Dramática
+       Actores: Osvaldo Laport, Mariano Martínez
+v60    El Regreso de Lucas                                2016   Telefe               Thriller
+       Actores: Ana Maria Orozco, Salvador del Solar
+v61    Taxxi: Amores Cruzados                             2013   Telefe               Telenovela
+       Actores: Gabriel Corrado, Catherine Fulop
+v62    Valentino, el Argentino                            2008   Canal 13             Comedia Romántica
+       Actores: Julián Román, Liliana Gonzílez
+v63    Yago, Pasión Morena                                2001   Telefe               Telenovela
+       Actores: Facundo Arana, Gianella Neyra
+v64    Provócame                                          2001   Telefe               Telenovela
+       Actores: Chayanne, Araceli González
+v65    Dr. Amor                                           2003   Canal 13             Comedia Romántica
+       Actores: Arturo Puig, Lorna Paz
+v66    Amor Latino                                        2000   Canal 9/Azul TV      Romance
+       Actores: Diego Ramos, Mario Cimarro
+v67    Malparida                                          2010   Canal 13             Telenovela
+       Actores: Gonzalo Heredia, Juana Viale
+v68    Los Ricos No Piden Permiso                         2016   Canal 13             Telenovela
+       Actores: Luciano Castro, Gonzalo Heredia
+v69    Herederos de una Venganza                          2011   Canal 13             Telenovela
+       Actores: Luciano Castro, Romina Gaetani
+v7     Viudas e Hijos del Rock & Roll                     2014   Telefe               Comedia
+       Actores: Damián De Santo, Paola Barrientos
+v70    Valientes                                          2009   Canal 13             Telenovela
+       Actores: Luciano Castro, Julieta Díaz
+v71    Dulce Amor                                         2012   Telefe               Telenovela
+       Actores: Sebastián Estevanez, Carina Zampini
+v72    Golpe al Corazón                                   2017   Telefe               Telenovela
+       Actores: Sebastián Estevanez, Eleonora Wexler
+v73    Camino al Amor                                     2014   Telefe               Telenovela
+       Actores: Sebastián Estevanez, Carina Zampini
+v74    Los Médicos de Hoy                                 2000   Canal 13             Telenovela
+       Actores: Claribel Medina, Gerardo Romano
+v75    Luna Salvaje                                       2000   Telefe               Telenovela
+       Actores: Gabriel Corrado, Carina Zampini
+v76    Mil Millones                                       2002   Canal 13             Telenovela
+       Actores: Gustavo Bermúdez, Araceli González
+v77    Kachorra                                           2002   Telefe               Comedia Romántica
+       Actores: Natalia Oreiro, Pablo Rago
+v78    Míximo Corazón                                     2002   Telefe               Telenovela
+       Actores: Gabriel Corrado, Valeria Bertuccelli
+v79    Abre tus Ojos                                      2003   Canal 13             Telenovela
+       Actores: Romina Yan, Iván Espeche
+v8     Los Vecinos en Guerra                              2013   Telefe               Comedia
+       Actores: Diego Torres, Eleonora Wexler
+v80    Culpable de este Amor                              2004   Telefe               Telenovela
+       Actores: Juan Darthés, Gianella Neyra
+v81    Jesús, el Heredero                                 2004   Canal 13             Telenovela
+       Actores: Joaquín Furriel, Malena Solda
+v82    El Patrón de la Vereda                             2005   América              Comedia Dramática
+       Actores: Gustavo Bermúdez, Camila Bordonaba
+v83    Sálvame María                                      2005   Canal 9/Azul TV      Telenovela
+       Actores: Andrea del Boca, Juan Palomino
+v84    Se Dice Amor                                       2005   Telefe               Telenovela
+       Actores: Juan Darthés, Eugenia Tobal
+v85    Collar de Esmeraldas                               2006   Canal 13             Telenovela
+       Actores: Osvaldo Laport, Carina Zampini
+v86    Juanita, la Soltera                                2006   Canal 13             Comedia Romántica
+       Actores: Gabriel Corrado, Soledad Fandiño
+v87    Mujeres de Nadie 2007                              2007   Canal 13             Telenovela
+       Actores: Susú Pecoraro, Claribel Medina
+v88    Mujeres de Nadie 2008                              2008   Canal 13             Telenovela
+       Actores: Luisa Kuliok, Eugenia Tobal
+v89    Esa Mujer                                          2013   TV Pública           Telenovela
+       Actores: Andrea del Boca, Segundo Cernadas
+v9     Amar Después de Amar                               2017   Telefe               Thriller
+       Actores: Mariano Martínez, Isabel Macedo
+v90    Los Buscas de Siempre                              2000   Canal 9/Azul TV      Telenovela
+       Actores: Pablo Echarri, Nancy Dupláa
+v91    Ilusiones Compartidas                              2000   Canal 13             Comedia Dramática
+       Actores: Oscar Martínez, Catherine Fulop
+v92    El Sodero de mi Vida                               2001   Canal 13             Comedia Romántica
+       Actores: Dady Brieva, Andrea del Boca
+v93    PH (Propiedad Horizontal)                          2001   Canal 9/Azul TV      Comedia Dramática
+       Actores: Gerardo Romano, María Valenzuela
+v94    Primicias                                          2000   Canal 13             Telenovela
+       Actores: Arturo Puig, María Valenzuela
+v95    Franco Buenaventura, el Profe                      2002   Telefe               Telenovela
+       Actores: Osvaldo Laport, Carina Zampini
+v96    Malandras                                          2003   Canal 9/Azul TV      Policial
+       Actores: Damián De Santo, Lito Cruz
+v97    Maridos a Domicilio                                2002   Canal 9/Azul TV      Comedia
+       Actores: Juan Leyrado, Fabián Gianola
+v98    Soy Gitano                                         2003   Canal 13             Telenovela
+       Actores: Osvaldo Laport, Julieta Díaz
+v99    Costumbres Argentinas                              2003   Telefe               Comedia Dramática
+       Actores: Carlos Calvo, Fabián Gianola

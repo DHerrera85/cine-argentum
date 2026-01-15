@@ -1,0 +1,296 @@
+LISTADO DE SERIES
+============================================================
+V123 | Los Únicos | 2012 | Canal 13 | Comedia | actores:6
+V124 | Enséñame a Vivir | 2009 | Canal 13 | Comedia Romíntica | actores:3
+V125 | Media Falta | 2005 | Canal 13 | Juvenil | actores:3
+V126 | Calientes | 2000 | Canal 13 | Juvenil | actores:7
+V127 | Kally's Mashup | 2017 | Nickelodeon | Juvenil | actores:4
+V128 | Heidi, Bienvenida a Casa | 2017 | Nickelodeon | Juvenil | actores:5
+V129 | Sueña Conmigo | 2010 | Nickelodeon | Juvenil | actores:4
+V130 | La Maga y el Camino Dorado | 2008 | Nickelodeon | Juvenil | actores:2
+V131 | Los Macanimals | 2025 | Disney Channel | Comedia | actores:3
+V132 | Bia | 2019 | Disney Channel | Juvenil | actores:4
+V133 | O11CE | 2017 | Disney XD | Juvenil | actores:6
+V134 | Soy Luna | 2016 | Disney Channel | Juvenil | actores:4
+V135 | Jungle Nest | 2016 | Disney XD | Juvenil | actores:4
+V136 | Violetta | 2012 | Disney Channel | Juvenil | actores:6
+V137 | Peter Punk | 2011 | Disney XD | Juvenil | actores:4
+V138 | Cuando Toca la Campana | 2011 | Disney Channel | Juvenil | actores:4
+V139 | Aliados | 2013 | Telefe | Drama | actores:5
+V140 | Jake & Blake | 2009 | Disney Channel | Juvenil | actores:2
+V141 | B&B: Bella y Bestia | 2008 | Telefe | Comedia Romíntica | actores:2
+V142 | Casi üngeles | 2007 | Telefe | Juvenil | actores:7
+V143 | Alma Pirata | 2006 | Telefe | Juvenil | actores:4
+V144 | Chiquititas | 2006 | Telefe | Juvenil | actores:4
+V145 | Floricienta | 2004 | Canal 13 | Juvenil | actores:2
+V146 | Rincón de Luz | 2003 | Canal 9/Azul TV | Juvenil | actores:2
+V147 | Rebelde Way | 2002 | Canal 9/Azul TV | Juvenil | actores:4
+V148 | Campeones de la Vida | 2000 | Canal 13 | Comedia Dramítica | actores:4
+V149 | Chiquititas (2000) | 2000 | Telefe | Juvenil | actores:3
+V150 | Divina, estí en tu Corazón | 2017 | Canal 13 | Juvenil | actores:3
+V151 | Niná | 2009 | Telefe | Juvenil | actores:2
+V152 | Champs 12 | 2009 | América | Juvenil | actores:2
+V153 | Consentidos | 2009 | Canal 13 | Juvenil | actores:5
+V154 | Atracción X 4 | 2008 | Canal 13 | Juvenil | actores:5
+V155 | Patito Feo | 2007 | Canal 13 | Juvenil | actores:5
+V156 | Romeo y Julieta | 2007 | Canal 9/Azul TV | Juvenil | actores:2
+V157 | Reinas Magas | 2007 | Canal 13 | Juvenil | actores:3
+V158 | El Refugio | 2006 | Canal 13 | Juvenil | actores:5
+V159 | Sueños Mígicos | 2005 | Canal 9/Azul TV | Juvenil | actores:2
+V160 | Paraáso Rock | 2005 | Canal 9/Azul TV | Juvenil | actores:4
+V161 | Frecuencia 04 | 2004 | Telefe | Juvenil | actores:5
+V162 | Enamorarte | 2001 | Telefe | Juvenil | actores:2
+V163 | Cancheritos | 2001 | América | Juvenil | actores:2
+V164 | Super Torpe | 2011 | Telefe | Juvenil | actores:2
+V165 | Qitapenas | 2013 | Telefe | Comedia | actores:2
+V166 | Cata y el Misterio de la Esfera | 2013 | TV Püblica | Juvenil | actores:2
+V167 | Los Mufas: Suerte para la Desgracia | 2025 | Disney+ | Comedia | actores:4
+V168 | Viudas Negras: P*tas y Chorras | 2025 | Flow | Comedia | actores:2
+V169 | Envidiosa | 2024 | Netflix | Comedia Romíntica | actores:3
+V170 | El Mejor Infarto de mi Vida | 2025 | Disney+ | Comedia | actores:3
+V171 | El Encargado | 2022 | Disney+ | Comedia | actores:2
+V172 | Casi Feliz | 2020 | Netflix | Comedia | actores:2
+V173 | Terapia Alternativa | 2021 | Disney+ | Comedia | actores:4
+V174 | Los Protectores | 2022 | Disney+ | Comedia | actores:3
+V175 | Porno y Helado | 2022 | Prime Video | Comedia | actores:3
+V176 | División Palermo | 2023 | Netflix | Comedia | actores:3
+V177 | Nada | 2023 | Disney+ | Comedia | actores:2
+V178 | Familia de Divín | 2023 | Flow | Comedia | actores:2
+V179 | El Mundo de Mateo | 2019 | Flow | Policial | actores:3
+V180 | El Marginal | 2016 | Netflix | Policial | actores:5
+V181 | Puerta 7 | 2020 | Netflix | Policial | actores:4
+V182 | ├Ültimo Primer Dáa | 2022 | Flow | Policial | actores:4
+V183 | Maráa Marta: El Crimen del Country | 2022 | HBO Max | Policial | actores:4
+V184 | Barrabrava | 2023 | Prime Video | Policial | actores:4
+V185 | Cromañon | 2024 | Prime Video | Policial | actores:6
+V186 | Atrapados | 2025 | Netflix | Policial | actores:4
+V187 | En el Barro | 2025 | Netflix | Policial | actores:6
+V188 | Menem: El Show del Presidente | 2025 | Prime Video | Drama | actores:6
+V189 | El Eternauta | 2025 | Netflix | Drama | actores:6
+V190 | El Buen Retiro | 2022 | Flow | Drama | actores:5
+V191 | Un León en el Bosque | 2024 | Flow | Drama | actores:3
+V192 | Edha | 2018 | Netflix | Drama | actores:3
+V193 | Planners | 2023 | Disney+ | Drama | actores:3
+V194 | El Fin del Amor | 2022 | Prime Video | Drama | actores:4
+V195 | Las Maldiciones | 2025 | Netflix | Miniseries | actores:4
+V196 | Nieve Roja | 2025 | Flow | Miniseries | actores:4
+V197 | Camaleón: El Pasado No Cambia | 2025 | Disney+ | Miniseries | actores:2
+V198 | Espartanos: Una Historia Real | 2025 | Disney+ | Miniseries | actores:5
+V199 | La Voz Ausente | 2024 | Disney+ | Miniseries | actores:3
+V200 | Felices los Seis | 2024 | HBO Max | Miniseries | actores:4
+V201 | Frígiles | 2023 | Flow | Miniseries | actores:4
+V202 | Robo Mundial | 2022 | Disney+ | Miniseries | actores:3
+V203 | Supernova | 2022 | Prime Video | Miniseries | actores:3
+V204 | Coppola, el Representante | 2024 | Disney+ | Drama | actores:4
+V205 | El Amor Después del Amor | 2023 | Netflix | Miniseries | actores:3
+V206 | El Reino | 2021 | Netflix | Drama | actores:5
+V207 | Iosi, el Espáa Arrepentido | 2022 | Prime Video | Drama | actores:5
+V208 | Diciembre 2001 | 2023 | Disney+ | Thriller | actores:6
+V209 | Maradona: Sueño Bendito | 2021 | Prime Video | Miniseries | actores:5
+V210 | Apache: la Vida de Carlos Tévez | 2019 | Netflix | Miniseries | actores:4
+V211 | Cris Miró (Ella) | 2024 | Flow | Miniseries | actores:4
+V212 | Santa Evita | 2022 | Disney+ | Miniseries | actores:5
+V213 | Ringo: Gloria y Muerte | 2023 | Disney+ | Miniseries | actores:4
+V214 | Los Internacionales | 2020 | Flow | Miniseries | actores:3
+V215 | El Hincha | 2022 | Flow | Miniseries | actores:4
+V216 | El Sabor del Silencio | 2024 | Flow | Thriller | actores:4
+V217 | La Mente del Poder | 2024 | Flow | Thriller | actores:3
+V218 | AMIA: El Fin de la Verdad | 2024 | Flow | Miniseries | actores:2
+V219 | Atrapa a un Ladrón | 2019 | Flow | Comedia | actores:2
+V220 | Inconvivencia | 2019 | Flow | Drama | actores:2
+V221 | El Tigre Verón | 2019 | Flow | Thriller | actores:4
+V222 | Tu Parte del Trato | 2019 | Flow | Thriller | actores:3
+V223 | Otros Pecados | 2019 | Flow | Thriller | actores:1
+V224 | Morir de Amor | 2018 | Flow | Thriller | actores:2
+V225 | El Lobista | 2018 | Flow | Thriller | actores:4
+V226 | Rizhoma Hotel | 2018 | Flow | Thriller | actores:1
+V227 | El Maestro | 2017 | Flow | Drama | actores:4
+V228 | La Fragilidad de los Cuerpos | 2017 | Flow | Thriller | actores:3
+V229 | Supermax | 2017 | TV Püblica | Thriller | actores:4
+V230 | Un Gallo para Esculapio | 2016 | Flow | Thriller | actores:3
+V231 | Signos | 2015 | Canal 13 | Policial | actores:3
+V232 | Historia de un Clan | 2015 | Telefe | Policial | actores:4
+V233 | El Host | 2018 | Fox | Comedia | actores:5
+V234 | Psiconautas | 2016 | TBS | Comedia | actores:5
+V235 | Vigilantes | 2016 | TBS | Comedia | actores:4
+V236 | Nafta Süper | 2016 | Space | Comedia | actores:4
+V237 | 30 Dáas Juntos | 2012 | Cosmopolitan TV | Comedia Romíntica | actores:3
+V238 | Impostores | 2009 | FX | Policial | actores:2
+V239 | Epitafios | 2004 | HBO Max | Policial | actores:4
+V240 | El Puntero | 2011 | Canal 13 | Policial | actores:4
+V241 | El Hombre que volvió de la Muerte | 2007 | Canal 13 | Policial | actores:4
+V242 | Hermanos y Detectives | 2006 | Telefe | Policial | actores:3
+V243 | Criminal | 2005 | Canal 9/Azul TV | Policial | actores:3
+V244 | Sangre Fria | 2004 | Telefe | Thriller | actores:3
+V245 | Los Simuladores | 2002 | Telefe | Policial | actores:4
+V246 | El Hacker | 2001 | Telefe | Policial | actores:4
+V247 | Okupas | 2000 | TV Püblica | Policial | actores:3
+V248 | Sandro: La Serie | 2018 | Telefe | Drama | actores:3
+V249 | Condicionados | 2012 | Canal 13 | Drama | actores:4
+V250 | Tiempos Compulsivos | 2012 | Canal 13 | Drama | actores:4
+V251 | Para Vestir Santos | 2010 | Canal 13 | Drama | actores:3
+V252 | Tratame Bien | 2009 | Canal 13 | Drama | actores:2
+V253 | Mitos (Crónica del Amor Descartable) | 2009 | América | Drama | actores:2
+V254 | Ambiciones | 2005 | Telefe | Drama | actores:4
+V255 | Locas de Amor | 2004 | Canal 13 | Drama | actores:3
+V256 | Historias de Sexo de Gente Comün | 2004 | Telefe | Drama | actores:4
+V257 | Disputas | 2003 | Telefe | Drama | actores:4
+V258 | Culpables | 2001 | Canal 13 | Drama | actores:6
+V259 | Cuatro Amigas | 2001 | Telefe | Drama | actores:4
+V260 | Vulnerables | 1999 | Canal 13 | Drama | actores:6
+V261 | Silencios de Familia | 2016 | Canal 13 | Comedia Dramítica | actores:3
+V262 | El Donante | 2012 | Telefe | Comedia | actores:2
+V263 | Mi Problema con las Mujeres | 2012 | Telefe | Comedia | actores:2
+V264 | El Hombre de tu Vida | 2011 | Telefe | Comedia | actores:3
+V265 | Acompañantes | 2009 | Telefe | Comedia | actores:4
+V266 | Todos contra Juan | 2008 | América | Comedia | actores:2
+V267 | Socias | 2008 | Canal 13 | Comedia | actores:3
+V268 | Soy Tu Fan | 2006 | Canal 9/Azul TV | Comedia | actores:2
+V269 | Amas de Casa Desesperadas | 2006 | Canal 13 | Comedia | actores:5
+V270 | Mosca & Smith | 2004 | Telefe | Comedia | actores:2
+V271 | Tres Padres Solteros | 2003 | Telefe | Comedia Dramítica | actores:3
+V272 | Durmiendo con mi Jefe | 2003 | Canal 13 | Comedia | actores:2
+V273 | Femenino/Masculino | 2003 | Canal 9/Azul TV | Comedia | actores:4
+V274 | Historias de Divín | 2013 | Telefe | Drama | actores:2
+V275 | Al Lámite | 2006 | Telefe | Drama | actores:3
+V276 | Botines | 2005 | Canal 13 | Crimen | actores:1
+V277 | Mujeres Asesinas | 2005 | Canal 13 | Crimen | actores:1
+V278 | Infieles | 2002 | Telefe | Drama | actores:1
+V279 | Tiempo Final | 2000 | Telefe | Suspenso | actores:1
+V280 | Monzón | 2019 | Space | Policial | actores:4
+V281 | Yiya | 2025 | Flow | Miniseries | actores:3
+V282 | Hija del Fuego: La Venganza de la Bastarda | 2025 | Disney+ | Thriller | actores:4
+V283 | Argentina, Tierra de Amor y Venganza 2 | 2023 | Canal 13 | Telenovela | actores:4
+V284 | El Tiempo de las Moscas | 2026 | Netflix | Miniseries | actores:3
+h1 | Argentina, Tierra de Amor y Venganza | 2019 | Canal 13 | Telenovela | actores:3
+h10 | Sos Mi Hombre | 2012 | Canal 13 | Telenovela | actores:2
+h11 | Contra las Cuerdas | 2010 | TV Püblica | Thriller | actores:3
+h2 | El Primero de Nosotros | 2022 | Telefe | Drama | actores:6
+h3 | Casados con Hijos | 2005 | Telefe | Sitcom | actores:4
+h4 | La 1-5/18: Somos Uno | 2021 | Canal 13 | Drama | actores:6
+h5 | Buenos Chicos | 2023 | Canal 13 | Policial | actores:6
+h6 | Cien Dáas para Enamorarse | 2018 | Telefe | Comedia Romíntica | actores:4
+h7 | Graduados | 2012 | Telefe | Comedia | actores:4
+h8 | Los Roldín | 2004 | Telefe | Comedia | actores:4
+h9 | La Leona | 2016 | Telefe | Thriller | actores:2
+v1 | Educando a Nina | 2016 | Telefe | Comedia | actores:3
+v10 | Resistiré | 2003 | Telefe | Telenovela | actores:2
+v100 | Los Pensionados | 2004 | Canal 13 | Comedia | actores:4
+v101 | El Deseo | 2004 | Telefe | Policial | actores:4
+v102 | Los Secretos de Papí | 2004 | Canal 13 | Comedia | actores:2
+v103 | Doble Vida | 2005 | América | Policial | actores:4
+v104 | Gladiadores de Pompeya | 2006 | Canal 9/Azul TV | Comedia Romíntica | actores:2
+v105 | Doble Venganza | 2006 | Canal 9/Azul TV | Policial | actores:4
+v106 | Hechizada | 2007 | Telefe | Sitcom | actores:2
+v107 | El Capo | 2007 | Telefe | Policial | actores:2
+v108 | Una de Dos | 2008 | Telefe | Sitcom | actores:3
+v109 | Margarita | 2024 | HBO Max | Juvenil | actores:4
+v11 | Montecristo | 2006 | Telefe | Thriller | actores:3
+v110 | Cielo Grande | 2022 | Netflix | Juvenil | actores:4
+v111 | Entrelazados | 2021 | Disney+ | Juvenil | actores:4
+v112 | Dáas de Gallos | 2021 | HBO Max | Drama | actores:3
+v113 | GO! Vive a tu Manera | 2019 | Netflix | Juvenil | actores:3
+v114 | Playback, una somos dos | 2025 | Disney+ | Juvenil | actores:3
+v115 | Selenkay | 2024 | Disney+ | Juvenil | actores:4
+v116 | STM: Sé Tu Misma | 2023 | Disney+ | Juvenil | actores:4
+v117 | Freeks | 2023 | Disney+ | Drama | actores:5
+v118 | C.h.u.e.c.o. | 2023 | Disney+ | Comedia | actores:5
+v119 | Tierra Incógnita | 2022 | Disney+ | Juvenil | actores:6
+v12 | Entre Canábales | 2015 | Telefe | Policial | actores:3
+v120 | Melody, la Chica del Metro | 2023 | Prime Video | Juvenil | actores:5
+v121 | Abejas, el Arte del Engaño | 2021 | Flow | Comedia | actores:3
+v122 | WTF! Con la müsica a otra parte | 2021 | Flow | Drama | actores:3
+v13 | Vidas Robadas | 2008 | Telefe | Thriller | actores:3
+v14 | Campanas en la Noche | 2019 | Telefe | Drama | actores:3
+v15 | El Elegido | 2011 | Telefe | Thriller | actores:2
+v16 | Caán y Abel | 2010 | Telefe | Thriller | actores:3
+v17 | Cuéntame cómo Pasó | 2017 | TV Püblica | Drama | actores:2
+v18 | Padre Coraje | 2004 | Canal 13 | Drama | actores:3
+v19 | Hombres de Honor | 2005 | Canal 13 | Telenovela | actores:4
+v2 | Sos Mi Vida | 2006 | Canal 13 | Comedia | actores:2
+v20 | Esperanza Máa | 2015 | Canal 13 | Musical | actores:2
+v21 | Solamente Vos | 2013 | Canal 13 | Comedia | actores:5
+v22 | Simona | 2018 | Canal 13 | Musical | actores:4
+v23 | Fanny, la Fan | 2017 | Telefe | Comedia | actores:3
+v24 | Somos Familia | 2014 | Telefe | Drama | actores:3
+v25 | Mis Amigos de Siempre | 2013 | Canal 13 | Drama | actores:6
+v26 | El Tiempo no Para | 2006 | Canal 9/Azul TV | Drama | actores:5
+v27 | Las Estrellas | 2017 | Canal 13 | Comedia Romíntica | actores:5
+v28 | Pequeña Victoria | 2019 | Telefe | Comedia Dramítica | actores:6
+v29 | Guapas | 2014 | Canal 13 | Comedia Dramítica | actores:5
+v3 | Lalola | 2007 | América | Comedia | actores:2
+v30 | Separadas | 2020 | Canal 13 | Comedia Dramítica | actores:7
+v31 | Ciega a Citas | 2009 | TV Püblica | Comedia Romíntica | actores:2
+v32 | Noche & Dáa: Junto a Vos | 2014 | Canal 13 | Policial | actores:4
+v33 | Farsantes | 2013 | Canal 13 | Drama | actores:4
+v34 | Botineras | 2009 | Telefe | Drama | actores:6
+v35 | 22, El Loco | 2001 | Canal 13 | Policial | actores:5
+v36 | 099 Central | 2002 | Canal 13 | Policial | actores:3
+v37 | Sin Código 2 | 2005 | Canal 13 | Policial | actores:3
+v39 | Son Amores | 2002 | Canal 13 | Comedia | actores:5
+v4 | Los Exitosos Pells | 2008 | Telefe | Comedia Dramítica | actores:2
+v40 | Por Amor a Vos | 2008 | Canal 13 | Comedia | actores:4
+v41 | Quiero Vivir a tu Lado | 2017 | Canal 13 | Comedia | actores:6
+v42 | Loco por Vos | 2016 | Telefe | Comedia | actores:2
+v43 | La Niñera | 2004 | Telefe | Sitcom | actores:2
+v44 | Cuando me Sonreás | 2011 | Telefe | Comedia Romíntica | actores:2
+v45 | Aquá No Hay Quien Viva | 2008 | Telefe | Sitcom | actores:3
+v46 | Amor Máo | 2005 | Telefe | Sitcom | actores:2
+v47 | ┬┐Quién es el Jefe? | 2005 | Telefe | Sitcom | actores:2
+v48 | Amo de Casa | 2006 | Canal 9/Azul TV | Sitcom | actores:2
+v49 | Amor en Custodia | 2005 | Telefe | Telenovela | actores:2
+v5 | Señores Papis | 2014 | Telefe | Comedia Dramítica | actores:3
+v50 | Por Amarte Asá | 2016 | Telefe | Telenovela | actores:4
+v51 | La Ley del Amor | 2007 | Telefe | Telenovela | actores:4
+v52 | Don Juan y su Bella Dama | 2008 | Telefe | Telenovela | actores:4
+v53 | Herencia de Amor | 2009 | Telefe | Telenovela | actores:4
+v54 | Secretos de Amor | 2010 | Telefe | Telenovela | actores:3
+v55 | Los ├Ünicos | 2011 | Canal 13 | Comedia | actores:4
+v56 | Mi Hermano es un Clon | 2018 | Canal 13 | Comedia | actores:3
+v57 | Un Año para Recordar | 2011 | Telefe | Comedia Dramítica | actores:4
+v58 | Una Familia Especial | 2005 | Canal 13 | Comedia | actores:4
+v59 | Lobo | 2012 | Canal 13 | Drama | actores:4
+v6 | Son de Fierro | 2007 | Canal 13 | Comedia Dramítica | actores:3
+v60 | El Regreso de Lucas | 2016 | Telefe | Thriller | actores:2
+v61 | Taxxi: Amores Cruzados | 2013 | Telefe | Telenovela | actores:4
+v62 | Valentino, el Argentino | 2008 | Canal 13 | Comedia Romíntica | actores:3
+v63 | Yago, Pasión Morena | 2001 | Telefe | Telenovela | actores:2
+v64 | Provócame | 2001 | Telefe | Telenovela | actores:3
+v65 | Dr. Amor | 2003 | Canal 13 | Comedia Romíntica | actores:4
+v66 | Amor Latino | 2000 | Canal 9/Azul TV | Romance | actores:4
+v67 | Malparida | 2010 | Canal 13 | Telenovela | actores:2
+v68 | Los Ricos No Piden Permiso | 2016 | Canal 13 | Telenovela | actores:7
+v69 | Herederos de una Venganza | 2011 | Canal 13 | Telenovela | actores:4
+v7 | Viudas e Hijos del Rock & Roll | 2014 | Telefe | Comedia | actores:3
+v70 | Valientes | 2009 | Canal 13 | Telenovela | actores:6
+v71 | Dulce Amor | 2012 | Telefe | Telenovela | actores:5
+v72 | Golpe al Corazón | 2017 | Telefe | Telenovela | actores:2
+v73 | Camino al Amor | 2014 | Telefe | Telenovela | actores:2
+v74 | Los Médicos de Hoy | 2000 | Canal 13 | Telenovela | actores:2
+v75 | Luna Salvaje | 2000 | Telefe | Telenovela | actores:2
+v76 | Mil Millones | 2002 | Canal 13 | Telenovela | actores:2
+v77 | Kachorra | 2002 | Telefe | Comedia Romíntica | actores:2
+v78 | Míximo Corazón | 2002 | Telefe | Telenovela | actores:2
+v79 | Abre tus Ojos | 2003 | Canal 13 | Telenovela | actores:2
+v8 | Los Vecinos en Guerra | 2013 | Telefe | Comedia | actores:3
+v80 | Culpable de este Amor | 2004 | Telefe | Telenovela | actores:2
+v81 | Jesüs, el Heredero | 2004 | Canal 13 | Telenovela | actores:2
+v82 | El Patrón de la Vereda | 2005 | América | Comedia Dramítica | actores:2
+v83 | Sílvame Maráa | 2005 | Canal 9/Azul TV | Telenovela | actores:2
+v84 | Se Dice Amor | 2005 | Telefe | Telenovela | actores:2
+v85 | Collar de Esmeraldas | 2006 | Canal 13 | Telenovela | actores:2
+v86 | Juanita, la Soltera | 2006 | Canal 13 | Comedia Romíntica | actores:2
+v87 | Mujeres de Nadie 2007 | 2007 | Canal 13 | Telenovela | actores:4
+v88 | Mujeres de Nadie 2008 | 2008 | Canal 13 | Telenovela | actores:3
+v89 | Esa Mujer | 2013 | TV Püblica | Telenovela | actores:2
+v9 | Amar Después de Amar | 2017 | Telefe | Thriller | actores:4
+v90 | Los Buscas de Siempre | 2000 | Canal 9/Azul TV | Telenovela | actores:2
+v91 | Ilusiones Compartidas | 2000 | Canal 13 | Comedia Dramítica | actores:2
+v92 | El Sodero de mi Vida | 2001 | Canal 13 | Comedia Romíntica | actores:2
+v93 | PH (Propiedad Horizontal) | 2001 | Canal 9/Azul TV | Comedia Dramítica | actores:3
+v94 | Primicias | 2000 | Canal 13 | Telenovela | actores:4
+v95 | Franco Buenaventura, el Profe | 2002 | Telefe | Telenovela | actores:3
+v96 | Malandras | 2003 | Canal 9/Azul TV | Policial | actores:3
+v97 | Maridos a Domicilio | 2002 | Canal 9/Azul TV | Comedia | actores:2
+v98 | Soy Gitano | 2003 | Canal 13 | Telenovela | actores:3
+v99 | Costumbres Argentinas | 2003 | Telefe | Comedia Dramítica | actores:4
