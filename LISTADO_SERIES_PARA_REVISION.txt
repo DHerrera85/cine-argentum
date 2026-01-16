@@ -59,7 +59,7 @@ V149   Chiquititas (2000)                                 2000   Telefe         
        Actores: Romina Gaetani, Iván Espeche
 V150   Divina, está en tu Corazón                         2017   Canal 13             Juvenil
        Actores: Laura Esquivel, Ingrid Martz
-V151   Niná                                               2009   Telefe               Juvenil
+V151   Niní                                               2009   Telefe               Juvenil
        Actores: Florencia Bertotti, Federico Amador
 V152   Champs 12                                          2009   América              Juvenil
        Actores: Liz Solari, Tomás De las Heras
@@ -127,7 +127,7 @@ v100   Los Pensionados                                    2004   Canal 13       
        Actores: Damián De Santo, Cecilia Dopazo
 v101   El Deseo                                           2004   Telefe               Policial
        Actores: Natalia Oreiro, Soledad Silveyra
-v102   Los Secretos de Papí                               2004   Canal 13             Comedia
+v102   Los Secretos de Papá                              2004   Canal 13             Comedia
        Actores: Dady Brieva, Romina Gaetani
 v103   Doble Vida                                         2005   América              Policial
        Actores: Moria Casán, Jorge Marrale
@@ -179,7 +179,7 @@ v14    Campanas en la Noche                               2019   Telefe         
        Actores: Esteban Lamothe, Federico Amador
 v15    El Elegido                                         2011   Telefe               Thriller
        Actores: Pablo Echarri, Paola Krum
-v16    Caán y Abel                                        2010   Telefe               Thriller
+v16    Caín y Abel                                        2010   Telefe               Thriller
        Actores: Joaquín Furriel, Julieta Cardinali
 v17    Cuéntame cómo Pasó                                 2017   TV Pública           Drama
        Actores: Nicolás Cabré, Malena Solda
@@ -241,11 +241,11 @@ v43    La Niñera                                          2004   Telefe        
        Actores: Florencia Peña, Boy Olmi
 v44    Cuando me Sonreás                                  2011   Telefe               Comedia Romántica
        Actores: Facundo Arana, Julieta Díaz
-v45    Aquá No Hay Quien Viva                             2008   Telefe               Sitcom
+v45    Aquí No Hay Quien Viva                             2008   Telefe               Sitcom
        Actores: Daniel Hendler, Eduardo Blanco
-v46    Amor Máo                                           2005   Telefe               Sitcom
+v46    Amor Mío                                           2005   Telefe               Sitcom
        Actores: Romina Yan, Damián De Santo
-v47    ┬┐Quién es el Jefe?                                2005   Telefe               Sitcom
+v47    ¿Quién es el Jefe?                                2005   Telefe               Sitcom
        Actores: Nico Vázquez, Gianella Neyra
 v48    Amo de Casa                                        2006   Canal 9/Azul TV      Sitcom
        Actores: Carlos Calvo, Andrea Bonelli
@@ -253,7 +253,7 @@ v49    Amor en Custodia                                   2005   Telefe         
        Actores: Osvaldo Laport, Soledad Silveyra
 v5     Señores Papis                                      2014   Telefe               Comedia Dramática
        Actores: Luciano Castro, Joaquín Furriel
-v50    Por Amarte Asá                                     2016   Telefe               Telenovela
+v50    Por Amarte Así                                     2016   Telefe               Telenovela
        Actores: Gabriel Corrado, Catherine Fulop
 v51    La Ley del Amor                                    2007   Telefe               Telenovela
        Actores: Soledad Silveyra, Sebastián Estevanez

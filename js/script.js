@@ -331,6 +331,28 @@
           { breakpoint: 480,  settings: { item: 3, slideMove: 1, slideMargin: 6 } }
         ]
       });
+
+      // GÉNEROS (Horizontal Carousel - HBO Max style)
+      $('.slider-genres').lightSlider({
+        item: 5, // 5 en desktop
+        autoWidth: false,
+        slideMove: 1,
+        slideMargin: 16,
+        loop: false,
+        pager: false,
+        controls: true,
+        enableTouch: true,
+        enableDrag: true,
+        freeMove: false,
+        onSliderLoad: function(el) {
+          $('.slider-genres').removeClass('cs-hidden').addClass('slider-ready');
+        },
+        responsive: [
+          { breakpoint: 1200, settings: { item: 5, slideMove: 1, slideMargin: 14 } },
+          { breakpoint: 768,  settings: { item: 3, slideMove: 1, slideMargin: 12 } },
+          { breakpoint: 480,  settings: { item: 2, slideMove: 1, slideMargin: 10 } }
+        ]
+      });
     });
 
 
