@@ -4419,7 +4419,7 @@
       "actors": [
         "Martina Gusmán",
         "Bérénice Bejo",
-        "Joaquin Furriel",
+        "Joaquín Furriel",
         "Graciela Borges",
         "Edgar Ramírez"
       ],
@@ -4828,7 +4828,7 @@
     },
     {
       "id": "v16",
-      "title": "Caán y Abel",
+      "title": "Caín y Abel",
       "year": "2010",
       "channel": "Telefe",
       "genre": "Thriller",
@@ -8311,7 +8311,7 @@
     },
     {
       "id": "V275",
-      "title": "Al Lámite",
+      "title": "Al Límite",
       "year": "2006",
       "channel": "Telefe",
       "genre": "Drama",
@@ -9005,6 +9005,30 @@
       "orientation": "vertical",
       "image": "images/verticals/amor-latino-280x420.png",
       "subtitle": "Telenovela"
+    },
+    {
+      "id": "S1001",
+      "title": "El Jardín de Bronce",
+      "type": "serie",
+      "year": "2017",
+      "genre": "Policial, Drama",
+      "actors": [
+        "Joaquín Furriel",
+        "Maite Lanata",
+        "Luis Luque",
+        "Juan Leyrado",
+        "Julieta Zylberberg",
+        "Norma Aleandro",
+        "Paola Barrientos",
+        "Jazmín Stuart"
+      ],
+      "synopsis": "Un padre busca a su hija desaparecida en Buenos Aires.",
+      "channel": "HBO",
+      "image": "images/verticals/el-jardin-de-bronce-poster-280x420.png",
+      "orientation": "vertical",
+      "seasons": 3,
+      "producer": "Pol-ka",
+      "director": "Hernán Goldfrid"
     }
   ]
 }

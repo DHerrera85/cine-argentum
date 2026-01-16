@@ -77,7 +77,7 @@
           .then(function (data) {
             var items = (data && data.items) || [];
             var genreItems = items.filter(function (it) {
-              return it && it.genre && it.genre.toLowerCase().indexOf(GENRE.toLowerCase()) !== -1;
+              return it && it.genre && it.genre.toLowerCase().indexOf(GENRE.toLowerCase()) !== -1 && it.type === 'pelicula';
             });
 
             var container = document.getElementById('genre-content');
