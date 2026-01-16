@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <title>Películas de Drama - Cine Argentum</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    body { color: #1f242d; background: #f5f5f5; }
+    .genre-wrap { max-width: 1200px; margin: 28px auto; padding: 20px; }
+    .genre-header { display: flex; align-items: center; gap: 16px; margin-bottom: 32px; }
+    .genre-badge { width: 80px; height: 80px; border-radius: 12px; background: linear-gradient(135deg, #9C27B0 0%, #7B1FA2 100%); display: flex; align-items: center; justify-content: center; color: #fff; font-weight: bold; font-size: 36px; box-shadow: 0 4px 12px rgba(156, 39, 176, 0.3); }
+    .genre-info h1 { margin: 0 0 6px; font-size: 28px; color: #2a2f38; }
+    .genre-info p { margin: 0; color: #666; }
+    .back-link { display: inline-block; margin-bottom: 16px; color: #ee4036; text-decoration: none; font-weight: 600; }
+    .genre-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 24px; }
+    .movie-card { background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); transition: transform 0.3s ease, box-shadow 0.3s ease; cursor: pointer; }
+    .movie-card:hover { transform: translateY(-4px); box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12); }
+    .movie-card a { text-decoration: none; color: inherit; display: block; }
+    .movie-poster { width: 100%; aspect-ratio: 2/3; overflow: hidden; background: #f0f0f0; }
+    .movie-poster img { width: 100%; height: 100%; object-fit: cover; }
+    .movie-info { padding: 12px; }
+    .movie-title { font-weight: 700; font-size: 0.95rem; margin-bottom: 4px; color: #2a2f38; line-height: 1.2; }
+    .movie-meta { font-size: 0.8rem; color: #999; }
+    .no-results { text-align: center; padding: 40px 20px; color: #999; }
+    @media (max-width: 768px) {
+      .genre-grid { grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 16px; }
+      .genre-header { flex-direction: column; align-items: flex-start; }
+      .genre-info h1 { font-size: 22px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="genre-wrap">
+    <a href="index.html" class="back-link" aria-label="Volver a la página anterior">← Volver</a>
+
+    <div class="genre-header">
+      <div class="genre-badge">🎬</div>
+      <div class="genre-info">
+        <h1>Películas de Drama</h1>
+        <p id="movie-count">Cargando películas...</p>
+      </div>
+    </div>
+
+    <div id="genre-content" class="genre-grid">
+      <!-- Las películas se cargarán aquí -->
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script>
+    (function () {
+      var GENRE = 'Drama';
+      var GENRE_ICON = '🎬';
+
+      function renderMovieCard(item) {
+        var placeholderV = 'images/verticals/placeholder-280x420.svg';
+        var imgSrc = (item.image && String(item.image).trim()) ? item.image : placeholderV;
+        var subtitle = (item.subtitle && String(item.subtitle).trim()) ? item.subtitle : item.year;
+        return '<div class="movie-card">'
+          + '<a href="show.html?id=' + encodeURIComponent(item.id) + '">'
+          + '<div class="movie-poster"><img src="' + imgSrc + '" loading="lazy" alt="' + (item.title || '') + '"></div>'
+          + '<div class="movie-info">'
+          + '<div class="movie-title">' + (item.title || '') + '</div>'
+          + '<div class="movie-meta">' + subtitle + '</div>'
+          + '</div>'
+          + '</a>'
+          + '</div>';
+      }
+
+      function renderGenre() {
+        fetch('data.json')
+          .then(function (r) {
+            if (!r.ok) throw new Error('No data');
+            return r.json();
+          })
+          .then(function (data) {
+            var items = (data && data.items) || [];
+            var genreItems = items.filter(function (it) {
+              return it && it.genre && it.genre.toLowerCase().indexOf(GENRE.toLowerCase()) !== -1;
+            });
+
+            var container = document.getElementById('genre-content');
+            var countEl = document.getElementById('movie-count');
+
+            if (genreItems.length === 0) {
+              container.innerHTML = '<div class="no-results">No se encontraron películas en este género.</div>';
+              countEl.textContent = 'Sin películas disponibles';
+              return;
+            }
+
+            countEl.textContent = genreItems.length + ' película' + (genreItems.length !== 1 ? 's' : '');
+            container.innerHTML = genreItems.map(renderMovieCard).join('');
+          })
+          .catch(function (e) {
+            console.error('Error cargando películas:', e);
+            document.getElementById('genre-content').innerHTML = '<div class="no-results">Error al cargar las películas. Intenta más tarde.</div>';
+          });
+      }
+
+      // Actualizar el badge del género
+      document.addEventListener('DOMContentLoaded', function () {
+        var badge = document.querySelector('.genre-badge');
+        if (badge) badge.textContent = GENRE_ICON;
+        renderGenre();
+      });
+    })();
+  </script>
+</body>
+</html>
