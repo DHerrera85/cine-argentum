@@ -4,107 +4,224 @@
   <meta charset="utf-8" />
   <title>Películas de Comedias - Cine Argentum</title>
   <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="css/lightslider.css" />
   <link rel="stylesheet" href="css/style.css" />
-  <style>
-    body { color: #1f242d; background: #f5f5f5; }
-    .genre-wrap { max-width: 1200px; margin: 28px auto; padding: 20px; }
-    .genre-header { display: flex; align-items: center; gap: 16px; margin-bottom: 32px; }
-    .genre-badge { width: 80px; height: 80px; border-radius: 12px; background: linear-gradient(135deg, #FF6B6B 0%, #FF5252 100%); display: flex; align-items: center; justify-content: center; color: #fff; font-weight: bold; font-size: 36px; box-shadow: 0 4px 12px rgba(255, 107, 107, 0.3); }
-    .genre-info h1 { margin: 0 0 6px; font-size: 28px; color: #2a2f38; }
-    .genre-info p { margin: 0; color: #666; }
-    .back-link { display: inline-block; margin-bottom: 16px; color: #ee4036; text-decoration: none; font-weight: 600; }
-    .genre-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 24px; }
-    .movie-card { background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); transition: transform 0.3s ease, box-shadow 0.3s ease; cursor: pointer; }
-    .movie-card:hover { transform: translateY(-4px); box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12); }
-    .movie-card a { text-decoration: none; color: inherit; display: block; }
-    .movie-poster { width: 100%; aspect-ratio: 2/3; overflow: hidden; background: #f0f0f0; }
-    .movie-poster img { width: 100%; height: 100%; object-fit: cover; }
-    .movie-info { padding: 12px; }
-    .movie-title { font-weight: 700; font-size: 0.95rem; margin-bottom: 4px; color: #2a2f38; line-height: 1.2; }
-    .movie-meta { font-size: 0.8rem; color: #999; }
-    .no-results { text-align: center; padding: 40px 20px; color: #999; }
-    @media (max-width: 768px) {
-      .genre-grid { grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 16px; }
-      .genre-header { flex-direction: column; align-items: flex-start; }
-      .genre-info h1 { font-size: 22px; }
-    }
-  </style>
 </head>
 <body>
-  <div class="genre-wrap">
-    <a href="index.html" class="back-link" aria-label="Volver a la página anterior">← Volver</a>
 
-    <div class="genre-header">
-      <div class="genre-badge">🎭</div>
-      <div class="genre-info">
-        <h1>Películas de Comedias</h1>
-        <p id="movie-count">Cargando películas...</p>
+<!-- Navegación -->
+<nav class="navbar">
+  <h1 class="logo">Cine Argentum - Comedias</h1>
+  <a href="index.html" class="back-link">← Volver</a>
+</nav>
+
+<!-- Comedias Destacadas (H) -->
+<section id="main">
+  <h1 class="showcase-heading">Comedias Destacadas</h1>
+  <ul class="slider-h cs-hidden">
+    <li class="item-a">
+      <div class="showcase-box">
+        <img src="images/horizontals-1024x576/me-case-con-un-boludo-2016-slide-1024x576.png" loading="lazy" alt="Me Casé con un Boludo"/>
       </div>
-    </div>
+      <div class="latest-b-text">
+        <strong>Me Casé con un Boludo</strong>
+        <p></p>
+      </div>
+    </li>
+    <li class="item-a">
+      <div class="showcase-box">
+        <img src="images/horizontals-1024x576/la-odisea-de-los-giles-2019-slide-1024x576.png" loading="lazy" alt="La Odisea de los Giles"/>
+      </div>
+      <div class="latest-b-text">
+        <strong>La Odisea de los Giles</strong>
+        <p></p>
+      </div>
+    </li>
+    <li class="item-a">
+      <div class="showcase-box">
+        <img src="images/horizontals-1024x576/homo-argentum-2025-slide-1024x576.png" loading="lazy" alt="Homo Argentum"/>
+      </div>
+      <div class="latest-b-text">
+        <strong>Homo Argentum</strong>
+        <p></p>
+      </div>
+    </li>
+    <li class="item-b">
+      <div class="showcase-box">
+        <img src="images/horizontals-1024x576/corazon-de-leon-2013-slide-1024x576.png" loading="lazy" alt="Corazón de León"/>
+      </div>
+      <div class="latest-b-text">
+        <strong>Corazón de León</strong>
+        <p></p>
+      </div>
+    </li>
+    <li class="item-b">
+      <div class="showcase-box">
+        <img src="images/horizontals-1024x576/papá-se-volvió-loco-slide-1024x576.png" loading="lazy" alt="Papá se Volvió Loco"/>
+      </div>
+      <div class="latest-b-text">
+        <strong>Papá se Volvió Loco</strong>
+        <p></p>
+      </div>
+    </li>
+    <li class="item-b">
+      <div class="showcase-box">
+        <img src="images/horizontals-1024x576/un-novio-para-mi-mujer-2008-slide-1024x576.png" loading="lazy" alt="Un Novio para mi Mujer"/>
+      </div>
+      <div class="latest-b-text">
+        <strong>Un Novio para mi Mujer</strong>
+        <p></p>
+      </div>
+    </li>
+  </ul>
+</section>
 
-    <div id="genre-content" class="genre-grid">
-      <!-- Las películas se cargarán aquí -->
-    </div>
-  </div>
+<!-- Comedias de Guillermo Francella (V) -->
+<section id="latest">
+  <h2 class="latest-heading">Comedias de Guillermo Francella</h2>
+  <ul class="slider-v cs-hidden">
+    <li class="item-a"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/homo-argentum-2025-poster-280x420.png" loading="lazy" alt="Homo Argentum"></div><div class="latest-b-text"><strong>Homo Argentum</strong><p></p></div></div></li>
+    <li class="item-b"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/granizo-poster-280x420.png" loading="lazy" alt="Granizo"></div><div class="latest-b-text"><strong>Granizo</strong><p></p></div></div></li>
+    <li class="item-c"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/corazon-de-leon-2013-poster-280x420.png" loading="lazy" alt="Corazón de león"></div><div class="latest-b-text"><strong>Corazón de león</strong><p></p></div></div></li>
+    <li class="item-d"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/papá-se-volvió-loco-poster-280x420.png" loading="lazy" alt="Papá se Volvió Loco"></div><div class="latest-b-text"><strong>Papá se Volvió Loco</strong><p></p></div></div></li>
+    <li class="item-e"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/los-incorregibles-poster-280x420.png" loading="lazy" alt="Los Incorregibles"></div><div class="latest-b-text"><strong>Los Incorregibles</strong><p></p></div></div></li>
+    <li class="item-f"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/mi-obra-maestra-poster-280x420.png" loading="lazy" alt="Mi obra maestra"></div><div class="latest-b-text"><strong>Mi obra maestra</strong><p></p></div></div></li>
+  </ul>
+</section>
 
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-  <script>
-    (function () {
-      var GENRE = 'Comedias';
-      var GENRE_ICON = '🎭';
+<!-- Comedias de Adrián Suar (V) -->
+<section id="latest">
+  <h2 class="latest-heading">Comedias de Adrián Suar</h2>
+  <ul class="slider-v cs-hidden">
+    <li class="item-a"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/me-case-con-un-boludo-2016-poster-280x420.png" loading="lazy" alt="Me casé con un boludo"></div><div class="latest-b-text"><strong>Me casé con un boludo</strong><p></p></div></div></li>
+    <li class="item-b"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/un-novio-para-mi-mujer-2008-poster-280x420.png" loading="lazy" alt="Un Novio para mi Mujer"></div><div class="latest-b-text"><strong>Un Novio para mi Mujer</strong><p></p></div></div></li>
+    <li class="item-c"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/corazon-loco-poster-280x420.png" loading="lazy" alt="Corazón Loco"></div><div class="latest-b-text"><strong>Corazón Loco</strong><p></p></div></div></li>
+    <li class="item-d"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/no-puedo-vivir-sin-ti-poster-280x420.png" loading="lazy" alt="No Puedo Vivir Sin Ti"></div><div class="latest-b-text"><strong>No Puedo Vivir Sin Ti</strong><p></p></div></div></li>
+    <li class="item-e"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/el-futbol-o-yo-poster-280x420.png" loading="lazy" alt="El fútbol o yo"></div><div class="latest-b-text"><strong>El fútbol o yo</strong><p></p></div></div></li>
+    <li class="item-f"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/dos-mas-dos-poster-280x420.png" loading="lazy" alt="Dos más dos"></div><div class="latest-b-text"><strong>Dos más dos</strong><p></p></div></div></li>
+    <li class="item-a"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/igualita-a-mi-poster-280x420.png" loading="lazy" alt="Igualita a mí"></div><div class="latest-b-text"><strong>Igualita a mí</strong><p></p></div></div></li>
+    <li class="item-b"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/30-noches-con-mi-ex-poster-280x420.png" loading="lazy" alt="30 Noches con mi Ex"></div><div class="latest-b-text"><strong>30 Noches con mi Ex</strong><p></p></div></div></li>
+    <li class="item-c"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/cohen-vs-rosi-poster-280x420.png" loading="lazy" alt="Cohen vs Rosi"></div><div class="latest-b-text"><strong>Cohen vs Rosi</strong><p></p></div></div></li>
+    <li class="item-d"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/mazel-tov-2025-poster-280x420.png" loading="lazy" alt="Mazel Tov"></div><div class="latest-b-text"><strong>Mazel Tov</strong><p></p></div></div></li>
+  </ul>
+</section>
 
-      function renderMovieCard(item) {
-        var placeholderV = 'images/verticals/placeholder-280x420.svg';
-        var imgSrc = (item.image && String(item.image).trim()) ? item.image : placeholderV;
-        var subtitle = (item.subtitle && String(item.subtitle).trim()) ? item.subtitle : item.year;
-        return '<div class="movie-card">'
-          + '<a href="show.html?id=' + encodeURIComponent(item.id) + '">'
-          + '<div class="movie-poster"><img src="' + imgSrc + '" loading="lazy" alt="' + (item.title || '') + '"></div>'
-          + '<div class="movie-info">'
-          + '<div class="movie-title">' + (item.title || '') + '</div>'
-          + '<div class="movie-meta">' + subtitle + '</div>'
-          + '</div>'
-          + '</a>'
-          + '</div>';
-      }
+<!-- Comedias en Streaming (V) -->
+<section id="latest">
+  <h2 class="latest-heading">Comedias en Streaming</h2>
+  <ul class="slider-v cs-hidden">
+    <li class="item-a"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/casi-muerta-poster-280x420.png" loading="lazy" alt="Casi Muerta"></div><div class="latest-b-text"><strong>Casi Muerta</strong><p></p></div></div></li>
+    <li class="item-b"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/blondi-poster-280x420.png" loading="lazy" alt="Blondi"></div><div class="latest-b-text"><strong>Blondi</strong><p></p></div></div></li>
+    <li class="item-c"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/matrimillas-poster-280x420.png" loading="lazy" alt="Matrimillas"></div><div class="latest-b-text"><strong>Matrimillas</strong><p></p></div></div></li>
+    <li class="item-d"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/puan-poster-280x420.png" loading="lazy" alt="Puan"></div><div class="latest-b-text"><strong>Puan</strong><p></p></div></div></li>
+    <li class="item-e"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/el-hombre-que-amaba-los-platos-voladores-poster-280x420.png" loading="lazy" alt="El Hombre que Amaba los Platos Voladores"></div><div class="latest-b-text"><strong>El Hombre que Amaba los Platos Voladores</strong><p></p></div></div></li>
+    <li class="item-f"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/ex-casados-poster-280x420.png" loading="lazy" alt="Ex Casados"></div><div class="latest-b-text"><strong>Ex Casados</strong><p></p></div></div></li>
+    <li class="item-a"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/el-gerente-poster-280x420.png" loading="lazy" alt="El Gerente"></div><div class="latest-b-text"><strong>El Gerente</strong><p></p></div></div></li>
+    <li class="item-b"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/las-hermanas-fantasticas-poster-280x420.png" loading="lazy" alt="Las Hermanas Fantásticas"></div><div class="latest-b-text"><strong>Las Hermanas Fantásticas</strong><p></p></div></div></li>
+  </ul>
+</section>
 
-      function renderGenre() {
-        fetch('data.json')
-          .then(function (r) {
-            if (!r.ok) throw new Error('No data');
-            return r.json();
-          })
-          .then(function (data) {
-            var items = (data && data.items) || [];
-            var genreItems = items.filter(function (it) {
-              return it && it.genre && it.genre.toLowerCase().indexOf(GENRE.toLowerCase()) !== -1;
-            });
+<!-- Grandes Éxitos (V) -->
+<section id="latest">
+  <h2 class="latest-heading">Grandes Éxitos</h2>
+  <ul class="slider-v cs-hidden">
+    <li class="item-c"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/la-odisea-de-los-giles-2019-poster-280x420.png" loading="lazy" alt="La odisea de los giles"></div><div class="latest-b-text"><strong>La odisea de los giles</strong><p></p></div></div></li>
+    <li class="item-d"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/un-cuento-chino-poster-280x420.png" loading="lazy" alt="Un cuento chino"></div><div class="latest-b-text"><strong>Un cuento chino</strong><p></p></div></div></li>
+    <li class="item-e"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/esa-maldita-costilla-poster-280x420.png" loading="lazy" alt="Esa maldita costilla"></div><div class="latest-b-text"><strong>Esa maldita costilla</strong><p></p></div></div></li>
+    <li class="item-f"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/re-loca-poster-280x420.png" loading="lazy" alt="Re loca"></div><div class="latest-b-text"><strong>Re loca</strong><p></p></div></div></li>
+    <li class="item-a"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/el-cuento-de-las-comadrejas-poster-280x420.png" loading="lazy" alt="El cuento de las comadrejas"></div><div class="latest-b-text"><strong>El cuento de las comadrejas</strong><p></p></div></div></li>
+    <li class="item-b"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/sin-hijos-poster-280x420.png" loading="lazy" alt="Sin hijos"></div><div class="latest-b-text"><strong>Sin hijos</strong><p></p></div></div></li>
+  </ul>
+</section>
 
-            var container = document.getElementById('genre-content');
-            var countEl = document.getElementById('movie-count');
+<!-- La Saga "Bañeros" y "Super Agentes" (V) -->
+<section id="latest">
+  <h2 class="latest-heading">La Saga "Bañeros" y "Super Agentes"</h2>
+  <ul class="slider-v cs-hidden">
+    <li class="item-a"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/baneros-3-todopoderosos-poster-280x420.png" loading="lazy" alt="Bañeros 3, todopoderosos"></div><div class="latest-b-text"><strong>Bañeros 3, todopoderosos</strong><p></p></div></div></li>
+    <li class="item-b"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/baneros-4-los-rompeolas-poster-280x420.png" loading="lazy" alt="Bañeros 4: los rompeolas"></div><div class="latest-b-text"><strong>Bañeros 4: los rompeolas</strong><p></p></div></div></li>
+    <li class="item-c"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/baneros-5-lentos-y-cargosos-poster-280x420.png" loading="lazy" alt="Bañeros 5: Lentos y cargosos"></div><div class="latest-b-text"><strong>Bañeros 5: Lentos y cargosos</strong><p></p></div></div></li>
+    <li class="item-d"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/los-super-agentes-la-nueva-generacion-poster-280x420.png" loading="lazy" alt="Los Super Agentes: La Nueva Generación"></div><div class="latest-b-text"><strong>Los Super Agentes: La Nueva Generación</strong><p></p></div></div></li>
+  </ul>
+</section>
 
-            if (genreItems.length === 0) {
-              container.innerHTML = '<div class="no-results">No se encontraron películas en este género.</div>';
-              countEl.textContent = 'Sin películas disponibles';
-              return;
-            }
+<!-- Historias de Amigos (V) -->
+<section id="latest">
+  <h2 class="latest-heading">Historias de Amigos</h2>
+  <ul class="slider-v cs-hidden">
+    <li class="item-a"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/socios-por-accidente-poster-280x420.png" loading="lazy" alt="Socios por accidente"></div><div class="latest-b-text"><strong>Socios por accidente</strong><p></p></div></div></li>
+    <li class="item-b"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/permitidos-poster-280x420.png" loading="lazy" alt="Permitidos"></div><div class="latest-b-text"><strong>Permitidos</strong><p></p></div></div></li>
+    <li class="item-c"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/casi-leyendas-poster-280x420.png" loading="lazy" alt="Casi leyendas"></div><div class="latest-b-text"><strong>Casi leyendas</strong><p></p></div></div></li>
+    <li class="item-d"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/extranos-en-la-noche-poster-280x420.png" loading="lazy" alt="Extraños en la noche"></div><div class="latest-b-text"><strong>Extraños en la noche</strong><p></p></div></div></li>
+    <li class="item-e"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/la-ultima-fiesta-poster-280x420.png" loading="lazy" alt="La última fiesta"></div><div class="latest-b-text"><strong>La última fiesta</strong><p></p></div></div></li>
+    <li class="item-f"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/voley-poster-280x420.png" loading="lazy" alt="Voley"></div><div class="latest-b-text"><strong>Voley</strong><p></p></div></div></li>
+    <li class="item-a"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/dias-de-vinilo-poster-280x420.png" loading="lazy" alt="Días de vinilo"></div><div class="latest-b-text"><strong>Días de vinilo</strong><p></p></div></div></li>
+    <li class="item-b"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/vino-para-robar-poster-280x420.png" loading="lazy" alt="Vino para robar"></div><div class="latest-b-text"><strong>Vino para robar</strong><p></p></div></div></li>
+    <li class="item-c"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/dejala-correr-poster-280x420.png" loading="lazy" alt="Déjala Correr"></div><div class="latest-b-text"><strong>Déjala Correr</strong><p></p></div></div></li>
+    <li class="item-d"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/solo-por-hoy-poster-280x420.png" loading="lazy" alt="Sólo por Hoy"></div><div class="latest-b-text"><strong>Sólo por Hoy</strong><p></p></div></div></li>
+  </ul>
+</section>
 
-            countEl.textContent = genreItems.length + ' película' + (genreItems.length !== 1 ? 's' : '');
-            container.innerHTML = genreItems.map(renderMovieCard).join('');
-          })
-          .catch(function (e) {
-            console.error('Error cargando películas:', e);
-            document.getElementById('genre-content').innerHTML = '<div class="no-results">Error al cargar las películas. Intenta más tarde.</div>';
-          });
-      }
+<!-- Para Seguir Riendo (V) -->
+<section id="latest">
+  <h2 class="latest-heading">Para Seguir Riendo</h2>
+  <ul class="slider-v cs-hidden">
+    <li class="item-a"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/dos-hermanos-poster-280x420.png" loading="lazy" alt="Dos hermanos"></div><div class="latest-b-text"><strong>Dos hermanos</strong><p></p></div></div></li>
+    <li class="item-b"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/mi-primera-boda-poster-280x420.png" loading="lazy" alt="Mi primera boda"></div><div class="latest-b-text"><strong>Mi primera boda</strong><p></p></div></div></li>
+    <li class="item-c"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/no-soy-tu-mami-poster-280x420.png" loading="lazy" alt="No soy tu mami"></div><div class="latest-b-text"><strong>No soy tu mami</strong><p></p></div></div></li>
+    <li class="item-d"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/mas-respeto-que-soy-tu-madre-poster-280x420.png" loading="lazy" alt="Más Respeto que soy Tu Madre"></div><div class="latest-b-text"><strong>Más Respeto que soy Tu Madre</strong><p></p></div></div></li>
+    <li class="item-e"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/culpa-cero-poster-280x420.png" loading="lazy" alt="Culpa Cero"></div><div class="latest-b-text"><strong>Culpa Cero</strong><p></p></div></div></li>
+    <li class="item-f"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/el-rey-del-once-poster-280x420.png" loading="lazy" alt="El rey del Once"></div><div class="latest-b-text"><strong>El rey del Once</strong><p></p></div></div></li>
+    <li class="item-a"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/transmitvah-poster-280x420.png" loading="lazy" alt="Transmitvah"></div><div class="latest-b-text"><strong>Transmitvah</strong><p></p></div></div></li>
+  </ul>
+</section>
 
-      // Actualizar el badge del género
-      document.addEventListener('DOMContentLoaded', function () {
-        var badge = document.querySelector('.genre-badge');
-        if (badge) badge.textContent = GENRE_ICON;
-        renderGenre();
-      });
-    })();
-  </script>
+<!-- Comedias Negras (V) -->
+<section id="latest">
+  <h2 class="latest-heading">Comedias Negras</h2>
+  <ul class="slider-v cs-hidden">
+    <li class="item-a"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/peter-capusoto-y-sus-3-dimensiones-poster-280x420.png" loading="lazy" alt="Peter Capusoto y sus 3 dimensiones"></div><div class="latest-b-text"><strong>Peter Capusoto y sus 3 dimensiones</strong><p></p></div></div></li>
+    <li class="item-b"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/pajaros-volando-poster-280x420.png" loading="lazy" alt="Pájaros volando"></div><div class="latest-b-text"><strong>Pájaros volando</strong><p></p></div></div></li>
+    <li class="item-c"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/kryptonita-poster-280x420.png" loading="lazy" alt="Kryptonita"></div><div class="latest-b-text"><strong>Kryptonita</strong><p></p></div></div></li>
+    <li class="item-d"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/no-me-rompan-poster-280x420.png" loading="lazy" alt="No Me Rompan"></div><div class="latest-b-text"><strong>No Me Rompan</strong><p></p></div></div></li>
+    <li class="item-e"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/27-el-club-de-los-malditos-poster-280x420.png" loading="lazy" alt="27: El club de los malditos"></div><div class="latest-b-text"><strong>27: El club de los malditos</strong><p></p></div></div></li>
+  </ul>
+</section>
+
+<!-- footer -->
+<footer>
+  <p>Cine Argentum - Comedias</p>
+  <p>Copyright 2025 by Dherrera</p>
+</footer>
+
+<!-- JS: jQuery → LightSlider → init -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="js/lightslider.js"></script>
+<script src="js/script.js"></script>
+
+<style>
+  .navbar {
+    background: #1f242d;
+    color: #fff;
+    padding: 16px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #FF6B6B;
+  }
+  .navbar h1 {
+    margin: 0;
+    font-size: 20px;
+  }
+  .back-link {
+    color: #FF6B6B;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  .back-link:hover {
+    color: #FF5252;
+  }
+</style>
+
 </body>
 </html>
