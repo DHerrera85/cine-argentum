@@ -142,24 +142,35 @@ nav .menu li a:hover{
 .slider-h .latest-b-text p{ color:#9ca3af; margin:0; }
 
 /* ========== SLIDER VERTICALES (Desktop: lightSlider controla) ========== */
-.slider-v .latest-box{
-  border-radius:12px; overflow:hidden; background:#1a2129;
-  box-shadow:0 10px 26px rgba(0,0,0,0.5);
-  display:flex; flex-direction:column; align-items:center;
-  margin:10px 8px;
+
+/* VERTICALES: 5 pósters completos (20% cada uno, margen incluido) en escritorio */
+.slider-v .latest-box {
+  width: 220px;
+  max-width: 220px;
+  min-width: 180px;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #1a2129;
+  box-shadow: 0 10px 26px rgba(0,0,0,0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 10px;
 }
-.slider-v .latest-b-img{
-  width:100%; 
-  aspect-ratio: 2/3; /* Cambio: usar aspect-ratio en lugar de altura fija */
-  overflow:hidden; 
-  position:relative;
-  border-radius:12px;
+.slider-v .latest-b-img {
+  width: 100%;
+  aspect-ratio: 2/3;
+  overflow: hidden;
+  position: relative;
+  border-radius: 12px;
 }
-.slider-v .latest-b-img img{
-  width:100%; height:100%; object-fit:cover;
-  object-position:center top; /* Cambio: priorizar la parte superior de la imagen */
-  display:block;
-  border-radius:12px;
+.slider-v .latest-b-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+  border-radius: 12px;
 }
 .slider-v .latest-b-text{
 /* Ajustes para centrar las imágenes en los sliders */
@@ -343,19 +354,20 @@ footer p{ color:#b0b0b0; margin:0; font-size:.9rem; }
     margin:0 8px 14px;
   }
   
-  /* VERTICALES: 2 pósters completos (47% cada uno) */
-  .slider-v .latest-box{
-    width:47vw;
-    max-width:220px;
-    margin:10px 1.5%;
+
+  /* VERTICALES: 2 pósters completos (47% cada uno) en tablet, sin cambios */
+  .slider-v .latest-box {
+    width: 47vw;
+    max-width: 220px;
+    margin: 10px 1.5%;
   }
-  .slider-v .latest-b-img{ 
-    aspect-ratio: 2/3; /* Mantener aspect-ratio */
-    border-radius:12px;
+  .slider-v .latest-b-img {
+    aspect-ratio: 2/3;
+    border-radius: 12px;
   }
-  .slider-v .latest-b-img img{
-    object-position:center top; /* Priorizar parte superior */
-    border-radius:12px;
+  .slider-v .latest-b-img img {
+    object-position: center top;
+    border-radius: 12px;
   }
   
   /* TOP 10 MÓVIL: 2 pósters con números en esquina superior */
