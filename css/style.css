@@ -146,7 +146,7 @@ nav .menu li a:hover{
   border-radius:12px; overflow:hidden; background:#1a2129;
   box-shadow:0 10px 26px rgba(0,0,0,0.5);
   display:flex; flex-direction:column; align-items:center;
-    margin:10px 18px 10px 32px; /* Aumentar margen izquierdo */
+  margin:10px 8px;
 }
 .slider-v .latest-b-img{
   width:100%; 
@@ -347,7 +347,7 @@ footer p{ color:#b0b0b0; margin:0; font-size:.9rem; }
   .slider-v .latest-box{
     width:47vw;
     max-width:220px;
-      margin:10px 1.5% 10px 24px; /* Ajustar margen */
+    margin:10px 1.5%;
   }
   .slider-v .latest-b-img{ 
     aspect-ratio: 2/3; /* Mantener aspect-ratio */
@@ -362,7 +362,7 @@ footer p{ color:#b0b0b0; margin:0; font-size:.9rem; }
   .slider-v.top10 .latest-box{
     width:42vw;
     min-width:150px;
-      margin:10px 2% 10px 18px; /* Ajustar margen */
+    max-width:170px;
     padding-left:0;
     margin:10px 1%;
   }
