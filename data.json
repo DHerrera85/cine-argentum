@@ -1606,7 +1606,7 @@
       "subtitle": "Comedia",
       "id": "P1083",
       "producer": "Netflix",
-      "director": "Marcos Carnevale"
+        "director": "Marcos Carnevale",
       "release_date": "2020-09-09"
     },
     {
@@ -1703,7 +1703,7 @@
       "subtitle": "Comedia",
       "id": "P1088",
       "producer": "Netflix",
-      "director": "Sebastián De Caro"
+        "director": "Sebastián De Caro",
       "release_date": "2022-12-07"
     },
     {
@@ -1940,7 +1940,7 @@
       "subtitle": "Comedia",
       "id": "P1100",
       "producer": "Netflix",
-      "director": "Diego Lerman"
+        "director": "Diego Lerman",
       "release_date": "2024-10-10"
     },
     {
@@ -1961,7 +1961,7 @@
       "id": "P1101",
       "viewers": 32605,
       "producer": "Netflix",
-      "director": "Benjamín Ávila"
+        "director": "Benjamín Ávila",
       "release_date": "2025-09-04"
     },
     {
