@@ -1,3 +1,9 @@
+@media (max-width: 600px) {
+  .slider-v {
+    padding-left: 32px;
+    box-sizing: border-box;
+  }
+}
 /* ========== RESET & BASE ========== */
 *{ box-sizing:border-box; }
 html,body{ margin:0; padding:0; }
