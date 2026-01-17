@@ -271,7 +271,7 @@
 
       // VERTICALES (genéricos - NO Top 10)
       $('.slider-v:not(.top10)').lightSlider({
-        item: 6,
+        item: 5,
         slideMove: 1,
         slideMargin: 12,
         loop: false,
