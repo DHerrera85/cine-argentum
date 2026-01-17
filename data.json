@@ -178,6 +178,71 @@
       "director": "Juan Pablo Buscarini"
     },
     {
+      "title": "Las Grietas de Jara",
+      "genre": "Policial",
+      "year": "2018",
+      "actors": [
+        "Oscar Martínez",
+        "Joaquín Furriel",
+        "Soledad Villamil",
+        "Santiago Segura",
+        "Laura Novoa"
+      ],
+      "synopsis": "La llegada de Leonor a un estudio de arquitectura reabre un oscuro episodio del pasado ligado a Nelson Jara, un vecino afectado por una obra mal hecha. A través de recuerdos fragmentados, se revela una verdad inquietante que los arquitectos intentan ocultar.",
+      "channel": "Cine",
+      "image": "images/verticals/las-grietas-de-jara-2018-poster-280x420.png",
+      "orientation": "vertical",
+      "type": "pelicula",
+      "subtitle": "Policial",
+      "id": "P1105",
+      "viewers": 73384,
+      "producer": "MyS Producción, Cindy Teperman, Telefe, Non Stop, Buena Vista Distribution",
+      "director": "Nicolás Gil Lavedra",
+      "release_date": "2018-01-18"
+    },
+    {
+      "title": "Parking",
+      "genre": "Policial",
+      "year": "2025",
+      "actors": [
+        "Eugenia Suárez",
+        "Marc Clotet",
+        "Rafael Spregelburd",
+        "Juan Leyrado"
+      ],
+      "synopsis": "Mateo, un criminal con arresto domiciliario, ve frustrado su plan de fuga cuando una mujer misteriosa aparece en su turno nocturno de un estacionamiento. Tras presenciar un homicidio, ambos deberán huir juntos y sobrevivir a una persecución mortal dentro del edificio.",
+      "channel": "Streaming",
+      "image": "images/verticals/parking-2025-poster-280x420.png",
+      "orientation": "vertical",
+      "type": "pelicula",
+      "subtitle": "Policial",
+      "id": "P1106",
+      "viewers": 0,
+      "producer": "Disney+, Bourke Films, La Productora Films",
+      "director": "Agustín Rolandelli",
+      "release_date": "2025-10-17"
+    },
+    {
+      "title": "El Duelo",
+      "genre": "Policial",
+      "year": "2023",
+      "actors": [
+        "Eugenia Suárez",
+        "Joaquín Furriel"
+      ],
+      "synopsis": "Ernesto, hundido en la depresión, contrata a un sicario para que lo mate tras descubrir la infidelidad de su esposa. Todo cambia cuando se enamora de Rita y debe emprender una carrera desesperada para salvar su vida y ese amor inesperado.",
+      "channel": "Cine",
+      "image": "images/verticals/el-duelo-2023-poster-280x420.png",
+      "orientation": "vertical",
+      "type": "pelicula",
+      "subtitle": "Policial",
+      "id": "P1107",
+      "viewers": 16429,
+      "producer": "Bourke Films, Star Distribution",
+      "director": "Augusto Tejada",
+      "release_date": "2023-10-12"
+    },
+    {
       "title": "Plata quemada",
       "genre": "Policial",
       "year": "2000",
