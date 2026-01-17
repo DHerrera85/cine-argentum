@@ -2,223 +2,109 @@
 <html lang="es">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Animación - Cine Argentum</title>
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="css/style.css?v=2.0" />
-  <link rel="stylesheet" href="css/lightslider.css?v=2.0" />
-
-  <!-- Fuente -->
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins&display=swap" />
-
-  <!-- Favicons para todos los dispositivos -->
-  <link rel="icon" type="image/png" sizes="32x32" href="images/fav_icon.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="images/fav_icon.png" />
-  <link rel="shortcut icon" href="images/fav_icon.png" />
-  <link rel="apple-touch-icon" sizes="180x180" href="images/fav_icon.png" />
-  <link rel="apple-touch-icon" sizes="152x152" href="images/fav_icon.png" />
-  <link rel="apple-touch-icon" sizes="120x120" href="images/fav_icon.png" />
-  <link rel="apple-touch-icon" sizes="76x76" href="images/fav_icon.png" />
-  <link rel="icon" type="image/png" sizes="192x192" href="images/fav_icon.png" />
-  <link rel="icon" type="image/png" sizes="512x512" href="images/fav_icon.png" />
-
-  <!-- Meta tags para PWA y móviles -->
-  <meta name="theme-color" content="#141a21" />
-  <meta name="msapplication-TileColor" content="#141a21" />
-  <meta name="msapplication-TileImage" content="images/fav_icon.png" />
-
-  <!-- Font Awesome (CSS) -->
-  <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-        referrerpolicy="no-referrer" />
-
+  <title>Películas de Animación - Cine Argentum</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="css/style.css" />
   <style>
-    body{ font-family: Poppins, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
-    img{ height:auto; }
-    @media (min-width: 768px){ .menu-icon{ display:none; } }
+    body { color: #1f242d; background: #f5f5f5; }
+    .genre-wrap { max-width: 1200px; margin: 28px auto; padding: 20px; }
+    .genre-header { display: flex; align-items: center; gap: 16px; margin-bottom: 32px; }
+    .genre-badge { width: 80px; height: 80px; border-radius: 12px; background: linear-gradient(135deg, #66BB6A 0%, #43A047 100%); display: flex; align-items: center; justify-content: center; color: #fff; font-weight: bold; font-size: 36px; box-shadow: 0 4px 12px rgba(102, 187, 106, 0.3); }
+    .genre-info h1 { margin: 0 0 6px; font-size: 28px; color: #2a2f38; }
+    .genre-info p { margin: 0; color: #666; }
+    .back-link { display: inline-block; margin-bottom: 16px; color: #ee4036; text-decoration: none; font-weight: 600; }
+    .genre-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 24px; }
+    .movie-card { background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); transition: transform 0.3s ease, box-shadow 0.3s ease; cursor: pointer; }
+    .movie-card:hover { transform: translateY(-4px); box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12); }
+    .movie-card a { text-decoration: none; color: inherit; display: block; }
+    .movie-poster { width: 100%; aspect-ratio: 2/3; overflow: hidden; background: #f0f0f0; }
+    .movie-poster img { width: 100%; height: 100%; object-fit: cover; }
+    .movie-info { padding: 12px; }
+    .movie-title { font-weight: 700; font-size: 0.95rem; margin-bottom: 4px; color: #2a2f38; line-height: 1.2; }
+    .movie-meta { font-size: 0.8rem; color: #999; }
+    .no-results { text-align: center; padding: 40px 20px; color: #999; }
+    @media (max-width: 768px) {
+      .genre-grid { grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 16px; }
+      .genre-header { flex-direction: column; align-items: flex-start; }
+      .genre-info h1 { font-size: 22px; }
+    }
   </style>
 </head>
 <body>
+  <div class="genre-wrap">
+    <a href="index.html" class="back-link" aria-label="Volver a la página anterior">← Volver</a>
 
-<!-- NAV -->
-<nav class="sa-nav">
-  <a href="index.html" class="logo" aria-label="Argentina Content">
-    <img src="images/logos/cine-argentum-logo.png" alt="Argentina Content">
-  </a>
-
-  <!-- Buscador -->
-  <form class="search" role="search" id="headerSearch">
-    <input type="search" name="q" placeholder="Encontrá tu Película Favorita" aria-label="Buscar series" />
-    <button type="submit" class="search-btn" aria-label="Buscar">
-      <i class="fas fa-search" aria-hidden="true"></i>
-    </button>
-  </form>
-
-  <!-- Toggle móvil -->
-  <input class="menu-btn" type="checkbox" id="menu-btn" aria-hidden="true" />
-  <label class="menu-icon" for="menu-btn" aria-label="Abrir menú">
-    <span class="nav-icon" aria-hidden="true"></span>
-  </label>
-
-  <!-- Menú -->
-  <ul class="menu nav-options">
-    <li><a href="streaming.html">Streaming</a></li>
-    <li><a href="articulos.html">Artículos</a></li>
-    <li><a href="tiras_2000.html">Tiras 2000</a></li>
-    <li><a href="tiras_2010.html">Tiras 2010</a></li>
-    <li><a href="juveniles.html">Juveniles</a></li>
-    <li><a href="unitarios.html">Unitarios</a></li>
-  </ul>
-</nav>
-
-
-<!-- Botón Volver simple -->
-<div style="margin: 24px 0 8px 8px;">
-  <a href="index.html" style="text-decoration: none; color: #e74c3c; font-size: 1.4rem; font-weight: bold; letter-spacing: 0.5px;">
-    ← Volver
-  </a>
-</div>
-
-<!-- Grandes Éxitos Animados (H) -->
-<section id="main">
-  <h1 class="showcase-heading">Grandes Éxitos Animados</h1>
-  <ul class="slider-h cs-hidden">
-    <li class="item-a">
-      <a href="show.html?id=P1006" style="text-decoration:none; color:inherit;">
-      <div class="showcase-box">
-        <img src="images/horizontals-1024x576/manuelita-1999-slide-1024x576.png" loading="lazy" alt="Manuelita"/>
+    <div class="genre-header">
+      <div class="genre-badge">✨</div>
+      <div class="genre-info">
+        <h1>Películas de Animación</h1>
+        <p id="movie-count">Cargando películas...</p>
       </div>
-      <strong style="display:block; margin-top:8px; text-align:center;">Manuelita (1999)</strong>
-      <span class="viewers" style="display:block; text-align:center; color:#aaa; font-size:0.95em;">2.210.600 espectadores</span>
-      </a>
-    </li>
-    <li class="item-b">
-      <a href="show.html?id=P1160" style="text-decoration:none; color:inherit;">
-      <div class="showcase-box">
-        <img src="images/horizontals-1024x576/metegol-2013-slide-1024x576.png" loading="lazy" alt="Metegol"/>
-      </div>
-      <strong style="display:block; margin-top:8px; text-align:center;">Metegol (2013)</strong>
-      <span class="viewers" style="display:block; text-align:center; color:#aaa; font-size:0.95em;">2.139.844 espectadores</span>
-      </a>
-    </li>
-    <li class="item-c">
-      <a href="show.html?id=P1022" style="text-decoration:none; color:inherit;">
-      <div class="showcase-box">
-        <img src="images/horizontals-1024x576/patoruzito-2004-slide-1024x576.png" loading="lazy" alt="Patoruzito"/>
-      </div>
-      <strong style="display:block; margin-top:8px; text-align:center;">Patoruzito (2004)</strong>
-      <span class="viewers" style="display:block; text-align:center; color:#aaa; font-size:0.95em;">1.996.738 espectadores</span>
-      </a>
-    </li>
-    <li class="item-d">
-      <a href="show.html?id=P1167" style="text-decoration:none; color:inherit;">
-      <div class="showcase-box">
-        <img src="images/horizontals-1024x576/corazon-pantriste-2000-slide-1024x576.png" loading="lazy" alt="Corazón, las alegrías de Pantriste"/>
-      </div>
-      <strong style="display:block; margin-top:8px; text-align:center;">Corazón, las alegrías de Pantriste (2000)</strong>
-      <span class="viewers" style="display:block; text-align:center; color:#aaa; font-size:0.95em;">1.030.126 espectadores</span>
-      </a>
-    </li>
-  </ul>
-</section>
+    </div>
 
-<!-- Personajes de Manuel García-Ferré (V) -->
-<section id="garcia-ferre">
-  <h2 class="latest-heading">Personajes de Manuel García-Ferré</h2>
-    <ul class="slider-v cs-hidden">
-      <li class="item-a"><a href="show.html?id=P1006"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/manuelita-1999-poster-280x420.png" loading="lazy" alt="Manuelita"></div></div><strong style="display:block; margin-top:8px; text-align:center;">Manuelita (1999)</strong><span class="viewers" style="display:block; text-align:center; color:#aaa; font-size:0.95em;">2.210.600 espectadores</span></a></li>
-      <li class="item-b"><a href="#"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/corazon-pantriste-poster-2000-280x420.png" loading="lazy" alt="Corazón: Las Aventuras de Pantriste"></div></div><strong style="display:block; margin-top:8px; text-align:center;">Corazón: Las Aventuras de Pantriste (2000)</strong><span class="viewers" style="display:block; text-align:center; color:#aaa; font-size:0.95em;">1.030.126 espectadores</span></a></li>
-        <li class="item-b"><a href="show.html?id=P1167"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/corazon-pantriste-poster-2000-280x420.png" loading="lazy" alt="Corazón: Las Aventuras de Pantriste"></div></div><strong style="display:block; margin-top:8px; text-align:center;">Corazón: Las Aventuras de Pantriste (2000)</strong><span class="viewers" style="display:block; text-align:center; color:#aaa; font-size:0.95em;">1.030.126 espectadores</span></a></li>
-      <li class="item-c"><a href="#"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/soledad-y-larguirucho-2012-poster-280x420.png" loading="lazy" alt="Soledad y Larguirucho"></div></div><strong style="display:block; margin-top:8px; text-align:center;">Soledad y Larguirucho (2012)</strong></a></li>
-    <li class="item-c"><a href="show.html?id=P1048"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/soledad-y-larguirucho-2012-poster-280x420.png" loading="lazy" alt="Soledad y Larguirucho"></div></div><strong style="display:block; margin-top:8px; text-align:center;">Soledad y Larguirucho (2012)</strong></a></li>
-    <li class="item-c"><a href="show.html?id=P1152"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/dibu-3-gran-aventura-2002-poster-280x420.png" loading="lazy" alt="Dibu 3: La Gran Aventura"></div></div><strong style="display:block; margin-top:8px; text-align:center;">Dibu 3: La Gran Aventura (2002)</strong><span class="viewers" style="display:block; margin-top:8px; text-align:center; color:#aaa; font-size:0.95em;">238.504 espectadores</span></a></li>
-    <li class="item-b"><a href="show.html?id=P1218"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/patoruzito2-pelicula-2006-poster-280x420.png" loading="lazy" alt="Patoruzito 2"></div></div><strong style="display:block; margin-top:8px; text-align:center;">Patoruzito 2 (2006)</strong><span class="viewers" style="display:block; margin-top:8px; text-align:center; color:#aaa; font-size:0.95em;">348.665 espectadores</span></a></li>
-    <li class="item-a"><a href="show.html?id=P1104"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/el-raton-perez-2006-poster-280x420.png" loading="lazy" alt="Ratón Pérez"></div></div><strong style="display:block; margin-top:8px; text-align:center;">Ratón Pérez (2006)</strong><span class="viewers" style="display:block; margin-top:8px; text-align:center; color:#aaa; font-size:0.95em;">956.050 espectadores</span></a></li>
-    <li class="item-c"><a href="show.html?id=P1182"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/boogie-2009-poster-280x420.png" loading="lazy" alt="Boogie el Aceitoso"></div></div><strong style="display:block; margin-top:8px; text-align:center;">Boogie el Aceitoso (2009)</strong><span class="viewers" style="display:block; margin-top:8px; text-align:center; color:#aaa; font-size:0.95em;">96.460 espectadores</span></a></li>
-    <li class="item-a"><a href="show.html?id=P1098"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/gigantes-aventura-extraordinaria-2024-poster-280x420.png" loading="lazy" alt="Gigantes una aventura extraordinaria"></div></div><strong style="display:block; margin-top:8px; text-align:center;">Gigantes una aventura extraordinaria (2024)</strong><span class="viewers" style="display:block; margin-top:8px; text-align:center; color:#aaa; font-size:0.95em;">35.551 espectadores</span></a></li>
-    <li class="item-b"><a href="show.html?id=P1219"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/robotia-2024-poster-280x420.png" loading="lazy" alt="Robotia"></div></div><strong style="display:block; margin-top:8px; text-align:center;">Robotia (2024)</strong><span class="viewers" style="display:block; margin-top:8px; text-align:center; color:#aaa; font-size:0.95em;">11.733 espectadores</span></a></li>
-    <li class="item-d"><a href="show.html?id=P1081"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/la-gallina-turuleca-2019-poster-280x420.png" loading="lazy" alt="La Gallina Turuleca"></div></div><strong style="display:block; margin-top:8px; text-align:center;">La Gallina Turuleca (2019)</strong><span class="viewers" style="display:block; margin-top:8px; text-align:center; color:#aaa; font-size:0.95em;">135.158 espectadores</span></a></li>
-    <li class="item-c"><a href="show.html?id=P1107"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/don-gato-y-su-pandilla-2011-poster-280x420.png" loading="lazy" alt="Don Gato y su pandilla"></div></div><strong style="display:block; margin-top:8px; text-align:center;">Don Gato y su pandilla (2011)</strong><span class="viewers" style="display:block; margin-top:8px; text-align:center; color:#aaa; font-size:0.95em;">116.962 espectadores</span></a></li>
-    <li class="item-e"><a href="show.html?id=P1156"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/plumiferos-2010-poster-280x420.png" loading="lazy" alt="Plumíferos, Aventuras Voladoras"></div></div><strong style="display:block; margin-top:8px; text-align:center;">Plumíferos, Aventuras Voladoras (2010)</strong><span class="viewers" style="display:block; margin-top:8px; text-align:center; color:#aaa; font-size:0.95em;">89.257 espectadores</span></a></li>
-    <li class="item-f"><a href="show.html?id=P1133"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/cuentos-de-la-selva-2010-poster-280x420.png" loading="lazy" alt="Cuentos de la Selva"></div></div><strong style="display:block; margin-top:8px; text-align:center;">Cuentos de la Selva (2010)</strong><span class="viewers" style="display:block; margin-top:8px; text-align:center; color:#aaa; font-size:0.95em;">155.988 espectadores</span></a></li>
-    <li class="item-d"><a href="show.html?id=P1213"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/micaela-2002-poster-280x420.png" loading="lazy" alt="Micaela, una película Mágica"></div></div><strong style="display:block; margin-top:8px; text-align:center;">Micaela, una película Mágica (2002)</strong><span class="viewers" style="display:block; margin-top:8px; text-align:center; color:#aaa; font-size:0.95em;">78.383 espectadores</span></a></li>
-    <li class="item-e"><a href="show.html?id=P1109"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/los-pintin-al-rescate-2000-poster-280x420.png" loading="lazy" alt="Los Pintin al Rescate"></div></div><strong style="display:block; margin-top:8px; text-align:center;">Los Pintin al Rescate (2000)</strong><span class="viewers" style="display:block; margin-top:8px; text-align:center; color:#aaa; font-size:0.95em;">133.761 espectadores</span></a></li>
-  </ul>
-</section>
+    <div id="genre-content" class="genre-grid">
+      <!-- Las películas se cargarán aquí -->
+    </div>
+  </div>
 
-<!-- Dibu (V) -->
-<section id="dibu">
-  <h2 class="latest-heading">Dibu</h2>
-  <ul class="slider-v cs-hidden">
-      <li class="item-a"><a href="show.html?id=P1002"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/dibu-1997-poster-280x420.png" loading="lazy" alt="Dibu, la Película"></div></div><strong style="display:block; margin-top:8px; text-align:center;">Dibu, la Película (1997)</strong><span class="viewers" style="display:block; text-align:center; color:#aaa; font-size:0.95em;">706.410 espectadores</span></a></li>
-      <li class="item-b"><a href="show.html?id=P1003"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/dibu-2-1998-poster-280x420.png" loading="lazy" alt="Dibu 2: La Venganza de Nasty"></div></div><strong style="display:block; margin-top:8px; text-align:center;">Dibu 2: La Venganza de Nasty (1998)</strong><span class="viewers" style="display:block; text-align:center; color:#aaa; font-size:0.95em;">526.340 espectadores</span></a></li>
-      <li class="item-c"><a href="#"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/dibu-3-gran-aventura-2002-poster-280x420.png" loading="lazy" alt="Dibu 3: La Gran Aventura"></div></div><strong style="display:block; margin-top:8px; text-align:center;">Dibu 3: La Gran Aventura (2002)</strong><span class="viewers" style="display:block; text-align:center; color:#aaa; font-size:0.95em;">238.504 espectadores</span></a></li>
-  </ul>
-</section>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script>
+    (function () {
+      var GENRE = 'Animación';
+      var GENRE_ICON = '✨';
 
-<!-- Personajes de Dante Quinterno (V) -->
-<section id="dante-quinterno">
-  <h2 class="latest-heading">Personajes de Dante Quinterno</h2>
-  <ul class="slider-v cs-hidden">
-      <li class="item-a"><a href="show.html?id=P1022"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/patoruzito-2004-poster-280x420.png" loading="lazy" alt="Patoruzito"></div></div><strong style="display:block; margin-top:8px; text-align:center;">Patoruzito (2004)</strong><span class="viewers" style="display:block; text-align:center; color:#aaa; font-size:0.95em;">1.996.738 espectadores</span></a></li>
-      <li class="item-b"><a href="#"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/patoruzito2-pelicula-2006-poster-280x420.png" loading="lazy" alt="Patoruzito 2"></div></div><strong style="display:block; margin-top:8px; text-align:center;">Patoruzito 2 (2006)</strong><span class="viewers" style="display:block; text-align:center; color:#aaa; font-size:0.95em;">348.665 espectadores</span></a></li>
-      <li class="item-c"><a href="show.html?id=P1028"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/isidoro-2007-poster-280x420.png" loading="lazy" alt="Isidoro"></div></div><strong style="display:block; margin-top:8px; text-align:center;">Isidoro (2007)</strong><span class="viewers" style="display:block; text-align:center; color:#aaa; font-size:0.95em;">275.235 espectadores</span></a></li>
-  </ul>
-</section>
+      function renderMovieCard(item) {
+        var placeholderV = 'images/verticals/placeholder-280x420.svg';
+        var imgSrc = (item.image && String(item.image).trim()) ? item.image : placeholderV;
+        var subtitle = (item.subtitle && String(item.subtitle).trim()) ? item.subtitle : item.year;
+        return '<div class="movie-card">'
+          + '<a href="show.html?id=' + encodeURIComponent(item.id) + '">'
+          + '<div class="movie-poster"><img src="' + imgSrc + '" loading="lazy" alt="' + (item.title || '') + '"></div>'
+          + '<div class="movie-info">'
+          + '<div class="movie-title">' + (item.title || '') + '</div>'
+          + '<div class="movie-meta">' + subtitle + '</div>'
+          + '</div>'
+          + '</a>'
+          + '</div>';
+      }
 
-<!-- La saga de El Ratón Pérez (V) -->
-<section id="raton-perez">
-  <h2 class="latest-heading">La saga de El Ratón Pérez</h2>
-  <ul class="slider-v cs-hidden">
-      <li class="item-a"><a href="show.html?id=P2011"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/el-raton-perez-2006-poster-280x420.png" loading="lazy" alt="Ratón Pérez"></div></div><strong style="display:block; margin-top:8px; text-align:center;">Ratón Pérez (2006)</strong><span class="viewers" style="display:block; text-align:center; color:#aaa; font-size:0.95em;">956.050 espectadores</span></a></li>
-      <li class="item-b"><a href="show.html?id=P2012"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/el-raton-perez-2-2008-poster-280x420.png" loading="lazy" alt="Ratón Pérez 2"></div></div><strong style="display:block; margin-top:8px; text-align:center;">Ratón Pérez 2 (2008)</strong><span class="viewers" style="display:block; text-align:center; color:#aaa; font-size:0.95em;">231.610 espectadores</span></a></li>
-  </ul>
-</section>
+      function renderGenre() {
+        fetch('data.json')
+          .then(function (r) {
+            if (!r.ok) throw new Error('No data');
+            return r.json();
+          })
+          .then(function (data) {
+            var items = (data && data.items) || [];
+            var genreItems = items.filter(function (it) {
+              return it && it.genre && it.genre.toLowerCase().indexOf(GENRE.toLowerCase()) !== -1;
+            });
 
-<!-- Animación para todas las edades (V) -->
-<section id="latest">
-  <h2 class="latest-heading">Animación para todas las edades</h2>
-  <ul class="slider-v cs-hidden">
-    <li class="item-a"><a href="show.html?id=P1008"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/condor-crux-2000-poster-280x420.png" loading="lazy" alt="Condor Crux"></div></div><strong style="display:block; margin-top:8px; text-align:center;">Condor Crux (2000)</strong><span class="viewers" style="display:block; text-align:center; color:#aaa; font-size:0.95em;">56.958 espectadores</span></a></li>
-    <li class="item-b"><a href="show.html?id=P1016"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/mercano-el-marciano-2002-poster-280x420.png" loading="lazy" alt="Mercano el Marciano"></div></div><strong style="display:block; margin-top:8px; text-align:center;">Mercano el Marciano (2002)</strong><span class="viewers" style="display:block; text-align:center; color:#aaa; font-size:0.95em;">13.805 espectadores</span></a></li>
-    <li class="item-c"><a href="show.html?id=P2017"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/boogie-2009-poster-280x420.png" loading="lazy" alt="Boogie el Aceitoso"></div></div><strong style="display:block; margin-top:8px; text-align:center;">Boogie el Aceitoso (2009)</strong><span class="viewers" style="display:block; text-align:center; color:#aaa; font-size:0.95em;">96.460 espectadores</span></a></li>
-    <li class="item-d"><a href="show.html?id=P1030"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/martin-fierro-la-pelicula-2007-poster-280x420.png" loading="lazy" alt="Martín Fierro: La Película"></div></div><strong style="display:block; margin-top:8px; text-align:center;">Martín Fierro: La Película (2007)</strong><span class="viewers" style="display:block; text-align:center; color:#aaa; font-size:0.95em;">102.721 espectadores</span></a></li>
-  </ul>
-</section>
+            var container = document.getElementById('genre-content');
+            var countEl = document.getElementById('movie-count');
 
-<!-- Últimas películas (V) -->
-<section id="latest">
-  <h2 class="latest-heading">Últimas películas</h2>
-  <ul class="slider-v cs-hidden">
-    <li class="item-a"><a href="show.html?id=P2022"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/gigantes-aventura-extraordinaria-2024-poster-280x420.png" loading="lazy" alt="Gigantes una aventura extraordinaria"></div></div><strong style="display:block; margin-top:8px; text-align:center;">Gigantes una aventura extraordinaria (2024)</strong><span class="viewers" style="display:block; text-align:center; color:#aaa; font-size:0.95em;">35.551 espectadores</span></a></li>
-    <li class="item-b"><a href="show.html?id=P2023"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/robotia-2024-poster-280x420.png" loading="lazy" alt="Robotia"></div></div><strong style="display:block; margin-top:8px; text-align:center;">Robotia (2024)</strong><span class="viewers" style="display:block; text-align:center; color:#aaa; font-size:0.95em;">11.733 espectadores</span></a></li>
-    <li class="item-c"><a href="show.html?id=P2019"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/mini-beat-power-rockers-2022-poster-280x420.png" loading="lazy" alt="Mini Beat Power Rockers"></div></div><strong style="display:block; margin-top:8px; text-align:center;">Mini Beat Power Rockers (2022)</strong></a></li>
-    <li class="item-d"><a href="show.html?id=P2016"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/la-gallina-turuleca-2019-poster-280x420.png" loading="lazy" alt="La Gallina Turuleca"></div></div><strong style="display:block; margin-top:8px; text-align:center;">La Gallina Turuleca (2019)</strong><span class="viewers" style="display:block; text-align:center; color:#aaa; font-size:0.95em;">135.158 espectadores</span></a></li>
-    <li class="item-e"><a href="show.html?id=P2018"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/la-maquina-que-hace-estrellas-2013-poster-280x420.png" loading="lazy" alt="La Máquina que hace estrellas"></div></div><strong style="display:block; margin-top:8px; text-align:center;">La Máquina que hace estrellas (2013)</strong></a></li>
-    <li class="item-f"><a href="show.html?id=P1040"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/metegol-2013-poster-280x420.png" loading="lazy" alt="Metegol"></div></div><strong style="display:block; margin-top:8px; text-align:center;">Metegol (2013)</strong><span class="viewers" style="display:block; text-align:center; color:#aaa; font-size:0.95em;">2.139.844 espectadores</span></a></li>
-    <li class="item-a"><a href="show.html?id=P1047"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/rodencia-y-el-diente-de-la-princesa-2012-poster-280x420.png" loading="lazy" alt="Rodencia y el Diente de la Princesa"></div></div><strong style="display:block; margin-top:8px; text-align:center;">Rodencia y el Diente de la Princesa (2012)</strong><span class="viewers" style="display:block; text-align:center; color:#aaa; font-size:0.95em;">31.963 espectadores</span></a></li>
-    <li class="item-b"><a href="show.html?id=P1044"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/selkirk-robinson-crusoe-2012-poster-280x420.png" loading="lazy" alt="Selkirk, el verdadero Robinson Crusoe"></div></div><strong style="display:block; margin-top:8px; text-align:center;">Selkirk, el verdadero Robinson Crusoe (2012)</strong><span class="viewers" style="display:block; text-align:center; color:#aaa; font-size:0.95em;">58.832 espectadores</span></a></li>
-    <li class="item-c"><a href="show.html?id=P2012"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/don-gato-y-su-pandilla-2011-poster-280x420.png" loading="lazy" alt="Don Gato y su pandilla"></div></div><strong style="display:block; margin-top:8px; text-align:center;">Don Gato y su pandilla (2011)</strong><span class="viewers" style="display:block; text-align:center; color:#aaa; font-size:0.95em;">116.962 espectadores</span></a></li>
-    <li class="item-d"><a href="show.html?id=P1040"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/gaturro-2010-poster-280x420.png" loading="lazy" alt="Gaturro: La Película"></div></div><strong style="display:block; margin-top:8px; text-align:center;">Gaturro: La Película (2010)</strong><span class="viewers" style="display:block; text-align:center; color:#aaa; font-size:0.95em;">428.949 espectadores</span></a></li>
-    <li class="item-e"><a href="show.html?id=P2010"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/plumiferos-2010-poster-280x420.png" loading="lazy" alt="Plumíferos, Aventuras Voladoras"></div></div><strong style="display:block; margin-top:8px; text-align:center;">Plumíferos, Aventuras Voladoras (2010)</strong><span class="viewers" style="display:block; text-align:center; color:#aaa; font-size:0.95em;">89.257 espectadores</span></a></li>
-    <li class="item-f"><a href="show.html?id=P2009"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/cuentos-de-la-selva-2010-poster-280x420.png" loading="lazy" alt="Cuentos de la Selva"></div></div><strong style="display:block; margin-top:8px; text-align:center;">Cuentos de la Selva (2010)</strong><span class="viewers" style="display:block; text-align:center; color:#aaa; font-size:0.95em;">155.988 espectadores</span></a></li>
-    <li class="item-a"><a href="show.html?id=P2008"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/valentina-2008-poster-280x420.png" loading="lazy" alt="Valentina la Pelicula"></div></div><strong style="display:block; margin-top:8px; text-align:center;">Valentina la Pelicula (2008)</strong><span class="viewers" style="display:block; text-align:center; color:#aaa; font-size:0.95em;">142.052 espectadores</span></a></li>
-    <li class="item-b"><a href="show.html?id=P1027"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/el-arca-2007-poster-280x420.png" loading="lazy" alt="El Arca"></div></div><strong style="display:block; margin-top:8px; text-align:center;">El Arca (2007)</strong><span class="viewers" style="display:block; text-align:center; color:#aaa; font-size:0.95em;">340.356 espectadores</span></a></li>
-    <li class="item-c"><a href="show.html?id=P1023"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/teo-cazador-intergalactico-2004-poster-280x420.png" loading="lazy" alt="Teo: Cazador Intergaláctico"></div></div><strong style="display:block; margin-top:8px; text-align:center;">Teo: Cazador Intergaláctico (2004)</strong><span class="viewers" style="display:block; text-align:center; color:#aaa; font-size:0.95em;">102.447 espectadores</span></a></li>
-    <li class="item-d"><a href="show.html?id=P2005"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/micaela-2002-poster-280x420.png" loading="lazy" alt="Micaela, una película Mágica"></div></div><strong style="display:block; margin-top:8px; text-align:center;">Micaela, una película Mágica (2002)</strong><span class="viewers" style="display:block; text-align:center; color:#aaa; font-size:0.95em;">78.383 espectadores</span></a></li>
-    <li class="item-e"><a href="show.html?id=P2004"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/los-pintin-al-rescate-2000-poster-280x420.png" loading="lazy" alt="Los Pintin al Rescate"></div></div><strong style="display:block; margin-top:8px; text-align:center;">Los Pintin al Rescate (2000)</strong><span class="viewers" style="display:block; text-align:center; color:#aaa; font-size:0.95em;">133.761 espectadores</span></a></li>
-  </ul>
-</section>
+            if (genreItems.length === 0) {
+              container.innerHTML = '<div class="no-results">No se encontraron películas en este género.</div>';
+              countEl.textContent = 'Sin películas disponibles';
+              return;
+            }
 
-<!-- footer -->
-<footer>
-  <p>Cine Argentum - Animación</p>
-  <p>Copyright 2025 by Dherrera</p>
-</footer>
+            countEl.textContent = genreItems.length + ' película' + (genreItems.length !== 1 ? 's' : '');
+            container.innerHTML = genreItems.map(renderMovieCard).join('');
+          })
+          .catch(function (e) {
+            console.error('Error cargando películas:', e);
+            document.getElementById('genre-content').innerHTML = '<div class="no-results">Error al cargar las películas. Intenta más tarde.</div>';
+          });
+      }
 
-<!-- JS: jQuery → LightSlider → init -->
-<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-<script src="js/lightslider.js"></script>
-<script src="js/script.js"></script>
+      // Actualizar el badge del género
+      document.addEventListener('DOMContentLoaded', function () {
+        var badge = document.querySelector('.genre-badge');
+        if (badge) badge.textContent = GENRE_ICON;
+        renderGenre();
+      });
+    })();
+  </script>
+</body>
+</html>
