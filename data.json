@@ -1599,7 +1599,7 @@
         "Gabriela Toscano"
       ],
       "synopsis": "Fernando Ferro lleva una doble vida perfecta: de lunes a jueves vive con Paula y de viernes a domingo con Vera, sin que ninguna lo sepa. Cuando ambas descubren la verdad, Fernando deberá enfrentar las consecuencias y elegir entre las dos mujeres que ama.",
-      "channel": "",
+      "channel": "Netflix",
       "image": "images/verticals/corazon-loco-2020-poster-280x420.png",
       "orientation": "vertical",
       "type": "pelicula",
@@ -1607,6 +1607,7 @@
       "id": "P1083",
       "producer": "Netflix",
       "director": "Marcos Carnevale"
+      "release_date": "2020-09-09"
     },
     {
       "title": "Ex Casados",
@@ -1695,7 +1696,7 @@
         "Juan Minujín"
       ],
       "synopsis": "Un matrimonio infeliz encuentra esperanza en una aplicación que recompensa las cosas buenas que hacen por el otro. Hasta que la obsesión enfermiza se apodera de todo...",
-      "channel": "",
+      "channel": "Netflix",
       "image": "images/verticals/matrimillas-2002-poster-280x420.png",
       "orientation": "vertical",
       "type": "pelicula",
@@ -1703,6 +1704,7 @@
       "id": "P1088",
       "producer": "Netflix",
       "director": "Sebastián De Caro"
+      "release_date": "2022-12-07"
     },
     {
       "title": "Más Respeto que soy Tu Madre",
@@ -1931,7 +1933,7 @@
         "Osmar Nuñez"
       ],
       "synopsis": "En 1986, el periodista José de Zer viaja a La Candelaria, Córdoba, para investigar un supuesto fenómeno extraño. Allí se gestará el montaje sobre presencia extraterrestre más recordado de la televisión argentina.",
-      "channel": "",
+      "channel": "Netflix",
       "image": "images/verticals/el-hombre-que-amaba-los-platos-voladores-2024-poster-280x420.png",
       "orientation": "vertical",
       "type": "pelicula",
@@ -1939,6 +1941,7 @@
       "id": "P1100",
       "producer": "Netflix",
       "director": "Diego Lerman"
+      "release_date": "2024-10-10"
     },
     {
       "title": "La Mujer de la Fila",
@@ -1950,7 +1953,7 @@
         "Alberto Ammann"
       ],
       "synopsis": "La vida de Andrea cambia por completo cuando su hijo es encarcelado injustamente y ella debe enfrentarse al sistema judicial para liberarlo. En ese proceso, cuestiona sus propios prejuicios y valores al descubrir sentimientos inesperados hacia un preso.",
-      "channel": "",
+      "channel": "Netflix",
       "image": "images/verticals/la-mujer-de-la-fila-2025-poster-280x420.png",
       "orientation": "vertical",
       "type": "pelicula",
@@ -1959,6 +1962,7 @@
       "viewers": 32605,
       "producer": "Netflix",
       "director": "Benjamín Ávila"
+      "release_date": "2025-09-04"
     },
     {
       "title": "Hoy se Arregla el Mundo",
@@ -4558,6 +4562,92 @@
       "orientation": "vertical",
       "image": "images/verticals/son-de-fierro-poster-280x420.png",
       "subtitle": "Telenovela"
+    },
+    {
+      "id": "P2025",
+      "title": "Una Muerte Silenciosa",
+      "type": "pelicula",
+      "year": "2025",
+      "genre": "Policial",
+      "actors": [
+        "Joaquín Furriel",
+        "Soledad Villamil",
+        "Alejandro Awada"
+      ],
+      "synopsis": "En la Patagonia de los años 80, un guía de caza descubre un crimen que involucra a su sobrina. Para buscar justicia, deberá investigar y enfrentarse a los oscuros secretos de una época marcada por el silencio.",
+      "channel": "Streaming",
+      "image": "images/verticals/una-muerte-silenciosa-2025-poster-280x420.png",
+      "orientation": "vertical",
+      "viewers": 48427,
+      "producer": "Content Studios, Pampa Films, Star Distribution",
+      "director": "Sebastián Schindel",
+      "release_date": "2025-09-01",
+      "subtitle": "Policial"
+    },
+    {
+      "id": "P2028",
+      "title": "Papá por Dos",
+      "type": "pelicula",
+      "year": "2025",
+      "genre": "Comedia",
+      "actors": [
+        "Celeste Cid",
+        "Benjamín Vicuña",
+        "Lucas Akoskin"
+      ],
+      "synopsis": "Santiago decide formar una familia con Ana, aunque ella espera un hijo de su ex, Pancho. La inesperada reaparición de Pancho desata enredos cómicos y conflictos que pondrán a prueba la convivencia y los vínculos.",
+      "channel": "Cine",
+      "image": "images/verticals/papa-por-dos-2025-poster-280x420.png",
+      "orientation": "vertical",
+      "viewers": 15537,
+      "producer": "FAM Contenidos, BF Distribution, Market Chile",
+      "director": "Hernán Guerschuny",
+      "release_date": "2025-09-18",
+      "subtitle": "Comedia"
+    },
+    {
+      "id": "P2026",
+      "title": "Mensaje en una Botella",
+      "type": "pelicula",
+      "year": "2025",
+      "genre": "Romance",
+      "actors": [
+        "Luisana Lopilato",
+        "Benjamín Vicuña",
+        "Benjamín Amadeo"
+      ],
+      "synopsis": "Una sommelier descubre cómo enviarse mensajes al pasado para corregir un error, pero cada cambio altera su presente de forma inesperada. Atrapada en un bucle de decisiones fallidas, cada intento por arreglar su vida la hunde en una realidad cada vez peor.",
+      "channel": "Streaming",
+      "image": "images/verticals/mensaje-en-una-botella-2025-poster-280x420.png",
+      "orientation": "vertical",
+      "viewers": 17034,
+      "producer": "Kuarzo International Films, Amazon MGM Studios",
+      "director": "Gabriel Nesci",
+      "release_date": "2025-01-05",
+      "subtitle": "Romance"
+    },
+    {
+      "id": "P2027",
+      "title": "Gatillero",
+      "type": "pelicula",
+      "year": "2025",
+      "genre": "Policial",
+      "actors": [
+        "Sergio Podeley",
+        "Maite Lanata",
+        "Matías Desiderio",
+        "Ramiro Blas",
+        "Julieta Díaz"
+      ],
+      "synopsis": "Una cruda historia de tragedia y redención, contada a través de un único plano continuo. Rodada en la verdadera Isla Maciel, en las afueras de Buenos Aires, Argentina.",
+      "channel": "Streaming",
+      "image": "images/verticals/gatillero-2025-poster-280x420.png",
+      "orientation": "vertical",
+      "viewers": 10029,
+      "producer": "Dukkah Producciones, Perspectiva Producciones, CineTren",
+      "director": "Cristian Tapia Marchiori",
+      "release_date": "2025-11-06",
+      "subtitle": "Policial"
     },
     {
       "id": "v7",
