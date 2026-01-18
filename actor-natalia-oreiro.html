@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Natalia Oreiro - Filmografía</title>
+  <link rel="stylesheet" href="css/style.css?v=2.0">
+  <style>
+                nav:empty {
+                  display: none;
+                }
+            html, body {
+              margin: 0;
+              padding: 0;
+              box-sizing: border-box;
+            }
+        .actor-header-bar {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 18px;
+          padding: 18px 0 0 0;
+          margin-bottom: 8px;
+        }
+        .actor-header-title {
+          flex: 1;
+          text-align: center;
+          font-size: 2.1rem;
+          font-weight: 800;
+          color: #fff;
+          letter-spacing: 1.5px;
+          text-shadow: 0 2px 12px #000, 0 1px 0 #222;
+          margin: 0;
+          line-height: 1.1;
+        }
+        .actor-header-back {
+          color: #8bb6ff;
+          font-size: 1.15rem;
+          font-weight: 600;
+          text-decoration: none;
+          padding: 6px 16px 6px 0;
+          transition: color 0.18s;
+          white-space: nowrap;
+          text-shadow: 0 2px 8px #000;
+        }
+        .actor-header-back:hover {
+          color: #fff;
+          text-decoration: underline;
+        }
+        @media (max-width: 600px) {
+          .actor-header-title {
+            font-size: 1.18rem;
+            padding: 0 2px;
+          }
+          .actor-header-bar {
+            padding: 10px 0 0 0;
+            gap: 8px;
+          }
+          .actor-header-back {
+            font-size: 1rem;
+            padding: 4px 8px 4px 0;
+          }
+        }
+    body {
+      background: #181d23;
+      color: #e5e5e5;
+    }
+    .actor-movies-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 28px 18px;
+      margin: 32px 0 40px 0;
+      padding: 0 12px;
+    }
+    @media (max-width: 900px) {
+      .actor-movies-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+    @media (max-width: 600px) {
+      .actor-movies-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 18px 8px;
+        margin: 18px 0 24px 0;
+        padding: 0 4px;
+      }
+    }
+    .actor-movie-card {
+      background: #23272f;
+      border-radius: 16px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.13);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      transition: transform 0.18s;
+    }
+    .actor-movie-card:hover {
+      transform: translateY(-4px) scale(1.03);
+      box-shadow: 0 6px 24px rgba(0,0,0,0.18);
+    }
+    .actor-movie-card img {
+      width: 100%;
+      aspect-ratio: 2/3;
+      object-fit: cover;
+      background: #181d23;
+      display: block;
+    }
+    .actor-movie-info {
+      padding: 14px 12px 12px 12px;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    .actor-movie-title {
+      font-size: 1.08rem;
+      font-weight: 600;
+      color: #fff;
+      margin-bottom: 2px;
+      line-height: 1.18;
+    }
+    .actor-movie-meta {
+      font-size: 0.97rem;
+      color: #b0b0b0;
+      margin-bottom: 1px;
+    }
+    .actor-movie-viewers {
+      font-size: 0.93rem;
+      color: #8bb6ff;
+    }
+    .actor-filters {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin: 0 0 10px 0;
+      padding: 0 12px;
+    }
+    .actor-filters label {
+      font-size: 1rem;
+      color: #b0b0b0;
+    }
+    .actor-filters select {
+      background: #23272f;
+      color: #e5e5e5;
+      border: 1px solid #333;
+      border-radius: 6px;
+      padding: 4px 10px;
+      font-size: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="actor-header-bar">
+      <a href="#" onclick="window.history.back();return false;" class="actor-header-back">&larr; Volver</a>
+      <h1 class="actor-header-title">PELÍCULAS DE NATALIA OREIRO</h1>
+      <span style="width:70px;"></span>
+    </div>
+    <div class="actor-filters">
+      <label>Ordenar por:</label>
+      <select id="actorSort">
+        <option value="viewers">Cantidad de espectadores</option>
+        <option value="year">Año de estreno (descendente)</option>
+      </select>
+    </div>
+    <div class="actor-movies-grid" id="actorMoviesList">
+      <!-- Películas de Natalia Oreiro -->
+    </div>
+  </main>
+  <script src="js/articulos.js"></script>
+  <script src="js/lightslider.js"></script>
+  <script src="js/script.js"></script>
+  <script>
+    // Listado real de películas de Natalia Oreiro
+    const nataliaOreiroMovies = [
+      {
+        title: "La Mujer de la Fila",
+        year: 2025,
+        viewers: 32605,
+        image: "images/verticals/la-mujer-de-la-fila-2025-poster-280x420.png"
+      },
+      {
+        title: "Campamento con Mamá",
+        year: 2024,
+        viewers: null,
+        image: "images/verticals/campamento-con-mama-2024-poster-280x420.png"
+      },
+      {
+        title: "Casi Muerta",
+        year: 2023,
+        viewers: 154028,
+        image: "images/verticals/casi-muerta-2023-poster-280x420.png"
+      },
+      {
+        title: "La Noche Mágica",
+        year: 2021,
+        viewers: 26156,
+        image: "images/verticals/la-noche-magica-2021-poster-280x420.png"
+      },
+      {
+        title: "Hoy se Arregla el Mundo",
+        year: 2022,
+        viewers: 72032,
+        image: "images/verticals/hoy-se-arregla-el-mundo-2022-poster-280x420.png"
+      },
+      {
+        title: "Re loca",
+        year: 2018,
+        viewers: 762184,
+        image: "images/verticals/reloca-2018-poster-280x420.png"
+      },
+      {
+        title: "Gilda, no me arrepiento de este amor",
+        year: 2016,
+        viewers: 548749,
+        image: "images/verticals/gilda-no-me-arrepiento-de-este-amor-2016-poster-280x420.png"
+      },
+      {
+        title: "Wakolda, el Médico Alemán",
+        year: 2013,
+        viewers: 423762,
+        image: "images/verticals/wakolda-medico-aleman-2013-poster-280x420.png"
+      },
+      {
+        title: "Infancia clandestina",
+        year: 2012,
+        viewers: 201830,
+        image: "images/verticals/infancia-clandestina-2012-poster-280x420.png"
+      },
+      {
+        title: "Mi primera boda",
+        year: 2011,
+        viewers: 302088,
+        image: "images/verticals/mi-primera-boda-2011-poster-280x420.png"
+      },
+      {
+        title: "Miss Tacuarembó",
+        year: 2010,
+        viewers: 49325,
+        image: "images/verticals/miss-tacuarembo-2010-poster-280x420.png"
+      },
+      {
+        title: "Música en espera",
+        year: 2009,
+        viewers: 241007,
+        image: "images/verticals/musica-en-espera-2009-poster-280x420.png"
+      },
+      {
+        title: "Cleopatra",
+        year: 2003,
+        viewers: 496357,
+        image: "images/verticals/cleopatra-2003-poster-280x420.png"
+      },
+      {
+        title: "Un argentino en Nueva York",
+        year: 1998,
+        viewers: 1592130,
+        image: "images/verticals/un-argentino-en-nueva-york-1998-poster-280x420.png"
+      }
+    ];
+
+    function renderMovies(sortBy) {
+      let movies = [...nataliaOreiroMovies];
+      if (sortBy === 'viewers') {
+        movies.sort((a, b) => b.viewers - a.viewers);
+      } else if (sortBy === 'year') {
+        movies.sort((a, b) => b.year - a.year);
+      }
+      const list = document.getElementById('actorMoviesList');
+      list.innerHTML = movies.map(movie => {
+        // Generar slug para subpágina (ejemplo: show.html?id=Pxxxx)
+        let slug = '';
+        switch (movie.title) {
+          case 'La Mujer de la Fila': slug = 'show.html?id=P1101'; break;
+          case 'Campamento con Mamá': slug = 'show.html?id=P1096'; break;
+          case 'Casi Muerta': slug = 'show.html?id=P1094'; break;
+          case 'La Noche Mágica': slug = 'show.html?id=P1087'; break;
+          case 'Hoy se Arregla el Mundo': slug = 'show.html?id=P1102'; break;
+          case 'Re loca': slug = 'show.html?id=P1072'; break;
+          case 'Gilda, no me arrepiento de este amor': slug = 'show.html?id=P1127'; break;
+          case 'Wakolda, el Médico Alemán': slug = 'show.html?id=P1164'; break;
+          case 'Infancia clandestina': slug = 'show.html?id=P1140'; break;
+          case 'Mi primera boda': slug = 'show.html?id=P1042'; break;
+          case 'Miss Tacuarembó': slug = 'show.html?id=P1037'; break;
+          case 'Música en espera': slug = 'show.html?id=P1163'; break;
+          case 'Cleopatra': slug = 'show.html?id=P1120'; break;
+          case 'Un argentino en Nueva York': slug = 'show.html?id=P1180'; break;
+          default: slug = '#';
+        }
+        return `
+        <a href="${slug}" class="actor-movie-card">
+          <img src="${movie.image}" alt="${movie.title}">
+          <div class="actor-movie-info">
+            <div class="actor-movie-title">${movie.title}</div>
+            <div class="actor-movie-meta">Año: ${movie.year}</div>
+            <div class="actor-movie-viewers">Espectadores: ${movie.viewers !== null && movie.viewers !== undefined ? movie.viewers.toLocaleString() : '—'}</div>
+          </div>
+        </a>
+        `;
+      }).join('');
+    }
+    document.getElementById('actorSort').addEventListener('change', function() {
+      renderMovies(this.value);
+    });
+    renderMovies('viewers');
+  </script>
+</body>
+</html>
