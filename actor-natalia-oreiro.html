@@ -6,6 +6,50 @@
   <title>Natalia Oreiro - Filmografía</title>
   <link rel="stylesheet" href="css/style.css?v=2.0">
   <style>
+    .actor-wrap {
+      max-width: 1200px;
+      margin: 28px auto;
+      padding: 20px;
+    }
+    .actor-header {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 32px;
+    }
+    .actor-badge {
+      width: 80px;
+      height: 80px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, #1976d2 0%, #1565c0 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-weight: bold;
+      font-size: 36px;
+      box-shadow: 0 4px 12px rgba(25, 118, 210, 0.18);
+    }
+    .actor-info h1 {
+      margin: 0 0 6px;
+      font-size: 28px;
+      color: #fff;
+    }
+    .actor-info p {
+      margin: 0;
+      color: #b0b0b0;
+    }
+    .back-link {
+      display: inline-block;
+      margin-bottom: 16px;
+      color: #8bb6ff;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    @media (max-width: 768px) {
+      .actor-header { flex-direction: column; align-items: flex-start; }
+      .actor-info h1 { font-size: 22px; }
+    }
                 nav:empty {
                   display: none;
                 }
@@ -150,23 +194,29 @@
   </style>
 </head>
 <body>
-  <main>
-    <div class="actor-header-bar">
-      <a href="#" onclick="window.history.back();return false;" class="actor-header-back">&larr; Volver</a>
-      <h1 class="actor-header-title">PELÍCULAS DE NATALIA OREIRO</h1>
-      <span style="width:70px;"></span>
-    </div>
-    <div class="actor-filters">
-      <label>Ordenar por:</label>
-      <select id="actorSort">
-        <option value="viewers">Cantidad de espectadores</option>
-        <option value="year">Año de estreno (descendente)</option>
-      </select>
-    </div>
-    <div class="actor-movies-grid" id="actorMoviesList">
-      <!-- Películas de Natalia Oreiro -->
-    </div>
-  </main>
+  <div class="actor-wrap">
+    <main>
+      <a href="index.html" class="back-link" aria-label="Volver a la página anterior">&larr; Volver</a>
+      <div class="actor-header">
+        <div class="actor-badge">🎤</div>
+        <div class="actor-info">
+          <h1>Películas de Natalia Oreiro</h1>
+          <p id="actor-movie-count">Cargando películas...</p>
+        </div>
+        <div class="actor-filters" style="margin-bottom:0; margin-left:auto;">
+          <label for="actorSort">Ordenar por:</label>
+          <select id="actorSort">
+            <option value="viewers">Cantidad de espectadores</option>
+            <option value="year">Año de estreno (descendente)</option>
+            <option value="year-asc">Año de estreno (ascendente)</option>
+          </select>
+        </div>
+      </div>
+      <div class="actor-movies-grid" id="actorMoviesList">
+        <!-- Películas de Natalia Oreiro -->
+      </div>
+    </main>
+  </div>
   <script src="js/articulos.js"></script>
   <script src="js/lightslider.js"></script>
   <script src="js/script.js"></script>
@@ -265,6 +315,8 @@
         movies.sort((a, b) => b.viewers - a.viewers);
       } else if (sortBy === 'year') {
         movies.sort((a, b) => b.year - a.year);
+      } else if (sortBy === 'year-asc') {
+        movies.sort((a, b) => a.year - b.year);
       }
       const list = document.getElementById('actorMoviesList');
       list.innerHTML = movies.map(movie => {
@@ -298,6 +350,8 @@
         </a>
         `;
       }).join('');
+      // Actualizar contador de películas
+      document.getElementById('actor-movie-count').textContent = movies.length + ' película' + (movies.length === 1 ? '' : 's');
     }
     document.getElementById('actorSort').addEventListener('change', function() {
       renderMovies(this.value);
