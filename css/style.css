@@ -247,13 +247,13 @@ nav .menu li a:hover{
   justify-content:flex-start;
   padding:0;
   margin:0 auto;
-  width:110px;
+  width:140px;
   height:auto !important;
-  min-height:160px;
+  min-height:190px;
 }
 .slider-actors .actor-img{
-  width:110px;
-  height:110px;
+  width:140px;
+  height:140px;
   border-radius:50%;
   overflow:hidden;
   background:#1a2129;
@@ -279,7 +279,7 @@ nav .menu li a:hover{
   font-weight:600;
   text-align:center;
   width:100%;
-  max-width:110px;
+  max-width:140px;
   overflow:visible;
   white-space:normal;
   line-height:1.2;
@@ -393,18 +393,36 @@ footer p{ color:#b0b0b0; margin:0; font-size:.9rem; }
     padding:20px 0 25px;
   }
   .slider-actors .actor-box{
-    width:90px;
-    min-height:130px;
+    width:110px;
+    min-height:150px;
   }
   .slider-actors .actor-img{
-    width:90px;
-    height:90px;
+    width:110px;
+    height:110px;
     border-width:2px;
     margin-bottom:8px;
   }
   .slider-actors .actor-name{
     font-size:0.75rem;
-    max-width:90px;
+    max-width:110px;
+  }
+  /* Mostrar solo 2 actores visibles en el slider horizontal de actores destacados */
+  .slider-actors.lSSlide {
+    min-width: 220px;
+  }
+  .slider-actors .lSSlide {
+    width: 50vw !important;
+    max-width: 120px !important;
+  }
+  /* Ajuste para LightSlider: 2 elementos visibles */
+  @media (max-width: 768px) {
+    .slider-actors {
+      min-width: 220px;
+    }
+    .slider-actors .lSSlide {
+      width: 50vw !important;
+      max-width: 120px !important;
+    }
   }
   
   /* Footer móvil */
