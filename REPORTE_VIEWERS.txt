@@ -110,7 +110,7 @@ PELÍCULAS ACTUALIZADAS:
   P1087 - La Noche Mágica: 26,156 espectadores
   P1184 - Gallito Ciego: 25,349 espectadores
   P1016 - Mercano, el marciano: 13,805 espectadores
-  P1200 - El Rapto: 12,137 espectadores
+  P1301 - El Rapto: 12,137 espectadores
   P1219 - Robotia: 11,733 espectadores
   P1211 - Una Flor en el Barro: 6,451 espectadores
   P1170 - El Gerente: 6,026 espectadores
