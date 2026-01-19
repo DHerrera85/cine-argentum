@@ -191,6 +191,90 @@
       padding: 4px 10px;
       font-size: 1rem;
     }
+
+    /* Custom select styles */
+    .custom-select {
+      position: relative;
+      min-width: 210px;
+      background: #23272f;
+      border-radius: 6px;
+      cursor: pointer;
+      user-select: none;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+      border: 1px solid #333;
+      transition: border-color 0.18s;
+    }
+    .custom-select.open, .custom-select:focus {
+      border-color: #3963f0;
+      z-index: 20;
+    }
+    .custom-select-selected {
+      display: block;
+      padding: 8px 36px 8px 14px;
+      font-size: 1rem;
+      color: #e5e5e5;
+      background: transparent;
+      border-radius: 6px;
+      position: relative;
+    }
+    .custom-select-selected:after {
+      content: '';
+      position: absolute;
+      right: 14px;
+      top: 50%;
+      width: 0;
+      height: 0;
+      border-left: 6px solid transparent;
+      border-right: 6px solid transparent;
+      border-top: 7px solid #8bb6ff;
+      transform: translateY(-50%);
+      pointer-events: none;
+    }
+    .custom-select-options {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 100%;
+      background: #23272f;
+      border-radius: 0 0 6px 6px;
+      box-shadow: 0 6px 24px rgba(0,0,0,0.18);
+      margin: 0;
+      padding: 0;
+      z-index: 30;
+      border: 1px solid #333;
+      border-top: none;
+    }
+    .custom-select-options li {
+      padding: 12px 16px;
+      color: #e5e5e5;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.13s, color 0.13s;
+    }
+    .custom-select-options li.selected,
+    .custom-select-options li:hover {
+      background: #3963f0;
+      color: #fff;
+    }
+    @media (max-width: 600px) {
+      .actor-filters {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 6px;
+      }
+      .custom-select {
+        min-width: 100%;
+        width: 100%;
+      }
+      .custom-select-selected {
+        font-size: 1.08rem;
+        padding: 12px 36px 12px 14px;
+      }
+      .custom-select-options li {
+        font-size: 1.08rem;
+        padding: 16px 18px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -204,13 +288,17 @@
           <p id="actor-movie-count">Cargando películas...</p>
         </div>
         <div class="actor-filters" style="margin-bottom:0; margin-left:auto;">
-          <label for="actorSort">Ordenar por:</label>
-          <select id="actorSort">
-            <option value="viewers">Cantidad de espectadores</option>
-            <option value="year">Año de estreno (descendente)</option>
-            <option value="year-asc">Año de estreno (ascendente)</option>
-          </select>
+          <label for="actorSortCustom">Ordenar por:</label>
+          <div class="custom-select" id="actorSortCustom" tabindex="0">
+            <span class="custom-select-selected">Cantidad de espectadores</span>
+            <ul class="custom-select-options" style="display:none;">
+              <li data-value="viewers" class="selected">Cantidad de espectadores</li>
+              <li data-value="year">Año de estreno (descendente)</li>
+              <li data-value="year-asc">Año de estreno (ascendente)</li>
+            </ul>
+          </div>
         </div>
+
       </div>
       <div class="actor-movies-grid" id="actorMoviesList">
         <!-- Películas de Natalia Oreiro -->
@@ -353,10 +441,57 @@
       // Actualizar contador de películas
       document.getElementById('actor-movie-count').textContent = movies.length + ' película' + (movies.length === 1 ? '' : 's');
     }
-    document.getElementById('actorSort').addEventListener('change', function() {
-      renderMovies(this.value);
+    // Custom select logic
+    const customSelect = document.getElementById('actorSortCustom');
+    const selectedSpan = customSelect.querySelector('.custom-select-selected');
+    const optionsList = customSelect.querySelector('.custom-select-options');
+    let currentSort = 'viewers';
+
+    function setSort(value, label) {
+      currentSort = value;
+      selectedSpan.textContent = label;
+      optionsList.querySelectorAll('li').forEach(li => li.classList.remove('selected'));
+      const selectedLi = optionsList.querySelector('li[data-value="' + value + '"]');
+      if (selectedLi) selectedLi.classList.add('selected');
+      renderMovies(value);
+    }
+
+    selectedSpan.addEventListener('click', function(e) {
+      optionsList.style.display = optionsList.style.display === 'block' ? 'none' : 'block';
+      customSelect.classList.toggle('open');
     });
-    renderMovies('viewers');
+    customSelect.addEventListener('blur', function() {
+      optionsList.style.display = 'none';
+      customSelect.classList.remove('open');
+    });
+    optionsList.querySelectorAll('li').forEach(function(li) {
+      li.addEventListener('click', function(e) {
+        setSort(this.dataset.value, this.textContent);
+        optionsList.style.display = 'none';
+        customSelect.classList.remove('open');
+      });
+    });
+    // Cerrar menú si se hace click fuera
+    document.addEventListener('click', function(e) {
+      if (!customSelect.contains(e.target)) {
+        optionsList.style.display = 'none';
+        customSelect.classList.remove('open');
+      }
+    });
+    // Accesibilidad: abrir con Enter/Espacio
+    customSelect.addEventListener('keydown', function(e) {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        optionsList.style.display = optionsList.style.display === 'block' ? 'none' : 'block';
+        customSelect.classList.toggle('open');
+      }
+      if (e.key === 'Escape') {
+        optionsList.style.display = 'none';
+        customSelect.classList.remove('open');
+      }
+    });
+    // Inicializar
+    setSort('viewers', 'Cantidad de espectadores');
   </script>
 </body>
 </html>
