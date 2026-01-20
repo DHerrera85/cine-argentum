@@ -1,20 +1,34 @@
 <!DOCTYPE html>
 <html lang="es">
+
+<!DOCTYPE html>
+<html lang="es">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Películas de Animación - Cine Argentum</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <link rel="stylesheet" href="css/style.css?v=2.0">
   <style>
-    body { background: #181d23; color: #e5e5e5; }
-    .genre-wrap { max-width: 1200px; margin: 28px auto; padding: 20px; }
-    .genre-header { display: flex; align-items: center; gap: 16px; margin-bottom: 32px; }
-    .genre-badge { width: 80px; height: 80px; border-radius: 12px; background: linear-gradient(135deg, #1976d2 0%, #1565c0 100%); display: flex; align-items: center; justify-content: center; color: #fff; font-weight: bold; font-size: 36px; box-shadow: 0 4px 12px rgba(25, 118, 210, 0.18); }
-    .genre-info h1 { margin: 0 0 6px; font-size: 28px; color: #fff; }
-    .genre-info p { margin: 0; color: #b0b0b0; }
+    .actor-wrap { max-width: 1200px; margin: 28px auto; padding: 20px; }
+    .actor-header { display: flex; align-items: center; gap: 16px; margin-bottom: 32px; }
+    .actor-badge { width: 80px; height: 80px; border-radius: 12px; background: linear-gradient(135deg, #1976d2 0%, #1565c0 100%); display: flex; align-items: center; justify-content: center; color: #fff; font-weight: bold; font-size: 36px; box-shadow: 0 4px 12px rgba(25, 118, 210, 0.18); }
+    .actor-info h1 { margin: 0 0 6px; font-size: 28px; color: #fff; }
+    .actor-info p { margin: 0; color: #b0b0b0; }
     .back-link { display: inline-block; margin-bottom: 16px; color: #8bb6ff; text-decoration: none; font-weight: 600; }
-    .genre-filters { display: flex; align-items: center; gap: 10px; margin: 0 0 10px 0; padding: 0 12px; }
-    .genre-filters label { font-size: 1rem; color: #b0b0b0; }
+    @media (max-width: 768px) { .actor-header { flex-direction: column; align-items: flex-start; } .actor-info h1 { font-size: 22px; } }
+    body { background: #181d23; color: #e5e5e5; }
+    .actor-movies-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 28px 18px; margin: 32px 0 40px 0; padding: 0 12px; }
+    @media (max-width: 900px) { .actor-movies-grid { grid-template-columns: repeat(3, 1fr); } }
+    @media (max-width: 600px) { .actor-movies-grid { grid-template-columns: repeat(2, 1fr); gap: 18px 8px; margin: 18px 0 24px 0; padding: 0 4px; } }
+    .actor-movie-card { background: #23272f; border-radius: 16px; box-shadow: 0 2px 12px rgba(0,0,0,0.13); overflow: hidden; display: flex; flex-direction: column; align-items: stretch; transition: transform 0.18s; }
+    .actor-movie-card:hover { transform: translateY(-4px) scale(1.03); box-shadow: 0 6px 24px rgba(0,0,0,0.18); }
+    .actor-movie-card img { width: 100%; aspect-ratio: 2/3; object-fit: cover; background: #181d23; display: block; }
+    .actor-movie-info { padding: 14px 12px 12px 12px; display: flex; flex-direction: column; gap: 4px; }
+    .actor-movie-title { font-size: 1.08rem; font-weight: 600; color: #fff; margin-bottom: 2px; line-height: 1.18; }
+    .actor-movie-meta { font-size: 0.97rem; color: #b0b0b0; margin-bottom: 1px; }
+    .actor-movie-viewers { font-size: 0.93rem; color: #8bb6ff; }
+    .actor-filters { display: flex; align-items: center; gap: 10px; margin: 0 0 10px 0; padding: 0 12px; }
+    .actor-filters label { font-size: 1rem; color: #b0b0b0; }
     .custom-select { position: relative; min-width: 210px; background: #23272f; border-radius: 6px; cursor: pointer; user-select: none; box-shadow: 0 2px 8px rgba(0,0,0,0.10); border: 1px solid #333; transition: border-color 0.18s; }
     .custom-select.open, .custom-select:focus { border-color: #3963f0; z-index: 20; }
     .custom-select-selected { display: block; padding: 8px 36px 8px 14px; font-size: 1rem; color: #e5e5e5; background: transparent; border-radius: 6px; position: relative; }
@@ -22,93 +36,65 @@
     .custom-select-options { position: absolute; left: 0; right: 0; top: 100%; background: #23272f; border-radius: 0 0 6px 6px; box-shadow: 0 6px 24px rgba(0,0,0,0.18); margin: 0; padding: 0; z-index: 30; border: 1px solid #333; border-top: none; }
     .custom-select-options li { padding: 12px 16px; color: #e5e5e5; font-size: 1rem; cursor: pointer; transition: background 0.13s, color 0.13s; }
     .custom-select-options li.selected, .custom-select-options li:hover { background: #3963f0; color: #fff; }
-    @media (max-width: 900px) { .genre-grid { grid-template-columns: repeat(3, 1fr); } }
-    @media (max-width: 600px) { .genre-grid { grid-template-columns: repeat(2, 1fr); gap: 18px 8px; margin: 18px 0 24px 0; padding: 0 4px; } .genre-filters { flex-direction: column; align-items: stretch; gap: 6px; } .custom-select { min-width: 100%; width: 100%; } .custom-select-selected { font-size: 1.08rem; padding: 12px 36px 12px 14px; } .custom-select-options li { font-size: 1.08rem; padding: 16px 18px; } }
-    .genre-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 28px 18px; margin: 32px 0 40px 0; padding: 0 12px; }
-    .movie-card { background: #23272f; border-radius: 16px; box-shadow: 0 2px 12px rgba(0,0,0,0.13); overflow: hidden; display: flex; flex-direction: column; align-items: stretch; transition: transform 0.18s; }
-    .movie-card:hover { transform: translateY(-4px) scale(1.03); box-shadow: 0 6px 24px rgba(0,0,0,0.18); }
-    .movie-card a { text-decoration: none; color: inherit; display: block; }
-    .movie-poster { width: 100%; aspect-ratio: 2/3; overflow: hidden; background: #181d23; }
-    .movie-poster img { width: 100%; height: 100%; object-fit: cover; }
-    .movie-info { padding: 14px 12px 12px 12px; display: flex; flex-direction: column; gap: 4px; }
-    .movie-title { font-size: 1.08rem; font-weight: 600; color: #fff; margin-bottom: 2px; line-height: 1.18; }
-    .movie-meta { font-size: 0.97rem; color: #b0b0b0; margin-bottom: 1px; }
-    .movie-viewers { font-size: 0.93rem; color: #8bb6ff; }
-    .no-results { text-align: center; padding: 40px 20px; color: #999; }
+    @media (max-width: 600px) { .actor-filters { flex-direction: column; align-items: stretch; gap: 6px; } .custom-select { min-width: 100%; width: 100%; } .custom-select-selected { font-size: 1.08rem; padding: 12px 36px 12px 14px; } .custom-select-options li { font-size: 1.08rem; padding: 16px 18px; } }
   </style>
 </head>
 <body>
-  <div class="genre-wrap">
-    <a href="index.html" class="back-link" aria-label="Volver a la página anterior">← Volver</a>
-
-    <div class="genre-header">
-      <div class="genre-badge">✨</div>
-      <div class="genre-info">
-        <h1>Películas de Animación</h1>
-        <p id="movie-count">Cargando películas...</p>
-      </div>
-      <div class="genre-filters" style="margin-bottom:0; margin-left:auto;">
-        <label for="genreSortCustom">Ordenar por:</label>
-        <div class="custom-select" id="genreSortCustom" tabindex="0">
-          <span class="custom-select-selected">Cantidad de espectadores</span>
-          <ul class="custom-select-options" style="display:none;">
-            <li data-value="viewers" class="selected">Cantidad de espectadores</li>
-            <li data-value="year">Año de estreno (descendente)</li>
-            <li data-value="year-asc">Año de estreno (ascendente)</li>
-          </ul>
+  <div class="actor-wrap">
+    <main>
+      <a href="index.html" class="back-link" aria-label="Volver a la página anterior">&larr; Volver</a>
+      <div class="actor-header">
+        <div class="actor-badge">✨</div>
+        <div class="actor-info">
+          <h1>Películas de Animación</h1>
+          <p id="actor-movie-count">Cargando películas...</p>
+        </div>
+        <div class="actor-filters" style="margin-bottom:0; margin-left:auto;">
+          <label for="actorSortCustom">Ordenar por:</label>
+          <div class="custom-select" id="actorSortCustom" tabindex="0">
+            <span class="custom-select-selected">Cantidad de espectadores</span>
+            <ul class="custom-select-options" style="display:none;">
+              <li data-value="viewers" class="selected">Cantidad de espectadores</li>
+              <li data-value="year">Año de estreno (descendente)</li>
+              <li data-value="year-asc">Año de estreno (ascendente)</li>
+            </ul>
+          </div>
         </div>
       </div>
-    </div>
-
-    <div id="genre-content" class="genre-grid">
-      <!-- Las películas se cargarán aquí -->
-    </div>
+      <div class="actor-movies-grid" id="actorMoviesList">
+        <!-- Películas de Animación -->
+      </div>
+    </main>
   </div>
-
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="js/lightslider.js"></script>
   <script>
     // Listado de películas de animación
     const animacionMovies = [
-      { title: "Gigantes", year: 2024, viewers: 35551, date: "2024-08-08", image: "images/verticals/gigantes-aventura-extraordinaria-2024-poster-280x420.png", slug: "show.html?id=P1098" },
-      { title: "Robotia", year: 2024, viewers: 11733, date: "2024-08-29", image: "images/verticals/robotia-2024-poster-280x420.png", slug: "show.html?id=P1219" },
-      { title: "La Gallina Turuleca", year: 2019, viewers: 135158, date: "2019-11-10", image: "images/verticals/la-gallina-turuleca-2019-poster-280x420.png", slug: "show.html?id=P1081" },
-      { title: "Rodencia y el diente de la princesa", year: 2012, viewers: 31963, date: "2012-10-11", image: "images/verticals/rodencia-y-el-diente-de-la-princesa-2012-poster-280x420.png", slug: "show.html?id=P1047" },
-      { title: "Metegol", year: 2013, viewers: 2139844, date: "2013-07-18", image: "images/verticals/metegol-2013-poster-280x420.png", slug: "show.html?id=P1160" },
-      { title: "Selkirk, el verdadero Robinson Crusoe", year: 2012, viewers: 58832, date: "2012-02-02", image: "images/verticals/selkirk-robinson-crusoe-2012-poster-280x420.png", slug: "show.html?id=P1044" },
-      { title: "Don Gato y su pandilla", year: 2011, viewers: 116962, date: "2011-10-13", image: "images/verticals/don-gato-y-su-pandilla-2011-poster-280x420.png", slug: "show.html?id=P1401" },
-      { title: "Gaturro", year: 2010, viewers: 428949, date: "2010-07-07", image: "images/verticals/gaturro-2010-poster-280x420.png", slug: "show.html?id=P1040" },
-      { title: "Cuentos de la selva", year: 2010, viewers: 155988, date: "2010-11-16", image: "images/verticals/cuentos-de-la-selva-2010-poster-280x420.png", slug: "show.html?id=P1133" },
-      { title: "Plumíferos", year: 2010, viewers: 89257, date: "2010-02-18", image: "images/verticals/plumiferos-2010-poster-280x420.png", slug: "show.html?id=P1156" },
-      { title: "Boogie el aceitoso", year: 2009, viewers: 96460, date: "2009-10-22", image: "images/verticals/boogie-2009-poster-280x420.png", slug: "show.html?id=P1183" },
-      { title: "Valentina, la película", year: 2008, viewers: 142052, date: "2008-07-24", image: "images/verticals/valentina-2008-poster-280x420.png", slug: "show.html?id=P1190" },
-      { title: "El Arca", year: 2007, viewers: 340356, date: "2007-07-05", image: "images/verticals/el-arca-2007-poster-280x420.png", slug: "show.html?id=P1027" },
-      { title: "Isidoro", year: 2007, viewers: 275235, date: "2007-07-05", image: "images/verticals/isidoro-2007-poster-280x420.png", slug: "show.html?id=P1028" },
-      { title: "Martín Fierro, la Película", year: 2007, viewers: 102721, date: "2007-11-08", image: "images/verticals/martin-fierro-la-pelicula-2007-poster-280x420.png", slug: "show.html?id=P1030" },
-      { title: "Patoruzito 2: La Gran Aventura", year: 2006, viewers: 348665, date: "2006-06-29", image: "images/verticals/patoruzito2-pelicula-2006-poster-280x420.png", slug: "show.html?id=P1218" },
-      { title: "Patoruzito", year: 2004, viewers: 1996738, date: "2004-07-08", image: "images/verticals/patoruzito-2004-poster-280x420.png", slug: "show.html?id=P1022" },
-      { title: "Teo, cazador intergaláctico", year: 2004, viewers: 102447, date: "2004-12-09", image: "images/verticals/teo-cazador-intergalactico-2004-poster-280x420.png", slug: "show.html?id=P1023" },
-      { title: "Micaela, una película mágica", year: 2002, viewers: 78383, date: "2002-11-28", image: "images/verticals/micaela-2002-poster-280x420.png", slug: "show.html?id=P1213" },
-      { title: "Mercano, el marciano", year: 2002, viewers: 13805, date: "2002-10-03", image: "images/verticals/mercano-el-marciano-2002-poster-280x420.png", slug: "show.html?id=P1016" },
-      { title: "Corazón, las alegrías de Pantriste", year: 2000, viewers: 1030126, date: "2000-06-19", image: "images/verticals/corazon-pantriste-poster-2000-280x420.png", slug: "show.html?id=P1167" },
-      { title: "Los Pintín al rescate", year: 2000, viewers: 133761, date: "2000-07-13", image: "images/verticals/los-pintin-al-rescate-2000-poster-280x420.png", slug: "show.html?id=P1109" },
-      { title: "Condor Crux", year: 2000, viewers: 56958, date: "2000-01-06", image: "images/verticals/condor-crux-2000-poster-280x420.png", slug: "show.html?id=P1008" },
-      { title: "Manuelita", year: 1999, viewers: 2210600, date: "1999-07-08", image: "images/verticals/manuelita-1999-poster-280x420.png", slug: "show.html?id=P1006" }
+      { title: "Gigantes", year: 2024, viewers: 35551, image: "images/verticals/gigantes-aventura-extraordinaria-2024-poster-280x420.png", slug: "show.html?id=P1098" },
+      { title: "Robotia", year: 2024, viewers: 11733, image: "images/verticals/robotia-2024-poster-280x420.png", slug: "show.html?id=P1219" },
+      { title: "La Gallina Turuleca", year: 2019, viewers: 135158, image: "images/verticals/la-gallina-turuleca-2019-poster-280x420.png", slug: "show.html?id=P1081" },
+      { title: "Rodencia y el diente de la princesa", year: 2012, viewers: 31963, image: "images/verticals/rodencia-y-el-diente-de-la-princesa-2012-poster-280x420.png", slug: "show.html?id=P1047" },
+      { title: "Metegol", year: 2013, viewers: 2139844, image: "images/verticals/metegol-2013-poster-280x420.png", slug: "show.html?id=P1160" },
+      { title: "Selkirk, el verdadero Robinson Crusoe", year: 2012, viewers: 58832, image: "images/verticals/selkirk-robinson-crusoe-2012-poster-280x420.png", slug: "show.html?id=P1044" },
+      { title: "Don Gato y su pandilla", year: 2011, viewers: 116962, image: "images/verticals/don-gato-y-su-pandilla-2011-poster-280x420.png", slug: "show.html?id=P1401" },
+      { title: "Gaturro", year: 2010, viewers: 428949, image: "images/verticals/gaturro-2010-poster-280x420.png", slug: "show.html?id=P1040" },
+      { title: "Cuentos de la selva", year: 2010, viewers: 155988, image: "images/verticals/cuentos-de-la-selva-2010-poster-280x420.png", slug: "show.html?id=P1133" },
+      { title: "Plumíferos", year: 2010, viewers: 89257, image: "images/verticals/plumiferos-2010-poster-280x420.png", slug: "show.html?id=P1156" },
+      { title: "Boogie el aceitoso", year: 2009, viewers: 96460, image: "images/verticals/boogie-2009-poster-280x420.png", slug: "show.html?id=P1183" },
+      { title: "Valentina, la película", year: 2008, viewers: 142052, image: "images/verticals/valentina-2008-poster-280x420.png", slug: "show.html?id=P1190" },
+      { title: "El Arca", year: 2007, viewers: 340356, image: "images/verticals/el-arca-2007-poster-280x420.png", slug: "show.html?id=P1027" },
+      { title: "Isidoro", year: 2007, viewers: 275235, image: "images/verticals/isidoro-2007-poster-280x420.png", slug: "show.html?id=P1028" },
+      { title: "Martín Fierro, la Película", year: 2007, viewers: 102721, image: "images/verticals/martin-fierro-la-pelicula-2007-poster-280x420.png", slug: "show.html?id=P1030" },
+      { title: "Patoruzito 2: La Gran Aventura", year: 2006, viewers: 348665, image: "images/verticals/patoruzito2-pelicula-2006-poster-280x420.png", slug: "show.html?id=P1218" },
+      { title: "Patoruzito", year: 2004, viewers: 1996738, image: "images/verticals/patoruzito-2004-poster-280x420.png", slug: "show.html?id=P1022" },
+      { title: "Teo, cazador intergaláctico", year: 2004, viewers: 102447, image: "images/verticals/teo-cazador-intergalactico-2004-poster-280x420.png", slug: "show.html?id=P1023" },
+      { title: "Micaela, una película mágica", year: 2002, viewers: 78383, image: "images/verticals/micaela-2002-poster-280x420.png", slug: "show.html?id=P1213" },
+      { title: "Mercano, el marciano", year: 2002, viewers: 13805, image: "images/verticals/mercano-el-marciano-2002-poster-280x420.png", slug: "show.html?id=P1016" },
+      { title: "Corazón, las alegrías de Pantriste", year: 2000, viewers: 1030126, image: "images/verticals/corazon-pantriste-poster-2000-280x420.png", slug: "show.html?id=P1167" },
+      { title: "Los Pintín al rescate", year: 2000, viewers: 133761, image: "images/verticals/los-pintin-al-rescate-2000-poster-280x420.png", slug: "show.html?id=P1109" },
+      { title: "Condor Crux", year: 2000, viewers: 56958, image: "images/verticals/condor-crux-2000-poster-280x420.png", slug: "show.html?id=P1008" },
+      { title: "Manuelita", year: 1999, viewers: 2210600, image: "images/verticals/manuelita-1999-poster-280x420.png", slug: "show.html?id=P1006" }
     ];
-
-    function renderMovieCard(item) {
-      return `
-        <div class="movie-card">
-          <a href="${item.slug}">
-            <div class="movie-poster"><img src="${item.image}" loading="lazy" alt="${item.title}"></div>
-            <div class="movie-info">
-              <div class="movie-title">${item.title}</div>
-              <div class="movie-meta">Año: ${item.year}</div>
-              <div class="movie-viewers">Espectadores: ${item.viewers !== null && item.viewers !== undefined ? item.viewers.toLocaleString() : '—'}</div>
-            </div>
-          </a>
-        </div>
-      `;
-    }
 
     function renderMovies(sortBy) {
       let movies = [...animacionMovies];
@@ -119,13 +105,23 @@
       } else if (sortBy === 'year-asc') {
         movies.sort((a, b) => a.year - b.year);
       }
-      const list = document.getElementById('genre-content');
-      list.innerHTML = movies.map(renderMovieCard).join('');
-      document.getElementById('movie-count').textContent = movies.length + ' película' + (movies.length === 1 ? '' : 's');
+      const list = document.getElementById('actorMoviesList');
+      list.innerHTML = movies.map(movie => {
+        return `
+        <a href="${movie.slug}" class="actor-movie-card">
+          <img src="${movie.image}" alt="${movie.title}">
+          <div class="actor-movie-info">
+            <div class="actor-movie-title">${movie.title}</div>
+            <div class="actor-movie-meta">Año: ${movie.year}</div>
+            <div class="actor-movie-viewers">Espectadores: ${movie.viewers !== null && movie.viewers !== undefined ? movie.viewers.toLocaleString() : '—'}</div>
+          </div>
+        </a>
+        `;
+      }).join('');
+      document.getElementById('actor-movie-count').textContent = movies.length + ' película' + (movies.length === 1 ? '' : 's');
     }
-
     // Custom select logic
-    const customSelect = document.getElementById('genreSortCustom');
+    const customSelect = document.getElementById('actorSortCustom');
     const selectedSpan = customSelect.querySelector('.custom-select-selected');
     const optionsList = customSelect.querySelector('.custom-select-options');
     let currentSort = 'viewers';
@@ -174,4 +170,5 @@
     setSort('viewers', 'Cantidad de espectadores');
   </script>
 </body>
+</html>
 </html>
