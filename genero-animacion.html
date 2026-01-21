@@ -100,7 +100,13 @@
     function renderMovies(sortBy) {
       let movies = [...animacionMovies];
       if (sortBy === 'viewers') {
-        movies.sort((a, b) => (b.viewers || 0) - (a.viewers || 0));
+        movies.sort((a, b) => {
+          // Si a.viewers es '-', va al final
+          if (a.viewers === '-') return 1;
+          if (b.viewers === '-') return -1;
+          // Ambos son números
+          return (b.viewers || 0) - (a.viewers || 0);
+        });
       } else if (sortBy === 'year') {
         movies.sort((a, b) => b.year - a.year);
       } else if (sortBy === 'year-asc') {
