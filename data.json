@@ -8323,7 +8323,35 @@
       "actors": [
         "Jorge Marrale",
         "Pablo Rago",
-        "Nicolás Pauls",
+        "Nicolás Pauls"
+      ],
+      "orientation": "vertical",
+      "image": "images/verticals/acompaniantes-poster-280x420.png",
+      "subtitle": "Comedia"
+    },
+    {
+      "id": "P1402",
+      "title": "Mini Beat Power Rockers: La Película",
+      "type": "pelicula",
+      "year": "2024",
+      "genre": "Animación",
+      "actors": [
+        "Milo",
+        "Fuz",
+        "Carlos",
+        "Wat",
+        "Myke"
+      ],
+      "synopsis": "Los Power Rockers deben salvar el Día del Rock cuando un villano roba todos los instrumentos musicales del mundo. Juntos, emprenden una aventura llena de música y amistad para recuperar el ritmo perdido.",
+      "channel": "Cine",
+      "image": "images/verticals/mini-beat-power-rockers-la-pelicula-2024-poster-280x420.png",
+      "orientation": "vertical",
+      "viewers": 0,
+      "producer": "Discovery Kids, MundoLoco CGI",
+      "director": "Pablo R. Mazzolo",
+      "release_date": "2024-07-18",
+      "subtitle": "Animación"
+    }
         "Fabián Gianola"
       ],
       "orientation": "vertical",
