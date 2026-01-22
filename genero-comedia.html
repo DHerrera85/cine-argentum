@@ -132,12 +132,16 @@
         movies.sort((a, b) => a.year - b.year);
       } else if (sortBy === 'decada-1990') {
         movies = movies.filter(m => m.year >= 1990 && m.year < 2000);
+        movies.sort((a, b) => a.year - b.year);
       } else if (sortBy === 'decada-2000') {
         movies = movies.filter(m => m.year >= 2000 && m.year < 2010);
+        movies.sort((a, b) => a.year - b.year);
       } else if (sortBy === 'decada-2010') {
         movies = movies.filter(m => m.year >= 2010 && m.year < 2020);
+        movies.sort((a, b) => a.year - b.year);
       } else if (sortBy === 'decada-2020') {
         movies = movies.filter(m => m.year >= 2020);
+        movies.sort((a, b) => a.year - b.year);
       }
       document.getElementById('actorMoviesList').innerHTML = movies.map(movie => `
         <div class="actor-movie-card">
