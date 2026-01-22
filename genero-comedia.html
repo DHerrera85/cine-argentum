@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Películas de Comedia - Cine Argentum</title>
+  <link rel="stylesheet" href="css/style.css?v=2.0">
+  <style>
+    .actor-wrap { max-width: 1200px; margin: 28px auto; padding: 20px; }
+    .actor-header { display: flex; align-items: center; gap: 16px; margin-bottom: 32px; }
+    .actor-badge { width: 80px; height: 80px; border-radius: 12px; background: linear-gradient(135deg, #fbc02d 0%, #f57c00 100%); display: flex; align-items: center; justify-content: center; color: #fff; font-weight: bold; font-size: 36px; box-shadow: 0 4px 12px rgba(251, 192, 45, 0.18); }
+    .actor-info h1 { margin: 0 0 6px; font-size: 28px; color: #fff; }
+    .actor-info p { margin: 0; color: #b0b0b0; }
+    .back-link { display: inline-block; margin-bottom: 16px; color: #ffd54f; text-decoration: none; font-weight: 600; }
+    @media (max-width: 768px) { .actor-header { flex-direction: column; align-items: flex-start; } .actor-info h1 { font-size: 22px; } }
+    body { background: #181d23; color: #e5e5e5; }
+    .actor-movies-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 28px 18px; margin: 32px 0 40px 0; padding: 0 12px; }
+    @media (max-width: 900px) { .actor-movies-grid { grid-template-columns: repeat(3, 1fr); } }
+    @media (max-width: 600px) { .actor-movies-grid { grid-template-columns: repeat(2, 1fr); gap: 18px 8px; margin: 18px 0 24px 0; padding: 0 4px; } }
+    .actor-movie-card { background: #23272f; border-radius: 16px; box-shadow: 0 2px 12px rgba(0,0,0,0.13); overflow: hidden; display: flex; flex-direction: column; align-items: stretch; transition: transform 0.18s; }
+    .actor-movie-card:hover { transform: translateY(-4px) scale(1.03); box-shadow: 0 6px 24px rgba(0,0,0,0.18); }
+    .actor-movie-card img {
+      width: 100%;
+      aspect-ratio: 2/3;
+      object-fit: cover;
+      background: #181d23;
+      display: block;
+      border-bottom-left-radius: 22px;
+      border-bottom-right-radius: 22px;
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+    }
+    .actor-movie-info { padding: 14px 12px 12px 12px; display: flex; flex-direction: column; gap: 4px; }
+    .actor-movie-title { font-size: 1.08rem; font-weight: 600; color: #fff; margin-bottom: 2px; line-height: 1.18; }
+    .actor-movie-meta { font-size: 0.97rem; color: #b0b0b0; margin-bottom: 1px; }
+    .actor-movie-viewers { font-size: 0.93rem; color: #ffd54f; }
+    .actor-filters { display: flex; align-items: center; gap: 10px; margin: 0 0 10px 0; padding: 0 12px; }
+    .actor-filters label { font-size: 1rem; color: #b0b0b0; }
+    .custom-select { position: relative; min-width: 210px; background: #23272f; border-radius: 6px; cursor: pointer; user-select: none; box-shadow: 0 2px 8px rgba(0,0,0,0.10); border: 1px solid #333; transition: border-color 0.18s; }
+    .custom-select.open, .custom-select:focus { border-color: #fbc02d; z-index: 20; }
+    .custom-select-selected { display: block; padding: 8px 36px 8px 14px; font-size: 1rem; color: #e5e5e5; background: transparent; border-radius: 6px; position: relative; }
+    .custom-select-selected:after { content: ''; position: absolute; right: 14px; top: 50%; width: 0; height: 0; border-left: 6px solid transparent; border-right: 6px solid transparent; border-top: 7px solid #ffd54f; transform: translateY(-50%); pointer-events: none; }
+    .custom-select-options { position: absolute; left: 0; right: 0; top: 100%; background: #23272f; border-radius: 0 0 6px 6px; box-shadow: 0 6px 24px rgba(0,0,0,0.18); margin: 0; padding: 0; z-index: 30; border: 1px solid #333; border-top: none; }
+    .custom-select-options li { padding: 12px 16px; color: #e5e5e5; font-size: 1rem; cursor: pointer; transition: background 0.13s, color 0.13s; }
+    .custom-select-options li.selected, .custom-select-options li:hover { background: #fbc02d; color: #23272f; }
+    @media (max-width: 600px) { .actor-filters { flex-direction: column; align-items: stretch; gap: 6px; } .custom-select { min-width: 100%; width: 100%; } .custom-select-selected { font-size: 1.08rem; padding: 12px 36px 12px 14px; } .custom-select-options li { font-size: 1.08rem; padding: 16px 18px; } }
+  </style>
+</head>
+<body>
+  <div class="actor-wrap">
+    <main>
+      <a href="index.html" class="back-link" aria-label="Volver a la página anterior">&larr; Volver</a>
+      <div class="actor-header">
+        <div class="actor-badge">😂</div>
+        <div class="actor-info">
+          <h1>Películas de Comedia</h1>
+          <p id="actor-movie-count">Cargando películas...</p>
+        </div>
+        <div class="actor-filters" style="margin-bottom:0; margin-left:auto;">
+          <label for="actorSortCustom">Ordenar/Filtrar por:</label>
+          <div class="custom-select" id="actorSortCustom" tabindex="0">
+            <span class="custom-select-selected">Cantidad de espectadores</span>
+            <ul class="custom-select-options" style="display:none;">
+              <li data-value="viewers" class="selected">Cantidad de espectadores</li>
+              <li data-value="year">Año de estreno (descendente)</li>
+              <li data-value="year-asc">Año de estreno (ascendente)</li>
+              <li data-value="decada-1990">Películas de la década de 1990</li>
+              <li data-value="decada-2000">Películas de la década del 2000</li>
+              <li data-value="decada-2010">Películas de la década del 2010</li>
+              <li data-value="decada-2020">Películas de la década del 2020</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="actor-movies-grid" id="actorMoviesList">
+        <!-- Películas de Comedia -->
+      </div>
+    </main>
+  </div>
+  <script src="js/lightslider.js"></script>
+  <script>
+    // Cargar películas de comedia desde data.json
+    let comediaMovies = [];
+    fetch('data.json')
+      .then(response => response.json())
+      .then(data => {
+        const validTitles = [
+          "Esa maldita costilla","Déjala Correr","Sólo por Hoy","Papá se Volvió Loco","Los Incorregibles","Dos hermanos","Pájaros volando","Igualita a mí","Mi primera boda","Extraños en la noche","Vino para robar","Bañeros 4: los rompeolas","Kryptonita","Voley","Permitidos","La última fiesta","El rey del Once","El fútbol o yo","27: El club de los malditos","Re loca","Bañeros 5: Lentos y cargosos","El cuento de las comadrejas","No soy tu mami","Corazón Loco","Ex Casados","Matrimillas","Más Respeto que soy Tu Madre","30 Noches con mi Ex","Blondi","Puan","Casi Muerta","Culpa Cero","Transmitvah","El Hombre que Amaba los Platos Voladores","No Puedo Vivir Sin Ti","Mazel Tov","Homo Argentum","Me casé con un boludo","Socios por accidente","Dos más dos","La odisea de los giles","Corazón de león","Mi obra maestra","El Gerente",
+          // Agregados solicitados por el usuario:
+          "Papá por Dos","Las Hermanas Fantásticas","No Me Rompan","Granizo","Casi leyendas","Sin hijos","Peter Capusoto y sus 3 dimensiones","Días de vinilo","Un cuento chino","Un Novio para mi Mujer","Los Super Agentes: La Nueva Generación","Bañeros 3, todopoderosos","Cohen vs Rosi"
+        ];
+        const items = data.items || [];
+        const streamingTitles = [
+          "No Puedo Vivir Sin Ti",
+          "Granizo",
+          "Las Hermanas Fantásticas"
+        ];
+        comediaMovies = items.filter(item => item.genre === 'Comedia' && validTitles.includes(item.title)).map(movie => {
+          // Si es streaming, mostrar '-' en espectadores
+          if (streamingTitles.includes(movie.title)) {
+            return {
+              ...movie,
+              year: parseInt(movie.year),
+              viewers: '-',
+              image: movie.image,
+              slug: `show.html?id=${movie.id}`,
+              channel: "Streaming"
+            };
+          }
+          return {
+            title: movie.title,
+            year: parseInt(movie.year),
+            viewers: (movie.viewers === undefined || movie.viewers === null || movie.viewers === 0) ? (movie.channel === 'Netflix' ? '-' : movie.viewers || 0) : movie.viewers,
+            image: movie.image,
+            slug: `show.html?id=${movie.id}`
+          };
+        });
+        renderMovies('viewers');
+      });
+
+    function renderMovies(sortBy) {
+      let movies = [...comediaMovies];
+      if (sortBy === 'viewers') {
+        movies.sort((a, b) => {
+          if (a.viewers === '-') return 1;
+          if (b.viewers === '-') return -1;
+          return (b.viewers || 0) - (a.viewers || 0);
+        });
+      } else if (sortBy === 'year') {
+        movies.sort((a, b) => b.year - a.year);
+      } else if (sortBy === 'year-asc') {
+        movies.sort((a, b) => a.year - b.year);
+      } else if (sortBy === 'decada-1990') {
+        movies = movies.filter(m => m.year >= 1990 && m.year < 2000);
+      } else if (sortBy === 'decada-2000') {
+        movies = movies.filter(m => m.year >= 2000 && m.year < 2010);
+      } else if (sortBy === 'decada-2010') {
+        movies = movies.filter(m => m.year >= 2010 && m.year < 2020);
+      } else if (sortBy === 'decada-2020') {
+        movies = movies.filter(m => m.year >= 2020);
+      }
+      document.getElementById('actorMoviesList').innerHTML = movies.map(movie => `
+        <div class="actor-movie-card">
+          <a href="${movie.slug}" tabindex="0">
+            <img src="${movie.image}" alt="${movie.title}" loading="lazy" />
+          </a>
+          <div class="actor-movie-info">
+            <div class="actor-movie-title">${movie.title} (${movie.year})</div>
+            <div class="actor-movie-viewers">${movie.viewers !== undefined ? (movie.viewers === '-' ? '-' : movie.viewers.toLocaleString() + ' espectadores') : ''}</div>
+          </div>
+        </div>
+      `).join('');
+      document.getElementById('actor-movie-count').textContent = `${movies.length} películas`;
+    }
+
+    // Custom select logic
+    document.addEventListener('DOMContentLoaded', function() {
+      const select = document.getElementById('actorSortCustom');
+      const selected = select.querySelector('.custom-select-selected');
+      const options = select.querySelector('.custom-select-options');
+      select.addEventListener('click', function(e) {
+        options.style.display = options.style.display === 'none' ? 'block' : 'none';
+        select.classList.toggle('open');
+      });
+      options.querySelectorAll('li').forEach(li => {
+        li.addEventListener('click', function(e) {
+          options.querySelectorAll('li').forEach(opt => opt.classList.remove('selected'));
+          li.classList.add('selected');
+          selected.textContent = li.textContent;
+          options.style.display = 'none';
+          select.classList.remove('open');
+          renderMovies(li.getAttribute('data-value'));
+        });
+      });
+      document.addEventListener('click', function(e) {
+        if (!select.contains(e.target)) {
+          options.style.display = 'none';
+          select.classList.remove('open');
+        }
+      });
+    });
+  </script>
+</body>
+</html>
