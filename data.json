@@ -1734,7 +1734,7 @@
     },
     {
       "title": "La Noche Mágica",
-      "genre": "Familiar",
+      "genre": "Comedia",
       "year": "2021",
       "actors": [
         "Natalia Oreiro",
@@ -1745,7 +1745,7 @@
       "image": "images/verticals/la-noche-magica-2021-poster-280x420.png",
       "orientation": "vertical",
       "type": "pelicula",
-      "subtitle": "Familiar",
+      "subtitle": "Comedia",
       "id": "P1087",
       "viewers": 26156,
       "producer": "Buena Vista International",

@@ -64,6 +64,10 @@
               <li data-value="viewers" class="selected">Cantidad de espectadores</li>
               <li data-value="year">Año de estreno (descendente)</li>
               <li data-value="year-asc">Año de estreno (ascendente)</li>
+              <li data-value="decada-1990">Películas de la década de 1990</li>
+              <li data-value="decada-2000">Películas de la década del 2000</li>
+              <li data-value="decada-2010">Películas de la década del 2010</li>
+              <li data-value="decada-2020">Películas de la década del 2020</li>
             </ul>
           </div>
         </div>
@@ -79,7 +83,9 @@
     fetch('data.json')
       .then(r => r.json())
       .then(data => {
-        familiarMovies = (data.items || []).filter(it => it.genre && it.genre.toLowerCase().includes('familiar'))
+            familiarMovies = (data.items || [])
+              .filter(it => it.genre && it.genre.toLowerCase().includes('familiar'))
+              .filter(it => it.title !== 'La Noche Mágica')
           .map(it => ({
             title: it.title,
             year: Number(it.year) || '-',
@@ -101,6 +107,18 @@
       } else if (sortBy === 'year') {
         movies.sort((a, b) => b.year - a.year);
       } else if (sortBy === 'year-asc') {
+        movies.sort((a, b) => a.year - b.year);
+      } else if (sortBy === 'decada-1990') {
+        movies = movies.filter(m => m.year >= 1990 && m.year < 2000);
+        movies.sort((a, b) => a.year - b.year);
+      } else if (sortBy === 'decada-2000') {
+        movies = movies.filter(m => m.year >= 2000 && m.year < 2010);
+        movies.sort((a, b) => a.year - b.year);
+      } else if (sortBy === 'decada-2010') {
+        movies = movies.filter(m => m.year >= 2010 && m.year < 2020);
+        movies.sort((a, b) => a.year - b.year);
+      } else if (sortBy === 'decada-2020') {
+        movies = movies.filter(m => m.year >= 2020);
         movies.sort((a, b) => a.year - b.year);
       }
       const list = document.getElementById('actorMoviesList');
