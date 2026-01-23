@@ -7,7 +7,8 @@ document.addEventListener('DOMContentLoaded', async function() {
   let series = [];
   // Listado estricto de series Telefe (título, año, género)
   const telefeList = [
-    { year: '2000', title: 'Chiquititas', genre: 'Juvenil' },
+     { year: '2000', title: 'Chiquititas', genre: 'Juvenil' },
+     { year: '2000', title: "Verano del '98", genre: 'Juvenil' },
     { year: '2000', title: 'Luna Salvaje', genre: 'Telenovela' },
     { year: '2001', title: 'EnAmorArte', genre: 'Juvenil' },
     { year: '2001', title: 'Yago, Pasión Morena', genre: 'Telenovela' },

@@ -1,6 +1,34 @@
 {
   "items": [
     {
+      "id": "V285",
+      "title": "Verano del '98",
+      "year": "2000",
+      "channel": "Telefe",
+      "genre": "Juvenil",
+      "actors": [
+        "Marcela Kloosterboer",
+        "Celeste Cid",
+        "Florencia Peña",
+        "Carla Peterson",
+        "Gloria Carrá",
+        "Rafael Ferro",
+        "Nahuel Mutti",
+        "Juan Ponce De León",
+        "Guido Kackzca",
+        "Joaquín Furriel"
+      ],
+      "orientation": "vertical",
+      "image": "images/verticals/verano-del-98-poster-280x420.png",
+      "subtitle": "Juvenil",
+      "horario": "19:00hs",
+      "capitulos": 679,
+      "fecha_estreno": "26/01/1998",
+      "sinopsis": "Tras la muerte de Germán, Rafael llega a Costa Esperanza con la tutela de Brisa para criarla en el pueblo donde vivió su madre. El regreso de África de José y la aparición de nuevos personajes reconfiguran la vida y los vínculos de la comunidad.",
+      "rating": "-",
+      "productora": "Telefe Contenidos"
+      },
+      {
       "title": "La furia",
       "genre": "Policial",
       "year": "1997",
@@ -6513,7 +6541,13 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/chiquititas2000-poster-280x420.png",
-      "subtitle": "Juvenil"
+      "subtitle": "Juvenil",
+      "horario": "18hs",
+      "capitulos": 144,
+      "fecha_estreno": "02/05/2000",
+      "sinopsis": "Tras escapar del Hogar de las Sombras, los Chufos descubren una misteriosa mansión que creen ser el verdadero Rincón de Luz, pero allí se enfrentan a apariciones fantasmales y una persecución policial. Con la ayuda de Luz, una fugitiva, descubren secretos ocultos y se enfrentan a una nueva amenaza cuando una mujer llega afirmando heredar la casa.",
+      "rating": "-",
+      "productora": "Telefe Contenidos"
     },
     {
       "id": "V150",
