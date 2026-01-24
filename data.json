@@ -1137,7 +1137,34 @@
       "viewers": 119972,
       "producer": "Crudo Films, Hermanos Dawidson Films, Energía",
       "director": "Nicanor Loreti"
-    },
+        },
+        {
+          "title": "Alguien que me quiera",
+          "genre": "Telenovela",
+          "year": "2010",
+          "actors": [
+            "Osvaldo Laport",
+            "Andrea del Boca",
+            "Miguel Ángel Rodríguez",
+            "Susú Pecoraro",
+            "Viviana Saccone",
+            "Luisana Lopilato"
+          ],
+          "synopsis": "Rocío huye de un matrimonio violento y encuentra refugio en el Mercado Comunitario del Sur, donde conoce a Rodolfo, un hombre recién liberado tras ser condenado injustamente. Entre los puestos del mercado se cruzan historias de amor, secretos y segundas oportunidades que transforman para siempre la vida de sus protagonistas.",
+          "channel": "Canal 13",
+          "image": "images/verticals/alguien-que-me-quiera-poster-280x420.png",
+          "orientation": "vertical",
+          "type": "telenovela",
+          "subtitle": "Telenovela",
+          "id": "V286",
+          "viewers": 0,
+          "producer": "Pol-Ka",
+          "director": "",
+          "schedule": "21:45hs; 19:00hs",
+          "episodes": 185,
+          "release_date": "2010-02-01",
+          "rating": 13
+        },
     {
       "title": "Abzurdah",
       "genre": "Drama",
