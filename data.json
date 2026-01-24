@@ -5646,7 +5646,14 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/los-buscas-poster-280x420.png",
-      "subtitle": "Telenovela"
+      "subtitle": "Telenovela",
+      "horario": "22hs",
+      "capitulos": 337,
+      "fecha_estreno": "3/1/2000",
+      "sinopsis": "Martín, un joven rebelde de origen humilde, y Bárbara, criada en un mundo privilegiado, se enamoran pese a las barreras sociales. Su relación prohibida desafía prejuicios familiares y heridas del pasado.",
+      "rating": "14",
+      "productora": "Estevanez Producciones",
+      "tipo_emision": "Tira Diaria"
     },
     {
       "id": "v91",
@@ -5705,7 +5712,14 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/primicias-poster-280x420.png",
-      "subtitle": "Telenovela"
+      "subtitle": "Telenovela",
+      "horario": "22hs",
+      "capitulos": 213,
+      "fecha_estreno": "3/1/2000",
+      "sinopsis": "“Primicias” retrata la feroz competencia entre un diario y un canal de noticias por conseguir primicias exclusivas. En la lucha por el poder mediático salen a la luz secretos, escándalos y un inesperado lazo familiar entre dos periodistas.",
+      "rating": "13",
+      "productora": "Pol-Ka",
+      "tipo_emision": "Tira Diaria"
     },
     {
       "id": "v95",
