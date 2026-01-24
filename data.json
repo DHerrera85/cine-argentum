@@ -7839,7 +7839,7 @@
       "title": "Signos",
       "year": "2015",
       "channel": "Canal 13",
-      "genre": "Policial",
+      "genre": "Thriller",
       "actors": [
         "Julio Chávez",
         "Claudia Fontán",
@@ -7847,7 +7847,7 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/signos-poster-280x420.png",
-      "subtitle": "Policial"
+      "subtitle": "Thriller"
     },
     {
       "id": "V232",
@@ -7997,7 +7997,7 @@
       "title": "El Puntero",
       "year": "2011",
       "channel": "Canal 13",
-      "genre": "Policial",
+      "genre": "Thriller",
       "actors": [
         "Julio Chávez",
         "Gabriela Toscano",
@@ -8006,14 +8006,14 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/el-puntero-poster-280x420.png",
-      "subtitle": "Policial"
+      "subtitle": "Thriller"
     },
     {
       "id": "V241",
       "title": "El Hombre que volvió de la Muerte",
       "year": "2007",
       "channel": "Canal 13",
-      "genre": "Policial",
+      "genre": "Thriller",
       "actors": [
         "Diego Peretti",
         "Nancy Dupláa",
@@ -8022,7 +8022,7 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/el-hombre-que-volvio-de-la-muerte-poster-280x420.png",
-      "subtitle": "Policial"
+      "subtitle": "Thriller"
     },
     {
       "id": "V242",
@@ -8570,26 +8570,26 @@
       "title": "Botines",
       "year": "2005",
       "channel": "Canal 13",
-      "genre": "Policial",
+      "genre": "Thriller",
       "actors": [
         "Elenco Rotativo"
       ],
       "orientation": "vertical",
       "image": "images/verticals/botines-poster-280x420.png",
-      "subtitle": "Policial"
+      "subtitle": "Thriller"
     },
     {
       "id": "V277",
       "title": "Mujeres Asesinas",
       "year": "2005",
       "channel": "Canal 13",
-      "genre": "Policial",
+      "genre": "Thriller",
       "actors": [
         "Elenco Rotativo"
       ],
       "orientation": "vertical",
       "image": "images/verticals/mujeres-asesinas-poster-280x420.png",
-      "subtitle": "Policial"
+      "subtitle": "Thriller"
     },
     {
       "id": "V278",
@@ -8734,7 +8734,7 @@
       "title": "22, El Loco",
       "year": "2001",
       "channel": "Canal 13",
-      "genre": "Policial",
+      "genre": "Thriller",
       "actors": [
         "Adrián Suar",
         "Nancy Dupláa",
@@ -8744,14 +8744,14 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/22-el-loco-poster-280x420.png",
-      "subtitle": "Comedia"
+      "subtitle": "Thriller"
     },
     {
       "id": "v36",
       "title": "099 Central",
       "year": "2002",
       "channel": "Canal 13",
-      "genre": "Policial",
+      "genre": "Thriller",
       "actors": [
         "Facundo Arana",
         "Nancy Dupláa",
@@ -8759,14 +8759,14 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/099-central-poster-280x420.png",
-      "subtitle": "Policial"
+      "subtitle": "Thriller"
     },
     {
       "id": "v37",
       "title": "Sin Código 2",
       "year": "2005",
       "channel": "Canal 13",
-      "genre": "Policial",
+      "genre": "Comedia",
       "actors": [
         "Adrián Suar",
         "Nancy Dupláa",
@@ -8774,7 +8774,7 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/sin-codigo-2-poster-280x420.png",
-      "subtitle": "Policial"
+      "subtitle": "Comedia"
     },
     {
       "id": "v39",
