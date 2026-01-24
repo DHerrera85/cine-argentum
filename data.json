@@ -4672,7 +4672,7 @@
       "title": "Son de Fierro",
       "year": "2007",
       "channel": "Canal 13",
-      "genre": "Comedia Dramática",
+      "genre": "Telenovela",
       "actors": [
         "Osvaldo Laport",
         "Mariano Martínez",
@@ -4871,7 +4871,7 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/argentina-tierra-de-amor-y-venganza-2019-poster-280x420.png",
-      "subtitle": "Telenovela histórica"
+      "subtitle": "Telenovela"
     },
     {
       "id": "h2",
@@ -4912,7 +4912,7 @@
       "title": "La 1-5/18: Somos Uno",
       "year": "2021",
       "channel": "Canal 13",
-      "genre": "Drama",
+      "genre": "Thriller",
       "actors": [
         "Gonzalo Heredia",
         "Agustina Cherri",
@@ -4923,14 +4923,14 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/la-1-518-somos-uno-poster-280x420.png",
-      "subtitle": "Drama"
+      "subtitle": "Thriller"  
     },
     {
       "id": "h5",
       "title": "Buenos Chicos",
       "year": "2023",
       "channel": "Canal 13",
-      "genre": "Policial",
+      "genre": "Thriller",
       "actors": [
         "Jerónimo Bosia",
         "Gabriela Toscano",
@@ -4941,7 +4941,7 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/buenos-chicos-poster-280x420.png",
-      "subtitle": "Comedia"
+      "subtitle": "Thriller"
     },
     {
       "id": "h6",
@@ -5069,7 +5069,7 @@
       "title": "Padre Coraje",
       "year": "2004",
       "channel": "Canal 13",
-      "genre": "Drama",
+      "genre": "Telenovela",
       "actors": [
         "Facundo Arana",
         "Nancy Dupláa",
@@ -5077,7 +5077,7 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/padre-coraje-poster-280x420.png",
-      "subtitle": "Drama"
+      "subtitle": "Telenovela"
     },
     {
       "id": "v19",
@@ -5100,14 +5100,14 @@
       "title": "Esperanza Mía",
       "year": "2015",
       "channel": "Canal 13",
-      "genre": "Musical",
+      "genre": "Comedia",
       "actors": [
         "Mariano Martínez",
         "Lali Espósito"
       ],
       "orientation": "vertical",
       "image": "images/verticals/esperanza-mia-poster-280x420.png",
-      "subtitle": "Musical"
+      "subtitle": "Comedia"
     },
     {
       "id": "v21",
@@ -5131,7 +5131,7 @@
       "title": "Simona",
       "year": "2018",
       "channel": "Canal 13",
-      "genre": "Musical",
+      "genre": "Comedia",
       "actors": [
         "Ángela Torres",
         "Juan Darthés",
@@ -5140,7 +5140,7 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/simona-poster-280x420.png",
-      "subtitle": "Telenovela"
+      "subtitle": "Comedia"
     },
     {
       "id": "v23",
@@ -5177,18 +5177,21 @@
       "title": "Mis Amigos de Siempre",
       "year": "2013",
       "channel": "Canal 13",
-      "genre": "Drama",
+      "genre": "Telenovela",
       "actors": [
         "Nicolás Cabré",
         "Nicolás Vázquez",
         "Gonzalo Heredia",
         "Agustina Cherri",
         "Calu Rivero",
-        "Emilia Attias"
+        "Emilia Attias",
+        "Osvaldo Laport",
+        "Soledad Silveyra",
+        "Claribel Medina"
       ],
       "orientation": "vertical",
       "image": "images/verticals/mis-amigos-de-siempre-poster-280x420.png",
-      "subtitle": "Comedia"
+      "subtitle": "Telenovela"
     },
     {
       "id": "v26",
@@ -5212,7 +5215,7 @@
       "title": "Las Estrellas",
       "year": "2017",
       "channel": "Canal 13",
-      "genre": "Comedia Romántica",
+      "genre": "Comedia",
       "actors": [
         "Celeste Cid",
         "Marcela Kloosterboer",
@@ -5222,7 +5225,7 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/las-estrellas-poster-280x420.png",
-      "subtitle": "Drama"
+      "subtitle": "Comedia"
     },
     {
       "id": "v28",
@@ -5247,7 +5250,7 @@
       "title": "Guapas",
       "year": "2014",
       "channel": "Canal 13",
-      "genre": "Comedia Dramática",
+      "genre": "Comedia",
       "actors": [
         "Mercedes Morán",
         "Carla Peterson",
@@ -5257,14 +5260,14 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/guapas-poster-280x420.png",
-      "subtitle": "Comedia dramática"
+      "subtitle": "Comedia"
     },
     {
       "id": "v30",
       "title": "Separadas",
       "year": "2020",
       "channel": "Canal 13",
-      "genre": "Comedia Dramática",
+      "genre": "Comedia",
       "actors": [
         "Celeste Cid",
         "Marcela Kloosterboer",
@@ -5276,7 +5279,7 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/separadas-poster-280x420.png",
-      "subtitle": "Drama"
+      "subtitle": "Comedia"
     },
     {
       "id": "v31",
@@ -5577,14 +5580,14 @@
       "title": "Juanita, la Soltera",
       "year": "2006",
       "channel": "Canal 13",
-      "genre": "Comedia Romántica",
+      "genre": "Comedia",
       "actors": [
         "Gabriel Corrado",
         "Soledad Fandiño"
       ],
       "orientation": "vertical",
       "image": "images/verticals/juanita-la-soltera-poster-280x420.png",
-      "subtitle": "Comedia romántica"
+      "subtitle": "Comedia"
     },
     {
       "id": "v87",
@@ -5650,28 +5653,28 @@
       "title": "Ilusiones Compartidas",
       "year": "2000",
       "channel": "Canal 13",
-      "genre": "Comedia Dramática",
+      "genre": "Comedia",
       "actors": [
         "Oscar Martínez",
         "Catherine Fulop"
       ],
       "orientation": "vertical",
       "image": "images/verticals/ilusiones-poster-280x420.png",
-      "subtitle": "Comedia romántica"
+      "subtitle": "Comedia"
     },
     {
       "id": "v92",
       "title": "El Sodero de mi Vida",
       "year": "2001",
       "channel": "Canal 13",
-      "genre": "Comedia Romántica",
+      "genre": "Comedia",
       "actors": [
         "Dady Brieva",
         "Andrea del Boca"
       ],
       "orientation": "vertical",
       "image": "images/verticals/el-sodero-de-mi-vida-poster-280x420.png",
-      "subtitle": "Comedia romántica"
+      "subtitle": "Comedia"
     },
     {
       "id": "v93",
@@ -5813,7 +5816,7 @@
     },
     {
       "id": "v102",
-      "title": "Los Secretos de Papí",
+      "title": "Los Secretos de Papá",
       "year": "2004",
       "channel": "Canal 13",
       "genre": "Comedia",
@@ -6161,7 +6164,7 @@
       "title": "Enséñame a Vivir",
       "year": "2009",
       "channel": "Canal 13",
-      "genre": "Comedia Romántica",
+      "genre": "Juvenil",
       "actors": [
         "Pablo Rago",
         "Violeta Urtizberea",
@@ -6169,7 +6172,7 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/ensename-a-vivir-poster-280x420.png",
-      "subtitle": "Comedia romántica"
+      "subtitle": "Juvenil"
     },
     {
       "id": "V125",
@@ -6544,7 +6547,7 @@
       "title": "Campeones de la Vida",
       "year": "2000",
       "channel": "Canal 13",
-      "genre": "Comedia Dramática",
+      "genre": "Telenovela",
       "actors": [
         "Osvaldo Laport",
         "Soledad Silveyra",
@@ -6553,7 +6556,7 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/campeones-poster-280x420.png",
-      "subtitle": "Comedia dramática"
+      "subtitle": "Telenovela"
     },
     {
       "id": "V149",
@@ -6574,7 +6577,8 @@
       "fecha_estreno": "02/05/2000",
       "sinopsis": "Tras escapar del Hogar de las Sombras, los Chufos descubren una misteriosa mansión que creen ser el verdadero Rincón de Luz, pero allí se enfrentan a apariciones fantasmales y una persecución policial. Con la ayuda de Luz, una fugitiva, descubren secretos ocultos y se enfrentan a una nueva amenaza cuando una mujer llega afirmando heredar la casa.",
       "rating": "-",
-      "productora": "Telefe Contenidos"
+      "productora": "Telefe Contenidos",
+      "tipo_emision": "Tira Diaria"
     },
     {
       "id": "V150",
@@ -7782,7 +7786,7 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/el-maestro-poster-280x420.png",
-      "subtitle": "Thriller"
+      "subtitle": "Drama"
     },
     {
       "id": "V228",
@@ -8322,7 +8326,7 @@
       "title": "Silencios de Familia",
       "year": "2016",
       "channel": "Canal 13",
-      "genre": "Comedia Dramática",
+      "genre": "Drama",
       "actors": [
         "Adrián Suar",
         "Julieta Díaz",
@@ -8330,7 +8334,7 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/silencios-de-familia-poster-280x420.png",
-      "subtitle": "Comedia dramática"
+      "subtitle": "Drama"
     },
     {
       "id": "V262",
@@ -8566,26 +8570,26 @@
       "title": "Botines",
       "year": "2005",
       "channel": "Canal 13",
-      "genre": "Crimen",
+      "genre": "Policial",
       "actors": [
         "Elenco Rotativo"
       ],
       "orientation": "vertical",
       "image": "images/verticals/botines-poster-280x420.png",
-      "subtitle": "Crimen"
+      "subtitle": "Policial"
     },
     {
       "id": "V277",
       "title": "Mujeres Asesinas",
       "year": "2005",
       "channel": "Canal 13",
-      "genre": "Crimen",
+      "genre": "Policial",
       "actors": [
         "Elenco Rotativo"
       ],
       "orientation": "vertical",
       "image": "images/verticals/mujeres-asesinas-poster-280x420.png",
-      "subtitle": "Crimen"
+      "subtitle": "Policial"
     },
     {
       "id": "V278",
@@ -8770,7 +8774,7 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/sin-codigo-2-poster-280x420.png",
-      "subtitle": "Drama"
+      "subtitle": "Policial"
     },
     {
       "id": "v39",
@@ -9072,7 +9076,7 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/los-unicos-2011-poster-280x420.png",
-      "subtitle": "Acción"
+      "subtitle": "Comedia"
     },
     {
       "id": "v56",
@@ -9126,7 +9130,7 @@
       "title": "Lobo",
       "year": "2012",
       "channel": "Canal 13",
-      "genre": "Drama",
+      "genre": "Telenovela",
       "actors": [
         "Gonzalo Heredia",
         "Vanesa González",
@@ -9135,7 +9139,7 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/lobo-poster-280x420.png",
-      "subtitle": "Drama"
+      "subtitle": "Telenovela"
     },
     {
       "id": "v60",
@@ -9172,7 +9176,7 @@
       "title": "Valentino, el Argentino",
       "year": "2008",
       "channel": "Canal 13",
-      "genre": "Comedia Romántica",
+      "genre": "Comedia",
       "actors": [
         "Julián Román",
         "Liliana Gonzílez",
@@ -9180,7 +9184,7 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/valentino-el-argentino-280x420.png",
-      "subtitle": "Comedia romántica"
+      "subtitle": "Comedia"
     },
     {
       "id": "v63",
@@ -9216,7 +9220,7 @@
       "title": "Dr. Amor",
       "year": "2003",
       "channel": "Canal 13",
-      "genre": "Comedia Romántica",
+      "genre": "Comedia",
       "actors": [
         "Arturo Puig",
         "Lorna Paz",

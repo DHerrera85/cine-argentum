@@ -207,16 +207,22 @@ document.addEventListener('DOMContentLoaded', async function() {
       filtered.sort((a, b) => (a.year || 0) - (b.year || 0)); // ascendente: más antigua primero
     } else if (sort === 'comedias') {
       filtered = filtered.filter(item => item.genre === 'comedia');
+      filtered.sort((a, b) => (parseInt(b.year) || 0) - (parseInt(a.year) || 0));
     } else if (sort === 'telenovelas') {
       filtered = filtered.filter(item => item.genre === 'telenovela');
+      filtered.sort((a, b) => (parseInt(b.year) || 0) - (parseInt(a.year) || 0));
     } else if (sort === 'juveniles') {
       filtered = filtered.filter(item => item.genre === 'juvenil');
+      filtered.sort((a, b) => (parseInt(b.year) || 0) - (parseInt(a.year) || 0));
     } else if (sort === 'sitcoms') {
       filtered = filtered.filter(item => item.genre === 'sitcom');
+      filtered.sort((a, b) => (parseInt(b.year) || 0) - (parseInt(a.year) || 0));
     } else if (sort === 'policiales') {
       filtered = filtered.filter(item => item.genre === 'thriller' || item.genre === 'policial');
+      filtered.sort((a, b) => (parseInt(b.year) || 0) - (parseInt(a.year) || 0));
     } else if (sort === 'unitarios') {
       filtered = filtered.filter(item => item.genre === 'drama' || item.type === 'unitario');
+      filtered.sort((a, b) => (parseInt(b.year) || 0) - (parseInt(a.year) || 0));
     }
     // Restaurar género capitalizado para visualización
     filtered = filtered.map(item => ({ ...item, genre: item.genre.charAt(0).toUpperCase() + item.genre.slice(1) }));
