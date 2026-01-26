@@ -393,9 +393,10 @@ footer p{ color:#b0b0b0; margin:0; font-size:.9rem; }
   
   /* HORIZONTALES: 1 imagen completa + peek (85% del viewport) */
   .slider-h .showcase-box{
-    width:85vw;
+    width:90vw;
     max-width:500px;
-    margin:0 8px 14px;
+    margin:0 auto 14px auto;
+    box-sizing:border-box;
   }
   
 
@@ -480,8 +481,10 @@ footer p{ color:#b0b0b0; margin:0; font-size:.9rem; }
 @media (max-width:480px){
   /* HORIZONTALES: 1 + peek más ajustado */
   .slider-h .showcase-box{
-    width:88vw;
-    margin:0 6px 14px;
+    width:92vw;
+    max-width:360px;
+    margin:0 auto 14px auto;
+    box-sizing:border-box;
   }
   
   /* VERTICALES: 2 pósters más compactos */
