@@ -5419,7 +5419,14 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/los-medicos-de-hoy-poster-280x420.png",
-      "subtitle": "Telenovela"
+      "subtitle": "Telenovela",
+      "horario": "14hs",
+      "capitulos": 159,
+      "fecha_estreno": "15/5/2000",
+      "sinopsis": "Dos hermanos médicos de origen humilde enfrentan romances prohibidos que ponen en riesgo sus carreras en un hospital de alta exigencia. La serie cruza amor, ambición y conflicto de clases en la vida cotidiana del personal de salud.",
+      "rating": "13",
+      "productora": "Estevanez Producciones",
+      "tipo_emision": "Tira Diaria"
     },
     {
       "id": "v75",
@@ -5433,7 +5440,14 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/luna-salvaje-poster-280x420.png",
-      "subtitle": "Telenovela"
+      "subtitle": "Telenovela",
+      "horario": "13hs",
+      "capitulos": 151,
+      "fecha_estreno": "30/10/2000",
+      "sinopsis": "“Luna Salvaje” cuenta la historia de Leticia, quien convence a su esposo Gonzalo de tener un hijo con María mediante un contrato de gestación subrogada. Pero cuando María y Gonzalo se enamoran, todo se descontrola.",
+      "rating": "15",
+      "productora": "Telefe Contenidos",
+      "tipo_emision": "Tira Diaria"
     },
     {
       "id": "v76",
@@ -5603,7 +5617,14 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/mujeres-de-nadie-primer-temporada-poster-280x420.png",
-      "subtitle": "Telenovela"
+      "subtitle": "Telenovela",
+      "horario": "20hs, 18hs",
+      "capitulos": 200,
+      "fecha_estreno": "1/8/2000",
+      "sinopsis": "Dos hermanos pilotos, Fernando y Nacho, se enamoran de la misma mujer sin saberlo, víctimas de una confusión provocada por dos jóvenes. Entre Miami y Buenos Aires, la historia se convierte en una comedia de enredos románticos y malentendidos.",
+      "rating": "7",
+      "productora": "Central Park, Raúl Lecouna",
+      "tipo_emision": "Tira Diaria"
     },
     {
       "id": "v88",
@@ -5667,7 +5688,14 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/ilusiones-poster-280x420.png",
-      "subtitle": "Comedia"
+      "subtitle": "Comedia",
+      "horario": "22hs",
+      "capitulos": 138,
+      "fecha_estreno": "4/12/2000",
+      "sinopsis": "Félix Figueroa, un mago talentoso pero frustrado, actúa en un restaurante mientras enfrenta desamores y busca una segunda oportunidad. La llegada de Laura Grimaldi, nueva dueña del lugar, desata un conflicto que deriva en un romance inesperado.",
+      "rating": "11",
+      "productora": "Pol-Ka",
+      "tipo_emision": "Tira Diaria"
     },
     {
       "id": "v92",
@@ -5681,7 +5709,14 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/el-sodero-de-mi-vida-poster-280x420.png",
-      "subtitle": "Comedia"
+      "subtitle": "Comedia",
+      "horario": "21hs",
+      "capitulos": 231,
+      "fecha_estreno": "5/3/2001",
+      "sinopsis": "Sofía, psicóloga y sexóloga, regresa a su barrio natal y se enamora de Alberto, un carismático lechero famoso por sus romances. Su relación se ve puesta a prueba por conflictos personales, familiares y laborales que amenazan separarlos.",
+      "rating": "19,2",
+      "productora": "Pol-Ka",
+      "tipo_emision": "Tira Diaria"
     },
     {
       "id": "v93",
@@ -6220,7 +6255,14 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/calientes-poster-280x420.png",
-      "subtitle": "Juvenil"
+      "subtitle": "Juvenil",
+      "horario": "21hs, 19hs",
+      "capitulos": 87,
+      "fecha_estreno": "3/1/2000",
+      "sinopsis": "Dueños y empleados de tres locales gastronómicos conviven en armonía hasta que la llegada de dos inversores rompe el equilibrio. La comida, la amistad y el barrio se transforman en una competencia feroz.",
+      "rating": "6,1",
+      "productora": "Pol-Ka",
+      "tipo_emision": "Tira Diaria"
     },
     {
       "id": "V127",
@@ -6570,7 +6612,14 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/campeones-poster-280x420.png",
-      "subtitle": "Telenovela"
+      "subtitle": "Telenovela",
+      "horario": "22hs, 21hs",
+      "capitulos": 247,
+      "fecha_estreno": "3/1/2000",
+      "sinopsis": "En el mundo del boxeo, dos familias y un excampeón enfrentan ambición, amor y sacrificios mientras persiguen la gloria arriba y abajo del ring. Entre adicciones, romances y segundas oportunidades, cada uno pelea su batalla más difícil.",
+      "rating": "21,1",
+      "productora": "Pol-Ka",
+      "tipo_emision": "Tira Diaria"
     },
     {
       "id": "V149",
@@ -6807,7 +6856,14 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/cancheritos-poster-280x420.png",
-      "subtitle": "Juvenil"
+      "subtitle": "Juvenil",
+      "horario": "18hs",
+      "capitulos": 40,
+      "fecha_estreno": "2/1/2001",
+      "sinopsis": "Un niño descubre que está destinado a salvar la Tierra con la ayuda de un robot viajero en el tiempo disfrazado de chico y un equipo de fútbol barrial. Entre ciencia ficción y aventura, fútbol y amistad se unen para cambiar el futuro del planeta.",
+      "rating": "3",
+      "productora": "Grupo Kein",
+      "tipo_emision": "Tira Diaria"
     },
     {
       "id": "V164",
@@ -9252,7 +9308,7 @@
       "title": "Amor Latino",
       "year": "2000",
       "channel": "Canal 9/Azul TV",
-      "genre": "Romance",
+      "genre": "Telenovela",
       "actors": [
         "Diego Ramos",
         "Mario Cimarro",
@@ -9261,7 +9317,14 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/amor-latino-280x420.png",
-      "subtitle": "Telenovela"
+      "subtitle": "Telenovela",
+      "horario": "20hs, 18hs",
+      "capitulos": 200,
+      "fecha_estreno": "1/8/2000",
+      "sinopsis": "Dos hermanos pilotos, Fernando y Nacho, se enamoran de la misma mujer sin saberlo, víctimas de una confusión provocada por dos jóvenes. Entre Miami y Buenos Aires, la historia se convierte en una comedia de enredos románticos y malentendidos.",
+      "rating": "7",
+      "productora": "Central Park, Raúl Lecouna",
+      "tipo_emision": "Tira Diaria"
     },
     {
       "id": "S1001",
