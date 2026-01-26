@@ -175,8 +175,12 @@ nav .menu li a:hover{
 /* Ajustes para centrar las imágenes en los sliders */
 
 .slider-h .latest-b-text{
-  display:flex; flex-direction:column; align-items:center; justify-content:center;
-  gap:4px; margin:14px 18px 22px; text-align:center;
+  display:block;
+  margin:14px auto 22px auto;
+  width:90%;
+  text-align:center;
+  width:100%;
+  gap:0;
 }
 .slider-h .latest-b-text strong{ color:#f0f0f0; font-weight:600; }
 .slider-h .latest-b-text p{ color:#9ca3af; margin:0; }
