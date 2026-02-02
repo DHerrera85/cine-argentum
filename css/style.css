@@ -400,6 +400,13 @@ footer p{ color:#b0b0b0; margin:0; font-size:.9rem; }
   .logo img{ max-height:36px !important; }
   .search{ height:40px; max-width:none; }
   
+  /* Ajustar márgenes de headings en móvil para alineación correcta */
+  .showcase-heading,
+  .latest-heading,
+  .section-heading {
+    margin: 28px 8px 10px 8px;
+  }
+  
   /* HORIZONTALES: 1 imagen completa + peek (85% del viewport) */
   .slider-h .showcase-box{
     width:90vw;
