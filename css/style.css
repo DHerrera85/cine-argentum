@@ -40,8 +40,17 @@
 }
 @media (max-width: 768px) {
   .slider-v {
-    padding-left: 0;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
     box-sizing: border-box;
+  }
+  .lSSlideOuter .slider-v,
+  .lSSlideWrapper .slider-v {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  #latest .lSSlideWrapper {
+    padding-left: 0 !important;
   }
 }
 /* ========== RESET & BASE ========== */
