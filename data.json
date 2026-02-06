@@ -8709,13 +8709,20 @@
       "title": "Tiempo Final",
       "year": "2000",
       "channel": "Telefe",
-      "genre": "Suspenso",
+      "genre": "Thriller",
       "actors": [
         "Elenco Rotativo"
       ],
       "orientation": "vertical",
       "image": "images/verticals/tiempo-final-poster-280x420.png",
-      "subtitle": "Suspenso"
+      "subtitle": "Thriller",
+      "horario": "23hs",
+      "capitulos": 69,
+      "fecha_estreno": "3/4/2001",
+      "sinopsis": "Serie antológica argentina de suspenso, que durante sus 3 temporadas (de 22, 21 y 26 capítulos) narró historias autoconclusivas en tiempo real, concentradas en un solo lugar con pocos personajes y giros inesperados. Cada episodio presentaba situaciones extremas de humor negro y alta tensión donde los planes de los protagonistas fracasan trágicamente. ",
+      "rating": "-",
+      "productora": "Telefe Contenidos, Alejandro Borensztein, Sebastián Borensztein",
+      "tipo_emision": "Semanal"
     },
     {
       "id": "V281",
