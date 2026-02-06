@@ -8151,7 +8151,7 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/sangre-fria-poster-280x420.png",
-      "subtitle": "Policial"
+      "subtitle": "Thriller"
     },
     {
       "id": "V245",
@@ -8183,14 +8183,21 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/el-hacker-poster-280x420.png",
-      "subtitle": "Policial"
+      "subtitle": "Thriller",
+      "horario": "23hs",
+      "capitulos": 13,
+      "fecha_estreno": "13/08/2001",
+      "sinopsis": "Dante, un experto en computadoras que se gana la vida armando redes de seguridad, y descubre una partida de medicamentos ilegales con destino al PAMI. El grupo mafioso que llevaba a cabo la operación irá por él, que decidirá hacerse pasar por muerto.",
+      "rating": "-",
+      "productora": "Telefe Contenidos, Sebastián Ortega",
+      "tipo_emision": "Semanal"
     },
     {
       "id": "V247",
       "title": "Okupas",
       "year": "2000",
       "channel": "TV Pública",
-      "genre": "Policial",
+      "genre": "Thriller",
       "actors": [
         "Rodrigo de la Serna",
         "Diego Alonso",
@@ -8198,7 +8205,14 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/okupas-poster-280x420.png",
-      "subtitle": "Policial"
+      "subtitle": "Thriller",
+      "horario": "23hs",
+      "capitulos": 11,
+      "fecha_estreno": "18/10/2000",
+      "sinopsis": "Narra el descenso social de Ricardo, un joven de clase media que, al cuidar una casona antigua en Buenos Aires para evitar su ocupación ilegal, se interna en un mundo marginal de drogas, delincuencia y amistad entrañable. Junto a sus amigos El Pollo, Walter y Chiqui, experimenta la crudeza de la supervivencia urbana en medio de la crisis argentina",
+      "rating": "3,5",
+      "productora": "Ideas del Sur",
+      "tipo_emision": "Semanal"
     },
     {
       "id": "V248",
@@ -8385,7 +8399,7 @@
       "title": "Cuatro Amigas",
       "year": "2001",
       "channel": "Telefe",
-      "genre": "Drama",
+      "genre": "Comedia",
       "actors": [
         "Mirta Busnelli",
         "Inés Estévez",
@@ -8394,7 +8408,14 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/cuatro-amigas-poster-280x420.png",
-      "subtitle": "Drama"
+      "subtitle": "Comedia",
+      "horario": "23hs",
+      "capitulos": 12,
+      "fecha_estreno": "8/10/2001",
+      "sinopsis": "Cuatro amigas de entre 30 y 40 años renuevan cada semana un pacto de confianza para compartir sin filtros sus conflictos, deseos y reproches. Con el correr del tiempo, sus charlas derivan cada vez más en reflexiones abiertas sobre los hombres y la sexualidad.",
+      "rating": "-",
+      "productora": "Ideas del Sur",
+      "tipo_emision": "Semanal"
     },
     {
       "id": "V260",
