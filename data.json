@@ -8371,7 +8371,14 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/culpables-poster-280x420.png",
-      "subtitle": "Drama"
+      "subtitle": "Drama",
+      "horario": "23hs",
+      "capitulos": 39,
+      "fecha_estreno": "3/4/2001",
+      "sinopsis": "La historia estaba construida sobre la base de tres parejas de amigos y una mujer recién separada, todos en sus treinta y pico y dos mujeres ya entradas en cuarenta años.",
+      "rating": "-",
+      "productora": "Pol-Ka",
+      "tipo_emision": "Semanal"
     },
     {
       "id": "V259",

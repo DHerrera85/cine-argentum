@@ -47,7 +47,17 @@ function setupFilters(allSeries) {
     let filtered = [...list];
     filtered = filtered.map(item => ({ ...item, genre: item.genre ? item.genre.trim().toLowerCase() : '' }));
     if (sort === 'viewers') {
-      filtered.sort((a, b) => (b.rating || 0) - (a.rating || 0));
+      filtered.sort((a, b) => {
+        const parseRating = (val) => {
+          if (!val || val === '-' || val === '') return -Infinity;
+          const numStr = String(val).replace(',', '.');
+          const num = parseFloat(numStr);
+          return isNaN(num) ? -Infinity : num;
+        };
+        const ratingA = parseRating(a.rating);
+        const ratingB = parseRating(b.rating);
+        return ratingB - ratingA;
+      });
     } else if (sort === 'year') {
       filtered.sort((a, b) => (parseInt(b.year) || 0) - (parseInt(a.year) || 0));
     } else if (sort === 'year-asc') {
