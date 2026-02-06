@@ -5618,12 +5618,12 @@
       "orientation": "vertical",
       "image": "images/verticals/mujeres-de-nadie-primer-temporada-poster-280x420.png",
       "subtitle": "Telenovela",
-      "horario": "20hs, 18hs",
-      "capitulos": 200,
-      "fecha_estreno": "1/8/2000",
-      "sinopsis": "Dos hermanos pilotos, Fernando y Nacho, se enamoran de la misma mujer sin saberlo, víctimas de una confusión provocada por dos jóvenes. Entre Miami y Buenos Aires, la historia se convierte en una comedia de enredos románticos y malentendidos.",
-      "rating": "7",
-      "productora": "Central Park, Raúl Lecouna",
+      "horario": "14hs",
+      "capitulos": 146,
+      "fecha_estreno": "10/5/2007",
+      "sinopsis": "Cuatro enfermeras de un hospital público enfrentan conflictos personales profundos mientras sostienen, en silencio, la responsabilidad de cuidar a sus pacientes. Unidas por el trabajo, comparten afectos y dolores, postergando sus propias miserias frente al deber profesional.",
+      "rating": "15,9",
+      "productora": "Pol-Ka",
       "tipo_emision": "Tira Diaria"
     },
     {
@@ -5723,7 +5723,7 @@
       "title": "PH (Propiedad Horizontal)",
       "year": "2001",
       "channel": "Canal 9/Azul TV",
-      "genre": "Comedia Dramática",
+      "genre": "Telenovela",
       "actors": [
         "Gerardo Romano",
         "María Valenzuela",
@@ -5731,7 +5731,14 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/ph-propiedad-horizontal-poster-280x420.png",
-      "subtitle": "Comedia romántica"
+      "subtitle": "Telenovela",
+      "horario": "22hs, 21hs",
+      "capitulos": 122,
+      "fecha_estreno": "5/3/2001",
+      "sinopsis": "La serie retrata la convivencia en un complejo de departamentos donde vecinos muy distintos comparten amores, conflictos y secretos. La vida cotidiana se altera con una misteriosa criada, su gemela y la revelación de una paternidad oculta.",
+      "rating": "5,4",
+      "productora": "Estevanez Producciones",
+      "tipo_emision": "Tira Diaria"
     },
     {
       "id": "v94",
@@ -6842,7 +6849,14 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/enamorarte-poster-280x420.png",
-      "subtitle": "Juvenil"
+      "subtitle": "Juvenil",
+      "horario": "19hs",
+      "capitulos": 130,
+      "fecha_estreno": "12/3/2001",
+      "sinopsis": "Santiago vuelve a Buenos Aires para enfrentar la fría relación con su padre y el hostigamiento de su ambiciosa madrastra. En paralelo, Celeste, una joven humilde que sueña con bailar, lucha por su futuro entre el amor y las desigualdades sociales.",
+      "rating": "13,7",
+      "productora": "Telefe Contenidos, Sebastián Ortega",
+      "tipo_emision": "Tira Diaria"
     },
     {
       "id": "V163",
@@ -8391,7 +8405,14 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/vulnerables-poster-280x420.png",
-      "subtitle": "Drama"
+      "subtitle": "Drama",
+      "horario": "23hs",
+      "capitulos": 77,
+      "fecha_estreno": "6/4/2000",
+      "sinopsis": "Compuesta por 2 temporadas, narra la vida de un grupo de pacientes que asisten a terapia con el Dr. Guillermo Segura (Jorge Marrale), explorando sus profundas inseguridades, miedos y conflictos cotidianos",
+      "rating": "12,4",
+      "productora": "Pol-ka",
+      "tipo_emision": "Semanal"
     },
     {
       "id": "V261",
@@ -8816,7 +8837,14 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/22-el-loco-poster-280x420.png",
-      "subtitle": "Thriller"
+      "subtitle": "Thriller",
+      "horario": "22hs",
+      "capitulos": 96,
+      "fecha_estreno": "17/7/2001",
+      "sinopsis": "Federico Falcone, un policía impulsivo apodado “22”, se debate entre dos amores mientras enfrenta un conflicto por la custodia de su hija. Su vida se vuelve un entramado de pasiones, heridas del pasado y búsqueda de redención.",
+      "rating": "17,2",
+      "productora": "Pol-ka",
+      "tipo_emision": "Tira Diaria"
     },
     {
       "id": "v36",
@@ -9270,7 +9298,14 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/yago-pasion-morena-280x420.png",
-      "subtitle": "Telenovela"
+      "subtitle": "Telenovela",
+      "horario": "13hs",
+      "capitulos": 164,
+      "fecha_estreno": "21/05/2001",
+      "sinopsis": "Yago, criado en la selva, y Morena, una empresaria porteña, se enamoran tras un accidente aéreo. El romance se complica cuando él descubre oscuros vínculos familiares y debe luchar por su identidad.",
+      "rating": "19",
+      "productora": "Telefe Contenidos",
+      "tipo_emision": "Tira Diaria"
     },
     {
       "id": "v64",
@@ -9285,7 +9320,14 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/provocame-280x420.png",
-      "subtitle": "Telenovela"
+      "subtitle": "Telenovela",
+      "horario": "20:30hs, 19:30hs",
+      "capitulos": 133,
+      "fecha_estreno": "01/07/2001",
+      "sinopsis": "Pedro llega desde Miami para cuidar un valioso caballo sin saber que está envuelto en una venganza contra la familia Linares. Entre secretos y pasiones, queda atrapado entre Ana Laura y Marisol, mientras el complot se revela.",
+      "rating": "15",
+      "productora": "RGB Entertainment, Raúl Lecouna",
+      "tipo_emision": "Tira Diaria"
     },
     {
       "id": "v65",
