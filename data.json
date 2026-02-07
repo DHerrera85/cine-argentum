@@ -4725,6 +4725,63 @@
       "subtitle": "Comedia"
     },
     {
+      "id": "P2029",
+      "title": "Nahir",
+      "type": "pelicula",
+      "year": "2024",
+      "genre": "Policial",
+      "actors": [
+        "Valentina Zenere",
+        "Simón Hempe",
+        "César Bordón",
+        "Monna Antonópulos",
+        "Nacho Gadano"
+      ],
+      "synopsis": "Uno de los casos más polémicos de los últimos años en Argentina. Basada en la historia real de Nahir Galarza, la mujer más joven condenada y sentenciada a cadena perpetua en el país, por el asesinato de su novio",
+      "channel": "Streaming",
+      "image": "images/verticals/nahir-2024-poster-280x420.png",
+      "orientation": "vertical",
+      "viewers": "-",
+      "producer": "Zeppelin Studio, Prime Video, MGM Studios, INCAA",
+      "director": "Hernán Guerschuny",
+      "release_date": "2024-05-22",
+      "subtitle": "Policial"
+    },
+    {
+      "id": "P2030",
+      "title": "El Ratón Pérez y los Guardianes del Libro Mágico",
+      "type": "pelicula",
+      "year": "2019",
+      "genre": "Familiar",
+      "actors": ["Carla Chiorazzo", "Bruno Oro", "Lucrecia"],
+      "synopsis": "Mar, una niña de nueve años amante de los libros y la fantasía, se resiste a abandonar su mundo imaginario pese a la presión de los adultos. Cuando un villano amenaza el Reino de la Fantasía, emprende una aventura junto al Ratón Pérez y los Lunnis para salvarlo con la ayuda de un colmillo mágico.",
+      "channel": "Cine",
+      "image": "images/verticals/el-raton-perez-guardianes-libro-magico-2019-poster-280x420.png",
+      "orientation": "vertical",
+      "viewers": "27.618",
+      "producer": "Televisión Española (TVE), Calendula Films A.I.E., Tandem Films, Enrique Cerezo P.C., Pampa Films, Mediabyte",
+      "director": "Juan Pablo Buscarini",
+      "release_date": "30/5/2019",
+      "subtitle": "Familiar"
+    },
+    {
+      "id": "P2031",
+      "title": "Amor de Película",
+      "type": "pelicula",
+      "year": "2019",
+      "genre": "Romance",
+      "actors": ["Nicolás Furtado", "Natalie Pérez", "Guillermo Pfening"],
+      "synopsis": "Un director romántico y tímido y una mujer práctica y enérgica se conocen durante el rodaje de una película y forman pareja. Cinco años después, ya juntos y en crisis, se enfrentan a su propia historia mientras miran esa misma película.",
+      "channel": "Cine",
+      "image": "images/verticals/amor-de-pelicula-2019-poster-280x420.png",
+      "orientation": "vertical",
+      "viewers": "27.618",
+      "producer": "DK Group, Directv, Film Suez, INCAA",
+      "director": "Sebastián Mega Díaz",
+      "release_date": "21/3/2019",
+      "subtitle": "Romance"
+    },
+    {
       "id": "P2026",
       "title": "Mensaje en una Botella",
       "type": "pelicula",
@@ -5805,7 +5862,14 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/maridos-a-domicilio-poster-280x420.png",
-      "subtitle": "Comedia"
+      "subtitle": "Comedia",
+      "horario": "22hs",
+      "capitulos": "-",
+      "fecha_estreno": "07/01/2002",
+      "sinopsis": "Tras quedarse sin trabajo por el cierre de una fábrica, los cuñados Mario y Bocha crean un negocio de mantenimiento del hogar. Entre arreglos domésticos y enredos familiares, buscan reinventarse y sostener a sus familias.",
+      "rating": "5",
+      "productora": "Estevanez Producciones",
+      "tipo_emision": "Tira Diaria"
     },
     {
       "id": "v98",
@@ -8389,7 +8453,7 @@
       "horario": "23hs",
       "capitulos": 39,
       "fecha_estreno": "3/4/2001",
-      "sinopsis": "La historia estaba construida sobre la base de tres parejas de amigos y una mujer recién separada, todos en sus treinta y pico y dos mujeres ya entradas en cuarenta años.",
+      "sinopsis": "La trama se basa en tres parejas de amigos y una mujer recién separada que enfrentan problemas cotidianos, laborales y amorosos: Aníbal y Daniela lidian con una crisis de pareja; Claudio y Adriana enfrentan dificultades económicas y el desempleo de él; Perla intenta rehacer su vida tras sufrir maltrato.",
       "rating": "-",
       "productora": "Pol-Ka",
       "tipo_emision": "Semanal"

@@ -83,8 +83,11 @@
     fetch('data.json')
       .then(r => r.json())
       .then(data => {
+            const forcedTitles = [
+              'El Ratón Pérez y los Guardianes del Libro Mágico'
+            ];
             familiarMovies = (data.items || [])
-              .filter(it => it.genre && it.genre.toLowerCase().includes('familiar'))
+              .filter(it => (it.genre && it.genre.toLowerCase().includes('familiar')) || forcedTitles.includes(it.title))
               .filter(it => it.title !== 'La Noche Mágica')
           .map(it => ({
             title: it.title,
