@@ -8239,7 +8239,7 @@
       "title": "Los Simuladores",
       "year": "2002",
       "channel": "Telefe",
-      "genre": "Policial",
+      "genre": "Thriller",
       "actors": [
         "Federico D'Elia",
         "Diego Peretti",
@@ -8248,7 +8248,15 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/los-simuladores-poster-280x420.png",
-      "subtitle": "Policial"
+      "subtitle": "Thriller",
+      "horario": "23hs",
+      "capitulos": 24,
+      "fecha_estreno": "21/03/2002",
+      "sinopsis": "Creada por Damián Szifron, la serie se centra en cuatro socios (Santos, Medina, Lampone, Ravenna) que resuelven problemas de gente común mediante sofisticados operativos de simulación y engaño. Operando fuera de la ley, buscan justicia poética cobrando el doble de lo invertido. ",
+      "rating": "23,9",
+      "productora": "Telefe Contenidos, Damián Szifrón",
+      "tipo_emision": "Semanal"
+      
     },
     {
       "id": "V246",
@@ -8975,7 +8983,14 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/099-central-poster-280x420.png",
-      "subtitle": "Thriller"
+      "subtitle": "Thriller",
+      "horario": "22hs",
+      "capitulos": 146,
+      "fecha_estreno": "8/4/2002",
+      "sinopsis": "Tomás Ledesma, oficial de una unidad policial de élite, enfrenta el crimen mientras salen a la luz secretos de su pasado. El mayor conflicto surge con su hermano Franco, un agente corrupto que encarna el lado oscuro de la ley.",
+      "rating": "20",
+      "productora": "Pol-ka",
+      "tipo_emision": "Tira Diaria"
     },
     {
       "id": "v37",
