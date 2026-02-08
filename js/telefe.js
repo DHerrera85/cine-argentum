@@ -6,8 +6,8 @@ document.addEventListener('DOMContentLoaded', async function() {
   const count = document.getElementById('actor-movie-count');
   let series = [];
   // Listado estricto de series Telefe (título, año, género)
-  const telefeList = [
-     { year: '2000', title: 'Chiquititas', genre: 'Juvenil' },
+    const telefeList = [
+      { id: 'V149', year: '2000', title: 'Chiquititas', genre: 'Juvenil' },
      { year: '2000', title: "Verano del '98", genre: 'Juvenil' },
     { year: '2000', title: 'Luna Salvaje', genre: 'Telenovela' },
     { year: '2001', title: 'EnAmorArte', genre: 'Juvenil' },
@@ -105,8 +105,10 @@ document.addEventListener('DOMContentLoaded', async function() {
     const data = await res.json();
     // Filtrar solo los títulos del listado estricto
     series = telefeList.map(ref => {
-      const item = data.items.find(i => i.title && i.title.trim().toLowerCase() === ref.title.trim().toLowerCase() && String(i.year) === ref.year);
-      let base = item ? { ...item, genre: ref.genre, year: ref.year } : {
+      const item = ref.id
+        ? data.items.find(i => i.id === ref.id)
+        : data.items.find(i => i.title && i.title.trim().toLowerCase() === ref.title.trim().toLowerCase() && String(i.year) === ref.year);
+      let base = item ? { ...item, title: ref.title, genre: ref.genre, year: ref.year } : {
         title: ref.title,
         genre: ref.genre,
         year: ref.year,
@@ -159,6 +161,19 @@ document.addEventListener('DOMContentLoaded', async function() {
   const selectSelected = select.querySelector('.custom-select-selected');
   let currentSort = 'viewers';
 
+  function formatRating(value) {
+    if (value === null || value === undefined || value === '') return '-';
+    if (typeof value === 'number') return String(value).replace('.', ',');
+    return String(value);
+  }
+
+  function parseRating(value) {
+    if (value === null || value === undefined || value === '' || value === '-') return -Infinity;
+    const numStr = String(value).replace(',', '.');
+    const num = parseFloat(numStr);
+    return Number.isNaN(num) ? -Infinity : num;
+  }
+
   function renderList(list) {
     grid.innerHTML = '';
     if (!list.length) {
@@ -168,17 +183,21 @@ document.addEventListener('DOMContentLoaded', async function() {
     count.textContent = `${list.length} series de Telefe`;
     for (const item of list) {
       const year = item.year || '';
-      const viewers = (item.viewers && item.viewers > 0) ? item.viewers.toLocaleString('es-AR') : '-';
+      const ratingText = formatRating(item.rating);
       const img = item.image || 'images/verticals/no-poster.png';
       const card = document.createElement('div');
       card.className = 'actor-movie-card';
+      const linkStart = item.id ? `<a href="show.html?id=${encodeURIComponent(item.id)}">` : '';
+      const linkEnd = item.id ? '</a>' : '';
       card.innerHTML = `
-        <img src="${img}" alt="${item.title}" loading="lazy" />
-        <div class="actor-movie-info">
-          <div class="actor-movie-title">${item.title}</div>
-          <div class="actor-movie-meta">${year} · ${item.genre || ''}</div>
-          <div class="actor-movie-viewers">Rating: ${viewers}</div>
-        </div>
+        ${linkStart}
+          <img src="${img}" alt="${item.title}" loading="lazy" />
+          <div class="actor-movie-info">
+            <div class="actor-movie-title">${item.title}</div>
+            <div class="actor-movie-meta">${year} · ${item.genre || ''}</div>
+            <div class="actor-movie-viewers">Rating: ${ratingText}</div>
+          </div>
+        ${linkEnd}
       `;
       grid.appendChild(card);
     }
@@ -189,7 +208,7 @@ document.addEventListener('DOMContentLoaded', async function() {
     // Normalizar género para todos los items (por si hay diferencias de mayúsculas/minúsculas)
     filtered = filtered.map(item => ({ ...item, genre: item.genre ? item.genre.trim().toLowerCase() : '' }));
     if (sort === 'viewers') {
-      filtered.sort((a, b) => (b.viewers || 0) - (a.viewers || 0));
+      filtered.sort((a, b) => parseRating(b.rating) - parseRating(a.rating));
     } else if (sort === 'year') {
       filtered.sort((a, b) => (b.year || 0) - (a.year || 0));
     } else if (sort === 'year-asc') {

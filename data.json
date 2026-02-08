@@ -5837,11 +5837,20 @@
       "actors": [
         "Osvaldo Laport",
         "Carina Zampini",
-        "Viviana Saccone"
+        "Viviana Saccone",
+        "Sebastián Estevanez",
+        "Celeste Cid"
       ],
       "orientation": "vertical",
       "image": "images/verticals/franco-buenaventura-poster-280x420.png",
-      "subtitle": "Telenovela"
+      "subtitle": "Telenovela",
+      "horario": "22hs",
+      "capitulos": 175,
+      "fecha_estreno": "11/02/2002",
+      "sinopsis": "Franco Buenaventura es un profesor de literatura y bailarín de tango que oculta una doble vida como stripper para sostener a su madre. Entre romances prohibidos, rivalidades familiares y secretos del pasado, su regreso a la docencia se vuelve cada vez más conflictivo.",
+      "rating": "16,3",
+      "productora": "Telefe Contenidos",
+      "tipo_emision": "Tira Diaria"
     },
     {
       "id": "v96",
@@ -8246,7 +8255,7 @@
       "title": "El Hacker",
       "year": "2001",
       "channel": "Telefe",
-      "genre": "Policial",
+      "genre": "Thriller",
       "actors": [
         "Carlos Calvo",
         "Patricia Viggiano",
@@ -8994,11 +9003,21 @@
         "Mariano Martínez",
         "Nicolás Cabré",
         "Marcela Kloosterboer",
-        "Florencia Bertotti"
+        "Florencia Bertotti",
+        "Agustina Cherri",
+        "Gabriela Toscano",
+        "Millie Stegmann"
       ],
       "orientation": "vertical",
       "image": "images/verticals/son-amores-poster-280x420.png",
-      "subtitle": "Comedia"
+      "subtitle": "Comedia",
+      "horario": "21hs",
+      "capitulos": 245,
+      "fecha_estreno": "28/01/2002",
+      "sinopsis": "Roberto Sánchez, un árbitro de fútbol solitario, ve su vida ordenada desbordada cuando debe hacerse cargo de sus tres sobrinos en Buenos Aires. Entre caos familiar y enredos románticos, aprende a abrirse al afecto y a una nueva forma de vivir.",
+      "rating": "28",
+      "productora": "Pol-ka",
+      "tipo_emision": "Tira Diaria"
     },
     {
       "id": "v40",
