@@ -172,6 +172,7 @@
             // render horizontals into ALL .slider-h if empty
             $('.slider-h').each(function () {
               var $c = $(this);
+              if ($c.data('skipAuto')) return;
               if ($c.length && $c.children().length === 0) renderHorizontalItems($c, horizontalItems);
             });
             // render verticals into ALL .slider-v if empty

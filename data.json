@@ -27,8 +27,8 @@
       "sinopsis": "Tras la muerte de Germán, Rafael llega a Costa Esperanza con la tutela de Brisa para criarla en el pueblo donde vivió su madre. El regreso de África de José y la aparición de nuevos personajes reconfiguran la vida y los vínculos de la comunidad.",
       "rating": "-",
       "productora": "Telefe Contenidos"
-      },
-      {
+    },
+    {
       "title": "La furia",
       "genre": "Policial",
       "year": "1997",
@@ -1137,34 +1137,34 @@
       "viewers": 119972,
       "producer": "Crudo Films, Hermanos Dawidson Films, Energía",
       "director": "Nicanor Loreti"
-        },
-        {
-          "title": "Alguien que me quiera",
-          "genre": "Telenovela",
-          "year": "2010",
-          "actors": [
-            "Osvaldo Laport",
-            "Andrea del Boca",
-            "Miguel Ángel Rodríguez",
-            "Susú Pecoraro",
-            "Viviana Saccone",
-            "Luisana Lopilato"
-          ],
-          "synopsis": "Rocío huye de un matrimonio violento y encuentra refugio en el Mercado Comunitario del Sur, donde conoce a Rodolfo, un hombre recién liberado tras ser condenado injustamente. Entre los puestos del mercado se cruzan historias de amor, secretos y segundas oportunidades que transforman para siempre la vida de sus protagonistas.",
-          "channel": "Canal 13",
-          "image": "images/verticals/alguien-que-me-quiera-poster-280x420.png",
-          "orientation": "vertical",
-          "type": "telenovela",
-          "subtitle": "Telenovela",
-          "id": "V286",
-          "viewers": 0,
-          "producer": "Pol-Ka",
-          "director": "",
-          "schedule": "21:45hs; 19:00hs",
-          "episodes": 185,
-          "release_date": "2010-02-01",
-          "rating": 13
-        },
+    },
+    {
+      "title": "Alguien que me quiera",
+      "genre": "Telenovela",
+      "year": "2010",
+      "actors": [
+        "Osvaldo Laport",
+        "Andrea del Boca",
+        "Miguel Ángel Rodríguez",
+        "Susú Pecoraro",
+        "Viviana Saccone",
+        "Luisana Lopilato"
+      ],
+      "synopsis": "Rocío huye de un matrimonio violento y encuentra refugio en el Mercado Comunitario del Sur, donde conoce a Rodolfo, un hombre recién liberado tras ser condenado injustamente. Entre los puestos del mercado se cruzan historias de amor, secretos y segundas oportunidades que transforman para siempre la vida de sus protagonistas.",
+      "channel": "Canal 13",
+      "image": "images/verticals/alguien-que-me-quiera-poster-280x420.png",
+      "orientation": "vertical",
+      "type": "telenovela",
+      "subtitle": "Telenovela",
+      "id": "V286",
+      "viewers": 0,
+      "producer": "Pol-Ka",
+      "director": "",
+      "schedule": "21:45hs; 19:00hs",
+      "episodes": 185,
+      "release_date": "2010-02-01",
+      "rating": 13
+    },
     {
       "title": "Abzurdah",
       "genre": "Drama",
@@ -1725,7 +1725,7 @@
       "subtitle": "Comedia",
       "id": "P1083",
       "producer": "Netflix",
-        "director": "Marcos Carnevale",
+      "director": "Marcos Carnevale",
       "release_date": "2020-09-09"
     },
     {
@@ -1822,7 +1822,7 @@
       "subtitle": "Comedia",
       "id": "P1088",
       "producer": "Netflix",
-        "director": "Sebastián De Caro",
+      "director": "Sebastián De Caro",
       "release_date": "2022-12-07"
     },
     {
@@ -2059,7 +2059,7 @@
       "subtitle": "Comedia",
       "id": "P1100",
       "producer": "Netflix",
-        "director": "Diego Lerman",
+      "director": "Diego Lerman",
       "release_date": "2024-10-10"
     },
     {
@@ -2080,7 +2080,7 @@
       "id": "P1101",
       "viewers": 32605,
       "producer": "Netflix",
-        "director": "Benjamín Ávila",
+      "director": "Benjamín Ávila",
       "release_date": "2025-09-04"
     },
     {
@@ -2184,7 +2184,7 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Policial",
-        "id": "P1200",
+      "id": "P1200",
       "viewers": 385313,
       "producer": "K&S Films, Piano, Rei Cine",
       "director": "Gonzalo Tobal"
@@ -4027,7 +4027,7 @@
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Policial",
-        "id": "P1301",
+      "id": "P1301",
       "viewers": 12137,
       "producer": "Rei Cine, Infinity Hill Paramount+",
       "director": "Daniela Goggi"
@@ -4753,12 +4753,16 @@
       "type": "pelicula",
       "year": "2019",
       "genre": "Familiar",
-      "actors": ["Carla Chiorazzo", "Bruno Oro", "Lucrecia"],
+      "actors": [
+        "Carla Chiorazzo",
+        "Bruno Oro",
+        "Lucrecia"
+      ],
       "synopsis": "Mar, una niña de nueve años amante de los libros y la fantasía, se resiste a abandonar su mundo imaginario pese a la presión de los adultos. Cuando un villano amenaza el Reino de la Fantasía, emprende una aventura junto al Ratón Pérez y los Lunnis para salvarlo con la ayuda de un colmillo mágico.",
       "channel": "Cine",
       "image": "images/verticals/el-raton-perez-guardianes-libro-magico-2019-poster-280x420.png",
       "orientation": "vertical",
-      "viewers": "27.618",
+      "viewers": 27618,
       "producer": "Televisión Española (TVE), Calendula Films A.I.E., Tandem Films, Enrique Cerezo P.C., Pampa Films, Mediabyte",
       "director": "Juan Pablo Buscarini",
       "release_date": "30/5/2019",
@@ -4770,12 +4774,16 @@
       "type": "pelicula",
       "year": "2019",
       "genre": "Romance",
-      "actors": ["Nicolás Furtado", "Natalie Pérez", "Guillermo Pfening"],
+      "actors": [
+        "Nicolás Furtado",
+        "Natalie Pérez",
+        "Guillermo Pfening"
+      ],
       "synopsis": "Un director romántico y tímido y una mujer práctica y enérgica se conocen durante el rodaje de una película y forman pareja. Cinco años después, ya juntos y en crisis, se enfrentan a su propia historia mientras miran esa misma película.",
       "channel": "Cine",
       "image": "images/verticals/amor-de-pelicula-2019-poster-280x420.png",
       "orientation": "vertical",
-      "viewers": "27.618",
+      "viewers": 27618,
       "producer": "DK Group, Directv, Film Suez, INCAA",
       "director": "Sebastián Mega Díaz",
       "release_date": "21/3/2019",
@@ -4980,7 +4988,7 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/la-1-518-somos-uno-poster-280x420.png",
-      "subtitle": "Thriller"  
+      "subtitle": "Thriller"
     },
     {
       "id": "h5",

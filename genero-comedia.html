@@ -150,7 +150,7 @@
           </a>
           <div class="actor-movie-info">
             <div class="actor-movie-title">${movie.title} (${movie.year})</div>
-            <div class="actor-movie-viewers">${movie.viewers !== undefined ? (movie.viewers === '-' ? '-' : movie.viewers.toLocaleString() + ' espectadores') : ''}</div>
+            <div class="actor-movie-viewers">${movie.viewers !== undefined ? (movie.viewers === '-' ? '-' : movie.viewers.toLocaleString('es-AR') + ' espectadores') : ''}</div>
           </div>
         </div>
       `).join('');

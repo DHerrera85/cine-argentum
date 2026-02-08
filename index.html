@@ -118,65 +118,7 @@
 <!-- Las Más Taquilleras del 2025 (H) -->
 <section id="main">
   <h1 class="showcase-heading">LAS MÁS TAQUILLERAS DEL 2025</h1>
-  <ul class="slider-h cs-hidden">
-
-
-
-    <li class="item-a">
-      <a href="show.html?id=P1115">
-        <div class="showcase-box">
-          <img src="images/horizontals-1024x576/homo-argentum-2025-slide-1024x576.png" loading="lazy" alt="Homo Argentum"/>
-        </div>
-        <div class="latest-b-text">
-          <strong>Homo Argentum</strong>
-          <p>1,829,245 espectadores</p>
-        </div>
-      </a>
-    </li>
-
-    <li class="item-a">
-      <a href="show.html?id=P1141">
-        <div class="showcase-box">
-          <img src="images/horizontals-1024x576/mazel-tov-2025-slide-1024x576.png" loading="lazy" alt="Mazel Tov"/>
-        </div>
-        <div class="latest-b-text">
-          <strong>Mazel Tov</strong>
-          <p>368,009 espectadores</p>
-        </div>
-      </a>
-    </li>
-
-    <li class="item-a">
-      <a href="show.html?id=P1153">
-        <div class="showcase-box">
-          <img src="images/horizontals-1024x576/belen-2025-slide-1024x576.png" loading="lazy" alt="Belén"/>
-        </div>
-        <div class="latest-b-text">
-          <strong>Belén</strong>
-          <p>147,468 espectadores</p>
-        </div>
-      </a>
-    </li>
-
-    <li class="item-b">
-      <a href="show.html?id=P1143">
-        <div class="showcase-box">
-          <img src="images/horizontals-1024x576/el-novio-de-mama-2025-slide-1024x576.png" loading="lazy" alt="El Novio de Mamá"/>
-        </div>
-        <div class="latest-b-text"><strong>El Novio de Mamá</strong><p>78,946 espectadores</p></div>
-      </a>
-    </li>
-
-    <li class="item-b">
-      <a href="show.html?id=P2025">
-        <div class="showcase-box">
-          <img src="images/horizontals-1024x576/una-muerte-silenciosa-slide-1024x576.png" loading="lazy" alt="Una Muerte Silenciosa"/>
-        </div>
-        <div class="latest-b-text"><strong>Una Muerte Silenciosa</strong><p>48,427 espectadores</p></div>
-      </a>
-    </li>
-
-  </ul>
+  <ul class="slider-h cs-hidden" id="top2025List" data-skip-auto="true"></ul>
 </section>
 
 <!-- Las 10 Películas con más espectadoras (2001-2025) (V) -->
@@ -227,15 +169,7 @@
 <!-- Películas de Acción (H) -->
 <section id="main">
   <h1 class="showcase-heading">Películas de Acción</h1>
-  <ul class="slider-h cs-hidden">
-    <li class="item-a"><div class="showcase-box"><img src="images/horizontals-1024x576/el-robo-del-siglo-2020-slide-1024x576.png" loading="lazy" alt="El Robo del Siglo"/></div><div class="latest-b-text"><strong>El Robo del Siglo</strong><p>2,085,915 espectadores</p></div></li>
-    <li class="item-b"><div class="showcase-box"><img src="images/horizontals-1024x576/peligrosa-obsesion-2004-slide-1024x576.png" loading="lazy" alt="Peligrosa Obsesión"/></div><div class="latest-b-text"><strong>Peligrosa Obsesión</strong><p>937,735 espectadores</p></div></li>
-    <li class="item-c"><div class="showcase-box"><img src="images/horizontals-1024x576/comodines-1997-slide-1024x576.png" loading="lazy" alt="Comodines"/></div><div class="latest-b-text"><strong>Comodines</strong><p>869,077 espectadores</p></div></li>
-    <li class="item-d"><div class="showcase-box"><img src="images/horizontals-1024x576/tiempo-de-valientes-2005-slide-1024x576.png" loading="lazy" alt="Tiempo de Valientes"/></div><div class="latest-b-text"><strong>Tiempo de Valientes</strong><p>480,414 espectadores</p></div></li>
-    <li class="item-e"><div class="showcase-box"><img src="images/horizontals-1024x576/cien-anos-de-perdon-2016-slider-poster-1024x576.png" loading="lazy" alt="Cien Años de Perdón"/></div><div class="latest-b-text"><strong>Cien Años de Perdón</strong><p>358,808 espectadores</p></div></li>
-    <li class="item-f"><div class="showcase-box"><img src="images/horizontals-1024x576/jaque-mate-2024-slide-1024x576.png" loading="lazy" alt="Jaque Mate"/></div><div class="latest-b-text"><strong>Jaque Mate</strong><p>63,372 espectadores</p></div></li>
-    <li class="item-g"><div class="showcase-box"><img src="images/horizontals-1024x576/gatillero-2025-slide-1024x576.png" loading="lazy" alt="Gatillero"/></div><div class="latest-b-text"><strong>Gatillero</strong><p>10,029 espectadores</p></div></li>
-  </ul>
+  <ul class="slider-h cs-hidden" id="actionMoviesList" data-skip-auto="true"></ul>
 </section>
 
 
@@ -371,5 +305,104 @@ Thrillers Políticos (H)
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <script src="js/lightslider.js"></script>
 <script src="js/script.js"></script>
+<script>
+  (function () {
+    var top2025 = [
+      { id: 'P1115', title: 'Homo Argentum', image: 'images/horizontals-1024x576/homo-argentum-2025-slide-1024x576.png', alt: 'Homo Argentum', className: 'item-a' },
+      { id: 'P1141', title: 'Mazel Tov', image: 'images/horizontals-1024x576/mazel-tov-2025-slide-1024x576.png', alt: 'Mazel Tov', className: 'item-a' },
+      { id: 'P1153', title: 'Belén', image: 'images/horizontals-1024x576/belen-2025-slide-1024x576.png', alt: 'Belén', className: 'item-a' },
+      { id: 'P1143', title: 'El Novio de Mamá', image: 'images/horizontals-1024x576/el-novio-de-mama-2025-slide-1024x576.png', alt: 'El Novio de Mamá', className: 'item-b' },
+      { id: 'P2025', title: 'Una Muerte Silenciosa', image: 'images/horizontals-1024x576/una-muerte-silenciosa-slide-1024x576.png', alt: 'Una Muerte Silenciosa', className: 'item-b' }
+    ];
+
+    var actionMovies = [
+      { id: 'P1128', title: 'El Robo del Siglo', image: 'images/horizontals-1024x576/el-robo-del-siglo-2020-slide-1024x576.png', alt: 'El Robo del Siglo', className: 'item-a' },
+      { id: 'P1131', title: 'Peligrosa Obsesión', image: 'images/horizontals-1024x576/peligrosa-obsesion-2004-slide-1024x576.png', alt: 'Peligrosa Obsesión', className: 'item-b' },
+      { id: 'P1166', title: 'Comodines', image: 'images/horizontals-1024x576/comodines-1997-slide-1024x576.png', alt: 'Comodines', className: 'item-c' },
+      { id: 'P1222', title: 'Tiempo de Valientes', image: 'images/horizontals-1024x576/tiempo-de-valientes-2005-slide-1024x576.png', alt: 'Tiempo de Valientes', className: 'item-d' },
+      { id: 'P1059', title: 'Cien Años de Perdón', image: 'images/horizontals-1024x576/cien-anos-de-perdon-2016-slider-poster-1024x576.png', alt: 'Cien Años de Perdón', className: 'item-e' },
+      { id: 'P1194', title: 'Jaque Mate', image: 'images/horizontals-1024x576/jaque-mate-2024-slide-1024x576.png', alt: 'Jaque Mate', className: 'item-f' },
+      { id: 'P2027', title: 'Gatillero', image: 'images/horizontals-1024x576/gatillero-2025-slide-1024x576.png', alt: 'Gatillero', className: 'item-g' }
+    ];
+
+    function formatViewers(value) {
+      if (value === null || value === undefined) return '-';
+      var num = Number(value);
+      if (Number.isNaN(num)) return '-';
+      return num.toLocaleString('es-AR');
+    }
+
+    function buildList(containerId, items, byId) {
+      var container = document.getElementById(containerId);
+      if (!container) return;
+      var html = items.map(function (item) {
+        var data = byId[item.id] || {};
+        var viewersText = formatViewers(data.viewers);
+        return (
+          '<li class="' + item.className + '">' +
+            '<a href="show.html?id=' + encodeURIComponent(item.id) + '">' +
+              '<div class="showcase-box">' +
+                '<img src="' + item.image + '" loading="lazy" alt="' + item.alt + '"/>' +
+              '</div>' +
+              '<div class="latest-b-text"><strong>' + item.title + '</strong><p>' + viewersText + ' espectadores</p></div>' +
+            '</a>' +
+          '</li>'
+        );
+      }).join('');
+      container.innerHTML = html;
+    }
+
+    function initOrRefreshSlider(selector) {
+      if (!window.jQuery || !window.jQuery.fn || !window.jQuery.fn.lightSlider) return;
+      window.jQuery(selector).each(function () {
+        var $el = window.jQuery(this);
+        var inst = $el.data('lightSlider');
+        if (inst && typeof inst.refresh === 'function') {
+          inst.refresh();
+          return;
+        }
+        $el.lightSlider({
+          item: 3,
+          autoWidth: false,
+          slideMove: 1,
+          slideMargin: 20,
+          loop: false,
+          pager: false,
+          controls: true,
+          enableTouch: true,
+          enableDrag: true,
+          freeMove: false,
+          responsive: [
+            { breakpoint: 1100, settings: { item: 2, slideMove: 1, slideMargin: 14 } },
+            { breakpoint: 768, settings: { item: 1, slideMove: 1, slideMargin: 12 } }
+          ]
+        });
+      });
+    }
+
+    fetch('data.json')
+      .then(function (response) { return response.json(); })
+      .then(function (data) {
+        var byId = {};
+        (data.items || []).forEach(function (item) {
+          if (item && item.id) byId[item.id] = item;
+        });
+        buildList('top2025List', top2025, byId);
+        buildList('actionMoviesList', actionMovies, byId);
+        setTimeout(function () {
+          initOrRefreshSlider('#top2025List');
+          initOrRefreshSlider('#actionMoviesList');
+        }, 120);
+      })
+      .catch(function () {
+        buildList('top2025List', top2025, {});
+        buildList('actionMoviesList', actionMovies, {});
+        setTimeout(function () {
+          initOrRefreshSlider('#top2025List');
+          initOrRefreshSlider('#actionMoviesList');
+        }, 120);
+      });
+  })();
+</script>
 </body>
 </html>
