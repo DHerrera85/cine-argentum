@@ -108,7 +108,7 @@ document.addEventListener('DOMContentLoaded', async function() {
       const item = ref.id
         ? data.items.find(i => i.id === ref.id)
         : data.items.find(i => i.title && i.title.trim().toLowerCase() === ref.title.trim().toLowerCase() && String(i.year) === ref.year);
-      let base = item ? { ...item, title: ref.title, genre: ref.genre, year: ref.year } : {
+      let base = item ? { ...item, title: ref.title, genre: item.genre || ref.genre, year: ref.year } : {
         title: ref.title,
         genre: ref.genre,
         year: ref.year,

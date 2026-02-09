@@ -4887,11 +4887,17 @@
       "genre": "Telenovela",
       "actors": [
         "Pablo Echarri",
-        "Celeste Cid"
+        "Celeste Cid",
+        "Fabián Vena",
+        "Carolina Fal"
       ],
       "orientation": "vertical",
       "image": "images/verticals/resistire-poster-280x420.png",
-      "subtitle": "Telenovela"
+      "subtitle": "Telenovela",
+      "sinopsis": "La trama sigue a Diego, un sastre que se enamora de Julia, la prometida de Mauricio Doval, un empresario mafioso que dirige un oscuro negocio de tráfico de órganos y sangre.",
+      "rating": "19,4",
+      "productora": "Telefe Contenidos",
+      "tipo_emision": "Tira Diaria"
     },
     {
       "id": "v11",
@@ -5526,21 +5532,34 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/mil-millones-poster-280x420.png",
-      "subtitle": "Telenovela"
+      "subtitle": "Telenovela",
+      "horario": "19hs",
+      "capitulos": 119,
+      "fecha_estreno": "5/4/2002",
+      "sinopsis": "Julián Vargas, un obrero de astillero, hereda inesperadamente un imperio millonario al descubrir su verdadero origen. Entre intrigas y ambiciones ajenas, deberá decidir si abrazar el poder o mantenerse fiel a la vida sencilla que lo formó.",
+      "rating": "12",
+      "productora": "Central Park, Raúl Lecouna",
+      "tipo_emision": "Tira Diaria"
     },
     {
       "id": "v77",
       "title": "Kachorra",
       "year": "2002",
       "channel": "Telefe",
-      "genre": "Comedia Romántica",
+      "genre": "Telenovela",
       "actors": [
         "Natalia Oreiro",
         "Pablo Rago"
       ],
       "orientation": "vertical",
       "image": "images/verticals/kachorra-poster-280x420.png",
-      "subtitle": "Comedia romántica"
+      "subtitle": "Telenovela",
+      "capitulos": 150,
+      "fecha_estreno": "22/05/2002",
+      "sinopsis": "Acusada injustamente, Antonia adopta una identidad falsa como institutriz en una familia adinerada para huir de su pasado. Mientras enfrenta intrigas y secretos, surge un romance con su jefe Bruno que pone en riesgo su engaño.",
+      "rating": "16",
+      "productora": "RGB Entertainment",
+      "tipo_emision": "Tira Diaria"
     },
     {
       "id": "v78",
@@ -5550,11 +5569,20 @@
       "genre": "Telenovela",
       "actors": [
         "Gabriel Corrado",
-        "Valeria Bertuccelli"
+        "Valeria Bertuccelli",
+        "Jorge Marrale",
+        "Cecilia Dopazo"
       ],
       "orientation": "vertical",
       "image": "images/verticals/maximo-corazon-poster-280x420.png",
-      "subtitle": "Telenovela"
+      "subtitle": "Telenovela",
+      "horario": "20hs, 14hs",
+      "capitulos": 139,
+      "fecha_estreno": "26/08/2002",
+      "sinopsis": "La historia narra el romance entre Máximo Martinelli, quien pierde a su esposa en un asalto, y Luján, una joven que recibe el corazón de la mujer fallecida. El destino los une, enfrentando obstáculos como el esposo de Luján y nuevos romances",
+      "rating": "12",
+      "productora": "Telefe Contenidos",
+      "tipo_emision": "Tira Diaria"
     },
     {
       "id": "v79",
@@ -5857,7 +5885,7 @@
       "title": "Malandras",
       "year": "2003",
       "channel": "Canal 9/Azul TV",
-      "genre": "Policial",
+      "genre": "Comedia",
       "actors": [
         "Damián De Santo",
         "Lito Cruz",
@@ -5865,7 +5893,14 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/malandras-poster-280x420.png",
-      "subtitle": "Policial"
+      "subtitle": "Comedia",
+      "horario": "22hs",
+      "capitulos": 60,
+      "fecha_estreno": "06/01/2003",
+      "sinopsis": "La trama se centra en la rivalidad entre dos familias de ladrones de medio pelo (los Bertolotti y los Ordóñez) que conviven en un barrio donde son queridos y respetados por los vecinos.",
+      "rating": "5",
+      "productora": "BBTV, Alejandro Borensztein",
+      "tipo_emision": "Tira Diaria"
     },
     {
       "id": "v97",
@@ -5901,23 +5936,34 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/soy-gitano-poster-280x420.png",
-      "subtitle": "Telenovela"
+      "subtitle": "Telenovela",
+      "sinopsis": "Un amor prohibido surge entre Mora Amaya y Amador Heredia, integrantes de clanes gitanos rivales en Buenos Aires. Entre enfrentamientos familiares, los amantes desafían la tradición en busca de su propia identidad.",
+      "rating": "21,5",
+      "productora": "Pol-Ka",
+      "tipo_emision": "Tira Diaria"
+      
     },
     {
       "id": "v99",
       "title": "Costumbres Argentinas",
       "year": "2003",
       "channel": "Telefe",
-      "genre": "Comedia Dramática",
+      "genre": "Comedia",
       "actors": [
         "Carlos Calvo",
         "Fabián Gianola",
         "María Valenzuela",
-        "Ana Maria Picchio"
+        "Ana Maria Picchio",
+        "Tomás Fonzi",
+        "Daniela Herrero"
       ],
       "orientation": "vertical",
       "image": "images/verticals/costumbres-argentinas-poster-280x420.png",
-      "subtitle": "Comedia dramática"
+      "subtitle": "Comedia",
+      "sinopsis": "Ambientada en los años 80, narra la intensa rivalidad y romance entre las familias Rosetti y Pagliaro, marcados por la enemistad de Vicente y Ernesto por el amor de Clara. La trama mezcla comedia y nostalgia, reflejando la cultura argentina de la época con un tono familiar. ",
+      "rating": "20,3",
+      "productora": "Ideas del Sur",
+      "tipo_emision": "Tira Diaria"
     },
     {
       "id": "v100",
@@ -6668,7 +6714,14 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/rincon-de-luz-poster-280x420.png",
-      "subtitle": "Juvenil"
+      "subtitle": "Juvenil",
+      "horario": "18hs, 11hs",
+      "capitulos": 199,
+      "fecha_estreno": "27/05/2002",
+      "sinopsis": "Álvaro Del Solar crea un orfanato para cobrar una herencia, pero termina encariñándose con los niños y enamorándose de Soledad, una joven que cuida a los chicos, transformando el hogar.",
+      "rating": "3,4",
+      "productora": "Cris Morena Group / RGB Entertainment",
+      "tipo_emision": "Tira Diaria"
     },
     {
       "id": "V147",
@@ -6680,11 +6733,20 @@
         "Luisana Lopilato",
         "Felipe Colombo",
         "Benjamín Rojas",
-        "Camila Bordonaba"
+        "Camila Bordonaba",
+        "Catherine Fulop",
+        "Fernán Mirás"
       ],
       "orientation": "vertical",
       "image": "images/verticals/rebelde way-poster-280x420.png",
-      "subtitle": "Juvenil"
+      "subtitle": "Juvenil",
+      "horario": "20hs",
+      "capitulos": 139,
+      "fecha_estreno": "27/05/2002",
+      "sinopsis": "Cuatro adolescentes de clases sociales opuestas (Mía, Marizza, Pablo y Manuel) conviven en el exclusivo internado Elite Way School. A pesar de sus diferencias y conflictos familiares, forman la banda musical Erreway, enfrentando la rigidez escolar y el acoso de \"La Logia\". ",
+      "rating": "14",
+      "productora": "Cris Morena Group / RGB Entertainment",
+      "tipo_emision": "Tira Diaria"
     },
     {
       "id": "V148",
@@ -8452,11 +8514,19 @@
         "Florencia Peña",
         "Mirta Busnelli",
         "Dolores Fonzi",
-        "Belén Blanco"
+        "Belén Blanco",
+        "Julieta Ortega"
       ],
       "orientation": "vertical",
       "image": "images/verticals/disputas-poster-280x420.png",
-      "subtitle": "Drama"
+      "subtitle": "Drama",
+      "horario": "23hs",
+      "capitulos": 11,
+      "fecha_estreno": "22/5/2003",
+      "sinopsis": "La trama sigue a Amelia (Mirta Busnelli), una madama experimentada, y a las mujeres que trabajan con ella, mostrando sus conflictos personales, económicos y sociales con un tono crudo. ",
+      "rating": "-",
+      "productora": "Ideas del Sur, Sebastián Ortega",
+      "tipo_emision": "Semanal"
     },
     {
       "id": "V258",
@@ -8706,7 +8776,7 @@
       "title": "Tres Padres Solteros",
       "year": "2003",
       "channel": "Telefe",
-      "genre": "Comedia Dramática",
+      "genre": "Drama",
       "actors": [
         "Gustavo Garzón",
         "Juan Leyrado",
@@ -8714,7 +8784,14 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/tres-padres-solteros-poster-280x420.png",
-      "subtitle": "Comedia dramática"
+      "subtitle": "Drama",
+      "horario": "22hs",
+      "capitulos": 13,
+      "fecha_estreno": "05/03/2003",
+      "sinopsis": "Tres hombres divorciados—Miguel, Marcelo y Guillermo — enfrentan la crianza de sus hijos, las relaciones con sus exmujeres y la búsqueda de nuevos vínculos",
+      "rating": "-",
+      "productora": "Telefe Contenidos",
+      "tipo_emision": "Semanal"
     },
     {
       "id": "V272",
@@ -8728,7 +8805,14 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/durmiendo-con-mi-jefe-poster-280x420.png",
-      "subtitle": "Comedia"
+      "subtitle": "Comedia",
+      "horario": "22hs",
+      "capitulos": 29,
+      "fecha_estreno": "14/04/2003",
+      "sinopsis": "Oscar, un contador responsable, queda ligado al destino de su arrogante jefe publicitario cuando éste pierde todo tras el divorcio. Arruinado y sin rumbo, el poderoso empresario termina refugiándose en la casa de su propio empleado.",
+      "rating": "9,7",
+      "productora": "Pol-ka",
+      "tipo_emision": "Semanal"
     },
     {
       "id": "V273",
@@ -8744,7 +8828,14 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/femenino-masculino-poster-280x420.png",
-      "subtitle": "Comedia"
+      "subtitle": "Comedia",
+      "horario": "23hs",
+      "capitulos": 46,
+      "fecha_estreno": "10/02/2003",
+      "sinopsis": "La miniserie retrata la forzosa convivencia entre Roberto, un hombre descolocado tras ser abandonado por su esposa, y Alejandro, un licenciado en filosofía gay que se instala en el mismo departamento. ",
+      "rating": "-",
+      "productora": "Martín Seefeld, Federico D'Elía",
+      "tipo_emision": "Semanal" 
     },
     {
       "id": "V274",
@@ -8812,7 +8903,14 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/infieles-poster-280x420.png",
-      "subtitle": "Drama"
+      "subtitle": "Drama",
+      "horario": "22hs, 23hs",
+      "capitulos": 18,
+      "fecha_estreno": "03/11/2002",
+      "sinopsis": "Serie de televisión de antología y drama argentina, cuya primera temporada se emitió por Telefe en 2002, mientras que la segunda se emitió por Canal 9. La trama gira en torno a diferentes personas que relataban a una cámara de vídeo sus historias de infidelidades.",
+      "rating": "-",
+      "productora": "Estevanez Producciones",
+      "tipo_emision": "Semanal"
     },
     {
       "id": "V279",
