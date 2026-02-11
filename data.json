@@ -5652,7 +5652,14 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/abre-tus-ojos-poster-280x420.png",
-      "subtitle": "Telenovela"
+      "subtitle": "Telenovela",
+      "horario": "19hs, 15hs",
+      "capitulos": 120,
+      "fecha_estreno": "06/10/2003",
+      "sinopsis": "Rocío, una joven ciega criada bajo la sobreprotección de su padre, empieza a ganar independencia al enamorarse de Pablo. Impulsada por el amor, decide enfrentar sus miedos y vivir según sus propias reglas.",
+      "rating": "7",
+      "productora": "RGB Entertainment",
+      "tipo_emision": "Tira Diaria"
     },
     {
       "id": "v80",
@@ -9638,7 +9645,15 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/dr-amor-280x420.png",
-      "subtitle": "Comedia"
+      "subtitle": "Comedia",
+      "horario": "18hs, 19hs",
+      "capitulos": 120,
+      "fecha_estreno": "21/04/2003",
+      "sinopsis": "Mariano, un ginecólogo despreocupado, descubre de golpe que es padre y abuelo, y debe reinventarse como hombre de familia. La llegada de Ángeles, una niñera tan peculiar como entrañable, transforma su vida y su corazón.",
+      "rating": "9",
+      "productora": "Central Park, Raúl Lecouna",
+      "tipo_emision": "Tira Diaria"
+      
     },
     {
       "id": "v66",
@@ -9680,7 +9695,7 @@
         "Jazmín Stuart"
       ],
       "synopsis": "Un padre busca a su hija desaparecida en Buenos Aires.",
-      "channel": "HBO",
+      "channel": "HBO Max",
       "image": "images/verticals/el-jardin-de-bronce-poster-280x420.png",
       "orientation": "vertical",
       "seasons": 3,

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Series de HBO Max - Cine Argentum</title>
+  <link rel="stylesheet" href="css/style.css?v=2.0">
+  <style>
+    .actor-wrap { max-width: 1200px; margin: 28px auto; padding: 20px; }
+    .actor-header { display: flex; align-items: center; gap: 16px; margin-bottom: 32px; }
+    .actor-badge { width: 80px; height: 80px; border-radius: 12px; background: linear-gradient(135deg, #3b1b5a 0%, #241036 100%); display: flex; align-items: center; justify-content: center; color: #fff; font-weight: bold; font-size: 36px; box-shadow: 0 4px 12px rgba(0,0,0,0.28); }
+    .actor-info h1 { margin: 0 0 6px; font-size: 28px; color: #fff; }
+    .actor-info p { margin: 0; color: #b0b0b0; }
+    .back-link { display: inline-block; margin-bottom: 16px; color: #b49bff; text-decoration: none; font-weight: 600; }
+    @media (max-width: 768px) { .actor-header { flex-direction: column; align-items: flex-start; } .actor-info h1 { font-size: 22px; } }
+    body { background: #181d23; color: #e5e5e5; }
+    .actor-movies-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 28px 18px; margin: 32px 0 40px 0; padding: 0 12px; }
+    @media (max-width: 900px) { .actor-movies-grid { grid-template-columns: repeat(3, 1fr); } }
+    @media (max-width: 600px) { .actor-movies-grid { grid-template-columns: repeat(2, 1fr); gap: 18px 8px; margin: 18px 0 24px 0; padding: 0 4px; } }
+    .actor-movie-card { background: #23272f; border-radius: 16px; box-shadow: 0 2px 12px rgba(0,0,0,0.13); overflow: hidden; display: flex; flex-direction: column; align-items: stretch; transition: transform 0.18s; }
+    .actor-movie-card:hover { transform: translateY(-4px) scale(1.03); box-shadow: 0 6px 24px rgba(0,0,0,0.18); }
+    .actor-movie-card img {
+      width: 100%;
+      aspect-ratio: 2/3;
+      object-fit: cover;
+      background: #181d23;
+      display: block;
+      border-bottom-left-radius: 22px;
+      border-bottom-right-radius: 22px;
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+    }
+    .actor-movie-info { padding: 14px 12px 12px 12px; display: flex; flex-direction: column; gap: 4px; }
+    .actor-movie-title { font-size: 1.08rem; font-weight: 600; color: #fff; margin-bottom: 2px; line-height: 1.18; }
+    .actor-movie-meta { font-size: 0.97rem; color: #b0b0b0; margin-bottom: 1px; }
+    .actor-movie-viewers { font-size: 0.93rem; color: #b49bff; }
+    .actor-filters { display: flex; align-items: center; gap: 10px; margin: 0 0 10px 0; padding: 0 12px; }
+    .actor-filters label { font-size: 1rem; color: #b0b0b0; }
+    .custom-select { position: relative; min-width: 210px; background: #23272f; border-radius: 6px; cursor: pointer; user-select: none; box-shadow: 0 2px 8px rgba(0,0,0,0.10); border: 1px solid #333; transition: border-color 0.18s; }
+    .custom-select.open, .custom-select:focus { border-color: #b49bff; z-index: 20; }
+    .custom-select-selected { display: block; padding: 8px 36px 8px 14px; font-size: 1rem; color: #e5e5e5; background: transparent; border-radius: 6px; position: relative; }
+    .custom-select-selected:after { content: ''; position: absolute; right: 14px; top: 50%; width: 0; height: 0; border-left: 6px solid transparent; border-right: 6px solid transparent; border-top: 7px solid #b49bff; transform: translateY(-50%); pointer-events: none; }
+    .custom-select-options { position: absolute; left: 0; right: 0; top: 100%; background: #23272f; border-radius: 0 0 6px 6px; box-shadow: 0 6px 24px rgba(0,0,0,0.18); margin: 0; padding: 0; z-index: 30; border: 1px solid #333; border-top: none; }
+    .custom-select-options li { padding: 12px 16px; color: #e5e5e5; font-size: 1rem; cursor: pointer; transition: background 0.13s, color 0.13s; }
+    .custom-select-options li.selected, .custom-select-options li:hover { background: #b49bff; color: #23272f; }
+    @media (max-width: 600px) { .actor-filters { flex-direction: column; align-items: stretch; gap: 6px; } .custom-select { min-width: 100%; width: 100%; } .custom-select-selected { font-size: 1.08rem; padding: 12px 36px 12px 14px; } .custom-select-options li { font-size: 1.08rem; padding: 16px 18px; } }
+  </style>
+</head>
+<body>
+  <div class="actor-wrap">
+    <main>
+      <a href="javascript:history.back()" class="back-link" aria-label="Volver a la página anterior">&larr; Volver</a>
+      <div class="actor-header">
+        <div class="actor-badge"><img src="images/logos/hbo-max-black-transparent.png" alt="HBO Max" style="width:60px; height:60px; object-fit:contain; background:transparent; border-radius:8px; filter: brightness(0) invert(1);" /></div>
+        <div class="actor-info">
+          <h1>Series de HBO Max</h1>
+          <p id="actor-movie-count">Cargando series...</p>
+        </div>
+        <div class="actor-filters" style="margin-bottom:0; margin-left:auto;">
+          <label for="actorSortCustom">Ordenar/Filtrar por:</label>
+          <div class="custom-select" id="actorSortCustom" tabindex="0">
+            <span class="custom-select-selected">Año (descendente)</span>
+            <ul class="custom-select-options" style="display:none;">
+              <li data-value="year" class="selected">Año (descendente)</li>
+              <li data-value="year-asc">Año (ascendente)</li>
+              <li data-value="comedias">Comedias</li>
+              <li data-value="telenovelas">Telenovelas</li>
+              <li data-value="juveniles">Juveniles</li>
+              <li data-value="sitcoms">Sitcoms</li>
+              <li data-value="policiales">Thrillers</li>
+              <li data-value="unitarios">Unitarios</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="actor-movies-grid" id="actorMoviesList">
+        <!-- Series de HBO Max -->
+      </div>
+    </main>
+  </div>
+  <script src="js/lightslider.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/hbo-max.js"></script>
+</body>
+</html>
