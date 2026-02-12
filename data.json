@@ -5116,7 +5116,15 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/los-roldan-poster-280x-420.png",
-      "subtitle": "Comedia"
+      "subtitle": "Comedia",
+      "horario": "21hs",
+      "capitulos": 218,
+      "fecha_estreno": "02/02/2004",
+      "sinopsis": "Una versión moderna de Romeo y Julieta enfrenta a dos familias opuestas: los humildes Roldán y los poderosos Uriarte, cuyos conflictos estallan cuando los Roldán se mudan a Barrio Norte tras heredar un imperio empresarial. En medio del choque de clases surge un amor prohibido entre Laisa Roldán y Emilio Uriarte, atravesado por secretos, prejuicios y rivalidades crecientes.",
+      "rating": "33,1",
+      "productora": "Ideas del Sur, Sebastián Ortega",
+      "tipo_emision": "Tira Diaria"
+      
     },
     {
       "id": "v13",
@@ -5204,7 +5212,14 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/padre-coraje-poster-280x420.png",
-      "subtitle": "Telenovela"
+      "subtitle": "Telenovela",
+      "horario": "22hs",
+      "capitulos": 189,
+      "fecha_estreno": "08/03/2004",
+      "sinopsis": "En 1952, un justiciero se hace pasar por sacerdote en el pueblo de La Cruz para investigar un asesinato y enfrentar a la élite corrupta. Su misión se complica al enamorarse de Clara, la hija de la víctima, en un romance marcado por el engaño y el sacrificio.",
+      "rating": "19,9",
+      "productora": "Pol-Ka",
+      "tipo_emision": "Tira Diaria"
     },
     {
       "id": "v19",
@@ -5673,7 +5688,14 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/culpable-de-este-amor-poster-280x420.png",
-      "subtitle": "Telenovela"
+      "subtitle": "Telenovela",
+      "horario": "13hs",
+      "capitulos": 205,
+      "fecha_estreno": "12/01/2004",
+      "sinopsis": "La abogada Laura Cazenave busca la verdad sobre su familia mientras se enamora de Agustín Rivero, un perito psiquiatra. Juntos enfrentan una red de traiciones, crímenes y una secta infiltrada en laboratorios",
+      "rating": "12,9",
+      "productora": "Telefe Contenidos",
+      "tipo_emision": "Tira Diaria"
     },
     {
       "id": "v81",
@@ -5687,7 +5709,14 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/jesus-el-heredero-poster-280x420.png",
-      "subtitle": "Telenovela"
+      "subtitle": "Telenovela",
+      "horario": "19hs",
+      "capitulos": 175,
+      "fecha_estreno": "15/03/2004",
+      "sinopsis": "La trama sigue a Julia, una mujer atrapada en un matrimonio con Joaquín, un hombre estéril y adinerado. Buscando amor, ella se entrega a un empleado humilde y adopta a una bebé, para luego quedar embarazada, lo que desata el conflicto de la herencia.",
+      "rating": "12,8",
+      "productora": "Central Park, Raúl Lecouna",
+      "tipo_emision": "Tira Diaria"
     },
     {
       "id": "v82",
@@ -6038,18 +6067,28 @@
         "Damián De Santo",
         "Cecilia Dopazo",
         "Marcela Kloosterboer",
-        "Guido Kaczka"
+        "Guido Kaczka",
+        "Agustina Cherri",
+        "Sebastián Estevanez",
+        "Luisana Lopilato"
       ],
       "orientation": "vertical",
       "image": "images/verticals/los-pensionados-poster-280x420.png",
-      "subtitle": "Comedia"
+      "subtitle": "Comedia",
+      "horario": "21hs",
+      "capitulos": "116",
+      "fecha_estreno": "02/02/2004",
+      "sinopsis": "Un grupo de jóvenes convive en la pensión “La Argentina”, un espacio marcado por romances, desencuentros y nuevas oportunidades. Bajo la tutela de Tony y su familia, la vida cotidiana se transforma en un cruce constante de amor, pérdida y redescubrimiento.",
+      "rating": "12,2",
+      "productora": "Pol-Ka",
+      "tipo_emision": "Tira Diaria"
     },
     {
       "id": "v101",
       "title": "El Deseo",
       "year": "2004",
       "channel": "Telefe",
-      "genre": "Policial",
+      "genre": "Thriller",
       "actors": [
         "Natalia Oreiro",
         "Soledad Silveyra",
@@ -6058,7 +6097,14 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/el-deseo-poster-280x420.png",
-      "subtitle": "Policial"
+      "subtitle": "Thriller",
+      "horario": "22:30hs",
+      "capitulos": "90",
+      "fecha_estreno": "19/04/2004",
+      "sinopsis": "El Deseo es un pequeño pueblo de aguas termales donde pasiones, secretos y tensiones giran alrededor de la poderosa familia Bernal y su spa. La llegada de Javier y Carmen altera el frágil equilibrio: los misterios salen a la luz y nada vuelve a ser igual.",
+      "rating": "14,4",
+      "productora": "Telefe Contenidos",
+      "tipo_emision": "Tira Diaria"
     },
     {
       "id": "v102",
@@ -6068,11 +6114,19 @@
       "genre": "Comedia",
       "actors": [
         "Dady Brieva",
-        "Romina Gaetani"
+        "Romina Gaetani",
+        "Luisana Lopilato"
       ],
       "orientation": "vertical",
       "image": "images/verticals/los-secretos-de-papa-poster-280x420.png",
-      "subtitle": "Comedia"
+      "subtitle": "Comedia",
+      "horario": "21hs",
+      "capitulos": "150",
+      "fecha_estreno": "08/01/2004",
+      "sinopsis": "Rubén Jilguero, actor de cámaras ocultas, se infiltra fingiendo ser gay para destapar un caso de discriminación en una fábrica familiar. Allí se vuelve confidente de Eugenia y, sin saberlo, se cruza con Camila, una joven que es en realidad su hija.",
+      "rating": "11,2",
+      "productora": "Pol-Ka",
+      "tipo_emision": "Tira Diaria"
     },
     {
       "id": "v103",
@@ -6095,14 +6149,14 @@
       "title": "Gladiadores de Pompeya",
       "year": "2006",
       "channel": "Canal 9/Azul TV",
-      "genre": "Comedia Romántica",
+      "genre": "Comedia",
       "actors": [
         "Andrea del Boca",
         "Gabriel Goity"
       ],
       "orientation": "vertical",
       "image": "images/verticals/gladiadores-de-pompeya-poster-280x420.png",
-      "subtitle": "Comedia romántica"
+      "subtitle": "Comedia"
     },
     {
       "id": "v105",
@@ -6759,11 +6813,21 @@
       "genre": "Juvenil",
       "actors": [
         "Florencia Bertotti",
-        "Juan Gil Navarro"
+        "Juan Gil Navarro",
+        "Fabio Di Tomaso",
+        "Isabel Macedo",
+        "Benjamín Rojas"
       ],
       "orientation": "vertical",
       "image": "images/verticals/floricienta-poster-280x420.png",
-      "subtitle": "Juvenil"
+      "subtitle": "Juvenil",
+      "horario": "18hs, 19hs",
+      "capitulos": 175,
+      "fecha_estreno": "15/03/2004",
+      "sinopsis": "Narra la vida de Florencia Fazzarino, una joven huérfana y soñadora que, tras perder su trabajo, encuentra empleo como niñera en la mansión de la adinerada familia Fritzenwalden. Allí se enamora de Federico Fritzenwalden, el estricto hermano mayor que quedó a cargo de sus cinco hermanos tras la muerte de sus padres",
+      "rating": "17,4",
+      "productora": "Cris Morena Group / RGB Entertainment",
+      "tipo_emision": "Tira Diaria"
     },
     {
       "id": "V146",
@@ -7041,7 +7105,14 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/frecuencia-04-poster280x420.png",
-      "subtitle": "Juvenil"
+      "subtitle": "Juvenil",
+      "horario": "18hs",
+      "capitulos": 120,
+      "fecha_estreno": "19/04/2001",
+      "sinopsis": "Se centra en un grupo de adolescentes que buscan realizar sus sueños artísticos en \"El Galpón\", un centro cultural y radio clandestina.",
+      "rating": "10,3",
+      "productora": "Red Lojo",
+      "tipo_emision": "Tira Diaria"
     },
     {
       "id": "V162",
@@ -8353,11 +8424,19 @@
       "actors": [
         "Mariano Martínez",
         "Dolores Fonzi",
-        "Nicolás Pauls"
+        "Nicolás Pauls",
+        "Juana Viale"
       ],
       "orientation": "vertical",
       "image": "images/verticals/sangre-fria-poster-280x420.png",
-      "subtitle": "Thriller"
+      "subtitle": "Thriller",
+      "horario": "23hs",
+      "capitulos": 12,
+      "fecha_estreno": "01/09/2004",
+      "sinopsis": "La trama sigue a un grupo de estudiantes universitarios que se encierran en una sede remota para un concurso, donde comienzan a sufrir sucesos escalofriantes, desapariciones y la persecución de una misteriosa figura relacionada con una leyenda local, marcada por el terror psicológico y apariciones",
+      "rating": "18,3",
+      "productora": "Ideas del Sur, Sebastián Ortega",
+      "tipo_emision": "Semanal"
     },
     {
       "id": "V245",
@@ -8549,11 +8628,18 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/locas-de-amor-poster-280x420.png",
-      "subtitle": "Drama"
+      "subtitle": "Drama",
+      "horario": "23hs",
+      "capitulos": 35,
+      "fecha_estreno": "27/04/2004",
+      "sinopsis": "Narra la reinserción social de tres mujeres (Simona, Juana y Eva) tras salir de un neuropsiquiátrico. Con la guía del psiquiatra Martín Uribelarrea, conviven en un departamento enfrentando sus manías y fobias, buscando amor y \"normalidad\" con toques de humor y drama",
+      "rating": "15,7",
+      "productora": "Pol-Ka",
+      "tipo_emision": "Semanal"
     },
     {
       "id": "V256",
-      "title": "Historias de Sexo de Gente Comün",
+      "title": "Historias de Sexo de Gente Común",
       "year": "2004",
       "channel": "Telefe",
       "genre": "Drama",
@@ -8565,7 +8651,14 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/historias-de-sexo-gente-comun-poster-280x420.png",
-      "subtitle": "Drama"
+      "subtitle": "Drama",
+      "horario": "23hs",
+      "capitulos": 22,
+      "fecha_estreno": "07/07/2004",
+      "sinopsis": "La serie explora los conflictos íntimos, deseos y frustraciones de Diego, Sandra, Gastón y Carla, cuatro adultos cuyas vidas se entrelazan a través de la infidelidad y la búsqueda de placer en la vida cotidiana. La trama profundiza en cómo sus secretos sexuales afectan sus vínculos afectivos y la estabilidad de sus relaciones de pareja",
+      "rating": "18",
+      "productora": "Endemol",
+      "tipo_emision": "Semanal"
     },
     {
       "id": "V257",
@@ -9255,11 +9348,18 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/la-ninera-poster-280x420.png",
-      "subtitle": "Sitcom"
+      "subtitle": "Sitcom",
+      "horario": "20:30hs",
+      "capitulos": 175,
+      "fecha_estreno": "19/01/2002",
+      "sinopsis": "Flor Finkel, una mujer espontánea y carismática que, tras quedar desempleada, comienza a trabajar por error como niñera de los tres hijos del viudo Juan Manuel Iraola, un productor de teatro de la alta sociedad.",
+      "rating": "15",
+      "productora": "Telefe Contenidos",
+      "tipo_emision": "Tira Diaria"
     },
     {
       "id": "v44",
-      "title": "Cuando me Sonreás",
+      "title": "Cuando me Sonreís",
       "year": "2011",
       "channel": "Telefe",
       "genre": "Comedia Romántica",
