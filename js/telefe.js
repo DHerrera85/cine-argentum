@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', async function() {
     { year: '2004', title: 'Frecuencia 04', genre: 'Juvenil' },
     { year: '2004', title: 'El Deseo', genre: 'Telenovela' },
     { year: '2005', title: 'Amor en Custodia', genre: 'Telenovela' },
-    { year: '2005', title: 'Amor Mio', genre: 'Sitcom' },
+    { id: 'v46', year: '2005', title: 'Amor Mio', genre: 'Sitcom' },
     { year: '2005', title: 'Casados con Hijos', genre: 'Sitcom' },
     { year: '2005', title: '¿Quién es el Jefe?', genre: 'Sitcom' },
     { year: '2005', title: 'Se Dice Amor', genre: 'Telenovela' },

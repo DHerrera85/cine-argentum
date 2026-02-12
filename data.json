@@ -5235,7 +5235,14 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/hombres-de-honor-poster-280x420.png",
-      "subtitle": "Telenovela"
+      "subtitle": "Telenovela",
+      "horario": "22hs",
+      "capitulos": 152,
+      "fecha_estreno": "30/03/2005",
+      "sinopsis": "Ambientada en Buenos Aires en la década de 1940, que relata el enfrentamiento entre dos familias mafiosas italianas, los Onoratto y los Patter Nostra, por el control territorial, el juego y el alcohol",
+      "rating": "10",
+      "productora": "Pol-Ka",
+      "tipo_emision": "Tira Diaria"
     },
     {
       "id": "v20",
@@ -7088,7 +7095,14 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/paraiso-rock-poster-280x420.png",
-      "subtitle": "Juvenil"
+      "subtitle": "Juvenil",
+      "horario": "19hs, 18hs",
+      "capitulos": 60,
+      "fecha_estreno": "21/03/2005",
+      "sinopsis": "Paraíso Rock narra la historia de cuatro jóvenes —Carmela, Ludovico, Napo y Javier— que descubren que son medio hermanos tras la muerte de su padre. Heredan a partes iguales un bar y deben aprender a convivir y administrarlo juntos para cumplir su último deseo.",
+      "rating": "5",
+      "productora": "Red Lojo",
+      "tipo_emision": "Tira Diaria"
     },
     {
       "id": "V161",
@@ -8313,7 +8327,7 @@
       "title": "30 Días Juntos",
       "year": "2012",
       "channel": "Cosmopolitan TV",
-      "genre": "Comedia Romántica",
+      "genre": "Drama",
       "actors": [
         "Eugenia Suárez",
         "Nicolás Pauls",
@@ -8321,7 +8335,7 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/30-dias-juntos-poster-280x420.png",
-      "subtitle": "Comedia romántica"
+      "subtitle": "Drama"
     },
     {
       "id": "V238",
@@ -8340,9 +8354,9 @@
     {
       "id": "V239",
       "title": "Epitafios",
-      "year": "2004",
+      "year": "2004; 2009",
       "channel": "HBO Max",
-      "genre": "Policial",
+      "genre": "Thriller",
       "actors": [
         "Julio Chávez",
         "Cecilia Roth",
@@ -8351,7 +8365,14 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/epitafios-poster-280x420.png",
-      "subtitle": "Policial"
+      "subtitle": "Thriller",
+      "horario": "22hs",
+      "capitulos": 26,
+      "fecha_estreno": "14/08/2004",
+      "sinopsis": "Narra la cacería de un asesino en serie brillante que anticipa sus crímenes con epitafios, obligando a un policía retirado y a una psiquiatra a enfrentar un pasado traumático",
+      "rating": "-",
+      "productora": "Pol-Ka",
+      "tipo_emision": "Semanal"
     },
     {
       "id": "V240",
@@ -8390,7 +8411,7 @@
       "title": "Hermanos y Detectives",
       "year": "2006",
       "channel": "Telefe",
-      "genre": "Policial",
+      "genre": "Comedia",
       "actors": [
         "Rodrigo de la Serna",
         "Rodrigo Noya",
@@ -8398,14 +8419,14 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/hermanos-y-detectives-poster-280x420.png",
-      "subtitle": "Policial"
+      "subtitle": "Comedia"
     },
     {
       "id": "V243",
       "title": "Criminal",
       "year": "2005",
       "channel": "Canal 9/Azul TV",
-      "genre": "Policial",
+      "genre": "Thriller",
       "actors": [
         "Diego Peretti",
         "Inés Estévez",
@@ -8413,7 +8434,14 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/criminal-poster-280x420.png",
-      "subtitle": "Policial"
+      "subtitle": "Thriller",
+      "horario": "23hs",
+      "capitulos": 13,
+      "fecha_estreno": "19/9/2005",
+      "sinopsis": "La trama sigue a Alejandro Ruiz, un remisero que, traumatizado tras el asesinato de su padre, se convierte en un asesino justiciero obsesionado con limpiar la sociedad, siendo perseguido por una implacable fiscal",
+      "rating": "14,3",
+      "productora": "Ideas del Sur, Sebastián Ortega",
+      "tipo_emision": "Semanal"
     },
     {
       "id": "V244",
@@ -9398,7 +9426,14 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/amor-mio-poster-280x420.png",
-      "subtitle": "Sitcom"
+      "subtitle": "Sitcom",
+      "horario": "21hs",
+      "capitulos": 160,
+      "fecha_estreno": "03/01/2005",
+      "sinopsis": "Narra la historia de Abril y Marcos, dos personas opuestas, con una atracción irresistible, forzados a convivir en un departamento heredado tras la muerte de sus padres, quienes eran pareja.",
+      "rating": "20,3",
+      "productora": "Cris Morena Group/RGB Entertainment",
+      "tipo_emision": "Tira Diaria"
     },
     {
       "id": "v47",
@@ -9479,11 +9514,19 @@
       "genre": "Telenovela",
       "actors": [
         "Osvaldo Laport",
-        "Soledad Silveyra"
+        "Soledad Silveyra",
+        "Sebastián Estevanez"
       ],
       "orientation": "vertical",
       "image": "images/verticals/amor-en-custodia-poster-280x420.png",
-      "subtitle": "Telenovela"
+      "subtitle": "Telenovela",
+      "horario": "13hs",
+      "capitulos": 210,
+      "fecha_estreno": "3/1/2005",
+      "sinopsis": "Narra el romance prohibido entre Paz Achával Urien, una empresaria de clase alta, y Juan Manuel Aguirre, un hombre humilde y experto en artes marciales que se convierte en su custodio después de salvarle la vida.",
+      "rating": "21,9",
+      "productora": "Estevanez Producciones",
+      "tipo_emision": "Tira Diaria"
     },
     {
       "id": "v50",
@@ -9625,7 +9668,15 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/una-familia-especial-poster-280x420px.png",
-      "subtitle": "Comedia"
+      "subtitle": "Comedia",
+      "horario": "21hs",
+      "capitulos": 82,
+      "fecha_estreno": "28/03/2005",
+      "sinopsis": "La trama se centra en el romance entre Santiago y Selene, explorando el choque cultural y el intento de los extraterrestres por adaptarse y mimetizarse con los humanos",
+      "rating": "11,4",
+      "productora": "Pol-Ka",
+      "tipo_emision": "Tira Diaria"
+
     },
     {
       "id": "v59",
