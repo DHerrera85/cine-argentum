@@ -5032,7 +5032,14 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/casados-con-hijos-poster-280x420.png",
-      "subtitle": "Sitcom"
+      "subtitle": "Sitcom",
+      "horario": "22:30hs",
+      "capitulos": 212,
+      "fecha_estreno": "12/04/2005",
+      "sinopsis": "Esta exitosa sitcom (2005-2006), sigue la caótica vida de los Argento, una familia disfuncional de clase media-baja en Buenos Aires. La serie parodia la vida doméstica, destacando la convivencia con los vecinos, los Fuseneco",
+      "rating": "19,4",
+      "productora": "Telefe Contenidos",
+      "tipo_emision": "Tira Diaria"
     },
     {
       "id": "h4",
@@ -7079,7 +7086,14 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/suenos-magicos-poster-280x420.png",
-      "subtitle": "Juvenil"
+      "subtitle": "Juvenil",
+      "horario": "17:30hs",
+      "capitulos": "-",
+      "fecha_estreno": "11/04/2005",
+      "sinopsis": "La trama se centra en la \"Comarca de la Luz\", un lugar fantástico donde conviven duendes, magos, brujas y ángeles, enfrentando una lucha entre el bien y el mal mientras protegen el libro de los sueños.",
+      "rating": "-",
+      "productora": "Jorge Fort",
+      "tipo_emision": "Tira Diaria"
     },
     {
       "id": "V160",
@@ -9061,7 +9075,14 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/botines-poster-280x420.png",
-      "subtitle": "Thriller"
+      "subtitle": "Thriller",
+      "horario": "23hs",
+      "capitulos": 14,
+      "fecha_estreno": "12/4/2005",
+      "sinopsis": "Este unitario policial producido por Pol-ka Producciones para Canal 13, recreó famosos casos reales de robos, estafas y desfalcos en Argentina. Con un elenco rotativo de primer nivel y un tono de suspenso, la serie exploró la psicología de los delincuentes y los detalles de los atracos más recordados.",
+      "rating": "12,7",
+      "productora": "Pol-ka",
+      "tipo_emision": "Semanal" 
     },
     {
       "id": "V277",
@@ -9074,7 +9095,14 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/mujeres-asesinas-poster-280x420.png",
-      "subtitle": "Thriller"
+      "subtitle": "Thriller",
+      "horario": "23hs",
+      "capitulos": 78,
+      "fecha_estreno": "19/7/2005",
+      "sinopsis": "Esta serie unitaria argentina está basada en el libro homónimo de Marisa Grinstein, que narra casos reales de mujeres homicidas. Cada episodio explora la psiquis, la violencia y la desdicha que llevaron a mujeres ordinarias a cometer crímenes brutales, a menudo tras sufrir abusos, desamor o celos intensos, mostrando cómo la víctima se convierte en victimaria.",
+      "rating": "20,4",
+      "productora": "Pol-ka",
+      "tipo_emision": "Semanal" 
     },
     {
       "id": "V278",
