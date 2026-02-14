@@ -5737,14 +5737,21 @@
       "title": "El Patrón de la Vereda",
       "year": "2005",
       "channel": "América",
-      "genre": "Comedia Dramática",
+      "genre": "Telenovela",
       "actors": [
         "Gustavo Bermúdez",
         "Camila Bordonaba"
       ],
       "orientation": "vertical",
       "image": "images/verticals/el-patron-de-la-vereda-poster-280x420.png",
-      "subtitle": "Comedia dramática"
+      "subtitle": "Telenovela",
+      "horario": "18hs",
+      "capitulos": 120,
+      "fecha_estreno": "18/04/2005",
+      "sinopsis": "Gastón, un empresario, se enamora de Sisí, la joven hija de su exnovia fallecida, tras reconocerla cantando una canción que él compuso hace años",
+      "rating": "3,9",
+      "productora": "Central Park, Raúl Lecouna",
+      "tipo_emision": "Tira Diaria"
     },
     {
       "id": "v83",
@@ -5758,7 +5765,14 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/salvame-maria-poster-280x420.png",
-      "subtitle": "Telenovela"
+      "subtitle": "Telenovela",
+      "horario": "16hs",
+      "capitulos": 88,
+      "fecha_estreno": "18/04/2005",
+      "sinopsis": "Narra la historia de María, una mujer que, tras sufrir violencia y engaños sobre su fertilidad por parte de su esposo, huye a Potrero de los Funes, donde encuentra un nuevo amor y descubre su pasado",
+      "rating": "-",
+      "productora": "Red Lojo",
+      "tipo_emision": "Tira Diaria"
     },
     {
       "id": "v84",
@@ -5768,11 +5782,19 @@
       "genre": "Telenovela",
       "actors": [
         "Juan Darthés",
-        "Eugenia Tobal"
+        "Eugenia Tobal",
+        "Millie Stegmann"
       ],
       "orientation": "vertical",
       "image": "images/verticals/se-dice-amor-poster-280x420.png",
-      "subtitle": "Telenovela"
+      "subtitle": "Telenovela",
+      "horario": "13hs",
+      "capitulos": 260,
+      "fecha_estreno": "01/12/2005",
+      "sinopsis": "Narra la intensa rivalidad entre un poderoso y seductor ex campeón de polo y su hijo, quienes se enfrentan por amor, mientras secretos del pasado y la ambición de alta sociedad complican sus vidas",
+      "rating": "16,7",
+      "productora": "Estevanez Producciones",
+      "tipo_emision": "Tira Diaria"
     },
     {
       "id": "v85",
@@ -6147,16 +6169,21 @@
       "title": "Doble Vida",
       "year": "2005",
       "channel": "América",
-      "genre": "Policial",
+      "genre": "Thriller",
       "actors": [
         "Moria Casán",
         "Jorge Marrale",
         "Felipe Colombo",
-        "Romina Ricci"
+        "Romina Ricci",
+        "Juana Viale"
       ],
       "orientation": "vertical",
       "image": "images/verticals/doble-vida-poster-280x420.png",
-      "subtitle": "Policial"
+      "subtitle": "Thriller",
+      "sinopsis": "Narra historias entrelazadas de amor, suspenso y sexo, centradas en Violeta, quien trabaja para una madama moderna (Sabrina) y la clínica estética de Leonardo, explorando la doble moral y los secretos.",
+      "rating": "2,4",
+      "productora": "Endemol",
+      "tipo_emision": "Tira Diaria"
     },
     {
       "id": "v104",
@@ -6501,7 +6528,14 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/media-falta-poster-280x420.png",
-      "subtitle": "Juvenil"
+      "subtitle": "Juvenil",
+      "horario": "18hs",
+      "capitulos": 153,
+      "fecha_estreno": "7/6/2005",
+      "sinopsis": "Vida Juárez es una docente de lengua y literatura que llega a una escuela secundaria pública para cubrir una suplencia y se convierte en mentora de sus alumnos.",
+      "rating": "-",
+      "productora": "Pol-Ka",
+      "tipo_emision": "Tira Diaria"
     },
     {
       "id": "V126",
@@ -8653,7 +8687,14 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/ambiciones-poster-280x420.png",
-      "subtitle": "Drama"
+      "subtitle": "Drama",
+      "horario": "23hs",
+      "capitulos": 12,
+      "fecha_estreno": "10/10/2005",
+      "sinopsis": "Las ambiciones de Lucrecia, Fernando y Marga revelarán la feroz lucha interna de una familia por el control definitivo de la empresa que poseen, y cómo el poder los lleva a exhibir su odio.",
+      "rating": "-",
+      "productora": "Telefe Contenidos",
+      "tipo_emision": "Semanal"
     },
     {
       "id": "V255",
@@ -8963,11 +9004,19 @@
       "genre": "Comedia",
       "actors": [
         "Pablo Rago",
-        "Fabián Vena"
+        "Fabián Vena",
+        "Tomás Fonzi"
       ],
       "orientation": "vertical",
       "image": "images/verticals/mosca-smith-poster-280x420.png",
-      "subtitle": "Comedia"
+      "subtitle": "Comedia",
+      "horario": "23hs",
+      "capitulos": 16,
+      "fecha_estreno": "19/10/2004",
+      "sinopsis": "Los detectives Melchor Mosca y Carlos Smith son dos policías del barrio de Once, que deben resolver un caso vinculado a su jurisdicción en cada episodio, y que responden a un fiscal con ambiciones mediáticas que sueña con convertir al barrio en la Nueva York de Giuliani.",
+      "rating": "-",
+      "productora": "Telefe Contenidos",
+      "tipo_emision": "Semanal"
     },
     {
       "id": "V271",
@@ -9311,11 +9360,19 @@
       "actors": [
         "Adrián Suar",
         "Nancy Dupláa",
-        "Nicolás Cabré"
+        "Nicolás Cabré",
+        "Marcela Kloosterboer"
       ],
       "orientation": "vertical",
       "image": "images/verticals/sin-codigo-2-poster-280x420.png",
-      "subtitle": "Comedia"
+      "subtitle": "Comedia",
+      "horario": "21hs",
+      "capitulos": 90,
+      "fecha_estreno": "16/08/2005",
+      "sinopsis": "La trama sigue a Gabriel Nielsen, dueño de una agencia de seguridad privada que, tras la muerte de su socio Oso, une fuerzas con Axel para resolver casos y combatir el crimen con un estilo humorístico y de acción",
+      "rating": "17,5",
+      "productora": "Pol-ka",
+      "tipo_emision": "Tira Diaria"
     },
     {
       "id": "v39",
@@ -9475,7 +9532,11 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/quien-es-el-jefe-poster-280x420.png",
-      "subtitle": "Sitcom"
+      "subtitle": "Sitcom",
+      "sinopsis": "La trama sigue a un ex-futbolista que, buscando una mejor vida para su hija, se convierte en el ama de llaves de una ejecutiva de publicidad adicta al trabajo y de armas tomar.",
+      "rating": "19,7",
+      "productora": "Telefe Contenidos",
+      "tipo_emision": "Tira Diaria"
     },
     {
       "id": "v48",

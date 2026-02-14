@@ -92,7 +92,7 @@ document.addEventListener('DOMContentLoaded', async function() {
     { year: '2012', title: 'El Donante', genre: 'Comedia' },
     { year: '2012', title: 'Mi Problema con las Mujeres', genre: 'Comedia' },
     { year: '2009', title: 'Acompañantes', genre: 'Comedia' },
-    { year: '2004', title: 'Mosca & Smith en el Once', genre: 'Comedia' },
+    { id: 'V270', year: '2004', title: 'Mosca & Smith en el Once', genre: 'Comedia' },
     { year: '2003', title: 'Tres Padres Solteros', genre: 'Comedia' },
     { year: '2013', title: 'Historias de Diván', genre: 'Drama' },
     { year: '2013', title: 'Historias de Corazón', genre: 'Drama' },
