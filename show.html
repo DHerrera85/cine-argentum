@@ -41,6 +41,26 @@
       .remakes-slider { display: block; overflow: hidden; }
       .remakes-section { margin: 12px -10px 6px; padding: 0 10px; }
     }
+    @media (max-width: 768px) {
+      .remakes-slider {
+        padding-left: 0;
+        margin-left: 8px;
+        box-sizing: border-box;
+      }
+      .remakes-slider .remake-card {
+        width: 44vw;
+        max-width: 200px;
+        margin: 9px 4px;
+      }
+    }
+    @media (max-width: 480px) {
+      .remakes-slider .remake-card {
+        width: 44vw;
+        min-width: 150px;
+        max-width: 180px;
+        margin: 9px 4px;
+      }
+    }
 
   </style>
 </head>
@@ -178,7 +198,7 @@
             // Solo inicializar si el slider es visible (móvil)
             if ($remakes.is(':visible')) {
               $remakes.lightSlider({
-                item: 2,
+                item: 5,
                 slideMove: 1,
                 slideMargin: 12,
                 loop: false,
@@ -188,7 +208,8 @@
                 enableDrag: true,
                 freeMove: false,
                 responsive: [
-                  { breakpoint: 600, settings: { item: 2, slideMove: 1, slideMargin: 8 } }
+                  { breakpoint: 1100, settings: { item: 4, slideMove: 1 } },
+                  { breakpoint: 768, settings: { item: 2, slideMove: 1 } }
                 ]
               });
             }
