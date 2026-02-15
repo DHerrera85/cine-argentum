@@ -14,7 +14,7 @@
     .card { display:flex; gap:20px; align-items:flex-start; background:#fff; padding:18px; border-radius:8px; box-shadow:0 6px 18px rgba(0,0,0,0.06); }
     .card .poster { width:320px; flex:0 0 320px; }
     .card .poster img { width:100%; height:auto; display:block; border-radius:6px; }
-    .card .meta { flex:1; }
+    .card .meta { flex:1; min-width:0; }
     .meta h1 { margin:0 0 6px; font-size:22px; color:#2a2f38; }
     .meta .sub { color:#555; margin-bottom:14px; }
     .meta dl { margin:0; }
@@ -47,15 +47,26 @@
         margin-left: 8px;
         box-sizing: border-box;
       }
-      .remakes-slider .remake-card {
+      .remakes-slider li {
         width: 44vw;
+        max-width: 200px;
+        margin: 9px 4px;
+      }
+      .remakes-slider .remake-card {
+        width: 100%;
         max-width: 200px;
         margin: 9px 4px;
       }
     }
     @media (max-width: 480px) {
-      .remakes-slider .remake-card {
+      .remakes-slider li {
         width: 44vw;
+        min-width: 150px;
+        max-width: 180px;
+        margin: 9px 4px;
+      }
+      .remakes-slider .remake-card {
+        width: 100%;
         min-width: 150px;
         max-width: 180px;
         margin: 9px 4px;
