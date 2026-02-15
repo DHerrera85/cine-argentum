@@ -5,6 +5,7 @@
   <title>Detalle - Series Argentinas</title>
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/lightslider.css?v=2.0" />
   <style>
     /* Pequeños ajustes para la página de detalle */
     body { color:#1f242d; }
@@ -19,10 +20,28 @@
     .meta dl { margin:0; }
     .meta dt { font-weight:700; margin-top:8px; color:#3a3f4b; }
     .meta dd { margin:0 0 6px 0; color:#1f242d; }
+    .remakes-section { margin: 12px 0 6px; }
+    .remakes-title { font-size: 1.02rem; font-weight: 700; color: #2a2f38; margin: 0 0 10px; }
+    .remakes-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+    .remakes-slider { display: none; margin: 0; padding: 0; list-style: none; }
+    .remakes-slider li { list-style: none; box-sizing: border-box; }
+    .remake-card { background: #fff; box-shadow: 0 2px 10px rgba(0,0,0,0.08); border-radius: 12px; overflow: hidden; }
+    .remake-card img { width: 100%; aspect-ratio: 2 / 3; object-fit: cover; display: block; }
+    .remake-info { padding: 10px 12px 12px; background: #f6f7f9; }
+    .remake-title { font-size: 0.98rem; font-weight: 600; color: #2a2f38; margin-bottom: 4px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    .remake-meta { font-size: 0.92rem; color: #5b616d; }
+    .synopsis { word-wrap: break-word; overflow-wrap: break-word; }
     @media (max-width: 760px) {
       .card { flex-direction:column; }
       .card .poster { width:100%; flex:0 0 auto; }
     }
+    @media (max-width: 900px) { .remakes-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; } }
+    @media (max-width: 600px) {
+      .remakes-grid { display: none; }
+      .remakes-slider { display: block; overflow: hidden; }
+      .remakes-section { margin: 12px -10px 6px; padding: 0 10px; }
+    }
+
   </style>
 </head>
 <body>
@@ -34,6 +53,7 @@
   </div>
 
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="js/lightslider.js"></script>
   <script>
     (function () {
       function getIdFromURL() {
@@ -90,6 +110,42 @@
         if (item.productora) {
           productoraRow = '<dt>Productora</dt><dd>' + item.productora + '</dd>';
         }
+        var remakesSection = '';
+        if (item.id === 'v11') {
+          var remakes = [
+            { title: 'Montecristo', country: 'Chile', year: '2006', image: 'images/verticals/montecristo-chile-2006.png' },
+            { title: 'Montecristo', country: 'Mexico', year: '2006', image: 'images/verticals/montecristo-mexico-2006.png' },
+            { title: 'Montecristo', country: 'Colombia', year: '2007', image: 'images/verticals/montecristo-colombia-2007.png' },
+            { title: 'Vinganza', country: 'Portugal', year: '2007', image: 'images/verticals/vinganza-portugal-2007.png' },
+            { title: 'Montecristo', country: 'Russia', year: '2008', image: 'images/verticals/mонтекристо-russia-2008.png' },
+            { title: 'Un amore una vendetta', country: 'Italia', year: '2011', image: 'images/verticals/un-amore-una-vendetta-italia-2011.png' }
+          ];
+          var remakesCards = remakes.map(function (remake) {
+            return '<div class="remake-card">'
+              + '<img src="' + remake.image + '" alt="' + remake.title + ' (' + remake.country + ')">' 
+              + '<div class="remake-info">'
+                + '<div class="remake-title">' + remake.title + '</div>'
+                + '<div class="remake-meta">' + remake.country + ' · ' + remake.year + '</div>'
+              + '</div>'
+            + '</div>';
+          }).join('');
+          var remakesSlides = remakes.map(function (remake) {
+            return '<li>'
+              + '<div class="remake-card">'
+                + '<img src="' + remake.image + '" alt="' + remake.title + ' (' + remake.country + ')">' 
+                + '<div class="remake-info">'
+                  + '<div class="remake-title">' + remake.title + '</div>'
+                  + '<div class="remake-meta">' + remake.country + ' · ' + remake.year + '</div>'
+                + '</div>'
+              + '</div>'
+            + '</li>';
+          }).join('');
+          remakesSection = '<div class="remakes-section">'
+            + '<div class="remakes-title">Remakes en otros paises</div>'
+            + '<div class="remakes-grid">' + remakesCards + '</div>'
+            + '<ul class="remakes-slider">' + remakesSlides + '</ul>'
+          + '</div>';
+        }
         var html = '<div class="card">'
           + '<div class="poster"><img src="' + imgSrc + '" alt="' + (item.title||'') + '"></div>'
           + '<div class="meta">'
@@ -110,9 +166,34 @@
               + producerRow
               + directorRow
             + '</dl>'
+            + remakesSection
           + '</div>'
         + '</div>';
         $('#detail').html(html);
+
+        // Inicializar slider solo en móvil (cuando sea visible)
+        var $remakes = $('.remakes-slider');
+        if ($remakes.length && jQuery.fn.lightSlider) {
+          setTimeout(function() {
+            // Solo inicializar si el slider es visible (móvil)
+            if ($remakes.is(':visible')) {
+              $remakes.lightSlider({
+                item: 2,
+                slideMove: 1,
+                slideMargin: 12,
+                loop: false,
+                pager: false,
+                controls: true,
+                enableTouch: true,
+                enableDrag: true,
+                freeMove: false,
+                responsive: [
+                  { breakpoint: 600, settings: { item: 2, slideMove: 1, slideMargin: 8 } }
+                ]
+              });
+            }
+          }, 150);
+        }
       }
 
       var id = getIdFromURL();

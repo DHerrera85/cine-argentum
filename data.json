@@ -4968,7 +4968,14 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/montecristo-poster-280x420.png",
-      "subtitle": "Thriller"
+      "subtitle": "Thriller",
+      "horario": "22hs",
+      "capitulos": 145,
+      "fecha_estreno": "25/04/2006",
+      "sinopsis": "Narra la traición de Marcos Lombardo a su amigo Santiago Díaz Herrera (Pablo Echarri), quien es enviado a una cárcel marroquí al descubrir delitos de lesa humanidad de los Lombardo, para luego regresar buscando justicia y venganza",
+      "rating": "26,2",
+      "productora": "Telefe Contenidos",
+      "tipo_emision": "Tira Diaria"
     },
     {
       "id": "v12",
