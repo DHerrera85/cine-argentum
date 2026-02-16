@@ -6,6 +6,9 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/lightslider.css?v=2.0" />
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      referrerpolicy="no-referrer" />
   <style>
     /* Pequeños ajustes para la página de detalle */
     body { color:#1f242d; }
@@ -25,11 +28,11 @@
     .remakes-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
     .remakes-slider { display: none; margin: 0; padding: 0; list-style: none; }
     .remakes-slider li { list-style: none; box-sizing: border-box; }
-    .remake-card { background: #fff; box-shadow: 0 2px 10px rgba(0,0,0,0.08); border-radius: 12px; overflow: hidden; }
-    .remake-card img { width: 100%; aspect-ratio: 2 / 3; object-fit: cover; display: block; }
-    .remake-info { padding: 10px 12px 12px; background: #f6f7f9; }
-    .remake-title { font-size: 0.98rem; font-weight: 600; color: #2a2f38; margin-bottom: 4px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-    .remake-meta { font-size: 0.92rem; color: #5b616d; }
+    .remake-card { background: #f6f7f9; box-shadow: 0 2px 10px rgba(0,0,0,0.08); border-radius: 12px; overflow: hidden; border: 1px solid #e3e6ea; }
+    .remake-card img { width: 100%; aspect-ratio: 2 / 3; object-fit: cover; display: block; border-radius: 12px; }
+    .remake-info { padding: 10px 12px 12px; background: #f6f7f9; border-radius: 0 0 12px 12px; min-height: 64px; }
+    .remake-title { font-size: 0.98rem; font-weight: 600; color: #2a2f38; margin-bottom: 4px; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; white-space: normal; }
+    .remake-meta { font-size: 0.92rem; color: #5b616d; white-space: normal; line-height: 1.25; }
     .synopsis { max-width:100%; word-wrap: break-word; overflow-wrap: anywhere; word-break: break-word; display:block; }
     @media (max-width: 760px) {
       body { overflow-x: hidden; }
@@ -46,7 +49,13 @@
     @media (max-width: 768px) {
       .remakes-slider { padding-left: 0; margin-left: 0; box-sizing: border-box; }
       .remakes-section .lSSlideOuter,
-      .remakes-section .lSSlideWrapper { padding-left: 0; margin-left: 0; }
+      .remakes-section .lSSlideWrapper {
+        padding-left: 0;
+        margin-left: 0;
+        height: auto !important;
+      }
+      .remakes-slider,
+      .remakes-slider li { height: auto !important; }
       .remakes-slider li {
         margin: 0;
       }
