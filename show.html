@@ -11,10 +11,10 @@
     body { color:#1f242d; }
     .detail-wrap { max-width: 980px; margin: 28px auto; padding: 20px; box-sizing: border-box; }
     .back-link { display:inline-block; margin-bottom: 12px; color:#ee4036; text-decoration:none; font-weight:600; }
-    .card { display:flex; gap:20px; align-items:flex-start; background:#fff; padding:18px; border-radius:8px; box-shadow:0 6px 18px rgba(0,0,0,0.06); width:100%; box-sizing:border-box; }
+    .card { display:flex; gap:20px; align-items:flex-start; background:#fff; padding:18px; border-radius:8px; box-shadow:0 6px 18px rgba(0,0,0,0.06); width:100%; box-sizing:border-box; overflow:hidden; }
     .card .poster { width:320px; flex:0 0 320px; }
     .card .poster img { width:100%; height:auto; display:block; border-radius:6px; }
-    .card .meta { flex:1; min-width:0; }
+    .card .meta { flex:1; min-width:0; overflow:hidden; }
     .meta h1 { margin:0 0 6px; font-size:22px; color:#2a2f38; }
     .meta .sub { color:#555; margin-bottom:14px; }
     .meta dl { margin:0; }
@@ -30,7 +30,7 @@
     .remake-info { padding: 10px 12px 12px; background: #f6f7f9; }
     .remake-title { font-size: 0.98rem; font-weight: 600; color: #2a2f38; margin-bottom: 4px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
     .remake-meta { font-size: 0.92rem; color: #5b616d; }
-    .synopsis { word-wrap: break-word; overflow-wrap: anywhere; word-break: break-word; }
+    .synopsis { max-width:100%; word-wrap: break-word; overflow-wrap: anywhere; word-break: break-word; }
     @media (max-width: 760px) {
       .card { flex-direction:column; }
       .card .poster { width:100%; flex:0 0 auto; }
@@ -39,17 +39,15 @@
     @media (max-width: 600px) {
       .detail-wrap { padding: 16px; }
       .remakes-grid { display: none; }
-      .remakes-slider { display: block; overflow: hidden; padding: 0 8px; }
+      .remakes-slider { display: block; overflow: hidden; padding: 0; margin: 0; }
       .remakes-section { margin: 12px 0 6px; padding: 0; }
     }
     @media (max-width: 768px) {
-      .remakes-slider {
-        padding-left: 0;
-        margin-left: 8px;
-        box-sizing: border-box;
-      }
+      .remakes-slider { padding-left: 0; margin-left: 0; box-sizing: border-box; }
+      .remakes-section .lSSlideOuter,
+      .remakes-section .lSSlideWrapper { padding-left: 0; margin-left: 0; }
       .remakes-slider li {
-        width: 44vw;
+        width: 45vw;
         max-width: 200px;
         margin: 9px 4px;
       }
@@ -61,7 +59,7 @@
     }
     @media (max-width: 480px) {
       .remakes-slider li {
-        width: 44vw;
+        width: 45vw;
         min-width: 150px;
         max-width: 180px;
         margin: 9px 4px;
