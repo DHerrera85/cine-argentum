@@ -202,28 +202,23 @@
         + '</div>';
         $('#detail').html(html);
 
-        // Inicializar slider solo en móvil (cuando sea visible)
+        // Inicializar slider solo en móvil (mismo comportamiento que tiras_2000)
         var $remakes = $('.remakes-slider');
         if ($remakes.length && jQuery.fn.lightSlider) {
           setTimeout(function() {
-            // Solo inicializar si el slider es visible (móvil)
-            if ($remakes.is(':visible')) {
-              $remakes.lightSlider({
-                item: 5,
-                slideMove: 1,
-                slideMargin: 12,
-                loop: false,
-                pager: false,
-                controls: true,
-                enableTouch: true,
-                enableDrag: true,
-                freeMove: false,
-                responsive: [
-                  { breakpoint: 1100, settings: { item: 4, slideMove: 1 } },
-                  { breakpoint: 768, settings: { item: 2, slideMove: 1 } }
-                ]
-              });
-            }
+            var isMobile = window.matchMedia && window.matchMedia('(max-width: 600px)').matches;
+            if (!isMobile || $remakes.data('lightSlider')) return;
+            $remakes.lightSlider({
+              item: 2,
+              slideMove: 1,
+              slideMargin: 12,
+              loop: false,
+              pager: false,
+              controls: true,
+              enableTouch: true,
+              enableDrag: true,
+              freeMove: false
+            });
           }, 150);
         }
       }
