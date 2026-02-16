@@ -26,6 +26,20 @@
       "fecha_estreno": "26/01/1998",
       "sinopsis": "Tras la muerte de Germán, Rafael llega a Costa Esperanza con la tutela de Brisa para criarla en el pueblo donde vivió su madre. El regreso de África de José y la aparición de nuevos personajes reconfiguran la vida y los vínculos de la comunidad.",
       "rating": "-",
+      "remakes": [
+        {
+          "title": "Verano de Amor",
+          "country": "México",
+          "year": "2009",
+          "image": "images/verticals/verano-de-amor-mexico-2009.png"
+        },
+        {
+          "title": "Sueños de Verano",
+          "country": "Panamá",
+          "year": "2010",
+          "image": "images/verticals/sueños-de-verano-panama-2010.png"
+        }
+      ],
       "productora": "Telefe Contenidos"
     },
     {
@@ -4975,6 +4989,44 @@
       "sinopsis": "Narra la traición de Marcos Lombardo a su amigo Santiago Díaz Herrera (Pablo Echarri), quien es enviado a una cárcel marroquí al descubrir delitos de lesa humanidad de los Lombardo, para luego regresar buscando justicia y venganza",
       "rating": "26,2",
       "productora": "Telefe Contenidos",
+      "remakes": [
+        {
+          "title": "Montecristo",
+          "country": "Chile",
+          "year": "2006",
+          "image": "images/verticals/montecristo-chile-2006.png"
+        },
+        {
+          "title": "Montecristo",
+          "country": "Mexico",
+          "year": "2006",
+          "image": "images/verticals/montecristo-mexico-2006.png"
+        },
+        {
+          "title": "Montecristo",
+          "country": "Colombia",
+          "year": "2007",
+          "image": "images/verticals/montecristo-colombia-2007.png"
+        },
+        {
+          "title": "Vinganza",
+          "country": "Portugal",
+          "year": "2007",
+          "image": "images/verticals/vinganza-portugal-2007.png"
+        },
+        {
+          "title": "Montecristo",
+          "country": "Russia",
+          "year": "2008",
+          "image": "images/verticals/mонтекристо-russia-2008.png"
+        },
+        {
+          "title": "Un amore una vendetta",
+          "country": "Italia",
+          "year": "2011",
+          "image": "images/verticals/un-amore-una-vendetta-italia-2011.png"
+        }
+      ],
       "tipo_emision": "Tira Diaria"
     },
     {
@@ -6951,6 +7003,14 @@
       "sinopsis": "En el mundo del boxeo, dos familias y un excampeón enfrentan ambición, amor y sacrificios mientras persiguen la gloria arriba y abajo del ring. Entre adicciones, romances y segundas oportunidades, cada uno pelea su batalla más difícil.",
       "rating": "21,1",
       "productora": "Pol-Ka",
+      "remakes": [
+        {
+          "title": "Campeones de la Vida",
+          "country": "México",
+          "year": "2006",
+          "image": "images/verticals/campeones-de-la-vida-mexico-2006.png"
+        }
+      ],
       "tipo_emision": "Tira Diaria"
     },
     {
@@ -6973,6 +7033,26 @@
       "sinopsis": "Tras escapar del Hogar de las Sombras, los Chufos descubren una misteriosa mansión que creen ser el verdadero Rincón de Luz, pero allí se enfrentan a apariciones fantasmales y una persecución policial. Con la ayuda de Luz, una fugitiva, descubren secretos ocultos y se enfrentan a una nueva amenaza cuando una mujer llega afirmando heredar la casa.",
       "rating": "-",
       "productora": "Telefe Contenidos",
+      "remakes": [
+        {
+          "title": "Chiquititas",
+          "country": "Brasil",
+          "year": "1997",
+          "image": "images/verticals/chiquititas-brasil-1997.png"
+        },
+        {
+          "title": "Chiquititas",
+          "country": "México",
+          "year": "1998",
+          "image": "images/verticals/chiquititas-mexico-1998.png"
+        },
+        {
+          "title": "Chiquititas",
+          "country": "Brasil",
+          "year": "2013",
+          "image": "images/verticals/chiquititas-brasil-2013.png"
+        }
+      ],
       "tipo_emision": "Tira Diaria"
     },
     {
@@ -8845,6 +8925,14 @@
       "sinopsis": "Compuesta por 2 temporadas, narra la vida de un grupo de pacientes que asisten a terapia con el Dr. Guillermo Segura (Jorge Marrale), explorando sus profundas inseguridades, miedos y conflictos cotidianos",
       "rating": "12,4",
       "productora": "Pol-ka",
+      "remakes": [
+        {
+          "title": "El Grupo",
+          "country": "España",
+          "year": "2000",
+          "image": "images/verticals/el-grupo-españa-2000.png"
+        }
+      ],
       "tipo_emision": "Semanal"
     },
     {
@@ -9198,6 +9286,14 @@
       "sinopsis": "Serie antológica argentina de suspenso, que durante sus 3 temporadas (de 22, 21 y 26 capítulos) narró historias autoconclusivas en tiempo real, concentradas en un solo lugar con pocos personajes y giros inesperados. Cada episodio presentaba situaciones extremas de humor negro y alta tensión donde los planes de los protagonistas fracasan trágicamente. ",
       "rating": "-",
       "productora": "Telefe Contenidos, Alejandro Borensztein, Sebastián Borensztein",
+      "remakes": [
+        {
+          "title": "Tiempo Final",
+          "country": "Colombia",
+          "year": "2007",
+          "image": "images/verticals/tiempo-final-colombia-2007.png"
+        }
+      ],
       "tipo_emision": "Semanal"
     },
     {
