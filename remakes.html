@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Remakes por Pais - Cine Argentum</title>
+  <link rel="stylesheet" href="css/style.css?v=2.0" />
+  <link rel="stylesheet" href="css/main-wrap.css?v=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" referrerpolicy="no-referrer" />
+  <style>
+    body { background: #141a21; color: #e5e5e5; font-family: Poppins, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+    .remakes-wrap { max-width: 1280px; margin: 28px auto 60px; padding: 20px; box-sizing: border-box; }
+    .back-link { display: inline-block; margin-bottom: 16px; color: #ffb300; text-decoration: none; font-weight: 600; }
+    .page-title { margin: 0 0 8px; font-size: 28px; color: #fff; }
+    .page-subtitle { margin: 0 0 28px; color: #b0b0b0; }
+
+    .country-section { margin: 24px 0 38px; }
+    .country-header { display: flex; align-items: center; gap: 12px; justify-content: space-between; margin-bottom: 14px; }
+    .country-title { font-size: 20px; margin: 0; color: #fff; }
+    .country-count { font-size: 0.95rem; color: #b0b0b0; }
+    .country-controls { display: flex; gap: 8px; }
+    .scroll-btn { background: #23272f; border: 1px solid #2f3540; color: #e5e5e5; width: 36px; height: 36px; border-radius: 10px; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; transition: transform 0.18s, background 0.18s, border-color 0.18s; }
+    .scroll-btn:hover { background: #2c3340; border-color: #3b4352; transform: translateY(-1px); }
+
+    .remakes-track { display: flex; gap: 18px; overflow-x: auto; padding-bottom: 8px; scroll-snap-type: x mandatory; scroll-behavior: smooth; scrollbar-width: none; -ms-overflow-style: none; }
+    .remakes-track::-webkit-scrollbar { height: 0; }
+
+    .remake-card { background: #23272f; border-radius: 16px; overflow: hidden; box-shadow: 0 2px 12px rgba(0,0,0,0.16); flex: 0 0 calc((100% - 72px) / 5); scroll-snap-align: start; display: flex; flex-direction: column; text-decoration: none; color: inherit; }
+    .remake-card img { width: 100%; aspect-ratio: 2 / 3; object-fit: cover; display: block; border-radius: 0 0 16px 16px; }
+    .remake-info { padding: 12px 12px 14px; display: flex; flex-direction: column; gap: 4px; }
+    .remake-title { font-size: 1.02rem; font-weight: 600; color: #fff; line-height: 1.2; }
+    .remake-meta { font-size: 0.92rem; color: #b0b0b0; }
+    .remake-origin { font-size: 0.9rem; color: #ffb300; text-decoration: none; }
+    .remake-origin:hover { text-decoration: underline; }
+
+    @media (max-width: 900px) {
+      .remake-card { flex-basis: calc((100% - 18px) / 2); }
+    }
+    @media (max-width: 600px) {
+      .remakes-wrap { padding: 16px; }
+      .country-header { flex-direction: column; align-items: flex-start; gap: 10px; }
+      .country-controls { width: 100%; justify-content: flex-end; }
+      .remakes-track { gap: 12px; }
+      .remake-card { flex-basis: calc((100% - 12px) / 2); }
+    }
+  </style>
+</head>
+<body>
+  <main class="remakes-wrap">
+    <a href="javascript:history.back()" class="back-link" aria-label="Volver a la pagina anterior">&larr; Volver</a>
+    <h1 class="page-title">Remakes por pais</h1>
+    <p class="page-subtitle">Ordenados por cantidad de remakes por pais y cronologia de estreno.</p>
+    <div id="remakesRows" aria-live="polite"></div>
+  </main>
+
+  <script src="js/remakes.js?v=20260216-2"></script>
+</body>
+</html>

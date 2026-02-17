@@ -5049,7 +5049,7 @@
         },
         {
           "title": "Montecristo",
-          "country": "Mexico",
+          "country": "México",
           "year": "2006",
           "image": "images/verticals/montecristo-mexico-2006.png"
         },
@@ -5067,7 +5067,7 @@
         },
         {
           "title": "Montecristo",
-          "country": "Russia",
+          "country": "Rusia",
           "year": "2008",
           "image": "images/verticals/mонтекристо-russia-2008.png"
         },
@@ -5474,7 +5474,14 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/el-tiempo-no-para-poster-280x420.png",
-      "subtitle": "Drama"
+      "subtitle": "Drama",
+      "horario": "22hs, 23hs",
+      "capitulos": "163",
+      "fecha_estreno": "20/03/2006",
+      "sinopsis": "Cuenta la historia de un grupo de amigos que se separan y vuelven a reunirse después de cinco años para el funeral de uno de ellos, Martín, quien muere no sin antes dejar en una nota los secretos de cada uno de sus amigos y que a medida de los capítulos irán saliendo a la luz.",
+      "rating": "5.3",
+      "productora": "Underground Contenidos",
+      "tipo_emision": "Tira Diaria"
     },
     {
       "id": "v27",
@@ -5939,7 +5946,14 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/juanita-la-soltera-poster-280x420.png",
-      "subtitle": "Comedia"
+      "subtitle": "Comedia",
+      "horario": "19hs, 17hs",
+      "capitulos": 109,
+      "fecha_estreno": "27/03/2006",
+      "sinopsis": "Narra la historia de Juanita, una heredera que debe casarse y tener un hijo en un año para recibir una fortuna, resistiéndose a vender sus sueños de amor eterno ante un encantador cazafortunas que busca su dinero.",
+      "rating": "5,5",
+      "productora": "Pol-Ka",
+      "tipo_emision": "Tira Diaria"
     },
     {
       "id": "v87",
@@ -6054,6 +6068,14 @@
       "sinopsis": "Sofía, psicóloga y sexóloga, regresa a su barrio natal y se enamora de Alberto, un carismático lechero famoso por sus romances. Su relación se ve puesta a prueba por conflictos personales, familiares y laborales que amenazan separarlos.",
       "rating": "19,2",
       "productora": "Pol-Ka",
+      "remakes": [
+        {
+          "title": "Sos Me Estoy Enamorando",
+          "country": "México",
+          "year": "2021",
+          "image": "images/verticals/sos-me-estoy-enamorando-2021-mexico.png"
+        }
+      ],
       "tipo_emision": "Tira Diaria"
     },
     {
@@ -6314,7 +6336,14 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/gladiadores-de-pompeya-poster-280x420.png",
-      "subtitle": "Comedia"
+      "subtitle": "Comedia",
+      "horario": "21hs",
+      "capitulos": "24",
+      "fecha_estreno": "20/03/2006",
+      "sinopsis": "La historia sigue a Mario \"El Toro\" Komanechi, quien regresa tras 17 años para recuperar su club de lucha libre, su amor pasado (Pompeya D'Angelo) y su título de campeón",
+      "rating": "3",
+      "productora": "Underground Contenidos",
+      "tipo_emision": "Tira Diaria"
     },
     {
       "id": "v105",
@@ -9726,7 +9755,22 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/amo-de-casa-poster-280x420.png",
-      "subtitle": "Sitcom"
+      "subtitle": "Sitcom",
+      "horario": "20:15hs",
+      "capitulos": 160,
+      "fecha_estreno": "20/03/2006",
+      "sinopsis": "La trama sigue a Alberto, un exitoso broker de bolsa obligado a dejar su trabajo por un problema de corazón y convertirse en amo de casa, invirtiendo los roles tradicionales con su esposa Mariana, quien consigue empleo en Puerto Madero",
+      "rating": "7",
+      "productora": "Underground Contenidos",
+      "remakes": [
+        {
+          "title": "Amo de Casa",
+          "country": "Colombia",
+          "year": "2013",
+          "image": "images/verticals/amo-de-casa-2013-colombia.png"
+        }
+      ],
+      "tipo_emision": "Tira Diaria"
     },
     {
       "id": "h9",
