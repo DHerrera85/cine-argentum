@@ -8732,7 +8732,33 @@
       "sinopsis": "Creada por Damián Szifron, la serie se centra en cuatro socios (Santos, Medina, Lampone, Ravenna) que resuelven problemas de gente común mediante sofisticados operativos de simulación y engaño. Operando fuera de la ley, buscan justicia poética cobrando el doble de lo invertido. ",
       "rating": "23,9",
       "productora": "Telefe Contenidos, Damián Szifrón",
-      "tipo_emision": "Semanal"
+      "tipo_emision": "Semanal",
+      "remakes": [
+        {
+          "title": "Los Simuladores",
+          "country": "Chile",
+          "year": "2005",
+          "image": "images/verticals/los-simuladores-chile-2005.png"
+        },
+        {
+          "title": "Los Simuladores",
+          "country": "España",
+          "year": "2006",
+          "image": "images/verticals/los-simuladores-españa-2006.png"
+        },
+        {
+          "title": "Reyes del Juego",
+          "country": "Rusia",
+          "year": "2007",
+          "image": "images/verticals/reyes-del-juego-rusia-2007.png"
+        },
+        {
+          "title": "Los Simuladores",
+          "country": "México",
+          "year": "2008",
+          "image": "images/verticals/los-simuladores-mexico-2008.png"
+        }
+      ]
       
     },
     {

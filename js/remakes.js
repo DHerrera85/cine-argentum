@@ -1,4 +1,4 @@
-var dataVersion = '20260216-5';
+var dataVersion = '20260216-6';
 fetch('data.json?v=' + dataVersion, { cache: 'no-store' })
   .then(function (response) { return response.json(); })
   .then(function (data) {
