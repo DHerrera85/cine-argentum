@@ -1180,6 +1180,30 @@
       "rating": 13
     },
     {
+      "title": "Vientos de Agua",
+      "genre": "Drama",
+      "year": "2006",
+      "actors": [
+        "Ernesto Alterio",
+        "Eduardo Blanco",
+        "Héctor Alterio"
+      ],
+      "synopsis": "Narra dos historias paralelas: la de José Olaya, un joven minero asturiano que se ve obligado a emigrar a Argentina en el año 1934; y la de su hijo, Ernesto Olaya, un arquitecto argentino que emigra a España en 2001, en busca de una salida a los problemas económicos que acucian a su familia.",
+      "channel": "Canal 13",
+      "image": "images/verticals/vientos-de-agua-poster-280x420-2006.png",
+      "orientation": "vertical",
+      "type": "Drama",
+      "subtitle": "Drama",
+      "id": "V289",
+      "viewers": 0,
+      "producer": "Pol-Ka",
+      "director": "",
+      "schedule": "22:30hs",
+      "episodes": 13,
+      "release_date": "2006-03-01",
+      "rating": 11.4
+    },
+    {
       "title": "Sr. y Sra. Camas",
       "genre": "Sitcom",
       "year": "2011",
@@ -4692,7 +4716,34 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/sos-mi-vida-poster-280x420.png",
-      "subtitle": "Comedia"
+      "subtitle": "Comedia",
+      "horario": "21:45hs",
+      "capitulos": 231,
+      "fecha_estreno": "16/01/2006",
+      "sinopsis": "La trama sigue a Esperanza Muñoz, una boxeadora que, tras una lesión, busca trabajo y se convierte en secretaria de Martín, un empresario adinerado y expiloto. Ambos viven un romance obstaculizado por diferencias sociales y parejas actuales.",
+      "rating": "26,9",
+      "productora": "Pol-ka",
+      "remakes": [
+        {
+          "title": "Deixa Me Amar",
+          "country": "Portugal",
+          "year": "2007",
+          "image": "images/verticals/deixa-me-amar-portugal-2007.png"
+        },
+        {
+          "title": "Un Gancho al Corazón",
+          "country": "México",
+          "year": "2008",
+          "image": "images/verticals/un-gancho-al-corazon-mexico-2008.png"
+        },
+        {
+          "title": "Prosto W Serce",
+          "country": "Polonia",
+          "year": "2011",
+          "image": "images/verticals/prosto-w-serce-2011-polonia.png"
+        }
+      ],
+      "tipo_emision": "Tira Diaria"
     },
     {
       "id": "v3",
@@ -5867,7 +5918,14 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/collar-de-esmeraldas-poster-280x420.png",
-      "subtitle": "Telenovela"
+      "subtitle": "Telenovela",
+      "horario": "14hs",
+      "capitulos": 122,
+      "fecha_estreno": "14/03/2006",
+      "sinopsis": "Narra la historia de Romina, una mujer indigente que posee un valioso collar de esmeraldas de su padre, y Martín, un empresario que descubre secretos familiares oscuros y engaños tras la muerte de un ser querido, enfrentando ambos obstáculos para su amor",
+      "rating": "6,4",
+      "productora": "Central Park/Ideas del Sur",
+      "tipo_emision": "Tira Diaria"
     },
     {
       "id": "v86",
@@ -6890,11 +6948,19 @@
         "Mariano Martínez",
         "Luisana Lopilato",
         "Isabel Macedo",
-        "Benjamín Rojas"
+        "Benjamín Rojas",
+        "Nicolás Vázquez"
       ],
       "orientation": "vertical",
       "image": "images/verticals/alma-pirata-poster-280x420.png",
-      "subtitle": "Juvenil"
+      "subtitle": "Juvenil",
+      "horario": "20:45hs, 19hs",
+      "capitulos": 138,
+      "fecha_estreno": "20/03/2006",
+      "sinopsis": "Narra la historia de tres jóvenes —Cruz, Iván y Benicio— que buscan justicia por el asesinato de sus padres, formando la \"Liga de las Espadas\" junto a Allegra, para luchar contra Gino Riganti.",
+      "rating": "15,4",
+      "productora": "Cris Morena Group / RGB Entertainment",
+      "tipo_emision": "Tira Diaria"
     },
     {
       "id": "V144",
@@ -7193,7 +7259,14 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/el-refugio-poster-280x420.png",
-      "subtitle": "Juvenil"
+      "subtitle": "Juvenil",
+      "horario": "19hs, 18hs; Sábados 10:30hs",
+      "capitulos": "121",
+      "fecha_estreno": "16/01/2006",
+      "sinopsis": "Cinco jóvenes —Piru, Fran, Belu, Coco y Fer— desconocidos entre sí, encuentran un refugio en un teatro viejo y descuidado. Junto a Amadeo, un músico sabio, deciden salvar el sitio transformándolo en un bar musical.",
+      "rating": "-",
+      "productora": "Dori Media",
+      "tipo_emision": "Tira Diaria"
     },
     {
       "id": "V159",
@@ -8332,7 +8405,7 @@
     {
       "id": "V230",
       "title": "Un Gallo para Esculapio",
-      "year": "2016",
+      "year": "2017",
       "channel": "Flow",
       "genre": "Thriller",
       "actors": [
