@@ -7384,7 +7384,15 @@
       "sinopsis": "Santiago vuelve a Buenos Aires para enfrentar la fría relación con su padre y el hostigamiento de su ambiciosa madrastra. En paralelo, Celeste, una joven humilde que sueña con bailar, lucha por su futuro entre el amor y las desigualdades sociales.",
       "rating": "13,7",
       "productora": "Telefe Contenidos, Sebastián Ortega",
-      "tipo_emision": "Tira Diaria"
+      "tipo_emision": "Tira Diaria",
+      "remakes": [
+        {
+          "title": "Enamoráte",
+          "country": "México",
+          "year": "2003",
+          "image": "images/verticals/enamorate-2003-mexico.png"
+        }
+      ]
     },
     {
       "id": "V163",
@@ -9604,7 +9612,27 @@
       "sinopsis": "Roberto Sánchez, un árbitro de fútbol solitario, ve su vida ordenada desbordada cuando debe hacerse cargo de sus tres sobrinos en Buenos Aires. Entre caos familiar y enredos románticos, aprende a abrirse al afecto y a una nueva forma de vivir.",
       "rating": "28",
       "productora": "Pol-ka",
-      "tipo_emision": "Tira Diaria"
+      "tipo_emision": "Tira Diaria",
+      "remakes": [
+        {
+          "title": "Buen Partido",
+          "country": "Chile",
+          "year": "2002",
+          "image": "images/verticals/buen-partido-2002-chile.png"
+        },
+        {
+          "title": "Dos Chicos de Cuidado en la Ciudad",
+          "country": "México",
+          "year": "2003",
+          "image": "images/verticals/dos-chicos-de-cuidado-2003-mexico.png"
+        },
+        {
+          "title": "Tres Son Multitud",
+          "country": "España",
+          "year": "2003",
+          "image": "images/verticals/tres-son-multitud-españa-2003.png"
+        }
+      ]
     },
     {
       "id": "v40",
@@ -10067,7 +10095,15 @@
       "sinopsis": "Yago, criado en la selva, y Morena, una empresaria porteña, se enamoran tras un accidente aéreo. El romance se complica cuando él descubre oscuros vínculos familiares y debe luchar por su identidad.",
       "rating": "19",
       "productora": "Telefe Contenidos",
-      "tipo_emision": "Tira Diaria"
+      "tipo_emision": "Tira Diaria",
+      "remakes": [
+        {
+          "title": "Pasión Morena",
+          "country": "México",
+          "year": "2009",
+          "image": "images/verticals/pasion-morena-2009-mexico.png"
+        }
+      ]
     },
     {
       "id": "v64",
