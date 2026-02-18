@@ -9083,7 +9083,15 @@
       "sinopsis": "Narra la reinserción social de tres mujeres (Simona, Juana y Eva) tras salir de un neuropsiquiátrico. Con la guía del psiquiatra Martín Uribelarrea, conviven en un departamento enfrentando sus manías y fobias, buscando amor y \"normalidad\" con toques de humor y drama",
       "rating": "15,7",
       "productora": "Pol-Ka",
-      "tipo_emision": "Semanal"
+      "tipo_emision": "Semanal",
+      "remakes": [
+        {
+          "title": "Locas de Amor",
+          "country": "México",
+          "year": "2010",
+          "image": "images/verticals/locas-de-amor-2004-mexico.png"
+        }
+      ]
     },
     {
       "id": "V256",
@@ -9927,7 +9935,15 @@
       "sinopsis": "Narra la historia de Abril y Marcos, dos personas opuestas, con una atracción irresistible, forzados a convivir en un departamento heredado tras la muerte de sus padres, quienes eran pareja.",
       "rating": "20,3",
       "productora": "Cris Morena Group/RGB Entertainment",
-      "tipo_emision": "Tira Diaria"
+      "tipo_emision": "Tira Diaria",
+      "remakes": [
+        {
+          "title": "Amor Mío",
+          "country": "México",
+          "year": "2006",
+          "image": "images/verticals/amor-mio-mexico-2006.png"
+        }
+      ]
     },
     {
       "id": "v47",
@@ -10039,7 +10055,27 @@
       "sinopsis": "Narra el romance prohibido entre Paz Achával Urien, una empresaria de clase alta, y Juan Manuel Aguirre, un hombre humilde y experto en artes marciales que se convierte en su custodio después de salvarle la vida.",
       "rating": "21,9",
       "productora": "Estevanez Producciones",
-      "tipo_emision": "Tira Diaria"
+      "tipo_emision": "Tira Diaria",
+      "remakes": [
+        {
+          "title": "Amor en Custodia",
+          "country": "México",
+          "year": "2005",
+          "image": "images/verticals/amor-en-custodia-mexico-2005.png"
+        },
+        {
+          "title": "Amor en Custodia",
+          "country": "Colombia",
+          "year": "2009",
+          "image": "images/verticals/amor-en-custodia-colombia-2009.png"
+        },
+        {
+          "title": "Amores Verdaderos",
+          "country": "México",
+          "year": "2012",
+          "image": "images/verticals/amores-verdaderos-mexico-2012.png"
+        }
+      ]
     },
     {
       "id": "v50",
