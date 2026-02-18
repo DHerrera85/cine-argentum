@@ -5018,7 +5018,33 @@
       "sinopsis": "La trama sigue a Diego, un sastre que se enamora de Julia, la prometida de Mauricio Doval, un empresario mafioso que dirige un oscuro negocio de tráfico de órganos y sangre.",
       "rating": "19,4",
       "productora": "Telefe Contenidos",
-      "tipo_emision": "Tira Diaria"
+      "tipo_emision": "Tira Diaria",
+      "remakes": [
+        {
+          "title": "Amar Sin Límites",
+          "country": "México",
+          "year": "2006",
+          "image": "images/verticals/amar-sin-limites-mexico-2006.png"
+        },
+        {
+          "title": "Watch Over Me",
+          "country": "Estados Unidos",
+          "year": "2006",
+          "image": "images/verticals/watch-over-me-USA-2006.png"
+        },
+        {
+          "title": "Resistirei",
+          "country": "Portugal",
+          "year": "2007",
+          "image": "images/verticals/resistirei-portugal-2007.png"
+        },
+        {
+          "title": "سيرة حب",
+          "country": "Egipto",
+          "year": "2014",
+          "image": "images/verticals/سيرة حب-egipto-2014.png"
+        }
+      ]
     },
     {
       "id": "v11",
@@ -5240,7 +5266,45 @@
       "sinopsis": "Una versión moderna de Romeo y Julieta enfrenta a dos familias opuestas: los humildes Roldán y los poderosos Uriarte, cuyos conflictos estallan cuando los Roldán se mudan a Barrio Norte tras heredar un imperio empresarial. En medio del choque de clases surge un amor prohibido entre Laisa Roldán y Emilio Uriarte, atravesado por secretos, prejuicios y rivalidades crecientes.",
       "rating": "33,1",
       "productora": "Ideas del Sur, Sebastián Ortega",
-      "tipo_emision": "Tira Diaria"
+      "tipo_emision": "Tira Diaria",
+      "remakes": [
+        {
+          "title": "Los Reyes",
+          "country": "Colombia",
+          "year": "2005",
+          "image": "images/verticals/los-reyes-colombia-2005.png"
+        },
+        {
+          "title": "Los Sánchez",
+          "country": "México",
+          "year": "2005",
+          "image": "images/verticals/los-sanchez-mexico-2005.png"
+        },
+        {
+          "title": "Fortunato",
+          "country": "Chile",
+          "year": "2007",
+          "image": "images/verticals/fortunato-chile-2007.png"
+        },
+        {
+          "title": "Una Familia con Suerte",
+          "country": "México",
+          "year": "2011",
+          "image": "images/verticals/una-familia-con-suerte-mexico-2011.png"
+        },
+        {
+          "title": "Οι βασιλιάδες",
+          "country": "Grecia",
+          "year": "2012",
+          "image": "images/verticals/Oi-Vasiliades-grecia-2012.png"
+        },
+        {
+          "title": "Los García",
+          "country": "Ecuador",
+          "year": "2014",
+          "image": "images/verticals/los-garcia-ecuador-2014.png"
+        }
+      ]
       
     },
     {
@@ -5761,7 +5825,15 @@
       "sinopsis": "Acusada injustamente, Antonia adopta una identidad falsa como institutriz en una familia adinerada para huir de su pasado. Mientras enfrenta intrigas y secretos, surge un romance con su jefe Bruno que pone en riesgo su engaño.",
       "rating": "16",
       "productora": "RGB Entertainment",
-      "tipo_emision": "Tira Diaria"
+      "tipo_emision": "Tira Diaria",
+      "remakes": [
+        {
+          "title": "Doce Fugitiva",
+          "country": "Portugal",
+          "year": "2006",
+          "image": "images/verticals/doce-fugitiva-portugal-2006.png"
+        }
+      ]
     },
     {
       "id": "v78",
@@ -7029,7 +7101,39 @@
       "sinopsis": "Narra la vida de Florencia Fazzarino, una joven huérfana y soñadora que, tras perder su trabajo, encuentra empleo como niñera en la mansión de la adinerada familia Fritzenwalden. Allí se enamora de Federico Fritzenwalden, el estricto hermano mayor que quedó a cargo de sus cinco hermanos tras la muerte de sus padres",
       "rating": "17,4",
       "productora": "Cris Morena Group / RGB Entertainment",
-      "tipo_emision": "Tira Diaria"
+      "tipo_emision": "Tira Diaria",
+      "remakes": [
+        {
+          "title": "Floribella",
+          "country": "Brasil",
+          "year": "2005",
+          "image": "images/verticals/floribella-brasil-2005.png"
+        },
+        {
+          "title": "Floribella",
+          "country": "Portugal",
+          "year": "2006",
+          "image": "images/verticals/floribella-portugal-2006.png"
+        },
+        {
+          "title": "Floribella",
+          "country": "Chile",
+          "year": "2006",
+          "image": "images/verticals/floribella-chile-2006.png"
+        },
+        {
+          "title": "Floricienta",
+          "country": "Colombia",
+          "year": "2006",
+          "image": "images/verticals/floricienta-colombia-2006.png"
+        },
+        {
+          "title": "Lola, Érase una Vez",
+          "country": "México",
+          "year": "2007",
+          "image": "images/verticals/lola-erase-una-vez-2007-mexico.png"
+        }
+      ]
     },
     {
       "id": "V146",
@@ -7075,7 +7179,45 @@
       "sinopsis": "Cuatro adolescentes de clases sociales opuestas (Mía, Marizza, Pablo y Manuel) conviven en el exclusivo internado Elite Way School. A pesar de sus diferencias y conflictos familiares, forman la banda musical Erreway, enfrentando la rigidez escolar y el acoso de \"La Logia\". ",
       "rating": "14",
       "productora": "Cris Morena Group / RGB Entertainment",
-      "tipo_emision": "Tira Diaria"
+      "tipo_emision": "Tira Diaria",
+      "remakes": [
+        {
+          "title": "Rebelde",
+          "country": "México",
+          "year": "2004",
+          "image": "images/verticals/rebelde-2004-mexico.png"
+        },
+        {
+          "title": "Remix",
+          "country": "India",
+          "year": "2004",
+          "image": "images/verticals/remix-india-2004.png"
+        },
+        {
+          "title": "Rebelde Way",
+          "country": "Portugal",
+          "year": "2008",
+          "image": "images/verticals/rebelde-way-portugal-2008.png"
+        },
+        {
+          "title": "Corazón Rebelde",
+          "country": "Chile",
+          "year": "2009",
+          "image": "images/verticals/corazon-rebelde-chile-2009.png"
+        },
+        {
+          "title": "Rebelde Río",
+          "country": "Brasil",
+          "year": "2011",
+          "image": "images/verticals/rebelde-rio-brasil-2011.png"
+        },
+        {
+          "title": "Rebelde",
+          "country": "México",
+          "year": "2022",
+          "image": "images/verticals/rebelde-mexico-2022.png"
+        }
+      ]
     },
     {
       "id": "V148",
@@ -7387,7 +7529,7 @@
       "tipo_emision": "Tira Diaria",
       "remakes": [
         {
-          "title": "Enamoráte",
+          "title": "Enamórate",
           "country": "México",
           "year": "2003",
           "image": "images/verticals/enamorate-2003-mexico.png"
@@ -9290,7 +9432,15 @@
       "sinopsis": "Oscar, un contador responsable, queda ligado al destino de su arrogante jefe publicitario cuando éste pierde todo tras el divorcio. Arruinado y sin rumbo, el poderoso empresario termina refugiándose en la casa de su propio empleado.",
       "rating": "9,7",
       "productora": "Pol-ka",
-      "tipo_emision": "Semanal"
+      "tipo_emision": "Semanal",
+      "remakes": [
+        {
+          "title": "Durmiendo con mi Jefe",
+          "country": "México",
+          "year": "2013",
+          "image": "images/verticals/durmiendo-con-mi-jefe-mexico-2013.png"
+        }
+      ]
     },
     {
       "id": "V273",
