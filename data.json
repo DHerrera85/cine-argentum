@@ -4757,7 +4757,69 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/lalola-poster-280x420.png",
-      "subtitle": "Comedia"
+      "subtitle": "Comedia",
+      "remakes": [
+        {
+          "title": "Lola",
+          "country": "Chile",
+          "year": "2007",
+          "image": "images/verticals/lola-chile-2007.png"
+        },
+        {
+          "title": "Lalola",
+          "country": "Filipinas",
+          "year": "2008",
+          "image": "images/verticals/lalola-filipinas-2008.png"
+        },
+        {
+          "title": "LouisLouise",
+          "country": "Bélgica",
+          "year": "2008",
+          "image": "images/verticals/louislouise-belgica-2008.png"
+        },
+        {
+          "title": "Lalola",
+          "country": "España",
+          "year": "2008",
+          "image": "images/verticals/lalola-españa-2008.png"
+        },
+        {
+          "title": "Λόλα",
+          "country": "Grecia",
+          "year": "2008",
+          "image": "images/verticals/Λόλα -grecia-2008.png"
+        },
+        {
+          "title": "Маргоша",
+          "country": "Rusia",
+          "year": "2008",
+          "image": "images/verticals/margosha-rusia-2008.png"
+        },
+        {
+          "title": "Bhaskar Bharti",
+          "country": "India",
+          "year": "2009",
+          "image": "images/verticals/bhaskar-bharti-india-2009.png"
+        },
+        {
+          "title": "Ele é Ela",
+          "country": "Portugal",
+          "year": "2010",
+          "image": "images/verticals/ele-é-ela-portugal-2010.png"
+        },
+        {
+          "title": "Lalola",
+          "country": "Perú",
+          "year": "2011",
+          "image": "images/verticals/lalola-peru-2011.png"
+        },
+        {
+          "title": "Lalola",
+          "country": "México",
+          "year": "2024",
+          "image": "images/verticals/lalola-mexico-2024.png"
+        }
+      ]
     },
     {
       "id": "v4",
