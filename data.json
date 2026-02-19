@@ -7384,7 +7384,15 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/patito-feo-poster-280x420.png",
-      "subtitle": "Juvenil"
+      "subtitle": "Juvenil",
+      "remakes": [
+        {
+          "title": "Atrévete a Soñar",
+          "country": "México",
+          "year": "2009",
+          "image": "images/verticals/atrevete-a-soñar-mexico-2009.png"
+        }
+      ]
     },
     {
       "id": "V156",
@@ -9540,7 +9548,39 @@
       "sinopsis": "Esta serie unitaria argentina está basada en el libro homónimo de Marisa Grinstein, que narra casos reales de mujeres homicidas. Cada episodio explora la psiquis, la violencia y la desdicha que llevaron a mujeres ordinarias a cometer crímenes brutales, a menudo tras sufrir abusos, desamor o celos intensos, mostrando cómo la víctima se convierte en victimaria.",
       "rating": "20,4",
       "productora": "Pol-ka",
-      "tipo_emision": "Semanal" 
+      "tipo_emision": "Semanal",
+      "remakes": [
+        {
+          "title": "Mujeres Asesinas",
+          "country": "Colombia",
+          "year": "2007",
+          "image": "images/verticals/mujeres-asesinas-2007-colombia.png"
+        },
+        {
+          "title": "Donne Assasine",
+          "country": "Italia",
+          "year": "2008",
+          "image": "images/verticals/donne-assasine-2008-italia.png"
+        },
+        {
+          "title": "Mujeres Asesinas",
+          "country": "México",
+          "year": "2008",
+          "image": "images/verticals/mujeres-asesinas-mexico-2008.png"
+        },
+        {
+          "title": "Killer Women",
+          "country": "Estados Unidos",
+          "year": "2014",
+          "image": "images/verticals/killer-woman-usa-2014.png"
+        },
+        {
+          "title": "Mujeres Asesinas",
+          "country": "México",
+          "year": "2022",
+          "image": "images/verticals/mujeres-asesinas-mexico-2022.png"
+        }
+      ]
     },
     {
       "id": "V278",
