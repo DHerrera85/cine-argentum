@@ -1259,6 +1259,31 @@
       "release_date": "2012-05-14",
       "rating": 3
     },
+
+    {
+      "title": "Mi Amor, Mi Amor",
+      "genre": "Comedia",
+      "year": "2012",
+      "actors": [
+        "Juan Gil Navarro",
+        "Jazmín Stuart",
+        "Brenda Gandini"
+      ],
+      "synopsis": "Remake de Naranja y Media (1997), cuenta la historia de Juan, un hombre noble que, tras un accidente fortuito, se enamora de dos mujeres: Valeria y Laly. Atrapado entre ambas, intenta sostener una doble vida que pronto se vuelve tan conflictiva como insostenible.",
+      "channel": "Telefe",
+      "image": "images/verticals/mi-amor-mi-amor-poster-280x420.png",
+      "orientation": "vertical",
+      "type": "Comedia",
+      "subtitle": "Comedia",
+      "id": "V290",
+      "viewers": 0,
+      "producer": "El Árbol, Telefe Contenidos",
+      "director": "",
+      "schedule": "22:30hs",
+      "episodes": 90,
+      "release_date": "2012-11-28",
+      "rating": 11
+    },
     {
       "title": "Abzurdah",
       "genre": "Drama",
@@ -5298,7 +5323,7 @@
       "title": "Cien Días para Enamorarse",
       "year": "2018",
       "channel": "Telefe",
-      "genre": "Comedia Romántica",
+      "genre": "Comedia",
       "actors": [
         "Carla Peterson",
         "Nancy Dupláa",
@@ -5307,7 +5332,50 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/100-Dias-para-enamorarse-poster-280x420.png",
-      "subtitle": "Comedia romántica"
+      "subtitle": "Comedia",
+      "horario": "21:45hs",
+      "capitulos": 125,
+      "fecha_estreno": "7/5/2018",
+      "sinopsis": "Laura y Antonia, amigas inseparables, deciden tomarse 100 días de sus matrimonios tras 18 años para replantear sus vidas. En ese tiempo, cuestionan el amor, la rutina y sus propios deseos, poniendo a prueba sus vínculos.",
+      "rating": "15,1",
+      "productora": "Underground Contenidos",
+      "tipo_emision": "Tira Diaria",
+      "remakes": [
+        {
+          "title": "100 Días para Enamorarse",
+          "country": "Chile",
+          "year": "2019",
+          "image": "images/verticals/100-Dias-para-Enamorarse-Chile-2019.png"
+        },
+        {
+          "title": "100 Días para Enamorarnos",
+          "country": "Estados Unidos",
+          "year": "2020",
+          "image": "images/verticals/100-dias-para-enamorarnos-estados unidos-2020.png"
+        }
+      ]
+    },
+    {
+      "id": "V291",
+      "title": "Historias de Corazón",
+      "year": "2013",
+      "channel": "Telefe",
+      "genre": "Drama",
+      "actors": [],
+      "orientation": "vertical",
+      "image": "images/verticals/historias-de-corazon-poster-280x420.png",
+      "subtitle": "Drama"
+    },
+    {
+      "id": "V292",
+      "title": "Loco x Vos",
+      "year": "2016",
+      "channel": "Telefe",
+      "genre": "Sitcom",
+      "actors": [],
+      "orientation": "vertical",
+      "image": "images/verticals/loco-por-vos-poster-280x420.png",
+      "subtitle": "Sitcom"
     },
     {
       "id": "h7",
@@ -10119,10 +10187,12 @@
       "title": "Cuando me Sonreís",
       "year": "2011",
       "channel": "Telefe",
-      "genre": "Comedia Romántica",
+      "genre": "Comedia",
       "actors": [
         "Facundo Arana",
-        "Julieta Díaz"
+        "Julieta Díaz",
+        "Lali Espósito",
+        "Benjamín Rojas"
       ],
       "orientation": "vertical",
       "image": "images/verticals/cuando-me-sonreis-poster-420x280.png",

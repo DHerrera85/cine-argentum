@@ -1,5 +1,5 @@
 // telefe.js - Renderiza las series de Telefe con filtros avanzados
-const telefeDataVersion = '20260219-3';
+const telefeDataVersion = '20260219-5';
 
 // Cargar data.json y filtrar solo series de Telefe
 document.addEventListener('DOMContentLoaded', async function() {
@@ -46,14 +46,14 @@ document.addEventListener('DOMContentLoaded', async function() {
     { id: 'V151', year: '2009', title: 'Nini', genre: 'Juvenil' },
     { year: '2009', title: 'Botineras', genre: 'Thriller' },
     { year: '2010', title: 'Secretos de Amor', genre: 'Telenovela' },
-    { id: 'v16', id: 'v16', year: '2010', title: 'Cain & Abel', genre: 'Thriller' },
+    { id: 'v16', year: '2010', title: 'Cain & Abel', genre: 'Thriller' },
     { year: '2011', title: 'El Elegido', genre: 'Thriller' },
     { year: '2011', title: 'Un Año para Recordar', genre: 'Comedia' },
     { id: 'v44', year: '2011', title: 'Cuando me sonreis', genre: 'Sitcom' },
     { id: 'V164', year: '2011', title: 'Supertorpe', genre: 'Juvenil' },
     { year: '2012', title: 'Dulce Amor', genre: 'Telenovela' },
     { year: '2012', title: 'Graduados', genre: 'Comedia' },
-    { year: '2012', title: 'Mi Amor Mi Amor', genre: 'Comedia' },
+    { id: 'V290', year: '2012', title: 'Mi Amor Mi Amor', genre: 'Comedia' },
     { year: '2013', title: 'Los Vecinos en Guerra', genre: 'Comedia' },
     { year: '2013', title: 'Aliados', genre: 'Juvenil' },
     { id: 'v61', year: '2013', title: 'Taxxi Amores Cruzados', genre: 'Telenovela' },
@@ -64,13 +64,13 @@ document.addEventListener('DOMContentLoaded', async function() {
     { id: 'v12', year: '2015', title: 'Entre Canibales', genre: 'Thriller' },
     { year: '2016', title: 'La Leona', genre: 'Thriller' },
     { year: '2016', title: 'Educando a Nina', genre: 'Comedia' },
-    { year: '2016', title: 'Loco x Vos', genre: 'Sitcom' },
+    { id: 'V292', year: '2016', title: 'Loco x Vos', genre: 'Sitcom' },
     { id: 'v50', year: '2016', title: 'Por Amarte Asi', genre: 'Telenovela' },
     { year: '2017', title: 'Amar Después de Amar', genre: 'Thriller' },
     { id: 'v60', year: '2017', title: 'El Regreso de Lucas', genre: 'Thriller' },
     { year: '2017', title: 'Fanny, la Fan', genre: 'Comedia' },
     { year: '2017', title: 'Golpe al Corazón', genre: 'Telenovela' },
-    { year: '2018', title: 'Cien Dias para Enamorarse', genre: 'Comedia' },
+    { id: 'h6', year: '2018', title: 'Cien Dias para Enamorarse', genre: 'Comedia' },
     { year: '2019', title: 'Campanas en la Noche', genre: 'Thriller' },
     { year: '2019', title: 'Pequeña Victoria', genre: 'Comedia' },
     { year: '2022', title: 'El Primero de Nosotros', genre: 'Telenovela' },
@@ -96,7 +96,7 @@ document.addEventListener('DOMContentLoaded', async function() {
     { id: 'V270', year: '2004', title: 'Mosca & Smith en el Once', genre: 'Comedia' },
     { year: '2003', title: 'Tres Padres Solteros', genre: 'Comedia' },
     { year: '2013', title: 'Historias de Diván', genre: 'Drama' },
-    { year: '2013', title: 'Historias de Corazón', genre: 'Drama' },
+    { id: 'V291', year: '2013', title: 'Historias de Corazón', genre: 'Drama' },
     { year: '2006', title: 'Al Límite', genre: 'Thriller' },
     { year: '2002', title: 'Infieles', genre: 'Thriller' },
     { year: '2000', title: 'Tiempo Final', genre: 'Thriller' }
