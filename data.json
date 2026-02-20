@@ -349,7 +349,7 @@
       "director": "Alberto Lecchi"
     },
     {
-      "title": "Chiquititas",
+      "title": "Chiquititas: Rincón de Luz",
       "genre": "Familiar",
       "year": "2001",
       "actors": [
@@ -4826,21 +4826,21 @@
       "title": "Los Exitosos Pells",
       "year": "2008",
       "channel": "Telefe",
-      "genre": "Comedia Dramática",
+      "genre": "Comedia",
       "actors": [
         "Carla Peterson",
         "Mike Amigorena"
       ],
       "orientation": "vertical",
       "image": "images/verticals/los-exitosos-pells-poster-280x420.png",
-      "subtitle": "Comedia dramática"
+      "subtitle": "Comedia"
     },
     {
       "id": "v5",
       "title": "Señores Papis",
       "year": "2014",
       "channel": "Telefe",
-      "genre": "Comedia Dramática",
+      "genre": "Comedia",
       "actors": [
         "Luciano Castro",
         "Joaquín Furriel",
@@ -4848,7 +4848,7 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/senores-papis-poster-280x420.png",
-      "subtitle": "Drama"
+      "subtitle": "Comedia"
     },
     {
       "id": "v6",
@@ -4863,7 +4863,25 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/son-de-fierro-poster-280x420.png",
-      "subtitle": "Telenovela"
+      "subtitle": "Telenovela",
+      "sinopsis": "Martín “Fierro” es carnicero y padre de familia; su esposa Lucía dejó la docencia tras la ceguera de su hijo Juan. Casados desde hace 25 años y aún enamorados, intentan sostener la unión familiar mientras sus hijos buscan su propia independencia.",
+      "rating": "21,2",
+      "productora": "Pol-Ka",
+      "tipo_emision": "Tira Diaria",
+      "remakes": [
+        {
+          "title": "Alma de Hierro",
+          "country": "México",
+          "year": "2008",
+          "image": "images/verticals/alma-de-hierro-2008-mexico.png"
+        },
+        {
+          "title": "Οι ατρόμητοι",
+          "country": "Grecia",
+          "year": "2012",
+          "image": "images/verticals/Οι-ατρόμητοι-grecia-2012.png"
+        }
+      ]
     },
     {
       "id": "P2025",
@@ -6484,7 +6502,7 @@
       "title": "Doble Venganza",
       "year": "2006",
       "channel": "Canal 9/Azul TV",
-      "genre": "Policial",
+      "genre": "Thriller",
       "actors": [
         "Gerardo Romano",
         "Carolina Papaleo",
@@ -6493,7 +6511,14 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/doble-venganza-poster-280x420.png",
-      "subtitle": "Policial"
+      "subtitle": "Thriller",
+      "horario": "21:30hs, 22:15hs, 00:00hs",
+      "capitulos": "51",
+      "fecha_estreno": "20/11/2006",
+      "sinopsis": "La trama sigue a Vera Pedraza intentando desenmascarar a su psiquiatra y nuevo padrastro, Gonzalo Brizuela, quien busca controlar una clínica con fines siniestros",
+      "rating": "3",
+      "productora": "Endemol",
+      "tipo_emision": "Tira Diaria"
     },
     {
       "id": "v106",
@@ -6507,7 +6532,14 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/hechizada-poster-280x420.png",
-      "subtitle": "Sitcom"
+      "subtitle": "Sitcom",
+      "horario": "20:45hs",
+      "capitulos": "35",
+      "fecha_estreno": "09/01/2007",
+      "sinopsis": "Samantha es una bruja que intenta llevar una vida de ama de casa suburbana junto a su esposo mortal, generando caos mágico por sus poderes y la intromisión de su madre",
+      "rating": "11,4",
+      "productora": "Telefe Contenidos",
+      "tipo_emision": "Tira Diaria"
     },
     {
       "id": "v107",
@@ -7073,14 +7105,14 @@
       "title": "B&B: Bella y Bestia",
       "year": "2008",
       "channel": "Telefe",
-      "genre": "Comedia Romántica",
+      "genre": "Comedia",
       "actors": [
         "Romina Yan",
         "Damián De Santo"
       ],
       "orientation": "vertical",
       "image": "images/verticals/byb-poster-280x420.png",
-      "subtitle": "Comedia romántica"
+      "subtitle": "Comedia"
     },
     {
       "id": "V142",
@@ -7099,7 +7131,14 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/casi-angeles-poster-280x420.png",
-      "subtitle": "Juvenil"
+      "subtitle": "Juvenil",
+      "horario": "18hs, 19hs",
+      "capitulos": 166,
+      "fecha_estreno": "21/03/2007",
+      "sinopsis": "Un grupo de huérfanos explotados para robar ve cambiar su destino con la llegada de Cielo y Nico, quienes les devuelven la esperanza a través del amor y la música. Juntos enfrentan oscuros secretos y misterios ligados a un portal oculto que puede transformar sus vidas.",
+      "rating": "11,6",
+      "productora": "Cris Morena Group / RGB Entertainment",
+      "tipo_emision": "Tira Diaria"
     },
     {
       "id": "V143",
@@ -7139,7 +7178,22 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/chiquititas-poster-280x420.png",
-      "subtitle": "Juvenil"
+      "subtitle": "Juvenil",
+      "horario": "18hs, 17:45hs",
+      "capitulos": 150,
+      "fecha_estreno": "03/04/2004",
+      "sinopsis": "Magalí Garcés, una empresaria que busca a su hija perdida —entregada por su padre a un orfanato— adopta la identidad de “Lili” para infiltrarse en el hogar Dumont y transformar la vida de los niños con amor y magia.",
+      "rating": "11",
+      "productora": "Cris Morena Group / RGB Entertainment",
+      "tipo_emision": "Tira Diaria",
+      "remakes": [
+        {
+          "title": "Chiquititas",
+          "country": "Portugal",
+          "year": "2007",
+          "image": "images/verticals/chiquititas-portugal-2007.png"
+        }
+      ]
     },
     {
       "id": "V145",
@@ -7371,7 +7425,7 @@
     },
     {
       "id": "V151",
-      "title": "Niná",
+      "title": "Niní",
       "year": "2009",
       "channel": "Telefe",
       "genre": "Juvenil",
@@ -7468,7 +7522,14 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/romeo-y-julieta-poster-280x420.png",
-      "subtitle": "Juvenil"
+      "subtitle": "Juvenil",
+      "horario": "16hs",
+      "capitulos": "150",
+      "fecha_estreno": "14/03/2007",
+      "sinopsis": "Adaptación moderna de Shakespeare, narra la historia de amor prohibido entre dos adolescentes cuyas familias enfrentadas se disputan el poder y la herencia, marcada por la traición, el odio y la intensidad de sus primeros amores.",
+      "rating": "2,2",
+      "productora": "Central Park, Raúl Lecouna",
+      "tipo_emision": "Tira Diaria"
     },
     {
       "id": "V157",
@@ -7483,7 +7544,14 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/reinas-magas-poster-280x420.png",
-      "subtitle": "Juvenil"
+      "subtitle": "Juvenil",
+      "horario": "11hs",
+      "capitulos": "28",
+      "fecha_estreno": "05/02/2007",
+      "sinopsis": "Tres niñas (Melchora, Gaspara y Baltasara) se entrenan para ser la versión femenina de los Reyes Magos en una isla imaginaria llamada Shangrilandia. Enfrentan al villano Das Pulgas y sus ayudantes para asegurar la entrega de regalos.",
+      "rating": "-",
+      "productora": "Plop Producciones",
+      "tipo_emision": "Tira Diaria"
     },
     {
       "id": "V158",
@@ -8811,7 +8879,7 @@
     {
       "id": "V239",
       "title": "Epitafios",
-      "year": "2004; 2009",
+      "year": "2004",
       "channel": "HBO Max",
       "genre": "Thriller",
       "actors": [
@@ -8861,7 +8929,14 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/el-hombre-que-volvio-de-la-muerte-poster-280x420.png",
-      "subtitle": "Thriller"
+      "subtitle": "Thriller",
+      "horario": "23hs",
+      "capitulos": 14,
+      "fecha_estreno": "12/09/2007",
+      "sinopsis": "Elmer Van Hess, gerente de sistemas y a punto de casarse, es acusado falsamente de planear el asesinato del presidente y enviado a prisión. Allí es traicionado por un médico que finge ayudarlo a escapar, pero en realidad lo somete a peligrosos experimentos.",
+      "rating": "20",
+      "productora": "Pol-Ka",
+      "tipo_emision": "Semanal"
     },
     {
       "id": "V242",
@@ -8876,7 +8951,28 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/hermanos-y-detectives-poster-280x420.png",
-      "subtitle": "Comedia"
+      "subtitle": "Comedia",
+      "horario": "23:30hs",
+      "capitulos": 10,
+      "fecha_estreno": "6/9/2006",
+      "sinopsis": "Franco Montero, un policía solitario, asume la custodia de su hermanastro Lorenzo tras la muerte de su padre. El niño, de 11 años y con un coeficiente intelectual de 200, lo ayuda a resolver casos complejos.",
+      "rating": "24",
+      "productora": "Telefe Contenidos",
+      "tipo_emision": "Semanal",
+      "remakes": [
+        {
+          "title": "Hermanos y Detectives",
+          "country": "España",
+          "year": "2007",
+          "image": "images/verticals/hermanos-y-detectives-españa-2007.png"
+        },
+        {
+          "title": "Hermanos y Detectives",
+          "country": "México",
+          "year": "2009",
+          "image": "images/verticals/hermanos-y-detectives-mexico-2009.png"
+        }
+      ]
     },
     {
       "id": "V243",
@@ -9428,7 +9524,22 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/soy-tu-fan-poster-280x420.png",
-      "subtitle": "Comedia"
+      "subtitle": "Comedia",
+      "horario": "23hs",
+      "capitulos": 8,
+      "fecha_estreno": "31/07/2006",
+      "sinopsis": "Charly, tras una dolorosa ruptura, conoce a Nico en una cafetería, quien se enamora perdidamente de ella y busca convertirse en su fan número uno, insistiendo en salir a pesar de la renuencia inicial de ella.",
+      "rating": "-",
+      "productora": "-",
+      "tipo_emision": "Semanal",
+      "remakes": [
+        {
+          "title": "Soy Tu Fan",
+          "country": "México",
+          "year": "2010",
+          "image": "images/verticals/soy-tu-fan-mexico-2010.png"
+        }
+      ]
     },
     {
       "id": "V269",
@@ -9445,7 +9556,14 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/amas-de-casa-desesperadas-poster-280x420.png",
-      "subtitle": "Comedia"
+      "subtitle": "Comedia",
+      "horario": "22hs",
+      "capitulos": 23,
+      "fecha_estreno": "30/08/2006",
+      "sinopsis": "La misteriosa muerte de Alicia Oviedo sacude al barrio Manzanares y expone secretos ocultos tras la vida aparentemente perfecta de sus vecinas. Cuatro amas de casa enfrentan crisis familiares, pasiones y rivalidades mientras el enigma detrás de la muerte comienza a revelarse.",
+      "rating": "18,7",
+      "productora": "Pol-Ka",
+      "tipo_emision": "Semanal"
     },
     {
       "id": "V270",
@@ -9562,7 +9680,7 @@
       "title": "Al Límite",
       "year": "2006",
       "channel": "Telefe",
-      "genre": "Drama",
+      "genre": "Thriller",
       "actors": [
         "Juan Gil Navarro",
         "Nicolás Cabré",
@@ -9570,7 +9688,14 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/al-limite-poster-280x420.png",
-      "subtitle": "Suspenso"
+      "subtitle": "Thriller",
+      "horario": "23hs",
+      "capitulos": 13,
+      "fecha_estreno": "01/10/2006",
+      "sinopsis": "Los protagonistas de Al Límite viven con intensidad y sin medir consecuencias, moviéndose en los márgenes de la ley y la moral. Entre corrupción, crímenes, pasiones extremas y luchas de poder, cada historia explora hasta dónde se puede llegar por ambición o deseo",
+      "rating": "15",
+      "productora": "Endemol",
+      "tipo_emision": "Semanal"
     },
     {
       "id": "V276",
@@ -10198,7 +10323,7 @@
     {
       "id": "v51",
       "title": "La Ley del Amor",
-      "year": "2007",
+      "year": "2006",
       "channel": "Telefe",
       "genre": "Telenovela",
       "actors": [
@@ -10209,7 +10334,14 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/la-ley-del-amor-poster-280x420.png",
-      "subtitle": "Telenovela"
+      "subtitle": "Telenovela",
+      "horario": "13:30hs",
+      "capitulos": 187,
+      "fecha_estreno": "1/12/2006",
+      "sinopsis": "Renata es una jueza firme que, sin saberlo, encarcela a Lucas, el hijo de su gran amor de juventud, Ignacio. Cuando él regresa para ayudar a su hijo, la pasión entre ambos se reaviva, a pesar de que los dos están casados con otras personas.",
+      "rating": "10,8",
+      "productora": "Estevanez Producciones",
+      "tipo_emision": "Tira Diaria"
     },
     {
       "id": "v52",

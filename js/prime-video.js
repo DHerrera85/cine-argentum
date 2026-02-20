@@ -1,6 +1,7 @@
 // js/prime-video.js: Lógica para filtrar y mostrar series de Prime Video
+const primeVideoDataVersion = '20260219-1';
 
-fetch('data.json')
+fetch('data.json?v=' + primeVideoDataVersion, { cache: 'no-store' })
   .then(response => response.json())
   .then(data => {
     const items = data.items.filter(item => {

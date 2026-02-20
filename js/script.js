@@ -1,5 +1,6 @@
 /* js/script.js */
 (function () {
+  var scriptDataVersion = '20260219-1';
   // Esperar a que el DOM esté listo
   document.addEventListener('DOMContentLoaded', function () {
     // Verificaciones básicas
@@ -159,7 +160,7 @@
 
     // Intentar cargar data.json (si no existe, script seguirá usando el HTML estático)
     (function loadDataJson(){
-      fetch('data.json').then(function (res) {
+      fetch('data.json?v=' + scriptDataVersion, { cache: 'no-store' }).then(function (res) {
         if (!res.ok) throw new Error('no ok');
         return res.json();
       }).then(function (data) {

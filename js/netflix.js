@@ -1,6 +1,7 @@
 // js/netflix.js: Lógica para filtrar y mostrar series de Netflix
+const netflixDataVersion = '20260219-1';
 
-fetch('data.json')
+fetch('data.json?v=' + netflixDataVersion, { cache: 'no-store' })
   .then(response => response.json())
   .then(data => {
     const items = data.items.filter(item => {

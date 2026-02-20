@@ -1,6 +1,7 @@
 // js/hbo-max.js: Lógica para filtrar y mostrar series de HBO Max
+const hboMaxDataVersion = '20260219-1';
 
-fetch('data.json')
+fetch('data.json?v=' + hboMaxDataVersion, { cache: 'no-store' })
   .then(response => response.json())
   .then(data => {
     const items = data.items.filter(item => {

@@ -1,9 +1,10 @@
 // js/canal-13.js: Lógica para filtrar y mostrar series de Canal 13, basado en js/telefe.js
+const canal13DataVersion = '20260219-1';
 
 // Cargar data.json y filtrar por Canal 13
 const flowCoproducciones = ["V228", "V227", "V225", "V223", "V222", "V221"];
 
-fetch('data.json')
+fetch('data.json?v=' + canal13DataVersion, { cache: 'no-store' })
   .then(response => response.json())
   .then(data => {
     const items = data.items.filter(item =>

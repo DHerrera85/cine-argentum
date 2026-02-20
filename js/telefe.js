@@ -1,4 +1,5 @@
 // telefe.js - Renderiza las series de Telefe con filtros avanzados
+const telefeDataVersion = '20260219-3';
 
 // Cargar data.json y filtrar solo series de Telefe
 document.addEventListener('DOMContentLoaded', async function() {
@@ -29,51 +30,51 @@ document.addEventListener('DOMContentLoaded', async function() {
     { year: '2005', title: '¿Quién es el Jefe?', genre: 'Sitcom' },
     { year: '2005', title: 'Se Dice Amor', genre: 'Telenovela' },
     { year: '2006', title: 'Alma Pirata', genre: 'Juvenil' },
-    { year: '2006', title: 'Chiquititas 2006', genre: 'Juvenil' },
+    { id: 'V144', year: '2006', title: 'Chiquititas 2006', genre: 'Juvenil' },
     { year: '2006', title: 'Montecristo', genre: 'Thriller' },
-    { year: '2006', title: 'La Ley del Amor', genre: 'Telenovela' },
+    { id: 'v51', year: '2006', title: 'La Ley del Amor', genre: 'Telenovela' },
     { year: '2007', title: 'Hechizada', genre: 'Sitcom' },
-    { year: '2007', title: 'Casi Angeles', genre: 'Juvenil' },
+    { id: 'V142', year: '2007', title: 'Casi Angeles', genre: 'Juvenil' },
     { year: '2007', title: 'El Capo', genre: 'Telenovela' },
-    { year: '2008', title: 'B&B', genre: 'Juvenil' },
+    { id: 'V141', year: '2008', title: 'B&B', genre: 'Juvenil' },
     { year: '2008', title: 'Aquí no hay quien Viva', genre: 'Comedia' },
     { year: '2008', title: 'Una de Dos', genre: 'Sitcom' },
     { year: '2008', title: 'Vidas Robadas', genre: 'Telenovela' },
     { year: '2008', title: 'Don Juan y su Bella Dama', genre: 'Telenovela' },
     { year: '2008', title: 'Los Exitosos Pells', genre: 'Comedia' },
     { year: '2009', title: 'Herencia de Amor', genre: 'Telenovela' },
-    { year: '2009', title: 'Nini', genre: 'Juvenil' },
+    { id: 'V151', year: '2009', title: 'Nini', genre: 'Juvenil' },
     { year: '2009', title: 'Botineras', genre: 'Thriller' },
     { year: '2010', title: 'Secretos de Amor', genre: 'Telenovela' },
-    { year: '2010', title: 'Cain & Abel', genre: 'Thriller' },
+    { id: 'v16', id: 'v16', year: '2010', title: 'Cain & Abel', genre: 'Thriller' },
     { year: '2011', title: 'El Elegido', genre: 'Thriller' },
     { year: '2011', title: 'Un Año para Recordar', genre: 'Comedia' },
-    { year: '2011', title: 'Cuando me sonreis', genre: 'Sitcom' },
-    { year: '2011', title: 'Supertorpe', genre: 'Juvenil' },
+    { id: 'v44', year: '2011', title: 'Cuando me sonreis', genre: 'Sitcom' },
+    { id: 'V164', year: '2011', title: 'Supertorpe', genre: 'Juvenil' },
     { year: '2012', title: 'Dulce Amor', genre: 'Telenovela' },
     { year: '2012', title: 'Graduados', genre: 'Comedia' },
     { year: '2012', title: 'Mi Amor Mi Amor', genre: 'Comedia' },
     { year: '2013', title: 'Los Vecinos en Guerra', genre: 'Comedia' },
     { year: '2013', title: 'Aliados', genre: 'Juvenil' },
-    { year: '2013', title: 'Taxxi Amores Cruzados', genre: 'Telenovela' },
+    { id: 'v61', year: '2013', title: 'Taxxi Amores Cruzados', genre: 'Telenovela' },
     { year: '2014', title: 'Somos Familia', genre: 'Telenovela' },
     { year: '2014', title: 'Señores Papis', genre: 'Telenovela' },
     { year: '2014', title: 'Camino al Amor', genre: 'Telenovela' },
     { year: '2014', title: 'Viudas e Hijos del Rock & Roll', genre: 'Comedia' },
-    { year: '2015', title: 'Entre Canibales', genre: 'Thriller' },
+    { id: 'v12', year: '2015', title: 'Entre Canibales', genre: 'Thriller' },
     { year: '2016', title: 'La Leona', genre: 'Thriller' },
     { year: '2016', title: 'Educando a Nina', genre: 'Comedia' },
     { year: '2016', title: 'Loco x Vos', genre: 'Sitcom' },
-    { year: '2016', title: 'Por Amarte Asi', genre: 'Telenovela' },
+    { id: 'v50', year: '2016', title: 'Por Amarte Asi', genre: 'Telenovela' },
     { year: '2017', title: 'Amar Después de Amar', genre: 'Thriller' },
-    { year: '2017', title: 'El Regreso de Lucas', genre: 'Thriller' },
+    { id: 'v60', year: '2017', title: 'El Regreso de Lucas', genre: 'Thriller' },
     { year: '2017', title: 'Fanny, la Fan', genre: 'Comedia' },
     { year: '2017', title: 'Golpe al Corazón', genre: 'Telenovela' },
     { year: '2018', title: 'Cien Dias para Enamorarse', genre: 'Comedia' },
     { year: '2019', title: 'Campanas en la Noche', genre: 'Thriller' },
     { year: '2019', title: 'Pequeña Victoria', genre: 'Comedia' },
     { year: '2022', title: 'El Primero de Nosotros', genre: 'Telenovela' },
-    { year: '2018', title: 'Sandro, la Serie', genre: 'Drama' },
+    { id: 'V248', year: '2018', title: 'Sandro, la Serie', genre: 'Drama' },
     { year: '2015', title: 'Historia de un Clan', genre: 'Thriller' },
     { year: '2011', title: 'El Hombre de tu Vida', genre: 'Comedia' },
     { year: '2019', title: 'Atrapa a un Ladrón', genre: 'Comedia' },
@@ -101,7 +102,7 @@ document.addEventListener('DOMContentLoaded', async function() {
     { year: '2000', title: 'Tiempo Final', genre: 'Thriller' }
   ];
   try {
-    const res = await fetch('data.json');
+    const res = await fetch('data.json?v=' + telefeDataVersion, { cache: 'no-store' });
     const data = await res.json();
     // Filtrar solo los títulos del listado estricto
     series = telefeList.map(ref => {

@@ -1,6 +1,7 @@
 // js/canal-9.js: Lógica para filtrar y mostrar series de Canal 9, basado en canal-13.js
+const canal9DataVersion = '20260219-1';
 
-fetch('data.json')
+fetch('data.json?v=' + canal9DataVersion, { cache: 'no-store' })
   .then(response => response.json())
   .then(data => {
     const items = data.items.filter(item => {

@@ -1,6 +1,7 @@
 // js/canal7.js: Lógica para filtrar y mostrar series de TV Pública (Canal 7)
+const canal7DataVersion = '20260219-1';
 
-fetch('data.json')
+fetch('data.json?v=' + canal7DataVersion, { cache: 'no-store' })
   .then(response => response.json())
   .then(data => {
     const items = data.items.filter(item => {

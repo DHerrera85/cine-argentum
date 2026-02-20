@@ -1,6 +1,7 @@
 // js/tercer-canal.js: Series combinadas de Canal 9, America y TV Publica
+const tercerCanalDataVersion = '20260219-1';
 
-fetch('data.json')
+fetch('data.json?v=' + tercerCanalDataVersion, { cache: 'no-store' })
   .then(response => response.json())
   .then(data => {
     const items = data.items.filter(item => {
