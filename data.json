@@ -4783,6 +4783,12 @@
       "orientation": "vertical",
       "image": "images/verticals/lalola-poster-280x420.png",
       "subtitle": "Comedia",
+      "horario": "22hs",
+      "capitulos": 150,
+      "fecha_estreno": "28/08/2007",
+      "sinopsis": "Un mujeriego incorregible (Lalo) es convertido en mujer (Lola) por un hechizo de una ex amante despechada. Lola debe vivir en un cuerpo femenino, enfrentando el machismo que antes ejercía mientras intenta revertir el hechizo.",
+      "rating": "8,4",
+      "productora": "Underground Contenidos",
       "remakes": [
         {
           "title": "Lola",
@@ -6611,17 +6617,24 @@
     },
     {
       "id": "v107",
-      "title": "El Capo",
+      "title": "El Capo, Mafioso contra su Voluntad",
       "year": "2007",
       "channel": "Telefe",
-      "genre": "Policial",
+      "genre": "Comedia",
       "actors": [
         "Miguel Ángel Rodríguez",
         "Gianella Neyra"
       ],
       "orientation": "vertical",
       "image": "images/verticals/el-capo-poster-280x420.png",
-      "subtitle": "Policial"
+      "subtitle": "Comedia",
+      "horario": "22:00hs, 13:00hs",
+      "capitulos": "28",
+      "fecha_estreno": "13/05/2007",
+      "sinopsis": "Omar Shariff, hijo de un poderoso empresario textil de origen sirio, hereda sin querer el negocio clandestino de su padre. Junto a su socio Chicho y su eterno rival Moisés, se entrelazan tres familias de distintos orígenes —italiano, árabe y judío— en una trama de poder y conflictos.",
+      "rating": "8,1",
+      "productora": "Telefe Contenidos",
+      "tipo_emision": "Tira Diaria"
     },
     {
       "id": "v108",
@@ -7569,6 +7582,13 @@
       "orientation": "vertical",
       "image": "images/verticals/patito-feo-poster-280x420.png",
       "subtitle": "Juvenil",
+      "horario": "18hs",
+      "capitulos": "155",
+      "fecha_estreno": "10/04/2007",
+      "sinopsis": "Patricia “Patito” Castro, una niña talentosa y dulce de Bariloche, se muda a Buenos Aires para tratar una enfermedad. Allí reencuentra a su padre, Leandro, se enamora de Matías y enfrenta la rivalidad de Antonella y “Las Divinas” en el colegio, mientras lidera a “Las Populares”.",
+      "rating": "12,6",
+      "productora": "Ideas del Sur, Televisa",
+      "tipo_emision": "Tira Diaria",
       "remakes": [
         {
           "title": "Atrévete a Soñar",
