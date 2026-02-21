@@ -5474,7 +5474,14 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/vidas-robadas-poster-280x420.png",
-      "subtitle": "Thriller"
+      "subtitle": "Thriller",
+      "horario": "22:30hs",
+      "capitulos": 131,
+      "fecha_estreno": "3/3/2008",
+      "sinopsis": "Juliana es secuestrada por una red de trata, lo que desata la desesperada búsqueda de su familia. Mientras tanto, el antropólogo forense Bautista Amaya se involucra en la lucha contra la mafia, impulsado por el amor a Ana y la justicia.",
+      "rating": "16",
+      "productora": "Telefe Contenidos",
+      "tipo_emision": "Tira Diaria"
     },
     {
       "id": "v14",
@@ -6213,11 +6220,20 @@
       "actors": [
         "Luisa Kuliok",
         "Eugenia Tobal",
-        "Laura Novoa"
+        "Laura Novoa",
+        "Carina Zampini",
+        "Carlos Calvo"
       ],
       "orientation": "vertical",
       "image": "images/verticals/mujeres-de-nadie-segunda-temporada-poster-280x420.png",
-      "subtitle": "Telenovela"
+      "subtitle": "Telenovela",
+      "horario": "14hs, 16hs",
+      "capitulos": 170,
+      "fecha_estreno": "25/04/2008",
+      "sinopsis": "Mujeres de Nadie sigue a cuatro enfermeras de un hospital público —Raquel, Cecilia, Virginia y Carmen— que enfrentan profundos conflictos personales mientras sostienen su vocación. Unidas por el trabajo y acompañadas por médicos y colegas, deberán anteponer el bienestar de sus pacientes a sus propias miserias.",
+      "rating": "11",
+      "productora": "Pol-Ka",
+      "tipo_emision": "Tira Diaria"
     },
     {
       "id": "v89",
@@ -6649,7 +6665,14 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/una-de-dos-poster-280x420.png",
-      "subtitle": "Sitcom"
+      "subtitle": "Sitcom",
+      "horario": "21:45hs",
+      "capitulos": "17",
+      "fecha_estreno": "28/1/2008",
+      "sinopsis": "Eva vive con Oscar, su marido oportunista, quien participa en un reality de intercambio de parejas y deja su lugar a Julio, un hombre romántico y sensible. Enamorada de su “reemplazo”, Eva propone una convivencia entre los tres mientras decide con cuál quedarse.",
+      "rating": "9,3",
+      "productora": "Telefe Contenidos",
+      "tipo_emision": "Tira Diaria"
     },
     {
       "id": "v109",
@@ -7193,7 +7216,14 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/byb-poster-280x420.png",
-      "subtitle": "Comedia"
+      "subtitle": "Comedia",
+      "horario": "20:45hs",
+      "capitulos": 123,
+      "fecha_estreno": "7/1/2008",
+      "sinopsis": "Bella, ordenada y estructurada, y Benny, desordenado y caótico, ambos viudos y con tres hijos cada uno, se convierten en vecinos. La convivencia forzada desata choques constantes y divertidos enredos familiares.",
+      "rating": "12,6",
+      "productora": "Cris Morena Group / RGB Entertainment",
+      "tipo_emision": "Tira Diaria"
     },
     {
       "id": "V142",
@@ -10143,11 +10173,19 @@
         "Miguel Ángel Rodríguez",
         "Claribel Medina",
         "Nicolás Cabré",
-        "Soledad Fandiño"
+        "Soledad Fandiño",
+        "Raúl Taibo"
       ],
       "orientation": "vertical",
       "image": "images/verticals/por-amor-a-vos-poster-280x420.png",
-      "subtitle": "Comedia"
+      "subtitle": "Comedia",
+      "horario": "21:45hs",
+      "capitulos": 251,
+      "fecha_estreno": "28/01/2008",
+      "sinopsis": "La historia sigue a Margarita, una portera apasionada que se enamora de Beto, el encargado del edificio vecino. Entre enredos barriales, un secreto sobre su hijo León y un triángulo amoroso con el odontólogo Mauricio, su vida se complica.",
+      "rating": "21,3",
+      "productora": "Pol-ka",
+      "tipo_emision": "Tira Diaria"
     },
     {
       "id": "v41",
@@ -10231,7 +10269,14 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/aqui-no-hay-quien-viva-poster-420x280.png",
-      "subtitle": "Sitcom"
+      "subtitle": "Sitcom",
+      "horario": "22hs",
+      "capitulos": 39,
+      "fecha_estreno": "10/01/2008",
+      "sinopsis": "La serie retrata la convivencia de un variado grupo de vecinos en un edificio que funciona como un pequeño país, con conflictos y alianzas constantes. Entre luchas de poder dentro del consorcio, oficialismos y oposiciones, el día a día se vuelve tan caótico como divertido.",
+      "rating": "9,2",
+      "productora": "Telefe Contenidos",
+      "tipo_emision": "Semanal"
     },
     {
       "id": "v46",
@@ -10447,7 +10492,14 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/don-juan-y-su-bella-dama-poster-280x420.png",
-      "subtitle": "Telenovela"
+      "subtitle": "Telenovela",
+      "horario": "13:30hs",
+      "capitulos": 242,
+      "fecha_estreno": "17/3/2008",
+      "sinopsis": "Juan Cané es un seductor que huye del compromiso, mientras Josefina Molina, una joven humilde y trabajadora, sueña con un amor verdadero. Cuando se enamoran, deberán resolver sus relaciones pasadas para poder apostar a un futuro juntos.",
+      "rating": "15,3",
+      "productora": "Telefe Contenidos, Endemol",
+      "tipo_emision": "Tira Diaria"
     },
     {
       "id": "v53",
