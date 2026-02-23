@@ -7040,7 +7040,14 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/la-maga-y-el-camino-dorado-poster-280x420.png",
-      "subtitle": "Juvenil"
+      "subtitle": "Juvenil",
+      "horario": "20hs",
+      "capitulos": 52,
+      "fecha_estreno": "11/10/2008",
+      "sinopsis": "Dorana es una joven trabajadora que vive con su perro Toto y sueña con cambiar su vida aburrida, atrapada entre un pasado conflictivo y un amor imposible, hasta que un portal la lleva a un mundo mágico. ",
+      "rating": "-",
+      "productora": "Illusion Studios",
+      "tipo_emision": "Tira Diaria"
     },
     {
       "id": "V131",
@@ -9613,7 +9620,22 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/todos-contra-juan-poster-280x420.png",
-      "subtitle": "Comedia"
+      "subtitle": "Comedia",
+      "horario": "22hs",
+      "capitulos": 39,
+      "fecha_estreno": "09/04/2008",
+      "sinopsis": "Juan Perugia, un exídolo juvenil cuya carrera se derrumbó y que, 15 años después, intenta recuperar la fama perdida. Entre situaciones desopilantes y su particular personalidad, hará lo imposible por reinsertarse en el mundo del espectáculo.",
+      "rating": "3,3",
+      "productora": "Rosstoc/Farfán/Fox Television Studios",
+      "tipo_emision": "Semanal",
+      "remakes": [
+        {
+          "title": "Chico Reality",
+          "country": "Chile",
+          "year": "2013",
+          "image": "images/verticals/chico-reality-chile-2013.png"
+        }
+      ]
     },
     {
       "id": "V267",
@@ -9628,7 +9650,22 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/socias-poster-280x420.png",
-      "subtitle": "Comedia"
+      "subtitle": "Comedia",
+      "horario": "23hs",
+      "capitulos": 39,
+      "fecha_estreno": "09/04/2008",
+      "sinopsis": "Inés, Dolores y Mía son tres abogadas con vidas personales complejas que comparten un buffet jurídico, enfrentando conflictos amorosos, familiares y casos judiciales que reflejan sus propios dilemas",
+      "rating": "15,1",
+      "productora": "Pol-Ka",
+      "tipo_emision": "Semanal",
+      "remakes": [
+        {
+          "title": "Socias",
+          "country": "Chile",
+          "year": "2013",
+          "image": "images/verticals/socias-chile-2013.png"
+        }
+      ]
     },
     {
       "id": "V268",
@@ -10657,12 +10694,19 @@
       "genre": "Comedia",
       "actors": [
         "Julián Román",
-        "Liliana Gonzílez",
+        "Liliana González",
         "Segundo Cernadas"
       ],
       "orientation": "vertical",
       "image": "images/verticals/valentino-el-argentino-280x420.png",
-      "subtitle": "Comedia"
+      "subtitle": "Comedia",
+      "horario": "19hs, 16hs",
+      "capitulos": 125,
+      "fecha_estreno": "07/10/2008",
+      "sinopsis": "Valentino, un joven inseguro marcado por el bullying, descubre que es hijo de un poderoso argentino y despierta a su carismático alter ego, transformándose en un seductor irresistible. Junto a su fiel amiga Margarita viaja a Argentina para conocer a su padre, enfrentando enredos amorosos y situaciones tan complejas como divertidas.",
+      "rating": "9",
+      "productora": "Pol-Ka/Vista Producciones",
+      "tipo_emision": "Tira Diaria"
     },
     {
       "id": "v63",
