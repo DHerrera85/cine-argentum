@@ -4864,7 +4864,63 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/los-exitosos-pells-poster-280x420.png",
-      "subtitle": "Comedia"
+      "subtitle": "Comedia",
+      "horario": "22:30hs",
+      "capitulos": 134,
+      "fecha_estreno": "03/11/2008",
+      "sinopsis": "Martín Pells, el conductor de noticias más famoso,  entra en coma tras una pelea. Para mantener el éxito, es reemplazado por Gonzalo, un actor parecido que descubre que el matrimonio Pells es falso y está lleno de secretos",
+      "rating": "17,1",
+      "productora": "Underground Contenidos, Endemol",
+      "remakes": [
+        {
+          "title": "Los Exitosos Pells",
+          "country": "Chile",
+          "year": "2009",
+          "image": "images/verticals/los-exitosos-pells-chile-2009.png"
+        },
+        {
+          "title": "El Exitoso Lcdo. Cardoso",
+          "country": "Ecuador",
+          "year": "2009",
+          "image": "images/verticals/el-exitoso-lcdo-cardoso-ecuador-2009.png"
+        },
+        {
+          "title": "Los Exitosos Pérez",
+          "country": "México",
+          "year": "2009",
+          "image": "images/verticals/los-exitosos-perez-mexico-2009.png"
+        },
+        {
+          "title": "Los Exitosos Pells",
+          "country": "España",
+          "year": "2009",
+          "image": "images/verticals/los-exitosos-pells-españa-2009.png"
+        },
+        {
+          "title": "Los Exitosos Gome$",
+          "country": "Perú",
+          "year": "2010",
+          "image": "images/verticals/los-exitosos-gome$-peru-2010.png"
+        },
+        {
+          "title": "Wiadomości z drugiej ręki",
+          "country": "Polonia",
+          "year": "2011",
+          "image": "images/verticals/Wiadomości z drugiej ręki-polonia-2011.png"
+        },
+        {
+          "title": "Ο Κύριος και η Κυρία Πελς",
+          "country": "Grecia",
+          "year": "2012",
+          "image": "images/verticals/Ο Κύριος και η Κυρία Πελς-grecia-2012.png"
+        },
+        {
+          "title": "Od jutra do sutra",
+          "country": "Serbia",
+          "year": "2022",
+          "image": "images/verticals/Od jutra do sutra-serbia-2022.png"
+        }
+      ]
     },
     {
       "id": "v5",
@@ -7597,11 +7653,20 @@
         "Camila Bordonaba",
         "Gabriel Goity",
         "Rodrigo Guirao",
-        "Darío Lopilato"
+        "Darío Lopilato",
+        "Carola Reyna",
+        "Elías Viñoles"
       ],
       "orientation": "vertical",
       "image": "images/verticals/atraccion-x-4-poster-280x420.png",
-      "subtitle": "Juvenil"
+      "subtitle": "Juvenil",
+      "horario": "19hs",
+      "capitulos": "120",
+      "fecha_estreno": "03/11/2008",
+      "sinopsis": "Hamlet, un músico humilde, fue traicionado por su amigo Gonzalo, quien le robó una canción y construyó su fortuna, además de quedarse con el amor de su vida. Años después, el enfrentamiento entre ambos se reaviva cuando sus hijos se enamoran y fusionan sus mundos musicales, desatando una rivalidad familiar",
+      "rating": "5",
+      "productora": "Ideas del Sur, Televisa",
+      "tipo_emision": "Tira Diaria"
     },
     {
       "id": "V155",
