@@ -5914,7 +5914,28 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/valientes-poster-280x420.png",
-      "subtitle": "Telenovela"
+      "subtitle": "Telenovela",
+      "horario": "21:45hs",
+      "capitulos": 218,
+      "fecha_estreno": "02/09/2009",
+      "sinopsis": "Tres hermanos —Leo, Enzo y Segundo Sosa— buscan vengar la muerte de su padre, Roque, y la ruina familiar causada por Laureano Gómez Acuña. Para lograrlo, se acercan a la familia de su enemigo, pero sus planes se complican cuando se enamoran de las hijas de este. ",
+      "rating": "27,4",
+      "productora": "Pol-Ka",
+      "tipo_emision": "Tira Diaria",
+      "remakes": [
+        {
+          "title": "Valientes",
+          "country": "España",
+          "year": "2009",
+          "image": "images/verticals/valientes-españa-2009.png"
+        },
+        {
+          "title": "Corazón Guerrero",
+          "country": "México",
+          "year": "2022",
+          "image": "images/verticals/corazon-guerrero-mexico-2022.png"
+        }
+      ]
     },
     {
       "id": "v71",
@@ -7623,7 +7644,14 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/champs-12-poster-280x420.png",
-      "subtitle": "Juvenil"
+      "subtitle": "Juvenil",
+      "horario": "20hs, 23:15hs, 9:15hs",
+      "capitulos": "125",
+      "fecha_estreno": "16/03/2009",
+      "sinopsis": "Charlotte, una joven adinerada que regresa a Buenos Aires para vengarse de Gonzalo, el futbolista que la humilló de niña por su sobrepeso. Convertida en una bella joven, ella compra el club de fútbol de él, pero la venganza se transforma en romance",
+      "rating": "-",
+      "productora": "Dori Media",
+      "tipo_emision": "Tira Diaria"
     },
     {
       "id": "V153",
@@ -8123,7 +8151,14 @@
       "id": "V180",
       "title": "El Marginal",
       "year": "2016",
-      "channel": "Netflix",
+      "channel": "Canal 7",
+      "channels": [
+        "Canal 7",
+        "TV Pública"
+      ],
+      "platforms": [
+        "Netflix"
+      ],
       "genre": "Policial",
       "actors": [
         "Nico Furtado",
@@ -10241,7 +10276,7 @@
       "capitulos": 245,
       "fecha_estreno": "28/01/2002",
       "sinopsis": "Roberto Sánchez, un árbitro de fútbol solitario, ve su vida ordenada desbordada cuando debe hacerse cargo de sus tres sobrinos en Buenos Aires. Entre caos familiar y enredos románticos, aprende a abrirse al afecto y a una nueva forma de vivir.",
-      "rating": "28",
+      "rating": "24,5",
       "productora": "Pol-ka",
       "tipo_emision": "Tira Diaria",
       "remakes": [

@@ -144,6 +144,20 @@
         if (item.productora) {
           productoraRow = '<dt>Productora</dt><dd>' + item.productora + '</dd>';
         }
+        var canalValue = '';
+        if (item.channel && String(item.channel).trim()) {
+          canalValue = String(item.channel).trim();
+        } else if (Array.isArray(item.channels) && item.channels.length) {
+          canalValue = item.channels.join(', ');
+        }
+        var canalRow = canalValue ? '<dt>Canal</dt><dd>' + canalValue + '</dd>' : '';
+        var plataformaValue = '';
+        if (Array.isArray(item.platforms) && item.platforms.length) {
+          plataformaValue = item.platforms.join(', ');
+        } else if (item.platform && String(item.platform).trim()) {
+          plataformaValue = String(item.platform).trim();
+        }
+        var plataformaRow = plataformaValue ? '<dt>Plataforma</dt><dd>' + plataformaValue + '</dd>' : '';
         var remakesSection = '';
         var remakes = [];
         if (item.remakes && item.remakes.length) {
@@ -184,7 +198,8 @@
             + '<div class="synopsis" style="margin:10px 0 16px;line-height:1.5;color:#333;"><strong>Sinopsis:</strong> ' + synopsis + '</div>'
             + '<dl>'
               + '<dt>Año</dt><dd>' + (item.year || '') + '</dd>'
-              + '<dt>Canal / Plataforma</dt><dd>' + (item.channel || '') + '</dd>'
+              + canalRow
+              + plataformaRow
               + '<dt>Género</dt><dd>' + (item.genre || '') + '</dd>'
               + '<dt>Actores</dt><dd>' + actors + '</dd>'
               + horarioRow

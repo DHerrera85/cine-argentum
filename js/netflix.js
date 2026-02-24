@@ -1,12 +1,15 @@
 // js/netflix.js: Lógica para filtrar y mostrar series de Netflix
-const netflixDataVersion = '20260219-1';
+const netflixDataVersion = '20260223-1';
 
 fetch('data.json?v=' + netflixDataVersion, { cache: 'no-store' })
   .then(response => response.json())
   .then(data => {
     const items = data.items.filter(item => {
       const channel = (item.channel || '').toLowerCase();
-      if (!channel || !channel.includes('netflix')) return false;
+      const platforms = Array.isArray(item.platforms) ? item.platforms.map(p => String(p).toLowerCase()) : [];
+      const inPrimaryChannel = channel.includes('netflix');
+      const inPlatformsArray = platforms.some(p => p.includes('netflix'));
+      if (!inPrimaryChannel && !inPlatformsArray) return false;
       return item.type !== 'pelicula';
     });
     renderSeries(items);

@@ -1,13 +1,15 @@
 // js/canal7.js: Lógica para filtrar y mostrar series de TV Pública (Canal 7)
-const canal7DataVersion = '20260219-1';
+const canal7DataVersion = '20260223-1';
 
 fetch('data.json?v=' + canal7DataVersion, { cache: 'no-store' })
   .then(response => response.json())
   .then(data => {
     const items = data.items.filter(item => {
       const channel = (item.channel || '').toLowerCase();
-      if (!channel) return false;
-      return channel.includes('tv pública') || channel.includes('tv publica') || channel.includes('canal 7');
+      const channels = Array.isArray(item.channels) ? item.channels.map(ch => String(ch).toLowerCase()) : [];
+      const inPrimaryChannel = channel.includes('tv pública') || channel.includes('tv publica') || channel.includes('canal 7');
+      const inChannelsArray = channels.some(ch => ch.includes('tv pública') || ch.includes('tv publica') || ch.includes('canal 7'));
+      return inPrimaryChannel || inChannelsArray;
     });
     renderSeries(items);
     setupFilters(items);
