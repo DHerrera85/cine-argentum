@@ -5078,6 +5078,71 @@
       "subtitle": "Romance"
     },
     {
+      "id": "P2032",
+      "title": "La Virgen de la Tosquera",
+      "type": "pelicula",
+      "year": "2026",
+      "genre": "Terror",
+      "actors": [
+        "Dolores Oliverio",
+        "Fernanda Echevarría",
+        "Luisa Merelas",
+        "Dady Brieva"
+      ],
+      "synopsis": "En un verano sofocante, tres amigas se enamoran del mismo chico y, movidas por los celos, intentan separarlo con un hechizo que no resulta como esperaban. Entre la laguna oculta de la Tosquera y una atmósfera inquietante, el deseo y lo sobrenatural transforman sus vidas. Adaptación de cuentos del libro \"Los peligros de fumar en la cama\" de Mariana Enríquez",
+      "channel": "Cine",
+      "image": "images/verticals/la-virgen-de-la-tosquera-poster-280x420.png",
+      "orientation": "vertical",
+      "viewers": 75728,
+      "producer": "Mostra Cine",
+      "director": "Laura Casabé",
+      "release_date": "15/01/2026",
+      "subtitle": "Terror"
+    },
+    {
+      "id": "P2033",
+      "title": "Parque Lezama",
+      "type": "pelicula",
+      "year": "2026",
+      "genre": "Drama",
+      "actors": [
+        "Eduardo Blanco",
+        "Luis Brandoni",
+        "Verónica Pelaccini",
+        "Agustín Aristarán",
+        "Manuela Menéndez"
+      ],
+      "synopsis": "Un ex militante comunista y un hombre que cree en el «vive y deja vivir» entablan una amistad en un banco del parque, entre historias llenas de humor y ternura.",
+      "channel": "Streaming",
+      "image": "images/verticals/parque-lezama-2026-poster-280x420.png",
+      "orientation": "vertical",
+      "viewers": "-",
+      "producer": "100 Bares",
+      "director": "Juan José Campanella",
+      "release_date": "19/2/2026",
+      "subtitle": "Drama"
+    },
+    {
+      "id": "P2034",
+      "title": "Playa de Lobos",
+      "type": "pelicula",
+      "year": "2026",
+      "genre": "Policial",
+      "actors": [
+        "Guillermo Francella",
+        "Dani Rovira"
+      ],
+      "synopsis": "En una playa casi desierta, el encuentro entre Manu, un trabajador del chiringuito, y Klaus, un turista enigmático, deriva en una creciente tensión. Lo que parecía casual se vuelve inquietante cuando Klaus revela que oculta algo y le hace a Manu una propuesta perturbadora.",
+      "channel": "Cine",
+      "image": "images/verticals/playa-de-lobos-2026-poster-280x420.png",
+      "orientation": "vertical",
+      "viewers": "-",
+      "producer": "MediaLimón, Zebra Producciones, Epos Cine, Buena Vista International",
+      "director": "Javier Veiga",
+      "release_date": "21/03/2026",
+      "subtitle": "Policial"
+    },
+    {
       "id": "P2026",
       "title": "Mensaje en una Botella",
       "type": "pelicula",

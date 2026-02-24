@@ -115,10 +115,10 @@
   </ul>
 </nav>
 
-<!-- Las Más Taquilleras del 2025 (H) -->
+<!-- Estrenos de Cine de 2026 (H) -->
 <section id="main">
-  <h1 class="showcase-heading">LAS MÁS TAQUILLERAS DEL 2025</h1>
-  <ul class="slider-h cs-hidden" id="top2025List" data-skip-auto="true"></ul>
+  <h1 class="showcase-heading">ESTRENOS DE CINE DE 2026</h1>
+  <ul class="slider-h cs-hidden" id="topEstrenos2026List" data-skip-auto="true"></ul>
 </section>
 
 <!-- Las 10 Películas con más espectadoras (2001-2025) (V) -->
@@ -144,6 +144,7 @@
 <section id="latest">
   <h2 class="latest-heading">Películas originales de Netflix</h2>
   <ul class="slider-v cs-hidden">
+    <li class="item-n"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/parque-lezama-2026-poster-280x420.png" loading="lazy" alt="Parque Lezama"></div><div class="latest-b-text"><strong>Parque Lezama</strong><p>19/2/2026</p></div></div></li>
     <li class="item-n"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/27-noches-2025-poster-280x420.png" loading="lazy" alt="27 Noches"></div><div class="latest-b-text"><strong>27 Noches</strong><p>17/10/2025</p></div></div></li>
     <li class="item-n"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/corazon-delator-poster-280x420.png" loading="lazy" alt="Corazón Delator"></div><div class="latest-b-text"><strong>Corazón Delator</strong><p>30/5/2025</p></div></div></li>
     <li class="item-n"><div class="latest-box"><div class="latest-b-img"><img src="images/verticals/la-mujer-de-la-fila-2025-poster-280x420.png" loading="lazy" alt="La Mujer de la Fila"></div><div class="latest-b-text"><strong>La Mujer de la Fila</strong><p>4/9/2025</p></div></div></li>
@@ -307,12 +308,10 @@ Thrillers Políticos (H)
 <script src="js/script.js?v=20260219-1"></script>
 <script>
   (function () {
-    var top2025 = [
-      { id: 'P1115', title: 'Homo Argentum', image: 'images/horizontals-1024x576/homo-argentum-2025-slide-1024x576.png', alt: 'Homo Argentum', className: 'item-a' },
-      { id: 'P1141', title: 'Mazel Tov', image: 'images/horizontals-1024x576/mazel-tov-2025-slide-1024x576.png', alt: 'Mazel Tov', className: 'item-a' },
-      { id: 'P1153', title: 'Belén', image: 'images/horizontals-1024x576/belen-2025-slide-1024x576.png', alt: 'Belén', className: 'item-a' },
-      { id: 'P1143', title: 'El Novio de Mamá', image: 'images/horizontals-1024x576/el-novio-de-mama-2025-slide-1024x576.png', alt: 'El Novio de Mamá', className: 'item-b' },
-      { id: 'P2025', title: 'Una Muerte Silenciosa', image: 'images/horizontals-1024x576/una-muerte-silenciosa-slide-1024x576.png', alt: 'Una Muerte Silenciosa', className: 'item-b' }
+    var topEstrenos2026 = [
+      { id: 'P2032', title: 'La Virgen de la Tosquera', image: 'images/horizontals-1024x576/la-virgen-de-la-tosquera-2026-slide-1024x576.png', alt: 'La Virgen de la Tosquera', className: 'item-a', releaseDate: '15/01/2026' },
+      { id: 'P2034', title: 'Playa de Lobos', image: 'images/horizontals-1024x576/playa-de-lobos-2026-slide-1024x576.png', alt: 'Playa de Lobos', className: 'item-b', releaseDate: '21/03/2026' },
+      { id: 'P2033', title: 'Parque Lezama', image: 'images/horizontals-1024x576/parque-lezama-2026-slide-1024x576.png', alt: 'Parque Lezama', className: 'item-c', releaseDate: '19/2/2026' }
     ];
 
     var actionMovies = [
@@ -338,13 +337,14 @@ Thrillers Políticos (H)
       var html = items.map(function (item) {
         var data = byId[item.id] || {};
         var viewersText = formatViewers(data.viewers);
+        var metaText = item.releaseDate ? ('Estreno: ' + item.releaseDate) : (viewersText + ' espectadores');
         return (
           '<li class="' + item.className + '">' +
             '<a href="show.html?id=' + encodeURIComponent(item.id) + '">' +
               '<div class="showcase-box">' +
                 '<img src="' + item.image + '" loading="lazy" alt="' + item.alt + '"/>' +
               '</div>' +
-              '<div class="latest-b-text"><strong>' + item.title + '</strong><p>' + viewersText + ' espectadores</p></div>' +
+              '<div class="latest-b-text"><strong>' + item.title + '</strong><p>' + metaText + '</p></div>' +
             '</a>' +
           '</li>'
         );
@@ -387,18 +387,18 @@ Thrillers Políticos (H)
         (data.items || []).forEach(function (item) {
           if (item && item.id) byId[item.id] = item;
         });
-        buildList('top2025List', top2025, byId);
+        buildList('topEstrenos2026List', topEstrenos2026, byId);
         buildList('actionMoviesList', actionMovies, byId);
         setTimeout(function () {
-          initOrRefreshSlider('#top2025List');
+          initOrRefreshSlider('#topEstrenos2026List');
           initOrRefreshSlider('#actionMoviesList');
         }, 120);
       })
       .catch(function () {
-        buildList('top2025List', top2025, {});
+        buildList('topEstrenos2026List', topEstrenos2026, {});
         buildList('actionMoviesList', actionMovies, {});
         setTimeout(function () {
-          initOrRefreshSlider('#top2025List');
+          initOrRefreshSlider('#topEstrenos2026List');
           initOrRefreshSlider('#actionMoviesList');
         }, 120);
       });
