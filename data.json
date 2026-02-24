@@ -10717,7 +10717,22 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/herencia-de-amor-poster-280x420.png",
-      "subtitle": "Telenovela"
+      "subtitle": "Telenovela",
+      "horario": "14:15hs, 15:30hs",
+      "capitulos": 272,
+      "fecha_estreno": "27/04/2009",
+      "sinopsis": "Tras la muerte de Augusto Ledesma, la herencia de su fortuna y estancia desata una feroz disputa entre su ambicioso hijo Lautaro Ledesma y el peón Pedro Sosa, quien guarda un vínculo oculto con la familia. El amor entre Pedro y Verónica Cabañas, prometida de Lautaro, enciende un triángulo pasional atravesado por secretos y diferencias de clase.",
+      "rating": "9,3",
+      "productora": "Estevanez Producciones",
+      "tipo_emision": "Tira Diaria",
+      "remakes": [
+        {
+          "title": "Quererlo Todo",
+          "country": "México",
+          "year": "2020",
+          "image": "images/verticals/quererlo-todo-mexico-2020.png"
+        }
+      ]
     },
     {
       "id": "v54",
