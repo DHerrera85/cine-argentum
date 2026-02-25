@@ -5955,11 +5955,27 @@
       "genre": "Telenovela",
       "actors": [
         "Gonzalo Heredia",
-        "Juana Viale"
+        "Juana Viale",
+        "Raúl Taibo"
       ],
       "orientation": "vertical",
       "image": "images/verticals/malparida-poster-280x420.png",
-      "subtitle": "Telenovela"
+      "subtitle": "Telenovela",
+      "horario": "21:30hs",
+      "capitulos": "175",
+      "fecha_estreno": "01/04/2010",
+      "sinopsis": "Renata Medina busca destruir a Lorenzo Uribe por la muerte de su madre. Usando su belleza y astucia, se infiltra en su vida, pero complica sus planes al enamorarse de Lautaro, el hijo de su enemigo",
+      "rating": "22,2",
+      "productora": "Pol-Ka",
+      "remakes": [
+        {
+          "title": "La Traicionera",
+          "country": "Colombia",
+          "year": "2012",
+          "image": "images/verticals/la-traicionera-colombia-2012.png"
+        }
+      ],
+      "tipo_emision": "Tira Diaria"
     },
     {
       "id": "v68",
@@ -6046,11 +6062,39 @@
         "Carina Zampini",
         "Juan Darthés",
         "Calu Rivero",
-        "Segundo Cernadas"
+        "Segundo Cernadas",
+        "Laura Novoa"
       ],
       "orientation": "vertical",
       "image": "images/verticals/dulce-amor-poster-280x420.png",
-      "subtitle": "Telenovela"
+      "subtitle": "Telenovela",
+      "horario": "22:45hs, 23:15hs",
+      "capitulos": 301,
+      "fecha_estreno": "23/01/2012",
+      "sinopsis": "Las hermanas Bandi, dueñas de una famosa fábrica de golosinas, atraviesan una crisis mientras Victoria ignora que su novio conspira contra la empresa. La llegada de Marcos, su nuevo chofer, y de su amigo Julián desatará amores, traiciones y conflictos que cambiarán el destino de la familia.",
+      "rating": "18,8",
+      "productora": "Estevanez Producciones",
+      "remakes": [
+        {
+          "title": "Hasta El Fin del Mundo",
+          "country": "México",
+          "year": "2014",
+          "image": "images/verticals/hasta-el-fin-del-mundo-mexico-2014.png"
+        },
+        {
+          "title": "El Amor Lo Manejo Yo",
+          "country": "Chile",
+          "year": "2014",
+          "image": "images/verticals/el-amor-lo-manejo-yo-chile-2014.png"
+        },
+        {
+          "title": "Dulce Amor",
+          "country": "Colombia",
+          "year": "2015",
+          "image": "images/verticals/dulce-amor-colombia-2015.png"
+        }
+      ],
+      "tipo_emision": "Tira Diaria"
     },
     {
       "id": "v72",
@@ -9815,7 +9859,21 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/el-hombre-de-tu-vida-poster-280x420.png",
-      "subtitle": "Comedia"
+      "subtitle": "Comedia",
+      "remakes": [
+        {
+          "title": "El Hombre de tu Vida",
+          "country": "Chile",
+          "year": "2013",
+          "image": "images/verticals/el-hombre-de-tu-vida-chile-2013.png"
+        },
+        {
+          "title": "El Hombre de tu Vida",
+          "country": "España",
+          "year": "2016",
+          "image": "images/verticals/el-hombre-de-tu-vida-españa-2016.png"
+        }
+      ]
     },
     {
       "id": "V265",
@@ -10684,7 +10742,7 @@
       "title": "Contra las Cuerdas",
       "year": "2010",
       "channel": "TV Pública",
-      "genre": "Thriller",
+      "genre": "Drama",
       "actors": [
         "Rodrigo de la Serna",
         "Soledad Fandiño",
@@ -10692,7 +10750,22 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/contra-las-cuerdas-poster-280x420.png",
-      "subtitle": "Drama"
+      "subtitle": "Drama",
+      "horario": "22:30hs",
+      "capitulos": 120,
+      "fecha_estreno": "30/11/2010",
+      "sinopsis": "Ezequiel, un boxeador amateur, huye a Buenos Aires tras negarse a perder una pelea arreglada. En la ciudad buscará una nueva oportunidad y el reencuentro con su hermano.",
+      "rating": "1,9",
+      "productora": "ON TV",
+      "remakes": [
+        {
+          "title": "Contra las Cuerdas",
+          "country": "Colombia",
+          "year": "2014",
+          "image": "images/verticals/contra-las-cuerdas-colombia-2014.png"
+        }
+      ],
+      "tipo_emision": "Tira Diaria"
     },
     {
       "id": "v49",

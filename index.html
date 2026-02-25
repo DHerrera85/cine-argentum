@@ -305,9 +305,10 @@ Thrillers Políticos (H)
 <!-- JS: jQuery → LightSlider → init -->
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <script src="js/lightslider.js"></script>
-<script src="js/script.js?v=20260219-1"></script>
+<script src="js/script.js?v=20260225-3"></script>
 <script>
   (function () {
+    var indexDataVersion = '20260225-3';
     var topEstrenos2026 = [
       { id: 'P2032', title: 'La Virgen de la Tosquera', image: 'images/horizontals-1024x576/la-virgen-de-la-tosquera-2026-slide-1024x576.png', alt: 'La Virgen de la Tosquera', className: 'item-a', releaseDate: '15/01/2026' },
       { id: 'P2034', title: 'Playa de Lobos', image: 'images/horizontals-1024x576/playa-de-lobos-2026-slide-1024x576.png', alt: 'Playa de Lobos', className: 'item-b', releaseDate: '21/03/2026' },
@@ -395,7 +396,7 @@ Thrillers Políticos (H)
       });
     }
 
-    fetch('data.json')
+    fetch('data.json?v=' + indexDataVersion, { cache: 'no-store' })
       .then(function (response) { return response.json(); })
       .then(function (data) {
         var byId = {};

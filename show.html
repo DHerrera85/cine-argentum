@@ -90,6 +90,7 @@
   <script src="js/lightslider.js"></script>
   <script>
     (function () {
+      var showDataVersion = '20260225-4';
       function getIdFromURL() {
         var p = new URLSearchParams(window.location.search);
         var id = p.get('id');
@@ -240,7 +241,7 @@
       var id = getIdFromURL();
       if (!id) { renderNotFound(); return; }
 
-      fetch('data.json').then(function (r) {
+      fetch('data.json?v=' + showDataVersion, { cache: 'no-store' }).then(function (r) {
         if (!r.ok) throw new Error('no data');
         return r.json();
       }).then(function (data) {

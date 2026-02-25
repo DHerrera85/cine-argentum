@@ -1,6 +1,6 @@
 /* js/script.js */
 (function () {
-  var scriptDataVersion = '20260219-1';
+  var scriptDataVersion = '20260225-3';
   // Esperar a que el DOM esté listo
   document.addEventListener('DOMContentLoaded', function () {
     // Verificaciones básicas
