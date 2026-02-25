@@ -7071,7 +7071,14 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/ensename-a-vivir-poster-280x420.png",
-      "subtitle": "Juvenil"
+      "subtitle": "Juvenil",
+      "horario": "19hs, 18hs",
+      "capitulos": 136,
+      "fecha_estreno": "12/05/2009",
+      "sinopsis": "Asaí es una joven criada por monos en la selva que regresa a la civilización, enfrentando intrigas familiares y el amor de un profesor. ",
+      "rating": "9",
+      "productora": "Pol-Ka",
+      "tipo_emision": "Tira Diaria"
     },
     {
       "id": "V125",
@@ -9157,14 +9164,21 @@
       "title": "Impostores",
       "year": "2009",
       "channel": "FX",
-      "genre": "Policial",
+      "genre": "Thriller",
       "actors": [
         "Leonardo Sbaraglia",
         "Leticia Brédice"
       ],
       "orientation": "vertical",
       "image": "images/verticals/impostores-poster-280x420.png",
-      "subtitle": "Policial"
+      "subtitle": "Thriller",
+      "horario": "22hs",
+      "capitulos": 13,
+      "fecha_estreno": "17/11/2009",
+      "sinopsis": "El Pardo es un veterano estafador que, desde la cárcel, recluta a Vicky para liderar una banda, obligándola a convencer a Álex de volver al crimen",
+      "rating": "-",
+      "productora": "Torneos y Competencias",
+      "tipo_emision": "Semanal"
     },
     {
       "id": "V239",
@@ -9478,7 +9492,14 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/tratame-bien-poster-280x420.png",
-      "subtitle": "Drama"
+      "subtitle": "Drama",
+      "horario": "23hs",
+      "capitulos": 37,
+      "fecha_estreno": "15/04/2009",
+      "sinopsis": "Tras 22 años juntos, José y Sofía enfrentan una crisis matrimonial mientras él lidia con la quiebra de la juguetería familiar y ella cuestiona su propia vida profesional. Deciden iniciar terapia de pareja para intentar salvar su relación y redefinir su futuro.",
+      "rating": "16",
+      "productora": "Pol-Ka",
+      "tipo_emision": "Semanal"
     },
     {
       "id": "V253",
@@ -9744,11 +9765,18 @@
       "actors": [
         "Jorge Marrale",
         "Pablo Rago",
-        "Nicolás Pauls"
+        "Nicolás Pauls",
+        "Fabián Gianola"
       ],
       "orientation": "vertical",
       "image": "images/verticals/acompaniantes-poster-280x420.png",
-      "subtitle": "Comedia"
+      "subtitle": "Comedia",
+      "horario": "23hs",
+      "capitulos": 4,
+      "fecha_estreno": "09/03/2009",
+      "sinopsis": "Cuatro hombres, incluyendo a un profesor de filosofía y un ex futbolista, se convierten en acompañantes de mujeres solitarias, terminando envueltos en situaciones ilegales y enredos cómicos al buscar solucionar sus problemas",
+      "rating": "-",
+      "productora": "Endemol"
     },
     {
       "id": "P1402",
