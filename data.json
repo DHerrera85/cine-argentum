@@ -5851,7 +5851,7 @@
       "title": "Pequeña Victoria",
       "year": "2019",
       "channel": "Telefe",
-      "genre": "Comedia Dramática",
+      "genre": "Drama",
       "actors": [
         "Julieta Díaz",
         "Natalie Pérez",
@@ -5862,7 +5862,7 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/pequena-victoria-poster-280x420.png",
-      "subtitle": "Comedia"
+      "subtitle": "Drama"
     },
     {
       "id": "v29",
@@ -5905,14 +5905,21 @@
       "title": "Ciega a Citas",
       "year": "2009",
       "channel": "TV Pública",
-      "genre": "Comedia Romántica",
+      "genre": "Comedia",
       "actors": [
         "Muriel Santa Ana",
         "Rafael Ferro"
       ],
       "orientation": "vertical",
       "image": "images/verticals/ciega-a-citas-poster-280x420.png",
-      "subtitle": "Comedia romántica"
+      "subtitle": "Comedia",
+      "horario": "22:30HS",
+      "capitulos": "140",
+      "fecha_estreno": "20/10/2009",
+      "sinopsis": "Lucía pasó los 30 años, está soltera, tiene un trabajo de periodista que no le gusta, sobrepeso y una hermana menor, Irina, que no solo es perfecta sino que está a punto de casarse.",
+      "rating": "-",
+      "productora": "Dori Media/Rosstoc",
+      "tipo_emision": "Tira Diaria"
     },
     {
       "id": "v67",
@@ -7702,7 +7709,14 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/nini-poster-280x420.png",
-      "subtitle": "Juvenil"
+      "subtitle": "Juvenil",
+      "horario": "18hs; 19hs",
+      "capitulos": "137",
+      "fecha_estreno": "01/09/2009",
+      "sinopsis": " Nina Gómez, una joven inocente y espontánea que vive en una embajada. Su vida cambia con la llegada de Tomás Parker, un embajador ordenado, y sus cuatro hijos adoptivos. Para proteger a los niños y mantener su hogar, Niní se disfraza de hombre y se convierte en el chofer, Nicolás Zampanó",
+      "rating": "16",
+      "productora": "Endemol/Kaberplay",
+      "tipo_emision": "Tira Diaria"
     },
     {
       "id": "V152",
@@ -9513,7 +9527,14 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/mitos-poster-280x420.png",
-      "subtitle": "Drama"
+      "subtitle": "Drama",
+      "horario": "23hs",
+      "capitulos": 13,
+      "fecha_estreno": "03/08/2009",
+      "sinopsis": "\"Martín Montesalvo, un exitoso operador de bolsa, ve derrumbarse su vida al descubrir la infidelidad de su esposa Paula. Sumido en la crisis, se obsesiona con fantasías del pasado para intentar recuperar el sentido de su existencia.\"",
+      "rating": "-",
+      "productora": "Rosstoc",
+      "tipo_emision": "Semanal"
     },
     {
       "id": "V254",
