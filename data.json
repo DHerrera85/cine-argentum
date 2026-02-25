@@ -5913,6 +5913,32 @@
       "orientation": "vertical",
       "image": "images/verticals/ciega-a-citas-poster-280x420.png",
       "subtitle": "Comedia",
+      "remakes": [
+        {
+          "title": "Soltera Otra Vez",
+          "country": "Chile",
+          "year": "2012",
+          "image": "images/verticals/soltera-otra-vez-chile-2012.png"
+        },
+        {
+          "title": "Singielka",
+          "country": "Polonia",
+          "year": "2015",
+          "image": "images/verticals/singielka-polonia-2015.png"
+        },
+        {
+          "title": "Ciega a Citas",
+          "country": "España",
+          "year": "2014",
+          "image": "images/verticals/ciega-a-citas-españa-2014.png"
+        },
+        {
+          "title": "Cita a Ciegas",
+          "country": "México",
+          "year": "2019",
+          "image": "images/verticals/cita-a-ciegas-mexico-2019.png"
+        }
+      ],
       "horario": "22:30HS",
       "capitulos": "140",
       "fecha_estreno": "20/10/2009",
@@ -7365,7 +7391,14 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/jakeblake-poster-280x420.png",
-      "subtitle": "Juvenil"
+      "subtitle": "Juvenil",
+      "horario": "22hs",
+      "capitulos": 52,
+      "fecha_estreno": "07/12/2009",
+      "sinopsis": "Dos gemelos idénticos separados al nacer descubren que llevan vidas opuestas: Jake es un estudiante responsable y Blake, una estrella pop egocéntrica. Al reencontrarse, deciden intercambiar lugares, desatando enredos, romances y divertidas complicaciones.",
+      "rating": "-",
+      "productora": "Cris Morena Group / RGB Entertainment",
+      "tipo_emision": "Tira Diaria"
     },
     {
       "id": "V141",
@@ -7754,7 +7787,14 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/consentidos-poster-280x420.png",
-      "subtitle": "Juvenil"
+      "subtitle": "Juvenil",
+      "horario": "18hs",
+      "capitulos": "129",
+      "fecha_estreno": "01/11/2009",
+      "sinopsis": "Luna Guzmán ingresa a trabajar en el exclusivo internado Mastery School para buscar a su hermana perdida, sin saber que es Miranda, la hija consentida de la directora. Entre secretos familiares, romances juveniles y nuevas revelaciones, la verdad sobre sus identidades comenzará a salir a la luz.",
+      "rating": "5,3",
+      "productora": "Ideas del Sur, Televisa",
+      "tipo_emision": "Tira Diaria"
     },
     {
       "id": "V154",
@@ -10285,7 +10325,7 @@
       "title": "Botineras",
       "year": "2009",
       "channel": "Telefe",
-      "genre": "Drama",
+      "genre": "Thriller",
       "actors": [
         "Romina Gaetani",
         "Nicolás Cabré",
@@ -10296,7 +10336,13 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/botineras-poster-280x420.png",
-      "subtitle": "Drama"
+      "subtitle": "Thriller",
+      "horario": "22:30hs",
+      "capitulos": 142,
+      "fecha_estreno": "24/11/2009",
+      "sinopsis": "Cristian \"Chiqui\" Flores, un famoso futbolista, regresa de España para casarse con Marga Molinari, pero se ve envuelto en el misterioso asesinato de su rival deportivo. Laura Posse, una agente policial, se infiltra en este círculo de lujo, moda y poder para investigar a Flores, su representante Tato Marín y el abogado Nino Paredes",
+      "rating": "16,6",
+      "productora": "Underground Contenidos, Endemol"
     },
     {
       "id": "v35",

@@ -314,6 +314,21 @@ Thrillers Políticos (H)
       { id: 'P2033', title: 'Parque Lezama', image: 'images/horizontals-1024x576/parque-lezama-2026-slide-1024x576.png', alt: 'Parque Lezama', className: 'item-c', releaseDate: '19/2/2026' }
     ];
 
+    function parseReleaseDate(value) {
+      if (!value) return 0;
+      var parts = String(value).split('/');
+      if (parts.length !== 3) return 0;
+      var day = Number(parts[0]);
+      var month = Number(parts[1]);
+      var year = Number(parts[2]);
+      if (!day || !month || !year) return 0;
+      return new Date(year, month - 1, day).getTime();
+    }
+
+    var topEstrenos2026Sorted = topEstrenos2026.slice().sort(function (a, b) {
+      return parseReleaseDate(b.releaseDate) - parseReleaseDate(a.releaseDate);
+    });
+
     var actionMovies = [
       { id: 'P1128', title: 'El Robo del Siglo', image: 'images/horizontals-1024x576/el-robo-del-siglo-2020-slide-1024x576.png', alt: 'El Robo del Siglo', className: 'item-a' },
       { id: 'P1131', title: 'Peligrosa Obsesión', image: 'images/horizontals-1024x576/peligrosa-obsesion-2004-slide-1024x576.png', alt: 'Peligrosa Obsesión', className: 'item-b' },
@@ -387,7 +402,7 @@ Thrillers Políticos (H)
         (data.items || []).forEach(function (item) {
           if (item && item.id) byId[item.id] = item;
         });
-        buildList('topEstrenos2026List', topEstrenos2026, byId);
+        buildList('topEstrenos2026List', topEstrenos2026Sorted, byId);
         buildList('actionMoviesList', actionMovies, byId);
         setTimeout(function () {
           initOrRefreshSlider('#topEstrenos2026List');
@@ -395,7 +410,7 @@ Thrillers Políticos (H)
         }, 120);
       })
       .catch(function () {
-        buildList('topEstrenos2026List', topEstrenos2026, {});
+        buildList('topEstrenos2026List', topEstrenos2026Sorted, {});
         buildList('actionMoviesList', actionMovies, {});
         setTimeout(function () {
           initOrRefreshSlider('#topEstrenos2026List');
