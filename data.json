@@ -5505,6 +5505,32 @@
       "subtitle": "Sitcom"
     },
     {
+      "id": "V293",
+      "title": "La Dueña",
+      "year": "2012",
+      "channel": "Telefe",
+      "genre": "Thriller",
+      "actors": [
+        "Mirtha Legrand",
+        "Benjamín Vicuña",
+        "Florencia Bertotti",
+        "Peter Lanzani",
+        "Raúl Taibo",
+        "Claudia Lapacó",
+        "Fabián Vena"
+      ],
+      "orientation": "vertical",
+      "image": "images/verticals/la-duena-poster-280x420.png",
+      "subtitle": "Thriller",
+      "horario": "21:45hs",
+      "capitulos": 32,
+      "fecha_estreno": "18/04/2012",
+      "sinopsis": "Sofía Ponte, una exitosa y fría empresaria de cosméticos,  desconfía de sus herederos y trama un complot para evaluar sus verdaderas intenciones, mientras su nieta Amparo se enamora de Félix, quien investiga en secreto un accidente aéreo familiar",
+      "rating": "18",
+      "productora": "Endemol",
+      "tipo_emision": "Semanal"
+    },
+    {
       "id": "h7",
       "title": "Graduados",
       "year": "2012",
@@ -5518,7 +5544,33 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/graduados-poster-280x420.png",
-      "subtitle": "Comedia"
+      "subtitle": "Comedia",
+      "remakes": [
+        {
+          "title": "Graduados",
+          "country": "Chile",
+          "year": "2012",
+          "image": "images/verticals/graduados-chile-2012.png"
+        },
+        {
+          "title": "Los Graduados",
+          "country": "Colombia",
+          "year": "2013",
+          "image": "images/verticals/los-graduados-colombia-2013.png"
+        },
+        {
+          "title": "Oi symmathites",
+          "country": "Grecia",
+          "year": "2014",
+          "image": "images/verticals/Oi-symmathites-grecia-2014.png"
+        },
+        {
+          "title": "Istine i laži",
+          "country": "Serbia",
+          "year": "2017",
+          "image": "images/verticals/Istine-i-laži-serbia-2017.png"
+        }
+      ]
     },
     {
       "id": "h8",
@@ -5782,7 +5834,15 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/somos-familia-poster-280x420.png",
-      "subtitle": "Drama"
+      "subtitle": "Drama",
+      "remakes": [
+        {
+          "title": "Somos Familia",
+          "country": "México",
+          "year": "2026",
+          "image": "images/verticals/somos-familia-mexico-2026.png"
+        }
+      ]
     },
     {
       "id": "v25",
@@ -9860,6 +9920,12 @@
       "orientation": "vertical",
       "image": "images/verticals/el-hombre-de-tu-vida-poster-280x420.png",
       "subtitle": "Comedia",
+      "horario": "22hs",
+      "capitulos": 24,
+      "fecha_estreno": "17/07/2011",
+      "sinopsis": "Hugo, un hombre trabajador y desencantado, comienza a trabajar en la agencia de citas de su prima haciéndose pasar por el “hombre ideal”. En el proceso, redescubre sus emociones y enfrenta su pasado para volver a creer en el amor.",
+      "rating": "20,6",
+      "productora": "100 Bares",
       "remakes": [
         {
           "title": "El Hombre de tu Vida",
@@ -10735,7 +10801,15 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/sos-mi-hombre-poster-280x420.png",
-      "subtitle": "Telenovela"
+      "subtitle": "Telenovela",
+      "remakes": [
+        {
+          "title": "Ringo, La Pelea de su Vida",
+          "country": "México",
+          "year": "2019",
+          "image": "images/verticals/ringo-la-pelea-de-su-vida-mexico-2019.png"
+        }
+      ]
     },
     {
       "id": "h11",

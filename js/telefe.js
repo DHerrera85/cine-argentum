@@ -1,5 +1,5 @@
 // telefe.js - Renderiza las series de Telefe con filtros avanzados
-const telefeDataVersion = '20260219-7';
+const telefeDataVersion = '20260225-8';
 
 // Cargar data.json y filtrar solo series de Telefe
 document.addEventListener('DOMContentLoaded', async function() {
@@ -54,6 +54,7 @@ document.addEventListener('DOMContentLoaded', async function() {
     { id: 'v71', year: '2012', title: 'Dulce Amor', genre: 'Telenovela' },
     { id: 'h7', year: '2012', title: 'Graduados', genre: 'Comedia' },
     { id: 'V290', year: '2012', title: 'Mi Amor Mi Amor', genre: 'Comedia' },
+    { id: 'V293', year: '2012', title: 'La Dueña', genre: 'Thriller' },
     { id: 'v8', year: '2013', title: 'Los Vecinos en Guerra', genre: 'Comedia' },
     { id: 'V139', year: '2013', title: 'Aliados', genre: 'Juvenil' },
     { id: 'v61', year: '2013', title: 'Taxxi Amores Cruzados', genre: 'Telenovela' },
