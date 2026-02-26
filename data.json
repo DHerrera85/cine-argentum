@@ -4727,7 +4727,7 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/educando-a-nina-poster-280x420.png",
-      "subtitle": "Comedia romántica"
+      "subtitle": "Comedia"
     },
     {
       "id": "v2",
@@ -4935,7 +4935,69 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/senores-papis-poster-280x420.png",
-      "subtitle": "Comedia"
+      "subtitle": "Comedia",
+      "remakes": [
+        {
+          "title": "Señores Papis",
+          "country": "Chile",
+          "year": "2016",
+          "image": "images/verticals/señores-papis-chile-2016.png"
+        },
+        {
+          "title": "¡Muy Padres!",
+          "country": "México",
+          "year": "2017",
+          "image": "images/verticals/muy-padres-mexico-2017.png"
+        },
+        {
+          "title": "Oteckovia",
+          "country": "Eslovaquia",
+          "year": "2018",
+          "image": "images/verticals/oteckovia-eslovaquia-2018.png"
+        },
+        {
+          "title": "Señores Papis",
+          "country": "Perú",
+          "year": "2019",
+          "image": "images/verticals/señores-papis-peru-2019.png"
+        },
+        {
+          "title": "Mintaapák",
+          "country": "Hungría",
+          "year": "2019",
+          "image": "images/verticals/mintaapák-hungria-2019.png"
+        },
+        {
+          "title": "Tate",
+          "country": "Serbia",
+          "year": "2020",
+          "image": "images/verticals/tate-serbia-2020.png"
+        },
+        {
+          "title": "Татковци",
+          "country": "Bulgaria",
+          "year": "2020",
+          "image": "images/verticals/tатковци-bulgaria-2020.png"
+        },
+        {
+          "title": "Tatuśkowie",
+          "country": "Polonia",
+          "year": "2020",
+          "image": "images/verticals/tatuśkowie-polonia-2020.png"
+        },
+        {
+          "title": "Queridos Papás",
+          "country": "Portugal",
+          "year": "2023",
+          "image": "images/verticals/queridos-papás-portugal-2023.png"
+        },
+        {
+          "title": "Bravo, tată!",
+          "country": "Rumania",
+          "year": "2023",
+          "image": "images/verticals/Bravo, tată!-rumania-2023.png"
+        }
+      ]
     },
     {
       "id": "v6",
@@ -5343,7 +5405,7 @@
       "title": "Entre Caníbales",
       "year": "2015",
       "channel": "Telefe",
-      "genre": "Policial",
+      "genre": "Thriller",
       "actors": [
         "Natalia Oreiro",
         "Benjamín Vicuña",
@@ -5351,7 +5413,7 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/entre-canibales-poster-280x420.png",
-      "subtitle": "Policial"
+      "subtitle": "Thriller"
     },
     {
       "id": "h1",
@@ -5661,7 +5723,7 @@
       "title": "Campanas en la Noche",
       "year": "2019",
       "channel": "Telefe",
-      "genre": "Drama",
+      "genre": "Thriller",
       "actors": [
         "Esteban Lamothe",
         "Federico Amador",
@@ -5669,7 +5731,7 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/campanas-en-la-noche-poster-280x420.png",
-      "subtitle": "Drama"
+      "subtitle": "Thriller"
     },
     {
       "id": "v15",
@@ -5826,7 +5888,7 @@
       "title": "Somos Familia",
       "year": "2014",
       "channel": "Telefe",
-      "genre": "Drama",
+      "genre": "Telenovela",
       "actors": [
         "Gustavo Bermúdez",
         "Ana Maria Orozco",
@@ -5834,7 +5896,7 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/somos-familia-poster-280x420.png",
-      "subtitle": "Drama",
+      "subtitle": "Telenovela",
       "remakes": [
         {
           "title": "Somos Familia",
@@ -7471,7 +7533,7 @@
       "title": "Aliados",
       "year": "2013",
       "channel": "Telefe",
-      "genre": "Drama",
+      "genre": "Juvenil",
       "actors": [
         "Peter Lanzani",
         "Oriana Sabatini",
@@ -7481,7 +7543,7 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/aliados-poster-280x420.png",
-      "subtitle": "Drama"
+      "subtitle": "Juvenil"
     },
     {
       "id": "V140",
@@ -10417,7 +10479,7 @@
       "title": "Noche & Día: Junto a Vos",
       "year": "2014",
       "channel": "Canal 13",
-      "genre": "Policial",
+      "genre": "Thriller",
       "actors": [
         "Facundo Arana",
         "Romina Gaetani",
@@ -10426,7 +10488,7 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/noche-y-dia-junto-a-vos-poster-280x420.png",
-      "subtitle": "Policial"
+      "subtitle": "Thriller"
     },
     {
       "id": "v33",
@@ -11027,7 +11089,7 @@
       "title": "Un Año para Recordar",
       "year": "2011",
       "channel": "Telefe",
-      "genre": "Comedia Dramática",
+      "genre": "Comedia",
       "actors": [
         "Carla Peterson",
         "Gastón Pauls",
@@ -11036,7 +11098,7 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/un-ano-para-recordar-poster-280x420.png",
-      "subtitle": "Drama"
+      "subtitle": "Comedia"
     },
     {
       "id": "v58",
