@@ -1,13 +1,27 @@
 // js/canal-9.js: Lógica para filtrar y mostrar series de Canal 9, basado en canal-13.js
-const canal9DataVersion = '20260219-1';
+const canal9DataVersion = '20260226-1';
+
+function isCanal9Like(value) {
+  const text = String(value || '').toLowerCase();
+  if (!text) return false;
+  return text.includes('canal 9') || text.includes('azul tv');
+}
+
+function toArray(value) {
+  if (Array.isArray(value)) return value;
+  if (value === undefined || value === null) return [];
+  return [value];
+}
 
 fetch('data.json?v=' + canal9DataVersion, { cache: 'no-store' })
   .then(response => response.json())
   .then(data => {
     const items = data.items.filter(item => {
-      const channel = (item.channel || '').toLowerCase();
-      if (!channel) return false;
-      return channel.includes('canal 9') || channel.includes('azul tv');
+      const allChannels = []
+        .concat(toArray(item.channel))
+        .concat(toArray(item.channels))
+        .concat(toArray(item.air_channels));
+      return allChannels.some(isCanal9Like);
     });
     renderSeries(items);
     setupFilters(items);

@@ -1,4 +1,33 @@
 {
+  "ficciones_filters": {
+    "air_channels": [
+      "América",
+      "Canal 13",
+      "Canal 7/TV Pública",
+      "Canal 9/Azul TV",
+      "Telefe",
+      "NET TV"
+    ],
+    "cable_channels": [
+      "Cosmopolitan TV",
+      "FOX",
+      "FX",
+      "Space",
+      "TBS",
+      "Disney Channel",
+      "Disney XD",
+      "Nickelodeon",
+      "TNT",
+      "HBO"
+    ],
+    "platforms": [
+      "Netflix",
+      "Flow",
+      "Disney+",
+      "HBO Max",
+      "Prime Video"
+    ]
+  },
   "items": [
     {
       "id": "V285",
@@ -1214,7 +1243,7 @@
         "Diego Ramos"
       ],
       "synopsis": "Narra la historia de una pareja de consejeros matrimoniales que fundan el CAMAS (Centro de Ayuda a Matrimonios Antes de Sucumbir), enfrentando crisis personales y profesionales mientras intentan salvar los matrimonios de sus clientes",
-      "channel": "TV Pública",
+      "channel": "Canal 7/TV Pública",
       "image": "images/verticals/srysracamas-poster-280x420.png",
       "orientation": "vertical",
       "type": "Sitcom",
@@ -1245,7 +1274,7 @@
         "Darío Grandinetti"
       ],
       "synopsis": "En cada episodio, el psicólogo Guillermo Montes atiende un paciente distinto. Los viernes cambia de rol y supervisa sus casos con Lucía Aranda, su mentora y analista. Así la historia sigue la labor cotidiana del psicólogo a lo largo de su semana, mostrando en cada uno de sus episodios una sesión de terapia con sus pacientes.",
-      "channel": "TV Pública",
+      "channel": "Canal 7/TV Pública",
       "image": "images/verticals/en-terapia-poster-280x420.png",
       "orientation": "vertical",
       "type": "Drama",
@@ -5593,6 +5622,69 @@
       "tipo_emision": "Semanal"
     },
     {
+      "id": "V294",
+      "title": "O11CE: Nueva generación",
+      "year": "2026",
+      "channel": "Disney+",
+      "platform": "Disney+",
+      "genre": "Juvenil",
+      "actors": [
+        "Mariano González-Guerineau",
+        "David Penagos",
+        "Luan Brum",
+        "Emiliano González",
+        "Massimo Pomponio",
+        "Fausti Bo"
+      ],
+      "orientation": "vertical",
+      "image": "images/verticals/once-nueva-generacion-poster-280x420.png",
+      "subtitle": "Juvenil",
+      "capitulos": 20,
+      "fecha_estreno": "18/03/2026",
+      "sinopsis": "Tras triunfar en Europa, Gabo, Dedé y Ricky regresan al IAD y descubren que los Halcones Dorados están al borde del descenso. Decididos a recuperar la gloria y el orgullo del equipo, inician una nueva etapa marcada por la pasión y el fútbol.",
+      "productora": "Pegsa Films, Disney+",
+      "tipo_emision": "Semanal"
+    },
+    {
+      "id": "V295",
+      "title": "Pequeñas Victorias, Perdidxs en la Tierra",
+      "year": "2021",
+      "channel": "Prime Video",
+      "air_channels": [
+        "Telefe"
+      ],
+      "platforms": [
+        "Prime Video"
+      ],
+      "genre": "Drama",
+      "actors": [
+        "Julieta Díaz",
+        "Natalie Pérez",
+        "Facundo Arana",
+        "Mariana Genesio"
+      ],
+      "orientation": "vertical",
+      "image": "images/verticals/pequenas-victorias-poster-280x420.png",
+      "subtitle": "Drama"
+    },
+    {
+      "id": "V296",
+      "title": "Millennials, Generación Garca",
+      "year": "2018",
+      "channel": "Netflix",
+      "air_channels": [
+        "NET TV"
+      ],
+      "platforms": [
+        "Netflix"
+      ],
+      "genre": "Comedia",
+      "actors": [],
+      "orientation": "vertical",
+      "image": "images/verticals/millennials-poster-280x420.png",
+      "subtitle": "Comedia"
+    },
+    {
       "id": "h7",
       "title": "Graduados",
       "year": "2012",
@@ -5766,7 +5858,7 @@
       "id": "v17",
       "title": "Cuéntame cómo Pasó",
       "year": "2017",
-      "channel": "TV Pública",
+      "channel": "Canal 7/TV Pública",
       "genre": "Drama",
       "actors": [
         "Nicolás Cabré",
@@ -5973,6 +6065,9 @@
       "title": "Pequeña Victoria",
       "year": "2019",
       "channel": "Telefe",
+      "air_channels": [
+        "Telefe"
+      ],
       "genre": "Drama",
       "actors": [
         "Julieta Díaz",
@@ -6026,7 +6121,7 @@
       "id": "v31",
       "title": "Ciega a Citas",
       "year": "2009",
-      "channel": "TV Pública",
+      "channel": "Canal 7/TV Pública",
       "genre": "Comedia",
       "actors": [
         "Muriel Santa Ana",
@@ -6580,7 +6675,7 @@
       "id": "v89",
       "title": "Esa Mujer",
       "year": "2013",
-      "channel": "TV Pública",
+      "channel": "Canal 7/TV Pública",
       "genre": "Telenovela",
       "actors": [
         "Andrea del Boca",
@@ -8210,6 +8305,12 @@
       "title": "Super Torpe",
       "year": "2011",
       "channel": "Telefe",
+      "air_channels": [
+        "Telefe"
+      ],
+      "cable_channels": [
+        "Disney Channel"
+      ],
       "genre": "Juvenil",
       "actors": [
         "Candela Vetrano",
@@ -8237,7 +8338,7 @@
       "id": "V166",
       "title": "Cata y el Misterio de la Esfera",
       "year": "2013",
-      "channel": "TV Pública",
+      "channel": "Canal 7/TV Pública",
       "genre": "Juvenil",
       "actors": [
         "Mica Riera",
@@ -8268,6 +8369,12 @@
       "title": "Viudas Negras: P*tas y Chorras",
       "year": "2025",
       "channel": "Flow",
+      "cable_channels": [
+        "TNT"
+      ],
+      "platforms": [
+        "Flow"
+      ],
       "genre": "Comedia",
       "actors": [
         "Pilar Gamboa",
@@ -8429,6 +8536,12 @@
       "title": "El Mundo de Mateo",
       "year": "2019",
       "channel": "Flow",
+      "air_channels": [
+        "Canal 7/TV Pública"
+      ],
+      "platforms": [
+        "Flow"
+      ],
       "genre": "Policial",
       "actors": [
         "Renato Quattordio",
@@ -8443,10 +8556,12 @@
       "id": "V180",
       "title": "El Marginal",
       "year": "2016",
-      "channel": "Canal 7",
+      "channel": "Canal 7/TV Pública",
+      "air_channels": [
+        "Canal 7/TV Pública"
+      ],
       "channels": [
-        "Canal 7",
-        "TV Pública"
+        "Canal 7/TV Pública"
       ],
       "platforms": [
         "Netflix"
@@ -8954,6 +9069,12 @@
       "title": "Cris Miró (Ella)",
       "year": "2024",
       "channel": "Flow",
+      "cable_channels": [
+        "TNT"
+      ],
+      "platforms": [
+        "Flow"
+      ],
       "genre": "Miniseries",
       "actors": [
         "Mina Serrano",
@@ -9003,6 +9124,12 @@
       "title": "Los Internacionales",
       "year": "2020",
       "channel": "Flow",
+      "air_channels": [
+        "Telefe"
+      ],
+      "platforms": [
+        "Flow"
+      ],
       "genre": "Miniseries",
       "actors": [
         "Cecilia Roth",
@@ -9018,6 +9145,12 @@
       "title": "El Hincha",
       "year": "2022",
       "channel": "Flow",
+      "air_channels": [
+        "Canal 9/Azul TV"
+      ],
+      "platforms": [
+        "Flow"
+      ],
       "genre": "Miniseries",
       "actors": [
         "Victorio D'Alessandro",
@@ -9050,6 +9183,12 @@
       "title": "La Mente del Poder",
       "year": "2024",
       "channel": "Flow",
+      "cable_channels": [
+        "TNT"
+      ],
+      "platforms": [
+        "Flow"
+      ],
       "genre": "Thriller",
       "actors": [
         "Mike Amigorena",
@@ -9065,6 +9204,12 @@
       "title": "AMIA: El Fin de la Verdad",
       "year": "2024",
       "channel": "Flow",
+      "air_channels": [
+        "Telefe"
+      ],
+      "platforms": [
+        "Flow"
+      ],
       "genre": "Miniseries",
       "actors": [
         "Michael Aloni",
@@ -9079,6 +9224,15 @@
       "title": "Atrapa a un Ladrón",
       "year": "2019",
       "channel": "Flow",
+      "air_channels": [
+        "Telefe"
+      ],
+      "channels": [
+        "Telefe"
+      ],
+      "platforms": [
+        "Flow"
+      ],
       "genre": "Comedia",
       "actors": [
         "Pablo Echarri",
@@ -9093,6 +9247,15 @@
       "title": "Inconvivencia",
       "year": "2019",
       "channel": "Flow",
+      "air_channels": [
+        "Telefe"
+      ],
+      "channels": [
+        "Telefe"
+      ],
+      "platforms": [
+        "Flow"
+      ],
       "genre": "Drama",
       "actors": [
         "Tomás Fonzi",
@@ -9107,6 +9270,19 @@
       "title": "El Tigre Verón",
       "year": "2019",
       "channel": "Flow",
+      "air_channels": [
+        "Canal 13"
+      ],
+      "cable_channels": [
+        "TNT"
+      ],
+      "channels": [
+        "Canal 13",
+        "TNT"
+      ],
+      "platforms": [
+        "Flow"
+      ],
       "genre": "Thriller",
       "actors": [
         "Julio Chávez",
@@ -9138,6 +9314,15 @@
       "title": "Otros Pecados",
       "year": "2019",
       "channel": "Flow",
+      "air_channels": [
+        "Canal 13"
+      ],
+      "cable_channels": [
+        "TNT"
+      ],
+      "platforms": [
+        "Flow"
+      ],
       "genre": "Thriller",
       "actors": [
         "Elenco Rotativo"
@@ -9151,6 +9336,12 @@
       "title": "Morir de Amor",
       "year": "2018",
       "channel": "Flow",
+      "air_channels": [
+        "Telefe"
+      ],
+      "platforms": [
+        "Flow"
+      ],
       "genre": "Thriller",
       "actors": [
         "Griselda Siciliani",
@@ -9165,6 +9356,15 @@
       "title": "El Lobista",
       "year": "2018",
       "channel": "Flow",
+      "air_channels": [
+        "Canal 13"
+      ],
+      "cable_channels": [
+        "TNT"
+      ],
+      "platforms": [
+        "Flow"
+      ],
       "genre": "Thriller",
       "actors": [
         "Rodrigo de la Serna",
@@ -9181,6 +9381,12 @@
       "title": "Rizhoma Hotel",
       "year": "2018",
       "channel": "Flow",
+      "air_channels": [
+        "Telefe"
+      ],
+      "platforms": [
+        "Flow"
+      ],
       "genre": "Thriller",
       "actors": [
         "Elenco Rotativo"
@@ -9194,6 +9400,15 @@
       "title": "El Maestro",
       "year": "2017",
       "channel": "Flow",
+      "air_channels": [
+        "Canal 13"
+      ],
+      "cable_channels": [
+        "TNT"
+      ],
+      "platforms": [
+        "Flow"
+      ],
       "genre": "Drama",
       "actors": [
         "Julio Chávez",
@@ -9210,6 +9425,15 @@
       "title": "La Fragilidad de los Cuerpos",
       "year": "2017",
       "channel": "Flow",
+      "air_channels": [
+        "Canal 13"
+      ],
+      "cable_channels": [
+        "TNT"
+      ],
+      "platforms": [
+        "Flow"
+      ],
       "genre": "Thriller",
       "actors": [
         "Germán Palacios",
@@ -9224,7 +9448,7 @@
       "id": "V229",
       "title": "Supermax",
       "year": "2017",
-      "channel": "TV Pública",
+      "channel": "Canal 7/TV Pública",
       "genre": "Thriller",
       "actors": [
         "Santiago Segura",
@@ -9241,6 +9465,15 @@
       "title": "Un Gallo para Esculapio",
       "year": "2017",
       "channel": "Flow",
+      "air_channels": [
+        "Telefe"
+      ],
+      "cable_channels": [
+        "TNT"
+      ],
+      "platforms": [
+        "Flow"
+      ],
       "genre": "Thriller",
       "actors": [
         "Peter Lanzani",
@@ -9256,6 +9489,12 @@
       "title": "Signos",
       "year": "2015",
       "channel": "Canal 13",
+      "air_channels": [
+        "Canal 13"
+      ],
+      "cable_channels": [
+        "TNT"
+      ],
       "genre": "Thriller",
       "actors": [
         "Julio Chávez",
@@ -9271,6 +9510,12 @@
       "title": "Historia de un Clan",
       "year": "2015",
       "channel": "Telefe",
+      "air_channels": [
+        "Telefe"
+      ],
+      "cable_channels": [
+        "TNT"
+      ],
       "genre": "Policial",
       "actors": [
         "Alejandro Awada",
@@ -9620,7 +9865,7 @@
       "id": "V247",
       "title": "Okupas",
       "year": "2000",
-      "channel": "TV Pública",
+      "channel": "Canal 7/TV Pública",
       "genre": "Thriller",
       "actors": [
         "Rodrigo de la Serna",
@@ -10877,7 +11122,7 @@
       "id": "h11",
       "title": "Contra las Cuerdas",
       "year": "2010",
-      "channel": "TV Pública",
+      "channel": "Canal 7/TV Pública",
       "genre": "Drama",
       "actors": [
         "Rodrigo de la Serna",
@@ -11308,6 +11553,12 @@
       ],
       "synopsis": "Un padre busca a su hija desaparecida en Buenos Aires.",
       "channel": "HBO Max",
+      "cable_channels": [
+        "HBO"
+      ],
+      "platforms": [
+        "HBO Max"
+      ],
       "image": "images/verticals/el-jardin-de-bronce-poster-280x420.png",
       "orientation": "vertical",
       "seasons": 3,

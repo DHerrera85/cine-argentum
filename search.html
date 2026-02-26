@@ -44,6 +44,7 @@
       <input id="q" placeholder="Buscar..." style="flex:1;padding:8px;" />
       <select id="year"><option value="">Año</option></select>
       <select id="channel"><option value="">Canal</option></select>
+      <select id="platform"><option value="">Plataforma</option></select>
       <select id="actor"><option value="">Actor</option></select>
       <button id="do">Buscar</button>
     </div>
@@ -58,20 +59,80 @@
     var items = [];
     var fuse;
     var perPage = 12;
+    var defaultFictionCatalog = {
+      air_channels: ['América', 'Canal 13', 'Canal 7', 'Canal 9/Azul TV', 'Telefe', 'NET TV'],
+      cable_channels: ['Cosmopolitan TV', 'FOX', 'FX', 'Space', 'TBS', 'Disney Channel', 'Disney XD', 'Nickelodeon', 'TNT', 'HBO'],
+      platforms: ['Netflix', 'Flow', 'Disney+', 'HBO Max', 'Prime Video']
+    };
+    var fictionCatalog = defaultFictionCatalog;
+
+    function normalizeString(s){ return (s||'').toString().trim().toLowerCase(); }
+
+    function getPlatformSet() {
+      return new Set((fictionCatalog.platforms || []).map(function(p){ return normalizeString(p); }));
+    }
+
+    function isKnownPlatformName(name) {
+      return getPlatformSet().has(normalizeString(name));
+    }
+
+    function getChannelValues(item) {
+      var out = [];
+      if (item && Array.isArray(item.air_channels)) {
+        item.air_channels.forEach(function(ch){
+          if (ch && String(ch).trim() && !isKnownPlatformName(ch)) out.push(String(ch).trim());
+        });
+      }
+      if (item && Array.isArray(item.cable_channels)) {
+        item.cable_channels.forEach(function(ch){
+          if (ch && String(ch).trim() && !isKnownPlatformName(ch)) out.push(String(ch).trim());
+        });
+      }
+      if (item && item.channel && String(item.channel).trim() && !isKnownPlatformName(item.channel)) out.push(String(item.channel).trim());
+      if (item && Array.isArray(item.channels)) {
+        item.channels.forEach(function(ch){
+          if (ch && String(ch).trim() && !isKnownPlatformName(ch)) out.push(String(ch).trim());
+        });
+      }
+      return Array.from(new Set(out));
+    }
+
+    function getPlatformValues(item) {
+      var out = [];
+      if (item && item.platform && String(item.platform).trim()) out.push(String(item.platform).trim());
+      if (item && Array.isArray(item.platforms)) {
+        item.platforms.forEach(function(p){
+          if (p && String(p).trim()) out.push(String(p).trim());
+        });
+      }
+      if (item && item.channel && String(item.channel).trim() && isKnownPlatformName(item.channel)) out.push(String(item.channel).trim());
+      if (item && Array.isArray(item.channels)) {
+        item.channels.forEach(function(ch){
+          if (ch && String(ch).trim() && isKnownPlatformName(ch)) out.push(String(ch).trim());
+        });
+      }
+      return Array.from(new Set(out));
+    }
 
     function buildFacetOptions() {
       var years = Array.from(new Set(items.map(i=>String(i.year || '')))).filter(Boolean).sort(function(a,b){return parseInt(b)-parseInt(a);});
-      var channels = Array.from(new Set(items.map(i=> (i.channel||'').trim() ))).filter(Boolean).sort(function(a,b){return a.toLowerCase().localeCompare(b.toLowerCase());});
+      var airChannels = Array.from(new Set(fictionCatalog.air_channels || [])).filter(Boolean).sort(function(a,b){return a.toLowerCase().localeCompare(b.toLowerCase());});
+      var cableChannels = Array.from(new Set(fictionCatalog.cable_channels || [])).filter(Boolean).sort(function(a,b){return a.toLowerCase().localeCompare(b.toLowerCase());});
+      var platforms = Array.from(new Set(fictionCatalog.platforms || [])).filter(Boolean).sort(function(a,b){return a.toLowerCase().localeCompare(b.toLowerCase());});
       var actors = Array.from(new Set(items.reduce((a,i)=>a.concat((i.actors||[]).slice(0,6).map(function(x){return (x||'').trim();})),[]))).filter(Boolean).sort(function(a,b){return a.toLowerCase().localeCompare(b.toLowerCase());});
       var $y = $('#year'); years.forEach(function(y){ $y.append($('<option>').attr('value',y).text(y)); });
-      var $c = $('#channel'); channels.forEach(function(c){ $c.append($('<option>').attr('value',c).text(c)); });
+      var $c = $('#channel');
+      var $airGroup = $('<optgroup>').attr('label', 'Canales de Aire');
+      airChannels.forEach(function(c){ $airGroup.append($('<option>').attr('value',c).text(c)); });
+      var $cableGroup = $('<optgroup>').attr('label', 'Canales de Cable');
+      cableChannels.forEach(function(c){ $cableGroup.append($('<option>').attr('value',c).text(c)); });
+      $c.append($airGroup).append($cableGroup);
+      var $p = $('#platform'); platforms.forEach(function(p){ $p.append($('<option>').attr('value',p).text(p)); });
       var $a = $('#actor'); actors.forEach(function(a){ $a.append($('<option>').attr('value',a).text(a)); });
     }
 
-    function paramsFromURL() { var p = new URLSearchParams(window.location.search); return { q: p.get('q') || '', year: p.get('year')||'', channel: p.get('channel')||'', actor: p.get('actor')||'', page: parseInt(p.get('page')||'1',10) }; }
+    function paramsFromURL() { var p = new URLSearchParams(window.location.search); return { q: p.get('q') || '', year: p.get('year')||'', channel: p.get('channel')||'', platform: p.get('platform')||'', actor: p.get('actor')||'', page: parseInt(p.get('page')||'1',10) }; }
     function updateURL(params) { var u = new URL(window.location); Object.keys(params).forEach(function(k){ if(params[k]) u.searchParams.set(k,params[k]); else u.searchParams.delete(k); }); history.replaceState({}, '', u); }
-
-    function normalizeString(s){ return (s||'').toString().trim().toLowerCase(); }
 
     function renderResults(list, page) {
       page = page || 1; var start=(page-1)*perPage; var out = list.slice(start,start+perPage);
@@ -80,7 +141,10 @@
         var $r = $('<div>').addClass('result');
         var img = $('<img>').attr('src', it.image).attr('alt', it.title);
         var $m = $('<div>');
-        var html = '<a href="show.html?id='+encodeURIComponent(it.id)+'"><strong>'+it.title+'</strong></a> '+(it.year?'<span>('+it.year+')</span>':'')+'<div class="meta-line">'+(it.channel||'')+' • '+(it.genre||'')+'</div>';
+        var channelText = getChannelValues(it).join(', ');
+        var platformText = getPlatformValues(it).join(', ');
+        var distributionText = [channelText, platformText].filter(Boolean).join(' • ');
+        var html = '<a href="show.html?id='+encodeURIComponent(it.id)+'"><strong>'+it.title+'</strong></a> '+(it.year?'<span>('+it.year+')</span>':'')+'<div class="meta-line">'+distributionText+(distributionText ? ' • ' : '')+(it.genre||'')+'</div>';
         html += '<div class="actors-line" style="margin-top:6px;">' + ((it.actors||[]).slice(0,6).join(', ')) + '</div>';
         $m.html(html);
         $r.append(img).append($m);
@@ -96,8 +160,9 @@
       var q = $('#q').val() || '';
       var year=$('#year').val() || '';
       var channel=$('#channel').val() || '';
+      var platform=$('#platform').val() || '';
       var actor=$('#actor').val() || '';
-      updateURL({ q:q, year:year, channel:channel, actor:actor, page: page });
+      updateURL({ q:q, year:year, channel:channel, platform:platform, actor:actor, page: page });
       var results = [];
       if (q) {
         var res = fuse.search(q, {limit: 1000}).map(function(r){return r.item;});
@@ -110,8 +175,14 @@
           if (String(it.year).trim() !== String(year).trim()) return false;
         }
         if (channel) {
-          if (!it.channel) return false;
-          if (normalizeString(it.channel) !== normalizeString(channel)) return false;
+          var channelValues = getChannelValues(it);
+          var inChannel = channelValues.some(function(ch){ return normalizeString(ch) === normalizeString(channel); });
+          if (!inChannel) return false;
+        }
+        if (platform) {
+          var platformValues = getPlatformValues(it);
+          var inPlatform = platformValues.some(function(p){ return normalizeString(p) === normalizeString(platform); });
+          if (!inPlatform) return false;
         }
         if (actor) {
           var actorLower = normalizeString(actor);
@@ -133,15 +204,18 @@
 
     $(function(){
       var qparams = paramsFromURL();
-      fetch('data.json').then(r=>r.json()).then(function(d){ items = (d && d.items) || []; buildFacetOptions();
-        fuse = new Fuse(items, { keys: ['title','actors','channel','genre','subtitle','year'], threshold: 0.35, includeScore: true });
-        $('#q').val(qparams.q); $('#year').val(qparams.year); $('#channel').val(qparams.channel); $('#actor').val(qparams.actor);
+      fetch('data.json').then(r=>r.json()).then(function(d){
+        items = (d && d.items) || [];
+        if (d && d.ficciones_filters) fictionCatalog = d.ficciones_filters;
+        buildFacetOptions();
+        fuse = new Fuse(items, { keys: ['title','actors','channel','channels','platform','platforms','genre','subtitle','year'], threshold: 0.35, includeScore: true });
+        $('#q').val(qparams.q); $('#year').val(qparams.year); $('#channel').val(qparams.channel); $('#platform').val(qparams.platform); $('#actor').val(qparams.actor);
         doSearch(qparams.page);
         $('#do').on('click', function(){ doSearch(1); });
         // Enter key triggers search
         $('#q').on('keypress', function(e){ if(e.which === 13) { e.preventDefault(); doSearch(1); } });
         // filters trigger search
-        $('#year, #channel, #actor').on('change', function(){ doSearch(1); });
+        $('#year, #channel, #platform, #actor').on('change', function(){ doSearch(1); });
       }).catch(function(){ $('#results').html('<p>Error cargando data.json</p>'); });
     });
   </script>

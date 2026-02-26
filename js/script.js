@@ -1,6 +1,6 @@
 /* js/script.js */
 (function () {
-  var scriptDataVersion = '20260225-3';
+  var scriptDataVersion = '20260226-5';
   // Esperar a que el DOM esté listo
   document.addEventListener('DOMContentLoaded', function () {
     // Verificaciones básicas
@@ -15,10 +15,64 @@
 
     var $ = jQuery;
     window.faConfig = window.faConfig || { showSynopsisInSearch: false, filterMissingPosters: false };
+    var defaultFictionCatalog = {
+      air_channels: ['América', 'Canal 13', 'Canal 7', 'Canal 9/Azul TV', 'Telefe', 'NET TV'],
+      cable_channels: ['Cosmopolitan TV', 'FOX', 'FX', 'Space', 'TBS', 'Disney Channel', 'Disney XD', 'Nickelodeon', 'TNT', 'HBO'],
+      platforms: ['Netflix', 'Flow', 'Disney+', 'HBO Max', 'Prime Video']
+    };
+    var fictionCatalog = defaultFictionCatalog;
     var verticalItems = [];
     var horizontalItems = [];
     var PLACEHOLDER_V = 'images/verticals/placeholder-280x420.svg';
     var PLACEHOLDER_H = 'images/horizontals-320x180/placeholder-320x180.svg';
+
+    function normalizeString(s) { return (s || '').toString().trim().toLowerCase(); }
+
+    function getPlatformSet() {
+      return new Set((fictionCatalog.platforms || []).map(function (p) { return normalizeString(p); }));
+    }
+
+    function isKnownPlatformName(name) {
+      return getPlatformSet().has(normalizeString(name));
+    }
+
+    function getChannelValues(item) {
+      var out = [];
+      if (item && Array.isArray(item.air_channels)) {
+        item.air_channels.forEach(function (ch) {
+          if (ch && String(ch).trim() && !isKnownPlatformName(ch)) out.push(String(ch).trim());
+        });
+      }
+      if (item && Array.isArray(item.cable_channels)) {
+        item.cable_channels.forEach(function (ch) {
+          if (ch && String(ch).trim() && !isKnownPlatformName(ch)) out.push(String(ch).trim());
+        });
+      }
+      if (item && item.channel && String(item.channel).trim() && !isKnownPlatformName(item.channel)) out.push(String(item.channel).trim());
+      if (item && Array.isArray(item.channels)) {
+        item.channels.forEach(function (ch) {
+          if (ch && String(ch).trim() && !isKnownPlatformName(ch)) out.push(String(ch).trim());
+        });
+      }
+      return Array.from(new Set(out));
+    }
+
+    function getPlatformValues(item) {
+      var out = [];
+      if (item && item.platform && String(item.platform).trim()) out.push(String(item.platform).trim());
+      if (item && Array.isArray(item.platforms)) {
+        item.platforms.forEach(function (p) {
+          if (p && String(p).trim()) out.push(String(p).trim());
+        });
+      }
+      if (item && item.channel && String(item.channel).trim() && isKnownPlatformName(item.channel)) out.push(String(item.channel).trim());
+      if (item && Array.isArray(item.channels)) {
+        item.channels.forEach(function (ch) {
+          if (ch && String(ch).trim() && isKnownPlatformName(ch)) out.push(String(ch).trim());
+        });
+      }
+      return Array.from(new Set(out));
+    }
 
     // Render helpers
     function renderHorizontalItems($container, items) {
@@ -60,7 +114,7 @@
       if (!term) return [];
       var results = verticalItems.filter(function (it) {
         if (!it) return false;
-        var hay = (it.title || '') + ' ' + (it.year || '') + ' ' + (it.channel || '') + ' ' + (it.genre || '') + ' ' + (it.actors || []).join(' ');
+        var hay = (it.title || '') + ' ' + (it.year || '') + ' ' + (getChannelValues(it).join(' ')) + ' ' + (getPlatformValues(it).join(' ')) + ' ' + (it.genre || '') + ' ' + (it.actors || []).join(' ');
         return hay.toLowerCase().indexOf(term) !== -1;
       });
       return results;
@@ -71,11 +125,21 @@
 
     function populateFiltersFromItems(items) {
       var years = unique(items.map(function(i){return i.year;})).sort().reverse();
-      var channels = unique(items.map(function(i){return i.channel;})).sort();
+      var airChannels = unique(fictionCatalog.air_channels || []).sort();
+      var cableChannels = unique(fictionCatalog.cable_channels || []).sort();
+      var platforms = unique(fictionCatalog.platforms || []).sort();
       var actors = unique(items.reduce(function(acc,i){ return acc.concat((i.actors||[]).slice(0,6)); },[])).sort();
 
       var $year = $('.filter-year'); if ($year.length) { $year.find('option:not(:first)').remove(); years.forEach(function(y){ $year.append($('<option>').attr('value',y).text(y)); }); }
-      var $channel = $('.filter-channel'); if ($channel.length) { $channel.find('option:not(:first)').remove(); channels.forEach(function(c){ $channel.append($('<option>').attr('value',c).text(c)); }); }
+      var $channel = $('.filter-channel'); if ($channel.length) {
+        $channel.find('option:not(:first), optgroup').remove();
+        var $airGroup = $('<optgroup>').attr('label', 'Canales de Aire');
+        airChannels.forEach(function(c){ $airGroup.append($('<option>').attr('value',c).text(c)); });
+        var $cableGroup = $('<optgroup>').attr('label', 'Canales de Cable');
+        cableChannels.forEach(function(c){ $cableGroup.append($('<option>').attr('value',c).text(c)); });
+        $channel.append($airGroup).append($cableGroup);
+      }
+      var $platform = $('.filter-platform'); if ($platform.length) { $platform.find('option:not(:first)').remove(); platforms.forEach(function(p){ $platform.append($('<option>').attr('value',p).text(p)); }); }
       var $actor = $('.filter-actor'); if ($actor.length) { $actor.find('option:not(:first)').remove(); actors.forEach(function(a){ $actor.append($('<option>').attr('value',a).text(a)); }); }
     }
 
@@ -84,14 +148,23 @@
       return verticalItems.filter(function(it){
         if (!it) return false;
         if (filters.year && it.year !== filters.year) return false;
-        if (filters.channel && it.channel !== filters.channel) return false;
+        if (filters.channel) {
+          var channelValues = getChannelValues(it);
+          var inChannel = channelValues.some(function(ch){ return normalizeString(ch) === normalizeString(filters.channel); });
+          if (!inChannel) return false;
+        }
+        if (filters.platform) {
+          var platformValues = getPlatformValues(it);
+          var inPlatform = platformValues.some(function(p){ return normalizeString(p) === normalizeString(filters.platform); });
+          if (!inPlatform) return false;
+        }
         if (filters.actor) {
           var actorLower = filters.actor.toLowerCase();
           var found = (it.actors||[]).slice(0,6).some(function(a){ return (a||'').toLowerCase().indexOf(actorLower) !== -1; });
           if (!found) return false;
         }
         if (!term) return true;
-        var hay = ((it.title||'') + ' ' + (it.year||'') + ' ' + (it.channel||'') + ' ' + (it.genre||'') + ' ' + (it.actors||[]).join(' ')).toLowerCase();
+        var hay = ((it.title||'') + ' ' + (it.year||'') + ' ' + (getChannelValues(it).join(' ')) + ' ' + (getPlatformValues(it).join(' ')) + ' ' + (it.genre||'') + ' ' + (it.actors||[]).join(' ')).toLowerCase();
         return hay.indexOf(term) !== -1;
       });
     }
@@ -112,7 +185,7 @@
       var debounce;
       function update() {
         var val = $input.val();
-        var filters = { year: $('.filter-year').val(), channel: $('.filter-channel').val(), actor: $('.filter-actor').val() };
+        var filters = { year: $('.filter-year').val(), channel: $('.filter-channel').val(), platform: $('.filter-platform').val(), actor: $('.filter-actor').val() };
         var results = combinedSearch(val, filters);
         if (!results.length) { $res.hide().empty(); return; }
         $res.empty();
@@ -121,7 +194,10 @@
           var href = 'show.html?id=' + encodeURIComponent(it.id || it.title || '');
           var $link = $('<a>').attr('href', href).css({color:'#222', textDecoration:'none', display:'block'});
           var html = '<strong>' + (it.title||'') + '</strong>' + (it.year ? ' ('+it.year+')' : '');
-          html += '<div style="font-size:12px;color:#666;">' + (it.channel||'') + ' • ' + (it.genre||'') + ' • ' + ((it.actors||[]).slice(0,3).join(', ')) + '</div>';
+          var channelText = getChannelValues(it).join(', ');
+          var platformText = getPlatformValues(it).join(', ');
+          var distributionText = [channelText, platformText].filter(Boolean).join(' • ');
+          html += '<div style="font-size:12px;color:#666;">' + distributionText + (distributionText ? ' • ' : '') + (it.genre||'') + ' • ' + ((it.actors||[]).slice(0,3).join(', ')) + '</div>';
           if (window.faConfig.showSynopsisInSearch && it.synopsis) {
             var syn = String(it.synopsis).trim();
             if (syn.length > 140) syn = syn.slice(0, 140) + '…';
@@ -137,11 +213,13 @@
         var q = encodeURIComponent(($input.val()||'').trim());
         var yr = encodeURIComponent(($('.filter-year').val()||''));
         var ch = encodeURIComponent(($('.filter-channel').val()||''));
+        var pf = encodeURIComponent(($('.filter-platform').val()||''));
         var ac = encodeURIComponent(($('.filter-actor').val()||''));
         var params = [];
         if (q) params.push('q=' + q);
         if (yr) params.push('year=' + yr);
         if (ch) params.push('channel=' + ch);
+        if (pf) params.push('platform=' + pf);
         if (ac) params.push('actor=' + ac);
         var allHref = 'search.html' + (params.length ? ('?' + params.join('&')) : '');
         var $allRow = $('<div>').addClass('search-row search-all').css({padding:'8px 10px', background:'#f7f7f7', textAlign:'center'});
@@ -154,7 +232,7 @@
       }
 
       $input.on('input', function () { clearTimeout(debounce); debounce = setTimeout(update, 180); });
-      $('.filter-year, .filter-channel, .filter-actor').on('change', update);
+      $('.filter-year, .filter-channel, .filter-platform, .filter-actor').on('change', update);
       $(document).on('click', function (e) { if (!$(e.target).closest('.search').length) $('.search .search-results').hide(); });
     }
 
@@ -166,6 +244,7 @@
       }).then(function (data) {
         try {
           if (data && Array.isArray(data.items)) {
+            if (data.ficciones_filters) fictionCatalog = data.ficciones_filters;
             data.items.forEach(function (it) {
               if (it.orientation === 'vertical') verticalItems.push(it);
               else horizontalItems.push(it);

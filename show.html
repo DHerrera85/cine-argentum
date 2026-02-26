@@ -90,7 +90,7 @@
   <script src="js/lightslider.js"></script>
   <script>
     (function () {
-      var showDataVersion = '20260225-4';
+      var showDataVersion = '20260226-6';
       function getIdFromURL() {
         var p = new URLSearchParams(window.location.search);
         var id = p.get('id');
@@ -125,8 +125,11 @@
           directorRow = '<dt>Director</dt><dd>' + item.director + '</dd>';
         }
         // Campos nuevos: horario, capitulos, fecha_estreno, rating, productora
+        function hasValue(v) {
+          return v !== undefined && v !== null && String(v).trim() !== '' && String(v).trim() !== '-';
+        }
         var horarioRow = '';
-        if (item.horario) {
+        if (hasValue(item.horario)) {
           horarioRow = '<dt>Horario</dt><dd>' + item.horario + '</dd>';
         }
         var capitulosRow = '';
@@ -138,27 +141,69 @@
           fechaEstrenoRow = '<dt>Fecha de estreno</dt><dd>' + item.fecha_estreno + '</dd>';
         }
         var ratingRow = '';
-        if (item.rating) {
+        if (hasValue(item.rating)) {
           ratingRow = '<dt>Rating</dt><dd>' + item.rating + '</dd>';
         }
         var productoraRow = '';
         if (item.productora) {
           productoraRow = '<dt>Productora</dt><dd>' + item.productora + '</dd>';
         }
-        var canalValue = '';
-        if (item.channel && String(item.channel).trim()) {
-          canalValue = String(item.channel).trim();
-        } else if (Array.isArray(item.channels) && item.channels.length) {
-          canalValue = item.channels.join(', ');
+        function toArray(value) {
+          if (Array.isArray(value)) {
+            return value.filter(function (v) { return hasValue(v); }).map(function (v) { return String(v).trim(); });
+          }
+          if (hasValue(value)) {
+            return [String(value).trim()];
+          }
+          return [];
         }
-        var canalRow = canalValue ? '<dt>Canal</dt><dd>' + canalValue + '</dd>' : '';
-        var plataformaValue = '';
-        if (Array.isArray(item.platforms) && item.platforms.length) {
-          plataformaValue = item.platforms.join(', ');
-        } else if (item.platform && String(item.platform).trim()) {
-          plataformaValue = String(item.platform).trim();
+        function uniqueStrings(values) {
+          var seen = Object.create(null);
+          var out = [];
+          values.forEach(function (v) {
+            var key = String(v);
+            if (!seen[key]) {
+              seen[key] = true;
+              out.push(key);
+            }
+          });
+          return out;
         }
-        var plataformaRow = plataformaValue ? '<dt>Plataforma</dt><dd>' + plataformaValue + '</dd>' : '';
+
+        var filters = window.__ficcionesFilters || {};
+        var knownAirChannels = uniqueStrings(toArray(filters.air_channels));
+        var knownCableChannels = uniqueStrings(toArray(filters.cable_channels));
+        var knownPlatforms = ['Netflix', 'Disney+', 'Prime Video', 'HBO Max', 'Flow', 'Max'];
+
+        var airValues = uniqueStrings(toArray(item.air_channels));
+        var cableValues = uniqueStrings(toArray(item.cable_channels));
+        var plataformaValues = uniqueStrings(toArray(item.platforms).concat(toArray(item.platform)));
+        var legacyChannels = uniqueStrings(toArray(item.channels).concat(toArray(item.channel)));
+
+        legacyChannels.forEach(function (channelName) {
+          if (knownPlatforms.indexOf(channelName) !== -1) {
+            if (plataformaValues.indexOf(channelName) === -1) plataformaValues.push(channelName);
+            return;
+          }
+          if (airValues.indexOf(channelName) !== -1 || cableValues.indexOf(channelName) !== -1) {
+            return;
+          }
+          if (knownCableChannels.indexOf(channelName) !== -1) {
+            cableValues.push(channelName);
+            return;
+          }
+          if (knownAirChannels.indexOf(channelName) !== -1) {
+            airValues.push(channelName);
+            return;
+          }
+          if (!airValues.length && !cableValues.length) {
+            airValues.push(channelName);
+          }
+        });
+
+        var canalAireRow = airValues.length ? '<dt>Canal de aire</dt><dd>' + airValues.join(', ') + '</dd>' : '';
+        var canalCableRow = cableValues.length ? '<dt>Canal de cable</dt><dd>' + cableValues.join(', ') + '</dd>' : '';
+        var plataformaRow = plataformaValues.length ? '<dt>Plataforma</dt><dd>' + plataformaValues.join(', ') + '</dd>' : '';
         var remakesSection = '';
         var remakes = [];
         if (item.remakes && item.remakes.length) {
@@ -199,7 +244,8 @@
             + '<div class="synopsis" style="margin:10px 0 16px;line-height:1.5;color:#333;"><strong>Sinopsis:</strong> ' + synopsis + '</div>'
             + '<dl>'
               + '<dt>Año</dt><dd>' + (item.year || '') + '</dd>'
-              + canalRow
+              + canalAireRow
+              + canalCableRow
               + plataformaRow
               + '<dt>Género</dt><dd>' + (item.genre || '') + '</dd>'
               + '<dt>Actores</dt><dd>' + actors + '</dd>'
@@ -245,6 +291,7 @@
         if (!r.ok) throw new Error('no data');
         return r.json();
       }).then(function (data) {
+        window.__ficcionesFilters = (data && data.ficciones_filters) || {};
         var items = (data && data.items) || [];
         var item = items.find(function (it) { return it && it.id === id; });
         // fallback: buscar por title si id no coincide
