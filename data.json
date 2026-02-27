@@ -5863,26 +5863,42 @@
       "genre": "Thriller",
       "actors": [
         "Pablo Echarri",
-        "Paola Krum"
+        "Paola Krum",
+        "Leticia Brédice"
       ],
       "orientation": "vertical",
       "image": "images/verticals/el-elegido-poster-280x420.png",
-      "subtitle": "Thriller"
+      "subtitle": "Thriller",
+      "horario": "22:45hs",
+      "capitulos": 154,
+      "fecha_estreno": "17/01/2011",
+      "sinopsis": "Andrés Bilbao, un abogado ambicioso, regresa de España y se ve envuelto en una logia masónica mientras disputa poder en un bufete corrupto. Su vínculo con Mariana, una abogada que busca justicia por el asesinato de su padre, lo enfrenta a intrigas, manipulación y sus propios límites morales.",
+      "rating": "15",
+      "productora": "El Árbol",
+      "tipo_emision": "Tira Diaria"
     },
     {
       "id": "v16",
-      "title": "Caín y Abel",
+      "title": "Caín & Abel",
       "year": "2010",
       "channel": "Telefe",
       "genre": "Thriller",
       "actors": [
         "Joaquín Furriel",
         "Julieta Cardinali",
-        "Fabián Vena"
+        "Fabián Vena",
+        "Vanesa González"
       ],
       "orientation": "vertical",
       "image": "images/verticals/cain-abel-poster-280x420.png",
-      "subtitle": "Thriller"
+      "subtitle": "Thriller",
+      "horario": "22:30HS",
+      "capitulos": 49,
+      "fecha_estreno": "15/09/2010",
+      "sinopsis": "La historia retrata la feroz rivalidad entre los hermanos Vedia, Simón y Agustín, atravesada por ambición y secretos familiares. La disputa por la constructora y el amor de Valentina profundizan el conflicto entre ambos.",
+      "rating": "9,4",
+      "productora": "ON TV",
+      "tipo_emision": "Tira Diaria"
     },
     {
       "id": "v17",
@@ -6253,11 +6269,20 @@
         "Luciano Castro",
         "Romina Gaetani",
         "Marcela Kloosterboer",
-        "Federico Amador"
+        "Federico Amador",
+        "Benjamín Vicuña",
+        "Marco Antonio Caponi"
       ],
       "orientation": "vertical",
       "image": "images/verticals/herederos-de-una-venganza-poster-280x420.png",
-      "subtitle": "Telenovela"
+      "subtitle": "Telenovela",
+      "horario": "22:45hs",
+      "capitulos": 219,
+      "fecha_estreno": "17/01/2011",
+      "sinopsis": "Antonio, un ingeniero agrónomo, emprende una búsqueda de venganza tras el asesinato de su novia y descubre una trama de secretos y rituales oscuros. En el camino, vive un romance intenso con Mercedes, que lo enfrentará a verdades inesperadas. ",
+      "rating": "20,6",
+      "productora": "Pol-Ka",
+      "tipo_emision": "Tira Diaria"
     },
     {
       "id": "v70",
@@ -7499,7 +7524,14 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/sueña-conmigo-poster-280x420.png",
-      "subtitle": "Juvenil"
+      "subtitle": "Juvenil",
+      "horario": "18hs",
+      "capitulos": 150,
+      "fecha_estreno": "20/07/2010",
+      "sinopsis": "Clara crea la identidad secreta “Roxy Pop” para participar en el reality musical Soy tu Super Star! sin que su padre lo sepa. Mientras tanto, Luca se enamora de la voz de Roxy sin imaginar que es Clara, su compañera y rival en la escuela.",
+      "rating": "-",
+      "productora": "Televisa, Illusion Studios",
+      "tipo_emision": "Tira Diaria"
     },
     {
       "id": "V130",
@@ -11331,11 +11363,19 @@
       "actors": [
         "Soledad Silveyra",
         "Juan Gil Navarro",
-        "Adrián Navarro"
+        "Adrián Navarro",
+        "Arturo Puig"
       ],
       "orientation": "vertical",
       "image": "images/verticals/secretos-de-amor-poster-280x420.png",
-      "subtitle": "Telenovela"
+      "subtitle": "Telenovela",
+      "horario": "15:30hs",
+      "capitulos": 68,
+      "fecha_estreno": "14/06/2010",
+      "sinopsis": "Diana, una abogada que tras 30 años de matrimonio descubre los negocios turbios de su marido y su hijo, decide rehacer su vida. En el proceso, recupera su vocación y se enamora de Manuel, un joven abogado.",
+      "rating": "7",
+      "productora": "ON TV",
+      "tipo_emision": "Tira Diaria"
     },
     {
       "id": "v55",
@@ -11351,7 +11391,14 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/los-unicos-2011-poster-280x420.png",
-      "subtitle": "Comedia"
+      "subtitle": "Comedia",
+      "horario": "21:45hs",
+      "capitulos": 243,
+      "fecha_estreno": "07/02/2011",
+      "sinopsis": "Un filántropo recluta a un grupo de élite para completar la formación del equipo argentino de “Los Únicos” y enfrentar a peligrosos criminales. Mientras combaten a poderosos villanos, deberán lidiar con tensiones internas y romances prohibidos dentro del equipo.",
+      "rating": "21,7",
+      "productora": "Pol-Ka",
+      "tipo_emision": "Tira Diaria"
     },
     {
       "id": "v56",
@@ -11382,7 +11429,14 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/un-ano-para-recordar-poster-280x420.png",
-      "subtitle": "Comedia"
+      "subtitle": "Comedia",
+      "horario": "21:45hs",
+      "capitulos": 93,
+      "fecha_estreno": "14/02/2011",
+      "sinopsis": "Ana mata accidentalmente a su esposo y, de manera inexplicable, retrocede un año en el tiempo para intentar evitar la tragedia. Pero al alterar el pasado, descubre que cada cambio implica nuevos riesgos para su vida y su amor.",
+      "rating": "14,6",
+      "productora": "Underground Contenidos, Endemol",
+      "tipo_emision": "Tira Diaria"
     },
     {
       "id": "v58",
