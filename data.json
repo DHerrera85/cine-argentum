@@ -5692,6 +5692,29 @@
       "subtitle": "Drama"
     },
     {
+      "id": "V297",
+      "title": "Panadería Los Felipe",
+      "year": "2004",
+      "channel": "Telefe",
+      "genre": "Comedia",
+      "actors": [
+        "Fabián Gianola",
+        "Hugo Arana",
+        "Mónica Ayos",
+        "Ana María Picchio"
+      ],
+      "orientation": "vertical",
+      "image": "images/verticals/panaderia-los-felipe-poster-280x420.png",
+      "subtitle": "Comedia",
+      "horario": "13hs",
+      "capitulos": 13,
+      "fecha_estreno": "04/07/2004",
+      "sinopsis": "Narra el conflicto generacional en una panadería familiar, los Miñón. Pepe, heredero de la tradición, busca imponer el legado a su hijo Felipe III, generando comedia y choques entre lo tradicional y lo nuevo, con gritos y personajes excéntricos",
+      "rating": "13,8",
+      "productora": "Estevanez Producciones",
+      "tipo_emision": "Semanal"
+    },
+    {
       "id": "h7",
       "title": "Graduados",
       "year": "2012",

@@ -1,5 +1,5 @@
 // telefe.js - Renderiza las series de Telefe con filtros avanzados
-const telefeDataVersion = '20260225-8';
+const telefeDataVersion = '20260227-2';
 
 // Cargar data.json y filtrar solo series de Telefe
 document.addEventListener('DOMContentLoaded', async function() {
@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', async function() {
     { id: 'v12', year: '2015', title: 'Entre Canibales', genre: 'Thriller' },
     { id: 'h9', year: '2016', title: 'La Leona', genre: 'Thriller' },
     { id: 'v1', year: '2016', title: 'Educando a Nina', genre: 'Comedia' },
-    { id: 'V292', year: '2016', title: 'Loco x Vos', genre: 'Sitcom' },
+    { id: 'v42', year: '2016', title: 'Loco x Vos', genre: 'Sitcom' },
     { id: 'v50', year: '2016', title: 'Por Amarte Asi', genre: 'Telenovela' },
     { id: 'v9', year: '2017', title: 'Amar Después de Amar', genre: 'Thriller' },
     { id: 'v60', year: '2017', title: 'El Regreso de Lucas', genre: 'Thriller' },
@@ -95,6 +95,7 @@ document.addEventListener('DOMContentLoaded', async function() {
     { id: 'V263', year: '2012', title: 'Mi Problema con las Mujeres', genre: 'Comedia' },
     { id: 'V265', year: '2009', title: 'Acompañantes', genre: 'Comedia' },
     { id: 'V270', year: '2004', title: 'Mosca & Smith en el Once', genre: 'Comedia' },
+    { id: 'V297', year: '2004', title: 'Panadería Los Felipe', genre: 'Comedia' },
     { id: 'V271', year: '2003', title: 'Tres Padres Solteros', genre: 'Comedia' },
     { id: 'V274', year: '2013', title: 'Historias de Diván', genre: 'Drama' },
     { id: 'V291', year: '2013', title: 'Historias de Corazón', genre: 'Drama' },
@@ -241,8 +242,17 @@ document.addEventListener('DOMContentLoaded', async function() {
     } else if (sort === 'policiales') {
       filtered = filtered.filter(item => item.genre === 'thriller' || item.genre === 'policial');
       filtered.sort((a, b) => (parseInt(b.year) || 0) - (parseInt(a.year) || 0));
-    } else if (sort === 'unitarios') {
-      filtered = filtered.filter(item => item.genre === 'drama' || item.type === 'unitario');
+    } else if (sort === 'tira-diaria') {
+      filtered = filtered.filter(item => {
+        const tipo = item.tipo_emision ? String(item.tipo_emision).trim().toLowerCase() : '';
+        return tipo.includes('tira diaria');
+      });
+      filtered.sort((a, b) => (parseInt(b.year) || 0) - (parseInt(a.year) || 0));
+    } else if (sort === 'semanal') {
+      filtered = filtered.filter(item => {
+        const tipo = item.tipo_emision ? String(item.tipo_emision).trim().toLowerCase() : '';
+        return tipo.includes('semanal');
+      });
       filtered.sort((a, b) => (parseInt(b.year) || 0) - (parseInt(a.year) || 0));
     }
     // Restaurar género capitalizado para visualización
