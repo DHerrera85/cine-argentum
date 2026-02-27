@@ -5585,17 +5585,6 @@
       "subtitle": "Drama"
     },
     {
-      "id": "V292",
-      "title": "Loco x Vos",
-      "year": "2016",
-      "channel": "Telefe",
-      "genre": "Sitcom",
-      "actors": [],
-      "orientation": "vertical",
-      "image": "images/verticals/loco-por-vos-poster-280x420.png",
-      "subtitle": "Sitcom"
-    },
-    {
       "id": "V293",
       "title": "La Dueña",
       "year": "2012",
@@ -5678,11 +5667,11 @@
       "platforms": [
         "Netflix"
       ],
-      "genre": "Comedia",
+      "genre": "Drama",
       "actors": [],
       "orientation": "vertical",
       "image": "images/verticals/millennials-poster-280x420.png",
-      "subtitle": "Comedia"
+      "subtitle": "Drama"
     },
     {
       "id": "h7",
@@ -7324,7 +7313,7 @@
       "title": "WTF! Con la música a otra parte",
       "year": "2021",
       "channel": "Flow",
-      "genre": "Drama",
+      "genre": "Juvenil",
       "actors": [
         "Jimena Crash Gioffre",
         "Majo Chicar",
@@ -7332,7 +7321,7 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/WTF!-con-la-musica-a-otra-parte-poster-280x420.png",
-      "subtitle": "Drama"
+      "subtitle": "Juvenil"
     },
     {
       "id": "V123",
@@ -8389,7 +8378,7 @@
       "title": "Envidiosa",
       "year": "2024",
       "channel": "Netflix",
-      "genre": "Comedia Romántica",
+      "genre": "Comedia",
       "actors": [
         "Griselda Siciliani",
         "Esteban Lamothe",
@@ -8397,7 +8386,7 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/envidiosa-poster-280x420.png",
-      "subtitle": "Comedia romántica"
+      "subtitle": "Comedia"
     },
     {
       "id": "V170",
@@ -8542,7 +8531,7 @@
       "platforms": [
         "Flow"
       ],
-      "genre": "Policial",
+      "genre": "Thriller",
       "actors": [
         "Renato Quattordio",
         "Fernán Mirás",
@@ -8550,7 +8539,7 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/el-mundo-de-mateo-poster-280x420.png",
-      "subtitle": "Policial"
+      "subtitle": "Thriller"
     },
     {
       "id": "V180",
@@ -8566,7 +8555,7 @@
       "platforms": [
         "Netflix"
       ],
-      "genre": "Policial",
+      "genre": "Thriller",
       "actors": [
         "Nico Furtado",
         "Juan Minujín",
@@ -8576,14 +8565,14 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/el-marginal-poster-280x420.png",
-      "subtitle": "Policial"
+      "subtitle": "Thriller"
     },
     {
       "id": "V181",
       "title": "Puerta 7",
       "year": "2020",
       "channel": "Netflix",
-      "genre": "Policial",
+      "genre": "Thriller",
       "actors": [
         "Dolores Fonzi",
         "Esteban Lamothe",
@@ -8592,14 +8581,14 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/puerta-7-poster-280x420.png",
-      "subtitle": "Policial"
+      "subtitle": "Thriller"
     },
     {
       "id": "V182",
       "title": "Último Primer Día",
       "year": "2022",
       "channel": "Flow",
-      "genre": "Policial",
+      "genre": "Thriller",
       "actors": [
         "Eleonora Wexler",
         "Juan Gil Navarro",
@@ -8608,14 +8597,14 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/ultimo-primer-dia-poster-280x420.png",
-      "subtitle": "Policial"
+      "subtitle": "Thriller"
     },
     {
       "id": "V183",
       "title": "María Marta: El Crimen del Country",
       "year": "2022",
       "channel": "HBO Max",
-      "genre": "Policial",
+      "genre": "Thriller",
       "actors": [
         "Laura Novoa",
         "Jorge Marrale",
@@ -8624,7 +8613,7 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/maria-marta-poster-280x420.png",
-      "subtitle": "Policial"
+      "subtitle": "Thriller"
     },
     {
       "id": "V184",
@@ -8665,7 +8654,7 @@
       "title": "Atrapados",
       "year": "2025",
       "channel": "Netflix",
-      "genre": "Policial",
+      "genre": "Thriller",
       "actors": [
         "Soledad Villamil",
         "Juan Minujín",
@@ -8674,14 +8663,14 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/atrapados-poster-280x420.png",
-      "subtitle": "Policial"
+      "subtitle": "Thriller"
     },
     {
       "id": "V187",
       "title": "En el Barro",
       "year": "2025",
       "channel": "Netflix",
-      "genre": "Policial",
+      "genre": "Thriller",
       "actors": [
         "Ana Garibaldi",
         "Rita Cortese",
@@ -8692,7 +8681,7 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/en-el-barro-poster-280x420.png",
-      "subtitle": "Policial"
+      "subtitle": "Thriller"
     },
     {
       "id": "V188",
@@ -8767,7 +8756,7 @@
       "title": "Edha",
       "year": "2018",
       "channel": "Netflix",
-      "genre": "Drama",
+      "genre": "Thriller",
       "actors": [
         "Juana Viale",
         "Andrés Velencoso",
@@ -8775,7 +8764,7 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/edha-poster-280x420.png",
-      "subtitle": "Drama"
+      "subtitle": "Thriller"
     },
     {
       "id": "V193",
@@ -8813,7 +8802,7 @@
       "title": "Las Maldiciones",
       "year": "2025",
       "channel": "Netflix",
-      "genre": "Miniseries",
+      "genre": "Thriller",
       "actors": [
         "Leonardo Sbaraglia",
         "Gustavo Bassani",
@@ -8822,14 +8811,14 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/las-maldiciones-poster-280x420.png",
-      "subtitle": "Miniseries"
+      "subtitle": "Thriller"
     },
     {
       "id": "V196",
       "title": "Nieve Roja",
       "year": "2025",
       "channel": "Flow",
-      "genre": "Miniseries",
+      "genre": "Thriller",
       "actors": [
         "Nazareno Casero",
         "Mariano Martínez",
@@ -8838,28 +8827,28 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/nieve-roja-poster-280x420.png",
-      "subtitle": "Miniseries"
+      "subtitle": "Thriller"
     },
     {
       "id": "V197",
       "title": "Camaleón: El Pasado No Cambia",
       "year": "2025",
       "channel": "Disney+",
-      "genre": "Miniseries",
+      "genre": "Thriller",
       "actors": [
         "Eugenia Suárez",
         "Pablo Echarri"
       ],
       "orientation": "vertical",
       "image": "images/verticals/camaleon-poster-280x420.png",
-      "subtitle": "Miniseries"
+      "subtitle": "Thriller"
     },
     {
       "id": "V198",
       "title": "Espartanos: Una Historia Real",
       "year": "2025",
       "channel": "Disney+",
-      "genre": "Miniseries",
+      "genre": "Drama",
       "actors": [
         "Guillermo Pfening",
         "Carla Pandolfi",
@@ -8869,14 +8858,14 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/espartanos-poster-280x420.png",
-      "subtitle": "Miniseries"
+      "subtitle": "Drama"
     },
     {
       "id": "V199",
       "title": "La Voz Ausente",
       "year": "2024",
       "channel": "Disney+",
-      "genre": "Miniseries",
+      "genre": "Thriller",
       "actors": [
         "Benjamín Vicuña",
         "Gimena Accardi",
@@ -8884,14 +8873,14 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/la-voz-ausente-poster-280x420.png",
-      "subtitle": "Miniseries"
+      "subtitle": "Thriller"
     },
     {
       "id": "V200",
       "title": "Felices los Seis",
       "year": "2024",
       "channel": "HBO Max",
-      "genre": "Miniseries",
+      "genre": "Comedia",
       "actors": [
         "Nico Furtado",
         "Delfina Cháves",
@@ -8900,14 +8889,14 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/felices-los-seis-poster-280x420.png",
-      "subtitle": "Miniseries"
+      "subtitle": "Comedia"
     },
     {
       "id": "V201",
-      "title": "Frígiles",
+      "title": "Frágiles",
       "year": "2023",
       "channel": "Flow",
-      "genre": "Miniseries",
+      "genre": "Thriller",
       "actors": [
         "Luciano Cáceres",
         "Carla Quevedo",
@@ -8916,14 +8905,14 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/fragiles-poster-280x420.png",
-      "subtitle": "Miniseries"
+      "subtitle": "Thriller"
     },
     {
       "id": "V202",
       "title": "Robo Mundial",
       "year": "2022",
       "channel": "Disney+",
-      "genre": "Miniseries",
+      "genre": "Comedia",
       "actors": [
         "Joaquín Furriel",
         "Carla Quevedo",
@@ -8931,14 +8920,14 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/robo-mundial-poster-280x420.png",
-      "subtitle": "Miniseries"
+      "subtitle": "Comedia"
     },
     {
       "id": "V203",
       "title": "Supernova",
       "year": "2022",
       "channel": "Prime Video",
-      "genre": "Miniseries",
+      "genre": "Drama",
       "actors": [
         "Johanna Chiefo",
         "Ruggero Pasquarelli",
@@ -8946,7 +8935,7 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/supernova-poster-280x420.png",
-      "subtitle": "Miniseries"
+      "subtitle": "Drama"
     },
     {
       "id": "V204",
@@ -8969,7 +8958,7 @@
       "title": "El Amor Después del Amor",
       "year": "2023",
       "channel": "Netflix",
-      "genre": "Miniseries",
+      "genre": "Drama",
       "actors": [
         "Iván Hochman",
         "Mica Riera",
@@ -8977,14 +8966,14 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/el-amor-despues-del-amor-poster-280x420.png",
-      "subtitle": "Miniseries"
+      "subtitle": "Drama"
     },
     {
       "id": "V206",
       "title": "El Reino",
       "year": "2021",
       "channel": "Netflix",
-      "genre": "Drama",
+      "genre": "Thriller",
       "actors": [
         "Diego Peretti",
         "Mercedes Morán",
@@ -8994,14 +8983,14 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/el-reino-poster-280x420.png",
-      "subtitle": "Drama"
+      "subtitle": "Thriller"
     },
     {
       "id": "V207",
       "title": "Iosi, el Espía Arrepentido",
       "year": "2022",
       "channel": "Prime Video",
-      "genre": "Drama",
+      "genre": "Thriller",
       "actors": [
         "Gustavo Bassani",
         "Natalia Oreiro",
@@ -9011,7 +9000,7 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/iosi-poster-280x420.png",
-      "subtitle": "Drama"
+      "subtitle": "Thriller"
     },
     {
       "id": "V208",
@@ -9036,7 +9025,7 @@
       "title": "Maradona: Sueño Bendito",
       "year": "2021",
       "channel": "Prime Video",
-      "genre": "Miniseries",
+      "genre": "Drama",
       "actors": [
         "Nazareno Casero",
         "Juan Palomino",
@@ -9046,14 +9035,14 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/maradona-poster-280x420.png",
-      "subtitle": "Miniseries"
+      "subtitle": "Drama"
     },
     {
       "id": "V210",
       "title": "Apache: la Vida de Carlos Tévez",
       "year": "2019",
       "channel": "Netflix",
-      "genre": "Miniseries",
+      "genre": "Drama",
       "actors": [
         "Balthazar Murilio",
         "Vanesa González",
@@ -9062,7 +9051,7 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/apache-poster-280x420.png",
-      "subtitle": "Miniseries"
+      "subtitle": "Drama"
     },
     {
       "id": "V211",
@@ -9075,7 +9064,7 @@
       "platforms": [
         "Flow"
       ],
-      "genre": "Miniseries",
+      "genre": "Drama",
       "actors": [
         "Mina Serrano",
         "Victorio D'Alessandro",
@@ -9084,14 +9073,14 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/cris-miro-ella-poster-280x420.png",
-      "subtitle": "Miniseries"
+      "subtitle": "Drama"
     },
     {
       "id": "V212",
       "title": "Santa Evita",
       "year": "2022",
       "channel": "Disney+",
-      "genre": "Miniseries",
+      "genre": "Drama",
       "actors": [
         "Natalia Oreiro",
         "Darío Grandinetti",
@@ -9101,14 +9090,14 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/santa-evita-poster-280x420.png",
-      "subtitle": "Miniseries"
+      "subtitle": "Drama"
     },
     {
       "id": "V213",
       "title": "Ringo: Gloria y Muerte",
       "year": "2023",
       "channel": "Disney+",
-      "genre": "Miniseries",
+      "genre": "Drama",
       "actors": [
         "Jerónimo Bosia",
         "Delfina Cháves",
@@ -9117,7 +9106,7 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/ringo-poster-280x420.png",
-      "subtitle": "Miniseries"
+      "subtitle": "Drama"
     },
     {
       "id": "V214",
@@ -9130,7 +9119,7 @@
       "platforms": [
         "Flow"
       ],
-      "genre": "Miniseries",
+      "genre": "Thriller",
       "actors": [
         "Cecilia Roth",
         "Juan Pablo Shuk",
@@ -9138,7 +9127,7 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/los-internacionales-poster-280x420.png",
-      "subtitle": "Miniseries"
+      "subtitle": "Thriller"
     },
     {
       "id": "V215",
@@ -9151,7 +9140,7 @@
       "platforms": [
         "Flow"
       ],
-      "genre": "Miniseries",
+      "genre": "Thriller",
       "actors": [
         "Victorio D'Alessandro",
         "Nico García Hume",
@@ -9160,7 +9149,7 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/el-hincha-poster-280x420.png",
-      "subtitle": "Miniseries"
+      "subtitle": "Thriller"
     },
     {
       "id": "V216",
@@ -9210,14 +9199,14 @@
       "platforms": [
         "Flow"
       ],
-      "genre": "Miniseries",
+      "genre": "Thriller",
       "actors": [
         "Michael Aloni",
         "Malena Sánchez"
       ],
       "orientation": "vertical",
       "image": "images/verticals/amia-poster-280x420.png",
-      "subtitle": "Miniseries"
+      "subtitle": "Thriller"
     },
     {
       "id": "V219",
@@ -9299,6 +9288,15 @@
       "title": "Tu Parte del Trato",
       "year": "2019",
       "channel": "Flow",
+      "air_channels": [
+        "Canal 13"
+      ],
+      "cable_channels": [
+        "TNT"
+      ],
+      "platforms": [
+        "Flow"
+      ],
       "genre": "Thriller",
       "actors": [
         "Nicolás Cabré",
@@ -9516,7 +9514,7 @@
       "cable_channels": [
         "TNT"
       ],
-      "genre": "Policial",
+      "genre": "Thriller",
       "actors": [
         "Alejandro Awada",
         "Cecilia Roth",
@@ -9525,14 +9523,14 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/historia-de-un-clan-poster-280x420.png",
-      "subtitle": "Policial"
+      "subtitle": "Thriller"
     },
     {
       "id": "V280",
       "title": "Monzón",
       "year": "2019",
       "channel": "Space",
-      "genre": "Policial",
+      "genre": "Thriller",
       "actors": [
         "Jorge Román",
         "Mauricio Paniagua",
@@ -9541,7 +9539,7 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/monzon-poster-280x420.png",
-      "subtitle": "Policial"
+      "subtitle": "Thriller"
     },
     {
       "id": "V233",
@@ -10261,7 +10259,7 @@
         "Fabián Gianola"
       ],
       "orientation": "vertical",
-      "image": "images/verticals/acompaniantes-poster-280x420.png",
+      "image": "images/verticals/acompanantes-poster-280x420.png",
       "subtitle": "Comedia",
       "horario": "23hs",
       "capitulos": 4,
@@ -10662,7 +10660,7 @@
       "title": "Yiya",
       "year": "2025",
       "channel": "Flow",
-      "genre": "Miniseries",
+      "genre": "Thriller",
       "actors": [
         "Julieta Zylberberg",
         "Cristina Banegas",
@@ -10670,7 +10668,7 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/yiya-poster-280x420.png",
-      "subtitle": "Miniseries"
+      "subtitle": "Thriller"
     },
     {
       "id": "V282",
@@ -10709,7 +10707,7 @@
       "title": "El Tiempo de las Moscas",
       "year": "2026",
       "channel": "Netflix",
-      "genre": "Miniseries",
+      "genre": "Thriller",
       "actors": [
         "Nancy Dupláa",
         "Carla Peterson",
@@ -10717,7 +10715,7 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/el-tiempo-de-las-moscas-poster-280x420.png",
-      "subtitle": "Miniseries"
+      "subtitle": "Thriller"
     },
     {
       "id": "v32",
@@ -10935,7 +10933,7 @@
     },
     {
       "id": "v42",
-      "title": "Loco por Vos",
+      "title": "Loco X Vos",
       "year": "2016",
       "channel": "Telefe",
       "genre": "Comedia",
@@ -11540,7 +11538,7 @@
       "title": "El Jardín de Bronce",
       "type": "serie",
       "year": "2017",
-      "genre": "Policial, Drama",
+      "genre": "Thriller",
       "actors": [
         "Joaquín Furriel",
         "Maite Lanata",
