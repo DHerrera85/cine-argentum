@@ -1,13 +1,27 @@
 // js/prime-video.js: Lógica para filtrar y mostrar series de Prime Video
-const primeVideoDataVersion = '20260219-1';
+const primeVideoDataVersion = '20260227-1';
+
+function toArray(value) {
+  if (Array.isArray(value)) return value;
+  if (value === undefined || value === null) return [];
+  return [value];
+}
+
+function isPrimeVideoLike(value) {
+  const text = String(value || '').toLowerCase();
+  if (!text) return false;
+  return text.includes('prime video');
+}
 
 fetch('data.json?v=' + primeVideoDataVersion, { cache: 'no-store' })
   .then(response => response.json())
   .then(data => {
     const items = data.items.filter(item => {
-      const channel = (item.channel || '').toLowerCase();
-      if (!channel) return false;
-      const isPrime = channel.includes('prime video');
+      const sources = []
+        .concat(toArray(item.channel))
+        .concat(toArray(item.platform))
+        .concat(toArray(item.platforms));
+      const isPrime = sources.some(isPrimeVideoLike);
       if (!isPrime) return false;
       return item.type !== 'pelicula';
     });
