@@ -5588,7 +5588,7 @@
       "id": "V292",
       "title": "Amor Animal",
       "year": "2026",
-      "platform": "Prime Video",
+      "channel": "Prime Video",
       "genre": "Juvenil",
       "actors": [
         "Franco Masini",
@@ -5634,7 +5634,7 @@
       "id": "V294",
       "title": "O11CE: Nueva generación",
       "year": "2026",
-      "platform": "Disney+",
+      "channel": "Disney+",
       "genre": "Juvenil",
       "actors": [
         "Mariano González-Guerineau",
@@ -8638,7 +8638,7 @@
       "title": "Barrabrava",
       "year": "2023",
       "channel": "Prime Video",
-      "genre": "Policial",
+      "genre": "Thriller",
       "actors": [
         "Gastón Pauls",
         "Matías Mayer",
@@ -8647,14 +8647,14 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/barrabrava-poster-280x420.png",
-      "subtitle": "Policial"
+      "subtitle": "Thriller"
     },
     {
       "id": "V185",
       "title": "Cromañon",
       "year": "2024",
       "channel": "Prime Video",
-      "genre": "Policial",
+      "genre": "Thriller",
       "actors": [
         "Olivia Nuss",
         "El Purre",
@@ -8665,7 +8665,7 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/cromanon-poster-280x420.png",
-      "subtitle": "Policial"
+      "subtitle": "Thriller"
     },
     {
       "id": "V186",
@@ -8788,7 +8788,7 @@
       "id": "V193",
       "title": "Planners",
       "year": "2023",
-      "channel": "Disney+",
+      "platform": "Disney+",
       "genre": "Drama",
       "actors": [
         "Celeste Cid",
