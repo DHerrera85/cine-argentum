@@ -5585,6 +5585,26 @@
       "subtitle": "Drama"
     },
     {
+      "id": "V292",
+      "title": "Amor Animal",
+      "year": "2026",
+      "platform": "Prime Video",
+      "genre": "Juvenil",
+      "actors": [
+        "Franco Masini",
+        "Tatu Glikman",
+        "Santiago Achaga",
+        "Valentina Zenere"
+      ],
+      "orientation": "vertical",
+      "image": "images/verticals/amor-animal-poster-280x420.png",
+      "subtitle": "Juvenil",
+      "capitulos": 20,
+      "fecha_estreno": "20/03/2026",
+      "sinopsis": "Kaia, una artista de trap de barrio, y Nico, un joven de clase alta en crisis, se enamoran pese a sus mundos opuestos y desatan un conflicto violento a su alrededor. La historia retrata los dilemas de una generación marcada por la ambición, las adicciones y la búsqueda de identidad.",
+      "productora": "Underground Contenidos"
+    },
+    {
       "id": "V293",
       "title": "La Dueña",
       "year": "2012",
@@ -5614,7 +5634,6 @@
       "id": "V294",
       "title": "O11CE: Nueva generación",
       "year": "2026",
-      "channel": "Disney+",
       "platform": "Disney+",
       "genre": "Juvenil",
       "actors": [
@@ -5631,8 +5650,7 @@
       "capitulos": 20,
       "fecha_estreno": "18/03/2026",
       "sinopsis": "Tras triunfar en Europa, Gabo, Dedé y Ricky regresan al IAD y descubren que los Halcones Dorados están al borde del descenso. Decididos a recuperar la gloria y el orgullo del equipo, inician una nueva etapa marcada por la pasión y el fútbol.",
-      "productora": "Pegsa Films, Disney+",
-      "tipo_emision": "Semanal"
+      "productora": "Pegsa Films, Disney+"
     },
     {
       "id": "V295",
