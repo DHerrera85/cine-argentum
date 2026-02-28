@@ -1182,9 +1182,11 @@
       "director": "Nicanor Loreti"
     },
     {
+      "id": "V286",
       "title": "Alguien que me quiera",
-      "genre": "Telenovela",
       "year": "2010",
+      "channel": "Canal 13",
+      "genre": "Telenovela",
       "actors": [
         "Osvaldo Laport",
         "Andrea del Boca",
@@ -1193,74 +1195,68 @@
         "Viviana Saccone",
         "Luisana Lopilato"
       ],
-      "synopsis": "Rocío huye de un matrimonio violento y encuentra refugio en el Mercado Comunitario del Sur, donde conoce a Rodolfo, un hombre recién liberado tras ser condenado injustamente. Entre los puestos del mercado se cruzan historias de amor, secretos y segundas oportunidades que transforman para siempre la vida de sus protagonistas.",
-      "channel": "Canal 13",
-      "image": "images/verticals/alguien-que-me-quiera-poster-280x420.png",
       "orientation": "vertical",
-      "type": "telenovela",
+      "image": "images/verticals/alguien-que-me-quiera-poster-280x420.png",
       "subtitle": "Telenovela",
-      "id": "V286",
-      "viewers": 0,
-      "producer": "Pol-Ka",
-      "director": "",
-      "schedule": "21:45hs; 19:00hs",
-      "episodes": 185,
-      "release_date": "2010-02-01",
-      "rating": 13
+      "horario": "21:45hs; 19:00hs",
+      "capitulos": 185,
+      "fecha_estreno": "01/02/2010",
+      "sinopsis": "Rocío huye de un matrimonio violento y encuentra refugio en el Mercado Comunitario del Sur, donde conoce a Rodolfo, un hombre recién liberado tras ser condenado injustamente. Entre los puestos del mercado se cruzan historias de amor, secretos y segundas oportunidades que transforman para siempre la vida de sus protagonistas.",
+      "rating": "13",
+      "productora": "Pol-Ka",
+      "tipo_emision": "Tira Diaria"
     },
     {
+      "id": "V289",
       "title": "Vientos de Agua",
-      "genre": "Drama",
       "year": "2006",
+      "channel": "Canal 13",
+      "genre": "Drama",
       "actors": [
         "Ernesto Alterio",
         "Eduardo Blanco",
         "Héctor Alterio"
       ],
-      "synopsis": "Narra dos historias paralelas: la de José Olaya, un joven minero asturiano que se ve obligado a emigrar a Argentina en el año 1934; y la de su hijo, Ernesto Olaya, un arquitecto argentino que emigra a España en 2001, en busca de una salida a los problemas económicos que acucian a su familia.",
-      "channel": "Canal 13",
-      "image": "images/verticals/vientos-de-agua-poster-280x420-2006.png",
       "orientation": "vertical",
-      "type": "Drama",
+      "image": "images/verticals/vientos-de-agua-poster-280x420-2006.png",
       "subtitle": "Drama",
-      "id": "V289",
-      "viewers": 0,
-      "producer": "Pol-Ka",
-      "director": "",
-      "schedule": "22:30hs",
-      "episodes": 13,
-      "release_date": "2006-03-01",
-      "rating": 11.4
+      "horario": "22:30hs",
+      "capitulos": 13,
+      "fecha_estreno": "01/03/2006",
+      "sinopsis": "Narra dos historias paralelas: la de José Olaya, un joven minero asturiano que se ve obligado a emigrar a Argentina en el año 1934; y la de su hijo, Ernesto Olaya, un arquitecto argentino que emigra a España en 2001, en busca de una salida a los problemas económicos que acucian a su familia.",
+      "rating": "11,4",
+      "productora": "Pol-Ka",
+      "tipo_emision": "Semanal"
     },
     {
+      "id": "V287",
       "title": "Sr. y Sra. Camas",
-      "genre": "Sitcom",
       "year": "2011",
+      "channel": "Canal 7/TV Pública",
+      "genre": "Sitcom",
       "actors": [
         "Florencia Peña",
         "Gabriel Goity",
         "Carola Reyna",
         "Diego Ramos"
       ],
-      "synopsis": "Narra la historia de una pareja de consejeros matrimoniales que fundan el CAMAS (Centro de Ayuda a Matrimonios Antes de Sucumbir), enfrentando crisis personales y profesionales mientras intentan salvar los matrimonios de sus clientes",
-      "channel": "Canal 7/TV Pública",
-      "image": "images/verticals/srysracamas-poster-280x420.png",
       "orientation": "vertical",
-      "type": "Sitcom",
+      "image": "images/verticals/srysracamas-poster-280x420.png",
       "subtitle": "Sitcom",
-      "id": "V287",
-      "viewers": 0,
-      "producer": "Mar de Fueguitos",
-      "director": "",
-      "schedule": "22:30hs",
-      "episodes": 120,
-      "release_date": "2011-04-18",
-      "rating": 1.5
+      "horario": "22:30hs",
+      "capitulos": 120,
+      "fecha_estreno": "18/04/2011",
+      "sinopsis": "Narra la historia de una pareja de consejeros matrimoniales que fundan el CAMAS (Centro de Ayuda a Matrimonios Antes de Sucumbir), enfrentando crisis personales y profesionales mientras intentan salvar los matrimonios de sus clientes",
+      "rating": "1,5",
+      "productora": "Mar de Fueguitos",
+      "tipo_emision": "Tira Diaria"
     },
     {
+      "id": "V288",
       "title": "En Terapia",
-      "genre": "Drama",
       "year": "2012",
+      "channel": "Canal 7/TV Pública",
+      "genre": "Drama",
       "actors": [
         "Diego Peretti",
         "Julieta Cardinali",
@@ -1273,45 +1269,39 @@
         "Julieta Díaz",
         "Darío Grandinetti"
       ],
-      "synopsis": "En cada episodio, el psicólogo Guillermo Montes atiende un paciente distinto. Los viernes cambia de rol y supervisa sus casos con Lucía Aranda, su mentora y analista. Así la historia sigue la labor cotidiana del psicólogo a lo largo de su semana, mostrando en cada uno de sus episodios una sesión de terapia con sus pacientes.",
-      "channel": "Canal 7/TV Pública",
-      "image": "images/verticals/en-terapia-poster-280x420.png",
       "orientation": "vertical",
-      "type": "Drama",
+      "image": "images/verticals/en-terapia-poster-280x420.png",
       "subtitle": "Drama",
-      "id": "V288",
-      "viewers": 0,
-      "producer": "Dori Media",
-      "director": "",
-      "schedule": "22:30hs",
-      "episodes": 113,
-      "release_date": "2012-05-14",
-      "rating": 3
+      "horario": "22:30hs",
+      "capitulos": 113,
+      "fecha_estreno": "14/05/2012",
+      "sinopsis": "Cada episodio muestra al psicólogo Guillermo Montes atendiendo a un paciente distinto en sesión. Los viernes, él mismo se convierte en paciente al supervisar sus casos con su mentora Lucía Aranda.",
+      "rating": "3",
+      "productora": "Dori Media",
+      "tipo_emision": "Tira Diaria"
     },
 
     {
+      "id": "V290",
       "title": "Mi Amor, Mi Amor",
-      "genre": "Comedia",
       "year": "2012",
+      "channel": "Telefe",
+      "genre": "Comedia",
       "actors": [
         "Juan Gil Navarro",
         "Jazmín Stuart",
         "Brenda Gandini"
       ],
-      "synopsis": "Remake de Naranja y Media (1997), cuenta la historia de Juan, un hombre noble que, tras un accidente fortuito, se enamora de dos mujeres: Valeria y Laly. Atrapado entre ambas, intenta sostener una doble vida que pronto se vuelve tan conflictiva como insostenible.",
-      "channel": "Telefe",
-      "image": "images/verticals/mi-amor-mi-amor-poster-280x420.png",
       "orientation": "vertical",
-      "type": "Comedia",
+      "image": "images/verticals/mi-amor-mi-amor-poster-280x420.png",
       "subtitle": "Comedia",
-      "id": "V290",
-      "viewers": 0,
-      "producer": "El Árbol, Telefe Contenidos",
-      "director": "",
-      "schedule": "22:30hs",
-      "episodes": 90,
-      "release_date": "2012-11-28",
-      "rating": 11
+      "horario": "22:30hs",
+      "capitulos": 90,
+      "fecha_estreno": "28/11/2012",
+      "sinopsis": "Remake de Naranja y Media (1997), cuenta la historia de Juan, un hombre noble que, tras un accidente fortuito, se enamora de dos mujeres: Valeria y Laly. Atrapado entre ambas, intenta sostener una doble vida que pronto se vuelve tan conflictiva como insostenible.",
+      "rating": "11",
+      "productora": "El Árbol, Telefe Contenidos",
+      "tipo_emision": "Tira Diaria"
     },
     {
       "title": "Abzurdah",
@@ -5724,11 +5714,19 @@
         "Nancy Dupláa",
         "Daniel Hendler",
         "Luciano Cáceres",
-        "Isabel Macedo"
+        "Isabel Macedo",
+        "Paola Barrientos"
       ],
       "orientation": "vertical",
       "image": "images/verticals/graduados-poster-280x420.png",
       "subtitle": "Comedia",
+      "horario": "21:45hs",
+      "capitulos": 179,
+      "fecha_estreno": "14/02/2012",
+      "sinopsis": "Un grupo de excompañeros del secundario se reencuentra diecinueve años después de graduarse y revive viejos lazos y conflictos. Andrés descubre que María Laura estaba embarazada al casarse con Pablo, quien cree ser el padre del hijo, desatando un delicado secreto del pasado.",
+      "rating": "23,6",
+      "productora": "Underground Contenidos, Endemol",
+      "tipo_emision": "Tira Diaria",
       "remakes": [
         {
           "title": "Graduados",
@@ -7405,7 +7403,14 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/los-unicos-2012-poster-280x420.png",
-      "subtitle": "Comedia"
+      "subtitle": "Comedia",
+      "horario": "21:45hs, 19hs",
+      "capitulos": 53,
+      "fecha_estreno": "15/02/2012",
+      "sinopsis": "La brigada secreta, debilitada tras la muerte de sus líderes, enfrenta la amenaza de Dreyfus y nuevos enemigos. Mientras tanto, sus agentes deben aprender a controlar sus poderes mutados para sobrevivir.",
+      "rating": "4,5",
+      "productora": "Pol-Ka",
+      "tipo_emision": "Tira Diaria"
     },
     {
       "id": "V124",
@@ -7651,7 +7656,14 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/violetta-poster-280x420.png",
-      "subtitle": "Juvenil"
+      "subtitle": "Juvenil",
+      "horario": "18hs",
+      "capitulos": 240,
+      "fecha_estreno": "01/09/2012",
+      "sinopsis": "Violetta regresa a Buenos Aires y descubre su pasión por la música, que debe ocultar para no enfrentarse a su padre. Él, marcado por la muerte de su esposa durante una gira, intenta alejarla de ese mundo creyendo que así la protege.",
+      "rating": "-",
+      "productora": "Pol-ka",
+      "tipo_emision": "Tira Diaria"
     },
     {
       "id": "V137",
@@ -8395,7 +8407,14 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/supertorpe-poster-280x420.png",
-      "subtitle": "Juvenil"
+      "subtitle": "Juvenil",
+      "horario": "18:45hs, 17:45hs",
+      "capitulos": 52,
+      "fecha_estreno": "23/08/2011",
+      "sinopsis": "Poli Truper es una adolescente con superpoderes que se activan cuando se pone nerviosa y no logra controlarlos. Con la ayuda de su hermano Filo y su entrenadora Chin, intenta ocultar el caos mientras vive su primer amor con Félix.",
+      "rating": "5,8",
+      "productora": "Utopia/RGB Entertainment",
+      "tipo_emision": "Tira Diaria"
     },
     {
       "id": "V165",
@@ -10005,8 +10024,14 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/condicionados-poster-280x420.png",
-      "subtitle": "Drama"
-    },
+      "subtitle": "Drama",
+      "horario": "23hs",
+      "capitulos": 13,
+      "fecha_estreno": "23/05/2012",
+      "sinopsis": "Dicky y Lorna son un matrimonio que alcanzó el éxito en los años 80 dentro de la industria pornográfica. Décadas después, enfrentan la decadencia profesional y personal, con su relación al borde del divorcio.",
+      "rating": "13,8",
+      "productora": "Pol-Ka",
+      "tipo_emision": "Semanal"    },
     {
       "id": "V250",
       "title": "Tiempos Compulsivos",
@@ -10017,11 +10042,19 @@
         "Rodrigo de la Serna",
         "Paola Krum",
         "Fernán Mirás",
-        "Gloria Carrá"
+        "Gloria Carrá",
+        "Carla Peterson"
       ],
       "orientation": "vertical",
       "image": "images/verticals/tiempos-compulsivos-poster-280x420.png",
-      "subtitle": "Drama"
+      "subtitle": "Drama",
+      "horario": "23hs",
+      "capitulos": 27,
+      "fecha_estreno": "29/08/2012",
+      "sinopsis": "La serie transcurre en un espacio terapéutico donde un grupo de pacientes con severas compulsiones enfrenta sus trastornos en sesiones grupales guiadas por el Dr. Ricardo Buso y su equipo. Mientras intentan ayudarlos, los propios terapeutas también deberán confrontar sus miedos y obsesiones.",
+      "rating": "8,4",
+      "productora": "Pol-Ka",
+      "tipo_emision": "Semanal"
     },
     {
       "id": "V251",
@@ -10032,11 +10065,20 @@
       "actors": [
         "Gabriela Toscano",
         "Griselda Siciliani",
-        "Celeste Cid"
+        "Celeste Cid",
+        "Hugo Arana",
+        "Betiana Blum"
       ],
       "orientation": "vertical",
       "image": "images/verticals/para-vestir-santos-poster-280x420.png",
-      "subtitle": "Drama"
+      "subtitle": "Drama",
+      "horario": "23hs",
+      "capitulos": 36,
+      "fecha_estreno": "21/04/2010",
+      "sinopsis": "Tras la muerte de su madre autoritaria, Susana, Virginia y Malena creen alcanzar la libertad, pero pronto enfrentan nuevas frustraciones. Entre fracasos amorosos y la pérdida de su hogar a manos de su media hermana, deberán reconstruir sus vidas juntas.",
+      "rating": "16",
+      "productora": "Pol-Ka",
+      "tipo_emision": "Semanal"
     },
     {
       "id": "V252",
@@ -10286,11 +10328,19 @@
       "genre": "Comedia",
       "actors": [
         "Rafael Ferro",
-        "Carlos Belloso"
+        "Carlos Belloso",
+        "Muriel Santa Ana"
       ],
       "orientation": "vertical",
       "image": "images/verticals/el-donante-poster-280x420.png",
-      "subtitle": "Comedia"
+      "subtitle": "Comedia",
+      "horario": "22:30hs, 00:15hs",
+      "capitulos": 13,
+      "fecha_estreno": "22/05/2012",
+      "sinopsis": "Bruno Sartori, un ingeniero viudo y exitoso, descubre el día de su cumpleaños que en su juventud fue donante de esperma y tiene 144 hijos biológicos. Junto a Violeta, una de esas hijas, emprende la búsqueda de los demás, enfrentando un inesperado giro en su vida.",
+      "rating": "11,3",
+      "productora": "Eyeworks-Cuatro Cabezas/INCAA",
+      "tipo_emision": "Semanal"
     },
     {
       "id": "V263",
@@ -11075,7 +11125,14 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/cuando-me-sonreis-poster-420x280.png",
-      "subtitle": "Comedia"
+      "subtitle": "Comedia",
+      "horario": "22hs",
+      "capitulos": 78,
+      "fecha_estreno": "03/08/2011",
+      "sinopsis": "Gastón Murfi es un profesional exitoso cuya estructurada vida se desmorona con la aparición de su padre Juan y un hermano desconocido Juanse, sumado al amor que surge con su vecina Luna",
+      "rating": "11,1",
+      "productora": "Utopia/RGB Entertainment",
+      "tipo_emision": "Tira Diaria"
     },
     {
       "id": "v45",
@@ -11197,11 +11254,22 @@
       "genre": "Telenovela",
       "actors": [
         "Luciano Castro",
-        "Celeste Cid"
+        "Celeste Cid",
+        "Gabriel Goity",
+        "Gonzalo Valenzuela",
+        "Eugenia Tobal",
+        "Gimena Accardi"
       ],
       "orientation": "vertical",
       "image": "images/verticals/sos-mi-hombre-poster-280x420.png",
       "subtitle": "Telenovela",
+      "horario": "21:45hs, 23hs",
+      "capitulos": 202,
+      "fecha_estreno": "3/1/2005",
+      "sinopsis": "Ringo, un boxeador retirado, lucha contra problemas económicos, desilusiones y la custodia de su hijo mientras trabaja como bombero voluntario y hace changas para salir adelante. Su vida cambia al cruzarse con Camila, una médica solidaria que encuentra sentido en ayudar a los demás.",
+      "rating": "15,9",
+      "productora": "Pol-Ka",
+      "tipo_emision": "Tira Diaria",
       "remakes": [
         {
           "title": "Ringo, La Pelea de su Vida",
@@ -11498,7 +11566,14 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/lobo-poster-280x420.png",
-      "subtitle": "Telenovela"
+      "subtitle": "Telenovela",
+      "horario": "22hs, 23:15",
+      "capitulos": 53,
+      "fecha_estreno": "06/02/2012",
+      "sinopsis": "Lucas Moreno, séptimo hijo varón de los Díaz Pujol, fue abandonado de niño por una profecía que anunciaba que se convertiría en hombre lobo al cumplir 30 años. Décadas después regresa a su pueblo en busca de la verdad y, junto a Ana, enfrenta la ambición y el odio de su propia familia.",
+      "rating": "13",
+      "productora": "Pol-Ka",
+      "tipo_emision": "Tira Diaria"
     },
     {
       "id": "v60",
