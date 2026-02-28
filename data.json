@@ -7741,7 +7741,14 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/aliados-poster-280x420.png",
-      "subtitle": "Juvenil"
+      "subtitle": "Juvenil",
+      "horario": "2013: Miércoles 21hs, 2014: Domingos: 19:30hs",
+      "capitulos": 40,
+      "fecha_estreno": "26/06/2013",
+      "sinopsis": "Siete seres de luz descienden a la Tierra para guiar y sanar a jóvenes conflictivos y marginados. Con 105 días para evitar la destrucción del planeta, deberán ayudarlos a transformar su dolor y cambiar su destino.",
+      "rating": "7,4",
+      "productora": "Cris Morena Group / RGB Entertainment",
+      "tipo_emision": "Semanal"
     },
     {
       "id": "V140",
@@ -10922,7 +10929,13 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/farsantes-poster-280x420.png",
-      "subtitle": "Drama"
+      "subtitle": "Drama",
+      "horario": "22:45hs",
+      "capitulos": 125,
+      "fecha_estreno": "26/06/2013",
+      "sinopsis": "Un estudio de abogados penalistas del Gran Buenos Aires, liderado por Guillermo Graziani, retoma la actividad tras su inhabilitación. Entre casos judiciales complejos, el equipo —Pedro, Alberto, Gabriela y Marcos— enfrenta intensos conflictos personales y amorosos.",
+      "rating": "12,9",
+      "productora": "Pol-Ka"
     },
     {
       "id": "v34",
@@ -11633,7 +11646,14 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/taxxi-amores-cruzados-280x420.png",
-      "subtitle": "Telenovela"
+      "subtitle": "Telenovela",
+      "horario": "15:30",
+      "capitulos": 66,
+      "fecha_estreno": "28/10/2013",
+      "sinopsis": "Quince años después de enviudar, Martín se obsesiona con Tania, una mujer idéntica a su esposa muerta, sin saber que fue manipulada por su antiguo rival para vengarse de él. Mientras el siniestro Moretti mueve los hilos, secretos y pasiones entrelazan también el destino de su hijo Diego y quienes los rodean.",
+      "rating": "7,9",
+      "productora": "Endemol/CTV Contenidos/Azteka Films",
+      "tipo_emision": "Tira Diaria"
     },
     {
       "id": "v62",
