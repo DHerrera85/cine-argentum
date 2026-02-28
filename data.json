@@ -5291,11 +5291,18 @@
       "actors": [
         "Diego Torres",
         "Eleonora Wexler",
-        "Mike Amigorena"
+        "Mike Amigorena",
+        "Monna Antonópulos",
+        "Juan Gil Navarro",
+        "Hugo Arana"
       ],
       "orientation": "vertical",
       "image": "images/verticals/los-vecinos-en-guerra-poster-280x420.png",
-      "subtitle": "Comedia"
+      "subtitle": "Comedia",
+      "sinopsis": "Mecha, una ama de casa con un pasado oculto como estafadora, ve su vida tranquila tambalear cuando reaparece Álex, su ex socio y antiguo amor, a quien creía muerto. Instalado como su vecino con una familia falsa, él intentará protegerla y reconquistarla.",
+      "rating": "13,2",
+      "productora": "Underground Contenidos, Endemol",
+      "tipo_emision": "Tira Diaria"
     },
     {
       "id": "v9",
@@ -5986,7 +5993,14 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/solamente-vos-poster-280x420.png",
-      "subtitle": "Comedia"
+      "subtitle": "Comedia",
+      "horario": "21:45hs",
+      "capitulos": 223,
+      "fecha_estreno": "28/1/2013",
+      "sinopsis": "Juan Cousteau, músico y padre de cinco hijos, ve desmoronarse su vida cuando su esposa le pide un tiempo y pierde su trabajo, mientras se enamora de su vecina Aurora, amante de su mejor amigo. Entre dilemas de lealtad, conflictos familiares y los problemas de sus hijos, deberá reinventarse y decidir por su propia felicidad.",
+      "rating": "15,2",
+      "productora": "Pol-Ka",
+      "tipo_emision": "Tira Diaria"
     },
     {
       "id": "v22",
@@ -9727,7 +9741,14 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/30-dias-juntos-poster-280x420.png",
-      "subtitle": "Drama"
+      "subtitle": "Drama",
+      "horario": "22hs",
+      "capitulos": 13,
+      "fecha_estreno": "19/09/2012",
+      "sinopsis": "Leni cancela un viaje con su novio Lucas para iniciar una rehabilitación física. En el proceso, deberá convivir y forjar un vínculo inesperado con su kinesiólogo, Julián.",
+      "rating": "-",
+      "productora": "Illusion Studios",
+      "tipo_emision": "Semanal"
     },
     {
       "id": "V238",
@@ -10350,11 +10371,20 @@
       "genre": "Comedia",
       "actors": [
         "Mariano Martínez",
-        "Ana Maria Orozco"
+        "Ana Maria Orozco",
+        "Yayo Guridi",
+        "Mónica Gonzaga"
       ],
       "orientation": "vertical",
       "image": "images/verticals/mi-problema-con-las-mujeres-poster-280x420.png",
-      "subtitle": "Comedia"
+      "subtitle": "Comedia",
+      "horario": "22:30hs",
+      "capitulos": 13,
+      "fecha_estreno": "10/09/2012",
+      "sinopsis": "José, un soltero atractivo que huye de la rutina y fracasa en relaciones duraderas, acepta iniciar una terapia recomendada por su psicólogo. En cada sesión enfrentará una intensa revisión de su vida afectiva y de sus propios miedos al compromiso.",
+      "rating": "16,3",
+      "productora": "Resonant TV / Frecuencia Latina International",
+      "tipo_emision": "Semanal"
     },
     {
       "id": "V264",
