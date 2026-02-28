@@ -7667,7 +7667,14 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/peter-punk-poster-280x420.png",
-      "subtitle": "Juvenil"
+      "subtitle": "Juvenil",
+      "horario": "20:30hs",
+      "capitulos": 94,
+      "fecha_estreno": "21/03/2011",
+      "sinopsis": "Peter, un adolescente amante del rock criado en una familia punk, sueña con triunfar con su banda “Rock Bones”. Junto a sus amigos, deberá enfrentar a sus rivales “Twin Pop” en una competencia musical llena de desafíos.",
+      "rating": "-",
+      "productora": "Illusion Studios",
+      "tipo_emision": "Tira Diaria"
     },
     {
       "id": "V138",
@@ -7679,11 +7686,19 @@
         "Mariana Magaña",
         "Leonel Deluglio",
         "Nicole Luis",
-        "Jorge Blanco"
+        "Jorge Blanco",
+        "Eva De Dominici"
       ],
       "orientation": "vertical",
       "image": "images/verticals/cuando-toca-la-campana-poster-280x420.png",
-      "subtitle": "Juvenil"
+      "subtitle": "Juvenil",
+      "horario": "18:15hs",
+      "capitulos": 70,
+      "fecha_estreno": "28/02/2011",
+      "sinopsis": "Basada en el formato italiano Quelli dell’Intervallo, la serie sigue a un grupo de amigos que comparten sus aventuras y desventuras durante el recreo. Desde el clásico balcón de la escuela, viven situaciones divertidas que reflejan la vida estudiantil.",
+      "rating": "-",
+      "productora": "Cristal Líquido Produçöes",
+      "tipo_emision": "Tira Diaria"
     },
     {
       "id": "V139",
@@ -9753,7 +9768,14 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/el-puntero-poster-280x420.png",
-      "subtitle": "Thriller"
+      "subtitle": "Thriller",
+      "horario": "23hs",
+      "capitulos": 39,
+      "fecha_estreno": "15/05/2011",
+      "sinopsis": "Pablo “Gitano” Perotti es un puntero barrial que intermedia las necesidades de su comunidad en un barrio humilde de Buenos Aires. Entre la asistencia social y la corrupción política, se mueve en una zona gris donde el poder tiene su propio precio.",
+      "rating": "19,1",
+      "productora": "Pol-Ka",
+      "tipo_emision": "Semanal"
     },
     {
       "id": "V241",
