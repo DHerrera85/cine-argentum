@@ -1,5 +1,5 @@
 // telefe.js - Renderiza las series de Telefe con filtros avanzados
-const telefeDataVersion = '20260227-2';
+const telefeDataVersion = '20260301-1';
 
 // Cargar data.json y filtrar solo series de Telefe
 document.addEventListener('DOMContentLoaded', async function() {
@@ -162,7 +162,11 @@ document.addEventListener('DOMContentLoaded', async function() {
   const select = document.getElementById('actorSortCustom');
   const selectOptions = select.querySelector('.custom-select-options');
   const selectSelected = select.querySelector('.custom-select-selected');
+  const overSelect = document.getElementById('actorOverFilterCustom');
+  const overSelectOptions = overSelect.querySelector('.custom-select-options');
+  const overSelectSelected = overSelect.querySelector('.custom-select-selected');
   let currentSort = 'viewers';
+  let currentOverFilter = 'all';
 
   function formatRating(value) {
     if (value === null || value === undefined || value === '') return '-';
@@ -175,6 +179,14 @@ document.addEventListener('DOMContentLoaded', async function() {
     const numStr = String(value).replace(',', '.');
     const num = parseFloat(numStr);
     return Number.isNaN(num) ? -Infinity : num;
+  }
+
+  function getNormalizedGenre(item) {
+    return item && item.genre ? String(item.genre).trim().toLowerCase() : '';
+  }
+
+  function getNormalizedTipoEmision(item) {
+    return item && item.tipo_emision ? String(item.tipo_emision).trim().toLowerCase() : '';
   }
 
   function renderList(list) {
@@ -208,8 +220,6 @@ document.addEventListener('DOMContentLoaded', async function() {
 
   function sortAndFilter(list, sort) {
     let filtered = [...list];
-    // Normalizar género para todos los items (por si hay diferencias de mayúsculas/minúsculas)
-    filtered = filtered.map(item => ({ ...item, genre: item.genre ? item.genre.trim().toLowerCase() : '' }));
     if (sort === 'viewers') {
       filtered.sort((a, b) => parseRating(b.rating) - parseRating(a.rating));
     } else if (sort === 'year') {
@@ -228,46 +238,85 @@ document.addEventListener('DOMContentLoaded', async function() {
       });
       filtered.sort((a, b) => (a.year || 0) - (b.year || 0)); // ascendente: más antigua primero
     } else if (sort === 'comedias') {
-      filtered = filtered.filter(item => item.genre === 'comedia');
+      filtered = filtered.filter(item => getNormalizedGenre(item) === 'comedia');
       filtered.sort((a, b) => (parseInt(b.year) || 0) - (parseInt(a.year) || 0));
     } else if (sort === 'telenovelas') {
-      filtered = filtered.filter(item => item.genre === 'telenovela');
+      filtered = filtered.filter(item => getNormalizedGenre(item) === 'telenovela');
       filtered.sort((a, b) => (parseInt(b.year) || 0) - (parseInt(a.year) || 0));
     } else if (sort === 'juveniles') {
-      filtered = filtered.filter(item => item.genre === 'juvenil');
+      filtered = filtered.filter(item => getNormalizedGenre(item) === 'juvenil');
       filtered.sort((a, b) => (parseInt(b.year) || 0) - (parseInt(a.year) || 0));
     } else if (sort === 'sitcoms') {
-      filtered = filtered.filter(item => item.genre === 'sitcom');
+      filtered = filtered.filter(item => getNormalizedGenre(item) === 'sitcom');
       filtered.sort((a, b) => (parseInt(b.year) || 0) - (parseInt(a.year) || 0));
     } else if (sort === 'policiales') {
-      filtered = filtered.filter(item => item.genre === 'thriller' || item.genre === 'policial');
+      filtered = filtered.filter(item => {
+        const genre = getNormalizedGenre(item);
+        return genre === 'thriller' || genre === 'policial';
+      });
       filtered.sort((a, b) => (parseInt(b.year) || 0) - (parseInt(a.year) || 0));
     } else if (sort === 'tira-diaria') {
       filtered = filtered.filter(item => {
-        const tipo = item.tipo_emision ? String(item.tipo_emision).trim().toLowerCase() : '';
+        const tipo = getNormalizedTipoEmision(item);
         return tipo.includes('tira diaria');
       });
       filtered.sort((a, b) => (parseInt(b.year) || 0) - (parseInt(a.year) || 0));
     } else if (sort === 'semanal') {
       filtered = filtered.filter(item => {
-        const tipo = item.tipo_emision ? String(item.tipo_emision).trim().toLowerCase() : '';
+        const tipo = getNormalizedTipoEmision(item);
         return tipo.includes('semanal');
       });
       filtered.sort((a, b) => (parseInt(b.year) || 0) - (parseInt(a.year) || 0));
     }
-    // Restaurar género capitalizado para visualización
-    filtered = filtered.map(item => ({ ...item, genre: item.genre.charAt(0).toUpperCase() + item.genre.slice(1) }));
     return filtered;
   }
 
-  // Custom select logic
+  function applyOverFilter(list, overFilter) {
+    if (overFilter === 'all') return list;
+    if (overFilter === 'tira-diaria') {
+      return list.filter(item => getNormalizedTipoEmision(item).includes('tira diaria'));
+    }
+    if (overFilter === 'semanal') {
+      return list.filter(item => getNormalizedTipoEmision(item).includes('semanal'));
+    }
+    if (overFilter === 'thriller') {
+      return list.filter(item => {
+        const genre = getNormalizedGenre(item);
+        return genre === 'thriller' || genre === 'policial';
+      });
+    }
+    return list.filter(item => getNormalizedGenre(item) === overFilter);
+  }
+
+  function applyCurrentView() {
+    const primaryResult = sortAndFilter(series, currentSort);
+    const combinedResult = applyOverFilter(primaryResult, currentOverFilter);
+    renderList(combinedResult);
+  }
+
+  function closeSelect(customSelect) {
+    customSelect.classList.remove('open');
+    customSelect.querySelector('.custom-select-options').style.display = 'none';
+  }
+
+  function openSelect(customSelect) {
+    [select, overSelect].forEach(s => {
+      if (s !== customSelect) closeSelect(s);
+    });
+    customSelect.classList.add('open');
+    customSelect.querySelector('.custom-select-options').style.display = 'block';
+  }
+
+  // Custom select logic (filtro principal)
   select.addEventListener('click', function(e) {
-    select.classList.toggle('open');
-    selectOptions.style.display = select.classList.contains('open') ? 'block' : 'none';
+    if (select.classList.contains('open')) {
+      closeSelect(select);
+    } else {
+      openSelect(select);
+    }
   });
   select.addEventListener('blur', function() {
-    select.classList.remove('open');
-    selectOptions.style.display = 'none';
+    closeSelect(select);
   });
   selectOptions.addEventListener('click', function(e) {
     if (e.target.tagName === 'LI') {
@@ -275,19 +324,39 @@ document.addEventListener('DOMContentLoaded', async function() {
       e.target.classList.add('selected');
       selectSelected.textContent = e.target.textContent;
       currentSort = e.target.getAttribute('data-value');
-      renderList(sortAndFilter(series, currentSort));
-      select.classList.remove('open');
-      selectOptions.style.display = 'none';
-    }
-  });
-  // Cerrar select si se hace click fuera
-  document.addEventListener('click', function(e) {
-    if (!select.contains(e.target)) {
-      select.classList.remove('open');
-      selectOptions.style.display = 'none';
+      applyCurrentView();
+      closeSelect(select);
     }
   });
 
+  // Custom select logic (sobrefiltro)
+  overSelect.addEventListener('click', function(e) {
+    if (overSelect.classList.contains('open')) {
+      closeSelect(overSelect);
+    } else {
+      openSelect(overSelect);
+    }
+  });
+  overSelect.addEventListener('blur', function() {
+    closeSelect(overSelect);
+  });
+  overSelectOptions.addEventListener('click', function(e) {
+    if (e.target.tagName === 'LI') {
+      overSelectOptions.querySelectorAll('li').forEach(li => li.classList.remove('selected'));
+      e.target.classList.add('selected');
+      overSelectSelected.textContent = e.target.textContent;
+      currentOverFilter = e.target.getAttribute('data-value');
+      applyCurrentView();
+      closeSelect(overSelect);
+    }
+  });
+
+  // Cerrar select si se hace click fuera
+  document.addEventListener('click', function(e) {
+    if (!select.contains(e.target)) closeSelect(select);
+    if (!overSelect.contains(e.target)) closeSelect(overSelect);
+  });
+
   // Inicial
-  renderList(sortAndFilter(series, currentSort));
+  applyCurrentView();
 });

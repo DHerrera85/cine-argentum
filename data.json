@@ -4950,11 +4950,21 @@
       "actors": [
         "Luciano Castro",
         "Joaquín Furriel",
-        "Luciano Cáceres"
+        "Luciano Cáceres",
+        "Peto Menahem",
+        "Vanesa González",
+        "Marcela Kloosterboer",
+        "Gloria Carrá"
       ],
       "orientation": "vertical",
       "image": "images/verticals/senores-papis-poster-280x420.png",
       "subtitle": "Comedia",
+      "horario": "22:30hs, 23:15hs",
+      "capitulos": 184,
+      "fecha_estreno": "06/01/2014",
+      "sinopsis": "Cuatro padres modernos —Favio, Ignacio, Franco y Mauro— se hacen amigos al compartir a diario la puerta del jardín de sus hijos. Entre desafíos de la paternidad y conflictos personales, construyen una amistad entrañable en un mundo dominado por madres.",
+      "rating": "11,2",
+      "productora": "Telefe Contenidos",
       "remakes": [
         {
           "title": "Señores Papis",
@@ -6053,7 +6063,14 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/somos-familia-poster-280x420.png",
-      "subtitle": "Telenovela",
+     "subtitle": "Telenovela",
+      "horario": "21hs, 19hs",
+      "capitulos": "180",
+      "fecha_estreno": "06/01/2014",
+      "sinopsis": "Joaquín Navarro asume la tutela de los hijos de su mejor amigo tras un accidente, mientras Manuela Paz descubre que una de las niñas es la hija que dio en adopción. Para estar cerca de Pilar, se infiltra como mucama en la casa y, en la convivencia, surge el amor entre ambos.",
+      "rating": "10,3",
+      "productora": "L.C Producciones",
+      "tipo_emision": "Tira Diaria",      
       "remakes": [
         {
           "title": "Somos Familia",
@@ -6082,7 +6099,14 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/mis-amigos-de-siempre-poster-280x420.png",
-      "subtitle": "Telenovela"
+      "subtitle": "Telenovela",
+      "horario": "22hs, 23hs",
+      "capitulos": "160",
+      "fecha_estreno": "03/12/2013",
+      "sinopsis": "Cuenta la historia de un grupo de amigos que se separan y vuelven a reunirse después de cinco años para el funeral de uno de ellos, Martín, quien muere no sin antes dejar en una nota los secretos de cada uno de sus amigos y que a medida de los capítulos irán saliendo a la luz.",
+      "rating": "11,3",
+      "productora": "Pol-Ka",
+      "tipo_emision": "Tira Diaria"
     },
     {
       "id": "v26",
@@ -6757,7 +6781,14 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/esa-mujer-poster-280x420.png",
-      "subtitle": "Telenovela"
+      "subtitle": "Telenovela",
+      "horario": "14hs",
+      "capitulos": 120,
+      "fecha_estreno": "09/12/2013",
+      "sinopsis": "Nicolasa, una payamédica que descubre que le queda un año de vida, decide reinventarse y buscar al padre de su sobrino, a quien crió como hijo. En el camino conoce a Ignacio, un empresario marcado por el pasado, con quien vivirá una intensa historia de amor",
+      "rating": "1,3",
+      "productora": "A+A Group",
+      "tipo_emision": "Tira Diaria"
     },
     {
       "id": "v90",
@@ -8463,7 +8494,7 @@
       "sinopsis": "La comedia musical enfrenta a dos familias opuestas: los tradicionales Qitapenas y los modernos y adinerados Jones. Mientras Tony y Brian compiten en lo musical, sus hijos Lola y Alex viven un romance prohibido.",
       "rating": "5,2",
       "productora": "Utopia/RGB Entertainment",
-      "tipo_emision": "Tira Diaria"
+      "tipo_emision": "Semanal"
     },
     {
       "id": "V166",
@@ -8477,7 +8508,14 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/cata-y-el-misterio-esfera-poster-280x420.png",
-      "subtitle": "Juvenil"
+      "subtitle": "Juvenil",
+      "horario": "19hs",
+      "capitulos": 115,
+      "fecha_estreno": "11/12/2013",
+      "sinopsis": "Dos gemelos clonados, Adrián y Leo, llegan a la Tierra desde una dimensión avanzada pero sin emociones. Con la ayuda de Catalina, aprenden a sentir y a hacer amigos mientras huyen de una organización que quiere capturarlos.",
+      "rating": "0,9",
+      "productora": "Yair Dori",
+      "tipo_emision": "Tira Diaria"
     },
     {
       "id": "V167",
@@ -10426,6 +10464,7 @@
       "fecha_estreno": "17/07/2011",
       "sinopsis": "Hugo, un hombre trabajador y desencantado, comienza a trabajar en la agencia de citas de su prima haciéndose pasar por el “hombre ideal”. En el proceso, redescubre sus emociones y enfrenta su pasado para volver a creer en el amor.",
       "rating": "20,6",
+      "tipo_emision": "Semanal",
       "productora": "100 Bares",
       "remakes": [
         {
@@ -10462,7 +10501,9 @@
       "fecha_estreno": "09/03/2009",
       "sinopsis": "Cuatro hombres, incluyendo a un profesor de filosofía y un ex futbolista, se convierten en acompañantes de mujeres solitarias, terminando envueltos en situaciones ilegales y enredos cómicos al buscar solucionar sus problemas",
       "rating": "-",
-      "productora": "Endemol"
+      "productora": "Endemol",
+      "tipo_emision": "Semanal"
+
     },
     {
       "id": "P1402",
