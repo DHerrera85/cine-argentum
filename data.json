@@ -5576,10 +5576,17 @@
       "year": "2013",
       "channel": "Telefe",
       "genre": "Drama",
-      "actors": [],
+      "actors": ["Virginia Lago", "Elenco Rotativo"],
       "orientation": "vertical",
       "image": "images/verticals/historias-de-corazon-poster-280x420.png",
-      "subtitle": "Drama"
+      "subtitle": "Drama",
+      "horario": "martes 15:30hs",
+      "capitulos": 30,
+      "fecha_estreno": "08/01/2013",
+      "sinopsis": "A partir de enero de 2013, el ciclo comienza a emitir, los días martes, un ciclo de unitarios ficcionales propio, escrito por importantes autores argentinos, con un elenco rotativo",
+      "rating": "7,8",
+      "productora": "Telefe Contenidos",
+      "tipo_emision": "Semanal"
     },
     {
       "id": "V292",
@@ -8449,7 +8456,14 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/qitapenas-poster-280x420.png",
-      "subtitle": "Juvenil"
+      "subtitle": "Comedia",
+      "horario": "martes y jueves 21hs, sábados 10:45hs",
+      "capitulos": 52,
+      "fecha_estreno": "30/04/2013",
+      "sinopsis": "La comedia musical enfrenta a dos familias opuestas: los tradicionales Qitapenas y los modernos y adinerados Jones. Mientras Tony y Brian compiten en lo musical, sus hijos Lola y Alex viven un romance prohibido.",
+      "rating": "5,2",
+      "productora": "Utopia/RGB Entertainment",
+      "tipo_emision": "Tira Diaria"
     },
     {
       "id": "V166",
@@ -10693,7 +10707,14 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/historias-de-divan-poster-280x420.png",
-      "subtitle": "Drama"
+      "subtitle": "Drama",
+      "horario": "sábados 23hs",
+      "capitulos": 26,
+      "fecha_estreno": "06/04/2013",
+      "sinopsis": "Manuel Levín es un terapeuta que guía las historias de sus pacientes desde el consultorio. En su vida privada, enfrenta el conflicto con su hija, que lo culpa por la muerte de su madre, y el intento de su nueva esposa por recomponer la familia.",
+      "rating": "5,2",
+      "productora": "Yair Dori",
+      "tipo_emision": "Semanal"
     },
     {
       "id": "V275",
