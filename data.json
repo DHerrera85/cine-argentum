@@ -6350,7 +6350,14 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/los-ricos-no-piden-permiso-poster-280x420.png",
-      "subtitle": "Telenovela"
+      "subtitle": "Telenovela",
+      "horario": "21:30hs",
+      "capitulos": 235,
+      "fecha_estreno": "11/01/2016",
+      "sinopsis": "Tras la sospechosa muerte de Angélica, la poderosa familia Villalba enfrenta intrigas y secretos en la estancia Santa Elena. Entre tensiones de clase, el romance entre el capataz Rafael y la maestra Julia desafía el orden establecido.",
+      "rating": "13,2",
+      "productora": "Pol-Ka",
+      "tipo_emision": "Tira Diaria"
     },
     {
       "id": "v69",
@@ -11448,11 +11455,23 @@
       "genre": "Thriller",
       "actors": [
         "Nancy Dupláa",
-        "Pablo Echarri"
+        "Pablo Echarri",
+        "Juan Gil Navarro",
+        "Monna Antonópulos",
+        "Susú Pecoraro",
+        "Dolores Fonzi",
+        "Peter Lanzani"
       ],
       "orientation": "vertical",
       "image": "images/verticals/la-leona-poster-280x420.png",
-      "subtitle": "Thriller"
+      "subtitle": "Thriller",
+      "horario": "22hs, 23hs",
+      "capitulos": 116,
+      "fecha_estreno": "18/01/2016",
+      "sinopsis": "María, una trabajadora textil, lidera junto a sus compañeros la defensa de sus empleos en una fábrica al borde de la quiebra por el vaciamiento empresarial. En medio de la lucha obrera, se entrelazan una historia de amor, pasión y profundas contradicciones.",
+      "rating": "10,5",
+      "productora": "El Árbol",
+      "tipo_emision": "Tira Diaria"
     },
     {
       "id": "h10",
