@@ -5462,6 +5462,12 @@
       "title": "Entre Caníbales",
       "year": "2015",
       "channel": "Telefe",
+      "air_channels": [
+        "Telefe"
+      ],
+      "cable_channels": [
+        "Fox Life"
+      ],
       "genre": "Thriller",
       "actors": [
         "Natalia Oreiro",
@@ -5471,9 +5477,12 @@
       "orientation": "vertical",
       "image": "images/verticals/entre-canibales-poster-280x420.png",
       "subtitle": "Thriller",
-      "horario": null,
+      "horario": "23hs",
       "capitulos": 60,
+      "sinopsis": "Ariana busca justicia veinte años después de haber sido brutalmente atacada por un grupo de jóvenes poderosos. Su lucha la enfrenta a uno de ellos, hoy convertido en candidato a presidente.",
+      "rating": "8,3",
       "fecha_estreno": "20/05/2015",
+      "productora": "100 Bares, Montecarlo TV",
       "tipo_emision": "Tira Diaria"
     },
     {
@@ -6019,8 +6028,11 @@
       "orientation": "vertical",
       "image": "images/verticals/esperanza-mia-poster-280x420.png",
       "subtitle": "Comedia",
-      "horario": null,
+      "horario": "21:15hs",
       "capitulos": 192,
+      "sinopsis": "Julia, una joven fugitiva, se refugia en un convento haciéndose pasar por novicia bajo el nombre de Esperanza. Allí vive un amor prohibido con Tomás, un sacerdote que debate entre su fe y sus sentimientos.",
+      "rating": "14",
+      "productora": "Pol-Ka",
       "fecha_estreno": "06/04/2015",
       "tipo_emision": "Tira Diaria"
     },
@@ -9739,10 +9751,13 @@
       "orientation": "vertical",
       "image": "images/verticals/signos-poster-280x420.png",
       "subtitle": "Thriller",
-      "horario": null,
+      "horario": "miércoles 22:45",
       "capitulos": 16,
-      "fecha_estreno": null,
-      "tipo_emision": "Semanal"
+      "fecha_estreno": "02/09/2015",
+      "tipo_emision": "Semanal",
+      "sinopsis": "Antonio Cruz, un médico de pueblo, emprende una venganza macabra tras la muerte de su madre, asesinando a víctimas según su signo zodiacal. Su propia hermana, policía, seguirá su rastro sin imaginar el vínculo que los une.",
+      "rating": "11,1",
+      "productora": "Pol-Ka"
     },
     {
       "id": "V232",
@@ -9765,10 +9780,21 @@
       "orientation": "vertical",
       "image": "images/verticals/historia-de-un-clan-poster-280x420.png",
       "subtitle": "Thriller",
-      "horario": null,
-      "capitulos": null,
-      "fecha_estreno": null,
-      "tipo_emision": null
+      "horario": "miércoles 22:45",
+      "capitulos": 11,
+      "fecha_estreno": "09/09/2015",
+      "tipo_emision": "Semanal",
+      "sinopsis": "Los Puccio aparentan ser una familia común, pero el patriarca Arquímedes organiza desde su casa una red criminal con la ayuda de sus hijos. Basada en hechos reales, la historia revela la organización familiar del delito y el contraste entre su fachada y la violencia oculta.",
+      "rating": "11,8",
+      "productora": "Underground Contenidos, INCAA",
+      "remakes": [
+        {
+          "title": "El Secreto de la Familia Greco",
+          "country": "Estados Unidos",
+          "year": "2022",
+          "image": "images/verticals/el-secreto-de-la-familia-greco-estados-unidos-2022.png"
+        }
+      ]
     },
     {
       "id": "V280",
