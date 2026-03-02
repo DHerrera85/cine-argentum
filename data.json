@@ -4747,7 +4747,28 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/educando-a-nina-poster-280x420.png",
-      "subtitle": "Comedia"
+      "subtitle": "Comedia",
+      "horario": "21:30hs",
+      "capitulos": 134,
+      "fecha_estreno": "11/04/2016",
+      "sinopsis": "Mara y Nina, gemelas separadas al nacer, llevan vidas opuestas sin saber de la existencia de la otra. Cuando Mara cae presa en España, Nina debe suplantarla, desatando un choque de mundos que cambiará sus destinos.",
+      "rating": "16,0",
+      "productora": "Underground Contenidos",
+      "tipo_emision": "Tira Diaria",
+      "remakes": [
+        {
+          "title": "Educando a Nina",
+          "country": "México",
+          "year": "2018",
+          "image": "images/verticals/educando-a-nina-mexico-2018.png"
+        },
+        {
+          "title": "Gemelas",
+          "country": "Chile",
+          "year": "2019",
+          "image": "images/verticals/gemelas-chile-2019.png"
+        }
+      ]
     },
     {
       "id": "v2",
@@ -7746,11 +7767,19 @@
         "Karol Sevilla",
         "Ruggero Pasquarelli",
         "Valentina Zenere",
-        "Michael Ronda"
+        "Michael Ronda",
+        "Agustín Bernasconi"
       ],
       "orientation": "vertical",
       "image": "images/verticals/soy-luna-poster-280x420.png",
-      "subtitle": "Juvenil"
+      "subtitle": "Juvenil",
+      "horario": "18hs, 19hs",
+      "capitulos": 220,
+      "fecha_estreno": "14/03/2016",
+      "sinopsis": "Luna Valente deja su vida en Cancún cuando su familia se muda a Argentina y debe adaptarse a un exclusivo colegio y a un mundo muy distinto al suyo. En el club Jam & Roller redescubre su pasión por el patinaje y el canto, mientras vive un romance con Matteo y enfrenta la rivalidad de Ámbar.",
+      "rating": "-",
+      "productora": "Non Stop Producciones",
+      "tipo_emision": "Tira Diaria"
     },
     {
       "id": "V135",
@@ -7766,7 +7795,14 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/jungle-nest-poster-280x420.png",
-      "subtitle": "Juvenil"
+      "subtitle": "Juvenil",
+      "horario": "sábados y domingos 20:30hs",
+      "capitulos": 26,
+      "fecha_estreno": "13/2/2016",
+      "sinopsis": "Julián, un joven de 17 años, administra el excéntrico hotel ecológico de su tío en la selva de Zapuacán. Con sus amigos Oso, Rocco y Gala, lucha contra un alcalde que quiere destruirlo para construir un casino.",
+      "rating": "-",
+      "productora": "Non Stop Producciones",
+      "tipo_emision": "Tira Diaria"
     },
     {
       "id": "V136",
