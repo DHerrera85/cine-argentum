@@ -55,6 +55,7 @@
       "fecha_estreno": "26/01/1998",
       "sinopsis": "Tras la muerte de Germán, Rafael llega a Costa Esperanza con la tutela de Brisa para criarla en el pueblo donde vivió su madre. El regreso de África de José y la aparición de nuevos personajes reconfiguran la vida y los vínculos de la comunidad.",
       "rating": "-",
+      "tipo_emision": "Tira Diaria",
       "remakes": [
         {
           "title": "Verano de Amor",
@@ -4808,6 +4809,7 @@
       "sinopsis": "Un mujeriego incorregible (Lalo) es convertido en mujer (Lola) por un hechizo de una ex amante despechada. Lola debe vivir en un cuerpo femenino, enfrentando el machismo que antes ejercía mientras intenta revertir el hechizo.",
       "rating": "8,4",
       "productora": "Underground Contenidos",
+      "tipo_emision": "Tira Diaria",
       "remakes": [
         {
           "title": "Lola",
@@ -4890,6 +4892,7 @@
       "sinopsis": "Martín Pells, el conductor de noticias más famoso,  entra en coma tras una pelea. Para mantener el éxito, es reemplazado por Gonzalo, un actor parecido que descubre que el matrimonio Pells es falso y está lleno de secretos",
       "rating": "17,1",
       "productora": "Underground Contenidos, Endemol",
+      "tipo_emision": "Tira Diaria",
       "remakes": [
         {
           "title": "Los Exitosos Pells",
@@ -4965,6 +4968,7 @@
       "sinopsis": "Cuatro padres modernos —Favio, Ignacio, Franco y Mauro— se hacen amigos al compartir a diario la puerta del jardín de sus hijos. Entre desafíos de la paternidad y conflictos personales, construyen una amistad entrañable en un mundo dominado por madres.",
       "rating": "11,2",
       "productora": "Telefe Contenidos",
+      "tipo_emision": "Tira Diaria",
       "remakes": [
         {
           "title": "Señores Papis",
@@ -5042,6 +5046,9 @@
       "orientation": "vertical",
       "image": "images/verticals/son-de-fierro-poster-280x420.png",
       "subtitle": "Telenovela",
+      "horario": "21hs",
+      "capitulos": "252",
+      "fecha_estreno": "1/8/2007",
       "sinopsis": "Martín “Fierro” es carnicero y padre de familia; su esposa Lucía dejó la docencia tras la ceguera de su hijo Juan. Casados desde hace 25 años y aún enamorados, intentan sostener la unión familiar mientras sus hijos buscan su propia independencia.",
       "rating": "21,2",
       "productora": "Pol-Ka",
@@ -5286,11 +5293,19 @@
       "actors": [
         "Damián De Santo",
         "Paola Barrientos",
-        "Celeste Cid"
+        "Celeste Cid",
+        "Juan Minujín"
       ],
       "orientation": "vertical",
       "image": "images/verticals/viudas-e-hijos-del-rock-and-roll-poster-280x420.png",
-      "subtitle": "Comedia"
+      "subtitle": "Comedia",
+      "horario": null,
+      "capitulos": 154,
+      "fecha_estreno": "18/08/2014",
+      "sinopsis": "Tras la muerte de su padre, un célebre conductor radial, Miranda vuelve a su ciudad y se reencuentra con Diego, su amor de verano. Entre romances y secretos familiares, revive un pasado marcado por la cultura del rock nacional.",
+      "rating": "13,2",
+      "productora": "Underground Contenidos, Endemol",
+      "tipo_emision": "Tira Diaria"
     },
     {
       "id": "v8",
@@ -5309,6 +5324,9 @@
       "orientation": "vertical",
       "image": "images/verticals/los-vecinos-en-guerra-poster-280x420.png",
       "subtitle": "Comedia",
+      "horario": "21:30hs, 23hs",
+      "capitulos": 146,
+      "fecha_estreno": "15/04/2013",
       "sinopsis": "Mecha, una ama de casa con un pasado oculto como estafadora, ve su vida tranquila tambalear cuando reaparece Álex, su ex socio y antiguo amor, a quien creía muerto. Instalado como su vecino con una familia falsa, él intentará protegerla y reconquistarla.",
       "rating": "13,2",
       "productora": "Underground Contenidos, Endemol",
@@ -5345,6 +5363,9 @@
       "orientation": "vertical",
       "image": "images/verticals/resistire-poster-280x420.png",
       "subtitle": "Telenovela",
+      "horario": "22hs",
+      "capitulos": 221,
+      "fecha_estreno": "13/01/2003",
       "sinopsis": "La trama sigue a Diego, un sastre que se enamora de Julia, la prometida de Mauricio Doval, un empresario mafioso que dirige un oscuro negocio de tráfico de órganos y sangre.",
       "rating": "19,4",
       "productora": "Telefe Contenidos",
@@ -5449,7 +5470,11 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/entre-canibales-poster-280x420.png",
-      "subtitle": "Thriller"
+      "subtitle": "Thriller",
+      "horario": null,
+      "capitulos": 60,
+      "fecha_estreno": "20/05/2015",
+      "tipo_emision": "Tira Diaria"
     },
     {
       "id": "h1",
@@ -5993,7 +6018,11 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/esperanza-mia-poster-280x420.png",
-      "subtitle": "Comedia"
+      "subtitle": "Comedia",
+      "horario": null,
+      "capitulos": 192,
+      "fecha_estreno": "06/04/2015",
+      "tipo_emision": "Tira Diaria"
     },
     {
       "id": "v21",
@@ -6181,11 +6210,20 @@
         "Carla Peterson",
         "Florencia Bertotti",
         "Isabel Macedo",
-        "Araceli González"
+        "Araceli González",
+        "Mike Amigorena",
+        "Dady Brieva"
       ],
       "orientation": "vertical",
       "image": "images/verticals/guapas-poster-280x420.png",
-      "subtitle": "Comedia"
+      "subtitle": "Comedia",
+      "horario": "23hs, 22hs, 21:15hs",
+      "capitulos": "173",
+      "fecha_estreno": "17/3/2014",
+      "sinopsis": "Mónica, María Emilia, Lorena, Laura y Andrea se conocen cuando el banco donde tenían sus ahorros quiebra y trunca sus sueños, forjando una amistad marcada por la pérdida. Años después, buscarán una segunda oportunidad para reconstruir su vida económica y emocional.",
+      "rating": "13,2",
+      "productora": "Pol-Ka",
+      "tipo_emision": "Tira Diaria"
     },
     {
       "id": "v30",
@@ -6433,11 +6471,20 @@
       "genre": "Telenovela",
       "actors": [
         "Sebastián Estevanez",
-        "Carina Zampini"
+        "Carina Zampini",
+        "Mariano Martínez",
+        "Eugenia Suárez"
       ],
       "orientation": "vertical",
       "image": "images/verticals/camino-al-amor-poster-280x420.png",
-      "subtitle": "Telenovela"
+      "subtitle": "Telenovela",
+      "horario": "22hs",
+      "capitulos": 120,
+      "fecha_estreno": "26/05/2014",
+      "sinopsis": "Rocco vuelve a Buenos Aires tras el infarto de su padre y se reencuentra con Malena, su amor del pasado. La pasión renace entre secretos familiares y conflictos laborales en una empresa de mudanzas.",
+      "rating": "10,5",
+      "productora": "Estevanez Producciones",
+      "tipo_emision": "Tira Diaria"
     },
     {
       "id": "v74",
@@ -6515,6 +6562,7 @@
       "orientation": "vertical",
       "image": "images/verticals/kachorra-poster-280x420.png",
       "subtitle": "Telenovela",
+      "horario": "13hs",
       "capitulos": 150,
       "fecha_estreno": "22/05/2002",
       "sinopsis": "Acusada injustamente, Antonia adopta una identidad falsa como institutriz en una familia adinerada para huir de su pasado. Mientras enfrenta intrigas y secretos, surge un romance con su jefe Bruno que pone en riesgo su engaño.",
@@ -6966,7 +7014,7 @@
       "image": "images/verticals/maridos-a-domicilio-poster-280x420.png",
       "subtitle": "Comedia",
       "horario": "22hs",
-      "capitulos": "-",
+      "capitulos": 52,
       "fecha_estreno": "07/01/2002",
       "sinopsis": "Tras quedarse sin trabajo por el cierre de una fábrica, los cuñados Mario y Bocha crean un negocio de mantenimiento del hogar. Entre arreglos domésticos y enredos familiares, buscan reinventarse y sostener a sus familias.",
       "rating": "5",
@@ -6987,6 +7035,9 @@
       "orientation": "vertical",
       "image": "images/verticals/soy-gitano-poster-280x420.png",
       "subtitle": "Telenovela",
+      "horario": "22hs",
+      "capitulos": 251,
+      "fecha_estreno": "03/01/2003",
       "sinopsis": "Un amor prohibido surge entre Mora Amaya y Amador Heredia, integrantes de clanes gitanos rivales en Buenos Aires. Entre enfrentamientos familiares, los amantes desafían la tradición en busca de su propia identidad.",
       "rating": "21,5",
       "productora": "Pol-Ka",
@@ -7010,6 +7061,9 @@
       "orientation": "vertical",
       "image": "images/verticals/costumbres-argentinas-poster-280x420.png",
       "subtitle": "Comedia",
+      "horario": "21hs",
+      "capitulos": 264,
+      "fecha_estreno": "13/01/2003",
       "sinopsis": "Ambientada en los años 80, narra la intensa rivalidad y romance entre las familias Rosetti y Pagliaro, marcados por la enemistad de Vicente y Ernesto por el amor de Clara. La trama mezcla comedia y nostalgia, reflejando la cultura argentina de la época con un tono familiar. ",
       "rating": "20,3",
       "productora": "Ideas del Sur",
@@ -7102,6 +7156,9 @@
       "orientation": "vertical",
       "image": "images/verticals/doble-vida-poster-280x420.png",
       "subtitle": "Thriller",
+      "horario": "22:30hs",
+      "capitulos": 98,
+      "fecha_estreno": "03/05/2005",
       "sinopsis": "Narra historias entrelazadas de amor, suspenso y sexo, centradas en Violeta, quien trabaja para una madama moderna (Sabrina) y la clínica estética de Leonardo, explorando la doble moral y los secretos.",
       "rating": "2,4",
       "productora": "Endemol",
@@ -9681,7 +9738,11 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/signos-poster-280x420.png",
-      "subtitle": "Thriller"
+      "subtitle": "Thriller",
+      "horario": null,
+      "capitulos": 16,
+      "fecha_estreno": null,
+      "tipo_emision": "Semanal"
     },
     {
       "id": "V232",
@@ -9703,7 +9764,11 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/historia-de-un-clan-poster-280x420.png",
-      "subtitle": "Thriller"
+      "subtitle": "Thriller",
+      "horario": null,
+      "capitulos": null,
+      "fecha_estreno": null,
+      "tipo_emision": null
     },
     {
       "id": "V280",
@@ -10975,7 +11040,14 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/noche-y-dia-junto-a-vos-poster-280x420.png",
-      "subtitle": "Thriller"
+      "subtitle": "Thriller",
+      "horario": "lunes a viernes 21:45hs, lunes a viernes 23hs, miércoles 23:15hs",
+      "capitulos": 122,
+      "fecha_estreno": "17/11/2014",
+      "sinopsis": "La Brigada 24 reúne a policías castigados por faltas internas, bajo el mando de Federico Castro y la oscura supervisión de Guillermo Inchausti, vinculado al delito. Cuando Victorio Villa y Paula Pico son enviados injustamente allí, destapan una trama de corrupción y se unen para transformar la brigada en un verdadero equipo de élite.",
+      "rating": "-",
+      "productora": "Pol-Ka",
+      "tipo_emision": "Tira Diaria"
     },
     {
       "id": "v33",
@@ -10997,7 +11069,8 @@
       "fecha_estreno": "26/06/2013",
       "sinopsis": "Un estudio de abogados penalistas del Gran Buenos Aires, liderado por Guillermo Graziani, retoma la actividad tras su inhabilitación. Entre casos judiciales complejos, el equipo —Pedro, Alberto, Gabriela y Marcos— enfrenta intensos conflictos personales y amorosos.",
       "rating": "12,9",
-      "productora": "Pol-Ka"
+      "productora": "Pol-Ka",
+      "tipo_emision": "Tira Diaria"
     },
     {
       "id": "v34",
@@ -11021,7 +11094,8 @@
       "fecha_estreno": "24/11/2009",
       "sinopsis": "Cristian \"Chiqui\" Flores, un famoso futbolista, regresa de España para casarse con Marga Molinari, pero se ve envuelto en el misterioso asesinato de su rival deportivo. Laura Posse, una agente policial, se infiltra en este círculo de lujo, moda y poder para investigar a Flores, su representante Tato Marín y el abogado Nino Paredes",
       "rating": "16,6",
-      "productora": "Underground Contenidos, Endemol"
+      "productora": "Underground Contenidos, Endemol",
+      "tipo_emision": "Tira Diaria"
     },
     {
       "id": "v35",
@@ -11303,6 +11377,9 @@
       "orientation": "vertical",
       "image": "images/verticals/quien-es-el-jefe-poster-280x420.png",
       "subtitle": "Sitcom",
+      "horario": "20:30hs",
+      "capitulos": "-",
+      "fecha_estreno": "18/04/2005",
       "sinopsis": "La trama sigue a un ex-futbolista que, buscando una mejor vida para su hija, se convierte en el ama de llaves de una ejecutiva de publicidad adicta al trabajo y de armas tomar.",
       "rating": "19,7",
       "productora": "Telefe Contenidos",

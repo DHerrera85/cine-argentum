@@ -1,0 +1,513 @@
+﻿TOTAL FICCIONES (ID V...): 296
+
+FALTAN LOS 3 CAMPOS (capitulos + tipo_emision + fecha_estreno): 120
+v1 | Educando a Nina
+v109 | Margarita
+v110 | Cielo Grande
+v111 | Entrelazados
+v112 | DÃ­as de Gallos
+v113 | GO! Vive a tu Manera
+v114 | Playback, una somos dos
+v115 | Selenkay
+v116 | STM: SÃ© Tu Misma
+v117 | Freeks
+v118 | C.h.u.e.c.o.
+v119 | Tierra IncÃ³gnita
+v12 | Entre CanÃ­bales
+v120 | Melody, la Chica del Metro
+v121 | Abejas, el Arte del EngaÃ±o
+v122 | WTF! Con la mÃºsica a otra parte
+V127 | Kally's Mashup
+V128 | Heidi, Bienvenida a Casa
+V131 | Los Macanimals
+V132 | Bia
+V133 | O11CE
+V134 | Soy Luna
+V135 | Jungle Nest
+v14 | Campanas en la Noche
+V150 | Divina, estÃ¡ en tu CorazÃ³n
+V167 | Los Mufas: Suerte para la Desgracia
+V168 | Viudas Negras: P*tas y Chorras
+V169 | Envidiosa
+v17 | CuÃ©ntame cÃ³mo PasÃ³
+V170 | El Mejor Infarto de mi Vida
+V171 | El Encargado
+V172 | Casi Feliz
+V173 | Terapia Alternativa
+V174 | Los Protectores
+V175 | Porno y Helado
+V176 | DivisiÃ³n Palermo
+V177 | Nada
+V178 | Familia de DivÃ¡n
+V179 | El Mundo de Mateo
+V180 | El Marginal
+V181 | Puerta 7
+V182 | Ãšltimo Primer DÃ­a
+V183 | MarÃ­a Marta: El Crimen del Country
+V184 | Barrabrava
+V185 | CromaÃ±on
+V186 | Atrapados
+V187 | En el Barro
+V188 | Menem: El Show del Presidente
+V189 | El Eternauta
+V190 | El Buen Retiro
+V191 | Un LeÃ³n en el Bosque
+V192 | Edha
+V193 | Planners
+V194 | El Fin del Amor
+V195 | Las Maldiciones
+V196 | Nieve Roja
+V197 | CamaleÃ³n: El Pasado No Cambia
+V198 | Espartanos: Una Historia Real
+V199 | La Voz Ausente
+v20 | Esperanza MÃ­a
+V200 | Felices los Seis
+V201 | FrÃ¡giles
+V202 | Robo Mundial
+V203 | Supernova
+V204 | Coppola, el Representante
+V205 | El Amor DespuÃ©s del Amor
+V206 | El Reino
+V207 | Iosi, el EspÃ­a Arrepentido
+V208 | Diciembre 2001
+V209 | Maradona: SueÃ±o Bendito
+V210 | Apache: la Vida de Carlos TÃ©vez
+V211 | Cris MirÃ³ (Ella)
+V212 | Santa Evita
+V213 | Ringo: Gloria y Muerte
+V214 | Los Internacionales
+V215 | El Hincha
+V216 | El Sabor del Silencio
+V217 | La Mente del Poder
+V218 | AMIA: El Fin de la Verdad
+V219 | Atrapa a un LadrÃ³n
+v22 | Simona
+V220 | Inconvivencia
+V221 | El Tigre VerÃ³n
+V222 | Tu Parte del Trato
+V223 | Otros Pecados
+V224 | Morir de Amor
+V225 | El Lobista
+V226 | Rizhoma Hotel
+V227 | El Maestro
+V228 | La Fragilidad de los Cuerpos
+V229 | Supermax
+v23 | Fanny, la Fan
+V230 | Un Gallo para Esculapio
+V231 | Signos
+V232 | Historia de un Clan
+V233 | El Host
+V234 | Psiconautas
+V235 | Vigilantes
+V236 | Nafta SÃºper
+V248 | Sandro: La Serie
+V261 | Silencios de Familia
+v27 | Las Estrellas
+v28 | PequeÃ±a Victoria
+V280 | MonzÃ³n
+V281 | Yiya
+V282 | Hija del Fuego: La Venganza de la Bastarda
+V283 | Argentina, Tierra de Amor y Venganza 2
+V284 | El Tiempo de las Moscas
+V295 | PequeÃ±as Victorias, Perdidxs en la Tierra
+V296 | Millennials, GeneraciÃ³n Garca
+v30 | Separadas
+v32 | Noche & DÃ­a: Junto a Vos
+v41 | Quiero Vivir a tu Lado
+v42 | Loco X Vos
+v50 | Por Amarte AsÃ­
+v56 | Mi Hermano es un Clon
+v60 | El Regreso de Lucas
+v68 | Los Ricos No Piden Permiso
+v72 | Golpe al CorazÃ³n
+v9 | Amar DespuÃ©s de Amar
+
+FALTAN capitulos: 130
+v1 | Educando a Nina
+v10 | ResistirÃ©
+v103 | Doble Vida
+v109 | Margarita
+v110 | Cielo Grande
+v111 | Entrelazados
+v112 | DÃ­as de Gallos
+v113 | GO! Vive a tu Manera
+v114 | Playback, una somos dos
+v115 | Selenkay
+v116 | STM: SÃ© Tu Misma
+v117 | Freeks
+v118 | C.h.u.e.c.o.
+v119 | Tierra IncÃ³gnita
+v12 | Entre CanÃ­bales
+v120 | Melody, la Chica del Metro
+v121 | Abejas, el Arte del EngaÃ±o
+v122 | WTF! Con la mÃºsica a otra parte
+V127 | Kally's Mashup
+V128 | Heidi, Bienvenida a Casa
+V131 | Los Macanimals
+V132 | Bia
+V133 | O11CE
+V134 | Soy Luna
+V135 | Jungle Nest
+v14 | Campanas en la Noche
+V150 | Divina, estÃ¡ en tu CorazÃ³n
+V159 | SueÃ±os MÃ¡gicos
+V167 | Los Mufas: Suerte para la Desgracia
+V168 | Viudas Negras: P*tas y Chorras
+V169 | Envidiosa
+v17 | CuÃ©ntame cÃ³mo PasÃ³
+V170 | El Mejor Infarto de mi Vida
+V171 | El Encargado
+V172 | Casi Feliz
+V173 | Terapia Alternativa
+V174 | Los Protectores
+V175 | Porno y Helado
+V176 | DivisiÃ³n Palermo
+V177 | Nada
+V178 | Familia de DivÃ¡n
+V179 | El Mundo de Mateo
+V180 | El Marginal
+V181 | Puerta 7
+V182 | Ãšltimo Primer DÃ­a
+V183 | MarÃ­a Marta: El Crimen del Country
+V184 | Barrabrava
+V185 | CromaÃ±on
+V186 | Atrapados
+V187 | En el Barro
+V188 | Menem: El Show del Presidente
+V189 | El Eternauta
+V190 | El Buen Retiro
+V191 | Un LeÃ³n en el Bosque
+V192 | Edha
+V193 | Planners
+V194 | El Fin del Amor
+V195 | Las Maldiciones
+V196 | Nieve Roja
+V197 | CamaleÃ³n: El Pasado No Cambia
+V198 | Espartanos: Una Historia Real
+V199 | La Voz Ausente
+v20 | Esperanza MÃ­a
+V200 | Felices los Seis
+V201 | FrÃ¡giles
+V202 | Robo Mundial
+V203 | Supernova
+V204 | Coppola, el Representante
+V205 | El Amor DespuÃ©s del Amor
+V206 | El Reino
+V207 | Iosi, el EspÃ­a Arrepentido
+V208 | Diciembre 2001
+V209 | Maradona: SueÃ±o Bendito
+V210 | Apache: la Vida de Carlos TÃ©vez
+V211 | Cris MirÃ³ (Ella)
+V212 | Santa Evita
+V213 | Ringo: Gloria y Muerte
+V214 | Los Internacionales
+V215 | El Hincha
+V216 | El Sabor del Silencio
+V217 | La Mente del Poder
+V218 | AMIA: El Fin de la Verdad
+V219 | Atrapa a un LadrÃ³n
+v22 | Simona
+V220 | Inconvivencia
+V221 | El Tigre VerÃ³n
+V222 | Tu Parte del Trato
+V223 | Otros Pecados
+V224 | Morir de Amor
+V225 | El Lobista
+V226 | Rizhoma Hotel
+V227 | El Maestro
+V228 | La Fragilidad de los Cuerpos
+V229 | Supermax
+v23 | Fanny, la Fan
+V230 | Un Gallo para Esculapio
+V231 | Signos
+V232 | Historia de un Clan
+V233 | El Host
+V234 | Psiconautas
+V235 | Vigilantes
+V236 | Nafta SÃºper
+V248 | Sandro: La Serie
+V261 | Silencios de Familia
+v27 | Las Estrellas
+v28 | PequeÃ±a Victoria
+V280 | MonzÃ³n
+V281 | Yiya
+V282 | Hija del Fuego: La Venganza de la Bastarda
+V283 | Argentina, Tierra de Amor y Venganza 2
+V284 | El Tiempo de las Moscas
+V295 | PequeÃ±as Victorias, Perdidxs en la Tierra
+V296 | Millennials, GeneraciÃ³n Garca
+v30 | Separadas
+v32 | Noche & DÃ­a: Junto a Vos
+v41 | Quiero Vivir a tu Lado
+v42 | Loco X Vos
+v47 | Â¿QuiÃ©n es el Jefe?
+v50 | Por Amarte AsÃ­
+v56 | Mi Hermano es un Clon
+v6 | Son de Fierro
+v60 | El Regreso de Lucas
+v68 | Los Ricos No Piden Permiso
+v7 | Viudas e Hijos del Rock & Roll
+v72 | Golpe al CorazÃ³n
+v8 | Los Vecinos en Guerra
+v9 | Amar DespuÃ©s de Amar
+v97 | Maridos a Domicilio
+v98 | Soy Gitano
+v99 | Costumbres Argentinas
+
+FALTAN tipo_emision: 126
+v1 | Educando a Nina
+v109 | Margarita
+v110 | Cielo Grande
+v111 | Entrelazados
+v112 | DÃ­as de Gallos
+v113 | GO! Vive a tu Manera
+v114 | Playback, una somos dos
+v115 | Selenkay
+v116 | STM: SÃ© Tu Misma
+v117 | Freeks
+v118 | C.h.u.e.c.o.
+v119 | Tierra IncÃ³gnita
+v12 | Entre CanÃ­bales
+v120 | Melody, la Chica del Metro
+v121 | Abejas, el Arte del EngaÃ±o
+v122 | WTF! Con la mÃºsica a otra parte
+V127 | Kally's Mashup
+V128 | Heidi, Bienvenida a Casa
+V131 | Los Macanimals
+V132 | Bia
+V133 | O11CE
+V134 | Soy Luna
+V135 | Jungle Nest
+v14 | Campanas en la Noche
+V150 | Divina, estÃ¡ en tu CorazÃ³n
+V167 | Los Mufas: Suerte para la Desgracia
+V168 | Viudas Negras: P*tas y Chorras
+V169 | Envidiosa
+v17 | CuÃ©ntame cÃ³mo PasÃ³
+V170 | El Mejor Infarto de mi Vida
+V171 | El Encargado
+V172 | Casi Feliz
+V173 | Terapia Alternativa
+V174 | Los Protectores
+V175 | Porno y Helado
+V176 | DivisiÃ³n Palermo
+V177 | Nada
+V178 | Familia de DivÃ¡n
+V179 | El Mundo de Mateo
+V180 | El Marginal
+V181 | Puerta 7
+V182 | Ãšltimo Primer DÃ­a
+V183 | MarÃ­a Marta: El Crimen del Country
+V184 | Barrabrava
+V185 | CromaÃ±on
+V186 | Atrapados
+V187 | En el Barro
+V188 | Menem: El Show del Presidente
+V189 | El Eternauta
+V190 | El Buen Retiro
+V191 | Un LeÃ³n en el Bosque
+V192 | Edha
+V193 | Planners
+V194 | El Fin del Amor
+V195 | Las Maldiciones
+V196 | Nieve Roja
+V197 | CamaleÃ³n: El Pasado No Cambia
+V198 | Espartanos: Una Historia Real
+V199 | La Voz Ausente
+v20 | Esperanza MÃ­a
+V200 | Felices los Seis
+V201 | FrÃ¡giles
+V202 | Robo Mundial
+V203 | Supernova
+V204 | Coppola, el Representante
+V205 | El Amor DespuÃ©s del Amor
+V206 | El Reino
+V207 | Iosi, el EspÃ­a Arrepentido
+V208 | Diciembre 2001
+V209 | Maradona: SueÃ±o Bendito
+V210 | Apache: la Vida de Carlos TÃ©vez
+V211 | Cris MirÃ³ (Ella)
+V212 | Santa Evita
+V213 | Ringo: Gloria y Muerte
+V214 | Los Internacionales
+V215 | El Hincha
+V216 | El Sabor del Silencio
+V217 | La Mente del Poder
+V218 | AMIA: El Fin de la Verdad
+V219 | Atrapa a un LadrÃ³n
+v22 | Simona
+V220 | Inconvivencia
+V221 | El Tigre VerÃ³n
+V222 | Tu Parte del Trato
+V223 | Otros Pecados
+V224 | Morir de Amor
+V225 | El Lobista
+V226 | Rizhoma Hotel
+V227 | El Maestro
+V228 | La Fragilidad de los Cuerpos
+V229 | Supermax
+v23 | Fanny, la Fan
+V230 | Un Gallo para Esculapio
+V231 | Signos
+V232 | Historia de un Clan
+V233 | El Host
+V234 | Psiconautas
+V235 | Vigilantes
+V236 | Nafta SÃºper
+V248 | Sandro: La Serie
+V261 | Silencios de Familia
+v27 | Las Estrellas
+v28 | PequeÃ±a Victoria
+V280 | MonzÃ³n
+V281 | Yiya
+V282 | Hija del Fuego: La Venganza de la Bastarda
+V283 | Argentina, Tierra de Amor y Venganza 2
+V284 | El Tiempo de las Moscas
+V285 | Verano del '98
+V292 | Amor Animal
+V294 | O11CE: Nueva generaciÃ³n
+V295 | PequeÃ±as Victorias, Perdidxs en la Tierra
+V296 | Millennials, GeneraciÃ³n Garca
+v3 | Lalola
+v30 | Separadas
+v32 | Noche & DÃ­a: Junto a Vos
+v4 | Los Exitosos Pells
+v41 | Quiero Vivir a tu Lado
+v42 | Loco X Vos
+v5 | SeÃ±ores Papis
+v50 | Por Amarte AsÃ­
+v56 | Mi Hermano es un Clon
+v60 | El Regreso de Lucas
+v68 | Los Ricos No Piden Permiso
+v72 | Golpe al CorazÃ³n
+v9 | Amar DespuÃ©s de Amar
+
+FALTAN fecha_estreno: 128
+v1 | Educando a Nina
+v10 | ResistirÃ©
+v103 | Doble Vida
+v109 | Margarita
+v110 | Cielo Grande
+v111 | Entrelazados
+v112 | DÃ­as de Gallos
+v113 | GO! Vive a tu Manera
+v114 | Playback, una somos dos
+v115 | Selenkay
+v116 | STM: SÃ© Tu Misma
+v117 | Freeks
+v118 | C.h.u.e.c.o.
+v119 | Tierra IncÃ³gnita
+v12 | Entre CanÃ­bales
+v120 | Melody, la Chica del Metro
+v121 | Abejas, el Arte del EngaÃ±o
+v122 | WTF! Con la mÃºsica a otra parte
+V127 | Kally's Mashup
+V128 | Heidi, Bienvenida a Casa
+V131 | Los Macanimals
+V132 | Bia
+V133 | O11CE
+V134 | Soy Luna
+V135 | Jungle Nest
+v14 | Campanas en la Noche
+V150 | Divina, estÃ¡ en tu CorazÃ³n
+V167 | Los Mufas: Suerte para la Desgracia
+V168 | Viudas Negras: P*tas y Chorras
+V169 | Envidiosa
+v17 | CuÃ©ntame cÃ³mo PasÃ³
+V170 | El Mejor Infarto de mi Vida
+V171 | El Encargado
+V172 | Casi Feliz
+V173 | Terapia Alternativa
+V174 | Los Protectores
+V175 | Porno y Helado
+V176 | DivisiÃ³n Palermo
+V177 | Nada
+V178 | Familia de DivÃ¡n
+V179 | El Mundo de Mateo
+V180 | El Marginal
+V181 | Puerta 7
+V182 | Ãšltimo Primer DÃ­a
+V183 | MarÃ­a Marta: El Crimen del Country
+V184 | Barrabrava
+V185 | CromaÃ±on
+V186 | Atrapados
+V187 | En el Barro
+V188 | Menem: El Show del Presidente
+V189 | El Eternauta
+V190 | El Buen Retiro
+V191 | Un LeÃ³n en el Bosque
+V192 | Edha
+V193 | Planners
+V194 | El Fin del Amor
+V195 | Las Maldiciones
+V196 | Nieve Roja
+V197 | CamaleÃ³n: El Pasado No Cambia
+V198 | Espartanos: Una Historia Real
+V199 | La Voz Ausente
+v20 | Esperanza MÃ­a
+V200 | Felices los Seis
+V201 | FrÃ¡giles
+V202 | Robo Mundial
+V203 | Supernova
+V204 | Coppola, el Representante
+V205 | El Amor DespuÃ©s del Amor
+V206 | El Reino
+V207 | Iosi, el EspÃ­a Arrepentido
+V208 | Diciembre 2001
+V209 | Maradona: SueÃ±o Bendito
+V210 | Apache: la Vida de Carlos TÃ©vez
+V211 | Cris MirÃ³ (Ella)
+V212 | Santa Evita
+V213 | Ringo: Gloria y Muerte
+V214 | Los Internacionales
+V215 | El Hincha
+V216 | El Sabor del Silencio
+V217 | La Mente del Poder
+V218 | AMIA: El Fin de la Verdad
+V219 | Atrapa a un LadrÃ³n
+v22 | Simona
+V220 | Inconvivencia
+V221 | El Tigre VerÃ³n
+V222 | Tu Parte del Trato
+V223 | Otros Pecados
+V224 | Morir de Amor
+V225 | El Lobista
+V226 | Rizhoma Hotel
+V227 | El Maestro
+V228 | La Fragilidad de los Cuerpos
+V229 | Supermax
+v23 | Fanny, la Fan
+V230 | Un Gallo para Esculapio
+V231 | Signos
+V232 | Historia de un Clan
+V233 | El Host
+V234 | Psiconautas
+V235 | Vigilantes
+V236 | Nafta SÃºper
+V248 | Sandro: La Serie
+V261 | Silencios de Familia
+v27 | Las Estrellas
+v28 | PequeÃ±a Victoria
+V280 | MonzÃ³n
+V281 | Yiya
+V282 | Hija del Fuego: La Venganza de la Bastarda
+V283 | Argentina, Tierra de Amor y Venganza 2
+V284 | El Tiempo de las Moscas
+V295 | PequeÃ±as Victorias, Perdidxs en la Tierra
+V296 | Millennials, GeneraciÃ³n Garca
+v30 | Separadas
+v32 | Noche & DÃ­a: Junto a Vos
+v41 | Quiero Vivir a tu Lado
+v42 | Loco X Vos
+v47 | Â¿QuiÃ©n es el Jefe?
+v50 | Por Amarte AsÃ­
+v56 | Mi Hermano es un Clon
+v6 | Son de Fierro
+v60 | El Regreso de Lucas
+v68 | Los Ricos No Piden Permiso
+v7 | Viudas e Hijos del Rock & Roll
+v72 | Golpe al CorazÃ³n
+v8 | Los Vecinos en Guerra
+v9 | Amar DespuÃ©s de Amar
+v98 | Soy Gitano
+v99 | Costumbres Argentinas
