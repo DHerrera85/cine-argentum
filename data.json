@@ -9934,7 +9934,14 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/nafta-super-poster-280x420.png",
-      "subtitle": "Comedia"
+      "subtitle": "Comedia",
+      "horario": "22hs",
+      "capitulos": 8,
+      "fecha_estreno": "16/11/2016",
+      "sinopsis": "La banda del Nafta Súper vuelve a reunirse tras diez meses cuando viejos enemigos y un nuevo traficante amenazan su territorio. Con la policía tras sus pasos y uno de los suyos acusado de asesinato, necesitan que regrese su líder desaparecido para evitar la venganza.",
+      "rating": "-",
+      "productora": "Turner Broadcasting System Latin America",
+      "tipo_emision": "Semanal"
     },
     {
       "id": "V237",
@@ -10547,7 +10554,14 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/silencios-de-familia-poster-280x420.png",
-      "subtitle": "Drama"
+      "subtitle": "Drama",
+      "horario": "Domingos 22hs, Miércoles 22:45hs",
+      "capitulos": 19,
+      "fecha_estreno": "12/06/2016",
+      "sinopsis": "Miguel y Elisa Diamante, casados hace veinte años y con tres hijos, ven resquebrajarse su vida conservadora con la llegada de Fabiana. Su presencia desata un triángulo amoroso que expone secretos y tensiones largamente ocultas.",
+      "rating": "10",
+      "productora": "Pol-Ka",
+      "tipo_emision": "Semanal"
     },
     {
       "id": "V262",
@@ -11344,14 +11358,21 @@
       "title": "Loco X Vos",
       "year": "2016",
       "channel": "Telefe",
-      "genre": "Comedia",
+      "genre": "Sitcom",
       "actors": [
         "Juan Minujín",
         "Julieta Zylberberg"
       ],
       "orientation": "vertical",
       "image": "images/verticals/loco-por-vos-poster-280x420.png",
-      "subtitle": "Comedia"
+      "subtitle": "Sitcom",
+      "horario": "21:15hs",
+      "capitulos": 90,
+      "fecha_estreno": "05/09/2016",
+      "sinopsis": "Adaptada de la serie estadounidense Mad About You, la serie se centra en la convivencia cotidiana de Pablo y Natalia , una pareja recién casada que enfrenta con humor manías, celos y presiones familiares.",
+      "rating": "12,5",
+      "productora": "Telefe Contenidos / Sony Pictures",
+      "tipo_emision": "Tira Diaria"
     },
     {
       "id": "v43",
@@ -11643,7 +11664,22 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/por-amarte-asi-poster-280x420.png",
-      "subtitle": "Telenovela"
+      "subtitle": "Telenovela",
+      "horario": "16:30hs",
+      "capitulos": 60,
+      "fecha_estreno": "14/11/2016",
+      "sinopsis": "Francisco, un abogado con su matrimonio en crisis, ve su vida cambiar al conocer a Luz. Ella, procesada por practicar eutanasia, despierta en él un nuevo amor y un dilema moral.",
+      "rating": "7,4",
+      "productora": "Kuarzo Endemol/CTV Contenidos",
+      "tipo_emision": "Tira Diaria",
+      "remakes": [
+        {
+          "title": "Me Declaro Culpable",
+          "country": "México",
+          "year": "2017",
+          "image": "images/verticals/me-declaro-culpable-mexico-2017.png"
+        }
+      ]
     },
     {
       "id": "v51",
