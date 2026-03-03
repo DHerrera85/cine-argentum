@@ -8857,7 +8857,22 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/el-marginal-poster-280x420.png",
-      "subtitle": "Thriller"
+      "subtitle": "Thriller",
+      "horario": "martes 22hs",
+      "capitulos": 43,
+      "fecha_estreno": "02/07/2016",
+      "sinopsis": "Miguel Palacios, un expolicía, se infiltra en la cárcel de San Onofre bajo la identidad de “Pastor” para investigar un secuestro. En un penal dominado por los hermanos Borges, deberá sobrevivir en un violento submundo criminal.",
+      "rating": "7,3",
+      "productora": "Underground Contenidos, Dori Media",
+      "tipo_emision": "Semanal",
+      "remakes": [
+        {
+          "title": "El Recluso",
+          "country": "Estados Unidos",
+          "year": "2018",
+          "image": "images/verticals/el-recluso-estados-unidos-2018.png"
+        }
+      ]
     },
     {
       "id": "V181",
