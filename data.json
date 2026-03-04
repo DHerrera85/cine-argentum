@@ -5367,7 +5367,14 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/amar-despues-de-amar-poster-280x420.png",
-      "subtitle": "Thriller"
+      "subtitle": "Thriller",
+      "horario": "22hs; 23:15hs",
+      "capitulos": 70,
+      "fecha_estreno": "23/01/2017",
+      "sinopsis": "La vida de dos matrimonios amigos se quiebra tras un accidente que saca a la luz una infidelidad de tres años. Narrada entre pasado y presente, revela el amor secreto de Damián y Carolina y el dolor de Raquel y Santiago al descubrir la traición.",
+      "rating": "12,1",
+      "productora": "Telefe Contenidos",
+      "tipo_emision": "Tira Diaria"
     },
     {
       "id": "v10",
@@ -9912,13 +9919,19 @@
       "genre": "Comedia",
       "actors": [
         "Carlos Belloso",
-        "Edda Díaz",
-        "Alejandro Muller",
-        "Mariana Prommel"
+        "Hernán Jiménez",
+        "Ramiro Archain"
       ],
       "orientation": "vertical",
       "image": "images/verticals/vigilantes-poster-280x420.png",
-      "subtitle": "Comedia"
+      "subtitle": "Comedia",
+      "horario": "23:30hs",
+      "capitulos": 13,
+      "fecha_estreno": "19/09/2016",
+      "sinopsis": "Un exfutbolista venido a menos y un estudiante obsesivo compiten por un trabajo en una empresa de vigilancia que los somete a pruebas absurdas y humillantes bajo el mando de Lombardi. Sin saberlo, forman parte de un experimento secreto de manipulación psicológica llamado “Proyecto Vigilantes”.",
+      "rating": "-",
+      "productora": "Winter Channel / INCAA",
+      "tipo_emision": "Semanal"
     },
     {
       "id": "V236",
