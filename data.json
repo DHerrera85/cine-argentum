@@ -5374,7 +5374,33 @@
       "sinopsis": "La vida de dos matrimonios amigos se quiebra tras un accidente que saca a la luz una infidelidad de tres años. Narrada entre pasado y presente, revela el amor secreto de Damián y Carolina y el dolor de Raquel y Santiago al descubrir la traición.",
       "rating": "12,1",
       "productora": "Telefe Contenidos",
-      "tipo_emision": "Tira Diaria"
+      "tipo_emision": "Tira Diaria",
+      "remakes": [
+        {
+          "title": "Caer en Tentación",
+          "country": "México",
+          "year": "2017",
+          "image": "images/verticals/caer-en-tentacion-mexico-2017.png"
+        },
+        {
+          "title": "Tango (التانغو)",
+          "country": "Líbano",
+          "year": "2018",
+          "image": "images/verticals/Tango (التانغو)-libano-2018.png"
+        },
+        {
+          "title": "El Nudo",
+          "country": "España",
+          "year": "2019",
+          "image": "images/verticals/el-nudo-españa-2019.png"
+        },
+        {
+          "title": "Amar Depois de Amar",
+          "country": "Portugal",
+          "year": "2019",
+          "image": "images/verticals/amar-depois-de-amar-portugal-2019.png"
+        }
+      ]
     },
     {
       "id": "v10",
@@ -8248,6 +8274,9 @@
       "title": "Divina, está en tu Corazón",
       "year": "2017",
       "channel": "Canal 13",
+            "platforms": [
+        "Flow"
+      ],
       "genre": "Juvenil",
       "actors": [
         "Laura Esquivel",
@@ -8256,7 +8285,14 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/divina-esta-en-tu-corazon-poster-280x420.png",
-      "subtitle": "Juvenil"
+      "subtitle": "Juvenil",
+      "horario": "lunes a viernes 18hs, sábados y domingos 11hs",
+      "capitulos": "60",
+      "fecha_estreno": "14/03/2017",
+      "sinopsis": "Divina es una joven criada en la calle cuida a un grupo de chicos abandonados con quienes vive en un barrio humilde. Cuando una asistente social intenta llevarlos a un orfanato, hará todo lo posible por mantenerlos unidos.",
+      "rating": "6,5",
+      "productora": "Pol-Ka/Televisa",
+      "tipo_emision": "Tira Diaria"
     },
     {
       "id": "V151",
@@ -9766,11 +9802,19 @@
         "Santiago Segura",
         "Cecilia Roth",
         "Alejandro Camacho",
-        "Laura Novoa"
+        "Laura Novoa",
+        "Guillermo Pfening"
       ],
       "orientation": "vertical",
       "image": "images/verticals/supermax-poster-280x420.png",
-      "subtitle": "Thriller"
+      "subtitle": "Thriller",
+      "horario": "martes 22:00",
+      "capitulos": 13,
+      "fecha_estreno": "04/04/2017",
+      "tipo_emision": "Semanal",
+      "sinopsis": "Un productor decide realizar un reality show extremo en una antigua prisión de máxima seguridad cerrada tras una masacre en los años 90. Ocho participantes con vidas en crisis ingresan al lugar para competir y encontrar una salida a sus problemas.",
+      "rating": "0,7",
+      "productora": "Mediaset España, Televisión Azteca, Televisión Pública Argentina, Teledoce, Central Globo de Produção"
     },
     {
       "id": "V230",
@@ -11364,7 +11408,14 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/quiero-vivir-a-tu-lado-poster-280x420.png",
-      "subtitle": "Comedia"
+      "subtitle": "Comedia",
+      "horario": "22hs",
+      "capitulos": 80,
+      "fecha_estreno": "23/01/2017",
+      "sinopsis": "La vida de dos familias amigas cambia por completo cuando un secreto largamente oculto sale a la luz. Tomás y Alfred, amigos de toda la vida, ven alterada su relación cuando sus esposas Natalia y Verónica, y sus hijos —que crecieron juntos— quedan involucrados en una situación que desencadena una serie de enredos tragicómicos que pondrán a prueba sus vínculos.",
+      "rating": "11,2",
+      "productora": "Pol-Ka",
+      "tipo_emision": "Tira Diaria"
     },
     {
       "id": "v42",
@@ -11910,11 +11961,21 @@
       "genre": "Thriller",
       "actors": [
         "Ana Maria Orozco",
-        "Salvador del Solar"
+        "Salvador del Solar",
+        "Pablo Martínez",
+        "Macarena Achaga",
+        "Diego Bertie"
       ],
       "orientation": "vertical",
       "image": "images/verticals/el-regreso-de-lucas-poster-280x420.png",
-      "subtitle": "Thriller"
+      "subtitle": "Thriller",
+      "horario": "16:30",
+      "capitulos": 60,
+      "fecha_estreno": "06/02/2017",
+      "sinopsis": "Una familia acomodada queda marcada por la desaparición de su hijo pequeño en la playa, lo que lleva a su madre a obsesionarse durante años con encontrarlo. Dos décadas después, la aparición de un joven que asegura ser el hijo perdido reabre el misterio y sacude a toda la familia.",
+      "rating": "7,6",
+      "productora": "América TV Perú / Telefe",
+      "tipo_emision": "Tira Diaria"
     },
     {
       "id": "v61",

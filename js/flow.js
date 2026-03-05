@@ -1,12 +1,24 @@
 // js/flow.js: Lógica para filtrar y mostrar series de Flow
-const flowDataVersion = '20260219-1';
+const flowDataVersion = '20260305-1';
+
+function hasFlowAvailability(item) {
+  const normalized = value => (value || '').toString().toLowerCase().trim();
+  const isFlow = value => normalized(value).includes('flow');
+
+  if (isFlow(item.channel)) return true;
+  if (isFlow(item.platform)) return true;
+
+  if (Array.isArray(item.platforms) && item.platforms.some(isFlow)) return true;
+  if (Array.isArray(item.channels) && item.channels.some(isFlow)) return true;
+
+  return false;
+}
 
 fetch('data.json?v=' + flowDataVersion, { cache: 'no-store' })
   .then(response => response.json())
   .then(data => {
     const items = data.items.filter(item => {
-      const channel = (item.channel || '').toLowerCase();
-      if (!channel || !channel.includes('flow')) return false;
+      if (!hasFlowAvailability(item)) return false;
       return item.type !== 'pelicula';
     });
     renderSeries(items);
