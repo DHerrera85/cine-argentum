@@ -6143,7 +6143,14 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/fanny-la-fan-poster-280x420.png",
-      "subtitle": "Comedia"
+      "subtitle": "Comedia",
+      "horario": "21hs, 19hs",
+      "capitulos": "62",
+      "fecha_estreno": "26/06/2017",
+      "sinopsis": "Fanny, criada de forma aislada por su madre, encuentra refugio en una telenovela de vampiros protagonizada por Emiliano Morante. El destino la lleva a trabajar en el canal del programa, donde conoce a su ídolo y se reencuentra con Pedro, su amor de la infancia.",
+      "rating": "5,9",
+      "productora": "Underground Contenidos",
+      "tipo_emision": "Tira Diaria"
     },
     {
       "id": "v24",
@@ -6238,11 +6245,23 @@
         "Marcela Kloosterboer",
         "Natalie Pérez",
         "Violeta Urtizberea",
-        "Justina Bustos"
+        "Justina Bustos",
+        "Luciano Castro",
+        "Esteban Lamothe",
+        "Rafael Ferro",
+        "Nazareno Casero",
+        "Julieta Nair Calvo"
       ],
       "orientation": "vertical",
       "image": "images/verticals/las-estrellas-poster-280x420.png",
-      "subtitle": "Comedia"
+      "subtitle": "Comedia",
+      "horario": "21:30hs",
+      "capitulos": "165",
+      "fecha_estreno": "29/05/2017",
+      "sinopsis": "Tras la muerte de Mario Estrella, sus hijas Virginia, Lucía, Carla, Florencia y Miranda descubren que solo cobrarán la herencia si administran juntas un hotel boutique durante un año. Obligadas a convivir y trabajar unidas, deberán superar sus diferencias para cumplir el último deseo de su padre.",
+      "rating": "15,2",
+      "productora": "Pol-Ka",
+      "tipo_emision": "Tira Diaria"
     },
     {
       "id": "v28",
@@ -6530,11 +6549,19 @@
       "genre": "Telenovela",
       "actors": [
         "Sebastián Estevanez",
-        "Eleonora Wexler"
+        "Eleonora Wexler",
+        "Miguel Ángel Rodríguez"
       ],
       "orientation": "vertical",
       "image": "images/verticals/golpe-al-corazon-poster-280x420.png",
-      "subtitle": "Telenovela"
+      "subtitle": "Telenovela",
+      "horario": "22hs, 23:15hs",
+      "capitulos": 105,
+      "fecha_estreno": "11/09/2017",
+      "sinopsis": "“El Toro” Farías, un exboxeador que trabaja como enfermero, conoce a la médica Marcela Ríos, marcada por un pasado violento y un matrimonio oscuro. Entre intrigas en la clínica y peligros que los rodean, ambos luchan por sanar sus heridas y darse una nueva oportunidad en el amor.",
+      "rating": "11",
+      "productora": "Estevanez Producciones",
+      "tipo_emision": "Tira Diaria"
     },
     {
       "id": "v73",
@@ -7695,7 +7722,14 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/heidi-bienvenida-a-casa-poster-280x420.png",
-      "subtitle": "Juvenil"
+      "subtitle": "Juvenil",
+      "horario": "19hs",
+      "capitulos": 120,
+      "fecha_estreno": "13/03/2017",
+      "sinopsis": "Heidi vive feliz en las montañas junto a su abuelo hasta que su tía la lleva a la ciudad. Allí se hace amiga de Clara Sesemann, una joven con agorafobia que vive recluida en su casa.",
+      "rating": "-",
+      "productora": "Alianza Producciones/Mondo TV",
+      "tipo_emision": "Tira Diaria"
     },
     {
       "id": "V129",
@@ -7788,7 +7822,14 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/o11nce-poster-280x420.png",
-      "subtitle": "Juvenil"
+      "subtitle": "Juvenil",
+      "horario": "18:30hs",
+      "capitulos": 220,
+      "fecha_estreno": "13/03/2017",
+      "sinopsis": "Gabo Moreti, un joven apasionado por el fútbol, recibe una beca de Francisco Velázquez para estudiar y jugar en el Instituto Académico Deportivo de Buenos Aires. Allí enfrenta la rivalidad de Lorenzo Guevara y, junto a sus amigos Ricky, Dedé, Zoe y Joaquín, lucha por cumplir su sueño de ser futbolista profesional.",
+      "rating": "-",
+      "productora": "Non Stop Producciones",
+      "tipo_emision": "Tira Diaria"
     },
     {
       "id": "V134",
