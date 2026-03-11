@@ -6022,7 +6022,14 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/cuentame-como-paso-poster-280x420.png",
-      "subtitle": "Drama"
+      "subtitle": "Drama",
+      "horario": "22:30HS",
+      "capitulos": 71,
+      "fecha_estreno": "21/08/2017",
+      "sinopsis": "Los Martínez es una familia de clase media que vive en los suburbios de Buenos Aires entre 1974 y 1983. A través de las vivencias de los personajes y de un vasto archivo histórico audiovisual, retrata la vida cotidiana de ese entonces, la moda, la publicidad, un modo de ser y el acontecer político de ese momento en la Argentina.",
+      "rating": "1,5",
+      "productora": "Televisión Pública",
+      "tipo_emision": "Tira Diaria"
     },
     {
       "id": "v18",
@@ -6124,11 +6131,19 @@
         "Ángela Torres",
         "Juan Darthés",
         "Ana Maria Orozco",
-        "Romina Gaetani"
+        "Romina Gaetani",
+        "Gastón Soffriti"
       ],
       "orientation": "vertical",
       "image": "images/verticals/simona-poster-280x420.png",
-      "subtitle": "Comedia"
+      "subtitle": "Comedia",
+      "horario": "21:30",
+      "capitulos": "154",
+      "fecha_estreno": "22/1/2018",
+      "sinopsis": "Simona, una joven que sueña con triunfar en la música, trabaja en la casa de los Guerrico mientras se enamora de los hermanos Dante y Romeo. Al mismo tiempo, se reencuentra con su madre biológica, que intenta recuperar el vínculo tras salir de prisión.",
+      "rating": "9,2",
+      "productora": "Pol-Ka",
+      "tipo_emision": "Tira Diaria"
     },
     {
       "id": "v23",
@@ -7705,7 +7720,14 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/kallys-mashup-poster-280x420.png",
-      "subtitle": "Juvenil"
+      "subtitle": "Juvenil",
+      "horario": "20hs",
+      "capitulos": 120,
+      "fecha_estreno": "13/10/2017",
+      "sinopsis": "Kally, una joven prodigio del piano, se muda para estudiar en el Conservatorio Allegro. Entre las exigencias de la música clásica y su pasión por el pop, busca su identidad creando su propio estilo musical.",
+      "rating": "-",
+      "productora": "PowWow/Anders Media",
+      "tipo_emision": "Tira Diaria"
     },
     {
       "id": "V128",
