@@ -1,5 +1,5 @@
 // telefe.js - Renderiza las series de Telefe con filtros avanzados
-const telefeDataVersion = '20260301-1';
+const telefeDataVersion = '20260311-1';
 
 // Cargar data.json y filtrar solo series de Telefe
 document.addEventListener('DOMContentLoaded', async function() {
@@ -254,6 +254,9 @@ document.addEventListener('DOMContentLoaded', async function() {
         const genre = getNormalizedGenre(item);
         return genre === 'thriller' || genre === 'policial';
       });
+      filtered.sort((a, b) => (parseInt(b.year) || 0) - (parseInt(a.year) || 0));
+    } else if (sort === 'dramas') {
+      filtered = filtered.filter(item => getNormalizedGenre(item) === 'drama');
       filtered.sort((a, b) => (parseInt(b.year) || 0) - (parseInt(a.year) || 0));
     } else if (sort === 'tira-diaria') {
       filtered = filtered.filter(item => {

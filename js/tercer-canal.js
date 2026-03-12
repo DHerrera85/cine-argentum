@@ -1,21 +1,29 @@
-// js/tercer-canal.js: Series combinadas de Canal 9, America y TV Publica
-const tercerCanalDataVersion = '20260219-1';
+// js/tercer-canal.js: Series combinadas de Canal 9, America, TV Publica y NET TV
+const tercerCanalDataVersion = '20260311-1';
+
+function isTercerCanalName(value) {
+  const channel = (value || '').toString().toLowerCase().trim();
+  if (!channel) return false;
+  return (
+    channel.includes('canal 9') ||
+    channel.includes('azul tv') ||
+    channel.includes('america') ||
+    channel.includes('américa') ||
+    channel.includes('tv pública') ||
+    channel.includes('tv publica') ||
+    channel.includes('canal 7') ||
+    channel.includes('net tv')
+  );
+}
 
 fetch('data.json?v=' + tercerCanalDataVersion, { cache: 'no-store' })
   .then(response => response.json())
   .then(data => {
     const items = data.items.filter(item => {
-      const channel = (item.channel || '').toLowerCase();
-      if (!channel) return false;
-      return (
-        channel.includes('canal 9') ||
-        channel.includes('azul tv') ||
-        channel.includes('america') ||
-        channel.includes('américa') ||
-        channel.includes('tv pública') ||
-        channel.includes('tv publica') ||
-        channel.includes('canal 7')
-      );
+      if (isTercerCanalName(item.channel)) return true;
+      if (Array.isArray(item.air_channels) && item.air_channels.some(isTercerCanalName)) return true;
+      if (Array.isArray(item.channels) && item.channels.some(isTercerCanalName)) return true;
+      return false;
     });
     renderSeries(items);
     setupFilters(items);

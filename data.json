@@ -9785,7 +9785,14 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/el-lobista-poster-280x420.png",
-      "subtitle": "Thriller"
+      "subtitle": "Thriller",
+      "horario": "miércoles 22:30",
+      "capitulos": 10,
+      "fecha_estreno": "30/05/2018",
+      "tipo_emision": "Semanal",
+      "sinopsis": "Matías Franco es un influyente lobista conocido por operar en las sombras para favorecer a empresas y corporaciones. Su habilidad y su aparente impunidad lo convierten en una figura temida dentro del mundo del poder.",
+      "rating": "6",
+      "productora": "Pol-ka Producciones, Turner International Argentina, Cablevisión"
     },
     {
       "id": "V226",
@@ -10388,7 +10395,14 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/sandro-la-serie-poster-280x420.png",
-      "subtitle": "Drama"
+      "subtitle": "Drama",
+      "horario": "22:30hs",
+      "capitulos": 13,
+      "fecha_estreno": "05/03/2018",
+      "sinopsis": "Roberto Sánchez inicia su camino desde sus humildes orígenes en Valentín Alsina hasta convertirse en el ídolo musical conocido como “El Gitano”. La historia recorre su ascenso a la fama, sus romances y su lucha final contra graves enfermedades pulmonares.",
+      "rating": "14,7",
+      "productora": "The Magic Eye",
+      "tipo_emision": "Tira Diaria"  
     },
     {
       "id": "V249",
@@ -10411,7 +10425,8 @@
       "sinopsis": "Dicky y Lorna son un matrimonio que alcanzó el éxito en los años 80 dentro de la industria pornográfica. Décadas después, enfrentan la decadencia profesional y personal, con su relación al borde del divorcio.",
       "rating": "13,8",
       "productora": "Pol-Ka",
-      "tipo_emision": "Semanal"    },
+      "tipo_emision": "Semanal"    
+    },
     {
       "id": "V250",
       "title": "Tiempos Compulsivos",
