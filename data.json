@@ -9760,7 +9760,14 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/morir-de-amor-poster-280x420.png",
-      "subtitle": "Thriller"
+      "subtitle": "Thriller",
+      "horario": "miércoles 23:30",
+      "capitulos": 12,
+      "fecha_estreno": "17/10/2018",
+      "tipo_emision": "Semanal",
+      "sinopsis": "Helena, una abogada exitosa diagnosticada con una enfermedad terminal, quien se involucra con Juan, un seductor que asesina a pacientes terminales, explorando el límite entre el amor romántico y la muerte",
+      "rating": "3,3",
+      "productora": "LCA Producciones, Viacom, Cablevisión Flow"
     },
     {
       "id": "V225",
@@ -9811,7 +9818,14 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/rizhoma-hotel-poster-280x420.png",
-      "subtitle": "Thriller"
+      "subtitle": "Thriller",
+      "horario": "viernes 23:30",
+      "capitulos": 21,
+      "fecha_estreno": "6/7/2018",
+      "tipo_emision": "Semanal",
+      "sinopsis": "Cada episodio narra historias intensas ambientadas en habitaciones de hotel, donde se revelan pasiones, secretos y crímenes. Con un elenco rotativo y tramas autoconclusivas, las historias exploran los límites y ambigüedades de las relaciones modernas.",
+      "rating": "8,5",
+      "productora": "Kuarzo, Cablevisión"
     },
     {
       "id": "V227",
@@ -11983,7 +11997,14 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/mi-hermano-es-un-clon-poster-280x420.png",
-      "subtitle": "Comedia"
+      "subtitle": "Comedia",
+      "horario": "21:30hs",
+      "capitulos": 95,
+      "fecha_estreno": "3/9/2018",
+      "sinopsis": "El científico Alejandro Figueroa ayuda a su hija Marcela a ser madre mediante fecundación in vitro, pero en secreto crea un clon humano llamado Mateo Mónaco. Años después, las vidas de Renzo Figueroa y Mateo, criados en mundos muy distintos, comienzan a cruzarse revelando el peligroso experimento.",
+      "rating": "7,1",
+      "productora": "Pol-Ka",
+      "tipo_emision": "Tira Diaria"
     },
     {
       "id": "v57",

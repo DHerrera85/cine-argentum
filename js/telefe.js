@@ -1,5 +1,5 @@
 // telefe.js - Renderiza las series de Telefe con filtros avanzados
-const telefeDataVersion = '20260311-1';
+const telefeDataVersion = '20260314-1';
 
 // Cargar data.json y filtrar solo series de Telefe
 document.addEventListener('DOMContentLoaded', async function() {
@@ -72,6 +72,7 @@ document.addEventListener('DOMContentLoaded', async function() {
     { id: 'v23', year: '2017', title: 'Fanny, la Fan', genre: 'Comedia' },
     { id: 'v72', year: '2017', title: 'Golpe al Corazón', genre: 'Telenovela' },
     { id: 'h6', year: '2018', title: 'Cien Dias para Enamorarse', genre: 'Comedia' },
+    { id: 'V226', year: '2018', title: 'Rizhoma Hotel', genre: 'Thriller' },
     { id: 'v14', year: '2019', title: 'Campanas en la Noche', genre: 'Thriller' },
     { id: 'v28', year: '2019', title: 'Pequeña Victoria', genre: 'Comedia' },
     { id: 'h2', year: '2022', title: 'El Primero de Nosotros', genre: 'Telenovela' },
