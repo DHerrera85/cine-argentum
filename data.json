@@ -5788,10 +5788,25 @@
         "Netflix"
       ],
       "genre": "Drama",
-      "actors": [],
+      "actors": [
+        "Nicolás Riera",
+        "Laura Laprida",
+        "Juan Manuel Guilera",
+        "Johana Francella",
+        "Matías Mayer",
+        "Noelia Marzol",
+        "Gastón Soffriti"
+      ],
       "orientation": "vertical",
       "image": "images/verticals/millennials-poster-280x420.png",
-      "subtitle": "Drama"
+      "subtitle": "Drama",
+      "horario": "22hs",
+      "capitulos": 63,
+      "fecha_estreno": "04/07/2004",
+      "sinopsis": "Benjamín, Rodrigo y Juan Manuel crean una app de comidas junto a Ariana, Alma y Florencia en un espacio de coworking, mientras ellas desarrollan su propia plataforma. El éxito desata rivalidades, enredos amorosos y conflictos que ponen a prueba sus amistades y relaciones.",
+      "rating": "0,5",
+      "productora": "Kuarzo",
+      "tipo_emision": "Tira Diaria"
     },
     {
       "id": "V297",
