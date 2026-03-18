@@ -5548,11 +5548,21 @@
       "actors": [
         "Benjamín Vicuña",
         "Gonzalo Heredia",
-        "Eugenia Suárez"
+        "Eugenia Suárez",
+        "Delfina Cháves",
+        "Albert Baró",
+        "Mercedes Funes"
       ],
       "orientation": "vertical",
       "image": "images/verticals/argentina-tierra-de-amor-y-venganza-2019-poster-280x420.png",
-      "subtitle": "Telenovela"
+      "subtitle": "Telenovela",
+      "horario": "23hs",
+      "capitulos": 192,
+      "sinopsis": "Dos amigos, Torcuato y Bruno, sobreviven a la Guerra Civil española, pero su amistad se rompe por la traición y toman caminos distintos hacia Argentina.",
+      "rating": "13,6",
+      "fecha_estreno": "14/03/2019",
+      "productora": "Pol-Ka",
+      "tipo_emision": "Tira Diaria"
     },
     {
       "id": "h2",
@@ -5978,7 +5988,14 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/campanas-en-la-noche-poster-280x420.png",
-      "subtitle": "Thriller"
+      "subtitle": "Thriller",
+      "horario": "22:30hs, 23:30hs",
+      "capitulos": 80,
+      "fecha_estreno": "14/01/2019",
+      "sinopsis": "Luis es un hombre acusado injustamente del asesinato de su mujer en la Patagonia que huye con su hija. Años después, con nueva identidad, se enamora de Luciana, una testigo clave de su pasado que vive sometida a Vito, un manipulador peligroso",
+      "rating": "8,5",
+      "productora": "Telefe Contenidos",
+      "tipo_emision": "Tira Diaria"
     },
     {
       "id": "v15",
@@ -7478,7 +7495,11 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/go-vive-a-tu-manera-poster-280x420.png",
-      "subtitle": "Juvenil"
+      "subtitle": "Juvenil",
+      "capitulos": 30,
+      "fecha_estreno": "22/02/2019",
+      "sinopsis": "Mía es una talentosa joven que consigue una beca en la prestigiosa academia de artes escénicas Saint Mary. Allí enfrenta la rivalidad de Lupe, la hija del dueño, mientras persigue sus sueños artísticos, vive amores juveniles y busca a su padre",
+      "productora": "Kuarzo/Onceloops"
     },
     {
       "id": "v114",
@@ -7841,7 +7862,14 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/bia-poster-280x420.png",
-      "subtitle": "Juvenil"
+      "subtitle": "Juvenil",
+      "horario": "19hs",
+      "capitulos": 120,
+      "fecha_estreno": "24/6/2019",
+      "sinopsis": "Bia, una joven marcada por la supuesta muerte de su hermana Helena, reprime su pasión por la música para conservar su recuerdo. Con el apoyo de sus amigos, decide volver a cantar y honrar el legado que compartían.",
+      "rating": "-",
+      "productora": "Non Stop Producciones",
+      "tipo_emision": "Tira Diaria"
     },
     {
       "id": "V133",
