@@ -90,6 +90,7 @@
       "id": "P1000",
       "viewers": 660273,
       "producer": "Argentina Sono Film",
+      "release_date": "5/6/1997",
       "director": "Juan Bautista Stagnaro"
     },
     {
@@ -112,7 +113,7 @@
       "id": "P1001",
       "viewers": 635591,
       "producer": "Patagonik Film Group",
-      "release_date": "07/08/1997",
+      "release_date": "7/8/1997",
       "director": "Marcelo Piñeyro"
     },
     {
@@ -134,6 +135,7 @@
       "id": "P1002",
       "viewers": 706410,
       "producer": "Patagonik, Telefe",
+      "release_date": "10/7/1997",
       "director": "Alejandro Stoessel"
     },
     {
@@ -154,6 +156,7 @@
       "id": "P1003",
       "viewers": 526340,
       "producer": "Patagonik, Telefe",
+      "release_date": "2/7/1998",
       "director": "Carlos Galettini"
     },
     {
@@ -171,6 +174,7 @@
       "subtitle": "Familiar",
       "id": "P1004",
       "viewers": 512178,
+      "release_date": "1/7/1999",
       "director": "Ariel Piluso"
     },
     {
@@ -193,6 +197,7 @@
       "id": "P1005",
       "viewers": 907364,
       "producer": "Argentina Sono Film, Telefe",
+      "release_date": "4/12/1999",
       "director": "Juan José Jusid"
     },
     {
@@ -209,6 +214,7 @@
       "id": "P1006",
       "viewers": 2210600,
       "producer": "Telefe, García Ferré Entertainment",
+      "release_date": "8/7/1999",
       "director": "Manuel García Ferré"
     },
     {
@@ -228,6 +234,7 @@
       "id": "P1007",
       "viewers": 782348,
       "producer": "Naya Films, Patagonik Film Group, Pol-ka Producciones",
+      "release_date": "1/7/2000",
       "director": "Alberto Lecchi"
     },
     {
@@ -248,6 +255,7 @@
       "id": "P1008",
       "viewers": 56958,
       "producer": "Patagonik Film Group",
+      "release_date": "6/1/2000",
       "director": "Juan Pablo Buscarini"
     },
     {
@@ -293,7 +301,7 @@
       "viewers": 0,
       "producer": "Disney+, Bourke Films, La Productora Films",
       "director": "Agustín Rolandelli",
-      "release_date": "2025-10-17"
+      "release_date": "17/10/2025"
     },
     {
       "title": "El Duelo",
@@ -313,7 +321,7 @@
       "viewers": 16429,
       "producer": "Bourke Films, Star Distribution",
       "director": "Augusto Tejada",
-      "release_date": "2023-10-12"
+      "release_date": "12/10/2023"
     },
     {
       "title": "Plata quemada",
@@ -334,6 +342,7 @@
       "id": "P1009",
       "viewers": 525188,
       "producer": "Oscar Kramer S. A., Cuatro Cabezas, Tornasol Films, Mandarin Films, Taxi Films",
+      "release_date": "11/5/2000",
       "director": "Marcelo Piñeyro"
     },
     {
@@ -355,6 +364,7 @@
       "id": "P1010",
       "viewers": 54097,
       "producer": "Aries Cinematográfica",
+      "release_date": "3/5/2001",
       "director": "Héctor Olivera"
     },
     {
@@ -377,6 +387,7 @@
       "id": "P1011",
       "viewers": 68251,
       "producer": "Pol-Ka",
+      "release_date": "4/10/2001",
       "director": "Alberto Lecchi"
     },
     {
@@ -397,6 +408,7 @@
       "id": "P1012",
       "viewers": 682441,
       "producer": "Telefe",
+      "release_date": "5/7/2001",
       "director": "José Luis Massa"
     },
     {
@@ -417,6 +429,7 @@
       "id": "P1013",
       "viewers": 26422,
       "producer": "Universidad del Cine",
+      "release_date": "7/6/2001",
       "director": "Ariel Rotter"
     },
     {
@@ -436,6 +449,7 @@
       "id": "P1015",
       "viewers": 131585,
       "producer": "Lita Stantic",
+      "release_date": "12/4/2001",
       "director": "Lucrecia Martel"
     },
     {
@@ -456,6 +470,7 @@
       "id": "P1016",
       "viewers": 13805,
       "producer": "Universidad del Cine",
+      "release_date": "3/10/2002",
       "director": "Juan Antín"
     },
     {
@@ -476,6 +491,7 @@
       "id": "P1017",
       "viewers": 1054475,
       "producer": "Patagonik",
+      "release_date": "6/6/2002",
       "director": "Juan José Jusid"
     },
     {
@@ -495,6 +511,7 @@
       "id": "P1018",
       "viewers": 296566,
       "producer": "Patagonik",
+      "release_date": "3/7/2003",
       "director": "Juan Bautista Stagnaro"
     },
     {
@@ -517,6 +534,7 @@
       "id": "P1019",
       "viewers": 948040,
       "producer": "Patagonik",
+      "release_date": "12/6/2003",
       "director": "Tomás Yankelevich"
     },
     {
@@ -536,6 +554,7 @@
       "id": "P1020",
       "viewers": 524569,
       "producer": "Patagonik",
+      "release_date": "12/6/2003",
       "director": "Daniel Barone"
     },
     {
@@ -557,6 +576,7 @@
       "id": "P1021",
       "viewers": 342627,
       "producer": "Cris Morena",
+      "release_date": "1/7/2004",
       "director": "Ezequiel Crupnicoff"
     },
     {
@@ -573,6 +593,7 @@
       "id": "P1022",
       "viewers": 1996738,
       "producer": "Patagonik",
+      "release_date": "8/7/2004",
       "director": "José Luis Massa"
     },
     {
@@ -592,6 +613,7 @@
       "id": "P1023",
       "viewers": 102447,
       "producer": "Amazonia Films",
+      "release_date": "9/12/2004",
       "director": "Sergio Bayo"
     },
     {
@@ -612,6 +634,7 @@
       "id": "P1024",
       "viewers": 1579224,
       "producer": "Argentina Sono Film",
+      "release_date": "2/6/2005",
       "director": "Rodolfo Ledo"
     },
     {
@@ -633,6 +656,7 @@
       "id": "P1025",
       "viewers": 344281,
       "producer": "INCAA",
+      "release_date": "8/9/2005",
       "director": "Tristán Bauer"
     },
     {
@@ -652,6 +676,7 @@
       "id": "P1026",
       "viewers": 768755,
       "producer": "Argentina Sono Film",
+      "release_date": "5/7/2007",
       "director": "Rodolfo Ledo"
     },
     {
@@ -668,6 +693,7 @@
       "id": "P1027",
       "viewers": 340356,
       "producer": "Patagonik Film Group",
+      "release_date": "5/7/2007",
       "director": "Juan Pablo Buscarini"
     },
     {
@@ -684,6 +710,7 @@
       "id": "P1028",
       "viewers": 275235,
       "producer": "Indiecito Studios",
+      "release_date": "5/7/2007",
       "director": "José Luis Massa"
     },
     {
@@ -703,6 +730,7 @@
       "id": "P1029",
       "viewers": 421751,
       "producer": "Film Suez",
+      "release_date": "8/2/2007",
       "director": "Juan Taratuto"
     },
     {
@@ -719,6 +747,7 @@
       "id": "P1030",
       "viewers": 102721,
       "producer": "Aleph Media",
+      "release_date": "8/11/2007",
       "director": "Liliana Romero"
     },
     {
@@ -738,6 +767,7 @@
       "id": "P1031",
       "viewers": 142984,
       "producer": "Patagonik Film Group",
+      "release_date": "7/11/2008",
       "director": "Pablo Trapero"
     },
     {
@@ -759,6 +789,7 @@
       "id": "P1032",
       "viewers": 231610,
       "producer": "Patagonik",
+      "release_date": "12/12/2008",
       "director": "Andrés G. Schaer"
     },
     {
@@ -779,6 +810,7 @@
       "id": "P1033",
       "viewers": 480568,
       "producer": "Telefe, INCAA, Pampa Films, Royal Cinema Group, Runa Films",
+      "release_date": "9/12/2009",
       "director": "Raúl Rodríguez Peila"
     },
     {
@@ -800,6 +832,7 @@
       "id": "P1034",
       "viewers": 541279,
       "producer": "Tornasol",
+      "release_date": "10/9/2009",
       "director": "Marcelo Piñeyro"
     },
     {
@@ -819,6 +852,7 @@
       "id": "P1035",
       "viewers": 131788,
       "producer": "Buenos Aires Producciones",
+      "release_date": "11/6/2009",
       "director": "María Teresa Costantini"
     },
     {
@@ -838,6 +872,7 @@
       "id": "P1036",
       "viewers": 474449,
       "producer": "Patagonik",
+      "release_date": "1/4/2010",
       "director": "Daniel Burman"
     },
     {
@@ -858,6 +893,7 @@
       "id": "P1037",
       "viewers": 49325,
       "producer": "Oriental Films, Royal Cinema Group, CoolShot Films",
+      "release_date": "1/7/2010",
       "director": "Martín Sastre"
     },
     {
@@ -878,6 +914,7 @@
       "id": "P1038",
       "viewers": 139669,
       "producer": "INCAA",
+      "release_date": "5/8/2010",
       "director": "Néstor Montalbano"
     },
     {
@@ -897,6 +934,7 @@
       "id": "P1039",
       "viewers": 626251,
       "producer": "Patagonik",
+      "release_date": "6/5/2010",
       "director": "Pablo Trapero"
     },
     {
@@ -913,6 +951,7 @@
       "id": "P1040",
       "viewers": 428949,
       "producer": "Illusion Studios, Toonz Entertainment, Ánima Estudios",
+      "release_date": "7/7/2010",
       "director": "Cristian Dzwonik"
     },
     {
@@ -932,6 +971,7 @@
       "id": "P1041",
       "viewers": 849429,
       "producer": "Patagonik Film Group",
+      "release_date": "12/10/2010",
       "director": "Diego Kaplan"
     },
     {
@@ -952,6 +992,7 @@
       "id": "P1042",
       "viewers": 302088,
       "producer": "Buena Vista Internacional",
+      "release_date": "1/9/2011",
       "director": "Ariel Winograd"
     },
     {
@@ -972,6 +1013,7 @@
       "id": "P1043",
       "viewers": 303331,
       "producer": "INCAA",
+      "release_date": "7/4/2011",
       "director": "Leandro Ipiña"
     },
     {
@@ -988,6 +1030,7 @@
       "id": "P1044",
       "viewers": 58832,
       "producer": "Patagonik Film Group, Cineanimadores",
+      "release_date": "2/2/2012",
       "director": "Walter Tournier"
     },
     {
@@ -1008,6 +1051,7 @@
       "id": "P1045",
       "viewers": 155485,
       "producer": "MyS Producción",
+      "release_date": "5/4/2012",
       "director": "Alejandro Montiel"
     },
     {
@@ -1028,6 +1072,7 @@
       "id": "P1046",
       "viewers": 83509,
       "producer": "Argentina Sono Film",
+      "release_date": "6/9/2012",
       "director": "Jorge Nisco"
     },
     {
@@ -1044,6 +1089,7 @@
       "id": "P1047",
       "viewers": 31963,
       "producer": "Vista Sur Films, Red Post Studio",
+      "release_date": "11/10/2012",
       "director": "David Bisbano"
     },
     {
@@ -1062,6 +1108,7 @@
       "id": "P1048",
       "viewers": 72019,
       "producer": "San Luis Cine",
+      "release_date": "12/7/2012",
       "director": "Manuel García Ferré"
     },
     {
@@ -1081,6 +1128,7 @@
       "id": "P1049",
       "viewers": 180007,
       "producer": "Patagonik, Cine Ar",
+      "release_date": "1/8/2013",
       "director": "Ariel Winograd"
     },
     {
@@ -1100,6 +1148,7 @@
       "id": "P1050",
       "viewers": 972595,
       "producer": "Telefe Contenidos, Telecinco Cinema, Hugo Sigman (K&S Films)",
+      "release_date": "5/9/2013",
       "director": "Patxi Amezcúa"
     },
     {
@@ -1120,6 +1169,7 @@
       "id": "P1051",
       "viewers": 292226,
       "producer": "Buena Vista International, Pampa Films, Benteveo Producciones, Telefe",
+      "release_date": "3/7/2014",
       "director": "Juan Pablo Buscarini"
     },
     {
@@ -1139,6 +1189,7 @@
       "id": "P1052",
       "viewers": 484893,
       "producer": "Distribution Company",
+      "release_date": "5/5/2014",
       "director": "Natalia Meta"
     },
     {
@@ -1160,6 +1211,7 @@
       "id": "P1053",
       "viewers": 936024,
       "producer": "Argentina Sono Film",
+      "release_date": "10/7/2014",
       "director": "Rodolfo Ledo"
     },
     {
@@ -1181,6 +1233,7 @@
       "id": "P1054",
       "viewers": 119972,
       "producer": "Crudo Films, Hermanos Dawidson Films, Energía",
+      "release_date": "3/12/2015",
       "director": "Nicanor Loreti"
     },
     {
@@ -1322,6 +1375,7 @@
       "id": "P1055",
       "viewers": 809470,
       "producer": "MyS Producción, HC Films, Telefe, Fénix",
+      "release_date": "4/6/2015",
       "director": "Daniela Goggi"
     },
     {
@@ -1343,6 +1397,7 @@
       "id": "P1056",
       "viewers": 397744,
       "producer": "Cinear, Telefe, Endemol, INCAA",
+      "release_date": "8/1/2015",
       "director": "Juan Taratuto"
     },
     {
@@ -1364,6 +1419,7 @@
       "id": "P1057",
       "viewers": 112526,
       "producer": "Patagonik, MyS, Gazz",
+      "release_date": "12/3/2015",
       "director": "Martín Piroyansky"
     },
     {
@@ -1385,6 +1441,7 @@
       "id": "P1058",
       "viewers": 116700,
       "producer": "Buena Vista International, Gloriamundi Producciones, The Walt Disney Company Argentina",
+      "release_date": "2/6/2016",
       "director": "Juan Pablo Buscarini"
     },
     {
@@ -1407,6 +1464,7 @@
       "id": "P1059",
       "viewers": 358808,
       "producer": "Morena Films, Telecinco Cinema, K&S Films, Telefónica Studios",
+      "release_date": "3/3/2016",
       "director": "Daniel Calparsoro"
     },
     {
@@ -1427,6 +1485,7 @@
       "id": "P1060",
       "viewers": 356348,
       "producer": "Tresplanos Cine, Patagonik Film Group, INCAA",
+      "release_date": "4/8/2016",
       "director": "Ariel Winograd"
     },
     {
@@ -1447,6 +1506,7 @@
       "id": "P1061",
       "viewers": 115650,
       "producer": "Buffalo Films, MG Films",
+      "release_date": "6/10/2016",
       "director": "Nicolás Silbert"
     },
     {
@@ -1467,6 +1527,7 @@
       "id": "P1062",
       "viewers": 665007,
       "producer": "Aleph Media, Magma Cine",
+      "release_date": "8/9/2016",
       "director": "Gastón Duprat, Mariano Cohn"
     },
     {
@@ -1486,6 +1547,7 @@
       "id": "P1063",
       "viewers": 65193,
       "producer": "BD Cine Telefe",
+      "release_date": "11/2/2016",
       "director": "Daniel Burman"
     },
     {
@@ -1506,6 +1568,7 @@
       "id": "P1064",
       "viewers": 363835,
       "producer": "Argentina Sono Film",
+      "release_date": "11/8/2016",
       "director": "Marcos Carnevale"
     },
     {
@@ -1525,6 +1588,7 @@
       "id": "P1065",
       "viewers": 357716,
       "producer": "Patagonik",
+      "release_date": "5/10/2017",
       "director": "Alejandro Maci"
     },
     {
@@ -1544,6 +1608,7 @@
       "id": "P1066",
       "viewers": 1713804,
       "producer": "Patagonik",
+      "release_date": "6/7/2017",
       "director": "Ariel Winograd"
     },
     {
@@ -1563,6 +1628,7 @@
       "id": "P1067",
       "viewers": 1097893,
       "producer": "Patagonik, Lihuen Andina S.A., Creative Andina",
+      "release_date": "10/8/2017",
       "director": "Marcos Carnevale"
     },
     {
@@ -1583,6 +1649,7 @@
       "id": "P1068",
       "viewers": 274109,
       "producer": "INCAA, MyS Producción, Telefe, Tondero Producciones",
+      "release_date": "1/8/2018",
       "director": "Alejandro Montiel"
     },
     {
@@ -1603,6 +1670,7 @@
       "id": "P1069",
       "viewers": 99381,
       "producer": "Pampa Films, Gloriamundi",
+      "release_date": "1/11/2018",
       "director": "Gustavo Hernández"
     },
     {
@@ -1622,6 +1690,7 @@
       "id": "P1070",
       "viewers": 33414,
       "producer": "Del Toro Films",
+      "release_date": "4/1/2018",
       "director": "Nicanor Loreti"
     },
     {
@@ -1644,6 +1713,7 @@
       "id": "P1071",
       "viewers": 548749,
       "producer": "FAM Contenidos, Telefe, DirecTV, INCAA",
+      "release_date": "4/10/2018",
       "director": "Lorena Muñoz"
     },
     {
@@ -1663,6 +1733,7 @@
       "id": "P1072",
       "viewers": 762184,
       "producer": "Aeroplano, Telefe, INCAA",
+      "release_date": "5/7/2018",
       "director": "Martino Zaidelis"
     },
     {
@@ -1683,6 +1754,7 @@
       "id": "P1073",
       "viewers": 11321,
       "producer": "Cine Ar, INCAA, Sudestada",
+      "release_date": "6/9/2018",
       "director": "Iván Abello"
     },
     {
@@ -1705,6 +1777,7 @@
       "id": "P1074",
       "viewers": 46380,
       "producer": "HC Films, Benteveo, Chinita Films",
+      "release_date": "8/2/2018",
       "director": "Hernán Guerschuny, Jazmín Stuart"
     },
     {
@@ -1728,6 +1801,7 @@
       "id": "P1075",
       "viewers": 1367803,
       "producer": "K&S Films, Underground, Telefe",
+      "release_date": "9/8/2018",
       "director": "Luis Ortega"
     },
     {
@@ -1749,6 +1823,7 @@
       "id": "P1076",
       "viewers": 153218,
       "producer": "Argentina Sono Film",
+      "release_date": "12/7/2018",
       "director": "Rodolfo Ledo"
     },
     {
@@ -1770,6 +1845,7 @@
       "id": "P1077",
       "viewers": 586483,
       "producer": "100 Bares, Telefé, Tornasol Films, INCAA",
+      "release_date": "2/5/2019",
       "director": "Juan José Campanella"
     },
     {
@@ -1790,6 +1866,7 @@
       "id": "P1078",
       "viewers": 332080,
       "producer": "MediaPro",
+      "release_date": "4/4/2019",
       "director": "Mariano Cohn"
     },
     {
@@ -1810,6 +1887,7 @@
       "id": "P1079",
       "viewers": 229692,
       "producer": "Patagonik",
+      "release_date": "4/7/2019",
       "director": "Marcos Carnevale"
     },
     {
@@ -1827,6 +1905,7 @@
       "subtitle": "Animación",
       "id": "P1081",
       "viewers": 135158,
+      "release_date": "10/11/2019",
       "director": "Eduardo Gondell"
     },
     {
@@ -1846,6 +1925,7 @@
       "subtitle": "Drama",
       "id": "P1082",
       "producer": "Cine Tren",
+      "release_date": "12/9/2019",
       "director": "Lucas Santa Ana"
     },
     {
@@ -1866,7 +1946,7 @@
       "id": "P1083",
       "producer": "Netflix",
       "director": "Marcos Carnevale",
-      "release_date": "2020-09-09"
+      "release_date": "9/9/2020"
     },
     {
       "title": "Ex Casados",
@@ -1885,6 +1965,7 @@
       "id": "P1084",
       "viewers": 29137,
       "producer": "Zoelle Producciones, RGB Entertainment",
+      "release_date": "2/12/2021",
       "director": "Sabrina Farji"
     },
     {
@@ -1905,6 +1986,7 @@
       "id": "P1085",
       "viewers": 3630,
       "producer": "Cinetren, HBO Max",
+      "release_date": "6/5/2021",
       "director": "Leonardo Brzezicki"
     },
     {
@@ -1925,6 +2007,7 @@
       "id": "P1086",
       "viewers": 1656,
       "producer": "Crep Films, Lahaye Media",
+      "release_date": "9/9/2021",
       "director": "Mariano Cattaneo"
     },
     {
@@ -1944,6 +2027,7 @@
       "id": "P1087",
       "viewers": 26156,
       "producer": "Buena Vista International",
+      "release_date": "11/3/2021",
       "director": "Gastón Portal"
     },
     {
@@ -1963,7 +2047,7 @@
       "id": "P1088",
       "producer": "Netflix",
       "director": "Sebastián De Caro",
-      "release_date": "2022-12-07"
+      "release_date": "7/12/2022"
     },
     {
       "title": "Más Respeto que soy Tu Madre",
@@ -1982,6 +2066,7 @@
       "id": "P1089",
       "viewers": 121166,
       "producer": "Pampa Films, Gloriamundi Producciones, Star Distribution",
+      "release_date": "8/9/2022",
       "director": "Marcos Carnevale"
     },
     {
@@ -2001,6 +2086,7 @@
       "id": "P1090",
       "viewers": 811569,
       "producer": "Patagonik, Star Distribution",
+      "release_date": "11/8/2022",
       "director": "Adrián Suar"
     },
     {
@@ -2022,6 +2108,7 @@
       "id": "P1091",
       "viewers": 72612,
       "producer": "Amazon Studios, Gran Via Productions, La Unión de los Ríos, Setembro Cine",
+      "release_date": "1/6/2023",
       "director": "Dolores Fonzi"
     },
     {
@@ -2041,6 +2128,7 @@
       "id": "P1092",
       "viewers": 141115,
       "producer": "Pasto Cine, Pucara Cine, Infinity Hill",
+      "release_date": "5/10/2023",
       "director": "María Alché, Benjamín Naishtat"
     },
     {
@@ -2062,6 +2150,7 @@
       "id": "P1093",
       "viewers": 547917,
       "producer": "100 Bares, Cimarrón Cine, Infinity Hill, Particular Crowd HBO Max",
+      "release_date": "6/4/2023",
       "director": "Martino Zaidelis"
     },
     {
@@ -2082,6 +2171,7 @@
       "id": "P1094",
       "viewers": 154028,
       "producer": "Cinema 7 Films, Non Stop, Particular Crowd, HBO Max",
+      "release_date": "6/7/2023",
       "director": "Fernán Mirás"
     },
     {
@@ -2101,6 +2191,7 @@
       "id": "P1095",
       "viewers": 314467,
       "producer": "Machaco Films",
+      "release_date": "9/11/2023",
       "director": "Demián Rugna"
     },
     {
@@ -2121,6 +2212,7 @@
       "subtitle": "Familiar",
       "id": "P1096",
       "producer": "Netflix",
+      "release_date": "6/12/2024",
       "director": "Martino Zaidelis"
     },
     {
@@ -2141,6 +2233,7 @@
       "id": "P1097",
       "viewers": 74191,
       "producer": "Pampa Films, Star Distribution",
+      "release_date": "8/8/2024",
       "director": "Valeria Bertuccelli"
     },
     {
@@ -2160,6 +2253,7 @@
       "id": "P1098",
       "viewers": 35551,
       "producer": "Studio Isar Animation, 3Doubles Producciones",
+      "release_date": "8/8/2024",
       "director": "Gonzalo Gutiérrez"
     },
     {
@@ -2180,6 +2274,7 @@
       "id": "P1099",
       "viewers": 5164,
       "producer": "Oficina Burman, The Mediapro Studio, Star Distribution",
+      "release_date": "10/10/2024",
       "director": "Daniel Burman"
     },
     {
@@ -2200,7 +2295,7 @@
       "id": "P1100",
       "producer": "Netflix",
       "director": "Diego Lerman",
-      "release_date": "2024-10-10"
+      "release_date": "10/10/2024"
     },
     {
       "title": "La Mujer de la Fila",
@@ -2221,7 +2316,7 @@
       "viewers": 32605,
       "producer": "Netflix",
       "director": "Benjamín Ávila",
-      "release_date": "2025-09-04"
+      "release_date": "4/9/2025"
     },
     {
       "title": "Hoy se Arregla el Mundo",
@@ -2242,6 +2337,7 @@
       "id": "P1102",
       "viewers": 72032,
       "producer": "Buena Vista International, Patagonik Film Group",
+      "release_date": "13/01/2022",
       "director": "Ariel Winograd"
     },
     {
@@ -2264,6 +2360,7 @@
       "id": "P1103",
       "viewers": 1148667,
       "producer": "Argentina Sono Film, Telefe",
+      "release_date": "13/07/2006",
       "director": "Rodolfo Ledo"
     },
     {
@@ -2286,6 +2383,7 @@
       "id": "P1104",
       "viewers": 956050,
       "producer": "Patagonik Film Group",
+      "release_date": "13/07/2006",
       "director": "Juan Pablo Buscarini"
     },
     {
@@ -2306,6 +2404,7 @@
       "id": "P1105",
       "viewers": 378220,
       "producer": "Patagonik Film Group",
+      "release_date": "13/09/2007",
       "director": "Martín Hodara"
     },
     {
@@ -2327,6 +2426,7 @@
       "id": "P1200",
       "viewers": 385313,
       "producer": "K&S Films, Piano, Rei Cine",
+      "release_date": "13/09/2018",
       "director": "Gonzalo Tobal"
     },
     {
@@ -2343,6 +2443,7 @@
       "id": "P1401",
       "viewers": 116962,
       "producer": "Ánima Estudios, Illusion Studios",
+      "release_date": "13/10/2011",
       "director": "Alberto Mar"
     },
     {
@@ -2362,6 +2463,7 @@
       "id": "P1108",
       "viewers": 715302,
       "producer": "Patagonik, Pol-Ka",
+      "release_date": "13/5/1999",
       "director": "Daniel Barone"
     },
     {
@@ -2378,6 +2480,7 @@
       "id": "P1109",
       "viewers": 133761,
       "producer": "Patagonik Film Group",
+      "release_date": "13/7/2000",
       "director": "Franco Bíttolo"
     },
     {
@@ -2399,6 +2502,7 @@
       "id": "P1110",
       "viewers": 39027,
       "producer": "Aeroplano Cine, INCAA, Telefe",
+      "release_date": "13/7/2010",
       "director": "Nicolás Goldbart"
     },
     {
@@ -2419,6 +2523,7 @@
       "id": "P1111",
       "viewers": 2457396,
       "producer": "Haddock Films, Tornasol Films, 100 Bares, Telefe, Televisión Española (TVE), Canal+",
+      "release_date": "13/8/2009",
       "director": "Juan José Campanella"
     },
     {
@@ -2438,6 +2543,7 @@
       "id": "P1112",
       "viewers": 2652757,
       "producer": "Kramer & Sigman Films, El Deseo, Telefé, Fox International Productions",
+      "release_date": "13/8/2015",
       "director": "Pablo Trapero"
     },
     {
@@ -2457,6 +2563,7 @@
       "id": "P1113",
       "viewers": 11933,
       "producer": "La Unión de los Ríos",
+      "release_date": "14/03/2019",
       "director": "Alejandro Fadel"
     },
     {
@@ -2476,6 +2583,7 @@
       "id": "P1114",
       "viewers": 1408276,
       "producer": "Patagonik Film Group",
+      "release_date": "14/08/2008",
       "director": "Juan Taratuto"
     },
     {
@@ -2494,6 +2602,7 @@
       "id": "P1115",
       "viewers": 1829245,
       "producer": "Pampa Films",
+      "release_date": "14/08/2025",
       "director": "Mariano Cohn, Gastón Duprat"
     },
     {
@@ -2514,6 +2623,7 @@
       "id": "P1116",
       "viewers": 309289,
       "producer": "Pampa Films, Telefe, Endemol Shine Argentina, DirecTV, INCAA",
+      "release_date": "14/4/2016",
       "director": "Sebastián Borensztein"
     },
     {
@@ -2533,6 +2643,7 @@
       "id": "P1117",
       "viewers": 508643,
       "producer": "Patagonik, Tornasol Films",
+      "release_date": "14/5/2015",
       "director": "Ariel Winograd"
     },
     {
@@ -2553,6 +2664,7 @@
       "id": "P1118",
       "viewers": 203885,
       "producer": "Cinéfondation",
+      "release_date": "14/6/2007",
       "director": "Lucía Puenzo"
     },
     {
@@ -2573,6 +2685,7 @@
       "id": "P1119",
       "viewers": 86455,
       "producer": "Argentina Sono Film",
+      "release_date": "14/7/2011",
       "director": "Julio Midú"
     },
     {
@@ -2593,6 +2706,7 @@
       "id": "P1120",
       "viewers": 496357,
       "producer": "Patagonik",
+      "release_date": "14/8/2003",
       "director": "Eduardo Mignogna"
     },
     {
@@ -2613,6 +2727,7 @@
       "id": "P1121",
       "viewers": 714645,
       "producer": "Patagonik, Morena Films",
+      "release_date": "14/9/2017",
       "director": "Martín Hodara"
     },
     {
@@ -2633,6 +2748,7 @@
       "id": "P1122",
       "viewers": 1841886,
       "producer": "Mod Producciones, K&S Films, Kenya Films",
+      "release_date": "15/08/2019",
       "director": "Sebastián Borensztein"
     },
     {
@@ -2654,6 +2770,7 @@
       "id": "P1123",
       "viewers": 96075,
       "producer": "Pampa Films",
+      "release_date": "15/6/2017",
       "director": "Federico Cueva"
     },
     {
@@ -2674,6 +2791,7 @@
       "subtitle": "Policial",
       "id": "P1124",
       "producer": "Netflix",
+      "release_date": "15/6/2022",
       "director": "Sebastián Schindel"
     },
     {
@@ -2693,6 +2811,7 @@
       "id": "P1125",
       "viewers": 1746547,
       "producer": "Argentina Sono Film, Telefé, Patagonik Film Group",
+      "release_date": "15/8/2013",
       "director": "Marcos Carnevale"
     },
     {
@@ -2713,6 +2832,7 @@
       "id": "P1126",
       "viewers": 632750,
       "producer": "Patagonik Film Group",
+      "release_date": "15/9/2005",
       "director": "Fabián Bielinsky"
     },
     {
@@ -2732,6 +2852,7 @@
       "id": "P1127",
       "viewers": 955298,
       "producer": "Habitación 1520, Smilehood, INCAA",
+      "release_date": "15/9/2016",
       "director": "Lorena Muñoz"
     },
     {
@@ -2751,6 +2872,7 @@
       "id": "P1128",
       "viewers": 2085915,
       "producer": "AZ Films, MarVista Entertainment, Telefé",
+      "release_date": "16/01/2020",
       "director": "Ariel Winograd"
     },
     {
@@ -2771,6 +2893,7 @@
       "id": "P1129",
       "viewers": 1555626,
       "producer": "Patagonik",
+      "release_date": "16/08/2001",
       "director": "Juan José Campanella"
     },
     {
@@ -2790,6 +2913,7 @@
       "id": "P1130",
       "viewers": 733486,
       "producer": "Televisión Abierta, Arco Libre, Mediapro",
+      "release_date": "16/08/2018",
       "director": "Gastón Duprat"
     },
     {
@@ -2811,6 +2935,7 @@
       "id": "P1131",
       "viewers": 937735,
       "producer": "Patagonik",
+      "release_date": "16/09/2004",
       "director": "Raúl Rodríguez Peila"
     },
     {
@@ -2830,6 +2955,7 @@
       "id": "P1132",
       "viewers": 614037,
       "producer": "Cirko Film",
+      "release_date": "16/1/2014",
       "director": "Daniel Burman"
     },
     {
@@ -2848,6 +2974,7 @@
       "subtitle": "Animación",
       "id": "P1133",
       "viewers": 155988,
+      "release_date": "16/11/2010",
       "director": "Norman Ruíz"
     },
     {
@@ -2868,6 +2995,7 @@
       "subtitle": "Drama",
       "id": "P1134",
       "producer": "Netflix",
+      "release_date": "16/11/2023",
       "director": "Anahí Berneri"
     },
     {
@@ -2888,6 +3016,7 @@
       "id": "P1135",
       "viewers": 773155,
       "producer": "INCAA, Patagonik Film Group, Televisión Española (TVE)",
+      "release_date": "16/5/2012",
       "director": "Pablo Trapero"
     },
     {
@@ -2908,6 +3037,7 @@
       "id": "P1136",
       "viewers": 123656,
       "producer": "Telefe",
+      "release_date": "16/7/2009",
       "director": "Pablo Parés"
     },
     {
@@ -2930,6 +3060,7 @@
       "id": "P1137",
       "viewers": 1004288,
       "producer": "Pol-ka Producciones, Patagonik Film Group",
+      "release_date": "16/8/2012",
       "director": "Diego Kaplan"
     },
     {
@@ -2948,6 +3079,7 @@
       "subtitle": "Comedia",
       "id": "P1138",
       "producer": "Netflix",
+      "release_date": "16/8/2024",
       "director": "Santiago Requejo"
     },
     {
@@ -2967,6 +3099,7 @@
       "subtitle": "Romance",
       "id": "P1139",
       "viewers": 122032,
+      "release_date": "16/9/1999",
       "director": "Juan José Campanella"
     },
     {
@@ -2987,6 +3120,7 @@
       "id": "P1140",
       "viewers": 201830,
       "producer": "INCAA",
+      "release_date": "16/9/2012",
       "director": "Benjamín Ávila"
     },
     {
@@ -3008,6 +3142,7 @@
       "id": "P1141",
       "viewers": 368009,
       "producer": "Star Distribution",
+      "release_date": "17/04/2025",
       "director": "Adrián Suar"
     },
     {
@@ -3029,6 +3164,7 @@
       "id": "P1142",
       "viewers": 477125,
       "producer": "Patagonik Film Group, Buena Vista International, Artear",
+      "release_date": "17/07/2008",
       "director": "Jorge Nisco"
     },
     {
@@ -3050,6 +3186,7 @@
       "id": "P1143",
       "viewers": 78946,
       "producer": "Star Distribution",
+      "release_date": "17/07/2025",
       "director": "Nicolás Silbert, Leandro Mark"
     },
     {
@@ -3070,6 +3207,7 @@
       "id": "P1144",
       "viewers": 1047647,
       "producer": "Telefe, Haddock Films, Tornasol Films, INCAA",
+      "release_date": "17/1/2013",
       "director": "Hernán Goldfrid"
     },
     {
@@ -3090,6 +3228,7 @@
       "id": "P1145",
       "viewers": 408763,
       "producer": "Patagonik",
+      "release_date": "17/10/2002",
       "director": "Marcelo Piñeyro"
     },
     {
@@ -3110,6 +3249,7 @@
       "id": "P1146",
       "viewers": 3640,
       "producer": "Netflix",
+      "release_date": "17/10/2025",
       "director": "Daniel Hendler"
     },
     {
@@ -3129,6 +3269,7 @@
       "id": "P1147",
       "viewers": 2027880,
       "producer": "Patagonik Film Group",
+      "release_date": "17/3/2016",
       "director": "Juan Taratuto"
     },
     {
@@ -3150,6 +3291,7 @@
       "id": "P1148",
       "viewers": 1357107,
       "producer": "Argentina Sono Film, Telefe",
+      "release_date": "17/5/2000",
       "director": "Juan José Jusid"
     },
     {
@@ -3170,6 +3312,7 @@
       "id": "P1149",
       "viewers": 23098,
       "producer": "INCAA, Magoya Films",
+      "release_date": "17/5/2017",
       "director": "Eduardo Pinto"
     },
     {
@@ -3189,6 +3332,7 @@
       "id": "P1150",
       "viewers": 565629,
       "producer": "Cinemagroup",
+      "release_date": "17/7/2014",
       "director": "Fabián Forte"
     },
     {
@@ -3209,6 +3353,7 @@
       "id": "P1151",
       "viewers": 658082,
       "producer": "K&S Films, Haddock Films, Telefe",
+      "release_date": "17/8/2017",
       "director": "Santiago Mitre"
     },
     {
@@ -3230,6 +3375,7 @@
       "id": "P1152",
       "viewers": 238504,
       "producer": "Patagonik",
+      "release_date": "18/07/2002",
       "director": "Raúl Rodríguez Peila"
     },
     {
@@ -3251,6 +3397,7 @@
       "id": "P1153",
       "viewers": 147468,
       "producer": "Amazon MGM Studios",
+      "release_date": "18/09/2025",
       "director": "Dolores Fonzi"
     },
     {
@@ -3270,6 +3417,7 @@
       "id": "P1154",
       "viewers": 127179,
       "producer": "Pampa Films",
+      "release_date": "18/10/2018",
       "director": "Valeria Bertuccelli, Fabiana Tiscornia"
     },
     {
@@ -3288,6 +3436,7 @@
       "subtitle": "Romance",
       "id": "P1155",
       "viewers": 146988,
+      "release_date": "18/12/2009",
       "director": "Mariano Mucci"
     },
     {
@@ -3304,6 +3453,7 @@
       "id": "P1156",
       "viewers": 89257,
       "producer": "Manos Digitales Animation Studio",
+      "release_date": "18/2/2010",
       "director": "Daniel De Felippo"
     },
     {
@@ -3323,6 +3473,7 @@
       "id": "P1157",
       "viewers": 74828,
       "producer": "Zazen Producciones, San Luis Cine, INCAA",
+      "release_date": "18/3/2010",
       "director": "Diego Rafecas"
     },
     {
@@ -3343,6 +3494,7 @@
       "id": "P1158",
       "viewers": 91639,
       "producer": "INCAA",
+      "release_date": "18/5/2013",
       "director": "Leandro Mark"
     },
     {
@@ -3363,6 +3515,7 @@
       "id": "P1159",
       "viewers": 144710,
       "producer": "Telefé, Story Lab",
+      "release_date": "18/6/2015",
       "director": "Santiago Mitre"
     },
     {
@@ -3379,6 +3532,7 @@
       "id": "P1160",
       "viewers": 2139844,
       "producer": "100 Bares, Antena 3 Films, Mundoloco CGI Animation Studios, Telefe, Canal+",
+      "release_date": "18/7/2013",
       "director": "Juan José Campanella"
     },
     {
@@ -3398,6 +3552,7 @@
       "id": "P1161",
       "viewers": 397131,
       "producer": "Aleph Media",
+      "release_date": "18/8/2011",
       "director": "Marcos Carnevale"
     },
     {
@@ -3419,6 +3574,7 @@
       "id": "P1162",
       "viewers": 568983,
       "producer": "Argentina Sono Film, Tornasol Films",
+      "release_date": "19/10/2012",
       "director": "Eduard Cortés"
     },
     {
@@ -3439,6 +3595,7 @@
       "id": "P1163",
       "viewers": 241007,
       "producer": "INCAA",
+      "release_date": "19/3/2009",
       "director": "Hernán Goldfrid"
     },
     {
@@ -3459,6 +3616,7 @@
       "id": "P1164",
       "viewers": 423762,
       "producer": "Pyramide Productions, Wanda Films, Telefe",
+      "release_date": "19/5/2013",
       "director": "Lucía Puenzo"
     },
     {
@@ -3479,6 +3637,7 @@
       "id": "P1165",
       "viewers": 715265,
       "producer": "MyS Producción, Telefe",
+      "release_date": "19/5/2016",
       "director": "Daniela Goggi"
     },
     {
@@ -3516,6 +3675,7 @@
       "id": "P1167",
       "viewers": 1030126,
       "producer": "Telefe, García Ferré Entertainment",
+      "release_date": "19/6/2000",
       "director": "Manuel García Ferré"
     },
     {
@@ -3536,6 +3696,7 @@
       "id": "P1168",
       "viewers": 31105,
       "producer": "Pampa Films, Star Distribution, Gloriamundi Producciones",
+      "release_date": "19/9/2024",
       "director": "Mariana Wainstein"
     },
     {
@@ -3557,6 +3718,7 @@
       "id": "P1169",
       "viewers": 1099044,
       "producer": "Pol-Ka",
+      "release_date": "20/05/2004",
       "director": "Juan José Campanella"
     },
     {
@@ -3576,6 +3738,7 @@
       "id": "P1170",
       "viewers": 6026,
       "producer": "Viacom International Studios, Infinity Hill, Tresplanos Cine Paramount+",
+      "release_date": "20/10/2022",
       "director": "Ariel Winograd"
     },
     {
@@ -3595,6 +3758,7 @@
       "id": "P1171",
       "viewers": 488808,
       "producer": "",
+      "release_date": "20/5/1999",
       "director": "Juan Carlos Desanzo"
     },
     {
@@ -3615,6 +3779,7 @@
       "subtitle": "Policial",
       "id": "P1172",
       "producer": "Netflix",
+      "release_date": "20/8/2020",
       "director": "Sebastián Schindel"
     },
     {
@@ -3635,6 +3800,7 @@
       "id": "P1173",
       "viewers": 33954,
       "producer": "Patagonik",
+      "release_date": "21/03/2002",
       "director": "Daniel Burman"
     },
     {
@@ -3653,6 +3819,7 @@
       "subtitle": "Histórica",
       "id": "P1174",
       "viewers": 201675,
+      "release_date": "21/04/2005",
       "director": "Marcelo Piñeyro"
     },
     {
@@ -3672,6 +3839,7 @@
       "id": "P1175",
       "viewers": 481617,
       "producer": "Telefe, Rebolución",
+      "release_date": "21/06/2018",
       "director": "Armando Bó"
     },
     {
@@ -3693,6 +3861,7 @@
       "id": "P1176",
       "viewers": 96152,
       "producer": "Habitación 1520, Pan Contenidos",
+      "release_date": "21/09/2023",
       "director": "Azul Lombardía"
     },
     {
@@ -3712,6 +3881,7 @@
       "id": "P1177",
       "viewers": 241645,
       "producer": "Telefe",
+      "release_date": "21/12/2003",
       "director": "José Luis Massa"
     },
     {
@@ -3732,6 +3902,7 @@
       "subtitle": "Policial",
       "id": "P1178",
       "producer": "Netflix",
+      "release_date": "21/3/2024",
       "director": "Sebastián Borensztein"
     },
     {
@@ -3754,6 +3925,7 @@
       "id": "P1179",
       "viewers": 283305,
       "producer": "Haddock Films, Televisión Española, Telefe, Tornasol Films",
+      "release_date": "21/4/2016",
       "director": "Rodrigo Grande"
     },
     {
@@ -3773,6 +3945,7 @@
       "id": "P1180",
       "viewers": 1592130,
       "producer": "Argentina Sono Film, Telefe",
+      "release_date": "21/5/1998",
       "director": "Juan José Jusid"
     },
     {
@@ -3796,6 +3969,7 @@
       "id": "P1181",
       "viewers": 4003395,
       "producer": "Kramer & Sigman Films, El Deseo, Telefe",
+      "release_date": "21/8/2014",
       "director": "Damián Szifron"
     },
     {
@@ -3817,6 +3991,7 @@
       "id": "P1182",
       "viewers": 27256,
       "producer": "Patagonik",
+      "release_date": "22/08/2002",
       "director": "Diego Arsuaga"
     },
     {
@@ -3836,6 +4011,7 @@
       "id": "P1183",
       "viewers": 96460,
       "producer": "Illusion Studios",
+      "release_date": "22/10/2009",
       "director": "Gustavo Cova"
     },
     {
@@ -3855,6 +4031,7 @@
       "id": "P1184",
       "viewers": 25349,
       "producer": "INCAA",
+      "release_date": "22/3/2001",
       "director": "Santiago Carlos Oves"
     },
     {
@@ -3876,6 +4053,7 @@
       "id": "P1185",
       "viewers": 40598,
       "producer": "INCAA",
+      "release_date": "23/6/2011",
       "director": "Fernando Spiner"
     },
     {
@@ -3897,6 +4075,7 @@
       "id": "P1186",
       "viewers": 784800,
       "producer": "Telefe",
+      "release_date": "24/05/2001",
       "director": "Eduardo Mignogna"
     },
     {
@@ -3918,6 +4097,7 @@
       "id": "P1187",
       "viewers": 254262,
       "producer": "Argentina Sono Film, Telefe",
+      "release_date": "24/07/2008",
       "director": "Daniel De Felippo"
     },
     {
@@ -3937,6 +4117,7 @@
       "subtitle": "Drama",
       "id": "P1188",
       "producer": "Netflix",
+      "release_date": "24/11/2020",
       "director": "Carlos Sorín"
     },
     {
@@ -3957,6 +4138,7 @@
       "id": "P1189",
       "viewers": 917212,
       "producer": "Buena Vista International, Pampa Films, Tornasol Films",
+      "release_date": "24/3/2011",
       "director": "Sebastián Borensztein"
     },
     {
@@ -3976,6 +4158,7 @@
       "id": "P1190",
       "viewers": 142052,
       "producer": "Telefe",
+      "release_date": "24/7/2008",
       "director": "Eduardo Gondell"
     },
     {
@@ -3996,6 +4179,7 @@
       "id": "P1191",
       "viewers": 393599,
       "producer": "Kramer & Sigman Films, Telefe, TVE",
+      "release_date": "24/9/2015",
       "director": "Cesc Gay"
     },
     {
@@ -4015,6 +4199,7 @@
       "subtitle": "Drama",
       "id": "P1192",
       "viewers": 37895,
+      "release_date": "25/04/2002",
       "director": "Fito Paéz"
     },
     {
@@ -4036,6 +4221,7 @@
       "id": "P1193",
       "viewers": 77322,
       "producer": "Pampa Films, Particular Crowd HBO Max",
+      "release_date": "25/08/2022",
       "director": "Lucas Combina"
     },
     {
@@ -4057,6 +4243,7 @@
       "id": "P1194",
       "viewers": 63372,
       "producer": "Patagonik, Amazon Studios",
+      "release_date": "25/1/2024",
       "director": "Jorge Nisco"
     },
     {
@@ -4076,6 +4263,7 @@
       "id": "P1195",
       "viewers": 220290,
       "producer": "HC Films, MyS Producción, Patagonik Film Group",
+      "release_date": "25/2/2016",
       "director": "Hernán Guerschuny"
     },
     {
@@ -4095,6 +4283,7 @@
       "id": "P1196",
       "viewers": 88476,
       "producer": "Anonymous Content, Kramer & Sigman Films",
+      "release_date": "25/4/2012",
       "director": "Armando Bó"
     },
     {
@@ -4114,6 +4303,7 @@
       "id": "P1197",
       "viewers": 132430,
       "producer": "Caramel Films",
+      "release_date": "26/09/2024",
       "director": "Luis Ortega"
     },
     {
@@ -4131,6 +4321,7 @@
       "subtitle": "Comedia",
       "id": "P1198",
       "viewers": 274205,
+      "release_date": "26/1/2012",
       "director": "Pedro Saborido"
     },
     {
@@ -4151,6 +4342,7 @@
       "id": "P1199",
       "viewers": 178260,
       "producer": "Pampa Films",
+      "release_date": "26/10/2017",
       "director": "Gabriel Nesci"
     },
     {
@@ -4171,6 +4363,7 @@
       "id": "P1301",
       "viewers": 12137,
       "producer": "Rei Cine, Infinity Hill Paramount+",
+      "release_date": "26/10/2023",
       "director": "Daniela Goggi"
     },
     {
@@ -4192,6 +4385,7 @@
       "id": "P1201",
       "viewers": 93365,
       "producer": "Patagonik Film Group, Sudestada Cine",
+      "release_date": "26/9/2012",
       "director": "Gabriel Nesci"
     },
     {
@@ -4213,6 +4407,7 @@
       "id": "P1202",
       "viewers": 102482,
       "producer": "Particular Crowd, Tieless Media, HBO Max",
+      "release_date": "27/01/2022",
       "director": "Cristian Bernard"
     },
     {
@@ -4233,6 +4428,7 @@
       "id": "P1203",
       "viewers": 203331,
       "producer": "20th Century Fox Argentina",
+      "release_date": "27/04/2006",
       "director": "Adrián Caetano"
     },
     {
@@ -4252,6 +4448,7 @@
       "id": "P1204",
       "viewers": 414318,
       "producer": "Jempsa, Fox International Productions",
+      "release_date": "27/4/2017",
       "director": "Nicolás Tuozzo"
     },
     {
@@ -4273,6 +4470,7 @@
       "subtitle": "Romance",
       "id": "P1205",
       "producer": "Netflix",
+      "release_date": "27/6/2024",
       "director": "Marcos Carnevale"
     },
     {
@@ -4294,6 +4492,7 @@
       "subtitle": "Policial",
       "id": "P1206",
       "producer": "Netflix",
+      "release_date": "27/7/2022",
       "director": "Alejandro Montiel"
     },
     {
@@ -4313,6 +4512,7 @@
       "id": "P1207",
       "viewers": 787130,
       "producer": "Patagonik",
+      "release_date": "27/9/2018",
       "director": "Juan Vera"
     },
     {
@@ -4334,6 +4534,7 @@
       "id": "P1208",
       "viewers": 53023,
       "producer": "Patagonik Film Group",
+      "release_date": "28/04/2005",
       "director": "Julia Solomonoff"
     },
     {
@@ -4355,6 +4556,7 @@
       "id": "P1209",
       "viewers": 57692,
       "producer": "AZ Films HBO Max, Cimarrón Cine, MarVista Entertainment",
+      "release_date": "28/04/2022",
       "director": "Ricardo Hornos, Carlos Gil"
     },
     {
@@ -4374,6 +4576,7 @@
       "id": "P1210",
       "viewers": 94116,
       "producer": "Habano Films, Patagonik",
+      "release_date": "28/09/2017",
       "director": "Teresa Costantini"
     },
     {
@@ -4393,6 +4596,7 @@
       "id": "P1211",
       "viewers": 6451,
       "producer": "Lahaye Media, Buen Destino Films Star Distribution",
+      "release_date": "28/09/2023",
       "director": "Nicolás Tuozzo"
     },
     {
@@ -4413,6 +4617,7 @@
       "id": "P1212",
       "viewers": 220721,
       "producer": "Primer Plano Film Group",
+      "release_date": "28/10/2004",
       "director": "Juan Taratuto"
     },
     {
@@ -4432,6 +4637,7 @@
       "id": "P1213",
       "viewers": 78383,
       "producer": "Juan José Stagnaro",
+      "release_date": "28/11/2002",
       "director": "Rosanna Manfredi"
     },
     {
@@ -4451,6 +4657,7 @@
       "id": "P1214",
       "viewers": 92091,
       "producer": "Patagonik, AZ Films, Wildhorse Studios, Cimarrón, Rizoma Films",
+      "release_date": "28/2/2019",
       "director": "Miguel Cohan"
     },
     {
@@ -4470,6 +4677,7 @@
       "id": "P1215",
       "viewers": 615483,
       "producer": "Patagonik Film Group",
+      "release_date": "28/5/1998",
       "director": "Daniel Barone"
     },
     {
@@ -4490,6 +4698,7 @@
       "subtitle": "Policial",
       "id": "P1216",
       "producer": "Netflix",
+      "release_date": "28/5/2020",
       "director": "Alejandro Montiel"
     },
     {
@@ -4509,6 +4718,7 @@
       "id": "P1217",
       "viewers": 574052,
       "producer": "Alta Films",
+      "release_date": "28/7/2005",
       "director": "Marcos Carnevale"
     },
     {
@@ -4525,6 +4735,7 @@
       "id": "P1218",
       "viewers": 348665,
       "producer": "Patagonik Film Group",
+      "release_date": "29/06/2006",
       "director": "José Luis Massa"
     },
     {
@@ -4541,6 +4752,7 @@
       "id": "P1219",
       "viewers": 11733,
       "producer": "INCAA",
+      "release_date": "29/08/2024",
       "director": "Diego Lucero"
     },
     {
@@ -4559,6 +4771,7 @@
       "subtitle": "Romance",
       "id": "P1220",
       "viewers": 193242,
+      "release_date": "29/3/2012",
       "director": "Daniel Burman"
     },
     {
@@ -4579,6 +4792,7 @@
       "id": "P1221",
       "viewers": 53744,
       "producer": "INCAA, Telefe, MyS Producción",
+      "release_date": "29/6/2015",
       "director": "Juan Manuel Rampoldi"
     },
     {
@@ -4598,6 +4812,7 @@
       "id": "P1222",
       "viewers": 480414,
       "producer": "20th Century Fox Argentina",
+      "release_date": "29/9/2005",
       "director": "Damián Szifron"
     },
     {
@@ -4617,6 +4832,7 @@
       "id": "P1223",
       "viewers": 1160067,
       "producer": "La Unión de los Ríos, Kenya Films, Infinity Hill Amazon",
+      "release_date": "29/9/2022",
       "director": "Santiago Mitre"
     },
     {
@@ -4637,6 +4853,7 @@
       "subtitle": "Comedia",
       "id": "P1224",
       "producer": "Netflix",
+      "release_date": "30/03/2022",
       "director": "Marcos Carnevale"
     },
     {
@@ -4655,6 +4872,7 @@
       "subtitle": "Romance",
       "id": "P1226",
       "producer": "Netflix",
+      "release_date": "30/5/2025",
       "director": "Marcos Carnevale"
     },
     {
@@ -4674,6 +4892,7 @@
       "id": "P1227",
       "viewers": 134173,
       "producer": "Telefe, Tornasol Films",
+      "release_date": "30/8/2012",
       "director": "Ana Piterbarg"
     },
     {
@@ -4696,6 +4915,7 @@
       "id": "P1228",
       "viewers": 82150,
       "producer": "Matanza Cine, Macassar Productions, Telefé, Sony",
+      "release_date": "30/8/2018",
       "director": "Pablo Trapero"
     },
     {
@@ -4714,6 +4934,7 @@
       "subtitle": "Comedia",
       "id": "P1229",
       "producer": "Netflix",
+      "release_date": "30/8/2024",
       "director": "Fabiana Tiscornia"
     },
     {
@@ -4734,6 +4955,7 @@
       "id": "P1230",
       "viewers": 1194633,
       "producer": "Patagonik Film Group",
+      "release_date": "31/8/2000",
       "director": "Fabián Bielinsky"
     },
     {
@@ -5109,7 +5331,7 @@
       "viewers": 48427,
       "producer": "Content Studios, Pampa Films, Star Distribution",
       "director": "Sebastián Schindel",
-      "release_date": "2025-09-01",
+      "release_date": "9/1/2025",
       "subtitle": "Policial"
     },
     {
@@ -5130,7 +5352,7 @@
       "viewers": 15537,
       "producer": "FAM Contenidos, BF Distribution, Market Chile",
       "director": "Hernán Guerschuny",
-      "release_date": "2025-09-18",
+      "release_date": "18/9/2025",
       "subtitle": "Comedia"
     },
     {
@@ -5153,7 +5375,7 @@
       "viewers": "-",
       "producer": "Zeppelin Studio, Prime Video, MGM Studios, INCAA",
       "director": "Hernán Guerschuny",
-      "release_date": "2024-05-22",
+      "release_date": "22/5/2024",
       "subtitle": "Policial"
     },
     {
@@ -5304,7 +5526,7 @@
       "viewers": 17034,
       "producer": "Kuarzo International Films, Amazon MGM Studios",
       "director": "Gabriel Nesci",
-      "release_date": "2025-01-05",
+      "release_date": "1/5/2025",
       "subtitle": "Romance"
     },
     {
@@ -5327,7 +5549,7 @@
       "viewers": 10029,
       "producer": "Dukkah Producciones, Perspectiva Producciones, CineTren",
       "director": "Cristian Tapia Marchiori",
-      "release_date": "2025-11-06",
+      "release_date": "11/6/2025",
       "subtitle": "Policial"
     },
     {
@@ -10929,7 +11151,7 @@
       "viewers": 0,
       "producer": "Discovery Kids, MundoLoco CGI",
       "director": "Pablo R. Mazzolo",
-      "release_date": "2024-07-18",
+      "release_date": "4/11/2022",
       "subtitle": "Animación"
     },
     {
