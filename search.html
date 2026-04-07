@@ -144,7 +144,9 @@
         var channelText = getChannelValues(it).join(', ');
         var platformText = getPlatformValues(it).join(', ');
         var distributionText = [channelText, platformText].filter(Boolean).join(' • ');
-        var html = '<a href="show.html?id='+encodeURIComponent(it.id)+'"><strong>'+it.title+'</strong></a> '+(it.year?'<span>('+it.year+')</span>':'')+'<div class="meta-line">'+distributionText+(distributionText ? ' • ' : '')+(it.genre||'')+'</div>';
+        var isMovie = normalizeString(it.type) === 'pelicula';
+        var metaText = isMovie ? (it.genre || '') : ([distributionText, it.genre || ''].filter(Boolean).join(' • '));
+        var html = '<a href="show.html?id='+encodeURIComponent(it.id)+'"><strong>'+it.title+'</strong></a> '+(it.year?'<span>('+it.year+')</span>':'')+'<div class="meta-line">'+metaText+'</div>';
         html += '<div class="actors-line" style="margin-top:6px;">' + ((it.actors||[]).slice(0,6).join(', ')) + '</div>';
         $m.html(html);
         $r.append(img).append($m);

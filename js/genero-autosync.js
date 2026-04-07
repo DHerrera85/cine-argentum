@@ -40,6 +40,16 @@
     return normalizeText(item.genre || '');
   }
 
+  function isMovieItem(item) {
+    if (!item) return false;
+
+    var itemType = normalizeText(item.type);
+    if (itemType === 'movie' || itemType === 'pelicula') return true;
+
+    var itemId = (item.id || '').toString().trim();
+    return /^P\d+$/i.test(itemId);
+  }
+
   var COMEDIA_TITLES = [
     'Esa maldita costilla', 'Déjala Correr', 'Sólo por Hoy', 'Papá se Volvió Loco', 'Los Incorregibles', 'Dos hermanos', 'Pájaros volando', 'Igualita a mí', 'Mi primera boda', 'Extraños en la noche', 'Vino para robar', 'Bañeros 4: los rompeolas', 'Kryptonita', 'Voley', 'Permitidos', 'La última fiesta', 'El rey del Once', 'El fútbol o yo', '27: El club de los malditos', 'Re loca', 'Bañeros 5: Lentos y cargosos', 'El cuento de las comadrejas', 'No soy tu mami', 'Corazón Loco', 'Ex Casados', 'Matrimillas', 'Más Respeto que soy Tu Madre', '30 Noches con mi Ex', 'Blondi', 'Puan', 'Casi Muerta', 'Culpa Cero', 'Transmitvah', 'El Hombre que Amaba los Platos Voladores', 'No Puedo Vivir Sin Ti', 'Mazel Tov', 'Homo Argentum', 'Me casé con un boludo', 'Socios por accidente', 'Dos más dos', 'La odisea de los giles', 'Corazón de león', 'Mi obra maestra', 'El Gerente',
     'Papá por Dos', 'Las Hermanas Fantásticas', 'No Me Rompan', 'Granizo', 'Casi leyendas', 'Sin hijos', 'Peter Capusoto y sus 3 dimensiones', 'Días de vinilo', 'Un cuento chino', 'Un Novio para mi Mujer', 'Los Super Agentes: La Nueva Generación', 'Bañeros 3, todopoderosos', 'Cohen vs Rosi', 'La Noche Mágica'
@@ -74,7 +84,7 @@
     }
 
     if (genreSlug === 'drama') {
-      return DRAMA_TITLES.indexOf(item.title) !== -1;
+      return genreValue.indexOf('drama') !== -1 || DRAMA_TITLES.indexOf(item.title) !== -1;
     }
 
     if (genreSlug === 'familiar') {
@@ -240,15 +250,14 @@
     if (!listEl || !countEl) return;
 
     try {
-      var response = await fetch('data.json?v=20260225-genero1', { cache: 'no-store' });
+      var response = await fetch('data.json?v=20260406-genero3', { cache: 'no-store' });
       var data = await response.json();
       var items = Array.isArray(data && data.items) ? data.items : [];
 
       var movies = items
         .filter(function (item) {
           if (!item || !item.id) return false;
-          var itemType = normalizeText(item.type);
-          if (itemType && itemType !== 'movie' && itemType !== 'pelicula') return false;
+          if (!isMovieItem(item)) return false;
 
           var genreValue = resolveGenreField(item);
           if (!genreValue) return false;

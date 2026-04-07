@@ -197,7 +197,10 @@
           var channelText = getChannelValues(it).join(', ');
           var platformText = getPlatformValues(it).join(', ');
           var distributionText = [channelText, platformText].filter(Boolean).join(' • ');
-          html += '<div style="font-size:12px;color:#666;">' + distributionText + (distributionText ? ' • ' : '') + (it.genre||'') + ' • ' + ((it.actors||[]).slice(0,3).join(', ')) + '</div>';
+          var isMovie = normalizeString(it.type) === 'pelicula';
+          var metaText = isMovie ? (it.genre || '') : ([distributionText, it.genre || ''].filter(Boolean).join(' • '));
+          var actorsText = ((it.actors||[]).slice(0,3).join(', '));
+          html += '<div style="font-size:12px;color:#666;">' + metaText + (actorsText ? ' • ' + actorsText : '') + '</div>';
           if (window.faConfig.showSynopsisInSearch && it.synopsis) {
             var syn = String(it.synopsis).trim();
             if (syn.length > 140) syn = syn.slice(0, 140) + '…';

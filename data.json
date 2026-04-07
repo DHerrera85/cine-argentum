@@ -93,7 +93,7 @@
       "director": "Juan Bautista Stagnaro"
     },
     {
-      "title": "Cenizas de paraíso",
+      "title": "Cenizas del paraíso",
       "genre": "Policial",
       "year": "1997",
       "actors": [
@@ -112,6 +112,7 @@
       "id": "P1001",
       "viewers": 635591,
       "producer": "Patagonik Film Group",
+      "release_date": "07/08/1997",
       "director": "Marcelo Piñeyro"
     },
     {
@@ -3498,6 +3499,7 @@
       "id": "P1166",
       "viewers": 869077,
       "producer": "Patagonik, Pol-Ka",
+      "release_date": "19/6/1997",
       "director": "Jorge Nisco"
     },
     {
@@ -5260,6 +5262,29 @@
       "director": "Javier Veiga",
       "release_date": "21/03/2026",
       "subtitle": "Policial"
+    },
+    {
+      "id": "P2035",
+      "title": "El Último Gigante",
+      "type": "pelicula",
+      "year": "2026",
+      "genre": "Drama",
+      "actors": [
+        "Oscar Martínez",
+        "Matías Mayer",
+        "Inés Estévez",
+        "Silvia Kutika",
+        "Johanna Francella"
+      ],
+      "synopsis": "El padre de un guía turístico reaparece de la nada y reabre sus viejas heridas. ¿Podrá su hijo tomar una durísima decisión que marcará el futuro de ambos?",
+      "channel": "Streaming",
+      "image": "images/verticals/el-ultimo-gigante-2026-poster-280x420.png",
+      "orientation": "vertical",
+      "viewers": "-",
+      "producer": "Leyenda Films, Kuarzo International Films",
+      "director": "Marcos Carnevale",
+      "release_date": "01/04/2026",
+      "subtitle": "Drama"
     },
     {
       "id": "P2026",
