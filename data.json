@@ -5509,6 +5509,26 @@
       "subtitle": "Drama"
     },
     {
+      "id": "P2036",
+      "title": "La Caja Azul",
+      "type": "pelicula",
+      "year": "2026",
+      "genre": "Policial",
+      "actors": [
+        "Luisana Lopilato",
+        "Gustavo Bassani"
+      ],
+      "synopsis": "Pablo, un millonario solitario en la Patagonia, conoce a Lara a través de una app basada en el intercambio de la misteriosa “caja azul”, quien lo ayuda a salir de su aislamiento. Pero una advertencia anónima pone en duda su identidad y convierte el romance en un peligroso juego de manipulación y sospecha.",
+      "channel": "Streaming",
+      "image": "images/verticals/la-caja-azul-2026-poster-280x420.png",
+      "orientation": "vertical",
+      "viewers": "-",
+      "producer": "The Mediapro Studio , Infinity Hill, IP4, Amazon MGM Studios",
+      "director": "Martín Hodara",
+      "release_date": "17/04/2026",
+      "subtitle": "Policial"
+    },
+    {
       "id": "P2026",
       "title": "Mensaje en una Botella",
       "type": "pelicula",
