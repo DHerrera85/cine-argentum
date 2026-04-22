@@ -5529,6 +5529,27 @@
       "subtitle": "Policial"
     },
     {
+      "id": "P2037",
+      "title": "Doble Discurso",
+      "type": "pelicula",
+      "year": "2023",
+      "genre": "Comedia",
+      "actors": [
+        "Diego Peretti",
+        "Julieta Cardinali",
+        "Rafael Ferro"
+      ],
+      "synopsis": "El Griego, un brillante asesor de imagen, ayuda al candidato Ricardo Prat a mejorar su discurso frente a las denuncias de la periodista Camila Hewell. Sin saberlo, Camila se enamora de las palabras del asesor, quien la ama en secreto mientras manipula la situación.",
+      "channel": "Streaming",
+      "image": "images/verticals/doble-discurso-2023-poster-280x420.png",
+      "orientation": "vertical",
+      "viewers": "-",
+      "producer": "Zeppelin Studios , Digicine, Amazon Studios",
+      "director": "Hernán Guerschuny",
+      "release_date": "27/07/2023",
+      "subtitle": "Comedia"
+    },
+    {
       "id": "P2026",
       "title": "Mensaje en una Botella",
       "type": "pelicula",
