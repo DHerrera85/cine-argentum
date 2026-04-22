@@ -23,8 +23,9 @@
   }
 
   function buildMovieCard(movie) {
-    var viewersText = (movie.viewers !== null && movie.viewers !== undefined)
-      ? Number(movie.viewers).toLocaleString('es-AR')
+    var viewersNum = Number(movie.viewers);
+    var viewersText = (movie.viewers !== null && movie.viewers !== undefined && Number.isFinite(viewersNum) && viewersNum > 0)
+      ? viewersNum.toLocaleString('es-AR')
       : '—';
 
     return '\n        <a href="' + movie.slug + '" class="actor-movie-card">\n          <img src="' + movie.image + '" alt="' + movie.title + '">\n          <div class="actor-movie-info">\n            <div class="actor-movie-title">' + movie.title + '</div>\n            <div class="actor-movie-meta">Año: ' + movie.year + '</div>\n            <div class="actor-movie-viewers">Espectadores: ' + viewersText + '</div>\n          </div>\n        </a>\n        ';
