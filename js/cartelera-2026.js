@@ -78,21 +78,36 @@
     });
   }
 
-  function applyTypeFilter(section, type) {
-    var activeList = section.querySelector('ul[data-cartelera-list="all"]');
-    if (!activeList) return;
+  function destroySlider(ulEl) {
+    if (!window.jQuery || !window.jQuery.fn || !window.jQuery.fn.lightSlider) return;
 
-    Array.prototype.forEach.call(activeList.querySelectorAll('li[data-cartelera-type]'), function (li) {
-      var currentType = li.getAttribute('data-cartelera-type');
-      var show = type === 'all' || type === currentType;
-      li.style.display = show ? '' : 'none';
+    var $ul = window.jQuery(ulEl);
+    var inst = $ul.data('lightSlider');
+    if (inst && typeof inst.destroy === 'function') {
+      inst.destroy();
+    }
+  }
+
+  function renderFilteredList(section, type) {
+    var listEl = section.querySelector('ul[data-cartelera-list="all"]');
+    if (!listEl) return;
+
+    var allRows = section._carteleraRows || [];
+    var rows = allRows.filter(function (row) {
+      return type === 'all' || row.item.type === type;
     });
 
-    if (typeof window.faRefreshSliders === 'function') {
-      setTimeout(function () { window.faRefreshSliders(); }, 80);
-    } else {
-      ensureSlider(activeList);
-    }
+    destroySlider(listEl);
+
+    listEl.innerHTML = rows.length
+      ? rows.map(function (row) { return buildCardHtml(row.item, row.upcoming); }).join('')
+      : '<li class="item-a"><div class="latest-box"><div class="latest-b-text"><strong>Sin resultados</strong><p class="cartelera-empty">No hay títulos para este filtro.</p></div></div></li>';
+
+    ensureSlider(listEl);
+  }
+
+  function applyTypeFilter(section, type) {
+    renderFilteredList(section, type);
   }
 
   function mountSection(section, items) {
@@ -143,6 +158,8 @@
       .map(function (item) { return { item: item, upcoming: true }; })
       .concat(released.map(function (item) { return { item: item, upcoming: false }; }));
 
+    section._carteleraRows = mixed;
+
     listEl.innerHTML = mixed.length
       ? mixed.map(function (row) { return buildCardHtml(row.item, row.upcoming); }).join('')
       : '<li class="item-a"><div class="latest-box"><div class="latest-b-text"><strong>Sin titulos 2026</strong><p class="cartelera-empty">No hay titulos cargados para ' + year + '.</p></div></div></li>';
@@ -166,7 +183,7 @@
     var sections = document.querySelectorAll('.cartelera-2026-section');
     if (!sections.length) return;
 
-    fetch('data.json?v=20260501-4', { cache: 'no-store' })
+    fetch('data.json?v=20260501-5', { cache: 'no-store' })
       .then(function (res) { return res.json(); })
       .then(function (data) {
         var items = (data && data.items) ? data.items : [];
