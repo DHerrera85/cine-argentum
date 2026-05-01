@@ -136,12 +136,12 @@
       .sort(function (a, b) {
         var ta = a.releaseTs === null ? Number.MAX_SAFE_INTEGER : a.releaseTs;
         var tb = b.releaseTs === null ? Number.MAX_SAFE_INTEGER : b.releaseTs;
-        return ta - tb;
+        return tb - ta;
       });
 
-    var mixed = released
-      .map(function (item) { return { item: item, upcoming: false }; })
-      .concat(upcoming.map(function (item) { return { item: item, upcoming: true }; }));
+    var mixed = upcoming
+      .map(function (item) { return { item: item, upcoming: true }; })
+      .concat(released.map(function (item) { return { item: item, upcoming: false }; }));
 
     listEl.innerHTML = mixed.length
       ? mixed.map(function (row) { return buildCardHtml(row.item, row.upcoming); }).join('')
@@ -166,7 +166,7 @@
     var sections = document.querySelectorAll('.cartelera-2026-section');
     if (!sections.length) return;
 
-    fetch('data.json?v=20260501-3', { cache: 'no-store' })
+    fetch('data.json?v=20260501-4', { cache: 'no-store' })
       .then(function (res) { return res.json(); })
       .then(function (data) {
         var items = (data && data.items) ? data.items : [];
