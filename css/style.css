@@ -369,6 +369,16 @@ nav .menu li a:hover{
   justify-content: space-between;
 }
 
+.cartelera-2026-section{
+  padding-top: 92px;
+}
+
+@media (max-width: 1100px){
+  .cartelera-2026-section{
+    padding-top: 86px;
+  }
+}
+
 .cartelera-tabs,
 .cartelera-filters{
   display: inline-flex;
