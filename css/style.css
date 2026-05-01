@@ -405,6 +405,25 @@ nav .menu li a:hover{
   color: #9ec5ff;
 }
 
+.cartelera-status{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 2;
+  padding: 5px 9px;
+  border-radius: 999px;
+  font-size: 0.64rem;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.cartelera-status-upcoming{
+  background: rgba(255, 174, 0, 0.95);
+  color: #111827;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.24);
+}
+
 .cartelera-empty{
   color: #9ca3af;
   font-size: 0.88rem;

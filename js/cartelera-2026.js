@@ -25,15 +25,21 @@
     return '';
   }
 
-  function buildCardHtml(item) {
+  function buildCardHtml(item, listType) {
     var releaseLabel = item.releaseDate ? item.releaseDate : ('Proximamente ' + item.year);
     var typeLabel = item.type === 'pelicula' ? 'Pelicula' : 'Serie';
+    var statusBadge = listType === 'upcoming'
+      ? '<span class="cartelera-status cartelera-status-upcoming">PROXIMAMENTE</span>'
+      : '';
 
     return '' +
       '<li class="' + (item.type === 'pelicula' ? 'item-a' : 'item-b') + '" data-cartelera-type="' + item.type + '">' +
         '<a href="show.html?id=' + encodeURIComponent(item.id) + '">' +
           '<div class="latest-box">' +
-            '<div class="latest-b-img"><img src="' + item.image + '" loading="lazy" alt="' + item.title + '"></div>' +
+            '<div class="latest-b-img">' +
+              statusBadge +
+              '<img src="' + item.image + '" loading="lazy" alt="' + item.title + '">' +
+            '</div>' +
             '<div class="latest-b-text">' +
               '<strong>' + item.title + '</strong>' +
               '<p>' + releaseLabel + '</p>' +
@@ -135,11 +141,11 @@
       });
 
     releasedList.innerHTML = released.length
-      ? released.map(buildCardHtml).join('')
+      ? released.map(function (item) { return buildCardHtml(item, 'released'); }).join('')
       : '<li class="item-a"><div class="latest-box"><div class="latest-b-text"><strong>Sin titulos estrenados</strong><p class="cartelera-empty">No hay estrenos cargados para ' + year + '.</p></div></div></li>';
 
     upcomingList.innerHTML = upcoming.length
-      ? upcoming.map(buildCardHtml).join('')
+      ? upcoming.map(function (item) { return buildCardHtml(item, 'upcoming'); }).join('')
       : '<li class="item-a"><div class="latest-box"><div class="latest-b-text"><strong>Sin proximos estrenos</strong><p class="cartelera-empty">No hay proximos titulos cargados para ' + year + '.</p></div></div></li>';
 
     ensureSlider(releasedList);
