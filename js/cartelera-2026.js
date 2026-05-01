@@ -14,6 +14,72 @@
     return date;
   }
 
+  function collectSeasonDateStrings(item) {
+    var out = [];
+
+    // New simple format: season_release_dates: ["dd/mm/yyyy", ...]
+    if (Array.isArray(item.season_release_dates)) {
+      item.season_release_dates.forEach(function (dateStr) {
+        if (dateStr) out.push(String(dateStr));
+      });
+    }
+
+    // Alternative detailed format:
+    // temporadas: [{ season: 1, release_date: "dd/mm/yyyy" }, { season: 2, fecha_estreno: "dd/mm/yyyy" }]
+    if (Array.isArray(item.temporadas)) {
+      item.temporadas.forEach(function (season) {
+        if (!season || typeof season !== 'object') return;
+        if (season.release_date) out.push(String(season.release_date));
+        if (season.fecha_estreno) out.push(String(season.fecha_estreno));
+      });
+    }
+
+    return out;
+  }
+
+  function getReleaseCandidates(item) {
+    var candidates = [];
+
+    if (item.release_date) {
+      candidates.push({
+        label: String(item.release_date),
+        date: parseReleaseDate(item.release_date),
+        source: 'release_date'
+      });
+    }
+
+    if (item.fecha_estreno) {
+      candidates.push({
+        label: String(item.fecha_estreno),
+        date: parseReleaseDate(item.fecha_estreno),
+        source: 'fecha_estreno'
+      });
+    }
+
+    collectSeasonDateStrings(item).forEach(function (raw) {
+      candidates.push({
+        label: raw,
+        date: parseReleaseDate(raw),
+        source: 'season'
+      });
+    });
+
+    return candidates.filter(function (c) { return c.date !== null; });
+  }
+
+  function getBestReleaseForYear(item, year) {
+    var candidates = getReleaseCandidates(item);
+    if (!candidates.length) return null;
+
+    var inYear = candidates.filter(function (c) {
+      return String(c.date.getFullYear()) === String(year);
+    });
+
+    var list = inYear.length ? inYear : candidates;
+    list.sort(function (a, b) { return b.date.getTime() - a.date.getTime(); });
+    return list[0];
+  }
+
   function normalizeType(value, item) {
     var t = (value || '').toString().toLowerCase();
     if (t === 'pelicula' || t === 'movie') return 'pelicula';
@@ -121,16 +187,16 @@
     var filtered = items
       .filter(function (item) {
         if (!item || !item.id) return false;
-        var releaseRaw = item.release_date || item.fecha_estreno || '';
-        var releaseObj = parseReleaseDate(releaseRaw);
+        var best = getBestReleaseForYear(item, year);
         var yearMatch = (item.year || '').toString() === year;
-        var releaseYearMatch = releaseObj && String(releaseObj.getFullYear()) === year;
+        var releaseYearMatch = best && String(best.date.getFullYear()) === year;
         if (!yearMatch && !releaseYearMatch) return false;
         return normalizeType(item.type, item) === 'pelicula' || normalizeType(item.type, item) === 'serie';
       })
       .map(function (item) {
-        var releaseDateValue = item.release_date || item.fecha_estreno || '';
-        var releaseDateObj = parseReleaseDate(releaseDateValue);
+        var best = getBestReleaseForYear(item, year);
+        var releaseDateValue = best ? best.label : '';
+        var releaseDateObj = best ? best.date : null;
         return {
           id: item.id,
           title: item.title || 'Sin titulo',
