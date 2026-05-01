@@ -115,10 +115,26 @@
   </ul>
 </nav>
 
-<!-- Estrenos de Cine de 2026 (H) -->
-<section id="main">
-  <h1 class="showcase-heading">ESTRENOS DE CINE DE 2026</h1>
-  <ul class="slider-h cs-hidden" id="topEstrenos2026List" data-skip-auto="true"></ul>
+<!-- Cartelera 2026 (V) -->
+<section id="latest" class="cartelera-2026-section" data-year="2026">
+  <h2 class="latest-heading">Cartelera 2026</h2>
+  <div class="cartelera-2026-controls" role="group" aria-label="Cartelera 2026 controles">
+    <div class="cartelera-tabs" role="tablist" aria-label="Estado de estreno">
+      <button class="cartelera-btn is-active" type="button" data-cartelera-view="released" role="tab" aria-selected="true">Ya estrenadas</button>
+      <button class="cartelera-btn" type="button" data-cartelera-view="upcoming" role="tab" aria-selected="false">Próximamente</button>
+    </div>
+    <div class="cartelera-filters" role="group" aria-label="Filtrar por tipo">
+      <button class="cartelera-filter is-active" type="button" data-cartelera-filter="all">Todo</button>
+      <button class="cartelera-filter" type="button" data-cartelera-filter="pelicula">Películas</button>
+      <button class="cartelera-filter" type="button" data-cartelera-filter="serie">Series</button>
+    </div>
+  </div>
+  <ul class="slider-v cs-hidden" data-cartelera-list="released">
+    <li class="cartelera-placeholder"></li>
+  </ul>
+  <ul class="slider-v cs-hidden" data-cartelera-list="upcoming" hidden>
+    <li class="cartelera-placeholder"></li>
+  </ul>
 </section>
 
 <!-- Las 10 Películas con más espectadoras (2001-2025) (V) -->
@@ -329,31 +345,10 @@ Thrillers Políticos (H)
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <script src="js/lightslider.js"></script>
 <script src="js/script.js?v=20260225-3"></script>
+<script src="js/cartelera-2026.js?v=20260501-1"></script>
 <script>
   (function () {
     var indexDataVersion = '20260406-1';
-    var topEstrenos2026 = [
-      { id: 'P2036', title: 'La Caja Azul', image: 'images/horizontals-1024x576/la-caja-azul-2026-slide-1024x576.png', alt: 'La Caja Azul', className: 'item-e', releaseDate: '17/04/2026' },
-      { id: 'P2032', title: 'La Virgen de la Tosquera', image: 'images/horizontals-1024x576/la-virgen-de-la-tosquera-2026-slide-1024x576.png', alt: 'La Virgen de la Tosquera', className: 'item-a', releaseDate: '15/01/2026' },
-      { id: 'P2035', title: 'El Último Gigante', image: 'images/horizontals-1024x576/el-ultimo-gigante-2026-slide-1024x576.png', alt: 'El Último Gigante', className: 'item-d', releaseDate: '01/04/2026' },
-      { id: 'P2034', title: 'Playa de Lobos', image: 'images/horizontals-1024x576/playa-de-lobos-2026-slide-1024x576.png', alt: 'Playa de Lobos', className: 'item-b', releaseDate: '21/03/2026' },
-      { id: 'P2033', title: 'Parque Lezama', image: 'images/horizontals-1024x576/parque-lezama-2026-slide-1024x576.png', alt: 'Parque Lezama', className: 'item-c', releaseDate: '19/2/2026' }
-    ];
-
-    function parseReleaseDate(value) {
-      if (!value) return 0;
-      var parts = String(value).split('/');
-      if (parts.length !== 3) return 0;
-      var day = Number(parts[0]);
-      var month = Number(parts[1]);
-      var year = Number(parts[2]);
-      if (!day || !month || !year) return 0;
-      return new Date(year, month - 1, day).getTime();
-    }
-
-    var topEstrenos2026Sorted = topEstrenos2026.slice().sort(function (a, b) {
-      return parseReleaseDate(b.releaseDate) - parseReleaseDate(a.releaseDate);
-    });
 
     var actionMovies = [
       { id: 'P1128', title: 'El Robo del Siglo', image: 'images/horizontals-1024x576/el-robo-del-siglo-2020-slide-1024x576.png', alt: 'El Robo del Siglo', className: 'item-a' },
@@ -428,18 +423,14 @@ Thrillers Políticos (H)
         (data.items || []).forEach(function (item) {
           if (item && item.id) byId[item.id] = item;
         });
-        buildList('topEstrenos2026List', topEstrenos2026Sorted, byId);
         buildList('actionMoviesList', actionMovies, byId);
         setTimeout(function () {
-          initOrRefreshSlider('#topEstrenos2026List');
           initOrRefreshSlider('#actionMoviesList');
         }, 120);
       })
       .catch(function () {
-        buildList('topEstrenos2026List', topEstrenos2026Sorted, {});
         buildList('actionMoviesList', actionMovies, {});
         setTimeout(function () {
-          initOrRefreshSlider('#topEstrenos2026List');
           initOrRefreshSlider('#actionMoviesList');
         }, 120);
       });

@@ -358,6 +358,61 @@ nav .menu li a:hover{
 .lSSlideOuter{
   overflow:hidden !important;
 }
+
+/* ========== CARTELERA 2026 ========== */
+.cartelera-2026-controls{
+  margin: 8px 18px 12px;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cartelera-tabs,
+.cartelera-filters{
+  display: inline-flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.cartelera-btn,
+.cartelera-filter{
+  border: 1px solid rgba(255,255,255,0.2);
+  background: rgba(255,255,255,0.05);
+  color: #e5e7eb;
+  font-size: 0.82rem;
+  font-weight: 600;
+  border-radius: 999px;
+  padding: 8px 14px;
+  cursor: pointer;
+}
+
+.cartelera-btn.is-active,
+.cartelera-filter.is-active{
+  background: #2563eb;
+  color: #fff;
+  border-color: #2563eb;
+}
+
+.cartelera-chip{
+  display: inline-block;
+  margin-top: 4px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+  color: #9ec5ff;
+}
+
+.cartelera-empty{
+  color: #9ca3af;
+  font-size: 0.88rem;
+}
+
+.cartelera-placeholder{
+  display: none;
+}
 .lSSlideWrapper{
   overflow:hidden !important;
   height:auto !important;

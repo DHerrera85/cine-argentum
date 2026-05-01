@@ -150,67 +150,25 @@
   </ul>
 </nav>
 
-<!-- ÚLTIMAS (H) -->
-<section id="main">
-  <h1 class="showcase-heading">ÚLTIMAS</h1>
-  <ul class="slider-h cs-hidden">
-    <li class="item-a">
-      <div class="showcase-box">
-        <img src="images/horizontals-1024x576/el-resto-bien-slide-1024x576.png" loading="lazy" alt="El Resto Bien"/>
-      </div>
-      <div class="latest-b-text">
-        <strong>El Resto Bien</strong>
-        <p></p>
-      </div>
-    </li>
-    <li class="item-a">
-      <div class="showcase-box">
-        <img src="images/horizontals-1024x576/el-tiempo-de-las-moscas-slide-1024x576.png" loading="lazy" alt="El Tiempo de las Moscas"/>
-      </div>
-      <div class="latest-b-text">
-        <strong>El Tiempo de las Moscas</strong>
-        <p></p>
-      </div>
-    </li>
-    <li class="item-a">
-      <div class="showcase-box">
-        <img src="images/horizontals-1024x576/hija-del-fuego-la-venganza-bastarda-slide-1024x576.png" loading="lazy" alt="Hija del Fuego: La Venganza de la Bastarda"/>
-      </div>
-      <div class="latest-b-text">
-        <strong>Hija del Fuego: La Venganza de la Bastarda</strong>
-        <p></p>
-      </div>
-    </li>
-    <li class="item-a">
-      <div class="showcase-box">
-        <img src="images/horizontals-1024x576/yiya-slide-1024x576.png" loading="lazy" alt="Yiya"/>
-      </div>
-      <div class="latest-b-text">
-        <strong>Yiya</strong>
-        <p></p>
-      </div>
-    </li>
-    <li class="item-a">
-      <div class="showcase-box">
-        <img src="images/horizontals-1024x576/las-maldiciones-slide-1024x576.png" loading="lazy" alt="Las Maldiciones"/>
-      </div>
-      <div class="latest-b-text">
-        <strong>Las Maldiciones</strong>
-        <p></p>
-      </div>
-    </li>
-    <li class="item-b">
-      <div class="showcase-box">
-        <img src="images/horizontals-1024x576/en-el-barro-slide-1024x576.png" loading="lazy" alt="En el Barro"/>
-      </div>
-      <div class="latest-b-text"><strong>En el Barro</strong><p></p></div>
-    </li>
-    <li class="item-f">
-      <div class="showcase-box">
-        <img src="images/horizontals-1024x576/nieve-roja-slide-1024x576.png" loading="lazy" alt="Nieve Roja"/>
-      </div>
-      <div class="latest-b-text"><strong>Nieve Roja</strong><p></p></div>
-    </li>
+<!-- Cartelera 2026 (V) -->
+<section id="latest" class="cartelera-2026-section" data-year="2026">
+  <h2 class="latest-heading">Cartelera 2026</h2>
+  <div class="cartelera-2026-controls" role="group" aria-label="Cartelera 2026 controles">
+    <div class="cartelera-tabs" role="tablist" aria-label="Estado de estreno">
+      <button class="cartelera-btn is-active" type="button" data-cartelera-view="released" role="tab" aria-selected="true">Ya estrenadas</button>
+      <button class="cartelera-btn" type="button" data-cartelera-view="upcoming" role="tab" aria-selected="false">Próximamente</button>
+    </div>
+    <div class="cartelera-filters" role="group" aria-label="Filtrar por tipo">
+      <button class="cartelera-filter is-active" type="button" data-cartelera-filter="all">Todo</button>
+      <button class="cartelera-filter" type="button" data-cartelera-filter="pelicula">Películas</button>
+      <button class="cartelera-filter" type="button" data-cartelera-filter="serie">Series</button>
+    </div>
+  </div>
+  <ul class="slider-v cs-hidden" data-cartelera-list="released">
+    <li class="cartelera-placeholder"></li>
+  </ul>
+  <ul class="slider-v cs-hidden" data-cartelera-list="upcoming" hidden>
+    <li class="cartelera-placeholder"></li>
   </ul>
 </section>
 
@@ -395,5 +353,6 @@
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <script src="js/lightslider.js"></script>
 <script src="js/script.js?v=20260226-1"></script>
+<script src="js/cartelera-2026.js?v=20260501-1"></script>
 </body>
 </html>
