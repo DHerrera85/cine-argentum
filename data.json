@@ -7734,7 +7734,11 @@
       "orientation": "vertical",
       "image": "images/verticals/margarita-poster-280x420.png",
       "subtitle": "Juvenil",
-      "release_date": "04/05/2026"
+      "release_date": "04/05/2026",
+      "temporadas": [
+        { "season": 1, "image": "images/verticals/margarita-temporada 1-poster-280x420.png" },
+        { "season": 2, "release_date": "04/05/2026", "image": "images/verticals/margarita-temporada 2-poster-280x420.png" }
+      ]
     },
     {
       "id": "v110",
