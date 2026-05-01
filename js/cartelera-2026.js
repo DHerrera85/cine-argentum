@@ -101,18 +101,23 @@
     var filtered = items
       .filter(function (item) {
         if (!item || !item.id) return false;
-        if ((item.year || '').toString() !== year) return false;
+        var releaseRaw = item.release_date || item.fecha_estreno || '';
+        var releaseObj = parseReleaseDate(releaseRaw);
+        var yearMatch = (item.year || '').toString() === year;
+        var releaseYearMatch = releaseObj && String(releaseObj.getFullYear()) === year;
+        if (!yearMatch && !releaseYearMatch) return false;
         return normalizeType(item.type, item) === 'pelicula' || normalizeType(item.type, item) === 'serie';
       })
       .map(function (item) {
-        var releaseDateObj = parseReleaseDate(item.release_date);
+        var releaseDateValue = item.release_date || item.fecha_estreno || '';
+        var releaseDateObj = parseReleaseDate(releaseDateValue);
         return {
           id: item.id,
           title: item.title || 'Sin titulo',
           image: (item.image && String(item.image).trim()) ? item.image : 'images/verticals/placeholder-280x420.svg',
           type: normalizeType(item.type, item),
           year: year,
-          releaseDate: item.release_date || '',
+          releaseDate: releaseDateValue,
           releaseTs: releaseDateObj ? releaseDateObj.getTime() : null
         };
       });

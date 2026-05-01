@@ -6130,6 +6130,18 @@
       "tipo_emision": "Semanal"
     },
     {
+      "id": "V298",
+      "title": "El Resto Bien",
+      "year": "2026",
+      "channel": "Streaming",
+      "genre": "Comedia",
+      "actors": [],
+      "orientation": "vertical",
+      "image": "images/verticals/el-resto-bien-280x420.png",
+      "subtitle": "Comedia",
+      "release_date": "18/04/2026"
+    },
+    {
       "id": "h7",
       "title": "Graduados",
       "year": "2012",
@@ -7721,7 +7733,8 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/margarita-poster-280x420.png",
-      "subtitle": "Juvenil"
+      "subtitle": "Juvenil",
+      "release_date": "04/05/2026"
     },
     {
       "id": "v110",
@@ -9425,7 +9438,8 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/en-el-barro-poster-280x420.png",
-      "subtitle": "Thriller"
+      "subtitle": "Thriller",
+      "release_date": "13/02/2026"
     },
     {
       "id": "V188",
