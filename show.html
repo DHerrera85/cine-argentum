@@ -154,12 +154,12 @@
             var f = hasValue(temp.fecha_estreno) ? temp.fecha_estreno : temp.release_date;
             if (!hasValue(f)) return;
             var n = hasValue(temp.season) ? temp.season : (idx + 1);
-            fechasTemporadas.push('T' + n + ': ' + f);
+            fechasTemporadas.push('Temporada ' + n + ': ' + f);
           });
         } else if (Array.isArray(item.season_release_dates) && item.season_release_dates.length) {
           item.season_release_dates.forEach(function (f, idx) {
             if (!hasValue(f)) return;
-            fechasTemporadas.push('T' + (idx + 1) + ': ' + f);
+            fechasTemporadas.push('Temporada ' + (idx + 1) + ': ' + f);
           });
         }
         var fechasTemporadasRow = fechasTemporadas.length
