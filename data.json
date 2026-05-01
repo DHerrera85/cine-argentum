@@ -9387,7 +9387,11 @@
       "orientation": "vertical",
       "image": "images/verticals/barrabrava-poster-280x420.png",
       "subtitle": "Thriller",
-      "release_date": "22/05/2026"
+      "release_date": "23/06/2023",
+      "season_release_dates": [
+        "23/06/2023",
+        "22/05/2026"
+      ]
     },
     {
       "id": "V185",
