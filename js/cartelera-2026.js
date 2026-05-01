@@ -25,10 +25,10 @@
     return '';
   }
 
-  function buildCardHtml(item, listType) {
+  function buildCardHtml(item, isUpcoming) {
     var releaseLabel = item.releaseDate ? item.releaseDate : ('Proximamente ' + item.year);
     var typeLabel = item.type === 'pelicula' ? 'Pelicula' : 'Serie';
-    var statusBadge = listType === 'upcoming'
+    var statusBadge = isUpcoming
       ? '<span class="cartelera-status cartelera-status-upcoming">PROXIMAMENTE</span>'
       : '';
 
@@ -79,7 +79,7 @@
   }
 
   function applyTypeFilter(section, type) {
-    var activeList = section.querySelector('ul[data-cartelera-list]:not([hidden])');
+    var activeList = section.querySelector('ul[data-cartelera-list="all"]');
     if (!activeList) return;
 
     Array.prototype.forEach.call(activeList.querySelectorAll('li[data-cartelera-type]'), function (li) {
@@ -97,9 +97,8 @@
 
   function mountSection(section, items) {
     var year = section.getAttribute('data-year') || '2026';
-    var releasedList = section.querySelector('ul[data-cartelera-list="released"]');
-    var upcomingList = section.querySelector('ul[data-cartelera-list="upcoming"]');
-    if (!releasedList || !upcomingList) return;
+    var listEl = section.querySelector('ul[data-cartelera-list="all"]');
+    if (!listEl) return;
 
     var today = new Date();
     today.setHours(0, 0, 0, 0);
@@ -140,35 +139,15 @@
         return ta - tb;
       });
 
-    releasedList.innerHTML = released.length
-      ? released.map(function (item) { return buildCardHtml(item, 'released'); }).join('')
-      : '<li class="item-a"><div class="latest-box"><div class="latest-b-text"><strong>Sin titulos estrenados</strong><p class="cartelera-empty">No hay estrenos cargados para ' + year + '.</p></div></div></li>';
+    var mixed = released
+      .map(function (item) { return { item: item, upcoming: false }; })
+      .concat(upcoming.map(function (item) { return { item: item, upcoming: true }; }));
 
-    upcomingList.innerHTML = upcoming.length
-      ? upcoming.map(function (item) { return buildCardHtml(item, 'upcoming'); }).join('')
-      : '<li class="item-a"><div class="latest-box"><div class="latest-b-text"><strong>Sin proximos estrenos</strong><p class="cartelera-empty">No hay proximos titulos cargados para ' + year + '.</p></div></div></li>';
+    listEl.innerHTML = mixed.length
+      ? mixed.map(function (row) { return buildCardHtml(row.item, row.upcoming); }).join('')
+      : '<li class="item-a"><div class="latest-box"><div class="latest-b-text"><strong>Sin titulos 2026</strong><p class="cartelera-empty">No hay titulos cargados para ' + year + '.</p></div></div></li>';
 
-    ensureSlider(releasedList);
-    ensureSlider(upcomingList);
-
-    Array.prototype.forEach.call(section.querySelectorAll('[data-cartelera-view]'), function (btn) {
-      btn.addEventListener('click', function () {
-        var view = btn.getAttribute('data-cartelera-view');
-        var showReleased = view === 'released';
-
-        releasedList.hidden = !showReleased;
-        upcomingList.hidden = showReleased;
-
-        Array.prototype.forEach.call(section.querySelectorAll('[data-cartelera-view]'), function (other) {
-          var active = other === btn;
-          other.classList.toggle('is-active', active);
-          other.setAttribute('aria-selected', active ? 'true' : 'false');
-        });
-
-        var activeFilter = section.querySelector('.cartelera-filter.is-active');
-        applyTypeFilter(section, activeFilter ? activeFilter.getAttribute('data-cartelera-filter') : 'all');
-      });
-    });
+    ensureSlider(listEl);
 
     Array.prototype.forEach.call(section.querySelectorAll('[data-cartelera-filter]'), function (btn) {
       btn.addEventListener('click', function () {
@@ -187,7 +166,7 @@
     var sections = document.querySelectorAll('.cartelera-2026-section');
     if (!sections.length) return;
 
-    fetch('data.json?v=20260501-1', { cache: 'no-store' })
+    fetch('data.json?v=20260501-3', { cache: 'no-store' })
       .then(function (res) { return res.json(); })
       .then(function (data) {
         var items = (data && data.items) ? data.items : [];

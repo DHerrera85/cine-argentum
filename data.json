@@ -11641,7 +11641,8 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/el-tiempo-de-las-moscas-poster-280x420.png",
-      "subtitle": "Thriller"
+      "subtitle": "Thriller",
+      "release_date": "01/01/2026"
     },
     {
       "id": "v32",

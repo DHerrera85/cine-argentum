@@ -119,20 +119,13 @@
 <section id="latest" class="cartelera-2026-section" data-year="2026">
   <h2 class="latest-heading">Cartelera 2026</h2>
   <div class="cartelera-2026-controls" role="group" aria-label="Cartelera 2026 controles">
-    <div class="cartelera-tabs" role="tablist" aria-label="Estado de estreno">
-      <button class="cartelera-btn" type="button" data-cartelera-view="released" role="tab" aria-selected="false">Ya estrenadas</button>
-      <button class="cartelera-btn is-active" type="button" data-cartelera-view="upcoming" role="tab" aria-selected="true">Próximamente</button>
-    </div>
     <div class="cartelera-filters" role="group" aria-label="Filtrar por tipo">
       <button class="cartelera-filter is-active" type="button" data-cartelera-filter="all">Todo</button>
       <button class="cartelera-filter" type="button" data-cartelera-filter="pelicula">Películas</button>
       <button class="cartelera-filter" type="button" data-cartelera-filter="serie">Series</button>
     </div>
   </div>
-  <ul class="slider-v cs-hidden" data-cartelera-list="released" hidden>
-    <li class="cartelera-placeholder"></li>
-  </ul>
-  <ul class="slider-v cs-hidden" data-cartelera-list="upcoming">
+  <ul class="slider-v cs-hidden" data-cartelera-list="all">
     <li class="cartelera-placeholder"></li>
   </ul>
 </section>
@@ -345,7 +338,7 @@ Thrillers Políticos (H)
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <script src="js/lightslider.js"></script>
 <script src="js/script.js?v=20260225-3"></script>
-<script src="js/cartelera-2026.js?v=20260501-2"></script>
+<script src="js/cartelera-2026.js?v=20260501-3"></script>
 <script>
   (function () {
     var indexDataVersion = '20260406-1';
