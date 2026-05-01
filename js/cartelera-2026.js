@@ -14,10 +14,14 @@
     return date;
   }
 
-  function normalizeType(value) {
+  function normalizeType(value, item) {
     var t = (value || '').toString().toLowerCase();
     if (t === 'pelicula' || t === 'movie') return 'pelicula';
     if (t === 'serie' || t === 'series') return 'serie';
+
+    var id = (item && item.id ? String(item.id) : '').toUpperCase();
+    if (id.indexOf('V') === 0) return 'serie';
+
     return '';
   }
 
@@ -98,7 +102,7 @@
       .filter(function (item) {
         if (!item || !item.id) return false;
         if ((item.year || '').toString() !== year) return false;
-        return normalizeType(item.type) === 'pelicula' || normalizeType(item.type) === 'serie';
+        return normalizeType(item.type, item) === 'pelicula' || normalizeType(item.type, item) === 'serie';
       })
       .map(function (item) {
         var releaseDateObj = parseReleaseDate(item.release_date);
@@ -106,7 +110,7 @@
           id: item.id,
           title: item.title || 'Sin titulo',
           image: (item.image && String(item.image).trim()) ? item.image : 'images/verticals/placeholder-280x420.svg',
-          type: normalizeType(item.type),
+          type: normalizeType(item.type, item),
           year: year,
           releaseDate: item.release_date || '',
           releaseTs: releaseDateObj ? releaseDateObj.getTime() : null
