@@ -9183,8 +9183,31 @@
         "Gabriel Goity"
       ],
       "orientation": "vertical",
-      "image": "images/verticals/el-encargado-poster-280x420.png",
-      "subtitle": "Comedia"
+      "image": "images/verticals/el-encargado-temporada-4-poster-280x420.png",
+      "release_date": "26/10/2022",
+      "subtitle": "Comedia",
+      "temporadas": [
+        {
+          "numero": 1,
+          "release_date": "26/10/2022",
+          "image": "images/verticals/el-encargado-temporada-1-poster-280x420.png"
+        },
+        {
+          "numero": 2,
+          "release_date": "29/11/2023",
+          "image": "images/verticals/el-encargado-temporada-2-poster-280x420.png"
+        },
+        {
+          "numero": 3,
+          "release_date": "19/07/2024",
+          "image": "images/verticals/el-encargado-temporada-3-poster-280x420.png"
+        },
+        {
+          "numero": 4,
+          "release_date": "30/04/2026",
+          "image": "images/verticals/el-encargado-temporada-4-poster-280x420.png"
+        }
+      ]
     },
     {
       "id": "V172",
