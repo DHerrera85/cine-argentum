@@ -42,18 +42,23 @@
   .slider-v {
     padding-left: 0 !important;
     padding-right: 0 !important;
-    margin-left: 8px !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
     box-sizing: border-box;
   }
   .lSSlideOuter .slider-v,
   .lSSlideWrapper .slider-v {
     padding-left: 0 !important;
     padding-right: 0 !important;
-    margin-left: 8px !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
   }
-  #latest .lSSlideWrapper {
-    padding-left: 0 !important;
-    margin-left: 8px !important;
+  .cartelera-2026-section .lSSlideOuter,
+  .cartelera-2026-section .lSSlideWrapper {
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
   }
 }
 /* ========== RESET & BASE ========== */
