@@ -9131,8 +9131,31 @@
         "Benjamín Vicuña"
       ],
       "orientation": "vertical",
-      "image": "images/verticals/envidiosa-poster-280x420.png",
-      "subtitle": "Comedia"
+      "image": "images/verticals/envidiosa-temporada-4-poster-280x420.png",
+      "release_date": "18/09/2024",
+      "subtitle": "Comedia",
+      "temporadas": [
+        {
+          "numero": 1,
+          "release_date": "18/09/2024",
+          "image": "images/verticals/envidiosa-temporada-1-poster-280x420.png"
+        },
+        {
+          "numero": 2,
+          "release_date": "05/02/2025",
+          "image": "images/verticals/envidiosa-temporada-2-poster-280x420.png"
+        },
+        {
+          "numero": 3,
+          "release_date": "19/11/2025",
+          "image": "images/verticals/envidiosa-temporada-3-poster-280x420.png"
+        },
+        {
+          "numero": 4,
+          "release_date": "29/04/2026",
+          "image": "images/verticals/envidiosa-temporada-4-poster-280x420.png"
+        }
+      ]
     },
     {
       "id": "V170",
