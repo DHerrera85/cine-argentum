@@ -136,6 +136,20 @@
         function hasValue(v) {
           return v !== undefined && v !== null && String(v).trim() !== '' && String(v).trim() !== '-';
         }
+        function getFirstSeason(temporadas) {
+          if (!Array.isArray(temporadas) || !temporadas.length) return null;
+          var sorted = temporadas.filter(function (t) { return t && typeof t === 'object'; }).slice();
+          if (!sorted.length) return null;
+          sorted.sort(function (a, b) {
+            var sa = Number(a.season);
+            var sb = Number(b.season);
+            var va = Number.isFinite(sa) ? sa : Number.MAX_SAFE_INTEGER;
+            var vb = Number.isFinite(sb) ? sb : Number.MAX_SAFE_INTEGER;
+            return va - vb;
+          });
+          return sorted[0];
+        }
+        var firstSeason = getFirstSeason(item.temporadas);
         var horarioRow = '';
         if (hasValue(item.horario)) {
           horarioRow = '<dt>Horario</dt><dd>' + item.horario + '</dd>';
@@ -146,11 +160,21 @@
         }
         var fechaEstrenoRow = '';
         var fechaEstrenoValue = '';
-        if (hasValue(item.fecha_estreno)) {
+        if (firstSeason) {
+          var firstSeasonDate = hasValue(firstSeason.fecha_estreno) ? firstSeason.fecha_estreno : firstSeason.release_date;
+          if (hasValue(firstSeasonDate)) {
+            fechaEstrenoValue = firstSeasonDate;
+          }
+        }
+        if (!hasValue(fechaEstrenoValue) && hasValue(item.fecha_estreno)) {
           fechaEstrenoValue = item.fecha_estreno;
-        } else if (hasValue(item.release_date)) {
+        } else if (!hasValue(fechaEstrenoValue) && hasValue(item.release_date)) {
           fechaEstrenoValue = item.release_date;
         }
+        if (firstSeason && hasValue(firstSeason.image)) {
+          imgSrc = firstSeason.image;
+        }
+        imgSrc = hasValue(imgSrc) ? String(imgSrc).replace(/ /g, '%20') : placeholderV;
         if (hasValue(fechaEstrenoValue)) {
           fechaEstrenoRow = '<dt>Fecha de estreno</dt><dd>' + fechaEstrenoValue + '</dd>';
         }
