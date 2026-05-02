@@ -34,20 +34,23 @@
     .remake-title { font-size: 0.98rem; font-weight: 600; color: #2a2f38; margin-bottom: 4px; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; line-clamp: 2; -webkit-box-orient: vertical; white-space: normal; }
     .remake-meta { font-size: 0.92rem; color: #5b616d; white-space: normal; line-height: 1.25; }
     .synopsis { max-width:100%; word-wrap: break-word; overflow-wrap: anywhere; word-break: break-word; display:block; }
-    .temporadas-section { margin: 16px 0 6px; }
+    .temporadas-section { margin: 12px 0 6px; }
     .temporadas-title { font-size: 1.02rem; font-weight: 700; color: #2a2f38; margin: 0 0 10px; }
-    .temporadas-grid { display: flex; gap: 14px; flex-wrap: wrap; }
-    .temporada-card { background: #f6f7f9; box-shadow: 0 2px 10px rgba(0,0,0,0.08); border-radius: 12px; overflow: hidden; border: 1px solid #e3e6ea; width: 120px; flex: 0 0 120px; }
+    .temporadas-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+    .temporada-card { background: #f6f7f9; box-shadow: 0 2px 10px rgba(0,0,0,0.08); border-radius: 12px; overflow: hidden; border: 1px solid #e3e6ea; }
     .temporada-card img { width: 100%; aspect-ratio: 2 / 3; object-fit: cover; display: block; border-radius: 0 0 12px 12px; }
-    .temporada-info { padding: 7px 9px 9px; }
-    .temporada-label { font-size: 0.88rem; font-weight: 700; color: #2a2f38; margin-bottom: 2px; }
-    .temporada-date { font-size: 0.82rem; color: #5b616d; }
+    .temporada-info { padding: 10px 12px 12px; background: #f6f7f9; border-radius: 0 0 12px 12px; min-height: 64px; }
+    .temporada-label { font-size: 0.98rem; font-weight: 600; color: #2a2f38; margin-bottom: 4px; }
+    .temporada-date { font-size: 0.92rem; color: #5b616d; white-space: normal; line-height: 1.25; }
     @media (max-width: 760px) {
       body { overflow-x: hidden; }
       .card { flex-direction:column; }
       .card .poster { width:100%; flex:0 0 auto; }
     }
-    @media (max-width: 900px) { .remakes-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; } }
+    @media (max-width: 900px) {
+      .remakes-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+      .temporadas-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+    }
     @media (max-width: 600px) {
       .detail-wrap { padding: 16px; }
       .remakes-grid { display: none; }
