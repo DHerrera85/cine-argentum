@@ -7732,12 +7732,12 @@
         "Rafael Ferro"
       ],
       "orientation": "vertical",
-      "image": "images/verticals/margarita-temporada 2-poster-280x420.png",
+      "image": "images/verticals/margarita-temporada-2-poster-280x420.png",
       "subtitle": "Juvenil",
       "release_date": "04/05/2026",
       "temporadas": [
-        { "season": 1, "release_date": "02/09/2024", "image": "images/verticals/margarita-temporada 1-poster-280x420.png" },
-        { "season": 2, "release_date": "04/05/2026", "image": "images/verticals/margarita-temporada 2-poster-280x420.png" }
+        { "season": 1, "release_date": "02/09/2024", "image": "images/verticals/margarita-temporada-1-poster-280x420.png" },
+        { "season": 2, "release_date": "04/05/2026", "image": "images/verticals/margarita-temporada-2-poster-280x420.png" }
       ]
     },
     {
