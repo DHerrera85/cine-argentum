@@ -9492,12 +9492,12 @@
         "Lorena Vega"
       ],
       "orientation": "vertical",
-      "image": "images/verticals/en-el-barro-temporada 2-poster-280x420.png",
+      "image": "images/verticals/en-el-barro-temporada-2-poster-280x420.png",
       "subtitle": "Thriller",
-      "release_date": "13/02/2026",
+      "release_date": "14/08/2025",
       "temporadas": [
-        { "season": 1, "release_date": "14/08/2025", "image": "images/verticals/en-el-barro-temporada 1-poster-280x420.png" },
-        { "season": 2, "release_date": "13/02/2026", "image": "images/verticals/en-el-barro-temporada 2-poster-280x420.png" }
+        { "numero": 1, "release_date": "14/08/2025", "image": "images/verticals/en-el-barro-temporada-1-poster-280x420.png" },
+        { "numero": 2, "release_date": "13/02/2026", "image": "images/verticals/en-el-barro-temporada-2-poster-280x420.png" }
       ]
     },
     {
