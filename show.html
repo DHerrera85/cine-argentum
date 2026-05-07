@@ -41,7 +41,7 @@
     .temporada-card img { width: 100%; aspect-ratio: 2 / 3; object-fit: cover; display: block; border-radius: 0 0 12px 12px; }
     .temporada-info { padding: 10px 12px 12px; background: #f6f7f9; border-radius: 0 0 12px 12px; min-height: 64px; }
     .temporada-label { font-size: 0.98rem; font-weight: 600; color: #2a2f38; margin-bottom: 4px; }
-    .temporada-date { font-size: 0.92rem; color: #5b616d; white-space: normal; line-height: 1.25; }
+    .temporada-date { font-size: 0.92rem; color: #5b616d; white-space: normal; line-height: 1.35; margin-top: 4px; }
     @media (max-width: 760px) {
       body { overflow-x: hidden; }
       .card { flex-direction:column; }
@@ -140,6 +140,7 @@
           return v !== undefined && v !== null && String(v).trim() !== '' && String(v).trim() !== '-';
         }
         function toNumber(v) {
+          if (v === null || v === undefined || String(v).trim() === '') return null;
           var n = Number(v);
           return Number.isFinite(n) ? n : null;
         }
@@ -208,8 +209,8 @@
                   var period = hasValue(report.periodo) ? report.periodo : (hasValue(report.report_id) ? report.report_id : 'Netflix');
                   var views = formatViews(report.visualizaciones);
                   var ranking = toNumber(report.ranking_series);
-                  var rankingText = ranking !== null ? ' · Ranking: #' + ranking : '';
-                  return '<div class="temporada-date">' + period + ': ' + views + ' visualizaciones' + rankingText + '</div>';
+                  var rankingText = ranking !== null ? ' · <strong>Ranking</strong>: #' + ranking : '';
+                  return '<div class="temporada-date"><strong>' + period + '</strong>: ' + views + ' visualizaciones' + rankingText + '</div>';
                 }).join('');
               }
               return '<div class="temporada-card">'

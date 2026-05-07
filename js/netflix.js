@@ -2,6 +2,7 @@
 const netflixDataVersion = '20260507-1';
 
 function normalizeNumber(value) {
+  if (value === null || value === undefined || String(value).trim() === '') return null;
   const n = Number(value);
   return Number.isFinite(n) ? n : null;
 }
