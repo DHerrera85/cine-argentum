@@ -7754,7 +7754,40 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/cielo-grande-poster-280x420.png",
-      "subtitle": "Juvenil"
+      "subtitle": "Juvenil",
+      "temporadas": [
+        {
+          "numero": 1,
+          "netflix_reports": [
+            {
+              "report_id": "2025-H2",
+              "periodo": "Jul-Dic 2025",
+              "visualizaciones": 2800000,
+              "ranking_series": 3481
+            }
+          ]
+        },
+        {
+          "numero": 2,
+          "netflix_reports": [
+            {
+              "report_id": "2025-H2",
+              "periodo": "Jul-Dic 2025",
+              "visualizaciones": 1600000,
+              "ranking_series": 4014
+            }
+          ]
+        }
+      ],
+      "netflix_aggregates": [
+        {
+          "report_id": "2025-H2",
+          "periodo": "Jul-Dic 2025",
+          "visualizaciones_totales": 4400000,
+          "temporada_mas_vista": 1,
+          "visualizaciones_temporada_mas_vista": 2800000
+        }
+      ]
     },
     {
       "id": "v111",
@@ -7804,7 +7837,40 @@
       "capitulos": 30,
       "fecha_estreno": "22/02/2019",
       "sinopsis": "Mía es una talentosa joven que consigue una beca en la prestigiosa academia de artes escénicas Saint Mary. Allí enfrenta la rivalidad de Lupe, la hija del dueño, mientras persigue sus sueños artísticos, vive amores juveniles y busca a su padre",
-      "productora": "Kuarzo/Onceloops"
+      "productora": "Kuarzo/Onceloops",
+      "temporadas": [
+        {
+          "numero": 1,
+          "netflix_reports": [
+            {
+              "report_id": "2025-H2",
+              "periodo": "Jul-Dic 2025",
+              "visualizaciones": 11200000,
+              "ranking_series": 2016
+            }
+          ]
+        },
+        {
+          "numero": 2,
+          "netflix_reports": [
+            {
+              "report_id": "2025-H2",
+              "periodo": "Jul-Dic 2025",
+              "visualizaciones": 9100000,
+              "ranking_series": 2306
+            }
+          ]
+        }
+      ],
+      "netflix_aggregates": [
+        {
+          "report_id": "2025-H2",
+          "periodo": "Jul-Dic 2025",
+          "visualizaciones_totales": 20300000,
+          "temporada_mas_vista": 1,
+          "visualizaciones_temporada_mas_vista": 11200000
+        }
+      ]
     },
     {
       "id": "v114",
@@ -9319,7 +9385,40 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/division-palermo-poster-280x420.png",
-      "subtitle": "Comedia"
+      "subtitle": "Comedia",
+      "temporadas": [
+        {
+          "numero": 1,
+          "netflix_reports": [
+            {
+              "report_id": "2025-H2",
+              "periodo": "Jul-Dic 2025",
+              "visualizaciones": 10700000,
+              "ranking_series": 756
+            }
+          ]
+        },
+        {
+          "numero": 2,
+          "netflix_reports": [
+            {
+              "report_id": "2025-H2",
+              "periodo": "Jul-Dic 2025",
+              "visualizaciones": 8500000,
+              "ranking_series": 715
+            }
+          ]
+        }
+      ],
+      "netflix_aggregates": [
+        {
+          "report_id": "2025-H2",
+          "periodo": "Jul-Dic 2025",
+          "visualizaciones_totales": 19200000,
+          "temporada_mas_vista": 1,
+          "visualizaciones_temporada_mas_vista": 10700000
+        }
+      ]
     },
     {
       "id": "V177",
@@ -9402,6 +9501,72 @@
       "rating": "7,3",
       "productora": "Underground Contenidos, Dori Media",
       "tipo_emision": "Semanal",
+      "temporadas": [
+        {
+          "numero": 1,
+          "netflix_reports": [
+            {
+              "report_id": "2025-H2",
+              "periodo": "Jul-Dic 2025",
+              "visualizaciones": 11500000,
+              "ranking_series": 2014
+            }
+          ]
+        },
+        {
+          "numero": 2,
+          "netflix_reports": [
+            {
+              "report_id": "2025-H2",
+              "periodo": "Jul-Dic 2025",
+              "visualizaciones": 6600000,
+              "ranking_series": 2332
+            }
+          ]
+        },
+        {
+          "numero": 3,
+          "netflix_reports": [
+            {
+              "report_id": "2025-H2",
+              "periodo": "Jul-Dic 2025",
+              "visualizaciones": 6000000,
+              "ranking_series": 2566
+            }
+          ]
+        },
+        {
+          "numero": 4,
+          "netflix_reports": [
+            {
+              "report_id": "2025-H2",
+              "periodo": "Jul-Dic 2025",
+              "visualizaciones": 5800000,
+              "ranking_series": 2800
+            }
+          ]
+        },
+        {
+          "numero": 5,
+          "netflix_reports": [
+            {
+              "report_id": "2025-H2",
+              "periodo": "Jul-Dic 2025",
+              "visualizaciones": null,
+              "ranking_series": 2883
+            }
+          ]
+        }
+      ],
+      "netflix_aggregates": [
+        {
+          "report_id": "2025-H2",
+          "periodo": "Jul-Dic 2025",
+          "visualizaciones_totales": 29900000,
+          "temporada_mas_vista": 1,
+          "visualizaciones_temporada_mas_vista": 11500000
+        }
+      ],
       "remakes": [
         {
           "title": "El Recluso",
@@ -9425,7 +9590,29 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/puerta-7-poster-280x420.png",
-      "subtitle": "Thriller"
+      "subtitle": "Thriller",
+      "temporadas": [
+        {
+          "numero": 1,
+          "netflix_reports": [
+            {
+              "report_id": "2025-H2",
+              "periodo": "Jul-Dic 2025",
+              "visualizaciones": 600000,
+              "ranking_series": 6534
+            }
+          ]
+        }
+      ],
+      "netflix_aggregates": [
+        {
+          "report_id": "2025-H2",
+          "periodo": "Jul-Dic 2025",
+          "visualizaciones_totales": 600000,
+          "temporada_mas_vista": 1,
+          "visualizaciones_temporada_mas_vista": 600000
+        }
+      ]
     },
     {
       "id": "V182",
@@ -9512,7 +9699,29 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/atrapados-poster-280x420.png",
-      "subtitle": "Thriller"
+      "subtitle": "Thriller",
+      "temporadas": [
+        {
+          "numero": 1,
+          "netflix_reports": [
+            {
+              "report_id": "2025-H2",
+              "periodo": "Jul-Dic 2025",
+              "visualizaciones": 12300000,
+              "ranking_series": 1007
+            }
+          ]
+        }
+      ],
+      "netflix_aggregates": [
+        {
+          "report_id": "2025-H2",
+          "periodo": "Jul-Dic 2025",
+          "visualizaciones_totales": 12300000,
+          "temporada_mas_vista": 1,
+          "visualizaciones_temporada_mas_vista": 12300000
+        }
+      ]
     },
     {
       "id": "V187",
@@ -9598,7 +9807,29 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/el-eternauta-poster-280x420.png",
-      "subtitle": "Drama"
+      "subtitle": "Drama",
+      "temporadas": [
+        {
+          "numero": 1,
+          "netflix_reports": [
+            {
+              "report_id": "2025-H2",
+              "periodo": "Jul-Dic 2025",
+              "visualizaciones": 19800000,
+              "ranking_series": 591
+            }
+          ]
+        }
+      ],
+      "netflix_aggregates": [
+        {
+          "report_id": "2025-H2",
+          "periodo": "Jul-Dic 2025",
+          "visualizaciones_totales": 19800000,
+          "temporada_mas_vista": 1,
+          "visualizaciones_temporada_mas_vista": 19800000
+        }
+      ]
     },
     {
       "id": "V190",
@@ -9645,7 +9876,29 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/edha-poster-280x420.png",
-      "subtitle": "Thriller"
+      "subtitle": "Thriller",
+      "temporadas": [
+        {
+          "numero": 1,
+          "netflix_reports": [
+            {
+              "report_id": "2025-H2",
+              "periodo": "Jul-Dic 2025",
+              "visualizaciones": 400000,
+              "ranking_series": 6830
+            }
+          ]
+        }
+      ],
+      "netflix_aggregates": [
+        {
+          "report_id": "2025-H2",
+          "periodo": "Jul-Dic 2025",
+          "visualizaciones_totales": 400000,
+          "temporada_mas_vista": 1,
+          "visualizaciones_temporada_mas_vista": 400000
+        }
+      ]
     },
     {
       "id": "V193",
@@ -9692,7 +9945,29 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/las-maldiciones-poster-280x420.png",
-      "subtitle": "Thriller"
+      "subtitle": "Thriller",
+      "temporadas": [
+        {
+          "numero": 1,
+          "netflix_reports": [
+            {
+              "report_id": "2025-H2",
+              "periodo": "Jul-Dic 2025",
+              "visualizaciones": 6600000,
+              "ranking_series": 762
+            }
+          ]
+        }
+      ],
+      "netflix_aggregates": [
+        {
+          "report_id": "2025-H2",
+          "periodo": "Jul-Dic 2025",
+          "visualizaciones_totales": 6600000,
+          "temporada_mas_vista": 1,
+          "visualizaciones_temporada_mas_vista": 6600000
+        }
+      ]
     },
     {
       "id": "V196",
@@ -9847,7 +10122,29 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/el-amor-despues-del-amor-poster-280x420.png",
-      "subtitle": "Drama"
+      "subtitle": "Drama",
+      "temporadas": [
+        {
+          "numero": 1,
+          "netflix_reports": [
+            {
+              "report_id": "2025-H2",
+              "periodo": "Jul-Dic 2025",
+              "visualizaciones": 300000,
+              "ranking_series": 7141
+            }
+          ]
+        }
+      ],
+      "netflix_aggregates": [
+        {
+          "report_id": "2025-H2",
+          "periodo": "Jul-Dic 2025",
+          "visualizaciones_totales": 300000,
+          "temporada_mas_vista": 1,
+          "visualizaciones_temporada_mas_vista": 300000
+        }
+      ]
     },
     {
       "id": "V206",
@@ -9932,7 +10229,29 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/apache-poster-280x420.png",
-      "subtitle": "Drama"
+      "subtitle": "Drama",
+      "temporadas": [
+        {
+          "numero": 1,
+          "netflix_reports": [
+            {
+              "report_id": "2025-H2",
+              "periodo": "Jul-Dic 2025",
+              "visualizaciones": 1800000,
+              "ranking_series": 4407
+            }
+          ]
+        }
+      ],
+      "netflix_aggregates": [
+        {
+          "report_id": "2025-H2",
+          "periodo": "Jul-Dic 2025",
+          "visualizaciones_totales": 1800000,
+          "temporada_mas_vista": 1,
+          "visualizaciones_temporada_mas_vista": 1800000
+        }
+      ]
     },
     {
       "id": "V211",
