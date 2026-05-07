@@ -139,13 +139,22 @@
         function hasValue(v) {
           return v !== undefined && v !== null && String(v).trim() !== '' && String(v).trim() !== '-';
         }
+        function toNumber(v) {
+          var n = Number(v);
+          return Number.isFinite(n) ? n : null;
+        }
+        function formatViews(v) {
+          var n = toNumber(v);
+          if (n === null) return 'Dato pendiente';
+          return n.toLocaleString('es-AR');
+        }
         function getFirstSeason(temporadas) {
           if (!Array.isArray(temporadas) || !temporadas.length) return null;
           var sorted = temporadas.filter(function (t) { return t && typeof t === 'object'; }).slice();
           if (!sorted.length) return null;
           sorted.sort(function (a, b) {
-            var sa = Number(a.season);
-            var sb = Number(b.season);
+            var sa = Number(hasValue(a.numero) ? a.numero : a.season);
+            var sb = Number(hasValue(b.numero) ? b.numero : b.season);
             var va = Number.isFinite(sa) ? sa : Number.MAX_SAFE_INTEGER;
             var vb = Number.isFinite(sb) ? sb : Number.MAX_SAFE_INTEGER;
             return va - vb;
@@ -189,14 +198,26 @@
           if (hasSeasonImages) {
             var tempCards = item.temporadas.map(function (temp, idx) {
               if (!temp || typeof temp !== 'object') return '';
-              var n = hasValue(temp.season) ? temp.season : (idx + 1);
+              var n = hasValue(temp.numero) ? temp.numero : (hasValue(temp.season) ? temp.season : (idx + 1));
               var f = hasValue(temp.fecha_estreno) ? temp.fecha_estreno : (hasValue(temp.release_date) ? temp.release_date : '');
               var imgPath = hasValue(temp.image) ? temp.image.replace(/ /g, '%20') : placeholderV;
+              var reportLines = '';
+              if (Array.isArray(temp.netflix_reports) && temp.netflix_reports.length) {
+                reportLines = temp.netflix_reports.map(function (report) {
+                  if (!report || typeof report !== 'object') return '';
+                  var period = hasValue(report.periodo) ? report.periodo : (hasValue(report.report_id) ? report.report_id : 'Netflix');
+                  var views = formatViews(report.visualizaciones);
+                  var ranking = toNumber(report.ranking_series);
+                  var rankingText = ranking !== null ? ' · Ranking: #' + ranking : '';
+                  return '<div class="temporada-date">' + period + ': ' + views + ' visualizaciones' + rankingText + '</div>';
+                }).join('');
+              }
               return '<div class="temporada-card">'
                 + '<img src="' + imgPath + '" alt="Temporada ' + n + '">'
                 + '<div class="temporada-info">'
                   + '<div class="temporada-label">Temporada ' + n + '</div>'
                   + (hasValue(f) ? '<div class="temporada-date">' + f + '</div>' : '')
+                  + reportLines
                 + '</div>'
               + '</div>';
             }).join('');

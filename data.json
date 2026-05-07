@@ -9138,22 +9138,55 @@
         {
           "numero": 1,
           "release_date": "18/09/2024",
-          "image": "images/verticals/envidiosa-temporada-1-poster-280x420.png"
+          "image": "images/verticals/envidiosa-temporada-1-poster-280x420.png",
+          "netflix_reports": [
+            {
+              "report_id": "2025-H2",
+              "periodo": "Jul-Dic 2025",
+              "visualizaciones": null,
+              "ranking_series": null
+            }
+          ]
         },
         {
           "numero": 2,
           "release_date": "05/02/2025",
-          "image": "images/verticals/envidiosa-temporada-2-poster-280x420.png"
+          "image": "images/verticals/envidiosa-temporada-2-poster-280x420.png",
+          "netflix_reports": [
+            {
+              "report_id": "2025-H2",
+              "periodo": "Jul-Dic 2025",
+              "visualizaciones": null,
+              "ranking_series": null
+            }
+          ]
         },
         {
           "numero": 3,
           "release_date": "19/11/2025",
-          "image": "images/verticals/envidiosa-temporada-3-poster-280x420.png"
+          "image": "images/verticals/envidiosa-temporada-3-poster-280x420.png",
+          "netflix_reports": [
+            {
+              "report_id": "2025-H2",
+              "periodo": "Jul-Dic 2025",
+              "visualizaciones": null,
+              "ranking_series": null
+            }
+          ]
         },
         {
           "numero": 4,
           "release_date": "29/04/2026",
           "image": "images/verticals/envidiosa-temporada-4-poster-280x420.png"
+        }
+      ],
+      "netflix_aggregates": [
+        {
+          "report_id": "2025-H2",
+          "periodo": "Jul-Dic 2025",
+          "visualizaciones_totales": null,
+          "temporada_mas_vista": null,
+          "visualizaciones_temporada_mas_vista": null
         }
       ]
     },
@@ -9496,8 +9529,33 @@
       "subtitle": "Thriller",
       "release_date": "14/08/2025",
       "temporadas": [
-        { "numero": 1, "release_date": "14/08/2025", "image": "images/verticals/en-el-barro-temporada-1-poster-280x420.png" },
-        { "numero": 2, "release_date": "13/02/2026", "image": "images/verticals/en-el-barro-temporada-2-poster-280x420.png" }
+        {
+          "numero": 1,
+          "release_date": "14/08/2025",
+          "image": "images/verticals/en-el-barro-temporada-1-poster-280x420.png",
+          "netflix_reports": [
+            {
+              "report_id": "2025-H2",
+              "periodo": "Jul-Dic 2025",
+              "visualizaciones": null,
+              "ranking_series": null
+            }
+          ]
+        },
+        {
+          "numero": 2,
+          "release_date": "13/02/2026",
+          "image": "images/verticals/en-el-barro-temporada-2-poster-280x420.png"
+        }
+      ],
+      "netflix_aggregates": [
+        {
+          "report_id": "2025-H2",
+          "periodo": "Jul-Dic 2025",
+          "visualizaciones_totales": null,
+          "temporada_mas_vista": null,
+          "visualizaciones_temporada_mas_vista": null
+        }
       ]
     },
     {
