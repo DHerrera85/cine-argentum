@@ -9552,7 +9552,7 @@
             {
               "report_id": "2025-H2",
               "periodo": "Jul-Dic 2025",
-              "visualizaciones": null,
+              "visualizaciones": 3400000,
               "ranking_series": 2883
             }
           ]
@@ -9562,7 +9562,7 @@
         {
           "report_id": "2025-H2",
           "periodo": "Jul-Dic 2025",
-          "visualizaciones_totales": 29900000,
+          "visualizaciones_totales": 33300000,
           "temporada_mas_vista": 1,
           "visualizaciones_temporada_mas_vista": 11500000
         }
