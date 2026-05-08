@@ -9581,6 +9581,14 @@
           "year": "2018",
           "image": "images/verticals/el-recluso-estados-unidos-2018.png"
         }
+      ],
+      "producciones_relacionadas": [
+        {
+          "id": "V187",
+          "title": "En el Barro",
+          "meta": "Spin-off",
+          "image": "images/verticals/en-el-barro-temporada-1-poster-280x420.png"
+        }
       ]
     },
     {

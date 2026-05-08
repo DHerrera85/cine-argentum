@@ -26,13 +26,20 @@
     .remakes-section { margin: 12px 0 6px; }
     .remakes-title { font-size: 1.02rem; font-weight: 700; color: #2a2f38; margin: 0 0 10px; }
     .remakes-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+    .extra-sections { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; margin: 12px 0 6px; }
+    .extra-sections .remakes-section,
+    .extra-sections .related-section { margin: 0; }
     .remakes-slider { display: none; margin: 0; padding: 0; list-style: none; }
     .remakes-slider li { list-style: none; box-sizing: border-box; }
     .remake-card { background: #f6f7f9; box-shadow: 0 2px 10px rgba(0,0,0,0.08); border-radius: 12px; overflow: hidden; border: 1px solid #e3e6ea; }
+    .remake-card-link { display: block; color: inherit; text-decoration: none; }
     .remake-card img { width: 100%; aspect-ratio: 2 / 3; object-fit: cover; display: block; border-radius: 0 0 12px 12px; }
     .remake-info { padding: 10px 12px 12px; background: #f6f7f9; border-radius: 0 0 12px 12px; min-height: 64px; }
     .remake-title { font-size: 0.98rem; font-weight: 600; color: #2a2f38; margin-bottom: 4px; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; line-clamp: 2; -webkit-box-orient: vertical; white-space: normal; }
     .remake-meta { font-size: 0.92rem; color: #5b616d; white-space: normal; line-height: 1.25; }
+    .related-section { margin: 12px 0 6px; }
+    .related-title { font-size: 1.02rem; font-weight: 700; color: #2a2f38; margin: 0 0 10px; }
+    .related-grid { display: grid; grid-template-columns: repeat(1, 1fr); gap: 16px; }
     .synopsis { max-width:100%; word-wrap: break-word; overflow-wrap: anywhere; word-break: break-word; display:block; }
     .temporadas-section { margin: 12px 0 6px; }
     .temporadas-title { font-size: 1.02rem; font-weight: 700; color: #2a2f38; margin: 0 0 10px; }
@@ -49,6 +56,7 @@
       .card .poster { width:100%; flex:0 0 auto; }
     }
     @media (max-width: 900px) {
+      .extra-sections { grid-template-columns: 1fr; gap: 12px; }
       .remakes-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
       .temporadas-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
     }
@@ -318,6 +326,7 @@
         var canalCableRow = cableValues.length ? '<dt>Canal de cable</dt><dd>' + cableValues.join(', ') + '</dd>' : '';
         var plataformaRow = plataformaValues.length ? '<dt>Plataforma</dt><dd>' + plataformaValues.join(', ') + '</dd>' : '';
         var remakesSection = '';
+        var relatedSection = '';
         var remakes = [];
         if (item.remakes && item.remakes.length) {
           remakes = item.remakes;
@@ -349,6 +358,38 @@
             + '<ul class="remakes-slider">' + remakesSlides + '</ul>'
           + '</div>';
         }
+        var related = [];
+        if (item.producciones_relacionadas && item.producciones_relacionadas.length) {
+          related = item.producciones_relacionadas;
+        }
+        if (related.length) {
+          var relatedCards = related.map(function (rel) {
+            if (!rel || typeof rel !== 'object') return '';
+            var relTitle = rel.title || 'Producción relacionada';
+            var relImage = (rel.image && String(rel.image).trim()) ? String(rel.image).replace(/ /g, '%20') : placeholderV;
+            var relHref = rel.id ? ('show.html?id=' + encodeURIComponent(rel.id)) : '#';
+            var relMeta = rel.meta || '';
+            return '<a class="remake-card-link" href="' + relHref + '">'
+              + '<div class="remake-card">'
+                + '<img src="' + relImage + '" alt="' + relTitle + '">' 
+                + '<div class="remake-info">'
+                  + '<div class="remake-title">' + relTitle + '</div>'
+                  + (hasValue(relMeta) ? '<div class="remake-meta">' + relMeta + '</div>' : '')
+                + '</div>'
+              + '</div>'
+            + '</a>';
+          }).join('');
+          relatedSection = '<div class="related-section">'
+            + '<div class="related-title">Producciones relacionadas</div>'
+            + '<div class="related-grid">' + relatedCards + '</div>'
+          + '</div>';
+        }
+        var extraSections = '';
+        if (remakesSection && relatedSection) {
+          extraSections = '<div class="extra-sections">' + remakesSection + relatedSection + '</div>';
+        } else {
+          extraSections = remakesSection + relatedSection;
+        }
         var html = '<div class="card">'
           + '<div class="poster"><img src="' + imgSrc + '" alt="' + (item.title||'') + '"></div>'
           + '<div class="meta">'
@@ -373,7 +414,7 @@
               + directorRow
             + '</dl>'
             + temporadasSection
-            + remakesSection
+            + extraSections
           + '</div>'
         + '</div>';
         $('#detail').html(html);
