@@ -9492,7 +9492,7 @@
         "Esteban Lamothe"
       ],
       "orientation": "vertical",
-      "image": "images/verticals/el-marginal-poster-280x420.png",
+      "image": "images/verticals/el-marginal-temporada-1-poster-280x420.png",
       "subtitle": "Thriller",
       "horario": "martes 22hs",
       "capitulos": 43,
@@ -9504,6 +9504,7 @@
       "temporadas": [
         {
           "numero": 1,
+          "image": "images/verticals/el-marginal-temporada-1-poster-280x420.png",
           "netflix_reports": [
             {
               "report_id": "2025-H2",
@@ -9515,6 +9516,7 @@
         },
         {
           "numero": 2,
+          "image": "images/verticals/el-marginal-temporada-2-poster-280x420.png",
           "netflix_reports": [
             {
               "report_id": "2025-H2",
@@ -9526,6 +9528,7 @@
         },
         {
           "numero": 3,
+          "image": "images/verticals/el-marginal-temporada-3-poster-280x420.png",
           "netflix_reports": [
             {
               "report_id": "2025-H2",
@@ -9537,6 +9540,8 @@
         },
         {
           "numero": 4,
+          "image": "images/verticals/el-marginal-temporada-4-poster-280x420.png",
+          "exclusive_platform": "Netflix",
           "netflix_reports": [
             {
               "report_id": "2025-H2",
@@ -9548,6 +9553,8 @@
         },
         {
           "numero": 5,
+          "image": "images/verticals/el-marginal-temporada-5-poster-280x420.png",
+          "exclusive_platform": "Netflix",
           "netflix_reports": [
             {
               "report_id": "2025-H2",

@@ -23,9 +23,16 @@ function renderSeries(series) {
     card.className = 'actor-movie-card';
     const tipoEmision = item.tipo_emision ? item.tipo_emision : '';
     const ratingText = item.rating ? item.rating : '-';
+    let imageSrc = item.image ? String(item.image).replace(/ /g, '%20') : 'images/verticals/placeholder-280x420.svg';
+    if (item.id === 'V180' && Array.isArray(item.temporadas)) {
+      const season1 = item.temporadas.find(t => t && Number(t.numero || t.season) === 1 && t.image);
+      if (season1 && season1.image) {
+        imageSrc = String(season1.image).replace(/ /g, '%20');
+      }
+    }
     card.innerHTML = `
       <a href="show.html?id=${item.id}">
-        <img src="${item.image}" alt="${item.title}">
+        <img src="${imageSrc}" alt="${item.title}">
         <div class="actor-movie-info">
           <div class="actor-movie-title">${item.title}</div>
           <div class="actor-movie-meta">${item.year} · ${item.genre || ''}</div>

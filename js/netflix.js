@@ -108,7 +108,13 @@ function renderSeries(series) {
     const card = document.createElement('div');
     card.className = 'actor-movie-card';
     const tipoEmision = item.tipo_emision ? item.tipo_emision : '';
-    const imageSrc = item.image ? String(item.image).replace(/ /g, '%20') : 'images/verticals/placeholder-280x420.svg';
+    let imageSrc = item.image ? String(item.image).replace(/ /g, '%20') : 'images/verticals/placeholder-280x420.svg';
+    if (item.id === 'V180' && Array.isArray(item.temporadas)) {
+      const season5 = item.temporadas.find(t => t && Number(t.numero || t.season) === 5 && t.image);
+      if (season5 && season5.image) {
+        imageSrc = String(season5.image).replace(/ /g, '%20');
+      }
+    }
 
     let netflixMetricHtml = '';
     if (item.netflix_metric) {
