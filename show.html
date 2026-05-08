@@ -26,9 +26,9 @@
     .remakes-section { margin: 12px 0 6px; }
     .remakes-title { font-size: 1.02rem; font-weight: 700; color: #2a2f38; margin: 0 0 10px; }
     .remakes-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
-    .extra-sections { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; margin: 12px 0 6px; }
+    .extra-sections { display: grid; grid-template-columns: repeat(2, max-content); gap: 16px; margin: 12px 0 6px; justify-content: start; }
     .extra-sections .remakes-section,
-    .extra-sections .related-section { margin: 0; }
+    .extra-sections .related-section { margin: 0; width: clamp(128px, 24vw, 170px); }
     .extra-sections .remakes-grid,
     .extra-sections .related-grid { grid-template-columns: 1fr; gap: 16px; }
     .extra-sections .remake-card,
@@ -60,7 +60,7 @@
       .card .poster { width:100%; flex:0 0 auto; }
     }
     @media (max-width: 900px) {
-      .extra-sections { grid-template-columns: 1fr; gap: 12px; }
+      .extra-sections { grid-template-columns: repeat(2, max-content); gap: 12px; justify-content: start; }
       .remakes-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
       .temporadas-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
       .extra-sections .remakes-grid,
@@ -73,6 +73,9 @@
       .remakes-section { margin: 12px 0 6px; padding: 0; }
       .extra-sections .remakes-grid { display: grid; }
       .extra-sections .remakes-slider { display: none; }
+      .extra-sections { grid-template-columns: repeat(2, max-content); gap: 10px; }
+      .extra-sections .remakes-section,
+      .extra-sections .related-section { width: clamp(118px, 40vw, 155px); }
     }
     @media (max-width: 768px) {
       .remakes-slider { padding-left: 0; margin-left: 0; box-sizing: border-box; }
