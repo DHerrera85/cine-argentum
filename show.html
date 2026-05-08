@@ -169,6 +169,21 @@
           if (n === null) return 'Dato pendiente';
           return n.toLocaleString('es-AR');
         }
+        function getReportOrder(reportId) {
+          if (!hasValue(reportId)) return -1;
+          var m = String(reportId).match(/^(\d{4})-H([12])$/);
+          if (!m) return -1;
+          return Number(m[1]) * 10 + Number(m[2]);
+        }
+        function getLatestReport(reports) {
+          if (!Array.isArray(reports) || !reports.length) return null;
+          var sorted = reports.filter(function (r) { return r && typeof r === 'object'; }).slice();
+          if (!sorted.length) return null;
+          sorted.sort(function (a, b) {
+            return getReportOrder(b.report_id) - getReportOrder(a.report_id);
+          });
+          return sorted[0] || null;
+        }
         function getFirstSeason(temporadas) {
           if (!Array.isArray(temporadas) || !temporadas.length) return null;
           var sorted = temporadas.filter(function (t) { return t && typeof t === 'object'; }).slice();
@@ -183,6 +198,33 @@
           return sorted[0];
         }
         var firstSeason = getFirstSeason(item.temporadas);
+        var netflixMetricsRow = '';
+        if (Array.isArray(item.temporadas) && item.temporadas.length) {
+          var metricLines = item.temporadas.map(function (temp, idx) {
+            if (!temp || typeof temp !== 'object') return '';
+            var latestReport = getLatestReport(temp.netflix_reports);
+            if (!latestReport) return '';
+            var seasonNumber = hasValue(temp.numero) ? temp.numero : (hasValue(temp.season) ? temp.season : (idx + 1));
+            var period = hasValue(latestReport.periodo) ? latestReport.periodo : (hasValue(latestReport.report_id) ? latestReport.report_id : 'Netflix');
+            var ranking = toNumber(latestReport.ranking_series);
+            return 'Temporada ' + seasonNumber + ' (' + period + '): '
+              + formatViews(latestReport.visualizaciones) + ' visualizaciones'
+              + (ranking !== null ? ' · Ranking: #' + ranking : '');
+          }).filter(function (line) { return hasValue(line); });
+
+          if (metricLines.length) {
+            netflixMetricsRow = '<dt>Métricas Netflix</dt><dd>' + metricLines.join('<br>') + '</dd>';
+          }
+        }
+        if (!netflixMetricsRow && Array.isArray(item.netflix_aggregates) && item.netflix_aggregates.length) {
+          var latestAggregate = getLatestReport(item.netflix_aggregates);
+          if (latestAggregate) {
+            var aggregatePeriod = hasValue(latestAggregate.periodo) ? latestAggregate.periodo : (hasValue(latestAggregate.report_id) ? latestAggregate.report_id : 'Netflix');
+            netflixMetricsRow = '<dt>Métricas Netflix</dt><dd>'
+              + 'Total (' + aggregatePeriod + '): ' + formatViews(latestAggregate.visualizaciones_totales) + ' visualizaciones'
+              + '</dd>';
+          }
+        }
         var horarioRow = '';
         if (hasValue(item.horario)) {
           horarioRow = '<dt>Horario</dt><dd>' + item.horario + '</dd>';
@@ -414,6 +456,7 @@
               + plataformaRow
               + '<dt>Género</dt><dd>' + (item.genre || '') + '</dd>'
               + '<dt>Actores</dt><dd>' + actors + '</dd>'
+              + netflixMetricsRow
               + horarioRow
               + capitulosRow
               + fechaEstrenoRow
