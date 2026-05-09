@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Series de Netflix - Cine Argentum</title>
+  <title>Series y Peliculas de Netflix - Cine Argentum</title>
   <link rel="stylesheet" href="css/style.css?v=2.0">
   <style>
     .actor-wrap { max-width: 1200px; margin: 28px auto; padding: 20px; }
@@ -43,6 +43,8 @@
     .custom-select-options { position: absolute; left: 0; right: 0; top: 100%; background: #23272f; border-radius: 0 0 6px 6px; box-shadow: 0 6px 24px rgba(0,0,0,0.18); margin: 0; padding: 0; z-index: 30; border: 1px solid #333; border-top: none; }
     .custom-select-options li { padding: 12px 16px; color: #e5e5e5; font-size: 1rem; cursor: pointer; transition: background 0.13s, color 0.13s; }
     .custom-select-options li.selected, .custom-select-options li:hover { background: #e50914; color: #23272f; }
+    .netflix-section-title { margin: 30px 12px 8px; font-size: 1.5rem; color: #fff; font-weight: 700; }
+    .netflix-section-sub { margin: 0 12px 10px; color: #b0b0b0; }
     @media (max-width: 600px) { .actor-filters { flex-direction: column; align-items: stretch; gap: 6px; } .custom-select { min-width: 100%; width: 100%; } .custom-select-selected { font-size: 1.08rem; padding: 12px 36px 12px 14px; } .custom-select-options li { font-size: 1.08rem; padding: 16px 18px; } }
   </style>
 </head>
@@ -76,6 +78,23 @@
       </div>
       <div class="actor-movies-grid" id="actorMoviesList">
         <!-- Series de Netflix -->
+      </div>
+
+      <h2 class="netflix-section-title">Peliculas de Netflix</h2>
+      <p class="netflix-section-sub" id="netflix-movie-count">Cargando peliculas...</p>
+      <div class="actor-filters" style="margin-bottom:0; margin-left:auto;">
+        <label for="movieSortCustom">Ordenar/Filtrar por:</label>
+        <div class="custom-select" id="movieSortCustom" tabindex="0">
+          <span class="custom-select-selected">Visualizaciones Netflix</span>
+          <ul class="custom-select-options" style="display:none;">
+            <li data-value="netflix-views-desc" class="selected">Visualizaciones Netflix</li>
+            <li data-value="year">Año (descendente)</li>
+            <li data-value="year-asc">Año (ascendente)</li>
+          </ul>
+        </div>
+      </div>
+      <div class="actor-movies-grid" id="netflixMoviesList">
+        <!-- Peliculas de Netflix -->
       </div>
     </main>
   </div>

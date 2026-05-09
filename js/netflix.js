@@ -1,4 +1,4 @@
-// js/netflix.js: Lógica para filtrar y mostrar series de Netflix
+// js/netflix.js: Logica para filtrar y mostrar series y peliculas de Netflix
 const netflixDataVersion = '20260507-1';
 
 function normalizeNumber(value) {
@@ -31,6 +31,17 @@ function getAggregateFromItem(item) {
       visualizaciones_totales: normalizeNumber(aggregate.visualizaciones_totales),
       temporada_mas_vista: normalizeNumber(aggregate.temporada_mas_vista),
       visualizaciones_temporada_mas_vista: normalizeNumber(aggregate.visualizaciones_temporada_mas_vista)
+    };
+  }
+
+  const topLevelReport = getLatestByReport(item.netflix_reports);
+  if (topLevelReport && topLevelReport.report_id) {
+    return {
+      report_id: topLevelReport.report_id,
+      periodo: topLevelReport.periodo || topLevelReport.report_id,
+      visualizaciones_totales: normalizeNumber(topLevelReport.visualizaciones),
+      temporada_mas_vista: null,
+      visualizaciones_temporada_mas_vista: null
     };
   }
 
@@ -77,18 +88,33 @@ function formatViews(value) {
   return n.toLocaleString('es-AR');
 }
 
+function isNetflixItem(item) {
+  const channel = (item.channel || '').toLowerCase();
+  const producer = (item.producer || '').toLowerCase();
+  const platforms = Array.isArray(item.platforms) ? item.platforms.map(p => String(p).toLowerCase()) : [];
+  return channel.includes('netflix') || producer.includes('netflix') || platforms.some(p => p.includes('netflix'));
+}
+
+function normalizeGenre(value) {
+  return value ? String(value).trim().toLowerCase() : '';
+}
+
+function displayGenre(value) {
+  if (!value) return '';
+  return value.charAt(0).toUpperCase() + value.slice(1);
+}
+
+function metricValue(item) {
+  if (!item || !item.netflix_metric) return -1;
+  const n = normalizeNumber(item.netflix_metric.visualizaciones_totales);
+  return n === null ? -1 : n;
+}
+
 fetch('data.json?v=' + netflixDataVersion, { cache: 'no-store' })
   .then(response => response.json())
   .then(data => {
-    const items = data.items
-      .filter(item => {
-        const channel = (item.channel || '').toLowerCase();
-        const platforms = Array.isArray(item.platforms) ? item.platforms.map(p => String(p).toLowerCase()) : [];
-        const inPrimaryChannel = channel.includes('netflix');
-        const inPlatformsArray = platforms.some(p => p.includes('netflix'));
-        if (!inPrimaryChannel && !inPlatformsArray) return false;
-        return item.type !== 'pelicula';
-      })
+    const netflixItems = data.items
+      .filter(item => isNetflixItem(item))
       .map(item => {
         const aggregate = getAggregateFromItem(item);
         return {
@@ -97,19 +123,23 @@ fetch('data.json?v=' + netflixDataVersion, { cache: 'no-store' })
         };
       });
 
-    renderSeries(items);
-    setupFilters(items);
+    const series = netflixItems.filter(item => item.type !== 'pelicula');
+    const movies = netflixItems.filter(item => item.type === 'pelicula');
+
+    setupSeriesFilters(series);
+    setupMovieFilters(movies);
   });
 
-function renderSeries(series) {
-  const container = document.getElementById('actorMoviesList');
+function renderCards(items, containerId, type) {
+  const container = document.getElementById(containerId);
+  if (!container) return;
   container.innerHTML = '';
-  series.forEach(item => {
+  items.forEach(item => {
     const card = document.createElement('div');
     card.className = 'actor-movie-card';
-    const tipoEmision = item.tipo_emision ? item.tipo_emision : '';
+    const tipoEmision = type === 'series' && item.tipo_emision ? item.tipo_emision : '';
     let imageSrc = item.image ? String(item.image).replace(/ /g, '%20') : 'images/verticals/placeholder-280x420.svg';
-    if (item.id === 'V180' && Array.isArray(item.temporadas)) {
+    if (type === 'series' && item.id === 'V180' && Array.isArray(item.temporadas)) {
       const season5 = item.temporadas.find(t => t && Number(t.numero || t.season) === 5 && t.image);
       if (season5 && season5.image) {
         imageSrc = String(season5.image).replace(/ /g, '%20');
@@ -124,7 +154,7 @@ function renderSeries(series) {
         + formatViews(m.visualizaciones_totales)
         + '</div>';
 
-      if (normalizeNumber(m.temporada_mas_vista) !== null) {
+      if (type === 'series' && normalizeNumber(m.temporada_mas_vista) !== null) {
         netflixMetricHtml += '<div class="actor-movie-meta" style="color:#9ca3af;">'
           + 'Temporada mas vista: T' + m.temporada_mas_vista
           + (normalizeNumber(m.visualizaciones_temporada_mas_vista) !== null
@@ -140,7 +170,7 @@ function renderSeries(series) {
         <div class="actor-movie-info">
           <div class="actor-movie-title">${item.title}</div>
           <div class="actor-movie-meta">${item.year} · ${item.genre || ''}</div>
-          <div class="actor-movie-meta" style="color:#b0b0b0;">${tipoEmision}</div>
+          ${tipoEmision ? '<div class="actor-movie-meta" style="color:#b0b0b0;">' + tipoEmision + '</div>' : ''}
           ${netflixMetricHtml}
         </div>
       </a>
@@ -149,70 +179,11 @@ function renderSeries(series) {
   });
 }
 
-function setupFilters(allSeries) {
-  const select = document.getElementById('actorSortCustom');
+function setupCustomSelect(selectId, onChange) {
+  const select = document.getElementById(selectId);
+  if (!select) return;
   const selectOptions = select.querySelector('.custom-select-options');
   const selectSelected = select.querySelector('.custom-select-selected');
-  let currentSort = 'netflix-views-desc';
-
-  function normalizeGenre(value) {
-    return value ? value.trim().toLowerCase() : '';
-  }
-
-  function displayGenre(value) {
-    if (!value) return '';
-    return value.charAt(0).toUpperCase() + value.slice(1);
-  }
-
-  function metricValue(item) {
-    if (!item || !item.netflix_metric) return -1;
-    const n = normalizeNumber(item.netflix_metric.visualizaciones_totales);
-    return n === null ? -1 : n;
-  }
-
-  function sortAndFilter(list, sort) {
-    let filtered = [...list];
-    filtered = filtered.map(item => ({ ...item, genre: normalizeGenre(item.genre) }));
-
-    if (sort === 'netflix-views-desc') {
-      filtered.sort((a, b) => {
-        const diff = metricValue(b) - metricValue(a);
-        if (diff !== 0) return diff;
-        return (parseInt(b.year, 10) || 0) - (parseInt(a.year, 10) || 0);
-      });
-    } else if (sort === 'year') {
-      filtered.sort((a, b) => (parseInt(b.year, 10) || 0) - (parseInt(a.year, 10) || 0));
-    } else if (sort === 'year-asc') {
-      filtered.sort((a, b) => (parseInt(a.year, 10) || 0) - (parseInt(b.year, 10) || 0));
-    } else if (sort === 'comedias') {
-      filtered = filtered.filter(item => item.genre === 'comedia');
-      filtered.sort((a, b) => (parseInt(b.year, 10) || 0) - (parseInt(a.year, 10) || 0));
-    } else if (sort === 'telenovelas') {
-      filtered = filtered.filter(item => item.genre === 'telenovela');
-      filtered.sort((a, b) => (parseInt(b.year, 10) || 0) - (parseInt(a.year, 10) || 0));
-    } else if (sort === 'juveniles') {
-      filtered = filtered.filter(item => item.genre === 'juvenil');
-      filtered.sort((a, b) => (parseInt(b.year, 10) || 0) - (parseInt(a.year, 10) || 0));
-    } else if (sort === 'sitcoms') {
-      filtered = filtered.filter(item => item.genre === 'sitcom');
-      filtered.sort((a, b) => (parseInt(b.year, 10) || 0) - (parseInt(a.year, 10) || 0));
-    } else if (sort === 'policiales') {
-      filtered = filtered.filter(item => item.genre === 'thriller' || item.genre === 'policial');
-      filtered.sort((a, b) => (parseInt(b.year, 10) || 0) - (parseInt(a.year, 10) || 0));
-    } else if (sort === 'unitarios') {
-      filtered = filtered.filter(item => item.genre === 'drama' || (item.tipo_emision && item.tipo_emision.toLowerCase().includes('unitario')));
-      filtered.sort((a, b) => (parseInt(b.year, 10) || 0) - (parseInt(a.year, 10) || 0));
-    }
-
-    filtered = filtered.map(item => ({ ...item, genre: displayGenre(item.genre) }));
-    return filtered;
-  }
-
-  function renderFiltered() {
-    const filtered = sortAndFilter(allSeries, currentSort);
-    document.getElementById('actor-movie-count').textContent = `${filtered.length} series de Netflix`;
-    renderSeries(filtered);
-  }
 
   select.addEventListener('click', function () {
     select.classList.toggle('open');
@@ -227,9 +198,120 @@ function setupFilters(allSeries) {
       selectOptions.querySelectorAll('li').forEach(li => li.classList.remove('selected'));
       e.target.classList.add('selected');
       selectSelected.textContent = e.target.textContent;
-      currentSort = e.target.getAttribute('data-value');
-      renderFiltered();
+      onChange(e.target.getAttribute('data-value'));
     }
   });
+}
+
+function sortAndFilterSeries(list, sort) {
+  let filtered = [...list];
+  filtered = filtered.map(item => ({ ...item, genre: normalizeGenre(item.genre) }));
+
+  if (sort === 'netflix-views-desc') {
+    filtered.sort((a, b) => {
+      const diff = metricValue(b) - metricValue(a);
+      if (diff !== 0) return diff;
+      return (parseInt(b.year, 10) || 0) - (parseInt(a.year, 10) || 0);
+    });
+  } else if (sort === 'year') {
+    filtered.sort((a, b) => (parseInt(b.year, 10) || 0) - (parseInt(a.year, 10) || 0));
+  } else if (sort === 'year-asc') {
+    filtered.sort((a, b) => (parseInt(a.year, 10) || 0) - (parseInt(b.year, 10) || 0));
+  } else if (sort === 'comedias') {
+    filtered = filtered.filter(item => item.genre === 'comedia');
+    filtered.sort((a, b) => (parseInt(b.year, 10) || 0) - (parseInt(a.year, 10) || 0));
+  } else if (sort === 'telenovelas') {
+    filtered = filtered.filter(item => item.genre === 'telenovela');
+    filtered.sort((a, b) => (parseInt(b.year, 10) || 0) - (parseInt(a.year, 10) || 0));
+  } else if (sort === 'juveniles') {
+    filtered = filtered.filter(item => item.genre === 'juvenil');
+    filtered.sort((a, b) => (parseInt(b.year, 10) || 0) - (parseInt(a.year, 10) || 0));
+  } else if (sort === 'sitcoms') {
+    filtered = filtered.filter(item => item.genre === 'sitcom');
+    filtered.sort((a, b) => (parseInt(b.year, 10) || 0) - (parseInt(a.year, 10) || 0));
+  } else if (sort === 'policiales') {
+    filtered = filtered.filter(item => item.genre === 'thriller' || item.genre === 'policial');
+    filtered.sort((a, b) => (parseInt(b.year, 10) || 0) - (parseInt(a.year, 10) || 0));
+  } else if (sort === 'unitarios') {
+    filtered = filtered.filter(item => item.genre === 'drama' || (item.tipo_emision && item.tipo_emision.toLowerCase().includes('unitario')));
+    filtered.sort((a, b) => (parseInt(b.year, 10) || 0) - (parseInt(a.year, 10) || 0));
+  }
+
+  filtered = filtered.map(item => ({ ...item, genre: displayGenre(item.genre) }));
+  return filtered;
+}
+
+function sortAndFilterMovies(list, sort) {
+  let filtered = [...list];
+  filtered = filtered.map(item => ({ ...item, genre: normalizeGenre(item.genre) }));
+
+  if (sort === 'netflix-views-desc') {
+    filtered.sort((a, b) => {
+      const diff = metricValue(b) - metricValue(a);
+      if (diff !== 0) return diff;
+      return (parseInt(b.year, 10) || 0) - (parseInt(a.year, 10) || 0);
+    });
+  } else if (sort === 'year') {
+    filtered.sort((a, b) => (parseInt(b.year, 10) || 0) - (parseInt(a.year, 10) || 0));
+  } else if (sort === 'year-asc') {
+    filtered.sort((a, b) => (parseInt(a.year, 10) || 0) - (parseInt(b.year, 10) || 0));
+  } else if (sort.indexOf('genre:') === 0) {
+    const genre = sort.slice('genre:'.length);
+    filtered = filtered.filter(item => item.genre === genre);
+    filtered.sort((a, b) => (parseInt(b.year, 10) || 0) - (parseInt(a.year, 10) || 0));
+  }
+
+  filtered = filtered.map(item => ({ ...item, genre: displayGenre(item.genre) }));
+  return filtered;
+}
+
+function setupSeriesFilters(allSeries) {
+  const select = document.getElementById('actorSortCustom');
+  if (!select) return;
+  let currentSort = 'netflix-views-desc';
+
+  function renderFiltered() {
+    const filtered = sortAndFilterSeries(allSeries, currentSort);
+    document.getElementById('actor-movie-count').textContent = `${filtered.length} series de Netflix`;
+    renderCards(filtered, 'actorMoviesList', 'series');
+  }
+
+  setupCustomSelect('actorSortCustom', function (value) {
+    currentSort = value;
+    renderFiltered();
+  });
+
+  renderFiltered();
+}
+
+function setupMovieFilters(allMovies) {
+  const select = document.getElementById('movieSortCustom');
+  if (!select) return;
+  let currentSort = 'netflix-views-desc';
+
+  const optionsList = select.querySelector('.custom-select-options');
+  const genreValues = Array.from(new Set(allMovies
+    .map(item => normalizeGenre(item.genre))
+    .filter(Boolean)))
+    .sort((a, b) => a.localeCompare(b, 'es'));
+
+  genreValues.forEach((genre) => {
+    const li = document.createElement('li');
+    li.setAttribute('data-value', 'genre:' + genre);
+    li.textContent = displayGenre(genre);
+    optionsList.appendChild(li);
+  });
+
+  function renderFiltered() {
+    const filtered = sortAndFilterMovies(allMovies, currentSort);
+    document.getElementById('netflix-movie-count').textContent = `${filtered.length} peliculas de Netflix`;
+    renderCards(filtered, 'netflixMoviesList', 'movies');
+  }
+
+  setupCustomSelect('movieSortCustom', function (value) {
+    currentSort = value;
+    renderFiltered();
+  });
+
   renderFiltered();
 }
