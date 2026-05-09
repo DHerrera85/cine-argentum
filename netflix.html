@@ -47,6 +47,7 @@
     .filters-inline { margin-bottom: 0; margin-left: auto; }
     .custom-select-options { display: none; }
     .netflix-section-title { margin: 30px 12px 8px; font-size: 1.5rem; color: #fff; font-weight: 700; }
+    .netflix-section-title.series-section-title { margin-top: 0; }
     .netflix-section-sub { margin: 0 12px 10px; color: #b0b0b0; }
     @media (max-width: 600px) { .actor-filters { flex-direction: column; align-items: stretch; gap: 6px; } .custom-select { min-width: 100%; width: 100%; } .custom-select-selected { font-size: 1.08rem; padding: 12px 36px 12px 14px; } .custom-select-options li { font-size: 1.08rem; padding: 16px 18px; } }
   </style>
@@ -58,7 +59,7 @@
       <div class="actor-header">
         <div class="actor-badge"><img src="images/logos/netflix-logo-120x120.png" alt="Netflix" class="netflix-logo-img" /></div>
         <div class="actor-info">
-          <h1>Series de Netflix</h1>
+          <h1>Netflix</h1>
           <p id="actor-movie-count">Cargando series...</p>
         </div>
         <div class="actor-filters filters-inline">
@@ -79,6 +80,7 @@
           </div>
         </div>
       </div>
+      <h2 class="netflix-section-title series-section-title">Series de Netflix</h2>
       <div class="actor-movies-grid" id="actorMoviesList">
         <!-- Series de Netflix -->
       </div>
