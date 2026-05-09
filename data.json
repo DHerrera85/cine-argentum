@@ -7762,7 +7762,7 @@
             {
               "report_id": "2025-H2",
               "periodo": "Jul-Dic 2025",
-              "visualizaciones": 2800000,
+              "visualizaciones": 500000,
               "ranking_series": 3481
             }
           ]
@@ -7773,7 +7773,7 @@
             {
               "report_id": "2025-H2",
               "periodo": "Jul-Dic 2025",
-              "visualizaciones": 1600000,
+              "visualizaciones": 400000,
               "ranking_series": 4014
             }
           ]
@@ -7783,9 +7783,9 @@
         {
           "report_id": "2025-H2",
           "periodo": "Jul-Dic 2025",
-          "visualizaciones_totales": 4400000,
+          "visualizaciones_totales": 900000,
           "temporada_mas_vista": 1,
-          "visualizaciones_temporada_mas_vista": 2800000
+          "visualizaciones_temporada_mas_vista": 500000
         }
       ]
     },
@@ -7845,7 +7845,7 @@
             {
               "report_id": "2025-H2",
               "periodo": "Jul-Dic 2025",
-              "visualizaciones": 11200000,
+              "visualizaciones": 1100000,
               "ranking_series": 2016
             }
           ]
@@ -7856,7 +7856,7 @@
             {
               "report_id": "2025-H2",
               "periodo": "Jul-Dic 2025",
-              "visualizaciones": 9100000,
+              "visualizaciones": 900000,
               "ranking_series": 2306
             }
           ]
@@ -7866,9 +7866,9 @@
         {
           "report_id": "2025-H2",
           "periodo": "Jul-Dic 2025",
-          "visualizaciones_totales": 20300000,
+          "visualizaciones_totales": 2000000,
           "temporada_mas_vista": 1,
-          "visualizaciones_temporada_mas_vista": 11200000
+          "visualizaciones_temporada_mas_vista": 1100000
         }
       ]
     },
@@ -9393,7 +9393,7 @@
             {
               "report_id": "2025-H2",
               "periodo": "Jul-Dic 2025",
-              "visualizaciones": 10700000,
+              "visualizaciones": 3100000,
               "ranking_series": 756
             }
           ]
@@ -9404,7 +9404,7 @@
             {
               "report_id": "2025-H2",
               "periodo": "Jul-Dic 2025",
-              "visualizaciones": 8500000,
+              "visualizaciones": 3200000,
               "ranking_series": 715
             }
           ]
@@ -9414,9 +9414,9 @@
         {
           "report_id": "2025-H2",
           "periodo": "Jul-Dic 2025",
-          "visualizaciones_totales": 19200000,
-          "temporada_mas_vista": 1,
-          "visualizaciones_temporada_mas_vista": 10700000
+          "visualizaciones_totales": 6300000,
+          "temporada_mas_vista": 2,
+          "visualizaciones_temporada_mas_vista": 3200000
         }
       ]
     },
@@ -9509,7 +9509,7 @@
             {
               "report_id": "2025-H2",
               "periodo": "Jul-Dic 2025",
-              "visualizaciones": 11500000,
+              "visualizaciones": 1100000,
               "ranking_series": 2014
             }
           ]
@@ -9521,7 +9521,7 @@
             {
               "report_id": "2025-H2",
               "periodo": "Jul-Dic 2025",
-              "visualizaciones": 6600000,
+              "visualizaciones": 900000,
               "ranking_series": 2332
             }
           ]
@@ -9533,7 +9533,7 @@
             {
               "report_id": "2025-H2",
               "periodo": "Jul-Dic 2025",
-              "visualizaciones": 6000000,
+              "visualizaciones": 800000,
               "ranking_series": 2566
             }
           ]
@@ -9546,7 +9546,7 @@
             {
               "report_id": "2025-H2",
               "periodo": "Jul-Dic 2025",
-              "visualizaciones": 5800000,
+              "visualizaciones": 700000,
               "ranking_series": 2800
             }
           ]
@@ -9559,7 +9559,7 @@
             {
               "report_id": "2025-H2",
               "periodo": "Jul-Dic 2025",
-              "visualizaciones": 3400000,
+              "visualizaciones": 700000,
               "ranking_series": 2883
             }
           ]
@@ -9569,9 +9569,9 @@
         {
           "report_id": "2025-H2",
           "periodo": "Jul-Dic 2025",
-          "visualizaciones_totales": 33300000,
+          "visualizaciones_totales": 4200000,
           "temporada_mas_vista": 1,
-          "visualizaciones_temporada_mas_vista": 11500000
+          "visualizaciones_temporada_mas_vista": 1100000
         }
       ],
       "remakes": [
@@ -9613,7 +9613,7 @@
             {
               "report_id": "2025-H2",
               "periodo": "Jul-Dic 2025",
-              "visualizaciones": 600000,
+              "visualizaciones": 100000,
               "ranking_series": 6534
             }
           ]
@@ -9623,9 +9623,9 @@
         {
           "report_id": "2025-H2",
           "periodo": "Jul-Dic 2025",
-          "visualizaciones_totales": 600000,
+          "visualizaciones_totales": 100000,
           "temporada_mas_vista": 1,
-          "visualizaciones_temporada_mas_vista": 600000
+          "visualizaciones_temporada_mas_vista": 100000
         }
       ]
     },
@@ -9722,7 +9722,7 @@
             {
               "report_id": "2025-H2",
               "periodo": "Jul-Dic 2025",
-              "visualizaciones": 12300000,
+              "visualizaciones": 2400000,
               "ranking_series": 1007
             }
           ]
@@ -9732,9 +9732,9 @@
         {
           "report_id": "2025-H2",
           "periodo": "Jul-Dic 2025",
-          "visualizaciones_totales": 12300000,
+          "visualizaciones_totales": 2400000,
           "temporada_mas_vista": 1,
-          "visualizaciones_temporada_mas_vista": 12300000
+          "visualizaciones_temporada_mas_vista": 2400000
         }
       ]
     },
@@ -9830,7 +9830,7 @@
             {
               "report_id": "2025-H2",
               "periodo": "Jul-Dic 2025",
-              "visualizaciones": 19800000,
+              "visualizaciones": 3700000,
               "ranking_series": 591
             }
           ]
@@ -9840,9 +9840,9 @@
         {
           "report_id": "2025-H2",
           "periodo": "Jul-Dic 2025",
-          "visualizaciones_totales": 19800000,
+          "visualizaciones_totales": 3700000,
           "temporada_mas_vista": 1,
-          "visualizaciones_temporada_mas_vista": 19800000
+          "visualizaciones_temporada_mas_vista": 3700000
         }
       ]
     },
@@ -9899,7 +9899,7 @@
             {
               "report_id": "2025-H2",
               "periodo": "Jul-Dic 2025",
-              "visualizaciones": 400000,
+              "visualizaciones": 100000,
               "ranking_series": 6830
             }
           ]
@@ -9909,9 +9909,9 @@
         {
           "report_id": "2025-H2",
           "periodo": "Jul-Dic 2025",
-          "visualizaciones_totales": 400000,
+          "visualizaciones_totales": 100000,
           "temporada_mas_vista": 1,
-          "visualizaciones_temporada_mas_vista": 400000
+          "visualizaciones_temporada_mas_vista": 100000
         }
       ]
     },
@@ -9968,7 +9968,7 @@
             {
               "report_id": "2025-H2",
               "periodo": "Jul-Dic 2025",
-              "visualizaciones": 6600000,
+              "visualizaciones": 3100000,
               "ranking_series": 762
             }
           ]
@@ -9978,9 +9978,9 @@
         {
           "report_id": "2025-H2",
           "periodo": "Jul-Dic 2025",
-          "visualizaciones_totales": 6600000,
+          "visualizaciones_totales": 3100000,
           "temporada_mas_vista": 1,
-          "visualizaciones_temporada_mas_vista": 6600000
+          "visualizaciones_temporada_mas_vista": 3100000
         }
       ]
     },
@@ -10145,7 +10145,7 @@
             {
               "report_id": "2025-H2",
               "periodo": "Jul-Dic 2025",
-              "visualizaciones": 300000,
+              "visualizaciones": 100000,
               "ranking_series": 7141
             }
           ]
@@ -10155,9 +10155,9 @@
         {
           "report_id": "2025-H2",
           "periodo": "Jul-Dic 2025",
-          "visualizaciones_totales": 300000,
+          "visualizaciones_totales": 100000,
           "temporada_mas_vista": 1,
-          "visualizaciones_temporada_mas_vista": 300000
+          "visualizaciones_temporada_mas_vista": 100000
         }
       ]
     },
@@ -10252,7 +10252,7 @@
             {
               "report_id": "2025-H2",
               "periodo": "Jul-Dic 2025",
-              "visualizaciones": 1800000,
+              "visualizaciones": 300000,
               "ranking_series": 4407
             }
           ]
@@ -10262,9 +10262,9 @@
         {
           "report_id": "2025-H2",
           "periodo": "Jul-Dic 2025",
-          "visualizaciones_totales": 1800000,
+          "visualizaciones_totales": 300000,
           "temporada_mas_vista": 1,
-          "visualizaciones_temporada_mas_vista": 1800000
+          "visualizaciones_temporada_mas_vista": 300000
         }
       ]
     },
