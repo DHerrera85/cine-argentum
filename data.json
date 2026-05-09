@@ -1946,7 +1946,22 @@
       "id": "P1083",
       "producer": "Netflix",
       "director": "Marcos Carnevale",
-      "release_date": "9/9/2020"
+      "release_date": "9/9/2020",
+      "netflix_reports": [
+        {
+          "report_id": "2025-H2",
+          "periodo": "Jul-Dic 2025",
+          "visualizaciones": 400000,
+          "ranking_peliculas": 4853
+        }
+      ],
+      "netflix_aggregates": [
+        {
+          "report_id": "2025-H2",
+          "periodo": "Jul-Dic 2025",
+          "visualizaciones_totales": 400000
+        }
+      ]
     },
     {
       "title": "Ex Casados",
@@ -2047,7 +2062,22 @@
       "id": "P1088",
       "producer": "Netflix",
       "director": "Sebastián De Caro",
-      "release_date": "7/12/2022"
+      "release_date": "7/12/2022",
+      "netflix_reports": [
+        {
+          "report_id": "2025-H2",
+          "periodo": "Jul-Dic 2025",
+          "visualizaciones": 300000,
+          "ranking_peliculas": 4332
+        }
+      ],
+      "netflix_aggregates": [
+        {
+          "report_id": "2025-H2",
+          "periodo": "Jul-Dic 2025",
+          "visualizaciones_totales": 300000
+        }
+      ]
     },
     {
       "title": "Más Respeto que soy Tu Madre",
@@ -2213,7 +2243,22 @@
       "id": "P1096",
       "producer": "Netflix",
       "release_date": "6/12/2024",
-      "director": "Martino Zaidelis"
+      "director": "Martino Zaidelis",
+      "netflix_reports": [
+        {
+          "report_id": "2025-H2",
+          "periodo": "Jul-Dic 2025",
+          "visualizaciones": 2500000,
+          "ranking_peliculas": 1778
+        }
+      ],
+      "netflix_aggregates": [
+        {
+          "report_id": "2025-H2",
+          "periodo": "Jul-Dic 2025",
+          "visualizaciones_totales": 2500000
+        }
+      ]
     },
     {
       "title": "Culpa Cero",
@@ -2316,7 +2361,22 @@
       "viewers": 32605,
       "producer": "Netflix",
       "director": "Benjamín Ávila",
-      "release_date": "4/9/2025"
+      "release_date": "4/9/2025",
+      "netflix_reports": [
+        {
+          "report_id": "2025-H2",
+          "periodo": "Jul-Dic 2025",
+          "visualizaciones": 15800000,
+          "ranking_peliculas": 287
+        }
+      ],
+      "netflix_aggregates": [
+        {
+          "report_id": "2025-H2",
+          "periodo": "Jul-Dic 2025",
+          "visualizaciones_totales": 15800000
+        }
+      ]
     },
     {
       "title": "Hoy se Arregla el Mundo",
@@ -2792,7 +2852,22 @@
       "id": "P1124",
       "producer": "Netflix",
       "release_date": "15/6/2022",
-      "director": "Sebastián Schindel"
+      "director": "Sebastián Schindel",
+      "netflix_reports": [
+        {
+          "report_id": "2025-H2",
+          "periodo": "Jul-Dic 2025",
+          "visualizaciones": 2300000,
+          "ranking_peliculas": 1360
+        }
+      ],
+      "netflix_aggregates": [
+        {
+          "report_id": "2025-H2",
+          "periodo": "Jul-Dic 2025",
+          "visualizaciones_totales": 2300000
+        }
+      ]
     },
     {
       "title": "Corazón de león",
@@ -2996,7 +3071,22 @@
       "id": "P1134",
       "producer": "Netflix",
       "release_date": "16/11/2023",
-      "director": "Anahí Berneri"
+      "director": "Anahí Berneri",
+      "netflix_reports": [
+        {
+          "report_id": "2025-H2",
+          "periodo": "Jul-Dic 2025",
+          "visualizaciones": 100000,
+          "ranking_peliculas": 5903
+        }
+      ],
+      "netflix_aggregates": [
+        {
+          "report_id": "2025-H2",
+          "periodo": "Jul-Dic 2025",
+          "visualizaciones_totales": 100000
+        }
+      ]
     },
     {
       "title": "Elefante blanco",
@@ -3080,7 +3170,22 @@
       "id": "P1138",
       "producer": "Netflix",
       "release_date": "16/8/2024",
-      "director": "Santiago Requejo"
+      "director": "Santiago Requejo",
+      "netflix_reports": [
+        {
+          "report_id": "2025-H2",
+          "periodo": "Jul-Dic 2025",
+          "visualizaciones": 800000,
+          "ranking_peliculas": 3422
+        }
+      ],
+      "netflix_aggregates": [
+        {
+          "report_id": "2025-H2",
+          "periodo": "Jul-Dic 2025",
+          "visualizaciones_totales": 800000
+        }
+      ]
     },
     {
       "title": "El mismo amor, la misma lluvia",
@@ -3250,7 +3355,22 @@
       "viewers": 3640,
       "producer": "Netflix",
       "release_date": "17/10/2025",
-      "director": "Daniel Hendler"
+      "director": "Daniel Hendler",
+      "netflix_reports": [
+        {
+          "report_id": "2025-H2",
+          "periodo": "Jul-Dic 2025",
+          "visualizaciones": 17700000,
+          "ranking_peliculas": 254
+        }
+      ],
+      "netflix_aggregates": [
+        {
+          "report_id": "2025-H2",
+          "periodo": "Jul-Dic 2025",
+          "visualizaciones_totales": 17700000
+        }
+      ]
     },
     {
       "title": "Me casé con un boludo",
@@ -3780,7 +3900,22 @@
       "id": "P1172",
       "producer": "Netflix",
       "release_date": "20/8/2020",
-      "director": "Sebastián Schindel"
+      "director": "Sebastián Schindel",
+      "netflix_reports": [
+        {
+          "report_id": "2025-H2",
+          "periodo": "Jul-Dic 2025",
+          "visualizaciones": 700000,
+          "ranking_peliculas": 3731
+        }
+      ],
+      "netflix_aggregates": [
+        {
+          "report_id": "2025-H2",
+          "periodo": "Jul-Dic 2025",
+          "visualizaciones_totales": 700000
+        }
+      ]
     },
     {
       "title": "Todas las Azafatas van al Cielo",
@@ -3903,7 +4038,22 @@
       "id": "P1178",
       "producer": "Netflix",
       "release_date": "21/3/2024",
-      "director": "Sebastián Borensztein"
+      "director": "Sebastián Borensztein",
+      "netflix_reports": [
+        {
+          "report_id": "2025-H2",
+          "periodo": "Jul-Dic 2025",
+          "visualizaciones": 700000,
+          "ranking_peliculas": 2884
+        }
+      ],
+      "netflix_aggregates": [
+        {
+          "report_id": "2025-H2",
+          "periodo": "Jul-Dic 2025",
+          "visualizaciones_totales": 700000
+        }
+      ]
     },
     {
       "title": "Al final del túnel",
@@ -4118,7 +4268,22 @@
       "id": "P1188",
       "producer": "Netflix",
       "release_date": "24/11/2020",
-      "director": "Carlos Sorín"
+      "director": "Carlos Sorín",
+      "netflix_reports": [
+        {
+          "report_id": "2025-H2",
+          "periodo": "Jul-Dic 2025",
+          "visualizaciones": 400000,
+          "ranking_peliculas": 3853
+        }
+      ],
+      "netflix_aggregates": [
+        {
+          "report_id": "2025-H2",
+          "periodo": "Jul-Dic 2025",
+          "visualizaciones_totales": 400000
+        }
+      ]
     },
     {
       "title": "Un cuento chino",
@@ -4471,7 +4636,22 @@
       "id": "P1205",
       "producer": "Netflix",
       "release_date": "27/6/2024",
-      "director": "Marcos Carnevale"
+      "director": "Marcos Carnevale",
+      "netflix_reports": [
+        {
+          "report_id": "2025-H2",
+          "periodo": "Jul-Dic 2025",
+          "visualizaciones": 1200000,
+          "ranking_peliculas": 2873
+        }
+      ],
+      "netflix_aggregates": [
+        {
+          "report_id": "2025-H2",
+          "periodo": "Jul-Dic 2025",
+          "visualizaciones_totales": 1200000
+        }
+      ]
     },
     {
       "title": "Pipa",
@@ -4493,7 +4673,22 @@
       "id": "P1206",
       "producer": "Netflix",
       "release_date": "27/7/2022",
-      "director": "Alejandro Montiel"
+      "director": "Alejandro Montiel",
+      "netflix_reports": [
+        {
+          "report_id": "2025-H2",
+          "periodo": "Jul-Dic 2025",
+          "visualizaciones": 1400000,
+          "ranking_peliculas": 1933
+        }
+      ],
+      "netflix_aggregates": [
+        {
+          "report_id": "2025-H2",
+          "periodo": "Jul-Dic 2025",
+          "visualizaciones_totales": 1400000
+        }
+      ]
     },
     {
       "title": "El amor menos pensado",
@@ -4699,7 +4894,22 @@
       "id": "P1216",
       "producer": "Netflix",
       "release_date": "28/5/2020",
-      "director": "Alejandro Montiel"
+      "director": "Alejandro Montiel",
+      "netflix_reports": [
+        {
+          "report_id": "2025-H2",
+          "periodo": "Jul-Dic 2025",
+          "visualizaciones": 800000,
+          "ranking_peliculas": 3590
+        }
+      ],
+      "netflix_aggregates": [
+        {
+          "report_id": "2025-H2",
+          "periodo": "Jul-Dic 2025",
+          "visualizaciones_totales": 800000
+        }
+      ]
     },
     {
       "title": "Elsa y Fred",
@@ -4854,7 +5064,22 @@
       "id": "P1224",
       "producer": "Netflix",
       "release_date": "30/03/2022",
-      "director": "Marcos Carnevale"
+      "director": "Marcos Carnevale",
+      "netflix_reports": [
+        {
+          "report_id": "2025-H2",
+          "periodo": "Jul-Dic 2025",
+          "visualizaciones": 500000,
+          "ranking_peliculas": 3331
+        }
+      ],
+      "netflix_aggregates": [
+        {
+          "report_id": "2025-H2",
+          "periodo": "Jul-Dic 2025",
+          "visualizaciones_totales": 500000
+        }
+      ]
     },
     {
       "title": "Corazón Delator",
@@ -4873,7 +5098,22 @@
       "id": "P1226",
       "producer": "Netflix",
       "release_date": "30/5/2025",
-      "director": "Marcos Carnevale"
+      "director": "Marcos Carnevale",
+      "netflix_reports": [
+        {
+          "report_id": "2025-H2",
+          "periodo": "Jul-Dic 2025",
+          "visualizaciones": 8600000,
+          "ranking_peliculas": 528
+        }
+      ],
+      "netflix_aggregates": [
+        {
+          "report_id": "2025-H2",
+          "periodo": "Jul-Dic 2025",
+          "visualizaciones_totales": 8600000
+        }
+      ]
     },
     {
       "title": "Todos tenemos un Plan",
@@ -4935,7 +5175,22 @@
       "id": "P1229",
       "producer": "Netflix",
       "release_date": "30/8/2024",
-      "director": "Fabiana Tiscornia"
+      "director": "Fabiana Tiscornia",
+      "netflix_reports": [
+        {
+          "report_id": "2025-H2",
+          "periodo": "Jul-Dic 2025",
+          "visualizaciones": 800000,
+          "ranking_peliculas": 3210
+        }
+      ],
+      "netflix_aggregates": [
+        {
+          "report_id": "2025-H2",
+          "periodo": "Jul-Dic 2025",
+          "visualizaciones_totales": 800000
+        }
+      ]
     },
     {
       "title": "Nueve Reinas",
