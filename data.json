@@ -9622,8 +9622,21 @@
         "Gustavo Bermúdez"
       ],
       "orientation": "vertical",
-      "image": "images/verticals/los-protectores-poster-280x420.png",
-      "subtitle": "Comedia"
+      "image": "images/verticals/los-protectores-primera temporada-poster-280x420.png",
+      "release_date": "9/03/2022",
+      "subtitle": "Comedia",
+      "temporadas": [
+        {
+          "numero": 1,
+          "release_date": "9/03/2022",
+          "image": "images/verticals/los-protectores-primera temporada-poster-280x420.png"
+        },
+        {
+          "numero": 2,
+          "release_date": "25/06/2023",
+          "image": "images/verticals/los-protectores-segunda temporada-poster-280x420.png"
+        }
+      ]
     },
     {
       "id": "V175",
