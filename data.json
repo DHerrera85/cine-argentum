@@ -9437,8 +9437,21 @@
         "Malena Pichot"
       ],
       "orientation": "vertical",
-      "image": "images/verticals/viudas-negras-poster-280x420.png",
-      "subtitle": "Comedia"
+      "image": "images/verticals/viudas-negras-segunda-temporada-poster-280x420.png",
+      "release_date": "27/06/2025",
+      "subtitle": "Comedia",
+      "temporadas": [
+        {
+          "numero": 1,
+          "release_date": "27/06/2025",
+          "image": "images/verticals/viudas-negras-primera-temporada-poster-280x420.png"
+        },
+        {
+          "numero": 2,
+          "release_date": "En Producción",
+          "image": "images/verticals/viudas-negras-segunda-temporada-poster-280x420.png"
+        }
+      ]
     },
     {
       "id": "V169",

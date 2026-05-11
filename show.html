@@ -49,7 +49,9 @@
     .temporadas-title { font-size: 1.02rem; font-weight: 700; color: #2a2f38; margin: 0 0 10px; }
     .temporadas-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
     .temporada-card { background: #f6f7f9; box-shadow: 0 2px 10px rgba(0,0,0,0.08); border-radius: 12px; overflow: hidden; border: 1px solid #e3e6ea; }
+    .temporada-image-wrap { position: relative; }
     .temporada-card img { width: 100%; aspect-ratio: 2 / 3; object-fit: cover; display: block; border-radius: 0 0 12px 12px; }
+    .temporada-status-badge { position: absolute; top: 8px; left: 8px; background: #e50914; color: #fff; border-radius: 999px; padding: 3px 9px; font-size: 0.72rem; font-weight: 800; letter-spacing: 0.4px; text-transform: uppercase; box-shadow: 0 2px 8px rgba(0,0,0,0.24); }
     .temporada-info { padding: 10px 12px 12px; background: #f6f7f9; border-radius: 0 0 12px 12px; min-height: 64px; }
     .temporada-label { font-size: 0.98rem; font-weight: 600; color: #2a2f38; margin-bottom: 4px; }
     .temporada-badge { display: inline-block; margin-top: 2px; padding: 2px 8px; border-radius: 999px; font-size: 0.76rem; font-weight: 700; letter-spacing: 0.2px; background: #e50914; color: #fff; }
@@ -121,7 +123,7 @@
   <script src="js/lightslider.js"></script>
   <script>
     (function () {
-      var showDataVersion = '20260406-1';
+      var showDataVersion = '20260510-1';
       function getIdFromURL() {
         var p = new URLSearchParams(window.location.search);
         var id = p.get('id');
@@ -283,6 +285,10 @@
               var n = hasValue(temp.numero) ? temp.numero : (hasValue(temp.season) ? temp.season : (idx + 1));
               var f = hasValue(temp.fecha_estreno) ? temp.fecha_estreno : (hasValue(temp.release_date) ? temp.release_date : '');
               var imgPath = hasValue(temp.image) ? temp.image.replace(/ /g, '%20') : placeholderV;
+              var statusBadge = '';
+              if (hasValue(f) && /en producci[oó]n/i.test(String(f))) {
+                statusBadge = '<div class="temporada-status-badge">En Producción</div>';
+              }
               var exclusiveBadge = '';
               if (hasValue(temp.exclusive_platform)) {
                 exclusiveBadge = '<div class="temporada-badge">Exclusiva ' + temp.exclusive_platform + '</div>';
@@ -301,7 +307,10 @@
                 }).join('');
               }
               return '<div class="temporada-card">'
-                + '<img src="' + imgPath + '" alt="Temporada ' + n + '">'
+                + '<div class="temporada-image-wrap">'
+                  + '<img src="' + imgPath + '" alt="Temporada ' + n + '">'
+                  + statusBadge
+                + '</div>'
                 + '<div class="temporada-info">'
                   + '<div class="temporada-label">Temporada ' + n + '</div>'
                   + exclusiveBadge
