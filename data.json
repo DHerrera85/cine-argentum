@@ -9637,8 +9637,21 @@
         "Sofía Morandi"
       ],
       "orientation": "vertical",
-      "image": "images/verticals/porno-y-helado-poster-280x420.png",
-      "subtitle": "Comedia"
+      "image": "images/verticals/porno-y-helado-primera temporada-poster-280x420.png",
+      "release_date": "11/03/2022",
+      "subtitle": "Comedia",
+      "temporadas": [
+        {
+          "numero": 1,
+          "release_date": "11/03/2022",
+          "image": "images/verticals/porno-y-helado-primera temporada-poster-280x420.png"
+        },
+        {
+          "numero": 2,
+          "release_date": "20/09/2024",
+          "image": "images/verticals/porno-y-helado-segunda temporada-poster-280x420.png"
+        }
+      ]
     },
     {
       "id": "V176",
