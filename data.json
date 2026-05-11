@@ -9652,11 +9652,14 @@
         "Pilar Gamboa"
       ],
       "orientation": "vertical",
-      "image": "images/verticals/division-palermo-poster-280x420.png",
+      "image": "images/verticals/division-palermo-primera-temporada-poster-280x420.png",
+      "release_date": "17/02/2023",
       "subtitle": "Comedia",
       "temporadas": [
         {
           "numero": 1,
+          "release_date": "17/02/2023",
+          "image": "images/verticals/division-palermo-primera-temporada-poster-280x420.png",
           "netflix_reports": [
             {
               "report_id": "2025-H2",
@@ -9668,6 +9671,8 @@
         },
         {
           "numero": 2,
+          "release_date": "17/07/2025",
+          "image": "images/verticals/division-palermo-segunda-temporada-poster-280x420.png",
           "netflix_reports": [
             {
               "report_id": "2025-H2",
