@@ -9607,8 +9607,21 @@
         "Eugenia Suárez"
       ],
       "orientation": "vertical",
-      "image": "images/verticals/terapia-alternativa-poster-280x420.png",
-      "subtitle": "Comedia"
+      "image": "images/verticals/terapia-alternativa-primera temporada-poster-280x420.png",
+      "release_date": "24/09/2021",
+      "subtitle": "Comedia",
+      "temporadas": [
+        {
+          "numero": 1,
+          "release_date": "24/09/2021",
+          "image": "images/verticals/terapia-alternativa-primera temporada-poster-280x420.png"
+        },
+        {
+          "numero": 2,
+          "release_date": "28/02/2024",
+          "image": "images/verticals/terapia-alternativa-segunda temporada-poster-280x420.png"
+        }
+      ]
     },
     {
       "id": "V174",
