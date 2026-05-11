@@ -1,5 +1,5 @@
 // js/flow.js: Lógica para filtrar y mostrar series de Flow
-const flowDataVersion = '20260305-1';
+const flowDataVersion = '20260510-1';
 
 function hasFlowAvailability(item) {
   const normalized = value => (value || '').toString().toLowerCase().trim();
@@ -32,9 +32,16 @@ function renderSeries(series) {
     const card = document.createElement('div');
     card.className = 'actor-movie-card';
     const tipoEmision = item.tipo_emision ? item.tipo_emision : '';
+    let imageSrc = item.image ? String(item.image).replace(/ /g, '%20') : 'images/verticals/placeholder-280x420.svg';
+    if (item.id === 'V168' && Array.isArray(item.temporadas)) {
+      const season1 = item.temporadas.find(t => t && Number(t.numero || t.season) === 1 && t.image);
+      if (season1 && season1.image) {
+        imageSrc = String(season1.image).replace(/ /g, '%20');
+      }
+    }
     card.innerHTML = `
       <a href="show.html?id=${item.id}">
-        <img src="${item.image}" alt="${item.title}">
+        <img src="${imageSrc}" alt="${item.title}">
         <div class="actor-movie-info">
           <div class="actor-movie-title">${item.title}</div>
           <div class="actor-movie-meta">${item.year} · ${item.genre || ''}</div>
