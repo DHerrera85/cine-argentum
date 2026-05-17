@@ -9591,8 +9591,21 @@
         "Natalie Pérez"
       ],
       "orientation": "vertical",
-      "image": "images/verticals/casi-feliz-poster-280x420.png",
-      "subtitle": "Comedia"
+      "image": "images/verticals/casi-feliz-primera-temporada-poster-280x420.png",
+      "release_date": "01/05/2020",
+      "subtitle": "Comedia",
+      "temporadas": [
+        {
+          "numero": 1,
+          "release_date": "01/05/2020",
+          "image": "images/verticals/casi-feliz-primera-temporada-poster-280x420.png"
+        },
+        {
+          "numero": 2,
+          "release_date": "13/04/2022",
+          "image": "images/verticals/casi-feliz-segunda-temporada-poster-280x420.png"
+        }
+      ]
     },
     {
       "id": "V173",
