@@ -8008,11 +8008,14 @@
         "Thaís Rippel"
       ],
       "orientation": "vertical",
-      "image": "images/verticals/cielo-grande-poster-280x420.png",
+      "image": "images/verticals/cielo-grande-primera temporada-poster-280x420.png",
       "subtitle": "Juvenil",
+      "release_date": "16/02/2022",
       "temporadas": [
         {
           "numero": 1,
+          "release_date": "16/02/2022",
+          "image": "images/verticals/cielo-grande-primera temporada-poster-280x420.png",
           "netflix_reports": [
             {
               "report_id": "2025-H2",
@@ -8024,6 +8027,8 @@
         },
         {
           "numero": 2,
+          "release_date": "30/12/2022",
+          "image": "images/verticals/cielo-grande-segunda temporada-poster-280x420.png",
           "netflix_reports": [
             {
               "report_id": "2025-H2",
