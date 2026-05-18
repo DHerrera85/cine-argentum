@@ -10008,12 +10008,20 @@
         "Liz Solari"
       ],
       "orientation": "vertical",
-      "image": "images/verticals/barrabrava-poster-280x420.png",
+      "image": "images/verticals/barrabrava-primera temporada-poster-280x420.png",
       "subtitle": "Thriller",
       "release_date": "23/06/2023",
-      "season_release_dates": [
-        "23/06/2023",
-        "22/05/2026"
+      "temporadas": [
+        {
+          "numero": 1,
+          "release_date": "23/06/2023",
+          "image": "images/verticals/barrabrava-primera temporada-poster-280x420.png"
+        },
+        {
+          "numero": 2,
+          "release_date": "22/05/2026",
+          "image": "images/verticals/barrabrava-segunda temporada-poster-280x420.png"
+        }
       ]
     },
     {

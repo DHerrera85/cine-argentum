@@ -29,8 +29,12 @@
     if (Array.isArray(item.temporadas)) {
       item.temporadas.forEach(function (season) {
         if (!season || typeof season !== 'object') return;
-        if (season.release_date) out.push(String(season.release_date));
-        if (season.fecha_estreno) out.push(String(season.fecha_estreno));
+        if (season.release_date) {
+          out.push({ label: String(season.release_date), image: season.image ? String(season.image) : '' });
+        }
+        if (season.fecha_estreno) {
+          out.push({ label: String(season.fecha_estreno), image: season.image ? String(season.image) : '' });
+        }
       });
     }
 
@@ -57,10 +61,21 @@
     }
 
     collectSeasonDateStrings(item).forEach(function (raw) {
+      var dateLabel = '';
+      var imageOverride = '';
+
+      if (raw && typeof raw === 'object') {
+        dateLabel = raw.label || raw.release_date || raw.fecha_estreno || '';
+        imageOverride = raw.image || '';
+      } else {
+        dateLabel = raw;
+      }
+
       candidates.push({
-        label: raw,
-        date: parseReleaseDate(raw),
-        source: 'season'
+        label: String(dateLabel),
+        date: parseReleaseDate(dateLabel),
+        source: 'season',
+        imageOverride: imageOverride ? String(imageOverride) : ''
       });
     });
 
@@ -197,10 +212,13 @@
         var best = getBestReleaseForYear(item, year);
         var releaseDateValue = best ? best.label : '';
         var releaseDateObj = best ? best.date : null;
+        var bestImage = (best && best.imageOverride && String(best.imageOverride).trim())
+          ? String(best.imageOverride).trim()
+          : '';
         return {
           id: item.id,
           title: item.title || 'Sin titulo',
-          image: (item.image && String(item.image).trim()) ? item.image : 'images/verticals/placeholder-280x420.svg',
+          image: bestImage || ((item.image && String(item.image).trim()) ? item.image : 'images/verticals/placeholder-280x420.svg'),
           type: normalizeType(item.type, item),
           year: year,
           releaseDate: releaseDateValue,
