@@ -10500,8 +10500,21 @@
         "Joaquín Furriel"
       ],
       "orientation": "vertical",
-      "image": "images/verticals/el-reino-poster-280x420.png",
-      "subtitle": "Thriller"
+      "image": "images/verticals/el-reino-primera-temporada-poster-280x420.png",
+      "release_date": "13/08/2021",
+      "subtitle": "Thriller",
+      "temporadas": [
+        {
+          "numero": 1,
+          "release_date": "13/08/2021",
+          "image": "images/verticals/el-reino-primera-temporada-poster-280x420.png"
+        },
+        {
+          "numero": 2,
+          "release_date": "22/03/2023",
+          "image": "images/verticals/el-reino-segunda-temporada-poster-280x420.png"
+        }
+      ]
     },
     {
       "id": "V207",
