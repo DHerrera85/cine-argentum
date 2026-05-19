@@ -1,4 +1,4 @@
-/* Uniformidad y centrado de logos de canales/plataformas en cards */
+﻿/* Uniformidad y centrado de logos de canales/plataformas en cards */
 .canal-box {
   display: flex !important;
   flex-direction: column;
@@ -20,7 +20,7 @@
   display: block;
   margin: 0 auto;
 }
-/* Logos de canales: tamaño y centrado uniforme */
+/* Logos de canales: tamaÃ±o y centrado uniforme */
 .logo-canal {
   width: 120px;
   height: 120px;
@@ -102,7 +102,7 @@ nav{
 }
 .search i{ color:#3a3a3a; }
 
-/* Menú desktop */
+/* MenÃº desktop */
 nav .menu{ display:flex; }
 nav .menu li a{
   display:flex; align-items:center; height:40px;
@@ -137,7 +137,7 @@ nav .menu li a:hover{
 
 /* ========== SECTIONS ========== */
 #main{ padding-top:90px; background:#141a21; }
-#latest{ background:#141a21; }
+#latest{ background:#141a21; padding-left:12px; padding-right:12px; }
 
 .showcase-heading,
 .latest-heading,
@@ -146,7 +146,7 @@ nav .menu li a:hover{
   letter-spacing:0.6px; color:#f0f0f0; margin:28px 18px 10px; padding:0;
 }
 
-/* Reducir espaciado entre galerías consecutivas (V → H o H → V) */
+/* Reducir espaciado entre galerÃ­as consecutivas (V â†’ H o H â†’ V) */
 #latest + #main,
 #main + #latest{
   padding-top:8px;
@@ -189,7 +189,7 @@ nav .menu li a:hover{
 .slider-h .showcase-box img{
   width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; display:block;
 }
-/* Ajustes para centrar las imágenes en los sliders */
+/* Ajustes para centrar las imÃ¡genes en los sliders */
 
 .slider-h .latest-b-text{
   display:block;
@@ -204,7 +204,7 @@ nav .menu li a:hover{
 
 /* ========== SLIDER VERTICALES (Desktop: lightSlider controla) ========== */
 
-/* VERTICALES: 5 pósters completos (20% cada uno, margen incluido) en escritorio */
+/* VERTICALES: 5 pÃ³sters completos (20% cada uno, margen incluido) en escritorio */
 .slider-v .latest-box {
   width: 220px;
   max-width: 220px;
@@ -234,7 +234,7 @@ nav .menu li a:hover{
   border-radius: 12px;
 }
 .slider-v .latest-b-text{
-/* Ajustes para centrar las imágenes en los sliders */
+/* Ajustes para centrar las imÃ¡genes en los sliders */
 
   padding:12px; text-align:center; width:100%;
   background:#1a2129;
@@ -256,7 +256,7 @@ nav .menu li a:hover{
   position:relative;
   border-radius:12px;
 }
-/* Ajustes para centrar las imágenes en los sliders */
+/* Ajustes para centrar las imÃ¡genes en los sliders */
 
 .slider-v.top10 .latest-b-img img{
   object-position:center top; /* Cambio: priorizar la parte superior */
@@ -267,7 +267,7 @@ nav .menu li a:hover{
   border-radius:0 0 12px 12px;
 }
 
-/* Número en esquina superior izquierda */
+/* NÃºmero en esquina superior izquierda */
 .slider-v.top10 .latest-box::before{
   content: attr(data-rank);
   position:absolute;
@@ -465,7 +465,7 @@ footer p{ color:#b0b0b0; margin:0; font-size:.9rem; }
 @media (max-width:1100px){
   nav{ justify-content:space-between; padding:10px 15px; }
   
-  /* Menú móvil desplegable */
+  /* MenÃº mÃ³vil desplegable */
   nav .menu{
     display:none; position:absolute;
     top:calc(100% + 2px); left:0; right:0;
@@ -482,7 +482,7 @@ footer p{ color:#b0b0b0; margin:0; font-size:.9rem; }
   .logo img{ max-height:50px !important; }
 }
 
-/* ========== RESPONSIVE: MÓVIL (< 768px) ========== */
+/* ========== RESPONSIVE: MÃ“VIL (< 768px) ========== */
 @media (max-width:768px){
   nav{
     display:grid !important;
@@ -492,7 +492,7 @@ footer p{ color:#b0b0b0; margin:0; font-size:.9rem; }
   .logo img{ max-height:36px !important; }
   .search{ height:40px; max-width:none; }
   
-  /* Ajustar márgenes de headings en móvil para alineación correcta */
+  /* Ajustar mÃ¡rgenes de headings en mÃ³vil para alineaciÃ³n correcta */
   .showcase-heading,
   .latest-heading,
   .section-heading {
@@ -508,9 +508,13 @@ footer p{ color:#b0b0b0; margin:0; font-size:.9rem; }
   }
   
 
-  /* VERTICALES: 2 pósters completos (47% cada uno) en tablet, sin cambios */
+  /* VERTICALES: 2 posters completos con margen lateral balanceado */
+  #latest{
+    padding-left:8px;
+    padding-right:8px;
+  }
   .slider-v .latest-box {
-    width: 44vw;
+    width: 42vw;
     max-width: 200px;
     margin: 9px 4px;
   }
@@ -523,7 +527,7 @@ footer p{ color:#b0b0b0; margin:0; font-size:.9rem; }
     border-radius: 12px;
   }
   
-  /* TOP 10 MÓVIL: 2 pósters con números en esquina superior */
+  /* TOP 10 MÃ“VIL: 2 pÃ³sters con nÃºmeros en esquina superior */
   .slider-v.top10 .latest-box{
     width:42vw;
     min-width:150px;
@@ -540,7 +544,7 @@ footer p{ color:#b0b0b0; margin:0; font-size:.9rem; }
     border-radius:12px;
   }
   
-  /* ACTORES MÓVIL: 3 círculos visibles, tamaño aumentado */
+  /* ACTORES MÃ“VIL: 3 cÃ­rculos visibles, tamaÃ±o aumentado */
   .slider-actors{
     min-height:140px;
     padding:20px 0 25px;
@@ -578,16 +582,16 @@ footer p{ color:#b0b0b0; margin:0; font-size:.9rem; }
     }
   }
   
-  /* Footer móvil */
+  /* Footer mÃ³vil */
   footer{
     flex-direction:column; gap:8px; padding:20px 15px; text-align:center;
   }
   footer p{ font-size:.85rem; }
 }
 
-/* ========== RESPONSIVE: MÓVIL PEQUEÑO (< 480px) ========== */
+/* ========== RESPONSIVE: MÃ“VIL PEQUEÃ‘O (< 480px) ========== */
 @media (max-width:480px){
-  /* HORIZONTALES: 1 + peek más ajustado */
+  /* HORIZONTALES: 1 + peek mÃ¡s ajustado */
   .slider-h .showcase-box{
     width:calc(88vw + 16px);
     max-width:380px;
@@ -595,7 +599,7 @@ footer p{ color:#b0b0b0; margin:0; font-size:.9rem; }
     box-sizing:border-box;
   }
   
-  /* VERTICALES: 2 pósters más compactos */
+  /* VERTICALES: 2 pÃ³sters mÃ¡s compactos */
   .slider-v .latest-box{
     width:44vw;
     min-width:150px;
@@ -611,7 +615,7 @@ footer p{ color:#b0b0b0; margin:0; font-size:.9rem; }
     border-radius:12px;
   }
   
-  /* TOP 10 MÓVIL PEQUEÑO */
+  /* TOP 10 MÃ“VIL PEQUEÃ‘O */
   .slider-v.top10 .latest-box{
     width:43vw;
     min-width:145px;
@@ -627,7 +631,7 @@ footer p{ color:#b0b0b0; margin:0; font-size:.9rem; }
     border-radius:12px;
   }
   
-  /* ACTORES MÓVIL PEQUEÑO: 3 círculos, ajuste de tamaño */
+  /* ACTORES MÃ“VIL PEQUEÃ‘O: 3 cÃ­rculos, ajuste de tamaÃ±o */
   .slider-actors{
     min-height:150px;
   }
@@ -646,7 +650,7 @@ footer p{ color:#b0b0b0; margin:0; font-size:.9rem; }
   }
 }
 
-/* ========== SLIDER GÉNEROS (Horizontal carousel like slider-h) ========== */
+/* ========== SLIDER GÃ‰NEROS (Horizontal carousel like slider-h) ========== */
 .slider-genres {
   padding: 20px 0 30px;
   margin: 0;
@@ -753,6 +757,8 @@ footer p{ color:#b0b0b0; margin:0; font-size:.9rem; }
     font-size: 0.85rem;
   }
 }
+
+
 
 
 
