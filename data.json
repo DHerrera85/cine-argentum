@@ -10285,8 +10285,21 @@
         "Candela Vetrano"
       ],
       "orientation": "vertical",
-      "image": "images/verticals/el-fin-del-amor-poster-280x420.png",
-      "subtitle": "Drama"
+      "image": "images/verticals/el-fin-del-amor-primera-temporada-poster-280x420.png",
+      "release_date": "04/11/2022",
+      "subtitle": "Drama",
+      "temporadas": [
+        {
+          "numero": 1,
+          "release_date": "04/11/2022",
+          "image": "images/verticals/el-fin-del-amor-primera-temporada-poster-280x420.png"
+        },
+        {
+          "numero": 2,
+          "release_date": "16/04/2025",
+          "image": "images/verticals/el-fin-del-amor-segunda-temporada-poster-280x420.png"
+        }
+      ]
     },
     {
       "id": "V195",
