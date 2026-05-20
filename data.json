@@ -6397,6 +6397,27 @@
       "release_date": "18/04/2026"
     },
     {
+      "id": "V299",
+      "title": "Limbo, hasta que lo Decida",
+      "year": "2022",
+      "channel": "Disney+",
+      "genre": "Drama",
+      "actors": [
+        "Clara Lago",
+        "Mike Amigorena",
+        "Esteban Pérez",
+        "Michel Noher",
+        "Andrés Gil",
+        "Andrea Frigerio"
+      ],
+      "orientation": "vertical",
+      "image": "images/verticals/limbo-poster-280x420.png",
+      "subtitle": "Drama",
+      "release_date": "28/09/2022",
+      "capitulos": 10,
+      "sinopsis": "Tras la muerte de su padre, tres hermanos deben unirse para administrar la exitosa empresa de cosmética familiar y preservar su legado. Pero las ambiciones personales y la lucha por el poder pondrán a prueba su relación y el futuro del imperio."
+    },
+    {
       "id": "h7",
       "title": "Graduados",
       "year": "2012",
@@ -8077,8 +8098,21 @@
         "Tomás Wicz"
       ],
       "orientation": "vertical",
-      "image": "images/verticals/dias-de-gallos-poster-280x420.png",
-      "subtitle": "Drama"
+      "image": "images/verticals/dias-de-gallos-primera temporada-poster-280x420.png",
+      "subtitle": "Drama",
+      "release_date": "16/09/2021",
+      "temporadas": [
+        {
+          "numero": 1,
+          "release_date": "16/09/2021",
+          "image": "images/verticals/dias-de-gallos-primera temporada-poster-280x420.png"
+        },
+        {
+          "numero": 2,
+          "release_date": "15/06/2023",
+          "image": "images/verticals/dias-de-gallos-segunda temporada-poster-280x420.png"
+        }
+      ]
     },
     {
       "id": "v113",
@@ -13451,11 +13485,29 @@
       "platforms": [
         "HBO Max"
       ],
-      "image": "images/verticals/el-jardin-de-bronce-poster-280x420.png",
+      "image": "images/verticals/el-jardin-de-bronce-primera temporada-poster-280x420.png",
       "orientation": "vertical",
+      "release_date": "25/06/2017",
       "seasons": 3,
       "producer": "Pol-ka",
-      "director": "Hernán Goldfrid"
+      "director": "Hernán Goldfrid",
+      "temporadas": [
+        {
+          "numero": 1,
+          "release_date": "25/06/2017",
+          "image": "images/verticals/el-jardin-de-bronce-primera temporada-poster-280x420.png"
+        },
+        {
+          "numero": 2,
+          "release_date": "09/06/2019",
+          "image": "images/verticals/el-jardin-de-bronce-segunda temporada-poster-280x420.png"
+        },
+        {
+          "numero": 3,
+          "release_date": "02/07/2023",
+          "image": "images/verticals/el-jardin-de-bronce-tercera temporada-poster-280x420.png"
+        }
+      ]
     }
   ]
 }
