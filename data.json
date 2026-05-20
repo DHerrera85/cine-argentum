@@ -8005,12 +8005,18 @@
         "Isabel Macedo",
         "Mora Bianchi",
         "Toti Spangenberg",
-        "Rafael Ferro"
+        "Rafael Ferro",
+        "Fran Yan",
+        "Lola Abraldes",
+        "Mateo Belmonte",
+        "Pilar Massé",
+        "Antonella Podestá"
       ],
       "orientation": "vertical",
       "image": "images/verticals/margarita-temporada-2-poster-280x420.png",
       "subtitle": "Juvenil",
       "release_date": "04/05/2026",
+      "sinopsis": "Margarita, una adolescente huérfana que desconoce su verdadero origen, descubre que es heredera del Reino de Krikoragán y de una gran fortuna familiar. Mientras su tía Delfina intenta usurpar su lugar, deberá luchar por sus sueños, recuperar su identidad y encontrar el amor.",
       "temporadas": [
         { "season": 1, "release_date": "02/09/2024", "image": "images/verticals/margarita-temporada-1-poster-280x420.png" },
         { "season": 2, "release_date": "04/05/2026", "image": "images/verticals/margarita-temporada-2-poster-280x420.png" }
@@ -10027,7 +10033,10 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/maria-marta-poster-280x420.png",
-      "subtitle": "Thriller"
+      "subtitle": "Thriller",
+      "release_date": "17/07/2022",
+      "capitulos": 8,
+      "sinopsis": "Basada en uno de los crímenes más impactantes de Argentina, la serie explora la intimidad de los involucrados en el caso María Marta. Entre sospechas, secretos y contradicciones, revive la búsqueda de respuestas sobre quién fue el asesino."
     },
     {
       "id": "V184",
@@ -10449,7 +10458,10 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/felices-los-seis-poster-280x420.png",
-      "subtitle": "Comedia"
+      "subtitle": "Comedia",
+      "release_date": "02/05/2024",
+      "capitulos": 8,
+      "sinopsis": "Damián se enamora de Carolina y sueña con formar una familia, pero descubre que ella vive una relación poliamorosa y prioriza su libertad. Mientras intentan entender sus sentimientos, ambos enfrentan celos, prejuicios y nuevos desafíos sobre el amor y las relaciones."
     },
     {
       "id": "V201",
@@ -13477,7 +13489,7 @@
         "Paola Barrientos",
         "Jazmín Stuart"
       ],
-      "synopsis": "Un padre busca a su hija desaparecida en Buenos Aires.",
+      "synopsis": "La vida de Fabián Danubio y su esposa Lila cambia para siempre cuando su hija Moira desaparece misteriosamente en el subte de Buenos Aires. Mientras los policías Raúl Mondragón y Lidia Blanco investigan el caso, la desaparición de la niñera abre nuevas sospechas y secretos.",
       "channel": "HBO Max",
       "cable_channels": [
         "HBO"
