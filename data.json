@@ -5805,6 +5805,26 @@
       "subtitle": "Comedia"
     },
     {
+      "id": "P2038",
+      "title": "Nada entre los Dos",
+      "type": "pelicula",
+      "year": "2026",
+      "genre": "Romance",
+      "actors": [
+        "Gael García Bernal",
+        "Natalia Oreiro"
+      ],
+      "synopsis": "Guillermo, un ejecutivo mexicano, y Mechi, una empleada argentina, se conocen durante una reunión corporativa en el Caribe y viven una conexión inesperada. Atrapados en matrimonios rutinarios, ambos comienzan a cuestionar sus vidas y decisiones sentimentales.",
+      "channel": "Cine",
+      "image": "images/verticals/nada-entre-los-dos-2026-poster-280x420.png",
+      "orientation": "vertical",
+      "viewers": "-",
+      "producer": "Cimarrón, Particular Crowd, Concreto Films",
+      "director": "Juan Taratuto",
+      "release_date": "21/5/2026",
+      "subtitle": "Romance"
+    },
+    {
       "id": "P2026",
       "title": "Mensaje en una Botella",
       "type": "pelicula",
