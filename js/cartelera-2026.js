@@ -95,6 +95,33 @@
     return list[0];
   }
 
+  function getBestReleaseForYears(item, years) {
+    var candidates = getReleaseCandidates(item);
+    if (!candidates.length) return null;
+
+    var normalizedYears = (years || []).map(function (y) { return String(y).trim(); });
+    var inYears = candidates.filter(function (c) {
+      return normalizedYears.indexOf(String(c.date.getFullYear())) !== -1;
+    });
+
+    var list = inYears.length ? inYears : candidates;
+    list.sort(function (a, b) { return b.date.getTime() - a.date.getTime(); });
+    return list[0];
+  }
+
+  function getSectionYears(section) {
+    var yearsAttr = section.getAttribute('data-years');
+    if (yearsAttr) {
+      return String(yearsAttr)
+        .split(',')
+        .map(function (v) { return String(v).trim(); })
+        .filter(function (v) { return v.length > 0; });
+    }
+
+    var year = section.getAttribute('data-year') || '2026';
+    return [String(year).trim()];
+  }
+
   function normalizeType(value, item) {
     var t = (value || '').toString().toLowerCase();
     if (t === 'pelicula' || t === 'movie') return 'pelicula';
@@ -107,7 +134,7 @@
   }
 
   function buildCardHtml(item, isUpcoming) {
-    var releaseLabel = item.releaseDate ? item.releaseDate : ('Proximamente ' + item.year);
+    var releaseLabel = item.releaseDate ? item.releaseDate : ('Proximamente ' + (isUpcoming ? '2027' : item.year));
     var typeLabel = item.type === 'pelicula' ? 'Pelicula' : 'Serie';
     var statusBadge = isUpcoming
       ? '<span class="cartelera-status cartelera-status-upcoming">PROXIMAMENTE</span>'
@@ -192,7 +219,9 @@
   }
 
   function mountSection(section, items) {
-    var year = section.getAttribute('data-year') || '2026';
+    var years = getSectionYears(section);
+    var primaryYear = years[0] || '2026';
+    var mode = String(section.getAttribute('data-cartelera-mode') || 'released').toLowerCase();
     var listEl = section.querySelector('ul[data-cartelera-list="all"]');
     if (!listEl) return;
 
@@ -202,14 +231,15 @@
     var filtered = items
       .filter(function (item) {
         if (!item || !item.id) return false;
-        var best = getBestReleaseForYear(item, year);
-        var yearMatch = (item.year || '').toString() === year;
-        var releaseYearMatch = best && String(best.date.getFullYear()) === year;
+        var best = getBestReleaseForYears(item, years);
+        var itemYear = (item.year || '').toString();
+        var yearMatch = years.indexOf(itemYear) !== -1;
+        var releaseYearMatch = best && years.indexOf(String(best.date.getFullYear())) !== -1;
         if (!yearMatch && !releaseYearMatch) return false;
         return normalizeType(item.type, item) === 'pelicula' || normalizeType(item.type, item) === 'serie';
       })
       .map(function (item) {
-        var best = getBestReleaseForYear(item, year);
+        var best = getBestReleaseForYears(item, years);
         var releaseDateValue = best ? best.label : '';
         var releaseDateObj = best ? best.date : null;
         var bestImage = (best && best.imageOverride && String(best.imageOverride).trim())
@@ -220,7 +250,7 @@
           title: item.title || 'Sin titulo',
           image: bestImage || ((item.image && String(item.image).trim()) ? item.image : 'images/verticals/placeholder-280x420.svg'),
           type: normalizeType(item.type, item),
-          year: year,
+          year: primaryYear,
           releaseDate: releaseDateValue,
           releaseTs: releaseDateObj ? releaseDateObj.getTime() : null
         };
@@ -235,18 +265,18 @@
       .sort(function (a, b) {
         var ta = a.releaseTs === null ? Number.MAX_SAFE_INTEGER : a.releaseTs;
         var tb = b.releaseTs === null ? Number.MAX_SAFE_INTEGER : b.releaseTs;
-        return tb - ta;
+        return ta - tb;
       });
 
-    var mixed = upcoming
-      .map(function (item) { return { item: item, upcoming: true }; })
-      .concat(released.map(function (item) { return { item: item, upcoming: false }; }));
+    var rows = mode === 'upcoming'
+      ? upcoming.map(function (item) { return { item: item, upcoming: true }; })
+      : released.map(function (item) { return { item: item, upcoming: false }; });
 
-    section._carteleraRows = mixed;
+    section._carteleraRows = rows;
 
-    listEl.innerHTML = mixed.length
-      ? mixed.map(function (row) { return buildCardHtml(row.item, row.upcoming); }).join('')
-      : '<li class="item-a"><div class="latest-box"><div class="latest-b-text"><strong>Sin titulos 2026</strong><p class="cartelera-empty">No hay titulos cargados para ' + year + '.</p></div></div></li>';
+    listEl.innerHTML = rows.length
+      ? rows.map(function (row) { return buildCardHtml(row.item, row.upcoming); }).join('')
+      : '<li class="item-a"><div class="latest-box"><div class="latest-b-text"><strong>Sin titulos</strong><p class="cartelera-empty">No hay titulos para esta seccion.</p></div></div></li>';
 
     ensureSlider(listEl);
 
@@ -267,7 +297,7 @@
     var sections = document.querySelectorAll('.cartelera-2026-section');
     if (!sections.length) return;
 
-    fetch('data.json?v=20260501-5', { cache: 'no-store' })
+    fetch('data.json?v=20260525-6', { cache: 'no-store' })
       .then(function (res) { return res.json(); })
       .then(function (data) {
         var items = (data && data.items) ? data.items : [];

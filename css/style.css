@@ -378,9 +378,29 @@ nav .menu li a:hover{
   padding-top: 92px;
 }
 
+/* Si hay dos bloques de cartelera seguidos, usar un corte corto entre ambos */
+.cartelera-2026-section + .cartelera-2026-section{
+  padding-top: 4px;
+}
+
+/* Acercar el bloque siguiente cuando termina una cartelera (ej: EN PRODUCCION -> Top 10) */
+.cartelera-2026-section + #latest{
+  padding-top: 8px;
+  margin-top: -18px;
+}
+
 @media (max-width: 1100px){
   .cartelera-2026-section{
     padding-top: 86px;
+  }
+
+  .cartelera-2026-section + .cartelera-2026-section{
+    padding-top: 4px;
+  }
+
+  .cartelera-2026-section + #latest{
+    padding-top: 8px;
+    margin-top: -18px;
   }
 }
 

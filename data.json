@@ -9671,6 +9671,14 @@
           "release_date": "30/04/2026",
           "image": "images/verticals/el-encargado-temporada-4-poster-280x420.png"
         }
+      ],
+      "producciones_relacionadas": [
+        {
+          "id": "v300",
+          "title": "Zambrano",
+          "meta": "Spin-off",
+          "image": "images/verticals/zambrano-poster-280x420.png"
+        }
       ]
     },
     {
