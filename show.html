@@ -403,7 +403,10 @@
           }
         });
 
-        var canalAireRow = airValues.length ? '<dt>Canal de aire</dt><dd>' + airValues.join(', ') + '</dd>' : '';
+        var itemType = String(item.type || '').toLowerCase().trim();
+        var onlyCineAir = airValues.length === 1 && String(airValues[0] || '').toLowerCase().trim() === 'cine';
+        var hideCanalAire = itemType === 'pelicula' && onlyCineAir;
+        var canalAireRow = (!hideCanalAire && airValues.length) ? '<dt>Canal de aire</dt><dd>' + airValues.join(', ') + '</dd>' : '';
         var canalCableRow = cableValues.length ? '<dt>Canal de cable</dt><dd>' + cableValues.join(', ') + '</dd>' : '';
         var plataformaRow = plataformaValues.length ? '<dt>Plataforma</dt><dd>' + plataformaValues.join(', ') + '</dd>' : '';
         var remakesSection = '';
