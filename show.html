@@ -43,7 +43,7 @@
     .remake-meta { font-size: 0.92rem; color: #5b616d; white-space: normal; line-height: 1.25; }
     .related-section { margin: 12px 0 6px; }
     .related-title { font-size: 1.02rem; font-weight: 700; color: #2a2f38; margin: 0 0 10px; }
-    .related-grid { display: grid; grid-template-columns: repeat(1, 1fr); gap: 16px; }
+    .related-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
     .synopsis { max-width:100%; word-wrap: break-word; overflow-wrap: anywhere; word-break: break-word; display:block; }
     .temporadas-section { margin: 12px 0 6px; }
     .temporadas-title { font-size: 1.02rem; font-weight: 700; color: #2a2f38; margin: 0 0 10px; }
@@ -64,6 +64,7 @@
     @media (max-width: 900px) {
       .extra-sections { grid-template-columns: repeat(2, max-content); gap: 12px; justify-content: start; }
       .remakes-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+      .related-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
       .temporadas-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
       .extra-sections .remakes-grid,
       .extra-sections .related-grid { grid-template-columns: 1fr; gap: 12px; }

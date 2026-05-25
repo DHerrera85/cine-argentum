@@ -6438,6 +6438,30 @@
       "sinopsis": "Tras la muerte de su padre, tres hermanos deben unirse para administrar la exitosa empresa de cosmética familiar y preservar su legado. Pero las ambiciones personales y la lucha por el poder pondrán a prueba su relación y el futuro del imperio."
     },
     {
+      "id": "v300",
+      "title": "Zambrano",
+      "year": "2027",
+      "channel": "Disney+",
+      "genre": "Comedia",
+      "actors": [
+        "Gabriel Goity"
+      ],
+      "orientation": "vertical",
+      "image": "images/verticals/zambrano-poster-280x420.png",
+      "subtitle": "Comedia",
+      "release_date": "-",
+      "capitulos": "-",
+      "sinopsis": "Zambrano es un exitoso abogado penalista cuya brillante carrera contrasta con el fracaso de su vida familiar. La serie explora el mundo del poder judicial y las contradicciones personales de un hombre ambivalente.",
+      "producciones_relacionadas": [
+        {
+          "id": "V171",
+          "title": "El Encargado",
+          "meta": "Serie original · Zambrano es spin-off",
+          "image": "images/verticals/el-encargado-temporada-4-poster-280x420.png"
+        }
+      ]
+    },
+    {
       "id": "h7",
       "title": "Graduados",
       "year": "2012",
