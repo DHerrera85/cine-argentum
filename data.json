@@ -6462,6 +6462,27 @@
       ]
     },
     {
+      "id": "v301",
+      "title": "Crimen Desorganizado",
+      "year": "2027",
+      "channel": "Netflix",
+      "genre": "Thriller",
+      "actors": [
+        "Celeste Cid",
+        "Marco Antonio Caponi",
+        "Matías Mayer",
+        "Benjamín Amadeo",
+        "Miguel Ángel Rodríguez",
+        "Soledad Silveyra"
+      ],
+      "orientation": "vertical",
+      "image": "images/verticals/crimen-desorganizado-poster-280x420.png",
+      "subtitle": "Thriller",
+      "release_date": "-",
+      "capitulos": "-",
+      "sinopsis": "Un grupo de ladrones, desconocidos entre sí, roba un banco y se reúne en una casa para cobrar su botín. Cuando descubren que el dinero ha desaparecido y quienes los contrataron lo buscan, comienza el verdadero juego de engaños y traiciones."
+    },
+    {
       "id": "h7",
       "title": "Graduados",
       "year": "2012",

@@ -1,5 +1,5 @@
 // js/netflix.js: Logica para filtrar y mostrar series y peliculas de Netflix
-const netflixDataVersion = '20260507-1';
+const netflixDataVersion = '20260525-2';
 
 function normalizeNumber(value) {
   if (value === null || value === undefined || String(value).trim() === '') return null;
@@ -268,7 +268,7 @@ function sortAndFilterMovies(list, sort) {
 function setupSeriesFilters(allSeries) {
   const select = document.getElementById('actorSortCustom');
   if (!select) return;
-  let currentSort = 'netflix-views-desc';
+  let currentSort = 'year';
 
   function renderFiltered() {
     const filtered = sortAndFilterSeries(allSeries, currentSort);
