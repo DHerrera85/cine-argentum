@@ -110,6 +110,68 @@ function metricValue(item) {
   return n === null ? -1 : n;
 }
 
+function parseReleaseDateValue(value) {
+  if (!value) return null;
+
+  const raw = String(value).trim();
+  if (!raw) return null;
+
+  const isoMatch = raw.match(/^(\d{4})-(\d{2})-(\d{2})$/);
+  if (isoMatch) {
+    const isoDate = Date.parse(`${isoMatch[1]}-${isoMatch[2]}-${isoMatch[3]}T00:00:00Z`);
+    return Number.isNaN(isoDate) ? null : isoDate;
+  }
+
+  const localMatch = raw.match(/^(\d{1,2})\/(\d{1,2})\/(\d{4})$/);
+  if (localMatch) {
+    const day = Number(localMatch[1]);
+    const month = Number(localMatch[2]) - 1;
+    const year = Number(localMatch[3]);
+    const localDate = Date.UTC(year, month, day);
+    return Number.isNaN(localDate) ? null : localDate;
+  }
+
+  return null;
+}
+
+function getSeriesLatestReleaseValue(item) {
+  const timestamps = [];
+  const pushTimestamp = (value) => {
+    const parsed = parseReleaseDateValue(value);
+    if (parsed !== null) timestamps.push(parsed);
+  };
+
+  pushTimestamp(item.release_date);
+  pushTimestamp(item.fecha_estreno);
+
+  if (Array.isArray(item.temporadas)) {
+    item.temporadas.forEach((temp) => {
+      if (!temp) return;
+      pushTimestamp(temp.release_date);
+      pushTimestamp(temp.fecha_estreno);
+    });
+  }
+
+  if (timestamps.length) {
+    return Math.max(...timestamps);
+  }
+
+  const fallbackYear = parseInt(item.year, 10);
+  return Number.isFinite(fallbackYear) ? Date.UTC(fallbackYear, 0, 1) : 0;
+}
+
+function compareSeriesByLatestReleaseDesc(a, b) {
+  const diff = getSeriesLatestReleaseValue(b) - getSeriesLatestReleaseValue(a);
+  if (diff !== 0) return diff;
+  return String(a.title || '').localeCompare(String(b.title || ''), 'es');
+}
+
+function compareSeriesByLatestReleaseAsc(a, b) {
+  const diff = getSeriesLatestReleaseValue(a) - getSeriesLatestReleaseValue(b);
+  if (diff !== 0) return diff;
+  return String(a.title || '').localeCompare(String(b.title || ''), 'es');
+}
+
 fetch('data.json?v=' + netflixDataVersion, { cache: 'no-store' })
   .then(response => response.json())
   .then(data => {
@@ -211,30 +273,30 @@ function sortAndFilterSeries(list, sort) {
     filtered.sort((a, b) => {
       const diff = metricValue(b) - metricValue(a);
       if (diff !== 0) return diff;
-      return (parseInt(b.year, 10) || 0) - (parseInt(a.year, 10) || 0);
+      return compareSeriesByLatestReleaseDesc(a, b);
     });
   } else if (sort === 'year') {
-    filtered.sort((a, b) => (parseInt(b.year, 10) || 0) - (parseInt(a.year, 10) || 0));
+    filtered.sort(compareSeriesByLatestReleaseDesc);
   } else if (sort === 'year-asc') {
-    filtered.sort((a, b) => (parseInt(a.year, 10) || 0) - (parseInt(b.year, 10) || 0));
+    filtered.sort(compareSeriesByLatestReleaseAsc);
   } else if (sort === 'comedias') {
     filtered = filtered.filter(item => item.genre === 'comedia');
-    filtered.sort((a, b) => (parseInt(b.year, 10) || 0) - (parseInt(a.year, 10) || 0));
+    filtered.sort(compareSeriesByLatestReleaseDesc);
   } else if (sort === 'telenovelas') {
     filtered = filtered.filter(item => item.genre === 'telenovela');
-    filtered.sort((a, b) => (parseInt(b.year, 10) || 0) - (parseInt(a.year, 10) || 0));
+    filtered.sort(compareSeriesByLatestReleaseDesc);
   } else if (sort === 'juveniles') {
     filtered = filtered.filter(item => item.genre === 'juvenil');
-    filtered.sort((a, b) => (parseInt(b.year, 10) || 0) - (parseInt(a.year, 10) || 0));
+    filtered.sort(compareSeriesByLatestReleaseDesc);
   } else if (sort === 'sitcoms') {
     filtered = filtered.filter(item => item.genre === 'sitcom');
-    filtered.sort((a, b) => (parseInt(b.year, 10) || 0) - (parseInt(a.year, 10) || 0));
+    filtered.sort(compareSeriesByLatestReleaseDesc);
   } else if (sort === 'policiales') {
     filtered = filtered.filter(item => item.genre === 'thriller' || item.genre === 'policial');
-    filtered.sort((a, b) => (parseInt(b.year, 10) || 0) - (parseInt(a.year, 10) || 0));
+    filtered.sort(compareSeriesByLatestReleaseDesc);
   } else if (sort === 'unitarios') {
     filtered = filtered.filter(item => item.genre === 'drama' || (item.tipo_emision && item.tipo_emision.toLowerCase().includes('unitario')));
-    filtered.sort((a, b) => (parseInt(b.year, 10) || 0) - (parseInt(a.year, 10) || 0));
+    filtered.sort(compareSeriesByLatestReleaseDesc);
   }
 
   filtered = filtered.map(item => ({ ...item, genre: displayGenre(item.genre) }));

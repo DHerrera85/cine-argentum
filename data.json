@@ -8103,6 +8103,9 @@
       "image": "images/verticals/cielo-grande-primera temporada-poster-280x420.png",
       "subtitle": "Juvenil",
       "release_date": "16/02/2022",
+      "capitulos": 19,
+      "sinopsis": "Un remoto resort de Argentina reinstaura una competición de wakeboarding que atrae la atención de Steffi, deportista mexicana decidida a descubrir un secreto familiar.",
+      "creador": "Jorge Edelstein",
       "temporadas": [
         {
           "numero": 1,
@@ -9582,6 +9585,8 @@
       "image": "images/verticals/envidiosa-temporada-4-poster-280x420.png",
       "release_date": "18/09/2024",
       "subtitle": "Comedia",
+      "capitulos": 43,
+      "sinopsis": "Después de una ruptura muy dolorosa, Vicky, con cerca de 40 años, busca un nuevo amor. No sabe que lo que la espera es un profundo y divertido proceso de autodescubrimiento.",
       "temporadas": [
         {
           "numero": 1,
@@ -9716,6 +9721,9 @@
       "image": "images/verticals/casi-feliz-primera-temporada-poster-280x420.png",
       "release_date": "01/05/2020",
       "subtitle": "Comedia",
+      "capitulos": 14,
+      "sinopsis": "Sebastián es un conductor de radio de discreta fama que intenta orientarse en el mundo al tiempo que se ocupa de su exesposa (de quien sigue enamorado) y sus dos hijos.",
+      "productora": "Hernán Guerschuny",
       "temporadas": [
         {
           "numero": 1,
@@ -9829,6 +9837,9 @@
       "image": "images/verticals/division-palermo-primera-temporada-poster-280x420.png",
       "release_date": "17/02/2023",
       "subtitle": "Comedia",
+      "capitulos": 14,
+      "sinopsis": "Una Guardia Urbana inclusiva creada como estrategia de marketing para mejorar la imagen policial termina involucrada en una peligrosa investigación. Al descubrir secretos que no debía, el grupo se enfrenta a una extraña organización narco.",
+      "creador": "Santiago Korovsky",
       "temporadas": [
         {
           "numero": 1,
@@ -10053,6 +10064,10 @@
       "orientation": "vertical",
       "image": "images/verticals/puerta-7-poster-280x420.png",
       "subtitle": "Thriller",
+      "release_date": "21/02/2020",
+      "capitulos": 8,
+      "sinopsis": "Una mujer con una férrea determinación trabaja para librar al fútbol de la violencia y la corrupción que rodean a las barras bravas argentinas.",
+      "creador": "Martin Zimmerman",
       "temporadas": [
         {
           "numero": 1,
@@ -10173,6 +10188,10 @@
       "orientation": "vertical",
       "image": "images/verticals/atrapados-poster-280x420.png",
       "subtitle": "Thriller",
+      "release_date": "26/03/2025",
+      "capitulos": 6,
+      "sinopsis": "La reportera Ema Garay, famosa por atrapar a criminales, se enfrenta a un dilema cuando el sospechoso de la desaparición de una joven resulta ser alguien cercano a ella.",
+      "creador": "Harlan Coben",
       "temporadas": [
         {
           "numero": 1,
@@ -10214,6 +10233,9 @@
       "image": "images/verticals/en-el-barro-temporada-2-poster-280x420.png",
       "subtitle": "Thriller",
       "release_date": "14/08/2025",
+      "capitulos": 8,
+      "sinopsis": "Cinco presas forjan un vínculo único tras un accidente mortal, pero la corrupción y las luchas de poder de la cárcel amenazan con separarlas.",
+      "creador": "Sebastián Ortega",
       "temporadas": [
         {
           "numero": 1,
@@ -10243,6 +10265,14 @@
           "visualizaciones_totales": 16300000,
           "temporada_mas_vista": 1,
           "visualizaciones_temporada_mas_vista": 16300000
+        }
+      ],
+      "producciones_relacionadas": [
+        {
+          "id": "V180",
+          "title": "El Marginal",
+          "meta": "Serie original",
+          "image": "images/verticals/el-marginal-temporada-1-poster-280x420.png"
         }
       ]
     },
@@ -10281,6 +10311,9 @@
       "orientation": "vertical",
       "image": "images/verticals/el-eternauta-poster-280x420.png",
       "subtitle": "Drama",
+      "release_date": "30/04/2025",
+      "capitulos": 6,
+      "sinopsis": "Una noche de verano en Buenos Aires, una misteriosa nevada mortal acaba con la mayor parte de la población y deja aisladas a miles de personas.",
       "temporadas": [
         {
           "numero": 1,
@@ -10350,6 +10383,10 @@
       "orientation": "vertical",
       "image": "images/verticals/edha-poster-280x420.png",
       "subtitle": "Thriller",
+      "release_date": "16/03/2018",
+      "capitulos": 10,
+      "sinopsis": "La vida de una exitosa diseñadora y madre soltera da un vuelco cuando conoce a un hombre misterioso. Una mezcla de venganza, pasión y oscuros secretos se avecina.",
+      "productora": "Daniel Burman",
       "temporadas": [
         {
           "numero": 1,
@@ -10432,6 +10469,10 @@
       "orientation": "vertical",
       "image": "images/verticals/las-maldiciones-poster-280x420.png",
       "subtitle": "Thriller",
+      "release_date": "12/09/2025",
+      "capitulos": 3,
+      "sinopsis": "La hija de un gobernador desaparece en un momento clave para su carrera. Entre la ambición y los secretos familiares, debe elegir: la política o la seguridad de su hija.",
+      "creador": "Daniel Burman",
       "temporadas": [
         {
           "numero": 1,
@@ -10611,7 +10652,11 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/el-amor-despues-del-amor-poster-280x420.png",
+      "release_date": "26/04/2023",
       "subtitle": "Drama",
+      "capitulos": 8,
+      "sinopsis": "La serie retrata la intensa vida y carrera de Fito Páez, desde sus inicios musicales en Rosario hasta convertirse en una figura clave del rock en español. A lo largo de su camino enfrenta profundas pérdidas familiares, amores y los desafíos de la fama.",
+      "creador": "Juan Matias Carballo",
       "temporadas": [
         {
           "numero": 1,
@@ -10652,6 +10697,9 @@
       "image": "images/verticals/el-reino-primera-temporada-poster-280x420.png",
       "release_date": "13/08/2021",
       "subtitle": "Thriller",
+      "capitulos": 14,
+      "sinopsis": "Tras el asesinato de su compañero de fórmula en plena campaña, el pastor Emilio Vázquez Pena queda en el centro de la escena política argentina. Mientras asciende al poder, comienzan a revelarse los secretos y conspiraciones detrás del crimen.",
+      "creador": "Claudia Piñeiro, Marcelo Piñeyro",
       "temporadas": [
         {
           "numero": 1,
@@ -10745,6 +10793,11 @@
       "orientation": "vertical",
       "image": "images/verticals/apache-poster-280x420.png",
       "subtitle": "Drama",
+      "release_date": "16/08/2019",
+      "capitulos": 8,
+      "sinopsis": "Narra la vida del jugador de fútbol Carlos Tévez, desde su infancia hasta alcanzar la fama con Boca Juniors.",
+      "rating": "8,2",
+      "productora": "Adrián Caetano",
       "temporadas": [
         {
           "numero": 1,
@@ -12598,7 +12651,10 @@
       "orientation": "vertical",
       "image": "images/verticals/el-tiempo-de-las-moscas-poster-280x420.png",
       "subtitle": "Thriller",
-      "release_date": "01/01/2026"
+      "release_date": "01/01/2026",
+      "capitulos": 6,
+      "sinopsis": "Recién salidas de la cárcel, dos mujeres con opciones limitadas dirigen una empresa de fumigación. Hasta que una clienta muy turbia les hace una oferta que no pueden rechazar.",
+      "creador": "Claudia Piñeiro"
     },
     {
       "id": "v32",
