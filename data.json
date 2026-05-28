@@ -5715,7 +5715,7 @@
       "image": "images/verticals/parque-lezama-2026-poster-280x420.png",
       "orientation": "vertical",
       "viewers": "-",
-      "producer": "100 Bares",
+      "producer": "Netflix",
       "director": "Juan José Campanella",
       "release_date": "19/2/2026",
       "subtitle": "Drama"
@@ -5758,7 +5758,7 @@
       "image": "images/verticals/el-ultimo-gigante-2026-poster-280x420.png",
       "orientation": "vertical",
       "viewers": "-",
-      "producer": "Leyenda Films, Kuarzo International Films",
+      "producer": "Netflix",
       "director": "Marcos Carnevale",
       "release_date": "01/04/2026",
       "subtitle": "Drama"
@@ -8154,11 +8154,30 @@
         "Caro Domenech",
         "El Purre",
         "Elena Roger",
-        "Kevsho"
+        "Kevsho",
+        "Benjamín Amadeo",
+        "Clara Alonso",
+        "Manuela Menéndez"
       ],
       "orientation": "vertical",
-      "image": "images/verticals/entrelazados-poster-280x420.png",
-      "subtitle": "Juvenil"
+      "image": "images/verticals/entrelazados-primera-temporada-poster-280x420.png",
+      "subtitle": "Juvenil",
+      "release_date": "12/11/2021",
+      "capitulos": 17,
+      "sinopsis": "Allegra sueña con ingresar a la compañía musical Eleven O'clock, pero su madre Caterina se opone rotundamente. Todo cambia cuando un brazalete mágico la transporta a 1994, donde descubre el pasado de su familia e intenta cambiar su destino.",
+      "productora": "Pampa Films, Gloriamundi Producciones",
+      "temporadas": [
+        {
+          "numero": 1,
+          "release_date": "12/11/2021",
+          "image": "images/verticals/entrelazados-primera-temporada-poster-280x420.png"
+        },
+        {
+          "numero": 2,
+          "release_date": "24/05/2023",
+          "image": "images/verticals/entrelazados-segunda-temporada-poster-280x420.png"
+        }
+      ]
     },
     {
       "id": "v112",
@@ -8340,8 +8359,24 @@
         "Carla Pandolfi"
       ],
       "orientation": "vertical",
-      "image": "images/verticals/tierra-incognita-poster-280x420.png",
-      "subtitle": "Drama"
+      "image": "images/verticals/tierra-incognita-primera-temporada-poster-280x420.png",
+      "subtitle": "Drama",
+      "release_date": "8/9/2022",
+      "capitulos": 16,
+      "sinopsis": "Eric regresa a Cabo Qwert para resolver el misterio de la desaparición de sus padres. Al volver a este pueblo, se encontrará con amigos y enemigos y tendrá que desvelar los misterios del parque de atracciones de terror que hay en el pueblo.",
+      "productora": "Non Stop",
+      "temporadas": [
+        {
+          "numero": 1,
+          "release_date": "08/09/2022",
+          "image": "images/verticals/tierra-incognita-primera-temporada-poster-280x420.png"
+        },
+        {
+          "numero": 2,
+          "release_date": "13/12/2023",
+          "image": "images/verticals/tierra-incognita-segunda-temporada-poster-280x420.png"
+        }
+      ]
     },
     {
       "id": "v120",
