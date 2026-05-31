@@ -5825,6 +5825,26 @@
       "subtitle": "Romance"
     },
     {
+      "id": "P2039",
+      "title": "Lo Dejamos Acá",
+      "type": "pelicula",
+      "year": "2026",
+      "genre": "Drama",
+      "actors": [
+        "Ricardo Darín",
+        "Diego Peretti"
+      ],
+      "synopsis": "Un psicoanalista pragmático pierde la fe en los métodos tradicionales y comienza a sobrepasar los límites con sus pacientes. Todo parece funcionar hasta que un escritor con un bloqueo creativo llega a su consulta.",
+      "channel": "Netflix",
+      "image": "images/verticals/lo-dejamos-aca-poster-280x420.png",
+      "orientation": "vertical",
+      "viewers": "-",
+      "producer": "Netflix",
+      "director": "Hernán Goldfrid",
+      "release_date": "31/12/2026",
+      "subtitle": "Drama"
+    },
+    {
       "id": "P2026",
       "title": "Mensaje en una Botella",
       "type": "pelicula",
@@ -6481,6 +6501,109 @@
       "release_date": "-",
       "capitulos": "-",
       "sinopsis": "Un grupo de ladrones, desconocidos entre sí, roba un banco y se reúne en una casa para cobrar su botín. Cuando descubren que el dinero ha desaparecido y quienes los contrataron lo buscan, comienza el verdadero juego de engaños y traiciones."
+    },
+    {
+      "id": "V302",
+      "title": "Moria",
+      "year": "2026",
+      "channel": "Netflix",
+      "genre": "Drama",
+      "actors": [],
+      "orientation": "vertical",
+      "image": "images/verticals/moria-poster-280x420.png",
+      "subtitle": "Drama",
+      "release_date": "14/08/2026"
+    },
+    {
+      "id": "V303",
+      "title": "Gordon",
+      "year": "2026",
+      "channel": "Netflix",
+      "genre": "Drama",
+      "actors": [],
+      "orientation": "vertical",
+      "image": "images/verticals/gordon-poster-280x420.png",
+      "subtitle": "Drama",
+      "release_date": "-"
+    },
+    {
+      "id": "V304",
+      "title": "Mis Muertos Tristes",
+      "year": "2026",
+      "channel": "Netflix",
+      "genre": "Drama",
+      "actors": [
+        "Mercedes Morán",
+        "Dolores Fonzi"
+      ],
+      "orientation": "vertical",
+      "image": "images/verticals/mis-muertos-tristes-poster-280x420.png",
+      "subtitle": "Drama",
+      "release_date": "31/12/2026",
+      "sinopsis": "Ema ve y calma a los muertos, incluía su madre. Pero la llegada de su sobrina, con un vínculo aún más poderoso con la muerte, lo cambiará todo.",
+      "director": "Pablo Larraín"
+    },
+    {
+      "id": "V305",
+      "title": "Carísima",
+      "year": "2026",
+      "channel": "Netflix",
+      "genre": "Comedia",
+      "actors": [
+        "Julián Kartún",
+        "Alex Pelao"
+      ],
+      "orientation": "vertical",
+      "image": "images/verticals/carisima-poster-280x420.png",
+      "subtitle": "Comedia",
+      "release_date": "20/05/2026",
+      "capitulos": 10,
+      "sinopsis": "Caro Pardíaco, una influencer llena de energía y diva a tiempo completo, lo tiene todo. Pero, en plena crisis de los treinta, cae en la trampa del amor romántico.",
+      "productora": "Olga",
+      "streaming_row": "ficciones_verticales"
+    },
+    {
+      "id": "V306",
+      "title": "Triángulo Amoroso",
+      "year": "2026",
+      "channel": "Telefe",
+      "genre": "Comedia",
+      "actors": [
+        "Wanda Nara",
+        "Maxi López",
+        "César Bordón",
+        "Georgina Barbarossa",
+        "Débora Nishimoto",
+        "Sebastián Presta",
+        "Lautaro Rodríguez",
+        "Eugenia Guerty"
+      ],
+      "orientation": "vertical",
+      "image": "images/verticals/triangulo-amoroso-poster-280x420.png",
+      "subtitle": "Comedia",
+      "release_date": "11/05/2026",
+      "capitulos": 30,
+      "sinopsis": "La historia gira en torno a Wanda y Maxi, quienes aceptan participar de una novela innovadora. Sin embargo, todo cambia cuando descubren una cláusula contractual que los obliga a besarse, generando conflictos inesperados entre ambos.",
+      "streaming_row": "ficciones_verticales"
+    },
+    {
+      "id": "V307",
+      "title": "Como Deshacerse una Estrella de Fútbol",
+      "year": "2026",
+      "channel": "Reelshort",
+      "genre": "Romance",
+      "actors": [
+        "Barbie Vélez",
+        "Lionel Ferro",
+        "Sofía \"Jujuy\" Giménez"
+      ],
+      "orientation": "vertical",
+      "image": "images/verticals/como-deshacerse-de-una-estrella-de-futbol-280x420.png",
+      "subtitle": "Romance",
+      "release_date": "08/01/2026",
+      "capitulos": 61,
+      "sinopsis": "Renata dejó atrás su vida como heredera millonaria para dedicarse a apoyar y motivar a su esposo Lucas Cardozo a convertirse en una estrella de fútbol. Pero, una pérdida dolorosa la enfrenta a una cruel realidad, el hombre que ama podría elegir a otra mujer. Ella está preparada para demostrar quién es realmente la heredera Monsegur.",
+      "streaming_row": "ficciones_verticales"
     },
     {
       "id": "h7",
@@ -9575,7 +9698,7 @@
     {
       "id": "V168",
       "title": "Viudas Negras: P*tas y Chorras",
-      "year": "2025",
+      "year": "2026",
       "channel": "Flow",
       "cable_channels": [
         "TNT"
@@ -9600,7 +9723,7 @@
         },
         {
           "numero": 2,
-          "release_date": "En Producción",
+          "release_date": "31/12/2026",
           "image": "images/verticals/viudas-negras-segunda-temporada-poster-280x420.png"
         }
       ]

@@ -1,6 +1,6 @@
 /* js/script.js */
 (function () {
-  var scriptDataVersion = '20260226-5';
+  var scriptDataVersion = '20260531-1';
   // Esperar a que el DOM esté listo
   document.addEventListener('DOMContentLoaded', function () {
     // Verificaciones básicas
@@ -97,6 +97,74 @@
         $li.append(img + text);
         $container.append($li);
       });
+    }
+
+    function parseStreamingDate(value) {
+      if (!value) return null;
+      var parts = String(value).trim().split('/');
+      if (parts.length !== 3) return null;
+
+      var day = Number(parts[0]);
+      var month = Number(parts[1]);
+      var year = Number(parts[2]);
+      if (!day || !month || !year) return null;
+
+      var date = new Date(year, month - 1, day);
+      return Number.isNaN(date.getTime()) ? null : date;
+    }
+
+    function isFiccionesVerticalesItem(item) {
+      if (!item) return false;
+      return item.streaming_row === 'ficciones_verticales';
+    }
+
+    function renderFiccionesVerticalesItems($container, items) {
+      var rowItems = items
+        .filter(isFiccionesVerticalesItem)
+        .map(function (item) {
+          return {
+            item: item,
+            releaseDate: parseStreamingDate(item.release_date || item.fecha_estreno)
+          };
+        })
+        .sort(function (a, b) {
+          var ta = a.releaseDate ? a.releaseDate.getTime() : 0;
+          var tb = b.releaseDate ? b.releaseDate.getTime() : 0;
+          return tb - ta;
+        });
+
+      var itemClasses = ['item-a', 'item-b', 'item-c', 'item-d', 'item-e', 'item-f', 'item-g'];
+
+      rowItems.forEach(function (entry, index) {
+        if (window.faConfig.filterMissingPosters && !(entry.item.image && String(entry.item.image).trim())) return;
+
+        var $li = $('<li>').addClass(itemClasses[index % itemClasses.length]);
+        var src = (entry.item.image && String(entry.item.image).trim()) ? entry.item.image : PLACEHOLDER_V;
+        var href = 'show.html?id=' + encodeURIComponent(entry.item.id || '');
+        var card = '<a href="' + href + '"><div class="latest-box"><div class="latest-b-img"><img src="' + src + '" loading="lazy" alt="' + (entry.item.title || '') + '" /></div>' +
+          '<div class="latest-b-text"><strong>' + (entry.item.title || '') + '</strong><p></p></div></div></a>';
+        $li.append(card);
+        $container.append($li);
+      });
+
+      if (window.jQuery && window.jQuery.fn && window.jQuery.fn.lightSlider) {
+        var inst = $container.data('lightSlider');
+        if (!inst) {
+          $container.lightSlider({
+            autoWidth: true,
+            slideMove: 1,
+            slideMargin: 12,
+            loop: false,
+            pager: false,
+            controls: true,
+            enableTouch: true,
+            enableDrag: true,
+            freeMove: false
+          });
+        } else if (typeof inst.refresh === 'function') {
+          inst.refresh();
+        }
+      }
     }
 
     // Buscador: mostrar resultados que solo pertenezcan a verticalItems
@@ -252,16 +320,25 @@
               if (it.orientation === 'vertical') verticalItems.push(it);
               else horizontalItems.push(it);
             });
+            var genericVerticalItems = verticalItems.filter(function (it) {
+              return !it || !it.streaming_row;
+            });
             // render horizontals into ALL .slider-h if empty
             $('.slider-h').each(function () {
               var $c = $(this);
               if ($c.data('skipAuto')) return;
               if ($c.length && $c.children().length === 0) renderHorizontalItems($c, horizontalItems);
             });
-            // render verticals into ALL .slider-v if empty
+            // render verticals into ALL .slider-v if empty, except custom rows
             $('.slider-v').each(function () {
               var $c = $(this);
-              if ($c.length && $c.children().length === 0) renderVerticalItems($c, verticalItems);
+              if ($c.data('streamingRow')) return;
+              if ($c.length && $c.children().length === 0) renderVerticalItems($c, genericVerticalItems);
+            });
+
+            $('.slider-v[data-streaming-row="ficciones_verticales"]').each(function () {
+              var $c = $(this);
+              if ($c.length && $c.children().length === 0) renderFiccionesVerticalesItems($c, verticalItems);
             });
 
             // refrescar sliders si ya están inicializados
@@ -354,7 +431,7 @@
       });
 
       // VERTICALES (genéricos - NO Top 10)
-      $('.slider-v:not(.top10)').lightSlider({
+      $('.slider-v:not(.top10):not([data-streaming-row])').lightSlider({
         item: 5,
         slideMove: 1,
         slideMargin: 12,
@@ -452,7 +529,7 @@
 
     // Exponer una utilidad para refrescar desde consola si cambiás tamaños
     window.faRefreshSliders = function () {
-      $('.js-slider-h, .js-slider-v, #autoWidth, #autoWidth2').each(function () {
+      $('.js-slider-h, .js-slider-v, .slider-v, #autoWidth, #autoWidth2').each(function () {
         var inst = $(this).data('lightSlider');
         if (inst && typeof inst.refresh === 'function') inst.refresh();
       });

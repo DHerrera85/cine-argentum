@@ -243,6 +243,11 @@ nav .menu li a:hover{
 .slider-v .latest-b-text strong{ color:#f0f0f0; font-weight:600; font-size:0.95rem; display:block; }
 .slider-v .latest-b-text p{ color:#9ca3af; margin:4px 0 0; font-size:0.85rem; }
 
+/* Ficciones Verticales: asegurar que cada card ocupe su bloque completo */
+.slider-v[data-streaming-row="ficciones_verticales"] li a {
+  display: block;
+}
+
 /* --- TOP 10 ESTILO HBO MAX --- */
 .slider-v.top10 .latest-box{
   width:200px;
