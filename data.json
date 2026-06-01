@@ -9137,7 +9137,17 @@
         "Nicolás Vázquez"
       ],
       "orientation": "vertical",
-      "image": "images/verticals/alma-pirata-poster-280x420.png",
+      "image": "images/verticals/alma-pirata-primera temporada-poster-280x420.png",
+      "temporadas": [
+        {
+          "numero": 1,
+          "image": "images/verticals/alma-pirata-primera temporada-poster-280x420.png"
+        },
+        {
+          "numero": 2,
+          "image": "images/verticals/alma-pirata-segunda-temporada-poster-280x420.png"
+        }
+      ],
       "subtitle": "Juvenil",
       "horario": "20:45hs, 19hs",
       "capitulos": 138,
