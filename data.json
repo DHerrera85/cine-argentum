@@ -5845,6 +5845,102 @@
       "subtitle": "Drama"
     },
     {
+      "id": "P2040",
+      "title": "Risa y la Cabina del Viento",
+      "type": "pelicula",
+      "year": "2026",
+      "genre": "Drama",
+      "actors": [
+        "Cazzu",
+        "Joaquín Furriel"
+      ],
+      "synopsis": "Una niña pierde a su padre en un incendio en Tierra del Fuego y descubre una cabina de teléfono que le permite hablar con los muertos.",
+      "channel": "Netflix",
+      "image": "images/verticals/risa-y-la-cabina-del-viento-poster-280x420.png",
+      "orientation": "vertical",
+      "viewers": "-",
+      "producer": "Netflix",
+      "director": "Juan Cabral",
+      "release_date": "31/12/2026",
+      "subtitle": "Drama"
+    },
+    {
+      "id": "P2041",
+      "title": "Felicidades",
+      "type": "pelicula",
+      "year": "2026",
+      "genre": "Comedia",
+      "actors": [
+        "Adrián Suar",
+        "Griselda Siciliani",
+        "Benjamín Vicuña",
+        "Mike Amigorena",
+        "Martín Garabal"
+      ],
+      "synopsis": "Un marido intenta revertir la crisis de pareja con un festejo de cumpleaños especial para su mujer. Sin embargo, lo que comienza como una velada perfecta pronto se transforma en una noche caótica.",
+      "channel": "Netflix",
+      "image": "images/verticals/felicidades-poster-280x420.png",
+      "orientation": "vertical",
+      "viewers": "-",
+      "producer": "Netflix",
+      "director": "Alex de la Iglesia",
+      "release_date": "31/12/2026",
+      "subtitle": "Comedia"
+    },
+    {
+      "id": "V309",
+      "title": "El Futuro es Nuestro",
+      "year": "2027",
+      "channel": "Netflix",
+      "genre": "Drama",
+      "actors": [
+        "Delfina Cháves",
+        "Emiliano Zurita",
+        "Enzo Vogrincic",
+        "Marleyda Soto",
+        "Marco Antonio Caponi",
+        "Fernán Mirás"
+      ],
+      "orientation": "vertical",
+      "image": "images/verticals/el-futuro-es-nuestro-poster-280x420.png",
+      "subtitle": "Drama",
+      "sinopsis": "Ambientada en el año 2047, la trama sigue a un oficial de policía que arresta a un joven predicador con la capacidad de predecir el futuro. A partir de este evento, el líder comienza a inspirar una poderosa revolución espiritual en un continente azotado por el cambio climático y un nuevo orden.",
+      "producer": "Netflix"
+    },
+    {
+      "id": "V310",
+      "title": "El Ruso",
+      "year": "2027",
+      "channel": "Netflix",
+      "genre": "Drama",
+      "actors": [
+        "Chino Darín"
+      ],
+      "orientation": "vertical",
+      "image": "images/verticals/el-ruso-poster-280x420.png",
+      "subtitle": "Drama",
+      "sinopsis": "Narra la historia de \"El Ruso\", un cantante de tango con raíces judías que es engañado por un supuesto cazatalentos y llevado durante la Segunda Guerra Mundial al corazón de la Alemania Nazi bajo una falsa oferta laboral.",
+      "producer": "Netflix"
+    },
+    {
+      "id": "V311",
+      "title": "Tiempo al Tiempo",
+      "year": "2027",
+      "channel": "Netflix",
+      "genre": "Drama",
+      "actors": [
+        "Carla Peterson",
+        "Jerónimo Bosia",
+        "Valentina Zenere",
+        "Luciano Castro"
+      ],
+      "orientation": "vertical",
+      "image": "images/verticals/tiempo-al-tiempo-poster-280x420.png",
+      "subtitle": "Drama",
+      "sinopsis": "Cuenta la historia de Bruno y Florencia, dos jóvenes de los años 90 que tienen planes para un futuro juntos pero, bajo circunstancias inexplicables, él desaparece repentinamente. 30 años más tarde, Bruno regresa intacto. Para él sólo pasaron unas horas, mientras que para Florencia, 3 décadas.",
+      "producer": "Underground"
+    },
+    {
       "id": "P2026",
       "title": "Mensaje en una Botella",
       "type": "pelicula",
@@ -6603,6 +6699,25 @@
       "release_date": "08/01/2026",
       "capitulos": 61,
       "sinopsis": "Renata dejó atrás su vida como heredera millonaria para dedicarse a apoyar y motivar a su esposo Lucas Cardozo a convertirse en una estrella de fútbol. Pero, una pérdida dolorosa la enfrenta a una cruel realidad, el hombre que ama podría elegir a otra mujer. Ella está preparada para demostrar quién es realmente la heredera Monsegur.",
+      "streaming_row": "ficciones_verticales"
+    },
+    {
+      "id": "V308",
+      "title": "Me Casé sin Ti",
+      "year": "2026",
+      "channel": "Reelshort",
+      "genre": "Romance",
+      "actors": [
+        "Nacho Di Marco",
+        "Lionel Ferro",
+        "Manuela Menéndez"
+      ],
+      "orientation": "vertical",
+      "image": "images/verticals/me-case-sin-ti-poster-280x420.png",
+      "subtitle": "Romance",
+      "release_date": "16/05/2026",
+      "capitulos": 66,
+      "sinopsis": "Martina le dio su corazón ciegamente a Andrés Brandoni durante tres años enteros, solo para que la abandonara como si no fuera nada. En su boda con alguien más, él aparece para decirle que ... ¿Ella era todo para él todo el tiempo?",
       "streaming_row": "ficciones_verticales"
     },
     {
