@@ -5888,6 +5888,53 @@
       "subtitle": "Comedia"
     },
     {
+      "id": "P2042",
+      "title": "¿Querés ser mi Hijo?",
+      "type": "pelicula",
+      "year": "2026",
+      "genre": "Romance",
+      "actors": [
+        "Wanda Nara",
+        "Jean Pierre Noher",
+        "Charo López",
+        "Agustín Bernasconi"
+      ],
+      "synopsis": "Lucía, una mujer de 40 años que descubre la infidelidad de su pareja, intenta reconstruir su vida tras regresar a su antiguo departamento. Allí conoce a Javier, un joven vecino que acepta hacerse pasar por su hijo, dando inicio a un inesperado romance marcado por la diferencia de edad.",
+      "channel": "Cine",
+      "image": "images/verticals/queres-ser-mi-hijo-2026-poster-280x420.png",
+      "orientation": "vertical",
+      "viewers": "-",
+      "producer": "Zeppelin Studios, Cimarron Cine, Film Suez, IP4, Telefe Studios",
+      "director": "Hernán Guerschuny",
+      "release_date": "31/12/2026",
+      "subtitle": "Romance"
+    },
+    {
+      "id": "P2043",
+      "title": "El Sobrino",
+      "type": "pelicula",
+      "year": "2027",
+      "genre": "Comedia",
+      "actors": [
+        "Leonardo Sbaraglia",
+        "Rita Cortese",
+        "Luisana Lopilato",
+        "Valeria Lois",
+        "Luan Adler Fuks",
+        "Vincent Macaigne",
+        "Franco Nero"
+      ],
+      "synopsis": "Sigue la historia de un pianista de renombre internacional que, en la cima de su carrera, ve tambalear su mundo al descubrir que su joven sobrino, de apenas nueve años, posee un talento musical capaz de superarlo.",
+      "channel": "Netflix",
+      "image": "images/verticals/el-sobrino-2026-poster280x420.png",
+      "orientation": "vertical",
+      "viewers": "-",
+      "producer": "Netflix",
+      "director": "Damián Szifron",
+      "release_date": "-",
+      "subtitle": "Comedia"
+    },
+    {
       "id": "V309",
       "title": "El Futuro es Nuestro",
       "year": "2027",
@@ -5939,6 +5986,29 @@
       "subtitle": "Drama",
       "sinopsis": "Cuenta la historia de Bruno y Florencia, dos jóvenes de los años 90 que tienen planes para un futuro juntos pero, bajo circunstancias inexplicables, él desaparece repentinamente. 30 años más tarde, Bruno regresa intacto. Para él sólo pasaron unas horas, mientras que para Florencia, 3 décadas.",
       "producer": "Underground"
+    },
+    {
+      "id": "V312",
+      "title": "Sanamente",
+      "year": "2026",
+      "channel": "TNT",
+      "platform": "Flow",
+      "genre": "Comedia",
+      "actors": [
+        "Camila Peralta",
+        "Esteban Lamothe",
+        "Inés Estevez",
+        "Gustavo Bassani",
+        "Juan Gil Navarro",
+        "Martín Rechimuzzi"
+      ],
+      "orientation": "vertical",
+      "image": "images/verticals/sanamente-2026-poster-280x420.png",
+      "subtitle": "Comedia",
+      "capitulos": 8,
+      "sinopsis": "Sanamente sigue a un grupo de personas con distintos problemas de salud mental que terminan conviviendo bajo un mismo techo. Juntos intentan construir una red de apoyo mientras enfrentan sus conflictos personales, los prejuicios sociales y la búsqueda de bienestar.",
+      "producer": "Adrián Suar",
+      "tipo_emision": "Serie"
     },
     {
       "id": "P2026",

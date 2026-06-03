@@ -31,7 +31,9 @@ function renderSeries(series) {
   series.forEach(item => {
     const card = document.createElement('div');
     card.className = 'actor-movie-card';
-    const tipoEmision = item.tipo_emision ? item.tipo_emision : '';
+    const tipoEmision = (item.tipo_emision || '').toString().trim().toLowerCase() === 'serie'
+      ? ''
+      : (item.tipo_emision || '');
     let imageSrc = item.image ? String(item.image).replace(/ /g, '%20') : 'images/verticals/placeholder-280x420.svg';
     if (item.id === 'V168' && Array.isArray(item.temporadas)) {
       const season1 = item.temporadas.find(t => t && Number(t.numero || t.season) === 1 && t.image);

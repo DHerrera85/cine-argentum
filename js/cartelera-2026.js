@@ -134,7 +134,10 @@
   }
 
   function buildCardHtml(item, isUpcoming) {
-    var releaseLabel = item.releaseDate ? item.releaseDate : ('Proximamente ' + (isUpcoming ? '2027' : item.year));
+    var fallbackYear = (item && item.year) ? String(item.year) : '';
+    var releaseLabel = item.releaseDate
+      ? item.releaseDate
+      : (isUpcoming ? ('Proximamente ' + (fallbackYear || '2026')) : fallbackYear);
     var typeLabel = item.type === 'pelicula' ? 'Pelicula' : 'Serie';
     var statusBadge = isUpcoming
       ? '<span class="cartelera-status cartelera-status-upcoming">PROXIMAMENTE</span>'
@@ -250,7 +253,9 @@
           title: item.title || 'Sin titulo',
           image: bestImage || ((item.image && String(item.image).trim()) ? item.image : 'images/verticals/placeholder-280x420.svg'),
           type: normalizeType(item.type, item),
-          year: primaryYear,
+          year: (item.year && String(item.year).trim())
+            ? String(item.year).trim()
+            : (best ? String(best.date.getFullYear()) : primaryYear),
           releaseDate: releaseDateValue,
           releaseTs: releaseDateObj ? releaseDateObj.getTime() : null
         };
@@ -265,7 +270,14 @@
       .sort(function (a, b) {
         var ta = a.releaseTs === null ? Number.MAX_SAFE_INTEGER : a.releaseTs;
         var tb = b.releaseTs === null ? Number.MAX_SAFE_INTEGER : b.releaseTs;
-        return ta - tb;
+        if (ta !== tb) return ta - tb;
+
+        // If both items have no exact date, sort by year to keep chronological flow.
+        var ya = Number(a.year) || Number.MAX_SAFE_INTEGER;
+        var yb = Number(b.year) || Number.MAX_SAFE_INTEGER;
+        if (ya !== yb) return ya - yb;
+
+        return String(a.title || '').localeCompare(String(b.title || ''), 'es', { sensitivity: 'base' });
       });
 
     var rows = mode === 'upcoming'
