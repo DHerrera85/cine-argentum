@@ -5935,6 +5935,30 @@
       "subtitle": "Comedia"
     },
     {
+      "id": "P2044",
+      "title": "Yo, Narciso",
+      "type": "pelicula",
+      "year": "2026",
+      "genre": "Romance",
+      "actors": [
+        "Adrián Suar",
+        "Natalia Oreiro",
+        "Moria Casán",
+        "Julieta Zylberberg",
+        "Eleonora Wexler",
+        "Sofía Morandi"
+      ],
+      "synopsis": "Rocío Flores, una profesora de sociología, se hace pasar por paciente para estudiar el narcisismo de Máximo Rey, un exitoso cirujano plástico. Lo que comienza como un experimento académico se complica cuando ambos terminan enamorándose.",
+      "channel": "Cine",
+      "image": "images/verticals/yo-narciso-poster-280x420.png",
+      "orientation": "vertical",
+      "viewers": "-",
+      "producer": "Buena Vista International",
+      "director": "Adrián Suar",
+      "release_date": "01/08/2026",
+      "subtitle": "Romance"
+    },
+    {
       "id": "V309",
       "title": "El Futuro es Nuestro",
       "year": "2027",
@@ -6008,6 +6032,57 @@
       "capitulos": 8,
       "sinopsis": "Sanamente sigue a un grupo de personas con distintos problemas de salud mental que terminan conviviendo bajo un mismo techo. Juntos intentan construir una red de apoyo mientras enfrentan sus conflictos personales, los prejuicios sociales y la búsqueda de bienestar.",
       "producer": "Adrián Suar",
+      "tipo_emision": "Serie"
+    },
+    {
+      "id": "V313",
+      "title": "Nadie Dice Nada",
+      "year": "2026",
+      "channel": "Disney+",
+      "platform": "Disney+",
+      "genre": "Comedia",
+      "actors": [
+        "Nico Occhiato",
+        "Flor Jazmín Peña",
+        "Momi Giardina",
+        "Santi Talledo",
+        "Martín Garabal"
+      ],
+      "orientation": "vertical",
+      "image": "images/verticals/nadie-dice-nada-2026-poster280x420.png",
+      "subtitle": "Comedia",
+      "capitulos": 8,
+      "sinopsis": "Próximamente",
+      "producer": "Luzu",
+      "release_date": "31/12/2026",
+      "tipo_emision": "Serie"
+    },
+    {
+      "id": "V314",
+      "title": "Cautiva",
+      "year": "2026",
+      "channel": "TNT",
+      "platform": "Flow",
+      "genre": "Policial",
+      "actors": [
+        "Carolina Kopelioff",
+        "Lorena Vega",
+        "Rita Cortese",
+        "Julieta Zylberberg",
+        "Valeria Lois",
+        "Tomás Wicz",
+        "Justina Bustos",
+        "Luis Ziembrowski",
+        "Evitta Luna"
+      ],
+      "orientation": "vertical",
+      "image": "images/verticals/cautiva-2026-poster-280x420.png",
+      "subtitle": "Policial",
+      "capitulos": 8,
+      "sinopsis": "Clara ingresa a un convento de clausura sin imaginar que quedará sometida al régimen abusivo y cruel impuesto por la madre superiora Cecilia. Quince años después logra escapar y emprende una difícil reconstrucción personal mientras lucha por obtener justicia.",
+      "producer": "TNT / Flow",
+      "director": "Paula Hernández y Jazmín Stuart",
+      "release_date": "01/09/2026",
       "tipo_emision": "Serie"
     },
     {
