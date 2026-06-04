@@ -1,5 +1,5 @@
 // js/disney+.js: Lógica para filtrar y mostrar series de Disney+
-const disneyDataVersion = '20260219-1';
+const disneyDataVersion = '20260604-2';
 
 fetch('data.json?v=' + disneyDataVersion, { cache: 'no-store' })
   .then(response => response.json())
@@ -21,14 +21,15 @@ function renderSeries(series) {
   series.forEach(item => {
     const card = document.createElement('div');
     card.className = 'actor-movie-card';
-    const tipoEmision = item.tipo_emision ? item.tipo_emision : '';
+    const rawTipoEmision = item.tipo_emision ? String(item.tipo_emision).trim() : '';
+    const tipoEmision = rawTipoEmision.toLowerCase() === 'serie' ? '' : rawTipoEmision;
     card.innerHTML = `
       <a href="show.html?id=${item.id}">
         <img src="${item.image}" alt="${item.title}">
         <div class="actor-movie-info">
           <div class="actor-movie-title">${item.title}</div>
           <div class="actor-movie-meta">${item.year} · ${item.genre || ''}</div>
-          <div class="actor-movie-meta" style="color:#b0b0b0;">${tipoEmision}</div>
+          ${tipoEmision ? `<div class="actor-movie-meta" style="color:#b0b0b0;">${tipoEmision}</div>` : ''}
         </div>
       </a>
     `;

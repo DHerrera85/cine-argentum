@@ -6086,6 +6086,39 @@
       "tipo_emision": "Serie"
     },
     {
+      "id": "V315",
+      "title": "Soy Luna: Volver a Rodar",
+      "year": "2026",
+      "channel": "Disney+",
+      "platform": "Disney+",
+      "genre": "Juvenil",
+      "actors": [
+        "Karol Sevilla",
+        "Michael Ronda",
+        "Ruggero Pasquarelli",
+        "Carolina Kopelioff",
+        "Malena Ratner",
+        "Gastón Vietto",
+        "Agustín Bernasconi"
+      ],
+      "orientation": "vertical",
+      "image": "images/verticals/2026-soyluna-volverarodar-poster280x420.png",
+      "subtitle": "Juvenil",
+      "capitulos": 20,
+      "sinopsis": "Luna regresa al Jam & Roller tras un misterioso accidente que la alejó de las pistas y busca recuperar la confianza en sí misma. Mientras enfrenta nuevos desafíos, deberá resolver viejos conflictos y un dilema amoroso entre Matteo y Simón.",
+      "productora": "Metrovisión",
+      "release_date": "24/07/2026",
+      "tipo_emision": "Serie",
+      "producciones_relacionadas": [
+        {
+          "id": "V134",
+          "title": "Soy Luna",
+          "meta": "Serie original",
+          "image": "images/verticals/soy-luna-poster-280x420.png"
+        }
+      ]
+    },
+    {
       "id": "P2026",
       "title": "Mensaje en una Botella",
       "type": "pelicula",
@@ -9079,7 +9112,15 @@
       "sinopsis": "Luna Valente deja su vida en Cancún cuando su familia se muda a Argentina y debe adaptarse a un exclusivo colegio y a un mundo muy distinto al suyo. En el club Jam & Roller redescubre su pasión por el patinaje y el canto, mientras vive un romance con Matteo y enfrenta la rivalidad de Ámbar.",
       "rating": "-",
       "productora": "Non Stop Producciones",
-      "tipo_emision": "Tira Diaria"
+      "tipo_emision": "Tira Diaria",
+      "producciones_relacionadas": [
+        {
+          "id": "V315",
+          "title": "Soy Luna: Volver a Rodar",
+          "meta": "Secuela",
+          "image": "images/verticals/2026-soyluna-volverarodar-poster280x420.png"
+        }
+      ]
     },
     {
       "id": "V135",
