@@ -416,6 +416,19 @@ nav .menu li a:hover{
   flex-wrap: wrap;
 }
 
+.cartelera-count{
+  margin-left: auto;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.12);
+  color: #dbe4ff;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  white-space: nowrap;
+}
+
 .cartelera-btn,
 .cartelera-filter{
   border: 1px solid rgba(255,255,255,0.2);

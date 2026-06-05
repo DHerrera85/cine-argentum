@@ -6119,6 +6119,72 @@
       ]
     },
     {
+      "id": "P2045",
+      "title": "Gutiérrez es Mai Nem",
+      "type": "serie",
+      "year": "2026",
+      "channel": "Streaming",
+      "genre": "Drama",
+      "image": "images/verticals/2026-gutierrezismaineim-poster-280x420.png",
+      "orientation": "vertical",
+      "subtitle": "Drama"
+    },
+    {
+      "id": "P2046",
+      "title": "La Jefa: Aunque no Quiera",
+      "type": "serie",
+      "year": "2026",
+      "channel": "Streaming",
+      "genre": "Comedia",
+      "image": "images/verticals/2026-lajefaaunquenoloquiera-poster280x420.png",
+      "orientation": "vertical",
+      "subtitle": "Comedia"
+    },
+    {
+      "id": "P2047",
+      "title": "Las Reglas del Boxeador",
+      "type": "serie",
+      "year": "2026",
+      "channel": "Streaming",
+      "genre": "Drama",
+      "image": "images/verticals/2026-lasreglasdelboxeador-poster280x420.png",
+      "orientation": "vertical",
+      "subtitle": "Drama"
+    },
+    {
+      "id": "P2048",
+      "title": "Mejores Enemigas",
+      "type": "serie",
+      "year": "2026",
+      "channel": "Streaming",
+      "genre": "Comedia",
+      "image": "images/verticals/2026-mejoresenemigas-poster-280x420.png",
+      "orientation": "vertical",
+      "subtitle": "Comedia"
+    },
+    {
+      "id": "P2049",
+      "title": "NOA",
+      "type": "serie",
+      "year": "2026",
+      "channel": "Streaming",
+      "genre": "Drama",
+      "image": "images/verticals/2026-noa-poster280x420.png",
+      "orientation": "vertical",
+      "subtitle": "Drama"
+    },
+    {
+      "id": "P2050",
+      "title": "Todo",
+      "type": "serie",
+      "year": "2026",
+      "channel": "Streaming",
+      "genre": "Drama",
+      "image": "images/verticals/2026-todo-poster280x420.png",
+      "orientation": "vertical",
+      "subtitle": "Drama"
+    },
+    {
       "id": "P2026",
       "title": "Mensaje en una Botella",
       "type": "pelicula",
@@ -11095,7 +11161,7 @@
     {
       "id": "V204",
       "title": "Coppola, el Representante",
-      "year": "2024",
+      "year": "2027",
       "channel": "Disney+",
       "genre": "Drama",
       "actors": [
@@ -11105,7 +11171,7 @@
         "Agustín Sullivan"
       ],
       "orientation": "vertical",
-      "image": "images/verticals/coppola-poster-280x420.png",
+      "image": "images/verticals/2027-coppola-elrepresentante-poster280x420.png",
       "subtitle": "Drama"
     },
     {

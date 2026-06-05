@@ -217,8 +217,28 @@
     ensureSlider(listEl);
   }
 
+  function getFilterCountLabel(type, count) {
+    var label = 'películas y series';
+    if (type === 'pelicula') label = 'películas';
+    if (type === 'serie') label = 'series';
+    return String(count) + ' ' + label;
+  }
+
+  function updateSectionCount(section, type) {
+    var countEl = section.querySelector('.cartelera-count');
+    if (!countEl) return;
+
+    var rows = section._carteleraRows || [];
+    var count = rows.filter(function (row) {
+      return type === 'all' || row.item.type === type;
+    }).length;
+
+    countEl.textContent = getFilterCountLabel(type, count);
+  }
+
   function applyTypeFilter(section, type) {
     renderFilteredList(section, type);
+    updateSectionCount(section, type);
   }
 
   function mountSection(section, items) {
@@ -285,6 +305,7 @@
       : released.map(function (item) { return { item: item, upcoming: false }; });
 
     section._carteleraRows = rows;
+    updateSectionCount(section, 'all');
 
     listEl.innerHTML = rows.length
       ? rows.map(function (row) { return buildCardHtml(row.item, row.upcoming); }).join('')
