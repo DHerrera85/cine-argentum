@@ -5861,7 +5861,7 @@
       "viewers": "-",
       "producer": "Netflix",
       "director": "Juan Cabral",
-      "release_date": "31/12/2026",
+      "release_date": "16/04/2026",
       "subtitle": "Drama"
     },
     {
@@ -6123,18 +6123,31 @@
       "title": "Gutiérrez es Mai Nem",
       "type": "serie",
       "year": "2026",
-      "channel": "Streaming",
-      "genre": "Drama",
+      "channel": "Disney+",
+      "platform": "Disney+",
+      "actors": [
+        "Darío Barassi",
+        "Yayo Guridi"
+      ],
+      "genre": "Comedia",
       "image": "images/verticals/2026-gutierrezismaineim-poster-280x420.png",
       "orientation": "vertical",
-      "subtitle": "Drama"
+      "subtitle": "Comedia"
     },
     {
       "id": "P2046",
       "title": "La Jefa: Aunque no Quiera",
       "type": "serie",
       "year": "2026",
-      "channel": "Streaming",
+      "actors": [
+        "Natalia Oreiro",
+        "Juan Ingaramo",
+        "Jorge Marrale",
+        "Fernán Mirás",
+        "Paola Barrientos"
+      ],
+      "channel": "Disney+",
+      "platform": "Disney+",
       "genre": "Comedia",
       "image": "images/verticals/2026-lajefaaunquenoloquiera-poster280x420.png",
       "orientation": "vertical",
@@ -6145,7 +6158,12 @@
       "title": "Las Reglas del Boxeador",
       "type": "serie",
       "year": "2026",
-      "channel": "Streaming",
+      "channel": "Disney+",
+      "platform": "Disney+",
+      "actors": [
+        "Agustín Bernasconi",
+        "Abril Schapo"
+      ],
       "genre": "Drama",
       "image": "images/verticals/2026-lasreglasdelboxeador-poster280x420.png",
       "orientation": "vertical",
@@ -6156,29 +6174,39 @@
       "title": "Mejores Enemigas",
       "type": "serie",
       "year": "2026",
-      "channel": "Streaming",
-      "genre": "Comedia",
+      "channel": "Disney+",
+      "platform": "Disney+",
+      "genre": "Juvenil",
+      "release_date": "31/12/2026",
       "image": "images/verticals/2026-mejoresenemigas-poster-280x420.png",
       "orientation": "vertical",
-      "subtitle": "Comedia"
+      "subtitle": "Juvenil"
     },
     {
       "id": "P2049",
       "title": "NOA",
       "type": "serie",
       "year": "2026",
+      "actors": [
+        "Agustín Bernasconi",
+        "Noa Kirel",
+        "Caro Domenech",
+        "Gastón Dalmau",
+        "Jerónimo Bosia"
+      ],
       "channel": "Streaming",
-      "genre": "Drama",
+      "genre": "Juvenil",
       "image": "images/verticals/2026-noa-poster280x420.png",
       "orientation": "vertical",
-      "subtitle": "Drama"
+      "subtitle": "Juvenil"
     },
     {
       "id": "P2050",
       "title": "Todo",
       "type": "serie",
       "year": "2026",
-      "channel": "Streaming",
+      "channel": "Disney+",
+      "platform": "Disney+",
       "genre": "Drama",
       "image": "images/verticals/2026-todo-poster280x420.png",
       "orientation": "vertical",
