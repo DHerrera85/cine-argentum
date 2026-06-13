@@ -243,7 +243,12 @@ nav .menu li a:hover{
 .slider-v .latest-b-text strong{ color:#f0f0f0; font-weight:600; font-size:0.95rem; display:block; }
 .slider-v .latest-b-text p{ color:#9ca3af; margin:4px 0 0; font-size:0.85rem; }
 
-/* Ficciones Verticales: asegurar que cada card ocupe su bloque completo */
+/* Asegurar que cada card ocupe su bloque completo en todos los sliders verticales */
+.slider-v li a {
+  display: block;
+}
+
+/* Ficciones Verticales: especificidad adicional si es necesaria */
 .slider-v[data-streaming-row="ficciones_verticales"] li a {
   display: block;
 }
