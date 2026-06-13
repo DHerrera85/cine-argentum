@@ -6186,7 +6186,7 @@
       "id": "P2049",
       "title": "NOA",
       "type": "serie",
-      "year": "2026",
+      "year": "2027",
       "actors": [
         "Agustín Bernasconi",
         "Noa Kirel",
@@ -8694,7 +8694,7 @@
       "title": "Días de Gallos",
       "year": "2021",
       "channel": "HBO Max",
-      "genre": "Drama",
+      "genre": "Juvenil",
       "actors": [
         "Ángela Torres",
         "Ecko",
@@ -8702,7 +8702,7 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/dias-de-gallos-primera temporada-poster-280x420.png",
-      "subtitle": "Drama",
+      "subtitle": "Juvenil",
       "release_date": "16/09/2021",
       "temporadas": [
         {
@@ -8932,6 +8932,7 @@
         "Alexis Pey"
       ],
       "orientation": "vertical",
+      "fecha_estreno": "25/11/2021",
       "image": "images/verticals/WTF!-con-la-musica-a-otra-parte-poster-280x420.png",
       "subtitle": "Juvenil"
     },
@@ -10098,7 +10099,8 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/los-mufas-poster-280x420.png",
-      "subtitle": "Drama"
+      "subtitle": "Drama",
+      "release_date": "11/11/2025"
     },
     {
       "id": "V168",
@@ -10222,6 +10224,7 @@
         "Rogelio Gracia Bernada"
       ],
       "orientation": "vertical",
+      "release_date": "24/01/2025",
       "image": "images/verticals/el-mejor-infarto-de-mi-vida-poster-280x420.png",
       "subtitle": "Comedia"
     },
@@ -10452,6 +10455,7 @@
         "Robert De Niro"
       ],
       "orientation": "vertical",
+      "release_date": "11/10/2023",
       "image": "images/verticals/nada-poster-280x420.png",
       "subtitle": "Comedia"
     },
@@ -10466,6 +10470,7 @@
         "Carola Reyna"
       ],
       "orientation": "vertical",
+      "release_date": "01/12/2023",
       "image": "images/verticals/familia-de-divan-poster-280x420.png",
       "subtitle": "Comedia"
     },
