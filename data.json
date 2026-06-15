@@ -6119,6 +6119,28 @@
       ]
     },
     {
+      "id": "v316",
+      "title": "El Precio del Poder",
+      "year": "2002",
+      "channel": "Canal 9/Azul TV",
+      "genre": "Thriller",
+      "actors": [
+        "Arturo Puig",
+        "Federico D´Elia",
+        "Juan Palomino"
+      ],
+      "orientation": "vertical",
+      "image": "images/verticals/2002-elpreciodelpoder-canal9-poster280x420.png",
+      "subtitle": "Thriller",
+      "horario": "martes a viernes 22hs",
+      "capitulos": "-",
+      "fecha_estreno": "21/08/2002",
+      "sinopsis": "Folco Rissi, un poderoso empresario, y Víctor, un hombre convencido de que él es responsable de la muerte de su padre, quedan enfrentados por una historia de ambición y venganza. Entre secretos familiares, corrupción, amores y traiciones, ambos se verán atrapados en una lucha donde el poder, la justicia y el castigo marcarán sus destinos..",
+      "rating": "6,4",
+      "productora": "Hugo Móser",
+      "tipo_emision": "Tira Diaria"
+    },
+    {
       "id": "P2045",
       "title": "Gutiérrez es Mai Nem",
       "type": "serie",
