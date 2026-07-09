@@ -630,6 +630,21 @@ footer p{ color:#b0b0b0; margin:0; font-size:.9rem; }
     flex-direction:column; gap:8px; padding:20px 15px; text-align:center;
   }
   footer p{ font-size:.85rem; }
+
+  /* Ajustes para que el contador y las pestañas de cartelera no hagan wrap en móvil */
+  .cartelera-2026-controls{
+    flex-wrap: nowrap; /* intentar mantener todo en una sola fila */
+    gap:8px;
+  }
+  .cartelera-count{
+    font-size:0.72rem; /* reducir texto */
+    padding:6px 10px; /* reducir padding horizontal */
+  }
+  .cartelera-filter,
+  .cartelera-btn{
+    font-size:0.74rem;
+    padding:6px 10px;
+  }
 }
 
 /* ========== RESPONSIVE: MÃ“VIL PEQUEÃ‘O (< 480px) ========== */
