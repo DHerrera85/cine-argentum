@@ -1928,41 +1928,47 @@
       "release_date": "12/9/2019",
       "director": "Lucas Santa Ana"
     },
+{
+  "title": "Corazón Loco",
+  "genre": "Comedia",
+  "year": "2020",
+  "actors": [
+    "Adrián Suar",
+    "Soledad Villamil",
+    "Gabriela Toscano"
+  ],
+  "synopsis": "Fernando Ferro lleva una doble vida perfecta: de lunes a jueves vive con Paula y de viernes a domingo con Vera, sin que ninguna lo sepa. Cuando ambas descubren la verdad, Fernando deberá enfrentar las consecuencias y elegir entre las dos mujeres que ama.",
+  "channel": "Netflix",
+  "image": "images/verticals/corazon-loco-2020-poster-280x420.png",
+  "orientation": "vertical",
+  "type": "pelicula",
+  "subtitle": "Comedia",
+  "id": "P1083",
+  "producer": "Netflix",
+  "director": "Marcos Carnevale",
+  "release_date": "9/9/2020",
+  "netflix_reports": [
     {
-      "title": "Corazón Loco",
-      "genre": "Comedia",
-      "year": "2020",
-      "actors": [
-        "Adrián Suar",
-        "Soledad Villamil",
-        "Gabriela Toscano"
-      ],
-      "synopsis": "Fernando Ferro lleva una doble vida perfecta: de lunes a jueves vive con Paula y de viernes a domingo con Vera, sin que ninguna lo sepa. Cuando ambas descubren la verdad, Fernando deberá enfrentar las consecuencias y elegir entre las dos mujeres que ama.",
-      "channel": "Netflix",
-      "image": "images/verticals/corazon-loco-2020-poster-280x420.png",
-      "orientation": "vertical",
-      "type": "pelicula",
-      "subtitle": "Comedia",
-      "id": "P1083",
-      "producer": "Netflix",
-      "director": "Marcos Carnevale",
-      "release_date": "9/9/2020",
-      "netflix_reports": [
-        {
-          "report_id": "2025-H2",
-          "periodo": "Jul-Dic 2025",
-          "visualizaciones": 400000,
-          "ranking_peliculas": 4853
-        }
-      ],
-      "netflix_aggregates": [
-        {
-          "report_id": "2025-H2",
-          "periodo": "Jul-Dic 2025",
-          "visualizaciones_totales": 400000
-        }
-      ]
+      "report_id": "2025-H2",
+      "periodo": "Jul-Dic 2025",
+      "visualizaciones": 400000,
+      "ranking_peliculas": 4853
     },
+    {
+      "report_id": "2026-H1",
+      "periodo": "Ene-Jun 2026",
+      "visualizaciones": 200000,
+      "ranking_peliculas": 5544
+    }
+  ],
+  "netflix_aggregates": [
+    {
+      "report_id": "2026-H1",
+      "periodo": "Jul 2025-Jun 2026",
+      "visualizaciones_totales": 600000
+    }
+  ]
+},
     {
       "title": "Ex Casados",
       "genre": "Comedia",
@@ -2045,40 +2051,46 @@
       "release_date": "11/3/2021",
       "director": "Gastón Portal"
     },
+{
+  "title": "Matrimillas",
+  "genre": "Comedia",
+  "year": "2022",
+  "actors": [
+    "Luisana Lopilato",
+    "Juan Minujín"
+  ],
+  "synopsis": "Un matrimonio infeliz encuentra esperanza en una aplicación que recompensa las cosas buenas que hacen por el otro. Hasta que la obsesión enfermiza se apodera de todo...",
+  "channel": "Netflix",
+  "image": "images/verticals/matrimillas-2002-poster-280x420.png",
+  "orientation": "vertical",
+  "type": "pelicula",
+  "subtitle": "Comedia",
+  "id": "P1088",
+  "producer": "Netflix",
+  "director": "Sebastián De Caro",
+  "release_date": "7/12/2022",
+  "netflix_reports": [
     {
-      "title": "Matrimillas",
-      "genre": "Comedia",
-      "year": "2022",
-      "actors": [
-        "Luisana Lopilato",
-        "Juan Minujín"
-      ],
-      "synopsis": "Un matrimonio infeliz encuentra esperanza en una aplicación que recompensa las cosas buenas que hacen por el otro. Hasta que la obsesión enfermiza se apodera de todo...",
-      "channel": "Netflix",
-      "image": "images/verticals/matrimillas-2002-poster-280x420.png",
-      "orientation": "vertical",
-      "type": "pelicula",
-      "subtitle": "Comedia",
-      "id": "P1088",
-      "producer": "Netflix",
-      "director": "Sebastián De Caro",
-      "release_date": "7/12/2022",
-      "netflix_reports": [
-        {
-          "report_id": "2025-H2",
-          "periodo": "Jul-Dic 2025",
-          "visualizaciones": 300000,
-          "ranking_peliculas": 4332
-        }
-      ],
-      "netflix_aggregates": [
-        {
-          "report_id": "2025-H2",
-          "periodo": "Jul-Dic 2025",
-          "visualizaciones_totales": 300000
-        }
-      ]
+      "report_id": "2025-H2",
+      "periodo": "Jul-Dic 2025",
+      "visualizaciones": 300000,
+      "ranking_peliculas": 4332
     },
+    {
+      "report_id": "2026-H1",
+      "periodo": "Ene-Jun 2026",
+      "visualizaciones": 200000,
+      "ranking_peliculas": 5118
+    }
+  ],
+  "netflix_aggregates": [
+    {
+      "report_id": "2026-H1",
+      "periodo": "Jul 2025-Jun 2026",
+      "visualizaciones_totales": 500000
+    }
+  ]
+},
     {
       "title": "Más Respeto que soy Tu Madre",
       "genre": "Comedia",
@@ -2224,42 +2236,48 @@
       "release_date": "9/11/2023",
       "director": "Demián Rugna"
     },
+{
+  "title": "Campamento con Mamá",
+  "genre": "Familiar",
+  "year": "2024",
+  "actors": [
+    "Natalia Oreiro",
+    "Milo Zeus Lis",
+    "Pablo Rago",
+    "Sofía Morandi"
+  ],
+  "synopsis": "Para salvar la acampada de fin de curso de su hijo, una madre soltera decide conducir el autobús mientras intenta demostrarle que puede ser una madre guay.",
+  "channel": "",
+  "image": "images/verticals/campamento-con-mama-2024-poster-280x420.png",
+  "orientation": "vertical",
+  "type": "pelicula",
+  "subtitle": "Familiar",
+  "id": "P1096",
+  "producer": "Netflix",
+  "release_date": "6/12/2024",
+  "director": "Martino Zaidelis",
+  "netflix_reports": [
     {
-      "title": "Campamento con Mamá",
-      "genre": "Familiar",
-      "year": "2024",
-      "actors": [
-        "Natalia Oreiro",
-        "Milo Zeus Lis",
-        "Pablo Rago",
-        "Sofía Morandi"
-      ],
-      "synopsis": "Para salvar la acampada de fin de curso de su hijo, una madre soltera decide conducir el autobús mientras intenta demostrarle que puede ser una madre guay.",
-      "channel": "",
-      "image": "images/verticals/campamento-con-mama-2024-poster-280x420.png",
-      "orientation": "vertical",
-      "type": "pelicula",
-      "subtitle": "Familiar",
-      "id": "P1096",
-      "producer": "Netflix",
-      "release_date": "6/12/2024",
-      "director": "Martino Zaidelis",
-      "netflix_reports": [
-        {
-          "report_id": "2025-H2",
-          "periodo": "Jul-Dic 2025",
-          "visualizaciones": 2500000,
-          "ranking_peliculas": 1778
-        }
-      ],
-      "netflix_aggregates": [
-        {
-          "report_id": "2025-H2",
-          "periodo": "Jul-Dic 2025",
-          "visualizaciones_totales": 2500000
-        }
-      ]
+      "report_id": "2025-H2",
+      "periodo": "Jul-Dic 2025",
+      "visualizaciones": 2500000,
+      "ranking_peliculas": 1778
     },
+    {
+      "report_id": "2026-H1",
+      "periodo": "Ene-Jun 2026",
+      "visualizaciones": 900000,
+      "ranking_peliculas": 2602
+    }
+  ],
+  "netflix_aggregates": [
+    {
+      "report_id": "2026-H1",
+      "periodo": "Jul 2025-Jun 2026",
+      "visualizaciones_totales": 3400000
+    }
+  ]
+},
     {
       "title": "Culpa Cero",
       "genre": "Comedia",
@@ -2342,42 +2360,48 @@
       "director": "Diego Lerman",
       "release_date": "10/10/2024"
     },
+{
+  "title": "La Mujer de la Fila",
+  "genre": "Drama",
+  "year": "2025",
+  "actors": [
+    "Natalia Oreiro",
+    "Amparo Noguera",
+    "Alberto Ammann"
+  ],
+  "synopsis": "La vida de Andrea cambia por completo cuando su hijo es encarcelado injustamente y ella debe enfrentarse al sistema judicial para liberarlo. En ese proceso, cuestiona sus propios prejuicios y valores al descubrir sentimientos inesperados hacia un preso.",
+  "channel": "Netflix",
+  "image": "images/verticals/la-mujer-de-la-fila-2025-poster-280x420.png",
+  "orientation": "vertical",
+  "type": "pelicula",
+  "subtitle": "Drama",
+  "id": "P1101",
+  "viewers": 32605,
+  "producer": "Netflix",
+  "director": "Benjamín Ávila",
+  "release_date": "4/9/2025",
+  "netflix_reports": [
     {
-      "title": "La Mujer de la Fila",
-      "genre": "Drama",
-      "year": "2025",
-      "actors": [
-        "Natalia Oreiro",
-        "Amparo Noguera",
-        "Alberto Ammann"
-      ],
-      "synopsis": "La vida de Andrea cambia por completo cuando su hijo es encarcelado injustamente y ella debe enfrentarse al sistema judicial para liberarlo. En ese proceso, cuestiona sus propios prejuicios y valores al descubrir sentimientos inesperados hacia un preso.",
-      "channel": "Netflix",
-      "image": "images/verticals/la-mujer-de-la-fila-2025-poster-280x420.png",
-      "orientation": "vertical",
-      "type": "pelicula",
-      "subtitle": "Drama",
-      "id": "P1101",
-      "viewers": 32605,
-      "producer": "Netflix",
-      "director": "Benjamín Ávila",
-      "release_date": "4/9/2025",
-      "netflix_reports": [
-        {
-          "report_id": "2025-H2",
-          "periodo": "Jul-Dic 2025",
-          "visualizaciones": 15800000,
-          "ranking_peliculas": 287
-        }
-      ],
-      "netflix_aggregates": [
-        {
-          "report_id": "2025-H2",
-          "periodo": "Jul-Dic 2025",
-          "visualizaciones_totales": 15800000
-        }
-      ]
+      "report_id": "2025-H2",
+      "periodo": "Jul-Dic 2025",
+      "visualizaciones": 15800000,
+      "ranking_peliculas": 287
     },
+    {
+      "report_id": "2026-H1",
+      "periodo": "Ene-Jun 2026",
+      "visualizaciones": 2200000,
+      "ranking_peliculas": 1367
+    }
+  ],
+  "netflix_aggregates": [
+    {
+      "report_id": "2026-H1",
+      "periodo": "Jul 2025-Jun 2026",
+      "visualizaciones_totales": 18000000
+    }
+  ]
+},
     {
       "title": "Hoy se Arregla el Mundo",
       "genre": "Drama",
@@ -2833,42 +2857,48 @@
       "release_date": "15/6/2017",
       "director": "Federico Cueva"
     },
+{
+  "title": "La Ira de Dios",
+  "genre": "Policial",
+  "year": "2022",
+  "actors": [
+    "Diego Peretti",
+    "Juan Minujín",
+    "Macarena Achaga",
+    "Monna Antonópulos"
+  ],
+  "synopsis": "Convencida de que las extrañas muertes de sus familiares fueron orquestadas por un novelista para quien trabajaba, Luciana recurre a un periodista para exponer su verdad.",
+  "channel": "",
+  "image": "images/verticals/la-ira-de-dios-2022-poster-280x420.png",
+  "orientation": "vertical",
+  "type": "pelicula",
+  "subtitle": "Policial",
+  "id": "P1124",
+  "producer": "Netflix",
+  "release_date": "15/6/2022",
+  "director": "Sebastián Schindel",
+  "netflix_reports": [
     {
-      "title": "La Ira de Dios",
-      "genre": "Policial",
-      "year": "2022",
-      "actors": [
-        "Diego Peretti",
-        "Juan Minujín",
-        "Macarena Achaga",
-        "Monna Antonópulos"
-      ],
-      "synopsis": "Convencida de que las extrañas muertes de sus familiares fueron orquestadas por un novelista para quien trabajaba, Luciana recurre a un periodista para exponer su verdad.",
-      "channel": "",
-      "image": "images/verticals/la-ira-de-dios-2022-poster-280x420.png",
-      "orientation": "vertical",
-      "type": "pelicula",
-      "subtitle": "Policial",
-      "id": "P1124",
-      "producer": "Netflix",
-      "release_date": "15/6/2022",
-      "director": "Sebastián Schindel",
-      "netflix_reports": [
-        {
-          "report_id": "2025-H2",
-          "periodo": "Jul-Dic 2025",
-          "visualizaciones": 2300000,
-          "ranking_peliculas": 1360
-        }
-      ],
-      "netflix_aggregates": [
-        {
-          "report_id": "2025-H2",
-          "periodo": "Jul-Dic 2025",
-          "visualizaciones_totales": 2300000
-        }
-      ]
+      "report_id": "2025-H2",
+      "periodo": "Jul-Dic 2025",
+      "visualizaciones": 2300000,
+      "ranking_peliculas": 1360
     },
+    {
+      "report_id": "2026-H1",
+      "periodo": "Ene-Jun 2026",
+      "visualizaciones": 2100000,
+      "ranking_peliculas": 1447
+    }
+  ],
+  "netflix_aggregates": [
+    {
+      "report_id": "2026-H1",
+      "periodo": "Jul 2025-Jun 2026",
+      "visualizaciones_totales": 4400000
+    }
+  ]
+},
     {
       "title": "Corazón de león",
       "genre": "Comedia",
@@ -3052,42 +3082,48 @@
       "release_date": "16/11/2010",
       "director": "Norman Ruíz"
     },
+{
+  "title": "Elena Sabe",
+  "genre": "Drama",
+  "year": "2023",
+  "actors": [
+    "Mercedes Morán",
+    "Érica Rivas",
+    "Miranda De la Serna",
+    "Mercedes Scápola"
+  ],
+  "synopsis": "A pesar de su inexorable deterioro, una mujer con la enfermedad de Parkinson no cejará hasta encontrar a los responsables de la muerte de su hija.",
+  "channel": "",
+  "image": "images/verticals/elena-sabe-2023-poster-280x420.png",
+  "orientation": "vertical",
+  "type": "pelicula",
+  "subtitle": "Drama",
+  "id": "P1134",
+  "producer": "Netflix",
+  "release_date": "16/11/2023",
+  "director": "Anahí Berneri",
+  "netflix_reports": [
     {
-      "title": "Elena Sabe",
-      "genre": "Drama",
-      "year": "2023",
-      "actors": [
-        "Mercedes Morán",
-        "Érica Rivas",
-        "Miranda De la Serna",
-        "Mercedes Scápola"
-      ],
-      "synopsis": "A pesar de su inexorable deterioro, una mujer con la enfermedad de Parkinson no cejará hasta encontrar a los responsables de la muerte de su hija.",
-      "channel": "",
-      "image": "images/verticals/elena-sabe-2023-poster-280x420.png",
-      "orientation": "vertical",
-      "type": "pelicula",
-      "subtitle": "Drama",
-      "id": "P1134",
-      "producer": "Netflix",
-      "release_date": "16/11/2023",
-      "director": "Anahí Berneri",
-      "netflix_reports": [
-        {
-          "report_id": "2025-H2",
-          "periodo": "Jul-Dic 2025",
-          "visualizaciones": 100000,
-          "ranking_peliculas": 5903
-        }
-      ],
-      "netflix_aggregates": [
-        {
-          "report_id": "2025-H2",
-          "periodo": "Jul-Dic 2025",
-          "visualizaciones_totales": 100000
-        }
-      ]
+      "report_id": "2025-H2",
+      "periodo": "Jul-Dic 2025",
+      "visualizaciones": 100000,
+      "ranking_peliculas": 5903
     },
+    {
+      "report_id": "2026-H1",
+      "periodo": "Ene-Jun 2026",
+      "visualizaciones": 100000,
+      "ranking_peliculas": 7586
+    }
+  ],
+  "netflix_aggregates": [
+    {
+      "report_id": "2026-H1",
+      "periodo": "Jul 2025-Jun 2026",
+      "visualizaciones_totales": 200000
+    }
+  ]
+},
     {
       "title": "Elefante blanco",
       "genre": "Policial",
@@ -3153,40 +3189,46 @@
       "release_date": "16/8/2012",
       "director": "Diego Kaplan"
     },
+{
+  "title": "No Puedo Vivir Sin Ti",
+  "genre": "Comedia",
+  "year": "2024",
+  "actors": [
+    "Adrián Suar",
+    "Paz Vega"
+  ],
+  "synopsis": "Carlos, un consultor obsesionado con el trabajo y el móvil, pone en riesgo su matrimonio cuando su esposa Adela decide dejarlo y empezar de nuevo. Para recuperarla, deberá enfrentar su adicción y someterse a una terapia que cambiará su forma de vivir.",
+  "channel": "",
+  "image": "images/verticals/no-puedo-vivir-sin-ti-poster-280x420.png",
+  "orientation": "vertical",
+  "type": "pelicula",
+  "subtitle": "Comedia",
+  "id": "P1138",
+  "producer": "Netflix",
+  "release_date": "16/8/2024",
+  "director": "Santiago Requejo",
+  "netflix_reports": [
     {
-      "title": "No Puedo Vivir Sin Ti",
-      "genre": "Comedia",
-      "year": "2024",
-      "actors": [
-        "Adrián Suar",
-        "Paz Vega"
-      ],
-      "synopsis": "Carlos, un consultor obsesionado con el trabajo y el móvil, pone en riesgo su matrimonio cuando su esposa Adela decide dejarlo y empezar de nuevo. Para recuperarla, deberá enfrentar su adicción y someterse a una terapia que cambiará su forma de vivir.",
-      "channel": "",
-      "image": "images/verticals/no-puedo-vivir-sin-ti-poster-280x420.png",
-      "orientation": "vertical",
-      "type": "pelicula",
-      "subtitle": "Comedia",
-      "id": "P1138",
-      "producer": "Netflix",
-      "release_date": "16/8/2024",
-      "director": "Santiago Requejo",
-      "netflix_reports": [
-        {
-          "report_id": "2025-H2",
-          "periodo": "Jul-Dic 2025",
-          "visualizaciones": 800000,
-          "ranking_peliculas": 3422
-        }
-      ],
-      "netflix_aggregates": [
-        {
-          "report_id": "2025-H2",
-          "periodo": "Jul-Dic 2025",
-          "visualizaciones_totales": 800000
-        }
-      ]
+      "report_id": "2025-H2",
+      "periodo": "Jul-Dic 2025",
+      "visualizaciones": 800000,
+      "ranking_peliculas": 3422
     },
+    {
+      "report_id": "2026-H1",
+      "periodo": "Ene-Jun 2026",
+      "visualizaciones": 200000,
+      "ranking_peliculas": 4966
+    }
+  ],
+  "netflix_aggregates": [
+    {
+      "report_id": "2026-H1",
+      "periodo": "Jul 2025-Jun 2026",
+      "visualizaciones_totales": 1000000
+    }
+  ]
+},
     {
       "title": "El mismo amor, la misma lluvia",
       "genre": "Romance",
@@ -3336,42 +3378,48 @@
       "release_date": "17/10/2002",
       "director": "Marcelo Piñeyro"
     },
+{
+  "title": "27 Noches",
+  "genre": "Drama",
+  "year": "2025",
+  "actors": [
+    "Marilú Marini",
+    "Daniel Hendler",
+    "Carla Peterson"
+  ],
+  "synopsis": "Una mujer acaba en una clínica psiquiátrica por decisión de sus hijas. Un especialista debe decidir si realmente está enferma o si lo único que quiere es disfrutar de la vida.",
+  "channel": "",
+  "image": "images/verticals/27-noches-2025-poster-280x420.png",
+  "orientation": "vertical",
+  "type": "pelicula",
+  "subtitle": "Drama",
+  "id": "P1146",
+  "viewers": 3640,
+  "producer": "Netflix",
+  "release_date": "17/10/2025",
+  "director": "Daniel Hendler",
+  "netflix_reports": [
     {
-      "title": "27 Noches",
-      "genre": "Drama",
-      "year": "2025",
-      "actors": [
-        "Marilú Marini",
-        "Daniel Hendler",
-        "Carla Peterson"
-      ],
-      "synopsis": "Una mujer acaba en una clínica psiquiátrica por decisión de sus hijas. Un especialista debe decidir si realmente está enferma o si lo único que quiere es disfrutar de la vida.",
-      "channel": "",
-      "image": "images/verticals/27-noches-2025-poster-280x420.png",
-      "orientation": "vertical",
-      "type": "pelicula",
-      "subtitle": "Drama",
-      "id": "P1146",
-      "viewers": 3640,
-      "producer": "Netflix",
-      "release_date": "17/10/2025",
-      "director": "Daniel Hendler",
-      "netflix_reports": [
-        {
-          "report_id": "2025-H2",
-          "periodo": "Jul-Dic 2025",
-          "visualizaciones": 17700000,
-          "ranking_peliculas": 254
-        }
-      ],
-      "netflix_aggregates": [
-        {
-          "report_id": "2025-H2",
-          "periodo": "Jul-Dic 2025",
-          "visualizaciones_totales": 17700000
-        }
-      ]
+      "report_id": "2025-H2",
+      "periodo": "Jul-Dic 2025",
+      "visualizaciones": 17700000,
+      "ranking_peliculas": 254
     },
+    {
+      "report_id": "2026-H1",
+      "periodo": "Ene-Jun 2026",
+      "visualizaciones": 2600000,
+      "ranking_peliculas": 1171
+    }
+  ],
+  "netflix_aggregates": [
+    {
+      "report_id": "2026-H1",
+      "periodo": "Jul. 2025-Jun. 2026",
+      "visualizaciones_totales": 20300000
+    }
+  ]
+},
     {
       "title": "Me casé con un boludo",
       "genre": "Comedia",
@@ -3881,42 +3929,48 @@
       "release_date": "20/5/1999",
       "director": "Juan Carlos Desanzo"
     },
+{
+  "title": "Crímenes de Familia",
+  "genre": "Policial",
+  "year": "2020",
+  "actors": [
+    "Cecilia Roth",
+    "Miguel Ángel Solá",
+    "Benjamín Amadeo",
+    "Sofía Gala"
+  ],
+  "synopsis": "La vida de Alicia e Ignacio, un matrimonio de clase alta, se desmorona cuando su hijo enfrenta una grave acusación de intento de homicidio.",
+  "channel": "",
+  "image": "images/verticals/crimenes-en-familia-2020-poster-280x420.png",
+  "orientation": "vertical",
+  "type": "pelicula",
+  "subtitle": "Policial",
+  "id": "P1172",
+  "producer": "Netflix",
+  "release_date": "20/8/2020",
+  "director": "Sebastián Schindel",
+  "netflix_reports": [
     {
-      "title": "Crimenes de Familia",
-      "genre": "Policial",
-      "year": "2020",
-      "actors": [
-        "Cecilia Roth",
-        "Miguel Ángel Solá",
-        "Benjamín Amadeo",
-        "Sofía Gala"
-      ],
-      "synopsis": "La vida de Alicia e Ignacio, un matrimonio de clase alta, se desmorona cuando su hijo enfrenta una grave acusación de intento de homicidio.",
-      "channel": "",
-      "image": "images/verticals/crimenes-en-familia-2020-poster-280x420.png",
-      "orientation": "vertical",
-      "type": "pelicula",
-      "subtitle": "Policial",
-      "id": "P1172",
-      "producer": "Netflix",
-      "release_date": "20/8/2020",
-      "director": "Sebastián Schindel",
-      "netflix_reports": [
-        {
-          "report_id": "2025-H2",
-          "periodo": "Jul-Dic 2025",
-          "visualizaciones": 700000,
-          "ranking_peliculas": 3731
-        }
-      ],
-      "netflix_aggregates": [
-        {
-          "report_id": "2025-H2",
-          "periodo": "Jul-Dic 2025",
-          "visualizaciones_totales": 700000
-        }
-      ]
+      "report_id": "2025-H2",
+      "periodo": "Jul-Dic 2025",
+      "visualizaciones": 700000,
+      "ranking_peliculas": 3731
     },
+    {
+      "report_id": "2026-H1",
+      "periodo": "Ene-Jun 2026",
+      "visualizaciones": 400000,
+      "ranking_peliculas": 4006
+    }
+  ],
+  "netflix_aggregates": [
+    {
+      "report_id": "2026-H1",
+      "periodo": "Jul 2025-Jun 2026",
+      "visualizaciones_totales": 1100000
+    }
+  ]
+},
     {
       "title": "Todas las Azafatas van al Cielo",
       "genre": "Romance",
@@ -4019,42 +4073,48 @@
       "release_date": "21/12/2003",
       "director": "José Luis Massa"
     },
+{
+  "title": "Descansar en Paz",
+  "genre": "Policial",
+  "year": "2024",
+  "actors": [
+    "Joaquín Furriel",
+    "Griselda Siciliani",
+    "Gabriel Goity",
+    "Lali González"
+  ],
+  "synopsis": "Un hombre endeudado decide desaparecer y rehacer su vida bajo una identidad falsa. Años después, la tentación de saber qué fue de su familia reabre la pregunta de si realmente es posible empezar de cero sin mirar atrás.",
+  "channel": "",
+  "image": "images/verticals/descansar-en-paz-2024-poster-280x420.png",
+  "orientation": "vertical",
+  "type": "pelicula",
+  "subtitle": "Policial",
+  "id": "P1178",
+  "producer": "Netflix",
+  "release_date": "21/3/2024",
+  "director": "Sebastián Borensztein",
+  "netflix_reports": [
     {
-      "title": "Descansar en Paz",
-      "genre": "Policial",
-      "year": "2024",
-      "actors": [
-        "Joaquín Furriel",
-        "Griselda Siciliani",
-        "Gabriel Goity",
-        "Lali González"
-      ],
-      "synopsis": "Un hombre endeudado decide desaparecer y rehacer su vida bajo una identidad falsa. Años después, la tentación de saber qué fue de su familia reabre la pregunta de si realmente es posible empezar de cero sin mirar atrás.",
-      "channel": "",
-      "image": "images/verticals/descansar-en-paz-2024-poster-280x420.png",
-      "orientation": "vertical",
-      "type": "pelicula",
-      "subtitle": "Policial",
-      "id": "P1178",
-      "producer": "Netflix",
-      "release_date": "21/3/2024",
-      "director": "Sebastián Borensztein",
-      "netflix_reports": [
-        {
-          "report_id": "2025-H2",
-          "periodo": "Jul-Dic 2025",
-          "visualizaciones": 700000,
-          "ranking_peliculas": 2884
-        }
-      ],
-      "netflix_aggregates": [
-        {
-          "report_id": "2025-H2",
-          "periodo": "Jul-Dic 2025",
-          "visualizaciones_totales": 700000
-        }
-      ]
+      "report_id": "2025-H2",
+      "periodo": "Jul-Dic 2025",
+      "visualizaciones": 700000,
+      "ranking_peliculas": 2884
     },
+    {
+      "report_id": "2026-H1",
+      "periodo": "Ene-Jun 2026",
+      "visualizaciones": 300000,
+      "ranking_peliculas": 4257
+    }
+  ],
+  "netflix_aggregates": [
+    {
+      "report_id": "2026-H1",
+      "periodo": "Jul 2025-Jun 2026",
+      "visualizaciones_totales": 1000000
+    }
+  ]
+},
     {
       "title": "Al final del túnel",
       "genre": "Policial",
@@ -4250,41 +4310,47 @@
       "release_date": "24/07/2008",
       "director": "Daniel De Felippo"
     },
+{
+  "title": "El Cuaderno de Tomy",
+  "genre": "Drama",
+  "year": "2020",
+  "actors": [
+    "Valeria Bertuccelli",
+    "Esteban Lamothe",
+    "Julián Sorín"
+  ],
+  "synopsis": "Al enfrentarse a una enfermedad terminal, María Vázquez decide escribir un cuaderno cargado de su optimismo y sentido del humor sarcástico para que que su hijo de 2 años la recuerde.",
+  "channel": "",
+  "image": "images/verticals/el-cuaderno-de-tomy-2020-poster-280x420.png",
+  "orientation": "vertical",
+  "type": "pelicula",
+  "subtitle": "Drama",
+  "id": "P1188",
+  "producer": "Netflix",
+  "release_date": "24/11/2020",
+  "director": "Carlos Sorín",
+  "netflix_reports": [
     {
-      "title": "El Cuaderno de Tomy",
-      "genre": "Drama",
-      "year": "2020",
-      "actors": [
-        "Valeria Bertuccelli",
-        "Esteban Lamothe",
-        "Julián Sorín"
-      ],
-      "synopsis": "Al enfrentarse a una enfermedad terminal, María Vázquez decide escribir un cuaderno cargado de su optimismo y sentido del humor sarcástico para que que su hijo de 2 años la recuerde.",
-      "channel": "",
-      "image": "images/verticals/el-cuaderno-de-tomy-2020-poster-280x420.png",
-      "orientation": "vertical",
-      "type": "pelicula",
-      "subtitle": "Drama",
-      "id": "P1188",
-      "producer": "Netflix",
-      "release_date": "24/11/2020",
-      "director": "Carlos Sorín",
-      "netflix_reports": [
-        {
-          "report_id": "2025-H2",
-          "periodo": "Jul-Dic 2025",
-          "visualizaciones": 400000,
-          "ranking_peliculas": 3853
-        }
-      ],
-      "netflix_aggregates": [
-        {
-          "report_id": "2025-H2",
-          "periodo": "Jul-Dic 2025",
-          "visualizaciones_totales": 400000
-        }
-      ]
+      "report_id": "2025-H2",
+      "periodo": "Jul-Dic 2025",
+      "visualizaciones": 400000,
+      "ranking_peliculas": 3853
     },
+    {
+      "report_id": "2026-H1",
+      "periodo": "Ene-Jun 2026",
+      "visualizaciones": 400000,
+      "ranking_peliculas": 4639
+    }
+  ],
+  "netflix_aggregates": [
+    {
+      "report_id": "2026-H1",
+      "periodo": "Jul 2025-Jun 2026",
+      "visualizaciones_totales": 800000
+    }
+  ]
+},
     {
       "title": "Un cuento chino",
       "genre": "Comedia",
@@ -4616,80 +4682,92 @@
       "release_date": "27/4/2017",
       "director": "Nicolás Tuozzo"
     },
+{
+  "title": "Goyo",
+  "genre": "Romance",
+  "year": "2024",
+  "actors": [
+    "Nicolás Furtado",
+    "Nancy Dupláa",
+    "Cecilia Roth",
+    "Soledad Villamil",
+    "Pablo Rago"
+  ],
+  "synopsis": "Goyo, un guía del Museo de Bellas Artes con Asperger y fanático de Van Gogh, ve alterada su rutina al enamorarse de Eva, una guardia marcada por una crisis sentimental. Juntos descubren una manera distinta y sincera de amar.",
+  "channel": "",
+  "image": "images/verticals/goyo-poster-280x420.png",
+  "orientation": "vertical",
+  "type": "pelicula",
+  "subtitle": "Romance",
+  "id": "P1205",
+  "producer": "Netflix",
+  "release_date": "27/6/2024",
+  "director": "Marcos Carnevale",
+  "netflix_reports": [
     {
-      "title": "Goyo",
-      "genre": "Romance",
-      "year": "2024",
-      "actors": [
-        "Nicolás Furtado",
-        "Nancy Dupláa",
-        "Cecilia Roth",
-        "Soledad Villamil",
-        "Pablo Rago"
-      ],
-      "synopsis": "Goyo, un guía del Museo de Bellas Artes con Asperger y fanático de Van Gogh, ve alterada su rutina al enamorarse de Eva, una guardia marcada por una crisis sentimental. Juntos descubren una manera distinta y sincera de amar.",
-      "channel": "",
-      "image": "images/verticals/goyo-poster-280x420.png",
-      "orientation": "vertical",
-      "type": "pelicula",
-      "subtitle": "Romance",
-      "id": "P1205",
-      "producer": "Netflix",
-      "release_date": "27/6/2024",
-      "director": "Marcos Carnevale",
-      "netflix_reports": [
-        {
-          "report_id": "2025-H2",
-          "periodo": "Jul-Dic 2025",
-          "visualizaciones": 1200000,
-          "ranking_peliculas": 2873
-        }
-      ],
-      "netflix_aggregates": [
-        {
-          "report_id": "2025-H2",
-          "periodo": "Jul-Dic 2025",
-          "visualizaciones_totales": 1200000
-        }
-      ]
+      "report_id": "2025-H2",
+      "periodo": "Jul-Dic 2025",
+      "visualizaciones": 1200000,
+      "ranking_peliculas": 2873
     },
     {
-      "title": "Pipa",
-      "genre": "Policial",
-      "year": "2022",
-      "actors": [
-        "Luisana Lopilato",
-        "Mauricio Paniagua",
-        "Inés Estévez",
-        "Ariel Staltari",
-        "Paulina García"
-      ],
-      "synopsis": "Manuela “Pipa” Pelari deja la policía y su pasado oscuro tras una fuerte caída personal. Su tía la lleva a un pequeño pueblo del Norte en busca de una nueva oportunidad para empezar de nuevo.",
-      "channel": "",
-      "image": "images/verticals/pipa-2022-poster-280x420.png",
-      "orientation": "vertical",
-      "type": "pelicula",
-      "subtitle": "Policial",
-      "id": "P1206",
-      "producer": "Netflix",
-      "release_date": "27/7/2022",
-      "director": "Alejandro Montiel",
-      "netflix_reports": [
-        {
-          "report_id": "2025-H2",
-          "periodo": "Jul-Dic 2025",
-          "visualizaciones": 1400000,
-          "ranking_peliculas": 1933
-        }
-      ],
-      "netflix_aggregates": [
-        {
-          "report_id": "2025-H2",
-          "periodo": "Jul-Dic 2025",
-          "visualizaciones_totales": 1400000
-        }
-      ]
+      "report_id": "2026-H1",
+      "periodo": "Ene-Jun 2026",
+      "visualizaciones": 200000,
+      "ranking_peliculas": 4943
+    }
+  ],
+  "netflix_aggregates": [
+    {
+      "report_id": "2026-H1",
+      "periodo": "Jul 2025-Jun 2026",
+      "visualizaciones_totales": 1400000
+    }
+  ]
+},
+{
+  "title": "Pipa",
+  "genre": "Policial",
+  "year": "2022",
+  "actors": [
+    "Luisana Lopilato",
+    "Mauricio Paniagua",
+    "Inés Estévez",
+    "Ariel Staltari",
+    "Paulina García"
+  ],
+  "synopsis": "Manuela “Pipa” Pelari deja la policía y su pasado oscuro tras una fuerte caída personal. Su tía la lleva a un pequeño pueblo del Norte en busca de una nueva oportunidad para empezar de nuevo.",
+  "channel": "",
+  "image": "images/verticals/pipa-2022-poster-280x420.png",
+  "orientation": "vertical",
+  "type": "pelicula",
+  "subtitle": "Policial",
+  "id": "P1206",
+  "producer": "Netflix",
+  "release_date": "27/7/2022",
+  "director": "Alejandro Montiel",
+  "netflix_reports": [
+    {
+      "report_id": "2025-H2",
+      "periodo": "Jul-Dic 2025",
+      "visualizaciones": 1400000,
+      "ranking_peliculas": 1933
     },
+    {
+      "report_id": "2026-H1",
+      "periodo": "Ene-Jun 2026",
+      "visualizaciones": 2000000,
+      "ranking_peliculas": 1477
+    }
+  ],
+  "netflix_aggregates": [
+    {
+      "report_id": "2026-H1",
+      "periodo": "Jul 2025-Jun 2026",
+      "visualizaciones_totales": 3400000
+    }
+  ]
+},
     {
       "title": "El amor menos pensado",
       "genre": "Drama",
@@ -4875,42 +4953,48 @@
       "release_date": "28/5/1998",
       "director": "Daniel Barone"
     },
+{
+  "title": "La Corazonada",
+  "genre": "Policial",
+  "year": "2020",
+  "actors": [
+    "Luisana Lopilato",
+    "Joaquín Furriel",
+    "Rafael Ferro",
+    "Maite Lanata"
+  ],
+  "synopsis": "Manuela “Pipa” Pelari inicia su carrera policial investigando un brutal asesinato junto al inspector Juanez. El caso apunta como principal sospechosa a la mejor amiga de la víctima, poniendo a prueba su vocación y temple.",
+  "channel": "",
+  "image": "images/verticals/la-corazonada-2020-poster-280x420.png",
+  "orientation": "vertical",
+  "type": "pelicula",
+  "subtitle": "Policial",
+  "id": "P1216",
+  "producer": "Netflix",
+  "release_date": "28/5/2020",
+  "director": "Alejandro Montiel",
+  "netflix_reports": [
     {
-      "title": "La Corazonada",
-      "genre": "Policial",
-      "year": "2020",
-      "actors": [
-        "Luisana Lopilato",
-        "Joaquín Furriel",
-        "Rafael Ferro",
-        "Maite Lanata"
-      ],
-      "synopsis": "Manuela “Pipa” Pelari inicia su carrera policial investigando un brutal asesinato junto al inspector Juanez. El caso apunta como principal sospechosa a la mejor amiga de la víctima, poniendo a prueba su vocación y temple.",
-      "channel": "",
-      "image": "images/verticals/la-corazonada-2020-poster-280x420.png",
-      "orientation": "vertical",
-      "type": "pelicula",
-      "subtitle": "Policial",
-      "id": "P1216",
-      "producer": "Netflix",
-      "release_date": "28/5/2020",
-      "director": "Alejandro Montiel",
-      "netflix_reports": [
-        {
-          "report_id": "2025-H2",
-          "periodo": "Jul-Dic 2025",
-          "visualizaciones": 800000,
-          "ranking_peliculas": 3590
-        }
-      ],
-      "netflix_aggregates": [
-        {
-          "report_id": "2025-H2",
-          "periodo": "Jul-Dic 2025",
-          "visualizaciones_totales": 800000
-        }
-      ]
+      "report_id": "2025-H2",
+      "periodo": "Jul-Dic 2025",
+      "visualizaciones": 800000,
+      "ranking_peliculas": 3590
     },
+    {
+      "report_id": "2026-H1",
+      "periodo": "Ene-Jun 2026",
+      "visualizaciones": 500000,
+      "ranking_peliculas": 3384
+    }
+  ],
+  "netflix_aggregates": [
+    {
+      "report_id": "2026-H1",
+      "periodo": "Jul 2025-Jun 2026",
+      "visualizaciones_totales": 1300000
+    }
+  ]
+},
     {
       "title": "Elsa y Fred",
       "genre": "Drama",
@@ -5045,76 +5129,88 @@
       "release_date": "29/9/2022",
       "director": "Santiago Mitre"
     },
+{
+  "title": "Granizo",
+  "genre": "Comedia",
+  "year": "2022",
+  "actors": [
+    "Guillermo Francella",
+    "Romina Fernandes",
+    "Peto Menahem",
+    "Eugenia Guerty"
+  ],
+  "synopsis": "Después de que le llueven críticas por fallar en el pronóstico de una tormenta, un meteorólogo se refugia en la casa de su hija e inicia un viaje de autodescubrimiento.",
+  "channel": "",
+  "image": "images/verticals/granizo-2022-poster-280x420.png",
+  "orientation": "vertical",
+  "type": "pelicula",
+  "subtitle": "Comedia",
+  "id": "P1224",
+  "producer": "Netflix",
+  "release_date": "30/03/2022",
+  "director": "Marcos Carnevale",
+  "netflix_reports": [
     {
-      "title": "Granizo",
-      "genre": "Comedia",
-      "year": "2022",
-      "actors": [
-        "Guillermo Francella",
-        "Romina Fernandes",
-        "Peto Menahem",
-        "Eugenia Guerty"
-      ],
-      "synopsis": "Después de que le llueven críticas por fallar en el pronóstico de una tormenta, un meteorólogo se refugia en la casa de su hija e inicia un viaje de autodescubrimiento.",
-      "channel": "",
-      "image": "images/verticals/granizo-2022-poster-280x420.png",
-      "orientation": "vertical",
-      "type": "pelicula",
-      "subtitle": "Comedia",
-      "id": "P1224",
-      "producer": "Netflix",
-      "release_date": "30/03/2022",
-      "director": "Marcos Carnevale",
-      "netflix_reports": [
-        {
-          "report_id": "2025-H2",
-          "periodo": "Jul-Dic 2025",
-          "visualizaciones": 500000,
-          "ranking_peliculas": 3331
-        }
-      ],
-      "netflix_aggregates": [
-        {
-          "report_id": "2025-H2",
-          "periodo": "Jul-Dic 2025",
-          "visualizaciones_totales": 500000
-        }
-      ]
+      "report_id": "2025-H2",
+      "periodo": "Jul-Dic 2025",
+      "visualizaciones": 500000,
+      "ranking_peliculas": 3331
     },
     {
-      "title": "Corazón Delator",
-      "genre": "Romance",
-      "year": "2025",
-      "actors": [
-        "Benjamín Vicuña",
-        "Julieta Díaz"
-      ],
-      "synopsis": "Juan Manuel, un empresario distante, recibe el corazón de Pedro y, al conocer a su viuda Valeria, se enamora de ella sin revelar su identidad. Mientras intenta salvar el barrio de su donante, descubre que ese amor parece trascender la muerte.",
-      "channel": "",
-      "image": "images/verticals/corazon-delator-poster-280x420.png",
-      "orientation": "vertical",
-      "type": "pelicula",
-      "subtitle": "Romance",
-      "id": "P1226",
-      "producer": "Netflix",
-      "release_date": "30/5/2025",
-      "director": "Marcos Carnevale",
-      "netflix_reports": [
-        {
-          "report_id": "2025-H2",
-          "periodo": "Jul-Dic 2025",
-          "visualizaciones": 8600000,
-          "ranking_peliculas": 528
-        }
-      ],
-      "netflix_aggregates": [
-        {
-          "report_id": "2025-H2",
-          "periodo": "Jul-Dic 2025",
-          "visualizaciones_totales": 8600000
-        }
-      ]
+      "report_id": "2026-H1",
+      "periodo": "Ene-Jun 2026",
+      "visualizaciones": 700000,
+      "ranking_peliculas": 2867
+    }
+  ],
+  "netflix_aggregates": [
+    {
+      "report_id": "2026-H1",
+      "periodo": "Jul 2025-Jun 2026",
+      "visualizaciones_totales": 1200000
+    }
+  ]
+},
+{
+  "title": "Corazón Delator",
+  "genre": "Romance",
+  "year": "2025",
+  "actors": [
+    "Benjamín Vicuña",
+    "Julieta Díaz"
+  ],
+  "synopsis": "Juan Manuel, un empresario distante, recibe el corazón de Pedro y, al conocer a su viuda Valeria, se enamora de ella sin revelar su identidad. Mientras intenta salvar el barrio de su donante, descubre que ese amor parece trascender la muerte.",
+  "channel": "",
+  "image": "images/verticals/corazon-delator-poster-280x420.png",
+  "orientation": "vertical",
+  "type": "pelicula",
+  "subtitle": "Romance",
+  "id": "P1226",
+  "producer": "Netflix",
+  "release_date": "30/5/2025",
+  "director": "Marcos Carnevale",
+  "netflix_reports": [
+    {
+      "report_id": "2025-H2",
+      "periodo": "Jul-Dic 2025",
+      "visualizaciones": 8600000,
+      "ranking_peliculas": 528
     },
+    {
+      "report_id": "2026-H1",
+      "periodo": "Ene-Jun 2026",
+      "visualizaciones": 2200000,
+      "ranking_peliculas": 1385
+    }
+  ],
+  "netflix_aggregates": [
+    {
+      "report_id": "2026-H1",
+      "periodo": "Jul 2025-Jun 2026",
+      "visualizaciones_totales": 10800000
+    }
+  ]
+},
     {
       "title": "Todos tenemos un Plan",
       "genre": "Policial",
@@ -5158,40 +5254,46 @@
       "release_date": "30/8/2018",
       "director": "Pablo Trapero"
     },
+{
+  "title": "Las Hermanas Fantásticas",
+  "genre": "Comedia",
+  "year": "2024",
+  "actors": [
+    "Sofía Morandi",
+    "Leticia Siciliani"
+  ],
+  "synopsis": "Jesi y Ángela, dos hermanas desconocidas entre sí, se reencuentran tras la muerte de su padre y heredan un departamento en Puerto Madero. Al hallar millones de euros ocultos, deberán decidir qué hacer mientras construyen un vínculo marcado por la ambición y la necesidad.",
+  "channel": "",
+  "image": "images/verticals/las-hermanas-fantasticas-poster-280x420.png",
+  "orientation": "vertical",
+  "type": "pelicula",
+  "subtitle": "Comedia",
+  "id": "P1229",
+  "producer": "Netflix",
+  "release_date": "30/8/2024",
+  "director": "Fabiana Tiscornia",
+  "netflix_reports": [
     {
-      "title": "Las Hermanas Fantásticas",
-      "genre": "Comedia",
-      "year": "2024",
-      "actors": [
-        "Sofía Morandi",
-        "Leticia Siciliani"
-      ],
-      "synopsis": "Jesi y Ángela, dos hermanas desconocidas entre sí, se reencuentran tras la muerte de su padre y heredan un departamento en Puerto Madero. Al hallar millones de euros ocultos, deberán decidir qué hacer mientras construyen un vínculo marcado por la ambición y la necesidad.",
-      "channel": "",
-      "image": "images/verticals/las-hermanas-fantasticas-poster-280x420.png",
-      "orientation": "vertical",
-      "type": "pelicula",
-      "subtitle": "Comedia",
-      "id": "P1229",
-      "producer": "Netflix",
-      "release_date": "30/8/2024",
-      "director": "Fabiana Tiscornia",
-      "netflix_reports": [
-        {
-          "report_id": "2025-H2",
-          "periodo": "Jul-Dic 2025",
-          "visualizaciones": 800000,
-          "ranking_peliculas": 3210
-        }
-      ],
-      "netflix_aggregates": [
-        {
-          "report_id": "2025-H2",
-          "periodo": "Jul-Dic 2025",
-          "visualizaciones_totales": 800000
-        }
-      ]
+      "report_id": "2025-H2",
+      "periodo": "Jul-Dic 2025",
+      "visualizaciones": 800000,
+      "ranking_peliculas": 3210
     },
+    {
+      "report_id": "2026-H1",
+      "periodo": "Ene-Jun 2026",
+      "visualizaciones": 100000,
+      "ranking_peliculas": 5929
+    }
+  ],
+  "netflix_aggregates": [
+    {
+      "report_id": "2026-H1",
+      "periodo": "Jul 2025-Jun 2026",
+      "visualizaciones_totales": 900000
+    }
+  ]
+},
     {
       "title": "Nueve Reinas",
       "genre": "Policial",
@@ -5697,29 +5799,44 @@
       "release_date": "15/01/2026",
       "subtitle": "Terror"
     },
+{
+  "id": "P2033",
+  "title": "Parque Lezama",
+  "type": "pelicula",
+  "year": "2026",
+  "genre": "Drama",
+  "actors": [
+    "Eduardo Blanco",
+    "Luis Brandoni",
+    "Verónica Pelaccini",
+    "Agustín Aristarán",
+    "Manuela Menéndez"
+  ],
+  "synopsis": "Un ex militante comunista y un hombre que cree en el «vive y deja vivir» entablan una amistad en un banco del parque, entre historias llenas de humor y ternura.",
+  "channel": "Streaming",
+  "image": "images/verticals/parque-lezama-2026-poster-280x420.png",
+  "orientation": "vertical",
+  "viewers": "-",
+  "producer": "Netflix",
+  "director": "Juan José Campanella",
+  "release_date": "19/2/2026",
+  "subtitle": "Drama",
+  "netflix_reports": [
     {
-      "id": "P2033",
-      "title": "Parque Lezama",
-      "type": "pelicula",
-      "year": "2026",
-      "genre": "Drama",
-      "actors": [
-        "Eduardo Blanco",
-        "Luis Brandoni",
-        "Verónica Pelaccini",
-        "Agustín Aristarán",
-        "Manuela Menéndez"
-      ],
-      "synopsis": "Un ex militante comunista y un hombre que cree en el «vive y deja vivir» entablan una amistad en un banco del parque, entre historias llenas de humor y ternura.",
-      "channel": "Streaming",
-      "image": "images/verticals/parque-lezama-2026-poster-280x420.png",
-      "orientation": "vertical",
-      "viewers": "-",
-      "producer": "Netflix",
-      "director": "Juan José Campanella",
-      "release_date": "19/2/2026",
-      "subtitle": "Drama"
-    },
+      "report_id": "2026-H1",
+      "periodo": "Ene-Jun 2026",
+      "visualizaciones": 2900000,
+      "ranking_peliculas": 1055
+    }
+  ],
+  "netflix_aggregates": [
+    {
+      "report_id": "2026-H1",
+      "periodo": "Ene-Jun 2026",
+      "visualizaciones_totales": 2900000
+    }
+  ]
+},
     {
       "id": "P2034",
       "title": "Playa de Lobos",
@@ -5740,29 +5857,44 @@
       "release_date": "21/03/2026",
       "subtitle": "Policial"
     },
+{
+  "id": "P2035",
+  "title": "El Último Gigante",
+  "type": "pelicula",
+  "year": "2026",
+  "genre": "Drama",
+  "actors": [
+    "Oscar Martínez",
+    "Matías Mayer",
+    "Inés Estévez",
+    "Silvia Kutika",
+    "Johanna Francella"
+  ],
+  "synopsis": "El padre de un guía turístico reaparece de la nada y reabre sus viejas heridas. ¿Podrá su hijo tomar una durísima decisión que marcará el futuro de ambos?",
+  "channel": "Streaming",
+  "image": "images/verticals/el-ultimo-gigante-2026-poster-280x420.png",
+  "orientation": "vertical",
+  "viewers": "-",
+  "producer": "Netflix",
+  "director": "Marcos Carnevale",
+  "release_date": "01/04/2026",
+  "subtitle": "Drama",
+  "netflix_reports": [
     {
-      "id": "P2035",
-      "title": "El Último Gigante",
-      "type": "pelicula",
-      "year": "2026",
-      "genre": "Drama",
-      "actors": [
-        "Oscar Martínez",
-        "Matías Mayer",
-        "Inés Estévez",
-        "Silvia Kutika",
-        "Johanna Francella"
-      ],
-      "synopsis": "El padre de un guía turístico reaparece de la nada y reabre sus viejas heridas. ¿Podrá su hijo tomar una durísima decisión que marcará el futuro de ambos?",
-      "channel": "Streaming",
-      "image": "images/verticals/el-ultimo-gigante-2026-poster-280x420.png",
-      "orientation": "vertical",
-      "viewers": "-",
-      "producer": "Netflix",
-      "director": "Marcos Carnevale",
-      "release_date": "01/04/2026",
-      "subtitle": "Drama"
-    },
+      "report_id": "2026-H1",
+      "periodo": "Ene-Jun 2026",
+      "visualizaciones": 9000000,
+      "ranking_peliculas": 252
+    }
+  ],
+  "netflix_aggregates": [
+    {
+      "report_id": "2026-H1",
+      "periodo": "Ene-Jun 2026",
+      "visualizaciones_totales": 9000000
+    }
+  ]
+},
     {
       "id": "P2036",
       "title": "La Caja Azul",
@@ -5844,26 +5976,41 @@
       "release_date": "31/12/2026",
       "subtitle": "Drama"
     },
+{
+  "id": "P2040",
+  "title": "Risa y la Cabina del Viento",
+  "type": "pelicula",
+  "year": "2026",
+  "genre": "Drama",
+  "actors": [
+    "Cazzu",
+    "Joaquín Furriel"
+  ],
+  "synopsis": "Una niña pierde a su padre en un incendio en Tierra del Fuego y descubre una cabina de teléfono que le permite hablar con los muertos.",
+  "channel": "Netflix",
+  "image": "images/verticals/risa-y-la-cabina-del-viento-poster-280x420.png",
+  "orientation": "vertical",
+  "viewers": "-",
+  "producer": "Netflix",
+  "director": "Juan Cabral",
+  "release_date": "16/04/2026",
+  "subtitle": "Drama",
+  "netflix_reports": [
     {
-      "id": "P2040",
-      "title": "Risa y la Cabina del Viento",
-      "type": "pelicula",
-      "year": "2026",
-      "genre": "Drama",
-      "actors": [
-        "Cazzu",
-        "Joaquín Furriel"
-      ],
-      "synopsis": "Una niña pierde a su padre en un incendio en Tierra del Fuego y descubre una cabina de teléfono que le permite hablar con los muertos.",
-      "channel": "Netflix",
-      "image": "images/verticals/risa-y-la-cabina-del-viento-poster-280x420.png",
-      "orientation": "vertical",
-      "viewers": "-",
-      "producer": "Netflix",
-      "director": "Juan Cabral",
-      "release_date": "16/04/2026",
-      "subtitle": "Drama"
-    },
+      "report_id": "2026-H1",
+      "periodo": "Ene-Jun 2026",
+      "visualizaciones": 3000000,
+      "ranking_peliculas": 1036
+    }
+  ],
+  "netflix_aggregates": [
+    {
+      "report_id": "2026-H1",
+      "periodo": "Ene-Jun 2026",
+      "visualizaciones_totales": 3000000
+    }
+  ]
+},
     {
       "id": "P2041",
       "title": "Felicidades",
