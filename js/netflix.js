@@ -172,25 +172,221 @@ function compareSeriesByLatestReleaseAsc(a, b) {
   return String(a.title || '').localeCompare(String(b.title || ''), 'es');
 }
 
-fetch('data.json?v=' + netflixDataVersion, { cache: 'no-store' })
-  .then(response => response.json())
-  .then(data => {
-    const netflixItems = data.items
-      .filter(item => isNetflixItem(item))
-      .map(item => {
-        const aggregate = getAggregateFromItem(item);
-        return {
-          ...item,
-          netflix_metric: aggregate
-        };
-      });
+function compareMoviesByReleaseDesc(a, b) {
+  const diff = getMovieReleaseValue(b) - getMovieReleaseValue(a);
+  if (diff !== 0) return diff;
+  return String(a.title || '').localeCompare(String(b.title || ''), 'es');
+}
 
-    const series = netflixItems.filter(item => item.type !== 'pelicula');
-    const movies = netflixItems.filter(item => item.type === 'pelicula');
+function getMovieReleaseValue(movie) {
+  if (!movie) return 0;
 
-    setupSeriesFilters(series);
-    setupMovieFilters(movies);
+  const directValue = parseReleaseDateValue(movie.release_date);
+  if (directValue !== null) return directValue;
+
+  const alternateValue = parseReleaseDateValue(movie.fecha_estreno);
+  if (alternateValue !== null) return alternateValue;
+
+  const fallbackYear = parseInt(movie.year, 10);
+  return Number.isFinite(fallbackYear) ? Date.UTC(fallbackYear, 0, 1) : 0;
+}
+
+function renderIndexMovieCard(movie) {
+  const li = document.createElement('li');
+  li.className = 'item-a';
+  const title = movie.title || '';
+
+  function formatDateFromTimestamp(ts) {
+    if (!ts) return '';
+    const d = new Date(Number(ts));
+    const dd = String(d.getUTCDate()).padStart(2, '0');
+    const mm = String(d.getUTCMonth() + 1).padStart(2, '0');
+    const yyyy = d.getUTCFullYear();
+    return `${dd}/${mm}/${yyyy}`;
+  }
+
+  // Prefer explicit release_date, then fecha_estreno, then fallback to year
+  let displayDate = '';
+  const rd = parseReleaseDateValue(movie.release_date);
+  if (rd !== null) {
+    displayDate = formatDateFromTimestamp(rd);
+  } else {
+    const fe = parseReleaseDateValue(movie.fecha_estreno);
+    if (fe !== null) displayDate = formatDateFromTimestamp(fe);
+    else if (movie.year) displayDate = String(movie.year);
+  }
+  const imageSrc = movie.image
+    ? String(movie.image).replace(/ /g, '%20')
+    : 'images/verticals/placeholder-280x420.svg';
+
+  li.innerHTML = `
+    <a href="show.html?id=${movie.id}">
+      <div class="latest-box">
+        <div class="latest-b-img">
+          <img src="${imageSrc}" alt="${title}" loading="lazy">
+        </div>
+        <div class="latest-b-text">
+          <strong>${title}</strong>
+          <p>${displayDate}</p>
+        </div>
+      </div>
+    </a>
+  `;
+
+  return li;
+}
+
+function renderPlatformCarousel(options) {
+  console.log('[Netflix] renderPlatformCarousel called, options:', options);
+  const containerId = options && options.containerId ? String(options.containerId) : '';
+  console.log('[Netflix] containerId:', containerId);
+  const container = document.getElementById(containerId);
+  console.log('[Netflix] container found:', !!container, 'container:', container);
+  if (!container) {
+    console.error('[Netflix] ERROR: container not found with id:', containerId);
+    return;
+  }
+
+  const items = Array.isArray(options && options.items) ? options.items : [];
+  container.innerHTML = '';
+
+  const sortedItems = [...items].sort(compareMoviesByReleaseDesc);
+  sortedItems.forEach(item => {
+    container.appendChild(renderIndexMovieCard(item));
   });
+
+  if (window.jQuery && window.jQuery.fn && window.jQuery.fn.lightSlider) {
+    const $container = window.jQuery(container);
+    const previousInstance = $container.data('lightSlider');
+    if (previousInstance && typeof previousInstance.destroy === 'function') {
+      previousInstance.destroy();
+    }
+    $container.data('lightSlider', null);
+
+    $container.lightSlider({
+      item: 5,
+      slideMove: 1,
+      slideMargin: 12,
+      loop: false,
+      pager: false,
+      controls: true,
+      enableTouch: true,
+      enableDrag: true,
+      freeMove: false,
+      responsive: [
+        { breakpoint: 1100, settings: { item: 4 } },
+        { breakpoint: 768, settings: { item: 2 } }
+      ]
+    });
+  }
+}
+
+function isMovieReleased(movie) {
+  if (!movie) return false;
+
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+
+  const candidates = [];
+
+  const releaseDateParsed = parseReleaseDateValue(movie.release_date);
+  if (releaseDateParsed !== null) {
+    candidates.push(new Date(releaseDateParsed));
+  }
+
+  const fechaEstrenoParsed = parseReleaseDateValue(movie.fecha_estreno);
+  if (fechaEstrenoParsed !== null) {
+    candidates.push(new Date(fechaEstrenoParsed));
+  }
+
+  if (movie.year) {
+    const year = parseInt(movie.year, 10);
+    if (Number.isFinite(year)) {
+      candidates.push(new Date(year, 0, 1));
+    }
+  }
+
+  if (candidates.length === 0) return false;
+
+  const latestDate = new Date(Math.max(...candidates.map(d => d.getTime())));
+  return latestDate <= today;
+}
+
+function renderIndexNetflixCarousel(movies) {
+  const releasedMovies = movies.filter(isMovieReleased);
+  renderPlatformCarousel({
+    containerId: 'indexNetflixMoviesList',
+    items: releasedMovies
+  });
+}
+
+window.netflixDebug = window.netflixDebug || {};
+
+function initializeNetflixCarousel() {
+  console.log('[Netflix] Initializing carousel');
+  window.netflixDebug.initialized = true;
+  const container = document.getElementById('indexNetflixMoviesList');
+  console.log('[Netflix] Container found:', !!container);
+  window.netflixDebug.containerFound = !!container;
+  if (!container) {
+    console.log('[Netflix] Container not found, returning');
+    window.netflixDebug.error = 'container_not_found';
+    return;
+  }
+  
+  fetch('data.json?v=' + netflixDataVersion, { cache: 'no-store' })
+    .then(response => {
+      console.log('[Netflix] Fetch response ok:', response.ok);
+      window.netflixDebug.fetchOk = response.ok;
+      return response.json();
+    })
+    .then(data => {
+      console.log('[Netflix] Data loaded, items count:', data.items ? data.items.length : 0);
+      window.netflixDebug.dataLoaded = true;
+      window.netflixDebug.itemsCount = data.items ? data.items.length : 0;
+      
+      const netflixItems = data.items
+        .filter(item => isNetflixItem(item))
+        .map(item => {
+          const aggregate = getAggregateFromItem(item);
+          return {
+            ...item,
+            netflix_metric: aggregate
+          };
+        });
+
+      const series = netflixItems.filter(item => item.type !== 'pelicula');
+      const movies = netflixItems.filter(item => item.type === 'pelicula');
+
+      console.log('[Netflix] Netflix items:', netflixItems.length, 'Series:', series.length, 'Movies:', movies.length);
+      window.netflixDebug.netflixItemsCount = netflixItems.length;
+      window.netflixDebug.moviesCount = movies.length;
+      
+      renderIndexNetflixCarousel(movies);
+      window.netflixDebug.renderCalled = true;
+      
+      setupSeriesFilters(series);
+      setupMovieFilters(movies);
+    })
+    .catch(error => {
+      console.error('[Netflix] Error al cargar Netflix data:', error);
+      window.netflixDebug.error = 'fetch_error: ' + error.message;
+    });
+}
+
+console.log('[Netflix] Script loaded, readyState:', document.readyState);
+window.netflixDebug.scriptLoaded = true;
+window.netflixDebug.readyState = document.readyState;
+
+if (document.readyState === 'loading') {
+  console.log('[Netflix] DOM still loading, adding DOMContentLoaded listener');
+  document.addEventListener('DOMContentLoaded', initializeNetflixCarousel);
+  window.netflixDebug.strategy = 'DOMContentLoaded listener';
+} else {
+  console.log('[Netflix] DOM already loaded, using setTimeout');
+  setTimeout(initializeNetflixCarousel, 50);
+  window.netflixDebug.strategy = 'setTimeout';
+}
 
 function renderCards(items, containerId, type) {
   const container = document.getElementById(containerId);
