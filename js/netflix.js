@@ -88,6 +88,24 @@ function formatViews(value) {
   return n.toLocaleString('es-AR');
 }
 
+function getPlaceholderImageSrc() {
+  return 'images/verticals/placeholder-280x420.svg';
+}
+
+function getItemImageSrc(item) {
+  const rawValue = item && item.image ? String(item.image).trim() : '';
+  if (!rawValue) return getPlaceholderImageSrc();
+  return rawValue.replace(/ /g, '%20');
+}
+
+function escapeAttribute(value) {
+  return String(value ?? '')
+    .replace(/&/g, '&amp;')
+    .replace(/"/g, '&quot;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;');
+}
+
 function isNetflixItem(item) {
   const channel = (item.channel || '').toLowerCase();
   const producer = (item.producer || '').toLowerCase();
@@ -215,15 +233,14 @@ function renderIndexMovieCard(movie) {
     if (fe !== null) displayDate = formatDateFromTimestamp(fe);
     else if (movie.year) displayDate = String(movie.year);
   }
-  const imageSrc = movie.image
-    ? String(movie.image).replace(/ /g, '%20')
-    : 'images/verticals/placeholder-280x420.svg';
+  const imageSrc = getItemImageSrc(movie);
+  const escapedTitle = escapeAttribute(title);
 
   li.innerHTML = `
     <a href="show.html?id=${movie.id}">
       <div class="latest-box">
         <div class="latest-b-img">
-          <img src="${imageSrc}" alt="${title}" loading="lazy">
+          <img src="${imageSrc}" alt="${escapedTitle}" loading="lazy" onerror="this.onerror=null;this.src='${getPlaceholderImageSrc()}';">
         </div>
         <div class="latest-b-text">
           <strong>${title}</strong>
@@ -323,54 +340,83 @@ function renderIndexNetflixCarousel(movies) {
 window.netflixDebug = window.netflixDebug || {};
 
 function initializeNetflixCarousel() {
-  console.log('[Netflix] Initializing carousel');
+  console.log('[Netflix] Initializing Netflix data');
+
   window.netflixDebug.initialized = true;
-  const container = document.getElementById('indexNetflixMoviesList');
-  console.log('[Netflix] Container found:', !!container);
-  window.netflixDebug.containerFound = !!container;
-  if (!container) {
-    console.log('[Netflix] Container not found, returning');
-    window.netflixDebug.error = 'container_not_found';
-    return;
-  }
-  
-  fetch('data.json?v=' + netflixDataVersion, { cache: 'no-store' })
+
+  const indexContainer = document.getElementById(
+    'indexNetflixMoviesList'
+  );
+
+  window.netflixDebug.containerFound = !!indexContainer;
+
+  fetch('data.json?v=' + netflixDataVersion, {
+    cache: 'no-store'
+  })
     .then(response => {
-      console.log('[Netflix] Fetch response ok:', response.ok);
-      window.netflixDebug.fetchOk = response.ok;
+      if (!response.ok) {
+        throw new Error(
+          `HTTP ${response.status}: no se pudo cargar data.json`
+        );
+      }
+
+      window.netflixDebug.fetchOk = true;
       return response.json();
     })
     .then(data => {
-      console.log('[Netflix] Data loaded, items count:', data.items ? data.items.length : 0);
+      const items = Array.isArray(data.items)
+        ? data.items
+        : [];
+
       window.netflixDebug.dataLoaded = true;
-      window.netflixDebug.itemsCount = data.items ? data.items.length : 0;
-      
-      const netflixItems = data.items
+      window.netflixDebug.itemsCount = items.length;
+
+      const netflixItems = items
         .filter(item => isNetflixItem(item))
         .map(item => {
           const aggregate = getAggregateFromItem(item);
+
           return {
             ...item,
             netflix_metric: aggregate
           };
         });
 
-      const series = netflixItems.filter(item => item.type !== 'pelicula');
-      const movies = netflixItems.filter(item => item.type === 'pelicula');
+      const series = netflixItems.filter(
+        item => item.type !== 'pelicula'
+      );
 
-      console.log('[Netflix] Netflix items:', netflixItems.length, 'Series:', series.length, 'Movies:', movies.length);
-      window.netflixDebug.netflixItemsCount = netflixItems.length;
+      const movies = netflixItems.filter(
+        item => item.type === 'pelicula'
+      );
+
+      window.netflixDebug.netflixItemsCount =
+        netflixItems.length;
+
+      window.netflixDebug.seriesCount = series.length;
       window.netflixDebug.moviesCount = movies.length;
-      
-      renderIndexNetflixCarousel(movies);
-      window.netflixDebug.renderCalled = true;
-      
-      setupSeriesFilters(series);
-      setupMovieFilters(movies);
+
+      const shouldRenderIndexCarousel = !!indexContainer;
+      const shouldRenderNetflixPage = !!document.getElementById('actorSortCustom') || !!document.getElementById('movieSortCustom');
+
+      if (shouldRenderIndexCarousel) {
+        renderIndexNetflixCarousel(movies);
+        window.netflixDebug.renderCalled = true;
+      }
+
+      if (shouldRenderNetflixPage) {
+        setupSeriesFilters(series);
+        setupMovieFilters(movies);
+      }
     })
     .catch(error => {
-      console.error('[Netflix] Error al cargar Netflix data:', error);
-      window.netflixDebug.error = 'fetch_error: ' + error.message;
+      console.error(
+        '[Netflix] Error al cargar Netflix data:',
+        error
+      );
+
+      window.netflixDebug.error =
+        'fetch_error: ' + error.message;
     });
 }
 
@@ -396,7 +442,7 @@ function renderCards(items, containerId, type) {
     const card = document.createElement('div');
     card.className = 'actor-movie-card';
     const tipoEmision = type === 'series' && item.tipo_emision ? item.tipo_emision : '';
-    let imageSrc = item.image ? String(item.image).replace(/ /g, '%20') : 'images/verticals/placeholder-280x420.svg';
+    let imageSrc = getItemImageSrc(item);
     if (type === 'series' && item.id === 'V180' && Array.isArray(item.temporadas)) {
       const season5 = item.temporadas.find(t => t && Number(t.numero || t.season) === 5 && t.image);
       if (season5 && season5.image) {
@@ -422,11 +468,12 @@ function renderCards(items, containerId, type) {
       }
     }
 
+    const escapedTitle = escapeAttribute(item.title);
     card.innerHTML = `
       <a href="show.html?id=${item.id}">
-        <img src="${imageSrc}" alt="${item.title}">
+        <img src="${imageSrc}" alt="${escapedTitle}" onerror="this.onerror=null;this.src='${getPlaceholderImageSrc()}';">
         <div class="actor-movie-info">
-          <div class="actor-movie-title">${item.title}</div>
+          <div class="actor-movie-title">${escapedTitle}</div>
           <div class="actor-movie-meta">${item.year} · ${item.genre || ''}</div>
           ${tipoEmision ? '<div class="actor-movie-meta" style="color:#b0b0b0;">' + tipoEmision + '</div>' : ''}
           ${netflixMetricHtml}
@@ -526,18 +573,37 @@ function sortAndFilterMovies(list, sort) {
 function setupSeriesFilters(allSeries) {
   const select = document.getElementById('actorSortCustom');
   if (!select) return;
+
   let currentSort = 'year';
 
   function renderFiltered() {
-    const filtered = sortAndFilterSeries(allSeries, currentSort);
-    document.getElementById('actor-movie-count').textContent = `${filtered.length} series de Netflix`;
-    renderCards(filtered, 'actorMoviesList', 'series');
+    const filtered = sortAndFilterSeries(
+      allSeries,
+      currentSort
+    );
+
+    const countElement =
+      document.getElementById('actor-movie-count');
+
+    if (countElement) {
+      countElement.textContent =
+        `${filtered.length} series de Netflix`;
+    }
+
+    renderCards(
+      filtered,
+      'actorMoviesList',
+      'series'
+    );
   }
 
-  setupCustomSelect('actorSortCustom', function (value) {
-    currentSort = value;
-    renderFiltered();
-  });
+  setupCustomSelect(
+    'actorSortCustom',
+    function (value) {
+      currentSort = value;
+      renderFiltered();
+    }
+  );
 
   renderFiltered();
 }
@@ -545,9 +611,10 @@ function setupSeriesFilters(allSeries) {
 function setupMovieFilters(allMovies) {
   const select = document.getElementById('movieSortCustom');
   if (!select) return;
-  let currentSort = 'netflix-views-desc';
-
   const optionsList = select.querySelector('.custom-select-options');
+  if (!optionsList) return;
+
+  let currentSort = 'netflix-views-desc';
   const genreValues = Array.from(new Set(allMovies
     .map(item => normalizeGenre(item.genre))
     .filter(Boolean)))
