@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Telefe en los años 90 | Argentina Content</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css?v=2.0" />
+    <link rel="stylesheet" href="css/main-wrap.css?v=1.0" />
+  <link rel="stylesheet" href="css/lightslider.css?v=2.0" />
+
+  <!-- Fuente -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins&display=swap" />
+
+  <!-- Favicons para todos los dispositivos -->
+  <link rel="icon" type="image/png" sizes="32x32" href="images/fav_icon.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="images/fav_icon.png" />
+  <link rel="shortcut icon" href="images/fav_icon.png" />
+  
+  <!-- Apple Touch Icons (iOS/iPad) -->
+  <link rel="apple-touch-icon" sizes="180x180" href="images/fav_icon.png" />
+  <link rel="apple-touch-icon" sizes="152x152" href="images/fav_icon.png" />
+  <link rel="apple-touch-icon" sizes="120x120" href="images/fav_icon.png" />
+  <link rel="apple-touch-icon" sizes="76x76" href="images/fav_icon.png" />
+  
+  <!-- Android Chrome -->
+  <link rel="icon" type="image/png" sizes="192x192" href="images/fav_icon.png" />
+  <link rel="icon" type="image/png" sizes="512x512" href="images/fav_icon.png" />
+  
+  <!-- Meta tags para PWA y móviles -->
+  <meta name="theme-color" content="#141a21" />
+  <meta name="msapplication-TileColor" content="#141a21" />
+  <meta name="msapplication-TileImage" content="images/fav_icon.png" />
+
+  <!-- Font Awesome (CSS) -->
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        referrerpolicy="no-referrer" />
+
+  <!-- Tipografía base segura + hamburguesa -->
+  <style>
+    body{ font-family: Poppins, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; padding-top: 76px; }
+    img{ height:auto; }
+
+    /* Hamburguesa accesible */
+    .menu-btn{
+      position: absolute !important;
+      width: 1px; height: 1px;
+      padding: 0; margin: -1px;
+      overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap;
+      border: 0;
+    }
+    .menu-icon{
+      display: inline-flex; align-items: center; justify-content: center;
+      width: 48px; height: 48px; cursor: pointer; user-select: none;
+    }
+    .nav-icon{
+      position: relative; width: 26px; height: 2px; background: #555; display: inline-block;
+      transition: transform .25s ease, background .25s ease;
+    }
+    .nav-icon::before, .nav-icon::after{
+      content: ""; position: absolute; left: 0; width: 26px; height: 2px; background: #555;
+      transition: transform .25s ease, top .25s ease, opacity .25s ease;
+    }
+    .nav-icon::before{ top: -8px; }
+    .nav-icon::after{ top: 8px; }
+    .menu-btn:checked + .menu-icon .nav-icon{ background: transparent; }
+    .menu-btn:checked + .menu-icon .nav-icon::before{ transform: rotate(45deg); top: 0; }
+    .menu-btn:checked + .menu-icon .nav-icon::after{ transform: rotate(-45deg); top: 0; }
+    
+    /* Hacer transparente el fondo completo de sliders verticales */
+    .slider-v .latest-box {
+      background: transparent !important;
+      box-shadow: none !important;
+    }
+    
+    .slider-v .latest-b-text {
+      background: transparent !important;
+    }
+/* ==================================================
+   TELEFE 90S
+================================================== */
+
+.telefe-90s-page {
+  width: 100%;
+  background: #141a21;
+  color: #ffffff;
+  padding: 40px 0 48px;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.page-intro {
+  width: 100%;
+  padding: 24px 38px 20px;
+  margin-top: 20px;
+  box-sizing: border-box;
+}
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 20px;
+  color: #22b8cf;
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-decoration: none;
+  position: relative;
+  z-index: 1;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+.channel-heading {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.channel-heading-logo-wrap {
+  width: 112px;
+  height: 112px;
+  flex: 0 0 112px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 18px;
+  background: linear-gradient(135deg, #00b5c8 0%, #008da3 100%);
+}
+
+.channel-heading-text {
+  min-width: 0;
+}
+
+.channel-heading-text .showcase-heading {
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+  font-size: clamp(1.7rem, 3vw, 2.6rem);
+  line-height: 1.15;
+  text-transform: none;
+}
+
+.channel-heading-description {
+  margin: 10px 0 0;
+  color: #b8bec6;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+.telefe-section {
+  width: 100%;
+  padding: 24px 32px;
+  box-sizing: border-box;
+}
+
+.telefe-section > .showcase-heading,
+.telefe-section > .latest-heading {
+  margin: 0 0 20px;
+  padding: 0;
+  color: #ffffff;
+}
+
+#telefe-destacadas .slider-h {
+  margin: 0;
+  padding: 0;
+}
+
+#telefe-destacadas .latest-b-text {
+  text-align: center;
+}
+
+#telefe-destacadas .latest-b-text strong {
+  display: block;
+  margin-top: 12px;
+  color: #ffffff;
+}
+
+#telefe-destacadas .latest-b-text p {
+  margin: 3px 0 0;
+  color: #9ea6b0;
+}
+
+.telefe-year-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.year-button {
+  min-width: 70px;
+  padding: 10px 16px;
+  border: 1px solid #3d4752;
+  border-radius: 999px;
+  background: #202832;
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.year-button:hover {
+  border-color: #22b8cf;
+  transform: translateY(-1px);
+}
+
+.year-button.active {
+  border-color: #22b8cf;
+  background: #22b8cf;
+  color: #0f171f;
+  font-weight: 700;
+}
+
+.catalogue-header {
+  margin-bottom: 22px;
+}
+
+.catalogue-header .latest-heading {
+  margin: 0;
+}
+
+.catalogue-header p {
+  margin: 8px 0 0;
+  color: #aeb6c0;
+  line-height: 1.5;
+}
+
+.telefe-90s-grid {
+  width: 100%;
+  min-height: 100px;
+
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 28px 22px;
+}
+
+.telefe-card {
+  min-width: 0;
+}
+
+.telefe-card img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 2 / 3;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.telefe-card-text {
+  padding-top: 10px;
+  text-align: center;
+}
+
+.telefe-card-text strong {
+  display: block;
+  color: #ffffff;
+  font-size: .95rem;
+  line-height: 1.3;
+  font-weight: 600;
+}
+
+.telefe-card-text span {
+  display: block;
+  margin-top: 4px;
+  color: #9ea6b0;
+  font-size: .9rem;
+}
+
+@media (min-width: 768px){
+  .menu-icon{
+    display:none;
+  }
+}
+
+@media (min-width:768px) and (max-width:1100px){
+
+  .telefe-90s-grid{
+    grid-template-columns:repeat(3,minmax(0,1fr));
+  }
+
+}
+
+@media (max-width:767px){
+
+  body{
+    padding-top:62px;
+  }
+
+  .telefe-90s-page{
+    padding-top:20px;
+  }
+
+  .page-intro{
+    padding:26px 16px 18px;
+    margin-top:16px;
+  }
+
+  .back-link{
+    margin-bottom:20px;
+  }
+
+  .channel-heading{
+    align-items:flex-start;
+    gap:14px;
+  }
+
+  .channel-heading-logo-wrap{
+    width:78px;
+    height:78px;
+    flex-basis:78px;
+    padding:7px;
+    border-radius:13px;
+  }
+
+  .channel-heading-text .showcase-heading{
+    font-size:1.45rem;
+  }
+
+  .channel-heading-description{
+    margin-top:6px;
+    font-size:.9rem;
+  }
+
+  .telefe-section{
+    padding:20px 16px;
+  }
+
+  .telefe-year-filter{
+    flex-wrap:nowrap;
+    overflow-x:auto;
+    padding-bottom:8px;
+    scrollbar-width:thin;
+  }
+
+  .year-button{
+    flex:0 0 auto;
+  }
+
+.telefe-90s-grid{
+  display:flex;
+  flex-wrap:nowrap;
+  overflow-x:auto;
+  scroll-snap-type:x mandatory;
+  gap:18px;
+  padding-bottom:10px;
+  scrollbar-width:thin;
+}
+
+  .telefe-90s-grid::-webkit-scrollbar{
+    height: 6px;
+  }
+
+  .telefe-90s-grid::-webkit-scrollbar-thumb{
+    background: rgba(255,255,255,0.18);
+    border-radius: 999px;
+  }
+
+.telefe-card{
+  flex: 0 0 calc(50% - 9px);
+  width: calc(50% - 9px);
+  max-width: 210px;
+  scroll-snap-align:start;
+}
+
+}
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<div class="main-wrap">
+<nav class="sa-nav">
+  <a href="index.html" class="logo" aria-label="Argentina Content">
+    <img src="images/logos/argentina-content-logo.PNG" alt="Argentina Content">
+  </a>
+
+  <!-- Buscador -->
+  <form class="search" role="search" id="headerSearch">
+    <input type="search" name="q" placeholder="Encontrá tu Serie Favorita" aria-label="Buscar series" />
+    <button type="submit" class="search-btn" aria-label="Buscar">
+      <i class="fas fa-search" aria-hidden="true"></i>
+    </button>
+  </form>
+
+  <!-- Toggle móvil -->
+  <input class="menu-btn" type="checkbox" id="menu-btn" aria-hidden="true" />
+  <label class="menu-icon" for="menu-btn" aria-label="Abrir menú">
+    <span class="nav-icon" aria-hidden="true"></span>
+  </label>
+
+  <!-- Menú -->
+  <ul class="menu nav-options">
+    <li><a href="streaming.html">Streaming</a></li>
+<li><a href="tv-90s.html" aria-current="page">TV 90s</a></li>
+<li><a href="tiras_2000.html">Tiras 2000</a></li>    
+<li><a href="tiras_2010.html">Tiras 2010</a></li>
+    <li><a href="juveniles.html">Juveniles</a></li>
+    <li><a href="unitarios.html">Unitarios</a></li>
+  </ul>
+</nav>
+
+<!-- TELEFE EN LOS AÑOS 90 -->
+<main class="telefe-90s-page">
+
+  <!-- Encabezado histórico -->
+  <section class="page-intro">
+    <a href="tv-90s.html" class="back-link">
+      &larr; Volver a TV 90s
+    </a>
+
+    <div class="channel-heading">
+      <div class="channel-heading-logo-wrap">
+        <img
+          src="images/logos/telefe-1990-120x120.png"
+          alt="Logo histórico de Telefe"
+          class="channel-heading-logo"
+        />
+      </div>
+
+      <div class="channel-heading-text">
+        <h1 class="showcase-heading">Telefe en los años 90</h1>
+        <p class="channel-heading-description">
+          Ficciones emitidas por Telefe entre 1990 y 1999.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Producciones destacadas -->
+  <section id="telefe-destacadas" class="telefe-section">
+    <h2 class="showcase-heading">Producciones destacadas</h2>
+
+    <ul class="slider-h cs-hidden">
+
+      <li class="item-f">
+        <div class="showcase-box">
+          <img
+            src="images/horizontals-1024x576/1990-amigossonlosamigos-telefe-poster1024x576.png"
+            loading="lazy"
+            alt="Amigos son los amigos"
+          />
+        </div>
+
+        <div class="latest-b-text">
+          <strong>Amigos son los amigos</strong>
+          <p>1990</p>
+        </div>
+      </li>
+
+      <li class="item-f">
+        <div class="showcase-box">
+          <img
+            src="images/horizontals-1024x576/1991-grandepa-telefe-1024x576.png"
+            loading="lazy"
+            alt="Grande, Pa!"
+          />
+        </div>
+
+        <div class="latest-b-text">
+          <strong>Grande, Pa!</strong>
+          <p>1991</p>
+        </div>
+      </li>
+
+      <li class="item-f">
+        <div class="showcase-box">
+          <img
+            src="images/horizontals-1024x576/1998-munecabrava-poster1024x576.png"
+            loading="lazy"
+            alt="Muñeca Brava"
+          />
+        </div>
+
+        <div class="latest-b-text">
+          <strong>Muñeca Brava</strong>
+          <p>1998</p>
+        </div>
+      </li>
+
+    </ul>
+  </section>
+
+  <!-- Navegación por año: se completará después -->
+  <section id="telefe-years" class="telefe-section">
+    <h2 class="latest-heading">Explorar por año</h2>
+
+    <div class="telefe-year-filter" aria-label="Filtrar ficciones por año">
+      <button type="button" class="year-button active" data-year="all">
+        Todas
+      </button>
+      <button type="button" class="year-button" data-year="1990">1990</button>
+      <button type="button" class="year-button" data-year="1991">1991</button>
+      <button type="button" class="year-button" data-year="1992">1992</button>
+      <button type="button" class="year-button" data-year="1993">1993</button>
+      <button type="button" class="year-button" data-year="1994">1994</button>
+      <button type="button" class="year-button" data-year="1995">1995</button>
+      <button type="button" class="year-button" data-year="1996">1996</button>
+      <button type="button" class="year-button" data-year="1997">1997</button>
+      <button type="button" class="year-button" data-year="1998">1998</button>
+      <button type="button" class="year-button" data-year="1999">1999</button>
+    </div>
+  </section>
+
+  <!-- Catálogo vertical -->
+  <section id="telefe-catalogue" class="telefe-section telefe-catalogue">
+    <div class="catalogue-header">
+      <h2 class="latest-heading">Todas las ficciones</h2>
+      <p>
+        Catálogo de producciones emitidas por Telefe durante la década de 1990.
+      </p>
+    </div>
+
+<div id="telefe-90s-grid" class="telefe-90s-grid">
+
+  <article class="telefe-card" data-year="1990">
+    <img
+      src="images/verticals/1990-amigossonlosamigos-telefe-poster280x420.png"
+      alt="Amigos son los amigos"
+      loading="lazy"
+    >
+    <div class="telefe-card-text">
+      <strong>Amigos son los amigos</strong>
+      <span>1990</span>
+    </div>
+  </article>
+
+  <article class="telefe-card" data-year="1991">
+    <img
+      src="images/verticals/1991-grandepa-telefe280x420.png"
+      alt="Grande, Pa!"
+      loading="lazy"
+    >
+    <div class="telefe-card-text">
+      <strong>Grande, Pa!</strong>
+      <span>1991</span>
+    </div>
+  </article>
+
+  <article class="telefe-card" data-year="1998">
+    <img
+      src="images/verticals/1998-munecabrava-poster280x420.png"
+      alt="Muñeca Brava"
+      loading="lazy"
+    >
+    <div class="telefe-card-text">
+      <strong>Muñeca Brava</strong>
+      <span>1998</span>
+    </div>
+  </article>
+
+    </div>
+  </section>
+
+</main>
+
+<!-- footer -->
+<footer>
+  <p>Argentina Content</p>
+  <p>Copyright 2026 by Dherrera - <a href="tercer-canal.html" title="Series de Tercer Canal">3C</a></p>
+    </footer>
+  </div>
+
+<!-- JS: jQuery → LightSlider → init -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="js/lightslider.js"></script>
+<script src="js/script.js?v=20260226-1"></script>
+</body>
+</html>
