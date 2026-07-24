@@ -6446,6 +6446,217 @@
   "remakes": [],
   "productora": null
 },
+{
+  "id": "T0002",
+  "title": "Amandote II",
+  "year": "1990",
+  "channel": "Telefe",
+  "genre": "Telenovela",
+  "actors": [
+    "Arnaldo André",
+    "Carolina López",
+    "Lupita Ferrer"
+  ],
+  "orientation": "vertical",
+  "image": "images/verticals/1990-amandote-telefe-poster280x420.png",
+  "horizontal_image": "",
+  "subtitle": "",
+  "horario": "20hs",
+  "capitulos": 120,
+  "fecha_estreno": "1990-05-03",
+  "sinopsis": "La historia sigue a Martín Arana, un piloto de avión seductor que regresa a casa tras separarse de Carolina. Su vida da un vuelco cuando se enamora de Clara Green, la ahijada de su padre. Su romance se complica con celos, equívocos y el regreso de Lisette, un antiguo amor del protagonista.",
+  "seasons": 1,
+  "remakes": [],
+  "productora": "Raúl Lecouna"
+},
+{
+  "id": "T0003",
+  "title": "Atreverse",
+  "year": "1990",
+  "channel": "Telefe",
+  "genre": "Drama",
+  "actors": [
+    "Varios"
+  ],
+  "orientation": "vertical",
+  "image": "images/verticals/1990-atreverse-poster280x420.png",
+  "horizontal_image": "images/horizontals-1024x576/1990-atreverse-telefe-poster1024x576.png",
+  "subtitle": "",
+  "horario": "Jueves 22hs",
+  "capitulos": 45,
+  "fecha_estreno": "1990-04-19",
+  "sinopsis": "El programa de unitarios tuvo frecuencia semanal, y en cada episodio abordaba una temática distinta con elencos rotativos.",
+  "seasons": 2,
+  "temporadas": [
+    {
+      "numero": 1,
+      "year": "1990",
+      "horario": "Jueves 22hs"
+    },
+    {
+      "numero": 2,
+      "year": "1991",
+      "horario": "Jueves 22hs"
+    }
+  ],
+  "remakes": [],
+  "productora": "Alejandro Doria"
+},
+{
+  "id": "T0004",
+  "title": "¡Grande, pa!",
+  "year": "1991",
+  "channel": "Telefe",
+  "genre": "Comedia",
+  "actors": [
+    "Arturo Puig",
+    "María Leal",
+    "Nancy Anka",
+    "Julieta Fazzari",
+    "Gabriela Allegue",
+    "Agustina Cherri"
+  ],
+  "orientation": "vertical",
+  "image": "images/verticals/1991-grandepa-telefe280x420.png",
+  "horizontal_image": "images/horizontals-1024x576/1991-grandepa-telefe-1024x576.png",
+  "subtitle": "",
+  "horario": "Miércoles 21hs",
+  "capitulos": 174,
+  "fecha_estreno": "1991-01-02",
+  "sinopsis": "Arturo Aráuz, un viudo adinerado, enfrenta el desafío de criar solo a sus tres hijas adolescentes, conocidas como «las Chancles». La llegada de María, una cálida empleada doméstica, transformará la vida familiar y ocupará un lugar especial en sus corazones.",
+  "seasons": 4,
+  "temporadas": [
+    {
+      "numero": 1,
+      "year": "1991"
+    },
+    {
+      "numero": 2,
+      "year": "1992"
+    },
+    {
+      "numero": 3,
+      "year": "1993"
+    },
+    {
+      "numero": 4,
+      "year": "1994"
+    }
+  ],
+  "remakes": [
+    {
+      "title": "Grande Pai",
+      "country": "Brasil",
+      "year": "1991",
+      "image": ""
+    },
+    {
+      "title": "Super Pai",
+      "country": "Portugal",
+      "year": "2000",
+      "image": ""
+    },
+    {
+      "title": "Súper Papá",
+      "country": "Ecuador",
+      "year": "2007",
+      "image": ""
+    },
+    {
+      "title": "Super Pa",
+      "country": "Colombia",
+      "year": "2008",
+      "image": ""
+    }
+  ],
+  "productora": null
+},
+{
+  "id": "T0005",
+  "title": "La Familia Benvenutto",
+  "year": "1991",
+  "channel": "Telefe",
+  "genre": "Comedia",
+  "actors": [
+    "Guillermo Francella",
+    "Andrés Vicente",
+    "Orlando Marconi",
+    "Daniel Miglioranza",
+    "Fabián Gianola"
+  ],
+  "orientation": "vertical",
+  "image": "images/verticals/1991-lafamiliabenvenutto-telefe-poster280x420.png",
+  "horizontal_image": "images/horizontals-1024x576/1991-lafamiliabenvenutto-telefe-poster1024x576.png",
+  "subtitle": "",
+  "horario": "Domingo 13hs",
+  "capitulos": 200,
+  "fecha_estreno": "1991-04-21",
+  "sinopsis": "La historia retrata la vida cotidiana de una típica familia italo-argentina de clase trabajadora que convive unida bajo un mismo techo, enfrentando con humor los desafíos y situaciones de cada día.",
+  "seasons": 5,
+  "temporadas": [
+    {
+      "numero": 1,
+      "year": "1991"
+    },
+    {
+      "numero": 2,
+      "year": "1992"
+    },
+    {
+      "numero": 3,
+      "year": "1993"
+    },
+    {
+      "numero": 4,
+      "year": "1994"
+    },
+    {
+      "numero": 5,
+      "year": "1995"
+    }
+  ],
+  "remakes": [],
+  "productora": "Héctor Maselli"
+},
+{
+  "id": "T0006",
+  "title": "El Gordo y el Flaco",
+  "year": "1991",
+  "channel": "Telefe",
+  "genre": "Comedia",
+  "actors": [
+    "Juan Carlos Mesa",
+    "Gianni Lunadei"
+  ],
+  "orientation": "vertical",
+  "image": "images/verticals/1991-elgordoyelflaco-telefe-poster280x420.png",
+  "horizontal_image": "",
+  "subtitle": "",
+  "horario": "Jueves 21hs, Domingo 20hs",
+  "capitulos": 125,
+  "fecha_estreno": "1991-01-01",
+  "sinopsis": "Dos altos ejecutivos de una importante empresa pasan más tiempo evitando trabajar que cumpliendo sus responsabilidades. Entre situaciones disparatadas, enredos absurdos y constantes choques de personalidad, convierten la oficina en un caos permanente.",
+  "seasons": 3,
+  "temporadas": [
+    {
+      "numero": 1,
+      "year": "1991",
+      "horario": "Jueves 21hs"
+    },
+    {
+      "numero": 2,
+      "year": "1992",
+      "horario": "Jueves 21hs"
+    },
+    {
+      "numero": 3,
+      "year": "1993",
+      "horario": "Domingo 20hs"
+    }
+  ],
+  "remakes": [],
+  "productora": "Juan Carlos Mesa"
+},
     {
       "id": "P2026",
       "title": "Mensaje en una Botella",

@@ -140,7 +140,7 @@
   <script src="js/lightslider.js"></script>
   <script>
     (function () {
-      var showDataVersion = '20260724-1';
+      var showDataVersion = '20260724-2';
       function getIdFromURL() {
         var p = new URLSearchParams(window.location.search);
         var id = p.get('id');
@@ -386,6 +386,7 @@
                   + '<div class="temporada-label">Temporada ' + n + '</div>'
                   + exclusiveBadge
                   + (hasValue(f) ? '<div class="temporada-date">' + f + '</div>' : '')
+                  + (hasValue(temp.horario) ? '<div class="temporada-date"><strong>Horario:</strong> ' + temp.horario + '</div>' : '')
                   + reportLines
                 + '</div>'
               + '</div>';
@@ -400,7 +401,11 @@
               var f = getSeasonDate(temp);
               if (!hasValue(f)) return;
               var n = getSeasonIndex(temp, idx);
-              fechasTemporadas.push('Temporada ' + n + ': ' + f);
+              var temporadaTexto = 'Temporada ' + n + ': ' + f;
+              if (hasValue(temp.horario)) {
+                temporadaTexto += ' — ' + temp.horario;
+              }
+              fechasTemporadas.push(temporadaTexto);
             });
           }
         } else if (Array.isArray(item.season_release_dates) && item.season_release_dates.length) {
@@ -410,7 +415,7 @@
           });
         }
         var fechasTemporadasRow = fechasTemporadas.length
-          ? '<dt>Fechas por temporada</dt><dd>' + fechasTemporadas.join(' · ') + '</dd>'
+          ? '<dt>Historial de emisión</dt><dd>' + fechasTemporadas.join('<br>') + '</dd>'
           : '';
 
         var ratingRow = '';
