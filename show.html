@@ -14,6 +14,22 @@
     body { color:#1f242d; }
     .detail-wrap { max-width: 980px; margin: 28px auto; padding: 20px; box-sizing: border-box; }
     .back-link { display:inline-block; margin-bottom: 12px; color:#ee4036; text-decoration:none; font-weight:600; }
+    /* Banner horizontal opcional de la ficha */
+    .detail-hero {
+      width: 100%;
+      margin: 0 0 20px;
+      border-radius: 10px;
+      overflow: hidden;
+      background: #e9ebef;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+      aspect-ratio: 16 / 9;
+    }
+    .detail-hero img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+    }
     .card { display:flex; gap:20px; align-items:flex-start; background:#fff; padding:18px; border-radius:8px; box-shadow:0 6px 18px rgba(0,0,0,0.06); width:100%; max-width:100%; box-sizing:border-box; overflow:hidden; }
     .card .poster { width:320px; flex:0 0 320px; }
     .card .poster img { width:100%; height:auto; display:block; border-radius:6px; }
@@ -124,7 +140,7 @@
   <script src="js/lightslider.js"></script>
   <script>
     (function () {
-      var showDataVersion = '20260510-1';
+      var showDataVersion = '20260724-1';
       function getIdFromURL() {
         var p = new URLSearchParams(window.location.search);
         var id = p.get('id');
@@ -143,6 +159,7 @@
         var actors = (item.actors && item.actors.join(', ')) || '';
         var placeholderV = 'images/verticals/placeholder-280x420.svg';
         var imgSrc = (item.image && String(item.image).trim()) ? item.image : placeholderV;
+
         // Soporte para sinopsis en español o inglés
         var synopsis = (item.synopsis && String(item.synopsis).trim()) ? item.synopsis : ((item.sinopsis && String(item.sinopsis).trim()) ? item.sinopsis : 'Próximamente');
         var viewersRow = '';
@@ -161,6 +178,24 @@
         // Campos nuevos: horario, capitulos, fecha_estreno, rating, productora
         function hasValue(v) {
           return v !== undefined && v !== null && String(v).trim() !== '' && String(v).trim() !== '-';
+        }
+
+        /*
+         * Banner horizontal opcional.
+         * Se muestra únicamente cuando el registro posee horizontal_image.
+         */
+        var heroSection = '';
+        if (hasValue(item.horizontal_image)) {
+          var horizontalSrc = String(item.horizontal_image)
+            .trim()
+            .replace(/ /g, '%20');
+
+          heroSection =
+            '<div class="detail-hero">' +
+              '<img src="' + horizontalSrc + '" alt="' +
+                (item.title || 'Imagen horizontal') +
+              '">' +
+            '</div>';
         }
         function toNumber(v) {
           if (v === null || v === undefined || String(v).trim() === '') return null;
@@ -187,13 +222,38 @@
           });
           return sorted[0] || null;
         }
+        function getSeasonIndex(temp, idx) {
+          if (!temp || typeof temp !== 'object') return idx + 1;
+          if (hasValue(temp.numero)) return temp.numero;
+          if (hasValue(temp.season)) return temp.season;
+          return idx + 1;
+        }
+        function getSeasonDate(temp) {
+          if (!temp || typeof temp !== 'object') return null;
+          if (hasValue(temp.fecha_estreno)) return temp.fecha_estreno;
+          if (hasValue(temp.release_date)) return temp.release_date;
+          if (hasValue(temp.year)) return temp.year;
+          return null;
+        }
+        function getSeasonCount(item) {
+          var explicit = toNumber(item.seasons);
+          if (explicit !== null) return explicit;
+          if (Array.isArray(item.temporadas) && item.temporadas.length) return item.temporadas.length;
+          if (Array.isArray(item.season_release_dates) && item.season_release_dates.length) return item.season_release_dates.length;
+          return null;
+        }
+        function getEmissionPeriod(item) {
+          if (!hasValue(item.year) || !hasValue(item.end_year)) return null;
+          if (String(item.year).trim() === String(item.end_year).trim()) return null;
+          return String(item.year).trim() + '–' + String(item.end_year).trim();
+        }
         function getFirstSeason(temporadas) {
           if (!Array.isArray(temporadas) || !temporadas.length) return null;
           var sorted = temporadas.filter(function (t) { return t && typeof t === 'object'; }).slice();
           if (!sorted.length) return null;
           sorted.sort(function (a, b) {
-            var sa = Number(hasValue(a.numero) ? a.numero : a.season);
-            var sb = Number(hasValue(b.numero) ? b.numero : b.season);
+            var sa = Number(hasValue(a.numero) ? a.numero : (hasValue(a.season) ? a.season : NaN));
+            var sb = Number(hasValue(b.numero) ? b.numero : (hasValue(b.season) ? b.season : NaN));
             var va = Number.isFinite(sa) ? sa : Number.MAX_SAFE_INTEGER;
             var vb = Number.isFinite(sb) ? sb : Number.MAX_SAFE_INTEGER;
             return va - vb;
@@ -207,7 +267,7 @@
             if (!temp || typeof temp !== 'object') return '';
             var latestReport = getLatestReport(temp.netflix_reports);
             if (!latestReport) return '';
-            var seasonNumber = hasValue(temp.numero) ? temp.numero : (hasValue(temp.season) ? temp.season : (idx + 1));
+            var seasonNumber = getSeasonIndex(temp, idx);
             var period = hasValue(latestReport.periodo) ? latestReport.periodo : (hasValue(latestReport.report_id) ? latestReport.report_id : 'Netflix');
             var ranking = toNumber(latestReport.ranking_series);
             if (ranking === null) ranking = toNumber(latestReport.ranking_peliculas);
@@ -251,6 +311,16 @@
         if (hasValue(item.horario)) {
           horarioRow = '<dt>Horario</dt><dd>' + item.horario + '</dd>';
         }
+        var seasonCount = getSeasonCount(item);
+        var seasonsRow = '';
+        if (seasonCount !== null) {
+          seasonsRow = '<dt>Temporadas</dt><dd>' + seasonCount + '</dd>';
+        }
+        var emissionPeriodRow = '';
+        var emissionPeriod = getEmissionPeriod(item);
+        if (emissionPeriod) {
+          emissionPeriodRow = '<dt>Período de emisión</dt><dd>' + emissionPeriod + '</dd>';
+        }
         var capitulosRow = '';
         if (item.capitulos) {
           capitulosRow = '<dt>Capítulos</dt><dd>' + item.capitulos + '</dd>';
@@ -258,7 +328,7 @@
         var fechaEstrenoRow = '';
         var fechaEstrenoValue = '';
         if (firstSeason) {
-          var firstSeasonDate = hasValue(firstSeason.fecha_estreno) ? firstSeason.fecha_estreno : firstSeason.release_date;
+          var firstSeasonDate = getSeasonDate(firstSeason);
           if (hasValue(firstSeasonDate)) {
             fechaEstrenoValue = firstSeasonDate;
           }
@@ -283,8 +353,8 @@
           if (hasSeasonImages) {
             var tempCards = item.temporadas.map(function (temp, idx) {
               if (!temp || typeof temp !== 'object') return '';
-              var n = hasValue(temp.numero) ? temp.numero : (hasValue(temp.season) ? temp.season : (idx + 1));
-              var f = hasValue(temp.fecha_estreno) ? temp.fecha_estreno : (hasValue(temp.release_date) ? temp.release_date : '');
+              var n = getSeasonIndex(temp, idx);
+              var f = getSeasonDate(temp);
               var imgPath = hasValue(temp.image) ? temp.image.replace(/ /g, '%20') : placeholderV;
               var statusBadge = '';
               if (hasValue(f) && /en producci[oó]n/i.test(String(f))) {
@@ -327,9 +397,9 @@
           } else {
             item.temporadas.forEach(function (temp, idx) {
               if (!temp || typeof temp !== 'object') return;
-              var f = hasValue(temp.fecha_estreno) ? temp.fecha_estreno : temp.release_date;
+              var f = getSeasonDate(temp);
               if (!hasValue(f)) return;
-              var n = hasValue(temp.season) ? temp.season : (idx + 1);
+              var n = getSeasonIndex(temp, idx);
               fechasTemporadas.push('Temporada ' + n + ': ' + f);
             });
           }
@@ -475,7 +545,8 @@
         } else {
           extraSections = remakesSection + relatedSection;
         }
-        var html = '<div class="card">'
+        var html = heroSection
+          + '<div class="card">'
           + '<div class="poster"><img src="' + imgSrc + '" alt="' + (item.title||'') + '"></div>'
           + '<div class="meta">'
             + '<h1>' + (item.title || '') + '</h1>'
@@ -491,6 +562,8 @@
               + netflixMetricsRow
               + horarioRow
               + capitulosRow
+              + seasonsRow
+              + emissionPeriodRow
               + fechaEstrenoRow
               + fechasTemporadasRow
               + ratingRow

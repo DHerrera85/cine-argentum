@@ -6381,6 +6381,71 @@
       "orientation": "vertical",
       "subtitle": "Drama"
     },
+{
+  "id": "P2051",
+  "title": "La Casaca de Dios",
+  "type": "pelicula",
+  "year": "2026",
+  "genre": "Comedia",
+  "actors": [
+    "Natalia Oreiro",
+    "Jorge Marrale"
+  ],
+  "synopsis": "Titi Malvestiti, un utilero de un club de barrio, intentará recuperar la camiseta que Diego Maradona usó ante Inglaterra en el Mundial de 1986, mientras busca reconciliarse con su hija y honrar la memoria de su hijo caído en Malvinas.",
+  "channel": "Cine",
+  "image": "images/verticals/la-casaca-de-dios-2026-poster280x420.png",
+  "orientation": "vertical",
+  "viewers": "-",
+  "producer": "Condeco Media, Frontera +, Prisma Cine, Methos Media",
+  "director": "Fernán Mirás",
+  "release_date": "9/4/2026",
+  "subtitle": "Comedia"
+},
+{
+  "id": "T0001",
+  "title": "Amigos son los amigos",
+  "year": "1990",
+  "end_year": "1992",
+  "channel": "Telefe",
+  "genre": "Comedia",
+  "actors": [
+    "Carlos Calvo",
+    "Pablo Rago",
+    "Cris Morena",
+    "Enzo Viena",
+    "Mabel Landó",
+    "Katja Alemann"
+  ],
+  "orientation": "vertical",
+  "image": "images/verticals/1990-amigossonlosamigos-telefe-poster280x420.png",
+  "horizontal_image": "images/horizontals-1024x576/1990-amigossonlosamigos-telefe-poster1024x576.png",
+  "subtitle": "Comedia",
+  "horario": "Martes 21 hs",
+  "capitulos": 137,
+  "fecha_estreno": "1990-05-01",
+  "sinopsis": "Carlín Cantoni, un fletero solitario, ve alterada su rutina cuando Pablo Pintos, el hijo adolescente de una amiga, se instala inesperadamente en su departamento. A pesar de la diferencia de edad, ambos construyen una sólida amistad mientras enfrentan juntos los desafíos del trabajo, el amor y la vida cotidiana.",
+  "seasons": 4,
+  "temporadas": [
+    {
+      "numero": 1,
+      "year": "1990"
+    },
+    {
+      "numero": 2,
+      "year": "1991"
+    },
+    {
+      "numero": 3,
+      "year": "1992"
+    },
+    {
+      "numero": 4,
+      "year": "1993"
+    }
+  ],
+  "remakes": [],
+  "productora": null
+},
     {
       "id": "P2026",
       "title": "Mensaje en una Botella",
