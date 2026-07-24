@@ -6572,6 +6572,59 @@
   "productora": null
 },
 {
+  "id": "T0018",
+  "title": "Perla Negra",
+  "year": "1994",
+  "channel": "Telefe",
+  "genre": "Telenovela",
+  "actors": [
+    "Andrea del Boca",
+    "Gabriel Corrado"
+  ],
+  "orientation": "vertical",
+  "image": "images/verticals/1994-perlanegra-telefe-poster280x420.png",
+  "horizontal_image": "images/horizontals-1024x576/1994-perlanegra-telefe-2014x576.png",
+  "subtitle": "",
+  "horario": "21:00hs",
+  "capitulos": 200,
+  "fecha_estreno": "1994-12-05",
+  "sinopsis": "Perla, abandonada al nacer en un internado junto a un collar de 22 perlas negras, crece marcada por el misterio de su origen. Tras la muerte de su mejor amiga, asume su identidad para proteger a su bebé y buscar venganza.",
+  "seasons": 1,
+  "temporadas": [
+    {
+      "numero": 1,
+      "year": "1994"
+    }
+  ],
+  "remakes": [
+    {
+      "title": "Pérola Negra",
+      "country": "Brasil",
+      "year": "1998",
+      "image": ""
+    },
+    {
+      "title": "Perla",
+      "country": "México",
+      "year": "1998",
+      "image": ""
+    },
+    {
+      "title": "Rosa Diamante",
+      "country": "Estados Unidos",
+      "year": "2012",
+      "image": ""
+    },
+    {
+      "title": "Perla Negra",
+      "country": "Webserie",
+      "year": "2021",
+      "image": ""
+    }
+  ],
+  "productora": "Raúl Lecouna, Enrique Torres"
+},
+{
   "id": "T0005",
   "title": "La Familia Benvenutto",
   "year": "1991",
@@ -6721,50 +6774,95 @@
   "productora": "Alejandro Doria"
 },
 {
-  "id": "T0009",
-  "title": "Mi Cuñado",
-  "year": "1993",
+  "id": "T0015",
+  "title": "Un Hermano es un Hermano",
+  "year": "1994",
   "channel": "Telefe",
   "genre": "Comedia",
   "actors": [
-    "Luis Brandoni",
-    "Ricardo Darín",
-    "Cecilia Dopazo",
-    "Patricia Viggiano"
+    "Guillermo Francella",
+    "Javier Portales"
   ],
   "orientation": "vertical",
-  "image": "images/verticals/1992-micunado-telefe-poster280x420.png",
-  "horizontal_image": "images/horizontals-1024x576/1992-micunado-telefe-poster1024x576.png",
+  "image": "images/verticals/1994-unhermanoesunhermano-telefe-poster280x420.png",
+  "horizontal_image": "",
   "subtitle": "",
-  "horario": "Jueves 21hs, Martes 22hs",
-  "capitulos": 248,
-  "fecha_estreno": "1993-04-30",
-  "sinopsis": "Roberto Cantalapiedra, un viudo que intenta rehacer su vida al casarse con Andrea, ve alterada su tranquilidad por la llegada de Chiqui, su nuevo cuñado. Las ocurrencias y conflictos que provoca Chiqui convierten la convivencia en una fuente constante de problemas y humor.",
-  "seasons": 4,
+  "horario": "Lunes 21hs, Sábado 21hs",
+  "capitulos": 73,
+  "fecha_estreno": "1994-01-08",
+  "sinopsis": "Bruno y Javier, dos hermanos de personalidades opuestas, terminan viviendo bajo el mismo techo cuando Bruno comienza a trabajar como chofer de Javier. La convivencia desata divertidos enredos, conflictos familiares y situaciones cargadas de humor.",
+  "seasons": 3,
   "temporadas": [
     {
       "numero": 1,
-      "year": "1993",
-      "horario": "Jueves 21hs"
+      "year": "1994",
+      "horario": "Lunes 21hs"
     },
     {
       "numero": 2,
-      "year": "1994",
-      "horario": "Jueves 21hs"
+      "year": "1995",
+      "horario": "Lunes 21hs"
     },
     {
       "numero": 3,
-      "year": "1995",
-      "horario": "Jueves 21hs"
-    },
-    {
-      "numero": 4,
       "year": "1996",
-      "horario": "Martes 22hs"
+      "horario": "Sábado 21hs"
     }
   ],
   "remakes": [],
   "productora": null
+},
+{
+  "id": "T0016",
+  "title": "Life College",
+  "year": "1994",
+  "channel": "Telefe",
+  "genre": "Juvenil",
+  "actors": [
+    "Luciano Castro",
+    "Michel Brown",
+    "Felicitas Beccar Varela",
+    "Ignacio Nano Recondo",
+    "Ana Korn",
+    "Manuela Zeballos",
+    "Chino Fernández",
+    "Trinidad Alcorta",
+    "Mariano Lopez",
+    "Micaela Lawson"  
+  ],
+  "orientation": "vertical",
+  "image": "images/verticals/1994-lifecollege-telefe-poster280x420.png",
+  "horizontal_image": "",
+  "subtitle": "",
+  "horario": "17:00hs",
+  "capitulos": 200,
+  "fecha_estreno": "1994-04-01",
+  "sinopsis": "La historia transcurre en un exclusivo colegio pupilo donde conviven jóvenes de distintos orígenes sociales. Entre amistades, romances y desafíos cotidianos, los estudiantes aprenden a superar sus diferencias y crecer juntos.",
+  "seasons": 1,
+  "remakes": [],
+  "productora": "Cris Morena"
+},
+{
+  "id": "T0017",
+  "title": "Cara Bonita",
+  "year": "1994",
+  "channel": "Telefe",
+  "genre": "Telenovela",
+  "actors": [
+    "Catherine Fulop",
+    "Fernando Carrillo"
+  ],
+  "orientation": "vertical",
+  "image": "images/verticals/1994-carabonita-telefe-poster280x420.png",
+  "horizontal_image": "",
+  "subtitle": "",
+  "horario": "15:00hs",
+  "capitulos": 120,
+  "fecha_estreno": "1994-10-31",
+  "sinopsis": "Gervasio promete una millonaria herencia al primero de sus hijos que le dé un nieto varón, desatando una feroz competencia familiar. En medio de la disputa, Iván se enamora de Nené, desencadenando conflictos, traiciones y luchas por el poder.",
+  "seasons": 1,
+  "remakes": [],
+  "productora": "Raúl Lecouna"
 },
 {
   "id": "T0010",
@@ -6854,6 +6952,88 @@
   "seasons": 1,
   "remakes": [],
   "productora": "Raúl Lecouna"
+},
+{
+  "id": "T0014",
+  "title": "Quereme",
+  "year": "1994",
+  "channel": "Telefe",
+  "genre": "Juvenil",
+  "actors": [
+    "Cris Morena",
+    "Juan Palomino",
+    "Rubén Stella",
+    "Romina Yan",
+    "Coraje Ávalos",
+    "Andy Botana"
+  ],
+  "orientation": "vertical",
+  "image": "images/verticals/1994-quereme-telefe-poster280x420.png",
+  "horizontal_image": "",
+  "subtitle": "",
+  "horario": "Martes 21:00hs, 22:00hs",
+  "capitulos": 10,
+  "fecha_estreno": "1994-01-04",
+  "sinopsis": "Paula, una periodista que investiga una red de tráfico de animales, viaja a la selva donde conoce a Manuel y ambos se enamoran. Mientras intenta exponer el delito, deberán enfrentar intrigas, conflictos personales y defender la naturaleza.",
+  "seasons": 1,
+  "seasons_history": [
+    {
+      "season": 1,
+      "year": 1994,
+      "episodes": 10,
+      "schedule": [
+        "Martes 21:00",
+        "Martes 22:00"
+      ]
+    }
+  ],
+  "remakes": [],
+  "productora": "Cris Morena"
+},
+{
+  "id": "T0015",
+  "title": "Un Hermano es un Hermano",
+  "year": "1994",
+  "channel": "Telefe",
+  "genre": "Comedia",
+  "actors": [
+    "Guillermo Francella",
+    "Javier Portales"
+  ],
+  "orientation": "vertical",
+  "image": "images/verticals/1994-unhermanoesunhermano-telefe-poster280x420.png",
+  "horizontal_image": "",
+  "subtitle": "",
+  "horario": "Lunes 21:00hs, Sábado 21:00hs",
+  "capitulos": 73,
+  "fecha_estreno": "1994-01-08",
+  "sinopsis": "Bruno y Javier, dos hermanos de personalidades opuestas, terminan viviendo bajo el mismo techo cuando Bruno comienza a trabajar como chofer de Javier. La convivencia da lugar a divertidos enredos, conflictos familiares y situaciones cargadas de humor.",
+  "seasons": 3,
+  "seasons_history": [
+    {
+      "season": 1,
+      "year": 1994,
+      "schedule": [
+        "Lunes 21:00"
+      ]
+    },
+    {
+      "season": 2,
+      "year": 1995,
+      "schedule": [
+        "Lunes 21:00"
+      ]
+    },
+    {
+      "season": 3,
+      "year": 1996,
+      "schedule": [
+        "Sábado 21:00"
+      ]
+    }
+  ],
+  "remakes": [],
+  "productora": "-"
 },
     {
       "id": "P2026",
