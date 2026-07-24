@@ -1,6 +1,6 @@
 /* js/script.js */
 (function () {
-  var scriptDataVersion = '20260531-1';
+  var scriptDataVersion = '20260724-1';
   // Esperar a que el DOM esté listo
   document.addEventListener('DOMContentLoaded', function () {
     // Verificaciones básicas
@@ -26,8 +26,21 @@
     var PLACEHOLDER_V = 'images/verticals/placeholder-280x420.svg';
     var PLACEHOLDER_H = 'images/horizontals-320x180/placeholder-320x180.svg';
 
-    function normalizeString(s) { return (s || '').toString().trim().toLowerCase(); }
+function normalizeString(s) {
+  var value = s == null ? '' : String(s);
 
+  if (typeof value.normalize === 'function') {
+    value = value.normalize('NFD');
+  }
+
+  return value
+    .replace(/[\u0300-\u036f]/g, '')
+    .replace(/ñ/gi, 'n')
+    .replace(/[^a-zA-Z0-9\s]/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim()
+    .toLowerCase();
+}
     function getPlatformSet() {
       return new Set((fictionCatalog.platforms || []).map(function (p) { return normalizeString(p); }));
     }
@@ -177,16 +190,25 @@
       return $res;
     }
 
-    function searchVerticals(term) {
-      term = (term || '').toLowerCase().trim();
-      if (!term) return [];
-      var results = verticalItems.filter(function (it) {
-        if (!it) return false;
-        var hay = (it.title || '') + ' ' + (it.year || '') + ' ' + (getChannelValues(it).join(' ')) + ' ' + (getPlatformValues(it).join(' ')) + ' ' + (it.genre || '') + ' ' + (it.actors || []).join(' ');
-        return hay.toLowerCase().indexOf(term) !== -1;
-      });
-      return results;
-    }
+function searchVerticals(term) {
+  term = normalizeString(term);
+
+  if (!term) return [];
+
+  return verticalItems.filter(function (it) {
+    if (!it) return false;
+
+    var hay =
+      (it.title || '') + ' ' +
+      (it.year || '') + ' ' +
+      getChannelValues(it).join(' ') + ' ' +
+      getPlatformValues(it).join(' ') + ' ' +
+      (it.genre || '') + ' ' +
+      (it.actors || []).join(' ');
+
+    return normalizeString(hay).indexOf(term) !== -1;
+  });
+}
 
     // util: valores únicos
     function unique(arr) { return Array.from(new Set((arr||[]).filter(Boolean))); }
@@ -211,31 +233,59 @@
       var $actor = $('.filter-actor'); if ($actor.length) { $actor.find('option:not(:first)').remove(); actors.forEach(function(a){ $actor.append($('<option>').attr('value',a).text(a)); }); }
     }
 
-    function combinedSearch(term, filters) {
-      term = (term||'').toLowerCase().trim();
-      return verticalItems.filter(function(it){
-        if (!it) return false;
-        if (filters.year && it.year !== filters.year) return false;
-        if (filters.channel) {
-          var channelValues = getChannelValues(it);
-          var inChannel = channelValues.some(function(ch){ return normalizeString(ch) === normalizeString(filters.channel); });
-          if (!inChannel) return false;
-        }
-        if (filters.platform) {
-          var platformValues = getPlatformValues(it);
-          var inPlatform = platformValues.some(function(p){ return normalizeString(p) === normalizeString(filters.platform); });
-          if (!inPlatform) return false;
-        }
-        if (filters.actor) {
-          var actorLower = filters.actor.toLowerCase();
-          var found = (it.actors||[]).slice(0,6).some(function(a){ return (a||'').toLowerCase().indexOf(actorLower) !== -1; });
-          if (!found) return false;
-        }
-        if (!term) return true;
-        var hay = ((it.title||'') + ' ' + (it.year||'') + ' ' + (getChannelValues(it).join(' ')) + ' ' + (getPlatformValues(it).join(' ')) + ' ' + (it.genre||'') + ' ' + (it.actors||[]).join(' ')).toLowerCase();
-        return hay.indexOf(term) !== -1;
-      });
+function combinedSearch(term, filters) {
+  term = normalizeString(term);
+
+  return verticalItems.filter(function (it) {
+    if (!it) return false;
+
+    if (filters.year && it.year !== filters.year) {
+      return false;
     }
+
+    if (filters.channel) {
+      var normalizedChannel = normalizeString(filters.channel);
+
+      var inChannel = getChannelValues(it).some(function (ch) {
+        return normalizeString(ch) === normalizedChannel;
+      });
+
+      if (!inChannel) return false;
+    }
+
+    if (filters.platform) {
+      var normalizedPlatform = normalizeString(filters.platform);
+
+      var inPlatform = getPlatformValues(it).some(function (platform) {
+        return normalizeString(platform) === normalizedPlatform;
+      });
+
+      if (!inPlatform) return false;
+    }
+
+    if (filters.actor) {
+      var normalizedActor = normalizeString(filters.actor);
+
+      var found = (it.actors || []).slice(0, 6).some(function (actor) {
+        return normalizeString(actor).indexOf(normalizedActor) !== -1;
+      });
+
+      if (!found) return false;
+    }
+
+    if (!term) return true;
+
+    var hay =
+      (it.title || '') + ' ' +
+      (it.year || '') + ' ' +
+      getChannelValues(it).join(' ') + ' ' +
+      getPlatformValues(it).join(' ') + ' ' +
+      (it.genre || '') + ' ' +
+      (it.actors || []).join(' ');
+
+    return normalizeString(hay).indexOf(term) !== -1;
+  });
+}
 
     // Reemplazo attachSearchHandlers para usar filtros y resultados con enlace a show.html
     function attachSearchHandlers() {
