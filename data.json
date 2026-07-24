@@ -390,27 +390,33 @@
       "release_date": "4/10/2001",
       "director": "Alberto Lecchi"
     },
-    {
-      "title": "Chiquititas: Rincón de Luz",
-      "genre": "Familiar",
-      "year": "2001",
-      "actors": [
-        "Romina Yan",
-        "Facundo Arana",
-        "Juan Leyrado"
-      ],
-      "synopsis": "La jóven Belén llega a salvar a un grupo de huérfanos que son obligados a trabajar en una granja a cargo del Coronel Francisco Estévez",
-      "channel": "",
-      "image": "images/verticals/chiquititas-rincon-de-luz-2001--poster-280x420.png",
-      "orientation": "vertical",
-      "type": "pelicula",
-      "subtitle": "Familiar",
-      "id": "P1012",
-      "viewers": 682441,
-      "producer": "Telefe",
-      "release_date": "5/7/2001",
-      "director": "José Luis Massa"
-    },
+{
+  "id": "P1012",
+  "title": "Chiquititas: Rincón de Luz",
+  "genre": "Familiar",
+  "year": "2001",
+  "actors": [
+    "Romina Yan",
+    "Facundo Arana",
+    "Juan Leyrado"
+  ],
+  "synopsis": "La joven Belén llega para salvar a un grupo de huérfanos obligados a trabajar en una granja bajo las órdenes del coronel Francisco Estévez.",
+  "channel": "",
+  "image": "images/verticals/chiquititas-rincon-de-luz-2001--poster-280x420.png",
+  "orientation": "vertical",
+  "type": "pelicula",
+  "subtitle": "Familiar",
+  "viewers": 682441,
+  "producer": "Telefe",
+  "release_date": "2001-07-05",
+  "director": "José Luis Massa",
+  "franchise": {
+    "id": "chiquititas",
+    "title": "Chiquititas",
+    "type": "producciones"
+  },
+  "franchise_role": "pelicula"
+},
     {
       "title": "Sólo por Hoy",
       "genre": "Comedia",
@@ -6774,6 +6780,52 @@
   "productora": "Alejandro Doria"
 },
 {
+  "id": "T0009",
+  "title": "Mi Cuñado",
+  "year": "1993",
+  "channel": "Telefe",
+  "genre": "Comedia",
+  "actors": [
+    "Luis Brandoni",
+    "Ricardo Darín",
+    "Cecilia Dopazo",
+    "Patricia Viggiano"
+  ],
+  "orientation": "vertical",
+  "image": "images/verticals/1992-micunado-telefe-poster280x420.png",
+  "horizontal_image": "images/horizontals-1024x576/1992-micunado-telefe-poster1024x576.png",
+  "subtitle": "",
+  "horario": "Jueves 21hs, Martes 22hs",
+  "capitulos": 248,
+  "fecha_estreno": "1993-04-30",
+  "sinopsis": "Roberto Cantalapiedra, un viudo que intenta rehacer su vida al casarse con Andrea, ve alterada su tranquilidad por la llegada de Chiqui, su nuevo cuñado. Las ocurrencias y conflictos que provoca Chiqui convierten la convivencia en una fuente constante de problemas y humor.",
+  "seasons": 4,
+  "temporadas": [
+    {
+      "numero": 1,
+      "year": "1993",
+      "horario": "Jueves 21hs"
+    },
+    {
+      "numero": 2,
+      "year": "1994",
+      "horario": "Jueves 21hs"
+    },
+    {
+      "numero": 3,
+      "year": "1995",
+      "horario": "Jueves 21hs"
+    },
+    {
+      "numero": 4,
+      "year": "1996",
+      "horario": "Martes 22hs"
+    }
+  ],
+  "remakes": [],
+  "productora": null
+},
+{
   "id": "T0015",
   "title": "Un Hermano es un Hermano",
   "year": "1994",
@@ -10278,7 +10330,7 @@
       "subtitle": "Juvenil",
       "horario": "18hs, 17:45hs",
       "capitulos": 150,
-      "fecha_estreno": "03/04/2004",
+      "fecha_estreno": "03/04/2006",
       "sinopsis": "Magalí Garcés, una empresaria que busca a su hija perdida —entregada por su padre a un orfanato— adopta la identidad de “Lili” para infiltrarse en el hogar Dumont y transformar la vida de los niños con amor y magia.",
       "rating": "11",
       "productora": "Cris Morena Group / RGB Entertainment",
@@ -10463,48 +10515,60 @@
       ],
       "tipo_emision": "Tira Diaria"
     },
+{
+  "id": "V149",
+  "title": "Chiquititas (2000)",
+  "year": "2000",
+  "channel": "Telefe",
+  "genre": "Juvenil",
+  "actors": [
+    "Romina Gaetani",
+    "Iván Espeche",
+    "Patricia Sosa"
+  ],
+  "orientation": "vertical",
+  "image": "images/verticals/2000-chiquititas-poster280x420-v2.png",
+  "horizontal_image": "",
+  "subtitle": "Juvenil",
+  "horario": "18hs",
+  "capitulos": 144,
+  "fecha_estreno": "2000-05-02",
+  "sinopsis": "Tras escapar del Hogar de las Sombras, los Chufos descubren una misteriosa mansión que creen ser el verdadero Rincón de Luz, pero allí se enfrentan a apariciones fantasmales y una persecución policial. Con la ayuda de Luz, una fugitiva, descubren secretos ocultos y se enfrentan a una nueva amenaza cuando una mujer llega afirmando heredar la casa.",
+  "seasons": 1,
+  "season_number": 6,
+  "franchise": {
+    "id": "chiquititas",
+    "title": "Chiquititas",
+    "type": "temporadas"
+  },
+  "franchise_role": "original-season",
+  "related_production_ids": [
+    "P1012"
+  ],
+  "rating": "-",
+  "productora": "Telefe Contenidos",
+  "remakes": [
     {
-      "id": "V149",
-      "title": "Chiquititas (2000)",
-      "year": "2000",
-      "channel": "Telefe",
-      "genre": "Juvenil",
-      "actors": [
-        "Romina Gaetani",
-        "Iván Espeche",
-        "Patricia Sosa"
-      ],
-      "orientation": "vertical",
-      "image": "images/verticals/2000-chiquititas-poster280x420-v2.png",
-      "subtitle": "Juvenil",
-      "horario": "18hs",
-      "capitulos": 144,
-      "fecha_estreno": "02/05/2000",
-      "sinopsis": "Tras escapar del Hogar de las Sombras, los Chufos descubren una misteriosa mansión que creen ser el verdadero Rincón de Luz, pero allí se enfrentan a apariciones fantasmales y una persecución policial. Con la ayuda de Luz, una fugitiva, descubren secretos ocultos y se enfrentan a una nueva amenaza cuando una mujer llega afirmando heredar la casa.",
-      "rating": "-",
-      "productora": "Telefe Contenidos",
-      "remakes": [
-        {
-          "title": "Chiquititas",
-          "country": "Brasil",
-          "year": "1997",
-          "image": "images/verticals/chiquititas-brasil-1997.png"
-        },
-        {
-          "title": "Chiquititas",
-          "country": "México",
-          "year": "1998",
-          "image": "images/verticals/chiquititas-mexico-1998.png"
-        },
-        {
-          "title": "Chiquititas",
-          "country": "Brasil",
-          "year": "2013",
-          "image": "images/verticals/chiquititas-brasil-2013.png"
-        }
-      ],
-      "tipo_emision": "Tira Diaria"
+      "title": "Chiquititas",
+      "country": "Brasil",
+      "year": "1997",
+      "image": "images/verticals/chiquititas-brasil-1997.png"
     },
+    {
+      "title": "Chiquititas",
+      "country": "México",
+      "year": "1999",
+      "image": "images/verticals/chiquititas-mexico-1998.png"
+    },
+    {
+      "title": "Chiquititas",
+      "country": "Portugal",
+      "year": "2007",
+      "image": "images/verticals/chiquititas-portugal-2007.png"
+    }
+  ],
+  "tipo_emision": "Tira Diaria"
+},
     {
       "id": "V150",
       "title": "Divina, está en tu Corazón",
