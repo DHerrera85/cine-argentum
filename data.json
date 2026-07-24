@@ -6657,6 +6657,204 @@
   "remakes": [],
   "productora": "Juan Carlos Mesa"
 },
+{
+  "id": "T0007",
+  "title": "Brigada Cola",
+  "year": "1992",
+  "channel": "Telefe",
+  "genre": "Comedia",
+  "actors": [
+    "Guillermo Francella",
+    "Emilio Disi",
+    "Fernando Lupiz",
+    "Gino Renni",
+    "Mónica Guido"
+  ],
+  "orientation": "vertical",
+  "image": "images/verticals/1992-brigadacola-telefe-poster-280x420.png",
+  "horizontal_image": "images/horizontals-1024x576/1992-brigadacola-telefe-poster-1024x576.png",
+  "subtitle": "",
+  "horario": "Martes 21hs, Lunes 21hs",
+  "capitulos": 134,
+  "fecha_estreno": "1992-01-21",
+  "sinopsis": "La Brigada Cola es un grupo comando de élite que combate criminales, ninjas y villanos para proteger la ciudad. Desde su base de operaciones, sus integrantes planifican misiones y enfrentan nuevos desafíos bajo las órdenes de su jefe.",
+  "seasons": 3,
+  "temporadas": [
+    {
+      "numero": 1,
+      "year": "1992",
+      "horario": "Martes 21hs"
+    },
+    {
+      "numero": 2,
+      "year": "1993",
+      "horario": "Martes 21hs"
+    },
+    {
+      "numero": 3,
+      "year": "1994",
+      "horario": "Lunes 21hs"
+    }
+  ],
+  "remakes": [],
+  "productora": "Telefe, Argentina Sono Film"
+},
+{
+  "id": "T0008",
+  "title": "Amores",
+  "year": "1992",
+  "channel": "Telefe",
+  "genre": "Drama",
+  "actors": [
+    "Varios"
+  ],
+  "orientation": "vertical",
+  "image": "images/verticals/1992-amores-telefe-poster280x420.png",
+  "horizontal_image": "",
+  "subtitle": "",
+  "horario": "Sábados 22hs",
+  "capitulos": 25,
+  "fecha_estreno": "1992-08-04",
+  "sinopsis": "El programa de unitarios tuvo frecuencia semanal y en cada episodio abordaba una temática distinta con elencos rotativos.",
+  "seasons": 1,
+  "remakes": [],
+  "productora": "Alejandro Doria"
+},
+{
+  "id": "T0009",
+  "title": "Mi Cuñado",
+  "year": "1993",
+  "channel": "Telefe",
+  "genre": "Comedia",
+  "actors": [
+    "Luis Brandoni",
+    "Ricardo Darín",
+    "Cecilia Dopazo",
+    "Patricia Viggiano"
+  ],
+  "orientation": "vertical",
+  "image": "images/verticals/1992-micunado-telefe-poster280x420.png",
+  "horizontal_image": "images/horizontals-1024x576/1992-micunado-telefe-poster1024x576.png",
+  "subtitle": "",
+  "horario": "Jueves 21hs, Martes 22hs",
+  "capitulos": 248,
+  "fecha_estreno": "1993-04-30",
+  "sinopsis": "Roberto Cantalapiedra, un viudo que intenta rehacer su vida al casarse con Andrea, ve alterada su tranquilidad por la llegada de Chiqui, su nuevo cuñado. Las ocurrencias y conflictos que provoca Chiqui convierten la convivencia en una fuente constante de problemas y humor.",
+  "seasons": 4,
+  "temporadas": [
+    {
+      "numero": 1,
+      "year": "1993",
+      "horario": "Jueves 21hs"
+    },
+    {
+      "numero": 2,
+      "year": "1994",
+      "horario": "Jueves 21hs"
+    },
+    {
+      "numero": 3,
+      "year": "1995",
+      "horario": "Jueves 21hs"
+    },
+    {
+      "numero": 4,
+      "year": "1996",
+      "horario": "Martes 22hs"
+    }
+  ],
+  "remakes": [],
+  "productora": null
+},
+{
+  "id": "T0010",
+  "title": "Celeste, Siempre Celeste",
+  "year": "1993",
+  "channel": "Telefe",
+  "genre": "Telenovela",
+  "actors": [
+    "Andrea del Boca",
+    "Gustavo Bermúdez"
+  ],
+  "orientation": "vertical",
+  "image": "images/verticals/1993-celestesiempreceleste-telefe-v2-poster280x420.png",
+  "horizontal_image": "",
+  "subtitle": "",
+  "horario": "20hs",
+  "capitulos": 200,
+  "fecha_estreno": "1993-04-12",
+  "sinopsis": "Celeste y Franco ven su felicidad destrozada cuando ella pierde la memoria tras un secuestro, mientras Clara, la hermana gemela de Celeste, intenta ocupar su lugar. Entre engaños e identidades ocultas, ambos lucharán por recuperar su amor y descubrir la verdad.",
+  "seasons": 1,
+  "remakes": [],
+  "productora": "Raúl Lecouna"
+},
+{
+  "id": "T0011",
+  "title": "Dos al Toque",
+  "year": "1993",
+  "channel": "Telefe",
+  "genre": "Comedia",
+  "actors": [
+    "Emilio Disi",
+    "Fernando Lúpiz"
+  ],
+  "orientation": "vertical",
+  "image": "images/verticals/1993-dosaltoque-telefe-poster280x420.png",
+  "horizontal_image": "",
+  "subtitle": "",
+  "horario": "Martes 21hs, Viernes 22hs",
+  "capitulos": 20,
+  "fecha_estreno": "1993-01-01",
+  "sinopsis": "Dos amigos de una emisora de radio recurren a una insólita farsa para conservar sus empleos. Entre enredos, identidades falsas y situaciones disparatadas, deberán improvisar para evitar que su secreto salga a la luz.",
+  "seasons": 1,
+  "remakes": [],
+  "productora": null
+},
+{
+  "id": "T0012",
+  "title": "Buena Pata",
+  "year": "1993",
+  "channel": "Telefe",
+  "genre": "Comedia",
+  "actors": [
+    "Hugo Arana",
+    "Leonardo Sbaraglia",
+    "Georgina Barbarossa"
+  ],
+  "orientation": "vertical",
+  "image": "images/verticals/1993-buenapata-telefe-poster280x420.png",
+  "horizontal_image": "",
+  "subtitle": "",
+  "horario": "Viernes 21hs, Domingo 14:30hs",
+  "capitulos": 10,
+  "fecha_estreno": "1993-01-01",
+  "sinopsis": "Un carismático veterinario enfrenta los desafíos de dirigir una clínica donde cada día llegan pacientes animales de lo más insólitos. Entre situaciones familiares y enredos cotidianos, el humor está presente en cada consulta.",
+  "seasons": 1,
+  "remakes": [],
+  "productora": null
+},
+{
+  "id": "T0013",
+  "title": "Déjate Querer",
+  "year": "1993",
+  "channel": "Telefe",
+  "genre": "Telenovela",
+  "actors": [
+    "Catherine Fulop",
+    "Carlos Mata"
+  ],
+  "orientation": "vertical",
+  "image": "images/verticals/1993-dejatequerer-telefe-poster280x420.png",
+  "horizontal_image": "",
+  "subtitle": "",
+  "horario": "15:00hs",
+  "capitulos": 200,
+  "fecha_estreno": "1993-03-15",
+  "sinopsis": "Andrés y Bárbara viven un apasionado romance que deberá enfrentar las diferencias sociales, los prejuicios y oscuros secretos familiares. Mientras luchan por demostrar la inocencia del padre de Bárbara, descubrirán que el amor será puesto a prueba por el destino.",
+  "seasons": 1,
+  "remakes": [],
+  "productora": "Raúl Lecouna"
+},
     {
       "id": "P2026",
       "title": "Mensaje en una Botella",
