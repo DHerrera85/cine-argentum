@@ -412,8 +412,7 @@
   "director": "José Luis Massa",
   "franchise": {
     "id": "chiquititas",
-    "title": "Chiquititas",
-    "type": "producciones"
+    "title": "Chiquititas"
   },
   "franchise_role": "pelicula"
 },
@@ -6631,6 +6630,261 @@
   "productora": "Raúl Lecouna, Enrique Torres"
 },
 {
+  "id": "T0019",
+  "title": "Chiquititas",
+  "year": "1995",
+  "channel": "Telefe",
+  "genre": "Juvenil",
+  "actors": [
+    "Gabriel Corrado",
+    "Romina Yan",
+    "Natalia Lobo",
+    "Agustina Cherri"
+  ],
+  "orientation": "vertical",
+  "image": "images/verticals/1995-chiquititas-telefe-poster280x420.png",
+  "horizontal_image": "",
+  "subtitle": "Juvenil",
+  "horario": "18:00hs",
+  "capitulos": 155,
+  "fecha_estreno": "1995-08-07",
+  "sinopsis": "Mili crece en el orfanato Rincón de Luz sin saber que fue separada de su madre al nacer por un oscuro secreto familiar. Con la ayuda de Belén y Martín Morán, enfrentará las intrigas de Ginette y descubrirá la verdad sobre su pasado mientras los chicos encuentran una verdadera familia.",
+  "seasons": 1,
+  "season_number": 1,
+  "franchise": {
+    "id": "chiquititas",
+    "title": "Chiquititas"
+  },
+  "franchise_role": "temporada",
+  "rating": "-",
+  "productora": "Cris Morena",
+  "remakes": [
+    {
+      "title": "Chiquititas",
+      "country": "Brasil",
+      "year": "1997",
+      "image": "images/verticals/chiquititas-brasil-1997.png"
+    },
+    {
+      "title": "Chiquititas",
+      "country": "México",
+      "year": "1999",
+      "image": "images/verticals/chiquititas-mexico-1998.png"
+    },
+    {
+      "title": "Chiquititas",
+      "country": "Portugal",
+      "year": "2007",
+      "image": "images/verticals/chiquititas-portugal-2007.png"
+    }
+  ],
+  "tipo_emision": "Tira Diaria"
+},
+{
+  "id": "T0020",
+  "title": "Chiquititas",
+  "year": "1996",
+  "channel": "Telefe",
+  "genre": "Juvenil",
+  "actors": [
+    "Romina Yan",
+    "Fernán Mirás",
+    "Agustina Cherri",
+    "Simón Pestana",
+    "Jorge Martínez"
+  ],
+  "orientation": "vertical",
+  "image": "images/verticals/1996-chiquititas-telefe-poster280x420.png",
+  "horizontal_image": "",
+  "subtitle": "Juvenil",
+  "horario": "18:00hs",
+  "capitulos": 206,
+  "fecha_estreno": "1996-03-18",
+  "sinopsis": "El hogar Rincón de Luz recibe a nuevos chicos y se convierte en un espacio mixto, mientras Belén asume la dirección y comienza una nueva historia de amor con Facundo Brausen. Entre amistades, romances y las intrigas de Carmen y Matilde, los chicos enfrentarán nuevos desafíos para proteger la familia que formaron.",
+  "seasons": 1,
+  "season_number": 2,
+  "franchise": {
+    "id": "chiquititas",
+    "title": "Chiquititas"
+  },
+  "franchise_role": "temporada",
+  "rating": "-",
+  "productora": "Cris Morena",
+  "remakes": [
+    {
+      "title": "Chiquititas",
+      "country": "Brasil",
+      "year": "1997",
+      "image": "images/verticals/chiquititas-brasil-1997.png"
+    },
+    {
+      "title": "Chiquititas",
+      "country": "México",
+      "year": "1999",
+      "image": "images/verticals/chiquititas-mexico-1998.png"
+    },
+    {
+      "title": "Chiquititas",
+      "country": "Portugal",
+      "year": "2007",
+      "image": "images/verticals/chiquititas-portugal-2007.png"
+    }
+  ],
+  "tipo_emision": "Tira Diaria"
+},
+{
+  "id": "T0021",
+  "title": "Chiquititas",
+  "year": "1997",
+  "channel": "Telefe",
+  "genre": "Juvenil",
+  "actors": [
+    "Romina Yan",
+    "Fernán Mirás",
+    "Facundo Arana",
+    "Agustina Cherri"
+  ],
+  "orientation": "vertical",
+  "image": "images/verticals/1997-chiquititas-poster280x420.png",
+  "horizontal_image": "",
+  "subtitle": "Juvenil",
+  "horario": "18:00hs",
+  "capitulos": 175,
+  "fecha_estreno": "1997-04-14",
+  "sinopsis": "Belén, Facundo y los chicos dejan el antiguo hogar para fundar un nuevo y mágico Rincón de Luz, donde reciben a Pato, Nico y Mora, mientras enfrentan las amenazas de la temible Elena Kruegger. La llegada de Alejo Méndez Ayala y nuevos vecinos cambiará sus vidas, entre secretos familiares, despedidas y la lucha por proteger la gran familia que construyeron.",
+  "seasons": 1,
+  "season_number": 3,
+  "franchise": {
+    "id": "chiquititas",
+    "title": "Chiquititas"
+  },
+  "franchise_role": "temporada",
+  "rating": "-",
+  "productora": "Cris Morena",
+  "remakes": [
+    {
+      "title": "Chiquititas",
+      "country": "Brasil",
+      "year": "1997",
+      "image": "images/verticals/chiquititas-brasil-1997.png"
+    },
+    {
+      "title": "Chiquititas",
+      "country": "México",
+      "year": "1999",
+      "image": "images/verticals/chiquititas-mexico-1998.png"
+    },
+    {
+      "title": "Chiquititas",
+      "country": "Portugal",
+      "year": "2007",
+      "image": "images/verticals/chiquititas-portugal-2007.png"
+    }
+  ],
+  "tipo_emision": "Tira Diaria"
+},
+{
+  "id": "T0022",
+  "title": "Chiquititas",
+  "year": "1998",
+  "channel": "Telefe",
+  "genre": "Juvenil",
+  "actors": [
+    "Romina Yan",
+    "Facundo Arana"
+  ],
+  "orientation": "vertical",
+  "image": "images/verticals/1998-chiquititas-telefe-280x420.png",
+  "horizontal_image": "images/horizontals-1024x576/1998-chiquititas-telefe-1024x576.png",
+  "subtitle": "Juvenil",
+  "horario": "18:00hs",
+  "capitulos": 154,
+  "fecha_estreno": "1998-04-27",
+  "sinopsis": "Belén y Alejo luchan por proteger el Rincón de Luz, que recibe a Yago, Nacho, Martina, Catalina, Luna, Patricio y Micaela, mientras enfrentan el regreso de la temible Elena Kruegger. Entre nuevos desafíos, la familia encuentra su final soñado cuando Belén y Alejo se casan y adoptan a todos los niños del hogar.",
+  "seasons": 1,
+  "season_number": 4,
+  "franchise": {
+    "id": "chiquititas",
+    "title": "Chiquititas"
+  },
+  "franchise_role": "temporada",
+  "rating": "-",
+  "productora": "Cris Morena",
+  "remakes": [
+    {
+      "title": "Chiquititas",
+      "country": "Brasil",
+      "year": "1997",
+      "image": "images/verticals/chiquititas-brasil-1997.png"
+    },
+    {
+      "title": "Chiquititas",
+      "country": "México",
+      "year": "1999",
+      "image": "images/verticals/chiquititas-mexico-1998.png"
+    },
+    {
+      "title": "Chiquititas",
+      "country": "Portugal",
+      "year": "2007",
+      "image": "images/verticals/chiquititas-portugal-2007.png"
+    }
+  ],
+  "tipo_emision": "Tira Diaria"
+},
+{
+  "id": "T0023",
+  "title": "Chiquititas",
+  "year": "1999",
+  "channel": "Telefe",
+  "genre": "Juvenil",
+  "actors": [
+    "Grecia Colmenares",
+    "Darío Grandinetti",
+    "Millie Stegmann",
+    "Marcela Kloosterboer",
+    "Mariano Bertolini"
+  ],
+  "orientation": "vertical",
+  "image": "images/verticals/1999-chiquititas-telefe-280x420.png",
+  "horizontal_image": "",
+  "subtitle": "Juvenil",
+  "horario": "18:00hs",
+  "capitulos": 173,
+  "fecha_estreno": "1999-04-05",
+  "sinopsis": "Juan Maza, un viudo de carácter estricto, intenta criar a sus siete hijos mientras su relación con la ambiciosa Pía amenaza la unión familiar. La llegada de Ana Pizarro y de la joven Candela devolverá la esperanza al hogar, transformando sus vidas con amor, solidaridad y nuevas oportunidades.",
+  "seasons": 1,
+  "season_number": 5,
+  "franchise": {
+    "id": "chiquititas",
+    "title": "Chiquititas"
+  },
+  "franchise_role": "temporada",
+  "rating": "-",
+  "productora": "Cris Morena",
+  "remakes": [
+    {
+      "title": "Chiquititas",
+      "country": "Brasil",
+      "year": "1997",
+      "image": "images/verticals/chiquititas-brasil-1997.png"
+    },
+    {
+      "title": "Chiquititas",
+      "country": "México",
+      "year": "1999",
+      "image": "images/verticals/chiquititas-mexico-1998.png"
+    },
+    {
+      "title": "Chiquititas",
+      "country": "Portugal",
+      "year": "2007",
+      "image": "images/verticals/chiquititas-portugal-2007.png"
+    }
+  ],
+  "tipo_emision": "Tira Diaria"
+},
+{
   "id": "T0005",
   "title": "La Familia Benvenutto",
   "year": "1991",
@@ -10313,37 +10567,43 @@
       "productora": "Cris Morena Group / RGB Entertainment",
       "tipo_emision": "Tira Diaria"
     },
+{
+  "id": "V144",
+  "title": "Chiquititas - 2006",
+  "year": "2006",
+  "channel": "Telefe",
+  "genre": "Juvenil",
+  "actors": [
+    "Jorgelina Aruzzi",
+    "Gastón Ricaud",
+    "Lali Espósito",
+    "Peter Lanzani",
+    "Candela Vetrano"
+  ],
+  "orientation": "vertical",
+  "image": "images/verticals/chiquititas-poster-280x420.png",
+  "subtitle": "Juvenil",
+  "horario": "18hs, 17:45hs",
+  "capitulos": 150,
+  "fecha_estreno": "03/04/2006",
+  "sinopsis": "Magalí Garcés, una empresaria que busca a su hija perdida —entregada por su padre a un orfanato— adopta la identidad de “Lili” para infiltrarse en el hogar Dumont y transformar la vida de los niños con amor y magia.",
+  "rating": "11",
+  "productora": "Cris Morena Group / RGB Entertainment",
+  "tipo_emision": "Tira Diaria",
+  "franchise": {
+    "id": "chiquititas",
+    "title": "Chiquititas"
+  },
+  "franchise_role": "reboot",
+  "remakes": [
     {
-      "id": "V144",
       "title": "Chiquititas",
-      "year": "2006",
-      "channel": "Telefe",
-      "genre": "Juvenil",
-      "actors": [
-        "Jorgelina Aruzzi",
-        "Gastón Ricaud",
-        "Lali Espósito",
-        "Peter Lanzani"
-      ],
-      "orientation": "vertical",
-      "image": "images/verticals/chiquititas-poster-280x420.png",
-      "subtitle": "Juvenil",
-      "horario": "18hs, 17:45hs",
-      "capitulos": 150,
-      "fecha_estreno": "03/04/2006",
-      "sinopsis": "Magalí Garcés, una empresaria que busca a su hija perdida —entregada por su padre a un orfanato— adopta la identidad de “Lili” para infiltrarse en el hogar Dumont y transformar la vida de los niños con amor y magia.",
-      "rating": "11",
-      "productora": "Cris Morena Group / RGB Entertainment",
-      "tipo_emision": "Tira Diaria",
-      "remakes": [
-        {
-          "title": "Chiquititas",
-          "country": "Portugal",
-          "year": "2007",
-          "image": "images/verticals/chiquititas-portugal-2007.png"
-        }
-      ]
-    },
+      "country": "Portugal",
+      "year": "2007",
+      "image": "images/verticals/chiquititas-portugal-2007.png"
+    }
+  ]
+},
     {
       "id": "V145",
       "title": "Floricienta",
@@ -10400,27 +10660,32 @@
         }
       ]
     },
-    {
-      "id": "V146",
-      "title": "Rincón de Luz",
-      "year": "2003",
-      "channel": "Canal 9/Azul TV",
-      "genre": "Juvenil",
-      "actors": [
-        "Guido Kaczka",
-        "Soledad"
-      ],
-      "orientation": "vertical",
-      "image": "images/verticals/rincon-de-luz-poster-280x420.png",
-      "subtitle": "Juvenil",
-      "horario": "18hs, 11hs",
-      "capitulos": 199,
-      "fecha_estreno": "27/05/2002",
-      "sinopsis": "Álvaro Del Solar crea un orfanato para cobrar una herencia, pero termina encariñándose con los niños y enamorándose de Soledad, una joven que cuida a los chicos, transformando el hogar.",
-      "rating": "3,4",
-      "productora": "Cris Morena Group / RGB Entertainment",
-      "tipo_emision": "Tira Diaria"
-    },
+{
+  "id": "V146",
+  "title": "Rincón de Luz",
+  "year": "2003",
+  "channel": "Canal 9/Azul TV",
+  "genre": "Juvenil",
+  "actors": [
+    "Guido Kaczka",
+    "Soledad"
+  ],
+  "orientation": "vertical",
+  "image": "images/verticals/rincon-de-luz-poster-280x420.png",
+  "subtitle": "Juvenil",
+  "horario": "18hs, 11hs",
+  "capitulos": 199,
+  "fecha_estreno": "27/05/2002",
+  "sinopsis": "Álvaro Del Solar crea un orfanato para cobrar una herencia, pero termina encariñándose con los niños y enamorándose de Soledad, una joven que cuida a los chicos, transformando el hogar.",
+  "franchise": {
+    "id": "chiquititas",
+    "title": "Chiquititas"
+  },
+  "franchise_role": "spin-off",
+  "rating": "3,4",
+  "productora": "Cris Morena Group / RGB Entertainment",
+  "tipo_emision": "Tira Diaria"
+},
     {
       "id": "V147",
       "title": "Rebelde Way",
@@ -10517,7 +10782,7 @@
     },
 {
   "id": "V149",
-  "title": "Chiquititas (2000)",
+  "title": "Chiquititas - 2000",
   "year": "2000",
   "channel": "Telefe",
   "genre": "Juvenil",
@@ -10538,13 +10803,9 @@
   "season_number": 6,
   "franchise": {
     "id": "chiquititas",
-    "title": "Chiquititas",
-    "type": "temporadas"
+    "title": "Chiquititas"
   },
-  "franchise_role": "original-season",
-  "related_production_ids": [
-    "P1012"
-  ],
+  "franchise_role": "temporada",
   "rating": "-",
   "productora": "Telefe Contenidos",
   "remakes": [
