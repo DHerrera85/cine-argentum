@@ -6885,6 +6885,436 @@
   "tipo_emision": "Tira Diaria"
 },
 {
+  "id": "T0024",
+  "title": "Zíngara",
+  "year": "1996",
+  "channel": "Telefe",
+  "genre": "Telenovela",
+  "actors": [
+    "Andrea del Boca",
+    "Gabriel Corrado"
+  ],
+  "orientation": "vertical",
+  "image": "images/verticals/1996-zingara-telefe-280x420v2.png",
+  "subtitle": "Telenovela",
+  "horario": "15:00hs",
+  "capitulos": 180,
+  "fecha_estreno": "1996-04-01",
+  "sinopsis": "Una joven sin memoria es rescatada y criada por una familia gitana, sin conocer su verdadera identidad. Años después se enamora de un empresario, pero el abandono y los secretos de su pasado cambiarán su destino.",
+  "rating": "",
+  "productora": "Enrique Torres, Raúl Lecouna",
+  "tipo_emision": "Tira Diaria"
+},
+{
+  "id": "T0025",
+  "title": "Cybersix",
+  "year": "1996",
+  "channel": "Telefe",
+  "genre": "Thriller",
+  "actors": [
+    "Carolina Peleritti",
+    "Iván Espeche"
+  ],
+  "orientation": "vertical",
+  "image": "images/verticals/1996-cybersix-telefe-poster280x420.png",
+  "subtitle": "Thriller",
+  "horario": "Jueves 21hs",
+  "capitulos": 13,
+  "fecha_estreno": "1996-04-04",
+  "sinopsis": "Cybersix, una poderosa mujer creada mediante experimentos genéticos, adopta una identidad secreta para escapar de su despiadado creador, Von Reichter. Mientras combate a los mutantes enviados para capturarla, luchará por preservar su libertad y proteger a los inocentes.",
+  "rating": "",
+  "productora": "Carlos Trillo y Carlos Meglia",
+  "tipo_emision": "Serie Semanal"
+},
+{
+  "id": "T0026",
+  "title": "Naranja y Media",
+  "year": "1997",
+  "channel": "Telefe",
+  "genre": "Comedia",
+  "actors": [
+    "Guillermo Francella",
+    "Millie Stegmann",
+    "Verónica Vieyra"
+  ],
+  "orientation": "vertical",
+  "image": "images/verticals/1997-naranjaymedia-telefe-poster280x420.png",
+  "horizontal_image": "images/horizontals-1024x576/1997-naranjaymedia-telefe-poster1024x576.png",
+  "subtitle": "Comedia",
+  "horario": "21:00hs",
+  "capitulos": 210,
+  "fecha_estreno": "1997-01-01",
+  "sinopsis": "Juan Guerrero ve su vida sentimental complicarse cuando, durante una separación de su pareja Romi, se enamora de Lali y termina dividido entre las dos mujeres. Entre enredos, equívocos y situaciones disparatadas, intentará sostener un doble romance que desatará todo tipo de conflictos.",
+  "rating": "",
+  "productora": "Rodolfo Ledo",
+  "tipo_emision": "Tira Diaria",
+  "producciones_relacionadas": [
+    "V290"
+  ]
+},
+{
+  "id": "T0027",
+  "title": "El Signo",
+  "year": "1997",
+  "channel": "Telefe",
+  "genre": "Thriller",
+  "actors": [
+    "Rodolfo Bebán",
+    "Pablo Echarri",
+    "Carolina Papaleo"
+  ],
+  "orientation": "vertical",
+  "image": "images/verticals/1997-elsigno-poster-telefe280x420.png",
+  "subtitle": "Thriller",
+  "horario": "Martes 22hs",
+  "capitulos": 13,
+  "fecha_estreno": "1997-08-05",
+  "sinopsis": "El periodista Alejo Crespo y el joven Nicolás descubren una peligrosa conspiración detrás de una serie de atentados que amenaza con cambiar el destino del país. Mientras enfrentan al poderoso Jansen, la investigación los conducirá hacia un enigmático misterio de tintes esotéricos que gira en torno a un supuesto niño Mesías.",
+  "rating": "",
+  "productora": "Leonardo Bechini",
+  "tipo_emision": "Serie Semanal"
+},
+{
+  "id": "T0028",
+  "title": "El Rafa",
+  "year": "1997",
+  "channel": "Telefe",
+  "genre": "Drama",
+  "actors": [
+    "Arturo Puig",
+    "Paola Krum",
+    "Gastón Pauls"
+  ],
+  "orientation": "vertical",
+  "image": "images/verticals/1997-elrafa-telefe-poster280x420.png",
+  "subtitle": "Drama",
+  "horario": "Martes 22hs",
+  "capitulos": 26,
+  "fecha_estreno": "1997-03-25",
+  "sinopsis": "",
+  "rating": "",
+  "productora": "",
+  "tipo_emision": "Serie Semanal"
+},
+{
+  "id": "T0029",
+  "title": "Cebollitas",
+  "year": "1997",
+  "channel": "Telefe",
+  "genre": "Juvenil",
+  "actors": [
+    "Carlos Moreno",
+    "Andrés Vicente",
+    "Carmen Barbieri",
+    "Maximiliano Ghione",
+    "Brian Caruso",
+    "Dalma Maradona"
+  ],
+  "orientation": "vertical",
+  "image": "images/verticals/1997-cebollitas-telefe-poster280x420.png",
+  "horizontal_image": "images/horizontals-1024x576/1997-cebollitas-telefe-poster1024x570.png",
+  "subtitle": "Juvenil",
+  "horario": "Lunes a viernes 18hs / 17hs",
+  "capitulos": 458,
+  "fecha_estreno": "1997-01-01",
+  "sinopsis": "La serie sigue a un grupo de chicos que comparten su pasión por el fútbol en un club de barrio, viviendo amistades, desafíos y aventuras cotidianas. Inspirada en el histórico semillero donde surgió Diego Maradona, celebra los valores del deporte, el compañerismo y los sueños de la infancia.",
+  "rating": "",
+  "productora": "Enrique Torres",
+  "tipo_emision": "Tira Diaria"
+},
+{
+  "id": "T0030",
+  "title": "Mía, solo Mía",
+  "year": "1997",
+  "channel": "Telefe",
+  "genre": "Telenovela",
+  "actors": [
+    "Andrea del Boca",
+    "Pablo Echarri",
+    "Juan Leyrado"
+  ],
+  "orientation": "vertical",
+  "image": "images/verticals/1997-miasolomia-telefe-poster280x420.png",
+  "subtitle": "Telenovela",
+  "horario": "13:00hs",
+  "capitulos": 120,
+  "fecha_estreno": "1997-04-07",
+  "sinopsis": "Mía Benavides jura vengar la muerte de su padre infiltrándose en la familia de Ernesto Zamorano bajo una identidad falsa. Su plan se complica cuando se enamora de Juan Pablo, obligándola a elegir entre la venganza y el amor.",
+  "rating": "",
+  "productora": "Enrique Torres, Raúl Lecouna",
+  "tipo_emision": "Tira Diaria"
+},
+{
+  "id": "T0031",
+  "title": "Amor Sagrado",
+  "year": "1997",
+  "channel": "Telefe",
+  "genre": "Telenovela",
+  "actors": [
+    "Grecia Colmenares",
+    "Simón Pestana",
+    "Jorge Martínez"
+  ],
+  "orientation": "vertical",
+  "image": "images/verticals/1997-amorsagrado-poster-telefe280x420.png",
+  "subtitle": "Telenovela",
+  "horario": "16:00hs",
+  "capitulos": 80,
+  "fecha_estreno": "1997-12-09",
+  "sinopsis": "A fines del siglo XIX, las hermanas gemelas Eva y Ángeles quedan marcadas por un amor imposible, la traición y un destino que las separa para siempre. Mientras Eva lucha por recuperar a su hijo y limpiar su nombre, Ángeles deberá enfrentarse a los secretos y ambiciones que rodean a la familia Casenave.",
+  "rating": "",
+  "productora": "Mediaset, Deltavision",
+  "tipo_emision": "Tira Diaria"
+},
+{
+  "id": "T0032",
+  "title": "Milady, la historia continúa",
+  "year": "1997",
+  "channel": "Telefe",
+  "genre": "Telenovela",
+  "actors": [
+    "Osvaldo Laport",
+    "Gabriel Corrado",
+    "Florencia Raggi",
+    "Susana Campos"
+  ],
+  "orientation": "vertical",
+  "image": "images/verticals/1997-milady-lahistoriacontinua-telefe-poster280x420.png",
+  "subtitle": "Telenovela",
+  "horario": "21:00hs",
+  "capitulos": 120,
+  "fecha_estreno": "1997-12-16",
+  "sinopsis": "Máximo y Federico Valladares, dos hermanos criados en mundos opuestos, se enfrentan por el amor de Delfina, una joven que sueña con convertirse en princesa. Entre ambiciones, secretos familiares y las intrigas de la despiadada condesa Regina, deberán luchar por el amor y el destino de la familia Valladares.",
+  "rating": "",
+  "productora": "Raúl Lecouna",
+  "tipo_emision": "Tira Diaria"
+},
+{
+  "id": "T0033",
+  "title": "Fiscales",
+  "year": "1998",
+  "channel": "Telefe",
+  "genre": "Drama",
+  "actors": [
+    "Darío Grandinetti",
+    "Jorge Marrale",
+    "Selva Alemán"
+  ],
+  "orientation": "vertical",
+  "image": "images/verticals/1998-fiscales-telefe-poster280x420.png",
+  "subtitle": "Drama",
+  "horario": "Martes 23hs",
+  "capitulos": 19,
+  "fecha_estreno": "1998-08-04",
+  "sinopsis": "",
+  "rating": "",
+  "productora": "",
+  "tipo_emision": "Serie Semanal"
+},
+{
+  "id": "T0034",
+  "title": "Señoras sin Señores",
+  "year": "1998",
+  "channel": "Telefe",
+  "genre": "Sitcom",
+  "actors": [
+    "Patricia Palmer",
+    "Zulma Faiad",
+    "Susana Campos",
+    "María Concepción César",
+    "Carmen Vallejos"
+  ],
+  "orientation": "vertical",
+  "image": "images/verticals/1998-senorassinsenores-telefe-poster280x420.png",
+  "subtitle": "Sitcom",
+  "horario": "15:30hs",
+  "capitulos": "",
+  "fecha_estreno": "1998-10-20",
+  "sinopsis": "Luciana, Sara, Charo y Analía, cuatro mujeres mayores de cuarenta con historias muy distintas, terminan compartiendo una misma casa tras quedarse sin pareja. Entre humor, nuevas oportunidades y enredos sentimentales, enfrentarán juntas los desafíos del amor y la vida.",
+  "rating": "",
+  "productora": "Ricardo Talesnik",
+  "tipo_emision": "Tira Diaria"
+},
+{
+  "id": "T0035",
+  "title": "Muñeca Brava",
+  "year": "1998",
+  "channel": "Telefe",
+  "genre": "Telenovela",
+  "actors": [
+    "Natalia Oreiro",
+    "Facundo Arana"
+  ],
+  "orientation": "vertical",
+  "image": "images/verticals/1998-munecabrava-poster280x420.png",
+  "horizontal_image": "images/horizontals-1024x576/1998-munecabrava-poster1024x576.png",
+  "subtitle": "Telenovela",
+  "horario": "13:00hs",
+  "capitulos": 270,
+  "fecha_estreno": "1998-11-16",
+  "sinopsis": "Milagros, una joven huérfana y rebelde, llega a la mansión de los Di Carlo, donde se enamora de Ivo pese a las diferencias sociales que los separan. Entre secretos familiares, intrigas y grandes obstáculos, ambos lucharán por un amor que desafía todos los prejuicios.",
+  "rating": "",
+  "productora": "Raúl Lecouna, Enrique Torres",
+  "tipo_emision": "Tira Diaria",
+  "remakes": [
+    {
+      "title": "Anjo Selvagem",
+      "country": "Portugal",
+      "year": "2001"
+    },
+    {
+      "title": "Al diablo con los guapos",
+      "country": "México",
+      "year": "2008"
+    },
+    {
+      "title": "La Tayson, corazón rebelde",
+      "country": "Perú",
+      "year": "2012"
+    }
+  ]
+},
+{
+  "id": "T0036",
+  "title": "Trillizos, dijo la Partera",
+  "year": "1999",
+  "channel": "Telefe",
+  "genre": "Comedia",
+  "actors": [
+    "Guillermo Francella",
+    "Laura Novoa"
+  ],
+  "orientation": "vertical",
+  "image": "images/verticals/1999-trillizosdijolapartera-telefe-poster280x420.png",
+  "subtitle": "Comedia",
+  "horario": "21:00hs, 19:00hs",
+  "capitulos": 199,
+  "fecha_estreno": "1999-03-15",
+  "sinopsis": "Marcelo, Enzo y Luis Scarpelli, tres hermanos idénticos pero de personalidades completamente opuestas, viven atrapados en constantes confusiones y enredos. Sus dobles vidas, romances y equívocos darán lugar a una divertida comedia de situaciones donde nadie sabe quién es quién.",
+  "rating": "",
+  "productora": "",
+  "tipo_emision": "Tira Diaria"
+},
+{
+  "id": "T0037",
+  "title": "La Mujer del Presidente",
+  "year": "1999",
+  "channel": "Telefe",
+  "genre": "Thriller",
+  "actors": [
+    "Ricardo Darín",
+    "Natalia Lobo",
+    "Ángela Molina"
+  ],
+  "orientation": "vertical",
+  "image": "images/verticals/1999-lamujerdelpresidente-telefe-280x420.png",
+  "subtitle": "Thriller",
+  "horario": "Jueves 23hs",
+  "capitulos": 13,
+  "fecha_estreno": "1999-06-01",
+  "sinopsis": "La desaparición de Ana Pujol, esposa del presidente de una poderosa empresa aeronáutica, desencadena una compleja investigación que compromete a Agustín Moyano, el único que conoce la verdad. Entre conspiraciones, corrupción y errores judiciales, un hombre inocente deberá luchar para demostrar su inocencia frente a una red de poder que intenta destruirlo.",
+  "rating": "",
+  "productora": "",
+  "tipo_emision": "Serie Semanal"
+},
+{
+  "id": "T0038",
+  "title": "Cabecita",
+  "year": "1999",
+  "channel": "Telefe",
+  "genre": "Telenovela",
+  "actors": [
+    "Agustina Cherri",
+    "Alejo Ortiz"
+  ],
+  "orientation": "vertical",
+  "image": "images/verticals/1999-cabecita-telefe-poster280x420.png",
+  "subtitle": "Telenovela",
+  "horario": "13:00hs",
+  "capitulos": 198,
+  "fecha_estreno": "1999-12-01",
+  "sinopsis": "Lucía abandona su pueblo y llega a Buenos Aires, donde conoce a Esteban, un joven decidido a vengar la muerte de su padre ocultando su verdadera identidad. Mientras enfrentan los secretos de Mariano Núñez Zamora, ambos quedarán atrapados en una historia de amor, mentiras y lucha contra el poder.",
+  "rating": "",
+  "productora": "Raúl Lecouna, Enrique Torres",
+  "tipo_emision": "Tira Diaria"
+},
+{
+  "id": "T0039",
+  "title": "Buenos Vecinos",
+  "year": "1999",
+  "channel": "Telefe",
+  "genre": "Comedia",
+  "actors": [
+    "Moria Casán",
+    "Hugo Arana",
+    "Facundo Arana",
+    "Malena Solda"
+  ],
+  "orientation": "vertical",
+  "image": "images/verticals/1999-buenosvecinos-telefe-poster280x420.png",
+  "subtitle": "Comedia",
+  "horario": "21:00hs",
+  "capitulos": 321,
+  "fecha_estreno": "1999-12-13",
+  "sinopsis": "Julián Pinillos, un kiosquero de Parque Patricios, ve alterada su tranquila vida cuando Chini Suárez, una mujer de fuerte personalidad, se muda a la casa de al lado. Mientras entre ambos nace una relación de amor y odio, un antiguo secreto y el romance entre Diego y la hija de Julián cambiarán la vida de las dos familias.",
+  "rating": "",
+  "productora": "Ideas del Sur",
+  "tipo_emision": "Tira Diaria"
+},
+{
+  "id": "T0040",
+  "title": "Mi Familia es un Dibujo",
+  "year": "1996",
+  "channel": "Telefe",
+  "genre": "Comedia",
+  "actors": [
+    "Germán Kraus",
+    "Stella Maris Closas",
+    "Marcela Kloosterboer",
+    "Facundo Espinosa"
+  ],
+  "orientation": "vertical",
+  "image": "images/verticals/1996-mifamiliaesundibujo-telefe-poster280x420-v2.png",
+  "horizontal_image": "images/horizontals-1024x576/1996-mifamiliaesundibujo-telefe-poster1024x576.png",
+  "subtitle": "Comedia",
+  "horario": "Martes 21:00hs, Sábados 20:00hs, Sábados 19:00hs",
+  "capitulos": 94,
+  "fecha_estreno": "1996-04-02",
+  "sinopsis": "José \"Pepe\" Medina y Marcela ven cambiar sus vidas cuando su hijo Dibu nace convertido en un simpático personaje de dibujos animados. Juntos enfrentarán con humor las situaciones más insólitas mientras intentan criar a un niño tan extraordinario como entrañable.",
+  "rating": "",
+  "productora": "Patagonik Film Group",
+  "tipo_emision": "Serie Semanal",
+  "temporadas": [
+    {
+      "numero": 1,
+      "year": "1996",
+      "horario": "Martes 21:00hs"
+    },
+    {
+      "numero": 2,
+      "year": "1997",
+      "horario": "Sábados 20:00hs"
+    },
+    {
+      "numero": 3,
+      "year": "1998",
+      "horario": "Sábados 19:00hs"
+    }
+  ],
+  "producciones_relacionadas": [
+    "P1002",
+    "P1003",
+    "P1152"
+  ],
+  "remakes": [
+    {
+      "title": "Neco, A Minha Familia é Uma Animação",
+      "country": "Portugal",
+      "year": "2001"
+    }
+  ]
+},
+{
   "id": "T0005",
   "title": "La Familia Benvenutto",
   "year": "1991",
