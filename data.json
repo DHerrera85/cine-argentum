@@ -7416,6 +7416,58 @@
   ]
 },
 {
+  "id": "T0043",
+  "orientation": "vertical",
+  "type": "serie",
+  "title": "El Arcángel: Crónica de una Pasión",
+  "year": 1997,
+  "air_channels": [
+    "Telefe"
+  ],
+  "horario": "Lunes 22 hs",
+  "genre": [
+    "Thriller"
+  ],
+  "episodes": 13,
+  "fecha_estreno": "14/01/1997",
+  "image": "images/verticals/1997-elarcangel-telefe-poster280x420.png",
+  "productora": [
+    "José Luis Massa",
+    "Luis Majul"
+  ],
+  "actors": [
+    "Gabriel Corrado",
+    "Paola Krum",
+    "Millie Stegmann"
+  ],
+  "synopsis": "Gabriel Santiago, periodista de investigación conocido como «El Arcángel», descubre oscuros casos inspirados en hechos reales mientras intenta equilibrar su vida profesional y familiar."
+},
+{
+  "id": "T0044",
+  "orientation": "vertical",
+  "type": "serie",
+  "title": "La Marca del Deseo",
+  "year": 1994,
+  "air_channels": [
+    "Telefe"
+  ],
+  "horario": "Jueves 23 hs",
+  "genre": [
+    "Thriller"
+  ],
+  "capitulos": 13,
+  "fecha_estreno": "08/09/1994",
+  "image": "images/verticals/1994-lamarcadeldeseo-telefe-poster280x420.png",
+  "productora": [
+    "Claudio María Domínguez"
+  ],
+  "actors": [
+    "Gerardo Romano",
+    "Sandra Ballesteros"
+  ],
+  "synopsis": "Un psicópata conocido como Axel seduce a sus víctimas y, tras intimar con ellas, les deja un misterioso tatuaje como su inconfundible marca."
+},
+{
   "id": "T0005",
   "title": "La Familia Benvenutto",
   "year": "1991",
