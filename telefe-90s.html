@@ -194,6 +194,60 @@
   gap: 10px;
 }
 
+/* Navegación horizontal reutilizable para filtros */
+.filter-carousel {
+  position: relative;
+  width: 100%;
+}
+
+.filter-scroll {
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.filter-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.filter-arrow {
+  display: none;
+  position: absolute;
+  top: 50%;
+  z-index: 5;
+  width: 38px;
+  height: 38px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+  cursor: pointer;
+  transform: translateY(-50%);
+  transition: color .2s ease;
+}
+
+.filter-arrow:hover i {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.filter-arrow-prev {
+    left: 2px;
+}
+
+.filter-arrow-next {
+    right: 2px;
+}
+
+.filter-arrow:disabled {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.filter-arrow i {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.38);
+}
+
 .year-button,
 .category-button {
   min-width: 70px;
@@ -341,15 +395,28 @@
 
 .telefe-year-filter,
 .telefe-category-filter {
-  flex-wrap: nowrap;
-  overflow-x: auto;
-  padding-bottom: 8px;
-  scrollbar-width: thin;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding: 2px 0 8px;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.telefe-year-filter::-webkit-scrollbar,
+.telefe-category-filter::-webkit-scrollbar {
+  display: none;
 }
 
 .year-button,
 .category-button {
   flex: 0 0 auto;
+}
+
+.filter-arrow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .telefe-90s-grid{
@@ -446,8 +513,20 @@
   <section id="telefe-years" class="telefe-section">
     <h2 class="latest-heading">Explorar por año</h2>
 
-<div class="telefe-year-filter" aria-label="Filtrar ficciones por año">
+<div class="filter-carousel">
 
+  <button
+    type="button"
+    class="filter-arrow filter-arrow-prev"
+    aria-label="Ver años anteriores"
+  >
+    <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
+  </button>
+
+  <div
+    class="telefe-year-filter filter-scroll"
+    aria-label="Filtrar ficciones por año"
+  >
   <button
     type="button"
     class="year-button active"
@@ -547,20 +626,38 @@
     1999
   </button>
 
+  </div>
+
+  <button
+      type="button"
+      class="filter-arrow filter-arrow-next"
+      aria-label="Ver años siguientes">
+      <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+  </button>
+
 </div>
-  </section>
+
+</section>
 
 <!-- Navegación por categoría -->
 <section id="telefe-categories" class="telefe-section">
 
-  <h2 class="latest-heading">
+<h2 class="latest-heading">
     Explorar por categoría
-  </h2>
+</h2>
 
-  <div
-    class="telefe-category-filter"
-    aria-label="Filtrar ficciones por categoría"
-  >
+<div class="filter-carousel">
+
+    <button
+        type="button"
+        class="filter-arrow filter-arrow-prev"
+        aria-label="Ver categorías anteriores">
+        <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
+    </button>
+
+    <div
+        class="telefe-category-filter filter-scroll"
+        aria-label="Filtrar ficciones por categoría">
 
     <button
       type="button"
@@ -615,7 +712,16 @@
       Juvenil
     </button>
 
-  </div>
+    </div>
+
+    <button
+        type="button"
+        class="filter-arrow filter-arrow-next"
+        aria-label="Ver categorías siguientes">
+        <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+    </button>
+
+</div>
 
 </section>
 
