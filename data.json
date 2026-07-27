@@ -6278,7 +6278,7 @@
     },
     {
       "id": "v316",
-      "title": "El Precio del Poder",
+      "title": "El Precio del Poder (2002)",
       "year": "2002",
       "channel": "Canal 9/Azul TV",
       "genre": "Thriller",
@@ -7466,6 +7466,201 @@
     "Sandra Ballesteros"
   ],
   "synopsis": "Un psicópata conocido como Axel seduce a sus víctimas y, tras intimar con ellas, les deja un misterioso tatuaje como su inconfundible marca."
+},
+{
+  "id": "T0045",
+  "title": "La Extraña Dama",
+  "year": "1989",
+  "channel": "Canal 9/Azul TV",
+  "genre": "Telenovela",
+  "actors": [
+    "Luisa Kuliok",
+    "Jorge Martínez"
+  ],
+  "orientation": "vertical",
+  "image": "images/verticals/1989-laextranadama-canal9-poster280x420.png",
+  "horizontal_image": "images/horizontals-1024x576/1989-laextranadama-canal9-poster1024x576.png",
+  "subtitle": "",
+  "horario": "18hs",
+  "capitulos": 115,
+  "fecha_estreno": "1989-07-08",
+  "sinopsis": "Gina Falcone, enamorada de Marcelo Ricciardi y obligada a renunciar a su hija Fiamma, se refugia en un convento bajo el nombre de Sor Piedad. Diecisiete años después, el destino vuelve a reunirlos y la enfrenta al dilema entre sus votos religiosos, el amor y la verdad sobre su maternidad.",
+  "remakes": [],
+  "productora": "Omar Romay"
+},
+{
+  "id": "T0046",
+  "title": "Alta Comedia",
+  "year": "1990",
+  "channel": "Canal 9/Azul TV",
+  "genre": "Drama",
+  "actors": [
+    "Varios"
+  ],
+  "orientation": "vertical",
+  "image": "images/verticals/1990-altacomedia-canal9-poster280x420.png",
+  "horizontal_image": "images/horizontals-1024x576/1990-altacomedia-canal9-poster1024x576.png",
+  "subtitle": "",
+  "horario": "Sábados 22hs",
+  "capitulos": "",
+  "fecha_estreno": "1990-03-01",
+  "sinopsis": "Ciclo de episodios independientes que adaptaba clásicos de la literatura teatral universal y obras originales de destacados dramaturgos, acercando al público grandes dramas y comedias en formato unitario.",
+  "seasons": 1,
+  "temporadas": [
+    {
+      "numero": 1,
+      "year": "1990",
+      "horario": "Sábados 22hs"
+    }
+  ],
+  "remakes": [],
+  "productora": [
+    "Alejandro Doria", 
+    "María Herminia Avellaneda"
+  ]
+},
+{
+  "id": "T0047",
+  "title": "Una Voz en el Teléfono",
+  "year": "1990",
+  "channel": "Canal 9/Azul TV",
+  "genre": "Telenovela",
+  "actors": [
+    "Raúl Taibo",
+    "Carolina Papaleo"
+  ],
+  "orientation": "vertical",
+  "image": "images/verticals/1990-unavozeneltelefono-canal9-poster280x420.png",
+  "horizontal_image": "images/horizontals-1024x576/1990-unavozeneltelefono-canal9-poster1024x576.png",
+  "subtitle": "",
+  "horario": "18hs",
+  "capitulos": 115,
+  "fecha_estreno": "1990-09-24",
+  "sinopsis": "Lautaro Lamas, un compositor viudo y mujeriego, inicia una historia de amor a distancia con Ana Oromí, una joven acusada injustamente y recluida en un reformatorio. Un cruce telefónico accidental une sus destinos y los enfrenta a secretos, obstáculos y sentimientos cada vez más profundos.",
+  "remakes": [
+    {
+      "title": "Alguna vez tendremos alas",
+      "country": "México",
+      "year": "1997"
+    }
+  ],
+  "productora": "Alberto Migré"
+},
+{
+  "id": "T0048",
+  "title": "Socorro, Quinto Año",
+  "year": "1990",
+  "channel": "Canal 9/Azul TV",
+  "genre": "Juvenil",
+  "actors": [
+    "Laura Novoa",
+    "Fabián Vena",
+    "Walter Quiroz",
+    "Adriana Salonia"
+  ],
+  "orientation": "vertical",
+  "image": "images/verticals/1990-socorro-canal9-poster280x420.png",
+  "horizontal_image": "",
+  "subtitle": "",
+  "horario": "Martes 21hs",
+  "capitulos": "",
+  "fecha_estreno": "1990-03-06",
+  "sinopsis": "La historia seguía las vivencias y problemáticas de un grupo de amigos que transitaban el último año del secundario mientras enfrentaban los desafíos de ingresar a la vida adulta.",
+  "remakes": [],
+  "productora": [
+    "Rodolfo Ledo",
+    "Silvia Montanari"
+  ]
+},
+{
+  "id": "T0049",
+  "title": "Regalo del Cielo",
+  "year": "1991",
+  "channel": "Canal 9/Azul TV",
+  "genre": "Comedia",
+  "actors": [
+    "Patricia Palmer",
+    "Pablo Alarcón"
+  ],
+  "orientation": "vertical",
+  "image": "images/verticals/1991-regalodelcielo-canal9-poster280x420.png",
+  "horizontal_image": "",
+  "subtitle": "",
+  "horario": "19:00hs",
+  "capitulos": "",
+  "fecha_estreno": "1991-08-01",
+  "sinopsis": "Tras morir en un atentado, Antonio Saldívar regresa a la Tierra como un fantasma para proteger a su familia, descubrir a sus asesinos y cumplir una misión encomendada por Dios. Con la ayuda de su hijo Dieguito y del ángel Gaspar, enfrentará conspiraciones mientras Ana María lucha por recuperar la esperanza.",
+  "remakes": [],
+  "productora": ""
+},
+{
+  "id": "T0050",
+  "title": "Cosecharás tu Siembra",
+  "year": "1991",
+  "channel": "Canal 9/Azul TV",
+  "genre": "Telenovela",
+  "actors": [
+    "Luisa Kuliok",
+    "Osvaldo Laport"
+  ],
+  "orientation": "vertical",
+  "image": "images/verticals/1991-cosecharas-tu-siembra-canal9-poster280x420.png",
+  "horizontal_image": "",
+  "subtitle": "",
+  "horario": "18:00hs",
+  "capitulos": 120,
+  "fecha_estreno": "1991-09-02",
+  "sinopsis": "Ambientada en la Sicilia de los años treinta, la historia sigue a Giuliana y Luca, dos jóvenes atrapados en una guerra entre clanes de la mafia, disputas de poder y un romance apasionado pero imposible.",
+  "remakes": [],
+  "productora": "Omar Romay"
+},
+{
+  "id": "T0051",
+  "title": "Chiquilina Mía",
+  "year": "1991",
+  "channel": "Canal 9/Azul TV",
+  "genre": "Telenovela",
+  "actors": [
+    "Daniel Fanego",
+    "Margarita Ros",
+    "Gustavo Garzón"
+  ],
+  "orientation": "vertical",
+  "image": "images/verticals/1991-chiquilinamia-canal9-poster280x420.png",
+  "horizontal_image": "",
+  "subtitle": "",
+  "horario": "16:00hs",
+  "capitulos": 195,
+  "fecha_estreno": "1991-09-01",
+  "sinopsis": "Una joven florista analfabeta criada en un barrio humilde transforma su vida gracias a un profesor de literatura que le enseña a leer y escribir. Entre el amor, una injusta acusación de asesinato y los celos de Lucho, deberá luchar por recuperar su libertad y alcanzar la felicidad.",
+  "remakes": [],
+  "productora": "Roberto H. López"
+},
+{
+  "id": "T0052",
+  "title": "El Precio del Poder (1992)",
+  "year": "1992",
+  "channel": "Canal 9/Azul TV",
+  "genre": "Thriller",
+  "actors": [
+    "Rodolfo Bebán"
+  ],
+  "orientation": "vertical",
+  "image": "images/verticals/1992-elpreciodelpoder-canal9-poster280x420.png",
+  "horizontal_image": "",
+  "subtitle": "",
+  "horario": "Martes 22hs",
+  "capitulos": 13,
+  "fecha_estreno": "1992-03-01",
+  "sinopsis": "Lucio Santini, un poderoso y despiadado empresario, hará todo lo necesario para conservar su imperio y ocultar los secretos que lo rodean. Entre ambiciones, traiciones, corrupción y crímenes, quienes se crucen en su camino deberán pagar el precio del poder.",
+  "remakes": [
+    {
+      "id": "v316",
+      "title": "El Precio del Poder (2002)",
+      "year": "2002"
+    }
+  ],
+  "productora": ""
 },
 {
   "id": "T0005",
