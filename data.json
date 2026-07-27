@@ -29,49 +29,55 @@
     ]
   },
   "items": [
+{
+  "id": "V285",
+  "title": "Verano del '98 - Tercera Temporada",
+  "year": "2000",
+  "channel": "Telefe",
+  "genre": "Juvenil",
+  "actors": [
+    "Marcela Kloosterboer",
+    "Celeste Cid",
+    "Florencia Peña",
+    "Carla Peterson",
+    "Gloria Carrá",
+    "Rafael Ferro",
+    "Nahuel Mutti",
+    "Juan Ponce de León",
+    "Guido Kaczka",
+    "Joaquín Furriel"
+  ],
+  "orientation": "vertical",
+  "image": "images/verticals/1998-veranodel98-temporada3-2000-poster280x420.png",
+  "subtitle": "Temporada 3",
+  "horario": "19:00hs",
+  "capitulos": 678,
+  "fecha_estreno": "1998-01-26",
+  "sinopsis": "Tras la muerte de Germán, Rafael llega a Costa Esperanza con la tutela de Brisa para criarla en el pueblo donde vivió su madre. El regreso de África de José y la aparición de nuevos personajes reconfiguran la vida y los vínculos de la comunidad.",
+  "rating": "-",
+  "tipo_emision": "Tira Diaria",
+  "productora": "Telefe Contenidos",
+  "franchise": {
+    "id": "verano-del-98",
+    "title": "Verano del '98"
+  },
+  "franchise_role": "temporada",
+  "season_number": 3,
+  "remakes": [
     {
-      "id": "V285",
-      "title": "Verano del '98",
-      "year": "2000",
-      "channel": "Telefe",
-      "genre": "Juvenil",
-      "actors": [
-        "Marcela Kloosterboer",
-        "Celeste Cid",
-        "Florencia Peña",
-        "Carla Peterson",
-        "Gloria Carrá",
-        "Rafael Ferro",
-        "Nahuel Mutti",
-        "Juan Ponce De León",
-        "Guido Kackzca",
-        "Joaquín Furriel"
-      ],
-      "orientation": "vertical",
-      "image": "images/verticals/verano-del-98-poster-280x420.png",
-      "subtitle": "Juvenil",
-      "horario": "19:00hs",
-      "capitulos": 678,
-      "fecha_estreno": "26/01/1998",
-      "sinopsis": "Tras la muerte de Germán, Rafael llega a Costa Esperanza con la tutela de Brisa para criarla en el pueblo donde vivió su madre. El regreso de África de José y la aparición de nuevos personajes reconfiguran la vida y los vínculos de la comunidad.",
-      "rating": "-",
-      "tipo_emision": "Tira Diaria",
-      "remakes": [
-        {
-          "title": "Verano de Amor",
-          "country": "México",
-          "year": "2009",
-          "image": "images/verticals/verano-de-amor-mexico-2009.png"
-        },
-        {
-          "title": "Sueños de Verano",
-          "country": "Panamá",
-          "year": "2010",
-          "image": "images/verticals/sueños-de-verano-panama-2010.png"
-        }
-      ],
-      "productora": "Telefe Contenidos"
+      "title": "Verano de Amor",
+      "country": "México",
+      "year": "2009",
+      "image": "images/verticals/verano-de-amor-mexico-2009.png"
     },
+    {
+      "title": "Sueños de Verano",
+      "country": "Panamá",
+      "year": "2010",
+      "image": "images/verticals/sueños-de-verano-panama-2010.png"
+    }
+  ]
+},
     {
       "title": "La furia",
       "genre": "Policial",
@@ -7116,7 +7122,7 @@
   "title": "Señoras sin Señores",
   "year": "1998",
   "channel": "Telefe",
-  "genre": "Sitcom",
+  "genre": "Comedia",
   "actors": [
     "Patricia Palmer",
     "Zulma Faiad",
@@ -7126,7 +7132,7 @@
   ],
   "orientation": "vertical",
   "image": "images/verticals/1998-senorassinsenores-telefe-poster280x420.png",
-  "subtitle": "Sitcom",
+  "subtitle": "Comedia",
   "horario": "15:30hs",
   "capitulos": "",
   "fecha_estreno": "1998-10-20",
@@ -7311,6 +7317,101 @@
       "title": "Neco, A Minha Familia é Uma Animação",
       "country": "Portugal",
       "year": "2001"
+    }
+  ]
+},
+{
+  "id": "T0041",
+  "title": "Verano del '98 - Primer Temporada",
+  "year": "1998",
+  "channel": "Telefe",
+  "genre": "Juvenil",
+  "actors": [
+    "Fernán Mirás",
+    "Nancy Dupláa",
+    "Mario Pasik",
+    "Agustina Cherri",
+    "Marcela Kloosterboer",
+    "Juan Ponce de León",
+    "Tomás Fonzi",
+    "Dolores Fonzi",
+    "Nahuel Mutti"
+  ],
+  "orientation": "vertical",
+  "image": "images/verticals/1998-veranodel98-temporada1-1998-telefe-poster280x420.png",
+  "horizontal_image": "images/horizontals-1024x576/1998-veranodel98-temporada1-1998-telefe-poster1024X576.png",
+  "subtitle": "Temporada 1",
+  "horario": "21:00hs",
+  "capitulos": 205,
+  "fecha_estreno": "1998-01-26",
+  "sinopsis": "Violeta, Josefina, Tomás y Juan sellan una promesa durante un verano inolvidable en Costa Esperanza, con la ilusión de volver a encontrarse en el futuro. Entre romances, amistades y desafíos, descubrirán que el paso del tiempo pondrá a prueba sus sueños y el vínculo que los une.",
+  "rating": "-",
+  "productora": "Cris Morena",
+  "tipo_emision": "Tira Diaria",
+  "franchise": {
+    "id": "verano-del-98",
+    "title": "Verano del '98"
+  },
+  "franchise_role": "temporada",
+  "season_number": 1,
+  "remakes": [
+    {
+      "title": "Verano de Amor",
+      "country": "México",
+      "year": "2009",
+      "image": "images/verticals/verano-de-amor-mexico-2009.png"
+    },
+    {
+      "title": "Sueños de Verano",
+      "country": "Panamá",
+      "year": "2010",
+      "image": "images/verticals/sueños-de-verano-panama-2010.png"
+    }
+  ]
+},
+{
+  "id": "T0042",
+  "title": "Verano del '98 - Segunda Temporada",
+  "year": "1999",
+  "channel": "Telefe",
+  "genre": "Juvenil",
+  "actors": [
+    "Gloria Carrá",
+    "Diego Ramos",
+    "Julieta Cardinali",
+    "Celeste Cid",
+    "Florencia Peña",
+    "Carla Peterson",
+    "Guido Kaczka"
+  ],
+  "orientation": "vertical",
+  "image": "images/verticals/1998-veranodel98-temporada2-1999-poster280x420.png",
+  "subtitle": "Temporada 2",
+  "horario": "21:00hs, 22:00hs",
+  "capitulos": 244,
+  "fecha_estreno": "1999-01-04",
+  "sinopsis": "Violeta, Josefina, Tomás y Juan continúan su historia en Costa Esperanza mientras reciben a Sara, Octavio, Nicolás, Yoko y la numerosa familia Guzmán, que revolucionan la vida del pueblo. Entre nuevos romances, amistades y conflictos, la llegada de una troupe de circo y el asesinato de Germán Villanueva marcarán un antes y un después para todos.",
+  "rating": "-",
+  "productora": "",
+  "tipo_emision": "Tira Diaria",
+  "franchise": {
+    "id": "verano-del-98",
+    "title": "Verano del '98"
+  },
+  "franchise_role": "temporada",
+  "season_number": 2,
+  "remakes": [
+    {
+      "title": "Verano de Amor",
+      "country": "México",
+      "year": "2009",
+      "image": "images/verticals/verano-de-amor-mexico-2009.png"
+    },
+    {
+      "title": "Sueños de Verano",
+      "country": "Panamá",
+      "year": "2010",
+      "image": "images/verticals/sueños-de-verano-panama-2010.png"
     }
   ]
 },
@@ -7725,51 +7826,6 @@
   ],
   "remakes": [],
   "productora": "Cris Morena"
-},
-{
-  "id": "T0015",
-  "title": "Un Hermano es un Hermano",
-  "year": "1994",
-  "channel": "Telefe",
-  "genre": "Comedia",
-  "actors": [
-    "Guillermo Francella",
-    "Javier Portales"
-  ],
-  "orientation": "vertical",
-  "image": "images/verticals/1994-unhermanoesunhermano-telefe-poster280x420.png",
-  "horizontal_image": "",
-  "subtitle": "",
-  "horario": "Lunes 21:00hs, Sábado 21:00hs",
-  "capitulos": 73,
-  "fecha_estreno": "1994-01-08",
-  "sinopsis": "Bruno y Javier, dos hermanos de personalidades opuestas, terminan viviendo bajo el mismo techo cuando Bruno comienza a trabajar como chofer de Javier. La convivencia da lugar a divertidos enredos, conflictos familiares y situaciones cargadas de humor.",
-  "seasons": 3,
-  "seasons_history": [
-    {
-      "season": 1,
-      "year": 1994,
-      "schedule": [
-        "Lunes 21:00"
-      ]
-    },
-    {
-      "season": 2,
-      "year": 1995,
-      "schedule": [
-        "Lunes 21:00"
-      ]
-    },
-    {
-      "season": 3,
-      "year": 1996,
-      "schedule": [
-        "Sábado 21:00"
-      ]
-    }
-  ],
-  "remakes": [],
-  "productora": "-"
 },
     {
       "id": "P2026",

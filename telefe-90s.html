@@ -187,13 +187,15 @@
   color: #9ea6b0;
 }
 
-.telefe-year-filter {
+.telefe-year-filter,
+.telefe-category-filter {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
 }
 
-.year-button {
+.year-button,
+.category-button {
   min-width: 70px;
   padding: 10px 16px;
   border: 1px solid #3d4752;
@@ -209,12 +211,14 @@
     transform 0.2s ease;
 }
 
-.year-button:hover {
+.year-button:hover,
+.category-button:hover {
   border-color: #22b8cf;
   transform: translateY(-1px);
 }
 
-.year-button.active {
+.year-button.active,
+.category-button.active {
   border-color: #22b8cf;
   background: #22b8cf;
   color: #0f171f;
@@ -335,41 +339,32 @@
     padding:20px 16px;
   }
 
-  .telefe-year-filter{
-    flex-wrap:nowrap;
-    overflow-x:auto;
-    padding-bottom:8px;
-    scrollbar-width:thin;
-  }
-
-  .year-button{
-    flex:0 0 auto;
-  }
-
-.telefe-90s-grid{
-  display:flex;
-  flex-wrap:nowrap;
-  overflow-x:auto;
-  scroll-snap-type:x mandatory;
-  gap:18px;
-  padding-bottom:10px;
-  scrollbar-width:thin;
+.telefe-year-filter,
+.telefe-category-filter {
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  padding-bottom: 8px;
+  scrollbar-width: thin;
 }
 
-  .telefe-90s-grid::-webkit-scrollbar{
-    height: 6px;
-  }
+.year-button,
+.category-button {
+  flex: 0 0 auto;
+}
 
-  .telefe-90s-grid::-webkit-scrollbar-thumb{
-    background: rgba(255,255,255,0.18);
-    border-radius: 999px;
-  }
+.telefe-90s-grid{
+    display:grid;
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    gap:22px 16px;
+    width:100%;
+    overflow:visible;
+    padding-bottom:0;
+}
 
 .telefe-card{
-  flex: 0 0 calc(50% - 9px);
-  width: calc(50% - 9px);
-  max-width: 210px;
-  scroll-snap-align:start;
+    width:100%;
+    max-width:none;
+    min-width:0;
 }
 
 }
@@ -439,126 +434,218 @@
   <!-- Producciones destacadas -->
   <section id="telefe-destacadas" class="telefe-section">
     <h2 class="showcase-heading">Producciones destacadas</h2>
+<ul
+    id="telefe-featured-slider"
+    class="slider-h cs-hidden"
+    data-skip-auto="true">
+</ul>
 
-    <ul class="slider-h cs-hidden">
-
-      <li class="item-f">
-        <div class="showcase-box">
-          <img
-            src="images/horizontals-1024x576/1990-amigossonlosamigos-telefe-poster1024x576.png"
-            loading="lazy"
-            alt="Amigos son los amigos"
-          />
-        </div>
-
-        <div class="latest-b-text">
-          <strong>Amigos son los amigos</strong>
-          <p>1990</p>
-        </div>
-      </li>
-
-      <li class="item-f">
-        <div class="showcase-box">
-          <img
-            src="images/horizontals-1024x576/1991-grandepa-telefe-1024x576.png"
-            loading="lazy"
-            alt="Grande, Pa!"
-          />
-        </div>
-
-        <div class="latest-b-text">
-          <strong>Grande, Pa!</strong>
-          <p>1991</p>
-        </div>
-      </li>
-
-      <li class="item-f">
-        <div class="showcase-box">
-          <img
-            src="images/horizontals-1024x576/1998-munecabrava-poster1024x576.png"
-            loading="lazy"
-            alt="Muñeca Brava"
-          />
-        </div>
-
-        <div class="latest-b-text">
-          <strong>Muñeca Brava</strong>
-          <p>1998</p>
-        </div>
-      </li>
-
-    </ul>
   </section>
 
   <!-- Navegación por año: se completará después -->
   <section id="telefe-years" class="telefe-section">
     <h2 class="latest-heading">Explorar por año</h2>
 
-    <div class="telefe-year-filter" aria-label="Filtrar ficciones por año">
-      <button type="button" class="year-button active" data-year="all">
-        Todas
-      </button>
-      <button type="button" class="year-button" data-year="1990">1990</button>
-      <button type="button" class="year-button" data-year="1991">1991</button>
-      <button type="button" class="year-button" data-year="1992">1992</button>
-      <button type="button" class="year-button" data-year="1993">1993</button>
-      <button type="button" class="year-button" data-year="1994">1994</button>
-      <button type="button" class="year-button" data-year="1995">1995</button>
-      <button type="button" class="year-button" data-year="1996">1996</button>
-      <button type="button" class="year-button" data-year="1997">1997</button>
-      <button type="button" class="year-button" data-year="1998">1998</button>
-      <button type="button" class="year-button" data-year="1999">1999</button>
-    </div>
+<div class="telefe-year-filter" aria-label="Filtrar ficciones por año">
+
+  <button
+    type="button"
+    class="year-button active"
+    data-telefe-year="all"
+    aria-pressed="true"
+  >
+    Todas
+  </button>
+
+  <button
+    type="button"
+    class="year-button"
+    data-telefe-year="1990"
+    aria-pressed="false"
+  >
+    1990
+  </button>
+
+  <button
+    type="button"
+    class="year-button"
+    data-telefe-year="1991"
+    aria-pressed="false"
+  >
+    1991
+  </button>
+
+  <button
+    type="button"
+    class="year-button"
+    data-telefe-year="1992"
+    aria-pressed="false"
+  >
+    1992
+  </button>
+
+  <button
+    type="button"
+    class="year-button"
+    data-telefe-year="1993"
+    aria-pressed="false"
+  >
+    1993
+  </button>
+
+  <button
+    type="button"
+    class="year-button"
+    data-telefe-year="1994"
+    aria-pressed="false"
+  >
+    1994
+  </button>
+
+  <button
+    type="button"
+    class="year-button"
+    data-telefe-year="1995"
+    aria-pressed="false"
+  >
+    1995
+  </button>
+
+  <button
+    type="button"
+    class="year-button"
+    data-telefe-year="1996"
+    aria-pressed="false"
+  >
+    1996
+  </button>
+
+  <button
+    type="button"
+    class="year-button"
+    data-telefe-year="1997"
+    aria-pressed="false"
+  >
+    1997
+  </button>
+
+  <button
+    type="button"
+    class="year-button"
+    data-telefe-year="1998"
+    aria-pressed="false"
+  >
+    1998
+  </button>
+
+  <button
+    type="button"
+    class="year-button"
+    data-telefe-year="1999"
+    aria-pressed="false"
+  >
+    1999
+  </button>
+
+</div>
   </section>
+
+<!-- Navegación por categoría -->
+<section id="telefe-categories" class="telefe-section">
+
+  <h2 class="latest-heading">
+    Explorar por categoría
+  </h2>
+
+  <div
+    class="telefe-category-filter"
+    aria-label="Filtrar ficciones por categoría"
+  >
+
+    <button
+      type="button"
+      class="category-button active"
+      data-telefe-category="all"
+      aria-pressed="true"
+    >
+      Todas
+    </button>
+
+    <button
+      type="button"
+      class="category-button"
+      data-telefe-category="telenovela"
+      aria-pressed="false"
+    >
+      Telenovela
+    </button>
+
+    <button
+      type="button"
+      class="category-button"
+      data-telefe-category="comedia"
+      aria-pressed="false"
+    >
+      Comedia
+    </button>
+
+<button
+    type="button"
+    class="category-button"
+    data-telefe-category="drama"
+    aria-pressed="false"
+>
+    Drama
+</button>
+    <button
+      type="button"
+      class="category-button"
+      data-telefe-category="thriller"
+      aria-pressed="false"
+    >
+      Thriller
+    </button>
+
+    <button
+      type="button"
+      class="category-button"
+      data-telefe-category="juvenil"
+      aria-pressed="false"
+    >
+      Juvenil
+    </button>
+
+  </div>
+
+</section>
 
   <!-- Catálogo vertical -->
   <section id="telefe-catalogue" class="telefe-section telefe-catalogue">
-    <div class="catalogue-header">
-      <h2 class="latest-heading">Todas las ficciones</h2>
-      <p>
-        Catálogo de producciones emitidas por Telefe durante la década de 1990.
-      </p>
-    </div>
+<div class="catalogue-header">
 
-<div id="telefe-90s-grid" class="telefe-90s-grid">
+  <h2
+    id="telefe-catalogue-title"
+    class="latest-heading"
+  >
+    Todas las ficciones
+  </h2>
 
-  <article class="telefe-card" data-year="1990">
-    <img
-      src="images/verticals/1990-amigossonlosamigos-telefe-poster280x420.png"
-      alt="Amigos son los amigos"
-      loading="lazy"
-    >
-    <div class="telefe-card-text">
-      <strong>Amigos son los amigos</strong>
-      <span>1990</span>
-    </div>
-  </article>
+  <p id="telefe-catalogue-description">
+    Cargando ficciones de Telefe...
+  </p>
 
-  <article class="telefe-card" data-year="1991">
-    <img
-      src="images/verticals/1991-grandepa-telefe280x420.png"
-      alt="Grande, Pa!"
-      loading="lazy"
-    >
-    <div class="telefe-card-text">
-      <strong>Grande, Pa!</strong>
-      <span>1991</span>
-    </div>
-  </article>
+</div>
 
-  <article class="telefe-card" data-year="1998">
-    <img
-      src="images/verticals/1998-munecabrava-poster280x420.png"
-      alt="Muñeca Brava"
-      loading="lazy"
-    >
-    <div class="telefe-card-text">
-      <strong>Muñeca Brava</strong>
-      <span>1998</span>
-    </div>
-  </article>
+<div
+    id="telefe-90s-grid"
+    class="telefe-90s-grid"
+    aria-live="polite"
+></div>
 
-    </div>
+<p id="telefe-empty-state" hidden>
+    No se encontraron ficciones de Telefe para el año seleccionado.
+</p>
+
   </section>
 
 </main>
@@ -574,5 +661,6 @@
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <script src="js/lightslider.js"></script>
 <script src="js/script.js?v=20260226-1"></script>
+<script src="js/telefe-90s-autosync.js?v=20260726-1"></script>
 </body>
 </html>
