@@ -7451,7 +7451,7 @@
   "air_channels": [
     "Telefe"
   ],
-  "horario": "Jueves 23 hs",
+  "horario": "Jueves 22 hs",
   "genre": [
     "Thriller"
   ],
@@ -7963,6 +7963,300 @@
   "sinopsis": "Alma Echagüe, una mujer valiente, ve su destino ligado al apasionado universo del tango en la Argentina de comienzos del siglo XX. Entre romances prohibidos, diferencias sociales y tradiciones de la época, luchará por abrirse camino y defender su amor.",
   "remakes": [],
   "productora": "Omar Romay"
+},
+{
+  "id": "T0067",
+  "title": "La Hermana Mayor",
+  "year": "1995",
+  "channel": "Canal 9/Azul TV",
+  "genre": "Comedia",
+  "actors": [
+    "Soledad Silveyra",
+    "Juan Leyrado"
+  ],
+  "orientation": "vertical",
+  "image": "images/verticals/1995-lahermanamayor-canal9-poster-280x420.png",
+  "horizontal_image": "",
+  "subtitle": "",
+  "horario": "18:00hs",
+  "capitulos": 224,
+  "fecha_estreno": "1995-01-02",
+  "sinopsis": "La llegada de una hermana mayor transforma la vida de una familia disfuncional marcada por los conflictos y las diferencias. Con afecto y determinación, intentará unir a sus seres queridos y devolver el equilibrio al hogar.",
+  "remakes": [],
+  "productora": ""
+},
+{
+  "id": "T0068",
+  "title": "Por Siempre Mujercitas",
+  "year": "1995",
+  "channel": "Canal 9/Azul TV",
+  "genre": "Telenovela",
+  "actors": [
+    "Viviana Saccone",
+    "Paola Krum",
+    "Pablo Echarri",
+    "Carolina Papaleo",
+    "Virginia Lago",
+    "Valeria Britos",
+    "Magalí Moro"
+  ],
+  "orientation": "vertical",
+  "image": "images/verticals/1995-porsiempremujercitas-canal9-poster280x420.png",
+  "horizontal_image": "images/horizontals-1024x576/1995-porsiempremujercitas-canal9-1024x576.png",
+  "subtitle": "",
+  "horario": "21:00hs",
+  "capitulos": 365,
+  "fecha_estreno": "1995-07-03",
+  "sinopsis": "Gabriela Morales, una psicóloga viuda, y sus cuatro hijas deben mantenerse unidas para reconstruir sus vidas tras una dolorosa pérdida. Mientras enfrentan nuevos desafíos, cada una vivirá romances, conflictos y búsquedas personales que pondrán a prueba los lazos familiares.",
+  "remakes": [],
+  "productora": ""
+},
+{
+  "id": "T0069",
+  "title": "Leandro Leiva, un Soñador",
+  "year": "1995",
+  "channel": "Canal 9/Azul TV",
+  "genre": "Drama",
+  "actors": [
+    "Miguel Ángel Solá",
+    "Antonio Bonín",
+    "Carolina Fal"
+  ],
+  "orientation": "vertical",
+  "image": "images/verticals/1995-leandroleivaunsonador-canal9-poster280x420v2.png",
+  "horizontal_image": "",
+  "subtitle": "",
+  "horario": "Lunes 22hs",
+  "capitulos": 13,
+  "fecha_estreno": "1995-03-01",
+  "sinopsis": "Leandro Leiva, un comprometido dirigente sindical, se enamora de la hija de un poderoso empresario en medio de un conflicto social que enfrenta a trabajadores y patrones. Entre luchas obreras, intereses enfrentados y un amor imposible, ambos deberán desafiar las diferencias que los separan.",
+  "remakes": [],
+  "productora": "Alberto Migré"
+},
+{
+  "id": "T0070",
+  "title": "Dulce Ana",
+  "year": "1995",
+  "channel": "Canal 9/Azul TV",
+  "genre": "Telenovela",
+  "actors": [
+    "Patricia Palmer",
+    "Susana Campos",
+    "Orlando Carrió"
+  ],
+  "orientation": "vertical",
+  "image": "images/verticals/1995-dulceana-canal9-poster280x420.png",
+  "horizontal_image": "images/horizontals-1024x576/1995-dulceana-canal9-horizontal-1024x576.png",
+  "subtitle": "",
+  "horario": "18:00hs",
+  "capitulos": 165,
+  "fecha_estreno": "1995-05-22",
+  "sinopsis": "Ana, una mujer sometida por una madre dominante que la hace sentirse inferior, encuentra una oportunidad para cambiar su destino. Tras conocer al amor de su vida, inicia un profundo proceso de transformación personal y búsqueda de su felicidad.",
+  "remakes": [
+    {
+      "title": "Pobre Niña Rica",
+      "country": "México",
+      "year": "1995"
+    }
+  ],
+  "productora": ""
+},
+{
+  "id": "T0071",
+  "title": "90-60-90 Modelos",
+  "year": "1996",
+  "channel": "Canal 9/Azul TV",
+  "genre": "Telenovela",
+  "actors": [
+    "Raúl Taibo",
+    "Silvia Kutika",
+    "Natalia Oreiro"
+  ],
+  "orientation": "vertical",
+  "image": "images/verticals/1996-906090modelos-canal9-poster280x420v2.png",
+  "horizontal_image": "",
+  "subtitle": "",
+  "horario": "18:00hs",
+  "capitulos": 278,
+  "fecha_estreno": "1996-01-01",
+  "sinopsis": "Lucía, una joven de origen humilde, llega a una prestigiosa agencia de modelos donde descubre que Cuca Dalton, una de sus directoras, es su verdadera madre biológica. Mientras intenta reconstruir su identidad, se ve envuelta en romances, secretos familiares e intrigas dentro del competitivo mundo de la moda.",
+  "remakes": [
+    {
+      "title": "Top Models",
+      "country": "México",
+      "year": "2005"
+    }
+  ],
+  "productora": ""
+},
+{
+  "id": "T0072",
+  "title": "Los Chicos Vienen Cantando",
+  "year": "1996",
+  "channel": "Canal 9/Azul TV",
+  "genre": "Juvenil",
+  "actors": [],
+  "orientation": "vertical",
+  "image": "images/verticals/1996-loschicosvienencantando-canal9-poster280x420.png",
+  "horizontal_image": "",
+  "subtitle": "",
+  "horario": "11hs",
+  "capitulos": "",
+  "fecha_estreno": "1996-10-01",
+  "sinopsis": "Un grupo de chicos crea y conduce su propio programa de televisión, jugando a ser adultos en un mundo lleno de música, aventuras y fantasía. Entre canciones, romances infantiles y situaciones divertidas, descubrirán el valor de la amistad, los sueños y la imaginación.",
+  "remakes": [],
+  "productora": ""
+},
+{
+  "id": "T0073",
+  "title": "La Nena",
+  "year": "1996",
+  "channel": "Canal 9/Azul TV",
+  "genre": "Juvenil",
+  "actors": [
+    "Rodolfo Ranni",
+    "Valeria Britos"
+  ],
+  "orientation": "vertical",
+  "image": "images/verticals/1996-lanena-canal9-posterv2-280x420.png",
+  "horizontal_image": "",
+  "subtitle": "",
+  "horario": "19:00hs",
+  "capitulos": 120,
+  "fecha_estreno": "1996-01-01",
+  "sinopsis": "Maggie, una joven pícara e ingeniosa, vive junto a su padre viudo, Jerónimo, a quien involucra constantemente en divertidos enredos. Entre situaciones disparatadas y conflictos cotidianos, ambos fortalecen su vínculo mientras intentan salir airosos de cada aventura.",
+  "remakes": [],
+  "productora": "Hugo Móser"
+},
+{
+  "id": "T0074",
+  "title": "Los Ángeles no Lloran",
+  "year": "1996",
+  "channel": "Canal 9/Azul TV",
+  "genre": "Telenovela",
+  "actors": [
+    "Patricia Palmer",
+    "Susana Campos",
+    "Orlando Carrió"
+  ],
+  "orientation": "vertical",
+  "image": "images/verticals/1996-losangelesnolloran-canal9-poster280x420.png",
+  "horizontal_image": "",
+  "subtitle": "",
+  "horario": "19:00hs",
+  "capitulos": 120,
+  "fecha_estreno": "1996-06-03",
+  "sinopsis": "Ángela Bellati, una joven maestra, descubre que Emilia Santillana fue responsable de la tragedia que marcó a su familia y decide infiltrarse en su vida para vengarse. Mientras lleva adelante su plan, deberá enfrentarse a secretos del pasado y al riesgo de sacrificar su propia felicidad.",
+  "remakes": [
+    {
+      "title": "La loba",
+      "country": "México",
+      "year": "2010"
+    }
+  ],
+  "productora": ""
+},
+{
+  "id": "T0075",
+  "title": "Mamá x 2",
+  "year": "1996",
+  "channel": "Canal 9/Azul TV",
+  "genre": "Juvenil",
+  "actors": [
+    "Flavia Palmiero",
+    "Fernando Lúpiz",
+    "Melina Petriella",
+    "Dorys del Valle"
+  ],
+  "orientation": "vertical",
+  "image": "images/verticals/1996-mamax2-canal9-poster280x420.png",
+  "horizontal_image": "",
+  "subtitle": "",
+  "horario": "19:00hs",
+  "capitulos": 120,
+  "fecha_estreno": "1996-12-20",
+  "sinopsis": "Flavia, una joven artista de circo, llega como niñera a la casa del viudo Fernando Alvarado para cuidar a sus cuatro hijos, revolucionando la vida de toda la familia. Mientras nace un romance entre ambos, descubre que el menor de los niños es el hijo que creía haber perdido años atrás.",
+  "remakes": [],
+  "productora": ""
+},
+{
+  "id": "T0076",
+  "title": "El Garante",
+  "year": "1997",
+  "channel": "Canal 9/Azul TV",
+  "genre": "Thriller",
+  "actors": [
+    "Leonardo Sbaraglia",
+    "Lito Cruz"
+  ],
+  "orientation": "vertical",
+  "image": "images/verticals/1997-elgarante-canal9-poster280x420.png",
+  "horizontal_image": "",
+  "subtitle": "",
+  "horario": "22hs",
+  "capitulos": 8,
+  "fecha_estreno": "1997-01-01",
+  "sinopsis": "Martín Rivera, un joven psicólogo, descubre que debe saldar un antiguo pacto que su abuelo hizo con el diablo y que ahora amenaza con cobrar su alma. Mientras intenta romper la maldición, se enfrenta a fuerzas sobrenaturales, secretos familiares y un destino del que parece imposible escapar.",
+  "remakes": [],
+  "productora": "Sebastián Borensztein"
+},
+{
+  "id": "T0077",
+  "title": "Ricos y Famosos",
+  "year": "1997",
+  "channel": "Canal 9/Azul TV",
+  "genre": "Telenovela",
+  "actors": [
+    "Natalia Oreiro",
+    "Diego Ramos",
+    "Oscar Ferreiro"
+  ],
+  "orientation": "vertical",
+  "image": "images/verticals/1997-ricosyfamosos-canal9-poster280x420.png",
+  "horizontal_image": "",
+  "subtitle": "",
+  "horario": "21:00hs",
+  "capitulos": 517,
+  "fecha_estreno": "1997-01-06",
+  "sinopsis": "Valeria García Méndez y Diego Salerno se enamoran sin saber que sus familias son enemigas por una traición del pasado. Mientras luchan por defender su amor, deberán enfrentarse a intrigas, venganzas y poderosos enemigos decididos a separarlos.",
+  "seasons": [
+    {
+      "number": 1,
+      "year": "1997",
+      "image": "images/verticals/1997-ricosyfamosos-canal9-poster280x420.png"
+    },
+    {
+      "number": 2,
+      "year": "1998",
+      "image": "images/verticals/1998-ricosyfamosos-canal9-poster280x420.png"
+    }
+  ],
+  "remakes": [],
+  "productora": ""
+},
+{
+  "id": "T0078",
+  "title": "Herederos del Poder",
+  "year": "1997",
+  "channel": "Canal 9/Azul TV",
+  "genre": "Telenovela",
+  "actors": [
+    "Juan Darthés",
+    "Andrea Bonelli",
+    "Orlando Carrió",
+    "Virginia Lago",
+    "Narciso Ibáñez Menta"
+  ],
+  "orientation": "vertical",
+  "image": "images/verticals/1997-herederospoder-canal9-poster280x420.png",
+  "horizontal_image": "",
+  "subtitle": "",
+  "horario": "19:00hs",
+  "capitulos": 120,
+  "fecha_estreno": "1997-04-30",
+  "sinopsis": "Tras la muerte de un poderoso empresario, Patricia hereda su fortuna, desatando una feroz disputa con la familia que se siente despojada. Mientras crecen las intrigas por la herencia, el romance entre Patricia y Facundo pondrá a prueba la lealtad, la ambición y el amor.",
+  "remakes": [],
+  "productora": "Narciso Ibáñez Menta"
 },
 {
   "id": "T0005",
