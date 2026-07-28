@@ -7663,6 +7663,308 @@
   "productora": ""
 },
 {
+  "id": "T0053",
+  "title": "El Oro y el Barro",
+  "year": "1992",
+  "channel": "Canal 9/Azul TV",
+  "genre": "Telenovela",
+  "actors": [
+    "Miguel Ángel Solá",
+    "Darío Grandinetti",
+    "Maru Valdivielso"
+  ],
+  "orientation": "vertical",
+  "image": "images/verticals/1992-eloroyelbarro-canal9-poster280x420.png",
+  "horizontal_image": "",
+  "subtitle": "",
+  "horario": "17:30hs",
+  "capitulos": 100,
+  "fecha_estreno": "1992-03-01",
+  "sinopsis": "El pintor Sergio Castellini lleva una doble vida: está casado con la joven Pilar, pero planea deshacerse de ella para quedarse con Mariana, la hermana menor de su esposa. Su obsesión desencadena una trama de engaños, traiciones y pasiones que pondrá en riesgo a todos los involucrados.",
+  "remakes": [],
+  "productora": [
+    "Antena 3",
+    "Reytel"
+  ]
+},
+{
+  "id": "T0054",
+  "title": "Flavia, Corazón de Tiza",
+  "year": "1992",
+  "channel": "Canal 9/Azul TV",
+  "genre": "Juvenil",
+  "actors": [
+    "Flavia Palmiero",
+    "Roberto Ibáñez",
+    "Belén Blanco"
+  ],
+  "orientation": "vertical",
+  "image": "images/verticals/1992-corazondetiza-canal9-poster280x420.png",
+  "horizontal_image": "",
+  "subtitle": "",
+  "horario": "19:00hs",
+  "capitulos": 180,
+  "fecha_estreno": "1992-04-27",
+  "sinopsis": "Flavia, una maestra de Jujuy, acepta convertirse en institutriz de los hijos de Miguel y se instala en su mansión, donde despierta el afecto de la familia y el amor de su patrón. Pero deberá enfrentar la hostilidad de la esposa de Miguel y de su hija mayor en una historia marcada por la música, los celos y los sacrificios amorosos.",
+  "remakes": [],
+  "productora": "Hugo Móser"
+},
+{
+  "id": "T0055",
+  "title": "Princesa",
+  "year": "1992",
+  "channel": "Canal 9/Azul TV",
+  "genre": "Telenovela",
+  "actors": [
+    "Maricarmen Regueiro",
+    "Gabriel Corrado",
+    "Viviana Saccone",
+    "Henry Zakka"
+  ],
+  "orientation": "vertical",
+  "image": "images/verticals/1992-princesa-canal9-poster280x420.png",
+  "horizontal_image": "",
+  "subtitle": "",
+  "horario": "18:00hs",
+  "capitulos": "",
+  "fecha_estreno": "1992-04-01",
+  "sinopsis": "Daniela Lezama y Mariana Gastardi inician una fuerte rivalidad en el último año del colegio, marcada por la competencia, los celos y el deseo de sobresalir. La llegada de Marcelo Mastronardi, un joven que se convierte en profesor, intensificará el conflicto cuando ambas se disputen su amor.",
+  "remakes": [],
+  "productora": ""
+},
+{
+  "id": "T0056",
+  "title": "Primer Amor",
+  "year": "1993",
+  "channel": "Canal 9/Azul TV",
+  "genre": "Telenovela",
+  "actors": [
+    "Grecia Colmenares",
+    "Gabriel Corrado"
+  ],
+  "orientation": "vertical",
+  "image": "images/verticals/1992-primeramor-canal9-poster280x420.png",
+  "horizontal_image": "",
+  "subtitle": "",
+  "horario": "18:00hs",
+  "capitulos": "",
+  "fecha_estreno": "1993-03-01",
+  "sinopsis": "María Inés vive un apasionado romance durante unas vacaciones que cambiará para siempre el rumbo de su vida y la forma de entender el amor. Entre ilusiones, obstáculos y emociones intensas, descubrirá que el primer amor puede dejar una huella imborrable.",
+  "remakes": [],
+  "productora": "Tele 5"
+},
+{
+  "id": "T0057",
+  "title": "María Sol",
+  "year": "1993",
+  "channel": "Canal 9/Azul TV",
+  "genre": "Telenovela",
+  "actors": [
+    "Flavia Palmiero"
+  ],
+  "orientation": "vertical",
+  "image": "images/verticals/1993-mariasol-canal9-poster280x420-v2.png",
+  "horizontal_image": "",
+  "subtitle": "",
+  "horario": "17hs",
+  "capitulos": "",
+  "fecha_estreno": "1993-01-01",
+  "sinopsis": "Flavia, cansada de la discriminación y la falta de oportunidades, se hace pasar por un hombre para conseguir un buen trabajo. Mientras mantiene su doble vida, se enamora de un empresario y queda atrapada entre el amor, los engaños y su novio de siempre.",
+  "remakes": [],
+  "productora": ""
+},
+{
+  "id": "T0058",
+  "title": "Con Pecado Concebidas",
+  "year": "1993",
+  "channel": "Canal 9/Azul TV",
+  "genre": "Comedia",
+  "actors": [
+    "Moria Casán",
+    "Nora Cárpena",
+    "María Valenzuela"
+  ],
+  "orientation": "vertical",
+  "image": "images/verticals/1993-conpecadoconcebidas-canal9-poster280x420.png",
+  "horizontal_image": "",
+  "subtitle": "",
+  "horario": "Martes 22hs",
+  "capitulos": 36,
+  "fecha_estreno": "1993-04-13",
+  "sinopsis": "Tres mujeres encarceladas injustamente escapan durante un motín y, tras un inesperado accidente, asumen la identidad de tres monjas para mantenerse ocultas. Entre enredos, humor y situaciones disparatadas, intentarán comenzar una nueva vida sin revelar su verdadera identidad.",
+  "remakes": [],
+  "productora": "Canal 9"
+},
+{
+  "id": "T0059",
+  "title": "Esos que Dicen Amarse",
+  "year": "1993",
+  "channel": "Canal 9/Azul TV",
+  "genre": "Telenovela",
+  "actors": [
+    "Raúl Taibo",
+    "Carolina Papaleo"
+  ],
+  "orientation": "vertical",
+  "image": "images/verticals/1993-esosquedicenamarse-canal9-poster280x420.png",
+  "horizontal_image": "",
+  "subtitle": "",
+  "horario": "19:00hs; 23hs",
+  "capitulos": 120,
+  "fecha_estreno": "1993-08-01",
+  "sinopsis": "Andrés, un prestigioso fotógrafo, y Fe, la hija de su patrón, viven un intenso romance desafiando las diferencias sociales y los conflictos que rodean a sus familias. Entre secretos, rivalidades y traiciones, ambos deberán luchar por un amor puesto a prueba por el destino.",
+  "remakes": [],
+  "productora": "Televisa Argentina"
+},
+{
+  "id": "T0060",
+  "title": "El Club de las Baby Sitters",
+  "year": "1993",
+  "channel": "Canal 9/Azul TV",
+  "genre": "Juvenil",
+  "actors": [
+    "Eleonora Wexler",
+    "Emiliano Kackzca"
+  ],
+  "orientation": "vertical",
+  "image": "images/verticals/1993-elclubdelasbabysitters-canal9-poster280x420.png",
+  "horizontal_image": "",
+  "subtitle": "",
+  "horario": "",
+  "capitulos": "",
+  "fecha_estreno": "1993-01-01",
+  "sinopsis": "",
+  "remakes": [],
+  "productora": ""
+},
+{
+  "id": "T0061",
+  "title": "La Flaca Escopeta",
+  "year": "1993",
+  "channel": "Canal 9/Azul TV",
+  "genre": "Juvenil",
+  "actors": [
+    "Linda Peretz"
+  ],
+  "orientation": "vertical",
+  "image": "images/verticals/1993-laflacaescopeta-canal9-poster280x420.png",
+  "horizontal_image": "",
+  "subtitle": "",
+  "horario": "18hs",
+  "capitulos": "",
+  "fecha_estreno": "1993-01-01",
+  "sinopsis": "La Flaca Escopeta, una heroína con poderes mágicos y la capacidad de volar, utiliza sus extraordinarias habilidades para ayudar a quienes más lo necesitan. Entre aventuras llenas de fantasía y humor, enfrentará desafíos mientras transmite valores de solidaridad y amistad.",
+  "remakes": [],
+  "productora": ""
+},
+{
+  "id": "T0062",
+  "title": "Más Allá del Horizonte",
+  "year": "1994",
+  "channel": "Canal 9/Azul TV",
+  "genre": "Telenovela",
+  "actors": [
+    "Grecia Colmenares",
+    "Luisa Kuliok",
+    "Osvaldo Laport",
+    "Gerardo Romano"
+  ],
+  "orientation": "vertical",
+  "image": "images/verticals/1994-masalladelhorizonte-canal9-poster280x420.png",
+  "horizontal_image": "images/horizontals-1024x576/1994-masalladelhorizonte-canal9-1024x576.png",
+  "subtitle": "",
+  "horario": "21:00hs",
+  "capitulos": 200,
+  "fecha_estreno": "1994-01-03",
+  "sinopsis": "La saga sigue a la familia Olazábal a lo largo de dos generaciones, marcada por amores prohibidos, traiciones, secretos y luchas por la identidad. Desde el siglo XIX, los destinos de María, Victoria y sus descendientes se entrelazan con pasiones, venganzas y reencuentros que cambian sus vidas.",
+  "remakes": [],
+  "productora": "Omar Romay"
+},
+{
+  "id": "T0063",
+  "title": "Sin Condena",
+  "year": "1994",
+  "channel": "Canal 9/Azul TV",
+  "genre": "Thriller",
+  "actors": [
+    "Varios"
+  ],
+  "orientation": "vertical",
+  "image": "images/verticals/1994-sincondena-canal9-poster280x420.png",
+  "horizontal_image": "",
+  "subtitle": "",
+  "horario": "Lunes 22hs",
+  "capitulos": 25,
+  "fecha_estreno": "1994-03-01",
+  "sinopsis": "El programa recreaba semanalmente casos policiales resonantes de la historia argentina.",
+  "remakes": [],
+  "productora": "Rodolfo Ledo"
+},
+{
+  "id": "T0064",
+  "title": "Chance",
+  "year": "1994",
+  "channel": "Canal 9/Azul TV",
+  "genre": "Juvenil",
+  "actors": [
+    "Rodolfo Machado",
+    "Mariana Fabbiani"
+  ],
+  "orientation": "vertical",
+  "image": "images/verticals/1994-chance-canal9-poster280x420.png",
+  "horizontal_image": "",
+  "subtitle": "",
+  "horario": "Domingo 21hs, 12hs",
+  "capitulos": "",
+  "fecha_estreno": "1994-03-01",
+  "sinopsis": "La serie sigue a un grupo de jóvenes que sueña con triunfar en el mundo del canto y el baile, enfrentando desafíos artísticos, personales y sentimentales. Con una estética inspirada en los musicales juveniles, combina romance, competencia y el deseo de alcanzar el éxito.",
+  "remakes": [],
+  "productora": ""
+},
+{
+  "id": "T0065",
+  "title": "Inconquistable Corazón",
+  "year": "1994",
+  "channel": "Canal 9/Azul TV",
+  "genre": "Telenovela",
+  "actors": [
+    "Pablo Rago",
+    "Paola Krum",
+    "Pablo Echarri"
+  ],
+  "orientation": "vertical",
+  "image": "images/verticals/1994-inconquistablecorazon-canal9-280x420.png",
+  "horizontal_image": "images/horizontals-1024x576/1994-inconquistablecorazon-canal9-1024x576.png",
+  "subtitle": "",
+  "horario": "18:00hs, 17:00hs",
+  "capitulos": 120,
+  "fecha_estreno": "1994-08-01",
+  "sinopsis": "Mónica Sandoval, una profesora viuda y madre de dos hijos, vuelve a enseñar para reconstruir su vida tras una dolorosa pérdida. En el colegio conoce a Gonzalo Guiñazú, un alumno rebelde con quien surge un amor tan inesperado como prohibido.",
+  "remakes": [],
+  "productora": "Alberto Migré"
+},
+{
+  "id": "T0066",
+  "title": "Con Alma de Tango",
+  "year": "1994",
+  "channel": "Canal 9/Azul TV",
+  "genre": "Telenovela",
+  "actors": [
+    "Luisa Kuliok",
+    "Gerardo Romano"
+  ],
+  "orientation": "vertical",
+  "image": "images/verticals/1994-conalmadetango-canal9-poster280x420.png",
+  "horizontal_image": "",
+  "subtitle": "",
+  "horario": "21:00hs",
+  "capitulos": 120,
+  "fecha_estreno": "1994-10-11",
+  "sinopsis": "Alma Echagüe, una mujer valiente, ve su destino ligado al apasionado universo del tango en la Argentina de comienzos del siglo XX. Entre romances prohibidos, diferencias sociales y tradiciones de la época, luchará por abrirse camino y defender su amor.",
+  "remakes": [],
+  "productora": "Omar Romay"
+},
+{
   "id": "T0005",
   "title": "La Familia Benvenutto",
   "year": "1991",
