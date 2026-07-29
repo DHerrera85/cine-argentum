@@ -23,7 +23,8 @@ var SELECTORS = {
   categoryFilters: '[data-telefe-category]',
   title: '#telefe-catalogue-title',
   description: '#telefe-catalogue-description',
-  empty: '#telefe-empty-state'
+  empty: '#telefe-empty-state',
+  filterCarousels: '.filter-carousel'
 };
 
 var allProductions = [];
@@ -985,7 +986,6 @@ function updateActiveButtons() {
 
   }
 
-
   /* =========================================================
      ASIGNAR EVENTOS A LOS FILTROS DE CATEGORÍA
      ========================================================= */
@@ -999,10 +999,6 @@ function updateActiveButtons() {
 
     buttons.forEach(function (button) {
 
-      /*
-       * Evitar registrar el mismo evento
-       * más de una vez.
-       */
       if (
         button.dataset.categoryBound === '1'
       ) {
@@ -1029,6 +1025,182 @@ function updateActiveButtons() {
 
   }
 
+
+  /* =========================================================
+     CARRUSEL DE FILTROS (MÓVIL)
+     ========================================================= */
+
+  function updateCarouselArrows(
+    scrollArea,
+    previousButton,
+    nextButton
+  ) {
+
+    if (!scrollArea) {
+      return;
+    }
+
+    var tolerance = 3;
+
+    var maxScrollLeft =
+      scrollArea.scrollWidth -
+      scrollArea.clientWidth;
+
+    var isAtStart =
+      scrollArea.scrollLeft <= tolerance;
+
+    var isAtEnd =
+      scrollArea.scrollLeft >=
+      maxScrollLeft - tolerance;
+
+    var hasOverflow =
+      maxScrollLeft > tolerance;
+
+    if (previousButton) {
+      previousButton.disabled =
+        !hasOverflow || isAtStart;
+    }
+
+    if (nextButton) {
+      nextButton.disabled =
+        !hasOverflow || isAtEnd;
+    }
+
+  }
+
+
+  function scrollFilterCarousel(
+    scrollArea,
+    direction
+  ) {
+
+    if (!scrollArea) {
+      return;
+    }
+
+    var distance =
+      Math.max(
+        180,
+        Math.round(
+          scrollArea.clientWidth * 0.65
+        )
+      );
+
+    scrollArea.scrollBy({
+      left: direction * distance,
+      behavior: 'smooth'
+    });
+
+  }
+
+
+  function bindCarouselButtons() {
+
+    document.querySelectorAll(
+      SELECTORS.filterCarousels
+    ).forEach(function (carousel) {
+
+      var scrollArea =
+        carousel.querySelector(
+          '.filter-scroll'
+        );
+
+      var previousButton =
+        carousel.querySelector(
+          '.filter-arrow-prev'
+        );
+
+      var nextButton =
+        carousel.querySelector(
+          '.filter-arrow-next'
+        );
+
+      if (!scrollArea) {
+        return;
+      }
+
+      function refreshArrows() {
+
+        updateCarouselArrows(
+          scrollArea,
+          previousButton,
+          nextButton
+        );
+
+      }
+
+      if (
+        previousButton &&
+        previousButton.dataset.bound !== '1'
+      ) {
+
+        previousButton.addEventListener(
+          'click',
+          function () {
+
+            scrollFilterCarousel(
+              scrollArea,
+              -1
+            );
+
+          }
+        );
+
+        previousButton.dataset.bound = '1';
+
+      }
+
+      if (
+        nextButton &&
+        nextButton.dataset.bound !== '1'
+      ) {
+
+        nextButton.addEventListener(
+          'click',
+          function () {
+
+            scrollFilterCarousel(
+              scrollArea,
+              1
+            );
+
+          }
+        );
+
+        nextButton.dataset.bound = '1';
+
+      }
+
+      if (
+        scrollArea.dataset.arrowBound !== '1'
+      ) {
+
+        scrollArea.addEventListener(
+          'scroll',
+          refreshArrows,
+          {
+            passive: true
+          }
+        );
+
+        scrollArea.dataset.arrowBound = '1';
+
+      }
+
+      refreshArrows();
+
+      window.requestAnimationFrame(
+        refreshArrows
+      );
+
+      window.addEventListener(
+        'resize',
+        refreshArrows
+      );
+
+    });
+
+  }
   /* =========================================================
      CAMBIAR EL FILTRO DESDE CÓDIGO
      ========================================================= */
@@ -1163,19 +1335,17 @@ function updateActiveButtons() {
      INICIALIZAR EL MÓDULO
      ========================================================= */
 
-  function initTelefe90sCatalogue() {
-    /*
-     * Los filtros se conectan antes de cargar
-     * data.json para que la interfaz quede preparada.
-     */
-    bindYearFilters();
-    bindCategoryFilters();
+function initTelefe90sCatalogue() {
 
-    /*
-     * Iniciar la carga del catálogo.
-     */
-    loadCatalogue();
-  }
+  bindYearFilters();
+
+  bindCategoryFilters();
+
+  bindCarouselButtons();
+
+  loadCatalogue();
+
+}
 
 
   /* =========================================================

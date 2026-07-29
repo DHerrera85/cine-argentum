@@ -964,22 +964,65 @@
      CARRUSEL DE FILTROS (MÓVIL)
      ========================================================= */
 
-  function scrollCarousel(
-    carousel,
-    direction
+  function updateCarouselArrows(
+    scrollArea,
+    previousButton,
+    nextButton
   ) {
 
-    if (!carousel) {
+    if (!scrollArea) {
       return;
     }
 
-    carousel.scrollBy({
+    var tolerance = 3;
 
-      left:
-        direction * 220,
+    var maxScrollLeft =
+      scrollArea.scrollWidth -
+      scrollArea.clientWidth;
 
+    var isAtStart =
+      scrollArea.scrollLeft <= tolerance;
+
+    var isAtEnd =
+      scrollArea.scrollLeft >=
+      maxScrollLeft - tolerance;
+
+    var hasOverflow =
+      maxScrollLeft > tolerance;
+
+    if (previousButton) {
+      previousButton.disabled =
+        !hasOverflow || isAtStart;
+    }
+
+    if (nextButton) {
+      nextButton.disabled =
+        !hasOverflow || isAtEnd;
+    }
+
+  }
+
+
+  function scrollFilterCarousel(
+    scrollArea,
+    direction
+  ) {
+
+    if (!scrollArea) {
+      return;
+    }
+
+    var distance =
+      Math.max(
+        180,
+        Math.round(
+          scrollArea.clientWidth * 0.65
+        )
+      );
+
+    scrollArea.scrollBy({
+      left: direction * distance,
       behavior: 'smooth'
-
     });
 
   }
@@ -991,22 +1034,34 @@
       SELECTORS.filterCarousels
     ).forEach(function (carousel) {
 
-      var container =
-        carousel.parentElement;
+      var scrollArea =
+        carousel.querySelector(
+          '.filter-scroll'
+        );
 
-      if (!container) {
+      var previousButton =
+        carousel.querySelector(
+          '.filter-arrow-prev'
+        );
+
+      var nextButton =
+        carousel.querySelector(
+          '.filter-arrow-next'
+        );
+
+      if (!scrollArea) {
         return;
       }
 
-var previousButton =
-  container.querySelector(
-    '.filter-arrow-prev'
-  );
+      function refreshArrows() {
 
-var nextButton =
-  container.querySelector(
-    '.filter-arrow-next'
-  );
+        updateCarouselArrows(
+          scrollArea,
+          previousButton,
+          nextButton
+        );
+
+      }
 
       if (
         previousButton &&
@@ -1017,8 +1072,8 @@ var nextButton =
           'click',
           function () {
 
-            scrollCarousel(
-              carousel,
+            scrollFilterCarousel(
+              scrollArea,
               -1
             );
 
@@ -1038,8 +1093,8 @@ var nextButton =
           'click',
           function () {
 
-            scrollCarousel(
-              carousel,
+            scrollFilterCarousel(
+              scrollArea,
               1
             );
 
@@ -1049,6 +1104,33 @@ var nextButton =
         nextButton.dataset.bound = '1';
 
       }
+
+      if (
+        scrollArea.dataset.arrowBound !== '1'
+      ) {
+
+        scrollArea.addEventListener(
+          'scroll',
+          refreshArrows,
+          {
+            passive: true
+          }
+        );
+
+        scrollArea.dataset.arrowBound = '1';
+
+      }
+
+      refreshArrows();
+
+      window.requestAnimationFrame(
+        refreshArrows
+      );
+
+      window.addEventListener(
+        'resize',
+        refreshArrows
+      );
 
     });
 
