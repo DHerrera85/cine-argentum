@@ -7485,8 +7485,138 @@
   "capitulos": 115,
   "fecha_estreno": "1989-07-08",
   "sinopsis": "Gina Falcone, enamorada de Marcelo Ricciardi y obligada a renunciar a su hija Fiamma, se refugia en un convento bajo el nombre de Sor Piedad. Diecisiete años después, el destino vuelve a reunirlos y la enfrenta al dilema entre sus votos religiosos, el amor y la verdad sobre su maternidad.",
+  "producciones_relacionadas": [
+    {
+      "id": "T0097",
+      "title": "Soy Gina",
+      "meta": "Continuidad temática",
+      "image": "images/verticals/1992-soygina-canal13-poster280x420.png"
+    }
+  ],
   "remakes": [],
   "productora": "Omar Romay"
+},
+{
+  "id": "T0098",
+  "title": "Zona de Riesgo",
+  "year": "1992",
+  "channel": "Canal 13",
+  "genre": "Drama",
+  "actors": [
+    "Rodolfo Ranni",
+    "Gerardo Romano",
+    "Lito Cruz"
+  ],
+  "orientation": "vertical",
+  "image": "images/verticals/1992-zonaderiesgo-canal13-poster280x420.png",
+  "horizontal_image": "",
+  "subtitle": "",
+  "horario": "Martes 23hs",
+  "capitulos": "",
+  "fecha_estreno": "1992-04-01",
+  "sinopsis": "Roberto, un ejecutivo recientemente ascendido a director de una empresa exportadora, ve amenazada su vida cuando Julián, su antiguo socio en negocios corruptos, decide vengarse por temor a ser descubierto. Entre ambiciones, traiciones, corrupción y un peligroso juego de seducción, ambos quedarán atrapados en una lucha de poder con consecuencias imprevisibles.",
+  "remakes": [],
+  "productora": [
+    "Jorge Maestro",
+    "Sergio Vainmann"
+  ],
+  "seasons": 2
+},
+{
+  "id": "T0099",
+  "title": "Gerente de Familia",
+  "year": "1993",
+  "channel": "Canal 13",
+  "genre": "Comedia",
+  "actors": [
+    "Arnaldo André",
+    "Andrea Bonelli"
+  ],
+  "orientation": "vertical",
+  "image": "images/verticals/1993-gerentedefamilia-canal13-poster280x420.png",
+  "horizontal_image": "images/horizontals-1024x576/1993-gerentedefamilia-canal13-poster1024x576.png",
+  "subtitle": "",
+  "horario": "Martes 21hs",
+  "capitulos": 85,
+  "fecha_estreno": "1993-04-01",
+  "sinopsis": "Juan, un eficiente mayordomo, llega a la casa de Lucía Guerra para poner orden en su consultorio, su hogar y su caótica familia. Mientras enfrenta los problemas cotidianos de quienes dependen de ella, entre ambos nace una historia de amor que deberá sobrevivir a constantes desafíos familiares.",
+  "remakes": [],
+  "productora": [
+    "Jorge Maestro",
+    "Sergio Vainman"
+  ],
+  "seasons": 3
+},
+{
+  "id": "T0100",
+  "title": "Canto Rodado",
+  "year": "1993",
+  "channel": "Canal 13",
+  "genre": "Juvenil",
+  "actors": [
+    "Mauricio Dayub",
+    "Gigi Rúa",
+    "Facundo Arana",
+    "Esther Goris",
+    "Damián De Santo",
+    "Victoria Onetto"
+  ],
+  "orientation": "vertical",
+  "image": "images/verticals/1993-cantorodado-canal13-poster280x420.png",
+  "horizontal_image": "",
+  "subtitle": "",
+  "horario": "19hs",
+  "capitulos": 90,
+  "fecha_estreno": "1993-04-01",
+  "sinopsis": "Un grupo de jóvenes ingresa a una escuela de arte para perseguir su sueño de convertirse en artistas. Entre clases de canto, actuación y baile, descubrirán amistades, amores y valiosas lecciones de vida.",
+  "remakes": [],
+  "productora": ""
+},
+{
+  "id": "T0101",
+  "title": "Apasionada",
+  "year": "1993",
+  "channel": "Canal 13",
+  "genre": "Telenovela",
+  "actors": [
+    "Susu Pecoraro",
+    "Darío Grandinetti",
+    "Andrea Bonelli"
+  ],
+  "orientation": "vertical",
+  "image": "images/verticals/1993-apasionada-canal13-poster-280x420.png",
+  "horizontal_image": "",
+  "subtitle": "",
+  "horario": "18:00hs",
+  "capitulos": 65,
+  "fecha_estreno": "1993-08-23",
+  "sinopsis": "Una joven acepta gestar el hijo de un matrimonio que no puede tener descendencia, pero el embarazo despierta sentimientos que pondrán en riesgo el acuerdo y cambiarán la vida de todos.",
+  "remakes": [],
+  "productora": "Televisa Argentina"
+},
+{
+  "id": "T0102",
+  "title": "Casi Todo, Casi Nada",
+  "year": "1993",
+  "channel": "Canal 13",
+  "genre": "Telenovela",
+  "actors": [
+    "Georgina Barbarossa",
+    "Jorge Marrale",
+    "María de los Ángeles Medrano",
+    "Carolina Fal",
+    "Walter Quiroz"
+  ],
+  "orientation": "vertical",
+  "image": "images/verticals/1993-casitodocasinada-canal13-poster280x420.png",
+  "horizontal_image": "",
+  "subtitle": "",
+  "horario": "15:00hs",
+  "capitulos": "",
+  "fecha_estreno": "1993-01-01",
+  "sinopsis": "Un triángulo amoroso entre dos hermanas deja heridas que perduran durante décadas y alcanzan a la siguiente generación. Sus hijos adultos quedan atrapados en una trama de traiciones, secretos y confusiones de identidad.",
+  "remakes": [],
+  "productora": "Canal 13"
 },
 {
   "id": "T0046",
@@ -8110,6 +8240,172 @@
   "sinopsis": "Anabela, Betina, Claudia y Daniela, cuatro amigas con vidas muy distintas, atraviesan crisis personales, familiares y sentimentales. Mientras intentan equilibrar trabajo, amor y maternidad, descubrirán el valor de acompañarse en cada etapa.",
   "remakes": [],
   "productora": "Jorge Maestro"
+},
+{
+  "id": "T0092",
+  "title": "Manuela",
+  "year": "1991",
+  "channel": "Canal 13",
+  "genre": "Telenovela",
+  "actors": [
+    "Grecia Colmenares",
+    "Jorge Martínez"
+  ],
+  "orientation": "vertical",
+  "image": "images/verticals/1991-manuela-canal13-poster280x420.png",
+  "horizontal_image": "images/horizontals-1024x576/1991-manuela-canal13-poster1024x576.png",
+  "subtitle": "",
+  "horario": "15:00hs",
+  "capitulos": 228,
+  "fecha_estreno": "1991-04-29",
+  "sinopsis": "Manuela e Isabel, dos medio hermanas enfrentadas por el amor de Fernando, ven sus destinos unidos por secretos familiares, traiciones y una misteriosa muerte. Tras la desaparición de Isabel, Manuela ocupa su lugar en una mansión donde oscuros secretos y una verdad sobrenatural amenazan con destruirlo todo.",
+  "remakes": [],
+  "productora": [
+    "Crustel S.A.",
+    "Reteitalia",
+    "Deltavisión"
+  ]
+},
+{
+  "id": "T0093",
+  "title": "La Banda del Golden Rocket",
+  "year": "1991",
+  "channel": "Canal 13",
+  "genre": "Juvenil",
+  "actors": [
+    "Adrián Suar",
+    "Fabián Vena",
+    "Diego Torres",
+    "Araceli González",
+    "Germán Palacios",
+    "Gloria Carrá",
+    "Carolina Fal"
+  ],
+  "orientation": "vertical",
+  "image": "images/verticals/1991-labandadelgoldenrocket-canal13-poster280x420.png",
+  "horizontal_image": "images/horizontals-1024x576/1991-labandadelgoldenrocket-canal13-1024x576.png",
+  "subtitle": "",
+  "horario": "Martes 21hs",
+  "capitulos": 95,
+  "fecha_estreno": "1991-09-17",
+  "sinopsis": "Adrián, Fabián y Diego se reencuentran tras la muerte de su abuelo, cuya última voluntad les deja en herencia el inolvidable Golden Rocket. Junto a Pablo, el cuarto de los primos, compartirán aventuras, romances y el desafío de reconstruir los lazos familiares mientras comienzan una nueva etapa de sus vidas.",
+  "remakes": [],
+  "productora": [
+    "Jorge Maestro",
+    "Sergio Vainman"
+  ],
+  "seasons": 3
+},
+{
+  "id": "T0094",
+  "title": "Celeste",
+  "year": "1991",
+  "channel": "Canal 13",
+  "genre": "Telenovela",
+  "actors": [
+    "Andrea Del Boca",
+    "Dora Baret",
+    "Gustavo Bermúdez",
+    "Germán Palacios",
+    "Viviana Saccone"
+  ],
+  "orientation": "vertical",
+  "image": "images/verticals/1991-celeste-canal13-poster280x420-v2.png",
+  "horizontal_image": "",
+  "subtitle": "",
+  "horario": "19:00hs",
+  "capitulos": 172,
+  "fecha_estreno": "1991-03-11",
+  "sinopsis": "Celeste es una joven humilde que comienza a trabajar como mucama en la mansión de la poderosa familia Visconti tras la muerte de su madre. Allí se enamora de Franco, pero un oscuro secreto del pasado los llevará a creer que son medio hermanos.",
+  "remakes": [],
+  "productora": [
+    "Raúl Lecouna",
+    "Enrique Torres"
+  ]
+},
+{
+  "id": "T0095",
+  "title": "Antonella",
+  "year": "1992",
+  "channel": "Canal 13",
+  "genre": "Telenovela",
+  "actors": [
+    "Andrea Del Boca",
+    "Gustavo Bermúdez",
+    "Luis Luque",
+    "Hilda Bernard",
+    "Virginia Innocenti"
+  ],
+  "orientation": "vertical",
+  "image": "images/verticals/1992-antonella-canal13-poster280x420.png",
+  "horizontal_image": "images/horizontals-1024x576/1992-antonella-canal13-poster1024X576.png",
+  "subtitle": "",
+  "horario": "15:00hs",
+  "capitulos": 160,
+  "fecha_estreno": "1992-05-10",
+  "sinopsis": "Antonella, una joven que trabaja como animadora infantil, se infiltra en la poderosa familia Cornejo Mejía para descubrir quién asesinó a su hermana Natalia. Mientras busca justicia, termina enamorándose de Nicolás y queda atrapada en una red de secretos, intrigas y traiciones familiares.",
+  "remakes": [],
+  "productora": "Raúl Lecouna, Enrique Torres"
+},
+{
+  "id": "T0096",
+  "title": "Son de Diez",
+  "year": "1992",
+  "channel": "Canal 13",
+  "genre": "Comedia",
+  "actors": [
+    "Claudio García Satur",
+    "Silvia Montanari",
+    "Florencia Peña",
+    "Federico Olivera",
+    "Javier Portales"
+  ],
+  "orientation": "vertical",
+  "image": "images/verticals/1992-sondediez-canal13-poster280x420.png",
+  "horizontal_image": "images/horizontals-1024x576/1992-sondediez-canal13-poster1024x576.png",
+  "subtitle": "",
+  "horario": "Jueves 21hs",
+  "capitulos": 158,
+  "fecha_estreno": "1992-02-01",
+  "sinopsis": "Enrique y Silvina enfrentan los desafíos de criar a sus hijos adolescentes mientras conviven con el abuelo de la familia. Con humor y sensibilidad, la serie aborda los conflictos cotidianos y temas sociales que marcaron a toda una generación.",
+  "remakes": [],
+  "productora": [
+    "Miguel Ángel Diani",
+    "Daniel Di Conza"
+  ],
+  "seasons": 4
+},
+{
+  "id": "T0097",
+  "title": "Soy Gina",
+  "year": "1992",
+  "channel": "Canal 13",
+  "genre": "Telenovela",
+  "actors": [
+    "Luisa Kuliok",
+    "Jorge Martínez"
+  ],
+  "orientation": "vertical",
+  "image": "images/verticals/1992-soygina-canal13-poster280x420.png",
+  "horizontal_image": "",
+  "subtitle": "",
+  "horario": "18:00hs",
+  "capitulos": 120,
+  "fecha_estreno": "1992-09-01",
+  "sinopsis": "Tras casarse, Gina y Marcelo vuelven a ser separados por un trágico naufragio que deja a él con graves secuelas y a ella con amnesia. Mientras enfrentan nuevas pérdidas y obstáculos, Gina encuentra un nuevo propósito al intentar rescatar a los niños de un orfanato sometido a abusos y desesperanza.",
+  "producciones_relacionadas": [
+    {
+      "id": "T0045",
+      "title": "La Extraña Dama",
+      "meta": "Continuidad temática",
+      "image": "images/verticals/1989-laextranadama-canal9-poster280x420.png"
+    }
+  ],
+  "remakes": [],
+  "productora": [
+    "Crustel S.A.",
+    "Reteitalia"
+  ]
 },
 {
   "id": "T0060",
