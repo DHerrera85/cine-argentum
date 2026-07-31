@@ -6309,9 +6309,12 @@
         "Darío Barassi",
         "Yayo Guridi"
       ],
+      "fecha_estreno": "26/08/2026",
       "genre": "Comedia",
+      "synopsis": "Un subcomisario argentino se ve envuelto en una inesperada investigación tras el asesinato del embajador ruso en el país, mientras intenta resolver el caso antes que la CIA. En su carrera contrarreloj, deberá enfrentar una sucesión de situaciones absurdas y caóticas que combinan acción, humor y espionaje, poniendo a prueba su ingenio y su capacidad para cumplir la misión.",
       "image": "images/verticals/2026-gutierrezismaineim-poster-280x420.png",
       "orientation": "vertical",
+      "productora": "Pampa Films",
       "subtitle": "Comedia"
     },
     {
@@ -6337,7 +6340,7 @@
       "id": "P2047",
       "title": "Las Reglas del Boxeador",
       "type": "serie",
-      "year": "2026",
+      "year": "2027",
       "channel": "Disney+",
       "platform": "Disney+",
       "actors": [
@@ -6345,8 +6348,9 @@
         "Abril Schapo"
       ],
       "genre": "Drama",
-      "image": "images/verticals/2026-lasreglasdelboxeador-poster280x420.png",
+      "image": "images/verticals/2027-lasreglasdelboxeador-poster280x420.png",
       "orientation": "vertical",
+      "release_date": "01/01/2027",
       "subtitle": "Drama"
     },
     {
@@ -6392,6 +6396,28 @@
       "orientation": "vertical",
       "subtitle": "Drama"
     },
+{
+  "id": "P2052",
+  "title": "Amores Inesperados",
+  "type": "serie",
+  "year": "2026",
+  "channel": "Disney+",
+  "platform": "Disney+",
+  "genre": "Comedia",
+  "actors": [
+    "Martín Bossi",
+    "Eleonora Wexler"
+  ],
+  "orientation": "vertical",
+  "image": "images/verticals/2026-amores-inesperados-disney-poster280x420.png",
+  "horizontal_image": "",
+  "subtitle": "Comedia",
+  "capitulos": 6,
+  "fecha_estreno": "16/9/2026",
+  "sinopsis": "",
+  "remakes": [],
+  "productora": "Laflia"
+},
 {
   "id": "P2051",
   "title": "La Casaca de Dios",
