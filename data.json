@@ -7645,6 +7645,106 @@
   "productora": "Canal 13"
 },
 {
+  "id": "T0103",
+  "title": "Fiesta y Bronca de Ser Jóven",
+  "year": "1992",
+  "channel": "Canal 9/Azul TV",
+  "genre": "Juvenil",
+  "actors": [
+    "Laura Novoa",
+    "Emiliano Kaczka",
+    "Verónica Varano",
+    "Walter Quiróz"
+  ],
+  "orientation": "vertical",
+  "image": "images/verticals/1992-fiesta-bronca-de-ser-joven-canal9-poster280x420.png",
+  "horizontal_image": "",
+  "subtitle": "",
+  "horario": "Martes 21hs",
+  "capitulos": 13,
+  "fecha_estreno": "1992-01-01",
+  "sinopsis": "",
+  "remakes": [],
+  "productora": "Alberto Migré"
+},
+{
+  "id": "T0104",
+  "title": "Sólo para Parejas",
+  "year": "1993",
+  "channel": "Canal 9/Azul TV",
+  "genre": "Juvenil",
+  "actors": [
+    "Paola Krum",
+    "Emiliano Kaczka",
+    "Eleonora Wexler",
+    "Pablo Echarri",
+    "Victoria Onetto",
+    "Boris Rubaja"
+  ],
+  "orientation": "vertical",
+  "image": "images/verticals/1993-solo-para-parejas-canal9-poster280x420.png",
+  "horizontal_image": "",
+  "subtitle": "",
+  "horario": "Domingo 21hs",
+  "capitulos": "",
+  "fecha_estreno": "1993-01-01",
+  "sinopsis": "",
+  "remakes": [],
+  "productora": ""
+},
+{
+  "id": "T0105",
+  "title": "Dale Loly",
+  "year": "1993",
+  "channel": "Canal 9/Azul TV",
+  "genre": "Comedia",
+  "actors": [
+    "Lolita Torres",
+    "Mariana Torres",
+    "Marcelo Torres",
+    "Angélica Torres",
+    "Santiago Torres",
+    "Santiago Bal",
+    "Gabriel Goity"
+  ],
+  "orientation": "vertical",
+  "image": "images/verticals/1993-dale-loly-canal9-poster280x420.png",
+  "horizontal_image": "",
+  "subtitle": "",
+  "horario": "Jueves 21hs",
+  "capitulos": "",
+  "fecha_estreno": "1993-01-01",
+  "sinopsis": "Una comedia sobre una madre viuda y sus tres hijos.",
+  "remakes": [],
+  "productora": [
+    "Gius",
+    "Tabernise"
+  ]
+},
+{
+  "id": "T0106",
+  "title": "Mi Mujer, Tu Marido, ¡Qué Pareja!",
+  "year": "1993",
+  "channel": "Canal 9/Azul TV",
+  "genre": "Comedia",
+  "actors": [
+    "Antonio Grimau",
+    "Marita Ballesteros",
+    "Gustavo Garzón",
+    "Carmen Barbieri"
+  ],
+  "orientation": "vertical",
+  "image": "images/verticals/1993-mi-mujer-tu-marido-que-pareja-canal9-poster280x420.png",
+  "horizontal_image": "",
+  "subtitle": "",
+  "horario": "Martes 21hs",
+  "capitulos": "",
+  "fecha_estreno": "1993-01-01",
+  "sinopsis": "Un matrimonio con hijos, padres, suegros y hermanos enfrenta un desafío inesperado: convivir con la constante presencia de sus exparejas, dando lugar a situaciones tan caóticas como divertidas.",
+  "remakes": [],
+  "productora": ""
+},
+{
   "id": "T0046",
   "title": "Alta Comedia",
   "year": "1990",
