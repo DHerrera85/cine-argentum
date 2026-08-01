@@ -7745,6 +7745,102 @@
   "productora": ""
 },
 {
+  "id": "T0107",
+  "title": "Tres Minas Fieles",
+  "year": "1994",
+  "channel": "Canal 9/Azul TV",
+  "genre": "Comedia",
+  "actors": [
+    "Moria Casán",
+    "Nora Cárpena",
+    "María Valenzuela"
+  ],
+  "orientation": "vertical",
+  "image": "images/verticals/1994-tres-minas-fieles-canal9-poster280x420.png",
+  "horizontal_image": "",
+  "subtitle": "",
+  "horario": "Viernes 22hs",
+  "capitulos": "",
+  "fecha_estreno": "1994-01-01",
+  "sinopsis": "",
+  "remakes": [],
+  "productora": ""
+},
+{
+  "id": "T0108",
+  "title": "Los Libonatti",
+  "year": "1992",
+  "channel": "Canal 9/Azul TV",
+  "genre": "Comedia",
+  "actors": [
+    "Mercedes Carreras",
+    "Juan Carlos Dual",
+    "Pepe Novoa",
+    "Joe Rígoli",
+    "Claudia de la Calle"
+  ],
+  "orientation": "vertical",
+  "image": "images/verticals/1992-los-libonatti-canal9-poster280x420.png",
+  "horizontal_image": "",
+  "subtitle": "",
+  "horario": "Viernes 21hs",
+  "capitulos": "",
+  "fecha_estreno": "1992-01-01",
+  "sinopsis": "",
+  "remakes": [],
+  "productora": "Hugo Móser"
+},
+{
+  "id": "T0109",
+  "title": "Marco, el Candidato",
+  "year": "1994",
+  "channel": "Canal 9/Azul TV",
+  "genre": "Drama",
+  "actors": [
+    "Rodolfo Bebán",
+    "Gigí Rúa",
+    "Juan Darthés",
+    "Katja Alemann"
+  ],
+  "orientation": "vertical",
+  "image": "images/verticals/1994-marco-el-candidato-canal9-poster280x420.png",
+  "horizontal_image": "",
+  "subtitle": "",
+  "horario": "Martes 22hs",
+  "capitulos": "",
+  "fecha_estreno": "1994-01-01",
+  "sinopsis": "El político Marco Cassirone está cansado de convivir con la corrupción, pero no le resultará sencillo liberarse de las decisiones y los compromisos que marcaron su pasado.",
+  "remakes": [],
+  "productora": "Hugo Móser"
+},
+{
+  "id": "T0110",
+  "title": "Los Machos",
+  "year": "1994",
+  "channel": "Canal 13",
+  "genre": "Drama",
+  "actors": [
+    "Rodolfo Ranni",
+    "Darío Grandinetti",
+    "Daniel Fanego",
+    "Gustavo Garzón"
+  ],
+  "orientation": "vertical",
+  "image": "images/verticals/1994-losmachos-canal13-poster280x420.png",
+  "horizontal_image": "",
+  "subtitle": "",
+  "horario": "Lunes 22hs",
+  "capitulos": "",
+  "fecha_estreno": "1994-04-11",
+  "sinopsis": "Arturo, Damián, Fernando y Julio comparten sus alegrías, frustraciones y secretos mientras intentan encontrar el equilibrio entre la amistad, el amor y la familia. Con humor y emoción, la serie retrata las crisis de la vida adulta y los desafíos cotidianos de cuatro amigos inseparables.",
+  "remakes": [],
+  "productora": [
+    "Jorge Maestro",
+    "Sergio Vainman"
+  ],
+  "seasons": 2
+},
+{
   "id": "T0046",
   "title": "Alta Comedia",
   "year": "1990",
@@ -8038,7 +8134,8 @@
   "actors": [
     "Moria Casán",
     "Nora Cárpena",
-    "María Valenzuela"
+    "María Valenzuela",
+    "Juan Leyrado"
   ],
   "orientation": "vertical",
   "image": "images/verticals/1993-conpecadoconcebidas-canal9-poster280x420.png",
@@ -8049,7 +8146,7 @@
   "fecha_estreno": "1993-04-13",
   "sinopsis": "Tres mujeres encarceladas injustamente escapan durante un motín y, tras un inesperado accidente, asumen la identidad de tres monjas para mantenerse ocultas. Entre enredos, humor y situaciones disparatadas, intentarán comenzar una nueva vida sin revelar su verdadera identidad.",
   "remakes": [],
-  "productora": "Canal 9"
+  "productora": "Victor Agú"
 },
 {
   "id": "T0059",
@@ -8910,7 +9007,7 @@
   "image": "images/verticals/1997-elgarante-canal9-poster280x420.png",
   "horizontal_image": "",
   "subtitle": "",
-  "horario": "22hs",
+  "horario": "Miércoles 22hs",
   "capitulos": 8,
   "fecha_estreno": "1997-01-01",
   "sinopsis": "Martín Rivera, un joven psicólogo, descubre que debe saldar un antiguo pacto que su abuelo hizo con el diablo y que ahora amenaza con cobrar su alma. Mientras intenta romper la maldición, se enfrenta a fuerzas sobrenaturales, secretos familiares y un destino del que parece imposible escapar.",
@@ -10082,7 +10179,8 @@
       "orientation": "vertical",
       "image": "images/verticals/mis-muertos-tristes-poster-280x420.png",
       "subtitle": "Drama",
-      "release_date": "31/12/2026",
+      "release_date": "24/09/2026",
+      "capitulos": 4,
       "sinopsis": "Ema ve y calma a los muertos, incluía su madre. Pero la llegada de su sobrina, con un vínculo aún más poderoso con la muerte, lo cambiará todo.",
       "director": "Pablo Larraín"
     },
