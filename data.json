@@ -7841,6 +7841,103 @@
   "seasons": 2
 },
 {
+  "id": "T0111",
+  "title": "Micaela",
+  "year": "1994",
+  "channel": "Canal 13",
+  "genre": "Telenovela",
+  "actors": [
+    "Jorge Martínez",
+    "Jeannette Rodríguez"
+  ],
+  "orientation": "vertical",
+  "image": "images/verticals/1994-micaela-canal13-poster280x420.png",
+  "horizontal_image": "",
+  "subtitle": "",
+  "horario": "17:00hs",
+  "capitulos": 50,
+  "fecha_estreno": "1994-01-03",
+  "sinopsis": "Micaela, una fotógrafa argentina, se muda a Milán por trabajo, donde conoce y se enamora de Sebastián, un periodista casado. Su relación da origen a un romance prohibido que deberá enfrentar la distancia, los secretos y las consecuencias de sus decisiones.",
+  "remakes": [],
+  "productora": "Crustel"
+},
+{
+  "id": "T0112",
+  "title": "Nueve Lunas",
+  "year": "1994",
+  "channel": "Canal 13",
+  "genre": "Drama",
+  "actors": [
+    "Oscar Martínez",
+    "Cecilia Roth"
+  ],
+  "orientation": "vertical",
+  "image": "images/verticals/1994-nuevelunas-canal13-poster280x420.png",
+  "horizontal_image": "",
+  "subtitle": "",
+  "horario": "Martes 22hs",
+  "capitulos": 29,
+  "fecha_estreno": "1994-03-01",
+  "sinopsis": "Dos ginecólogos y obstetras que comparten consultorio desarrollan una intensa historia de amor mientras ejercen su profesión. Entre casos médicos complejos y los conflictos personales de sus pacientes, deberán enfrentar también sus propios dilemas emocionales.",
+  "remakes": [],
+  "productora": "Aries Cinematográfica Argentina"
+},
+{
+  "id": "T0113",
+  "title": "El Amor Tiene Cara de Mujer",
+  "year": "1994",
+  "channel": "Canal 13",
+  "genre": "Telenovela",
+  "actors": [
+    "Thelma Biral",
+    "Laura Novoa",
+    "Laura Flores",
+    "Marita Ballesteros"
+  ],
+  "orientation": "vertical",
+  "image": "images/verticals/1994-elamortienecarademujer-canal13-poster-280x420.png",
+  "horizontal_image": "",
+  "subtitle": "",
+  "horario": "18:00hs",
+  "capitulos": 119,
+  "fecha_estreno": "1994-04-04",
+  "sinopsis": "Cuatro mujeres de distintas edades y realidades comparten su trabajo en un instituto de belleza, donde forjan una profunda amistad mientras enfrentan los desafíos de la vida. Entre romances, divorcios, conflictos familiares y nuevos comienzos, descubrirán que siempre es posible reinventarse.",
+  "remakes": [],
+  "productora": "Televisa Argentina"
+},
+{
+  "id": "T0114",
+  "title": "Montaña Rusa",
+  "year": "1994",
+  "channel": "Canal 13",
+  "genre": "Juvenil",
+  "actors": [
+    "Gastón Pauls",
+    "Nancy Dupláa",
+    "Esteban Prol",
+    "Bettina O'Connell",
+    "Malena Solda",
+    "Diego Olivera",
+    "Celeste Pisapia",
+    "Diego Ramos",
+    "Carla Peterson"
+  ],
+  "orientation": "vertical",
+  "image": "images/verticals/1994-montana-rusa-canal13-poster280x420.png",
+  "horizontal_image": "images/horizontals-1024x576/1994-montanarusa-canal13-poster-1040x576.png",
+  "subtitle": "",
+  "horario": "19:00hs",
+  "capitulos": 432,
+  "fecha_estreno": "1994-03-07",
+  "sinopsis": "Mariana y Alejandro ven cambiar sus vidas cuando sus padres forman una nueva familia y los obligan a convivir como hermanastros. Mientras enfrentan intrigas y conflictos familiares, ambos luchan contra un amor tan intenso como prohibido.",
+  "remakes": [],
+  "productora": [
+    "Jorge Maestro",
+    "Sergio Vainman"
+  ],
+  "seasons": 2
+},
+{
   "id": "T0046",
   "title": "Alta Comedia",
   "year": "1990",
