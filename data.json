@@ -7935,7 +7935,713 @@
     "Jorge Maestro",
     "Sergio Vainman"
   ],
+    "producciones_relacionadas": [
+    {
+      "id": "T0123",
+      "title": "Montaña Rusa, Otra Vuelta",
+      "meta": "Spin-off",
+      "image": "images/verticals/1996-montana-rusa-otravuelta-canal13-poster280x420.png"
+    }
+  ],
   "seasons": 2
+},
+{
+  "id": "T0115",
+  "title": "Aprender a Volar",
+  "year": "1994",
+  "channel": "Canal 13",
+  "genre": "Juvenil",
+  "actors": [
+    "Gloria Carrá",
+    "Juan Carlos Thorry",
+    "Marikena Riera",
+    "Valeria Britos",
+    "Daniel Kuzniecka"
+  ],
+  "orientation": "vertical",
+  "image": "images/verticals/1994-aprenderavolar-canal13-poster280x420.png",
+  "horizontal_image": "",
+  "subtitle": "",
+  "horario": "Viernes 21hs",
+  "capitulos": 50,
+  "fecha_estreno": "1994-04-08",
+  "sinopsis": "Eugenia, Rosario, Ana y Diego son cuatro hermanos huérfanos que viven junto a su abuelo. Sin la guía de sus padres, deberán aprender a enfrentar los desafíos de la vida, crecer unidos y encontrar su propio camino.",
+  "remakes": [],
+  "productora": ""
+},
+{
+  "id": "T0116",
+  "title": "Nano",
+  "year": "1994",
+  "channel": "Canal 13",
+  "genre": "Telenovela",
+  "actors": [
+    "Gustavo Bermúdez",
+    "Araceli González"
+  ],
+  "orientation": "vertical",
+  "image": "images/verticals/1994-nano-canal13-poster280x420.png",
+  "horizontal_image": "images/horizontals-1024x576/1994-nano-canal13-poster1024x576.png",
+  "subtitle": "",
+  "horario": "18:00hs",
+  "capitulos": 194,
+  "fecha_estreno": "1994-04-04",
+  "sinopsis": "Camila, una maestra sordomuda marcada por un trágico pasado, conoce a Nano, un idealista que desafía a su poderosa familia para ayudar a los más necesitados. Juntos enfrentarán secretos familiares, injusticias y un amor capaz de cambiar sus vidas.",
+  "remakes": [    
+    {
+      "title": "Te Amaré en Silencio",
+      "country": "Estados Unidos",
+      "year": "2002",
+      "image": "-"
+    }
+  ],
+  "productora": "Enrique Torres, Raúl Lecouna"
+},
+{
+  "id": "T0117",
+  "title": "El Día Que Me Quieras",
+  "year": "1994",
+  "channel": "Canal 13",
+  "genre": "Telenovela",
+  "actors": [
+    "Grecia Colmenares",
+    "Osvaldo Laport"
+  ],
+  "orientation": "vertical",
+  "image": "images/verticals/1994-eldiaquemequieras-canal13-poster280x420.png",
+  "horizontal_image": "",
+  "subtitle": "",
+  "horario": "15:00hs",
+  "capitulos": 120,
+  "fecha_estreno": "1994-09-21",
+  "sinopsis": "Soledad, una joven ciega nacida de un amor prohibido, sobrevive gracias a Francisco, quien desobedece la orden de asesinarla y la cría como su propia hija. Años después, su verdadero origen saldrá a la luz, desatando conflictos familiares, secretos y luchas por la herencia.",
+  "remakes": [],
+  "productora": "Televisa Argentina"
+},
+{
+  "id": "T0118",
+  "title": "Amigovios",
+  "year": "1995",
+  "channel": "Canal 13",
+  "genre": "Juvenil",
+  "actors": [
+    "Diana Lamas",
+    "Fabián Mazzei",
+    "Sabrina Carballo",
+    "Guido Massri"
+  ],
+  "orientation": "vertical",
+  "image": "images/verticals/1995-amigovios-canal13-poster280x420.png",
+  "horizontal_image": "images/horizontals-1024x576/1995-amigovios-horizontal-canal13-1024x576.png",
+  "subtitle": "",
+  "horario": "19:00hs, 18:00hs, 17:00hs",
+  "capitulos": 248,
+  "fecha_estreno": "1995-01-09",
+  "sinopsis": "Un grupo de chicos de entre 11 y 12 años comparte un verano inolvidable en la colonia de vacaciones Big-Bang, donde vive sus primeras experiencias. Entre amistades, amores y conflictos familiares, descubren el valor de crecer, aceptar las diferencias y acompañarse mutuamente.",
+  "remakes": [],
+  "productora": [
+    "Jorge Maestro",
+    "Sergio Vainman"
+  ]
+},
+{
+  "id": "T0119",
+  "title": "Sheik",
+  "year": "1995",
+  "channel": "Canal 13",
+  "genre": "Telenovela",
+  "actors": [
+    "Gustavo Bermúdez",
+    "Araceli González"
+  ],
+  "orientation": "vertical",
+  "image": "images/verticals/1995-sheik-canal13-poster280x420.png",
+  "horizontal_image": "",
+  "subtitle": "",
+  "horario": "19:00hs",
+  "capitulos": 120,
+  "fecha_estreno": "1995-07-01",
+  "sinopsis": "En 1966, el amor imposible entre Gamal, heredero de un emirato árabe, y Virginia queda truncado por las tradiciones y la tragedia. Años después, sus hijos, Ana y Gabriel, se conocen en Argentina y reviven una historia de amor marcada por el destino.",
+  "remakes": [],
+  "productora": ""
+},
+{
+  "id": "T0120",
+  "title": "Hola Papi",
+  "year": "1995",
+  "channel": "Canal 13",
+  "genre": "Comedia",
+  "actors": [
+    "Carlos Calvo"
+  ],
+  "orientation": "vertical",
+  "image": "images/verticals/1995-holapapi-canal13-poster280x420.png",
+  "horizontal_image": "",
+  "subtitle": "",
+  "horario": "21:00hs",
+  "capitulos": 52,
+  "fecha_estreno": "1995-04-04",
+  "sinopsis": "Carlos Brunetti, un buscavidas divorciado, lucha por conservar la tenencia de su hijo frente a la poderosa familia de su exesposa. Entre conflictos judiciales, enredos y situaciones humorísticas, hará todo lo posible por mantenerse cerca de su hijo.",
+  "remakes": [],
+  "productora": ""
+},
+{
+  "id": "T0121",
+  "title": "Poliladron",
+  "year": "1995",
+  "channel": "Canal 13",
+  "genre": "Thriller",
+  "actors": [
+    "Adrián Suar",
+    "Laura Novoa"
+  ],
+  "orientation": "vertical",
+  "image": "images/verticals/1995-poliladron-canal13-280x420.png",
+  "horizontal_image": "images/horizontals-1024x576/1995-poliladron-canal13-1024x576.png",
+  "subtitle": "",
+  "horario": "Jueves 21hs",
+  "capitulos": 113,
+  "fecha_estreno": "1995-05-01",
+  "sinopsis": "Gustavo \"el Nene\" Carrizo, un carismático ladrón, es obligado a colaborar con la policía para desmantelar una banda de narcotraficantes mientras busca vengar la muerte de su padre. En la misión conoce a la oficial Verónica Vega, con quien vivirá un intenso romance marcado por el peligro, los secretos y el conflicto entre el deber y el amor.",
+  "remakes": [
+    {
+      "title": "Ladrón de Corazones",
+      "country": "Estados Unidos",
+      "year": "2003"
+    }
+  ],
+  "productora": "Pol-Ka Producciones",
+  "seasons": 3
+},
+{
+  "id": "T0122",
+  "title": "No Todo es Noticia",
+  "year": "1995",
+  "channel": "Canal 13",
+  "genre": "Drama",
+  "actors": [
+    "Luisina Brando",
+    "Hugo Arana"
+  ],
+  "orientation": "vertical",
+  "image": "images/verticals/1995-notodoesnoticia-canal13-poster-280x420.png",
+  "horizontal_image": "",
+  "subtitle": "",
+  "horario": "Viernes 21hs",
+  "capitulos": "",
+  "fecha_estreno": "1995-04-01",
+  "sinopsis": "La serie retrata el detrás de escena de un noticiero, donde periodistas y productores enfrentan las presiones de la televisión y la búsqueda permanente de la primicia. Entre conflictos personales y decisiones profesionales, deberán encontrar el equilibrio entre la ética periodística y sus propias vidas.",
+  "remakes": [],
+  "productora": ""
+},
+{
+  "id": "T0123",
+  "title": "Montaña Rusa, otra Vuelta",
+  "year": "1996",
+  "channel": "Canal 13",
+  "genre": "Juvenil",
+  "actors": [
+    "Juan Gil Navarro",
+    "Gastón Ricaud",
+    "Denise Dumas",
+    "Leonora Balcarce",
+    "Agustina Posse",
+    "Sebastián Rulli",
+    "Chino Fernández"
+  ],
+  "orientation": "vertical",
+  "image": "images/verticals/1996-montana-rusa-otravuelta-canal13-poster280x420.png",
+  "horizontal_image": "",
+  "subtitle": "",
+  "horario": "18:00hs",
+  "capitulos": 112,
+  "fecha_estreno": "1996-03-11",
+  "sinopsis": "La serie sigue a un grupo de adolescentes que enfrenta los desafíos del crecimiento entre romances, amistades y conflictos familiares. Mientras atraviesan el paso a la adultez, descubren el valor de los sueños, la identidad y los vínculos que los unen.",
+  "producciones_relacionadas": [
+    {
+      "id": "T0114",
+      "title": "Montaña Rusa",
+      "meta": "Serie original",
+      "image": "images/verticals/1994-montana-rusa-canal13-poster280x420.png"
+    }
+  ],
+  "remakes": [],
+  "productora": [
+    "Jorge Maestro",
+    "Sergio Vainman"
+  ]
+},
+{
+  "id": "T0124",
+  "title": "Gino",
+  "year": "1996",
+  "channel": "Canal 13",
+  "genre": "Telenovela",
+  "actors": [
+    "Arnaldo André",
+    "Katja Alemann",
+    "Enzo Viena"
+  ],
+  "orientation": "vertical",
+  "image": "images/verticals/1996-gino-canal13-poster280x420.png",
+  "horizontal_image": "",
+  "subtitle": "",
+  "horario": "18:00hs",
+  "capitulos": 120,
+  "fecha_estreno": "1996-03-08",
+  "sinopsis": "Gino, dueño de una popular verdulería de barrio, intenta mantener el equilibrio entre su trabajo, su hogar y una familia tan querida como caótica. Con humor y situaciones cotidianas, la serie retrata los enredos familiares y la vida en comunidad.",
+  "remakes": [],
+  "productora": "Enrique Estevanez"
+},
+{
+  "id": "T0125",
+  "title": "Alén, Luz de Luna",
+  "year": "1996",
+  "channel": "Canal 13",
+  "genre": "Telenovela",
+  "actors": [
+    "Gustavo Bermúdez",
+    "Vivianne Pasmanter",
+    "Héctor Alterio",
+    "Silvia Montanari"
+  ],
+  "orientation": "vertical",
+  "image": "images/verticals/1996-alenluzdeluna-canal13-poster280x420.png",
+  "horizontal_image": "",
+  "subtitle": "",
+  "horario": "19:00hs",
+  "capitulos": 147,
+  "fecha_estreno": "1996-06-03",
+  "sinopsis": "Pablo descubre tras la muerte de su madre que fue adoptado y emprende un viaje a la Patagonia para encontrar sus verdaderos orígenes. Allí desentraña los secretos de su pasado mientras encuentra un amor que cambiará su vida.",
+  "remakes": [],
+  "productora": "Diana Álvarez"
+},
+{
+  "id": "T0126",
+  "title": "Como Pan Caliente",
+  "year": "1996",
+  "channel": "Canal 13",
+  "genre": "Comedia",
+  "actors": [
+    "María Valenzuela",
+    "Mirtha Busnelli",
+    "Marita Ballesteros"
+  ],
+  "orientation": "vertical",
+  "image": "images/verticals/1996-comopancaliente-canal13-poster280x420.png",
+  "horizontal_image": "",
+  "subtitle": "",
+  "horario": "13:00hs",
+  "capitulos": 451,
+  "fecha_estreno": "1996-06-03",
+  "sinopsis": "Tres mujeres administran una tradicional panadería de barrio, donde el trabajo cotidiano se mezcla con los conflictos familiares, los romances y las historias de sus clientes. Con humor y emoción, la serie retrata la vida de una comunidad unida alrededor del negocio familiar.",
+  "remakes": [],
+  "productora": ""
+},
+{
+  "id": "T0127",
+  "title": "Verdad Consecuencia",
+  "year": "1996",
+  "channel": "Canal 13",
+  "genre": "Drama",
+  "actors": [
+    "Fabián Vena",
+    "Emilia Mazer",
+    "Andrea Pietra",
+    "Antonio Birabent",
+    "Valentina Bassi",
+    "Damián De Santo",
+    "Carlos Santamaría"
+  ],
+  "orientation": "vertical",
+  "image": "images/verticals/1996-verdadconsecuencia-canal13-poster280x420.png",
+  "horizontal_image": "images/horizontals-1024x576/1996-verdadconsecuencia-canal13-poster1024x576.png",
+  "subtitle": "",
+  "horario": "Martes 23hs",
+  "capitulos": 132,
+  "fecha_estreno": "1996-03-12",
+  "sinopsis": "Siete amigos que se conocen desde la infancia llegan a los treinta enfrentando crisis personales, secretos y decisiones que pondrán a prueba sus vínculos. Entre ambiciones, amores, conflictos familiares y búsquedas de identidad, descubrirán que el pasado sigue marcando sus vidas.",
+  "remakes": [],
+  "productora": "Pol-Ka Producciones",
+  "seasons": 3
+},
+{
+  "id": "T0128",
+  "title": "De Corazón",
+  "year": "1996",
+  "channel": "Canal 13",
+  "genre": "Telenovela",
+  "actors": [
+    "Víctor Laplace",
+    "Ana María Picchio",
+    "Arturo Bonín",
+    "Daniel Fanego",
+    "Luisina Brando",
+    "Gabriela Toscano"
+  ],
+  "orientation": "vertical",
+  "image": "images/verticals/1996-decorazon-canal13-poster280x420.png",
+  "horizontal_image": "",
+  "subtitle": "",
+  "horario": "15:00hs",
+  "capitulos": 400,
+  "fecha_estreno": "1996-12-30",
+  "sinopsis": "Javier y Mecha deciden poner fin a veinte años de matrimonio, enfrentando el impacto de la separación en sus cuatro hijos y en toda la familia. Mientras reconstruyen sus vidas con nuevas parejas, deberán aprender a convivir con los cambios, los conflictos y las segundas oportunidades.",
+  "remakes": [],
+  "productora": "Enrique Estevanez"
+},
+{
+  "id": "T0129",
+  "title": "Carola Casini",
+  "year": "1997",
+  "channel": "Canal 13",
+  "genre": "Drama",
+  "actors": [
+    "Araceli González",
+    "Juan Palomino"
+  ],
+  "orientation": "vertical",
+  "image": "images/verticals/1997-carolacasini-canal13-poster280x420.png",
+  "horizontal_image": "",
+  "subtitle": "",
+  "horario": "Martes 21hs",
+  "capitulos": 42,
+  "fecha_estreno": "1997-03-18",
+  "sinopsis": "Carola Casini, una talentosa corredora de autos, lucha por abrirse camino en el automovilismo mientras vive una intensa relación con el piloto Santiago Becerra. Con el apoyo de su entrenador Vicente, deberá enfrentar desafíos deportivos, conflictos familiares y los obstáculos que pondrán a prueba su pasión y su amor.",
+  "remakes": [],
+  "productora": "Pol-Ka Producciones",
+  "seasons": 1
+},
+{
+  "id": "T0130",
+  "title": "Hombre de Mar",
+  "year": "1997",
+  "channel": "Canal 13",
+  "genre": "Telenovela",
+  "actors": [
+    "Gabriel Corrado",
+    "Viviana Saccone"
+  ],
+  "orientation": "vertical",
+  "image": "images/verticals/1997-hombredemar-canal13-poster280x420.png",
+  "horizontal_image": "",
+  "subtitle": "",
+  "horario": "19:00hs",
+  "capitulos": 120,
+  "fecha_estreno": "1997-04-21",
+  "sinopsis": "Fernando Moreno, un humilde pescador, descubre que es el hijo ilegítimo del poderoso Antonio Silva y debe enfrentarse a una familia que no lo acepta. Mientras nace un amor prohibido con Florencia, la ambición de Darío desata una lucha por la herencia marcada por traiciones, venganzas y secretos.",
+  "remakes": [],
+  "productora": ""
+},
+{
+  "id": "T0131",
+  "title": "Señoras y Señores",
+  "year": "1997",
+  "channel": "Canal 13",
+  "genre": "Drama",
+  "actors": [
+    "Gabriel Goity",
+    "Mercedes Morán",
+    "Gustavo Garzón",
+    "Carola Reyna",
+    "Jean Pierre Noher"
+  ],
+  "orientation": "vertical",
+  "image": "images/verticals/1997-senorasysenores-canal13-poster280x420.png",
+  "horizontal_image": "",
+  "subtitle": "",
+  "horario": "Sábados 22hs",
+  "capitulos": 33,
+  "fecha_estreno": "",
+  "sinopsis": "Un grupo de hombres y mujeres que ronda los cuarenta años enfrenta los desafíos de la vida adulta mientras atraviesa crisis personales, matrimoniales y sentimentales. Con un equilibrio entre el drama y la comedia, la serie explora las relaciones de pareja, la soltería, la amistad y los cambios propios de una etapa marcada por la búsqueda de nuevos comienzos.",
+  "remakes": [],
+  "productora": ""
+},
+{
+  "id": "T0132",
+  "title": "Socios y Más",
+  "year": "1997",
+  "channel": "Canal 13",
+  "genre": "Comedia",
+  "actors": [
+    "Soledad Silveyra",
+    "Claudio García Satur"
+  ],
+  "orientation": "vertical",
+  "image": "images/verticals/1997-sociosymas-canal13-poster280x420.png",
+  "horizontal_image": "",
+  "subtitle": "",
+  "horario": "Miércoles 21hs",
+  "capitulos": 13,
+  "fecha_estreno": "1997-04-01",
+  "sinopsis": "Alberto González, un publicista separado, ve cambiar su vida cuando conoce a Margarita, una viuda despistada que debe hacerse cargo de los negocios de su marido. Entre enredos corporativos, humor y nuevas oportunidades, ambos descubrirán que el amor puede aparecer en el momento menos esperado.",
+  "remakes": [],
+  "productora": "Omar Romay"
+},
+{
+  "id": "T0133",
+  "title": "Laberinto sin Ley",
+  "year": "1997",
+  "channel": "Canal 13",
+  "genre": "Thriller",
+  "actors": [
+    "Gustavo Bermúdez",
+    "Blanca Oteyza",
+    "Patricia Etchegoyen",
+    "Arturo Maly",
+    "Daniel Kuzniecka"
+  ],
+  "orientation": "vertical",
+  "image": "images/verticals/1997-laberintosinley-canal13-poster280x420.png",
+  "horizontal_image": "",
+  "subtitle": "",
+  "horario": "Lunes 22hs",
+  "capitulos": 13,
+  "fecha_estreno": "1997-08-11",
+  "sinopsis": "Un juez íntegro y comprometido con la justicia ve su vida destruida cuando un fiscal corrupto lo incrimina en una serie de delitos que no cometió. Convertido en un fugitivo, deberá escapar de quienes intentan capturarlo mientras reúne las pruebas necesarias para demostrar su inocencia y desenmascarar la conspiración que amenaza con destruirlo.",
+  "remakes": [],
+  "productora": ""
+},
+{
+  "id": "T0134",
+  "title": "Archivo Negro",
+  "year": "1997",
+  "channel": "Canal 13",
+  "genre": "Thriller",
+  "actors": [
+    "Rodolfo Ranni",
+    "Julio Chávez",
+    "Daniel Fanego",
+    "Catherine Fulop",
+    "Victoria Onetto"
+  ],
+  "orientation": "vertical",
+  "image": "images/verticals/1997-archivonegro-canal13-poster280x420.png",
+  "horizontal_image": "",
+  "subtitle": "",
+  "horario": "Lunes 23hs",
+  "capitulos": 26,
+  "fecha_estreno": "1997-08-11",
+  "sinopsis": "El inspector Ferrari, un experimentado detective especializado en investigaciones criminales, enfrenta complejos casos policiales donde cada pista puede cambiar el rumbo de la verdad. Desde el asesinato de un matrimonio hasta la persecución de un asesino serial que amenaza a figuras vinculadas con la televisión, deberá enfrentarse a intrigas, sospechosos y peligrosas conspiraciones para resolver cada caso.",
+  "remakes": [],
+  "productora": "Aries Cinematográfica Argentina",
+  "seasons": 2
+},
+{
+  "id": "T0135",
+  "title": "Gasoleros",
+  "year": "1998",
+  "channel": "Canal 13",
+  "genre": "Comedia",
+  "actors": [
+    "Juan Leyrado",
+    "Mercedes Morán",
+    "Dady Brieva",
+    "Pablo Rago",
+    "Nicolás Cabré",
+    "Silvia Montanari",
+    "Malena Solda",
+    "Melina Petriella"
+  ],
+  "orientation": "vertical",
+  "image": "images/verticals/1998-gasoleros-canal13-poster280x420.png",
+  "horizontal_image": "images/horizontals-1024x576/1998-gasoleros-canal13-poster1024x576.png",
+  "subtitle": "",
+  "horario": "21:00hs",
+  "capitulos": 464,
+  "fecha_estreno": "1998-01-05",
+  "sinopsis": "Héctor Panigasi, un mecánico viudo, y Roxy, una taxista y madre luchadora, ven cambiar sus vidas cuando un inesperado incidente une a sus familias. Entre romances, humor y desafíos cotidianos, ambos descubrirán una nueva oportunidad para ser felices en medio de la vida de barrio.",
+  "remakes": [],
+  "productora": "Pol-Ka Producciones",
+  "seasons": 2
+},
+{
+  "id": "T0136",
+  "title": "Alas, Poder y Pasión",
+  "year": "1998",
+  "channel": "Canal 13",
+  "genre": "Telenovela",
+  "actors": [
+    "Gustavo Bermúdez",
+    "Paola Krum",
+    "Rodolfo Ranni",
+    "Gastón Pauls",
+    "Nacha Guevara"
+  ],
+  "orientation": "vertical",
+  "image": "images/verticals/1998-alaspoderypasion-canal13-poster280x420.png",
+  "horizontal_image": "",
+  "subtitle": "",
+  "horario": "19:00hs",
+  "capitulos": 120,
+  "fecha_estreno": "1998-01-05",
+  "sinopsis": "Cecilia y Germán sobreviven a un aterrizaje forzoso en la selva misionera, donde nace un intenso romance que cambiará sus vidas. De regreso a la ciudad, deberán enfrentarse a una trama de conspiraciones, asesinatos y oscuros secretos familiares.",
+  "remakes": [],
+  "productora": ""
+},
+{
+  "id": "T0137",
+  "title": "Las Chicas de Enfrente",
+  "year": "1998",
+  "channel": "Canal 13",
+  "genre": "Juvenil",
+  "actors": [
+    "Mauricio Dayub",
+    "Ezequiel Rodríguez",
+    "Maximiliano Ghione",
+    "Silvana Di Lorenzo",
+    "Tina Serrano",
+    "Michel Brown",
+    "Claudio Tolcachir"
+  ],
+  "orientation": "vertical",
+  "image": "images/verticals/1998-laschicasdeenfrente-canal13-poster280x420-v2.png",
+  "horizontal_image": "",
+  "subtitle": "",
+  "horario": "18:00hs",
+  "capitulos": 55,
+  "fecha_estreno": "1998-03-23",
+  "sinopsis": "Un grupo de chicas llega desde el interior del país para estudiar y comienza a vivir bajo un mismo techo. Al mismo tiempo, dos hermanos se mudan al edificio de enfrente, sin imaginar que desde su ventana descubrirán mucho más que una hermosa vista.",
+  "remakes": [],
+  "productora": "Jorge Maestro"
+},
+{
+  "id": "T0138",
+  "title": "Laura y Zoe",
+  "year": "1998",
+  "channel": "Canal 13",
+  "genre": "Drama",
+  "actors": [
+    "Cecilia Roth",
+    "Susú Pecoraro"
+  ],
+  "orientation": "vertical",
+  "image": "images/verticals/1998-laurayzoe-canal13-poster280x420.png",
+  "horizontal_image": "",
+  "subtitle": "",
+  "horario": "Lunes 23:00hs",
+  "capitulos": 13,
+  "fecha_estreno": "1998-03-02",
+  "sinopsis": "Laura y Zoe, dos fotógrafas unidas por el legado de Carlos Prat, heredan su estudio tras su misteriosa muerte y emprenden una búsqueda para descubrir la verdad. Mientras enfrentan sus diferencias, deberán desentrañar una trama de secretos, poder y conspiraciones que cambiará sus vidas.",
+  "remakes": [],
+  "productora": "Aries Cinematográfica Argentina"
+},
+{
+  "id": "T0139",
+  "title": "Como Vos y Yo",
+  "year": "1998",
+  "channel": "Canal 13",
+  "genre": "Telenovela",
+  "actors": [
+    "Claribel Medina",
+    "Eleonora Wexler",
+    "Esteban Prol"
+  ],
+  "orientation": "vertical",
+  "image": "images/verticals/1998-comovosyyo-canal13-poster280x420.png",
+  "horizontal_image": "",
+  "subtitle": "",
+  "horario": "15:00hs",
+  "capitulos": 378,
+  "fecha_estreno": "1998-07-20",
+  "sinopsis": "Agustín, un joven remisero, queda atrapado entre Candela, una prestigiosa abogada, y Valentina, la hija de ella, dando origen a un inesperado triángulo amoroso. Entre diferencias sociales, secretos y dilemas familiares, los tres deberán enfrentar las consecuencias de un amor imposible.",
+  "remakes": [],
+  "productora": "Enrique Estevanez"
+},
+{
+  "id": "T0140",
+  "title": "La Nocturna",
+  "year": "1998",
+  "channel": "Canal 13",
+  "genre": "Juvenil",
+  "actors": [
+    "Víctor Laplace",
+    "Silvia Kutika",
+    "Gloria Carrá",
+    "Jean Pierre Noher",
+    "Daniel Fanego",
+    "Martín Karpan",
+    "Florencia Peña"
+  ],
+  "orientation": "vertical",
+  "image": "images/verticals/1998-lanocturna-canal13-poster280x420.png",
+  "horizontal_image": "",
+  "subtitle": "",
+  "horario": "19:00hs",
+  "capitulos": "",
+  "fecha_estreno": "1998-10-26",
+  "sinopsis": "Malena, una joven presa que obtiene permiso para estudiar en un colegio nocturno, busca rehacer su vida mientras revive un intenso romance con Martín y conoce al profesor Gustavo. Entre historias de superación, violencia, segundas oportunidades y conflictos personales, alumnos y docentes intentarán cambiar su destino.",
+  "remakes": [],
+  "productora": "Enrique Estevanez"
+},
+{
+  "id": "T0141",
+  "title": "Desesperadas en el Aire",
+  "year": "1998",
+  "channel": "Canal 13",
+  "genre": "Sitcom",
+  "actors": [
+    "Pablo Alarcón",
+    "Silvina Bosco",
+    "Adriana Salonia",
+    "Cristina Alberó"
+  ],
+  "orientation": "vertical",
+  "image": "images/verticals/1998-desesperadasporelaire-canal13-poster280x420.png",
+  "horizontal_image": "",
+  "subtitle": "",
+  "horario": "14:00hs",
+  "capitulos": "",
+  "fecha_estreno": "1998-11-16",
+  "sinopsis": "Juana, Lula y Fanny intentan sostener un caótico talk-show mientras enfrentan las exigencias de un productor obsesionado con el rating y una conductora difícil. Entre los conflictos del detrás de escena y sus vidas personales, vivirán enredos, romances y situaciones tan absurdas como divertidas.",
+  "remakes": [],
+  "productora": "Jorge Maestro"
+},
+{
+  "id": "T0142",
+  "title": "Por el Nombre de Dios",
+  "year": "1999",
+  "channel": "Canal 13",
+  "genre": "Thriller",
+  "actors": [
+    "Adrián Suar",
+    "Alfredo Alcón",
+    "Carina Zampini"
+  ],
+  "orientation": "vertical",
+  "image": "images/verticals/1999-porelnombrededios-canal13-poster280x420.png",
+  "horizontal_image": "",
+  "subtitle": "",
+  "horario": "Martes 23hs",
+  "capitulos": 13,
+  "fecha_estreno": "1999-04-06",
+  "sinopsis": "Una antigua profecía anuncia que el verdadero nombre de Dios será revelado en el cuerpo de un niño nacido en el último año del milenio. Pablo recibe poderes especiales para proteger a Ariana y al bebé de quienes intenten impedir o controlar esa revelación.",
+  "remakes": [],
+  "productora": [
+    "Walter Slavich",
+    "Marcelo Slavich"
+  ]
+},
+{
+  "id": "T0143",
+  "title": "El Hombre",
+  "year": "1999",
+  "channel": "Canal 13",
+  "genre": "Drama",
+  "actors": [
+    "Oscar Martínez",
+    "Cecilia Roth"
+  ],
+  "orientation": "vertical",
+  "image": "images/verticals/1999-elhombre-canal13-poster280x420.png",
+  "horizontal_image": "",
+  "subtitle": "",
+  "horario": "Martes 23hs",
+  "capitulos": 13,
+  "fecha_estreno": "1999-10-02",
+  "sinopsis": "José Francisco Maciel, un ambicioso dirigente político, emprende un vertiginoso camino hacia la presidencia mientras su esposa Mariana, su amante Violeta y sus hijos Goyo y Alejandra ponen a prueba su vida personal. Entre luchas de poder, ambiciones, traiciones y conflictos familiares, deberá decidir hasta dónde está dispuesto a llegar para alcanzar su destino.",
+  "remakes": [],
+  "productora": "Pol-Ka Producciones"
 },
 {
   "id": "T0046",
@@ -12990,37 +13696,51 @@
         }
       ]
     },
+{
+  "id": "V148",
+  "title": "Campeones de la Vida",
+  "year": "1999",
+  "channel": "Canal 13",
+  "genre": "Telenovela",
+  "actors": [
+    "Osvaldo Laport",
+    "Soledad Silveyra",
+    "Mariano Martínez",
+    "María Valenzuela"
+  ],
+  "orientation": "vertical",
+  "image": "images/verticals/campeones-poster-280x420.png",
+  "horizontal_image": "",
+  "subtitle": "Telenovela",
+  "horario": "22hs, 21hs",
+  "capitulos": 247,
+  "fecha_estreno": "04/01/1999",
+  "sinopsis": "En el mundo del boxeo, dos familias y un excampeón enfrentan ambición, amor y sacrificios mientras persiguen la gloria arriba y abajo del ring. Entre adicciones, romances y segundas oportunidades, cada uno pelea su batalla más difícil.",
+  "seasons": 2,
+  "temporadas": [
     {
-      "id": "V148",
-      "title": "Campeones de la Vida",
-      "year": "2000",
-      "channel": "Canal 13",
-      "genre": "Telenovela",
-      "actors": [
-        "Osvaldo Laport",
-        "Soledad Silveyra",
-        "Mariano Martínez",
-        "María Valenzuela"
-      ],
-      "orientation": "vertical",
-      "image": "images/verticals/campeones-poster-280x420.png",
-      "subtitle": "Telenovela",
-      "horario": "22hs, 21hs",
-      "capitulos": 247,
-      "fecha_estreno": "3/1/2000",
-      "sinopsis": "En el mundo del boxeo, dos familias y un excampeón enfrentan ambición, amor y sacrificios mientras persiguen la gloria arriba y abajo del ring. Entre adicciones, romances y segundas oportunidades, cada uno pelea su batalla más difícil.",
-      "rating": "21,1",
-      "productora": "Pol-Ka",
-      "remakes": [
-        {
-          "title": "Campeones de la Vida",
-          "country": "México",
-          "year": "2006",
-          "image": "images/verticals/campeones-de-la-vida-mexico-2006.png"
-        }
-      ],
-      "tipo_emision": "Tira Diaria"
+      "numero": 1,
+      "year": "1999",
+      "horario": "22hs"
     },
+    {
+      "numero": 2,
+      "year": "2000",
+      "horario": "21hs"
+    }
+  ],
+  "rating": "21,1",
+  "productora": "Pol-Ka",
+  "remakes": [
+    {
+      "title": "Campeones de la Vida",
+      "country": "México",
+      "year": "2006",
+      "image": "images/verticals/campeones-de-la-vida-mexico-2006.png"
+    }
+  ],
+  "tipo_emision": "Tira Diaria"
+},
 {
   "id": "V149",
   "title": "Chiquititas - 2000",
