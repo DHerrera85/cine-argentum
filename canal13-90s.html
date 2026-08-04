@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Canal 13 en los años 90 | Argentina Content</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css?v=2.0" />
+  <link rel="stylesheet" href="css/main-wrap.css?v=1.0" />
+  <link rel="stylesheet" href="css/lightslider.css?v=2.0" />
+
+  <!-- Fuente -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins&display=swap" />
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" sizes="32x32" href="images/fav_icon.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="images/fav_icon.png" />
+  <link rel="shortcut icon" href="images/fav_icon.png" />
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    referrerpolicy="no-referrer"
+  />
+
+  <style>
+    body {
+      font-family: Poppins, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      padding-top: 76px;
+    }
+
+    img {
+      height: auto;
+    }
+
+    /* Hamburguesa accesible */
+    .menu-btn {
+      position: absolute !important;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0 0 0 0);
+      white-space: nowrap;
+      border: 0;
+    }
+
+    .menu-icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 48px;
+      height: 48px;
+      cursor: pointer;
+      user-select: none;
+    }
+
+    .nav-icon {
+      position: relative;
+      width: 26px;
+      height: 2px;
+      background: #555;
+      display: inline-block;
+      transition: transform 0.25s ease, background 0.25s ease;
+    }
+
+    .nav-icon::before,
+    .nav-icon::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      width: 26px;
+      height: 2px;
+      background: #555;
+      transition: transform 0.25s ease, top 0.25s ease, opacity 0.25s ease;
+    }
+
+    .nav-icon::before {
+      top: -8px;
+    }
+
+    .nav-icon::after {
+      top: 8px;
+    }
+
+    .menu-btn:checked + .menu-icon .nav-icon {
+      background: transparent;
+    }
+
+    .menu-btn:checked + .menu-icon .nav-icon::before {
+      transform: rotate(45deg);
+      top: 0;
+    }
+
+    .menu-btn:checked + .menu-icon .nav-icon::after {
+      transform: rotate(-45deg);
+      top: 0;
+    }
+
+    /* ==================================================
+       Canal 13
+    ================================================== */
+
+    .canal13-90s-page {
+      width: 100%;
+      background: #141a21;
+      color: #ffffff;
+      padding: 40px 0 48px;
+      overflow: hidden;
+      box-sizing: border-box;
+    }
+
+    .page-intro {
+      width: 100%;
+      padding: 24px 38px 20px;
+      margin-top: 20px;
+      box-sizing: border-box;
+    }
+
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      margin-bottom: 20px;
+      color: #ef5350;
+      font-size: 0.95rem;
+      font-weight: 600;
+      text-decoration: none;
+      position: relative;
+      z-index: 1;
+    }
+
+    .back-link:hover {
+      text-decoration: underline;
+    }
+
+    .channel-heading {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+    }
+
+    .channel-heading-logo-wrap {
+      width: 112px;
+      height: 112px;
+      flex: 0 0 112px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px;
+      box-sizing: border-box;
+      border-radius: 18px;
+      background: linear-gradient(135deg, #3485d1 0%, #174f91 100%);
+    }
+
+    .channel-heading-logo {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+    }
+
+    .channel-heading-text {
+      min-width: 0;
+    }
+
+    .channel-heading-text .showcase-heading {
+      margin: 0;
+      padding: 0;
+      color: #ffffff;
+      font-size: clamp(1.7rem, 3vw, 2.6rem);
+      line-height: 1.15;
+      text-transform: none;
+    }
+
+    .channel-heading-description {
+      margin: 10px 0 0;
+      color: #b8bec6;
+      font-size: 1.05rem;
+      line-height: 1.6;
+    }
+
+    .canal13-section {
+      width: 100%;
+      padding: 24px 32px;
+      box-sizing: border-box;
+    }
+
+    .canal13-section > .showcase-heading,
+    .canal13-section > .latest-heading {
+      margin: 0 0 20px;
+      padding: 0;
+      color: #ffffff;
+    }
+
+    #canal13-destacadas .slider-h {
+      margin: 0;
+      padding: 0;
+    }
+
+    #canal13-destacadas .latest-b-text {
+      text-align: center;
+      background: transparent !important;
+    }
+
+    #canal13-destacadas .latest-b-text strong {
+      display: block;
+      margin-top: 12px;
+      color: #ffffff;
+    }
+
+    .canal13-year-filter,
+    .canal13-category-filter {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .filter-carousel {
+      position: relative;
+      width: 100%;
+    }
+
+    .filter-scroll {
+      scroll-behavior: smooth;
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+    }
+
+    .filter-scroll::-webkit-scrollbar {
+      display: none;
+    }
+
+    .filter-arrow {
+      display: none;
+      position: absolute;
+      top: 50%;
+      z-index: 5;
+      width: 38px;
+      height: 38px;
+      padding: 0;
+      border: 0;
+      background: transparent;
+      box-shadow: none;
+      cursor: pointer;
+      transform: translateY(-50%);
+    }
+
+    .filter-arrow-prev {
+      left: 2px;
+    }
+
+    .filter-arrow-next {
+      right: 2px;
+    }
+
+    .filter-arrow:disabled {
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .filter-arrow i {
+      font-size: 18px;
+      color: rgba(255, 255, 255, 0.38);
+    }
+
+    .year-button,
+    .category-button {
+      min-width: 70px;
+      padding: 10px 16px;
+      border: 1px solid #3d4752;
+      border-radius: 999px;
+      background: #202832;
+      color: #ffffff;
+      font-family: inherit;
+      font-size: 0.9rem;
+      cursor: pointer;
+      transition:
+        background-color 0.2s ease,
+        border-color 0.2s ease,
+        transform 0.2s ease;
+    }
+
+.year-button:hover,
+.category-button:hover {
+  border-color: #4da3ff;
+}
+
+.year-button.active,
+.category-button.active {
+  border-color: #4da3ff;
+  background: #4da3ff;
+  color: #101820;
+}
+
+    .catalogue-header {
+      margin-bottom: 22px;
+    }
+
+    .catalogue-header .latest-heading {
+      margin: 0;
+    }
+
+    .catalogue-header p {
+      margin: 8px 0 0;
+      color: #aeb6c0;
+      line-height: 1.5;
+    }
+
+    .canal13-90s-grid {
+      width: 100%;
+      min-height: 100px;
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 28px 22px;
+    }
+
+    .canal13-card {
+      min-width: 0;
+    }
+
+    .canal13-card-link {
+      text-decoration: none;
+    }
+
+    .canal13-card img {
+      display: block;
+      width: 100%;
+      aspect-ratio: 2 / 3;
+      object-fit: cover;
+      border-radius: 12px;
+    }
+
+    .canal13-card-text {
+      padding-top: 10px;
+      text-align: center;
+    }
+
+    .canal13-card-text strong {
+      display: block;
+      color: #ffffff;
+      font-size: 0.95rem;
+      line-height: 1.3;
+      font-weight: 600;
+    }
+
+    .canal13-card-text span {
+      display: block;
+      margin-top: 4px;
+      color: #9ea6b0;
+      font-size: 0.9rem;
+    }
+
+    .canal13-load-error {
+      color: #f3a6a4;
+    }
+
+    @media (min-width: 768px) {
+      .menu-icon {
+        display: none;
+      }
+    }
+
+    @media (min-width: 768px) and (max-width: 1100px) {
+      .canal13-90s-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 767px) {
+      body {
+        padding-top: 62px;
+      }
+
+      .canal13-90s-page {
+        padding-top: 20px;
+      }
+
+      .page-intro {
+        padding: 26px 16px 18px;
+        margin-top: 16px;
+      }
+
+      .channel-heading {
+        align-items: flex-start;
+        gap: 14px;
+      }
+
+      .channel-heading-logo-wrap {
+        width: 78px;
+        height: 78px;
+        flex-basis: 78px;
+        padding: 7px;
+        border-radius: 13px;
+      }
+
+      .channel-heading-text .showcase-heading {
+        font-size: 1.45rem;
+      }
+
+      .channel-heading-description {
+        margin-top: 6px;
+        font-size: 0.9rem;
+      }
+
+      .canal13-section {
+        padding: 20px 16px;
+      }
+
+      .canal13-year-filter,
+      .canal13-category-filter {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        padding: 2px 0 8px;
+      }
+
+      .year-button,
+.category-button {
+    display: inline-block !important;
+    flex: 0 0 auto;
+    text-align: center !important;
+    line-height: normal;
+}
+
+      .filter-arrow {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .canal13-90s-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 22px 16px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="main-wrap">
+
+    <!-- NAV -->
+    <nav class="sa-nav">
+      <a href="index.html" class="logo" aria-label="Argentina Content">
+        <img src="images/logos/argentina-content-logo.PNG" alt="Argentina Content">
+      </a>
+
+      <form class="search" role="search" id="headerSearch">
+        <input
+          type="search"
+          name="q"
+          placeholder="Encontrá tu Serie Favorita"
+          aria-label="Buscar series"
+        />
+        <button type="submit" class="search-btn" aria-label="Buscar">
+          <i class="fas fa-search" aria-hidden="true"></i>
+        </button>
+      </form>
+
+      <input class="menu-btn" type="checkbox" id="menu-btn" aria-hidden="true" />
+
+      <label class="menu-icon" for="menu-btn" aria-label="Abrir menú">
+        <span class="nav-icon" aria-hidden="true"></span>
+      </label>
+
+      <ul class="menu nav-options">
+        <li><a href="streaming.html">Streaming</a></li>
+        <li><a href="tv-90s.html" aria-current="page">TV 90s</a></li>
+        <li><a href="tiras_2000.html">Tiras 2000</a></li>
+        <li><a href="tiras_2010.html">Tiras 2010</a></li>
+        <li><a href="juveniles.html">Juveniles</a></li>
+        <li><a href="unitarios.html">Unitarios</a></li>
+      </ul>
+    </nav>
+
+    <!-- Canal 13  EN LOS AÑOS 90 -->
+    <main class="canal13-90s-page">
+
+      <section class="page-intro">
+        <a href="tv-90s.html" class="back-link">
+          &larr; Volver a TV 90s
+        </a>
+
+        <div class="channel-heading">
+          <div class="channel-heading-logo-wrap">
+            <img
+              src="images/logos/canal13-1990-120x120.png"
+              alt="Logo histórico de Canal 13"
+              class="channel-heading-logo"
+            />
+          </div>
+
+          <div class="channel-heading-text">
+            <h1 class="showcase-heading">
+              Canal 13 en los años 90
+            </h1>
+
+            <p class="channel-heading-description">
+              Ficciones emitidas por Canal 13 entre 1990 y 1999.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Producciones destacadas -->
+      <section id="canal13-destacadas" class="canal13-section">
+        <h2 class="showcase-heading">Producciones destacadas</h2>
+
+        <ul
+          id="canal13-featured-slider"
+          class="slider-h cs-hidden"
+          data-skip-auto="true"
+        ></ul>
+      </section>
+
+      <!-- Explorar por año -->
+      <section id="canal13-years" class="canal13-section">
+        <h2 class="latest-heading">Explorar por año</h2>
+
+        <div class="filter-carousel">
+          <button
+            type="button"
+            class="filter-arrow filter-arrow-prev"
+            aria-label="Ver años anteriores"
+          >
+            <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
+          </button>
+
+          <div
+            class="canal13-year-filter filter-scroll"
+            aria-label="Filtrar ficciones por año"
+          >
+            <button type="button" class="year-button active" data-canal13-year="all" aria-pressed="true">Todas</button>
+            <button type="button" class="year-button" data-canal13-year="1990" aria-pressed="false">1990</button>
+            <button type="button" class="year-button" data-canal13-year="1991" aria-pressed="false">1991</button>
+            <button type="button" class="year-button" data-canal13-year="1992" aria-pressed="false">1992</button>
+            <button type="button" class="year-button" data-canal13-year="1993" aria-pressed="false">1993</button>
+            <button type="button" class="year-button" data-canal13-year="1994" aria-pressed="false">1994</button>
+            <button type="button" class="year-button" data-canal13-year="1995" aria-pressed="false">1995</button>
+            <button type="button" class="year-button" data-canal13-year="1996" aria-pressed="false">1996</button>
+            <button type="button" class="year-button" data-canal13-year="1997" aria-pressed="false">1997</button>
+            <button type="button" class="year-button" data-canal13-year="1998" aria-pressed="false">1998</button>
+            <button type="button" class="year-button" data-canal13-year="1999" aria-pressed="false">1999</button>
+          </div>
+
+          <button
+            type="button"
+            class="filter-arrow filter-arrow-next"
+            aria-label="Ver años siguientes"
+          >
+            <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+          </button>
+        </div>
+      </section>
+
+      <!-- Explorar por categoría -->
+      <section id="canal13-categories" class="canal13-section">
+        <h2 class="latest-heading">Explorar por categoría</h2>
+
+        <div class="filter-carousel">
+          <button
+            type="button"
+            class="filter-arrow filter-arrow-prev"
+            aria-label="Ver categorías anteriores"
+          >
+            <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
+          </button>
+
+          <div
+            class="canal13-category-filter filter-scroll"
+            aria-label="Filtrar ficciones por categoría"
+          >
+            <button type="button" class="category-button active" data-canal13-category="all" aria-pressed="true">Todas</button>
+            <button type="button" class="category-button" data-canal13-category="telenovela" aria-pressed="false">Telenovela</button>
+            <button type="button" class="category-button" data-canal13-category="comedia" aria-pressed="false">Comedia</button>
+            <button type="button" class="category-button" data-canal13-category="drama" aria-pressed="false">Drama</button>
+            <button type="button" class="category-button" data-canal13-category="thriller" aria-pressed="false">Thriller</button>
+            <button type="button" class="category-button" data-canal13-category="juvenil" aria-pressed="false">Juvenil</button>
+          </div>
+
+          <button
+            type="button"
+            class="filter-arrow filter-arrow-next"
+            aria-label="Ver categorías siguientes"
+          >
+            <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+          </button>
+        </div>
+      </section>
+
+      <!-- Catálogo -->
+      <section id="canal13-catalogue" class="canal13-section">
+        <div class="catalogue-header">
+          <h2 id="canal13-catalogue-title" class="latest-heading">
+            Todas las ficciones
+          </h2>
+
+          <p id="canal13-catalogue-description">
+            Cargando ficciones de Canal 13...
+          </p>
+        </div>
+
+        <div
+          id="canal13-90s-grid"
+          class="canal13-90s-grid"
+          aria-live="polite"
+        ></div>
+
+        <p id="canal13-empty-state" hidden>
+          No se encontraron ficciones de Canal 13 para los filtros seleccionados.
+        </p>
+      </section>
+
+    </main>
+
+    <footer>
+      <p>Argentina Content</p>
+      <p>
+        Copyright 2026 by Dherrera -
+        <a href="tercer-canal.html" title="Series de Tercer Canal">3C</a>
+      </p>
+    </footer>
+
+  </div>
+
+  <!-- JS -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="js/lightslider.js"></script>
+  <script src="js/script.js?v=20260226-1"></script>
+  <script src="js/canal13-90s-autosync.js?v=20260803-1"></script>
+</body>
+</html>
