@@ -568,10 +568,30 @@
     padding: 20px 16px;
   }
 
-  .tv90s-channel-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 14px;
-  }
+.tv90s-channel-grid {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 76%;
+  grid-template-columns: none;
+  gap: 14px;
+
+  overflow-x: auto;
+  overflow-y: hidden;
+
+  padding: 2px 2px 12px;
+
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.tv90s-channel-grid::-webkit-scrollbar {
+  display: none;
+}
+
+.tv90s-channel-card {
+  scroll-snap-align: start;
+}
 
 .tv90s-channel-logo {
   height: 112px;
@@ -811,42 +831,39 @@
       </a>
 
 
-      <!-- América: filtro local -->
-      <button
-        type="button"
-        class="tv90s-channel-card tv90s-channel-filter"
-        data-tv90s-channel="america"
-        aria-pressed="false"
-      >
-        <div class="tv90s-channel-logo america-channel">
-          <img
-            src="images/logos/america-1990-120x120px.png"
-            alt="América"
-          />
-        </div>
+<!-- América: catálogo filtrado -->
+<a
+  href="tv-90s-catalogo.html?channel=america"
+  class="tv90s-channel-card tv90s-channel-link"
+  title="Ver ficciones de América en los años 90"
+>
+  <div class="tv90s-channel-logo america-channel">
+    <img
+      src="images/logos/america-1990-120x120px.png"
+      alt="América"
+    />
+  </div>
 
-        <strong>América</strong>
-        <span>Filtrar producciones</span>
-      </button>
+  <strong>América</strong>
+  <span>Ver catálogo</span>
+</a>
 
+<!-- ATC / Canal 7: catálogo filtrado -->
+<a
+  href="tv-90s-catalogo.html?channel=atc"
+  class="tv90s-channel-card tv90s-channel-link"
+  title="Ver ficciones de ATC y Canal 7 en los años 90"
+>
+  <div class="tv90s-channel-logo atc-channel">
+    <img
+      src="images/logos/ATC_logo_120x120_transparente.png"
+      alt="ATC y Canal 7"
+    />
+  </div>
 
-      <!-- ATC: filtro local -->
-      <button
-        type="button"
-        class="tv90s-channel-card tv90s-channel-filter"
-        data-tv90s-channel="atc"
-        aria-pressed="false"
-      >
-        <div class="tv90s-channel-logo atc-channel">
-          <img
-            src="images/logos/ATC_logo_120x120_transparente.png"
-            alt="ATC y Canal 7"
-          />
-        </div>
-
-        <strong>ATC / Canal 7</strong>
-        <span>Filtrar producciones</span>
-      </button>
+  <strong>ATC / Canal 7</strong>
+  <span>Ver catálogo</span>
+</a>
 
       <!-- Catálogo completo -->
 <a

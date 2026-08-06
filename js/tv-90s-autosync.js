@@ -52,7 +52,6 @@ var SELECTORS = {
   var activeChannel = 'all';
   var initializedSliders = {};
 
-
   /* =========================================================
      NORMALIZACIÓN Y SEGURIDAD
      ========================================================= */
@@ -1022,7 +1021,6 @@ function updateActiveButtons() {
   });
 }
 
-
 function renderCatalogue() {
   var productions =
     getVisibleProductions();
@@ -1045,7 +1043,6 @@ function renderCatalogue() {
 
   updateActiveButtons();
 }
-
 
   /* =========================================================
      EVENTOS DE FILTROS
@@ -1402,6 +1399,7 @@ function initTv90sCatalogue() {
   bindCategoryFilters();
   bindChannelFilters();
   bindCarouselButtons();
+
   loadCatalogue();
 }
 

@@ -52,7 +52,46 @@ var SELECTORS = {
   var activeChannel = 'all';
   var initializedSliders = {};
 
+function loadFiltersFromUrl() {
+  var params =
+    new URLSearchParams(
+      window.location.search
+    );
 
+  var channel =
+    params.get('channel');
+
+  var year =
+    params.get('year');
+
+  var category =
+    params.get('category');
+
+  if (
+    channel === 'america' ||
+    channel === 'atc'
+  ) {
+    activeChannel = channel;
+  }
+
+  if (
+    year &&
+    Number(year) >= START_YEAR &&
+    Number(year) <= END_YEAR
+  ) {
+    activeYear = year;
+  }
+
+  if (
+    category === 'telenovela' ||
+    category === 'comedia' ||
+    category === 'drama' ||
+    category === 'thriller' ||
+    category === 'juvenil'
+  ) {
+    activeCategory = category;
+  }
+}
   /* =========================================================
      NORMALIZACIÓN Y SEGURIDAD
      ========================================================= */
@@ -1022,6 +1061,49 @@ function updateActiveButtons() {
   });
 }
 
+function updateUrlFromFilters() {
+  var params =
+    new URLSearchParams();
+
+  if (activeYear !== 'all') {
+    params.set(
+      'year',
+      activeYear
+    );
+  }
+
+  if (activeCategory !== 'all') {
+    params.set(
+      'category',
+      activeCategory
+    );
+  }
+
+  if (activeChannel !== 'all') {
+    params.set(
+      'channel',
+      activeChannel
+    );
+  }
+
+  var query =
+    params.toString();
+
+  var newUrl =
+    window.location.pathname +
+    (
+      query
+        ? '?' + query
+        : ''
+    );
+
+  window.history.replaceState(
+    null,
+    '',
+    newUrl
+  );
+}
+
 
 function renderCatalogue() {
   var productions =
@@ -1044,6 +1126,18 @@ function renderCatalogue() {
   );
 
   updateActiveButtons();
+
+  updateHeading(
+  productions.length
+);
+
+updateEmptyState(
+  productions.length
+);
+
+updateActiveButtons();
+
+updateUrlFromFilters();
 }
 
 
@@ -1398,10 +1492,13 @@ renderCatalogue();
    ========================================================= */
 
 function initTv90sCatalogue() {
+  loadFiltersFromUrl();
+
   bindYearFilters();
   bindCategoryFilters();
   bindChannelFilters();
   bindCarouselButtons();
+
   loadCatalogue();
 }
 
