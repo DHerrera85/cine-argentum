@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>TV 90s - Argentina Content</title>
+  <title>Catálogo TV 90s - Argentina Content</title>
 
   <!-- CSS -->
   <link rel="stylesheet" href="css/style.css?v=2.0" />
@@ -87,6 +87,36 @@
   color: #ffffff;
 }
 
+.tv90s-back-wrap {
+  width: 100%;
+  padding: 0 38px;
+  box-sizing: border-box;
+}
+
+.tv90s-back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  color: #c5ccd4;
+  font-size: 0.94rem;
+  font-weight: 600;
+  text-decoration: none;
+
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.tv90s-back-link:hover {
+  color: #ffffff;
+  transform: translateX(-3px);
+}
+
+.tv90s-back-link i {
+  font-size: 0.86rem;
+}
+
 .tv90s-intro {
   width: 100%;
   padding: 24px 38px 20px;
@@ -136,78 +166,11 @@
   color: #ffffff;
 }
 
-/* Galerías temáticas horizontales */
-
-.tv90s-genre-showcase {
-  overflow: hidden;
-}
-
-.tv90s-genre-showcase .slider-h {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-/*
- * Respaldo visual mientras LightSlider carga
- * o en caso de que no pueda inicializarse.
- */
-.tv90s-genre-showcase .slider-h:not(.lightSlider) {
-  display: grid;
-  grid-auto-flow: column;
-  grid-auto-columns: calc((100% - 40px) / 3);
-  gap: 20px;
-
-  overflow-x: auto;
-  overflow-y: hidden;
-
-  scroll-snap-type: x mandatory;
-  scrollbar-width: thin;
-}
-
-.tv90s-genre-showcase .slider-h:not(.lightSlider) > li {
-  min-width: 0;
-  scroll-snap-align: start;
-}
-
-.tv90s-genre-showcase .slider-h a {
-  display: block;
-  color: inherit;
-  text-decoration: none;
-}
-
-.tv90s-genre-showcase .showcase-box {
-  width: 100%;
-  aspect-ratio: 16 / 9;
-  overflow: hidden;
-  border-radius: 12px;
-  background: #202832;
-}
-
-.tv90s-genre-showcase .showcase-box img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: inherit;
-}
-
-.tv90s-genre-showcase .latest-b-text {
-  text-align: center;
-  background: transparent !important;
-}
-
-.tv90s-genre-showcase .latest-b-text strong {
-  display: block;
-  margin-top: 12px;
-  color: #ffffff;
-}
-
 /* Canales */
 
 .tv90s-channel-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(5, minmax(0, 1fr));
   gap: 20px;
 }
 
@@ -320,20 +283,6 @@
       #2196f3 0%,
       #1565c0 100%
     );
-}
-
-.catalogue-channel {
-  background:
-    linear-gradient(
-      135deg,
-      #4b5563 0%,
-      #1f2937 100%
-    );
-}
-
-.catalogue-channel i {
-  color: #ffffff;
-  font-size: 40px;
 }
 
 
@@ -529,11 +478,6 @@
 
 @media (max-width: 767px) {
 
-.tv90s-genre-showcase .slider-h:not(.lightSlider) {
-  grid-auto-columns: 88%;
-  gap: 12px;
-}
-
   body {
     padding-top: 62px;
   }
@@ -573,20 +517,14 @@
     gap: 14px;
   }
 
-.tv90s-channel-logo {
-  height: 112px;
-  padding: 16px;
-}
+  .tv90s-channel-logo {
+    height: 112px;
+    padding: 16px;
+  }
 
-.catalogue-channel i {
-  color: #ffffff;
-  font-size: 40px;
-  line-height: 1;
-}
-
-.tv90s-channel-card strong {
-  font-size: 0.9rem;
-}
+  .tv90s-channel-card strong {
+    font-size: 0.9rem;
+  }
 
   .tv90s-channel-card span {
     font-size: 0.75rem;
@@ -617,6 +555,14 @@
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 22px 16px;
   }
+
+  .tv90s-back-wrap {
+  padding: 0 16px;
+}
+
+.tv90s-back-link {
+  font-size: 0.86rem;
+}
 
 }
 
@@ -659,6 +605,17 @@
 <!-- TV ARGENTINA EN LOS AÑOS 90 -->
 <main class="tv90s-page">
 
+<div class="tv90s-back-wrap">
+  <a
+    href="tv-90s.html"
+    class="tv90s-back-link"
+    aria-label="Volver a la portada de TV de los años 90"
+  >
+    <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
+    Volver a TV 90s
+  </a>
+</div>
+
   <!-- Encabezado general -->
   <section class="tv90s-intro">
 
@@ -666,85 +623,17 @@
 
       <div class="tv90s-heading-text">
         <h1 class="showcase-heading">
-          TV Argentina en los años 90
+          Catálogo completo de TV Argentina en los años 90
         </h1>
 
         <p class="tv90s-heading-description">
-          Ficciones emitidas por los principales canales de aire
-          argentinos entre 1990 y 1999.
+          Explorá las ficciones emitidas por los canales de aire
+  argentinos entre 1990 y 1999.
         </p>
       </div>
     </div>
 
   </section>
-
-  <!-- Telenovelas -->
-<section
-  id="tv90s-telenovelas"
-  class="tv90s-section tv90s-genre-showcase"
->
-  <h2 class="showcase-heading">
-    Telenovelas
-  </h2>
-
-  <ul
-    id="tv90s-telenovelas-slider"
-    class="slider-h cs-hidden"
-    data-skip-auto="true"
-  ></ul>
-</section>
-
-
-<!-- Comedias -->
-<section
-  id="tv90s-comedias"
-  class="tv90s-section tv90s-genre-showcase"
->
-  <h2 class="showcase-heading">
-    Comedias
-  </h2>
-
-  <ul
-    id="tv90s-comedias-slider"
-    class="slider-h cs-hidden"
-    data-skip-auto="true"
-  ></ul>
-</section>
-
-
-<!-- Juveniles -->
-<section
-  id="tv90s-juveniles"
-  class="tv90s-section tv90s-genre-showcase"
->
-  <h2 class="showcase-heading">
-    Juveniles
-  </h2>
-
-  <ul
-    id="tv90s-juveniles-slider"
-    class="slider-h cs-hidden"
-    data-skip-auto="true"
-  ></ul>
-</section>
-
-
-<!-- Dramas y Thrillers -->
-<section
-  id="tv90s-dramas"
-  class="tv90s-section tv90s-genre-showcase"
->
-  <h2 class="showcase-heading">
-    Dramas y Thrillers
-  </h2>
-
-  <ul
-    id="tv90s-dramas-slider"
-    class="slider-h cs-hidden"
-    data-skip-auto="true"
-  ></ul>
-</section>
-
 
   <!-- Explorar por canal -->
   <section
@@ -848,24 +737,162 @@
         <span>Filtrar producciones</span>
       </button>
 
-      <!-- Catálogo completo -->
-<a
-  href="tv-90s-catalogo.html"
-  class="tv90s-channel-card tv90s-channel-link"
-  title="Explorar el catálogo completo de ficciones de los años 90"
->
-  <div class="tv90s-channel-logo catalogue-channel">
-    <i
-      class="fa-solid fa-layer-group"
-      aria-hidden="true"
-    ></i>
-  </div>
+    </div>
+  </section>
 
-  <strong>Catálogo</strong>
-  <span>Ver todas las ficciones</span>
-</a>
+
+  <!-- Explorar por año -->
+  <section
+    id="tv90s-years"
+    class="tv90s-section"
+  >
+    <h2 class="latest-heading">
+      Explorar por año
+    </h2>
+
+    <div class="filter-carousel">
+
+      <button
+        type="button"
+        class="filter-arrow filter-arrow-prev"
+        aria-label="Ver años anteriores"
+      >
+        <i
+          class="fa-solid fa-chevron-left"
+          aria-hidden="true"
+        ></i>
+      </button>
+
+      <div
+        class="tv90s-year-filter filter-scroll"
+        aria-label="Filtrar ficciones por año"
+      >
+        <button
+          type="button"
+          class="year-button active"
+          data-tv90s-year="all"
+          aria-pressed="true"
+        >
+          Todas
+        </button>
+
+        <button type="button" class="year-button" data-tv90s-year="1990" aria-pressed="false">1990</button>
+        <button type="button" class="year-button" data-tv90s-year="1991" aria-pressed="false">1991</button>
+        <button type="button" class="year-button" data-tv90s-year="1992" aria-pressed="false">1992</button>
+        <button type="button" class="year-button" data-tv90s-year="1993" aria-pressed="false">1993</button>
+        <button type="button" class="year-button" data-tv90s-year="1994" aria-pressed="false">1994</button>
+        <button type="button" class="year-button" data-tv90s-year="1995" aria-pressed="false">1995</button>
+        <button type="button" class="year-button" data-tv90s-year="1996" aria-pressed="false">1996</button>
+        <button type="button" class="year-button" data-tv90s-year="1997" aria-pressed="false">1997</button>
+        <button type="button" class="year-button" data-tv90s-year="1998" aria-pressed="false">1998</button>
+        <button type="button" class="year-button" data-tv90s-year="1999" aria-pressed="false">1999</button>
+      </div>
+
+      <button
+        type="button"
+        class="filter-arrow filter-arrow-next"
+        aria-label="Ver años siguientes"
+      >
+        <i
+          class="fa-solid fa-chevron-right"
+          aria-hidden="true"
+        ></i>
+      </button>
 
     </div>
+  </section>
+
+
+  <!-- Explorar por categoría -->
+  <section
+    id="tv90s-categories"
+    class="tv90s-section"
+  >
+    <h2 class="latest-heading">
+      Explorar por categoría
+    </h2>
+
+    <div class="filter-carousel">
+
+      <button
+        type="button"
+        class="filter-arrow filter-arrow-prev"
+        aria-label="Ver categorías anteriores"
+      >
+        <i
+          class="fa-solid fa-chevron-left"
+          aria-hidden="true"
+        ></i>
+      </button>
+
+      <div
+        class="tv90s-category-filter filter-scroll"
+        aria-label="Filtrar ficciones por categoría"
+      >
+        <button
+          type="button"
+          class="category-button active"
+          data-tv90s-category="all"
+          aria-pressed="true"
+        >
+          Todas
+        </button>
+
+        <button type="button" class="category-button" data-tv90s-category="telenovela" aria-pressed="false">Telenovela</button>
+        <button type="button" class="category-button" data-tv90s-category="comedia" aria-pressed="false">Comedia</button>
+        <button type="button" class="category-button" data-tv90s-category="drama" aria-pressed="false">Drama</button>
+        <button type="button" class="category-button" data-tv90s-category="thriller" aria-pressed="false">Thriller</button>
+        <button type="button" class="category-button" data-tv90s-category="juvenil" aria-pressed="false">Juvenil</button>
+      </div>
+
+      <button
+        type="button"
+        class="filter-arrow filter-arrow-next"
+        aria-label="Ver categorías siguientes"
+      >
+        <i
+          class="fa-solid fa-chevron-right"
+          aria-hidden="true"
+        ></i>
+      </button>
+
+    </div>
+  </section>
+
+
+  <!-- Catálogo general -->
+  <section
+    id="tv90s-catalogue"
+    class="tv90s-section"
+  >
+    <div class="catalogue-header">
+
+      <h2
+        id="tv90s-catalogue-title"
+        class="latest-heading"
+      >
+        Todas las ficciones
+      </h2>
+
+      <p id="tv90s-catalogue-description">
+        Cargando ficciones de la televisión argentina de los años 90...
+      </p>
+
+    </div>
+
+    <div
+      id="tv90s-grid"
+      class="tv90s-grid"
+      aria-live="polite"
+    ></div>
+
+    <p
+      id="tv90s-empty-state"
+      hidden
+    >
+      No se encontraron ficciones para los filtros seleccionados.
+    </p>
+
   </section>
 
 </main>
@@ -881,6 +908,6 @@
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <script src="js/lightslider.js"></script>
 <script src="js/script.js?v=20260226-1"></script>
-<script src="js/tv-90s-autosync.js?v=20260804-4"></script>
+<script src="js/tv-90s-catalogo-autosync.js?v=20260806-1"></script>
 </body>
 </html>
