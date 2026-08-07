@@ -32,6 +32,11 @@ var SELECTORS = {
 
   telenovelasSlider: '#tv90s-telenovelas-slider',
   comediasSlider: '#tv90s-comedias-slider',
+comediasSemanalesSlider:
+  '#tv90s-comedias-semanales-slider',
+
+comediasDiariasSlider:
+  '#tv90s-comedias-diarias-slider',
   juvenilesSlider: '#tv90s-juveniles-slider',
   dramasSlider: '#tv90s-dramas-slider',
 
@@ -551,6 +556,54 @@ function isWeeklyFiction(item) {
   );
 }
 
+function isComedia(item) {
+  return belongsToCategory(
+    item,
+    'comedia'
+  );
+}
+
+
+function getComediasSemanales(
+  productions
+) {
+
+  if (!Array.isArray(productions)) {
+    return [];
+  }
+
+  return productions
+    .filter(function (item) {
+
+      return (
+        isComedia(item) &&
+        isWeeklyFiction(item)
+      );
+
+    })
+    .sort(compareProductions);
+}
+
+
+function getComediasDiarias(
+  productions
+) {
+
+  if (!Array.isArray(productions)) {
+    return [];
+  }
+
+  return productions
+    .filter(function (item) {
+
+      return (
+        isComedia(item) &&
+        isDailyFiction(item)
+      );
+
+    })
+    .sort(compareProductions);
+}
 
 /*
  * Devuelve todas las telenovelas comprendidas
@@ -1076,6 +1129,42 @@ function renderJuvenilEditorialSliders(
     infantiles
   );
 }
+
+function renderComediaEditorialSliders(
+  productions
+) {
+
+  var comediasSemanales =
+    getComediasSemanales(
+      productions
+    );
+
+  var comediasDiarias =
+    getComediasDiarias(
+      productions
+    );
+
+  console.log(
+    'Comedias Semanales:',
+    comediasSemanales.length
+  );
+
+  console.log(
+    'Comedias - Tira Diaria:',
+    comediasDiarias.length
+  );
+
+  renderVerticalSlider(
+    SELECTORS.comediasSemanalesSlider,
+    comediasSemanales
+  );
+
+  renderVerticalSlider(
+    SELECTORS.comediasDiariasSlider,
+    comediasDiarias
+  );
+}
+
   /* =========================================================
      GALERÍAS HORIZONTALES POR GÉNERO
      ========================================================= */
@@ -1598,6 +1687,10 @@ function renderCatalogue() {
   );
 
 renderTelenovelaEditorialSliders(
+  productions
+);
+
+renderComediaEditorialSliders(
   productions
 );
 
