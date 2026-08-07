@@ -80,7 +80,7 @@
 
 .tv90s-page {
   width: 100%;
-  padding: 40px 0 48px;
+  padding: 40px 0 20px;
   overflow: hidden;
   box-sizing: border-box;
   background: #141a21;
@@ -89,7 +89,7 @@
 
 .tv90s-intro {
   width: 100%;
-  padding: 24px 38px 20px;
+  padding: 32px 38px 30px;
   margin-top: 20px;
   box-sizing: border-box;
 }
@@ -112,11 +112,11 @@
 }
 
 .tv90s-heading-description {
-  max-width: 820px;
-  margin: 7px 0 0;
+  max-width: 760px;
+  margin: 10px 0 0;
   color: #b8bec6;
-  font-size: 1rem;
-  line-height: 1.45;
+  font-size: 0.98rem;
+  line-height: 1.55;
 }
 
 .tv90s-section {
@@ -134,6 +134,10 @@
   margin: 0 0 20px;
   padding: 0;
   color: #ffffff;
+}
+
+#tv90s-channels{
+    padding-bottom:8px;
 }
 
 /* Galerías temáticas horizontales */
@@ -543,7 +547,8 @@
 }
 
 .tv90s-intro {
-  padding: 18px 16px 8px;
+  padding: 22px 16px 20px;
+  margin-top: 8px;
 }
 
 .tv90s-heading {
@@ -551,13 +556,14 @@
 }
 
 .tv90s-heading-text .showcase-heading {
-  font-size: 1.3rem;
+  font-size: 1.42rem;
+  line-height: 1.2;
 }
 
 .tv90s-heading-description {
-  margin-top: 4px;
-  font-size: 0.82rem;
-  line-height: 1.4;
+  margin-top: 7px;
+  font-size: 0.84rem;
+  line-height: 1.5;
 }
 
 #tv90s-featured {
@@ -698,18 +704,68 @@
 
   </section>
 
-  <!-- Telenovelas -->
+<!-- Grandes Éxitos de Telenovelas -->
 <section
   id="tv90s-telenovelas"
   class="tv90s-section tv90s-genre-showcase"
 >
   <h2 class="showcase-heading">
-    Telenovelas
+    Grandes Éxitos de Telenovelas
   </h2>
 
   <ul
     id="tv90s-telenovelas-slider"
     class="slider-h cs-hidden"
+    data-skip-auto="true"
+  ></ul>
+</section>
+
+<!-- Telenovelas de la Noche -->
+<section
+  id="tv90s-telenovelas-noche"
+  class="tv90s-section tv90s-vertical-showcase"
+>
+  <h2 class="latest-heading">
+    Telenovelas de la Noche
+  </h2>
+
+  <ul
+    id="tv90s-telenovelas-noche-slider"
+    class="tv90s-slider-v cs-hidden"
+    data-skip-auto="true"
+  ></ul>
+</section>
+
+
+<!-- Telenovelas de la Tarde 1989-1994 -->
+<section
+  id="tv90s-telenovelas-tarde-89-94"
+  class="tv90s-section tv90s-vertical-showcase"
+>
+  <h2 class="latest-heading">
+    Telenovelas de la Tarde (1989-1994)
+  </h2>
+
+  <ul
+    id="tv90s-telenovelas-tarde-89-94-slider"
+    class="tv90s-slider-v cs-hidden"
+    data-skip-auto="true"
+  ></ul>
+</section>
+
+
+<!-- Telenovelas de la Tarde 1995-1999 -->
+<section
+  id="tv90s-telenovelas-tarde-95-99"
+  class="tv90s-section tv90s-vertical-showcase"
+>
+  <h2 class="latest-heading">
+    Telenovelas de la Tarde (1995-1999)
+  </h2>
+
+  <ul
+    id="tv90s-telenovelas-tarde-95-99-slider"
+    class="tv90s-slider-v cs-hidden"
     data-skip-auto="true"
   ></ul>
 </section>

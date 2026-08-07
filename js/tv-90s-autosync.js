@@ -21,7 +21,7 @@ var CHANNEL_NAMES = [
   'Canal 7'
 ];
 
-var START_YEAR = 1990;
+var START_YEAR = 1989;
 var END_YEAR = 1999;
 
 var PLACEHOLDER_IMAGE =
@@ -34,6 +34,15 @@ var SELECTORS = {
   comediasSlider: '#tv90s-comedias-slider',
   juvenilesSlider: '#tv90s-juveniles-slider',
   dramasSlider: '#tv90s-dramas-slider',
+
+  telenovelasNocheSlider:
+    '#tv90s-telenovelas-noche-slider',
+
+  telenovelasTarde8994Slider:
+    '#tv90s-telenovelas-tarde-89-94-slider',
+
+  telenovelasTarde9599Slider:
+    '#tv90s-telenovelas-tarde-95-99-slider',
 
   yearFilters: '[data-tv90s-year]',
   categoryFilters: '[data-tv90s-category]',
@@ -382,6 +391,167 @@ var SELECTORS = {
     });
   }
 
+/* =========================================================
+   MOTOR EDITORIAL
+   ========================================================= */
+
+
+/*
+ * Convierte el campo horario en una lista numérica.
+ *
+ * Ejemplos:
+ * "18hs"            -> [18]
+ * "17:30hs"         -> [17.5]
+ * "18hs, 17hs"      -> [18, 17]
+ * "22hs, 21hs"      -> [22, 21]
+ * "-"               -> []
+ */
+function extractHours(horario) {
+
+  if (
+    horario === undefined ||
+    horario === null ||
+    String(horario).trim() === ''
+  ) {
+    return [];
+  }
+
+  var matches =
+    String(horario).match(
+      /\d{1,2}(?::\d{2})?/g
+    );
+
+  if (!matches) {
+    return [];
+  }
+
+  return matches
+    .map(function (value) {
+
+      var parts =
+        value.split(':');
+
+      var hour =
+        parseInt(parts[0], 10);
+
+      var minutes =
+        parts.length > 1
+          ? parseInt(parts[1], 10)
+          : 0;
+
+      if (
+        Number.isNaN(hour) ||
+        Number.isNaN(minutes)
+      ) {
+        return null;
+      }
+
+      return hour + (minutes / 60);
+
+    })
+    .filter(function (value) {
+      return value !== null;
+    });
+}
+
+
+/*
+ * Comprueba si al menos uno de los horarios
+ * de la producción se encuentra dentro del rango.
+ */
+function hasHourBetween(
+  horario,
+  fromHour,
+  toHour
+) {
+
+  return extractHours(horario)
+    .some(function (hour) {
+
+      return (
+        hour >= fromHour &&
+        hour <= toHour
+      );
+
+    });
+}
+
+
+/*
+ * Determina si una producción es una telenovela.
+ */
+function isTelenovela(item) {
+
+  return belongsToCategory(
+    item,
+    'telenovela'
+  );
+}
+
+
+/*
+ * Devuelve todas las telenovelas comprendidas
+ * entre dos años.
+ */
+function getTelenovelas(
+  productions,
+  fromYear,
+  toYear
+) {
+
+  if (!Array.isArray(productions)) {
+    return [];
+  }
+
+  return productions
+    .filter(function (item) {
+
+      var year = getYear(item);
+
+      return (
+        isTelenovela(item) &&
+        year !== null &&
+        year >= fromYear &&
+        year <= toYear
+      );
+
+    })
+    .sort(compareProductions);
+}
+
+
+/*
+ * Devuelve telenovelas según:
+ *
+ * - rango de años;
+ * - rango horario.
+ *
+ * Si una producción posee más de un horario,
+ * alcanza con que uno de ellos coincida.
+ */
+function getTelenovelasBySchedule(
+  productions,
+  fromYear,
+  toYear,
+  fromHour,
+  toHour
+) {
+
+  return getTelenovelas(
+    productions,
+    fromYear,
+    toYear
+  )
+    .filter(function (item) {
+
+      return hasHourBetween(
+        item.horario,
+        fromHour,
+        toHour
+      );
+
+    });
+}
 
   /* =========================================================
      IMÁGENES
@@ -512,6 +682,227 @@ function buildCard(item) {
 
     '</article>'
   ].join('');
+}
+
+/* =========================================================
+   TARJETAS VERTICALES EDITORIALES
+   ========================================================= */
+
+function buildVerticalSlide(item) {
+
+  var itemId =
+    String(item.id || '').trim();
+
+  var title =
+    String(
+      item.title || 'Sin título'
+    ).trim();
+
+  var year =
+    getYear(item);
+
+  var image =
+    getPosterImage(item);
+
+  var href =
+    'show.html?id=' +
+    encodeURIComponent(itemId);
+
+  var safeTitle =
+    escapeHtml(title);
+
+  var safeImage =
+    escapeHtml(image);
+
+  var safeHref =
+    escapeHtml(href);
+
+  var safeYear =
+    year !== null
+      ? escapeHtml(year)
+      : '';
+
+  return [
+    '<li class="item-f">',
+
+      '<article class="tv90s-card">',
+
+        '<a',
+          ' class="tv90s-card-link"',
+          ' href="', safeHref, '"',
+          ' aria-label="Ver ficha de ', safeTitle, '"',
+        '>',
+
+          '<div class="tv90s-card-image">',
+
+            '<img',
+              ' src="', safeImage, '"',
+              ' alt="', safeTitle, '"',
+              ' loading="lazy"',
+            '>',
+
+          '</div>',
+
+          '<div class="tv90s-card-text">',
+
+            '<strong class="tv90s-card-title">',
+              safeTitle,
+            '</strong>',
+
+            '<span class="tv90s-card-meta">',
+              safeYear,
+            '</span>',
+
+          '</div>',
+
+        '</a>',
+
+      '</article>',
+
+    '</li>'
+  ].join('');
+}
+
+function renderVerticalSlider(
+  selector,
+  items
+) {
+
+  var slider =
+    document.querySelector(selector);
+
+  if (!slider) {
+    return;
+  }
+
+  slider.innerHTML = items
+    .map(buildVerticalSlide)
+    .join('');
+
+  if (items.length === 0) {
+    slider.classList.remove('cs-hidden');
+    return;
+  }
+
+  if (
+    !initializedSliders[selector] &&
+    window.jQuery &&
+    window.jQuery.fn &&
+    window.jQuery.fn.lightSlider
+  ) {
+
+    window.jQuery(slider).lightSlider({
+      item: 5,
+      autoWidth: false,
+      slideMove: 1,
+      slideMargin: 18,
+      loop: false,
+      pager: false,
+      controls: true,
+      enableTouch: true,
+      enableDrag: true,
+      freeMove: false,
+
+      responsive: [
+        {
+          breakpoint: 1100,
+          settings: {
+            item: 3,
+            slideMove: 1,
+            slideMargin: 14
+          }
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            item: 2,
+            slideMove: 1,
+            slideMargin: 12
+          }
+        }
+      ]
+    });
+
+    window.jQuery(slider)
+      .removeClass('cs-hidden')
+      .addClass('slider-ready');
+
+    initializedSliders[selector] = true;
+
+  } else {
+
+    slider.classList.remove(
+      'cs-hidden'
+    );
+
+  }
+}
+
+/* =========================================================
+   GALERÍAS VERTICALES EDITORIALES
+   ========================================================= */
+
+function renderTelenovelaEditorialSliders(
+  productions
+) {
+
+  var noche =
+    getTelenovelasBySchedule(
+      productions,
+      1989,
+      1999,
+      19,
+      22.99
+    );
+
+  var tarde8994 =
+    getTelenovelasBySchedule(
+      productions,
+      1989,
+      1994,
+      13,
+      18.99
+    );
+
+  var tarde9599 =
+    getTelenovelasBySchedule(
+      productions,
+      1995,
+      1999,
+      13,
+      18.99
+    );
+
+  console.log(
+    'Telenovelas de la Noche:',
+    noche.length
+  );
+
+  console.log(
+    'Telenovelas de la Tarde (1989-1994):',
+    tarde8994.length
+  );
+
+  console.log(
+    'Telenovelas de la Tarde (1995-1999):',
+    tarde9599.length
+  );
+
+  renderVerticalSlider(
+    SELECTORS.telenovelasNocheSlider,
+    noche
+  );
+
+  renderVerticalSlider(
+    SELECTORS.telenovelasTarde8994Slider,
+    tarde8994
+  );
+
+  renderVerticalSlider(
+    SELECTORS.telenovelasTarde9599Slider,
+    tarde9599
+  );
+
 }
   /* =========================================================
      GALERÍAS HORIZONTALES POR GÉNERO
@@ -1032,6 +1423,10 @@ function renderCatalogue() {
   renderAllHorizontalSliders(
     productions
   );
+
+renderTelenovelaEditorialSliders(
+  productions
+);
 
   updateHeading(
     productions.length
