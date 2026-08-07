@@ -44,6 +44,15 @@ var SELECTORS = {
   telenovelasTarde9599Slider:
     '#tv90s-telenovelas-tarde-95-99-slider',
 
+juvenilesDiariasSlider:
+  '#tv90s-juveniles-diarias-slider',
+
+juvenilesSemanalesSlider:
+  '#tv90s-juveniles-semanales-slider',
+
+infantilesSlider:
+  '#tv90s-infantiles-slider',
+
   yearFilters: '[data-tv90s-year]',
   categoryFilters: '[data-tv90s-category]',
   channelFilters: '[data-tv90s-channel]',
@@ -379,7 +388,11 @@ var SELECTORS = {
         'juvenil',
         'infanto juvenil',
         'infantojuvenil'
-      ]
+      ],
+
+      infantil: [
+  'infantil'
+]
     };
 
     var values = aliases[category] || [category];
@@ -481,10 +494,60 @@ function hasHourBetween(
  * Determina si una producción es una telenovela.
  */
 function isTelenovela(item) {
-
   return belongsToCategory(
     item,
     'telenovela'
+  );
+}
+
+
+function isJuvenil(item) {
+  return belongsToCategory(
+    item,
+    'juvenil'
+  );
+}
+
+
+function isInfantil(item) {
+  return belongsToCategory(
+    item,
+    'infantil'
+  );
+}
+
+
+function getEmissionType(item) {
+  return normalizeText(
+    item &&
+    (
+      item.tipo_emision ||
+      item.emission_type ||
+      ''
+    )
+  );
+}
+
+
+function isDailyFiction(item) {
+  var tipo =
+    getEmissionType(item);
+
+  return (
+    tipo.indexOf('tira diaria') !== -1 ||
+    tipo.indexOf('ficcion diaria') !== -1 ||
+    tipo.indexOf('diaria') !== -1
+  );
+}
+
+
+function isWeeklyFiction(item) {
+  var tipo =
+    getEmissionType(item);
+
+  return (
+    tipo.indexOf('semanal') !== -1 ||
+    tipo.indexOf('ficcion semanal') !== -1
   );
 }
 
@@ -551,6 +614,65 @@ function getTelenovelasBySchedule(
       );
 
     });
+}
+
+function getJuvenilesDiarias(
+  productions
+) {
+
+  if (!Array.isArray(productions)) {
+    return [];
+  }
+
+  return productions
+    .filter(function (item) {
+
+      return (
+        isJuvenil(item) &&
+        isDailyFiction(item)
+      );
+
+    })
+    .sort(compareProductions);
+}
+
+
+function getJuvenilesSemanales(
+  productions
+) {
+
+  if (!Array.isArray(productions)) {
+    return [];
+  }
+
+  return productions
+    .filter(function (item) {
+
+      return (
+        isJuvenil(item) &&
+        isWeeklyFiction(item)
+      );
+
+    })
+    .sort(compareProductions);
+}
+
+
+function getInfantiles(
+  productions
+) {
+
+  if (!Array.isArray(productions)) {
+    return [];
+  }
+
+  return productions
+    .filter(function (item) {
+
+      return isInfantil(item);
+
+    })
+    .sort(compareProductions);
 }
 
   /* =========================================================
@@ -902,7 +1024,57 @@ function renderTelenovelaEditorialSliders(
     SELECTORS.telenovelasTarde9599Slider,
     tarde9599
   );
+}
 
+
+function renderJuvenilEditorialSliders(
+  productions
+) {
+
+  var juvenilesDiarias =
+    getJuvenilesDiarias(
+      productions
+    );
+
+  var juvenilesSemanales =
+    getJuvenilesSemanales(
+      productions
+    );
+
+  var infantiles =
+    getInfantiles(
+      productions
+    );
+
+  console.log(
+    'Juveniles - Tira Diaria:',
+    juvenilesDiarias.length
+  );
+
+  console.log(
+    'Juveniles - Semanales:',
+    juvenilesSemanales.length
+  );
+
+  console.log(
+    'Infantiles:',
+    infantiles.length
+  );
+
+  renderVerticalSlider(
+    SELECTORS.juvenilesDiariasSlider,
+    juvenilesDiarias
+  );
+
+  renderVerticalSlider(
+    SELECTORS.juvenilesSemanalesSlider,
+    juvenilesSemanales
+  );
+
+  renderVerticalSlider(
+    SELECTORS.infantilesSlider,
+    infantiles
+  );
 }
   /* =========================================================
      GALERÍAS HORIZONTALES POR GÉNERO
@@ -1113,15 +1285,16 @@ function renderAllHorizontalSliders(productions) {
     productions
   );
 
-  renderGenreSlider(
-    {
-      selector: SELECTORS.juvenilesSlider,
-      categories: [
-        'juvenil'
-      ]
-    },
-    productions
-  );
+renderGenreSlider(
+  {
+    selector: SELECTORS.juvenilesSlider,
+    categories: [
+      'juvenil',
+      'infantil'
+    ]
+  },
+  productions
+);
 
   renderGenreSlider(
     {
@@ -1425,6 +1598,10 @@ function renderCatalogue() {
   );
 
 renderTelenovelaEditorialSliders(
+  productions
+);
+
+renderJuvenilEditorialSliders(
   productions
 );
 
