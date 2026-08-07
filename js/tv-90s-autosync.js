@@ -40,6 +40,12 @@ comediasDiariasSlider:
   juvenilesSlider: '#tv90s-juveniles-slider',
   dramasSlider: '#tv90s-dramas-slider',
 
+dramasVerticalSlider:
+  '#tv90s-dramas-vertical-slider',
+
+thrillersSlider:
+  '#tv90s-thrillers-slider',
+
   telenovelasNocheSlider:
     '#tv90s-telenovelas-noche-slider',
 
@@ -561,6 +567,53 @@ function isComedia(item) {
     item,
     'comedia'
   );
+}
+
+function isDrama(item) {
+  return belongsToCategory(
+    item,
+    'drama'
+  );
+}
+
+
+function isThriller(item) {
+  return belongsToCategory(
+    item,
+    'thriller'
+  );
+}
+
+
+function getDramas(
+  productions
+) {
+
+  if (!Array.isArray(productions)) {
+    return [];
+  }
+
+  return productions
+    .filter(function (item) {
+      return isDrama(item);
+    })
+    .sort(compareProductions);
+}
+
+
+function getThrillers(
+  productions
+) {
+
+  if (!Array.isArray(productions)) {
+    return [];
+  }
+
+  return productions
+    .filter(function (item) {
+      return isThriller(item);
+    })
+    .sort(compareProductions);
 }
 
 
@@ -1165,6 +1218,41 @@ function renderComediaEditorialSliders(
   );
 }
 
+function renderDramaThrillerEditorialSliders(
+  productions
+) {
+
+  var dramas =
+    getDramas(
+      productions
+    );
+
+  var thrillers =
+    getThrillers(
+      productions
+    );
+
+  console.log(
+    'Dramas:',
+    dramas.length
+  );
+
+  console.log(
+    'Thrillers:',
+    thrillers.length
+  );
+
+  renderVerticalSlider(
+    SELECTORS.dramasVerticalSlider,
+    dramas
+  );
+
+  renderVerticalSlider(
+    SELECTORS.thrillersSlider,
+    thrillers
+  );
+}
+
   /* =========================================================
      GALERÍAS HORIZONTALES POR GÉNERO
      ========================================================= */
@@ -1691,6 +1779,10 @@ renderTelenovelaEditorialSliders(
 );
 
 renderComediaEditorialSliders(
+  productions
+);
+
+renderDramaThrillerEditorialSliders(
   productions
 );
 
