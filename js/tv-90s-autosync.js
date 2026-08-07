@@ -1007,10 +1007,17 @@ function renderVerticalSlider(
     .map(buildVerticalSlide)
     .join('');
 
-  if (items.length === 0) {
-    slider.classList.remove('cs-hidden');
-    return;
-  }
+if (items.length === 0) {
+
+  slider.classList.remove('cs-hidden');
+
+  updateVerticalSectionVisibility(
+    selector,
+    0
+  );
+
+  return;
+}
 
   if (
     !initializedSliders[selector] &&
@@ -1064,6 +1071,32 @@ function renderVerticalSlider(
     );
 
   }
+  updateVerticalSectionVisibility(
+  selector,
+  items.length
+);
+}
+
+function updateVerticalSectionVisibility(
+  sliderSelector,
+  itemCount
+) {
+
+  var slider =
+    document.querySelector(sliderSelector);
+
+  if (!slider) {
+    return;
+  }
+
+  var section =
+    slider.closest('.tv90s-vertical-showcase');
+
+  if (!section) {
+    return;
+  }
+
+  section.hidden = itemCount === 0;
 }
 
 /* =========================================================
@@ -1101,20 +1134,6 @@ function renderTelenovelaEditorialSliders(
       18.99
     );
 
-  console.log(
-    'Telenovelas de la Noche:',
-    noche.length
-  );
-
-  console.log(
-    'Telenovelas de la Tarde (1989-1994):',
-    tarde8994.length
-  );
-
-  console.log(
-    'Telenovelas de la Tarde (1995-1999):',
-    tarde9599.length
-  );
 
   renderVerticalSlider(
     SELECTORS.telenovelasNocheSlider,
@@ -1152,20 +1171,6 @@ function renderJuvenilEditorialSliders(
       productions
     );
 
-  console.log(
-    'Juveniles - Tira Diaria:',
-    juvenilesDiarias.length
-  );
-
-  console.log(
-    'Juveniles - Semanales:',
-    juvenilesSemanales.length
-  );
-
-  console.log(
-    'Infantiles:',
-    infantiles.length
-  );
 
   renderVerticalSlider(
     SELECTORS.juvenilesDiariasSlider,
@@ -1197,15 +1202,6 @@ function renderComediaEditorialSliders(
       productions
     );
 
-  console.log(
-    'Comedias Semanales:',
-    comediasSemanales.length
-  );
-
-  console.log(
-    'Comedias - Tira Diaria:',
-    comediasDiarias.length
-  );
 
   renderVerticalSlider(
     SELECTORS.comediasSemanalesSlider,
@@ -1232,15 +1228,6 @@ function renderDramaThrillerEditorialSliders(
       productions
     );
 
-  console.log(
-    'Dramas:',
-    dramas.length
-  );
-
-  console.log(
-    'Thrillers:',
-    thrillers.length
-  );
 
   renderVerticalSlider(
     SELECTORS.dramasVerticalSlider,
@@ -1317,10 +1304,10 @@ function renderHorizontalSlider(selector, items) {
     .map(buildHorizontalSlide)
     .join('');
 
-  if (items.length === 0) {
-    slider.classList.remove('cs-hidden');
-    return;
-  }
+if (items.length === 0) {
+  slider.classList.remove('cs-hidden');
+  return;
+}
 
   if (
     !initializedSliders[selector] &&
@@ -2113,12 +2100,6 @@ function bindChannelFilters() {
   allProductions = items
     .filter(isValidProduction)
     .sort(compareProductions);
-
-  console.log(
-    'TV 90s: ' +
-    allProductions.length +
-    ' producciones cargadas.'
-  );
 
 renderCatalogue();
 

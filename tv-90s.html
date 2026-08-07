@@ -207,6 +207,38 @@
   color: #ffffff;
 }
 
+/* ==================================================
+   ANIMACIÓN SUAVE DE SECCIONES TV 90s
+================================================== */
+
+@keyframes tv90sSectionFade {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.tv90s-genre-showcase,
+.tv90s-vertical-showcase {
+  animation:
+    tv90sSectionFade
+    .35s
+    ease-out
+    both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+  .tv90s-genre-showcase,
+  .tv90s-vertical-showcase {
+    animation: none;
+  }
+
+}
+
 /* Canales */
 
 .tv90s-channel-grid {
