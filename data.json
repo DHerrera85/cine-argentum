@@ -6108,12 +6108,12 @@
       ],
       "synopsis": "Rocío Flores, una profesora de sociología, se hace pasar por paciente para estudiar el narcisismo de Máximo Rey, un exitoso cirujano plástico. Lo que comienza como un experimento académico se complica cuando ambos terminan enamorándose.",
       "channel": "Cine",
-      "image": "images/verticals/yo-narciso-poster-280x420.png",
+      "image": "images/verticals/yo-narciso-poster-280x420.webp",
       "orientation": "vertical",
       "viewers": "-",
       "producer": "Buena Vista International",
       "director": "Adrián Suar",
-      "release_date": "01/08/2026",
+      "release_date": "13/08/2026",
       "subtitle": "Romance"
     },
     {
@@ -6194,7 +6194,7 @@
     },
     {
       "id": "V313",
-      "title": "Nadie Dice Nada",
+      "title": "Somos Así: La Serie de Nadie Dice Nada",
       "year": "2026",
       "channel": "Disney+",
       "platform": "Disney+",
@@ -6207,12 +6207,12 @@
         "Martín Garabal"
       ],
       "orientation": "vertical",
-      "image": "images/verticals/nadie-dice-nada-2026-poster280x420.png",
+      "image": "images/verticals/2026-somos-asi-nadie-dice-nada-disney-poster280x420.webp",
       "subtitle": "Comedia",
       "capitulos": 8,
       "sinopsis": "Próximamente",
       "producer": "Luzu",
-      "release_date": "31/12/2026",
+      "release_date": "01/11/2026",
       "tipo_emision": "Serie"
     },
     {
@@ -8090,7 +8090,7 @@
   "image": "images/verticals/1995-holapapi-canal13-poster280x420.png",
   "horizontal_image": "",
   "subtitle": "",
-  "horario": "21:00hs",
+  "horario": "Martes 21:00hs",
   "capitulos": 52,
   "fecha_estreno": "1995-04-04",
   "tipo_emision": "Semanal",
@@ -8845,6 +8845,118 @@
   "sinopsis": "Agustín Casanave, gerente de la empresa Alimentos del Sur, y Soledad Vargas, su secretaria, protagonizan una historia de amor marcada por las luchas de poder, la ambición y la venganza.",
   "remakes": [],
   "productora": "RAI"
+},
+{
+  "id": "T0152",
+  "title": "Detective de Señoras",
+  "year": "1990",
+  "channel": "Canal 13",
+  "genre": "Comedia",
+  "actors": [
+    "Fernando Lúpiz",
+    "César Pierry",
+    "Carolina Papaleo",
+    "Rolo Puente",
+    "Stella Maris Lanzani"
+  ],
+  "orientation": "vertical",
+  "image": "images/verticals/1990-detective-senoras-canal13-280x420.webp",
+  "horizontal_image": "images/horizontals-1024x576/1990-detective-senoras-canal13-1024x576.webp",
+  "subtitle": "",
+  "horario": "Martes 22hs",
+  "capitulos": "",
+  "fecha_estreno": "1990-04-03",
+  "sinopsis": "Lucas, un tímido y responsable contador, ve alterada su tranquila vida cuando Miguel, un seductor expolicía convertido en detective privado, lo arrastra a resolver toda clase de casos criminales. La llegada de Cristiani y el seguimiento de la misteriosa Patricia Zambrano los convierte inesperadamente en una peculiar dupla de detectives, cuyas investigaciones estarán marcadas por el peligro, el humor, los enredos y sus constantes encuentros con mujeres.",
+  "remakes": [],
+  "productora": "Hugo Moser",
+  "tipo_emision": "Semanal",
+  "seasons": 2,
+  "years": [
+    1990,
+    1991
+  ]
+},
+{
+  "id": "T0153",
+  "title": "Stress Internacional",
+  "year": "1991",
+  "channel": "Canal 13",
+  "genre": "Comedia",
+  "actors": [
+    "Dorys del Valle",
+    "Emilio Disi",
+    "Adrián Suar",
+    "Gladys Florimonte",
+    "Ana María Campoy",
+    "Juan Carlos Thorry",
+    "Edgardo Mesa",
+    "Juan Carlos Mesa"
+  ],
+  "orientation": "vertical",
+  "image": "images/verticals/1991-stress-internacional-canal13-280x420.webp",
+  "horizontal_image": "images/horizontals-1024x576/1991-stress-internacional-canal13-1024x576.webp",
+  "subtitle": "",
+  "horario": "Martes 21hs",
+  "capitulos": "",
+  "fecha_estreno": "1991-04-01",
+  "sinopsis": "Emilio y su mujer atienden una descontrolada clínica anti-stress de la que, irónicamente, los pacientes terminan saliendo peor.",
+  "remakes": [],
+  "productora": "Juan Carlos Mesa",
+  "tipo_emision": "Semanal",
+  "seasons": 1
+},
+{
+  "id": "T0154",
+  "title": "De Poeta y de Loco",
+  "year": "1996",
+  "channel": "Canal 13",
+  "genre": "Drama",
+  "actors": [
+    "Oscar Martínez",
+    "Mercedes Morán",
+    "Julio Chávez",
+    "Belén Blanco",
+    "Soledad Villamil",
+    "Inés Estévez"
+  ],
+  "orientation": "vertical",
+  "image": "images/verticals/1996-depoetaydeloco-canal13-poster280x420.webp",
+  "horizontal_image": "",
+  "subtitle": "",
+  "horario": "Martes 22hs",
+  "capitulos": 37,
+  "fecha_estreno": "1996-04-02",
+  "sinopsis": "Cuenta la historia de amor entre un profesor y su alumna, quienes se conocen y comienzan una relación en un marco atravesado por la literatura y los más bellos poemas de amor.",
+  "remakes": [],
+  "productora": "Aries Cinematográfica Argentina",
+  "tipo_emision": "Semanal",
+  "seasons": 1
+},
+{
+  "id": "T0155",
+  "title": "Sueltos",
+  "year": "1996",
+  "channel": "Canal 13",
+  "genre": "Juvenil",
+  "actors": [
+    "Pablo Rago",
+    "Florencia Peña",
+    "Gloria Carrá",
+    "Diego Ramos",
+    "Pablo Novak"
+  ],
+  "orientation": "vertical",
+  "image": "images/verticals/1996-sueltos-canal13-poster280x420.webp",
+  "horizontal_image": "",
+  "subtitle": "",
+  "horario": "Miércoles 21hs, Viernes 21hs",
+  "capitulos": "",
+  "fecha_estreno": "1996-04-03",
+  "sinopsis": "-",
+  "remakes": [],
+  "productora": "-",
+  "tipo_emision": "Semanal",
+  "seasons": 1
 },
 {
   "id": "T0046",
@@ -15533,7 +15645,7 @@
     {
       "id": "V204",
       "title": "Coppola, el Representante",
-      "year": "2027",
+      "year": "2026",
       "channel": "Disney+",
       "genre": "Drama",
       "actors": [
@@ -15543,7 +15655,8 @@
         "Agustín Sullivan"
       ],
       "orientation": "vertical",
-      "image": "images/verticals/2027-coppola-elrepresentante-poster280x420.png",
+      "release_date": "01/10/2026",
+      "image": "images/verticals/2026-coppola-elrepresentante-poster280x420.png",
       "subtitle": "Drama"
     },
     {
