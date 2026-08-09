@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -35,1098 +36,1010 @@
   <meta name="msapplication-TileImage" content="images/fav_icon.png" />
 
   <!-- Font Awesome (CSS) -->
-  <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-        referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    referrerpolicy="no-referrer" />
 
   <!-- Tipografía base segura + hamburguesa -->
   <style>
     body {
-  font-family: Poppins, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  padding-top: 76px;
-}
-    img{ height:auto; }
+      font-family: Poppins, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      padding-top: 76px;
+    }
 
-    .menu-btn{
+    img {
+      height: auto;
+    }
+
+    .menu-btn {
       position: absolute !important;
-      width: 1px; height: 1px;
-      padding: 0; margin: -1px;
-      overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0 0 0 0);
+      white-space: nowrap;
       border: 0;
     }
-    .menu-icon{
-      display: inline-flex; align-items: center; justify-content: center;
-      width: 48px; height: 48px; cursor: pointer; user-select: none;
+
+    .menu-icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 48px;
+      height: 48px;
+      cursor: pointer;
+      user-select: none;
     }
-    .nav-icon{
-      position: relative; width: 26px; height: 2px; background: #555; display: inline-block;
+
+    .nav-icon {
+      position: relative;
+      width: 26px;
+      height: 2px;
+      background: #555;
+      display: inline-block;
       transition: transform .25s ease, background .25s ease;
     }
-    .nav-icon::before, .nav-icon::after{
-      content: ""; position: absolute; left: 0; width: 26px; height: 2px; background: #555;
+
+    .nav-icon::before,
+    .nav-icon::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      width: 26px;
+      height: 2px;
+      background: #555;
       transition: transform .25s ease, top .25s ease, opacity .25s ease;
     }
-    .nav-icon::before{ top: -8px; }
-    .nav-icon::after{ top: 8px; }
-    .menu-btn:checked + .menu-icon .nav-icon{ background: transparent; }
-    .menu-btn:checked + .menu-icon .nav-icon::before{ transform: rotate(45deg); top: 0; }
-    .menu-btn:checked + .menu-icon .nav-icon::after{ transform: rotate(-45deg); top: 0; }
 
-    @media (min-width: 768px){ .menu-icon{ display:none; } }
+    .nav-icon::before {
+      top: -8px;
+    }
+
+    .nav-icon::after {
+      top: 8px;
+    }
+
+    .menu-btn:checked+.menu-icon .nav-icon {
+      background: transparent;
+    }
+
+    .menu-btn:checked+.menu-icon .nav-icon::before {
+      transform: rotate(45deg);
+      top: 0;
+    }
+
+    .menu-btn:checked+.menu-icon .nav-icon::after {
+      transform: rotate(-45deg);
+      top: 0;
+    }
+
+    @media (min-width: 768px) {
+      .menu-icon {
+        display: none;
+      }
+    }
 
     /* ==================================================
    TV ARGENTINA - DÉCADA DE 1990
 ================================================== */
 
-.tv90s-page {
-  width: 100%;
-  padding: 40px 0 20px;
-  overflow: hidden;
-  box-sizing: border-box;
-  background: #141a21;
-  color: #ffffff;
-}
+    .tv90s-page {
+      width: 100%;
+      padding: 40px 0 20px;
+      overflow: hidden;
+      box-sizing: border-box;
+      background: #141a21;
+      color: #ffffff;
+    }
 
-.tv90s-intro {
-  width: 100%;
-  padding: 32px 38px 30px;
-  margin-top: 20px;
-  box-sizing: border-box;
-}
+    .tv90s-intro {
+      width: 100%;
+      padding: 32px 38px 30px;
+      margin-top: 20px;
+      box-sizing: border-box;
+    }
 
-.tv90s-heading {
-  display: block;
-}
+    .tv90s-heading {
+      display: block;
+    }
 
-.tv90s-heading-text {
-  min-width: 0;
-}
+    .tv90s-heading-text {
+      min-width: 0;
+    }
 
-.tv90s-heading-text .showcase-heading {
-  margin: 0;
-  padding: 0;
-  color: #ffffff;
-  font-size: clamp(1.65rem, 2.6vw, 2.35rem);
-  line-height: 1.12;
-  text-transform: none;
-}
+    .tv90s-heading-text .showcase-heading {
+      margin: 0;
+      padding: 0;
+      color: #ffffff;
+      font-size: clamp(1.65rem, 2.6vw, 2.35rem);
+      line-height: 1.12;
+      text-transform: none;
+    }
 
-.tv90s-heading-description {
-  max-width: 760px;
-  margin: 10px 0 0;
-  color: #b8bec6;
-  font-size: 0.98rem;
-  line-height: 1.55;
-}
+    .tv90s-heading-description {
+      max-width: 760px;
+      margin: 10px 0 0;
+      color: #b8bec6;
+      font-size: 0.98rem;
+      line-height: 1.55;
+    }
 
-.tv90s-section {
-  width: 100%;
-  padding: 24px 32px;
-  box-sizing: border-box;
-}
+    .tv90s-section {
+      width: 100%;
+      padding: 24px 32px;
+      box-sizing: border-box;
+    }
 
-#tv90s-featured {
-  padding-top: 16px;
-}
+    #tv90s-featured {
+      padding-top: 16px;
+    }
 
-.tv90s-section > .showcase-heading,
-.tv90s-section > .latest-heading {
-  margin: 0 0 20px;
-  padding: 0;
-  color: #ffffff;
-}
+    .tv90s-section>.showcase-heading,
+    .tv90s-section>.latest-heading {
+      margin: 0 0 20px;
+      padding: 0;
+      color: #ffffff;
+    }
 
-#tv90s-channels{
-    padding-bottom:8px;
-}
+    #tv90s-channels {
+      padding-bottom: 8px;
+    }
 
-/* Galerías temáticas horizontales */
+    /* Galerías temáticas horizontales */
 
-.tv90s-genre-showcase {
-  overflow: hidden;
+    .tv90s-genre-showcase {
+      overflow: hidden;
 
-  margin: 10px 18px 18px;
-  width: calc(100% - 36px);
+      margin: 10px 18px 18px;
+      width: calc(100% - 36px);
 
-  border: 1px solid rgba(255, 255, 255, 0.045);
-  border-radius: 16px;
+      border: 1px solid rgba(255, 255, 255, 0.045);
+      border-radius: 16px;
 
-  background:
-    linear-gradient(
-      180deg,
-      rgba(255, 255, 255, 0.025) 0%,
-      rgba(255, 255, 255, 0.012) 100%
-    );
+      background:
+        linear-gradient(180deg,
+          rgba(255, 255, 255, 0.025) 0%,
+          rgba(255, 255, 255, 0.012) 100%);
 
-  box-shadow:
-    0 8px 26px rgba(0, 0, 0, 0.10),
-    inset 0 1px 0 rgba(255, 255, 255, 0.025);
-}
+      box-shadow:
+        0 8px 26px rgba(0, 0, 0, 0.10),
+        inset 0 1px 0 rgba(255, 255, 255, 0.025);
+    }
 
-.tv90s-genre-showcase .slider-h {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
+    .tv90s-genre-showcase .slider-h {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
 
-/*
+    /*
  * Respaldo visual mientras LightSlider carga
  * o en caso de que no pueda inicializarse.
  */
-.tv90s-genre-showcase .slider-h:not(.lightSlider) {
-  display: grid;
-  grid-auto-flow: column;
-  grid-auto-columns: calc((100% - 40px) / 3);
-  gap: 20px;
+    .tv90s-genre-showcase .slider-h:not(.lightSlider) {
+      display: grid;
+      grid-auto-flow: column;
+      grid-auto-columns: calc((100% - 40px) / 3);
+      gap: 20px;
 
-  overflow-x: auto;
-  overflow-y: hidden;
+      overflow-x: auto;
+      overflow-y: hidden;
 
-  scroll-snap-type: x mandatory;
-  scrollbar-width: thin;
-}
+      scroll-snap-type: x mandatory;
+      scrollbar-width: thin;
+    }
 
-.tv90s-genre-showcase .slider-h:not(.lightSlider) > li {
-  min-width: 0;
-  scroll-snap-align: start;
-}
+    .tv90s-genre-showcase .slider-h:not(.lightSlider)>li {
+      min-width: 0;
+      scroll-snap-align: start;
+    }
 
-.tv90s-genre-showcase .slider-h a {
-  display: block;
-  color: inherit;
-  text-decoration: none;
-}
+    .tv90s-genre-showcase .slider-h a {
+      display: block;
+      color: inherit;
+      text-decoration: none;
+    }
 
-.tv90s-genre-showcase .showcase-box {
-  width: 100%;
-  aspect-ratio: 16 / 9;
-  overflow: hidden;
-  border-radius: 12px;
-  background: #202832;
-}
+    .tv90s-genre-showcase .showcase-box {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      overflow: hidden;
+      border-radius: 12px;
+      background: #202832;
+    }
 
-.tv90s-genre-showcase .showcase-box img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: inherit;
-}
+    .tv90s-genre-showcase .showcase-box img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: inherit;
+    }
 
-.tv90s-genre-showcase .latest-b-text {
-  text-align: center;
-  background: transparent !important;
-}
+    .tv90s-genre-showcase .latest-b-text {
+      text-align: center;
+      background: transparent !important;
+    }
 
-.tv90s-genre-showcase .latest-b-text strong {
-  display: block;
-  margin-top: 12px;
-  color: #ffffff;
-}
+    .tv90s-genre-showcase .latest-b-text strong {
+      display: block;
+      margin-top: 12px;
+      color: #ffffff;
+    }
 
-/* ==================================================
+    /* ==================================================
    ANIMACIÓN SUAVE DE SECCIONES TV 90s
 ================================================== */
 
-@keyframes tv90sSectionFade {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
-}
-
-.tv90s-genre-showcase,
-.tv90s-vertical-showcase {
-  animation:
-    tv90sSectionFade
-    .35s
-    ease-out
-    both;
-}
-
-@media (prefers-reduced-motion: reduce) {
-
-  .tv90s-genre-showcase,
-  .tv90s-vertical-showcase {
-    animation: none;
-  }
-
-}
-
-/* Canales */
-
-.tv90s-channel-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 20px;
-}
-
-.tv90s-channel-card {
-  min-width: 0;
-  padding: 0 0 16px;
-  border: 1px solid #303b47;
-  border-radius: 16px;
-
-  background: #1b232d;
-  color: #ffffff;
-
-  font-family: inherit;
-  text-align: center;
-  text-decoration: none;
-  cursor: pointer;
-  overflow: hidden;
-
-  transition:
-    transform 0.2s ease,
-    border-color 0.2s ease,
-    background-color 0.2s ease;
-}
-
-.tv90s-channel-card:hover {
-  border-color: #7d91a7;
-  transform: translateY(-3px);
-}
-
-.tv90s-channel-card.active {
-  border-color: #ffffff;
-  background: #263341;
-}
-
-.tv90s-channel-logo {
-  height: 145px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  margin-bottom: 15px;
-  padding: 20px;
-  box-sizing: border-box;
-}
-
-.tv90s-channel-logo img {
-  display: block;
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: contain;
-}
-
-.tv90s-channel-card strong {
-  display: block;
-  padding: 0 10px;
-  color: #ffffff;
-  font-size: 0.98rem;
-  line-height: 1.3;
-}
-
-.tv90s-channel-card span {
-  display: block;
-  margin-top: 5px;
-  padding: 0 10px;
-  color: #9ea6b0;
-  font-size: 0.82rem;
-}
-
-.telefe-channel {
-  background:
-    linear-gradient(
-      135deg,
-      #0f4c5c 0%,
-      #0b2e3a 100%
-    );
-}
-
-.canal13-channel {
-  background:
-    linear-gradient(
-      135deg,
-      #1e3a8a 0%,
-      #0f172a 100%
-    );
-}
-
-.canal9-channel {
-  background:
-    linear-gradient(
-      135deg,
-      #e53935 0%,
-      #b71c1c 100%
-    );
-}
-
-.america-channel {
-  background:
-    linear-gradient(
-      135deg,
-      #ff4081 0%,
-      #c51162 100%
-    );
-}
-
-.atc-channel {
-  background:
-    linear-gradient(
-      135deg,
-      #2196f3 0%,
-      #1565c0 100%
-    );
-}
-
-.catalogue-channel {
-  background:
-    linear-gradient(
-      135deg,
-      #4b5563 0%,
-      #1f2937 100%
-    );
-}
-
-.catalogue-channel i {
-  color: #ffffff;
-  font-size: 40px;
-}
-
-
-/* Filtros */
-
-.tv90s-year-filter,
-.tv90s-category-filter {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
-.filter-carousel {
-  position: relative;
-  width: 100%;
-}
-
-.filter-scroll {
-  scroll-behavior: smooth;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
-}
-
-.filter-scroll::-webkit-scrollbar {
-  display: none;
-}
-
-.filter-arrow {
-  display: none;
-  position: absolute;
-  top: 50%;
-  z-index: 5;
-
-  width: 38px;
-  height: 38px;
-  padding: 0;
-  border: 0;
-
-  background: transparent;
-  box-shadow: none;
-  cursor: pointer;
-
-  transform: translateY(-50%);
-}
-
-.filter-arrow-prev {
-  left: 2px;
-}
-
-.filter-arrow-next {
-  right: 2px;
-}
-
-.filter-arrow:disabled {
-  opacity: 0;
-  pointer-events: none;
-}
-
-.filter-arrow i {
-  color: rgba(255, 255, 255, 0.38);
-  font-size: 18px;
-}
-
-.year-button,
-.category-button {
-  min-width: 70px;
-  padding: 10px 16px;
-
-  border: 1px solid #3d4752;
-  border-radius: 999px;
-
-  background: #202832;
-  color: #ffffff;
-
-  font-family: inherit;
-  font-size: 0.9rem;
-  cursor: pointer;
-
-  transition:
-    background-color 0.2s ease,
-    border-color 0.2s ease,
-    transform 0.2s ease;
-}
-
-.year-button:hover,
-.category-button:hover {
-  border-color: #7ca8d4;
-  transform: translateY(-1px);
-}
-
-.year-button.active,
-.category-button.active {
-  border-color: #7ca8d4;
-  background: #7ca8d4;
-  color: #101820;
-  font-weight: 700;
-}
-
-
-/* Catálogo */
-
-.catalogue-header {
-  margin-bottom: 22px;
-}
-
-.catalogue-header .latest-heading {
-  margin: 0;
-}
-
-.catalogue-header p {
-  margin: 8px 0 0;
-  color: #aeb6c0;
-  line-height: 1.5;
-}
-
-.tv90s-grid {
-  width: 100%;
-  min-height: 100px;
-
-  display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
-  gap: 28px 22px;
-}
-
-.tv90s-card {
-  min-width: 0;
-}
-
-.tv90s-card-link {
-  text-decoration: none;
-}
-
-.tv90s-card-image {
-  width: 100%;
-  aspect-ratio: 2 / 3;
-  overflow: hidden;
-  border-radius: 12px;
-  background: #202832;
-}
-
-.tv90s-card-image img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: inherit;
-}
-
-.tv90s-card-text {
-  padding-top: 10px;
-  text-align: center;
-}
-
-.tv90s-card-text strong {
-  display: block;
-  color: #ffffff;
-  font-size: 0.95rem;
-  line-height: 1.3;
-  font-weight: 600;
-}
-
-.tv90s-card-meta {
-  display: block;
-  margin-top: 4px;
-  color: #aeb6c0;
-  font-size: 0.86rem;
-}
-
-.tv90s-card-genre {
-  display: block;
-  margin-top: 3px;
-  color: #7f8995;
-  font-size: 0.82rem;
-}
-
-
-/* Tablet */
-
-@media (min-width: 768px) and (max-width: 1100px) {
-
-  .tv90s-channel-grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
-  .tv90s-grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
-}
-
-
-/* Móvil */
-
-@media (max-width: 767px) {
-
-.tv90s-genre-showcase .slider-h:not(.lightSlider) {
-  grid-auto-columns: 88%;
-  gap: 12px;
-}
-
-.tv90s-genre-showcase {
-  margin: 8px 10px 14px;
-  width: calc(100% - 20px);
-  border-radius: 14px;
-}
-
-  body {
-    padding-top: 62px;
-  }
-
-.tv90s-page {
-  padding-top: 12px;
-}
-
-.tv90s-intro {
-  padding: 22px 16px 20px;
-  margin-top: 8px;
-}
-
-.tv90s-heading {
-  display: block;
-}
-
-.tv90s-heading-text .showcase-heading {
-  font-size: 1.42rem;
-  line-height: 1.2;
-}
-
-.tv90s-heading-description {
-  margin-top: 7px;
-  font-size: 0.84rem;
-  line-height: 1.5;
-}
-
-#tv90s-featured {
-  padding-top: 12px;
-}
-
-  .tv90s-section {
-    padding: 20px 16px;
-  }
-
-.tv90s-channel-grid {
-  display: grid;
-  grid-auto-flow: column;
-  grid-auto-columns: 76%;
-  grid-template-columns: none;
-  gap: 14px;
-
-  overflow-x: auto;
-  overflow-y: hidden;
-
-  padding: 2px 2px 12px;
-
-  scroll-snap-type: x mandatory;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
-}
-
-.tv90s-channel-grid::-webkit-scrollbar {
-  display: none;
-}
-
-.tv90s-channel-card {
-  scroll-snap-align: start;
-}
-
-.tv90s-channel-logo {
-  height: 112px;
-  padding: 16px;
-}
-
-.catalogue-channel i {
-  color: #ffffff;
-  font-size: 40px;
-  line-height: 1;
-}
-
-.tv90s-channel-card strong {
-  font-size: 0.9rem;
-}
-
-  .tv90s-channel-card span {
-    font-size: 0.75rem;
-  }
-
-  .tv90s-year-filter,
-  .tv90s-category-filter {
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    padding: 2px 0 8px;
-  }
-
-  .year-button,
-  .category-button {
-    display: inline-block !important;
-    flex: 0 0 auto;
-    text-align: center !important;
-    line-height: normal;
-  }
-
-  .filter-arrow {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .tv90s-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 22px 16px;
-  }
-
-}
-
+    @keyframes tv90sSectionFade {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+
+    .tv90s-genre-showcase,
+    .tv90s-vertical-showcase {
+      animation:
+        tv90sSectionFade .35s ease-out both;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+
+      .tv90s-genre-showcase,
+      .tv90s-vertical-showcase {
+        animation: none;
+      }
+
+    }
+
+    /* Canales */
+
+    .tv90s-channel-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 20px;
+    }
+
+    .tv90s-channel-card {
+      min-width: 0;
+      padding: 0 0 16px;
+      border: 1px solid #303b47;
+      border-radius: 16px;
+
+      background: #1b232d;
+      color: #ffffff;
+
+      font-family: inherit;
+      text-align: center;
+      text-decoration: none;
+      cursor: pointer;
+      overflow: hidden;
+
+      transition:
+        transform 0.2s ease,
+        border-color 0.2s ease,
+        background-color 0.2s ease;
+    }
+
+    .tv90s-channel-card:hover {
+      border-color: #7d91a7;
+      transform: translateY(-3px);
+    }
+
+    .tv90s-channel-card.active {
+      border-color: #ffffff;
+      background: #263341;
+    }
+
+    .tv90s-channel-logo {
+      height: 145px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      margin-bottom: 15px;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    .tv90s-channel-logo img {
+      display: block;
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+    }
+
+    .tv90s-channel-card strong {
+      display: block;
+      padding: 0 10px;
+      color: #ffffff;
+      font-size: 0.98rem;
+      line-height: 1.3;
+    }
+
+    .tv90s-channel-card span {
+      display: block;
+      margin-top: 5px;
+      padding: 0 10px;
+      color: #9ea6b0;
+      font-size: 0.82rem;
+    }
+
+    .telefe-channel {
+      background:
+        linear-gradient(135deg,
+          #0f4c5c 0%,
+          #0b2e3a 100%);
+    }
+
+    .canal13-channel {
+      background:
+        linear-gradient(135deg,
+          #1e3a8a 0%,
+          #0f172a 100%);
+    }
+
+    .canal9-channel {
+      background:
+        linear-gradient(135deg,
+          #e53935 0%,
+          #b71c1c 100%);
+    }
+
+    .america-channel {
+      background:
+        linear-gradient(135deg,
+          #ff4081 0%,
+          #c51162 100%);
+    }
+
+    .atc-channel {
+      background:
+        linear-gradient(135deg,
+          #2196f3 0%,
+          #1565c0 100%);
+    }
+
+    .catalogue-channel {
+      background:
+        linear-gradient(135deg,
+          #4b5563 0%,
+          #1f2937 100%);
+    }
+
+    .catalogue-channel i {
+      color: #ffffff;
+      font-size: 40px;
+    }
+
+
+    /* Filtros */
+
+    .tv90s-year-filter,
+    .tv90s-category-filter {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .filter-carousel {
+      position: relative;
+      width: 100%;
+    }
+
+    .filter-scroll {
+      scroll-behavior: smooth;
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+    }
+
+    .filter-scroll::-webkit-scrollbar {
+      display: none;
+    }
+
+    .filter-arrow {
+      display: none;
+      position: absolute;
+      top: 50%;
+      z-index: 5;
+
+      width: 38px;
+      height: 38px;
+      padding: 0;
+      border: 0;
+
+      background: transparent;
+      box-shadow: none;
+      cursor: pointer;
+
+      transform: translateY(-50%);
+    }
+
+    .filter-arrow-prev {
+      left: 2px;
+    }
+
+    .filter-arrow-next {
+      right: 2px;
+    }
+
+    .filter-arrow:disabled {
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .filter-arrow i {
+      color: rgba(255, 255, 255, 0.38);
+      font-size: 18px;
+    }
+
+    .year-button,
+    .category-button {
+      min-width: 70px;
+      padding: 10px 16px;
+
+      border: 1px solid #3d4752;
+      border-radius: 999px;
+
+      background: #202832;
+      color: #ffffff;
+
+      font-family: inherit;
+      font-size: 0.9rem;
+      cursor: pointer;
+
+      transition:
+        background-color 0.2s ease,
+        border-color 0.2s ease,
+        transform 0.2s ease;
+    }
+
+    .year-button:hover,
+    .category-button:hover {
+      border-color: #7ca8d4;
+      transform: translateY(-1px);
+    }
+
+    .year-button.active,
+    .category-button.active {
+      border-color: #7ca8d4;
+      background: #7ca8d4;
+      color: #101820;
+      font-weight: 700;
+    }
+
+
+    /* Catálogo */
+
+    .catalogue-header {
+      margin-bottom: 22px;
+    }
+
+    .catalogue-header .latest-heading {
+      margin: 0;
+    }
+
+    .catalogue-header p {
+      margin: 8px 0 0;
+      color: #aeb6c0;
+      line-height: 1.5;
+    }
+
+    .tv90s-grid {
+      width: 100%;
+      min-height: 100px;
+
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 28px 22px;
+    }
+
+    .tv90s-card {
+      min-width: 0;
+    }
+
+    .tv90s-card-link {
+      text-decoration: none;
+    }
+
+    .tv90s-card-image {
+      width: 100%;
+      aspect-ratio: 2 / 3;
+      overflow: hidden;
+      border-radius: 12px;
+      background: #202832;
+    }
+
+    .tv90s-card-image img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: inherit;
+    }
+
+    .tv90s-card-text {
+      padding-top: 10px;
+      text-align: center;
+    }
+
+    .tv90s-card-text strong {
+      display: block;
+      color: #ffffff;
+      font-size: 0.95rem;
+      line-height: 1.3;
+      font-weight: 600;
+    }
+
+    .tv90s-card-meta {
+      display: block;
+      margin-top: 4px;
+      color: #aeb6c0;
+      font-size: 0.86rem;
+    }
+
+    .tv90s-card-genre {
+      display: block;
+      margin-top: 3px;
+      color: #7f8995;
+      font-size: 0.82rem;
+    }
+
+    .schedule-temp-link {
+      text-align: center;
+      padding: 24px 20px 8px;
+    }
+
+    .schedule-temp-link a {
+      color: #8fbce6;
+      font-size: 0.9rem;
+      text-decoration: none;
+    }
+
+    .schedule-temp-link a:hover {
+      text-decoration: underline;
+    }
+
+
+    /* Tablet */
+
+    @media (min-width: 768px) and (max-width: 1100px) {
+
+      .tv90s-channel-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+
+      .tv90s-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+
+    }
+
+
+    /* Móvil */
+
+    @media (max-width: 767px) {
+
+      .tv90s-genre-showcase .slider-h:not(.lightSlider) {
+        grid-auto-columns: 88%;
+        gap: 12px;
+      }
+
+      .tv90s-genre-showcase {
+        margin: 8px 10px 14px;
+        width: calc(100% - 20px);
+        border-radius: 14px;
+      }
+
+      body {
+        padding-top: 62px;
+      }
+
+      .tv90s-page {
+        padding-top: 12px;
+      }
+
+      .tv90s-intro {
+        padding: 22px 16px 20px;
+        margin-top: 8px;
+      }
+
+      .tv90s-heading {
+        display: block;
+      }
+
+      .tv90s-heading-text .showcase-heading {
+        font-size: 1.42rem;
+        line-height: 1.2;
+      }
+
+      .tv90s-heading-description {
+        margin-top: 7px;
+        font-size: 0.84rem;
+        line-height: 1.5;
+      }
+
+      #tv90s-featured {
+        padding-top: 12px;
+      }
+
+      .tv90s-section {
+        padding: 20px 16px;
+      }
+
+      .tv90s-channel-grid {
+        display: grid;
+        grid-auto-flow: column;
+        grid-auto-columns: 76%;
+        grid-template-columns: none;
+        gap: 14px;
+
+        overflow-x: auto;
+        overflow-y: hidden;
+
+        padding: 2px 2px 12px;
+
+        scroll-snap-type: x mandatory;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+      }
+
+      .tv90s-channel-grid::-webkit-scrollbar {
+        display: none;
+      }
+
+      .tv90s-channel-card {
+        scroll-snap-align: start;
+      }
+
+      .tv90s-channel-logo {
+        height: 112px;
+        padding: 16px;
+      }
+
+      .catalogue-channel i {
+        color: #ffffff;
+        font-size: 40px;
+        line-height: 1;
+      }
+
+      .tv90s-channel-card strong {
+        font-size: 0.9rem;
+      }
+
+      .tv90s-channel-card span {
+        font-size: 0.75rem;
+      }
+
+      .tv90s-year-filter,
+      .tv90s-category-filter {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        padding: 2px 0 8px;
+      }
+
+      .year-button,
+      .category-button {
+        display: inline-block !important;
+        flex: 0 0 auto;
+        text-align: center !important;
+        line-height: normal;
+      }
+
+      .filter-arrow {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .tv90s-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 22px 16px;
+      }
+
+    }
   </style>
 </head>
+
 <body>
 
-<!-- NAV -->
-<div class="main-wrap">
-<nav class="sa-nav">
-  <a href="index.html" class="logo" aria-label="Argentina Content">
-    <img src="images/logos/argentina-content-logo.PNG" alt="Argentina Content">
-  </a>
+  <!-- NAV -->
+  <div class="main-wrap">
+    <nav class="sa-nav">
+      <a href="index.html" class="logo" aria-label="Argentina Content">
+        <img src="images/logos/argentina-content-logo.PNG" alt="Argentina Content">
+      </a>
 
-  <!-- Buscador -->
-  <form class="search" role="search" id="headerSearch">
-    <input type="search" name="q" placeholder="Encontrá tu Serie Favorita" aria-label="Buscar series" />
-    <button type="submit" class="search-btn" aria-label="Buscar">
-      <i class="fas fa-search" aria-hidden="true"></i>
-    </button>
-  </form>
+      <!-- Buscador -->
+      <form class="search" role="search" id="headerSearch">
+        <input type="search" name="q" placeholder="Encontrá tu Serie Favorita" aria-label="Buscar series" />
+        <button type="submit" class="search-btn" aria-label="Buscar">
+          <i class="fas fa-search" aria-hidden="true"></i>
+        </button>
+      </form>
 
-  <!-- Toggle móvil -->
-  <input class="menu-btn" type="checkbox" id="menu-btn" aria-hidden="true" />
-  <label class="menu-icon" for="menu-btn" aria-label="Abrir menú">
-    <span class="nav-icon" aria-hidden="true"></span>
-  </label>
+      <!-- Toggle móvil -->
+      <input class="menu-btn" type="checkbox" id="menu-btn" aria-hidden="true" />
+      <label class="menu-icon" for="menu-btn" aria-label="Abrir menú">
+        <span class="nav-icon" aria-hidden="true"></span>
+      </label>
 
-  <!-- Menú -->
-  <ul class="menu nav-options">
-    <li><a href="streaming.html">Streaming</a></li>
-    <li><a href="tv-90s.html" aria-current="page">TV 90s</a></li>
-    <li><a href="tiras_2000.html">Tiras 2000</a></li>
-    <li><a href="tiras_2010.html">Tiras 2010</a></li>
-    <li><a href="juveniles.html">Juveniles</a></li>
-    <li><a href="unitarios.html">Unitarios</a></li>
-  </ul>
-</nav>
+      <!-- Menú -->
+      <ul class="menu nav-options">
+        <li><a href="streaming.html">Streaming</a></li>
+        <li><a href="tv-90s.html" aria-current="page">TV 90s</a></li>
+        <li><a href="tiras_2000.html">Tiras 2000</a></li>
+        <li><a href="tiras_2010.html">Tiras 2010</a></li>
+        <li><a href="juveniles.html">Juveniles</a></li>
+        <li><a href="unitarios.html">Unitarios</a></li>
+      </ul>
+    </nav>
 
-<!-- TV ARGENTINA EN LOS AÑOS 90 -->
-<main class="tv90s-page">
+    <!-- TV ARGENTINA EN LOS AÑOS 90 -->
+    <main class="tv90s-page">
 
-  <!-- Encabezado general -->
-  <section class="tv90s-intro">
+      <!-- Encabezado general -->
+      <section class="tv90s-intro">
 
-    <div class="tv90s-heading">
+        <div class="tv90s-heading">
 
-      <div class="tv90s-heading-text">
-        <h1 class="showcase-heading">
-          TV Argentina en los años 90
-        </h1>
+          <div class="tv90s-heading-text">
+            <h1 class="showcase-heading">
+              TV Argentina en los años 90
+            </h1>
 
-        <p class="tv90s-heading-description">
-          Ficciones emitidas por los principales canales de aire
-          argentinos entre 1990 y 1999.
-        </p>
-      </div>
+            <p class="tv90s-heading-description">
+              Ficciones emitidas por los principales canales de aire
+              argentinos entre 1990 y 1999.
+            </p>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- Grandes Éxitos de Telenovelas -->
+      <section id="tv90s-telenovelas" class="tv90s-section tv90s-genre-showcase">
+        <h2 class="showcase-heading">
+          Grandes Éxitos de Telenovelas
+        </h2>
+
+        <ul id="tv90s-telenovelas-slider" class="slider-h cs-hidden" data-skip-auto="true"></ul>
+      </section>
+
+      <!-- Telenovelas de la Noche -->
+      <section id="tv90s-telenovelas-noche" class="tv90s-section tv90s-vertical-showcase">
+        <h2 class="latest-heading">
+          Telenovelas de la Noche
+        </h2>
+
+        <ul id="tv90s-telenovelas-noche-slider" class="tv90s-slider-v cs-hidden" data-skip-auto="true"></ul>
+      </section>
+
+
+      <!-- Telenovelas de la Tarde 1989-1994 -->
+      <section id="tv90s-telenovelas-tarde-89-94" class="tv90s-section tv90s-vertical-showcase">
+        <h2 class="latest-heading">
+          Telenovelas de la Tarde (1989-1994)
+        </h2>
+
+        <ul id="tv90s-telenovelas-tarde-89-94-slider" class="tv90s-slider-v cs-hidden" data-skip-auto="true"></ul>
+      </section>
+
+
+      <!-- Telenovelas de la Tarde 1995-1999 -->
+      <section id="tv90s-telenovelas-tarde-95-99" class="tv90s-section tv90s-vertical-showcase">
+        <h2 class="latest-heading">
+          Telenovelas de la Tarde (1995-1999)
+        </h2>
+
+        <ul id="tv90s-telenovelas-tarde-95-99-slider" class="tv90s-slider-v cs-hidden" data-skip-auto="true"></ul>
+      </section>
+
+
+      <!-- Grandes Éxitos de Comedias -->
+      <section id="tv90s-comedias" class="tv90s-section tv90s-genre-showcase">
+        <h2 class="showcase-heading">
+          Grandes Éxitos de Comedias
+        </h2>
+
+        <ul id="tv90s-comedias-slider" class="slider-h cs-hidden" data-skip-auto="true"></ul>
+      </section>
+
+
+      <!-- Comedias Semanales -->
+      <section id="tv90s-comedias-semanales" class="tv90s-section tv90s-vertical-showcase">
+        <h2 class="latest-heading">
+          Comedias Semanales
+        </h2>
+
+        <ul id="tv90s-comedias-semanales-slider" class="tv90s-slider-v cs-hidden" data-skip-auto="true"></ul>
+      </section>
+
+
+      <!-- Comedias - Tira Diaria -->
+      <section id="tv90s-comedias-diarias" class="tv90s-section tv90s-vertical-showcase">
+        <h2 class="latest-heading">
+          Comedias - Tira Diaria
+        </h2>
+
+        <ul id="tv90s-comedias-diarias-slider" class="tv90s-slider-v cs-hidden" data-skip-auto="true"></ul>
+      </section>
+
+      <!-- Grandes Éxitos Juveniles e Infantiles -->
+      <section id="tv90s-juveniles" class="tv90s-section tv90s-genre-showcase">
+        <h2 class="showcase-heading">
+          Grandes Éxitos Juveniles e Infantiles
+        </h2>
+
+        <ul id="tv90s-juveniles-slider" class="slider-h cs-hidden" data-skip-auto="true"></ul>
+      </section>
+
+      <!-- Ficciones Juveniles - Tira Diaria -->
+      <section id="tv90s-juveniles-diarias" class="tv90s-section tv90s-vertical-showcase">
+        <h2 class="latest-heading">
+          Ficciones Juveniles - Tira Diaria
+        </h2>
+
+        <ul id="tv90s-juveniles-diarias-slider" class="tv90s-slider-v cs-hidden" data-skip-auto="true"></ul>
+      </section>
+
+
+      <!-- Ficciones Juveniles - Semanales -->
+      <section id="tv90s-juveniles-semanales" class="tv90s-section tv90s-vertical-showcase">
+        <h2 class="latest-heading">
+          Ficciones Juveniles - Semanales
+        </h2>
+
+        <ul id="tv90s-juveniles-semanales-slider" class="tv90s-slider-v cs-hidden" data-skip-auto="true"></ul>
+      </section>
+
+
+      <!-- Infantiles -->
+      <section id="tv90s-infantiles" class="tv90s-section tv90s-vertical-showcase">
+        <h2 class="latest-heading">
+          Infantiles
+        </h2>
+
+        <ul id="tv90s-infantiles-slider" class="tv90s-slider-v cs-hidden" data-skip-auto="true"></ul>
+      </section>
+
+
+
+      <!-- Grandes Éxitos de Dramas y Thrillers -->
+      <section id="tv90s-dramas" class="tv90s-section tv90s-genre-showcase">
+        <h2 class="showcase-heading">
+          Grandes Éxitos de Dramas y Thrillers
+        </h2>
+
+        <ul id="tv90s-dramas-slider" class="slider-h cs-hidden" data-skip-auto="true"></ul>
+      </section>
+
+
+      <!-- Dramas -->
+      <section id="tv90s-dramas-vertical" class="tv90s-section tv90s-vertical-showcase">
+        <h2 class="latest-heading">
+          Dramas
+        </h2>
+
+        <ul id="tv90s-dramas-vertical-slider" class="tv90s-slider-v cs-hidden" data-skip-auto="true"></ul>
+      </section>
+
+
+      <!-- Thrillers -->
+      <section id="tv90s-thrillers" class="tv90s-section tv90s-vertical-showcase">
+        <h2 class="latest-heading">
+          Thrillers
+        </h2>
+
+        <ul id="tv90s-thrillers-slider" class="tv90s-slider-v cs-hidden" data-skip-auto="true"></ul>
+      </section>
+
+
+      <!-- Explorar por canal -->
+      <section id="tv90s-channels" class="tv90s-section">
+        <h2 class="latest-heading">
+          Explorar por canal
+        </h2>
+
+        <div class="tv90s-channel-grid">
+
+          <!-- Telefe: página propia -->
+          <a href="telefe-90s.html" class="tv90s-channel-card tv90s-channel-link"
+            title="Ver ficciones de Telefe en los años 90">
+            <div class="tv90s-channel-logo telefe-channel">
+              <img src="images/logos/telefe-1990-120x120.png" alt="Telefe" />
+            </div>
+
+            <strong>Telefe</strong>
+            <span>Ver catálogo</span>
+          </a>
+
+
+          <!-- Canal 13: página propia -->
+          <a href="canal13-90s.html" class="tv90s-channel-card tv90s-channel-link"
+            title="Ver ficciones de Canal 13 en los años 90">
+            <div class="tv90s-channel-logo canal13-channel">
+              <img src="images/logos/canal13-1990-120x120.png" alt="Canal 13" />
+            </div>
+
+            <strong>Canal 13</strong>
+            <span>Ver catálogo</span>
+          </a>
+
+
+          <!-- Canal 9: página propia -->
+          <a href="canal9-90s.html" class="tv90s-channel-card tv90s-channel-link"
+            title="Ver ficciones de Canal 9 y Azul TV en los años 90">
+            <div class="tv90s-channel-logo canal9-channel">
+              <img src="images/logos/canal9-1990-120x120.png" alt="Canal 9 y Azul TV" />
+            </div>
+
+            <strong>Canal 9 / Azul TV</strong>
+            <span>Ver catálogo</span>
+          </a>
+
+
+          <!-- América: catálogo filtrado -->
+          <a href="tv-90s-catalogo.html?channel=america" class="tv90s-channel-card tv90s-channel-link"
+            title="Ver ficciones de América en los años 90">
+            <div class="tv90s-channel-logo america-channel">
+              <img src="images/logos/america-1990-120x120px.png" alt="América" />
+            </div>
+
+            <strong>América</strong>
+            <span>Ver catálogo</span>
+          </a>
+
+          <!-- ATC / Canal 7: catálogo filtrado -->
+          <a href="tv-90s-catalogo.html?channel=atc" class="tv90s-channel-card tv90s-channel-link"
+            title="Ver ficciones de ATC y Canal 7 en los años 90">
+            <div class="tv90s-channel-logo atc-channel">
+              <img src="images/logos/ATC_logo_120x120_transparente.png" alt="ATC y Canal 7" />
+            </div>
+
+            <strong>ATC / Canal 7</strong>
+            <span>Ver catálogo</span>
+          </a>
+
+          <!-- Catálogo completo -->
+          <a href="tv-90s-catalogo.html" class="tv90s-channel-card tv90s-channel-link"
+            title="Explorar el catálogo completo de ficciones de los años 90">
+            <div class="tv90s-channel-logo catalogue-channel">
+              <i class="fa-solid fa-layer-group" aria-hidden="true"></i>
+            </div>
+
+            <strong>Catálogo</strong>
+            <span>Ver todas las ficciones</span>
+          </a>
+
+        </div>
+      </section>
+
+    </main>
+
+    <!-- acceso provisorio a programación histórica -->
+    <div class="schedule-temp-link">
+      <a href="schedules.html">Programación Histórica</a>
     </div>
 
-  </section>
-
-<!-- Grandes Éxitos de Telenovelas -->
-<section
-  id="tv90s-telenovelas"
-  class="tv90s-section tv90s-genre-showcase"
->
-  <h2 class="showcase-heading">
-    Grandes Éxitos de Telenovelas
-  </h2>
-
-  <ul
-    id="tv90s-telenovelas-slider"
-    class="slider-h cs-hidden"
-    data-skip-auto="true"
-  ></ul>
-</section>
-
-<!-- Telenovelas de la Noche -->
-<section
-  id="tv90s-telenovelas-noche"
-  class="tv90s-section tv90s-vertical-showcase"
->
-  <h2 class="latest-heading">
-    Telenovelas de la Noche
-  </h2>
-
-  <ul
-    id="tv90s-telenovelas-noche-slider"
-    class="tv90s-slider-v cs-hidden"
-    data-skip-auto="true"
-  ></ul>
-</section>
-
-
-<!-- Telenovelas de la Tarde 1989-1994 -->
-<section
-  id="tv90s-telenovelas-tarde-89-94"
-  class="tv90s-section tv90s-vertical-showcase"
->
-  <h2 class="latest-heading">
-    Telenovelas de la Tarde (1989-1994)
-  </h2>
-
-  <ul
-    id="tv90s-telenovelas-tarde-89-94-slider"
-    class="tv90s-slider-v cs-hidden"
-    data-skip-auto="true"
-  ></ul>
-</section>
-
-
-<!-- Telenovelas de la Tarde 1995-1999 -->
-<section
-  id="tv90s-telenovelas-tarde-95-99"
-  class="tv90s-section tv90s-vertical-showcase"
->
-  <h2 class="latest-heading">
-    Telenovelas de la Tarde (1995-1999)
-  </h2>
-
-  <ul
-    id="tv90s-telenovelas-tarde-95-99-slider"
-    class="tv90s-slider-v cs-hidden"
-    data-skip-auto="true"
-  ></ul>
-</section>
-
-
-<!-- Grandes Éxitos de Comedias -->
-<section
-  id="tv90s-comedias"
-  class="tv90s-section tv90s-genre-showcase"
->
-  <h2 class="showcase-heading">
-    Grandes Éxitos de Comedias
-  </h2>
-
-  <ul
-    id="tv90s-comedias-slider"
-    class="slider-h cs-hidden"
-    data-skip-auto="true"
-  ></ul>
-</section>
-
-
-<!-- Comedias Semanales -->
-<section
-  id="tv90s-comedias-semanales"
-  class="tv90s-section tv90s-vertical-showcase"
->
-  <h2 class="latest-heading">
-    Comedias Semanales
-  </h2>
-
-  <ul
-    id="tv90s-comedias-semanales-slider"
-    class="tv90s-slider-v cs-hidden"
-    data-skip-auto="true"
-  ></ul>
-</section>
-
-
-<!-- Comedias - Tira Diaria -->
-<section
-  id="tv90s-comedias-diarias"
-  class="tv90s-section tv90s-vertical-showcase"
->
-  <h2 class="latest-heading">
-    Comedias - Tira Diaria
-  </h2>
-
-  <ul
-    id="tv90s-comedias-diarias-slider"
-    class="tv90s-slider-v cs-hidden"
-    data-skip-auto="true"
-  ></ul>
-</section>
-
-<!-- Grandes Éxitos Juveniles e Infantiles -->
-<section
-  id="tv90s-juveniles"
-  class="tv90s-section tv90s-genre-showcase"
->
-  <h2 class="showcase-heading">
-    Grandes Éxitos Juveniles e Infantiles
-  </h2>
-
-  <ul
-    id="tv90s-juveniles-slider"
-    class="slider-h cs-hidden"
-    data-skip-auto="true"
-  ></ul>
-</section>
-
-<!-- Ficciones Juveniles - Tira Diaria -->
-<section
-  id="tv90s-juveniles-diarias"
-  class="tv90s-section tv90s-vertical-showcase"
->
-  <h2 class="latest-heading">
-    Ficciones Juveniles - Tira Diaria
-  </h2>
-
-  <ul
-    id="tv90s-juveniles-diarias-slider"
-    class="tv90s-slider-v cs-hidden"
-    data-skip-auto="true"
-  ></ul>
-</section>
-
-
-<!-- Ficciones Juveniles - Semanales -->
-<section
-  id="tv90s-juveniles-semanales"
-  class="tv90s-section tv90s-vertical-showcase"
->
-  <h2 class="latest-heading">
-    Ficciones Juveniles - Semanales
-  </h2>
-
-  <ul
-    id="tv90s-juveniles-semanales-slider"
-    class="tv90s-slider-v cs-hidden"
-    data-skip-auto="true"
-  ></ul>
-</section>
-
-
-<!-- Infantiles -->
-<section
-  id="tv90s-infantiles"
-  class="tv90s-section tv90s-vertical-showcase"
->
-  <h2 class="latest-heading">
-    Infantiles
-  </h2>
-
-  <ul
-    id="tv90s-infantiles-slider"
-    class="tv90s-slider-v cs-hidden"
-    data-skip-auto="true"
-  ></ul>
-</section>
-
-
-
-<!-- Grandes Éxitos de Dramas y Thrillers -->
-<section
-  id="tv90s-dramas"
-  class="tv90s-section tv90s-genre-showcase"
->
-  <h2 class="showcase-heading">
-    Grandes Éxitos de Dramas y Thrillers
-  </h2>
-
-  <ul
-    id="tv90s-dramas-slider"
-    class="slider-h cs-hidden"
-    data-skip-auto="true"
-  ></ul>
-</section>
-
-
-<!-- Dramas -->
-<section
-  id="tv90s-dramas-vertical"
-  class="tv90s-section tv90s-vertical-showcase"
->
-  <h2 class="latest-heading">
-    Dramas
-  </h2>
-
-  <ul
-    id="tv90s-dramas-vertical-slider"
-    class="tv90s-slider-v cs-hidden"
-    data-skip-auto="true"
-  ></ul>
-</section>
-
-
-<!-- Thrillers -->
-<section
-  id="tv90s-thrillers"
-  class="tv90s-section tv90s-vertical-showcase"
->
-  <h2 class="latest-heading">
-    Thrillers
-  </h2>
-
-  <ul
-    id="tv90s-thrillers-slider"
-    class="tv90s-slider-v cs-hidden"
-    data-skip-auto="true"
-  ></ul>
-</section>
-
-
-  <!-- Explorar por canal -->
-  <section
-    id="tv90s-channels"
-    class="tv90s-section"
-  >
-    <h2 class="latest-heading">
-      Explorar por canal
-    </h2>
-
-    <div class="tv90s-channel-grid">
-
-      <!-- Telefe: página propia -->
-      <a
-        href="telefe-90s.html"
-        class="tv90s-channel-card tv90s-channel-link"
-        title="Ver ficciones de Telefe en los años 90"
-      >
-        <div class="tv90s-channel-logo telefe-channel">
-          <img
-            src="images/logos/telefe-1990-120x120.png"
-            alt="Telefe"
-          />
-        </div>
-
-        <strong>Telefe</strong>
-        <span>Ver catálogo</span>
-      </a>
-
-
-      <!-- Canal 13: página propia -->
-      <a
-        href="canal13-90s.html"
-        class="tv90s-channel-card tv90s-channel-link"
-        title="Ver ficciones de Canal 13 en los años 90"
-      >
-        <div class="tv90s-channel-logo canal13-channel">
-          <img
-            src="images/logos/canal13-1990-120x120.png"
-            alt="Canal 13"
-          />
-        </div>
-
-        <strong>Canal 13</strong>
-        <span>Ver catálogo</span>
-      </a>
-
-
-      <!-- Canal 9: página propia -->
-      <a
-        href="canal9-90s.html"
-        class="tv90s-channel-card tv90s-channel-link"
-        title="Ver ficciones de Canal 9 y Azul TV en los años 90"
-      >
-        <div class="tv90s-channel-logo canal9-channel">
-          <img
-            src="images/logos/canal9-1990-120x120.png"
-            alt="Canal 9 y Azul TV"
-          />
-        </div>
-
-        <strong>Canal 9 / Azul TV</strong>
-        <span>Ver catálogo</span>
-      </a>
-
-
-<!-- América: catálogo filtrado -->
-<a
-  href="tv-90s-catalogo.html?channel=america"
-  class="tv90s-channel-card tv90s-channel-link"
-  title="Ver ficciones de América en los años 90"
->
-  <div class="tv90s-channel-logo america-channel">
-    <img
-      src="images/logos/america-1990-120x120px.png"
-      alt="América"
-    />
+    <!-- footer -->
+    <footer>
+      <p>Argentina Content</p>
+      <p>Copyright 2026 by Dherrera - <a href="tercer-canal.html" title="Series de Tercer Canal">3C</a></p>
+    </footer>
   </div>
 
-  <strong>América</strong>
-  <span>Ver catálogo</span>
-</a>
-
-<!-- ATC / Canal 7: catálogo filtrado -->
-<a
-  href="tv-90s-catalogo.html?channel=atc"
-  class="tv90s-channel-card tv90s-channel-link"
-  title="Ver ficciones de ATC y Canal 7 en los años 90"
->
-  <div class="tv90s-channel-logo atc-channel">
-    <img
-      src="images/logos/ATC_logo_120x120_transparente.png"
-      alt="ATC y Canal 7"
-    />
-  </div>
-
-  <strong>ATC / Canal 7</strong>
-  <span>Ver catálogo</span>
-</a>
-
-      <!-- Catálogo completo -->
-<a
-  href="tv-90s-catalogo.html"
-  class="tv90s-channel-card tv90s-channel-link"
-  title="Explorar el catálogo completo de ficciones de los años 90"
->
-  <div class="tv90s-channel-logo catalogue-channel">
-    <i
-      class="fa-solid fa-layer-group"
-      aria-hidden="true"
-    ></i>
-  </div>
-
-  <strong>Catálogo</strong>
-  <span>Ver todas las ficciones</span>
-</a>
-
-    </div>
-  </section>
-
-</main>
-
-<!-- footer -->
-<footer>
-  <p>Argentina Content</p>
-  <p>Copyright 2026 by Dherrera - <a href="tercer-canal.html" title="Series de Tercer Canal">3C</a></p>
-</footer>
-</div>
-
-<!-- JS: jQuery → LightSlider → init -->
-<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-<script src="js/lightslider.js"></script>
-<script src="js/script.js?v=20260226-1"></script>
-<script src="js/tv-90s-autosync.js?v=20260804-4"></script>
+  <!-- JS: jQuery → LightSlider → init -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="js/lightslider.js"></script>
+  <script src="js/script.js?v=20260226-1"></script>
+  <script src="js/tv-90s-autosync.js?v=20260804-4"></script>
 </body>
+
 </html>

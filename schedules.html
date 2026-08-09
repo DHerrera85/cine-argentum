@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Programación Histórica - Argentina Content</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css?v=2.0" />
+    <link rel="stylesheet" href="css/main-wrap.css?v=1.0" />
+
+    <!-- Fuente -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins&display=swap" />
+
+    <!-- Favicons para todos los dispositivos -->
+    <link rel="icon" type="image/png" sizes="32x32" href="images/fav_icon.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="images/fav_icon.png" />
+    <link rel="shortcut icon" href="images/fav_icon.png" />
+
+    <!-- Apple Touch Icons (iOS/iPad) -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/fav_icon.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="images/fav_icon.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="images/fav_icon.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="images/fav_icon.png" />
+
+    <!-- Android Chrome -->
+    <link rel="icon" type="image/png" sizes="192x192" href="images/fav_icon.png" />
+    <link rel="icon" type="image/png" sizes="512x512" href="images/fav_icon.png" />
+
+    <!-- Meta tags para PWA y móviles -->
+    <meta name="theme-color" content="#141a21" />
+    <meta name="msapplication-TileColor" content="#141a21" />
+    <meta name="msapplication-TileImage" content="images/fav_icon.png" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        referrerpolicy="no-referrer" />
+
+    <style>
+        body {
+            font-family:
+                Poppins,
+                system-ui,
+                -apple-system,
+                "Segoe UI",
+                Roboto,
+                Helvetica,
+                Arial,
+                sans-serif;
+
+            padding-top: 76px;
+        }
+
+        .schedule-page {
+            min-height: 100vh;
+            width: 100%;
+            padding: 40px 0 60px;
+            background: #141a21;
+            color: #ffffff;
+            box-sizing: border-box;
+        }
+
+        img {
+            height: auto;
+        }
+
+        .menu-btn {
+            position: absolute !important;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0 0 0 0);
+            white-space: nowrap;
+            border: 0;
+        }
+
+        .menu-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 48px;
+            height: 48px;
+            cursor: pointer;
+            user-select: none;
+        }
+
+        .nav-icon {
+            position: relative;
+            width: 26px;
+            height: 2px;
+            background: #555;
+            display: inline-block;
+            transition: transform .25s ease, background .25s ease;
+        }
+
+        .nav-icon::before,
+        .nav-icon::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            width: 26px;
+            height: 2px;
+            background: #555;
+            transition: transform .25s ease, top .25s ease, opacity .25s ease;
+        }
+
+        .nav-icon::before {
+            top: -8px;
+        }
+
+        .nav-icon::after {
+            top: 8px;
+        }
+
+        .menu-btn:checked+.menu-icon .nav-icon {
+            background: transparent;
+        }
+
+        .menu-btn:checked+.menu-icon .nav-icon::before {
+            transform: rotate(45deg);
+            top: 0;
+        }
+
+        .menu-btn:checked+.menu-icon .nav-icon::after {
+            transform: rotate(-45deg);
+            top: 0;
+        }
+
+        @media (min-width: 768px) {
+            .menu-icon {
+                display: none;
+            }
+        }
+
+        .schedule-container {
+            width: min(1400px, calc(100% - 48px));
+            margin: 0 auto;
+        }
+
+        .schedule-intro {
+            margin-bottom: 30px;
+        }
+
+        .schedule-title {
+            margin: 0;
+            font-size: clamp(1.7rem, 3vw, 2.5rem);
+            line-height: 1.15;
+        }
+
+        .schedule-description {
+            max-width: 820px;
+            margin: 10px 0 0;
+            color: #b8bec6;
+            font-size: 0.96rem;
+            line-height: 1.55;
+        }
+
+        .schedule-toolbar {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 14px;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        .schedule-select {
+            min-width: 180px;
+            padding: 10px 14px;
+
+            border: 1px solid #3d4752;
+            border-radius: 10px;
+
+            background: #202832;
+            color: #ffffff;
+
+            font-family: inherit;
+            font-size: 0.92rem;
+        }
+
+        .schedule-view-toggle {
+            display: flex;
+            gap: 8px;
+        }
+
+        .schedule-view-button {
+            padding: 10px 16px;
+
+            border: 1px solid #3d4752;
+            border-radius: 999px;
+
+            background: #202832;
+            color: #ffffff;
+
+            font-family: inherit;
+            cursor: pointer;
+        }
+
+        .schedule-view-button.active {
+            border-color: #7ca8d4;
+            background: #7ca8d4;
+            color: #101820;
+            font-weight: 700;
+        }
+
+        .schedule-content {
+            width: 100%;
+        }
+
+        .schedule-placeholder {
+            padding: 40px 24px;
+
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            border-radius: 16px;
+
+            background: rgba(255, 255, 255, 0.02);
+
+            text-align: center;
+            color: #aeb6c0;
+        }
+
+        .schedule-channel-view {
+            width: 100%;
+        }
+
+        .schedule-channel-header {
+            margin-bottom: 20px;
+        }
+
+        .schedule-channel-header h2 {
+            margin: 0;
+            color: #ffffff;
+            font-size: 1.35rem;
+        }
+
+        .schedule-grid {
+            display: grid;
+            grid-template-columns:
+                90px repeat(5, minmax(150px, 1fr));
+
+            gap: 1px;
+
+            overflow-x: auto;
+
+            background: #2a333d;
+            border: 1px solid #303b47;
+            border-radius: 14px;
+        }
+
+        .schedule-grid-corner,
+        .schedule-grid-day,
+        .schedule-grid-time {
+            background: #1b232d;
+            color: #ffffff;
+            font-weight: 600;
+        }
+
+        .schedule-grid-corner,
+        .schedule-grid-day {
+            padding: 14px 10px;
+            text-align: center;
+        }
+
+        .schedule-grid-time {
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+
+            padding: 14px 8px;
+
+            font-size: 0.88rem;
+        }
+
+        .schedule-grid-cell {
+            min-height: 74px;
+
+            padding: 10px;
+
+            background: #202832;
+
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+
+            box-sizing: border-box;
+        }
+
+        .schedule-grid-cell-empty {
+            background: #182029;
+        }
+
+        .schedule-grid-cell img {
+            width: 100%;
+            max-height: 88px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .schedule-grid-cell strong {
+            color: #ffffff;
+            font-size: 0.84rem;
+            line-height: 1.3;
+        }
+
+        .schedule-grid-program {
+            min-height: 74px;
+        }
+
+        .schedule-grid-program-time {
+            margin-top: auto;
+            color: #8f9aa6;
+            font-size: 0.74rem;
+        }
+
+        @media (max-width: 767px) {
+            body {
+                padding-top: 62px;
+            }
+
+            .schedule-page {
+                padding-top: 20px;
+            }
+
+            .schedule-container {
+                width: min(100% - 24px, 1400px);
+            }
+
+            .schedule-toolbar {
+                align-items: stretch;
+            }
+
+            .schedule-select {
+                width: 100%;
+            }
+
+            .schedule-view-toggle {
+                width: 100%;
+            }
+
+            .schedule-view-button {
+                flex: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAV -->
+    <div class="main-wrap">
+        <nav class="sa-nav">
+            <a href="index.html" class="logo" aria-label="Argentina Content">
+                <img src="images/logos/argentina-content-logo.PNG" alt="Argentina Content">
+            </a>
+
+            <!-- Buscador -->
+            <form class="search" role="search" id="headerSearch">
+                <input type="search" name="q" placeholder="Encontrá tu Serie Favorita" aria-label="Buscar series" />
+                <button type="submit" class="search-btn" aria-label="Buscar">
+                    <i class="fas fa-search" aria-hidden="true"></i>
+                </button>
+            </form>
+
+            <!-- Toggle móvil -->
+            <input class="menu-btn" type="checkbox" id="menu-btn" aria-hidden="true" />
+            <label class="menu-icon" for="menu-btn" aria-label="Abrir menú">
+                <span class="nav-icon" aria-hidden="true"></span>
+            </label>
+
+            <!-- Menú -->
+            <ul class="menu nav-options">
+                <li><a href="streaming.html">Streaming</a></li>
+                <li><a href="tv-90s.html">TV 90s</a></li>
+                <li><a href="tiras_2000.html">Tiras 2000</a></li>
+                <li><a href="tiras_2010.html">Tiras 2010</a></li>
+                <li><a href="juveniles.html">Juveniles</a></li>
+                <li><a href="unitarios.html">Unitarios</a></li>
+            </ul>
+        </nav>
+
+        <main class="schedule-page">
+
+            <div class="schedule-container">
+
+                <header class="schedule-intro">
+                    <h1 class="schedule-title">
+                        Programación Histórica
+                    </h1>
+
+                    <p class="schedule-description">
+                        Reconstrucción de las grillas de programación de la televisión
+                        argentina a partir de registros históricos.
+                    </p>
+                </header>
+
+
+                <section class="schedule-toolbar">
+
+                    <select id="schedule-period" class="schedule-select" aria-label="Seleccionar período">
+                        <option value="schedule-1996-04">
+                            Abril 1996
+                        </option>
+                    </select>
+
+
+                    <select id="schedule-channel" class="schedule-select" aria-label="Seleccionar canal">
+                        <option value="Canal 13">
+                            Canal 13
+                        </option>
+
+                        <option value="Telefe">
+                            Telefe
+                        </option>
+
+                        <option value="Canal 9">
+                            Canal 9
+                        </option>
+                    </select>
+
+
+                    <div class="schedule-view-toggle" aria-label="Modo de visualización">
+                        <button type="button" class="schedule-view-button active" data-schedule-view="channel">
+                            Por canal
+                        </button>
+
+                        <button type="button" class="schedule-view-button" data-schedule-view="competition">
+                            En competencia
+                        </button>
+                    </div>
+
+                </section>
+
+
+                <section id="schedule-content" class="schedule-content">
+                    <div class="schedule-placeholder">
+                        La programación se cargará automáticamente desde schedules.json.
+                    </div>
+                </section>
+
+            </div>
+
+        </main>
+
+
+        <!-- JS general -->
+        <script src="js/script.js?v=20260226-1"></script>
+
+        <!-- JS Schedule -->
+        <script src="js/schedules-autosync.js"></script>
+
+</body>
+
+</html>
