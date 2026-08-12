@@ -13,11 +13,12 @@
     var schedulesData = [];
     var productionsData = [];
 
+    var currentView = 'channel';
+    var competitionDay = 'martes';
 
     function getElement(selector) {
         return document.querySelector(selector);
     }
-
 
     function getSelectedPeriodId() {
         var select = getElement(SELECTORS.period);
@@ -419,6 +420,20 @@
                                 entry
                             );
 
+                        var production =
+                            entry.type === 'production' &&
+                                entry.production_id
+                                ? getProductionById(
+                                    entry.production_id
+                                )
+                                : null;
+
+                        var horizontalImage =
+                            production &&
+                                production.horizontal_image
+                                ? production.horizontal_image
+                                : '';
+
                         html +=
                             '<div class="schedule-grid-cell schedule-grid-program" ' +
 
@@ -437,6 +452,16 @@
                             '<strong>' +
                             title +
                             '</strong>' +
+
+                            (
+                                horizontalImage
+                                    ? '<img class="schedule-competition-image" src="' +
+                                    horizontalImage +
+                                    '" alt="' +
+                                    title +
+                                    '">'
+                                    : ''
+                            ) +
 
                             '<span class="schedule-grid-program-time">' +
                             entry.start +
@@ -465,6 +490,364 @@
             html;
     }
 
+    function renderCompetitionSchedule(
+        schedule
+    ) {
+
+        var content =
+            getElement(
+                SELECTORS.content
+            );
+
+        if (!content) {
+            return;
+        }
+
+        var days = [
+            'lunes',
+            'martes',
+            'miércoles',
+            'jueves',
+            'viernes'
+        ];
+
+        var channelNames = [
+            'Telefe',
+            'Canal 13',
+            'Canal 9'
+        ];
+
+        var allEntries = [];
+
+        schedule.channels.forEach(
+            function (channel) {
+
+                if (
+                    channelNames.indexOf(
+                        channel.channel
+                    ) === -1
+                ) {
+                    return;
+                }
+
+                channel.entries.forEach(
+                    function (entry) {
+
+                        if (
+                            Array.isArray(entry.days) &&
+                            entry.days.indexOf(
+                                competitionDay
+                            ) !== -1
+                        ) {
+
+                            allEntries.push(entry);
+
+                        }
+
+                    }
+                );
+
+            }
+        );
+
+
+        var bounds =
+            getScheduleBounds(
+                allEntries
+            );
+
+        if (!bounds) {
+
+            content.innerHTML =
+                '<div class="schedule-placeholder">' +
+                'No hay programación disponible.' +
+                '</div>';
+
+            return;
+        }
+
+
+        var slotMinutes = 30;
+
+        var rowCount =
+            Math.ceil(
+                (bounds.end - bounds.start) /
+                slotMinutes
+            );
+
+
+        var html =
+            '<section class="schedule-competition-view">' +
+
+            '<header class="schedule-channel-header">' +
+
+            '<h2>' +
+            schedule.label +
+            ' — En competencia' +
+            '</h2>' +
+
+            '</header>' +
+
+
+            '<div class="schedule-day-selector">';
+
+
+        days.forEach(
+            function (day) {
+
+                html +=
+                    '<button ' +
+                    'type="button" ' +
+                    'class="schedule-day-button' +
+                    (
+                        day === competitionDay
+                            ? ' active'
+                            : ''
+                    ) +
+                    '" ' +
+                    'data-schedule-day="' +
+                    day +
+                    '">' +
+
+                    day.charAt(0).toUpperCase() +
+                    day.slice(1) +
+
+                    '</button>';
+
+            }
+        );
+
+
+        html +=
+            '</div>' +
+
+            '<div class="schedule-competition-grid" ' +
+            'style="grid-template-rows: auto repeat(' +
+            rowCount +
+            ', 74px);">' +
+
+            '<div class="schedule-grid-corner" ' +
+            'style="grid-column: 1; grid-row: 1;">' +
+            'Hora' +
+            '</div>';
+
+
+        channelNames.forEach(
+            function (channelName, channelIndex) {
+
+                html +=
+                    '<div class="schedule-grid-day" ' +
+                    'style="grid-column: ' +
+                    (channelIndex + 2) +
+                    '; grid-row: 1;">' +
+
+                    channelName +
+
+                    '</div>';
+
+            }
+        );
+
+
+        for (
+            var rowIndex = 0;
+            rowIndex < rowCount;
+            rowIndex++
+        ) {
+
+            var currentMinutes =
+                bounds.start +
+                (rowIndex * slotMinutes);
+
+            var gridRow =
+                rowIndex + 2;
+
+            html +=
+                '<div class="schedule-grid-time" ' +
+                'style="grid-column: 1; grid-row: ' +
+                gridRow +
+                ';">' +
+
+                minutesToTime(
+                    currentMinutes
+                ) +
+
+                '</div>';
+
+        }
+
+
+        channelNames.forEach(
+            function (
+                channelName,
+                channelIndex
+            ) {
+
+                var channelSchedule =
+                    findChannelSchedule(
+                        schedule,
+                        channelName
+                    );
+
+                if (!channelSchedule) {
+                    return;
+                }
+
+
+                channelSchedule.entries.forEach(
+                    function (entry) {
+
+                        if (
+                            !Array.isArray(entry.days) ||
+                            entry.days.indexOf(
+                                competitionDay
+                            ) === -1
+                        ) {
+                            return;
+                        }
+
+
+                        var startMinutes =
+                            timeToMinutes(
+                                entry.start
+                            );
+
+                        if (
+                            startMinutes === null
+                        ) {
+                            return;
+                        }
+
+
+                        var startRow =
+                            Math.floor(
+                                (
+                                    startMinutes -
+                                    bounds.start
+                                ) /
+                                slotMinutes
+                            ) + 2;
+
+
+                        var rowSpan =
+                            getEntryRowSpan(
+                                entry
+                            );
+
+
+                        var gridColumn =
+                            channelIndex + 2;
+
+
+                        var title =
+                            getEntryTitle(
+                                entry
+                            );
+
+                        var production =
+                            entry.type === 'production' &&
+                                entry.production_id
+                                ? getProductionById(
+                                    entry.production_id
+                                )
+                                : null;
+
+                        var horizontalImage =
+                            production &&
+                                production.horizontal_image
+                                ? production.horizontal_image
+                                : '';
+
+                        html +=
+                            '<div class="schedule-grid-cell schedule-grid-program" ' +
+
+                            'style="' +
+
+                            'grid-column: ' +
+                            gridColumn +
+                            '; ' +
+
+                            'grid-row: ' +
+                            startRow +
+                            ' / span ' +
+                            rowSpan +
+                            ';' +
+
+                            '">' +
+
+                            '<strong>' +
+                            title +
+                            '</strong>' +
+
+                            (
+                                horizontalImage
+                                    ? '<img class="schedule-competition-image" src="' +
+                                    horizontalImage +
+                                    '" alt="' +
+                                    title +
+                                    '">'
+                                    : ''
+                            ) +
+
+                            '<span class="schedule-grid-program-time">' +
+
+                            entry.start +
+
+                            (
+                                entry.end
+                                    ? '–' +
+                                    entry.end
+                                    : ''
+                            ) +
+
+                            '</span>' +
+
+                            '</div>';
+
+                    }
+                );
+
+            }
+        );
+
+
+        html +=
+            '</div>' +
+            '</section>';
+
+
+        content.innerHTML =
+            html;
+
+
+        var dayButtons =
+            content.querySelectorAll(
+                '.schedule-day-button'
+            );
+
+
+        dayButtons.forEach(
+            function (button) {
+
+                button.addEventListener(
+                    'click',
+                    function () {
+
+                        competitionDay =
+                            button.getAttribute(
+                                'data-schedule-day'
+                            );
+
+                        renderCompetitionSchedule(
+                            schedule
+                        );
+
+                    }
+                );
+
+            }
+        );
+    }
 
     function renderCurrentView() {
 
@@ -518,6 +901,18 @@
 
         }
 
+        if (
+            currentView === 'competition'
+        ) {
+
+            renderCompetitionSchedule(
+                schedule
+            );
+
+            return;
+        }
+
+
         renderChannelSchedule(
             schedule,
             channelSchedule
@@ -545,6 +940,45 @@
                 renderCurrentView
             );
         }
+
+        var viewButtons =
+            document.querySelectorAll(
+                '[data-schedule-view]'
+            );
+
+        viewButtons.forEach(
+            function (button) {
+
+                button.addEventListener(
+                    'click',
+                    function () {
+
+                        currentView =
+                            button.getAttribute(
+                                'data-schedule-view'
+                            );
+
+                        viewButtons.forEach(
+                            function (item) {
+
+                                item.classList.remove(
+                                    'active'
+                                );
+
+                            }
+                        );
+
+                        button.classList.add(
+                            'active'
+                        );
+
+                        renderCurrentView();
+
+                    }
+                );
+
+            }
+        );
     }
 
 

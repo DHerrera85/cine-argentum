@@ -316,6 +316,127 @@
             font-size: 0.74rem;
         }
 
+        .schedule-competition-view {
+            width: 100%;
+        }
+
+        .schedule-day-selector {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 20px;
+        }
+
+        .schedule-day-button {
+            padding: 9px 15px;
+
+            border: 1px solid #3d4752;
+            border-radius: 999px;
+
+            background: #202832;
+            color: #ffffff;
+
+            font-family: inherit;
+            font-size: 0.86rem;
+
+            cursor: pointer;
+        }
+
+        .schedule-day-button:hover {
+            border-color: #7ca8d4;
+        }
+
+        .schedule-day-button.active {
+            border-color: #7ca8d4;
+            background: #7ca8d4;
+            color: #101820;
+            font-weight: 700;
+        }
+
+        .schedule-competition-grid {
+            display: grid;
+
+            grid-template-columns:
+                90px repeat(3, minmax(220px, 1fr));
+
+            gap: 1px;
+
+            width: 100%;
+            overflow-x: auto;
+
+            background: #2a333d;
+
+            border: 1px solid #303b47;
+            border-radius: 14px;
+        }
+
+        .schedule-competition-image {
+            width: 88%;
+            max-height: 82px;
+            margin: 8px auto 10px;
+
+            display: block;
+
+            object-fit: cover;
+            object-position: center;
+
+            border-radius: 8px;
+        }
+
+        .schedule-competition-view {
+            width: 100%;
+        }
+
+        .schedule-day-selector {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 20px;
+        }
+
+        .schedule-day-button {
+            padding: 9px 15px;
+
+            border: 1px solid #3d4752;
+            border-radius: 999px;
+
+            background: #202832;
+            color: #ffffff;
+
+            font-family: inherit;
+            font-size: 0.86rem;
+
+            cursor: pointer;
+        }
+
+        .schedule-day-button:hover {
+            border-color: #7ca8d4;
+        }
+
+        .schedule-day-button.active {
+            border-color: #7ca8d4;
+            background: #7ca8d4;
+            color: #101820;
+            font-weight: 700;
+        }
+
+        .schedule-competition-grid {
+            display: grid;
+
+            grid-template-columns:
+                90px repeat(3, minmax(220px, 1fr));
+
+            gap: 1px;
+
+            width: 100%;
+            overflow-x: auto;
+
+            background: #2a333d;
+
+            border: 1px solid #303b47;
+            border-radius: 14px;
+        }
+
         @media (max-width: 767px) {
             body {
                 padding-top: 62px;
