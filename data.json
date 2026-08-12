@@ -8958,6 +8958,35 @@
       "seasons": 1
     },
     {
+      "id": "T0156",
+      "title": "Matrimonios y Algo Más",
+      "year": "2001",
+      "channel": "Canal 9/Azul TV",
+      "genre": "Comedia",
+      "actors": [
+        "Germán Kraus",
+        "Diego Olivera",
+        "Zulma Faiad",
+        "María Fiorentino",
+        "Gonzalo Urtizberea",  
+        "Aída Luz",
+        "Ileana Calabró",
+        "Mónica Ayos"
+        
+      ],
+      "orientation": "vertical",
+      "image": "images/verticals/2001-matrimoniosyalgomas-azultv-poster280x420.webp",
+      "horizontal_image": "",
+      "subtitle": "",
+      "horario": "Martes 21hs y 23hs",
+      "tipo_emision": "Semanal",
+      "capitulos": "",
+      "fecha_estreno": "",
+      "sinopsis": "Gira en torno a la vida en pareja, las relaciones de matrimonio, los conflictos cotidianos, las crisis de la mediana edad y los enredos amorosos.",
+      "remakes": [],
+      "productora": "Hugo Móser"
+    },
+    {
       "id": "T0046",
       "title": "Alta Comedia",
       "year": "1990",
