@@ -133,31 +133,120 @@
     return '';
   }
 
+  function normalizeText(value) {
+    var text = value == null ? '' : String(value);
+
+    if (typeof text.normalize === 'function') {
+      text = text.normalize('NFD');
+    }
+
+    return text
+      .replace(/[\u0300-\u036f]/g, '')
+      .toLowerCase()
+      .trim();
+  }
+
+  function isStreamingProduction(item) {
+    var streamingPlatforms = [
+      'Netflix',
+      'Flow',
+      'Disney+',
+      'HBO Max',
+      'Prime Video',
+      'Streaming',
+      'Reelshort'
+    ].map(normalizeText);
+
+    var values = [];
+
+    if (item.platform) {
+      values.push(item.platform);
+    }
+
+    if (item.channel) {
+      values.push(item.channel);
+    }
+
+    if (Array.isArray(item.platforms)) {
+      values = values.concat(item.platforms);
+    }
+
+    if (Array.isArray(item.channels)) {
+      values = values.concat(item.channels);
+    }
+
+    return values.some(function (value) {
+      return streamingPlatforms.indexOf(normalizeText(value)) !== -1;
+    });
+  }
+
+  function normalizeText(value) {
+    var text = value == null ? '' : String(value);
+
+    if (typeof text.normalize === 'function') {
+      text = text.normalize('NFD');
+    }
+
+    return text
+      .replace(/[\u0300-\u036f]/g, '')
+      .toLowerCase()
+      .trim();
+  }
+
+  function isStreamingProduction(item) {
+    var streamingPlatforms = [
+      'Netflix',
+      'Flow',
+      'Disney+',
+      'HBO Max',
+      'Prime Video',
+      'Streaming',
+      'Reelshort'
+    ].map(normalizeText);
+
+    var values = [];
+
+    if (item.platform) values.push(item.platform);
+    if (item.channel) values.push(item.channel);
+    if (Array.isArray(item.platforms)) values = values.concat(item.platforms);
+    if (Array.isArray(item.channels)) values = values.concat(item.channels);
+
+    return values.some(function (value) {
+      return streamingPlatforms.indexOf(normalizeText(value)) !== -1;
+    });
+  }
+
   function buildCardHtml(item, isUpcoming) {
     var fallbackYear = (item && item.year) ? String(item.year) : '';
     var releaseLabel = item.releaseDate
       ? item.releaseDate
       : (isUpcoming ? ('Proximamente ' + (fallbackYear || '2026')) : fallbackYear);
-    var typeLabel = item.type === 'pelicula' ? 'Pelicula' : 'Serie';
-    var statusBadge = isUpcoming
-      ? '<span class="cartelera-status cartelera-status-upcoming">PROXIMAMENTE</span>'
-      : '';
+    var typeLabel =
+      item.category === 'vertical'
+        ? 'Vertical'
+        : (
+          item.type === 'pelicula'
+            ? 'Película'
+            : 'Serie'
+        ); var statusBadge = isUpcoming
+          ? '<span class="cartelera-status cartelera-status-upcoming">PROXIMAMENTE</span>'
+          : '';
 
     return '' +
       '<li class="' + (item.type === 'pelicula' ? 'item-a' : 'item-b') + '" data-cartelera-type="' + item.type + '">' +
-        '<a href="show.html?id=' + encodeURIComponent(item.id) + '">' +
-          '<div class="latest-box">' +
-            '<div class="latest-b-img">' +
-              statusBadge +
-              '<img src="' + item.image + '" loading="lazy" alt="' + item.title + '">' +
-            '</div>' +
-            '<div class="latest-b-text">' +
-              '<strong>' + item.title + '</strong>' +
-              '<p>' + releaseLabel + '</p>' +
-              '<span class="cartelera-chip">' + typeLabel + '</span>' +
-            '</div>' +
-          '</div>' +
-        '</a>' +
+      '<a href="show.html?id=' + encodeURIComponent(item.id) + '">' +
+      '<div class="latest-box">' +
+      '<div class="latest-b-img">' +
+      statusBadge +
+      '<img src="' + item.image + '" loading="lazy" alt="' + item.title + '">' +
+      '</div>' +
+      '<div class="latest-b-text">' +
+      '<strong>' + item.title + '</strong>' +
+      '<p>' + releaseLabel + '</p>' +
+      '<span class="cartelera-chip">' + typeLabel + '</span>' +
+      '</div>' +
+      '</div>' +
+      '</a>' +
       '</li>';
   }
 
@@ -200,40 +289,154 @@
   }
 
   function renderFilteredList(section, type) {
-    var listEl = section.querySelector('ul[data-cartelera-list="all"]');
-    if (!listEl) return;
+    var listEl = section.querySelector(
+      'ul[data-cartelera-list="all"]'
+    );
 
-    var allRows = section._carteleraRows || [];
-    var rows = allRows.filter(function (row) {
-      return type === 'all' || row.item.type === type;
-    });
+    if (!listEl) {
+      return;
+    }
+
+    var allRows =
+      section._carteleraRows || [];
+
+    var rows = allRows.filter(
+      function (row) {
+        var rowType =
+          row.item.category ||
+          row.item.type;
+
+        return (
+          type === 'all' ||
+          rowType === type
+        );
+      }
+    );
 
     destroySlider(listEl);
 
     listEl.innerHTML = rows.length
-      ? rows.map(function (row) { return buildCardHtml(row.item, row.upcoming); }).join('')
-      : '<li class="item-a"><div class="latest-box"><div class="latest-b-text"><strong>Sin resultados</strong><p class="cartelera-empty">No hay títulos para este filtro.</p></div></div></li>';
+      ? rows
+        .map(function (row) {
+          return buildCardHtml(
+            row.item,
+            row.upcoming
+          );
+        })
+        .join('')
+      : [
+        '<li class="item-a">',
+        '<div class="latest-box">',
+        '<div class="latest-b-text">',
+        '<strong>Sin resultados</strong>',
+        '<p class="cartelera-empty">',
+        'No hay títulos para este filtro.',
+        '</p>',
+        '</div>',
+        '</div>',
+        '</li>'
+      ].join('');
 
     ensureSlider(listEl);
   }
 
-  function getFilterCountLabel(type, count) {
+  function getFilterCountLabel(
+    type,
+    count,
+    section
+  ) {
+    var contentMode = String(
+      section.getAttribute(
+        'data-cartelera-content'
+      ) || 'all'
+    ).toLowerCase();
+
+    var filterMode = String(
+      section.getAttribute(
+        'data-cartelera-filters'
+      ) || ''
+    ).toLowerCase();
+
+    /*
+     * Contadores específicos de
+     * Series en Streaming.
+     */
+    if (
+      contentMode === 'streaming-series' &&
+      filterMode === 'series-verticals'
+    ) {
+      if (type === 'serie') {
+        return String(count) + ' series';
+      }
+
+      if (type === 'vertical') {
+        return String(count) + ' verticales';
+      }
+
+      return String(count) +
+        ' series y verticales';
+    }
+
+    /*
+     * En Producción:
+     * solo contiene series.
+     */
+    if (contentMode === 'streaming-series') {
+      return String(count) + ' series';
+    }
+
+    /*
+     * Comportamiento general utilizado
+     * por Cine y Series 2026.
+     */
     var label = 'películas y series';
-    if (type === 'pelicula') label = 'películas';
-    if (type === 'serie') label = 'series';
+
+    if (type === 'pelicula') {
+      label = 'películas';
+    }
+
+    if (type === 'serie') {
+      label = 'series';
+    }
+
     return String(count) + ' ' + label;
   }
 
-  function updateSectionCount(section, type) {
-    var countEl = section.querySelector('.cartelera-count');
-    if (!countEl) return;
+  function updateSectionCount(
+    section,
+    type
+  ) {
+    var countEl =
+      section.querySelector(
+        '.cartelera-count'
+      );
 
-    var rows = section._carteleraRows || [];
-    var count = rows.filter(function (row) {
-      return type === 'all' || row.item.type === type;
-    }).length;
+    if (!countEl) {
+      return;
+    }
 
-    countEl.textContent = getFilterCountLabel(type, count);
+    var rows =
+      section._carteleraRows || [];
+
+    var count = rows.filter(
+      function (row) {
+        var rowType =
+          row.item.category ||
+          row.item.type;
+
+        return (
+          type === 'all' ||
+          rowType === type
+        );
+      }
+    ).length;
+
+    countEl.textContent =
+      getFilterCountLabel(
+        type,
+        count,
+        section
+      );
   }
 
   function applyTypeFilter(section, type) {
@@ -244,86 +447,306 @@
   function mountSection(section, items) {
     var years = getSectionYears(section);
     var primaryYear = years[0] || '2026';
-    var mode = String(section.getAttribute('data-cartelera-mode') || 'released').toLowerCase();
-    var listEl = section.querySelector('ul[data-cartelera-list="all"]');
-    if (!listEl) return;
+
+    var mode = String(
+      section.getAttribute('data-cartelera-mode') || 'released'
+    ).toLowerCase();
+
+    var contentMode = String(
+      section.getAttribute('data-cartelera-content') || 'all'
+    ).toLowerCase();
+
+    var listEl = section.querySelector(
+      'ul[data-cartelera-list="all"]'
+    );
+
+    if (!listEl) {
+      return;
+    }
 
     var today = new Date();
     today.setHours(0, 0, 0, 0);
 
     var filtered = items
       .filter(function (item) {
-        if (!item || !item.id) return false;
+        if (!item || !item.id) {
+          return false;
+        }
+
         var best = getBestReleaseForYears(item, years);
-        var itemYear = (item.year || '').toString();
-        var yearMatch = years.indexOf(itemYear) !== -1;
-        var releaseYearMatch = best && years.indexOf(String(best.date.getFullYear())) !== -1;
-        if (!yearMatch && !releaseYearMatch) return false;
-        return normalizeType(item.type, item) === 'pelicula' || normalizeType(item.type, item) === 'serie';
+        var itemYear = String(item.year || '');
+
+        var yearMatch =
+          years.indexOf(itemYear) !== -1;
+
+        var releaseYearMatch =
+          best &&
+          years.indexOf(
+            String(best.date.getFullYear())
+          ) !== -1;
+
+        if (!yearMatch && !releaseYearMatch) {
+          return false;
+        }
+
+        var itemType =
+          normalizeType(
+            item.type,
+            item
+          );
+
+        var isVertical =
+          item.streaming_row ===
+          'ficciones_verticales';
+
+        if (
+          contentMode ===
+          'streaming-series'
+        ) {
+          return (
+            itemType === 'serie' &&
+            (
+              isStreamingProduction(item) ||
+              isVertical
+            )
+          );
+        }
+
+        /*
+         * Las secciones marcadas como streaming-series
+         * admiten únicamente series pertenecientes a
+         * plataformas de streaming.
+         */
+        if (contentMode === 'streaming-series') {
+          return (
+            itemType === 'serie' &&
+            isStreamingProduction(item)
+          );
+        }
+
+        return (
+          itemType === 'pelicula' ||
+          itemType === 'serie'
+        );
       })
       .map(function (item) {
-        var best = getBestReleaseForYears(item, years);
-        var releaseDateValue = best ? best.label : '';
-        var releaseDateObj = best ? best.date : null;
-        var bestImage = (best && best.imageOverride && String(best.imageOverride).trim())
-          ? String(best.imageOverride).trim()
-          : '';
+        var best = getBestReleaseForYears(
+          item,
+          years
+        );
+
+        var releaseDateValue =
+          best ? best.label : '';
+
+        var releaseDateObj =
+          best ? best.date : null;
+
+        var bestImage =
+          best &&
+            best.imageOverride &&
+            String(best.imageOverride).trim()
+            ? String(best.imageOverride).trim()
+            : '';
+
+        var itemType = normalizeType(
+          item.type,
+          item
+        );
+
+        var isVertical =
+          item.streaming_row ===
+          'ficciones_verticales';
+
         return {
           id: item.id,
-          title: item.title || 'Sin titulo',
-          image: bestImage || ((item.image && String(item.image).trim()) ? item.image : 'images/verticals/placeholder-280x420.svg'),
-          type: normalizeType(item.type, item),
-          year: (item.year && String(item.year).trim())
-            ? String(item.year).trim()
-            : (best ? String(best.date.getFullYear()) : primaryYear),
-          releaseDate: releaseDateValue,
-          releaseTs: releaseDateObj ? releaseDateObj.getTime() : null
+
+          category:
+            isVertical
+              ? 'vertical'
+              : itemType,
+
+          title:
+            item.title || 'Sin título',
+
+          image:
+            bestImage ||
+            (
+              item.image &&
+                String(item.image).trim()
+                ? item.image
+                : 'images/verticals/placeholder-280x420.svg'
+            ),
+
+          type:
+            itemType,
+
+          year:
+            item.year &&
+              String(item.year).trim()
+              ? String(item.year).trim()
+              : (
+                best
+                  ? String(
+                    best.date.getFullYear()
+                  )
+                  : primaryYear
+              ),
+
+          releaseDate:
+            releaseDateValue,
+
+          releaseTs:
+            releaseDateObj
+              ? releaseDateObj.getTime()
+              : null
         };
       });
 
+    /*
+     * Series ya estrenadas.
+     * Se muestran desde la más reciente.
+     */
     var released = filtered
-      .filter(function (item) { return item.releaseTs !== null && item.releaseTs <= today.getTime(); })
-      .sort(function (a, b) { return b.releaseTs - a.releaseTs; });
-
-    var upcoming = filtered
-      .filter(function (item) { return item.releaseTs === null || item.releaseTs > today.getTime(); })
+      .filter(function (item) {
+        return (
+          item.releaseTs !== null &&
+          item.releaseTs <= today.getTime()
+        );
+      })
       .sort(function (a, b) {
-        var ta = a.releaseTs === null ? Number.MAX_SAFE_INTEGER : a.releaseTs;
-        var tb = b.releaseTs === null ? Number.MAX_SAFE_INTEGER : b.releaseTs;
-        if (ta !== tb) return ta - tb;
-
-        // If both items have no exact date, sort by year to keep chronological flow.
-        var ya = Number(a.year) || Number.MAX_SAFE_INTEGER;
-        var yb = Number(b.year) || Number.MAX_SAFE_INTEGER;
-        if (ya !== yb) return ya - yb;
-
-        return String(a.title || '').localeCompare(String(b.title || ''), 'es', { sensitivity: 'base' });
+        return b.releaseTs - a.releaseTs;
       });
 
-    var rows = mode === 'upcoming'
-      ? upcoming.map(function (item) { return { item: item, upcoming: true }; })
-      : released.map(function (item) { return { item: item, upcoming: false }; });
+    /*
+     * Series en producción o próximas.
+     * Primero aparecen las que tienen fecha confirmada.
+     */
+    var upcoming = filtered
+      .filter(function (item) {
+        return (
+          item.releaseTs === null ||
+          item.releaseTs > today.getTime()
+        );
+      })
+      .sort(function (a, b) {
+        var timeA =
+          a.releaseTs === null
+            ? Number.MAX_SAFE_INTEGER
+            : a.releaseTs;
+
+        var timeB =
+          b.releaseTs === null
+            ? Number.MAX_SAFE_INTEGER
+            : b.releaseTs;
+
+        if (timeA !== timeB) {
+          return timeA - timeB;
+        }
+
+        var yearA =
+          Number(a.year) ||
+          Number.MAX_SAFE_INTEGER;
+
+        var yearB =
+          Number(b.year) ||
+          Number.MAX_SAFE_INTEGER;
+
+        if (yearA !== yearB) {
+          return yearA - yearB;
+        }
+
+        return String(a.title || '')
+          .localeCompare(
+            String(b.title || ''),
+            'es',
+            { sensitivity: 'base' }
+          );
+      });
+
+    var rows =
+      mode === 'upcoming'
+        ? upcoming.map(function (item) {
+          return {
+            item: item,
+            upcoming: true
+          };
+        })
+        : released.map(function (item) {
+          return {
+            item: item,
+            upcoming: false
+          };
+        });
 
     section._carteleraRows = rows;
-    updateSectionCount(section, 'all');
 
-    listEl.innerHTML = rows.length
-      ? rows.map(function (row) { return buildCardHtml(row.item, row.upcoming); }).join('')
-      : '<li class="item-a"><div class="latest-box"><div class="latest-b-text"><strong>Sin titulos</strong><p class="cartelera-empty">No hay titulos para esta seccion.</p></div></div></li>';
+    var defaultType = 'all';
+
+    updateSectionCount(
+      section,
+      defaultType
+    );
+
+    listEl.innerHTML =
+      rows.length
+        ? rows
+          .map(function (row) {
+            return buildCardHtml(
+              row.item,
+              row.upcoming
+            );
+          })
+          .join('')
+        : [
+          '<li class="item-a">',
+          '<div class="latest-box">',
+          '<div class="latest-b-text">',
+          '<strong>Sin títulos</strong>',
+          '<p class="cartelera-empty">',
+          'No hay series para esta sección.',
+          '</p>',
+          '</div>',
+          '</div>',
+          '</li>'
+        ].join('');
 
     ensureSlider(listEl);
 
-    Array.prototype.forEach.call(section.querySelectorAll('[data-cartelera-filter]'), function (btn) {
-      btn.addEventListener('click', function () {
-        Array.prototype.forEach.call(section.querySelectorAll('[data-cartelera-filter]'), function (other) {
-          other.classList.toggle('is-active', other === btn);
-        });
+    Array.prototype.forEach.call(
+      section.querySelectorAll(
+        '[data-cartelera-filter]'
+      ),
+      function (button) {
+        button.addEventListener(
+          'click',
+          function () {
+            Array.prototype.forEach.call(
+              section.querySelectorAll(
+                '[data-cartelera-filter]'
+              ),
+              function (otherButton) {
+                otherButton.classList.toggle(
+                  'is-active',
+                  otherButton === button
+                );
+              }
+            );
 
-        applyTypeFilter(section, btn.getAttribute('data-cartelera-filter') || 'all');
-      });
-    });
+            applyTypeFilter(
+              section,
+              button.getAttribute(
+                'data-cartelera-filter'
+              ) || defaultType
+            );
+          }
+        );
+      }
+    );
 
-    applyTypeFilter(section, 'all');
+    applyTypeFilter(
+      section,
+      defaultType
+    );
   }
 
   document.addEventListener('DOMContentLoaded', function () {
