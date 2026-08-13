@@ -6515,6 +6515,27 @@
       "director": "Daniel Barone"
     },
     {
+      "id": "P2056",
+      "title": "Vacaciones con Papá",
+      "type": "pelicula",
+      "year": "2027",
+      "genre": "Familiar",
+      "actors": [
+        "Darío Barassi",
+        "Violeta Urtizberea",
+        "Julieta Zylberberg"
+      ],
+      "synopsis": "Darío es un locuaz y ocurrente vendedor de air fryers que sueña con alcanzar, de una buena vez en su vida, el éxito profesional. Recientemente divorciado, en plena crisis económica y con su trabajo en riesgo, promete llevar a su hijo Ariel de vacaciones si obtiene calificaciones sobresalientes. Contra todo pronóstico, Ariel lo consigue y ambos emprenden un viaje sin dinero ni rumbo, lleno de situaciones hilarantes y entrañables que llevarán a Darío a cuestionarse qué significa realmente alcanzar el éxito.",
+      "channel": "",
+      "image": "images/verticals/2027-vacaciones-con-papa-familiar-poster280x420.webp",
+      "orientation": "vertical",
+      "viewers": "-",
+      "producer": "Buena Vista International, Pampa Films",
+      "director": "Gabriel Nesci",
+      "release_date": "01/01/2027",
+      "subtitle": "Familiar"
+    },
+    {
       "id": "T0001",
       "title": "Amigos son los amigos",
       "year": "1990",
@@ -14168,8 +14189,8 @@
         "María Valenzuela"
       ],
       "orientation": "vertical",
-      "image": "images/verticals/campeones-poster-280x420.png",
-      "horizontal_image": "",
+      "image": "images/verticals/1999-campeones-de-la-vida-canal13-poster280x420.webp",
+      "horizontal_image": "images/horizontals-1024x576/1999-campeones-de-la-vida-canal13-slide-1024x576.webp",
       "subtitle": "Telenovela",
       "horario": "22hs, 21hs",
       "capitulos": 247,
