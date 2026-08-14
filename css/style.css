@@ -416,6 +416,43 @@ nav .menu li a:hover{
   }
 }
 
+/* Encabezado compacto de En Producción en streaming */
+.cartelera-production-heading{
+  margin: 28px 18px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.cartelera-production-heading .latest-heading{
+  margin: 0;
+}
+
+.cartelera-production-heading .cartelera-count{
+  margin-left: auto;
+}
+
+/* Acercar exclusivamente En Producción de streaming */
+.cartelera-2026-section + .cartelera-streaming-upcoming{
+  padding-top: 0;
+  margin-top: -40px;
+}
+
+@media (max-width: 1100px){
+  .cartelera-2026-section + .cartelera-streaming-upcoming{
+    padding-top: 0;
+    margin-top: -28px;
+  }
+}
+
+@media (max-width: 768px){
+  .cartelera-production-heading{
+    margin: 28px 8px 10px;
+    gap: 10px;
+  }
+}
+
 .cartelera-tabs,
 .cartelera-filters{
   display: inline-flex;
