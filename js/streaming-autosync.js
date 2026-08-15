@@ -42,6 +42,18 @@
         "streaming"
     ];
 
+    var MULTI_SEASON_PLATFORMS = [
+        "netflix",
+        "flow",
+        "disney+",
+        "disney +",
+        "disney plus",
+        "prime video",
+        "amazon prime video",
+        "hbo max",
+        "max"
+    ];
+
     function normalize(value) {
         return String(value || "")
             .normalize("NFD")
@@ -233,6 +245,115 @@
         return category.indexOf("drama") !== -1;
     }
 
+    function isMultiSeasonPlatform(item) {
+        return getSources(item).some(function (source) {
+            return (
+                MULTI_SEASON_PLATFORMS.indexOf(source) !== -1
+            );
+        });
+    }
+
+    function getSeasonNumber(season, index) {
+        var value = Number(
+            season.numero ||
+            season.season ||
+            season.season_number ||
+            index + 1
+        );
+
+        return Number.isNaN(value)
+            ? index + 1
+            : value;
+    }
+
+    function getReleasedSeasons(item, today) {
+        return toArray(item.temporadas)
+            .map(function (season, index) {
+                var number = getSeasonNumber(
+                    season,
+                    index
+                );
+
+                var date = parseDate(
+                    season.release_date ||
+                    season.fecha_estreno
+                );
+
+                if (!date && number === 1) {
+                    date = parseDate(
+                        item.release_date ||
+                        item.fecha_estreno
+                    );
+                }
+
+                return {
+                    season: season,
+                    number: number,
+                    date: date
+                };
+            })
+            .filter(function (entry) {
+                return (
+                    entry.date &&
+                    entry.date.getTime() <=
+                    today.getTime()
+                );
+            });
+    }
+
+    function hasMultipleReleasedSeasons(item, today) {
+        return (
+            getReleasedSeasons(item, today).length > 1
+        );
+    }
+
+    function getFirstSeasonImage(item) {
+        var seasons = toArray(item.temporadas)
+            .map(function (season, index) {
+                return {
+                    season: season,
+                    number: getSeasonNumber(
+                        season,
+                        index
+                    )
+                };
+            })
+            .sort(function (a, b) {
+                return a.number - b.number;
+            });
+
+        var firstSeason = seasons.filter(
+            function (entry) {
+                return (
+                    entry.number === 1 &&
+                    entry.season.image &&
+                    String(entry.season.image).trim()
+                );
+            }
+        )[0];
+
+        if (!firstSeason && seasons.length) {
+            firstSeason = seasons[0];
+        }
+
+        if (
+            firstSeason &&
+            firstSeason.season.image &&
+            String(firstSeason.season.image).trim()
+        ) {
+            return String(
+                firstSeason.season.image
+            ).trim();
+        }
+
+        return (
+            String(
+                item.first_season_image || ""
+            ).trim() ||
+            String(item.image || "").trim() ||
+            PLACEHOLDER
+        );
+    }
 
     function isJuvenile(item) {
         return getCategory(item).indexOf("juvenil") !== -1;
@@ -299,13 +420,29 @@
         textBox.className = "latest-b-text";
 
         image.src =
-            String(item.image || "").trim() ||
+            String(
+                item.displayImage ||
+                item.image ||
+                ""
+            ).trim() ||
             PLACEHOLDER;
 
         image.alt = item.title || "";
         image.loading = "lazy";
 
         title.textContent = item.title || "";
+
+        title.textContent = item.title || "";
+
+        if (item.displaySeasonCount) {
+            paragraph.textContent =
+                item.displaySeasonCount +
+                (
+                    item.displaySeasonCount === 1
+                        ? " temporada"
+                        : " temporadas"
+                );
+        }
 
         imageBox.appendChild(image);
         textBox.appendChild(title);
@@ -404,7 +541,7 @@
     }
 
     function loadStreamingCatalog() {
-        fetch("data.json?v=20260815-4", {
+        fetch("data.json?v=20260815-6", {
             cache: "no-store"
         })
             .then(function (response) {
@@ -458,6 +595,43 @@
                     }
                 );
 
+                var today = new Date();
+
+                today.setHours(23, 59, 59, 999);
+
+                var multipleSeasons = preparedItems
+                    .filter(function (entry) {
+                        return (
+                            isMultiSeasonPlatform(entry.item) &&
+                            hasMultipleReleasedSeasons(
+                                entry.item,
+                                today
+                            ) &&
+                            !isJuvenile(entry.item) &&
+                            !isVerticalFiction(entry.item)
+                        );
+                    })
+                    .map(function (entry) {
+                        return {
+                            item: Object.assign(
+                                {},
+                                entry.item,
+                                {
+                                    displayImage:
+                                        getFirstSeasonImage(
+                                            entry.item
+                                        ),
+                                    displaySeasonCount:
+                                        getReleasedSeasons(
+                                            entry.item,
+                                            today
+                                        ).length
+                                }
+                            ),
+                            latestDate: entry.latestDate
+                        };
+                    });
+
 
                 var verticalFictions = preparedItems.filter(
                     function (entry) {
@@ -468,6 +642,11 @@
                 renderSlider("comedias", comedies);
                 renderSlider("thrillers", thrillers);
                 renderSlider("dramas", dramas);
+
+                renderSlider(
+                    "multiples_temporadas",
+                    multipleSeasons
+                );
 
                 renderSlider(
                     "ficciones_verticales",

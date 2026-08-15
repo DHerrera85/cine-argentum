@@ -15129,6 +15129,7 @@
       "temporadas": [
         {
           "numero": 1,
+          "release_date": "02/07/2016",
           "image": "images/verticals/el-marginal-temporada-1-poster-280x420.png",
           "netflix_reports": [
             {
@@ -15141,6 +15142,7 @@
         },
         {
           "numero": 2,
+          "release_date": "17/07/2018",
           "image": "images/verticals/el-marginal-temporada-2-poster-280x420.png",
           "netflix_reports": [
             {
@@ -15153,6 +15155,7 @@
         },
         {
           "numero": 3,
+          "release_date": "09/07/2019",
           "image": "images/verticals/el-marginal-temporada-3-poster-280x420.png",
           "netflix_reports": [
             {
@@ -15165,6 +15168,7 @@
         },
         {
           "numero": 4,
+          "release_date": "19/01/2022",
           "image": "images/verticals/el-marginal-temporada-4-poster-280x420.png",
           "exclusive_platform": "Netflix",
           "netflix_reports": [
@@ -15178,6 +15182,7 @@
         },
         {
           "numero": 5,
+          "release_date": "04/05/2022",
           "image": "images/verticals/el-marginal-temporada-5-poster-280x420.png",
           "exclusive_platform": "Netflix",
           "netflix_reports": [
@@ -15793,8 +15798,12 @@
     {
       "id": "V204",
       "title": "Coppola, el Representante",
-      "year": "2026",
+      "type": "serie",
+      "year": "2024",
       "channel": "Disney+",
+      "platforms": [
+        "Disney+"
+      ],
       "genre": "Drama",
       "actors": [
         "Juan Minujín",
@@ -15803,9 +15812,23 @@
         "Agustín Sullivan"
       ],
       "orientation": "vertical",
-      "release_date": "01/10/2026",
-      "image": "images/verticals/2026-coppola-elrepresentante-poster280x420.png",
-      "subtitle": "Drama"
+      "release_date": "15/03/2024",
+      "image": "images/verticals/2026-coppola-elrepresentante-season2-poster280x420.png",
+      "horizontal_image": "images/horizontals-1024x576/coppola-slide-1024x576.png",
+      "subtitle": "Drama",
+      "sinopsis": "La trama sigue la vertiginosa vida y los momentos más polémicos de Guillermo Coppola, el célebre mánager de Diego Armando Maradona, mientras intenta equilibrar su agitada vida personal con las locas consecuencias de las acciones del astro del fútbol.",
+      "temporadas": [
+        {
+          "numero": 1,
+          "release_date": "15/03/2024",
+          "image": "images/verticals/2024-coppola-elrepresentante-seaason1-poster-280x420.png"
+        },
+        {
+          "numero": 2,
+          "release_date": "01/10/2026",
+          "image": "images/verticals/2026-coppola-elrepresentante-season2-poster280x420.png"
+        }
+      ]
     },
     {
       "id": "V205",
