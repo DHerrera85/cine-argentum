@@ -6187,6 +6187,7 @@
       "image": "images/verticals/sanamente-2026-poster-280x420.png",
       "subtitle": "Comedia",
       "capitulos": 8,
+      "release_date": "01/11/2026",
       "sinopsis": "Sanamente sigue a un grupo de personas con distintos problemas de salud mental que terminan conviviendo bajo un mismo techo. Juntos intentan construir una red de apoyo mientras enfrentan sus conflictos personales, los prejuicios sociales y la búsqueda de bienestar.",
       "producer": "Adrián Suar",
       "tipo_emision": "Serie"
@@ -6320,7 +6321,7 @@
       "id": "P2046",
       "title": "La Jefa: Aunque no Quiera",
       "type": "serie",
-      "year": "2026",
+      "year": "2027",
       "actors": [
         "Natalia Oreiro",
         "Juan Ingaramo",
@@ -6331,6 +6332,7 @@
       "channel": "Disney+",
       "platform": "Disney+",
       "genre": "Comedia",
+      "release_date": "01/01/2027",
       "image": "images/verticals/2026-lajefaaunquenoloquiera-poster280x420.png",
       "orientation": "vertical",
       "subtitle": "Comedia"
@@ -17760,6 +17762,7 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/yiya-poster-280x420.png",
+      "fecha_estreno": "13/11/2025",
       "subtitle": "Thriller"
     },
     {
