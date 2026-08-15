@@ -15814,14 +15814,14 @@
       "orientation": "vertical",
       "release_date": "15/03/2024",
       "image": "images/verticals/2026-coppola-elrepresentante-season2-poster280x420.png",
-      "horizontal_image": "images/horizontals-1024x576/coppola-slide-1024x576.png",
+      "horizontal_image": "images/horizontals-1024x576/2024-coppola-disney-slide-1024x576.png",
       "subtitle": "Drama",
       "sinopsis": "La trama sigue la vertiginosa vida y los momentos más polémicos de Guillermo Coppola, el célebre mánager de Diego Armando Maradona, mientras intenta equilibrar su agitada vida personal con las locas consecuencias de las acciones del astro del fútbol.",
       "temporadas": [
         {
           "numero": 1,
           "release_date": "15/03/2024",
-          "image": "images/verticals/2024-coppola-elrepresentante-seaason1-poster-280x420.png"
+          "image": "images/verticals/2024-coppola-elrepresentante-season1-poster-280x420.png"
         },
         {
           "numero": 2,
@@ -15842,7 +15842,8 @@
         "Andy Chango"
       ],
       "orientation": "vertical",
-      "image": "images/verticals/el-amor-despues-del-amor-poster-280x420.png",
+      "image": "images/verticals/2023-el-amor-despues-del-amor-netflix-poster-280x420.png",
+      "horizontal_image": "images/horizontals-1024x576/2023-el-amor-despues-del-amor-netflix-slide-1024x576.png",
       "release_date": "26/04/2023",
       "subtitle": "Drama",
       "capitulos": 8,
@@ -15982,7 +15983,8 @@
         "Sofía Gala"
       ],
       "orientation": "vertical",
-      "image": "images/verticals/apache-poster-280x420.png",
+      "image": "images/verticals/2019-apache-netflix-poster-280x420.png",
+      "horizontal_image": "images/horizontals-1024x576/2019-apache-netflix-slide-1024x576.png",
       "subtitle": "Drama",
       "release_date": "16/08/2019",
       "capitulos": 8,
@@ -16031,7 +16033,11 @@
         "Agustín Aristarán"
       ],
       "orientation": "vertical",
-      "image": "images/verticals/cris-miro-ella-poster-280x420.png",
+      "image": "images/verticals/2024-cris-miro-ella-flow-poster-280x420.png",
+      "horizontal_image": "images/horizontals-1024x576/2024-cris-miro-flow-slide-1024x576.png",
+      "release_date": "24/06/2024",
+      "synopsis": "La historia de Cris Miró, la primera vedette trans argentina de éxito, ícono indiscutible de los años 90 y revolucionaria de la época",
+      "episodes": 8,
       "subtitle": "Drama"
     },
     {
@@ -16064,7 +16070,11 @@
         "Martín Slipak"
       ],
       "orientation": "vertical",
-      "image": "images/verticals/ringo-poster-280x420.png",
+      "image": "images/verticals/2023-ringo-disney-poster-280x420.png",
+      "synopsis": "Sigue la vida del boxeador argentino Oscar \"Ringo\" Bonavena para relatar su ascenso, la gloria de su éxito y su declive, hasta su trágica muerte en Las Vegas.",
+      "release_date": "24/03/2023",
+      "episodes": 7,
+      "horizontal_image": "images/horizontals-1024x576/2023-ringo-disney-slide-1024x576.png",
       "subtitle": "Drama"
     },
     {
