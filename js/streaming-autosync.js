@@ -365,6 +365,13 @@
         );
     }
 
+    function isBioseries(item) {
+        return (
+            normalize(item.streaming_row) ===
+            "bioseries"
+        );
+    }
+
     function prepareItems(items) {
         var today = new Date();
 
@@ -456,6 +463,45 @@
         return li;
     }
 
+    function createHorizontalCard(item, index) {
+        var li = document.createElement("li");
+        var link = document.createElement("a");
+        var imageBox = document.createElement("div");
+        var image = document.createElement("img");
+        var textBox = document.createElement("div");
+        var title = document.createElement("strong");
+        var paragraph = document.createElement("p");
+
+        li.className =
+            ITEM_CLASSES[index % ITEM_CLASSES.length];
+
+        link.href =
+            "show.html?id=" +
+            encodeURIComponent(item.id || "");
+
+        imageBox.className = "showcase-box";
+        textBox.className = "latest-b-text";
+
+        image.src = String(
+            item.horizontal_image || ""
+        ).trim();
+
+        image.alt = item.title || "";
+        image.loading = "lazy";
+
+        title.textContent = item.title || "";
+
+        imageBox.appendChild(image);
+        textBox.appendChild(title);
+        textBox.appendChild(paragraph);
+
+        link.appendChild(imageBox);
+        link.appendChild(textBox);
+        li.appendChild(link);
+
+        return li;
+    }
+
     function initializeSlider($slider) {
         if (
             !$slider.length ||
@@ -489,6 +535,55 @@
                     breakpoint: 768,
                     settings: {
                         item: 2,
+                        slideMove: 1,
+                        slideMargin: 12
+                    }
+                }
+            ],
+
+            onSliderLoad: function () {
+                $slider
+                    .removeClass("cs-hidden")
+                    .addClass("slider-ready");
+            }
+        });
+    }
+
+    function initializeHorizontalSlider($slider) {
+        if (
+            !$slider.length ||
+            $slider.data("lightSlider")
+        ) {
+            return;
+        }
+
+        $slider.addClass("slider-h");
+
+        $slider.lightSlider({
+            item: 3,
+            autoWidth: false,
+            slideMove: 1,
+            slideMargin: 20,
+            loop: false,
+            pager: false,
+            controls: true,
+            enableTouch: true,
+            enableDrag: true,
+            freeMove: false,
+
+            responsive: [
+                {
+                    breakpoint: 1100,
+                    settings: {
+                        item: 2,
+                        slideMove: 1,
+                        slideMargin: 14
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        item: 1,
                         slideMove: 1,
                         slideMargin: 12
                     }
@@ -540,8 +635,49 @@
         initializeSlider($slider);
     }
 
+    function renderHorizontalSlider(
+        catalogName,
+        entries
+    ) {
+        var $slider = $(
+            '[data-streaming-catalog="' +
+            catalogName +
+            '"]'
+        );
+
+        if (!$slider.length) {
+            return;
+        }
+
+        $slider
+            .empty()
+            .addClass("slider-h");
+
+        entries.forEach(function (entry, index) {
+            $slider[0].appendChild(
+                createHorizontalCard(
+                    entry.item,
+                    index
+                )
+            );
+        });
+
+        if (!entries.length) {
+            $slider.removeClass("cs-hidden");
+
+            console.warn(
+                "streaming-autosync: no se encontraron fichas para " +
+                catalogName
+            );
+
+            return;
+        }
+
+        initializeHorizontalSlider($slider);
+    }
+
     function loadStreamingCatalog() {
-        fetch("data.json?v=20260815-6", {
+        fetch("data.json?v=20260815-7", {
             cache: "no-store"
         })
             .then(function (response) {
@@ -632,6 +768,17 @@
                         };
                     });
 
+                var bioseries = preparedItems.filter(
+                    function (entry) {
+                        return (
+                            isBioseries(entry.item) &&
+                            String(
+                                entry.item.horizontal_image ||
+                                ""
+                            ).trim()
+                        );
+                    }
+                );
 
                 var verticalFictions = preparedItems.filter(
                     function (entry) {
@@ -651,6 +798,11 @@
                 renderSlider(
                     "ficciones_verticales",
                     verticalFictions
+                );
+
+                renderHorizontalSlider(
+                    "bioseries",
+                    bioseries
                 );
             })
             .catch(function (error) {

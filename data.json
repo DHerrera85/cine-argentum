@@ -11432,9 +11432,23 @@
       "year": "2026",
       "channel": "Netflix",
       "genre": "Drama",
-      "actors": [],
+      "actors": [
+        "Moria Casán",
+        "Sofía Gala",
+        "Griselda Siciliani",
+        "Cecilia Roth",
+        "Marco Antonio Caponi",
+        "Rafael Ferro",
+        "Mica Riera",
+        "Leticia Brédice",
+        "Joaquín Ferreira"
+      ],
       "orientation": "vertical",
-      "image": "images/verticals/moria-poster-280x420.png",
+      "sinopsis": "La fama excesiva e icónica de Moria se dispara al final de cada etapa de su vida, dejando al mundo preguntándose, ¿dónde comienza Ana María Casanova, y dónde termina Moria Casan?",
+      "image": "images/verticals/2026-moria-netflix-poster-280x420.png",
+      "horizontal_image": "images/horizontals-1024x576/2026-moria-netflix-slide1024x576.webp",
+      "capitulos": 8,
+      "streaming_row": "bioseries",
       "subtitle": "Drama",
       "release_date": "14/08/2026"
     },
@@ -15816,6 +15830,7 @@
       "image": "images/verticals/2026-coppola-elrepresentante-season2-poster280x420.png",
       "horizontal_image": "images/horizontals-1024x576/2024-coppola-disney-slide-1024x576.png",
       "subtitle": "Drama",
+      "streaming_row": "bioseries",
       "sinopsis": "La trama sigue la vertiginosa vida y los momentos más polémicos de Guillermo Coppola, el célebre mánager de Diego Armando Maradona, mientras intenta equilibrar su agitada vida personal con las locas consecuencias de las acciones del astro del fútbol.",
       "temporadas": [
         {
@@ -15847,6 +15862,7 @@
       "release_date": "26/04/2023",
       "subtitle": "Drama",
       "capitulos": 8,
+      "streaming_row": "bioseries",
       "sinopsis": "La serie retrata la intensa vida y carrera de Fito Páez, desde sus inicios musicales en Rosario hasta convertirse en una figura clave del rock en español. A lo largo de su camino enfrenta profundas pérdidas familiares, amores y los desafíos de la fama.",
       "creador": "Juan Matias Carballo",
       "temporadas": [
@@ -15967,7 +15983,12 @@
         "Julieta Cardinali"
       ],
       "orientation": "vertical",
-      "image": "images/verticals/maradona-poster-280x420.png",
+      "sinopsis": "Una mirada a los primeros años y la prolífica carrera de la leyenda del fútbol argentino Diego Maradona. Desde su infancia en Villa Fiorito hasta su ascenso a la fama internacional, la serie explora los desafíos, triunfos y controversias que marcaron su vida dentro y fuera del campo.",
+      "image": "images/verticals/2021-maradona-primevideo-poster-280x420.png",
+      "horizontal_image": "images/horizontals-1024x576/2021-maradona-primevideo-slide-1024x576.png",
+      "capitulos": 10,
+      "release_date": "29/10/2021",
+      "streaming_row": "bioseries",
       "subtitle": "Drama"
     },
     {
@@ -15987,6 +16008,7 @@
       "horizontal_image": "images/horizontals-1024x576/2019-apache-netflix-slide-1024x576.png",
       "subtitle": "Drama",
       "release_date": "16/08/2019",
+      "streaming_row": "bioseries",
       "capitulos": 8,
       "sinopsis": "Narra la vida del jugador de fútbol Carlos Tévez, desde su infancia hasta alcanzar la fama con Boca Juniors.",
       "rating": "8,2",
@@ -16038,6 +16060,7 @@
       "release_date": "24/06/2024",
       "synopsis": "La historia de Cris Miró, la primera vedette trans argentina de éxito, ícono indiscutible de los años 90 y revolucionaria de la época",
       "episodes": 8,
+      "streaming_row": "bioseries",
       "subtitle": "Drama"
     },
     {
@@ -16074,6 +16097,7 @@
       "synopsis": "Sigue la vida del boxeador argentino Oscar \"Ringo\" Bonavena para relatar su ascenso, la gloria de su éxito y su declive, hasta su trágica muerte en Las Vegas.",
       "release_date": "24/03/2023",
       "episodes": 7,
+      "streaming_row": "bioseries",
       "horizontal_image": "images/horizontals-1024x576/2023-ringo-disney-slide-1024x576.png",
       "subtitle": "Drama"
     },
