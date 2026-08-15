@@ -1,0 +1,236 @@
+/* =========================================================
+   CATÁLOGO DE STREAMING
+   Diseño basado en la estructura visual de tv-90s.html
+   ========================================================= */
+
+/* Contenedor general del catálogo */
+.streaming-page {
+  width: 100%;
+  padding: 8px 0 20px;
+  overflow: hidden;
+  box-sizing: border-box;
+  background: #141a21;
+  color: #ffffff;
+}
+
+/* Secciones generales */
+.streaming-section {
+  width: 100%;
+  padding: 24px 32px;
+  box-sizing: border-box;
+}
+
+/* Encabezados de las filas */
+.streaming-section > .showcase-heading,
+.streaming-section > .latest-heading {
+  margin: 0 0 20px;
+  padding: 0;
+  color: #ffffff;
+}
+
+/* =========================================================
+   GALERÍAS HORIZONTALES
+   Bioseries y Thrillers Políticos
+   ========================================================= */
+
+.streaming-genre-showcase {
+  width: calc(100% - 36px);
+  margin: 10px 18px 18px;
+  overflow: hidden;
+
+  border: 1px solid rgba(255, 255, 255, 0.045);
+  border-radius: 16px;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.025) 0%,
+      rgba(255, 255, 255, 0.012) 100%
+    );
+
+  box-shadow:
+    0 8px 26px rgba(0, 0, 0, 0.10),
+    inset 0 1px 0 rgba(255, 255, 255, 0.025);
+}
+
+.streaming-genre-showcase .slider-h {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Respaldo mientras LightSlider carga */
+.streaming-genre-showcase .slider-h:not(.lightSlider) {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% - 40px) / 3);
+  gap: 20px;
+
+  overflow-x: auto;
+  overflow-y: hidden;
+
+  scroll-snap-type: x mandatory;
+  scrollbar-width: thin;
+}
+
+.streaming-genre-showcase .slider-h:not(.lightSlider) > li {
+  min-width: 0;
+  scroll-snap-align: start;
+}
+
+.streaming-genre-showcase .slider-h a {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
+.streaming-genre-showcase .showcase-box {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: 12px;
+  background: #202832;
+}
+
+.streaming-genre-showcase .showcase-box img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: inherit;
+}
+
+.streaming-genre-showcase .latest-b-text {
+  width: 100%;
+  margin: 0;
+  padding: 0 8px 4px;
+  text-align: center;
+  background: transparent !important;
+}
+
+.streaming-genre-showcase .latest-b-text strong {
+  display: block;
+  margin-top: 12px;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+/* =========================================================
+   GALERÍAS VERTICALES
+   Comedias, Thrillers, Dramas y Múltiples Temporadas
+   ========================================================= */
+
+.streaming-vertical-showcase {
+  overflow: hidden;
+}
+
+.streaming-vertical-showcase .slider-v {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.streaming-vertical-showcase .latest-box {
+  background: transparent;
+  box-shadow: none;
+}
+
+.streaming-vertical-showcase .latest-b-text {
+  background: transparent !important;
+}
+
+/* =========================================================
+   ANIMACIÓN SUAVE
+   ========================================================= */
+
+@keyframes streamingSectionFade {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.streaming-genre-showcase,
+.streaming-vertical-showcase {
+  animation: streamingSectionFade 0.35s ease-out both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .streaming-genre-showcase,
+  .streaming-vertical-showcase {
+    animation: none;
+  }
+}
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 1100px) {
+  .streaming-section {
+    padding: 22px 20px;
+  }
+
+  .streaming-genre-showcase {
+    width: calc(100% - 24px);
+    margin: 8px 12px 16px;
+  }
+
+  .streaming-genre-showcase .slider-h:not(.lightSlider) {
+    grid-auto-columns: calc((100% - 16px) / 2);
+    gap: 16px;
+  }
+}
+
+/* =========================================================
+   MÓVIL
+   ========================================================= */
+
+@media (max-width: 768px) {
+  .streaming-page {
+    padding-bottom: 12px;
+  }
+
+  .streaming-section {
+    padding: 20px 8px;
+  }
+
+  .streaming-section > .showcase-heading,
+  .streaming-section > .latest-heading {
+    margin-bottom: 14px;
+  }
+
+  .streaming-genre-showcase {
+    width: 100%;
+    margin: 8px 0 14px;
+    padding: 18px 8px;
+    border-radius: 12px;
+  }
+
+  .streaming-genre-showcase .slider-h:not(.lightSlider) {
+    grid-auto-columns: 86%;
+    gap: 12px;
+  }
+}
+
+/* =========================================================
+   MÓVIL PEQUEÑO
+   ========================================================= */
+
+@media (max-width: 480px) {
+  .streaming-section {
+    padding: 18px 8px;
+  }
+
+  .streaming-genre-showcase {
+    padding: 16px 6px;
+  }
+
+  .streaming-genre-showcase .slider-h:not(.lightSlider) {
+    grid-auto-columns: 88%;
+    gap: 10px;
+  }
+}
