@@ -225,248 +225,269 @@
         );
     }
 
+    function isDrama(item) {
+        var category = normalize(
+            item.genre || item.subtitle
+        );
+
+        return category.indexOf("drama") !== -1;
+    }
+
+
     function isJuvenile(item) {
         return getCategory(item).indexOf("juvenil") !== -1;
     }
 
     function isVerticalFiction(item) {
-            return (
-                item.streaming_row === "ficciones_verticales"
-            );
-        }
+        return (
+            item.streaming_row === "ficciones_verticales"
+        );
+    }
 
-        function prepareItems(items) {
-            var today = new Date();
+    function prepareItems(items) {
+        var today = new Date();
 
-            today.setHours(23, 59, 59, 999);
+        today.setHours(23, 59, 59, 999);
 
-            return items
-                .filter(function (item) {
-                    return (
-                        item &&
-                        normalize(item.orientation) === "vertical" &&
-                        isStreamingSeries(item)
-                    );
-                })
-                .map(function (item) {
-                    return {
-                        item: item,
-                        latestDate: getLatestReleasedDate(
-                            item,
-                            today
-                        )
-                    };
-                })
-                .filter(function (entry) {
-                    return entry.latestDate !== null;
-                })
-                .sort(function (a, b) {
-                    return (
-                        b.latestDate.getTime() -
-                        a.latestDate.getTime()
-                    );
-                });
-        }
-
-        function createCard(item, index) {
-            var li = document.createElement("li");
-            var link = document.createElement("a");
-            var box = document.createElement("div");
-            var imageBox = document.createElement("div");
-            var image = document.createElement("img");
-            var textBox = document.createElement("div");
-            var title = document.createElement("strong");
-            var paragraph = document.createElement("p");
-
-            li.className =
-                ITEM_CLASSES[index % ITEM_CLASSES.length];
-
-            link.href =
-                "show.html?id=" +
-                encodeURIComponent(item.id || "");
-
-            box.className = "latest-box";
-            imageBox.className = "latest-b-img";
-            textBox.className = "latest-b-text";
-
-            image.src =
-                String(item.image || "").trim() ||
-                PLACEHOLDER;
-
-            image.alt = item.title || "";
-            image.loading = "lazy";
-
-            title.textContent = item.title || "";
-
-            imageBox.appendChild(image);
-            textBox.appendChild(title);
-            textBox.appendChild(paragraph);
-
-            box.appendChild(imageBox);
-            box.appendChild(textBox);
-            link.appendChild(box);
-            li.appendChild(link);
-
-            return li;
-        }
-
-        function initializeSlider($slider) {
-            if (
-                !$slider.length ||
-                $slider.data("lightSlider")
-            ) {
-                return;
-            }
-
-            $slider.lightSlider({
-                item: 5,
-                autoWidth: false,
-                slideMove: 1,
-                slideMargin: 12,
-                loop: false,
-                pager: false,
-                controls: true,
-                enableTouch: true,
-                enableDrag: true,
-                freeMove: false,
-
-                responsive: [
-                    {
-                        breakpoint: 1100,
-                        settings: {
-                            item: 4,
-                            slideMove: 1,
-                            slideMargin: 12
-                        }
-                    },
-                    {
-                        breakpoint: 768,
-                        settings: {
-                            item: 2,
-                            slideMove: 1,
-                            slideMargin: 12
-                        }
-                    }
-                ],
-
-                onSliderLoad: function () {
-                    $slider
-                        .removeClass("cs-hidden")
-                        .addClass("slider-ready");
-                }
-            });
-        }
-
-        function renderSlider(catalogName, entries) {
-            var $slider = $(
-                '[data-streaming-catalog="' +
-                catalogName +
-                '"]'
-            );
-
-            if (!$slider.length) {
-                return;
-            }
-
-            $slider.empty();
-
-            entries.forEach(function (entry, index) {
-                $slider[0].appendChild(
-                    createCard(entry.item, index)
+        return items
+            .filter(function (item) {
+                return (
+                    item &&
+                    normalize(item.orientation) === "vertical" &&
+                    isStreamingSeries(item)
                 );
-            });
-
-            if (!entries.length) {
-                $slider.removeClass("cs-hidden");
-
-                console.warn(
-                    "streaming-autosync: no se encontraron fichas para " +
-                    catalogName
-                );
-
-                return;
-            }
-
-            /*
-             * El carrusel se inicializa después de agregar
-             * la totalidad de las fichas.
-             */
-            initializeSlider($slider);
-        }
-
-        function loadStreamingCatalog() {
-            fetch("data.json?v=20260815-3", {
-                cache: "no-store"
             })
-                .then(function (response) {
-                    if (!response.ok) {
-                        throw new Error(
-                            "No se pudo cargar data.json: " +
-                            response.status
+            .map(function (item) {
+                return {
+                    item: item,
+                    latestDate: getLatestReleasedDate(
+                        item,
+                        today
+                    )
+                };
+            })
+            .filter(function (entry) {
+                return entry.latestDate !== null;
+            })
+            .sort(function (a, b) {
+                return (
+                    b.latestDate.getTime() -
+                    a.latestDate.getTime()
+                );
+            });
+    }
+
+    function createCard(item, index) {
+        var li = document.createElement("li");
+        var link = document.createElement("a");
+        var box = document.createElement("div");
+        var imageBox = document.createElement("div");
+        var image = document.createElement("img");
+        var textBox = document.createElement("div");
+        var title = document.createElement("strong");
+        var paragraph = document.createElement("p");
+
+        li.className =
+            ITEM_CLASSES[index % ITEM_CLASSES.length];
+
+        link.href =
+            "show.html?id=" +
+            encodeURIComponent(item.id || "");
+
+        box.className = "latest-box";
+        imageBox.className = "latest-b-img";
+        textBox.className = "latest-b-text";
+
+        image.src =
+            String(item.image || "").trim() ||
+            PLACEHOLDER;
+
+        image.alt = item.title || "";
+        image.loading = "lazy";
+
+        title.textContent = item.title || "";
+
+        imageBox.appendChild(image);
+        textBox.appendChild(title);
+        textBox.appendChild(paragraph);
+
+        box.appendChild(imageBox);
+        box.appendChild(textBox);
+        link.appendChild(box);
+        li.appendChild(link);
+
+        return li;
+    }
+
+    function initializeSlider($slider) {
+        if (
+            !$slider.length ||
+            $slider.data("lightSlider")
+        ) {
+            return;
+        }
+
+        $slider.lightSlider({
+            item: 5,
+            autoWidth: false,
+            slideMove: 1,
+            slideMargin: 12,
+            loop: false,
+            pager: false,
+            controls: true,
+            enableTouch: true,
+            enableDrag: true,
+            freeMove: false,
+
+            responsive: [
+                {
+                    breakpoint: 1100,
+                    settings: {
+                        item: 4,
+                        slideMove: 1,
+                        slideMargin: 12
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        item: 2,
+                        slideMove: 1,
+                        slideMargin: 12
+                    }
+                }
+            ],
+
+            onSliderLoad: function () {
+                $slider
+                    .removeClass("cs-hidden")
+                    .addClass("slider-ready");
+            }
+        });
+    }
+
+    function renderSlider(catalogName, entries) {
+        var $slider = $(
+            '[data-streaming-catalog="' +
+            catalogName +
+            '"]'
+        );
+
+        if (!$slider.length) {
+            return;
+        }
+
+        $slider.empty();
+
+        entries.forEach(function (entry, index) {
+            $slider[0].appendChild(
+                createCard(entry.item, index)
+            );
+        });
+
+        if (!entries.length) {
+            $slider.removeClass("cs-hidden");
+
+            console.warn(
+                "streaming-autosync: no se encontraron fichas para " +
+                catalogName
+            );
+
+            return;
+        }
+
+        /*
+         * El carrusel se inicializa después de agregar
+         * la totalidad de las fichas.
+         */
+        initializeSlider($slider);
+    }
+
+    function loadStreamingCatalog() {
+        fetch("data.json?v=20260815-4", {
+            cache: "no-store"
+        })
+            .then(function (response) {
+                if (!response.ok) {
+                    throw new Error(
+                        "No se pudo cargar data.json: " +
+                        response.status
+                    );
+                }
+
+                return response.json();
+            })
+            .then(function (data) {
+                var items = Array.isArray(data)
+                    ? data
+                    : (
+                        Array.isArray(data.items)
+                            ? data.items
+                            : []
+                    );
+
+                var preparedItems = prepareItems(items);
+
+                var comedies = preparedItems.filter(
+                    function (entry) {
+                        return (
+                            isComedy(entry.item) &&
+                            !isJuvenile(entry.item) &&
+                            !entry.item.streaming_row
                         );
                     }
+                );
 
-                    return response.json();
-                })
-                .then(function (data) {
-                    var items = Array.isArray(data)
-                        ? data
-                        : (
-                            Array.isArray(data.items)
-                                ? data.items
-                                : []
+                var thrillers = preparedItems.filter(
+                    function (entry) {
+                        return (
+                            isThrillerOrCrime(entry.item) &&
+                            !isJuvenile(entry.item) &&
+                            !entry.item.streaming_row
                         );
+                    }
+                );
 
-                    var preparedItems = prepareItems(items);
+                var dramas = preparedItems.filter(
+                    function (entry) {
+                        return (
+                            isDrama(entry.item) &&
+                            !isJuvenile(entry.item) &&
+                            !entry.item.streaming_row
+                        );
+                    }
+                );
 
-                    var comedies = preparedItems.filter(
-                        function (entry) {
-                            return (
-                                isComedy(entry.item) &&
-                                !isJuvenile(entry.item) &&
-                                !entry.item.streaming_row
-                            );
-                        }
-                    );
 
-                    var thrillers = preparedItems.filter(
-                        function (entry) {
-                            return (
-                                isThrillerOrCrime(entry.item) &&
-                                !isJuvenile(entry.item) &&
-                                !entry.item.streaming_row
-                            );
-                        }
-                    );
+                var verticalFictions = preparedItems.filter(
+                    function (entry) {
+                        return isVerticalFiction(entry.item);
+                    }
+                );
 
-                    var verticalFictions = preparedItems.filter(
-                        function (entry) {
-                            return isVerticalFiction(entry.item);
-                        }
-                    );
+                renderSlider("comedias", comedies);
+                renderSlider("thrillers", thrillers);
+                renderSlider("dramas", dramas);
 
-                    renderSlider("comedias", comedies);
-                    renderSlider("thrillers", thrillers);
+                renderSlider(
+                    "ficciones_verticales",
+                    verticalFictions
+                );
+            })
+            .catch(function (error) {
+                console.error(
+                    "streaming-autosync:",
+                    error
+                );
+            });
+    }
 
-                    renderSlider(
-                        "ficciones_verticales",
-                        verticalFictions
-                    );
-                })
-                .catch(function (error) {
-                    console.error(
-                        "streaming-autosync:",
-                        error
-                    );
-                });
-        }
-
-        if (document.readyState === "loading") {
-            document.addEventListener(
-                "DOMContentLoaded",
-                loadStreamingCatalog
-            );
-        } else {
-            loadStreamingCatalog();
-        }
-    })(window.jQuery);
+    if (document.readyState === "loading") {
+        document.addEventListener(
+            "DOMContentLoaded",
+            loadStreamingCatalog
+        );
+    } else {
+        loadStreamingCatalog();
+    }
+})(window.jQuery);

@@ -6381,6 +6381,7 @@
       ],
       "channel": "Streaming",
       "genre": "Juvenil",
+      "release_date": "01/01/2027",
       "image": "images/verticals/2026-noa-poster280x420.png",
       "orientation": "vertical",
       "subtitle": "Juvenil"
@@ -6389,13 +6390,17 @@
       "id": "P2050",
       "title": "Todo",
       "type": "serie",
-      "year": "2026",
+      "year": "2027",
       "channel": "Disney+",
       "platform": "Disney+",
       "genre": "Drama",
+      "actors": [
+        "Luis Brandoni"
+      ],
       "image": "images/verticals/2026-todo-poster280x420.png",
       "orientation": "vertical",
-      "subtitle": "Drama"
+      "release_date": "01/01/2027",
+      "subtitle": "Comedia"
     },
     {
       "id": "P2052",
@@ -11436,14 +11441,16 @@
     {
       "id": "V303",
       "title": "Gordon",
-      "year": "2026",
+      "year": "2027",
       "channel": "Netflix",
       "genre": "Drama",
-      "actors": [],
+      "actors": [
+        "Rodrigo de la Serna"
+      ],
       "orientation": "vertical",
       "image": "images/verticals/gordon-poster-280x420.png",
       "subtitle": "Drama",
-      "release_date": "-"
+      "release_date": "01/01/2027"
     },
     {
       "id": "V304",
@@ -13384,7 +13391,7 @@
       "title": "Freeks",
       "year": "2023",
       "channel": "Disney+",
-      "genre": "Drama",
+      "genre": "Juvenil",
       "actors": [
         "Guido Pennelli",
         "Julián Cerati",
@@ -13394,14 +13401,14 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/freeks-poster-280x420.png",
-      "subtitle": "Drama"
+      "subtitle": "Juvenil"
     },
     {
       "id": "v118",
       "title": "C.h.u.e.c.o.",
       "year": "2023",
       "channel": "Disney+",
-      "genre": "Comedia",
+      "genre": "Infantil",
       "actors": [
         "Darío Barassi",
         "Consuelo Duval",
@@ -13411,7 +13418,7 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/chueco-poster-280x420.png",
-      "subtitle": "Comedia"
+      "subtitle": "Infantil"
     },
     {
       "id": "v119",
@@ -14691,7 +14698,7 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/los-mufas-poster-280x420.png",
-      "subtitle": "Drama",
+      "subtitle": "Comedia",
       "release_date": "11/11/2025"
     },
     {
