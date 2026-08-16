@@ -146,6 +146,19 @@
 }
 
 /* =========================================================
+   CARTELERAS SUPERIORES DE STREAMING
+   Series 2026 y En Producción
+   ========================================================= */
+
+.cartelera-2026-section[data-cartelera-content="streaming-series"]
+.latest-box {
+  width: 100%;
+  max-width: none;
+  min-width: 0;
+  margin: 0;
+}
+
+/* =========================================================
    ANIMACIÓN SUAVE
    ========================================================= */
 

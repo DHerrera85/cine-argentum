@@ -250,31 +250,92 @@
       '</li>';
   }
 
-  function ensureSlider(ulEl) {
-    if (!window.jQuery || !window.jQuery.fn || !window.jQuery.fn.lightSlider) return;
+function ensureSlider(ulEl) {
+    if (
+      !window.jQuery ||
+      !window.jQuery.fn ||
+      !window.jQuery.fn.lightSlider
+    ) {
+      return;
+    }
 
     var $ul = window.jQuery(ulEl);
     var inst = $ul.data('lightSlider');
+
     if (inst && typeof inst.refresh === 'function') {
       inst.refresh();
       return;
     }
 
+    /*
+     * streaming.html utiliza la proporción de tv-90s.html.
+     * Las demás carteleras conservan su configuración original.
+     */
+    var streamingSection = ulEl.closest
+      ? ulEl.closest(
+          '.cartelera-2026-section[data-cartelera-content="streaming-series"]'
+        )
+      : null;
+
+    var useStreamingLayout = Boolean(streamingSection);
+
     $ul.lightSlider({
       item: 5,
       autoWidth: false,
       slideMove: 1,
-      slideMargin: 16,
+      slideMargin: useStreamingLayout ? 18 : 16,
       loop: false,
       pager: false,
       controls: true,
       enableTouch: true,
       enableDrag: true,
-      responsive: [
-        { breakpoint: 1200, settings: { item: 4, slideMove: 1, slideMargin: 14 } },
-        { breakpoint: 860, settings: { item: 3, slideMove: 1, slideMargin: 12 } },
-        { breakpoint: 640, settings: { item: 2, slideMove: 1, slideMargin: 10 } }
-      ]
+      freeMove: useStreamingLayout ? false : true,
+
+      responsive: useStreamingLayout
+        ? [
+            {
+              breakpoint: 1100,
+              settings: {
+                item: 3,
+                slideMove: 1,
+                slideMargin: 14
+              }
+            },
+            {
+              breakpoint: 768,
+              settings: {
+                item: 2,
+                slideMove: 1,
+                slideMargin: 12
+              }
+            }
+          ]
+        : [
+            {
+              breakpoint: 1200,
+              settings: {
+                item: 4,
+                slideMove: 1,
+                slideMargin: 14
+              }
+            },
+            {
+              breakpoint: 860,
+              settings: {
+                item: 3,
+                slideMove: 1,
+                slideMargin: 12
+              }
+            },
+            {
+              breakpoint: 640,
+              settings: {
+                item: 2,
+                slideMove: 1,
+                slideMargin: 10
+              }
+            }
+          ]
     });
   }
 
