@@ -15477,7 +15477,11 @@
         "Juan Minujín"
       ],
       "orientation": "vertical",
-      "image": "images/verticals/menem-poster-280x420.png",
+      "sinopsis": "La historia de Carlos Menem, el presidente que marcó un antes y un después en la historia argentina. La serie narra su ascenso al poder, su vida personal y los escándalos que lo rodearon.",
+      "streaming_row": "thrillers_politicos",
+      "release_date": "09/07/2025",
+      "image": "images/verticals/2025-menem-primevideo-poster-280x420.png",
+      "horizontal_image": "images/horizontals-1024x576/2025-menem-netflix-slide-1024x576.png",
       "subtitle": "Drama"
     },
     {
@@ -15653,10 +15657,12 @@
         "Alejandra Flechner"
       ],
       "orientation": "vertical",
-      "image": "images/verticals/las-maldiciones-poster-280x420.png",
+      "image": "images/verticals/2025-las-maldiciones-netflix-poster-280x420.png",
       "subtitle": "Thriller",
       "release_date": "12/09/2025",
       "capitulos": 3,
+      "streaming_row": "thrillers_politicos",
+      "horizontal_image": "images/horizontals-1024x576/2025-las-maldiciones-netflix-slide-1024x576.png",
       "sinopsis": "La hija de un gobernador desaparece en un momento clave para su carrera. Entre la ambición y los secretos familiares, debe elegir: la política o la seguridad de su hija.",
       "creador": "Daniel Burman",
       "temporadas": [
@@ -15902,22 +15908,24 @@
         "Joaquín Furriel"
       ],
       "orientation": "vertical",
-      "image": "images/verticals/el-reino-primera-temporada-poster-280x420.png",
+      "image": "images/verticals/2021-el-reino-primera-temporada-netflix-poster-280x420.png",
       "release_date": "13/08/2021",
       "subtitle": "Thriller",
       "capitulos": 14,
       "sinopsis": "Tras el asesinato de su compañero de fórmula en plena campaña, el pastor Emilio Vázquez Pena queda en el centro de la escena política argentina. Mientras asciende al poder, comienzan a revelarse los secretos y conspiraciones detrás del crimen.",
       "creador": "Claudia Piñeiro, Marcelo Piñeyro",
+      "horizontal_image": "images/horizontals-1024x576/2021-el-reino-netflix-slide-1024x576.png",
+      "streaming_row": "thrillers_politicos",
       "temporadas": [
         {
           "numero": 1,
           "release_date": "13/08/2021",
-          "image": "images/verticals/el-reino-primera-temporada-poster-280x420.png"
+          "image": "images/verticals/2021-el-reino-primera-temporada-netflix-poster-280x420.png"
         },
         {
           "numero": 2,
           "release_date": "22/03/2023",
-          "image": "images/verticals/el-reino-segunda-temporada-poster-280x420.png"
+          "image": "images/verticals/2023-el-reino-segunda-temporada-netflix-poster-280x420.png"
         }
       ]
     },
@@ -15935,19 +15943,22 @@
         "Alejandro Awada"
       ],
       "orientation": "vertical",
-      "image": "images/verticals/iosi-primera-temporada-poster-280x420.png",
+      "image": "images/verticals/2022-iosi-primera-temporada-primevideo-poster-280x420.png",
+      "horizontal_image": "images/horizontals-1024x576/2022-iosi-espia-arrepentido-primevideo-slide-1024x576.png",
       "release_date": "29/04/2022",
+      "sinopsis": "Narra la historia de José Pérez (Iosi), un agente de la Policía Federal Argentina que se infiltra en la comunidad judía de Buenos Aires para investigar el falso \"Plan Andinia\". Sin saberlo, sus informes sirven de base para los atentados a la Embajada de Israel (1992) y a la AMIA (1994)",
+      "streaming_row": "thrillers_politicos",
       "subtitle": "Thriller",
       "temporadas": [
         {
           "numero": 1,
           "release_date": "29/04/2022",
-          "image": "images/verticals/iosi-primera-temporada-poster-280x420.png"
+          "image": "images/verticals/2022-iosi-primera-temporada-primevideo-poster-280x420.png"
         },
         {
           "numero": 2,
           "release_date": "23/06/2023",
-          "image": "images/verticals/iosi-segunda-temporada-poster-280x420.png"
+          "image": "images/verticals/2023-iosi-segunda-temporada-primevideo-poster-280x420.png"
         }
       ]
     },
@@ -15966,7 +15977,11 @@
         "Diego Cremonesi"
       ],
       "orientation": "vertical",
+      "sinopsis": "Javier Cach, un militante político que se desempeña como asesor de la Jefatura de Gabinete, en un gobierno de andar errático en manos de la Alianza. A lo largo de la historia, las convicciones y deseos de Cach deben dar paso a los sinsabores permanentes a los que lo expone la práctica de gobierno, y enfrentar a una de las peores crisis económicas, políticas y sociales que la Argentina haya visto en su historia, con la renuncia de un presidente de manera anticipada, la muerte de decenas de argentinos por represión policial, una sociedad a la que le arrebataron sus ahorros y la excepcionalidad histórica de cinco presidentes en una semana. ",
       "image": "images/verticals/diciembre-2001-poster-280x420.png",
+      "release_date": "7/6/2023",
+      "streaming_row": "thrillers_politicos",
+      "capitulos": 6,
       "subtitle": "Thriller"
     },
     {
@@ -16068,7 +16083,7 @@
       "title": "Santa Evita",
       "year": "2022",
       "channel": "Disney+",
-      "genre": "Drama",
+      "genre": "Thriller",
       "actors": [
         "Natalia Oreiro",
         "Darío Grandinetti",
@@ -16078,7 +16093,11 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/santa-evita-poster-280x420.png",
-      "subtitle": "Drama"
+      "horizontal_image": "images/horizontals-1024x576/2022-santa-evita-disney-slide-1024x576.png",
+      "sinopsis": "La trama de 7 episodios sigue la muerte de Eva Perón a los 33 años en 1952 y el misterioso e ilegal derrotero de su cadáver embalsamado, el cual fue ocultado y secuestrado por la dictadura militar durante más de dos décadas para evitar que se convirtiera en un símbolo de lucha política. La historia se centra en la obsesión de Juan Duarte, hermano de Eva, por recuperar el cuerpo de su hermana y en la lucha de los militares por mantenerlo oculto.",
+      "capitulos": 7,
+      "streaming_row": "thrillers_politicos",
+      "subtitle": "Thriller"
     },
     {
       "id": "V213",
@@ -16157,7 +16176,12 @@
         "Agustín Sullivan"
       ],
       "orientation": "vertical",
-      "image": "images/verticals/el-sabor-del-silencio-poster-280x420.png",
+      "sinopsis": "La trama sigue a Vicente Olivar (Gonzalo Heredia), un reconocido chef dueño de un restaurante exclusivo, quien se involucra en la desaparición del candidato a presidente con mayor intención de voto tras un grave episodio de abuso",
+      "capitulos": 8,
+      "release_date": "18/06/2024",
+      "image": "images/verticals/2024-el-sabor-del-silencio-flow-poster-280x420.png",
+      "horizontal_image": "images/horizontals-1024x576/2024-el-sabor-del-silencio-flow-slide-1024x576.png",
+      "streaming_row": "thrillers_politicos",
       "subtitle": "Thriller"
     },
     {
@@ -16178,13 +16202,17 @@
         "Elena Roger"
       ],
       "orientation": "vertical",
-      "image": "images/verticals/la-mente-del-poder-poster-280x420.png",
+      "sinopsis": "Sigue a Marcos Dorrego, un psicólogo en crisis personal que intenta dejar de atender a su paciente Víctor Noriega, quien acaba de asumir como presidente. Una misteriosa paciente extorsiona a Marcos para obligarlo a manipular al mandatario y lograr su renuncia",
+      "capitulos": 8,
+      "release_date": "6/10/2024",
+      "horizontal_image": "images/horizontals-1024x576/2024-la-mente-del-poder-flow-slide-1024x576.png",
+      "image": "images/verticals/2024-la-mente-del-poder-flow-poster-280x420.png",
       "subtitle": "Thriller"
     },
     {
       "id": "V218",
       "title": "AMIA: El Fin de la Verdad",
-      "year": "2024",
+      "year": "2025",
       "channel": "Flow",
       "air_channels": [
         "Telefe"
@@ -16198,7 +16226,13 @@
         "Malena Sánchez"
       ],
       "orientation": "vertical",
-      "image": "images/verticals/amia-poster-280x420.png",
+      "horizontal_image": "images/horizontals-1024x576/2025-amia-flow-slide-1024x576.png",
+      "image": "images/verticals/2025-amia-flow-poster-280x420.png",
+      "sinopsis": "La trama sigue a Diego, un agente del Mossad que pierde a su hermana en el ataque a la Embajada de Israel en 1992, y a Gisela, una periodista local. Juntos investigan los hechos, adentrándose en redes de espionaje, tráfico de armas y secretos de Estado hasta culminar en el atentado a la AMIA en 1994.",
+      "release_date": "17/07/2025",
+      "streaming_row": "thrillers_politicos",
+      "producer": "Yair Dori",
+      "capitulos": 8,
       "subtitle": "Thriller"
     },
     {
