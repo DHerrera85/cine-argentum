@@ -372,6 +372,13 @@
         );
     }
 
+    function isPoliticalThriller(item) {
+        return (
+            normalize(item.streaming_row) ===
+            "thrillers_politicos"
+        );
+    }
+
     function prepareItems(items) {
         var today = new Date();
 
@@ -677,7 +684,7 @@
     }
 
     function loadStreamingCatalog() {
-        fetch("data.json?v=20260815-7", {
+        fetch("data.json?v=20260816-1", {
             cache: "no-store"
         })
             .then(function (response) {
@@ -780,6 +787,21 @@
                     }
                 );
 
+                var politicalThrillers =
+                    preparedItems.filter(
+                        function (entry) {
+                            return (
+                                isPoliticalThriller(
+                                    entry.item
+                                ) &&
+                                String(
+                                    entry.item.horizontal_image ||
+                                    ""
+                                ).trim()
+                            );
+                        }
+                    );
+
                 var verticalFictions = preparedItems.filter(
                     function (entry) {
                         return isVerticalFiction(entry.item);
@@ -803,6 +825,11 @@
                 renderHorizontalSlider(
                     "bioseries",
                     bioseries
+                );
+
+                renderHorizontalSlider(
+                    "thrillers_politicos",
+                    politicalThrillers
                 );
             })
             .catch(function (error) {
