@@ -509,52 +509,52 @@
         return li;
     }
 
-    function initializeSlider($slider) {
-        if (
-            !$slider.length ||
-            $slider.data("lightSlider")
-        ) {
-            return;
-        }
-
-        $slider.lightSlider({
-            item: 5,
-            autoWidth: false,
-            slideMove: 1,
-            slideMargin: 12,
-            loop: false,
-            pager: false,
-            controls: true,
-            enableTouch: true,
-            enableDrag: true,
-            freeMove: false,
-
-            responsive: [
-                {
-                    breakpoint: 1100,
-                    settings: {
-                        item: 4,
-                        slideMove: 1,
-                        slideMargin: 12
-                    }
-                },
-                {
-                    breakpoint: 768,
-                    settings: {
-                        item: 2,
-                        slideMove: 1,
-                        slideMargin: 12
-                    }
-                }
-            ],
-
-            onSliderLoad: function () {
-                $slider
-                    .removeClass("cs-hidden")
-                    .addClass("slider-ready");
-            }
-        });
+function initializeSlider($slider) {
+    if (
+        !$slider.length ||
+        $slider.data("lightSlider")
+    ) {
+        return;
     }
+
+    $slider.lightSlider({
+        item: 5,
+        autoWidth: false,
+        slideMove: 1,
+        slideMargin: 18,
+        loop: false,
+        pager: false,
+        controls: true,
+        enableTouch: true,
+        enableDrag: true,
+        freeMove: false,
+
+        responsive: [
+            {
+                breakpoint: 1100,
+                settings: {
+                    item: 3,
+                    slideMove: 1,
+                    slideMargin: 14
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    item: 2,
+                    slideMove: 1,
+                    slideMargin: 12
+                }
+            }
+        ],
+
+        onSliderLoad: function () {
+            $slider
+                .removeClass("cs-hidden")
+                .addClass("slider-ready");
+        }
+    });
+}
 
     function initializeHorizontalSlider($slider) {
         if (
