@@ -21,8 +21,8 @@
 }
 
 /* Encabezados de las filas */
-.streaming-section > .showcase-heading,
-.streaming-section > .latest-heading {
+.streaming-section>.showcase-heading,
+.streaming-section>.latest-heading {
   margin: 0 0 20px;
   padding: 0;
   color: #ffffff;
@@ -42,11 +42,9 @@
   border-radius: 16px;
 
   background:
-    linear-gradient(
-      180deg,
+    linear-gradient(180deg,
       rgba(255, 255, 255, 0.025) 0%,
-      rgba(255, 255, 255, 0.012) 100%
-    );
+      rgba(255, 255, 255, 0.012) 100%);
 
   box-shadow:
     0 8px 26px rgba(0, 0, 0, 0.10),
@@ -73,7 +71,7 @@
   scrollbar-width: thin;
 }
 
-.streaming-genre-showcase .slider-h:not(.lightSlider) > li {
+.streaming-genre-showcase .slider-h:not(.lightSlider)>li {
   min-width: 0;
   scroll-snap-align: start;
 }
@@ -150,12 +148,66 @@
    Series 2026 y En Producción
    ========================================================= */
 
-.cartelera-2026-section[data-cartelera-content="streaming-series"]
-.latest-box {
+.cartelera-2026-section[data-cartelera-content="streaming-series"] {
+  padding-left: 32px;
+  padding-right: 32px;
+  box-sizing: border-box;
+}
+
+/* Alinear el título de Series en Streaming con las filas inferiores */
+.cartelera-2026-section[data-cartelera-content="streaming-series"]>.latest-heading {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* Alinear filtros y contador */
+.cartelera-2026-section[data-cartelera-content="streaming-series"] .cartelera-2026-controls {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* Alinear el título y contador de En Producción */
+.cartelera-2026-section[data-cartelera-content="streaming-series"] .cartelera-production-heading {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* El slider comienza y termina en los mismos límites que las demás filas */
+.cartelera-2026-section[data-cartelera-content="streaming-series"] .slider-v {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Cada ficha ocupa exactamente el espacio calculado por LightSlider */
+.cartelera-2026-section[data-cartelera-content="streaming-series"] .latest-box {
   width: 100%;
   max-width: none;
   min-width: 0;
   margin: 0;
+}
+
+/* Mantener la misma alineación en tablet */
+@media (max-width: 1100px) {
+  .cartelera-2026-section[data-cartelera-content="streaming-series"] {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+/* Mantener la misma alineación en móvil */
+@media (max-width: 768px) {
+  .cartelera-2026-section[data-cartelera-content="streaming-series"] {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  .cartelera-2026-section[data-cartelera-content="streaming-series"]>.latest-heading,
+  .cartelera-2026-section[data-cartelera-content="streaming-series"] .cartelera-2026-controls,
+  .cartelera-2026-section[data-cartelera-content="streaming-series"] .cartelera-production-heading {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
 /* =========================================================
@@ -178,6 +230,7 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
+
   .streaming-genre-showcase,
   .streaming-vertical-showcase {
     animation: none;
@@ -217,8 +270,8 @@
     padding: 20px 8px;
   }
 
-  .streaming-section > .showcase-heading,
-  .streaming-section > .latest-heading {
+  .streaming-section>.showcase-heading,
+  .streaming-section>.latest-heading {
     margin-bottom: 14px;
   }
 
