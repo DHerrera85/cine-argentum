@@ -86,10 +86,12 @@
 
 .streaming-genre-showcase .showcase-box {
   width: 100%;
+  margin: 0 0 14px;
   aspect-ratio: 16 / 9;
   overflow: hidden;
   border-radius: 12px;
   background: #202832;
+  box-sizing: border-box;
 }
 
 .streaming-genre-showcase .showcase-box img {
@@ -131,6 +133,10 @@
 }
 
 .streaming-vertical-showcase .latest-box {
+  width: 100%;
+  max-width: none;
+  min-width: 0;
+  margin: 0;
   background: transparent;
   box-shadow: none;
 }
