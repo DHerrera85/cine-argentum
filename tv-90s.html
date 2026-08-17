@@ -271,6 +271,68 @@
     }
 
     /* ==================================================
+   ACENTOS AMBIENTALES PARA GALERÍAS HORIZONTALES
+================================================== */
+
+    .showcase-tone-indigo {
+      --showcase-accent: 76, 91, 190;
+    }
+
+    .showcase-tone-teal {
+      --showcase-accent: 21, 119, 139;
+    }
+
+    .tv90s-genre-showcase.showcase-accent {
+      border-color: rgba(var(--showcase-accent), 0.22);
+
+      background:
+        radial-gradient(ellipse at 12% 45%,
+          rgba(var(--showcase-accent), 0.18) 0%,
+          rgba(var(--showcase-accent), 0.08) 38%,
+          transparent 68%),
+        linear-gradient(180deg,
+          rgba(255, 255, 255, 0.032) 0%,
+          rgba(255, 255, 255, 0.012) 100%);
+
+      box-shadow:
+        0 12px 32px rgba(0, 0, 0, 0.16),
+        inset 0 1px 0 rgba(255, 255, 255, 0.035);
+    }
+
+    .tv90s-genre-showcase.showcase-accent>.showcase-heading::after {
+      content: "";
+      display: block;
+      width: 54px;
+      height: 3px;
+      margin-top: 10px;
+      border-radius: 999px;
+
+      background:
+        linear-gradient(90deg,
+          rgba(var(--showcase-accent), 0.95),
+          rgba(var(--showcase-accent), 0.18));
+    }
+
+    @media (max-width: 768px) {
+      .tv90s-genre-showcase.showcase-accent {
+        background:
+          radial-gradient(ellipse at 15% 30%,
+            rgba(var(--showcase-accent), 0.14) 0%,
+            rgba(var(--showcase-accent), 0.06) 42%,
+            transparent 72%),
+          linear-gradient(180deg,
+            rgba(255, 255, 255, 0.026) 0%,
+            rgba(255, 255, 255, 0.01) 100%);
+      }
+
+      .tv90s-genre-showcase.showcase-accent>.showcase-heading::after {
+        width: 44px;
+        height: 2px;
+        margin-top: 8px;
+      }
+    }
+
+    /* ==================================================
    ANIMACIÓN SUAVE DE SECCIONES TV 90s
 ================================================== */
 
@@ -806,7 +868,7 @@
       </section>
 
       <!-- Grandes Éxitos de Telenovelas -->
-      <section id="tv90s-telenovelas" class="tv90s-section tv90s-genre-showcase">
+      <section id="tv90s-telenovelas" class="tv90s-section tv90s-genre-showcase showcase-accent showcase-tone-indigo">
         <h2 class="showcase-heading">
           Grandes Éxitos de Telenovelas
         </h2>
@@ -845,7 +907,7 @@
 
 
       <!-- Grandes Éxitos de Comedias -->
-      <section id="tv90s-comedias" class="tv90s-section tv90s-genre-showcase">
+      <section id="tv90s-comedias" class="tv90s-section tv90s-genre-showcase showcase-accent showcase-tone-teal">
         <h2 class="showcase-heading">
           Grandes Éxitos de Comedias
         </h2>
@@ -874,7 +936,7 @@
       </section>
 
       <!-- Grandes Éxitos Juveniles e Infantiles -->
-      <section id="tv90s-juveniles" class="tv90s-section tv90s-genre-showcase">
+      <section id="tv90s-juveniles" class="tv90s-section tv90s-genre-showcase showcase-accent showcase-tone-indigo">
         <h2 class="showcase-heading">
           Grandes Éxitos Juveniles e Infantiles
         </h2>
@@ -914,7 +976,7 @@
 
 
       <!-- Grandes Éxitos de Dramas y Thrillers -->
-      <section id="tv90s-dramas" class="tv90s-section tv90s-genre-showcase">
+      <section id="tv90s-dramas" class="tv90s-section tv90s-genre-showcase showcase-accent showcase-tone-teal">
         <h2 class="showcase-heading">
           Grandes Éxitos de Dramas y Thrillers
         </h2>
