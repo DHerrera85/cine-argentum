@@ -11291,13 +11291,16 @@
         {
           "channel": "Telefe",
           "premiere_date": "13/09/2021",
-          "premiere_rating": "10,0",
-          "rating_scope": "Estreno"
+          "end_date": "24/09/2021",
+          "horario": "23:45hs",
+          "tipo_emision": "Tira Diaria",
+          "rating": "9"
         }
       ],
       "image": "images/verticals/2021-pequenas-victorias-primevideo-poster-280x420.png",
       "subtitle": "Drama",
       "sinopsis": "Esta segunda parte de la historia se retoma con el inicio escolar de Victoria. Esta situación pondrá a sus madres frente a los conflictos personales que habían pasado a segundo plano durante los primeros años de vida de la niña. Ahora Jazmín, Bárbara y Emma tendrán que encontrar la mejor versión de sí mismas y descubrir sus propias identidades para reconciliarse con sus roles como madres de Victoria.",
+      "productora": "ViacomCBS, Oficina Burman, The Mediapro Studio, Daniel Burman",
       "producciones_relacionadas": [
         {
           "id": "v28",
