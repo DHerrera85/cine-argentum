@@ -11286,8 +11286,26 @@
         "Mariana Genesio"
       ],
       "orientation": "vertical",
-      "image": "images/verticals/pequenas-victorias-poster-280x420.png",
-      "subtitle": "Drama"
+      "release_date": "20/08/2021",
+      "air_broadcasts": [
+        {
+          "channel": "Telefe",
+          "premiere_date": "13/09/2021",
+          "premiere_rating": "10,0",
+          "rating_scope": "Estreno"
+        }
+      ],
+      "image": "images/verticals/2021-pequenas-victorias-primevideo-poster-280x420.png",
+      "subtitle": "Drama",
+      "sinopsis": "Esta segunda parte de la historia se retoma con el inicio escolar de Victoria. Esta situación pondrá a sus madres frente a los conflictos personales que habían pasado a segundo plano durante los primeros años de vida de la niña. Ahora Jazmín, Bárbara y Emma tendrán que encontrar la mejor versión de sí mismas y descubrir sus propias identidades para reconciliarse con sus roles como madres de Victoria.",
+      "producciones_relacionadas": [
+        {
+          "id": "v28",
+          "title": "Pequeña Victoria",
+          "meta": "Serie original",
+          "image": "images/verticals/2019-pequena-victoria-telefe-poster-280x420.png"
+        }
+      ]
     },
     {
       "id": "V296",
@@ -12051,8 +12069,19 @@
         "Inés Estévez"
       ],
       "orientation": "vertical",
-      "image": "images/verticals/pequena-victoria-poster-280x420.png",
-      "subtitle": "Drama"
+      "image": "images/verticals/2019-pequena-victoria-telefe-poster-280x420.png",
+      "subtitle": "Drama",
+      "release_date": "16/09/2019",
+      "sinopsis": "Cuatro mujeres trasgreden los protocolos de subrogación y deciden compartir la crianza de “Pequeña Victoria”, quien las interpela y las desafía al amor. Jazmín, Bárbara, Selva y Emma, encuentran un vínculo sanador que no viene dado por la maternidad sino por la relación que construyen las cuatro, alrededor de la hija de todas.",
+      "rating": "9,0",
+      "producciones_relacionadas": [
+        {
+          "id": "V295",
+          "title": "Pequeñas Victorias, Perdidxs en la Tierra",
+          "meta": "Secuela",
+          "image": "images/verticals/2021-pequenas-victorias-primevideo-poster-280x420.png"
+        }
+      ]
     },
     {
       "id": "v29",
@@ -16140,6 +16169,7 @@
         "Rafael Ferro"
       ],
       "orientation": "vertical",
+      "release_date": "20/05/2020",
       "image": "images/verticals/los-internacionales-poster-280x420.png",
       "subtitle": "Thriller"
     },
