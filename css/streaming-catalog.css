@@ -84,6 +84,8 @@
 
 .streaming-genre-showcase .showcase-box {
   width: 100%;
+  max-width: none;
+  min-width: 0;
   margin: 0 0 14px;
   aspect-ratio: 16 / 9;
   overflow: hidden;
