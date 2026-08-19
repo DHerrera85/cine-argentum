@@ -214,6 +214,27 @@
 }
 
 /* =========================================================
+   ACTORES DESTACADOS
+   Espaciado integrado con las galerías del catálogo
+   ========================================================= */
+
+.streaming-actors-showcase {
+  overflow: hidden;
+  padding-bottom: 14px;
+}
+
+.streaming-actors-showcase .slider-actors {
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 768px) {
+  .streaming-actors-showcase {
+    padding-bottom: 12px;
+  }
+}
+
+/* =========================================================
    CARTELERAS SUPERIORES DE STREAMING
    Series 2026 y En Producción
    ========================================================= */
