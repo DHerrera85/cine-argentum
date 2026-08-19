@@ -268,8 +268,8 @@
 /* Mantener la misma alineación en móvil */
 @media (max-width: 768px) {
   .cartelera-2026-section[data-cartelera-content="streaming-series"] {
-    padding-left: 8px;
-    padding-right: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 
   .cartelera-2026-section[data-cartelera-content="streaming-series"]>.latest-heading,
@@ -329,6 +329,7 @@
 
 /* =========================================================
    MÓVIL
+   Misma extensión y alineación que tv-90s.html
    ========================================================= */
 
 @media (max-width: 768px) {
@@ -336,43 +337,26 @@
     padding-bottom: 12px;
   }
 
+  /* Filas verticales */
   .streaming-section {
-    padding: 20px 8px;
+    padding: 20px 16px;
   }
 
-  .streaming-section>.showcase-heading,
-  .streaming-section>.latest-heading {
+  .streaming-section > .showcase-heading,
+  .streaming-section > .latest-heading {
     margin-bottom: 14px;
   }
 
+  /* Filas horizontales */
   .streaming-genre-showcase {
-    width: 100%;
-    margin: 8px 0 14px;
-    padding: 18px 8px;
-    border-radius: 12px;
-  }
-
-  .streaming-genre-showcase .slider-h:not(.lightSlider) {
-    grid-auto-columns: 86%;
-    gap: 12px;
-  }
-}
-
-/* =========================================================
-   MÓVIL PEQUEÑO
-   ========================================================= */
-
-@media (max-width: 480px) {
-  .streaming-section {
-    padding: 18px 8px;
-  }
-
-  .streaming-genre-showcase {
-    padding: 16px 6px;
+    width: calc(100% - 20px);
+    margin: 8px 10px 14px;
+    padding: 20px 16px;
+    border-radius: 14px;
   }
 
   .streaming-genre-showcase .slider-h:not(.lightSlider) {
     grid-auto-columns: 88%;
-    gap: 10px;
+    gap: 12px;
   }
 }
