@@ -235,69 +235,280 @@
 }
 
 /* =========================================================
-   CARTELERAS SUPERIORES DE STREAMING
+   BLOQUE EDITORIAL DE ACTUALIDAD
    Series 2026 y En Producción
    ========================================================= */
 
-.cartelera-2026-section[data-cartelera-content="streaming-series"] {
-  padding-left: 32px;
-  padding-right: 32px;
+.streaming-featured-block {
+  --streaming-current-accent: 78, 102, 224;
+  --streaming-upcoming-accent: 245, 158, 11;
+
+  position: relative;
+  width: 100%;
+  padding-top: 92px;
+  overflow: hidden;
   box-sizing: border-box;
+
+  background:
+    radial-gradient(
+      ellipse at 12% 18%,
+      rgba(var(--streaming-current-accent), 0.15) 0%,
+      rgba(var(--streaming-current-accent), 0.06) 36%,
+      transparent 66%
+    ),
+    radial-gradient(
+      ellipse at 88% 82%,
+      rgba(var(--streaming-upcoming-accent), 0.09) 0%,
+      transparent 52%
+    ),
+    linear-gradient(
+      180deg,
+      #171e2a 0%,
+      #141a21 100%
+    );
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.055);
 }
 
-/* Alinear el título de Series en Streaming con las filas inferiores */
-.cartelera-2026-section[data-cartelera-content="streaming-series"]>.latest-heading {
-  margin-left: 0;
-  margin-right: 0;
+/* Estructura común de ambas carteleras */
+.streaming-featured-block
+.cartelera-2026-section[data-cartelera-content="streaming-series"] {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 24px 32px;
+  box-sizing: border-box;
+  background: transparent;
 }
 
-/* Alinear filtros y contador */
-.cartelera-2026-section[data-cartelera-content="streaming-series"] .cartelera-2026-controls {
-  margin-left: 0;
-  margin-right: 0;
+/* Neutralizar los márgenes negativos heredados de style.css */
+.streaming-featured-block
+.cartelera-streaming-current
++
+.cartelera-streaming-upcoming {
+  margin-top: 0;
+  padding-top: 24px;
 }
 
-/* Alinear el título y contador de En Producción */
-.cartelera-2026-section[data-cartelera-content="streaming-series"] .cartelera-production-heading {
-  margin-left: 0;
-  margin-right: 0;
+/* Encabezado de Series en Streaming 2026 */
+.streaming-featured-block
+.cartelera-streaming-current
+>
+.latest-heading {
+  margin: 0 0 16px;
+  padding: 0;
 }
 
-/* El slider comienza y termina en los mismos límites que las demás filas */
-.cartelera-2026-section[data-cartelera-content="streaming-series"] .slider-v {
+/* Filtros y contador */
+.streaming-featured-block
+.cartelera-2026-controls {
+  margin: 0 0 18px;
+}
+
+/* Encabezado de En Producción */
+.streaming-featured-block
+.cartelera-production-heading {
+  margin: 0 0 18px;
+}
+
+/* Línea de acento en los encabezados */
+.streaming-featured-block
+.cartelera-streaming-current
+>
+.latest-heading::after,
+.streaming-featured-block
+.cartelera-streaming-upcoming
+.latest-heading::after {
+  content: "";
+  display: block;
+  width: 48px;
+  height: 2px;
+  margin-top: 8px;
+  border-radius: 999px;
+}
+
+/* Estrenos actuales: índigo */
+.streaming-featured-block
+.cartelera-streaming-current
+>
+.latest-heading::after {
+  background: linear-gradient(
+    90deg,
+    rgba(var(--streaming-current-accent), 0.95),
+    rgba(var(--streaming-current-accent), 0.18)
+  );
+}
+
+/* Próximos estrenos: ámbar */
+.streaming-featured-block
+.cartelera-streaming-upcoming
+.latest-heading::after {
+  background: linear-gradient(
+    90deg,
+    rgba(var(--streaming-upcoming-accent), 0.95),
+    rgba(var(--streaming-upcoming-accent), 0.18)
+  );
+}
+
+/* Separación interior entre ambas carteleras */
+.streaming-featured-block
+.cartelera-streaming-upcoming::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 32px;
+  right: 32px;
+  height: 1px;
+
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.10),
+    transparent
+  );
+}
+
+/* Contadores diferenciados */
+.streaming-featured-block
+.cartelera-streaming-current
+.cartelera-count {
+  color: #dce5ff;
+  border-color: rgba(var(--streaming-current-accent), 0.30);
+  background: rgba(var(--streaming-current-accent), 0.10);
+}
+
+.streaming-featured-block
+.cartelera-streaming-upcoming
+.cartelera-count {
+  color: #ffe4ad;
+  border-color: rgba(var(--streaming-upcoming-accent), 0.28);
+  background: rgba(var(--streaming-upcoming-accent), 0.08);
+}
+
+/* Botón activo coherente con el acento índigo */
+.streaming-featured-block
+.cartelera-streaming-current
+.cartelera-filter.is-active {
+  color: #ffffff;
+  border-color: rgba(var(--streaming-current-accent), 1);
+  background: rgba(var(--streaming-current-accent), 1);
+}
+
+/* Sliders alineados con el catálogo inferior */
+.streaming-featured-block
+.cartelera-2026-section
+.slider-v {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-/* Cada ficha ocupa exactamente el espacio calculado por LightSlider */
-.cartelera-2026-section[data-cartelera-content="streaming-series"] .latest-box {
+.streaming-featured-block
+.cartelera-2026-section
+.latest-box {
   width: 100%;
   max-width: none;
   min-width: 0;
   margin: 0;
 }
 
-/* Mantener la misma alineación en tablet */
+/* =========================================================
+   TABLET
+   ========================================================= */
+
 @media (max-width: 1100px) {
+  .streaming-featured-block {
+    padding-top: 86px;
+  }
+
+  .streaming-featured-block
   .cartelera-2026-section[data-cartelera-content="streaming-series"] {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 22px 20px;
+  }
+
+  .streaming-featured-block
+  .cartelera-streaming-current
+  +
+  .cartelera-streaming-upcoming {
+    margin-top: 0;
+    padding-top: 22px;
+  }
+
+  .streaming-featured-block
+  .cartelera-streaming-upcoming::before {
+    left: 20px;
+    right: 20px;
   }
 }
 
-/* Mantener la misma alineación en móvil */
+/* =========================================================
+   MÓVIL
+   ========================================================= */
+
 @media (max-width: 768px) {
-  .cartelera-2026-section[data-cartelera-content="streaming-series"] {
-    padding-left: 16px;
-    padding-right: 16px;
+  .streaming-featured-block {
+    padding-top: 86px;
+
+    background:
+      radial-gradient(
+        ellipse at 15% 14%,
+        rgba(var(--streaming-current-accent), 0.12) 0%,
+        rgba(var(--streaming-current-accent), 0.045) 38%,
+        transparent 68%
+      ),
+      radial-gradient(
+        ellipse at 85% 82%,
+        rgba(var(--streaming-upcoming-accent), 0.07) 0%,
+        transparent 52%
+      ),
+      linear-gradient(
+        180deg,
+        #171e29 0%,
+        #141a21 100%
+      );
   }
 
-  .cartelera-2026-section[data-cartelera-content="streaming-series"]>.latest-heading,
-  .cartelera-2026-section[data-cartelera-content="streaming-series"] .cartelera-2026-controls,
-  .cartelera-2026-section[data-cartelera-content="streaming-series"] .cartelera-production-heading {
-    margin-left: 0;
-    margin-right: 0;
+  .streaming-featured-block
+  .cartelera-2026-section[data-cartelera-content="streaming-series"] {
+    padding: 20px 16px;
+  }
+
+  .streaming-featured-block
+  .cartelera-streaming-current
+  +
+  .cartelera-streaming-upcoming {
+    margin-top: 0;
+    padding-top: 20px;
+  }
+
+  .streaming-featured-block
+  .cartelera-streaming-upcoming::before {
+    left: 16px;
+    right: 16px;
+  }
+
+  .streaming-featured-block
+  .cartelera-streaming-current
+  >
+  .latest-heading {
+    margin-bottom: 14px;
+  }
+
+  .streaming-featured-block
+  .cartelera-2026-controls,
+  .streaming-featured-block
+  .cartelera-production-heading {
+    margin-bottom: 14px;
+  }
+
+  .streaming-featured-block
+  .cartelera-streaming-current
+  >
+  .latest-heading::after,
+  .streaming-featured-block
+  .cartelera-streaming-upcoming
+  .latest-heading::after {
+    width: 44px;
   }
 }
 
