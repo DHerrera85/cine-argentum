@@ -18838,11 +18838,12 @@
         "Romina Yan"
       ],
       "orientation": "vertical",
-      "image": "images/verticals/provocame-280x420.png",
+      "image": "images/verticals/2001-provocame-telefe-poster280x420.webp",
       "subtitle": "Telenovela",
       "horario": "20:30hs, 19:30hs",
       "capitulos": 133,
       "fecha_estreno": "01/07/2001",
+      "horizontal_image": "images/horizontals-1024x576/2001-provocame-telefe-slide-1024x576-v2.webp",
       "sinopsis": "Pedro llega desde Miami para cuidar un valioso caballo sin saber que está envuelto en una venganza contra la familia Linares. Entre secretos y pasiones, queda atrapado entre Ana Laura y Marisol, mientras el complot se revela.",
       "rating": "15",
       "productora": "RGB Entertainment, Raúl Lecouna",

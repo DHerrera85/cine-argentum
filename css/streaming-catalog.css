@@ -769,12 +769,12 @@
 
 .platform-prime {
   --platform-accent: 0, 168, 225;
-  --platform-logo-scale: 1.60;
+  --platform-logo-scale: 1.18;
 }
 
 .platform-hbo {
   --platform-accent: 142, 78, 255;
-  --platform-logo-scale: 1;
+  --platform-logo-scale: 0.86;
 }
 
 /* El logo original de HBO Max es negro */
