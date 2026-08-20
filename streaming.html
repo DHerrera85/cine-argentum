@@ -8,7 +8,7 @@
 
   <!-- CSS -->
   <link rel="stylesheet" href="css/style.css?v=2.2" />
-  <link rel="stylesheet" href="css/streaming-catalog.css?v=1.8" />
+  <link rel="stylesheet" href="css/streaming-catalog.css?v=1.10" />
   <link rel="stylesheet" href="css/lightslider.css?v=2.0" />
 
   <!-- Fuente -->
@@ -284,14 +284,6 @@
           data-streaming-catalog="comedias"></ul>
       </section>
 
-      <!-- Ficciones Verticales -->
-      <section id="streaming-ficciones-verticales" class="streaming-section streaming-vertical-showcase">
-        <h2 class="latest-heading">Ficciones Verticales</h2>
-
-        <ul id="streaming-verticales-slider" class="slider-v cs-hidden" data-streaming-row="streaming_catalog"
-          data-streaming-catalog="ficciones_verticales"></ul>
-      </section>
-
       <!-- Thrillers y Policiales -->
       <section id="streaming-thrillers" class="streaming-section streaming-vertical-showcase">
         <h2 class="latest-heading">Thrillers y Policiales</h2>
@@ -520,34 +512,46 @@
       </section>
       -->
 
+      <!-- Ficciones Verticales -->
+      <section id="streaming-ficciones-verticales" class="streaming-section streaming-vertical-showcase">
+        <h2 class="latest-heading">Ficciones Verticales</h2>
+
+        <ul id="streaming-verticales-slider" class="slider-v cs-hidden" data-streaming-row="streaming_catalog"
+          data-streaming-catalog="ficciones_verticales"></ul>
+      </section>
+
     </main>
     <!-- Fin del catálogo general de Streaming -->
 
     <!-- Plataformas de Streaming -->
-    <section id="latest">
-      <h2 class="latest-heading">Plataformas de Streaming</h2>
-      <div class="slider-genres canales-aire" style="margin: 16px 0 0 0;">
-        <a class="genre-box canal-box" href="netflix.html"
-          style="background:linear-gradient(135deg,#ffffff 0%,#f2f2f2 100%);">
-          <img src="images/logos/netflix-logo-120x120.png" alt="Netflix" class="logo-canal" />
+    <section id="streaming-platforms" class="streaming-platforms-section" aria-labelledby="streaming-platforms-heading">
+
+      <h2 id="streaming-platforms-heading" class="latest-heading">
+        Plataformas de Streaming
+      </h2>
+
+      <div class="slider-genres streaming-platform-tabs" role="navigation" aria-label="Plataformas de streaming">
+
+        <a class="streaming-platform-tab platform-netflix" href="netflix.html" aria-label="Netflix">
+          <img src="images/logos/netflix-logo-120x120.png" alt="Netflix" class="streaming-platform-logo">
         </a>
-        <a class="genre-box canal-box" href="flow.html"
-          style="background:linear-gradient(135deg,#00a8e8 0%,#007bb5 100%);">
-          <img src="images/logos/flow-logo-120x120.png" alt="Flow" class="logo-canal" />
+
+        <a class="streaming-platform-tab platform-flow" href="flow.html" aria-label="Flow">
+          <img src="images/logos/flow-logo-120x120.png" alt="Flow" class="streaming-platform-logo">
         </a>
-        <a class="genre-box canal-box" href="disney+.html"
-          style="background:linear-gradient(135deg,#ffffff 0%,#f2f2f2 100%);">
-          <img src="images/logos/disney+-logo-120x120.png" alt="Disney+" class="logo-canal" />
+
+        <a class="streaming-platform-tab platform-disney" href="disney+.html" aria-label="Disney+">
+          <img src="images/logos/disney+-logo-120x120.png" alt="Disney+" class="streaming-platform-logo">
         </a>
-        <a class="genre-box canal-box" href="prime-video.html"
-          style="background:linear-gradient(135deg,#1a98ff 0%,#0c5aa6 100%);">
-          <img src="images/logos/primevideo-logo-120x120.png" alt="Prime Video" class="logo-canal" />
+
+        <a class="streaming-platform-tab platform-prime" href="prime-video.html" aria-label="Prime Video">
+          <img src="images/logos/primevideo-logo-120x120.png" alt="Prime Video" class="streaming-platform-logo">
         </a>
-        <a class="genre-box canal-box" href="hbo-max.html"
-          style="background:linear-gradient(135deg,#3b1b5a 0%,#241036 100%);">
-          <img src="images/logos/hbo-max-black-transparent.png" alt="HBO Max" class="logo-canal"
-            style="filter: brightness(0) invert(1);" />
+
+        <a class="streaming-platform-tab platform-hbo" href="hbo-max.html" aria-label="HBO Max">
+          <img src="images/logos/hbo-max-black-transparent.png" alt="HBO Max" class="streaming-platform-logo">
         </a>
+
       </div>
     </section>
 

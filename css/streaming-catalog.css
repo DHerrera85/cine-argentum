@@ -592,3 +592,256 @@
     gap: 12px;
   }
 }
+
+/* =========================================================
+   NAVEGACIÓN DE PLATAFORMAS
+   Pestañas visuales inspiradas en interfaces de streaming
+   ========================================================= */
+
+.streaming-platforms-section {
+  width: 100%;
+  padding: 26px 32px 24px;
+  overflow: hidden;
+  box-sizing: border-box;
+
+  background:
+    radial-gradient(
+      ellipse at 18% 50%,
+      rgba(52, 83, 170, 0.16) 0%,
+      transparent 48%
+    ),
+    radial-gradient(
+      ellipse at 82% 50%,
+      rgba(26, 113, 139, 0.12) 0%,
+      transparent 48%
+    ),
+    linear-gradient(
+      90deg,
+      #121a2d 0%,
+      #172036 50%,
+      #121d2d 100%
+    );
+
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.streaming-platforms-section > .latest-heading {
+  margin: 0 0 18px;
+  padding: 0;
+  color: #ffffff;
+}
+
+.streaming-platform-tabs {
+  margin: 0 !important;
+  padding: 0 0 8px !important;
+}
+
+.streaming-platform-tabs .streaming-platform-tab {
+  --platform-accent: 110, 130, 170;
+
+  position: relative;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+
+  height: 96px !important;
+  padding: 16px 24px;
+  overflow: hidden;
+  box-sizing: border-box;
+
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+
+  transition:
+    background-color 0.25s ease,
+    opacity 0.25s ease;
+}
+
+/* Resplandor ambiental de cada pestaña */
+.streaming-platform-tabs .streaming-platform-tab::before {
+  content: "";
+  position: absolute;
+  inset: 8px 4px 4px;
+  z-index: 0;
+
+  border-radius: 12px;
+  opacity: 0;
+
+  background:
+    radial-gradient(
+      ellipse at center,
+      rgba(var(--platform-accent), 0.18) 0%,
+      transparent 72%
+    );
+
+  transition: opacity 0.25s ease;
+}
+
+/* Línea inferior */
+.streaming-platform-tabs .streaming-platform-tab::after {
+  content: "";
+  position: absolute;
+  left: 18%;
+  right: 18%;
+  bottom: 0;
+
+  height: 3px;
+  border-radius: 999px;
+
+  background: rgb(var(--platform-accent));
+
+  opacity: 0;
+  transform: scaleX(0.35);
+
+  transition:
+    opacity 0.25s ease,
+    transform 0.25s ease;
+}
+
+/* Logos atenuados en estado inicial */
+.streaming-platform-logo {
+  position: relative;
+  z-index: 1;
+
+  display: block;
+  width: auto;
+  max-width: 150px;
+  height: 54px;
+  object-fit: contain;
+
+  opacity: 0.58;
+  filter: grayscale(1) brightness(0) invert(0.66);
+  transform: scale(var(--platform-logo-scale, 1));
+
+  transition:
+    opacity 0.25s ease,
+    filter 0.25s ease,
+    transform 0.25s ease;
+}
+
+/* Estado activo, hover y navegación con teclado */
+.streaming-platform-tab:hover::before,
+.streaming-platform-tab:focus-visible::before,
+.streaming-platform-tab.is-active::before {
+  opacity: 1;
+}
+
+.streaming-platform-tab:hover::after,
+.streaming-platform-tab:focus-visible::after,
+.streaming-platform-tab.is-active::after {
+  opacity: 1;
+  transform: scaleX(1);
+}
+
+.streaming-platform-tab:hover .streaming-platform-logo,
+.streaming-platform-tab:focus-visible .streaming-platform-logo,
+.streaming-platform-tab.is-active .streaming-platform-logo {
+  opacity: 1;
+  filter: none;
+  transform:
+    scale(var(--platform-logo-scale, 1))
+    translateY(-1px);
+}
+
+.streaming-platform-tab:focus-visible {
+  outline: 2px solid rgba(var(--platform-accent), 0.85);
+  outline-offset: -2px;
+}
+
+/* Colores y corrección óptica de cada plataforma */
+.platform-netflix {
+  --platform-accent: 229, 9, 20;
+  --platform-logo-scale: 1.45;
+}
+
+.platform-flow {
+  --platform-accent: 0, 190, 235;
+  --platform-logo-scale: 1.55;
+}
+
+.platform-disney {
+  --platform-accent: 65, 105, 225;
+  --platform-logo-scale: 1.55;
+}
+
+.platform-prime {
+  --platform-accent: 0, 168, 225;
+  --platform-logo-scale: 1.60;
+}
+
+.platform-hbo {
+  --platform-accent: 142, 78, 255;
+  --platform-logo-scale: 1;
+}
+
+/* El logo original de HBO Max es negro */
+.platform-hbo:hover .streaming-platform-logo,
+.platform-hbo:focus-visible .streaming-platform-logo,
+.platform-hbo.is-active .streaming-platform-logo {
+  filter: brightness(0) invert(1);
+}
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 1100px) {
+  .streaming-platforms-section {
+    padding: 24px 20px 22px;
+  }
+
+  .streaming-platform-tabs .streaming-platform-tab {
+    height: 86px !important;
+    padding: 14px 18px;
+  }
+
+  .streaming-platform-logo {
+    max-width: 132px;
+    height: 48px;
+  }
+}
+
+/* =========================================================
+   MÓVIL
+   ========================================================= */
+
+@media (max-width: 768px) {
+  .streaming-platforms-section {
+    padding: 20px 16px;
+  }
+
+  .streaming-platforms-section > .latest-heading {
+    margin-bottom: 14px;
+  }
+
+  .streaming-platform-tabs .streaming-platform-tab {
+    height: 74px !important;
+    padding: 10px 14px;
+  }
+
+  .streaming-platform-logo {
+    max-width: 112px;
+    height: 40px;
+  }
+
+  .streaming-platform-tabs .streaming-platform-tab::after {
+    left: 14%;
+    right: 14%;
+    height: 2px;
+  }
+}
+
+@media (max-width: 480px) {
+  .streaming-platform-tabs .streaming-platform-tab {
+    height: 68px !important;
+    padding: 9px 12px;
+  }
+
+  .streaming-platform-logo {
+    max-width: 100px;
+    height: 36px;
+  }
+}
