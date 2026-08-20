@@ -359,6 +359,158 @@
         return getCategory(item).indexOf("juvenil") !== -1;
     }
 
+    function isJuvenileOrChild(item) {
+        var category = getCategory(item);
+
+        return (
+            category.indexOf("juvenil") !== -1 ||
+            category.indexOf("infantil") !== -1
+        );
+    }
+
+    function getTelevisionBroadcasts(item) {
+        return []
+            .concat(toArray(item.air_broadcasts))
+            .concat(toArray(item.cable_broadcasts))
+            .filter(function (broadcast) {
+                return (
+                    broadcast &&
+                    typeof broadcast === "object"
+                );
+            });
+    }
+
+    function getTelevisionChannels(item) {
+        var channels = []
+            .concat(toArray(item.air_channels))
+            .concat(toArray(item.cable_channels));
+
+        getTelevisionBroadcasts(item).forEach(
+            function (broadcast) {
+                channels = channels.concat(
+                    toArray(broadcast.channel)
+                );
+            }
+        );
+
+        return channels
+            .map(function (channel) {
+                return String(channel || "").trim();
+            })
+            .filter(function (channel, index, values) {
+                if (!channel) {
+                    return false;
+                }
+
+                return values.findIndex(
+                    function (value) {
+                        return (
+                            normalize(value) ===
+                            normalize(channel)
+                        );
+                    }
+                ) === index;
+            });
+    }
+
+    function getLatestStreamingOrTvDate(item, today) {
+        var dates = [];
+        var streamingDate = getLatestReleasedDate(
+            item,
+            today
+        );
+
+        if (streamingDate) {
+            dates.push(streamingDate);
+        }
+
+        getTelevisionBroadcasts(item).forEach(
+            function (broadcast) {
+                var broadcastDate = parseDate(
+                    broadcast.premiere_date ||
+                    broadcast.release_date ||
+                    broadcast.start_date ||
+                    broadcast.fecha_estreno
+                );
+
+                if (
+                    broadcastDate &&
+                    broadcastDate.getTime() <=
+                    today.getTime()
+                ) {
+                    dates.push(broadcastDate);
+                }
+            }
+        );
+
+        dates.sort(function (a, b) {
+            return b.getTime() - a.getTime();
+        });
+
+        return dates.length ? dates[0] : null;
+    }
+
+    function getAverageTelevisionRating(item) {
+        var broadcasts = getTelevisionBroadcasts(item)
+            .slice()
+            .sort(function (a, b) {
+                var dateA = parseDate(
+                    a.premiere_date ||
+                    a.release_date ||
+                    a.start_date
+                );
+
+                var dateB = parseDate(
+                    b.premiere_date ||
+                    b.release_date ||
+                    b.start_date
+                );
+
+                return (
+                    (dateB ? dateB.getTime() : 0) -
+                    (dateA ? dateA.getTime() : 0)
+                );
+            });
+
+        var broadcastWithRating = broadcasts.filter(
+            function (broadcast) {
+                return (
+                    broadcast.rating !== undefined &&
+                    broadcast.rating !== null &&
+                    String(broadcast.rating).trim() !== ""
+                );
+            }
+        )[0];
+
+        if (broadcastWithRating) {
+            return broadcastWithRating.rating;
+        }
+
+        if (
+            item.rating !== undefined &&
+            item.rating !== null &&
+            String(item.rating).trim() !== ""
+        ) {
+            return item.rating;
+        }
+
+        return "";
+    }
+
+    function getTelevisionMeta(item) {
+        var parts = getTelevisionChannels(item);
+        var rating = getAverageTelevisionRating(item);
+
+        if (rating !== "") {
+            parts.push(
+                "Rating: " +
+                String(rating).replace(".", ",")
+            );
+        }
+
+        return parts.join(" · ");
+    }
+
     function isVerticalFiction(item) {
         return (
             item.streaming_row === "ficciones_verticales"
@@ -456,6 +608,8 @@
                         ? " temporada"
                         : " temporadas"
                 );
+        } else if (item.displayMeta) {
+            paragraph.textContent = item.displayMeta;
         }
 
         imageBox.appendChild(image);
@@ -509,52 +663,52 @@
         return li;
     }
 
-function initializeSlider($slider) {
-    if (
-        !$slider.length ||
-        $slider.data("lightSlider")
-    ) {
-        return;
-    }
-
-    $slider.lightSlider({
-        item: 5,
-        autoWidth: false,
-        slideMove: 1,
-        slideMargin: 18,
-        loop: false,
-        pager: false,
-        controls: true,
-        enableTouch: true,
-        enableDrag: true,
-        freeMove: false,
-
-        responsive: [
-            {
-                breakpoint: 1100,
-                settings: {
-                    item: 3,
-                    slideMove: 1,
-                    slideMargin: 14
-                }
-            },
-            {
-                breakpoint: 768,
-                settings: {
-                    item: 2,
-                    slideMove: 1,
-                    slideMargin: 12
-                }
-            }
-        ],
-
-        onSliderLoad: function () {
-            $slider
-                .removeClass("cs-hidden")
-                .addClass("slider-ready");
+    function initializeSlider($slider) {
+        if (
+            !$slider.length ||
+            $slider.data("lightSlider")
+        ) {
+            return;
         }
-    });
-}
+
+        $slider.lightSlider({
+            item: 5,
+            autoWidth: false,
+            slideMove: 1,
+            slideMargin: 18,
+            loop: false,
+            pager: false,
+            controls: true,
+            enableTouch: true,
+            enableDrag: true,
+            freeMove: false,
+
+            responsive: [
+                {
+                    breakpoint: 1100,
+                    settings: {
+                        item: 3,
+                        slideMove: 1,
+                        slideMargin: 14
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        item: 2,
+                        slideMove: 1,
+                        slideMargin: 12
+                    }
+                }
+            ],
+
+            onSliderLoad: function () {
+                $slider
+                    .removeClass("cs-hidden")
+                    .addClass("slider-ready");
+            }
+        });
+    }
 
     function initializeHorizontalSlider($slider) {
         if (
@@ -684,7 +838,7 @@ function initializeSlider($slider) {
     }
 
     function loadStreamingCatalog() {
-        fetch("data.json?v=20260816-1", {
+        fetch("data.json?v=20260820-1", {
             cache: "no-store"
         })
             .then(function (response) {
@@ -802,6 +956,51 @@ function initializeSlider($slider) {
                         }
                     );
 
+                var streamingAndTv = preparedItems
+                    .filter(function (entry) {
+                        var latestDate =
+                            getLatestStreamingOrTvDate(
+                                entry.item,
+                                today
+                            );
+
+                        return (
+                            getTelevisionChannels(
+                                entry.item
+                            ).length > 0 &&
+                            !isJuvenileOrChild(
+                                entry.item
+                            ) &&
+                            latestDate &&
+                            latestDate.getFullYear() >= 2016
+                        );
+                    })
+                    .map(function (entry) {
+                        return {
+                            item: Object.assign(
+                                {},
+                                entry.item,
+                                {
+                                    displayMeta:
+                                        getTelevisionMeta(
+                                            entry.item
+                                        )
+                                }
+                            ),
+                            latestDate:
+                                getLatestStreamingOrTvDate(
+                                    entry.item,
+                                    today
+                                )
+                        };
+                    })
+                    .sort(function (a, b) {
+                        return (
+                            b.latestDate.getTime() -
+                            a.latestDate.getTime()
+                        );
+                    });
+
                 var verticalFictions = preparedItems.filter(
                     function (entry) {
                         return isVerticalFiction(entry.item);
@@ -830,6 +1029,11 @@ function initializeSlider($slider) {
                 renderHorizontalSlider(
                     "thrillers_politicos",
                     politicalThrillers
+                );
+
+                renderSlider(
+                    "streaming_tv",
+                    streamingAndTv
                 );
             })
             .catch(function (error) {
