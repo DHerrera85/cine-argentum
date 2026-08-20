@@ -221,51 +221,57 @@
       </ul>
     </nav>
 
-    <!-- Series en Streaming 2026 -->
-    <section id="latest" class="cartelera-2026-section" data-year="2026" data-cartelera-content="streaming-series"
-      data-cartelera-filters="series-verticals">
-      <h2 class="latest-heading">SERIES EN STREAMING 2026</h2>
+    <!-- Bloque editorial de actualidad en streaming -->
+    <div class="streaming-featured-block">
 
-      <div class="cartelera-2026-controls" role="group" aria-label="Series en Streaming 2026">
-        <div class="cartelera-filters" role="group" aria-label="Filtrar series por formato">
-          <button class="cartelera-filter is-active" type="button" data-cartelera-filter="all">
-            Todo
-          </button>
+      <!-- Series en Streaming 2026 -->
+      <section id="streaming-series-2026" class="cartelera-2026-section cartelera-streaming-current" data-year="2026"
+        data-cartelera-content="streaming-series" data-cartelera-filters="series-verticals">
+        <h2 class="latest-heading">SERIES EN STREAMING 2026</h2>
 
-          <button class="cartelera-filter" type="button" data-cartelera-filter="serie">
-            Series
-          </button>
+        <div class="cartelera-2026-controls" role="group" aria-label="Series en Streaming 2026">
+          <div class="cartelera-filters" role="group" aria-label="Filtrar series por formato">
+            <button class="cartelera-filter is-active" type="button" data-cartelera-filter="all">
+              Todo
+            </button>
 
-          <button class="cartelera-filter" type="button" data-cartelera-filter="vertical">
-            Verticales
-          </button>
+            <button class="cartelera-filter" type="button" data-cartelera-filter="serie">
+              Series
+            </button>
+
+            <button class="cartelera-filter" type="button" data-cartelera-filter="vertical">
+              Verticales
+            </button>
+          </div>
+
+          <div class="cartelera-count" aria-live="polite">
+            0 series y verticales
+          </div>
         </div>
 
-        <div class="cartelera-count" aria-live="polite">
-          0 series y verticales
+        <ul class="slider-v cs-hidden" data-cartelera-list="all">
+          <li class="cartelera-placeholder"></li>
+        </ul>
+      </section>
+
+      <!-- Series en Producción -->
+      <section id="streaming-en-produccion" class="cartelera-2026-section cartelera-streaming-upcoming"
+        data-cartelera-mode="upcoming" data-cartelera-content="streaming-series" data-years="2026,2027">
+        <div class="cartelera-production-heading">
+          <h2 class="latest-heading">EN PRODUCCIÓN</h2>
+
+          <div class="cartelera-count" aria-live="polite">
+            0 series
+          </div>
         </div>
-      </div>
 
-      <ul class="slider-v cs-hidden" data-cartelera-list="all">
-        <li class="cartelera-placeholder"></li>
-      </ul>
-    </section>
+        <ul class="slider-v cs-hidden" data-cartelera-list="all">
+          <li class="cartelera-placeholder"></li>
+        </ul>
+      </section>
 
-    <!-- Series en Producción -->
-    <section id="latest" class="cartelera-2026-section cartelera-streaming-upcoming" data-cartelera-mode="upcoming"
-      data-cartelera-content="streaming-series" data-years="2026,2027">
-      <div class="cartelera-production-heading">
-        <h2 class="latest-heading">EN PRODUCCIÓN</h2>
-
-        <div class="cartelera-count" aria-live="polite">
-          0 series
-        </div>
-      </div>
-
-      <ul class="slider-v cs-hidden" data-cartelera-list="all">
-        <li class="cartelera-placeholder"></li>
-      </ul>
-    </section>
+    </div>
+    <!-- Fin del bloque editorial de actualidad -->
 
     <!-- Catálogo general de Streaming -->
     <main class="streaming-page">
