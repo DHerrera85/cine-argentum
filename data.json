@@ -16319,6 +16319,7 @@
     {
       "id": "V215",
       "title": "El Hincha",
+      "type": "serie",
       "year": "2022",
       "channel": "Flow",
       "air_channels": [
@@ -16336,6 +16337,20 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/el-hincha-poster-280x420.png",
+      "release_date": "13/10/2022",
+      "air_broadcasts": [
+        {
+          "channel": "Canal 9",
+          "premiere_date": "12/10/2022",
+          "end_date": "16/11/2022",
+          "horario": "miércoles 22hs",
+          "tipo_emision": "Semanal",
+          "rating": "1,5"
+        }
+      ],
+      "capitulos": 8,
+      "productora": "Canal 9, Flow, Ministerio de Cultura de la Nación (Concurso Renacer Audiovisual 2021), Secretaría de Medios y Comunicación Pública, GM Comunicación, Grupo Octubre",
+      "sinopsis": "Rodrigo, un joven de clase acomodada, se reencuentra con Marciano, un amigo de la infancia vinculado a los negocios clandestinos de la barrabrava de Deportivo Vera. Atraído por ese mundo, comienza a ganar poder hasta convertirse en el nuevo jefe de la barra, mientras enfrenta rivalidades, traiciones y un pasado que amenaza con alcanzarlo.",
       "subtitle": "Thriller"
     },
     {
