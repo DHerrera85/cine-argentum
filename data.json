@@ -13179,6 +13179,12 @@
       "title": "Margarita",
       "year": "2024",
       "channel": "HBO Max",
+      "platforms": [
+        "HBO Max"
+      ],
+      "air_channels": [
+        "Telefe"
+      ],
       "genre": "Juvenil",
       "actors": [
         "Isabel Macedo",
@@ -13195,6 +13201,17 @@
       "image": "images/verticals/margarita-temporada-2-poster-280x420.png",
       "subtitle": "Juvenil",
       "release_date": "04/05/2026",
+      "air_broadcasts": [
+        {
+          "channel": "Telefe",
+          "season_number": 1,
+          "premiere_date": "23/09/2024",
+          "end_date": "29/11/2024",
+          "horario": "lunes a viernes 21:15hs",
+          "tipo_emision": "Tira Diaria",
+          "rating": "8,5"
+        }
+      ],
       "sinopsis": "Margarita, una adolescente huérfana que desconoce su verdadero origen, descubre que es heredera del Reino de Krikoragán y de una gran fortuna familiar. Mientras su tía Delfina intenta usurpar su lugar, deberá luchar por sus sueños, recuperar su identidad y encontrar el amor.",
       "temporadas": [
         {
@@ -13390,14 +13407,36 @@
       "title": "Playback, una somos dos",
       "year": "2025",
       "channel": "Disney+",
+      "sinopsis": "Emma y Camila, dos amigas inseparables, alcanzan inesperadamente la fama tras participar en un concurso de talentos con un video en el que una canta mientras la otra hace playback. El éxito las llevará a ocultar un secreto que amenaza con salir a la luz, poniendo a prueba su amistad mientras intentan sostener sus sueños y su nueva vida",
+      "release_date": "29/10/2025",
+      "platforms": [
+        "Disney+"
+      ],
+      "air_channels": [
+        "Telefe"
+      ],
       "genre": "Juvenil",
       "actors": [
         "Juli Castro",
         "Antonella Podestá",
-        "Valen G"
+        "Valen G",
+        "Valentino Petrilli",
+        "Luis Roberto Guzman"
       ],
       "orientation": "vertical",
+      "capitulos": 20,
       "image": "images/verticals/playback-poster-280x420.png",
+      "horizontal_image": "images/horizontals-1024x576/playback-slide-1024x576.png",
+      "air_broadcasts": [
+        {
+          "channel": "Telefe",
+          "premiere_date": "01/11/2025",
+          "horario": "sábados y domingos 09:00hs",
+          "tipo_emision": "Semanal",
+          "rating": "1,0"
+        }
+      ],
+      "productora": "Pampa Films",
       "subtitle": "Juvenil"
     },
     {
@@ -13503,9 +13542,17 @@
     {
       "id": "v120",
       "title": "Melody, la Chica del Metro",
+      "type": "serie",
       "year": "2023",
       "channel": "Prime Video",
+      "platforms": [
+        "Prime Video"
+      ],
+      "air_channels": [
+        "América"
+      ],
       "genre": "Juvenil",
+      "sinopsis": "Melody, una adolescente que sueña con dedicarse a la música pese a la oposición de su familia, descubre un misterioso cuaderno de poemas que perteneció a su madre y despierta una conexión inexplicable con Layla, la estrella pop que más admira. Mientras Melody lucha por seguir su vocación, Layla comienza a escuchar desde el otro lado del mundo voces en español que parecen provenir de la vida de la joven, iniciando un vínculo mágico que cambiará el destino de ambas.",
       "actors": [
         "Yas Gagliardi",
         "Sarah Lenore",
@@ -13515,6 +13562,16 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/melody-la-chica-del-metro-poster-280x420.png",
+      "release_date": "22/02/2023",
+      "air_broadcasts": [
+        {
+          "channel": "América",
+          "premiere_date": "25/06/2023",
+          "horario": "domingos 12:00hs",
+          "tipo_emision": "Semanal"
+        }
+      ],
+      "capitulos": 13,
       "subtitle": "Juvenil"
     },
     {
@@ -14980,8 +15037,15 @@
     {
       "id": "V174",
       "title": "Los Protectores",
+      "type": "serie",
       "year": "2022",
       "channel": "Disney+",
+      "platforms": [
+        "Disney+"
+      ],
+      "air_channels": [
+        "Canal 13"
+      ],
       "genre": "Comedia",
       "actors": [
         "Adrián Suar",
@@ -14990,12 +15054,25 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/los-protectores-primera temporada-poster-280x420.png",
-      "release_date": "9/03/2022",
+      "release_date": "09/03/2022",
+      "air_broadcasts": [
+        {
+          "channel": "Canal 13",
+          "premiere_date": "25/03/2024",
+          "end_date": "12/04/2024",
+          "horario": "lunes a viernes 23:15hs",
+          "tipo_emision": "Tira Diaria",
+          "rating": "3,6"
+        }
+      ],
+      "sinopsis": "Tres representantes de futbolistas en decadencia atraviesan una difícil situación económica y deciden formar una alianza para intentar salvar sus carreras y escapar de la quiebra. La aparición de una estrella internacional desatará una feroz competencia entre ellos, hasta que las circunstancias los obliguen a unir fuerzas y convertirse inesperadamente en sus protectores.",
       "subtitle": "Comedia",
+      "capitulos": 15,
+      "productora": "Kapow",
       "temporadas": [
         {
           "numero": 1,
-          "release_date": "9/03/2022",
+          "release_date": "09/03/2022",
           "image": "images/verticals/los-protectores-primera temporada-poster-280x420.png"
         },
         {
@@ -15650,8 +15727,15 @@
     {
       "id": "V194",
       "title": "El Fin del Amor",
+      "type": "serie",
       "year": "2022",
       "channel": "Prime Video",
+      "platforms": [
+        "Prime Video"
+      ],
+      "air_channels": [
+        "Canal 13"
+      ],
       "genre": "Drama",
       "actors": [
         "Lali Espósito",
@@ -15662,6 +15746,18 @@
       "orientation": "vertical",
       "image": "images/verticals/el-fin-del-amor-primera-temporada-poster-280x420.png",
       "release_date": "04/11/2022",
+      "air_broadcasts": [
+        {
+          "channel": "Canal 13",
+          "season_number": 1,
+          "premiere_date": "15/03/2024",
+          "horario": "lunes a viernes 23:15hs",
+          "tipo_emision": "Tira Diaria",
+          "rating": "2,9"
+        }
+      ],
+      "productora": "K&S Films, MGM International TV Productions",
+      "sinopsis": "Tamara, una audaz filósofa de la cultura pop criada en una familia judía ortodoxa de Buenos Aires, comienza a cuestionar las tradiciones y creencias que marcaron su vida. Tras dejar a su novio, emprende una búsqueda personal para desafiar las convenciones del amor romántico y construir su propia forma de entender los vínculos y la libertad.",
       "subtitle": "Drama",
       "temporadas": [
         {
@@ -15856,6 +15952,9 @@
       "platforms": [
         "Disney+"
       ],
+      "air_channels": [
+        "Telefe"
+      ],
       "genre": "Drama",
       "actors": [
         "Juan Minujín",
@@ -15865,6 +15964,15 @@
       ],
       "orientation": "vertical",
       "release_date": "15/03/2024",
+      "air_broadcasts": [
+        {
+          "channel": "Telefe",
+          "season_number": 1,
+          "premiere_date": "27/03/2024",
+          "end_date": "28/03/2024",
+          "rating": "9"
+        }
+      ],
       "image": "images/verticals/2026-coppola-elrepresentante-season2-poster280x420.png",
       "horizontal_image": "images/horizontals-1024x576/2024-coppola-disney-slide-1024x576.png",
       "subtitle": "Drama",
@@ -15999,6 +16107,12 @@
       "title": "Diciembre 2001",
       "year": "2023",
       "channel": "Disney+",
+      "platforms": [
+        "Disney+"
+      ],
+      "air_channels": [
+        "Canal 13"
+      ],
       "genre": "Thriller",
       "actors": [
         "Jean Pierre Noher",
@@ -16009,10 +16123,20 @@
         "Diego Cremonesi"
       ],
       "orientation": "vertical",
-      "sinopsis": "Javier Cach, un militante político que se desempeña como asesor de la Jefatura de Gabinete, en un gobierno de andar errático en manos de la Alianza. A lo largo de la historia, las convicciones y deseos de Cach deben dar paso a los sinsabores permanentes a los que lo expone la práctica de gobierno, y enfrentar a una de las peores crisis económicas, políticas y sociales que la Argentina haya visto en su historia, con la renuncia de un presidente de manera anticipada, la muerte de decenas de argentinos por represión policial, una sociedad a la que le arrebataron sus ahorros y la excepcionalidad histórica de cinco presidentes en una semana. ",
+      "sinopsis": "Javier Cach, un militante político y asesor de la Jefatura de Gabinete durante el gobierno de la Alianza, intenta sostener sus convicciones mientras enfrenta las contradicciones, disputas y frustraciones de la gestión pública. Su recorrido quedará atravesado por la crisis de 2001, cuando el derrumbe económico, la protesta social y la inestabilidad política precipitan la renuncia presidencial y uno de los momentos más críticos de la historia argentina reciente.",
       "horizontal_image": "images/horizontals-1024x576/2023-diciembre-2001-disney-slide-1024x576.png",
       "image": "images/verticals/2023-diciembre-2001-disney-poster-280x420.png",
       "release_date": "07/06/2023",
+      "air_broadcasts": [
+        {
+          "channel": "Canal 13",
+          "premiere_date": "11/06/2024",
+          "end_date": "18/06/2024",
+          "horario": "lunes a viernes 23:15hs",
+          "tipo_emision": "Tira Diaria",
+          "rating": "4,7"
+        }
+      ],
       "streaming_row": "thrillers_politicos",
       "capitulos": 6,
       "subtitle": "Thriller"
@@ -16116,6 +16240,12 @@
       "title": "Santa Evita",
       "year": "2022",
       "channel": "Disney+",
+      "platforms": [
+        "Disney+"
+      ],
+      "air_channels": [
+        "Canal 13"
+      ],
       "genre": "Thriller",
       "actors": [
         "Natalia Oreiro",
@@ -16127,9 +16257,19 @@
       "orientation": "vertical",
       "image": "images/verticals/2022-santa-evita-poster-disney-280x420.png",
       "horizontal_image": "images/horizontals-1024x576/2022-santa-evita-disney-slide-1024x576.png",
-      "sinopsis": "La trama de 7 episodios sigue la muerte de Eva Perón a los 33 años en 1952 y el misterioso e ilegal derrotero de su cadáver embalsamado, el cual fue ocultado y secuestrado por la dictadura militar durante más de dos décadas para evitar que se convirtiera en un símbolo de lucha política. La historia se centra en la obsesión de Juan Duarte, hermano de Eva, por recuperar el cuerpo de su hermana y en la lucha de los militares por mantenerlo oculto.",
+      "sinopsis": "Tras la muerte de Eva Perón en 1952, su cadáver embalsamado inicia un misterioso derrotero cuando es secuestrado y ocultado por los militares para impedir que se convierta en un símbolo político.\nDurante más de dos décadas, la búsqueda del cuerpo y los esfuerzos por mantenerlo escondido desencadenarán una trama de secretos, obsesiones y disputas de poder alrededor de una de las figuras más importantes de la historia argentina.",
       "capitulos": 7,
       "release_date": "26/07/2022",
+      "air_broadcasts": [
+        {
+          "channel": "Canal 13",
+          "premiere_date": "05/03/2024",
+          "end_date": "13/03/2024",
+          "horario": "lunes a viernes 23:15hs",
+          "tipo_emision": "Tira Diaria",
+          "rating": "4,0"
+        }
+      ],
       "streaming_row": "thrillers_politicos",
       "subtitle": "Thriller"
     },
@@ -16248,6 +16388,7 @@
     {
       "id": "V218",
       "title": "AMIA: El Fin de la Verdad",
+      "type": "serie",
       "year": "2025",
       "channel": "Flow",
       "air_channels": [
@@ -16266,6 +16407,15 @@
       "image": "images/verticals/2025-amia-flow-poster-280x420.png",
       "sinopsis": "La trama sigue a Diego, un agente del Mossad que pierde a su hermana en el ataque a la Embajada de Israel en 1992, y a Gisela, una periodista local. Juntos investigan los hechos, adentrándose en redes de espionaje, tráfico de armas y secretos de Estado hasta culminar en el atentado a la AMIA en 1994.",
       "release_date": "17/07/2025",
+      "air_broadcasts": [
+        {
+          "channel": "Telefe",
+          "premiere_date": "18/07/2025",
+          "horario": "viernes",
+          "tipo_emision": "Semanal",
+          "rating": "7,5"
+        }
+      ],
       "streaming_row": "thrillers_politicos",
       "producer": "Yair Dori",
       "capitulos": 8,
@@ -16924,7 +17074,7 @@
       "capitulos": 13,
       "fecha_estreno": "19/9/2005",
       "sinopsis": "La trama sigue a Alejandro Ruiz, un remisero que, traumatizado tras el asesinato de su padre, se convierte en un asesino justiciero obsesionado con limpiar la sociedad, siendo perseguido por una implacable fiscal",
-      "rating": "14,3",
+      "rating": "-",
       "productora": "Ideas del Sur, Sebastián Ortega",
       "tipo_emision": "Semanal"
     },

@@ -413,16 +413,8 @@
             });
     }
 
-    function getLatestStreamingOrTvDate(item, today) {
-        var dates = [];
-        var streamingDate = getLatestReleasedDate(
-            item,
-            today
-        );
-
-        if (streamingDate) {
-            dates.push(streamingDate);
-        }
+    function getLatestTelevisionDate(item, today) {
+        var televisionDates = [];
 
         getTelevisionBroadcasts(item).forEach(
             function (broadcast) {
@@ -438,16 +430,26 @@
                     broadcastDate.getTime() <=
                     today.getTime()
                 ) {
-                    dates.push(broadcastDate);
+                    televisionDates.push(broadcastDate);
                 }
             }
         );
 
-        dates.sort(function (a, b) {
+        televisionDates.sort(function (a, b) {
             return b.getTime() - a.getTime();
         });
 
-        return dates.length ? dates[0] : null;
+        /*
+         * La fecha televisiva más reciente tiene prioridad.
+         * El estreno en streaming se utiliza únicamente
+         * como respaldo para registros sin air_broadcasts
+         * o cable_broadcasts fechados.
+         */
+        if (televisionDates.length) {
+            return televisionDates[0];
+        }
+
+        return getLatestReleasedDate(item, today);
     }
 
     function getAverageTelevisionRating(item) {
@@ -958,8 +960,8 @@
 
                 var streamingAndTv = preparedItems
                     .filter(function (entry) {
-                        var latestDate =
-                            getLatestStreamingOrTvDate(
+                        var latestTelevisionDate =
+                            getLatestTelevisionDate(
                                 entry.item,
                                 today
                             );
@@ -971,8 +973,8 @@
                             !isJuvenileOrChild(
                                 entry.item
                             ) &&
-                            latestDate &&
-                            latestDate.getFullYear() >= 2016
+                            latestTelevisionDate &&
+                            latestTelevisionDate.getFullYear() >= 2016
                         );
                     })
                     .map(function (entry) {
@@ -988,7 +990,7 @@
                                 }
                             ),
                             latestDate:
-                                getLatestStreamingOrTvDate(
+                                getLatestTelevisionDate(
                                     entry.item,
                                     today
                                 )
