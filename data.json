@@ -15199,10 +15199,11 @@
     {
       "id": "V179",
       "title": "El Mundo de Mateo",
+      "type": "serie",
       "year": "2019",
       "channel": "Flow",
       "air_channels": [
-        "Canal 7/TV Pública"
+        "TV Pública"
       ],
       "platforms": [
         "Flow"
@@ -15214,7 +15215,35 @@
         "Luciano Cáceres"
       ],
       "orientation": "vertical",
-      "image": "images/verticals/el-mundo-de-mateo-poster-280x420.png",
+      "image": "images/verticals/2021-el-mundo-de-mateo-temporada2-flow.webp",
+      "horizontal_image": "images/horizontals-1024x576/2019-el-mundo-de-mateo-temporada1-flow-tvpublica-slide-1024x576.webp",
+      "release_date": "07/05/2019",
+      "air_broadcasts": [
+        {
+          "channel": "TV Pública",
+          "season_number": 1,
+          "premiere_date": "07/05/2019",
+          "horario": "martes 22hs",
+          "tipo_emision": "Semanal",
+          "rating": "1,0"
+        }
+      ],
+      "capitulos": 16,
+      "productora": "Idealismo Contenidos, Kuarzo Entertainment Argentina, Mariano Hueter",
+      "sinopsis": "Mateo, un adolescente de un pequeño pueblo, es acusado de cometer un asesinato y queda atrapado en una investigación para descubrir al verdadero culpable. Mientras su padre, la psicopedagoga de su colegio y el comisario local buscan esclarecer el crimen, comenzarán a salir a la luz oscuros secretos familiares en una comunidad donde nadie parece ser quien dice ser.",
+      "temporadas": [
+        {
+          "numero": 1,
+          "release_date": "07/05/2019",
+          "image": "images/verticals/2019-el-mundo-de-mateo-temporada1-flow-tvpublica.webp"
+        },
+        {
+          "numero": 2,
+          "release_date": "24/06/2021",
+          "image": "images/verticals/2021-el-mundo-de-mateo-temporada2-flow.webp",
+          "exclusive_platform": "Flow"
+        }
+      ],
       "subtitle": "Thriller"
     },
     {
@@ -16297,6 +16326,7 @@
     {
       "id": "V214",
       "title": "Los Internacionales",
+      "type": "serie",
       "year": "2020",
       "channel": "Flow",
       "air_channels": [
@@ -16312,8 +16342,21 @@
         "Rafael Ferro"
       ],
       "orientation": "vertical",
-      "release_date": "20/05/2020",
+      "release_date": "21/05/2020",
+      "air_broadcasts": [
+        {
+          "channel": "Telefe",
+          "premiere_date": "20/05/2020",
+          "end_date": "08/07/2020",
+          "horario": "miércoles 23:15hs",
+          "tipo_emision": "Semanal",
+          "rating": "4,6"
+        }
+      ],
       "image": "images/verticals/los-internacionales-poster-280x420.png",
+      "capitulos": 8,
+      "productora": "Viacom International Studios, The Mediapro Studio, Telecom, Olympusat, INCAA",
+      "sinopsis": "Una banda de ladrones colombianos llega a la Argentina con el objetivo de aprovechar el caos económico y social para llevar adelante una serie de robos. En medio de la crisis de 2001, sus integrantes se adentrarán en una sociedad convulsionada mientras enfrentan los riesgos, conflictos y consecuencias de sus actividades delictivas.",
       "subtitle": "Thriller"
     },
     {
@@ -16439,24 +16482,53 @@
     {
       "id": "V219",
       "title": "Atrapa a un Ladrón",
+      "type": "serie",
       "year": "2019",
       "channel": "Flow",
       "air_channels": [
         "Telefe"
       ],
-      "channels": [
-        "Telefe"
+      "cable_channels": [
+        "Paramount Channel"
       ],
       "platforms": [
-        "Flow"
+        "Flow",
+        "Paramount+"
+      ],
+      "platform_releases": [
+        {
+          "platform": "Flow",
+          "release_date": "03/10/2019",
+          "release_type": "Estreno"
+        },
+        {
+          "platform": "Paramount+",
+          "release_type": "Disponibilidad posterior"
+        }
       ],
       "genre": "Comedia",
       "actors": [
         "Pablo Echarri",
-        "Alexandra Jiménez"
+        "Alexandra Jiménez",
+        "Mónica Antonópulos",
+        "Agustín Sullivan"
       ],
       "orientation": "vertical",
-      "image": "images/verticals/atrapa-un-ladron-poster-280x420.png",
+      "image": "images/verticals/2019-atrapa-a-un-ladron-telefe-flow-poster-280x420.webp",
+      "horizontal_image": "images/horizontals-1024x576/2019-atrapa-a-un-ladron-telefe-flow-slide-1024x576.webp",
+      "release_date": "03/10/2019",
+      "air_broadcasts": [
+        {
+          "channel": "Telefe",
+          "premiere_date": "02/10/2019",
+          "horario": "miércoles 23:15hs",
+          "tipo_emision": "Semanal",
+          "rating": "6,3"
+        }
+      ],
+      "capitulos": 10,
+      "productora": "Viacom International Studios, Telecom Argentina, Paramount Television",
+      "sinopsis": "Juan Robles, conocido en el pasado como “El Gato”, ha dejado atrás su vida como ladrón para construir una nueva identidad y formar una familia. Cuando una serie de robos con su inconfundible estilo comienza a sacudir Buenos Aires, deberá regresar al mundo del delito para descubrir quién está utilizando su nombre y proteger la vida que logró reconstruir.",
       "subtitle": "Comedia"
     },
     {
