@@ -156,6 +156,41 @@
     return (Number(b.viewers) || 0) - (Number(a.viewers) || 0);
   }
 
+  function getReleaseTimestamp(releaseDate, year) {
+    var value = (releaseDate || '').toString().trim();
+
+    var localMatch = value.match(/^(\d{1,2})\/(\d{1,2})\/(\d{4})$/);
+    if (localMatch) {
+      return Date.UTC(
+        Number(localMatch[3]),
+        Number(localMatch[2]) - 1,
+        Number(localMatch[1])
+      );
+    }
+
+    var isoMatch = value.match(/^(\d{4})-(\d{1,2})-(\d{1,2})$/);
+    if (isoMatch) {
+      return Date.UTC(
+        Number(isoMatch[1]),
+        Number(isoMatch[2]) - 1,
+        Number(isoMatch[3])
+      );
+    }
+
+    var fallbackYear = Number(year) || 0;
+    return fallbackYear ? Date.UTC(fallbackYear, 0, 1) : 0;
+  }
+
+  function compareReleaseDateDesc(a, b) {
+    return b.releaseTimestamp - a.releaseTimestamp ||
+      a.title.localeCompare(b.title, 'es');
+  }
+
+  function compareReleaseDateAsc(a, b) {
+    return a.releaseTimestamp - b.releaseTimestamp ||
+      a.title.localeCompare(b.title, 'es');
+  }
+
   function buildMovieCard(movie) {
     if (movie.viewers === '-') {
       return '\n      <div class="actor-movie-card">\n        <a href="' + movie.slug + '" tabindex="0">\n          <img src="' + movie.image + '" alt="' + movie.title + '" loading="lazy" />\n        </a>\n        <div class="actor-movie-info">\n          <div class="actor-movie-title">' + movie.title + ' (' + movie.year + ')</div>\n          <div class="actor-movie-viewers">-</div>\n        </div>\n      </div>\n    ';
@@ -264,6 +299,7 @@
           return {
             title: item.title || 'Sin título',
             year: Number(item.year) || 0,
+            releaseTimestamp: getReleaseTimestamp(item.release_date, item.year),
             viewers: normalizeViewersForSlug(item),
             image: item.image || 'images/verticals/placeholder-280x420.png',
             slug: 'show.html?id=' + item.id
@@ -274,9 +310,9 @@
         var sorted = movies.slice();
 
         if (sortBy === 'year') {
-          sorted.sort(function (a, b) { return b.year - a.year; });
+          sorted.sort(compareReleaseDateDesc);
         } else if (sortBy === 'year-asc') {
-          sorted.sort(function (a, b) { return a.year - b.year; });
+          sorted.sort(compareReleaseDateAsc);
         } else if (sortBy === 'decada-1990') {
           sorted = sorted.filter(function (movie) { return movie.year >= 1990 && movie.year < 2000; });
           sorted.sort(function (a, b) { return a.year - b.year; });
