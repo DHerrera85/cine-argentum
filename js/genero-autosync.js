@@ -52,7 +52,7 @@
 
   var COMEDIA_TITLES = [
     'Esa maldita costilla', 'Déjala Correr', 'Sólo por Hoy', 'Papá se Volvió Loco', 'Los Incorregibles', 'Dos hermanos', 'Pájaros volando', 'Igualita a mí', 'Mi primera boda', 'Extraños en la noche', 'Vino para robar', 'Bañeros 4: los rompeolas', 'Kryptonita', 'Voley', 'Permitidos', 'La última fiesta', 'El rey del Once', 'El fútbol o yo', '27: El club de los malditos', 'Re loca', 'Bañeros 5: Lentos y cargosos', 'El cuento de las comadrejas', 'No soy tu mami', 'Corazón Loco', 'Ex Casados', 'Matrimillas', 'Más Respeto que soy Tu Madre', '30 Noches con mi Ex', 'Blondi', 'Puan', 'Casi Muerta', 'Culpa Cero', 'Transmitvah', 'El Hombre que Amaba los Platos Voladores', 'No Puedo Vivir Sin Ti', 'Mazel Tov', 'Homo Argentum', 'Me casé con un boludo', 'Socios por accidente', 'Dos más dos', 'La odisea de los giles', 'Corazón de león', 'Mi obra maestra', 'El Gerente',
-    'Papá por Dos', 'Las Hermanas Fantásticas', 'No Me Rompan', 'Granizo', 'Casi leyendas', 'Sin hijos', 'Peter Capusoto y sus 3 dimensiones', 'Días de vinilo', 'Un cuento chino', 'Un Novio para mi Mujer', 'Los Super Agentes: La Nueva Generación', 'Bañeros 3, todopoderosos', 'Cohen vs Rosi', 'La Noche Mágica', 'La Casaca de Dios','Doble Discurso'
+    'Papá por Dos', 'Las Hermanas Fantásticas', 'No Me Rompan', 'Granizo', 'Casi leyendas', 'Sin hijos', 'Peter Capusoto y sus 3 dimensiones', 'Días de vinilo', 'Un cuento chino', 'Un Novio para mi Mujer', 'Los Super Agentes: La Nueva Generación', 'Bañeros 3, todopoderosos', 'Cohen vs Rosi', 'La Noche Mágica', 'La Casaca de Dios', 'Doble Discurso'
   ];
 
   var DRAMA_TITLES = [
@@ -63,10 +63,6 @@
 
   var HISTORICA_TITLES = [
     'Iluminados por el Fuego', 'Revolución, el cruce de los andes', 'El Ángel', 'El clan', 'Infancia clandestina', 'Kamchatka', 'Felicitas', 'Atraco', 'Wakolda, el Médico Alemán', 'Whisky, Romeo, Zulú', 'Aballay, el hombre sin miedo', 'La Fuga', 'Crónica de una Fuga', 'Hermanas', 'Argentina, 1985'
-  ];
-
-  var POLICIAL_TITLES = [
-    'La Caja Azul', 'Parking', 'Playa de Lobos', 'Una Muerte Silenciosa', 'Gatillero', 'Descansar en Paz', 'Jaque Mate', 'El Duelo', 'La Extorsión', 'El Rapto', 'Pipa', 'La Ira de Dios', 'Ecos de un Crimen', 'Un Crimen Argentino', 'En la Mira', 'El robo del siglo', 'La Corazonada', 'Crimenes de Familia', '4×4', 'Animal', 'Acusada', 'Perdida', 'Las Grietas de Jara', 'Nieve negra', 'La cordillera', 'Sólo se vive una vez', '100 años de perdón', 'Kóblic', 'Al final del túnel', 'Relatos salvajes', 'Muerte en Buenos Aires', 'Tesis sobre un homicidio', 'Séptimo', 'Elefante blanco', 'Todos tenemos un Plan', 'Fase 7', 'Carancho', 'Paco', 'El secreto de sus ojos', 'Las viudas de los jueves', 'Leonera', 'Tiempo de Valientes', 'Peligrosa Obsesión', 'Gallito Ciego', 'Nueve Reinas', 'Plata quemada', 'La venganza', 'Comodines', 'La furia', 'Cenizas de paraíso', 'Nahir'
   ];
 
   var ROMANCE_TITLES = [
@@ -98,7 +94,7 @@
     }
 
     if (genreSlug === 'policial') {
-      return genreValue.indexOf('policial') !== -1 && POLICIAL_TITLES.indexOf(item.title) !== -1;
+      return genreValue.indexOf('policial') !== -1;
     }
 
     if (genreSlug === 'romance') {

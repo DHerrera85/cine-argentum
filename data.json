@@ -6543,6 +6543,35 @@
       "subtitle": "Familiar"
     },
     {
+      "id": "P2057",
+      "title": "Barreda",
+      "type": "pelicula",
+      "year": "2026",
+      "genre": "Policial",
+      "actors": [
+        "Luis Machín",
+        "Carla Peterson",
+        "Mercedes Morán",
+        "Maite Lanata",
+        "Margarita Páez",
+        "Marcelo Subiotto",
+        "Paola Barrientos",
+        "Alberto Ajaka"
+      ],
+      "synopsis": "En 1992, Ricardo Barreda, un aparentemente tranquilo odontólogo, asesina a su esposa, su suegra y sus dos hijas en la casa familiar, protagonizando uno de los crímenes más conmocionantes de la historia argentina. Mientras intenta presentarse como víctima de los conflictos familiares, el caso desata un escándalo nacional y una intensa exposición mediática que convierte al acusado y sus crímenes en objeto de debate público.",
+      "channel": "Streaming",
+      "platforms": [
+        "Prime Video"
+      ],
+      "image": "images/verticals/2026-barreda-pelicula-primevideo-poster280x420.webp",
+      "orientation": "vertical",
+      "viewers": "-",
+      "producer": "About Entertainment, Infinity Hill, Amazon MGM Studios",
+      "director": "Daniela Goggi",
+      "release_date": "28/08/2026",
+      "subtitle": "Policial"
+    },
+    {
       "id": "T0001",
       "title": "Amigos son los amigos",
       "year": "1990",
