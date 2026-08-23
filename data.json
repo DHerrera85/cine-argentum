@@ -14933,17 +14933,60 @@
     {
       "id": "V171",
       "title": "El Encargado",
+      "type": "serie",
       "year": "2022",
       "channel": "Disney+",
+      "platforms": [
+        "Disney+"
+      ],
+      "air_channels": [
+        "Canal 13"
+      ],
+      "cable_channels": [
+        "Star Channel"
+      ],
       "genre": "Comedia",
       "actors": [
         "Guillermo Francella",
-        "Gabriel Goity"
+        "Gabriel Goity",
+        "Moro Anghileri",
+        "Gastón Cocchiarale",
+        "Pochi Ducasse",
+        "María Abadi",
+        "Martín Slipak",
+        "Manuel Vicente",
+        "Arturo Puig"
       ],
       "orientation": "vertical",
       "image": "images/verticals/el-encargado-temporada-4-poster-280x420.png",
       "release_date": "26/10/2022",
+      "air_broadcasts": [
+        {
+          "channel": "Canal 13",
+          "season_number": 1,
+          "premiere_date": "10/03/2024",
+          "horario": "domingos 22hs",
+          "tipo_emision": "Semanal"
+        },
+        {
+          "channel": "Canal 13",
+          "season_numbers": [
+            1,
+            2,
+            3
+          ],
+          "premiere_date": "03/02/2025",
+          "end_date": "10/03/2025",
+          "horario": "lunes a viernes 21:30hs",
+          "tipo_emision": "Tira Diaria",
+          "rating": "4,7"
+        }
+      ],
       "subtitle": "Comedia",
+      "capitulos": 32,
+      "horizontal_image": "images/horizontals-1024x576/2022-el-encargado-disney-hulu-slide-1024x576.webp",
+      "productora": "Mariano Cohn y Gastón Duprat",
+      "sinopsis": "Eliseo es el encargado de un exclusivo edificio residencial, donde detrás de su apariencia cordial y servicial observa cada movimiento de los propietarios y conoce todos sus secretos. Convencido de ser una pieza indispensable de la comunidad, utiliza esa información para manipular situaciones a su conveniencia, especialmente cuando un proyecto amenaza con poner en peligro su trabajo y el poder que construyó dentro del edificio.",
       "temporadas": [
         {
           "numero": 1,
