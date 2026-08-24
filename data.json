@@ -11291,6 +11291,7 @@
       "orientation": "vertical",
       "image": "images/verticals/once-nueva-generacion-poster-280x420.png",
       "subtitle": "Juvenil",
+      "horizontal_image": "images/horizontals-1024x576/once-nueva-generacion-slide-1024x576.png",
       "capitulos": 20,
       "fecha_estreno": "18/03/2026",
       "sinopsis": "Tras triunfar en Europa, Gabo, Dedé y Ricky regresan al IAD y descubren que los Halcones Dorados están al borde del descenso. Decididos a recuperar la gloria y el orgullo del equipo, inician una nueva etapa marcada por la pasión y el fútbol.",
@@ -13227,7 +13228,7 @@
         "Antonella Podestá"
       ],
       "orientation": "vertical",
-      "image": "images/verticals/margarita-temporada-3-poster-280x420.png",
+      "image": "images/verticals/2026-margarita-temporada3-hbomax-poster280x420.webp",
       "horizontal_image": "images/horizontals-1024x576/2026-margarita-temporada3-hbomax-slide1024x576.webp",
       "subtitle": "Juvenil",
       "release_date": "24/08/2026",
@@ -13261,6 +13262,104 @@
           "release_date": "24/08/2026",
           "image": "images/verticals/2026-margarita-temporada3-hbomax-poster280x420.webp",
           "horizontal_image": "images/horizontals-1024x576/2026-margarita-temporada3-hbomax-slide1024x576.webp"
+        }
+      ]
+    },
+    {
+      "id": "v110",
+      "title": "Cielo Grande",
+      "year": "2022",
+      "channel": "Netflix",
+      "platforms": [
+        "Netflix"
+      ],
+      "genre": "Juvenil",
+      "actors": [
+        "Pilar Pascual",
+        "Abril Di Yorio",
+        "Víctor Varona",
+        "Thaís Rippel"
+      ],
+      "orientation": "vertical",
+      "image": "images/verticals/cielo-grande-primera temporada-poster-280x420.png",
+      "subtitle": "Juvenil",
+      "release_date": "16/02/2022",
+      "capitulos": 19,
+      "sinopsis": "Un remoto resort de Argentina reinstaura una competición de wakeboarding que atrae la atención de Steffi, deportista mexicana decidida a descubrir un secreto familiar.",
+      "creador": "Jorge Edelstein",
+      "temporadas": [
+        {
+          "numero": 1,
+          "release_date": "16/02/2022",
+          "image": "images/verticals/cielo-grande-primera temporada-poster-280x420.png",
+          "netflix_reports": [
+            {
+              "report_id": "2025-H2",
+              "periodo": "Jul-Dic 2025",
+              "visualizaciones": 500000,
+              "ranking_series": 3481
+            }
+          ]
+        },
+        {
+          "numero": 2,
+          "release_date": "30/12/2022",
+          "image": "images/verticals/cielo-grande-segunda temporada-poster-280x420.png",
+          "netflix_reports": [
+            {
+              "report_id": "2025-H2",
+              "periodo": "Jul-Dic 2025",
+              "visualizaciones": 400000,
+              "ranking_series": 4014
+            }
+          ]
+        }
+      ],
+      "netflix_aggregates": [
+        {
+          "report_id": "2025-H2",
+          "periodo": "Jul-Dic 2025",
+          "visualizaciones_totales": 900000,
+          "temporada_mas_vista": 1,
+          "visualizaciones_temporada_mas_vista": 500000
+        }
+      ]
+    },
+    {
+      "id": "v111",
+      "title": "Entrelazados",
+      "year": "2021",
+      "channel": "Disney+",
+      "platforms": [
+        "Disney+"
+      ],
+      "genre": "Juvenil",
+      "actors": [
+        "Caro Domenech",
+        "El Purre",
+        "Elena Roger",
+        "Kevsho",
+        "Benjamín Amadeo",
+        "Clara Alonso",
+        "Manuela Menéndez"
+      ],
+      "orientation": "vertical",
+      "image": "images/verticals/entrelazados-primera-temporada-poster-280x420.png",
+      "subtitle": "Juvenil",
+      "release_date": "12/11/2021",
+      "capitulos": 17,
+      "sinopsis": "Allegra sueña con ingresar a la compañía musical Eleven O'clock, pero su madre Caterina se opone rotundamente. Todo cambia cuando un brazalete mágico la transporta a 1994, donde descubre el pasado de su familia e intenta cambiar su destino.",
+      "productora": "Pampa Films, Gloriamundi Producciones",
+      "temporadas": [
+        {
+          "numero": 1,
+          "release_date": "12/11/2021",
+          "image": "images/verticals/entrelazados-primera-temporada-poster-280x420.png"
+        },
+        {
+          "numero": 2,
+          "release_date": "24/05/2023",
+          "image": "images/verticals/entrelazados-segunda-temporada-poster-280x420.png"
         }
       ]
     },

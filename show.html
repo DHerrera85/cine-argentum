@@ -594,17 +594,6 @@
               '<div class="detail-hero-counter" aria-live="polite">1 / ' + heroImages.length + '</div>'
               : '') +
             '</div>';
-        } {
-          var horizontalSrc = String(item.horizontal_image)
-            .trim()
-            .replace(/ /g, '%20');
-
-          heroSection =
-            '<div class="detail-hero">' +
-            '<img src="' + horizontalSrc + '" alt="' +
-            (item.title || 'Imagen horizontal') +
-            '">' +
-            '</div>';
         }
         function toNumber(v) {
           if (v === null || v === undefined || String(v).trim() === '') return null;
