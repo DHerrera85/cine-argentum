@@ -481,95 +481,13 @@
   </section>
 
   <!-- Películas exclusivas de Amazon Prime Video (V) -->
-  <section id="latest">
-    <h2 class="latest-heading">Películas exclusivas de Amazon Prime Video</h2>
-    <ul class="slider-v cs-hidden">
-      <li class="item-ap">
-        <a href="show.html?id=P2057">
-          <div class="latest-box">
-            <div class="latest-b-img">
-              <img src="images/verticals/2026-barreda-pelicula-primevideo-poster280x420.webp" loading="lazy"
-                alt="Barreda">
-            </div>
-            <div class="latest-b-text">
-              <strong>Barreda</strong>
-              <p>28/08/2026</p>
-            </div>
-          </div>
-        </a>
-      </li>
-      <li class="item-ap"><a href="show.html?id=P2036">
-          <div class="latest-box">
-            <div class="latest-b-img"><img src="images/verticals/la-caja-azul-2026-poster-280x420.png" loading="lazy"
-                alt="La Caja Azul"></div>
-            <div class="latest-b-text"><strong>La Caja Azul</strong>
-              <p>17/04/2026</p>
-            </div>
-          </div>
-        </a></li>
-      <li class="item-ap"><a href="show.html?id=P1153">
-          <div class="latest-box">
-            <div class="latest-b-img"><img src="images/verticals/belen-2025-poster-280x420.png" loading="lazy"
-                alt="Belén"></div>
-            <div class="latest-b-text"><strong>Belén</strong>
-              <p>18/09/2025</p>
-            </div>
-          </div>
-        </a></li>
-      <li class="item-ap"><a href="show.html?id=P2026">
-          <div class="latest-box">
-            <div class="latest-b-img"><img src="images/verticals/mensaje-en-una-botella-2025-poster-280x420.png"
-                loading="lazy" alt="Mensaje en una Botella"></div>
-            <div class="latest-b-text"><strong>Mensaje en una Botella</strong>
-              <p>01/05/2025</p>
-            </div>
-          </div>
-        </a></li>
-      <li class="item-ap"><a href="show.html?id=P2029">
-          <div class="latest-box">
-            <div class="latest-b-img"><img src="images/verticals/nahir-2024-poster-280x420.png" loading="lazy"
-                alt="Nahir"></div>
-            <div class="latest-b-text"><strong>Nahir</strong>
-              <p>22/05/2024</p>
-            </div>
-          </div>
-        </a></li>
-      <li class="item-ap"><a href="show.html?id=P1194">
-          <div class="latest-box">
-            <div class="latest-b-img"><img src="images/verticals/jaque-mate-2024-poster-280x420.png" loading="lazy"
-                alt="Jaque Mate"></div>
-            <div class="latest-b-text"><strong>Jaque Mate</strong>
-              <p>25/01/2024</p>
-            </div>
-          </div>
-        </a></li>
-      <li class="item-ap"><a href="show.html?id=P2037">
-          <div class="latest-box">
-            <div class="latest-b-img"><img src="images/verticals/doble-discurso-2023-poster-280x420.png" loading="lazy"
-                alt="Doble Discurso"></div>
-            <div class="latest-b-text"><strong>Doble Discurso</strong>
-              <p>27/07/2023</p>
-            </div>
-          </div>
-        </a></li>
-      <li class="item-ap"><a href="show.html?id=P1091">
-          <div class="latest-box">
-            <div class="latest-b-img"><img src="images/verticals/blondi-2023-poster-280x420.png" loading="lazy"
-                alt="Blondi"></div>
-            <div class="latest-b-text"><strong>Blondi</strong>
-              <p>01/06/2023</p>
-            </div>
-          </div>
-        </a></li>
-      <li class="item-ap"><a href="show.html?id=P1223">
-          <div class="latest-box">
-            <div class="latest-b-img"><img src="images/verticals/argentina-1985-2022-poster-280x420.png" loading="lazy"
-                alt="Argentina, 1985"></div>
-            <div class="latest-b-text"><strong>Argentina, 1985</strong>
-              <p>29/09/2022</p>
-            </div>
-          </div>
-        </a></li>
+  <section id="latest" class="prime-video-movies-section">
+    <h2 class="latest-heading">
+      Películas exclusivas de Amazon Prime Video
+    </h2>
+
+    <ul class="slider-v cs-hidden" id="indexPrimeMoviesList" aria-label="Películas exclusivas de Amazon Prime Video">
+      <li class="cartelera-placeholder"></li>
     </ul>
   </section>
 
@@ -1033,6 +951,7 @@ Thrillers Políticos (H)
   <script src="js/netflix.js?v=20260719-3"></script>
   <script src="js/script.js?v=20260225-3"></script>
   <script src="js/cartelera-2026.js?v=20260605-1"></script>
+  <script src="js/index-prime-movies-autosync.js?v=20260825-1"></script>
   <script>
     (function () {
       var indexDataVersion = '20260406-1';

@@ -6572,6 +6572,28 @@
       "subtitle": "Policial"
     },
     {
+      "id": "P2058",
+      "title": "Las Malas",
+      "type": "pelicula",
+      "year": "2027",
+      "genre": "Drama",
+      "actors": [
+        "Karla Sofía Gascón", "Daniela Vega", "Lola Rodríguez", "Luis Machín"
+      ],
+      "synopsis": "En los márgenes de la ciudad, una comunidad de trabajadoras sexuales trans encuentra refugio bajo el cuidado de la Tía Encarna, construyendo una familia atravesada por la solidaridad y el afecto frente a la violencia cotidiana. La inesperada llegada de un bebé abandonado transformará sus vidas y pondrá a prueba los vínculos que sostienen ese frágil pero entrañable hogar.",
+      "channel": "Streaming",
+      "platforms": [
+        "Prime Video"
+      ],
+      "image": "images/verticals/2027-las-malas-pelicula-primevideo-poster280x420.webp",
+      "orientation": "vertical",
+      "viewers": "-",
+      "producer": "Infinity Hill, Amazon MGM Studios",
+      "director": "Armando Bo",
+      "release_date": "01/01/2027",
+      "subtitle": "Drama"
+    },
+    {
       "id": "T0001",
       "title": "Amigos son los amigos",
       "year": "1990",
@@ -13112,7 +13134,7 @@
       "horario": "21hs",
       "capitulos": "24",
       "fecha_estreno": "20/03/2006",
-      "horizontal_image":"images/horizontals-1024x576/2006-gladiadores-de-pompeya-canal9-slide-1024x576.webp",
+      "horizontal_image": "images/horizontals-1024x576/2006-gladiadores-de-pompeya-canal9-slide-1024x576.webp",
       "sinopsis": "La historia sigue a Mario \"El Toro\" Komanechi, quien regresa tras 17 años para recuperar su club de lucha libre, su amor pasado (Pompeya D'Angelo) y su título de campeón",
       "rating": "3",
       "productora": "Underground Contenidos",

@@ -67,18 +67,6 @@
 
     .detail-hero-caption {
       position: absolute;
-      left: 16px;
-      bottom: 14px;
-      padding: 7px 12px;
-      border-radius: 999px;
-      color: #fff;
-      background: rgba(10, 15, 25, 0.72);
-      font-size: 0.9rem;
-      font-weight: 600;
-    }
-
-    .detail-hero-caption {
-      position: absolute;
       left: 12px;
       bottom: 10px;
       z-index: 3;
@@ -97,21 +85,32 @@
       position: absolute;
       top: 50%;
       z-index: 3;
-      width: 34px;
-      height: 44px;
+      width: 32px;
+      height: 32px;
       padding: 0;
       border: 0;
-      border-radius: 0;
-      color: rgba(255, 255, 255, 0.65);
-      background: transparent;
-      box-shadow: none;
-      font-size: 1.25rem;
+      border-radius: 50%;
+      color: rgba(255, 255, 255, 0.9);
+      background: rgba(10, 15, 25, 0.22);
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.18);
+      backdrop-filter: blur(2px);
+      font-size: 1rem;
       cursor: pointer;
-      opacity: 0.7;
+      opacity: 0.82;
       transform: translateY(-50%);
       transition:
         opacity 0.2s ease,
+        background-color 0.2s ease,
         transform 0.2s ease;
+    }
+
+    .detail-hero-control:hover,
+    .detail-hero-control:focus-visible {
+      color: #ffffff;
+      background: rgba(10, 15, 25, 0.42);
+      opacity: 1;
+      outline: none;
+      transform: translateY(-50%) scale(1.06);
     }
 
     .detail-hero-control:hover,
@@ -149,8 +148,8 @@
     @media (max-width: 600px) {
       .detail-hero-control {
         width: 30px;
-        height: 40px;
-        font-size: 1.1rem;
+        height: 30px;
+        font-size: 0.92rem;
       }
 
       .detail-hero-prev {
