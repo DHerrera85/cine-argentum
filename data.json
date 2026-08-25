@@ -6578,7 +6578,10 @@
       "year": "2027",
       "genre": "Drama",
       "actors": [
-        "Karla Sofía Gascón", "Daniela Vega", "Lola Rodríguez", "Luis Machín"
+        "Karla Sofía Gascón",
+        "Daniela Vega",
+        "Lola Rodríguez",
+        "Luis Machín"
       ],
       "synopsis": "En los márgenes de la ciudad, una comunidad de trabajadoras sexuales trans encuentra refugio bajo el cuidado de la Tía Encarna, construyendo una familia atravesada por la solidaridad y el afecto frente a la violencia cotidiana. La inesperada llegada de un bebé abandonado transformará sus vidas y pondrá a prueba los vínculos que sostienen ese frágil pero entrañable hogar.",
       "channel": "Streaming",
@@ -6592,6 +6595,27 @@
       "director": "Armando Bo",
       "release_date": "01/01/2027",
       "subtitle": "Drama"
+    },
+    {
+      "id": "P2059",
+      "title": "Te Odio, Te Amo",
+      "year": "2027",
+      "type": "serie",
+      "genre": "Juvenil",
+      "actors": [
+        "Gina Mastronicola",
+        "Álvaro Rico Ladera",
+        "Franco Masini"
+      ],
+      "synopsis": "Isa, una joven diseñadora de moda en ascenso, y Diego, un aspirante a jugador de polo, ven sus caminos cruzarse en el exclusivo ambiente de Punta del Este. Entre el glamour, las competencias de polo y una fuerte atracción, el orgullo de ambos pondrá a prueba sus sentimientos mientras intentan alcanzar sus sueños y definir el rumbo de sus vidas.",
+      "channel": "Streaming",
+      "platforms": [
+        "Prime Video"
+      ],
+      "image": "images/verticals/2027-te-odio-te-amo-primevideo-poster280x420.webp",
+      "orientation": "vertical",
+      "release_date": "01/01/2027",
+      "subtitle": "Juvenil"
     },
     {
       "id": "T0001",
