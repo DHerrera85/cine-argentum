@@ -77,58 +77,102 @@
       font-weight: 600;
     }
 
+    .detail-hero-caption {
+      position: absolute;
+      left: 12px;
+      bottom: 10px;
+      z-index: 3;
+      padding: 3px 7px;
+      border-radius: 999px;
+      color: rgba(255, 255, 255, 0.82);
+      background: rgba(10, 15, 25, 0.35);
+      font-size: 0.68rem;
+      font-weight: 500;
+      letter-spacing: 0.01em;
+      line-height: 1.2;
+      backdrop-filter: blur(2px);
+    }
+
     .detail-hero-control {
       position: absolute;
       top: 50%;
       z-index: 3;
-      width: 42px;
-      height: 42px;
+      width: 34px;
+      height: 44px;
+      padding: 0;
       border: 0;
-      border-radius: 50%;
-      color: #fff;
-      background: rgba(10, 15, 25, 0.65);
+      border-radius: 0;
+      color: rgba(255, 255, 255, 0.65);
+      background: transparent;
+      box-shadow: none;
+      font-size: 1.25rem;
       cursor: pointer;
+      opacity: 0.7;
       transform: translateY(-50%);
+      transition:
+        opacity 0.2s ease,
+        transform 0.2s ease;
     }
 
-    .detail-hero-control:hover {
-      background: rgba(10, 15, 25, 0.9);
+    .detail-hero-control:hover,
+    .detail-hero-control:focus-visible {
+      color: #ffffff;
+      background: transparent;
+      opacity: 1;
+      outline: none;
+      transform: translateY(-50%) scale(1.08);
     }
 
     .detail-hero-prev {
-      left: 12px;
+      left: 8px;
     }
 
     .detail-hero-next {
-      right: 12px;
+      right: 8px;
     }
 
     .detail-hero-counter {
       position: absolute;
-      right: 16px;
-      bottom: 14px;
+      right: 12px;
+      bottom: 10px;
       z-index: 3;
-      padding: 6px 10px;
+      padding: 3px 7px;
       border-radius: 999px;
-      color: #fff;
-      background: rgba(10, 15, 25, 0.72);
-      font-size: 0.82rem;
+      color: rgba(255, 255, 255, 0.82);
+      background: rgba(10, 15, 25, 0.35);
+      font-size: 0.68rem;
+      font-weight: 500;
+      line-height: 1.2;
+      backdrop-filter: blur(2px);
     }
 
     @media (max-width: 600px) {
       .detail-hero-control {
-        width: 36px;
-        height: 36px;
+        width: 30px;
+        height: 40px;
+        font-size: 1.1rem;
+      }
+
+      .detail-hero-prev {
+        left: 5px;
+      }
+
+      .detail-hero-next {
+        right: 5px;
       }
 
       .detail-hero-caption {
-        left: 10px;
-        bottom: 10px;
+        left: 8px;
+        bottom: 8px;
+        padding: 2px 6px;
+        font-size: 0.62rem;
       }
 
       .detail-hero-counter {
-        right: 10px;
-        bottom: 10px;
+        right: 8px;
+        bottom: 8px;
+        padding: 2px 6px;
+        font-size: 0.62rem;
       }
     }
 

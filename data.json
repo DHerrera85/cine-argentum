@@ -13112,6 +13112,7 @@
       "horario": "21hs",
       "capitulos": "24",
       "fecha_estreno": "20/03/2006",
+      "horizontal_image":"images/horizontals-1024x576/2006-gladiadores-de-pompeya-canal9-slide-1024x576.webp",
       "sinopsis": "La historia sigue a Mario \"El Toro\" Komanechi, quien regresa tras 17 años para recuperar su club de lucha libre, su amor pasado (Pompeya D'Angelo) y su título de campeón",
       "rating": "3",
       "productora": "Underground Contenidos",
@@ -15691,8 +15692,12 @@
     {
       "id": "V188",
       "title": "Menem: El Show del Presidente",
+      "type": "serie",
       "year": "2025",
       "channel": "Prime Video",
+      "platforms": [
+        "Prime Video"
+      ],
       "genre": "Drama",
       "actors": [
         "Leonardo Sbaraglia",
@@ -15704,11 +15709,29 @@
       ],
       "orientation": "vertical",
       "sinopsis": "La historia de Carlos Menem, el presidente que marcó un antes y un después en la historia argentina. La serie narra su ascenso al poder, su vida personal y los escándalos que lo rodearon.",
-      "streaming_row": "thrillers_politicos",
+      "streaming_row": "bioseries",
       "release_date": "09/07/2025",
-      "image": "images/verticals/2025-menem-primevideo-poster-280x420.png",
-      "horizontal_image": "images/horizontals-1024x576/2025-menem-primevideo-slide-1024x576.png",
-      "subtitle": "Drama"
+      "image": "images/verticals/2027-menem-segundatemporada-primevideo-poster280x420.webp",
+      "horizontal_image": "images/horizontals-1024x576/2027-menem-segundatemporada-primevideo-slide-1024x576.webp",
+      "subtitle": "Drama",
+      "capitulos": 6,
+      "producer": "Ariel Winograd, Amazon Studios",
+      "temporadas": [
+        {
+          "numero": 1,
+          "release_date": "09/07/2025",
+          "image": "images/verticals/2025-menem-primevideo-poster-280x420.png",
+          "horizontal_image": "images/horizontals-1024x576/2025-menem-primevideo-slide-1024x576.png"
+        },
+        {
+          "numero": 2,
+          "year": "2027",
+          "status": "En producción",
+          "release_date": "01/01/2027",
+          "image": "images/verticals/2027-menem-segundatemporada-primevideo-poster280x420.webp",
+          "horizontal_image": "images/horizontals-1024x576/2027-menem-segundatemporada-primevideo-slide-1024x576.webp"
+        }
+      ]
     },
     {
       "id": "V189",
