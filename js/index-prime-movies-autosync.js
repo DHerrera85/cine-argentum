@@ -53,11 +53,16 @@
         var type = normalizeText(item && item.type);
         var id = normalizeText(item && item.id);
 
-        return (
-            type === 'pelicula' ||
-            type === 'movie' ||
-            id.indexOf('p') === 0
-        );
+        if (type === 'pelicula' || type === 'movie') {
+            return true;
+        }
+
+        if (type === 'serie' || type === 'series') {
+            return false;
+        }
+
+        // Respaldo para entradas antiguas sin type reconocido.
+        return id.indexOf('p') === 0;
     }
 
     function isPrimeVideoMovie(item) {
@@ -95,23 +100,8 @@
 
     function sortMovies(a, b) {
         /*
-         * Próximamente primero.
-         */
-        if (a.upcoming !== b.upcoming) {
-            return a.upcoming ? -1 : 1;
-        }
-
-        /*
-         * Entre próximos estrenos:
-         * el más cercano aparece primero.
-         */
-        if (a.upcoming && b.upcoming) {
-            return a.releaseTs - b.releaseTs;
-        }
-
-        /*
-         * Entre películas ya estrenadas:
-         * de la más reciente a la más antigua.
+         * De la fecha más reciente a la más antigua,
+         * incluyendo próximos estrenos.
          */
         if (a.releaseTs !== b.releaseTs) {
             return b.releaseTs - a.releaseTs;
@@ -123,7 +113,6 @@
             { sensitivity: 'base' }
         );
     }
-
     function buildCard(entry) {
         var item = entry.item;
         var title = item.title || 'Sin título';
