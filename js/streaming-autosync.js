@@ -543,7 +543,10 @@
                 return (
                     item &&
                     normalize(item.orientation) === "vertical" &&
-                    isStreamingSeries(item)
+                    (
+                        isStreamingSeries(item) ||
+                        isVerticalFiction(item)
+                    )
                 );
             })
             .map(function (item) {
