@@ -6618,6 +6618,23 @@
       "subtitle": "Juvenil"
     },
     {
+      "id": "P2060",
+      "title": "¿Qué pasó con Bonorino?",
+      "type": "serie",
+      "year": "2027",
+      "channel": "Prime Video",
+      "platforms": [
+        "Prime Video"
+      ],
+      "genre": "Thriller",
+      "actors": [],
+      "orientation": "vertical",
+      "image": "images/verticals/2027-que-paso-con-bonorino-primevideo-poster280x420.webp",
+      "release_date": "01/01/2027",
+      "productora": "Underground Contenidos",
+      "subtitle": "Thriller"
+    },
+    {
       "id": "T0001",
       "title": "Amigos son los amigos",
       "year": "1990",
@@ -11397,7 +11414,7 @@
       "platforms": [
         "Netflix"
       ],
-      "genre": "Drama",
+      "genre": "Juvenil",
       "actors": [
         "Nicolás Riera",
         "Laura Laprida",
@@ -11409,10 +11426,10 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/millennials-poster-280x420.png",
-      "subtitle": "Drama",
+      "subtitle": "Juvenil",
       "horario": "22hs",
       "capitulos": 63,
-      "fecha_estreno": "04/07/2004",
+      "fecha_estreno": "04/07/2019",
       "sinopsis": "Benjamín, Rodrigo y Juan Manuel crean una app de comidas junto a Ariana, Alma y Florencia en un espacio de coworking, mientras ellas desarrollan su propia plataforma. El éxito desata rivalidades, enredos amorosos y conflictos que ponen a prueba sus amistades y relaciones.",
       "rating": "0,5",
       "productora": "Kuarzo",
@@ -15220,8 +15237,12 @@
     {
       "id": "V175",
       "title": "Porno y Helado",
+      "type": "serie",
       "year": "2022",
       "channel": "Prime Video",
+      "platforms": [
+        "Prime Video"
+      ],
       "genre": "Comedia",
       "actors": [
         "Martín Piroyansky",
@@ -15229,19 +15250,29 @@
         "Sofía Morandi"
       ],
       "orientation": "vertical",
-      "image": "images/verticals/porno-y-helado-primera temporada-poster-280x420.png",
+      "image": "images/verticals/2027-porno-y-helado-tercera-temporada-primevideo-poster-280x420.png.webp",
       "release_date": "11/03/2022",
       "subtitle": "Comedia",
+      "capitulos": 14,
+      "sinopsis": "Dos treintañeros sin vida social y una joven estafadora crean una banda de rock que los pondrá en el centro de la escena musical porteña.",
       "temporadas": [
         {
           "numero": 1,
           "release_date": "11/03/2022",
-          "image": "images/verticals/porno-y-helado-primera temporada-poster-280x420.png"
+          "image": "images/verticals/porno-y-helado-primera temporada-poster-280x420.png",
+          "capitulos": 8
         },
         {
           "numero": 2,
           "release_date": "20/09/2024",
-          "image": "images/verticals/porno-y-helado-segunda temporada-poster-280x420.png"
+          "image": "images/verticals/porno-y-helado-segunda temporada-poster-280x420.png",
+          "capitulos": 6
+        },
+        {
+          "numero": 3,
+          "release_date": "01/01/2027",
+          "status": "En producción",
+          "image": "images/verticals/2027-porno-y-helado-tercera-temporada-primevideo-poster-280x420.png.webp"
         }
       ]
     },
