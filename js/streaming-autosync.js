@@ -359,15 +359,6 @@
         return getCategory(item).indexOf("juvenil") !== -1;
     }
 
-    function isJuvenileOrChild(item) {
-        var category = getCategory(item);
-
-        return (
-            category.indexOf("juvenil") !== -1 ||
-            category.indexOf("infantil") !== -1
-        );
-    }
-
     function getTelevisionBroadcasts(item) {
         return []
             .concat(toArray(item.air_broadcasts))
@@ -973,9 +964,6 @@
                             getTelevisionChannels(
                                 entry.item
                             ).length > 0 &&
-                            !isJuvenileOrChild(
-                                entry.item
-                            ) &&
                             latestTelevisionDate &&
                             latestTelevisionDate.getFullYear() >= 2016
                         );

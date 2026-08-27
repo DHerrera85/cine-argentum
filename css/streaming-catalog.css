@@ -213,6 +213,38 @@
   background: transparent !important;
 }
 
+/* Evitar recortes en filas con textos extensos */
+#streaming-tv .lightSlider,
+#streaming-tv .lSSlide,
+#streaming-ficciones-verticales .lightSlider,
+#streaming-ficciones-verticales .lSSlide {
+  height: auto !important;
+}
+
+#streaming-tv .latest-box,
+#streaming-ficciones-verticales .latest-box {
+  overflow: visible;
+}
+
+#streaming-tv .latest-b-text,
+#streaming-ficciones-verticales .latest-b-text {
+  min-height: 112px;
+  padding: 12px 10px 18px;
+  box-sizing: border-box;
+  overflow: visible;
+}
+
+#streaming-tv .latest-b-text strong,
+#streaming-tv .latest-b-text p,
+#streaming-ficciones-verticales .latest-b-text strong,
+#streaming-ficciones-verticales .latest-b-text p {
+  height: auto;
+  white-space: normal;
+  overflow: visible;
+  text-overflow: clip;
+  line-height: 1.35;
+}
+
 /* =========================================================
    ACTORES DESTACADOS
    Espaciado integrado con las galerías del catálogo
@@ -250,29 +282,22 @@
   box-sizing: border-box;
 
   background:
-    radial-gradient(
-      ellipse at 12% 18%,
+    radial-gradient(ellipse at 12% 18%,
       rgba(var(--streaming-current-accent), 0.15) 0%,
       rgba(var(--streaming-current-accent), 0.06) 36%,
-      transparent 66%
-    ),
-    radial-gradient(
-      ellipse at 88% 82%,
+      transparent 66%),
+    radial-gradient(ellipse at 88% 82%,
       rgba(var(--streaming-upcoming-accent), 0.09) 0%,
-      transparent 52%
-    ),
-    linear-gradient(
-      180deg,
+      transparent 52%),
+    linear-gradient(180deg,
       #171e2a 0%,
-      #141a21 100%
-    );
+      #141a21 100%);
 
   border-bottom: 1px solid rgba(255, 255, 255, 0.055);
 }
 
 /* Estructura común de ambas carteleras */
-.streaming-featured-block
-.cartelera-2026-section[data-cartelera-content="streaming-series"] {
+.streaming-featured-block .cartelera-2026-section[data-cartelera-content="streaming-series"] {
   position: relative;
   width: 100%;
   margin: 0;
@@ -282,43 +307,30 @@
 }
 
 /* Neutralizar los márgenes negativos heredados de style.css */
-.streaming-featured-block
-.cartelera-streaming-current
-+
-.cartelera-streaming-upcoming {
+.streaming-featured-block .cartelera-streaming-current+.cartelera-streaming-upcoming {
   margin-top: 0;
   padding-top: 24px;
 }
 
 /* Encabezado de Series en Streaming 2026 */
-.streaming-featured-block
-.cartelera-streaming-current
->
-.latest-heading {
+.streaming-featured-block .cartelera-streaming-current>.latest-heading {
   margin: 0 0 16px;
   padding: 0;
 }
 
 /* Filtros y contador */
-.streaming-featured-block
-.cartelera-2026-controls {
+.streaming-featured-block .cartelera-2026-controls {
   margin: 0 0 18px;
 }
 
 /* Encabezado de En Producción */
-.streaming-featured-block
-.cartelera-production-heading {
+.streaming-featured-block .cartelera-production-heading {
   margin: 0 0 18px;
 }
 
 /* Línea de acento en los encabezados */
-.streaming-featured-block
-.cartelera-streaming-current
->
-.latest-heading::after,
-.streaming-featured-block
-.cartelera-streaming-upcoming
-.latest-heading::after {
+.streaming-featured-block .cartelera-streaming-current>.latest-heading::after,
+.streaming-featured-block .cartelera-streaming-upcoming .latest-heading::after {
   content: "";
   display: block;
   width: 48px;
@@ -328,31 +340,21 @@
 }
 
 /* Estrenos actuales: índigo */
-.streaming-featured-block
-.cartelera-streaming-current
->
-.latest-heading::after {
-  background: linear-gradient(
-    90deg,
-    rgba(var(--streaming-current-accent), 0.95),
-    rgba(var(--streaming-current-accent), 0.18)
-  );
+.streaming-featured-block .cartelera-streaming-current>.latest-heading::after {
+  background: linear-gradient(90deg,
+      rgba(var(--streaming-current-accent), 0.95),
+      rgba(var(--streaming-current-accent), 0.18));
 }
 
 /* Próximos estrenos: ámbar */
-.streaming-featured-block
-.cartelera-streaming-upcoming
-.latest-heading::after {
-  background: linear-gradient(
-    90deg,
-    rgba(var(--streaming-upcoming-accent), 0.95),
-    rgba(var(--streaming-upcoming-accent), 0.18)
-  );
+.streaming-featured-block .cartelera-streaming-upcoming .latest-heading::after {
+  background: linear-gradient(90deg,
+      rgba(var(--streaming-upcoming-accent), 0.95),
+      rgba(var(--streaming-upcoming-accent), 0.18));
 }
 
 /* Separación interior entre ambas carteleras */
-.streaming-featured-block
-.cartelera-streaming-upcoming::before {
+.streaming-featured-block .cartelera-streaming-upcoming::before {
   content: "";
   position: absolute;
   top: 0;
@@ -360,52 +362,40 @@
   right: 32px;
   height: 1px;
 
-  background: linear-gradient(
-    90deg,
-    transparent,
-    rgba(255, 255, 255, 0.10),
-    transparent
-  );
+  background: linear-gradient(90deg,
+      transparent,
+      rgba(255, 255, 255, 0.10),
+      transparent);
 }
 
 /* Contadores diferenciados */
-.streaming-featured-block
-.cartelera-streaming-current
-.cartelera-count {
+.streaming-featured-block .cartelera-streaming-current .cartelera-count {
   color: #dce5ff;
   border-color: rgba(var(--streaming-current-accent), 0.30);
   background: rgba(var(--streaming-current-accent), 0.10);
 }
 
-.streaming-featured-block
-.cartelera-streaming-upcoming
-.cartelera-count {
+.streaming-featured-block .cartelera-streaming-upcoming .cartelera-count {
   color: #ffe4ad;
   border-color: rgba(var(--streaming-upcoming-accent), 0.28);
   background: rgba(var(--streaming-upcoming-accent), 0.08);
 }
 
 /* Botón activo coherente con el acento índigo */
-.streaming-featured-block
-.cartelera-streaming-current
-.cartelera-filter.is-active {
+.streaming-featured-block .cartelera-streaming-current .cartelera-filter.is-active {
   color: #ffffff;
   border-color: rgba(var(--streaming-current-accent), 1);
   background: rgba(var(--streaming-current-accent), 1);
 }
 
 /* Sliders alineados con el catálogo inferior */
-.streaming-featured-block
-.cartelera-2026-section
-.slider-v {
+.streaming-featured-block .cartelera-2026-section .slider-v {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.streaming-featured-block
-.cartelera-2026-section
-.latest-box {
+.streaming-featured-block .cartelera-2026-section .latest-box {
   width: 100%;
   max-width: none;
   min-width: 0;
@@ -421,21 +411,16 @@
     padding-top: 86px;
   }
 
-  .streaming-featured-block
-  .cartelera-2026-section[data-cartelera-content="streaming-series"] {
+  .streaming-featured-block .cartelera-2026-section[data-cartelera-content="streaming-series"] {
     padding: 22px 20px;
   }
 
-  .streaming-featured-block
-  .cartelera-streaming-current
-  +
-  .cartelera-streaming-upcoming {
+  .streaming-featured-block .cartelera-streaming-current+.cartelera-streaming-upcoming {
     margin-top: 0;
     padding-top: 22px;
   }
 
-  .streaming-featured-block
-  .cartelera-streaming-upcoming::before {
+  .streaming-featured-block .cartelera-streaming-upcoming::before {
     left: 20px;
     right: 20px;
   }
@@ -450,64 +435,43 @@
     padding-top: 86px;
 
     background:
-      radial-gradient(
-        ellipse at 15% 14%,
+      radial-gradient(ellipse at 15% 14%,
         rgba(var(--streaming-current-accent), 0.12) 0%,
         rgba(var(--streaming-current-accent), 0.045) 38%,
-        transparent 68%
-      ),
-      radial-gradient(
-        ellipse at 85% 82%,
+        transparent 68%),
+      radial-gradient(ellipse at 85% 82%,
         rgba(var(--streaming-upcoming-accent), 0.07) 0%,
-        transparent 52%
-      ),
-      linear-gradient(
-        180deg,
+        transparent 52%),
+      linear-gradient(180deg,
         #171e29 0%,
-        #141a21 100%
-      );
+        #141a21 100%);
   }
 
-  .streaming-featured-block
-  .cartelera-2026-section[data-cartelera-content="streaming-series"] {
+  .streaming-featured-block .cartelera-2026-section[data-cartelera-content="streaming-series"] {
     padding: 20px 16px;
   }
 
-  .streaming-featured-block
-  .cartelera-streaming-current
-  +
-  .cartelera-streaming-upcoming {
+  .streaming-featured-block .cartelera-streaming-current+.cartelera-streaming-upcoming {
     margin-top: 0;
     padding-top: 20px;
   }
 
-  .streaming-featured-block
-  .cartelera-streaming-upcoming::before {
+  .streaming-featured-block .cartelera-streaming-upcoming::before {
     left: 16px;
     right: 16px;
   }
 
-  .streaming-featured-block
-  .cartelera-streaming-current
-  >
-  .latest-heading {
+  .streaming-featured-block .cartelera-streaming-current>.latest-heading {
     margin-bottom: 14px;
   }
 
-  .streaming-featured-block
-  .cartelera-2026-controls,
-  .streaming-featured-block
-  .cartelera-production-heading {
+  .streaming-featured-block .cartelera-2026-controls,
+  .streaming-featured-block .cartelera-production-heading {
     margin-bottom: 14px;
   }
 
-  .streaming-featured-block
-  .cartelera-streaming-current
-  >
-  .latest-heading::after,
-  .streaming-featured-block
-  .cartelera-streaming-upcoming
-  .latest-heading::after {
+  .streaming-featured-block .cartelera-streaming-current>.latest-heading::after,
+  .streaming-featured-block .cartelera-streaming-upcoming .latest-heading::after {
     width: 44px;
   }
 }
@@ -574,8 +538,8 @@
     padding: 20px 16px;
   }
 
-  .streaming-section > .showcase-heading,
-  .streaming-section > .latest-heading {
+  .streaming-section>.showcase-heading,
+  .streaming-section>.latest-heading {
     margin-bottom: 14px;
   }
 
@@ -605,28 +569,22 @@
   box-sizing: border-box;
 
   background:
-    radial-gradient(
-      ellipse at 18% 50%,
+    radial-gradient(ellipse at 18% 50%,
       rgba(52, 83, 170, 0.16) 0%,
-      transparent 48%
-    ),
-    radial-gradient(
-      ellipse at 82% 50%,
+      transparent 48%),
+    radial-gradient(ellipse at 82% 50%,
       rgba(26, 113, 139, 0.12) 0%,
-      transparent 48%
-    ),
-    linear-gradient(
-      90deg,
+      transparent 48%),
+    linear-gradient(90deg,
       #121a2d 0%,
       #172036 50%,
-      #121d2d 100%
-    );
+      #121d2d 100%);
 
   border-top: 1px solid rgba(255, 255, 255, 0.06);
   border-bottom: 1px solid rgba(255, 255, 255, 0.06);
 }
 
-.streaming-platforms-section > .latest-heading {
+.streaming-platforms-section>.latest-heading {
   margin: 0 0 18px;
   padding: 0;
   color: #ffffff;
@@ -671,11 +629,9 @@
   opacity: 0;
 
   background:
-    radial-gradient(
-      ellipse at center,
+    radial-gradient(ellipse at center,
       rgba(var(--platform-accent), 0.18) 0%,
-      transparent 72%
-    );
+      transparent 72%);
 
   transition: opacity 0.25s ease;
 }
@@ -742,8 +698,7 @@
   opacity: 1;
   filter: none;
   transform:
-    scale(var(--platform-logo-scale, 1))
-    translateY(-1px);
+    scale(var(--platform-logo-scale, 1)) translateY(-1px);
 }
 
 .streaming-platform-tab:focus-visible {
@@ -813,7 +768,7 @@
     padding: 20px 16px;
   }
 
-  .streaming-platforms-section > .latest-heading {
+  .streaming-platforms-section>.latest-heading {
     margin-bottom: 14px;
   }
 
