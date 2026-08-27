@@ -33,6 +33,7 @@
         "max",
         "hulu",
         "reelshort",
+        "shorta",
         "paramount+",
         "paramount plus",
         "star+",
@@ -191,6 +192,19 @@
          * la producción todavía no debe entrar en estas filas.
          */
         if (candidates.length) {
+            return null;
+        }
+
+        /*
+ * Las producciones anunciadas sin fecha no deben ingresar
+ * en las filas de títulos ya estrenados.
+ */
+        var status = normalize(item.status);
+
+        if (
+            status === "en produccion" ||
+            status === "proximamente"
+        ) {
             return null;
         }
 

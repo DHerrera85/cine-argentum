@@ -154,7 +154,8 @@
       'HBO Max',
       'Prime Video',
       'Streaming',
-      'Reelshort'
+      'Reelshort',
+      'Shorta'
     ].map(normalizeText);
 
     var values = [];
@@ -201,7 +202,8 @@
       'HBO Max',
       'Prime Video',
       'Streaming',
-      'Reelshort'
+      'Reelshort',
+      'Shorta'
     ].map(normalizeText);
 
     var values = [];

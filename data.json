@@ -6299,6 +6299,39 @@
       "tipo_emision": "Tira Diaria"
     },
     {
+      "id": "V317",
+      "title": "La Escena Prohibida",
+      "type": "serie",
+      "year": "2026",
+      "channel": "Shorta",
+      "release_date": "01/01/2027",
+      "platforms": [
+        "Shorta"
+      ],
+      "air_channels": [
+        "América"
+      ],
+      "genre": "Thriller",
+      "actors": [
+        "Marcela Kloosterboer",
+        "Luis Ziembrowski",
+        "Francisco Andrade",
+        "Agustín Sullivan",
+        "Luisa Vila",
+        "Ana Pauls",
+        "Laura Novoa",
+        "Faustina Dionisi",
+        "Guadalupe Benante"
+      ],
+      "orientation": "vertical",
+      "image": "images/verticals/2026-la-escena-prohibida-shorta-poster280x420.webp",
+      "subtitle": "Thriller, misterio y drama",
+      "status": "En producción",
+      "sinopsis": "Miranda borró de su memoria un recuerdo capaz de destruir a su familia y poner en riesgo la empresa por la que su madre dio la vida. Cuando alguien comienza a devolverle fragmentos de ese pasado, deberá enfrentarse a una verdad que puede cambiarlo todo.",
+      "productora": "The Eleven Hub, SDO Entertainment",
+      "streaming_row": "ficciones_verticales"
+    },
+    {
       "id": "P2045",
       "title": "Gutiérrez es Mai Nem",
       "type": "serie",
