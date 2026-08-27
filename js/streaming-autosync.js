@@ -221,6 +221,41 @@
         return null;
     }
 
+    function getUpcomingDate(item, today) {
+        var candidates = [];
+
+        var baseDate = parseDate(
+            item.release_date || item.fecha_estreno
+        );
+
+        if (baseDate) {
+            candidates.push(baseDate);
+        }
+
+        toArray(item.temporadas).forEach(function (season) {
+            var seasonDate = parseDate(
+                season.release_date ||
+                season.fecha_estreno
+            );
+
+            if (seasonDate) {
+                candidates.push(seasonDate);
+            }
+        });
+
+        var upcomingDates = candidates
+            .filter(function (date) {
+                return date.getTime() > today.getTime();
+            })
+            .sort(function (a, b) {
+                return a.getTime() - b.getTime();
+            });
+
+        return upcomingDates.length
+            ? upcomingDates[0]
+            : null;
+    }
+
     function getCategory(item) {
         return normalize(
             [
@@ -605,6 +640,17 @@
 
         image.alt = item.title || "";
         image.loading = "lazy";
+
+        if (item.displayUpcoming) {
+            var badge = document.createElement("span");
+
+            badge.className =
+                "cartelera-status cartelera-status-upcoming";
+
+            badge.textContent = "PRÓXIMAMENTE";
+
+            imageBox.appendChild(badge);
+        }
 
         title.textContent = item.title || "";
 
@@ -1008,11 +1054,100 @@
                         );
                     });
 
-                var verticalFictions = preparedItems.filter(
-                    function (entry) {
-                        return isVerticalFiction(entry.item);
-                    }
-                );
+                var verticalFictions = items
+                    .filter(function (item) {
+                        return (
+                            item &&
+                            normalize(item.orientation) === "vertical" &&
+                            isVerticalFiction(item)
+                        );
+                    })
+                    .map(function (item) {
+                        var latestDate = getLatestReleasedDate(
+                            item,
+                            today
+                        );
+
+                        var upcomingDate = getUpcomingDate(
+                            item,
+                            today
+                        );
+
+                        var status = normalize(item.status);
+
+                        var upcoming =
+                            latestDate === null &&
+                            (
+                                upcomingDate !== null ||
+                                status === "en produccion" ||
+                                status === "proximamente" ||
+                                Number(item.year) >
+                                today.getFullYear()
+                            );
+
+                        return {
+                            item: Object.assign(
+                                {},
+                                item,
+                                {
+                                    displayUpcoming: upcoming
+                                }
+                            ),
+                            latestDate: latestDate,
+                            upcomingDate: upcomingDate,
+                            upcoming: upcoming
+                        };
+                    })
+                    .filter(function (entry) {
+                        return (
+                            entry.latestDate !== null ||
+                            entry.upcoming
+                        );
+                    })
+                    .sort(function (a, b) {
+                        /*
+                         * Próximas producciones primero.
+                         */
+                        if (a.upcoming !== b.upcoming) {
+                            return a.upcoming ? -1 : 1;
+                        }
+
+                        /*
+                         * Entre próximas con fecha:
+                         * la más cercana aparece primero.
+                         */
+                        if (a.upcoming && b.upcoming) {
+                            var timeA = a.upcomingDate
+                                ? a.upcomingDate.getTime()
+                                : Number.MAX_SAFE_INTEGER;
+
+                            var timeB = b.upcomingDate
+                                ? b.upcomingDate.getTime()
+                                : Number.MAX_SAFE_INTEGER;
+
+                            if (timeA !== timeB) {
+                                return timeA - timeB;
+                            }
+                        }
+
+                        /*
+                         * Entre estrenadas:
+                         * de la más reciente a la más antigua.
+                         */
+                        if (a.latestDate && b.latestDate) {
+                            return (
+                                b.latestDate.getTime() -
+                                a.latestDate.getTime()
+                            );
+                        }
+
+                        return String(a.item.title || "")
+                            .localeCompare(
+                                String(b.item.title || ""),
+                                "es",
+                                { sensitivity: "base" }
+                            );
+                    });
 
                 renderSlider("comedias", comedies);
                 renderSlider("thrillers", thrillers);

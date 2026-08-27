@@ -9922,13 +9922,21 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/1991-celeste-canal13-poster280x420-v2.png",
-      "horizontal_image": "",
+      "horizontal_image": "images/horizontals-1024x576/1991-celeste-canal13-slide-1024x576.webp",
       "subtitle": "",
       "horario": "19:00hs",
       "capitulos": 172,
       "fecha_estreno": "1991-03-11",
       "sinopsis": "Celeste es una joven humilde que comienza a trabajar como mucama en la mansión de la poderosa familia Visconti tras la muerte de su madre. Allí se enamora de Franco, pero un oscuro secreto del pasado los llevará a creer que son medio hermanos.",
       "remakes": [],
+      "producciones_relacionadas": [
+        {
+          "id": "T0010",
+          "title": "Celeste, Siempre Celeste",
+          "meta": "Secuela",
+          "image": "images/verticals/1993-celestesiempreceleste-telefe-v2-poster280x420.png"
+        }
+      ],
       "productora": [
         "Raúl Lecouna",
         "Enrique Torres"
@@ -10776,6 +10784,13 @@
       "fecha_estreno": "1993-04-12",
       "sinopsis": "Celeste y Franco ven su felicidad destrozada cuando ella pierde la memoria tras un secuestro, mientras Clara, la hermana gemela de Celeste, intenta ocupar su lugar. Entre engaños e identidades ocultas, ambos lucharán por recuperar su amor y descubrir la verdad.",
       "seasons": 1,
+      "producciones_relacionadas": [
+        {
+          "id": "T0094",
+          "title": "Celeste",
+          "image": "images/verticals/1991-celeste-canal13-poster280x420-v2.png"
+        }
+      ],
       "remakes": [],
       "productora": "Raúl Lecouna"
     },
@@ -15848,7 +15863,7 @@
       "title": "El Eternauta",
       "year": "2025",
       "channel": "Netflix",
-      "genre": "Drama",
+      "genre": "Thriller",
       "actors": [
         "Ricardo Darín",
         "Carla Peterson",
@@ -15859,7 +15874,7 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/el-eternauta-poster-280x420.png",
-      "subtitle": "Drama",
+      "subtitle": "Thriller",
       "release_date": "30/04/2025",
       "capitulos": 6,
       "sinopsis": "Una noche de verano en Buenos Aires, una misteriosa nevada mortal acaba con la mayor parte de la población y deja aisladas a miles de personas.",
@@ -16035,7 +16050,7 @@
         "Alejandra Flechner"
       ],
       "orientation": "vertical",
-      "image": "images/verticals/2025-las-maldiciones-netflix-poster-280x420.png",
+      "image": "images/verticals/2025-las-maldiciones-netflix-poster280x420-v2.webp",
       "subtitle": "Thriller",
       "release_date": "12/09/2025",
       "capitulos": 3,
