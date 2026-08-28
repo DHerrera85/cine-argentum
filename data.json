@@ -6218,9 +6218,16 @@
     {
       "id": "V314",
       "title": "Cautiva",
+      "type": "serie",
       "year": "2026",
-      "channel": "TNT",
-      "platform": "Flow",
+      "channel": "Flow",
+      "platforms": [
+        "Flow",
+        "HBO Max"
+      ],
+      "cable_channels": [
+        "TNT"
+      ],
       "genre": "Thriller",
       "actors": [
         "Carolina Kopelioff",
@@ -6236,12 +6243,21 @@
       "orientation": "vertical",
       "image": "images/verticals/cautiva-2026-poster-280x420.png",
       "subtitle": "Thriller",
-      "capitulos": 8,
+      "capitulos": 6,
       "sinopsis": "Clara ingresa a un convento de clausura sin imaginar que quedará sometida al régimen abusivo y cruel impuesto por la madre superiora Cecilia. Quince años después logra escapar y emprende una difícil reconstrucción personal mientras lucha por obtener justicia.",
       "producer": "TNT / Flow",
       "director": "Paula Hernández y Jazmín Stuart",
-      "release_date": "01/09/2026",
-      "tipo_emision": "Serie"
+      "release_date": "18/09/2026",
+      "status": "Próximamente",
+      "cable_broadcasts": [
+        {
+          "channel": "TNT",
+          "premiere_date": "18/09/2026",
+          "horario": "viernes 22:00hs",
+          "tipo_emision": "Semanal",
+          "episodios_por_emision": 2
+        }
+      ]
     },
     {
       "id": "V315",
