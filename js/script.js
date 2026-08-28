@@ -26,21 +26,21 @@
     var PLACEHOLDER_V = 'images/verticals/placeholder-280x420.svg';
     var PLACEHOLDER_H = 'images/horizontals-320x180/placeholder-320x180.svg';
 
-function normalizeString(s) {
-  var value = s == null ? '' : String(s);
+    function normalizeString(s) {
+      var value = s == null ? '' : String(s);
 
-  if (typeof value.normalize === 'function') {
-    value = value.normalize('NFD');
-  }
+      if (typeof value.normalize === 'function') {
+        value = value.normalize('NFD');
+      }
 
-  return value
-    .replace(/[\u0300-\u036f]/g, '')
-    .replace(/ñ/gi, 'n')
-    .replace(/[^a-zA-Z0-9\s]/g, ' ')
-    .replace(/\s+/g, ' ')
-    .trim()
-    .toLowerCase();
-}
+      return value
+        .replace(/[\u0300-\u036f]/g, '')
+        .replace(/ñ/gi, 'n')
+        .replace(/[^a-zA-Z0-9\s]/g, ' ')
+        .replace(/\s+/g, ' ')
+        .trim()
+        .toLowerCase();
+    }
     function getPlatformSet() {
       return new Set((fictionCatalog.platforms || []).map(function (p) { return normalizeString(p); }));
     }
@@ -184,108 +184,108 @@ function normalizeString(s) {
     function createSearchDropdown() {
       var $search = $('.search');
       if ($search.find('.search-results').length) return;
-      var $res = $('<div>').addClass('search-results').attr('aria-live','polite');
+      var $res = $('<div>').addClass('search-results').attr('aria-live', 'polite');
       $res.css({ position: 'absolute', top: '100%', left: 0, right: 0, background: '#fff', zIndex: 9999, border: '1px solid #eee', display: 'none', maxHeight: '280px', overflowY: 'auto' });
       $search.append($res);
       return $res;
     }
 
-function searchVerticals(term) {
-  term = normalizeString(term);
+    function searchVerticals(term) {
+      term = normalizeString(term);
 
-  if (!term) return [];
+      if (!term) return [];
 
-  return verticalItems.filter(function (it) {
-    if (!it) return false;
+      return verticalItems.filter(function (it) {
+        if (!it) return false;
 
-    var hay =
-      (it.title || '') + ' ' +
-      (it.year || '') + ' ' +
-      getChannelValues(it).join(' ') + ' ' +
-      getPlatformValues(it).join(' ') + ' ' +
-      (it.genre || '') + ' ' +
-      (it.actors || []).join(' ');
+        var hay =
+          (it.title || '') + ' ' +
+          (it.year || '') + ' ' +
+          getChannelValues(it).join(' ') + ' ' +
+          getPlatformValues(it).join(' ') + ' ' +
+          (it.genre || '') + ' ' +
+          (it.actors || []).join(' ');
 
-    return normalizeString(hay).indexOf(term) !== -1;
-  });
-}
+        return normalizeString(hay).indexOf(term) !== -1;
+      });
+    }
 
     // util: valores únicos
-    function unique(arr) { return Array.from(new Set((arr||[]).filter(Boolean))); }
+    function unique(arr) { return Array.from(new Set((arr || []).filter(Boolean))); }
 
     function populateFiltersFromItems(items) {
-      var years = unique(items.map(function(i){return i.year;})).sort().reverse();
+      var years = unique(items.map(function (i) { return i.year; })).sort().reverse();
       var airChannels = unique(fictionCatalog.air_channels || []).sort();
       var cableChannels = unique(fictionCatalog.cable_channels || []).sort();
       var platforms = unique(fictionCatalog.platforms || []).sort();
-      var actors = unique(items.reduce(function(acc,i){ return acc.concat((i.actors||[]).slice(0,6)); },[])).sort();
+      var actors = unique(items.reduce(function (acc, i) { return acc.concat((i.actors || []).slice(0, 6)); }, [])).sort();
 
-      var $year = $('.filter-year'); if ($year.length) { $year.find('option:not(:first)').remove(); years.forEach(function(y){ $year.append($('<option>').attr('value',y).text(y)); }); }
+      var $year = $('.filter-year'); if ($year.length) { $year.find('option:not(:first)').remove(); years.forEach(function (y) { $year.append($('<option>').attr('value', y).text(y)); }); }
       var $channel = $('.filter-channel'); if ($channel.length) {
         $channel.find('option:not(:first), optgroup').remove();
         var $airGroup = $('<optgroup>').attr('label', 'Canales de Aire');
-        airChannels.forEach(function(c){ $airGroup.append($('<option>').attr('value',c).text(c)); });
+        airChannels.forEach(function (c) { $airGroup.append($('<option>').attr('value', c).text(c)); });
         var $cableGroup = $('<optgroup>').attr('label', 'Canales de Cable');
-        cableChannels.forEach(function(c){ $cableGroup.append($('<option>').attr('value',c).text(c)); });
+        cableChannels.forEach(function (c) { $cableGroup.append($('<option>').attr('value', c).text(c)); });
         $channel.append($airGroup).append($cableGroup);
       }
-      var $platform = $('.filter-platform'); if ($platform.length) { $platform.find('option:not(:first)').remove(); platforms.forEach(function(p){ $platform.append($('<option>').attr('value',p).text(p)); }); }
-      var $actor = $('.filter-actor'); if ($actor.length) { $actor.find('option:not(:first)').remove(); actors.forEach(function(a){ $actor.append($('<option>').attr('value',a).text(a)); }); }
+      var $platform = $('.filter-platform'); if ($platform.length) { $platform.find('option:not(:first)').remove(); platforms.forEach(function (p) { $platform.append($('<option>').attr('value', p).text(p)); }); }
+      var $actor = $('.filter-actor'); if ($actor.length) { $actor.find('option:not(:first)').remove(); actors.forEach(function (a) { $actor.append($('<option>').attr('value', a).text(a)); }); }
     }
 
-function combinedSearch(term, filters) {
-  term = normalizeString(term);
+    function combinedSearch(term, filters) {
+      term = normalizeString(term);
 
-  return verticalItems.filter(function (it) {
-    if (!it) return false;
+      return verticalItems.filter(function (it) {
+        if (!it) return false;
 
-    if (filters.year && it.year !== filters.year) {
-      return false;
-    }
+        if (filters.year && it.year !== filters.year) {
+          return false;
+        }
 
-    if (filters.channel) {
-      var normalizedChannel = normalizeString(filters.channel);
+        if (filters.channel) {
+          var normalizedChannel = normalizeString(filters.channel);
 
-      var inChannel = getChannelValues(it).some(function (ch) {
-        return normalizeString(ch) === normalizedChannel;
+          var inChannel = getChannelValues(it).some(function (ch) {
+            return normalizeString(ch) === normalizedChannel;
+          });
+
+          if (!inChannel) return false;
+        }
+
+        if (filters.platform) {
+          var normalizedPlatform = normalizeString(filters.platform);
+
+          var inPlatform = getPlatformValues(it).some(function (platform) {
+            return normalizeString(platform) === normalizedPlatform;
+          });
+
+          if (!inPlatform) return false;
+        }
+
+        if (filters.actor) {
+          var normalizedActor = normalizeString(filters.actor);
+
+          var found = (it.actors || []).slice(0, 6).some(function (actor) {
+            return normalizeString(actor).indexOf(normalizedActor) !== -1;
+          });
+
+          if (!found) return false;
+        }
+
+        if (!term) return true;
+
+        var hay =
+          (it.title || '') + ' ' +
+          (it.year || '') + ' ' +
+          getChannelValues(it).join(' ') + ' ' +
+          getPlatformValues(it).join(' ') + ' ' +
+          (it.genre || '') + ' ' +
+          (it.actors || []).join(' ');
+
+        return normalizeString(hay).indexOf(term) !== -1;
       });
-
-      if (!inChannel) return false;
     }
-
-    if (filters.platform) {
-      var normalizedPlatform = normalizeString(filters.platform);
-
-      var inPlatform = getPlatformValues(it).some(function (platform) {
-        return normalizeString(platform) === normalizedPlatform;
-      });
-
-      if (!inPlatform) return false;
-    }
-
-    if (filters.actor) {
-      var normalizedActor = normalizeString(filters.actor);
-
-      var found = (it.actors || []).slice(0, 6).some(function (actor) {
-        return normalizeString(actor).indexOf(normalizedActor) !== -1;
-      });
-
-      if (!found) return false;
-    }
-
-    if (!term) return true;
-
-    var hay =
-      (it.title || '') + ' ' +
-      (it.year || '') + ' ' +
-      getChannelValues(it).join(' ') + ' ' +
-      getPlatformValues(it).join(' ') + ' ' +
-      (it.genre || '') + ' ' +
-      (it.actors || []).join(' ');
-
-    return normalizeString(hay).indexOf(term) !== -1;
-  });
-}
 
     // Reemplazo attachSearchHandlers para usar filtros y resultados con enlace a show.html
     function attachSearchHandlers() {
@@ -293,7 +293,7 @@ function combinedSearch(term, filters) {
       var $res = $('.search .search-results');
       if (!$res.length) {
         // crear si no existe
-        $res = $('<div>').addClass('search-results').attr('aria-live','polite').css({ position: 'absolute', top: '100%', left: 0, right: 0, background: '#fff', zIndex: 9999, border: '1px solid #eee', display: 'none', maxHeight: '320px', overflowY: 'auto' });
+        $res = $('<div>').addClass('search-results').attr('aria-live', 'polite').css({ position: 'absolute', top: '100%', left: 0, right: 0, background: '#fff', zIndex: 9999, border: '1px solid #eee', display: 'none', maxHeight: '320px', overflowY: 'auto' });
         $('.search').append($res);
       }
 
@@ -307,17 +307,17 @@ function combinedSearch(term, filters) {
         var results = combinedSearch(val, filters);
         if (!results.length) { $res.hide().empty(); return; }
         $res.empty();
-        results.slice(0,50).forEach(function (it) {
-          var $row = $('<div>').addClass('search-row').css({padding:'8px 10px', borderBottom:'1px solid #f2f2f2'});
+        results.slice(0, 50).forEach(function (it) {
+          var $row = $('<div>').addClass('search-row').css({ padding: '8px 10px', borderBottom: '1px solid #f2f2f2' });
           var href = 'show.html?id=' + encodeURIComponent(it.id || it.title || '');
-          var $link = $('<a>').attr('href', href).css({color:'#222', textDecoration:'none', display:'block'});
-          var html = '<strong>' + (it.title||'') + '</strong>' + (it.year ? ' ('+it.year+')' : '');
+          var $link = $('<a>').attr('href', href).css({ color: '#222', textDecoration: 'none', display: 'block' });
+          var html = '<strong>' + (it.title || '') + '</strong>' + (it.year ? ' (' + it.year + ')' : '');
           var channelText = getChannelValues(it).join(', ');
           var platformText = getPlatformValues(it).join(', ');
           var distributionText = [channelText, platformText].filter(Boolean).join(' • ');
           var isMovie = normalizeString(it.type) === 'pelicula';
           var metaText = isMovie ? (it.genre || '') : ([distributionText, it.genre || ''].filter(Boolean).join(' • '));
-          var actorsText = ((it.actors||[]).slice(0,3).join(', '));
+          var actorsText = ((it.actors || []).slice(0, 3).join(', '));
           html += '<div style="font-size:12px;color:#666;">' + metaText + (actorsText ? ' • ' + actorsText : '') + '</div>';
           if (window.faConfig.showSynopsisInSearch && it.synopsis) {
             var syn = String(it.synopsis).trim();
@@ -331,11 +331,11 @@ function combinedSearch(term, filters) {
         });
 
         // fila para ver todos los resultados en search.html
-        var q = encodeURIComponent(($input.val()||'').trim());
-        var yr = encodeURIComponent(($('.filter-year').val()||''));
-        var ch = encodeURIComponent(($('.filter-channel').val()||''));
-        var pf = encodeURIComponent(($('.filter-platform').val()||''));
-        var ac = encodeURIComponent(($('.filter-actor').val()||''));
+        var q = encodeURIComponent(($input.val() || '').trim());
+        var yr = encodeURIComponent(($('.filter-year').val() || ''));
+        var ch = encodeURIComponent(($('.filter-channel').val() || ''));
+        var pf = encodeURIComponent(($('.filter-platform').val() || ''));
+        var ac = encodeURIComponent(($('.filter-actor').val() || ''));
         var params = [];
         if (q) params.push('q=' + q);
         if (yr) params.push('year=' + yr);
@@ -343,8 +343,8 @@ function combinedSearch(term, filters) {
         if (pf) params.push('platform=' + pf);
         if (ac) params.push('actor=' + ac);
         var allHref = 'search.html' + (params.length ? ('?' + params.join('&')) : '');
-        var $allRow = $('<div>').addClass('search-row search-all').css({padding:'8px 10px', background:'#f7f7f7', textAlign:'center'});
-        var $allLink = $('<a>').attr('href', allHref).css({display:'inline-block', padding:'6px 10px', background:'#222', color:'#fff', borderRadius:'4px', textDecoration:'none'}).text('Ver todos los resultados');
+        var $allRow = $('<div>').addClass('search-row search-all').css({ padding: '8px 10px', background: '#f7f7f7', textAlign: 'center' });
+        var $allLink = $('<a>').attr('href', allHref).css({ display: 'inline-block', padding: '6px 10px', background: '#222', color: '#fff', borderRadius: '4px', textDecoration: 'none' }).text('Ver todos los resultados');
         $allLink.on('click', function () { $res.hide(); });
         $allRow.append($allLink);
         $res.append($allRow);
@@ -358,7 +358,7 @@ function combinedSearch(term, filters) {
     }
 
     // Intentar cargar data.json (si no existe, script seguirá usando el HTML estático)
-    (function loadDataJson(){
+    (function loadDataJson() {
       fetch('data.json?v=' + scriptDataVersion, { cache: 'no-store' }).then(function (res) {
         if (!res.ok) throw new Error('no ok');
         return res.json();
@@ -392,7 +392,7 @@ function combinedSearch(term, filters) {
             });
 
             // refrescar sliders si ya están inicializados
-            setTimeout(function () { try { if (typeof window.faRefreshSliders === 'function') window.faRefreshSliders(); } catch (e) {} }, 250);
+            setTimeout(function () { try { if (typeof window.faRefreshSliders === 'function') window.faRefreshSliders(); } catch (e) { } }, 250);
 
             // attach search handlers
             attachSearchHandlers();
@@ -439,7 +439,7 @@ function combinedSearch(term, filters) {
                 $(this).find('a').not('.ls-btn-prev, .ls-btn-next').remove();
               });
               // pequeño timeout para forzar reflow
-              setTimeout(function () { try { var inst = $this.data('lightSlider'); if (inst && typeof inst.refresh === 'function') inst.refresh(); } catch (e) {} }, 60);
+              setTimeout(function () { try { var inst = $this.data('lightSlider'); if (inst && typeof inst.refresh === 'function') inst.refresh(); } catch (e) { } }, 60);
             }
           },
           opts || {}
@@ -448,7 +448,7 @@ function combinedSearch(term, filters) {
     }
 
     // Inyectar CSS para ocultar clear nativo del input[type=search] (tanto en desktop como móvil)
-    (function injectSearchResetCSS(){
+    (function injectSearchResetCSS() {
       var css = 'input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-ms-clear { display:none !important; }';
       var style = document.createElement('style');
       style.type = 'text/css';
@@ -476,12 +476,12 @@ function combinedSearch(term, filters) {
         freeMove: false,
         responsive: [
           { breakpoint: 1100, settings: { item: 2, slideMove: 1, slideMargin: 14 } },
-          { breakpoint: 768,  settings: { item: 1, slideMove: 1, slideMargin: 12 } }
+          { breakpoint: 768, settings: { item: 1, slideMove: 1, slideMargin: 12 } }
         ]
       });
 
       // VERTICALES (genéricos - NO Top 10)
-      $('.slider-v:not(.top10):not([data-streaming-row])').lightSlider({
+      $('.slider-v:not(.top10):not([data-streaming-row]):not([data-cartelera-list])').lightSlider({
         item: 5,
         slideMove: 1,
         slideMargin: 12,
@@ -493,7 +493,7 @@ function combinedSearch(term, filters) {
         freeMove: false,
         responsive: [
           { breakpoint: 1100, settings: { item: 4, slideMove: 1 } },
-          { breakpoint: 768,  settings: { item: 2, slideMove: 1 } }
+          { breakpoint: 768, settings: { item: 2, slideMove: 1 } }
         ]
       });
 
@@ -510,7 +510,7 @@ function combinedSearch(term, filters) {
         freeMove: false,
         responsive: [
           { breakpoint: 1100, settings: { item: 3, slideMove: 1, slideMargin: 8 } },
-          { breakpoint: 768,  settings: { item: 2, slideMove: 1, slideMargin: 6 } }
+          { breakpoint: 768, settings: { item: 2, slideMove: 1, slideMargin: 6 } }
         ]
       });
 
@@ -526,10 +526,10 @@ function combinedSearch(term, filters) {
         enableTouch: true,
         enableDrag: true,
         freeMove: false,
-        onSliderLoad: function(el) {
+        onSliderLoad: function (el) {
           $('.slider-actors').removeClass('cs-hidden');
           // Forzar recalculo después de carga
-          setTimeout(function() {
+          setTimeout(function () {
             var sliderInstance = $('.slider-actors').data('lightSlider');
             if (sliderInstance && sliderInstance.refresh) {
               sliderInstance.refresh();
@@ -538,8 +538,8 @@ function combinedSearch(term, filters) {
         },
         responsive: [
           { breakpoint: 1100, settings: { item: 4, slideMove: 1, slideMargin: 10 } },
-          { breakpoint: 768,  settings: { item: 3, slideMove: 1, slideMargin: 8 } },
-          { breakpoint: 480,  settings: { item: 3, slideMove: 1, slideMargin: 6 } }
+          { breakpoint: 768, settings: { item: 3, slideMove: 1, slideMargin: 8 } },
+          { breakpoint: 480, settings: { item: 3, slideMove: 1, slideMargin: 6 } }
         ]
       });
 
@@ -555,13 +555,13 @@ function combinedSearch(term, filters) {
         enableTouch: true,
         enableDrag: true,
         freeMove: false,
-        onSliderLoad: function(el) {
+        onSliderLoad: function (el) {
           $('.slider-genres').removeClass('cs-hidden').addClass('slider-ready');
         },
         responsive: [
           { breakpoint: 1200, settings: { item: 5, slideMove: 1, slideMargin: 14 } },
-          { breakpoint: 768,  settings: { item: 3, slideMove: 1, slideMargin: 12 } },
-          { breakpoint: 480,  settings: { item: 2, slideMove: 1, slideMargin: 10 } }
+          { breakpoint: 768, settings: { item: 3, slideMove: 1, slideMargin: 12 } },
+          { breakpoint: 480, settings: { item: 2, slideMove: 1, slideMargin: 10 } }
         ]
       });
     });
