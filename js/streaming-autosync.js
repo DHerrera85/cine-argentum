@@ -553,7 +553,11 @@
             return televisionDates[0];
         }
 
-        return getLatestReleasedDate(item, today);
+        /*
+         * Sin una emisión televisiva fechada, la producción
+         * no debe ingresar en En Streaming y en TV.
+         */
+        return null;
     }
 
     function getAverageTelevisionRating(item) {
@@ -1089,8 +1093,7 @@
                                 entry.item
                             ).length > 0 &&
                             latestTelevisionDate &&
-                            latestTelevisionDate.getFullYear() >= 2016
-                        );
+                            latestTelevisionDate.getFullYear() >= 2020);
                     })
                     .map(function (entry) {
                         return {
