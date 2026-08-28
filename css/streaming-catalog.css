@@ -564,11 +564,15 @@
 
 .streaming-platforms-section {
   width: 100%;
-  padding: 26px 32px 24px;
+  padding: 36px 32px 26px;
   overflow: hidden;
   box-sizing: border-box;
 
   background:
+    linear-gradient(180deg,
+      #141a21 0,
+      rgba(20, 26, 33, 0.72) 22px,
+      rgba(20, 26, 33, 0) 64px),
     radial-gradient(ellipse at 18% 50%,
       rgba(52, 83, 170, 0.16) 0%,
       transparent 48%),
@@ -580,12 +584,12 @@
       #172036 50%,
       #121d2d 100%);
 
-  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  border-top: 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.06);
 }
 
 .streaming-platforms-section>.latest-heading {
-  margin: 0 0 18px;
+  margin: 0 0 22px;
   padding: 0;
   color: #ffffff;
 }
@@ -743,20 +747,22 @@
    TABLET
    ========================================================= */
 
-@media (max-width: 1100px) {
-  .streaming-platforms-section {
-    padding: 24px 20px 22px;
-  }
+.streaming-platforms-section {
+  padding: 28px 16px 20px;
+}
 
-  .streaming-platform-tabs .streaming-platform-tab {
-    height: 86px !important;
-    padding: 14px 18px;
-  }
+.streaming-platforms-section>.latest-heading {
+  margin-bottom: 18px;
+}
 
-  .streaming-platform-logo {
-    max-width: 132px;
-    height: 48px;
-  }
+.streaming-platform-tabs .streaming-platform-tab {
+  height: 86px !important;
+  padding: 14px 18px;
+}
+
+.streaming-platform-logo {
+  max-width: 132px;
+  height: 48px;
 }
 
 /* =========================================================
