@@ -6349,7 +6349,7 @@
     },
     {
       "id": "P2045",
-      "title": "Gutiérrez es Mai Nem",
+      "title": "Gutiérrez is Mai Nem",
       "type": "serie",
       "year": "2026",
       "channel": "Disney+",
@@ -6362,6 +6362,7 @@
       "genre": "Comedia",
       "synopsis": "Un subcomisario argentino se ve envuelto en una inesperada investigación tras el asesinato del embajador ruso en el país, mientras intenta resolver el caso antes que la CIA. En su carrera contrarreloj, deberá enfrentar una sucesión de situaciones absurdas y caóticas que combinan acción, humor y espionaje, poniendo a prueba su ingenio y su capacidad para cumplir la misión.",
       "image": "images/verticals/2026-gutierrezismaineim-poster-280x420.png",
+      "horizontal_image": "images/horizontals-1024x576/2026-gutierrez-is-mai-neim-disney+-slide-1024x576.webp",
       "orientation": "vertical",
       "productora": "Pampa Films",
       "subtitle": "Comedia"
@@ -13335,6 +13336,7 @@
     {
       "id": "v109",
       "title": "Margarita",
+      "type": "serie",
       "year": "2024",
       "channel": "HBO Max",
       "platforms": [
@@ -13342,6 +13344,9 @@
       ],
       "air_channels": [
         "Telefe"
+      ],
+      "cable_channels": [
+        "TNT"
       ],
       "genre": "Juvenil",
       "actors": [
@@ -13353,13 +13358,18 @@
         "Lola Abraldes",
         "Mateo Belmonte",
         "Pilar Massé",
-        "Antonella Podestá"
+        "Antonella Podestá",
+        "Abril Schapo",
+        "Joaquín Reficco",
+        "Benicio Gravier",
+        "Valentino Petrilli"
       ],
       "orientation": "vertical",
       "image": "images/verticals/2026-margarita-temporada3-hbomax-poster280x420.webp",
       "horizontal_image": "images/horizontals-1024x576/2026-margarita-temporada3-hbomax-slide1024x576.webp",
       "subtitle": "Juvenil",
       "release_date": "24/08/2026",
+      "capitulos": 80,
       "air_broadcasts": [
         {
           "channel": "Telefe",
@@ -13371,23 +13381,34 @@
           "rating": "8,5"
         }
       ],
+      "cable_broadcasts": [
+        {
+          "channel": "TNT",
+          "premiere_date": "27/04/2026",
+          "horario": "lunes a viernes 19:00hs",
+          "tipo_emision": "Tira Diaria"
+        }
+      ],
       "sinopsis": "Margarita, una adolescente huérfana que desconoce su verdadero origen, descubre que es heredera del Reino de Krikoragán y de una gran fortuna familiar. Mientras su tía Delfina intenta usurpar su lugar, deberá luchar por sus sueños, recuperar su identidad y encontrar el amor.",
       "temporadas": [
         {
           "season": 1,
           "release_date": "02/09/2024",
+          "capitulos": 40,
           "image": "images/verticals/margarita-temporada-1-poster-280x420.png",
           "horizontal_image": "images/horizontals-1024x576/2024-margarita-temporada1-hbomax-slide-1024x576.png"
         },
         {
           "season": 2,
           "release_date": "04/05/2026",
+          "capitulos": 20,
           "image": "images/verticals/margarita-temporada-2-poster-280x420.png",
           "horizontal_image": "images/horizontals-1024x576/margarita-temporada 2-slide-1024x576.png"
         },
         {
           "season": 3,
           "release_date": "24/08/2026",
+          "capitulos": 20,
           "image": "images/verticals/2026-margarita-temporada3-hbomax-poster280x420.webp",
           "horizontal_image": "images/horizontals-1024x576/2026-margarita-temporada3-hbomax-slide1024x576.webp"
         }
@@ -13580,6 +13601,7 @@
       "title": "Playback, una somos dos",
       "year": "2025",
       "channel": "Disney+",
+      "type": "serie",
       "sinopsis": "Emma y Camila, dos amigas inseparables, alcanzan inesperadamente la fama tras participar en un concurso de talentos con un video en el que una canta mientras la otra hace playback. El éxito las llevará a ocultar un secreto que amenaza con salir a la luz, poniendo a prueba su amistad mientras intentan sostener sus sueños y su nueva vida",
       "release_date": "29/10/2025",
       "platforms": [
@@ -14980,13 +15002,14 @@
     {
       "id": "V168",
       "title": "Viudas Negras: P*tas y Chorras",
-      "year": "2026",
+      "type": "serie",
+      "year": "2025",
       "channel": "Flow",
-      "cable_channels": [
-        "TNT"
-      ],
       "platforms": [
         "Flow"
+      ],
+      "cable_channels": [
+        "TNT"
       ],
       "genre": "Comedia",
       "actors": [
@@ -14995,13 +15018,28 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/viudas-negras-segunda-temporada-poster-280x420.png",
-      "release_date": "27/06/2025",
+      "horizontal_image": "images/horizontals-1024x576/2025-viudas-negras-ptas-chorras-tnt-flow-slide-1024x576.webp",
+      "release_date": "28/07/2025",
       "subtitle": "Comedia",
+      "capitulos": 8,
+      "sinopsis": "Maru lleva una vida ordenada en un barrio cerrado hasta que se reencuentra con Mica, una amiga de juventud con quien comparte un pasado como “viudas negras”, drogando y robando a hombres. Cuando ambas intentan retomar aquella vida delictiva, viejos conflictos vuelven a perseguirlas y las obligan a enfrentarse con su pasado, sus decisiones y las mujeres en las que se han convertido.",
+      "cable_broadcasts": [
+        {
+          "channel": "TNT",
+          "season_number": 1,
+          "premiere_date": "27/06/2025",
+          "horario": "viernes 22:00hs",
+          "tipo_emision": "Semanal",
+          "episodios_por_emision": 2
+        }
+      ],
       "temporadas": [
         {
           "numero": 1,
-          "release_date": "27/06/2025",
-          "image": "images/verticals/viudas-negras-primera-temporada-poster-280x420.png"
+          "release_date": "28/07/2025",
+          "capitulos": 8,
+          "image": "images/verticals/2025-viudas-negras-ptas-chorras-primer-temporada-tnt-flow-poster280x420.webp",
+          "horizontal_image": "images/horizontals-1024x576/2025-viudas-negras-ptas-chorras-tnt-flow-slide-1024x576.webp"
         },
         {
           "numero": 2,

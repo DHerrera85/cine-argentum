@@ -453,6 +453,70 @@
             });
     }
 
+    function getTelevisionSeasonImage(item, today) {
+        var broadcasts = getTelevisionBroadcasts(item)
+            .map(function (broadcast) {
+                return {
+                    broadcast: broadcast,
+                    date: parseDate(
+                        broadcast.premiere_date ||
+                        broadcast.release_date ||
+                        broadcast.start_date ||
+                        broadcast.fecha_estreno
+                    )
+                };
+            })
+            .filter(function (entry) {
+                return (
+                    entry.date &&
+                    entry.date.getTime() <= today.getTime()
+                );
+            })
+            .sort(function (a, b) {
+                return (
+                    b.date.getTime() -
+                    a.date.getTime()
+                );
+            });
+
+        if (!broadcasts.length) {
+            return (
+                String(item.image || "").trim() ||
+                PLACEHOLDER
+            );
+        }
+
+        var broadcast = broadcasts[0].broadcast;
+
+        var seasonNumber = Number(
+            broadcast.season_number ||
+            broadcast.season ||
+            broadcast.numero
+        );
+
+        if (seasonNumber > 0) {
+            var seasons = toArray(item.temporadas);
+
+            for (var index = 0; index < seasons.length; index += 1) {
+                if (
+                    getSeasonNumber(seasons[index], index) ===
+                    seasonNumber &&
+                    seasons[index].image &&
+                    String(seasons[index].image).trim()
+                ) {
+                    return String(
+                        seasons[index].image
+                    ).trim();
+                }
+            }
+        }
+
+        return (
+            String(item.image || "").trim() ||
+            PLACEHOLDER
+        );
+    }
+
     function getLatestTelevisionDate(item, today) {
         var televisionDates = [];
 
@@ -1034,6 +1098,11 @@
                                 {},
                                 entry.item,
                                 {
+                                    displayImage:
+                                        getTelevisionSeasonImage(
+                                            entry.item,
+                                            today
+                                        ),
                                     displayMeta:
                                         getTelevisionMeta(
                                             entry.item
