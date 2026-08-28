@@ -797,6 +797,39 @@
   }
 }
 
+/* Transición entre Ficciones Verticales y Plataformas */
+#streaming-ficciones-verticales {
+  padding-bottom: 8px;
+}
+
+#streaming-ficciones-verticales .latest-b-text {
+  min-height: 72px;
+  padding: 12px 10px 8px;
+}
+
+.streaming-page {
+  padding-bottom: 0;
+}
+
+.streaming-platforms-section {
+  padding-top: 24px;
+}
+
+@media (max-width: 768px) {
+  #streaming-ficciones-verticales {
+    padding-bottom: 6px;
+  }
+
+  #streaming-ficciones-verticales .latest-b-text {
+    min-height: 68px;
+    padding-bottom: 6px;
+  }
+
+  .streaming-platforms-section {
+    padding-top: 22px;
+  }
+}
+
 @media (max-width: 480px) {
   .streaming-platform-tabs .streaming-platform-tab {
     height: 68px !important;
