@@ -18429,18 +18429,43 @@
     {
       "id": "V282",
       "title": "Hija del Fuego: La Venganza de la Bastarda",
+      "type": "serie",
       "year": "2025",
       "channel": "Disney+",
+      "platforms": [
+        "Disney+"
+      ],
+      "air_channels": [
+        "Canal 13"
+      ],
       "genre": "Thriller",
       "actors": [
         "Eugenia Suárez",
-        "Eleonora Wexler",
         "Diego Cremonesi",
+        "Eleonora Wexler",
+        "Joaquín Ferreira",
+        "Carlos Belloso",
+        "Pedro Fontaine",
+        "Antonella Costa",
+        "Mariano Saborido",
         "Jerónimo Bosia"
       ],
       "orientation": "vertical",
-      "image": "images/verticals/hija-del-fuego-poster-280x420.png",
-      "subtitle": "Thriller"
+      "image": "images/verticals/2025-hija-del-fuego-disney-hulu-poster280x420.webp",
+      "horizontal_image": "images/horizontals-1024x576/2025-hija-del-fuego-disney-hulu-slide-1024x576.webp",
+      "subtitle": "Thriller",
+      "capitulos": 22,
+      "producer": "Adrián Suar",
+      "sinopsis": "Un pueblo de la Patagonia se ve conmocionado por la llegada de Letizia, una mujer extranjera que se prepara para casarse con un poderoso empresario local. Mientras se gana la confianza de todos, pondrá en marcha una sangrienta venganza en un lugar atravesado por secretos y conflictos del pasado.",
+      "air_broadcasts": [
+        {
+          "channel": "Canal 13",
+          "premiere_date": "02/02/2026",
+          "horario": "lunes a viernes 21:15hs",
+          "tipo_emision": "Tira Diaria",
+          "rating": "3,8"
+        }
+      ]
     },
     {
       "id": "V283",
