@@ -16532,8 +16532,19 @@
       "title": "Cris Miró (Ella)",
       "year": "2024",
       "channel": "Flow",
+      "type": "serie",
+      "capitulos": 8,
       "cable_channels": [
         "TNT"
+      ],
+      "cable_broadcasts": [
+        {
+          "channel": "TNT",
+          "premiere_date": "23/06/2024",
+          "horario": "domingos 22:00hs",
+          "tipo_emision": "Semanal",
+          "episodios_por_emision": 1
+        }
       ],
       "platforms": [
         "Flow"
@@ -16710,10 +16721,20 @@
     {
       "id": "V217",
       "title": "La Mente del Poder",
+      "type": "serie",
       "year": "2024",
       "channel": "Flow",
       "cable_channels": [
         "TNT"
+      ],
+      "cable_broadcasts": [
+        {
+          "channel": "TNT",
+          "premiere_date": "06/10/2024",
+          "horario": "domingos 22:00hs",
+          "tipo_emision": "Semanal",
+          "episodios_por_emision": 1
+        }
       ],
       "platforms": [
         "Flow"
@@ -19467,6 +19488,16 @@
       "channel": "HBO Max",
       "cable_channels": [
         "HBO"
+      ],
+      "cable_broadcasts": [
+        {
+          "channel": "HBO",
+          "season_number": 3,
+          "premiere_date": "02/07/2023",
+          "horario": "domingos 23:50hs",
+          "tipo_emision": "Semanal",
+          "episodios_por_emision": 1
+        }
       ],
       "platforms": [
         "HBO Max"
