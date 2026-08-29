@@ -79,8 +79,13 @@
     return type !== 'pelicula' && type !== 'movie';
   }
 
-  function isJuvenil(item) {
-    return normalizeText(getGenreText(item)) === 'juvenil';
+  function isJuvenilOInfantil(item) {
+    var genre = normalizeText(getGenreText(item));
+
+    return (
+      genre.indexOf('juvenil') !== -1 ||
+      genre.indexOf('infantil') !== -1
+    );
   }
 
   function hasDisney(item) {
@@ -221,7 +226,11 @@
     var filtered = items.reduce(function (accumulator, item, index) {
       if (!item || !item.id) return accumulator;
 
-      if (isJuvenil(item) && isSerie(item) && filterFn(item)) {
+      if (
+        isJuvenilOInfantil(item) &&
+        isSerie(item) &&
+        filterFn(item)
+      ) {
         accumulator.push({
           item: item,
           sourceIndex: index

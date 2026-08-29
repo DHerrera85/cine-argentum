@@ -13991,7 +13991,7 @@
       "title": "Los Macanimals",
       "year": "2025",
       "channel": "Disney Channel",
-      "genre": "Comedia",
+      "genre": "Infantil",
       "actors": [
         "Miguel Ángel Rodríguez",
         "Florencia Torrente",
@@ -13999,7 +13999,7 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/los-macanimals-poster-280x420.png",
-      "subtitle": "Comedia"
+      "subtitle": "Infantil"
     },
     {
       "id": "V132",
@@ -14754,7 +14754,7 @@
       "title": "Reinas Magas",
       "year": "2007",
       "channel": "Canal 13",
-      "genre": "Juvenil",
+      "genre": "Infantil",
       "actors": [
         "Luz Cipriota",
         "Pablo Gelós",
@@ -14762,7 +14762,7 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/reinas-magas-poster-280x420.png",
-      "subtitle": "Juvenil",
+      "subtitle": "Infantil",
       "horario": "11hs",
       "capitulos": "28",
       "fecha_estreno": "05/02/2007",
@@ -14800,14 +14800,14 @@
       "title": "Sueños Mágicos",
       "year": "2005",
       "channel": "Canal 9/Azul TV",
-      "genre": "Juvenil",
+      "genre": "Infantil",
       "actors": [
         "Iván Espeche",
         "Valeria Lorca"
       ],
       "orientation": "vertical",
       "image": "images/verticals/suenos-magicos-poster-280x420.png",
-      "subtitle": "Juvenil",
+      "subtitle": "Infantil",
       "horario": "17:30hs",
       "capitulos": "-",
       "fecha_estreno": "11/04/2005",
@@ -14897,14 +14897,14 @@
       "title": "Cancheritos",
       "year": "2001",
       "channel": "América",
-      "genre": "Juvenil",
+      "genre": "Infantil",
       "actors": [
         "Andrés Vicente",
         "Claudia De la Calle"
       ],
       "orientation": "vertical",
       "image": "images/verticals/cancheritos-poster-280x420.png",
-      "subtitle": "Juvenil",
+      "subtitle": "Infantil",
       "horario": "18hs",
       "capitulos": 40,
       "fecha_estreno": "2/1/2001",
