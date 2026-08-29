@@ -123,40 +123,52 @@
 
     return ''
       + '<li class="' + cardClass + '">'
-      +   '<a href="' + href + '">'
-      +     '<div class="latest-box">'
-      +       '<div class="latest-b-img">'
-      +         badge
-      +         '<img src="' + image + '" loading="lazy" alt="' + title + '">'
-      +       '</div>'
-      +       '<div class="latest-b-text">'
-      +         '<strong>' + title + '</strong>'
-      +         '<p></p>'
-      +       '</div>'
-      +     '</div>'
-      +   '</a>'
+      + '<a href="' + href + '">'
+      + '<div class="latest-box">'
+      + '<div class="latest-b-img">'
+      + badge
+      + '<img src="' + image + '" loading="lazy" alt="' + title + '">'
+      + '</div>'
+      + '<div class="latest-b-text">'
+      + '<strong>' + title + '</strong>'
+      + '<p></p>'
+      + '</div>'
+      + '</div>'
+      + '</a>'
       + '</li>';
   }
 
   function refreshSlider(container) {
-    if (!window.jQuery || !jQuery.fn || !jQuery.fn.lightSlider) return;
-
-    var $container = jQuery(container);
-    var sliderInstance = $container.data('lightSlider');
-
-    if (sliderInstance && typeof sliderInstance.refresh === 'function') {
-      sliderInstance.refresh();
+    if (
+      !window.jQuery ||
+      !jQuery.fn ||
+      !jQuery.fn.lightSlider
+    ) {
       return;
     }
 
-    if ($container.parent().hasClass('lSSlideOuter')) {
-      try {
-        $container.data('lightSlider').destroy();
-      } catch (error) {}
+    var $container = jQuery(container);
+
+    /*
+     * Esta versión de LightSlider expone refresh()
+     * directamente sobre el elemento jQuery.
+     */
+    if ($container.hasClass('lightSlider')) {
+      if (typeof $container.refresh === 'function') {
+        $container.refresh();
+      }
+
+      $container.removeClass('cs-hidden');
+      return;
     }
 
+    /*
+     * Las filas dinámicas juveniles son verticales:
+     * 5 tarjetas en escritorio, 4 en tablet y 2 en móvil.
+     */
     $container.lightSlider({
-      autoWidth: true,
+      item: 5,
+      autoWidth: false,
       slideMove: 1,
       slideMargin: 12,
       loop: false,
@@ -165,6 +177,26 @@
       enableTouch: true,
       enableDrag: true,
       freeMove: false,
+
+      responsive: [
+        {
+          breakpoint: 1100,
+          settings: {
+            item: 4,
+            slideMove: 1,
+            slideMargin: 10
+          }
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            item: 2,
+            slideMove: 1,
+            slideMargin: 8
+          }
+        }
+      ],
+
       onSliderLoad: function () {
         $container.removeClass('cs-hidden');
       }
