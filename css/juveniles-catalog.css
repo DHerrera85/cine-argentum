@@ -1,113 +1,167 @@
+/* Contenedor general: compensa el header fijo */
 .juveniles-page {
   width: 100%;
-  padding: 8px 0 20px;
+  padding: 116px 0 16px;
   overflow: hidden;
   box-sizing: border-box;
 }
 
+/* Separación general más compacta */
 .juveniles-section {
   width: 100%;
-  padding: 24px 32px;
+  padding: 16px 32px;
   box-sizing: border-box;
   background: transparent;
 }
 
 .juveniles-section > .showcase-heading,
 .juveniles-section > .latest-heading {
-  margin: 0 0 20px;
+  margin: 0 0 14px;
   padding: 0;
 }
 
-/*
- * Filas horizontales.
- * Conservan el formato 16:9 y adoptan la separación de streaming.html.
- */
+/* ===============================
+   FILAS HORIZONTALES
+   =============================== */
+
 .juveniles-horizontal-showcase {
   width: calc(100% - 36px);
-  margin: 10px 18px 18px;
+  margin: 6px 18px 8px;
   overflow: hidden;
   border: 1px solid rgba(75, 85, 115, 0.12);
   border-radius: 16px;
   background: rgba(255, 255, 255, 0.18) !important;
 }
 
-.juveniles-horizontal-showcase .slider-h,
+/*
+ * Respaldo mientras LightSlider termina de cargar.
+ */
+.juveniles-horizontal-showcase .slider-h:not(.lightSlider) {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% - 40px) / 3);
+  gap: 20px;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.juveniles-horizontal-showcase .slider-h:not(.lightSlider) > li {
+  min-width: 0;
+}
+
+/* ===============================
+   FILAS VERTICALES
+   =============================== */
+
+.juveniles-vertical-showcase {
+  overflow: hidden;
+}
+
 .juveniles-vertical-showcase .slider-v {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.juveniles-horizontal-showcase .showcase-box {
-  width: 100%;
-  max-width: none;
-  min-width: 0;
-  margin-bottom: 14px;
-  overflow: hidden;
-  border-radius: 12px;
-  aspect-ratio: 16 / 9;
-}
-
-.juveniles-horizontal-showcase .showcase-box img {
-  width: 100%;
-  height: 100%;
-  display: block;
-  object-fit: cover;
-}
-
-.juveniles-horizontal-showcase .latest-b-text {
-  margin: 0;
-  padding: 0 8px 4px;
-  text-align: center;
-  background: transparent !important;
-}
-
-/*
- * Filas verticales dinámicas.
- */
 .juveniles-vertical-showcase .latest-box {
   width: 100%;
   max-width: none;
   min-width: 0;
   margin: 0;
+  overflow: visible;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+.juveniles-vertical-showcase .latest-b-img {
+  width: 100%;
+  aspect-ratio: 2 / 3;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.juveniles-vertical-showcase .latest-b-img img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: inherit;
+}
+
+.juveniles-vertical-showcase .latest-b-text {
+  width: 100%;
+  min-height: 68px;
+  padding: 10px 8px 12px;
+  overflow: visible;
+  box-sizing: border-box;
+  background: transparent !important;
+}
+
+/* Evitar que LightSlider recorte texto o tarjetas */
+.juveniles-vertical-showcase .lightSlider,
+.juveniles-vertical-showcase .lSSlide {
+  height: auto !important;
+}
+
+/* Acercar las filas consecutivas */
+.juveniles-horizontal-showcase
+  + .juveniles-vertical-showcase,
+.juveniles-vertical-showcase
+  + .juveniles-horizontal-showcase {
+  padding-top: 10px;
 }
 
 /* Tablet */
 @media (max-width: 1100px) {
+  .juveniles-page {
+    padding-top: 82px;
+  }
+
   .juveniles-section {
-    padding: 22px 20px;
+    padding: 14px 20px;
   }
 
   .juveniles-horizontal-showcase {
     width: calc(100% - 24px);
-    margin: 8px 12px 16px;
+    margin: 6px 12px 8px;
+  }
+
+  .juveniles-horizontal-showcase .slider-h:not(.lightSlider) {
+    grid-auto-columns: calc((100% - 16px) / 2);
+    gap: 16px;
   }
 }
 
 /* Celular */
 @media (max-width: 768px) {
   .juveniles-page {
-    padding-bottom: 12px;
+    padding: 64px 0 12px;
   }
 
   .juveniles-section {
-    padding: 20px 16px;
+    padding: 12px 16px;
   }
 
   .juveniles-section > .showcase-heading,
   .juveniles-section > .latest-heading {
-    margin-bottom: 14px;
+    margin-bottom: 12px;
   }
 
   .juveniles-horizontal-showcase {
     width: calc(100% - 20px);
-    margin: 8px 10px 14px;
-    padding: 20px 16px;
+    margin: 6px 10px 8px;
+    padding: 16px 12px;
     border-radius: 14px;
   }
 
-  .juveniles-horizontal-showcase .showcase-box {
-    margin-bottom: 10px;
-    border-radius: 10px;
+  .juveniles-horizontal-showcase .slider-h:not(.lightSlider) {
+    grid-auto-columns: 88%;
+    gap: 12px;
+  }
+
+  .juveniles-vertical-showcase .latest-b-text {
+    min-height: 64px;
+    padding: 8px 5px 10px;
   }
 }
