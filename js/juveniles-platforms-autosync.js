@@ -100,7 +100,6 @@
 
   function isStreamingOrPlatform(item) {
     var channel = normalizeText(getChannelText(item));
-    var type = normalizeText(item && item.type);
 
     return (
       channel.indexOf('streaming') !== -1 ||
@@ -112,7 +111,8 @@
       channel.indexOf('star+') !== -1 ||
       channel.indexOf('starzplay') !== -1 ||
       channel.indexOf('viu') !== -1 ||
-      type === 'serie'
+      channel.indexOf('shorta') !== -1 ||
+      channel.indexOf('reelshort') !== -1
     );
   }
 

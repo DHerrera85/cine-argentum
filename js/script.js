@@ -463,7 +463,7 @@
     // ===============================
     $(function () {
       // HORIZONTALES
-      $('.slider-h:not(#telefe-featured-slider)').lightSlider({
+      $('.slider-h:not(#telefe-featured-slider):not([data-skip-auto])').lightSlider({
         item: 3,
         autoWidth: false,
         slideMove: 1,
