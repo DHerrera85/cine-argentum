@@ -252,7 +252,7 @@
       '</li>';
   }
 
-function ensureSlider(ulEl) {
+  function ensureSlider(ulEl) {
     if (
       !window.jQuery ||
       !window.jQuery.fn ||
@@ -262,10 +262,16 @@ function ensureSlider(ulEl) {
     }
 
     var $ul = window.jQuery(ulEl);
-    var inst = $ul.data('lightSlider');
 
-    if (inst && typeof inst.refresh === 'function') {
-      inst.refresh();
+    /*
+     * Esta versión de LightSlider expone refresh()
+     * directamente sobre el elemento jQuery.
+     */
+    if ($ul.hasClass('lightSlider')) {
+      if (typeof $ul.refresh === 'function') {
+        $ul.refresh();
+      }
+
       return;
     }
 
@@ -275,8 +281,8 @@ function ensureSlider(ulEl) {
      */
     var streamingSection = ulEl.closest
       ? ulEl.closest(
-          '.cartelera-2026-section[data-cartelera-content="streaming-series"]'
-        )
+        '.cartelera-2026-section[data-cartelera-content="streaming-series"]'
+      )
       : null;
 
     var useStreamingLayout = Boolean(streamingSection);
@@ -295,59 +301,72 @@ function ensureSlider(ulEl) {
 
       responsive: useStreamingLayout
         ? [
-            {
-              breakpoint: 1100,
-              settings: {
-                item: 3,
-                slideMove: 1,
-                slideMargin: 14
-              }
-            },
-            {
-              breakpoint: 768,
-              settings: {
-                item: 2,
-                slideMove: 1,
-                slideMargin: 12
-              }
+          {
+            breakpoint: 1100,
+            settings: {
+              item: 3,
+              slideMove: 1,
+              slideMargin: 14
             }
-          ]
+          },
+          {
+            breakpoint: 768,
+            settings: {
+              item: 2,
+              slideMove: 1,
+              slideMargin: 12
+            }
+          }
+        ]
         : [
-            {
-              breakpoint: 1200,
-              settings: {
-                item: 4,
-                slideMove: 1,
-                slideMargin: 14
-              }
-            },
-            {
-              breakpoint: 860,
-              settings: {
-                item: 3,
-                slideMove: 1,
-                slideMargin: 12
-              }
-            },
-            {
-              breakpoint: 640,
-              settings: {
-                item: 2,
-                slideMove: 1,
-                slideMargin: 10
-              }
+          {
+            breakpoint: 1200,
+            settings: {
+              item: 4,
+              slideMove: 1,
+              slideMargin: 14
             }
-          ]
+          },
+          {
+            breakpoint: 860,
+            settings: {
+              item: 3,
+              slideMove: 1,
+              slideMargin: 12
+            }
+          },
+          {
+            breakpoint: 640,
+            settings: {
+              item: 2,
+              slideMove: 1,
+              slideMargin: 10
+            }
+          }
+        ]
     });
   }
 
   function destroySlider(ulEl) {
-    if (!window.jQuery || !window.jQuery.fn || !window.jQuery.fn.lightSlider) return;
+    if (
+      !window.jQuery ||
+      !window.jQuery.fn ||
+      !window.jQuery.fn.lightSlider
+    ) {
+      return;
+    }
 
     var $ul = window.jQuery(ulEl);
-    var inst = $ul.data('lightSlider');
-    if (inst && typeof inst.destroy === 'function') {
-      inst.destroy();
+
+    /*
+     * Destruye el carrusel anterior y elimina
+     * transformaciones, anchos y contenedores generados.
+     */
+    if (
+      $ul.hasClass('lightSlider') &&
+      typeof $ul.destroy === 'function'
+    ) {
+      $ul.destroy();
     }
   }
 
