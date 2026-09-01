@@ -416,6 +416,7 @@
         '</li>'
       ].join('');
 
+    ensureSlider(listEl);
   }
 
   function getFilterCountLabel(
@@ -787,8 +788,6 @@
           '</div>',
           '</li>'
         ].join('');
-
-    ensureSlider(listEl);
 
     Array.prototype.forEach.call(
       section.querySelectorAll(
