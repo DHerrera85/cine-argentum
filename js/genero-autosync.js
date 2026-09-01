@@ -44,8 +44,22 @@
     if (!item) return false;
 
     var itemType = normalizeText(item.type);
-    if (itemType === 'movie' || itemType === 'pelicula') return true;
 
+    /*
+     * El campo type tiene prioridad sobre el prefijo del ID.
+     */
+    if (itemType === 'movie' || itemType === 'pelicula') {
+      return true;
+    }
+
+    if (itemType === 'serie' || itemType === 'series') {
+      return false;
+    }
+
+    /*
+     * El prefijo P se utiliza solamente como respaldo
+     * para entradas antiguas que no tienen type.
+     */
     var itemId = (item.id || '').toString().trim();
     return /^P\d+$/i.test(itemId);
   }
