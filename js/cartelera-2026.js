@@ -262,16 +262,17 @@
     }
 
     var $ul = window.jQuery(ulEl);
+    var slider = ulEl._carteleraSlider;
 
     /*
-     * Esta versión de LightSlider expone refresh()
-     * directamente sobre el elemento jQuery.
+     * LightSlider devuelve la instancia al inicializarse.
+     * La conservamos en el elemento para poder actualizarla.
      */
-    if ($ul.hasClass('lightSlider')) {
-      if (typeof $ul.refresh === 'function') {
-        $ul.refresh();
-      }
-
+    if (
+      slider &&
+      typeof slider.refresh === 'function'
+    ) {
+      slider.refresh();
       return;
     }
 
@@ -287,7 +288,7 @@
 
     var useStreamingLayout = Boolean(streamingSection);
 
-    $ul.lightSlider({
+    ulEl._carteleraSlider = $ul.lightSlider({
       item: 5,
       autoWidth: false,
       slideMove: 1,
@@ -348,26 +349,22 @@
   }
 
   function destroySlider(ulEl) {
-    if (
-      !window.jQuery ||
-      !window.jQuery.fn ||
-      !window.jQuery.fn.lightSlider
-    ) {
-      return;
-    }
+    if (!ulEl) return;
 
-    var $ul = window.jQuery(ulEl);
+    var slider = ulEl._carteleraSlider;
 
     /*
-     * Destruye el carrusel anterior y elimina
-     * transformaciones, anchos y contenedores generados.
+     * Se utiliza la misma instancia devuelta
+     * originalmente por LightSlider.
      */
     if (
-      $ul.hasClass('lightSlider') &&
-      typeof $ul.destroy === 'function'
+      slider &&
+      typeof slider.destroy === 'function'
     ) {
-      $ul.destroy();
+      slider.destroy();
     }
+
+    ulEl._carteleraSlider = null;
   }
 
   function renderFilteredList(section, type) {
@@ -419,7 +416,6 @@
         '</li>'
       ].join('');
 
-    ensureSlider(listEl);
   }
 
   function getFilterCountLabel(
