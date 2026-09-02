@@ -1,7 +1,7 @@
 (function () {
     'use strict';
 
-    var dataVersion = '20260830-1';
+    var dataVersion = '20260902-1';
     var targetYear = 2026;
 
     function normalizeText(value) {
@@ -78,6 +78,19 @@
             genre.indexOf('juvenil') !== -1 ||
             genre.indexOf('infantil') !== -1
         );
+    }
+
+    function belongsToJuvenilesRow(item, rowKey) {
+        if (
+            !item ||
+            !Array.isArray(item.juveniles_rows)
+        ) {
+            return false;
+        }
+
+        return item.juveniles_rows.some(function (value) {
+            return normalizeText(value) === normalizeText(rowKey);
+        });
     }
 
     function isStreamingProduction(item) {
@@ -317,6 +330,63 @@
         initializeHorizontalSlider(list);
     }
 
+    function renderCuratedHorizontalRow(
+        items,
+        containerId,
+        rowKey
+    ) {
+        var list = document.getElementById(containerId);
+
+        if (!list) return;
+
+        var entries = items
+            .filter(function (item) {
+                return (
+                    item &&
+                    item.id &&
+                    isSeries(item) &&
+                    isJuvenilOrInfantil(item) &&
+                    belongsToJuvenilesRow(item, rowKey)
+                );
+            })
+            .map(function (item) {
+                var release = getLatestRelease(item);
+
+                if (!release) return null;
+
+                return {
+                    item: item,
+                    timestamp: release.timestamp,
+                    horizontalImage:
+                        item.horizontal_image ||
+                        release.horizontalImage
+                };
+            })
+            .filter(function (entry) {
+                return (
+                    entry &&
+                    entry.horizontalImage
+                );
+            })
+            .sort(function (a, b) {
+                if (a.timestamp !== b.timestamp) {
+                    return b.timestamp - a.timestamp;
+                }
+
+                return String(a.item.title || '').localeCompare(
+                    String(b.item.title || ''),
+                    'es',
+                    { sensitivity: 'base' }
+                );
+            });
+
+        list.innerHTML = entries
+            .map(buildCard)
+            .join('');
+
+        initializeHorizontalSlider(list);
+    }
+
     function loadJuvenilesRows() {
         fetch(
             'data.json?v=' + dataVersion,
@@ -336,6 +406,12 @@
                         : [];
 
                 renderLaunches2026(items);
+
+                renderCuratedHorizontalRow(
+                    items,
+                    'juveniles-hits-2010-list',
+                    'hits-2010'
+                );
             })
             .catch(function (error) {
                 console.error(

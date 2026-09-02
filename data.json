@@ -11505,8 +11505,12 @@
     {
       "id": "V294",
       "title": "O11CE: Nueva generación",
+      "type": "serie",
       "year": "2026",
       "channel": "Disney+",
+      "platforms": [
+        "Disney+"
+      ],
       "genre": "Juvenil",
       "actors": [
         "Mariano González-Guerineau",
@@ -11518,12 +11522,21 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/once-nueva-generacion-poster-280x420.png",
-      "subtitle": "Juvenil",
       "horizontal_image": "images/horizontals-1024x576/once-nueva-generacion-slide-1024x576.png",
+      "subtitle": "Juvenil",
       "capitulos": 20,
       "fecha_estreno": "18/03/2026",
       "sinopsis": "Tras triunfar en Europa, Gabo, Dedé y Ricky regresan al IAD y descubren que los Halcones Dorados están al borde del descenso. Decididos a recuperar la gloria y el orgullo del equipo, inician una nueva etapa marcada por la pasión y el fútbol.",
-      "productora": "Pegsa Films, Disney+"
+      "productora": "Pegsa Films, Disney+",
+      "tipo_emision": "Serie",
+      "producciones_relacionadas": [
+        {
+          "id": "V133",
+          "title": "O11CE",
+          "meta": "Serie original",
+          "image": "images/verticals/o11nce-poster-280x420.png"
+        }
+      ]
     },
     {
       "id": "V295",
@@ -13998,6 +14011,7 @@
     {
       "id": "V127",
       "title": "Kally's Mashup",
+      "type": "serie",
       "year": "2017",
       "channel": "Nickelodeon",
       "genre": "Juvenil",
@@ -14009,9 +14023,13 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/kallys-mashup-poster-280x420.png",
+      "horizontal_image": "images/horizontals-1024x576/kallys-mashup-slide-1024x576.png",
       "subtitle": "Juvenil",
       "horario": "20hs",
       "capitulos": 120,
+      "juveniles_rows": [
+        "hits-2010"
+      ],
       "fecha_estreno": "13/10/2017",
       "sinopsis": "Kally, una joven prodigio del piano, se muda para estudiar en el Conservatorio Allegro. Entre las exigencias de la música clásica y su pasión por el pop, busca su identidad creando su propio estilo musical.",
       "rating": "-",
@@ -14063,6 +14081,9 @@
       ],
       "orientation": "vertical",
       "subtitle": "Juvenil",
+      "juveniles_rows": [
+        "hits-2010"
+      ],
       "image": "images/verticals/2010-suena-conmigo-nickelodeon-poster280x420.webp",
       "poster_gallery": [
         {
@@ -14077,6 +14098,7 @@
       "release_date": "20/07/2010",
       "horario": "lunes a viernes 18:00hs",
       "tipo_emision": "Tira Diaria",
+      "horizontal_image": "images/horizontals-1024x576/suena-conmigo-slide-1024x576.png",
       "cable_broadcasts": [
         {
           "channel": "Nickelodeon",
@@ -14169,6 +14191,7 @@
     {
       "id": "V133",
       "title": "O11CE",
+      "type": "serie",
       "year": "2017",
       "channel": "Disney XD",
       "genre": "Juvenil",
@@ -14182,21 +14205,37 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/o11nce-poster-280x420.png",
+      "horizontal_image": "images/horizontals-1024x576/o11ce-slide-1024x576.png",
       "subtitle": "Juvenil",
       "horario": "18:30hs",
       "capitulos": 220,
       "fecha_estreno": "13/03/2017",
+      "juveniles_rows": [
+        "hits-2010"
+      ],
       "sinopsis": "Gabo Moreti, un joven apasionado por el fútbol, recibe una beca de Francisco Velázquez para estudiar y jugar en el Instituto Académico Deportivo de Buenos Aires. Allí enfrenta la rivalidad de Lorenzo Guevara y, junto a sus amigos Ricky, Dedé, Zoe y Joaquín, lucha por cumplir su sueño de ser futbolista profesional.",
       "rating": "-",
       "productora": "Non Stop Producciones",
-      "tipo_emision": "Tira Diaria"
+      "tipo_emision": "Tira Diaria",
+      "producciones_relacionadas": [
+        {
+          "id": "V294",
+          "title": "O11CE: Nueva generación",
+          "meta": "Secuela",
+          "image": "images/verticals/once-nueva-generacion-poster-280x420.png"
+        }
+      ]
     },
     {
       "id": "V134",
       "title": "Soy Luna",
       "year": "2016",
       "channel": "Disney Channel",
+      "type": "serie",
       "genre": "Juvenil",
+      "juveniles_rows": [
+        "hits-2010"
+      ],
       "actors": [
         "Karol Sevilla",
         "Ruggero Pasquarelli",
@@ -14252,6 +14291,7 @@
       "title": "Violetta",
       "year": "2012",
       "channel": "Disney Channel",
+      "type": "serie",
       "genre": "Juvenil",
       "actors": [
         "Diego Ramos",
@@ -14263,7 +14303,11 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/violetta-poster-280x420.png",
+      "horizontal_image": "images/horizontals-1024x576/violetta-slide-1024x576.png",
       "subtitle": "Juvenil",
+      "juveniles_rows": [
+        "hits-2010"
+      ],
       "horario": "18hs",
       "capitulos": 240,
       "fecha_estreno": "01/09/2012",
@@ -14325,6 +14369,7 @@
       "year": "2013",
       "channel": "Telefe",
       "genre": "Juvenil",
+      "type": "serie",
       "actors": [
         "Peter Lanzani",
         "Oriana Sabatini",
@@ -14334,7 +14379,11 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/aliados-poster-280x420.png",
+      "horizontal_image": "images/horizontals-1024x576/aliados-slide-1024x576.png",
       "subtitle": "Juvenil",
+      "juveniles_rows": [
+        "hits-2010"
+      ],
       "horario": "2013: Miércoles 21hs, 2014: Domingos: 19:30hs",
       "capitulos": 40,
       "fecha_estreno": "26/06/2013",
