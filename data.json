@@ -6277,7 +6277,7 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/2026-soyluna-volverarodar-poster280x420.png",
-      "horizontal_image":"images/horizontals-1024x576/soyluna-volver-a-rodar-slide-1024x576.png",
+      "horizontal_image": "images/horizontals-1024x576/soyluna-volver-a-rodar-slide-1024x576.png",
       "subtitle": "Juvenil",
       "capitulos": 20,
       "sinopsis": "Luna regresa al Jam & Roller tras un misterioso accidente que la alejó de las pistas y busca recuperar la confianza en sí misma. Mientras enfrenta nuevos desafíos, deberá resolver viejos conflictos y un dilema amoroso entre Matteo y Simón.",
@@ -9308,6 +9308,30 @@
       "productora": "Hugo Móser"
     },
     {
+      "id": "T0157",
+      "title": "¿Dónde Estás Amor de mi Vida que no te Puedo Encontrar?",
+      "type": "serie",
+      "year": "1993",
+      "channel": "Canal 13",
+      "air_channels": [
+        "Canal 13"
+      ],
+      "genre": "Drama",
+      "actors": [
+        "Víctor Laplace",
+        "Mónica Galán"
+      ],
+      "orientation": "vertical",
+      "image": "images/verticals/1993-donde-estas-amor-de-mi-vida-que-no-te-puedo-encontrar-canal13-poster280x420.webp",
+      "horizontal_image": "",
+      "subtitle": "Drama",
+      "release_date": "1993-04-01",
+      "sinopsis": "Octavio Luz conduce un programa radial nocturno junto a la licenciada Milman, desde donde acompañan a quienes buscan en la radio un espacio para compartir sus problemas y conflictos. A través de las llamadas de distintos noctámbulos, cada emisión revela historias personales, dilemas y situaciones que atraviesan a quienes permanecen despiertos durante la noche.",
+      "producer": "Cecilia Absatz",
+      "seasons": 2,
+      "remakes": []
+    },
+    {
       "id": "T0046",
       "title": "Alta Comedia",
       "year": "1990",
@@ -11445,7 +11469,7 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/amor-animal-poster-280x420.png",
-      "horizontal_image":"images/horizontals-1024x576/amor-animal-slide-1024x576.png",
+      "horizontal_image": "images/horizontals-1024x576/amor-animal-slide-1024x576.png",
       "subtitle": "Juvenil",
       "capitulos": 20,
       "fecha_estreno": "20/03/2026",
@@ -14021,8 +14045,15 @@
     {
       "id": "V129",
       "title": "Sueña Conmigo",
+      "type": "serie",
       "year": "2010",
       "channel": "Nickelodeon",
+      "air_channels": [
+        "Telefe"
+      ],
+      "cable_channels": [
+        "Nickelodeon"
+      ],
       "genre": "Juvenil",
       "actors": [
         "Eiza González",
@@ -14031,15 +14062,50 @@
         "Valentín Villafañe"
       ],
       "orientation": "vertical",
-      "image": "images/verticals/sueña-conmigo-poster-280x420.png",
       "subtitle": "Juvenil",
-      "horario": "18hs",
+      "image": "images/verticals/2010-suena-conmigo-nickelodeon-poster280x420.webp",
+      "poster_gallery": [
+        {
+          "image": "images/verticals/2010-suena-conmigo-nickelodeon-poster280x420.webp",
+          "label": "Póster principal"
+        },
+        {
+          "image": "images/verticals/sueña-conmigo-poster-280x420.png",
+          "label": "Póster alternativo"
+        }
+      ],
+      "release_date": "20/07/2010",
+      "horario": "lunes a viernes 18:00hs",
+      "tipo_emision": "Tira Diaria",
+      "cable_broadcasts": [
+        {
+          "channel": "Nickelodeon",
+          "premiere_date": "20/07/2010",
+          "horario": "lunes a viernes 18:00hs",
+          "tipo_emision": "Tira Diaria"
+        }
+      ],
+      "air_broadcasts": [
+        {
+          "channel": "Telefe",
+          "premiere_date": "29/11/2010",
+          "tipo_emision": "Tira Diaria",
+          "schedule_periods": [
+            {
+              "start_date": "29/11/2010",
+              "horario": "lunes a viernes 18:00hs"
+            },
+            {
+              "year": "2011",
+              "horario": "lunes a viernes 09:15hs"
+            }
+          ]
+        }
+      ],
       "capitulos": 150,
-      "fecha_estreno": "20/07/2010",
       "sinopsis": "Clara crea la identidad secreta “Roxy Pop” para participar en el reality musical Soy tu Super Star! sin que su padre lo sepa. Mientras tanto, Luca se enamora de la voz de Roxy sin imaginar que es Clara, su compañera y rival en la escuela.",
       "rating": "-",
-      "productora": "Televisa, Illusion Studios",
-      "tipo_emision": "Tira Diaria"
+      "productora": "Televisa, Illusion Studios"
     },
     {
       "id": "V130",
@@ -14140,7 +14206,7 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/soy-luna-poster-280x420.png",
-      "horizontal_image":"images/horizontals-1024x576/soy-luna-slide-1024x576.png",
+      "horizontal_image": "images/horizontals-1024x576/soy-luna-slide-1024x576.png",
       "subtitle": "Juvenil",
       "horario": "18hs, 19hs",
       "capitulos": 220,
@@ -19255,6 +19321,7 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/secretos-de-amor-poster-280x420.png",
+      "horizontal_image": "images/horizontals-1024x576/2010-secretos-de-amor-telefe-slide1024x576.webp",
       "subtitle": "Telenovela",
       "horario": "15:30hs",
       "capitulos": 68,

@@ -543,7 +543,7 @@
   <script src="js/lightslider.js"></script>
   <script>
     (function () {
-      var showDataVersion = '20260724-2';
+      var showDataVersion = '20260902-1';
       function getIdFromURL() {
         var p = new URLSearchParams(window.location.search);
         var id = p.get('id');
@@ -1187,6 +1187,58 @@
         var canalAireRow = (!hideCanalAire && airValues.length) ? '<dt>Canal de aire</dt><dd>' + airValues.join(', ') + '</dd>' : '';
         var canalCableRow = cableValues.length ? '<dt>Canal de cable</dt><dd>' + cableValues.join(', ') + '</dd>' : '';
         var plataformaRow = plataformaValues.length ? '<dt>Plataforma</dt><dd>' + plataformaValues.join(', ') + '</dd>' : '';
+        /*
+ * Galería de pósters verticales.
+ * Utiliza la misma distribución visual que Temporadas.
+ */
+        var posterGallerySection = '';
+
+        if (
+          Array.isArray(item.poster_gallery) &&
+          item.poster_gallery.length
+        ) {
+          var posterGalleryCards = item.poster_gallery
+            .filter(function (poster) {
+              return (
+                poster &&
+                typeof poster === 'object' &&
+                hasValue(poster.image)
+              );
+            })
+            .map(function (poster, index) {
+              var posterPath = String(poster.image)
+                .trim()
+                .replace(/ /g, '%20');
+
+              var posterLabel = hasValue(poster.label)
+                ? poster.label
+                : 'Imagen ' + (index + 1);
+
+              return '<div class="temporada-card">'
+                + '<div class="temporada-image-wrap">'
+                + '<img src="' + posterPath + '" '
+                + 'loading="lazy" '
+                + 'alt="' + posterLabel + '">'
+                + '</div>'
+                + '<div class="temporada-info">'
+                + '<div class="temporada-label">'
+                + posterLabel
+                + '</div>'
+                + '</div>'
+                + '</div>';
+            })
+            .join('');
+
+          if (posterGalleryCards) {
+            posterGallerySection =
+              '<div class="temporadas-section poster-gallery-section">'
+              + '<div class="temporadas-title">Galería de imágenes</div>'
+              + '<div class="temporadas-grid poster-gallery-grid">'
+              + posterGalleryCards
+              + '</div>'
+              + '</div>';
+          }
+        }
         var remakesSection = '';
         var relatedSection = '';
         var remakes = [];
@@ -1400,6 +1452,7 @@
           + directorRow
           + '</dl>'
           + temporadasSection
+          + posterGallerySection
           + extraSections
           + '</div>'
           + '</div>';
