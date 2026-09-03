@@ -228,8 +228,8 @@
   gap: 18px;
 }
 
-.juveniles-section-heading > .showcase-heading,
-.juveniles-section-heading > .latest-heading {
+.juveniles-section-heading>.showcase-heading,
+.juveniles-section-heading>.latest-heading {
   position: relative;
   flex: 1 1 auto;
   min-width: 0;
@@ -238,8 +238,8 @@
 }
 
 /* Barrita debajo del título */
-.juveniles-section-heading > .showcase-heading::after,
-.juveniles-section-heading > .latest-heading::after {
+.juveniles-section-heading>.showcase-heading::after,
+.juveniles-section-heading>.latest-heading::after {
   content: "";
   position: absolute;
   left: 0;
@@ -278,13 +278,13 @@
     gap: 10px;
   }
 
-  .juveniles-section-heading > .showcase-heading,
-  .juveniles-section-heading > .latest-heading {
+  .juveniles-section-heading>.showcase-heading,
+  .juveniles-section-heading>.latest-heading {
     padding-bottom: 10px;
   }
 
-  .juveniles-section-heading > .showcase-heading::after,
-  .juveniles-section-heading > .latest-heading::after {
+  .juveniles-section-heading>.showcase-heading::after,
+  .juveniles-section-heading>.latest-heading::after {
     width: 52px;
     height: 2px;
   }
@@ -294,4 +294,261 @@
     padding: 7px 11px;
     font-size: 0.75rem;
   }
+}
+
+/* =========================================================
+   PLATAFORMAS, CANALES Y PRODUCTORAS
+   ========================================================= */
+
+.juveniles-partners-section {
+  width: 100%;
+  padding: 30px 32px 24px;
+  overflow: hidden;
+  box-sizing: border-box;
+
+  background:
+    radial-gradient(ellipse at 15% 50%,
+      rgba(255, 188, 205, 0.24) 0%,
+      transparent 48%),
+    radial-gradient(ellipse at 84% 50%,
+      rgba(174, 205, 255, 0.25) 0%,
+      transparent 48%),
+    linear-gradient(90deg,
+      #fff1eb 0%,
+      #eef8f7 48%,
+      #f2eaff 100%);
+
+  border-top: 1px solid rgba(96, 90, 150, 0.12);
+  border-bottom: 1px solid rgba(96, 90, 150, 0.12);
+}
+
+.juveniles-partners-section>.latest-heading {
+  margin: 0 0 20px;
+  padding: 0;
+  color: #304158;
+}
+
+.juveniles-partner-tabs {
+  margin: 0 !important;
+  padding: 0 0 8px !important;
+}
+
+.juveniles-partner-tabs .juveniles-partner-tab {
+  --partner-accent: 116, 103, 217;
+  --partner-logo-scale: 1;
+
+  position: relative;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+
+  height: 92px !important;
+  padding: 15px 22px;
+  overflow: hidden;
+  box-sizing: border-box;
+
+  border: 0;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.28);
+  box-shadow: none;
+
+  transition:
+    background-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.juveniles-partner-tab::before {
+  content: "";
+  position: absolute;
+  inset: 7px 4px 5px;
+  z-index: 0;
+
+  border-radius: 12px;
+  opacity: 0;
+
+  background:
+    radial-gradient(ellipse at center,
+      rgba(var(--partner-accent), 0.18) 0%,
+      transparent 72%);
+
+  transition: opacity 0.25s ease;
+}
+
+.juveniles-partner-tab::after {
+  content: "";
+  position: absolute;
+  left: 18%;
+  right: 18%;
+  bottom: 0;
+
+  height: 3px;
+  border-radius: 999px;
+
+  background: rgb(var(--partner-accent));
+  opacity: 0;
+  transform: scaleX(0.35);
+
+  transition:
+    opacity 0.25s ease,
+    transform 0.25s ease;
+}
+
+.juveniles-partner-logo {
+  position: relative;
+  z-index: 1;
+
+  display: block;
+  width: auto;
+  max-width: 145px;
+  height: 52px;
+  object-fit: contain;
+
+  opacity: 0.68;
+  filter: grayscale(0.75);
+  transform: scale(var(--partner-logo-scale));
+
+  transition:
+    opacity 0.25s ease,
+    filter 0.25s ease,
+    transform 0.25s ease;
+}
+
+.juveniles-partner-tab:hover,
+.juveniles-partner-tab:focus-visible {
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 8px 22px rgba(84, 91, 140, 0.08);
+}
+
+.juveniles-partner-tab:hover::before,
+.juveniles-partner-tab:focus-visible::before,
+.juveniles-partner-tab.is-active::before {
+  opacity: 1;
+}
+
+.juveniles-partner-tab:hover::after,
+.juveniles-partner-tab:focus-visible::after,
+.juveniles-partner-tab.is-active::after {
+  opacity: 1;
+  transform: scaleX(1);
+}
+
+.juveniles-partner-tab:hover .juveniles-partner-logo,
+.juveniles-partner-tab:focus-visible .juveniles-partner-logo,
+.juveniles-partner-tab.is-active .juveniles-partner-logo {
+  opacity: 1;
+  filter: none;
+  transform:
+    scale(var(--partner-logo-scale)) translateY(-1px);
+}
+
+.juveniles-partner-tab:focus-visible {
+  outline: 2px solid rgba(var(--partner-accent), 0.75);
+  outline-offset: -2px;
+}
+
+.partner-netflix {
+  --partner-accent: 229, 9, 20;
+  --partner-logo-scale: 1.38;
+}
+
+.partner-disney {
+  --partner-accent: 71, 105, 220;
+  --partner-logo-scale: 1.42;
+}
+
+.partner-prime {
+  --partner-accent: 0, 150, 210;
+  --partner-logo-scale: 1.12;
+}
+
+.partner-flow {
+  --partner-accent: 0, 190, 220;
+  --partner-logo-scale: 1.42;
+}
+
+.partner-hbo {
+  --partner-accent: 125, 75, 215;
+  --partner-logo-scale: 0.88;
+}
+
+.partner-telefe {
+  --partner-accent: 31, 174, 190;
+  --partner-logo-scale: 1;
+}
+
+.partner-canal13 {
+  --partner-accent: 245, 145, 45;
+  --partner-logo-scale: 0.92;
+}
+
+.partner-cris-morena {
+  --partner-accent: 229, 123, 155;
+  --partner-logo-scale: 1.05;
+}
+
+.partner-polka {
+  --partner-accent: 63, 169, 155;
+  --partner-logo-scale: 1.05;
+}
+
+.partner-without-page {
+  cursor: default;
+}
+
+.juveniles-partners-section .lSAction>a {
+  border: 1px solid rgba(92, 96, 140, 0.12);
+  background-color: rgba(255, 255, 255, 0.72);
+  box-shadow: 0 5px 15px rgba(78, 84, 130, 0.1);
+}
+
+@media (max-width: 1100px) {
+  .juveniles-partners-section {
+    padding: 26px 20px 20px;
+  }
+
+  .juveniles-partner-tabs .juveniles-partner-tab {
+    height: 84px !important;
+    padding: 13px 17px;
+  }
+
+  .juveniles-partner-logo {
+    max-width: 130px;
+    height: 47px;
+  }
+}
+
+@media (max-width: 768px) {
+  .juveniles-partners-section {
+    padding: 24px 16px 18px;
+  }
+
+  .juveniles-partners-section>.latest-heading {
+    margin-bottom: 17px;
+  }
+
+  .juveniles-partner-tabs .juveniles-partner-tab {
+    height: 72px !important;
+    padding: 10px 13px;
+  }
+
+  .juveniles-partner-logo {
+    max-width: 108px;
+    height: 39px;
+  }
+
+  .juveniles-partner-tab::after {
+    left: 14%;
+    right: 14%;
+    height: 2px;
+  }
+}
+
+.partner-disney-channel {
+  --partner-accent: 35, 116, 205;
+  --partner-logo-scale: 1.08;
+}
+
+.partner-nickelodeon {
+  --partner-accent: 255, 103, 31;
+  --partner-logo-scale: 1.15;
 }
