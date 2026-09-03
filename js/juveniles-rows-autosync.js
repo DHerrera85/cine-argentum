@@ -1,8 +1,21 @@
 (function () {
     'use strict';
 
-    var dataVersion = '20260902-1';
+    var dataVersion = '20260903-1';
     var targetYear = 2026;
+
+    var verticalItemClasses = [
+        'item-a',
+        'item-b',
+        'item-c',
+        'item-d',
+        'item-e',
+        'item-f',
+        'item-g'
+    ];
+
+    var verticalPlaceholder =
+        'images/verticals/placeholder-280x420.svg';
 
     function normalizeText(value) {
         var text = value == null ? '' : String(value);
@@ -387,6 +400,198 @@
         initializeHorizontalSlider(list);
     }
 
+    function getDistributionValues(item) {
+        var values = [];
+
+        if (!item) return values;
+
+        if (item.channel) {
+            values.push(item.channel);
+        }
+
+        if (Array.isArray(item.channels)) {
+            values = values.concat(item.channels);
+        }
+
+        if (Array.isArray(item.air_channels)) {
+            values = values.concat(item.air_channels);
+        }
+
+        if (Array.isArray(item.cable_channels)) {
+            values = values.concat(item.cable_channels);
+        }
+
+        return values;
+    }
+
+    function hasAnyChannel(item, acceptedChannels) {
+        var normalizedAccepted = acceptedChannels.map(
+            normalizeText
+        );
+
+        return getDistributionValues(item).some(
+            function (channel) {
+                return normalizedAccepted.indexOf(
+                    normalizeText(channel)
+                ) !== -1;
+            }
+        );
+    }
+
+    function getPrimaryReleaseTimestamp(item) {
+        var releaseDate = parseDate(
+            item.release_date ||
+            item.fecha_estreno
+        );
+
+        if (releaseDate) {
+            return releaseDate.getTime();
+        }
+
+        var year = Number(item.year);
+
+        if (Number.isFinite(year)) {
+            return new Date(year, 0, 1).getTime();
+        }
+
+        return 0;
+    }
+
+    function buildVerticalCard(entry, index) {
+        var item = entry.item;
+        var title = item.title || 'Sin título';
+        var image = item.image || verticalPlaceholder;
+        var itemClass =
+            verticalItemClasses[
+            index % verticalItemClasses.length
+            ];
+
+        return (
+            '<li class="' + itemClass + '">' +
+            '<a href="show.html?id=' +
+            encodeURIComponent(item.id || '') +
+            '">' +
+            '<div class="latest-box">' +
+            '<div class="latest-b-img">' +
+            '<img src="' +
+            escapeHtml(image) +
+            '" loading="lazy" alt="' +
+            escapeHtml(title) +
+            '">' +
+            '</div>' +
+            '<div class="latest-b-text">' +
+            '<strong>' +
+            escapeHtml(title) +
+            '</strong>' +
+            '<p></p>' +
+            '</div>' +
+            '</div>' +
+            '</a>' +
+            '</li>'
+        );
+    }
+
+    function initializeVerticalSlider(list) {
+        list.classList.remove('cs-hidden');
+
+        if (
+            !window.jQuery ||
+            !window.jQuery.fn ||
+            !window.jQuery.fn.lightSlider
+        ) {
+            return;
+        }
+
+        var $list = window.jQuery(list);
+
+        if ($list.hasClass('lightSlider')) {
+            return;
+        }
+
+        $list.lightSlider({
+            item: 5,
+            autoWidth: false,
+            slideMove: 1,
+            slideMargin: 12,
+            loop: false,
+            pager: false,
+            controls: true,
+            enableTouch: true,
+            enableDrag: true,
+            freeMove: false,
+
+            responsive: [
+                {
+                    breakpoint: 1100,
+                    settings: {
+                        item: 4,
+                        slideMove: 1,
+                        slideMargin: 10
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        item: 2,
+                        slideMove: 1,
+                        slideMargin: 8
+                    }
+                }
+            ],
+
+            onSliderLoad: function () {
+                $list.removeClass('cs-hidden');
+            }
+        });
+    }
+
+    function renderChannelVerticalRow(items, options) {
+        var list = document.getElementById(
+            options.containerId
+        );
+
+        if (!list) return;
+
+        var entries = items
+            .filter(function (item) {
+                return (
+                    item &&
+                    item.id &&
+                    isSeries(item) &&
+                    isJuvenilOrInfantil(item) &&
+                    hasAnyChannel(
+                        item,
+                        options.channels
+                    )
+                );
+            })
+            .map(function (item) {
+                return {
+                    item: item,
+                    timestamp:
+                        getPrimaryReleaseTimestamp(item)
+                };
+            })
+            .sort(function (a, b) {
+                if (a.timestamp !== b.timestamp) {
+                    return b.timestamp - a.timestamp;
+                }
+
+                return String(a.item.title || '')
+                    .localeCompare(
+                        String(b.item.title || ''),
+                        'es',
+                        { sensitivity: 'base' }
+                    );
+            });
+
+        list.innerHTML = entries
+            .map(buildVerticalCard)
+            .join('');
+
+        initializeVerticalSlider(list);
+    }
+
     function loadJuvenilesRows() {
         fetch(
             'data.json?v=' + dataVersion,
@@ -412,21 +617,27 @@
                     'juveniles-hits-2010-list',
                     'hits-2010'
                 );
-            })
-            .catch(function (error) {
-                console.error(
-                    'No se pudieron cargar las filas juveniles:',
-                    error
+
+                renderChannelVerticalRow(
+                    items,
+                    {
+                        containerId:
+                            'juveniles-disney-channel-list',
+
+                        channels: [
+                            'Disney Channel',
+                            'Disney XD'
+                        ]
+                    }
                 );
-            });
-    }
+            }
 
     if (document.readyState === 'loading') {
-        document.addEventListener(
-            'DOMContentLoaded',
-            loadJuvenilesRows
-        );
-    } else {
-        loadJuvenilesRows();
-    }
-})();
+            document.addEventListener(
+                'DOMContentLoaded',
+                loadJuvenilesRows
+            );
+        } else {
+            loadJuvenilesRows();
+        }
+    }) ();
