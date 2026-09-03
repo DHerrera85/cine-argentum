@@ -616,6 +616,12 @@
 
                 renderCuratedHorizontalRow(
                     items,
+                    'juveniles-hits-2010-list',
+                    'hits-2010'
+                );
+
+                renderCuratedHorizontalRow(
+                    items,
                     'juveniles-hits-2000-list',
                     'hits-2000'
                 );
