@@ -1,7 +1,7 @@
 (function () {
     'use strict';
 
-    var dataVersion = '20260903-5';
+    var dataVersion = '20260903-6';
     var targetYear = 2026;
 
     var verticalItemClasses = [
@@ -553,3 +553,176 @@
             }
         });
     }
+
+    function renderCuratedVerticalRow(
+        items,
+        containerId,
+        rowKey
+    ) {
+        var list = document.getElementById(containerId);
+
+        if (!list) return;
+
+        var entries = items
+            .filter(function (item) {
+                return (
+                    item &&
+                    item.id &&
+                    isSeries(item) &&
+                    belongsToJuvenilesRow(item, rowKey)
+                );
+            })
+            .map(function (item) {
+                return {
+                    item: item,
+                    timestamp:
+                        getPrimaryReleaseTimestamp(item)
+                };
+            })
+            .sort(function (a, b) {
+                if (a.timestamp !== b.timestamp) {
+                    return b.timestamp - a.timestamp;
+                }
+
+                return String(a.item.title || '')
+                    .localeCompare(
+                        String(b.item.title || ''),
+                        'es',
+                        { sensitivity: 'base' }
+                    );
+            });
+
+        list.innerHTML = entries
+            .map(buildVerticalCard)
+            .join('');
+
+        initializeVerticalSlider(list);
+    }
+
+    function renderChannelVerticalRow(items, options) {
+        var list = document.getElementById(
+            options.containerId
+        );
+
+        if (!list) return;
+
+        var entries = items
+            .filter(function (item) {
+                return (
+                    item &&
+                    item.id &&
+                    isSeries(item) &&
+                    isJuvenilOrInfantil(item) &&
+                    hasAnyChannel(
+                        item,
+                        options.channels
+                    )
+                );
+            })
+            .map(function (item) {
+                return {
+                    item: item,
+                    timestamp:
+                        getPrimaryReleaseTimestamp(item)
+                };
+            })
+            .sort(function (a, b) {
+                if (a.timestamp !== b.timestamp) {
+                    return b.timestamp - a.timestamp;
+                }
+
+                return String(a.item.title || '')
+                    .localeCompare(
+                        String(b.item.title || ''),
+                        'es',
+                        { sensitivity: 'base' }
+                    );
+            });
+
+        list.innerHTML = entries
+            .map(buildVerticalCard)
+            .join('');
+
+        initializeVerticalSlider(list);
+    }
+
+    function loadJuvenilesRows() {
+        fetch(
+            'data.json?v=' + dataVersion,
+            { cache: 'no-store' }
+        )
+            .then(function (response) {
+                if (!response.ok) {
+                    throw new Error('No se pudo cargar data.json');
+                }
+
+                return response.json();
+            })
+            .then(function (data) {
+                var items =
+                    data && Array.isArray(data.items)
+                        ? data.items
+                        : [];
+
+                renderLaunches2026(items);
+
+                renderCuratedHorizontalRow(
+                    items,
+                    'juveniles-hits-2010-list',
+                    'hits-2010'
+                );
+
+                renderCuratedHorizontalRow(
+                    items,
+                    'juveniles-hits-2000-list',
+                    'hits-2000'
+                );
+
+                renderCuratedVerticalRow(
+                    items,
+                    'juveniles-cris-morena-list',
+                    'cris-morena'
+                );
+
+                renderChannelVerticalRow(
+                    items,
+                    {
+                        containerId:
+                            'juveniles-disney-channel-list',
+
+                        channels: [
+                            'Disney Channel',
+                            'Disney XD'
+                        ]
+                    }
+                );
+
+                renderChannelVerticalRow(
+                    items,
+                    {
+                        containerId:
+                            'juveniles-nickelodeon-list',
+
+                        channels: [
+                            'Nickelodeon'
+                        ]
+                    }
+                );
+            })
+            .catch(function (error) {
+                console.error(
+                    'No se pudieron cargar las filas juveniles:',
+                    error
+                );
+            });
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener(
+            'DOMContentLoaded',
+            loadJuvenilesRows
+        );
+    } else {
+        loadJuvenilesRows();
+    }
+})();
