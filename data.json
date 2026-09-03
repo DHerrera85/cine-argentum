@@ -13466,6 +13466,9 @@
       "type": "serie",
       "year": "2024",
       "channel": "HBO Max",
+      "juveniles_rows": [
+        "cris-morena"
+      ],
       "platforms": [
         "HBO Max"
       ],
@@ -13496,6 +13499,7 @@
       "horizontal_image": "images/horizontals-1024x576/2026-margarita-temporada3-hbomax-slide1024x576.webp",
       "subtitle": "Juvenil",
       "release_date": "24/08/2026",
+      "juveniles_row_image": "images/verticals/margarita-temporada-1-poster-280x420.png",
       "capitulos": 80,
       "air_broadcasts": [
         {
@@ -14396,7 +14400,8 @@
       "horizontal_image": "images/horizontals-1024x576/aliados-slide-1024x576.png",
       "subtitle": "Juvenil",
       "juveniles_rows": [
-        "hits-2010"
+        "hits-2010",
+        "cris-morena"
       ],
       "horario": "2013: Miércoles 21hs, 2014: Domingos: 19:30hs",
       "capitulos": 40,
@@ -14409,6 +14414,7 @@
     {
       "id": "V140",
       "title": "Jake & Blake",
+      "type": "serie",
       "year": "2009",
       "channel": "Disney Channel",
       "genre": "Juvenil",
@@ -14422,6 +14428,9 @@
       "horario": "22hs",
       "capitulos": 52,
       "fecha_estreno": "07/12/2009",
+      "juveniles_rows": [
+        "cris-morena"
+      ],
       "sinopsis": "Dos gemelos idénticos separados al nacer descubren que llevan vidas opuestas: Jake es un estudiante responsable y Blake, una estrella pop egocéntrica. Al reencontrarse, deciden intercambiar lugares, desatando enredos, romances y divertidas complicaciones.",
       "rating": "-",
       "productora": "Cris Morena Group / RGB Entertainment",
@@ -14430,6 +14439,7 @@
     {
       "id": "V141",
       "title": "B&B: Bella y Bestia",
+      "type": "serie",
       "year": "2008",
       "channel": "Telefe",
       "genre": "Comedia",
@@ -14442,7 +14452,10 @@
       "subtitle": "Comedia",
       "horario": "20:45hs",
       "capitulos": 123,
-      "fecha_estreno": "7/1/2008",
+      "fecha_estreno": "07/01/2008",
+      "juveniles_rows": [
+        "cris-morena"
+      ],
       "sinopsis": "Bella, ordenada y estructurada, y Benny, desordenado y caótico, ambos viudos y con tres hijos cada uno, se convierten en vecinos. La convivencia forzada desata choques constantes y divertidos enredos familiares.",
       "rating": "12,6",
       "productora": "Cris Morena Group / RGB Entertainment",
@@ -14451,14 +14464,10 @@
     {
       "id": "V142",
       "title": "Casi Ángeles",
+      "type": "serie",
       "year": "2007",
       "channel": "Telefe",
       "genre": "Juvenil",
-      "type": "serie",
-      "horizontal_image": "images/horizontals-1024x576/casi-angeles-slide-1024x576.png",
-      "juveniles_rows": [
-        "hits-2000"
-      ],
       "actors": [
         "Nicolás Vázquez",
         "Emilia Attias",
@@ -14470,10 +14479,15 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/casi-angeles-poster-280x420.png",
+      "horizontal_image": "images/horizontals-1024x576/casi-angeles-slide-1024x576.png",
       "subtitle": "Juvenil",
       "horario": "18hs, 19hs",
       "capitulos": 166,
       "fecha_estreno": "21/03/2007",
+      "juveniles_rows": [
+        "hits-2000",
+        "cris-morena"
+      ],
       "sinopsis": "Un grupo de huérfanos explotados para robar ve cambiar su destino con la llegada de Cielo y Nico, quienes les devuelven la esperanza a través del amor y la música. Juntos enfrentan oscuros secretos y misterios ligados a un portal oculto que puede transformar sus vidas.",
       "rating": "11,6",
       "productora": "Cris Morena Group / RGB Entertainment",
@@ -14482,6 +14496,7 @@
     {
       "id": "V143",
       "title": "Alma Pirata",
+      "type": "serie",
       "year": "2006",
       "channel": "Telefe",
       "genre": "Juvenil",
@@ -14508,6 +14523,9 @@
       "horario": "20:45hs, 19hs",
       "capitulos": 138,
       "fecha_estreno": "20/03/2006",
+      "juveniles_rows": [
+        "cris-morena"
+      ],
       "sinopsis": "Narra la historia de tres jóvenes —Cruz, Iván y Benicio— que buscan justicia por el asesinato de sus padres, formando la \"Liga de las Espadas\" junto a Allegra, para luchar contra Gino Riganti.",
       "rating": "15,4",
       "productora": "Cris Morena Group / RGB Entertainment",
@@ -14516,14 +14534,11 @@
     {
       "id": "V144",
       "title": "Chiquititas - 2006",
-      "year": "2006",
+      "juveniles_row_title": "Chiquititas",
       "type": "serie",
+      "year": "2006",
       "channel": "Telefe",
       "genre": "Juvenil",
-      "horizontal_image": "images/horizontals-1024x576/chiquititas-slide-1024x576.png",
-      "juveniles_rows": [
-        "hits-2000"
-      ],
       "actors": [
         "Jorgelina Aruzzi",
         "Gastón Ricaud",
@@ -14533,10 +14548,15 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/chiquititas-poster-280x420.png",
+      "horizontal_image": "images/horizontals-1024x576/chiquititas-slide-1024x576.png",
       "subtitle": "Juvenil",
       "horario": "18hs, 17:45hs",
       "capitulos": 150,
       "fecha_estreno": "03/04/2006",
+      "juveniles_rows": [
+        "hits-2000",
+        "cris-morena"
+      ],
       "sinopsis": "Magalí Garcés, una empresaria que busca a su hija perdida —entregada por su padre a un orfanato— adopta la identidad de “Lili” para infiltrarse en el hogar Dumont y transformar la vida de los niños con amor y magia.",
       "rating": "11",
       "productora": "Cris Morena Group / RGB Entertainment",
@@ -14558,14 +14578,10 @@
     {
       "id": "V145",
       "title": "Floricienta",
+      "type": "serie",
       "year": "2004",
       "channel": "Canal 13",
       "genre": "Juvenil",
-      "type": "serie",
-      "horizontal_image": "images/horizontals-1024x576/floricienta-slide-1024x576.png",
-      "juveniles_rows": [
-        "hits-2000"
-      ],
       "actors": [
         "Florencia Bertotti",
         "Juan Gil Navarro",
@@ -14575,11 +14591,16 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/floricienta-poster-280x420.png",
+      "horizontal_image": "images/horizontals-1024x576/floricienta-slide-1024x576.png",
       "subtitle": "Juvenil",
       "horario": "18hs, 19hs",
       "capitulos": 175,
       "fecha_estreno": "15/03/2004",
-      "sinopsis": "Narra la vida de Florencia Fazzarino, una joven huérfana y soñadora que, tras perder su trabajo, encuentra empleo como niñera en la mansión de la adinerada familia Fritzenwalden. Allí se enamora de Federico Fritzenwalden, el estricto hermano mayor que quedó a cargo de sus cinco hermanos tras la muerte de sus padres",
+      "juveniles_rows": [
+        "hits-2000",
+        "cris-morena"
+      ],
+      "sinopsis": "Narra la vida de Florencia Fazzarino, una joven huérfana y soñadora que, tras perder su trabajo, encuentra empleo como niñera en la mansión de la adinerada familia Fritzenwalden. Allí se enamora de Federico Fritzenwalden, el estricto hermano mayor que quedó a cargo de sus cinco hermanos tras la muerte de sus padres.",
       "rating": "17,4",
       "productora": "Cris Morena Group / RGB Entertainment",
       "tipo_emision": "Tira Diaria",
@@ -14619,8 +14640,13 @@
     {
       "id": "V146",
       "title": "Rincón de Luz",
+      "type": "serie",
       "year": "2003",
       "channel": "Canal 9/Azul TV",
+      "air_channels": [
+        "Canal 9/Azul TV",
+        "América"
+      ],
       "genre": "Juvenil",
       "actors": [
         "Guido Kaczka",
@@ -14631,7 +14657,10 @@
       "subtitle": "Juvenil",
       "horario": "18hs, 11hs",
       "capitulos": 199,
-      "fecha_estreno": "27/05/2002",
+      "fecha_estreno": "10/02/2003",
+      "juveniles_rows": [
+        "cris-morena"
+      ],
       "sinopsis": "Álvaro Del Solar crea un orfanato para cobrar una herencia, pero termina encariñándose con los niños y enamorándose de Soledad, una joven que cuida a los chicos, transformando el hogar.",
       "franchise": {
         "id": "chiquititas",
@@ -14639,20 +14668,16 @@
       },
       "franchise_role": "spin-off",
       "rating": "3,4",
-      "productora": "Cris Morena Group / RGB Entertainment",
+      "productora": "Cris Morena Group / Dori Media Group",
       "tipo_emision": "Tira Diaria"
     },
     {
       "id": "V147",
       "title": "Rebelde Way",
+      "type": "serie",
       "year": "2002",
       "channel": "Canal 9/Azul TV",
       "genre": "Juvenil",
-      "type": "serie",
-      "horizontal_image": "images/horizontals-1024x576/rebelde-way-slide-1024x576.png",
-      "juveniles_rows": [
-        "hits-2000"
-      ],
       "actors": [
         "Luisana Lopilato",
         "Felipe Colombo",
@@ -14663,11 +14688,16 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/rebelde way-poster-280x420.png",
+      "horizontal_image": "images/horizontals-1024x576/rebelde-way-slide-1024x576.png",
       "subtitle": "Juvenil",
       "horario": "20hs",
       "capitulos": 139,
       "fecha_estreno": "27/05/2002",
-      "sinopsis": "Cuatro adolescentes de clases sociales opuestas (Mía, Marizza, Pablo y Manuel) conviven en el exclusivo internado Elite Way School. A pesar de sus diferencias y conflictos familiares, forman la banda musical Erreway, enfrentando la rigidez escolar y el acoso de \"La Logia\". ",
+      "juveniles_rows": [
+        "hits-2000",
+        "cris-morena"
+      ],
+      "sinopsis": "Cuatro adolescentes de clases sociales opuestas —Mía, Marizza, Pablo y Manuel— conviven en el exclusivo internado Elite Way School. A pesar de sus diferencias y conflictos familiares, forman la banda musical Erreway mientras enfrentan la rigidez escolar y el acoso de La Logia.",
       "rating": "14",
       "productora": "Cris Morena Group / RGB Entertainment",
       "tipo_emision": "Tira Diaria",
@@ -14758,10 +14788,11 @@
     {
       "id": "V149",
       "title": "Chiquititas - 2000",
+      "juveniles_row_title": "Chiquititas",
+      "type": "serie",
       "year": "2000",
       "channel": "Telefe",
       "genre": "Juvenil",
-      "type": "serie",
       "actors": [
         "Romina Gaetani",
         "Iván Espeche",
@@ -14772,8 +14803,11 @@
       "subtitle": "Juvenil",
       "horario": "18hs",
       "capitulos": 144,
-      "fecha_estreno": "2000-05-02",
-      "sinopsis": "Tras escapar del Hogar de las Sombras, los Chufos descubren una misteriosa mansión que creen ser el verdadero Rincón de Luz, pero allí se enfrentan a apariciones fantasmales y una persecución policial. Con la ayuda de Luz, una fugitiva, descubren secretos ocultos y se enfrentan a una nueva amenaza cuando una mujer llega afirmando heredar la casa.",
+      "fecha_estreno": "02/05/2000",
+      "juveniles_rows": [
+        "cris-morena"
+      ],
+      "sinopsis": "Tras escapar del Hogar de las Sombras, los Chufos descubren una misteriosa mansión que creen ser el verdadero Rincón de Luz, pero allí se enfrentan a apariciones fantasmales y una persecución policial. Con la ayuda de Luz, una fugitiva, descubren secretos ocultos y enfrentan una nueva amenaza cuando una mujer llega afirmando haber heredado la casa.",
       "seasons": 1,
       "season_number": 6,
       "franchise": {
@@ -14783,6 +14817,7 @@
       "franchise_role": "temporada",
       "rating": "-",
       "productora": "Telefe Contenidos",
+      "tipo_emision": "Tira Diaria",
       "remakes": [
         {
           "title": "Chiquititas",
@@ -14802,8 +14837,7 @@
           "year": "2007",
           "image": "images/verticals/chiquititas-portugal-2007.png"
         }
-      ],
-      "tipo_emision": "Tira Diaria"
+      ]
     },
     {
       "id": "V150",
