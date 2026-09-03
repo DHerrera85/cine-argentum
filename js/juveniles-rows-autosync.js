@@ -1,7 +1,7 @@
 (function () {
     'use strict';
 
-    var dataVersion = '20260903-1';
+    var dataVersion = '20260903-3';
     var targetYear = 2026;
 
     var verticalItemClasses = [
@@ -630,14 +630,33 @@
                         ]
                     }
                 );
-            }
+
+                renderChannelVerticalRow(
+                    items,
+                    {
+                        containerId:
+                            'juveniles-nickelodeon-list',
+
+                        channels: [
+                            'Nickelodeon'
+                        ]
+                    }
+                );
+            })
+            .catch(function (error) {
+                console.error(
+                    'No se pudieron cargar las filas juveniles:',
+                    error
+                );
+            });
+    }
 
     if (document.readyState === 'loading') {
-            document.addEventListener(
-                'DOMContentLoaded',
-                loadJuvenilesRows
-            );
-        } else {
-            loadJuvenilesRows();
-        }
-    }) ();
+        document.addEventListener(
+            'DOMContentLoaded',
+            loadJuvenilesRows
+        );
+    } else {
+        loadJuvenilesRows();
+    }
+})();
