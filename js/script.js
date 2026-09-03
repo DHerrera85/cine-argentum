@@ -382,8 +382,23 @@
             // render verticals into ALL .slider-v if empty, except custom rows
             $('.slider-v').each(function () {
               var $c = $(this);
-              if ($c.data('streamingRow')) return;
-              if ($c.length && $c.children().length === 0) renderVerticalItems($c, genericVerticalItems);
+
+              if (
+                $c.data('streamingRow') ||
+                $c.data('skipAuto')
+              ) {
+                return;
+              }
+
+              if (
+                $c.length &&
+                $c.children().length === 0
+              ) {
+                renderVerticalItems(
+                  $c,
+                  genericVerticalItems
+                );
+              }
             });
 
             $('.slider-v[data-streaming-row="ficciones_verticales"]').each(function () {
@@ -481,7 +496,7 @@
       });
 
       // VERTICALES (genéricos - NO Top 10)
-      $('.slider-v:not(.top10):not([data-streaming-row]):not([data-cartelera-list])').lightSlider({
+      $('.slider-v:not(.top10):not([data-streaming-row]):not([data-cartelera-list]):not([data-skip-auto])').lightSlider({
         item: 5,
         slideMove: 1,
         slideMargin: 12,
