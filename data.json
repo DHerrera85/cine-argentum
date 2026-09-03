@@ -35,6 +35,11 @@
       "year": "2000",
       "channel": "Telefe",
       "genre": "Juvenil",
+      "type": "serie",
+      "horizontal_image": "",
+      "juveniles_rows": [
+        "hits-2000"
+      ],
       "actors": [
         "Marcela Kloosterboer",
         "Celeste Cid",
@@ -7688,7 +7693,11 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/1998-veranodel98-temporada1-1998-telefe-poster280x420.png",
-      "horizontal_image": "images/horizontals-1024x576/1998-veranodel98-temporada1-1998-telefe-poster1024X576.png",
+      "type": "serie",
+      "horizontal_image": "images/horizontals-1024x576/verano-del-98-slide-1024x576.png",
+      "juveniles_rows": [
+        "hits-2000"
+      ],
       "subtitle": "Temporada 1",
       "horario": "21:00hs",
       "capitulos": 205,
@@ -7735,6 +7744,11 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/1998-veranodel98-temporada2-1999-poster280x420.png",
+      "type": "serie",
+      "horizontal_image": "",
+      "juveniles_rows": [
+        "hits-2000"
+      ],
       "subtitle": "Temporada 2",
       "horario": "21:00hs, 22:00hs",
       "capitulos": 244,
@@ -14440,6 +14454,11 @@
       "year": "2007",
       "channel": "Telefe",
       "genre": "Juvenil",
+      "type": "serie",
+      "horizontal_image": "images/horizontals-1024x576/casi-angeles-slide-1024x576.png",
+      "juveniles_rows": [
+        "hits-2000"
+      ],
       "actors": [
         "Nicolás Vázquez",
         "Emilia Attias",
@@ -14498,8 +14517,13 @@
       "id": "V144",
       "title": "Chiquititas - 2006",
       "year": "2006",
+      "type": "serie",
       "channel": "Telefe",
       "genre": "Juvenil",
+      "horizontal_image": "images/horizontals-1024x576/chiquititas-slide-1024x576.png",
+      "juveniles_rows": [
+        "hits-2000"
+      ],
       "actors": [
         "Jorgelina Aruzzi",
         "Gastón Ricaud",
@@ -14537,6 +14561,11 @@
       "year": "2004",
       "channel": "Canal 13",
       "genre": "Juvenil",
+      "type": "serie",
+      "horizontal_image": "images/horizontals-1024x576/floricienta-slide-1024x576.png",
+      "juveniles_rows": [
+        "hits-2000"
+      ],
       "actors": [
         "Florencia Bertotti",
         "Juan Gil Navarro",
@@ -14619,6 +14648,11 @@
       "year": "2002",
       "channel": "Canal 9/Azul TV",
       "genre": "Juvenil",
+      "type": "serie",
+      "horizontal_image": "images/horizontals-1024x576/rebelde-way-slide-1024x576.png",
+      "juveniles_rows": [
+        "hits-2000"
+      ],
       "actors": [
         "Luisana Lopilato",
         "Felipe Colombo",
@@ -14727,6 +14761,7 @@
       "year": "2000",
       "channel": "Telefe",
       "genre": "Juvenil",
+      "type": "serie",
       "actors": [
         "Romina Gaetani",
         "Iván Espeche",
@@ -14734,7 +14769,6 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/2000-chiquititas-poster280x420-v2.png",
-      "horizontal_image": "",
       "subtitle": "Juvenil",
       "horario": "18hs",
       "capitulos": 144,
@@ -14894,6 +14928,11 @@
       "year": "2007",
       "channel": "Canal 13",
       "genre": "Juvenil",
+      "type": "serie",
+      "horizontal_image": "images/horizontals-1024x576/patito-feo-slide-1024x576.png",
+      "juveniles_rows": [
+        "hits-2000"
+      ],
       "actors": [
         "Juan Darthés",
         "Griselda Siciliani",

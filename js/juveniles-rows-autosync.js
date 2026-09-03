@@ -1,7 +1,7 @@
 (function () {
     'use strict';
 
-    var dataVersion = '20260903-3';
+    var dataVersion = '20260903-4';
     var targetYear = 2026;
 
     var verticalItemClasses = [
@@ -206,8 +206,10 @@
 
     function buildCard(entry) {
         var item = entry.item;
-        var title = item.title || 'Sin título';
-
+        var title =
+            item.juveniles_row_title ||
+            item.title ||
+            'Sin título';
         return (
             '<li class="item-f">' +
             '<a href="show.html?id=' +
@@ -614,8 +616,8 @@
 
                 renderCuratedHorizontalRow(
                     items,
-                    'juveniles-hits-2010-list',
-                    'hits-2010'
+                    'juveniles-hits-2000-list',
+                    'hits-2000'
                 );
 
                 renderChannelVerticalRow(
