@@ -1,7 +1,7 @@
 (function () {
     'use strict';
 
-    var dataVersion = '20260904-1';
+    var dataVersion = '20260904-2';
     var targetYear = 2026;
 
     var verticalItemClasses = [
@@ -107,16 +107,9 @@
     }
 
     function isStreamingProduction(item) {
-        var values = [];
-
-        if (item.channel) values.push(item.channel);
-        if (item.platform) values.push(item.platform);
-
-        if (Array.isArray(item.platforms)) {
-            values = values.concat(item.platforms);
-        }
-
-        var text = normalizeText(values.join(' '));
+        var text = normalizeText(
+            getDistributionValues(item).join(' ')
+        );
 
         return (
             text.indexOf('streaming') !== -1 ||
@@ -411,8 +404,16 @@
             values.push(item.channel);
         }
 
+        if (item.platform) {
+            values.push(item.platform);
+        }
+
         if (Array.isArray(item.channels)) {
             values = values.concat(item.channels);
+        }
+
+        if (Array.isArray(item.platforms)) {
+            values = values.concat(item.platforms);
         }
 
         if (Array.isArray(item.air_channels)) {
@@ -599,6 +600,131 @@
         initializeVerticalSlider(list);
     }
 
+    function belongsToPreviousEditorialRow(item) {
+        var previousVerticalRows = [
+            'cris-morena',
+            'pol-ka'
+        ];
+
+        var previousHorizontalRows = [
+            'hits-2010',
+            'hits-2000'
+        ];
+
+        var belongsToVerticalRow =
+            previousVerticalRows.some(function (rowKey) {
+                return belongsToJuvenilesRow(item, rowKey);
+            });
+
+        var belongsToRenderedHorizontalRow =
+            previousHorizontalRows.some(function (rowKey) {
+                if (!belongsToJuvenilesRow(item, rowKey)) {
+                    return false;
+                }
+
+                var release = getLatestRelease(item);
+
+                return Boolean(
+                    release &&
+                    (
+                        item.horizontal_image ||
+                        release.horizontalImage
+                    )
+                );
+            });
+
+        return (
+            belongsToVerticalRow ||
+            belongsToRenderedHorizontalRow
+        );
+    }
+
+    function wasShownBeforeResidualRows(item) {
+        return (
+            isStreamingProduction(item) ||
+            hasAnyChannel(
+                item,
+                [
+                    'Disney Channel',
+                    'Disney XD',
+                    'Nickelodeon'
+                ]
+            ) ||
+            belongsToPreviousEditorialRow(item)
+        );
+    }
+
+    function matchesResidualGenre(item, genreKey) {
+        var genre = normalizeText(
+            item && (item.genre || item.subtitle)
+        );
+
+        /*
+         * Si una producción estuviera clasificada simultáneamente
+         * como juvenil e infantil, se prioriza la fila Infantil
+         * para evitar duplicados.
+         */
+        if (genreKey === 'infantil') {
+            return genre.indexOf('infantil') !== -1;
+        }
+
+        return (
+            genre.indexOf('juvenil') !== -1 &&
+            genre.indexOf('infantil') === -1
+        );
+    }
+
+    function renderResidualPeriodRow(
+        items,
+        containerId,
+        genreKey
+    ) {
+        var list = document.getElementById(containerId);
+
+        if (!list) return;
+
+        var entries = items
+            .filter(function (item) {
+                var year = Number(item && item.year);
+
+                return (
+                    item &&
+                    item.id &&
+                    isSeries(item) &&
+                    Number.isFinite(year) &&
+                    year >= 2000 &&
+                    year <= 2019 &&
+                    matchesResidualGenre(item, genreKey) &&
+                    !wasShownBeforeResidualRows(item)
+                );
+            })
+            .map(function (item) {
+                return {
+                    item: item,
+                    timestamp:
+                        getPrimaryReleaseTimestamp(item)
+                };
+            })
+            .sort(function (a, b) {
+                if (a.timestamp !== b.timestamp) {
+                    return b.timestamp - a.timestamp;
+                }
+
+                return String(a.item.title || '')
+                    .localeCompare(
+                        String(b.item.title || ''),
+                        'es',
+                        { sensitivity: 'base' }
+                    );
+            });
+
+        list.innerHTML = entries
+            .map(buildVerticalCard)
+            .join('');
+
+        initializeVerticalSlider(list);
+    }
+
     function renderChannelVerticalRow(items, options) {
         var list = document.getElementById(
             options.containerId
@@ -688,6 +814,18 @@
                     items,
                     'juveniles-polka-list',
                     'pol-ka'
+                );
+
+                renderResidualPeriodRow(
+                    items,
+                    'juveniles-2000-2019-list',
+                    'juvenil'
+                );
+
+                renderResidualPeriodRow(
+                    items,
+                    'infantiles-2000-2019-list',
+                    'infantil'
                 );
 
                 renderChannelVerticalRow(
