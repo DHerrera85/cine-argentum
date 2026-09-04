@@ -14533,6 +14533,14 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/alma-pirata-primera temporada-poster-280x420.png",
+      "horizontal_gallery": [
+        {
+          "image": "images/horizontals-1024x576/2006-alma-pirata-telefe-slide-1024x576-v1.webp"
+        },
+        {
+          "image": "images/horizontals-1024x576/2006-alma-pirata-telefe-slide-1024x576-v2.webp"
+        }
+      ],
       "temporadas": [
         {
           "numero": 1,

@@ -583,45 +583,118 @@
           return v !== undefined && v !== null && String(v).trim() !== '' && String(v).trim() !== '-';
         }
 
-        /*
-         * Banner horizontal opcional.
-         * Se muestra únicamente cuando el registro posee horizontal_image.
-         */
         var heroSection = '';
         var heroImages = [];
 
-        if (Array.isArray(item.temporadas)) {
-          item.temporadas.forEach(function (season, index) {
-            if (!season || !hasValue(season.horizontal_image)) return;
+        /*
+         * Galería horizontal editorial.
+         * Tiene prioridad sobre las imágenes de temporadas
+         * y permite imágenes sin epígrafe visible.
+         */
+        if (Array.isArray(item.horizontal_gallery)) {
+          item.horizontal_gallery.forEach(function (galleryItem) {
+            var imagePath = '';
+
+            if (typeof galleryItem === 'string') {
+              imagePath = galleryItem;
+            } else if (
+              galleryItem &&
+              typeof galleryItem === 'object' &&
+              hasValue(galleryItem.image)
+            ) {
+              imagePath = galleryItem.image;
+            }
+
+            if (!hasValue(imagePath)) return;
 
             heroImages.push({
-              src: String(season.horizontal_image).trim().replace(/ /g, '%20'),
-              label: 'Temporada ' + getSeasonIndex(season, index)
+              src: String(imagePath).trim().replace(/ /g, '%20'),
+              label:
+                galleryItem &&
+                  typeof galleryItem === 'object' &&
+                  hasValue(galleryItem.label)
+                  ? String(galleryItem.label).trim()
+                  : ''
             });
           });
         }
 
         /*
-         * Compatibilidad con las fichas que solamente tienen
+         * Si no existe una galería editorial, utiliza las
+         * imágenes horizontales correspondientes a temporadas.
+         */
+        if (
+          !heroImages.length &&
+          Array.isArray(item.temporadas)
+        ) {
+          item.temporadas.forEach(function (season, index) {
+            if (
+              !season ||
+              !hasValue(season.horizontal_image)
+            ) {
+              return;
+            }
+
+            heroImages.push({
+              src: String(season.horizontal_image)
+                .trim()
+                .replace(/ /g, '%20'),
+
+              label:
+                'Temporada ' +
+                getSeasonIndex(season, index)
+            });
+          });
+        }
+
+        /*
+         * Compatibilidad con fichas que solamente poseen
          * una imagen horizontal general.
          */
-        if (!heroImages.length && hasValue(item.horizontal_image)) {
+        if (
+          !heroImages.length &&
+          hasValue(item.horizontal_image)
+        ) {
           heroImages.push({
-            src: String(item.horizontal_image).trim().replace(/ /g, '%20'),
-            label: item.title || 'Imagen horizontal'
+            src: String(item.horizontal_image)
+              .trim()
+              .replace(/ /g, '%20'),
+
+            label: ''
           });
         }
 
         if (heroImages.length) {
-          var heroSlides = heroImages.map(function (hero) {
-            return '<figure class="detail-hero-slide">' +
-              '<img src="' + hero.src + '" alt="' +
-              (item.title || 'Imagen horizontal') + ' - ' + hero.label + '">' +
-              '<figcaption class="detail-hero-caption">' +
-              hero.label +
-              '</figcaption>' +
-              '</figure>';
-          }).join('');
+          var heroSlides = heroImages
+            .map(function (hero, index) {
+              var alternativeText =
+                item.title || 'Imagen horizontal';
+
+              if (hasValue(hero.label)) {
+                alternativeText += ' - ' + hero.label;
+              } else if (heroImages.length > 1) {
+                alternativeText +=
+                  ' - imagen ' + (index + 1);
+              }
+
+              var caption = hasValue(hero.label)
+                ? '<figcaption class="detail-hero-caption">' +
+                hero.label +
+                '</figcaption>'
+                : '';
+
+              return (
+                '<figure class="detail-hero-slide">' +
+                '<img src="' +
+                hero.src +
+                '" alt="' +
+                alternativeText +
+                '">' +
+                caption +
+                '</figure>'
+              );
+            })
+            .join('');
 
           var multipleHeroes = heroImages.length > 1;
 
