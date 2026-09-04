@@ -456,59 +456,61 @@
   outline-offset: -2px;
 }
 
+/* Corrección óptica: misma presencia visual para todos los logos */
+
 .partner-netflix {
   --partner-accent: 229, 9, 20;
-  --partner-logo-scale: 1.45;
+  --partner-logo-scale: 2.10;
 }
 
 .partner-disney {
   --partner-accent: 71, 105, 220;
-  --partner-logo-scale: 1.55;
+  --partner-logo-scale: 1.48;
 }
 
 .partner-prime {
   --partner-accent: 0, 150, 210;
-  --partner-logo-scale: 1.18;
+  --partner-logo-scale: 1;
 }
 
 .partner-flow {
   --partner-accent: 0, 190, 220;
-  --partner-logo-scale: 1.55;
+  --partner-logo-scale: 2.45;
 }
 
 .partner-hbo {
   --partner-accent: 125, 75, 215;
-  --partner-logo-scale: 0.86;
+  --partner-logo-scale: 0.82;
 }
 
 .partner-disney-channel {
   --partner-accent: 35, 116, 205;
-  --partner-logo-scale: 1.35;
+  --partner-logo-scale: 1.10;
 }
 
 .partner-nickelodeon {
   --partner-accent: 255, 103, 31;
-  --partner-logo-scale: 1.45;
+  --partner-logo-scale: 2;
 }
 
 .partner-telefe {
   --partner-accent: 31, 174, 190;
-  --partner-logo-scale: 1.40;
+  --partner-logo-scale: 1.90;
 }
 
 .partner-canal13 {
   --partner-accent: 245, 145, 45;
-  --partner-logo-scale: 1.30;
+  --partner-logo-scale: 1.95;
 }
 
 .partner-cris-morena {
   --partner-accent: 229, 123, 155;
-  --partner-logo-scale: 1.05;
+  --partner-logo-scale: 1;
 }
 
 .partner-polka {
   --partner-accent: 122, 86, 151;
-  --partner-logo-scale: 1.10;
+  --partner-logo-scale: 1.05;
 }
 
 .partner-without-page {
@@ -549,14 +551,4 @@
     right: 14%;
     height: 2px;
   }
-}
-
-.partner-disney-channel {
-  --partner-accent: 35, 116, 205;
-  --partner-logo-scale: 1.08;
-}
-
-.partner-nickelodeon {
-  --partner-accent: 255, 103, 31;
-  --partner-logo-scale: 1.15;
 }
