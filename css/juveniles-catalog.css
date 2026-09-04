@@ -347,13 +347,18 @@
   overflow: hidden;
   box-sizing: border-box;
 
-  border: 0;
-  border-radius: 14px;
-  background: rgba(255, 255, 255, 0.28);
-  box-shadow: none;
+  border: 1px solid rgba(82, 91, 132, 0.18);
+
+  background:
+    linear-gradient(135deg,
+      rgba(203, 216, 232, 0.94),
+      rgba(218, 207, 229, 0.92));
+
+  box-shadow: 0 5px 16px rgba(72, 78, 120, 0.10);
 
   transition:
     background-color 0.25s ease,
+    border-color 0.25s ease,
     box-shadow 0.25s ease;
 }
 
@@ -399,12 +404,12 @@
 
   display: block;
   width: auto;
-  max-width: 145px;
+  max-width: 150px;
   height: 52px;
   object-fit: contain;
 
-  opacity: 0.68;
-  filter: grayscale(0.75);
+  opacity: 1;
+  filter: drop-shadow(0 2px 3px rgba(48, 65, 88, 0.18));
   transform: scale(var(--partner-logo-scale));
 
   transition:
@@ -436,9 +441,14 @@
 .juveniles-partner-tab:focus-visible .juveniles-partner-logo,
 .juveniles-partner-tab.is-active .juveniles-partner-logo {
   opacity: 1;
-  filter: none;
+  filter: drop-shadow(0 3px 4px rgba(48, 65, 88, 0.22));
   transform:
     scale(var(--partner-logo-scale)) translateY(-1px);
+}
+
+.partner-disney {
+  --partner-accent: 71, 105, 220;
+  --partner-logo-scale: 1.42;
 }
 
 .juveniles-partner-tab:focus-visible {
@@ -487,7 +497,7 @@
 }
 
 .partner-polka {
-  --partner-accent: 63, 169, 155;
+  --partner-accent: 122, 86, 151;
   --partner-logo-scale: 1.05;
 }
 
