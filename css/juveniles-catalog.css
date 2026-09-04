@@ -420,8 +420,13 @@
 
 .juveniles-partner-tab:hover,
 .juveniles-partner-tab:focus-visible {
-  background: rgba(255, 255, 255, 0.5);
-  box-shadow: 0 8px 22px rgba(84, 91, 140, 0.08);
+  background:
+    linear-gradient(135deg,
+      rgba(190, 204, 223, 0.98),
+      rgba(207, 195, 224, 0.96));
+
+  border-color: rgba(var(--partner-accent), 0.30);
+  box-shadow: 0 8px 22px rgba(72, 78, 120, 0.14);
 }
 
 .juveniles-partner-tab:hover::before,
@@ -449,19 +454,18 @@
 .partner-disney .juveniles-partner-logo,
 .partner-disney:hover .juveniles-partner-logo,
 .partner-disney:focus-visible .juveniles-partner-logo,
+.partner-disney.is-active .juveniles-partner-logo,
 .partner-telefe .juveniles-partner-logo,
 .partner-telefe:hover .juveniles-partner-logo,
 .partner-telefe:focus-visible .juveniles-partner-logo,
+.partner-telefe.is-active .juveniles-partner-logo,
 .partner-polka .juveniles-partner-logo,
 .partner-polka:hover .juveniles-partner-logo,
-.partner-polka:focus-visible .juveniles-partner-logo {
+.partner-polka:focus-visible .juveniles-partner-logo,
+.partner-polka.is-active .juveniles-partner-logo {
   filter:
-    drop-shadow(0 1px 1px rgba(40, 50, 79, 0.72)) drop-shadow(0 0 2px rgba(40, 50, 79, 0.34));
-}
-
-.partner-disney {
-  --partner-accent: 71, 105, 220;
-  --partner-logo-scale: 1.42;
+    drop-shadow(0 1px 0 rgba(37, 46, 73, 0.88))
+    drop-shadow(0 0 3px rgba(37, 46, 73, 0.48));
 }
 
 .juveniles-partner-tab:focus-visible {
