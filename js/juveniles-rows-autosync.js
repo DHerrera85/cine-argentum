@@ -1,7 +1,7 @@
 (function () {
     'use strict';
 
-    var dataVersion = '20260903-6';
+    var dataVersion = '20260904-1';
     var targetYear = 2026;
 
     var verticalItemClasses = [
@@ -682,6 +682,12 @@
                     items,
                     'juveniles-cris-morena-list',
                     'cris-morena'
+                );
+
+                renderCuratedVerticalRow(
+                    items,
+                    'juveniles-polka-list',
+                    'pol-ka'
                 );
 
                 renderChannelVerticalRow(

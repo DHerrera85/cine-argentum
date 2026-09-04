@@ -11409,6 +11409,9 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/buenos-chicos-poster-280x420.png",
+      "juveniles_rows": [
+        "pol-ka"
+      ],
       "subtitle": "Thriller"
     },
     {
@@ -12155,6 +12158,9 @@
       "sinopsis": "Julia, una joven fugitiva, se refugia en un convento haciéndose pasar por novicia bajo el nombre de Esperanza. Allí vive un amor prohibido con Tomás, un sacerdote que debate entre su fe y sus sentimientos.",
       "rating": "14",
       "productora": "Pol-Ka",
+      "juveniles_rows": [
+        "pol-ka"
+      ],
       "fecha_estreno": "06/04/2015",
       "tipo_emision": "Tira Diaria"
     },
@@ -12203,6 +12209,9 @@
       "fecha_estreno": "22/1/2018",
       "sinopsis": "Simona, una joven que sueña con triunfar en la música, trabaja en la casa de los Guerrico mientras se enamora de los hermanos Dante y Romeo. Al mismo tiempo, se reencuentra con su madre biológica, que intenta recuperar el vínculo tras salir de prisión.",
       "rating": "9,2",
+      "juveniles_rows": [
+        "pol-ka"
+      ],
       "productora": "Pol-Ka",
       "tipo_emision": "Tira Diaria"
     },
@@ -13279,6 +13288,9 @@
       "fecha_estreno": "02/02/2004",
       "sinopsis": "Un grupo de jóvenes convive en la pensión “La Argentina”, un espacio marcado por romances, desencuentros y nuevas oportunidades. Bajo la tutela de Tony y su familia, la vida cotidiana se transforma en un cruce constante de amor, pérdida y redescubrimiento.",
       "rating": "12,2",
+      "juveniles_rows": [
+        "pol-ka"
+      ],
       "productora": "Pol-Ka",
       "tipo_emision": "Tira Diaria"
     },
@@ -13954,6 +13966,9 @@
       "sinopsis": "La brigada secreta, debilitada tras la muerte de sus líderes, enfrenta la amenaza de Dreyfus y nuevos enemigos. Mientras tanto, sus agentes deben aprender a controlar sus poderes mutados para sobrevivir.",
       "rating": "4,5",
       "productora": "Pol-Ka",
+      "juveniles_rows": [
+        "pol-ka"
+      ],
       "tipo_emision": "Tira Diaria"
     },
     {
@@ -13973,6 +13988,9 @@
       "horario": "19hs, 18hs",
       "capitulos": 136,
       "fecha_estreno": "12/05/2009",
+      "juveniles_rows": [
+        "pol-ka"
+      ],
       "sinopsis": "Asaí es una joven criada por monos en la selva que regresa a la civilización, enfrentando intrigas familiares y el amor de un profesor. ",
       "rating": "9",
       "productora": "Pol-Ka",
@@ -13995,6 +14013,9 @@
       "horario": "18hs",
       "capitulos": 153,
       "fecha_estreno": "7/6/2005",
+      "juveniles_rows": [
+        "pol-ka"
+      ],
       "sinopsis": "Vida Juárez es una docente de lengua y literatura que llega a una escuela secundaria pública para cubrir una suplencia y se convierte en mentora de sus alumnos.",
       "rating": "-",
       "productora": "Pol-Ka",
@@ -14019,6 +14040,9 @@
       "image": "images/verticals/calientes-poster-280x420.png",
       "subtitle": "Juvenil",
       "horario": "21hs, 19hs",
+      "juveniles_rows": [
+        "pol-ka"
+      ],
       "capitulos": 87,
       "fecha_estreno": "3/1/2000",
       "sinopsis": "Dueños y empleados de tres locales gastronómicos conviven en armonía hasta que la llegada de dos inversores rompe el equilibrio. La comida, la amistad y el barrio se transforman en una competencia feroz.",
@@ -14862,6 +14886,9 @@
       "sinopsis": "Divina es una joven criada en la calle cuida a un grupo de chicos abandonados con quienes vive en un barrio humilde. Cuando una asistente social intenta llevarlos a un orfanato, hará todo lo posible por mantenerlos unidos.",
       "rating": "6,5",
       "productora": "Pol-Ka/Televisa",
+      "juveniles_rows": [
+        "pol-ka"
+      ],
       "tipo_emision": "Tira Diaria"
     },
     {
