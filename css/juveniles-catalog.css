@@ -446,6 +446,19 @@
     scale(var(--partner-logo-scale)) translateY(-1px);
 }
 
+.partner-disney .juveniles-partner-logo,
+.partner-disney:hover .juveniles-partner-logo,
+.partner-disney:focus-visible .juveniles-partner-logo,
+.partner-telefe .juveniles-partner-logo,
+.partner-telefe:hover .juveniles-partner-logo,
+.partner-telefe:focus-visible .juveniles-partner-logo,
+.partner-polka .juveniles-partner-logo,
+.partner-polka:hover .juveniles-partner-logo,
+.partner-polka:focus-visible .juveniles-partner-logo {
+  filter:
+    drop-shadow(0 1px 1px rgba(40, 50, 79, 0.72)) drop-shadow(0 0 2px rgba(40, 50, 79, 0.34));
+}
+
 .partner-disney {
   --partner-accent: 71, 105, 220;
   --partner-logo-scale: 1.42;
