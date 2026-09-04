@@ -14973,7 +14973,17 @@
         "Elías Viñoles"
       ],
       "orientation": "vertical",
-      "image": "images/verticals/atraccion-x-4-poster-280x420.png",
+      "image": "images/verticals/2008-atraccion-x-4-canal13-poster280x420.webp",
+      "poster_gallery": [
+        {
+          "image": "images/verticals/2008-atraccion-x-4-canal13-poster280x420.webp",
+          "label": "Póster principal"
+        },
+        {
+          "image": "images/verticals/atraccion-x-4-poster-280x420.png",
+          "label": "Póster alternativo"
+        }
+      ],
       "subtitle": "Juvenil",
       "horario": "19hs",
       "capitulos": "120",
