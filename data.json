@@ -5378,6 +5378,11 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/sos-mi-vida-poster-280x420.png",
+      "horizontal_image": "images/horizontals-1024x576/sos-mi-vida-slide-1024x576.png",
+      "tiras_2000_rows": [
+        "comedias-exitosas",
+        "comedias-estelares"
+      ],
       "subtitle": "Comedia",
       "horario": "21:45hs",
       "capitulos": 231,
@@ -5419,6 +5424,11 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/lalola-poster-280x420.png",
+      "horizontal_image": "images/horizontals-1024x576/lalola-slide-1024x576.png",
+      "tiras_2000_rows": [
+        "comedias-exitosas",
+        "comedias-estelares"
+      ],
       "subtitle": "Comedia",
       "horario": "22hs",
       "capitulos": 150,
@@ -5502,6 +5512,10 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/los-exitosos-pells-poster-280x420.png",
+      "horizontal_image": "images/horizontals-1024x576/los-exitosos-pells-slide-1024x576.png",
+      "tiras_2000_rows": [
+        "comedias-exitosas"
+      ],
       "subtitle": "Comedia",
       "horario": "22:30hs",
       "capitulos": 134,
@@ -5662,6 +5676,11 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/son-de-fierro-poster-280x420.png",
+      "horizontal_image": "images/horizontals-1024x576/son-de-fierro-slide-1024x576.png",
+      "tiras_2000_rows": [
+        "comedias-exitosas",
+        "comedias-estelares"
+      ],
       "subtitle": "Telenovela",
       "horario": "21hs",
       "capitulos": "252",
@@ -11506,6 +11525,10 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/casados-con-hijos-poster-280x420.png",
+      "horizontal_image": "images/horizontals-1024x576/casados-con-hijos-slide-1024x576.png",
+      "tiras_2000_rows": [
+        "comedias-exitosas"
+      ],
       "subtitle": "Sitcom",
       "horario": "22:30hs",
       "capitulos": 212,
@@ -12078,6 +12101,11 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/los-roldan-poster-280x-420.png",
+      "horizontal_image": "images/horizontals-1024x576/los-roldan-slide-1024x576.png",
+      "tiras_2000_rows": [
+        "comedias-exitosas",
+        "comedias-estelares"
+      ],
       "subtitle": "Comedia",
       "horario": "21hs",
       "capitulos": 218,
@@ -13236,6 +13264,9 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/ilusiones-poster-280x420.png",
+      "tiras_2000_rows": [
+        "comedias-estelares"
+      ],
       "subtitle": "Comedia",
       "horario": "22hs",
       "capitulos": 138,
@@ -13257,6 +13288,9 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/el-sodero-de-mi-vida-poster-280x420.png",
+      "tiras_2000_rows": [
+        "comedias-estelares"
+      ],
       "subtitle": "Comedia",
       "horario": "21hs",
       "capitulos": 231,
@@ -13287,6 +13321,9 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/ph-propiedad-horizontal-poster-280x420.png",
+      "tiras_2000_rows": [
+        "comedias-estelares"
+      ],
       "subtitle": "Telenovela",
       "horario": "22hs, 21hs",
       "capitulos": 122,
@@ -13377,6 +13414,9 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/maridos-a-domicilio-poster-280x420.png",
+      "tiras_2000_rows": [
+        "comedias-estelares"
+      ],
       "subtitle": "Comedia",
       "horario": "22hs",
       "capitulos": 52,
@@ -13424,6 +13464,9 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/costumbres-argentinas-poster-280x420.png",
+      "tiras_2000_rows": [
+        "comedias-estelares"
+      ],
       "subtitle": "Comedia",
       "horario": "21hs",
       "capitulos": 264,
@@ -13458,6 +13501,9 @@
       "rating": "12,2",
       "juveniles_rows": [
         "pol-ka"
+      ],
+      "tiras_2000_rows": [
+        "comedias-estelares"
       ],
       "productora": "Pol-Ka",
       "tipo_emision": "Tira Diaria"
@@ -13498,6 +13544,9 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/los-secretos-de-papa-poster-280x420.png",
+      "tiras_2000_rows": [
+        "comedias-estelares"
+      ],
       "subtitle": "Comedia",
       "horario": "21hs",
       "capitulos": "150",
@@ -13543,6 +13592,9 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/gladiadores-de-pompeya-poster-280x420.png",
+      "tiras_2000_rows": [
+        "comedias-estelares"
+      ],
       "subtitle": "Comedia",
       "horario": "21hs",
       "capitulos": "24",
@@ -14979,6 +15031,9 @@
       "orientation": "vertical",
       "image": "images/verticals/1999-campeones-de-la-vida-canal13-poster280x420.webp",
       "horizontal_image": "images/horizontals-1024x576/1999-campeones-de-la-vida-canal13-slide-1024x576.webp",
+      "tiras_2000_rows": [
+        "comedias-estelares"
+      ],
       "subtitle": "Telenovela",
       "horario": "22hs, 21hs",
       "capitulos": 247,
@@ -19156,6 +19211,9 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/sin-codigo-2-poster-280x420.png",
+      "tiras_2000_rows": [
+        "comedias-estelares"
+      ],
       "subtitle": "Comedia",
       "horario": "21hs",
       "capitulos": 90,
@@ -19183,6 +19241,11 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/son-amores-poster-280x420.png",
+      "horizontal_image": "images/horizontals-1024x576/son-amores-slide-1024x576.png",
+      "tiras_2000_rows": [
+        "comedias-exitosas",
+        "comedias-estelares"
+      ],
       "subtitle": "Comedia",
       "horario": "21hs",
       "capitulos": 245,
@@ -19227,6 +19290,11 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/por-amor-a-vos-poster-280x420.png",
+      "horizontal_image": "images/horizontals-1024x576/por-amor-a-vos-slide-1024x576.png",
+      "tiras_2000_rows": [
+        "comedias-exitosas",
+        "comedias-estelares"
+      ],
       "subtitle": "Comedia",
       "horario": "21:45hs",
       "capitulos": 251,
@@ -19772,6 +19840,9 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/una-familia-especial-poster-280x420px.png",
+      "tiras_2000_rows": [
+        "comedias-estelares"
+      ],
       "subtitle": "Comedia",
       "horario": "21hs",
       "capitulos": 82,
