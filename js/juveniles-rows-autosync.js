@@ -1,7 +1,7 @@
 (function () {
     'use strict';
 
-    var dataVersion = '20260904-2';
+    var dataVersion = '20260905-1';
     var targetYear = 2026;
 
     var verticalItemClasses = [
@@ -603,7 +603,8 @@
     function belongsToPreviousEditorialRow(item) {
         var previousVerticalRows = [
             'cris-morena',
-            'pol-ka'
+            'pol-ka',
+            'webseries'
         ];
 
         var previousHorizontalRows = [
@@ -814,6 +815,12 @@
                     items,
                     'juveniles-polka-list',
                     'pol-ka'
+                );
+
+                renderCuratedVerticalRow(
+                    items,
+                    'juveniles-webseries-list',
+                    'webseries'
                 );
 
                 renderResidualPeriodRow(

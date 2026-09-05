@@ -6765,6 +6765,107 @@
       "subtitle": "Infantil"
     },
     {
+      "id": "P2064",
+      "title": "Atrapados",
+      "type": "serie",
+      "year": "2011",
+      "channel": "Yups",
+      "genre": "Juvenil",
+      "actors": [
+        "Benjamín Rojas",
+        "Felipe Colombo",
+        "Nelson Giménez",
+        "Sofía Reca",
+        "Dolores Sarmiento",
+        "Calu Rivero",
+        "Jaime Domínguez",
+        "Diego Mesaglio",
+        "Gabriel Almirón"
+      ],
+      "orientation": "vertical",
+      "image": "images/verticals/2011-atrapados-poster280x420.webp",
+      "subtitle": "Webserie juvenil",
+      "capitulos": 81,
+      "horario": "lunes, miércoles y viernes",
+      "sinopsis": "Gonzalo lidera una banda de rock junto a sus amigos, con quienes sueña con alcanzar el éxito, mientras sus relaciones amorosas, ambiciones y conflictos comienzan a entrelazar sus destinos. Cuando Sole empieza a tener misteriosas visiones que se hacen realidad y uno de los integrantes desaparece, el grupo quedará atrapado entre amores, mentiras y traiciones mientras intenta cambiar un destino que parece estar escrito.",
+      "productora": [
+        "Cris Morena Group",
+        "RGB Entertainment"
+      ],
+      "tipo_emision": "Webserie",
+      "juveniles_rows": [
+        "cris-morena"
+      ]
+    },
+    {
+      "id": "P2065",
+      "title": "Aislados",
+      "type": "serie",
+      "year": "2014",
+      "channel": "Telefe",
+      "web_channels": [
+        "Telefe",
+        "Mi Telefe"
+      ],
+      "genre": "Juvenil",
+      "actors": [
+        "Camila Mateos",
+        "Agustín Suárez"
+      ],
+      "orientation": "vertical",
+      "image": "images/verticals/2014-aislados-telefe-poster-280x420.png",
+      "subtitle": "Webserie juvenil",
+      "capitulos": 39,
+      "sinopsis": "María y Juan protagonizan una historia de amor marcada por el aislamiento, en una trama que funciona como precuela del universo de Aliados. A medida que su vínculo se profundiza, ambos deberán atravesar conflictos y emociones que pondrán a prueba sus sentimientos y definirán el rumbo de su relación.",
+      "productora": [
+        "Cris Morena Group",
+        "RGB Entertainment"
+      ],
+      "tipo_emision": "Webserie",
+      "juveniles_rows": [
+        "cris-morena"
+      ],
+      "producciones_relacionadas": [
+        {
+          "id": "V139",
+          "title": "Aliados",
+          "meta": "Serie original",
+          "image": "images/verticals/aliados-poster-280x420.png"
+        }
+      ]
+    },
+    {
+      "id": "P2066",
+      "title": "Tunnel Vision",
+      "type": "serie",
+      "year": "2020",
+      "channel": "TNT",
+      "web_channels": [
+        "Instagram de @tntlatam"
+      ],
+      "genre": "Juvenil",
+      "actors": [
+        "El Purre",
+        "Caro Doménech",
+        "Pedro Maurizi",
+        "Graciela Stefani"
+      ],
+      "orientation": "vertical",
+      "image": "images/verticals/2020-tunnel-vision-tnt-poster280x420.webp",
+      "subtitle": "Thriller juvenil",
+      "release_date": "10/08/2020",
+      "capitulos": 9,
+      "sinopsis": "La vida de Kevin cambia por completo cuando pierde la vista y desarrolla un dispositivo capaz de conectarlo directamente con su subconsciente para recuperar virtualmente la capacidad de ver. Mientras explora las posibilidades de esta nueva tecnología, descubre que cada acción realizada en la realidad virtual provoca inesperadas consecuencias en el mundo real.",
+      "productora": [
+        "TNT",
+        "Pocket Films"
+      ],
+      "tipo_emision": "Webserie",
+      "juveniles_rows": [
+        "webseries"
+      ]
+    },
+    {
       "id": "T0001",
       "title": "Amigos son los amigos",
       "year": "1990",
@@ -14433,6 +14534,14 @@
       "sinopsis": "Siete seres de luz descienden a la Tierra para guiar y sanar a jóvenes conflictivos y marginados. Con 105 días para evitar la destrucción del planeta, deberán ayudarlos a transformar su dolor y cambiar su destino.",
       "rating": "7,4",
       "productora": "Cris Morena Group / RGB Entertainment",
+      "producciones_relacionadas": [
+        {
+          "id": "P2065",
+          "title": "Aislados",
+          "meta": "Spin-off y precuela",
+          "image": "images/verticals/2014-aislados-telefe-poster-280x420.png"
+        }
+      ],
       "tipo_emision": "Semanal"
     },
     {
