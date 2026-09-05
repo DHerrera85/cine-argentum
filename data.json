@@ -6794,7 +6794,8 @@
       ],
       "tipo_emision": "Webserie",
       "juveniles_rows": [
-        "cris-morena"
+        "cris-morena",
+        "webseries"
       ]
     },
     {
@@ -6823,7 +6824,8 @@
       ],
       "tipo_emision": "Webserie",
       "juveniles_rows": [
-        "cris-morena"
+        "cris-morena",
+        "webseries"
       ],
       "producciones_relacionadas": [
         {
@@ -6863,6 +6865,43 @@
       "tipo_emision": "Webserie",
       "juveniles_rows": [
         "webseries"
+      ]
+    },
+    {
+      "id": "P2067",
+      "title": "Igual Te Quiero",
+      "type": "serie",
+      "year": "2015",
+      "channel": "Canal 13",
+      "web_channels": [
+        "Web de Canal 13"
+      ],
+      "genre": "Comedia",
+      "actors": [
+        "Natalie Pérez",
+        "Tomás Fonzi"
+      ],
+      "orientation": "vertical",
+      "image": "images/verticals/2015-igual-te-quiero-webserie-canal13-poster280x420.webp",
+      "subtitle": "Webserie juvenil",
+      "capitulos": 10,
+      "fecha_estreno": "15/12/2015",
+      "sinopsis": "Eva Monti y Máximo Ortiz, una pareja atravesada por constantes desencuentros amorosos, deciden recurrir al psicólogo Humberto Feldman para intentar salvar su relación. A lo largo de diez sesiones tan insólitas como divertidas, deberán enfrentarse a sus conflictos, manías y diferencias mientras descubren si su amor puede sobrevivir a la terapia.",
+      "productora": [
+        "Pol-ka"
+      ],
+      "tipo_emision": "Webserie",
+      "juveniles_rows": [
+        "pol-ka",
+        "webseries"
+      ],
+      "producciones_relacionadas": [
+        {
+          "id": "v20",
+          "title": "Esperanza Mía",
+          "meta": "Serie original",
+          "image": "images/verticals/esperanza-mia-poster-280x420.png"
+        }
       ]
     },
     {
@@ -12258,6 +12297,14 @@
       "capitulos": 192,
       "sinopsis": "Julia, una joven fugitiva, se refugia en un convento haciéndose pasar por novicia bajo el nombre de Esperanza. Allí vive un amor prohibido con Tomás, un sacerdote que debate entre su fe y sus sentimientos.",
       "rating": "14",
+      "producciones_relacionadas": [
+        {
+          "id": "P2067",
+          "title": "Igual Te Quiero",
+          "meta": "Spin-off web",
+          "image": "images/verticals/2015-igual-te-quiero-webserie-canal13-poster280x420.webp"
+        }
+      ],
       "productora": "Pol-Ka",
       "juveniles_rows": [
         "pol-ka"

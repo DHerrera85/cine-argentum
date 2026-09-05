@@ -1,7 +1,7 @@
 (function () {
     'use strict';
 
-    var dataVersion = '20260905-1';
+    var dataVersion = '20260905-2';
     var targetYear = 2026;
 
     var verticalItemClasses = [
