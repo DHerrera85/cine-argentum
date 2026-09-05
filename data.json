@@ -12238,6 +12238,7 @@
     {
       "id": "v18",
       "title": "Padre Coraje",
+      "type": "serie",
       "year": "2004",
       "channel": "Canal 13",
       "genre": "Telenovela",
@@ -12247,7 +12248,18 @@
         "Carina Zampini"
       ],
       "orientation": "vertical",
-      "image": "images/verticals/padre-coraje-poster-280x420.png",
+      "image": "images/verticals/2004-padre-coraje-canal-trece-v2.webp",
+      "horizontal_image": "images/horizontals-1024x576/2004-padre-coraje-canaltrece-slide-1024x576.webp",
+      "poster_gallery": [
+        {
+          "image": "images/verticals/2004-padre-coraje-canal-trece-v2.webp",
+          "label": "Póster principal"
+        },
+        {
+          "image": "images/verticals/padre-coraje-poster-280x420.png",
+          "label": "Póster alternativo"
+        }
+      ],
       "subtitle": "Telenovela",
       "horario": "22hs",
       "capitulos": 189,
@@ -12255,7 +12267,16 @@
       "sinopsis": "En 1952, un justiciero se hace pasar por sacerdote en el pueblo de La Cruz para investigar un asesinato y enfrentar a la élite corrupta. Su misión se complica al enamorarse de Clara, la hija de la víctima, en un romance marcado por el engaño y el sacrificio.",
       "rating": "19,9",
       "productora": "Pol-Ka",
-      "tipo_emision": "Tira Diaria"
+      "tipo_emision": "Tira Diaria",
+      "remakes": [
+        {
+          "title": "Coraje",
+          "channel": "TV Azteca",
+          "country": "México",
+          "year": "2006",
+          "image": "images/verticals/2006-coraje-tvazteca-poster280x420.webp"
+        }
+      ]
     },
     {
       "id": "v19",
