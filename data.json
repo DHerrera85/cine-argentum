@@ -13622,7 +13622,7 @@
     },
     {
       "id": "v109",
-      "title": "Margarita",
+      "title": "Margarita, Si Te Quiere",
       "type": "serie",
       "year": "2024",
       "channel": "HBO Max",
@@ -13702,6 +13702,14 @@
           "capitulos": 20,
           "image": "images/verticals/2026-margarita-temporada3-hbomax-poster280x420.webp",
           "horizontal_image": "images/horizontals-1024x576/2026-margarita-temporada3-hbomax-slide1024x576.webp"
+        }
+      ],
+      "producciones_relacionadas": [
+        {
+          "id": "V145",
+          "title": "Floricienta",
+          "meta": "Serie original",
+          "image": "images/verticals/floricienta-poster-280x420.png"
         }
       ]
     },
@@ -14822,6 +14830,14 @@
           "country": "México",
           "year": "2007",
           "image": "images/verticals/lola-erase-una-vez-2007-mexico.png"
+        }
+      ],
+      "producciones_relacionadas": [
+        {
+          "id": "v109",
+          "title": "Margarita",
+          "meta": "Secuela",
+          "image": "images/verticals/2026-margarita-temporada3-hbomax-poster280x420.webp"
         }
       ]
     },
