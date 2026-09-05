@@ -1,0 +1,393 @@
+/* =========================================================
+   TIRAS 2000
+   Estructura editorial basada en streaming.html
+   ========================================================= */
+
+/* Contenedor general */
+.tiras-2000-page {
+    width: 100%;
+    padding: 116px 0 20px;
+    overflow: hidden;
+    box-sizing: border-box;
+    color: #ffffff;
+    background: #141a21;
+}
+
+/* Secciones */
+.tiras-2000-section {
+    width: 100%;
+    padding: 24px 32px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+/* Encabezados */
+.tiras-2000-section>.showcase-heading,
+.tiras-2000-section>.latest-heading {
+    margin: 0 0 20px;
+    padding: 0;
+    color: #ffffff;
+}
+
+/* Enlaces de las tarjetas */
+.tiras-2000-section a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* =========================================================
+   FILAS HORIZONTALES
+   Comedias exitosas y dramas exitosos
+   ========================================================= */
+
+.tiras-2000-horizontal-showcase {
+    --tiras-2000-accent: 197, 113, 54;
+
+    width: calc(100% - 36px);
+    margin: 6px 18px 18px;
+    padding: 24px 32px;
+    overflow: hidden;
+
+    border: 1px solid rgba(var(--tiras-2000-accent), 0.20);
+    border-radius: 16px;
+
+    background:
+        radial-gradient(ellipse at 12% 45%,
+            rgba(var(--tiras-2000-accent), 0.16) 0%,
+            rgba(var(--tiras-2000-accent), 0.07) 38%,
+            transparent 68%),
+        linear-gradient(180deg,
+            rgba(255, 255, 255, 0.03) 0%,
+            rgba(255, 255, 255, 0.012) 100%);
+
+    box-shadow:
+        0 12px 32px rgba(0, 0, 0, 0.15),
+        inset 0 1px 0 rgba(255, 255, 255, 0.03);
+}
+
+/* Acentos propios */
+#tiras-2000-comedias-exitosas {
+    --tiras-2000-accent: 213, 126, 58;
+}
+
+#tiras-2000-dramas-exitosos {
+    --tiras-2000-accent: 62, 112, 166;
+}
+
+/* Línea debajo de los títulos horizontales */
+.tiras-2000-horizontal-showcase>.showcase-heading::after {
+    content: "";
+    display: block;
+    width: 54px;
+    height: 3px;
+    margin-top: 10px;
+    border-radius: 999px;
+
+    background:
+        linear-gradient(90deg,
+            rgba(var(--tiras-2000-accent), 0.95),
+            rgba(var(--tiras-2000-accent), 0.18));
+}
+
+/* Lista horizontal */
+.tiras-2000-horizontal-showcase .slider-h {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Respaldo si LightSlider todavía no cargó */
+.tiras-2000-horizontal-showcase .slider-h:not(.lightSlider) {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% - 40px) / 3);
+    gap: 20px;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    scroll-snap-type: x mandatory;
+    overscroll-behavior-inline: contain;
+    scrollbar-width: thin;
+    -webkit-overflow-scrolling: touch;
+}
+
+.tiras-2000-horizontal-showcase .slider-h:not(.lightSlider)>li {
+    min-width: 0;
+    scroll-snap-align: start;
+}
+
+/* Imagen horizontal */
+.tiras-2000-horizontal-showcase .showcase-box {
+    width: 100%;
+    max-width: none;
+    min-width: 0;
+    margin: 0 0 14px;
+    overflow: hidden;
+    box-sizing: border-box;
+
+    aspect-ratio: 16 / 9;
+    border-radius: 12px;
+    background: #202832;
+    box-shadow: none;
+}
+
+.tiras-2000-horizontal-showcase .showcase-box img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    aspect-ratio: auto;
+    object-fit: cover;
+    border-radius: inherit;
+}
+
+/* Texto horizontal */
+.tiras-2000-horizontal-showcase .latest-b-text {
+    width: 100%;
+    min-height: 48px;
+    margin: 0;
+    padding: 0 8px 4px;
+    box-sizing: border-box;
+    text-align: center;
+    background: transparent;
+}
+
+.tiras-2000-horizontal-showcase .latest-b-text strong {
+    display: block;
+    margin-top: 12px;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+/* =========================================================
+   FILAS VERTICALES
+   ========================================================= */
+
+.tiras-2000-vertical-showcase {
+    overflow: hidden;
+}
+
+.tiras-2000-vertical-showcase .slider-v {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Respaldo si LightSlider todavía no cargó */
+.tiras-2000-vertical-showcase .slider-v:not(.lightSlider) {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% - 48px) / 5);
+    gap: 12px;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    scroll-snap-type: x mandatory;
+    overscroll-behavior-inline: contain;
+    scrollbar-width: thin;
+    -webkit-overflow-scrolling: touch;
+}
+
+.tiras-2000-vertical-showcase .slider-v:not(.lightSlider)>li {
+    min-width: 0;
+    scroll-snap-align: start;
+}
+
+/* Tarjeta vertical */
+.tiras-2000-vertical-showcase .latest-box {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+
+    width: 100%;
+    max-width: none;
+    min-width: 0;
+    margin: 0;
+    overflow: visible;
+
+    border-radius: 12px;
+    background: transparent;
+    box-shadow: none;
+}
+
+/* Imagen vertical */
+.tiras-2000-vertical-showcase .latest-b-img {
+    width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+
+    aspect-ratio: 2 / 3;
+    border-radius: 12px;
+    background: #202832;
+}
+
+.tiras-2000-vertical-showcase .latest-b-img img {
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center top;
+    border-radius: inherit;
+}
+
+/* Texto vertical */
+.tiras-2000-vertical-showcase .latest-b-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+    min-height: 78px;
+    margin: 0;
+    padding: 12px 8px 8px;
+    box-sizing: border-box;
+
+    text-align: center;
+    background: transparent;
+    border-radius: 0;
+}
+
+.tiras-2000-vertical-showcase .latest-b-text strong {
+    display: block;
+    height: auto;
+    color: #ffffff;
+    font-size: 0.95rem;
+    font-weight: 600;
+    line-height: 1.35;
+    white-space: normal;
+}
+
+.tiras-2000-vertical-showcase .latest-b-text .year {
+    display: block;
+    margin-top: 4px;
+    color: #9ca3af;
+    font-size: 0.85rem;
+}
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 1100px) {
+    .tiras-2000-page {
+        padding-top: 82px;
+    }
+
+    .tiras-2000-section {
+        padding: 22px 20px;
+    }
+
+    .tiras-2000-horizontal-showcase {
+        width: calc(100% - 24px);
+        margin: 6px 12px 16px;
+        padding: 22px 20px;
+    }
+
+    .tiras-2000-horizontal-showcase .slider-h:not(.lightSlider) {
+        grid-auto-columns: calc((100% - 16px) / 2);
+        gap: 16px;
+    }
+
+    .tiras-2000-vertical-showcase .slider-v:not(.lightSlider) {
+        grid-auto-columns: calc((100% - 36px) / 4);
+    }
+}
+
+/* =========================================================
+   MÓVIL
+   Una horizontal o dos verticales por vista
+   ========================================================= */
+
+@media (max-width: 768px) {
+    .tiras-2000-page {
+        padding-top: 64px;
+        padding-bottom: 12px;
+    }
+
+    /* Filas verticales */
+    .tiras-2000-section {
+        padding: 20px 16px;
+    }
+
+    .tiras-2000-section>.showcase-heading,
+    .tiras-2000-section>.latest-heading {
+        margin: 0 0 14px;
+    }
+
+    /* Filas horizontales */
+    .tiras-2000-horizontal-showcase {
+        width: calc(100% - 20px);
+        margin: 6px 10px 14px;
+        padding: 20px 16px;
+        border-radius: 14px;
+    }
+
+    .tiras-2000-horizontal-showcase>.showcase-heading::after {
+        width: 44px;
+        height: 2px;
+        margin-top: 8px;
+    }
+
+    .tiras-2000-horizontal-showcase .slider-h:not(.lightSlider) {
+        grid-auto-columns: 88%;
+        gap: 12px;
+    }
+
+    .tiras-2000-horizontal-showcase .showcase-box {
+        width: 100%;
+        max-width: none;
+        margin: 0 0 12px;
+    }
+
+    /* Dos pósters verticales equilibrados */
+    .tiras-2000-vertical-showcase .slider-v:not(.lightSlider) {
+        grid-auto-columns: calc((100% - 12px) / 2);
+        gap: 12px;
+    }
+
+    .tiras-2000-vertical-showcase .latest-box {
+        width: 100%;
+        max-width: none;
+        min-width: 0;
+        margin: 0;
+    }
+
+    .tiras-2000-vertical-showcase .latest-b-text {
+        min-height: 84px;
+        padding: 10px 5px 8px;
+    }
+
+    .tiras-2000-vertical-showcase .latest-b-text strong {
+        font-size: 0.88rem;
+        line-height: 1.3;
+    }
+
+    .tiras-2000-vertical-showcase .latest-b-text .year {
+        font-size: 0.8rem;
+    }
+}
+
+/* =========================================================
+   MÓVIL PEQUEÑO
+   ========================================================= */
+
+@media (max-width: 480px) {
+    .tiras-2000-section {
+        padding-right: 12px;
+        padding-left: 12px;
+    }
+
+    .tiras-2000-horizontal-showcase {
+        width: calc(100% - 16px);
+        margin-right: 8px;
+        margin-left: 8px;
+        padding-right: 12px;
+        padding-left: 12px;
+    }
+
+    .tiras-2000-vertical-showcase .latest-b-text {
+        min-height: 88px;
+    }
+}
