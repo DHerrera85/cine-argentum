@@ -5514,7 +5514,8 @@
       "image": "images/verticals/los-exitosos-pells-poster-280x420.png",
       "horizontal_image": "images/horizontals-1024x576/los-exitosos-pells-slide-1024x576.png",
       "tiras_2000_rows": [
-        "comedias-exitosas"
+        "comedias-exitosas",
+        "comedias-estelares"
       ],
       "subtitle": "Comedia",
       "horario": "22:30hs",
@@ -12633,6 +12634,9 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/ciega-a-citas-poster-280x420.png",
+      "tiras_2000_rows": [
+        "comedias-estelares"
+      ],
       "subtitle": "Comedia",
       "remakes": [
         {
@@ -19478,6 +19482,14 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/amo-de-casa-poster-280x420.png",
+      "horizontal_gallery": [
+        {
+          "image": "images/horizontals-1024x576/2006-amo-de-casa-canal9-slide1024x576-v1.webp"
+        },
+        {
+          "image": "images/horizontals-1024x576/2006-amo-de-casa-canal9-slide1024x576-v2.webp"
+        }
+      ],
       "subtitle": "Sitcom",
       "horario": "20:15hs",
       "capitulos": 160,
