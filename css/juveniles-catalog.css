@@ -460,7 +460,7 @@
 
 .partner-netflix {
   --partner-accent: 229, 9, 20;
-  --partner-logo-scale: 2.10;
+  --partner-logo-scale: 1;
 }
 
 .partner-disney {
@@ -475,7 +475,7 @@
 
 .partner-flow {
   --partner-accent: 0, 190, 220;
-  --partner-logo-scale: 2.45;
+  --partner-logo-scale: 1;
 }
 
 .partner-hbo {
@@ -490,17 +490,17 @@
 
 .partner-nickelodeon {
   --partner-accent: 255, 103, 31;
-  --partner-logo-scale: 2;
+  --partner-logo-scale: 1.35;
 }
 
 .partner-telefe {
   --partner-accent: 31, 174, 190;
-  --partner-logo-scale: 1.90;
+  --partner-logo-scale: 1.15;
 }
 
 .partner-canal13 {
   --partner-accent: 245, 145, 45;
-  --partner-logo-scale: 1.95;
+  --partner-logo-scale: 1;
 }
 
 .partner-cris-morena {
