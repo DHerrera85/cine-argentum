@@ -6,7 +6,7 @@
        ========================================================= */
 
     var DATA_URL =
-        'data.json?v=20260906-tiras2000-1';
+        'data.json?v=20260906-tiras2000-3';
 
     var HORIZONTAL_ROWS = [
         {
@@ -15,6 +15,13 @@
                 'tiras-2000-comedias-exitosas-list',
             countId:
                 'tiras-2000-comedias-exitosas-count'
+        },
+        {
+            key: 'dramas-exitosos',
+            containerId:
+                'tiras-2000-dramas-exitosos-list',
+            countId:
+                'tiras-2000-dramas-exitosos-count'
         }
     ];
 
@@ -36,14 +43,28 @@
                 'tiras-2000-comedias-estelares-2000-04-list',
             countId:
                 'tiras-2000-comedias-estelares-2000-04-count'
+        },
+        {
+            key: 'ficciones-tarde',
+            minYear: 2005,
+            maxYear: 2009,
+            containerId:
+                'tiras-2000-ficciones-tarde-2005-09-list',
+            countId:
+                'tiras-2000-ficciones-tarde-2005-09-count'
+        },
+        {
+            key: 'ficciones-tarde',
+            minYear: 2000,
+            maxYear: 2004,
+            containerId:
+                'tiras-2000-ficciones-tarde-2000-04-list',
+            countId:
+                'tiras-2000-ficciones-tarde-2000-04-count'
         }
     ];
 
     var STATIC_ROWS = [
-        {
-            sectionId: 'tiras-2000-dramas-exitosos',
-            countId: 'tiras-2000-dramas-exitosos-count'
-        },
         {
             sectionId: 'tiras-2000-telenovelas-estelares',
             countId: 'tiras-2000-telenovelas-estelares-count'
@@ -55,10 +76,6 @@
         {
             sectionId: 'tiras-2000-sitcoms',
             countId: 'tiras-2000-sitcoms-count'
-        },
-        {
-            sectionId: 'tiras-2000-telenovelas-tarde',
-            countId: 'tiras-2000-telenovelas-tarde-count'
         },
         {
             sectionId: 'tiras-2000-protagonistas-latinoamerica',

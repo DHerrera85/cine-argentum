@@ -11335,6 +11335,7 @@
     {
       "id": "v10",
       "title": "Resistiré",
+      "type": "serie",
       "year": "2003",
       "channel": "Telefe",
       "genre": "Telenovela",
@@ -11346,6 +11347,10 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/resistire-poster-280x420.png",
+      "horizontal_image": "images/horizontals-1024x576/resistire-slide-1024x576.png",
+      "tiras_2000_rows": [
+        "dramas-exitosos"
+      ],
       "subtitle": "Telenovela",
       "horario": "22hs",
       "capitulos": 221,
@@ -11384,6 +11389,7 @@
     {
       "id": "v11",
       "title": "Montecristo",
+      "type": "serie",
       "year": "2006",
       "channel": "Telefe",
       "genre": "Thriller",
@@ -11394,6 +11400,10 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/montecristo-poster-280x420.png",
+      "horizontal_image": "images/horizontals-1024x576/montecristo-slide-1024x576.png",
+      "tiras_2000_rows": [
+        "dramas-exitosos"
+      ],
       "subtitle": "Thriller",
       "horario": "22hs",
       "capitulos": 145,
@@ -12157,6 +12167,7 @@
     {
       "id": "v13",
       "title": "Vidas Robadas",
+      "type": "serie",
       "year": "2008",
       "channel": "Telefe",
       "genre": "Thriller",
@@ -12167,6 +12178,10 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/vidas-robadas-poster-280x420.png",
+      "horizontal_image": "images/horizontals-1024x576/vidas-robadas-slide-1024x576.png",
+      "tiras_2000_rows": [
+        "dramas-exitosos"
+      ],
       "subtitle": "Thriller",
       "horario": "22:30hs",
       "capitulos": 131,
@@ -12279,6 +12294,9 @@
       "orientation": "vertical",
       "image": "images/verticals/2004-padre-coraje-canal-trece-v2.webp",
       "horizontal_image": "images/horizontals-1024x576/2004-padre-coraje-canaltrece-slide-1024x576.webp",
+      "tiras_2000_rows": [
+        "dramas-exitosos"
+      ],
       "poster_gallery": [
         {
           "image": "images/verticals/2004-padre-coraje-canal-trece-v2.webp",
@@ -12756,6 +12774,7 @@
     {
       "id": "v70",
       "title": "Valientes",
+      "type": "serie",
       "year": "2009",
       "channel": "Canal 13",
       "genre": "Telenovela",
@@ -12769,6 +12788,10 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/valientes-poster-280x420.png",
+      "horizontal_image": "images/horizontals-1024x576/valientes-slide-1024x576.png",
+      "tiras_2000_rows": [
+        "dramas-exitosos"
+      ],
       "subtitle": "Telenovela",
       "horario": "21:45hs",
       "capitulos": 218,
@@ -12894,6 +12917,9 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/los-medicos-de-hoy-poster-280x420.png",
+      "tiras_2000_rows": [
+        "ficciones-tarde"
+      ],
       "subtitle": "Telenovela",
       "horario": "14hs",
       "capitulos": 159,
@@ -12915,6 +12941,9 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/luna-salvaje-poster-280x420.png",
+      "tiras_2000_rows": [
+        "ficciones-tarde"
+      ],
       "subtitle": "Telenovela",
       "horario": "13hs",
       "capitulos": 151,
@@ -12936,6 +12965,9 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/mil-millones-poster-280x420.png",
+      "tiras_2000_rows": [
+        "ficciones-tarde"
+      ],
       "subtitle": "Telenovela",
       "horario": "19hs",
       "capitulos": 119,
@@ -12957,6 +12989,9 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/kachorra-poster-280x420.png",
+      "tiras_2000_rows": [
+        "ficciones-tarde"
+      ],
       "subtitle": "Telenovela",
       "horario": "13hs",
       "capitulos": 150,
@@ -12988,6 +13023,9 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/maximo-corazon-poster-280x420.png",
+      "tiras_2000_rows": [
+        "ficciones-tarde"
+      ],
       "subtitle": "Telenovela",
       "horario": "20hs, 14hs",
       "capitulos": 139,
@@ -13009,6 +13047,9 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/abre-tus-ojos-poster-280x420.png",
+      "tiras_2000_rows": [
+        "ficciones-tarde"
+      ],
       "subtitle": "Telenovela",
       "horario": "19hs, 15hs",
       "capitulos": 120,
@@ -13030,6 +13071,9 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/culpable-de-este-amor-poster-280x420.png",
+      "tiras_2000_rows": [
+        "ficciones-tarde"
+      ],
       "subtitle": "Telenovela",
       "horario": "13hs",
       "capitulos": 205,
@@ -13051,6 +13095,9 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/jesus-el-heredero-poster-280x420.png",
+      "tiras_2000_rows": [
+        "ficciones-tarde"
+      ],
       "subtitle": "Telenovela",
       "horario": "19hs",
       "capitulos": 175,
@@ -13072,6 +13119,9 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/el-patron-de-la-vereda-poster-280x420.png",
+      "tiras_2000_rows": [
+        "ficciones-tarde"
+      ],
       "subtitle": "Telenovela",
       "horario": "18hs",
       "capitulos": 120,
@@ -13093,6 +13143,9 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/salvame-maria-poster-280x420.png",
+      "tiras_2000_rows": [
+        "ficciones-tarde"
+      ],
       "subtitle": "Telenovela",
       "horario": "16hs",
       "capitulos": 88,
@@ -13115,6 +13168,9 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/se-dice-amor-poster-280x420.png",
+      "tiras_2000_rows": [
+        "ficciones-tarde"
+      ],
       "subtitle": "Telenovela",
       "horario": "13hs",
       "capitulos": 260,
@@ -13136,6 +13192,9 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/collar-de-esmeraldas-poster-280x420.png",
+      "tiras_2000_rows": [
+        "ficciones-tarde"
+      ],
       "subtitle": "Telenovela",
       "horario": "14hs",
       "capitulos": 122,
@@ -13157,6 +13216,9 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/juanita-la-soltera-poster-280x420.png",
+      "tiras_2000_rows": [
+        "ficciones-tarde"
+      ],
       "subtitle": "Comedia",
       "horario": "19hs, 17hs",
       "capitulos": 109,
@@ -13180,6 +13242,9 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/mujeres-de-nadie-primer-temporada-poster-280x420.png",
+      "tiras_2000_rows": [
+        "ficciones-tarde"
+      ],
       "subtitle": "Telenovela",
       "horario": "14hs",
       "capitulos": 146,
@@ -13204,6 +13269,9 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/mujeres-de-nadie-segunda-temporada-poster-280x420.png",
+      "tiras_2000_rows": [
+        "ficciones-tarde"
+      ],
       "subtitle": "Telenovela",
       "horario": "14hs, 16hs",
       "capitulos": 170,
@@ -13554,7 +13622,7 @@
       "subtitle": "Comedia",
       "horario": "21hs",
       "capitulos": "150",
-      "fecha_estreno": "08/01/2004",
+      "fecha_estreno": "01/08/2004",
       "sinopsis": "Rubén Jilguero, actor de cámaras ocultas, se infiltra fingiendo ser gay para destapar un caso de discriminación en una fábrica familiar. Allí se vuelve confidente de Eugenia y, sin saberlo, se cruza con Camila, una joven que es en realidad su hija.",
       "rating": "11,2",
       "productora": "Pol-Ka",
@@ -19599,6 +19667,7 @@
     {
       "id": "v49",
       "title": "Amor en Custodia",
+      "type": "serie",
       "year": "2005",
       "channel": "Telefe",
       "genre": "Telenovela",
@@ -19609,6 +19678,11 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/amor-en-custodia-poster-280x420.png",
+      "horizontal_image": "images/horizontals-1024x576/amor-en-custodia-slide-1024x576.png",
+      "tiras_2000_rows": [
+        "dramas-exitosos",
+        "ficciones-tarde"
+      ],
       "subtitle": "Telenovela",
       "horario": "13hs",
       "capitulos": 210,
@@ -19683,6 +19757,9 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/la-ley-del-amor-poster-280x420.png",
+      "tiras_2000_rows": [
+        "ficciones-tarde"
+      ],
       "subtitle": "Telenovela",
       "horario": "13:30hs",
       "capitulos": 187,
@@ -19706,6 +19783,9 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/don-juan-y-su-bella-dama-poster-280x420.png",
+      "tiras_2000_rows": [
+        "ficciones-tarde"
+      ],
       "subtitle": "Telenovela",
       "horario": "13:30hs",
       "capitulos": 242,
@@ -19729,6 +19809,9 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/herencia-de-amor-poster-280x420.png",
+      "tiras_2000_rows": [
+        "ficciones-tarde"
+      ],
       "subtitle": "Telenovela",
       "horario": "14:15hs, 15:30hs",
       "capitulos": 272,
@@ -19947,6 +20030,9 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/valentino-el-argentino-280x420.png",
+      "tiras_2000_rows": [
+        "ficciones-tarde"
+      ],
       "subtitle": "Comedia",
       "horario": "19hs, 16hs",
       "capitulos": 125,
@@ -19968,6 +20054,9 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/yago-pasion-morena-280x420.png",
+      "tiras_2000_rows": [
+        "ficciones-tarde"
+      ],
       "subtitle": "Telenovela",
       "horario": "13hs",
       "capitulos": 164,
@@ -19998,6 +20087,9 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/2001-provocame-telefe-poster280x420.webp",
+      "tiras_2000_rows": [
+        "ficciones-tarde"
+      ],
       "subtitle": "Telenovela",
       "horario": "20:30hs, 19:30hs",
       "capitulos": 133,
@@ -20022,6 +20114,9 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/dr-amor-280x420.png",
+      "tiras_2000_rows": [
+        "ficciones-tarde"
+      ],
       "subtitle": "Comedia",
       "horario": "18hs, 19hs",
       "capitulos": 120,
@@ -20045,6 +20140,9 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/amor-latino-280x420.png",
+      "tiras_2000_rows": [
+        "ficciones-tarde"
+      ],
       "subtitle": "Telenovela",
       "horario": "20hs, 18hs",
       "capitulos": 200,
