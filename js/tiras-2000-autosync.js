@@ -6,13 +6,15 @@
        ========================================================= */
 
     var DATA_URL =
-        'data.json?v=20260905-tiras2000-3';
+        'data.json?v=20260906-tiras2000-1';
 
     var HORIZONTAL_ROWS = [
         {
             key: 'comedias-exitosas',
             containerId:
-                'tiras-2000-comedias-exitosas-list'
+                'tiras-2000-comedias-exitosas-list',
+            countId:
+                'tiras-2000-comedias-exitosas-count'
         }
     ];
 
@@ -20,7 +22,9 @@
         {
             key: 'comedias-estelares',
             containerId:
-                'tiras-2000-comedias-estelares-list'
+                'tiras-2000-comedias-estelares-list',
+            countId:
+                'tiras-2000-comedias-estelares-count'
         }
     ];
 
@@ -485,6 +489,31 @@
         });
     }
 
+    function updateRowCount(
+        rowConfig,
+        itemCount
+    ) {
+        if (!rowConfig || !rowConfig.countId) {
+            return;
+        }
+
+        var countElement =
+            document.getElementById(
+                rowConfig.countId
+            );
+
+        if (!countElement) {
+            return;
+        }
+
+        countElement.textContent =
+            itemCount === 1
+                ? '1 ficción'
+                : itemCount + ' ficciones';
+
+        countElement.hidden = false;
+    }
+
     /* =========================================================
        RENDER
        ========================================================= */
@@ -511,7 +540,12 @@
             .map(buildHorizontalCard)
             .join('');
 
-        initializeHorizontalSlider(list);
+        updateRowCount(
+            rowConfig,
+            productions.length
+        );
+
+        initializeVerticalSlider(list);
     }
 
     function renderVerticalRow(

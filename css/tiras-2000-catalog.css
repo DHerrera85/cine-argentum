@@ -29,10 +29,90 @@
     color: #ffffff;
 }
 
+/* =========================================================
+   ENCABEZADOS Y CONTADORES
+   ========================================================= */
+
+.tiras-2000-section-heading {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 18px;
+
+    width: 100%;
+    margin: 0 0 20px;
+}
+
+.tiras-2000-section-heading>.showcase-heading,
+.tiras-2000-section-heading>.latest-heading {
+    position: relative;
+    flex: 1 1 auto;
+    min-width: 0;
+
+    margin: 0;
+    padding: 0 0 13px;
+    color: #ffffff;
+}
+
+/* Barrita editorial debajo del título */
+.tiras-2000-section-heading>.showcase-heading::after,
+.tiras-2000-section-heading>.latest-heading::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    width: 54px;
+    height: 3px;
+    border-radius: 999px;
+
+    background:
+        linear-gradient(90deg,
+            rgba(var(--tiras-2000-accent), 0.95),
+            rgba(var(--tiras-2000-accent), 0.18));
+}
+
+/* Contador calculado por JavaScript */
+.tiras-2000-count {
+    flex: 0 0 auto;
+    min-width: 112px;
+    padding: 9px 17px;
+    box-sizing: border-box;
+
+    color: #ffffff;
+    background:
+        rgba(var(--tiras-2000-accent), 0.10);
+    border:
+        1px solid rgba(var(--tiras-2000-accent), 0.55);
+    border-radius: 999px;
+
+    box-shadow:
+        0 4px 14px rgba(0, 0, 0, 0.10);
+
+    font-size: 0.9rem;
+    font-weight: 700;
+    line-height: 1.2;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.tiras-2000-count[hidden] {
+    display: none;
+}
+
 /* Enlaces de las tarjetas */
 .tiras-2000-section a {
     color: inherit;
     text-decoration: none;
+}
+
+.tiras-2000-section {
+    --tiras-2000-accent: 197, 113, 54;
+
+    width: 100%;
+    padding: 24px 32px;
+    overflow: hidden;
+    box-sizing: border-box;
 }
 
 /* =========================================================
@@ -339,6 +419,28 @@
         width: 100%;
         max-width: none;
         margin: 0 0 12px;
+    }
+
+    .tiras-2000-section-heading {
+        margin-bottom: 14px;
+        gap: 10px;
+    }
+
+    .tiras-2000-section-heading>.showcase-heading,
+    .tiras-2000-section-heading>.latest-heading {
+        padding-bottom: 10px;
+    }
+
+    .tiras-2000-section-heading>.showcase-heading::after,
+    .tiras-2000-section-heading>.latest-heading::after {
+        width: 44px;
+        height: 2px;
+    }
+
+    .tiras-2000-count {
+        min-width: 82px;
+        padding: 7px 11px;
+        font-size: 0.75rem;
     }
 
     /* Dos pósters verticales equilibrados */
