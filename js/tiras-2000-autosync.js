@@ -545,7 +545,7 @@
             productions.length
         );
 
-        initializeVerticalSlider(list);
+        initializeHorizontalSlider(list);
     }
 
     function renderVerticalRow(
@@ -569,6 +569,11 @@
         list.innerHTML = productions
             .map(buildVerticalCard)
             .join('');
+
+        updateRowCount(
+            rowConfig,
+            productions.length
+        );
 
         initializeVerticalSlider(list);
     }
