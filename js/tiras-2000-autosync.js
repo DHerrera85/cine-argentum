@@ -21,10 +21,21 @@
     var VERTICAL_ROWS = [
         {
             key: 'comedias-estelares',
+            minYear: 2005,
+            maxYear: 2009,
             containerId:
-                'tiras-2000-comedias-estelares-list',
+                'tiras-2000-comedias-estelares-2005-09-list',
             countId:
-                'tiras-2000-comedias-estelares-count'
+                'tiras-2000-comedias-estelares-2005-09-count'
+        },
+        {
+            key: 'comedias-estelares',
+            minYear: 2000,
+            maxYear: 2004,
+            containerId:
+                'tiras-2000-comedias-estelares-2000-04-list',
+            countId:
+                'tiras-2000-comedias-estelares-2000-04-count'
         }
     ];
 
@@ -232,19 +243,51 @@
 
     function getVerticalRowProductions(
         items,
-        rowKey
+        rowConfig
     ) {
-        if (!Array.isArray(items)) {
+        if (
+            !Array.isArray(items) ||
+            !rowConfig
+        ) {
             return [];
         }
 
+        var minYear = Number(rowConfig.minYear);
+        var maxYear = Number(rowConfig.maxYear);
+
         return items
             .filter(function (item) {
-                return Boolean(
-                    item &&
-                    item.id &&
-                    belongsToRow(item, rowKey)
-                );
+                if (
+                    !item ||
+                    !item.id ||
+                    !belongsToRow(item, rowConfig.key)
+                ) {
+                    return false;
+                }
+
+                var itemYear = Number(item.year);
+
+                if (
+                    Number.isFinite(minYear) &&
+                    (
+                        !Number.isFinite(itemYear) ||
+                        itemYear < minYear
+                    )
+                ) {
+                    return false;
+                }
+
+                if (
+                    Number.isFinite(maxYear) &&
+                    (
+                        !Number.isFinite(itemYear) ||
+                        itemYear > maxYear
+                    )
+                ) {
+                    return false;
+                }
+
+                return true;
             })
             .sort(compareRecentFirst);
     }
@@ -624,7 +667,7 @@
         var productions =
             getVerticalRowProductions(
                 items,
-                rowConfig.key
+                rowConfig
             );
 
         list.innerHTML = productions
