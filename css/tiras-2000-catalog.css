@@ -22,13 +22,6 @@
     box-sizing: border-box;
 }
 
-.tiras-2000-section {
-    width: 100%;
-    padding: 24px 32px;
-    overflow: hidden;
-    box-sizing: border-box;
-}
-
 /* Encabezados */
 .tiras-2000-section>.showcase-heading,
 .tiras-2000-section>.latest-heading {
