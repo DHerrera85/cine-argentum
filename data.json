@@ -5679,8 +5679,8 @@
       "image": "images/verticals/son-de-fierro-poster-280x420.png",
       "horizontal_image": "images/horizontals-1024x576/son-de-fierro-slide-1024x576.png",
       "tiras_2000_rows": [
-        "comedias-exitosas",
-        "comedias-estelares"
+        "dramas-exitosos",
+        "telenovelas-estelares"
       ],
       "subtitle": "Telenovela",
       "horario": "21hs",
@@ -6321,6 +6321,7 @@
     {
       "id": "v316",
       "title": "El Precio del Poder (2002)",
+      "type": "serie",
       "year": "2002",
       "channel": "Canal 9/Azul TV",
       "genre": "Thriller",
@@ -6331,6 +6332,9 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/2002-elpreciodelpoder-canal9-poster280x420.png",
+      "tiras_2000_rows": [
+        "thrillers"
+      ],
       "subtitle": "Thriller",
       "horario": "martes a viernes 22hs",
       "capitulos": "-",
@@ -11349,7 +11353,8 @@
       "image": "images/verticals/resistire-poster-280x420.png",
       "horizontal_image": "images/horizontals-1024x576/resistire-slide-1024x576.png",
       "tiras_2000_rows": [
-        "dramas-exitosos"
+        "dramas-exitosos",
+        "thrillers"
       ],
       "subtitle": "Telenovela",
       "horario": "22hs",
@@ -11402,7 +11407,8 @@
       "image": "images/verticals/montecristo-poster-280x420.png",
       "horizontal_image": "images/horizontals-1024x576/montecristo-slide-1024x576.png",
       "tiras_2000_rows": [
-        "dramas-exitosos"
+        "dramas-exitosos",
+        "telenovelas-estelares"
       ],
       "subtitle": "Thriller",
       "horario": "22hs",
@@ -12180,7 +12186,8 @@
       "image": "images/verticals/vidas-robadas-poster-280x420.png",
       "horizontal_image": "images/horizontals-1024x576/vidas-robadas-slide-1024x576.png",
       "tiras_2000_rows": [
-        "dramas-exitosos"
+        "dramas-exitosos",
+        "thrillers"
       ],
       "subtitle": "Thriller",
       "horario": "22:30hs",
@@ -12295,7 +12302,8 @@
       "image": "images/verticals/2004-padre-coraje-canal-trece-v2.webp",
       "horizontal_image": "images/horizontals-1024x576/2004-padre-coraje-canaltrece-slide-1024x576.webp",
       "tiras_2000_rows": [
-        "dramas-exitosos"
+        "dramas-exitosos",
+        "telenovelas-estelares"
       ],
       "poster_gallery": [
         {
@@ -12327,6 +12335,7 @@
     {
       "id": "v19",
       "title": "Hombres de Honor",
+      "type": "serie",
       "year": "2005",
       "channel": "Canal 13",
       "genre": "Telenovela",
@@ -12338,6 +12347,9 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/hombres-de-honor-poster-280x420.png",
+      "tiras_2000_rows": [
+        "telenovelas-estelares"
+      ],
       "subtitle": "Telenovela",
       "horario": "22hs",
       "capitulos": 152,
@@ -12513,6 +12525,7 @@
     {
       "id": "v26",
       "title": "El Tiempo no Para",
+      "type": "serie",
       "year": "2006",
       "channel": "Canal 9/Azul TV",
       "genre": "Drama",
@@ -12525,6 +12538,9 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/el-tiempo-no-para-poster-280x420.png",
+      "tiras_2000_rows": [
+        "telenovelas-estelares"
+      ],
       "subtitle": "Drama",
       "horario": "22hs, 23hs",
       "capitulos": "163",
@@ -12790,7 +12806,8 @@
       "image": "images/verticals/valientes-poster-280x420.png",
       "horizontal_image": "images/horizontals-1024x576/valientes-slide-1024x576.png",
       "tiras_2000_rows": [
-        "dramas-exitosos"
+        "dramas-exitosos",
+        "telenovelas-estelares"
       ],
       "subtitle": "Telenovela",
       "horario": "21:45hs",
@@ -13305,6 +13322,7 @@
     {
       "id": "v90",
       "title": "Los Buscas de Siempre",
+      "type": "serie",
       "year": "2000",
       "channel": "Canal 9/Azul TV",
       "genre": "Telenovela",
@@ -13314,6 +13332,9 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/2000-los-buscas-de-siempre-azultv-poster280x420.webp",
+      "tiras_2000_rows": [
+        "telenovelas-estelares"
+      ],
       "subtitle": "Telenovela",
       "horizontal_image": "images/horizontals-1024x576/2000-los-buscas-de-siempre-azultv-slide-1024x576.webp",
       "horario": "22hs",
@@ -13408,6 +13429,7 @@
     {
       "id": "v94",
       "title": "Primicias",
+      "type": "serie",
       "year": "2000",
       "channel": "Canal 13",
       "genre": "Telenovela",
@@ -13419,6 +13441,9 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/primicias-poster-280x420.png",
+      "tiras_2000_rows": [
+        "telenovelas-estelares"
+      ],
       "subtitle": "Telenovela",
       "horario": "22hs",
       "capitulos": 213,
@@ -13431,6 +13456,7 @@
     {
       "id": "v95",
       "title": "Franco Buenaventura, el Profe",
+      "type": "serie",
       "year": "2002",
       "channel": "Telefe",
       "genre": "Telenovela",
@@ -13443,6 +13469,9 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/franco-buenaventura-poster-280x420.png",
+      "tiras_2000_rows": [
+        "telenovelas-estelares"
+      ],
       "subtitle": "Telenovela",
       "horario": "22hs",
       "capitulos": 175,
@@ -13455,6 +13484,7 @@
     {
       "id": "v96",
       "title": "Malandras",
+      "type": "serie",
       "year": "2003",
       "channel": "Canal 9/Azul TV",
       "genre": "Comedia",
@@ -13465,6 +13495,9 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/malandras-poster-280x420.png",
+      "tiras_2000_rows": [
+        "thrillers"
+      ],
       "subtitle": "Comedia",
       "horario": "22hs",
       "capitulos": 60,
@@ -13501,6 +13534,7 @@
     {
       "id": "v98",
       "title": "Soy Gitano",
+      "type": "serie",
       "year": "2003",
       "channel": "Canal 13",
       "genre": "Telenovela",
@@ -13511,6 +13545,9 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/soy-gitano-poster-280x420.png",
+      "tiras_2000_rows": [
+        "telenovelas-estelares"
+      ],
       "subtitle": "Telenovela",
       "horario": "22hs",
       "capitulos": 251,
@@ -13583,6 +13620,7 @@
     {
       "id": "v101",
       "title": "El Deseo",
+      "type": "serie",
       "year": "2004",
       "channel": "Telefe",
       "genre": "Thriller",
@@ -13594,6 +13632,9 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/el-deseo-poster-280x420.png",
+      "tiras_2000_rows": [
+        "thrillers"
+      ],
       "subtitle": "Thriller",
       "horario": "22:30hs",
       "capitulos": "90",
@@ -13631,6 +13672,7 @@
     {
       "id": "v103",
       "title": "Doble Vida",
+      "type": "serie",
       "year": "2005",
       "channel": "América",
       "genre": "Thriller",
@@ -13643,6 +13685,9 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/doble-vida-poster-280x420.png",
+      "tiras_2000_rows": [
+        "thrillers"
+      ],
       "subtitle": "Thriller",
       "horario": "22:30hs",
       "capitulos": 98,
@@ -13680,6 +13725,7 @@
     {
       "id": "v105",
       "title": "Doble Venganza",
+      "type": "serie",
       "year": "2006",
       "channel": "Canal 9/Azul TV",
       "genre": "Thriller",
@@ -13691,6 +13737,9 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/doble-venganza-poster-280x420.png",
+      "tiras_2000_rows": [
+        "thrillers"
+      ],
       "subtitle": "Thriller",
       "horario": "21:30hs, 22:15hs, 00:00hs",
       "capitulos": "51",
@@ -13724,6 +13773,7 @@
     {
       "id": "v107",
       "title": "El Capo, Mafioso contra su Voluntad",
+      "type": "serie",
       "year": "2007",
       "channel": "Telefe",
       "genre": "Comedia",
@@ -13733,6 +13783,9 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/el-capo-poster-280x420.png",
+      "tiras_2000_rows": [
+        "comedias-estelares"
+      ],
       "subtitle": "Comedia",
       "horario": "22:00hs, 13:00hs",
       "capitulos": "28",
@@ -19201,6 +19254,7 @@
     {
       "id": "v34",
       "title": "Botineras",
+      "type": "serie",
       "year": "2009",
       "channel": "Telefe",
       "genre": "Thriller",
@@ -19214,6 +19268,9 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/botineras-poster-280x420.png",
+      "tiras_2000_rows": [
+        "thrillers"
+      ],
       "subtitle": "Thriller",
       "horario": "22:30hs",
       "capitulos": 142,
@@ -19226,6 +19283,7 @@
     {
       "id": "v35",
       "title": "22, El Loco",
+      "type": "serie",
       "year": "2001",
       "channel": "Canal 13",
       "genre": "Thriller",
@@ -19238,6 +19296,9 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/22-el-loco-poster-280x420.png",
+      "tiras_2000_rows": [
+        "thrillers"
+      ],
       "subtitle": "Thriller",
       "horario": "22hs",
       "capitulos": 96,
@@ -19250,6 +19311,7 @@
     {
       "id": "v36",
       "title": "099 Central",
+      "type": "serie",
       "year": "2002",
       "channel": "Canal 13",
       "genre": "Thriller",
@@ -19260,6 +19322,9 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/099-central-poster-280x420.png",
+      "tiras_2000_rows": [
+        "thrillers"
+      ],
       "subtitle": "Thriller",
       "horario": "22hs",
       "capitulos": 146,

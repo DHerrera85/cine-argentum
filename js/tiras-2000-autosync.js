@@ -6,7 +6,7 @@
        ========================================================= */
 
     var DATA_URL =
-        'data.json?v=20260906-tiras2000-3';
+        'data.json?v=20260907-tiras2000-3';
 
     var HORIZONTAL_ROWS = [
         {
@@ -61,18 +61,28 @@
                 'tiras-2000-ficciones-tarde-2000-04-list',
             countId:
                 'tiras-2000-ficciones-tarde-2000-04-count'
+        },
+        {
+            key: 'telenovelas-estelares',
+            minYear: 2000,
+            maxYear: 2009,
+            containerId:
+                'tiras-2000-telenovelas-estelares-list',
+            countId:
+                'tiras-2000-telenovelas-estelares-count'
+        },
+        {
+            key: 'thrillers',
+            minYear: 2000,
+            maxYear: 2009,
+            containerId:
+                'tiras-2000-thrillers-list',
+            countId:
+                'tiras-2000-thrillers-count'
         }
     ];
 
     var STATIC_ROWS = [
-        {
-            sectionId: 'tiras-2000-telenovelas-estelares',
-            countId: 'tiras-2000-telenovelas-estelares-count'
-        },
-        {
-            sectionId: 'tiras-2000-thrillers',
-            countId: 'tiras-2000-thrillers-count'
-        },
         {
             sectionId: 'tiras-2000-sitcoms',
             countId: 'tiras-2000-sitcoms-count'
