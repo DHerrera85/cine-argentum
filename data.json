@@ -11531,6 +11531,7 @@
     {
       "id": "h3",
       "title": "Casados con Hijos",
+      "type": "serie",
       "year": "2005",
       "channel": "Telefe",
       "genre": "Sitcom",
@@ -11544,7 +11545,8 @@
       "image": "images/verticals/casados-con-hijos-poster-280x420.png",
       "horizontal_image": "images/horizontals-1024x576/casados-con-hijos-slide-1024x576.png",
       "tiras_2000_rows": [
-        "comedias-exitosas"
+        "comedias-exitosas",
+        "sitcoms"
       ],
       "subtitle": "Sitcom",
       "horario": "22:30hs",
@@ -13752,6 +13754,7 @@
     {
       "id": "v106",
       "title": "Hechizada",
+      "type": "serie",
       "year": "2007",
       "channel": "Telefe",
       "genre": "Sitcom",
@@ -13761,6 +13764,9 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/hechizada-poster-280x420.png",
+      "tiras_2000_rows": [
+        "sitcoms"
+      ],
       "subtitle": "Sitcom",
       "horario": "20:45hs",
       "capitulos": "35",
@@ -13798,6 +13804,7 @@
     {
       "id": "v108",
       "title": "Una de Dos",
+      "type": "serie",
       "year": "2008",
       "channel": "Telefe",
       "genre": "Sitcom",
@@ -13808,6 +13815,9 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/una-de-dos-poster-280x420.png",
+      "tiras_2000_rows": [
+        "sitcoms"
+      ],
       "subtitle": "Sitcom",
       "horario": "21:45hs",
       "capitulos": "17",
@@ -19490,6 +19500,7 @@
     {
       "id": "v43",
       "title": "La Niñera",
+      "type": "serie",
       "year": "2004",
       "channel": "Telefe",
       "genre": "Sitcom",
@@ -19499,10 +19510,13 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/la-ninera-poster-280x420.png",
+      "tiras_2000_rows": [
+        "sitcoms"
+      ],
       "subtitle": "Sitcom",
       "horario": "20:30hs",
       "capitulos": 175,
-      "fecha_estreno": "19/01/2002",
+      "fecha_estreno": "19/01/2004",
       "sinopsis": "Flor Finkel, una mujer espontánea y carismática que, tras quedar desempleada, comienza a trabajar por error como niñera de los tres hijos del viudo Juan Manuel Iraola, un productor de teatro de la alta sociedad.",
       "rating": "15",
       "productora": "Telefe Contenidos",
@@ -19534,6 +19548,7 @@
     {
       "id": "v45",
       "title": "Aquí No Hay Quien Viva",
+      "type": "serie",
       "year": "2008",
       "channel": "Telefe",
       "genre": "Sitcom",
@@ -19544,6 +19559,9 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/aqui-no-hay-quien-viva-poster-420x280.png",
+      "tiras_2000_rows": [
+        "sitcoms"
+      ],
       "subtitle": "Sitcom",
       "horario": "22hs",
       "capitulos": 39,
@@ -19556,6 +19574,7 @@
     {
       "id": "v46",
       "title": "Amor Mío",
+      "type": "serie",
       "year": "2005",
       "channel": "Telefe",
       "genre": "Sitcom",
@@ -19565,6 +19584,9 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/amor-mio-poster-280x420.png",
+      "tiras_2000_rows": [
+        "sitcoms"
+      ],
       "subtitle": "Sitcom",
       "horario": "21hs",
       "capitulos": 160,
@@ -19585,6 +19607,7 @@
     {
       "id": "v47",
       "title": "¿Quién es el Jefe?",
+      "type": "serie",
       "year": "2005",
       "channel": "Telefe",
       "genre": "Sitcom",
@@ -19594,6 +19617,9 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/quien-es-el-jefe-poster-280x420.png",
+      "tiras_2000_rows": [
+        "sitcoms"
+      ],
       "subtitle": "Sitcom",
       "horario": "20:30hs",
       "capitulos": "-",
@@ -19606,6 +19632,7 @@
     {
       "id": "v48",
       "title": "Amo de Casa",
+      "type": "serie",
       "year": "2006",
       "channel": "Canal 9/Azul TV",
       "genre": "Sitcom",
@@ -19615,6 +19642,9 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/amo-de-casa-poster-280x420.png",
+      "tiras_2000_rows": [
+        "sitcoms"
+      ],
       "horizontal_gallery": [
         {
           "image": "images/horizontals-1024x576/2006-amo-de-casa-canal9-slide1024x576-v1.webp"
@@ -20085,6 +20115,7 @@
     {
       "id": "v62",
       "title": "Valentino, el Argentino",
+      "type": "serie",
       "year": "2008",
       "channel": "Canal 13",
       "genre": "Comedia",
@@ -20096,7 +20127,8 @@
       "orientation": "vertical",
       "image": "images/verticals/valentino-el-argentino-280x420.png",
       "tiras_2000_rows": [
-        "ficciones-tarde"
+        "ficciones-tarde",
+        "protagonistas-latinoamerica"
       ],
       "subtitle": "Comedia",
       "horario": "19hs, 16hs",
@@ -20110,6 +20142,7 @@
     {
       "id": "v63",
       "title": "Yago, Pasión Morena",
+      "type": "serie",
       "year": "2001",
       "channel": "Telefe",
       "genre": "Telenovela",
@@ -20120,7 +20153,8 @@
       "orientation": "vertical",
       "image": "images/verticals/yago-pasion-morena-280x420.png",
       "tiras_2000_rows": [
-        "ficciones-tarde"
+        "ficciones-tarde",
+        "protagonistas-latinoamerica"
       ],
       "subtitle": "Telenovela",
       "horario": "13hs",
@@ -20142,6 +20176,7 @@
     {
       "id": "v64",
       "title": "Provócame",
+      "type": "serie",
       "year": "2001",
       "channel": "Telefe",
       "genre": "Telenovela",
@@ -20153,7 +20188,8 @@
       "orientation": "vertical",
       "image": "images/verticals/2001-provocame-telefe-poster280x420.webp",
       "tiras_2000_rows": [
-        "ficciones-tarde"
+        "ficciones-tarde",
+        "protagonistas-latinoamerica"
       ],
       "subtitle": "Telenovela",
       "horario": "20:30hs, 19:30hs",
@@ -20168,6 +20204,7 @@
     {
       "id": "v65",
       "title": "Dr. Amor",
+      "type": "serie",
       "year": "2003",
       "channel": "Canal 13",
       "genre": "Comedia",
@@ -20180,7 +20217,8 @@
       "orientation": "vertical",
       "image": "images/verticals/dr-amor-280x420.png",
       "tiras_2000_rows": [
-        "ficciones-tarde"
+        "ficciones-tarde",
+        "protagonistas-latinoamerica"
       ],
       "subtitle": "Comedia",
       "horario": "18hs, 19hs",
@@ -20194,6 +20232,7 @@
     {
       "id": "v66",
       "title": "Amor Latino",
+      "type": "serie",
       "year": "2000",
       "channel": "Canal 9/Azul TV",
       "genre": "Telenovela",
@@ -20206,7 +20245,8 @@
       "orientation": "vertical",
       "image": "images/verticals/amor-latino-280x420.png",
       "tiras_2000_rows": [
-        "ficciones-tarde"
+        "ficciones-tarde",
+        "protagonistas-latinoamerica"
       ],
       "subtitle": "Telenovela",
       "horario": "20hs, 18hs",

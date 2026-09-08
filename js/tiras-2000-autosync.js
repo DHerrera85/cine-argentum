@@ -6,7 +6,7 @@
        ========================================================= */
 
     var DATA_URL =
-        'data.json?v=20260907-tiras2000-3';
+        'data.json?v=20260908-tiras2000-2';
 
     var HORIZONTAL_ROWS = [
         {
@@ -79,17 +79,24 @@
                 'tiras-2000-thrillers-list',
             countId:
                 'tiras-2000-thrillers-count'
-        }
-    ];
-
-    var STATIC_ROWS = [
-        {
-            sectionId: 'tiras-2000-sitcoms',
-            countId: 'tiras-2000-sitcoms-count'
         },
         {
-            sectionId: 'tiras-2000-protagonistas-latinoamerica',
-            countId: 'tiras-2000-protagonistas-latinoamerica-count'
+            key: 'sitcoms',
+            minYear: 2000,
+            maxYear: 2009,
+            containerId:
+                'tiras-2000-sitcoms-list',
+            countId:
+                'tiras-2000-sitcoms-count'
+        },
+        {
+            key: 'protagonistas-latinoamerica',
+            minYear: 2000,
+            maxYear: 2009,
+            containerId:
+                'tiras-2000-protagonistas-latinoamerica-list',
+            countId:
+                'tiras-2000-protagonistas-latinoamerica-count'
         }
     ];
 
@@ -610,40 +617,6 @@
 
         countElement.hidden = false;
     }
-    function updateStaticRowCounts() {
-        STATIC_ROWS.forEach(function (rowConfig) {
-            var section = document.getElementById(
-                rowConfig.sectionId
-            );
-
-            if (!section) {
-                return;
-            }
-
-            var list = section.querySelector(
-                '.slider-h, .slider-v'
-            );
-
-            if (!list) {
-                return;
-            }
-
-            var itemCount = Array.prototype.filter.call(
-                list.children,
-                function (element) {
-                    return (
-                        element.tagName === 'LI' &&
-                        !element.classList.contains('clone')
-                    );
-                }
-            ).length;
-
-            updateRowCount(
-                rowConfig,
-                itemCount
-            );
-        });
-    }
 
     /* =========================================================
        RENDER
@@ -732,8 +705,6 @@
     /* =========================================================
        INICIALIZACIÓN
        ========================================================= */
-
-    updateStaticRowCounts();
 
     fetch(DATA_URL, {
         cache: 'no-store'
