@@ -6,7 +6,7 @@
 /* Contenedor general */
 .tiras-2000-page {
     width: 100%;
-    padding: 116px 0 20px;
+    padding: 18px 0 20px;
     overflow: hidden;
     box-sizing: border-box;
     color: #ffffff;
@@ -344,7 +344,7 @@
 
 @media (max-width: 1100px) {
     .tiras-2000-page {
-        padding-top: 82px;
+        padding-top: 16px;
     }
 
     .tiras-2000-section {
@@ -374,7 +374,7 @@
 
 @media (max-width: 768px) {
     .tiras-2000-page {
-        padding-top: 64px;
+        padding-top: 12px;
         padding-bottom: 12px;
     }
 
@@ -483,5 +483,355 @@
 
     .tiras-2000-vertical-showcase .latest-b-text {
         min-height: 88px;
+    }
+}
+
+/* =========================================================
+   ESTRENOS HISTÓRICOS 2000–2009
+   ========================================================= */
+
+.tiras-2000-featured-block {
+    --tiras-2000-accent: 207, 120, 55;
+    --tiras-2000-secondary: 62, 112, 166;
+
+    position: relative;
+    width: 100%;
+    padding-top: 92px;
+    overflow: hidden;
+    box-sizing: border-box;
+
+    color: #ffffff;
+
+    background:
+        radial-gradient(ellipse at 12% 18%,
+            rgba(var(--tiras-2000-accent), 0.16) 0%,
+            rgba(var(--tiras-2000-accent), 0.06) 38%,
+            transparent 67%),
+        radial-gradient(ellipse at 88% 78%,
+            rgba(var(--tiras-2000-secondary), 0.13) 0%,
+            transparent 54%),
+        linear-gradient(180deg,
+            #1b2028 0%,
+            #141a21 100%);
+
+    border-bottom:
+        1px solid rgba(255, 255, 255, 0.06);
+}
+
+.tiras-2000-calendar-section {
+    width: 100%;
+    margin: 0;
+    padding: 24px 32px 30px;
+    box-sizing: border-box;
+    background: transparent;
+}
+
+.tiras-2000-calendar-section[hidden] {
+    display: none;
+}
+
+/* Título */
+
+.tiras-2000-calendar-title {
+    position: relative;
+    margin: 0 0 18px;
+    padding: 0 0 12px;
+
+    color: #ffffff;
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 1.25;
+    text-transform: uppercase;
+}
+
+.tiras-2000-calendar-title::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    width: 52px;
+    height: 3px;
+    border-radius: 999px;
+
+    background:
+        linear-gradient(90deg,
+            rgba(var(--tiras-2000-accent), 1),
+            rgba(var(--tiras-2000-accent), 0.18));
+}
+
+/* Solapas y contador */
+
+.tiras-2000-calendar-controls {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: center;
+    gap: 20px;
+
+    width: 100%;
+    margin: 0 0 20px;
+}
+
+.tiras-2000-month-tabs {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    min-width: 0;
+    padding: 2px 2px 6px;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    overscroll-behavior-inline: contain;
+    -webkit-overflow-scrolling: touch;
+}
+
+.tiras-2000-month-tabs::-webkit-scrollbar {
+    display: none;
+}
+
+.tiras-2000-month-tab {
+    flex: 0 0 auto;
+    min-height: 42px;
+    padding: 9px 17px;
+
+    color: #d8dde5;
+    background: rgba(255, 255, 255, 0.035);
+
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 999px;
+
+    font-family: inherit;
+    font-size: 0.9rem;
+    font-weight: 600;
+    line-height: 1;
+
+    cursor: pointer;
+
+    transition:
+        color 0.2s ease,
+        background-color 0.2s ease,
+        border-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.tiras-2000-month-tab:hover {
+    color: #ffffff;
+    border-color:
+        rgba(var(--tiras-2000-accent), 0.7);
+    background:
+        rgba(var(--tiras-2000-accent), 0.12);
+}
+
+.tiras-2000-month-tab.is-active {
+    color: #ffffff;
+    border-color:
+        rgb(var(--tiras-2000-accent));
+    background:
+        rgb(var(--tiras-2000-accent));
+
+    box-shadow:
+        0 6px 18px rgba(var(--tiras-2000-accent), 0.22);
+}
+
+.tiras-2000-month-tab:focus-visible {
+    outline:
+        3px solid rgba(var(--tiras-2000-accent), 0.35);
+    outline-offset: 3px;
+}
+
+.tiras-2000-calendar-section .tiras-2000-count {
+    color: #ffe2ca;
+
+    border-color:
+        rgba(var(--tiras-2000-accent), 0.52);
+
+    background:
+        rgba(var(--tiras-2000-accent), 0.10);
+}
+
+/* Carrusel */
+
+.tiras-2000-calendar-section .slider-v {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.tiras-2000-calendar-section .latest-box {
+    width: 100%;
+    max-width: none;
+    min-width: 0;
+    margin: 0;
+}
+
+#tiras-2000-historical-premieres .lightSlider,
+#tiras-2000-historical-premieres .lSSlide {
+    height: auto !important;
+}
+
+/* Imagen y distintivo editorial */
+
+.tiras-2000-premiere-image {
+    position: relative;
+}
+
+.tiras-2000-premiere-badge {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    z-index: 2;
+
+    padding: 7px 12px;
+
+    color: #ffffff;
+    background:
+        rgb(var(--tiras-2000-accent));
+
+    border:
+        1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 999px;
+
+    box-shadow:
+        0 5px 16px rgba(0, 0, 0, 0.24);
+
+    font-size: 0.72rem;
+    font-weight: 800;
+    line-height: 1;
+    letter-spacing: 0.04em;
+}
+
+/* Fecha debajo del título */
+
+.tiras-2000-premiere-date {
+    display: block;
+    margin-top: 5px;
+
+    color: #b8c0cb;
+    font-size: 0.84rem;
+    font-weight: 500;
+    line-height: 1.3;
+}
+
+/* Estado sin resultados */
+
+.tiras-2000-calendar-empty {
+    width: 100%;
+    margin: 20px 0 8px;
+    padding: 30px 18px;
+    box-sizing: border-box;
+
+    color: #b8c0cb;
+    background: rgba(255, 255, 255, 0.025);
+
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+
+    text-align: center;
+}
+
+.tiras-2000-calendar-empty[hidden] {
+    display: none;
+}
+
+/* =========================================================
+   CALENDARIO — TABLET
+   ========================================================= */
+
+@media (max-width: 1100px) {
+    .tiras-2000-featured-block {
+        padding-top: 86px;
+    }
+
+    .tiras-2000-calendar-section {
+        padding: 22px 20px 26px;
+    }
+
+    .tiras-2000-calendar-controls {
+        gap: 14px;
+    }
+}
+
+/* =========================================================
+   CALENDARIO — MÓVIL
+   ========================================================= */
+
+@media (max-width: 768px) {
+    .tiras-2000-featured-block {
+        padding-top: 86px;
+    }
+
+    .tiras-2000-calendar-section {
+        padding: 20px 16px 24px;
+    }
+
+    .tiras-2000-calendar-title {
+        margin-bottom: 15px;
+        padding-bottom: 10px;
+        font-size: 1.12rem;
+    }
+
+    .tiras-2000-calendar-title::after {
+        width: 44px;
+        height: 2px;
+    }
+
+    .tiras-2000-calendar-controls {
+        gap: 10px;
+        margin-bottom: 16px;
+    }
+
+    .tiras-2000-month-tabs {
+        gap: 8px;
+        padding-bottom: 5px;
+    }
+
+    .tiras-2000-month-tab {
+        min-height: 38px;
+        padding: 8px 13px;
+        font-size: 0.78rem;
+    }
+
+    .tiras-2000-calendar-section .tiras-2000-count {
+        min-width: 82px;
+        padding: 7px 10px;
+        font-size: 0.72rem;
+    }
+
+    .tiras-2000-premiere-badge {
+        top: 8px;
+        left: 8px;
+        padding: 6px 9px;
+        font-size: 0.62rem;
+    }
+
+    .tiras-2000-premiere-date {
+        margin-top: 4px;
+        font-size: 0.78rem;
+    }
+}
+
+/* =========================================================
+   CALENDARIO — MÓVIL PEQUEÑO
+   ========================================================= */
+
+@media (max-width: 480px) {
+    .tiras-2000-calendar-section {
+        padding-right: 12px;
+        padding-left: 12px;
+    }
+
+    .tiras-2000-calendar-controls {
+        grid-template-columns:
+            minmax(0, 1fr) auto;
+        gap: 8px;
+    }
+
+    .tiras-2000-month-tab {
+        padding-right: 12px;
+        padding-left: 12px;
     }
 }
