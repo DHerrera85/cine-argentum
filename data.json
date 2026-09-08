@@ -13072,6 +13072,7 @@
     {
       "id": "v75",
       "title": "Luna Salvaje",
+      "type": "serie",
       "year": "2000",
       "channel": "Telefe",
       "genre": "Telenovela",
@@ -13080,7 +13081,26 @@
         "Carina Zampini"
       ],
       "orientation": "vertical",
-      "image": "images/verticals/luna-salvaje-poster-280x420.png",
+      "image": "images/verticals/2000-luna-salvaje-telefe-poster280x420.webp",
+      "horizontal_image": "images/horizontals-1024x576/2000-luna-salvaje-telefe-slide-1024x576-v1.webp",
+      "horizontal_gallery": [
+        {
+          "image": "images/horizontals-1024x576/2000-luna-salvaje-telefe-slide-1024x576-v1.webp"
+        },
+        {
+          "image": "images/horizontals-1024x576/2000-luna-salvaje-telefe-slide-1024x576-v2.webp"
+        }
+      ],
+      "poster_gallery": [
+        {
+          "image": "images/verticals/2000-luna-salvaje-telefe-poster280x420.webp",
+          "label": "Póster principal"
+        },
+        {
+          "image": "images/verticals/luna-salvaje-poster-280x420.png",
+          "label": "Póster alternativo"
+        }
+      ],
       "tiras_2000_rows": [
         "ficciones-tarde"
       ],
@@ -13088,7 +13108,7 @@
       "horario": "13hs",
       "capitulos": 151,
       "fecha_estreno": "30/10/2000",
-      "sinopsis": "“Luna Salvaje” cuenta la historia de Leticia, quien convence a su esposo Gonzalo de tener un hijo con María mediante un contrato de gestación subrogada. Pero cuando María y Gonzalo se enamoran, todo se descontrola.",
+      "sinopsis": "Luna Salvaje cuenta la historia de Leticia, quien convence a su esposo Gonzalo de tener un hijo con María mediante un contrato de gestación subrogada. Pero cuando María y Gonzalo se enamoran, todo se descontrola.",
       "rating": "15",
       "productora": "Telefe Contenidos",
       "tipo_emision": "Tira Diaria"
