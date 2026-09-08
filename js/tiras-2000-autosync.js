@@ -109,6 +109,45 @@
         }
     ];
 
+    var EDITORIAL_ROWS = [
+        {
+            mode: 'premiere-month',
+            minYear: 2000,
+            maxYear: 2009,
+            sectionId:
+                'tiras-2000-estrenos-del-mes',
+            titleId:
+                'tiras-2000-estrenos-del-mes-title',
+            containerId:
+                'tiras-2000-estrenos-del-mes-list',
+            countId:
+                'tiras-2000-estrenos-del-mes-count'
+        }
+    ];
+
+    var EDITORIAL_GENRES = [
+        'telenovela',
+        'comedia',
+        'drama',
+        'thriller',
+        'sitcom'
+    ];
+
+    var MONTH_NAMES = [
+        'Enero',
+        'Febrero',
+        'Marzo',
+        'Abril',
+        'Mayo',
+        'Junio',
+        'Julio',
+        'Agosto',
+        'Septiembre',
+        'Octubre',
+        'Noviembre',
+        'Diciembre'
+    ];
+
     var VERTICAL_PLACEHOLDER =
         'images/verticals/placeholder-280x420.svg';
 
@@ -331,6 +370,90 @@
                 }
 
                 return true;
+            })
+            .sort(compareRecentFirst);
+    }
+
+    function getItemReleaseDate(item) {
+        if (!item) {
+            return null;
+        }
+
+        return parseDate(
+            item.fecha_estreno ||
+            item.release_date ||
+            item.premiere_date
+        );
+    }
+
+    function isTiras2000EditorialCandidate(
+        item,
+        rowConfig
+    ) {
+        if (
+            !item ||
+            !item.id ||
+            !item.channel ||
+            !item.image
+        ) {
+            return false;
+        }
+
+        var year = Number(item.year);
+        var minYear = Number(rowConfig.minYear);
+        var maxYear = Number(rowConfig.maxYear);
+
+        if (
+            !Number.isFinite(year) ||
+            year < minYear ||
+            year > maxYear
+        ) {
+            return false;
+        }
+
+        if (
+            normalizeText(item.type) ===
+            'pelicula'
+        ) {
+            return false;
+        }
+
+        return EDITORIAL_GENRES.indexOf(
+            normalizeText(item.genre)
+        ) !== -1;
+    }
+
+    function getMonthlyPremieres(
+        items,
+        rowConfig,
+        monthIndex
+    ) {
+        if (
+            !Array.isArray(items) ||
+            !rowConfig ||
+            !Number.isFinite(monthIndex)
+        ) {
+            return [];
+        }
+
+        return items
+            .filter(function (item) {
+                if (
+                    !isTiras2000EditorialCandidate(
+                        item,
+                        rowConfig
+                    )
+                ) {
+                    return false;
+                }
+
+                var releaseDate =
+                    getItemReleaseDate(item);
+
+                return Boolean(
+                    releaseDate &&
+                    releaseDate.getMonth() ===
+                    monthIndex);
             })
             .sort(compareRecentFirst);
     }
@@ -691,6 +814,69 @@
         initializeVerticalSlider(list);
     }
 
+    function renderEditorialRow(
+        items,
+        rowConfig
+    ) {
+        var section = document.getElementById(
+            rowConfig.sectionId
+        );
+
+        var list = document.getElementById(
+            rowConfig.containerId
+        );
+
+        if (!section || !list) {
+            return;
+        }
+
+        var currentMonth =
+            new Date().getMonth();
+
+        var productions =
+            getMonthlyPremieres(
+                items,
+                rowConfig,
+                currentMonth
+            );
+
+        if (!productions.length) {
+            section.hidden = true;
+            return;
+        }
+
+        var title =
+            'Estrenos Históricos de ' +
+            MONTH_NAMES[currentMonth];
+
+        var titleElement =
+            document.getElementById(
+                rowConfig.titleId
+            );
+
+        if (titleElement) {
+            titleElement.textContent = title;
+        }
+
+        list.setAttribute(
+            'aria-label',
+            title
+        );
+
+        list.innerHTML = productions
+            .map(buildVerticalCard)
+            .join('');
+
+        updateRowCount(
+            rowConfig,
+            productions.length
+        );
+
+        section.hidden = false;
+
+        initializeVerticalSlider(list);
+    }
+
     function renderAllRows(items) {
         HORIZONTAL_ROWS.forEach(
             function (rowConfig) {
@@ -704,6 +890,15 @@
         VERTICAL_ROWS.forEach(
             function (rowConfig) {
                 renderVerticalRow(
+                    items,
+                    rowConfig
+                );
+            }
+        );
+
+        EDITORIAL_ROWS.forEach(
+            function (rowConfig) {
+                renderEditorialRow(
                     items,
                     rowConfig
                 );

@@ -9133,6 +9133,16 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/1998-laschicasdeenfrente-canal13-poster280x420-v2.png",
+      "poster_gallery": [
+        {
+          "image": "images/verticals/1998-laschicasdeenfrente-canal13-poster280x420-v2.png",
+          "label": "Póster principal"
+        },
+        {
+          "image": "images/verticals/1998-laschicasdeenfrente-canal13-poster280x420-v3.png",
+          "label": "Póster alternativo"
+        }
+      ],
       "horizontal_image": "",
       "subtitle": "",
       "horario": "18:00hs",
@@ -12935,7 +12945,7 @@
       "subtitle": "Telenovela",
       "horario": "21:45hs",
       "capitulos": 218,
-      "fecha_estreno": "02/09/2009",
+      "fecha_estreno": "09/02/2009",
       "sinopsis": "Tres hermanos —Leo, Enzo y Segundo Sosa— buscan vengar la muerte de su padre, Roque, y la ruina familiar causada por Laureano Gómez Acuña. Para lograrlo, se acercan a la familia de su enemigo, pero sus planes se complican cuando se enamoran de las hijas de este. ",
       "rating": "27,4",
       "productora": "Pol-Ka",
