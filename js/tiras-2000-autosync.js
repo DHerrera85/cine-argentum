@@ -6,7 +6,7 @@
        ========================================================= */
 
     var DATA_URL =
-        'data.json?v=20260908-tiras2000-2';
+        'data.json?v=20260908-tiras2000-3';
 
     var HORIZONTAL_ROWS = [
         {
@@ -97,6 +97,15 @@
                 'tiras-2000-protagonistas-latinoamerica-list',
             countId:
                 'tiras-2000-protagonistas-latinoamerica-count'
+        },
+        {
+            key: 'webseries',
+            minYear: 2000,
+            maxYear: 2009,
+            containerId:
+                'tiras-2000-webseries-list',
+            countId:
+                'tiras-2000-webseries-count'
         }
     ];
 

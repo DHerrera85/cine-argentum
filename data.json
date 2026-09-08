@@ -6929,6 +6929,127 @@
       ]
     },
     {
+      "id": "P2068",
+      "title": "Amanda O",
+      "type": "serie",
+      "year": "2008",
+      "channel": "Novebox",
+      "web_channels": [
+        "Novebox"
+      ],
+      "genre": "Comedia",
+      "actors": [
+        "Natalia Oreiro",
+        "Luciano Castro",
+        "Valeria Lorca",
+        "Francisco Nápoli",
+        "Fabio Aste",
+        "Julieta Zylberberg",
+        "Benjamín Amadeo",
+        "Florencia Ortiz",
+        "Pilar Gamboa",
+        "Esteban Coletti"
+      ],
+      "orientation": "vertical",
+      "image": "images/verticals/2008-amandao-novebox-poster280x420.png",
+      "subtitle": "Webserie",
+      "horario": "lunes a viernes 20:30hs",
+      "capitulos": 120,
+      "fecha_estreno": "30/04/2008",
+      "sinopsis": "Amanda O, una célebre estrella internacional agobiada por la fama y el constante acoso de los medios y sus admiradores, desea poder escapar por un momento de su vida pública. Cuando inexplicablemente nadie vuelve a reconocerla y otra mujer ocupa su lugar, Amanda encuentra refugio en Dante, un artista plástico, mientras intenta recuperar su identidad y descubrir qué ocurrió con la vida que hasta entonces le pertenecía.",
+      "productora": [
+        "Dori Media Group"
+      ],
+      "tipo_emision": "Webserie",
+      "tiras_2000_rows": [
+        "webseries"
+      ]
+    },
+    {
+      "id": "P2069",
+      "title": "Dirigime: El Rescate",
+      "type": "serie",
+      "year": "2008",
+      "channel": "América",
+      "web_channels": [
+        "Terra"
+      ],
+      "air_channels": [
+        "América"
+      ],
+      "genre": "Thriller",
+      "actors": [
+        "Brenda Gandini",
+        "Arnaldo André",
+        "Esteban Coletti",
+        "Adolfo Yanelli"
+      ],
+      "orientation": "vertical",
+      "image": "images/verticals/2008-dirigime-el-rescate-terra-america-poster280x420.webp",
+      "subtitle": "Webserie thriller",
+      "horario": "miércoles 22:30hs",
+      "fecha_estreno": "23/07/2008",
+      "sinopsis": "Una joven de 24 años queda atrapada en una desesperada carrera contrarreloj cuando su novio es secuestrado y los captores la obligan a cumplir una serie de exigencias para conseguir su liberación. Durante una angustiante noche deberá superar distintos obstáculos y enfrentarse a un creciente hostigamiento psicológico y físico, mientras cada decisión puede modificar el rumbo de su búsqueda.",
+      "rating": "3,5",
+      "productora": [
+        "Container Group"
+      ],
+      "tipo_emision": "Webserie",
+      "tiras_2000_rows": [
+        "webseries"
+      ],
+      "producciones_relacionadas": [
+        {
+          "id": "P2070",
+          "title": "Dirigime II: La Venganza",
+          "meta": "Segunda entrega",
+          "image": "images/verticals/2008-dirigime-la-venganza-terra-america-poster280x420.webp"
+        }
+      ]
+    },
+    {
+      "id": "P2070",
+      "title": "Dirigime II: La Venganza",
+      "type": "serie",
+      "year": "2008",
+      "channel": "América",
+      "web_channels": [
+        "Terra"
+      ],
+      "air_channels": [
+        "América"
+      ],
+      "genre": "Thriller",
+      "actors": [
+        "Celeste Cid",
+        "Alejandro Fiore",
+        "Oscar Ferreyro",
+        "Rolly Serrano",
+        "Pepe Monje",
+        "Agustina Posse",
+        "Peto Menahem",
+        "Carlos Kaspar"
+      ],
+      "orientation": "vertical",
+      "image": "images/verticals/2008-dirigime-la-venganza-terra-america-poster280x420.webp",
+      "subtitle": "Webserie thriller",
+      "horario": "22:15hs",
+      "fecha_estreno": "01/12/2008",
+      "sinopsis": "Laura ve su vida desmoronarse después de atravesar un violento episodio y decide enfrentar a quienes la convirtieron en víctima, impulsada por el deseo de hacer justicia por sus propios medios. Mientras prepara su venganza contra Javier y sus secuaces, sus enemigos intentarán atraparla nuevamente, dando inicio a un peligroso enfrentamiento en el que deberá luchar por recuperar el control de su vida.",
+      "tipo_emision": "Webserie",
+      "tiras_2000_rows": [
+        "webseries"
+      ],
+      "producciones_relacionadas": [
+        {
+          "id": "P2069",
+          "title": "Dirigime: El Rescate",
+          "meta": "Primera entrega",
+          "image": "images/verticals/2008-dirigime-el-rescate-terra-america-poster280x420.webp"
+        }
+      ]
+    },
+    {
       "id": "T0001",
       "title": "Amigos son los amigos",
       "year": "1990",
