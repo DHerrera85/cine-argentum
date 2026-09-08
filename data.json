@@ -20272,7 +20272,18 @@
         "Gianella Neyra"
       ],
       "orientation": "vertical",
-      "image": "images/verticals/yago-pasion-morena-280x420.png",
+      "image": "images/verticals/2001-yago-pasion-morena-telefe-poster280x420.webp",
+      "horizontal_image": "images/horizontals-1024x576/2001-yago-pasion-morena-telefe-slide-1024x576.webp",
+      "poster_gallery": [
+        {
+          "image": "images/verticals/2001-yago-pasion-morena-telefe-poster280x420.webp",
+          "label": "Póster principal"
+        },
+        {
+          "image": "images/verticals/yago-pasion-morena-280x420.png",
+          "label": "Póster alternativo"
+        }
+      ],
       "tiras_2000_rows": [
         "ficciones-tarde",
         "protagonistas-latinoamerica"
