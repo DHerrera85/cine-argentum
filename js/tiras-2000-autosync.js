@@ -109,28 +109,26 @@
         }
     ];
 
-    var EDITORIAL_ROWS = [
-        {
-            mode: 'premiere-month',
-            minYear: 2000,
-            maxYear: 2009,
-            sectionId:
-                'tiras-2000-estrenos-del-mes',
-            titleId:
-                'tiras-2000-estrenos-del-mes-title',
-            containerId:
-                'tiras-2000-estrenos-del-mes-list',
-            countId:
-                'tiras-2000-estrenos-del-mes-count'
-        }
-    ];
+    var EDITORIAL_CALENDAR = {
+        minYear: 2000,
+        maxYear: 2009,
+        sectionId:
+            'tiras-2000-historical-premieres',
+        tabsId:
+            'tiras-2000-historical-month-tabs',
+        containerId:
+            'tiras-2000-historical-premieres-list',
+        countId:
+            'tiras-2000-historical-premieres-count',
+        emptyId:
+            'tiras-2000-historical-premieres-empty'
+    };
 
-    var EDITORIAL_GENRES = [
-        'telenovela',
-        'comedia',
-        'drama',
-        'thriller',
-        'sitcom'
+    var VALID_EDITORIAL_EMISSIONS = [
+        'tira diaria',
+        'semanal',
+        'fines de semana',
+        'webserie'
     ];
 
     var MONTH_NAMES = [
@@ -386,6 +384,75 @@
         );
     }
 
+    function hasEditorialSource(item) {
+        return Boolean(
+            item &&
+            (
+                item.channel ||
+                item.platform ||
+                (
+                    Array.isArray(item.platforms) &&
+                    item.platforms.length
+                ) ||
+                (
+                    Array.isArray(item.air_channels) &&
+                    item.air_channels.length
+                ) ||
+                (
+                    Array.isArray(item.cable_channels) &&
+                    item.cable_channels.length
+                )
+            )
+        );
+    }
+
+    function getEditorialFormatLabel(item) {
+        var emission = normalizeText(
+            item && item.tipo_emision
+        );
+
+        if (emission === 'tira diaria') {
+            return 'TIRA';
+        }
+
+        if (
+            emission === 'semanal' ||
+            emission === 'fines de semana'
+        ) {
+            return 'SEMANAL';
+        }
+
+        if (emission === 'webserie') {
+            return 'WEBSERIE';
+        }
+
+        return '';
+    }
+
+    function formatEditorialDate(item) {
+        var date = getItemReleaseDate(item);
+
+        if (!date) {
+            return '';
+        }
+
+        var day = String(
+            date.getDate()
+        ).padStart(2, '0');
+
+        var month = String(
+            date.getMonth() + 1
+        ).padStart(2, '0');
+
+        return (
+            day +
+            '/' +
+            month +
+            '/' +
+            date.getFullYear()
+        );
+    }
+
     function isTiras2000EditorialCandidate(
         item,
         rowConfig
@@ -393,8 +460,9 @@
         if (
             !item ||
             !item.id ||
-            !item.channel ||
-            !item.image
+            !item.image ||
+            !hasEditorialSource(item) ||
+            !getItemReleaseDate(item)
         ) {
             return false;
         }
@@ -402,6 +470,10 @@
         var year = Number(item.year);
         var minYear = Number(rowConfig.minYear);
         var maxYear = Number(rowConfig.maxYear);
+
+        var emission = normalizeText(
+            item.tipo_emision
+        );
 
         if (
             !Number.isFinite(year) ||
@@ -413,14 +485,47 @@
 
         if (
             normalizeText(item.type) ===
-            'pelicula'
+            'pelicula' ||
+            normalizeText(item.type) ===
+            'movie'
         ) {
             return false;
         }
 
-        return EDITORIAL_GENRES.indexOf(
-            normalizeText(item.genre)
-        ) !== -1;
+        return VALID_EDITORIAL_EMISSIONS
+            .indexOf(emission) !== -1;
+    }
+
+    function getMonthlyPremieres(
+        items,
+        rowConfig,
+        monthIndex
+    ) {
+        if (
+            !Array.isArray(items) ||
+            !rowConfig ||
+            !Number.isFinite(monthIndex)
+        ) {
+            return [];
+        }
+
+        return items
+            .filter(function (item) {
+                if (
+                    !isTiras2000EditorialCandidate(
+                        item,
+                        rowConfig
+                    )
+                ) {
+                    return false;
+                }
+
+                return (
+                    getItemReleaseDate(item)
+                        .getMonth() === monthIndex
+                );
+            })
+            .sort(compareRecentFirst);
     }
 
     function getMonthlyPremieres(
@@ -601,6 +706,88 @@
         ].join('');
     }
 
+    function buildHistoricalPremiereCard(item) {
+        var id = String(
+            item.id || ''
+        ).trim();
+
+        var title = String(
+            item.title || 'Sin título'
+        ).trim();
+
+        var image = getPosterImage(item);
+        var date = formatEditorialDate(item);
+
+        var formatLabel =
+            getEditorialFormatLabel(item);
+
+        var href =
+            'show.html?id=' +
+            encodeURIComponent(id);
+
+        return [
+            '<li class="item-f">',
+
+            '<a href="',
+            escapeHtml(href),
+            '" aria-label="Ver ficha de ',
+            escapeHtml(title),
+
+            date
+                ? ', estrenada el ' +
+                escapeHtml(date)
+                : '',
+
+            '">',
+
+            '<div class="latest-box">',
+
+            '<div class="latest-b-img ',
+            'tiras-2000-premiere-image">',
+
+            '<span class="',
+            'tiras-2000-premiere-badge',
+            '">',
+
+            escapeHtml(formatLabel),
+
+            '</span>',
+
+            '<img',
+            ' src="',
+            escapeHtml(image),
+            '"',
+            ' loading="lazy"',
+            ' alt="',
+            escapeHtml(title),
+            '"',
+            '>',
+
+            '</div>',
+
+            '<div class="latest-b-text">',
+
+            '<strong>',
+            escapeHtml(title),
+            '</strong>',
+
+            '<span class="',
+            'tiras-2000-premiere-date',
+            '">',
+
+            escapeHtml(date),
+
+            '</span>',
+
+            '<p></p>',
+
+            '</div>',
+            '</div>',
+            '</a>',
+            '</li>'
+        ].join('');
+    }
+
     /* =========================================================
        LIGHTSLIDER
        ========================================================= */
@@ -673,14 +860,21 @@
             !window.jQuery.fn ||
             !window.jQuery.fn.lightSlider
         ) {
-            return;
+            return null;
         }
 
         var $list = window.jQuery(list);
 
+        var instance =
+            list._tiras2000Slider;
+
         if ($list.hasClass('lightSlider')) {
-            var instance =
-                $list.data('lightSlider');
+            if (
+                !instance &&
+                typeof $list.refresh === 'function'
+            ) {
+                instance = $list;
+            }
 
             if (
                 instance &&
@@ -689,10 +883,13 @@
                 instance.refresh();
             }
 
-            return;
+            list._tiras2000Slider =
+                instance || null;
+
+            return list._tiras2000Slider;
         }
 
-        $list.lightSlider({
+        instance = $list.lightSlider({
             item: 5,
             autoWidth: false,
             slideMove: 1,
@@ -723,6 +920,28 @@
                 }
             ]
         });
+
+        list._tiras2000Slider = instance;
+
+        return instance;
+    }
+
+    function destroyVerticalSlider(list) {
+        if (!list) {
+            return;
+        }
+
+        var instance =
+            list._tiras2000Slider;
+
+        if (
+            instance &&
+            typeof instance.destroy === 'function'
+        ) {
+            instance.destroy();
+        }
+
+        list._tiras2000Slider = null;
     }
 
     function updateRowCount(
@@ -814,9 +1033,11 @@
         initializeVerticalSlider(list);
     }
 
-    function renderEditorialRow(
+    function renderEditorialMonth(
         items,
-        rowConfig
+        rowConfig,
+        monthIndex,
+        animateTabs
     ) {
         var section = document.getElementById(
             rowConfig.sectionId
@@ -826,55 +1047,156 @@
             rowConfig.containerId
         );
 
-        if (!section || !list) {
+        var tabs = document.getElementById(
+            rowConfig.tabsId
+        );
+
+        var empty = document.getElementById(
+            rowConfig.emptyId
+        );
+
+        if (!section || !list || !tabs) {
             return;
         }
-
-        var currentMonth =
-            new Date().getMonth();
 
         var productions =
             getMonthlyPremieres(
                 items,
                 rowConfig,
-                currentMonth
+                monthIndex
             );
 
-        if (!productions.length) {
-            section.hidden = true;
-            return;
-        }
+        var buttons = tabs.querySelectorAll(
+            '[data-month]'
+        );
 
-        var title =
-            'Estrenos Históricos de ' +
-            MONTH_NAMES[currentMonth];
+        destroyVerticalSlider(list);
 
-        var titleElement =
-            document.getElementById(
-                rowConfig.titleId
-            );
-
-        if (titleElement) {
-            titleElement.textContent = title;
-        }
+        list.innerHTML = productions
+            .map(buildHistoricalPremiereCard)
+            .join('');
 
         list.setAttribute(
             'aria-label',
-            title
+            'Estrenos históricos de ' +
+            MONTH_NAMES[monthIndex]
         );
-
-        list.innerHTML = productions
-            .map(buildVerticalCard)
-            .join('');
 
         updateRowCount(
             rowConfig,
             productions.length
         );
 
+        Array.prototype.forEach.call(
+            buttons,
+            function (button) {
+                var isActive =
+                    Number(
+                        button.getAttribute(
+                            'data-month'
+                        )
+                    ) === monthIndex;
+
+                button.classList.toggle(
+                    'is-active',
+                    isActive
+                );
+
+                button.setAttribute(
+                    'aria-selected',
+                    isActive
+                        ? 'true'
+                        : 'false'
+                );
+
+                button.tabIndex =
+                    isActive ? 0 : -1;
+
+                if (isActive) {
+                    button.scrollIntoView({
+                        behavior: animateTabs
+                            ? 'smooth'
+                            : 'auto',
+                        block: 'nearest',
+                        inline: 'center'
+                    });
+                }
+            }
+        );
+
+        if (empty) {
+            empty.hidden =
+                productions.length !== 0;
+        }
+
+        list.hidden =
+            productions.length === 0;
+
         section.hidden = false;
 
-        initializeVerticalSlider(list);
+        if (productions.length) {
+            list._tiras2000Slider =
+                initializeVerticalSlider(list);
+        }
+    }
+
+    function initializeEditorialCalendar(
+        items,
+        rowConfig
+    ) {
+        var tabs = document.getElementById(
+            rowConfig.tabsId
+        );
+
+        if (!tabs) {
+            return;
+        }
+
+        var buttons = tabs.querySelectorAll(
+            '[data-month]'
+        );
+
+        var currentMonth =
+            new Date().getMonth();
+
+        Array.prototype.forEach.call(
+            buttons,
+            function (button) {
+                button.addEventListener(
+                    'click',
+                    function () {
+                        var monthIndex =
+                            Number(
+                                button.getAttribute(
+                                    'data-month'
+                                )
+                            );
+
+                        if (
+                            !Number.isFinite(
+                                monthIndex
+                            )
+                        ) {
+                            return;
+                        }
+
+                        renderEditorialMonth(
+                            items,
+                            rowConfig,
+                            monthIndex,
+                            true
+                        );
+                    }
+                );
+            }
+        );
+
+        renderEditorialMonth(
+            items,
+            rowConfig,
+            currentMonth,
+            false
+        );
     }
 
     function renderAllRows(items) {
@@ -896,13 +1218,9 @@
             }
         );
 
-        EDITORIAL_ROWS.forEach(
-            function (rowConfig) {
-                renderEditorialRow(
-                    items,
-                    rowConfig
-                );
-            }
+        initializeEditorialCalendar(
+            items,
+            EDITORIAL_CALENDAR
         );
     }
 
