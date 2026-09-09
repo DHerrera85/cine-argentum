@@ -13754,11 +13754,21 @@
         "Luisana Lopilato"
       ],
       "orientation": "vertical",
-      "image": "images/verticals/los-pensionados-poster-280x420.png",
+      "image": "images/verticals/2004-los-pensionados-canaltrece-poster280x420.webp",
       "subtitle": "Comedia",
       "horario": "21hs",
       "capitulos": "116",
       "fecha_estreno": "02/02/2004",
+      "poster_gallery": [
+        {
+          "image": "images/verticals/2004-los-pensionados-canaltrece-poster280x420.webp",
+          "label": "Póster principal"
+        },
+        {
+          "image": "images/verticals/los-pensionados-poster-280x420.png",
+          "label": "Póster alternativo"
+        }
+      ],
       "sinopsis": "Un grupo de jóvenes convive en la pensión “La Argentina”, un espacio marcado por romances, desencuentros y nuevas oportunidades. Bajo la tutela de Tony y su familia, la vida cotidiana se transforma en un cruce constante de amor, pérdida y redescubrimiento.",
       "rating": "12,2",
       "juveniles_rows": [
@@ -19598,7 +19608,7 @@
       "capitulos": 251,
       "fecha_estreno": "28/01/2008",
       "sinopsis": "La historia sigue a Margarita, una portera apasionada que se enamora de Beto, el encargado del edificio vecino. Entre enredos barriales, un secreto sobre su hijo León y un triángulo amoroso con el odontólogo Mauricio, su vida se complica.",
-            "poster_gallery": [
+      "poster_gallery": [
         {
           "image": "images/verticals/2008-por-amor-a-vos-canaltrece-poster280x420.webp",
           "label": "Póster principal"
