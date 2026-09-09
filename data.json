@@ -19587,8 +19587,8 @@
         "Raúl Taibo"
       ],
       "orientation": "vertical",
-      "image": "images/verticals/por-amor-a-vos-poster-280x420.png",
-      "horizontal_image": "images/horizontals-1024x576/por-amor-a-vos-slide-1024x576.png",
+      "image": "images/verticals/2008-por-amor-a-vos-canaltrece-poster280x420.webp",
+      "horizontal_image": "images/horizontals-1024x576/2008-por-amor-a-vos-canaltrece-slide-1024x576.webp",
       "tiras_2000_rows": [
         "comedias-exitosas",
         "comedias-estelares"
@@ -19598,6 +19598,16 @@
       "capitulos": 251,
       "fecha_estreno": "28/01/2008",
       "sinopsis": "La historia sigue a Margarita, una portera apasionada que se enamora de Beto, el encargado del edificio vecino. Entre enredos barriales, un secreto sobre su hijo León y un triángulo amoroso con el odontólogo Mauricio, su vida se complica.",
+            "poster_gallery": [
+        {
+          "image": "images/verticals/2008-por-amor-a-vos-canaltrece-poster280x420.webp",
+          "label": "Póster principal"
+        },
+        {
+          "image": "images/verticals/2008-por-amor-a-vos-canaltrece-poster280x420-v2.webp",
+          "label": "Póster alternativo"
+        }
+      ],
       "rating": "21,3",
       "productora": "Pol-ka",
       "tipo_emision": "Tira Diaria"
