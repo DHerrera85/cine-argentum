@@ -13240,9 +13240,20 @@
         "Gianella Neyra"
       ],
       "orientation": "vertical",
-      "image": "images/verticals/culpable-de-este-amor-poster-280x420.png",
+      "image": "images/verticals/2004-culpable-de-este-amor-telefe-poster280x420-v2.webp",
+      "horizontal_image":"images/horizontals-1024x576/2004-culpable-de-este-amor-telefe-poster280x420-v2_1_.webp",
       "tiras_2000_rows": [
         "ficciones-tarde"
+      ],
+      "poster_gallery": [
+        {
+          "image": "images/verticals/2004-culpable-de-este-amor-telefe-poster280x420-v2.webp",
+          "label": "Póster principal"
+        },
+        {
+          "image": "images/verticals/culpable-de-este-amor-poster-280x420.png",
+          "label": "Póster alternativo"
+        }
       ],
       "subtitle": "Telenovela",
       "horario": "13hs",
@@ -13621,7 +13632,18 @@
         "Celeste Cid"
       ],
       "orientation": "vertical",
-      "image": "images/verticals/franco-buenaventura-poster-280x420.png",
+      "image": "images/verticals/2002-franco-buenaventura-telefe-poster280x420.webp",
+      "horizontal_image": "images/horizontals-1024x576/2002-franco-buenaventura-telefe-slide1024x576.webp",
+      "poster_gallery": [
+        {
+          "image": "images/verticals/2002-franco-buenaventura-telefe-poster280x420.webp",
+          "label": "Póster principal"
+        },
+        {
+          "image": "images/verticals/franco-buenaventura-poster-280x420.png",
+          "label": "Póster alternativo"
+        }
+      ],
       "tiras_2000_rows": [
         "telenovelas-estelares"
       ],
@@ -13759,7 +13781,7 @@
       "subtitle": "Comedia",
       "horario": "21hs",
       "capitulos": "116",
-      "horizontal_image":"images/horizontals-1024x576/2004-los-pensionados-canaltrece-slide-1024x576.webp",
+      "horizontal_image": "images/horizontals-1024x576/2004-los-pensionados-canaltrece-slide-1024x576.webp",
       "fecha_estreno": "02/02/2004",
       "poster_gallery": [
         {
@@ -19945,8 +19967,18 @@
         "Sebastián Estevanez"
       ],
       "orientation": "vertical",
-      "image": "images/verticals/amor-en-custodia-poster-280x420.png",
-      "horizontal_image": "images/horizontals-1024x576/amor-en-custodia-slide-1024x576.png",
+      "image": "images/verticals/2005-amor-en-custodia-telefe-poster280x420-v1.webp",
+      "poster_gallery": [
+        {
+          "image": "images/verticals/2005-amor-en-custodia-telefe-poster280x420-v1.webp",
+          "label": "Póster principal"
+        },
+        {
+          "image": "images/verticals/amor-en-custodia-poster-280x420.png",
+          "label": "Póster alternativo"
+        }
+      ],
+      "horizontal_image": "images/horizontals-1024x576/2005-amor-en-custodia-telefe-slide1024x576.webp",
       "tiras_2000_rows": [
         "dramas-exitosos",
         "ficciones-tarde"
