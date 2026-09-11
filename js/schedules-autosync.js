@@ -99,11 +99,9 @@
     }
 
 
-    function getEntryImage(
-        entry
-    ) {
-
+    function getEntryImage(entry) {
         if (
+            !entry ||
             entry.type !== 'production' ||
             !entry.production_id
         ) {
@@ -119,21 +117,9 @@
             return '';
         }
 
-        if (
-            production.tipo_emision ===
-            'Tira Diaria'
-        ) {
-
-            return (
-                production.horizontal_image ||
-                production.image ||
-                ''
-            );
-        }
-
         return (
-            production.image ||
             production.horizontal_image ||
+            production.image ||
             ''
         );
     }
@@ -420,19 +406,10 @@
                                 entry
                             );
 
-                        var production =
-                            entry.type === 'production' &&
-                                entry.production_id
-                                ? getProductionById(
-                                    entry.production_id
-                                )
-                                : null;
-
-                        var horizontalImage =
-                            production &&
-                                production.horizontal_image
-                                ? production.horizontal_image
-                                : '';
+                        var entryImage =
+                            getEntryImage(
+                                entry
+                            );
 
                         html +=
                             '<div class="schedule-grid-cell schedule-grid-program" ' +
@@ -454,9 +431,9 @@
                             '</strong>' +
 
                             (
-                                horizontalImage
+                                entryImage
                                     ? '<img class="schedule-competition-image" src="' +
-                                    horizontalImage +
+                                    entryImage +
                                     '" alt="' +
                                     title +
                                     '">'
@@ -744,19 +721,10 @@
                                 entry
                             );
 
-                        var production =
-                            entry.type === 'production' &&
-                                entry.production_id
-                                ? getProductionById(
-                                    entry.production_id
-                                )
-                                : null;
-
-                        var horizontalImage =
-                            production &&
-                                production.horizontal_image
-                                ? production.horizontal_image
-                                : '';
+                        var entryImage =
+                            getEntryImage(
+                                entry
+                            );
 
                         html +=
                             '<div class="schedule-grid-cell schedule-grid-program" ' +
@@ -780,9 +748,9 @@
                             '</strong>' +
 
                             (
-                                horizontalImage
+                                entryImage
                                     ? '<img class="schedule-competition-image" src="' +
-                                    horizontalImage +
+                                    entryImage +
                                     '" alt="' +
                                     title +
                                     '">'
