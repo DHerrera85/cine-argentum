@@ -48,6 +48,7 @@
   var SELECTORS = {
     grid: '#channel-decade-grid',
     featured: '#channel-featured-slider',
+    yearContainer: '#channel-year-filters',
     yearFilters: '[data-channel-year]',
     categoryFilters: '[data-channel-category]',
     title: '#channel-catalogue-title',
@@ -839,7 +840,7 @@
           (count === 1
             ? 'producción'
             : 'producciones') +
-          ' emitidas por Telefe entre ' +
+          ' emitidas por ' + CHANNEL_NAME + ' entre ' +
           START_YEAR +
           ' y ' +
           END_YEAR +
@@ -925,7 +926,7 @@
 
       var value =
         button.getAttribute(
-          'data-telefe-category'
+          'data-channel-category'
         ) || 'all';
 
       var active =
@@ -971,10 +972,95 @@
 
   }
 
+  /* =========================================================
+   GENERAR LOS FILTROS DE AÑO DE LA DÉCADA
+   ========================================================= */
+
+  function renderYearFilters() {
+
+    var container =
+      document.querySelector(
+        SELECTORS.yearContainer
+      );
+
+    if (
+      !container ||
+      !Number.isFinite(START_YEAR) ||
+      !Number.isFinite(END_YEAR) ||
+      START_YEAR > END_YEAR
+    ) {
+      return;
+    }
+
+    container.innerHTML = '';
+
+    var filterValues = [
+      {
+        value: 'all',
+        label: 'Todas'
+      }
+    ];
+
+    for (
+      var year = START_YEAR;
+      year <= END_YEAR;
+      year += 1
+    ) {
+      filterValues.push({
+        value: String(year),
+        label: String(year)
+      });
+    }
+
+    filterValues.forEach(function (filter) {
+
+      var button =
+        document.createElement('button');
+
+      var isActive =
+        filter.value === activeYear;
+
+      button.type = 'button';
+      button.className =
+        'year-button' +
+        (isActive ? ' active' : '');
+
+      button.setAttribute(
+        'data-channel-year',
+        filter.value
+      );
+
+      button.setAttribute(
+        'aria-pressed',
+        String(isActive)
+      );
+
+      button.textContent = filter.label;
+
+      container.appendChild(button);
+
+    });
+
+  }
+
 
   /* =========================================================
      ASIGNAR EVENTOS A LOS FILTROS DE AÑO
      ========================================================= */
+
+  function initChannelDecadeCatalogue() {
+
+    renderYearFilters();
+
+    bindYearFilters();
+
+    bindCategoryFilters();
+
+    bindCarouselButtons();
+
+    loadCatalogue();
+
+  }
 
   function bindYearFilters() {
 
@@ -1040,7 +1126,7 @@
 
           activeCategory =
             button.getAttribute(
-              'data-telefe-category'
+              'data-channel-category'
             ) || 'all';
 
           renderCatalogue();
@@ -1364,11 +1450,7 @@
      INICIALIZAR EL MÓDULO
      ========================================================= */
 
-  function initTelefe90sCatalogue() {
-
-    bindYearFilters();
-
-    bindCategoryFilters();
+  function initChannelDecadeCatalogue() {
 
     bindCarouselButtons();
 
@@ -1381,7 +1463,7 @@
      API PÚBLICA OPCIONAL
      ========================================================= */
 
-  window.Telefe90sCatalogue = {
+  window.ChannelDecadeCatalogue = {
     render: renderCatalogue,
     setYear: setYearFilter,
     getItems: function () {
@@ -1402,10 +1484,10 @@
   ) {
     document.addEventListener(
       'DOMContentLoaded',
-      initTelefe90sCatalogue
+      initChannelDecadeCatalogue
     );
   } else {
-    initTelefe90sCatalogue();
+    initChannelDecadeCatalogue();
   }
 
 })();
