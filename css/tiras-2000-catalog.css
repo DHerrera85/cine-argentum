@@ -845,10 +845,9 @@
         margin: 0 0 15px;
         padding-bottom: 10px;
 
-        font-size:
-            clamp(0.78rem, 3.45vw, 0.98rem);
+        font-size: 1.05rem;
         line-height: 1.25;
-        letter-spacing: -0.025em;
+        letter-spacing: 0.6px;
         white-space: nowrap;
     }
 
@@ -939,12 +938,6 @@
     .tiras-2000-month-tab {
         padding-right: 12px;
         padding-left: 12px;
-    }
-
-    .tiras-2000-calendar-title {
-        font-size:
-            clamp(0.70rem, 3.2vw, 0.83rem);
-        letter-spacing: -0.03em;
     }
 
     .tiras-2000-calendar-section .tiras-2000-count {

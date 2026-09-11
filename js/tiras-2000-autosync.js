@@ -1227,15 +1227,6 @@
 
                 startScrollLeft =
                     tabs.scrollLeft;
-
-                if (
-                    typeof tabs.setPointerCapture ===
-                    'function'
-                ) {
-                    tabs.setPointerCapture(
-                        activePointerId
-                    );
-                }
             }
         );
 
@@ -1262,6 +1253,15 @@
                     tabs.classList.add(
                         'is-dragging'
                     );
+
+                    if (
+                        typeof tabs.setPointerCapture ===
+                        'function'
+                    ) {
+                        tabs.setPointerCapture(
+                            activePointerId
+                        );
+                    }
                 }
 
                 if (!didDrag) {
