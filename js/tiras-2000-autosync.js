@@ -1144,6 +1144,153 @@
         }
     }
 
+    function enableMonthTabsMouseDrag(tabs) {
+        var isPointerDown = false;
+        var didDrag = false;
+        var startX = 0;
+        var startScrollLeft = 0;
+        var activePointerId = null;
+        var suppressClick = false;
+
+        if (
+            !tabs ||
+            !window.PointerEvent
+        ) {
+            return function () {
+                return false;
+            };
+        }
+
+        function finishDrag(event) {
+            if (
+                !isPointerDown ||
+                event.pointerId !==
+                activePointerId
+            ) {
+                return;
+            }
+
+            var releasedPointerId =
+                activePointerId;
+
+            var dragged = didDrag;
+
+            isPointerDown = false;
+            didDrag = false;
+            activePointerId = null;
+
+            tabs.classList.remove(
+                'is-dragging'
+            );
+
+            if (
+                typeof tabs.hasPointerCapture ===
+                'function' &&
+                tabs.hasPointerCapture(
+                    releasedPointerId
+                )
+            ) {
+                tabs.releasePointerCapture(
+                    releasedPointerId
+                );
+            }
+
+            if (dragged) {
+                suppressClick = true;
+
+                window.setTimeout(
+                    function () {
+                        suppressClick = false;
+                    },
+                    100
+                );
+            }
+        }
+
+        tabs.addEventListener(
+            'pointerdown',
+            function (event) {
+                if (
+                    event.pointerType !== 'mouse' ||
+                    event.button !== 0
+                ) {
+                    return;
+                }
+
+                isPointerDown = true;
+                didDrag = false;
+
+                activePointerId =
+                    event.pointerId;
+
+                startX = event.clientX;
+
+                startScrollLeft =
+                    tabs.scrollLeft;
+
+                if (
+                    typeof tabs.setPointerCapture ===
+                    'function'
+                ) {
+                    tabs.setPointerCapture(
+                        activePointerId
+                    );
+                }
+            }
+        );
+
+        tabs.addEventListener(
+            'pointermove',
+            function (event) {
+                if (
+                    !isPointerDown ||
+                    event.pointerId !==
+                    activePointerId
+                ) {
+                    return;
+                }
+
+                var movement =
+                    event.clientX - startX;
+
+                if (
+                    !didDrag &&
+                    Math.abs(movement) > 5
+                ) {
+                    didDrag = true;
+
+                    tabs.classList.add(
+                        'is-dragging'
+                    );
+                }
+
+                if (!didDrag) {
+                    return;
+                }
+
+                event.preventDefault();
+
+                tabs.scrollLeft =
+                    startScrollLeft -
+                    movement;
+            }
+        );
+
+        tabs.addEventListener(
+            'pointerup',
+            finishDrag
+        );
+
+        tabs.addEventListener(
+            'pointercancel',
+            finishDrag
+        );
+
+        return function () {
+            return suppressClick;
+        };
+    }
+
     function initializeEditorialCalendar(
         items,
         rowConfig
@@ -1172,6 +1319,9 @@
 
         var currentMonth =
             new Date().getMonth();
+
+        var shouldSuppressMonthClick =
+            enableMonthTabsMouseDrag(tabs);
 
         function updateNavigationState() {
             var maximumScroll = Math.max(
@@ -1244,7 +1394,14 @@
             function (button) {
                 button.addEventListener(
                     'click',
-                    function () {
+                    function (event) {
+                        if (
+                            shouldSuppressMonthClick()
+                        ) {
+                            event.preventDefault();
+                            return;
+                        }
+
                         var monthIndex =
                             Number(
                                 button.getAttribute(

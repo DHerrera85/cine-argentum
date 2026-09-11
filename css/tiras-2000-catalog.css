@@ -658,6 +658,22 @@
     display: none;
 }
 
+@media (hover: hover) and (pointer: fine) {
+    .tiras-2000-month-tabs {
+        cursor: grab;
+        user-select: none;
+    }
+
+    .tiras-2000-month-tabs.is-dragging {
+        cursor: grabbing;
+        scroll-behavior: auto;
+    }
+
+    .tiras-2000-month-tabs.is-dragging .tiras-2000-month-tab {
+        pointer-events: none;
+    }
+}
+
 .tiras-2000-month-tab {
     flex: 0 0 auto;
     min-height: 42px;
