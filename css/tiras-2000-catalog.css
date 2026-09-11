@@ -828,31 +828,28 @@
     }
 
     .tiras-2000-calendar-section {
-        padding: 22px 20px 26px;
-    }
+        display: grid;
+        grid-template-columns:
+            minmax(0, 1fr) auto;
+        align-items: start;
+        column-gap: 10px;
 
-    .tiras-2000-calendar-controls {
-        gap: 14px;
-    }
-}
-
-/* =========================================================
-   CALENDARIO — MÓVIL
-   ========================================================= */
-
-@media (max-width: 768px) {
-    .tiras-2000-featured-block {
-        padding-top: 86px;
-    }
-
-    .tiras-2000-calendar-section {
         padding: 20px 16px 24px;
     }
 
     .tiras-2000-calendar-title {
-        margin-bottom: 15px;
+        grid-column: 1;
+        grid-row: 1;
+        min-width: 0;
+
+        margin: 0 0 15px;
         padding-bottom: 10px;
-        font-size: 1.12rem;
+
+        font-size:
+            clamp(0.78rem, 3.45vw, 0.98rem);
+        line-height: 1.25;
+        letter-spacing: -0.025em;
+        white-space: nowrap;
     }
 
     .tiras-2000-calendar-title::after {
@@ -861,16 +858,18 @@
     }
 
     .tiras-2000-calendar-controls {
-        grid-template-columns: minmax(0, 1fr);
-        gap: 10px;
-        margin-bottom: 16px;
+        display: contents;
     }
 
     .tiras-2000-month-navigation {
-        grid-column: 1;
+        grid-column: 1 / -1;
         grid-row: 2;
-        grid-template-columns: minmax(0, 1fr);
+
+        grid-template-columns:
+            minmax(0, 1fr);
+
         width: 100%;
+        margin-bottom: 16px;
     }
 
     .tiras-2000-month-arrow {
@@ -878,9 +877,23 @@
     }
 
     .tiras-2000-calendar-section .tiras-2000-count {
-        grid-column: 1;
+        grid-column: 2;
         grid-row: 1;
+
+        align-self: start;
         justify-self: end;
+
+        min-width: 82px;
+        margin-top: -2px;
+        padding: 7px 10px;
+
+        font-size: 0.72rem;
+    }
+
+    .tiras-2000-calendar-section>.slider-v,
+    .tiras-2000-calendar-section>.lSSlideOuter,
+    .tiras-2000-calendar-empty {
+        grid-column: 1 / -1;
     }
 
     .tiras-2000-month-tabs {
@@ -926,5 +939,17 @@
     .tiras-2000-month-tab {
         padding-right: 12px;
         padding-left: 12px;
+    }
+
+    .tiras-2000-calendar-title {
+        font-size:
+            clamp(0.70rem, 3.2vw, 0.83rem);
+        letter-spacing: -0.03em;
+    }
+
+    .tiras-2000-calendar-section .tiras-2000-count {
+        min-width: 76px;
+        padding: 6px 8px;
+        font-size: 0.68rem;
     }
 }
