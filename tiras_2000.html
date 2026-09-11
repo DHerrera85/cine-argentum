@@ -8,7 +8,7 @@
 
   <!-- CSS -->
   <link rel="stylesheet" href="css/style.css?v=2.0">
-  <link rel="stylesheet" href="css/tiras-2000-catalog.css?v=1.4">
+  <link rel="stylesheet" href="css/tiras-2000-catalog.css?v=1.5">
   <link rel="stylesheet" href="css/lightslider.css?v=2.0">
 
   <!-- Fuente -->
@@ -178,73 +178,86 @@
 
         <div class="tiras-2000-calendar-controls">
 
-          <div id="tiras-2000-historical-month-tabs" class="tiras-2000-month-tabs" role="tablist"
-            aria-label="Seleccionar mes de estreno">
+          <div class="tiras-2000-month-navigation">
 
-            <button type="button" class="tiras-2000-month-tab" role="tab" data-month="0" aria-selected="false"
-              aria-controls="tiras-2000-historical-premieres-list">
-              Enero
+            <button id="tiras-2000-months-previous" type="button"
+              class="tiras-2000-month-arrow tiras-2000-month-arrow-previous" aria-label="Ver meses anteriores">
+              <i class="fas fa-chevron-left" aria-hidden="true"></i>
             </button>
 
-            <button type="button" class="tiras-2000-month-tab" role="tab" data-month="1" aria-selected="false"
-              aria-controls="tiras-2000-historical-premieres-list">
-              Febrero
-            </button>
+            <div id="tiras-2000-historical-month-tabs" class="tiras-2000-month-tabs" role="tablist"
+              aria-label="Seleccionar mes de estreno">
 
-            <button type="button" class="tiras-2000-month-tab" role="tab" data-month="2" aria-selected="false"
-              aria-controls="tiras-2000-historical-premieres-list">
-              Marzo
-            </button>
+              <button type="button" class="tiras-2000-month-tab" role="tab" data-month="0" aria-selected="false"
+                aria-controls="tiras-2000-historical-premieres-list">
+                Enero
+              </button>
 
-            <button type="button" class="tiras-2000-month-tab" role="tab" data-month="3" aria-selected="false"
-              aria-controls="tiras-2000-historical-premieres-list">
-              Abril
-            </button>
+              <button type="button" class="tiras-2000-month-tab" role="tab" data-month="1" aria-selected="false"
+                aria-controls="tiras-2000-historical-premieres-list">
+                Febrero
+              </button>
 
-            <button type="button" class="tiras-2000-month-tab" role="tab" data-month="4" aria-selected="false"
-              aria-controls="tiras-2000-historical-premieres-list">
-              Mayo
-            </button>
+              <button type="button" class="tiras-2000-month-tab" role="tab" data-month="2" aria-selected="false"
+                aria-controls="tiras-2000-historical-premieres-list">
+                Marzo
+              </button>
 
-            <button type="button" class="tiras-2000-month-tab" role="tab" data-month="5" aria-selected="false"
-              aria-controls="tiras-2000-historical-premieres-list">
-              Junio
-            </button>
+              <button type="button" class="tiras-2000-month-tab" role="tab" data-month="3" aria-selected="false"
+                aria-controls="tiras-2000-historical-premieres-list">
+                Abril
+              </button>
 
-            <button type="button" class="tiras-2000-month-tab" role="tab" data-month="6" aria-selected="false"
-              aria-controls="tiras-2000-historical-premieres-list">
-              Julio
-            </button>
+              <button type="button" class="tiras-2000-month-tab" role="tab" data-month="4" aria-selected="false"
+                aria-controls="tiras-2000-historical-premieres-list">
+                Mayo
+              </button>
 
-            <button type="button" class="tiras-2000-month-tab" role="tab" data-month="7" aria-selected="false"
-              aria-controls="tiras-2000-historical-premieres-list">
-              Agosto
-            </button>
+              <button type="button" class="tiras-2000-month-tab" role="tab" data-month="5" aria-selected="false"
+                aria-controls="tiras-2000-historical-premieres-list">
+                Junio
+              </button>
 
-            <button type="button" class="tiras-2000-month-tab" role="tab" data-month="8" aria-selected="false"
-              aria-controls="tiras-2000-historical-premieres-list">
-              Septiembre
-            </button>
+              <button type="button" class="tiras-2000-month-tab" role="tab" data-month="6" aria-selected="false"
+                aria-controls="tiras-2000-historical-premieres-list">
+                Julio
+              </button>
 
-            <button type="button" class="tiras-2000-month-tab" role="tab" data-month="9" aria-selected="false"
-              aria-controls="tiras-2000-historical-premieres-list">
-              Octubre
-            </button>
+              <button type="button" class="tiras-2000-month-tab" role="tab" data-month="7" aria-selected="false"
+                aria-controls="tiras-2000-historical-premieres-list">
+                Agosto
+              </button>
 
-            <button type="button" class="tiras-2000-month-tab" role="tab" data-month="10" aria-selected="false"
-              aria-controls="tiras-2000-historical-premieres-list">
-              Noviembre
-            </button>
+              <button type="button" class="tiras-2000-month-tab" role="tab" data-month="8" aria-selected="false"
+                aria-controls="tiras-2000-historical-premieres-list">
+                Septiembre
+              </button>
 
-            <button type="button" class="tiras-2000-month-tab" role="tab" data-month="11" aria-selected="false"
-              aria-controls="tiras-2000-historical-premieres-list">
-              Diciembre
+              <button type="button" class="tiras-2000-month-tab" role="tab" data-month="9" aria-selected="false"
+                aria-controls="tiras-2000-historical-premieres-list">
+                Octubre
+              </button>
+
+              <button type="button" class="tiras-2000-month-tab" role="tab" data-month="10" aria-selected="false"
+                aria-controls="tiras-2000-historical-premieres-list">
+                Noviembre
+              </button>
+
+              <button type="button" class="tiras-2000-month-tab" role="tab" data-month="11" aria-selected="false"
+                aria-controls="tiras-2000-historical-premieres-list">
+                Diciembre
+              </button>
+
+            </div>
+
+            <button id="tiras-2000-months-next" type="button" class="tiras-2000-month-arrow tiras-2000-month-arrow-next"
+              aria-label="Ver meses siguientes">
+              <i class="fas fa-chevron-right" aria-hidden="true"></i>
             </button>
 
           </div>
 
-          <span id="tiras-2000-historical-premieres-count" class="tiras-2000-count" aria-live="polite" hidden>
-          </span>
+          <span id="tiras-2000-historical-premieres-count" class="tiras-2000-count" aria-live="polite" hidden> </span>
 
         </div>
 
@@ -485,7 +498,7 @@
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   <script src="js/lightslider.js"></script>
   <script src="js/script.js?v=20260226-1"></script>
-  <script src="js/tiras-2000-autosync.js?v=20260908-4"></script>
+  <script src="js/tiras-2000-autosync.js?v=20260911-1"></script>
 </body>
 
 </html>

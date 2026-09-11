@@ -116,6 +116,10 @@
             'tiras-2000-historical-premieres',
         tabsId:
             'tiras-2000-historical-month-tabs',
+        previousButtonId:
+            'tiras-2000-months-previous',
+        nextButtonId:
+            'tiras-2000-months-next',
         containerId:
             'tiras-2000-historical-premieres-list',
         countId:
@@ -1152,12 +1156,88 @@
             return;
         }
 
+        var previousButton =
+            document.getElementById(
+                rowConfig.previousButtonId
+            );
+
+        var nextButton =
+            document.getElementById(
+                rowConfig.nextButtonId
+            );
+
         var buttons = tabs.querySelectorAll(
             '[data-month]'
         );
 
         var currentMonth =
             new Date().getMonth();
+
+        function updateNavigationState() {
+            var maximumScroll = Math.max(
+                0,
+                tabs.scrollWidth -
+                tabs.clientWidth
+            );
+
+            if (previousButton) {
+                previousButton.disabled =
+                    tabs.scrollLeft <= 4;
+            }
+
+            if (nextButton) {
+                nextButton.disabled =
+                    tabs.scrollLeft >=
+                    maximumScroll - 4;
+            }
+        }
+
+        function scrollMonthTabs(direction) {
+            var distance = Math.max(
+                240,
+                Math.round(
+                    tabs.clientWidth * 0.7
+                )
+            );
+
+            tabs.scrollBy({
+                left: direction * distance,
+                behavior: 'smooth'
+            });
+
+            window.setTimeout(
+                updateNavigationState,
+                400
+            );
+        }
+
+        if (previousButton) {
+            previousButton.addEventListener(
+                'click',
+                function () {
+                    scrollMonthTabs(-1);
+                }
+            );
+        }
+
+        if (nextButton) {
+            nextButton.addEventListener(
+                'click',
+                function () {
+                    scrollMonthTabs(1);
+                }
+            );
+        }
+
+        tabs.addEventListener(
+            'scroll',
+            updateNavigationState
+        );
+
+        window.addEventListener(
+            'resize',
+            updateNavigationState
+        );
 
         Array.prototype.forEach.call(
             buttons,
@@ -1197,6 +1277,17 @@
             currentMonth,
             false
         );
+
+        if (window.requestAnimationFrame) {
+            window.requestAnimationFrame(
+                updateNavigationState
+            );
+        } else {
+            window.setTimeout(
+                updateNavigationState,
+                0
+            );
+        }
     }
 
     function renderAllRows(items) {
