@@ -152,7 +152,7 @@
      COMPROBAR SI LA PRODUCCIÓN PERTENECE A TELEFE
      ========================================================= */
 
-  function belongsToTelefe(item) {
+  function belongsToConfiguredChannel(item) {
     var expectedChannel =
       normalizeText(CHANNEL_NAME);
 
@@ -335,7 +335,7 @@
       year !== null &&
       year >= START_YEAR &&
       year <= END_YEAR &&
-      belongsToTelefe(item)
+      belongsToConfiguredChannel(item)
     );
   }
 
@@ -661,7 +661,7 @@
   function renderFeaturedSlider() {
 
     var slider =
-      document.querySelector('#telefe-featured-slider');
+      document.querySelector('#channel-featured-slider');
 
     if (!slider) {
       return;
@@ -898,7 +898,7 @@
 
       var value =
         button.getAttribute(
-          'data-telefe-year'
+          'data-channel-year'
         ) || 'all';
 
       var active =
@@ -1001,7 +1001,7 @@
 
           activeYear =
             button.getAttribute(
-              'data-telefe-year'
+              'data-channel-year'
             ) || 'all';
 
           renderCatalogue();
