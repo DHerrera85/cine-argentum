@@ -200,6 +200,43 @@
       line-height: 1.6;
     }
 
+    .channel-decade-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 22px;
+    }
+
+    .channel-decade-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 42px;
+      padding: 8px 18px;
+      border: 1px solid #3d4752;
+      border-radius: 999px;
+      background: #202832;
+      color: #ffffff;
+      font-size: .9rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition:
+        background-color .2s ease,
+        border-color .2s ease,
+        transform .2s ease;
+    }
+
+    .channel-decade-link:hover {
+      border-color: #22b8cf;
+      transform: translateY(-1px);
+    }
+
+    .channel-decade-link.active {
+      border-color: #22b8cf;
+      background: #22b8cf;
+      color: #0f171f;
+    }
+
     .telefe-section {
       width: 100%;
       padding: 24px 32px;
@@ -556,6 +593,18 @@
         </div>
       </section>
 
+      <nav class="channel-decade-nav" aria-label="Explorar Telefe por década">
+
+        <a href="telefe-90s.html" class="channel-decade-link">
+          Telefe 90s
+        </a>
+
+        <a href="telefe-00s.html" class="channel-decade-link active" aria-current="page">
+          Telefe 2000–2009
+        </a>
+
+      </nav>
+
       <!-- Producciones destacadas -->
       <section id="telefe-destacadas" class="telefe-section">
         <h2 class="showcase-heading">Producciones destacadas</h2>
@@ -630,6 +679,14 @@
 
             <button type="button" class="category-button" data-channel-category="infantil" aria-pressed="false">
               Infantil
+            </button>
+
+            <button type="button" class="category-button" data-channel-category="tira-diaria" aria-pressed="false">
+              Tira Diaria
+            </button>
+
+            <button type="button" class="category-button" data-channel-category="semanal" aria-pressed="false">
+              Semanal
             </button>
 
           </div>
@@ -714,7 +771,7 @@
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   <script src="js/lightslider.js"></script>
   <script src="js/script.js?v=20260226-1"></script>
-  <script src="js/channel-decade-autosync.js?v=20260912-2"></script>
+  <script src="js/channel-decade-autosync.js?v=20260912-3"></script>
 </body>
 
 </html>

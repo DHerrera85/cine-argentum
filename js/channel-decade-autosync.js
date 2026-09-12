@@ -573,6 +573,35 @@
       return true;
     }
 
+    /*
+ * Tira Diaria y Semanal se clasifican
+ * mediante tipo_emision, no mediante genre.
+ */
+    if (
+      category === 'tira-diaria' ||
+      category === 'semanal'
+    ) {
+
+      var emissionType = normalizeText(
+        item && item.tipo_emision
+      );
+
+      if (!emissionType) {
+        return false;
+      }
+
+      if (category === 'tira-diaria') {
+        return (
+          emissionType.indexOf('tira diaria') !== -1
+        );
+      }
+
+      return (
+        emissionType.indexOf('semanal') !== -1
+      );
+
+    }
+    
     var genreText =
       getGenreText(item);
 
