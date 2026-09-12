@@ -234,7 +234,8 @@
     }
 
     .telefe-year-filter,
-    .telefe-category-filter {
+    .telefe-category-filter,
+    .telefe-sort-filter {
       display: flex;
       flex-wrap: wrap;
       gap: 10px;
@@ -295,7 +296,8 @@
     }
 
     .year-button,
-    .category-button {
+    .category-button,
+    .sort-button {
       min-width: 70px;
       padding: 10px 16px;
       border: 1px solid #3d4752;
@@ -312,13 +314,15 @@
     }
 
     .year-button:hover,
-    .category-button:hover {
+    .category-button:hover,
+    .sort-button:hover {
       border-color: #22b8cf;
       transform: translateY(-1px);
     }
 
     .year-button.active,
-    .category-button.active {
+    .category-button.active,
+    .sort-button.active {
       border-color: #22b8cf;
       background: #22b8cf;
       color: #0f171f;
@@ -440,7 +444,8 @@
       }
 
       .telefe-year-filter,
-      .telefe-category-filter {
+      .telefe-category-filter,
+      .telefe-sort-filter {
         flex-wrap: nowrap;
         overflow-x: auto;
         padding: 2px 0 8px;
@@ -450,12 +455,14 @@
       }
 
       .telefe-year-filter::-webkit-scrollbar,
-      .telefe-category-filter::-webkit-scrollbar {
+      .telefe-category-filter::-webkit-scrollbar,
+      .telefe-sort-filter::-webkit-scrollbar {
         display: none;
       }
 
       .year-button,
-      .category-button {
+      .category-button,
+      .sort-button {
         flex: 0 0 auto;
       }
 
@@ -600,9 +607,14 @@
               Comedia
             </button>
 
+            <button type="button" class="category-button" data-channel-category="sitcom" aria-pressed="false">
+              Sitcom
+            </button>
+
             <button type="button" class="category-button" data-channel-category="drama" aria-pressed="false">
               Drama
             </button>
+
             <button type="button" class="category-button" data-channel-category="thriller" aria-pressed="false">
               Thriller
             </button>
@@ -611,9 +623,50 @@
               Juvenil
             </button>
 
+            <button type="button" class="category-button" data-channel-category="infantil" aria-pressed="false">
+              Infantil
+            </button>
+
           </div>
 
           <button type="button" class="filter-arrow filter-arrow-next" aria-label="Ver categorías siguientes">
+            <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+          </button>
+
+        </div>
+
+      </section>
+
+      <!-- Orden del catálogo -->
+      <section id="telefe-sort" class="telefe-section">
+
+        <h2 class="latest-heading">
+          Ordenar catálogo
+        </h2>
+
+        <div class="filter-carousel">
+
+          <button type="button" class="filter-arrow filter-arrow-prev" aria-label="Ver órdenes anteriores">
+            <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
+          </button>
+
+          <div class="telefe-sort-filter filter-scroll" aria-label="Ordenar ficciones">
+
+            <button type="button" class="sort-button active" data-channel-sort="rating-desc" aria-pressed="true">
+              Rating (mayor)
+            </button>
+
+            <button type="button" class="sort-button" data-channel-sort="year-desc" aria-pressed="false">
+              Más recientes
+            </button>
+
+            <button type="button" class="sort-button" data-channel-sort="year-asc" aria-pressed="false">
+              Más antiguas
+            </button>
+
+          </div>
+
+          <button type="button" class="filter-arrow filter-arrow-next" aria-label="Ver órdenes siguientes">
             <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
           </button>
 

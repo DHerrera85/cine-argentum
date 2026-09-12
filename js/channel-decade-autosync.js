@@ -51,6 +51,7 @@
     yearContainer: '#channel-year-filters',
     yearFilters: '[data-channel-year]',
     categoryFilters: '[data-channel-category]',
+    sortFilters: '[data-channel-sort]',
     title: '#channel-catalogue-title',
     description: '#channel-catalogue-description',
     empty: '#channel-empty-state',
@@ -60,6 +61,7 @@
   var allProductions = [];
   var activeYear = 'all';
   var activeCategory = 'all';
+  var activeSort = 'rating-desc';
 
 
   /* =========================================================
@@ -256,6 +258,46 @@
     );
   }
 
+  /* =========================================================
+     RATING
+     ========================================================= */
+
+  function getRating(item) {
+
+    if (
+      !item ||
+      item.rating === undefined ||
+      item.rating === null ||
+      item.rating === '' ||
+      item.rating === '-'
+    ) {
+      return null;
+    }
+
+    var rating = parseFloat(
+      String(item.rating)
+        .trim()
+        .replace(',', '.')
+    );
+
+    return Number.isFinite(rating)
+      ? rating
+      : null;
+
+  }
+
+
+  function formatRating(item) {
+
+    var rating = getRating(item);
+
+    if (rating === null) {
+      return '-';
+    }
+
+    return String(rating).replace('.', ',');
+
+  }
 
   /* =========================================================
      ORDENAR LAS PRODUCCIONES
@@ -747,8 +789,8 @@
 
   function getVisibleProductions() {
 
-    return allProductions.filter(
-      function (item) {
+    return allProductions
+      .filter(function (item) {
 
         var matchesYear =
           activeYear === 'all' ||
@@ -765,729 +807,719 @@
           matchesCategory
         );
 
-      }
-    );
-
-  }
-
-  /* =========================================================
-     GENERAR LAS TARJETAS DENTRO DE LA GRILLA
-     ========================================================= */
-
-  function renderProductionCards(productions) {
-    var gridElement =
-      document.querySelector(SELECTORS.grid);
-
-    if (!gridElement) {
-      console.warn(
-        'Telefe 90s: no se encontró el contenedor ' +
-        SELECTORS.grid
-      );
-
-      return;
-    }
-
-    /*
-     * Se reemplaza el contenido anterior de la grilla.
-     */
-    gridElement.innerHTML = '';
-
-    if (
-      !Array.isArray(productions) ||
-      productions.length === 0
-    ) {
-      return;
-    }
-
-    /*
-     * Se construyen todas las tarjetas
-     * y luego se insertan en una sola operación.
-     */
-    gridElement.innerHTML = productions
-      .map(function (item) {
-        return buildCard(item);
       })
-      .join('');
-  }
+      .sort(compareVisibleProductions);
 
-  /* =========================================================
-   ACTUALIZAR TÍTULO Y DESCRIPCIÓN
-   ========================================================= */
+    /* =========================================================
+       GENERAR LAS TARJETAS DENTRO DE LA GRILLA
+       ========================================================= */
 
-  function updateHeading(count) {
-    var titleElement =
-      document.querySelector(SELECTORS.title);
+    function renderProductionCards(productions) {
+      var gridElement =
+        document.querySelector(SELECTORS.grid);
 
-    var descriptionElement =
-      document.querySelector(
-        SELECTORS.description
-      );
+      if (!gridElement) {
+        console.warn(
+          'Telefe 90s: no se encontró el contenedor ' +
+          SELECTORS.grid
+        );
 
-    if (titleElement) {
-      titleElement.textContent =
-        activeYear === 'all'
-          ? 'Todas las ficciones'
-          : 'Ficciones de ' + activeYear;
-    }
-
-    if (descriptionElement) {
-
-      if (activeYear === 'all') {
-
-        descriptionElement.textContent =
-          count +
-          ' ' +
-          (count === 1
-            ? 'producción'
-            : 'producciones') +
-          ' emitidas por ' + CHANNEL_NAME + ' entre ' +
-          START_YEAR +
-          ' y ' +
-          END_YEAR +
-          '.';
-
-      } else {
-
-        descriptionElement.textContent =
-          count +
-          ' ' +
-          (count === 1
-            ? 'producción'
-            : 'producciones') +
-          ' emitidas durante ' +
-          activeYear +
-          '.';
-
+        return;
       }
-
-    }
-  }
-
-
-  /* =========================================================
-     MOSTRAR / OCULTAR MENSAJE SIN RESULTADOS
-     ========================================================= */
-
-  function updateEmptyState(count) {
-
-    var emptyElement =
-      document.querySelector(
-        SELECTORS.empty
-      );
-
-    if (!emptyElement) {
-      return;
-    }
-
-    emptyElement.hidden =
-      count !== 0;
-  }
-
-
-  /* =========================================================
-     MARCAR BOTÓN ACTIVO
-     ========================================================= */
-
-  function updateActiveButtons() {
-
-    var yearButtons =
-      document.querySelectorAll(
-        SELECTORS.yearFilters
-      );
-
-    yearButtons.forEach(function (button) {
-
-      var value =
-        button.getAttribute(
-          'data-channel-year'
-        ) || 'all';
-
-      var active =
-        value === activeYear;
-
-      button.classList.toggle(
-        'active',
-        active
-      );
-
-      button.setAttribute(
-        'aria-pressed',
-        active ? 'true' : 'false'
-      );
-
-    });
-
-    var categoryButtons =
-      document.querySelectorAll(
-        SELECTORS.categoryFilters
-      );
-
-    categoryButtons.forEach(function (button) {
-
-      var value =
-        button.getAttribute(
-          'data-channel-category'
-        ) || 'all';
-
-      var active =
-        value === activeCategory;
-
-      button.classList.toggle(
-        'active',
-        active
-      );
-
-      button.setAttribute(
-        'aria-pressed',
-        active ? 'true' : 'false'
-      );
-
-    });
-
-  }
-
-
-  /* =========================================================
-     RENDER GENERAL DEL CATÁLOGO
-     ========================================================= */
-
-  function renderCatalogue() {
-
-    var productions =
-      getVisibleProductions();
-
-    renderProductionCards(
-      productions
-    );
-
-    updateHeading(
-      productions.length
-    );
-
-    updateEmptyState(
-      productions.length
-    );
-
-    updateActiveButtons();
-
-  }
-
-  /* =========================================================
-   GENERAR LOS FILTROS DE AÑO DE LA DÉCADA
-   ========================================================= */
-
-  function renderYearFilters() {
-
-    var container =
-      document.querySelector(
-        SELECTORS.yearContainer
-      );
-
-    if (
-      !container ||
-      !Number.isFinite(START_YEAR) ||
-      !Number.isFinite(END_YEAR) ||
-      START_YEAR > END_YEAR
-    ) {
-      return;
-    }
-
-    container.innerHTML = '';
-
-    var filterValues = [
-      {
-        value: 'all',
-        label: 'Todas'
-      }
-    ];
-
-    for (
-      var year = START_YEAR;
-      year <= END_YEAR;
-      year += 1
-    ) {
-      filterValues.push({
-        value: String(year),
-        label: String(year)
-      });
-    }
-
-    filterValues.forEach(function (filter) {
-
-      var button =
-        document.createElement('button');
-
-      var isActive =
-        filter.value === activeYear;
-
-      button.type = 'button';
-      button.className =
-        'year-button' +
-        (isActive ? ' active' : '');
-
-      button.setAttribute(
-        'data-channel-year',
-        filter.value
-      );
-
-      button.setAttribute(
-        'aria-pressed',
-        String(isActive)
-      );
-
-      button.textContent = filter.label;
-
-      container.appendChild(button);
-
-    });
-
-  }
-
-
-  /* =========================================================
-     ASIGNAR EVENTOS A LOS FILTROS DE AÑO
-     ========================================================= */
-
-  function initChannelDecadeCatalogue() {
-
-    renderYearFilters();
-
-    bindYearFilters();
-
-    bindCategoryFilters();
-
-    bindCarouselButtons();
-
-    loadCatalogue();
-
-  }
-
-  function bindYearFilters() {
-
-    var buttons =
-      document.querySelectorAll(
-        SELECTORS.yearFilters
-      );
-
-    buttons.forEach(function (button) {
 
       /*
-       * Evitar registrar el mismo evento
-       * más de una vez.
+       * Se reemplaza el contenido anterior de la grilla.
        */
+      gridElement.innerHTML = '';
+
       if (
-        button.dataset.bound === '1'
+        !Array.isArray(productions) ||
+        productions.length === 0
       ) {
         return;
       }
 
-      button.addEventListener(
-        'click',
-        function () {
+      /*
+       * Se construyen todas las tarjetas
+       * y luego se insertan en una sola operación.
+       */
+      gridElement.innerHTML = productions
+        .map(function (item) {
+          return buildCard(item);
+        })
+        .join('');
+    }
 
-          activeYear =
-            button.getAttribute(
-              'data-channel-year'
-            ) || 'all';
-
-          renderCatalogue();
-
-        }
-      );
-
-      button.dataset.bound = '1';
-
-    });
-
-  }
-
-  /* =========================================================
-     ASIGNAR EVENTOS A LOS FILTROS DE CATEGORÍA
+    /* =========================================================
+     ACTUALIZAR TÍTULO Y DESCRIPCIÓN
      ========================================================= */
 
-  function bindCategoryFilters() {
+    function updateHeading(count) {
+      var titleElement =
+        document.querySelector(SELECTORS.title);
 
-    var buttons =
-      document.querySelectorAll(
-        SELECTORS.categoryFilters
+      var descriptionElement =
+        document.querySelector(
+          SELECTORS.description
+        );
+
+      if (titleElement) {
+        titleElement.textContent =
+          activeYear === 'all'
+            ? 'Todas las ficciones'
+            : 'Ficciones de ' + activeYear;
+      }
+
+      if (descriptionElement) {
+
+        if (activeYear === 'all') {
+
+          descriptionElement.textContent =
+            count +
+            ' ' +
+            (count === 1
+              ? 'producción'
+              : 'producciones') +
+            ' emitidas por ' + CHANNEL_NAME + ' entre ' +
+            START_YEAR +
+            ' y ' +
+            END_YEAR +
+            '.';
+
+        } else {
+
+          descriptionElement.textContent =
+            count +
+            ' ' +
+            (count === 1
+              ? 'producción'
+              : 'producciones') +
+            ' emitidas durante ' +
+            activeYear +
+            '.';
+
+        }
+
+      }
+    }
+
+
+    /* =========================================================
+       MOSTRAR / OCULTAR MENSAJE SIN RESULTADOS
+       ========================================================= */
+
+    function updateEmptyState(count) {
+
+      var emptyElement =
+        document.querySelector(
+          SELECTORS.empty
+        );
+
+      if (!emptyElement) {
+        return;
+      }
+
+      emptyElement.hidden =
+        count !== 0;
+    }
+
+
+    /* =========================================================
+       MARCAR BOTÓN ACTIVO
+       ========================================================= */
+
+    function updateActiveButtons() {
+
+      var yearButtons =
+        document.querySelectorAll(
+          SELECTORS.yearFilters
+        );
+
+      yearButtons.forEach(function (button) {
+
+        var value =
+          button.getAttribute(
+            'data-channel-year'
+          ) || 'all';
+
+        var active =
+          value === activeYear;
+
+        button.classList.toggle(
+          'active',
+          active
+        );
+
+        button.setAttribute(
+          'aria-pressed',
+          active ? 'true' : 'false'
+        );
+
+      });
+
+      var categoryButtons =
+        document.querySelectorAll(
+          SELECTORS.categoryFilters
+        );
+
+      categoryButtons.forEach(function (button) {
+
+        var value =
+          button.getAttribute(
+            'data-channel-category'
+          ) || 'all';
+
+        var active =
+          value === activeCategory;
+
+        button.classList.toggle(
+          'active',
+          active
+        );
+
+        button.setAttribute(
+          'aria-pressed',
+          active ? 'true' : 'false'
+        );
+
+      });
+
+    }
+
+
+    /* =========================================================
+       RENDER GENERAL DEL CATÁLOGO
+       ========================================================= */
+
+    function renderCatalogue() {
+
+      var productions =
+        getVisibleProductions();
+
+      renderProductionCards(
+        productions
       );
 
-    buttons.forEach(function (button) {
+      updateHeading(
+        productions.length
+      );
+
+      updateEmptyState(
+        productions.length
+      );
+
+      updateActiveButtons();
+
+    }
+
+    /* =========================================================
+     GENERAR LOS FILTROS DE AÑO DE LA DÉCADA
+     ========================================================= */
+
+    function renderYearFilters() {
+
+      var container =
+        document.querySelector(
+          SELECTORS.yearContainer
+        );
 
       if (
-        button.dataset.categoryBound === '1'
+        !container ||
+        !Number.isFinite(START_YEAR) ||
+        !Number.isFinite(END_YEAR) ||
+        START_YEAR > END_YEAR
       ) {
         return;
       }
 
-      button.addEventListener(
-        'click',
-        function () {
+      container.innerHTML = '';
 
-          activeCategory =
-            button.getAttribute(
-              'data-channel-category'
-            ) || 'all';
-
-          renderCatalogue();
-
+      var filterValues = [
+        {
+          value: 'all',
+          label: 'Todas'
         }
-      );
+      ];
 
-      button.dataset.categoryBound = '1';
+      for (
+        var year = START_YEAR;
+        year <= END_YEAR;
+        year += 1
+      ) {
+        filterValues.push({
+          value: String(year),
+          label: String(year)
+        });
+      }
 
-    });
+      filterValues.forEach(function (filter) {
 
-  }
+        var button =
+          document.createElement('button');
 
+        var isActive =
+          filter.value === activeYear;
 
-  /* =========================================================
-     CARRUSEL DE FILTROS (MÓVIL)
-     ========================================================= */
+        button.type = 'button';
+        button.className =
+          'year-button' +
+          (isActive ? ' active' : '');
 
-  function updateCarouselArrows(
-    scrollArea,
-    previousButton,
-    nextButton
-  ) {
-
-    if (!scrollArea) {
-      return;
-    }
-
-    var tolerance = 3;
-
-    var maxScrollLeft =
-      scrollArea.scrollWidth -
-      scrollArea.clientWidth;
-
-    var isAtStart =
-      scrollArea.scrollLeft <= tolerance;
-
-    var isAtEnd =
-      scrollArea.scrollLeft >=
-      maxScrollLeft - tolerance;
-
-    var hasOverflow =
-      maxScrollLeft > tolerance;
-
-    if (previousButton) {
-      previousButton.disabled =
-        !hasOverflow || isAtStart;
-    }
-
-    if (nextButton) {
-      nextButton.disabled =
-        !hasOverflow || isAtEnd;
-    }
-
-  }
-
-
-  function scrollFilterCarousel(
-    scrollArea,
-    direction
-  ) {
-
-    if (!scrollArea) {
-      return;
-    }
-
-    var distance =
-      Math.max(
-        180,
-        Math.round(
-          scrollArea.clientWidth * 0.65
-        )
-      );
-
-    scrollArea.scrollBy({
-      left: direction * distance,
-      behavior: 'smooth'
-    });
-
-  }
-
-
-  function bindCarouselButtons() {
-
-    document.querySelectorAll(
-      SELECTORS.filterCarousels
-    ).forEach(function (carousel) {
-
-      var scrollArea =
-        carousel.querySelector(
-          '.filter-scroll'
+        button.setAttribute(
+          'data-channel-year',
+          filter.value
         );
 
-      var previousButton =
-        carousel.querySelector(
-          '.filter-arrow-prev'
+        button.setAttribute(
+          'aria-pressed',
+          String(isActive)
         );
 
-      var nextButton =
-        carousel.querySelector(
-          '.filter-arrow-next'
+        button.textContent = filter.label;
+
+        container.appendChild(button);
+
+      });
+
+    }
+
+
+    /* =========================================================
+       ASIGNAR EVENTOS A LOS FILTROS DE AÑO
+       ========================================================= */
+
+    function bindYearFilters() {
+
+      var buttons =
+        document.querySelectorAll(
+          SELECTORS.yearFilters
         );
+
+      buttons.forEach(function (button) {
+
+        /*
+         * Evitar registrar el mismo evento
+         * más de una vez.
+         */
+        if (
+          button.dataset.bound === '1'
+        ) {
+          return;
+        }
+
+        button.addEventListener(
+          'click',
+          function () {
+
+            activeYear =
+              button.getAttribute(
+                'data-channel-year'
+              ) || 'all';
+
+            renderCatalogue();
+
+          }
+        );
+
+        button.dataset.bound = '1';
+
+      });
+
+    }
+
+    /* =========================================================
+       ASIGNAR EVENTOS A LOS FILTROS DE CATEGORÍA
+       ========================================================= */
+
+    function bindCategoryFilters() {
+
+      var buttons =
+        document.querySelectorAll(
+          SELECTORS.categoryFilters
+        );
+
+      buttons.forEach(function (button) {
+
+        if (
+          button.dataset.categoryBound === '1'
+        ) {
+          return;
+        }
+
+        button.addEventListener(
+          'click',
+          function () {
+
+            activeCategory =
+              button.getAttribute(
+                'data-channel-category'
+              ) || 'all';
+
+            renderCatalogue();
+
+          }
+        );
+
+        button.dataset.categoryBound = '1';
+
+      });
+
+    }
+
+
+    /* =========================================================
+       CARRUSEL DE FILTROS (MÓVIL)
+       ========================================================= */
+
+    function updateCarouselArrows(
+      scrollArea,
+      previousButton,
+      nextButton
+    ) {
 
       if (!scrollArea) {
         return;
       }
 
-      function refreshArrows() {
+      var tolerance = 3;
 
-        updateCarouselArrows(
-          scrollArea,
-          previousButton,
-          nextButton
-        );
+      var maxScrollLeft =
+        scrollArea.scrollWidth -
+        scrollArea.clientWidth;
 
+      var isAtStart =
+        scrollArea.scrollLeft <= tolerance;
+
+      var isAtEnd =
+        scrollArea.scrollLeft >=
+        maxScrollLeft - tolerance;
+
+      var hasOverflow =
+        maxScrollLeft > tolerance;
+
+      if (previousButton) {
+        previousButton.disabled =
+          !hasOverflow || isAtStart;
       }
 
-      if (
-        previousButton &&
-        previousButton.dataset.bound !== '1'
-      ) {
-
-        previousButton.addEventListener(
-          'click',
-          function () {
-
-            scrollFilterCarousel(
-              scrollArea,
-              -1
-            );
-
-          }
-        );
-
-        previousButton.dataset.bound = '1';
-
+      if (nextButton) {
+        nextButton.disabled =
+          !hasOverflow || isAtEnd;
       }
 
-      if (
-        nextButton &&
-        nextButton.dataset.bound !== '1'
-      ) {
+    }
 
-        nextButton.addEventListener(
-          'click',
-          function () {
 
-            scrollFilterCarousel(
-              scrollArea,
-              1
-            );
-
-          }
-        );
-
-        nextButton.dataset.bound = '1';
-
-      }
-
-      if (
-        scrollArea.dataset.arrowBound !== '1'
-      ) {
-
-        scrollArea.addEventListener(
-          'scroll',
-          refreshArrows,
-          {
-            passive: true
-          }
-        );
-
-        scrollArea.dataset.arrowBound = '1';
-
-      }
-
-      refreshArrows();
-
-      window.requestAnimationFrame(
-        refreshArrows
-      );
-
-      window.addEventListener(
-        'resize',
-        refreshArrows
-      );
-
-    });
-
-  }
-  /* =========================================================
-     CAMBIAR EL FILTRO DESDE CÓDIGO
-     ========================================================= */
-
-  function setYearFilter(year) {
-
-    if (
-      year === undefined ||
-      year === null ||
-      year === ''
+    function scrollFilterCarousel(
+      scrollArea,
+      direction
     ) {
 
-      activeYear = 'all';
-
-    } else {
-
-      activeYear =
-        String(year);
-
-    }
-
-    renderCatalogue();
-
-  }
-  /* =========================================================
-     MOSTRAR ERROR DE CARGA
-     ========================================================= */
-
-  function renderLoadError() {
-    var gridElement =
-      document.querySelector(
-        SELECTORS.grid
-      );
-
-    var descriptionElement =
-      document.querySelector(
-        SELECTORS.description
-      );
-
-    var emptyElement =
-      document.querySelector(
-        SELECTORS.empty
-      );
-
-    if (gridElement) {
-      gridElement.innerHTML =
-        '<p class="telefe-load-error">' +
-        'No se pudo cargar el catálogo de Telefe.' +
-        '</p>';
-    }
-
-    if (descriptionElement) {
-      descriptionElement.textContent =
-        'Revisá la ruta de data.json y la consola del navegador.';
-    }
-
-    if (emptyElement) {
-      emptyElement.hidden = true;
-    }
-  }
-
-
-  /* =========================================================
-     CARGAR DATA.JSON
-     ========================================================= */
-
-  async function loadCatalogue() {
-    try {
-      var response = await fetch(
-        DATA_URL,
-        {
-          cache: 'no-store'
-        }
-      );
-
-      if (!response.ok) {
-        throw new Error(
-          'data.json respondió con estado ' +
-          response.status
-        );
+      if (!scrollArea) {
+        return;
       }
 
-      var data =
-        await response.json();
+      var distance =
+        Math.max(
+          180,
+          Math.round(
+            scrollArea.clientWidth * 0.65
+          )
+        );
 
-      var items =
-        Array.isArray(
-          data && data.items
-        )
-          ? data.items
-          : [];
+      scrollArea.scrollBy({
+        left: direction * distance,
+        behavior: 'smooth'
+      });
 
-      /*
-       * Se seleccionan únicamente:
-       *
-       * - producciones con ID;
-       * - canal Telefe;
-       * - años 1990 a 1999.
-       */
-      allProductions = items
-        .filter(function (item) {
-          return isValidProduction(item);
-        })
-        .sort(compareProductions);
+    }
 
-      /*
-       * Una vez cargados los datos:
-       *
-       * - se conectan los botones;
-       * - se genera la grilla;
-       * - se actualizan título y contador.
-       */
-      bindYearFilters();
-      bindCategoryFilters();
 
-      renderFeaturedSlider();
+    function bindCarouselButtons() {
+
+      document.querySelectorAll(
+        SELECTORS.filterCarousels
+      ).forEach(function (carousel) {
+
+        var scrollArea =
+          carousel.querySelector(
+            '.filter-scroll'
+          );
+
+        var previousButton =
+          carousel.querySelector(
+            '.filter-arrow-prev'
+          );
+
+        var nextButton =
+          carousel.querySelector(
+            '.filter-arrow-next'
+          );
+
+        if (!scrollArea) {
+          return;
+        }
+
+        function refreshArrows() {
+
+          updateCarouselArrows(
+            scrollArea,
+            previousButton,
+            nextButton
+          );
+
+        }
+
+        if (
+          previousButton &&
+          previousButton.dataset.bound !== '1'
+        ) {
+
+          previousButton.addEventListener(
+            'click',
+            function () {
+
+              scrollFilterCarousel(
+                scrollArea,
+                -1
+              );
+
+            }
+          );
+
+          previousButton.dataset.bound = '1';
+
+        }
+
+        if (
+          nextButton &&
+          nextButton.dataset.bound !== '1'
+        ) {
+
+          nextButton.addEventListener(
+            'click',
+            function () {
+
+              scrollFilterCarousel(
+                scrollArea,
+                1
+              );
+
+            }
+          );
+
+          nextButton.dataset.bound = '1';
+
+        }
+
+        if (
+          scrollArea.dataset.arrowBound !== '1'
+        ) {
+
+          scrollArea.addEventListener(
+            'scroll',
+            refreshArrows,
+            {
+              passive: true
+            }
+          );
+
+          scrollArea.dataset.arrowBound = '1';
+
+        }
+
+        refreshArrows();
+
+        window.requestAnimationFrame(
+          refreshArrows
+        );
+
+        window.addEventListener(
+          'resize',
+          refreshArrows
+        );
+
+      });
+
+    }
+    /* =========================================================
+       CAMBIAR EL FILTRO DESDE CÓDIGO
+       ========================================================= */
+
+    function setYearFilter(year) {
+
+      if (
+        year === undefined ||
+        year === null ||
+        year === ''
+      ) {
+
+        activeYear = 'all';
+
+      } else {
+
+        activeYear =
+          String(year);
+
+      }
 
       renderCatalogue();
 
-    } catch (error) {
-      console.error(
-        'Telefe 90s: no se pudo cargar data.json',
-        error
+    }
+    /* =========================================================
+       MOSTRAR ERROR DE CARGA
+       ========================================================= */
+
+    function renderLoadError() {
+      var gridElement =
+        document.querySelector(
+          SELECTORS.grid
+        );
+
+      var descriptionElement =
+        document.querySelector(
+          SELECTORS.description
+        );
+
+      var emptyElement =
+        document.querySelector(
+          SELECTORS.empty
+        );
+
+      if (gridElement) {
+        gridElement.innerHTML =
+          '<p class="telefe-load-error">' +
+          'No se pudo cargar el catálogo de Telefe.' +
+          '</p>';
+      }
+
+      if (descriptionElement) {
+        descriptionElement.textContent =
+          'Revisá la ruta de data.json y la consola del navegador.';
+      }
+
+      if (emptyElement) {
+        emptyElement.hidden = true;
+      }
+    }
+
+
+    /* =========================================================
+       CARGAR DATA.JSON
+       ========================================================= */
+
+    async function loadCatalogue() {
+      try {
+        var response = await fetch(
+          DATA_URL,
+          {
+            cache: 'no-store'
+          }
+        );
+
+        if (!response.ok) {
+          throw new Error(
+            'data.json respondió con estado ' +
+            response.status
+          );
+        }
+
+        var data =
+          await response.json();
+
+        var items =
+          Array.isArray(
+            data && data.items
+          )
+            ? data.items
+            : [];
+
+        /*
+         * Se seleccionan únicamente:
+         *
+         * - producciones con ID;
+         * - canal Telefe;
+         * - años 1990 a 1999.
+         */
+        allProductions = items
+          .filter(function (item) {
+            return isValidProduction(item);
+          })
+          .sort(compareProductions);
+
+        /*
+         * Una vez cargados los datos:
+         *
+         * - se conectan los botones;
+         * - se genera la grilla;
+         * - se actualizan título y contador.
+         */
+        bindYearFilters();
+        bindCategoryFilters();
+
+        renderFeaturedSlider();
+
+        renderCatalogue();
+
+      } catch (error) {
+        console.error(
+          'Telefe 90s: no se pudo cargar data.json',
+          error
+        );
+
+        renderLoadError();
+      }
+    }
+
+
+    /* =========================================================
+       INICIALIZAR EL MÓDULO
+       ========================================================= */
+
+    function initChannelDecadeCatalogue() {
+
+      renderYearFilters();
+
+      bindYearFilters();
+
+      bindCategoryFilters();
+
+      bindCarouselButtons();
+
+      loadCatalogue();
+
+    }
+
+
+    /* =========================================================
+       API PÚBLICA OPCIONAL
+       ========================================================= */
+
+    window.ChannelDecadeCatalogue = {
+      render: renderCatalogue,
+      setYear: setYearFilter,
+      getItems: function () {
+        return allProductions.slice();
+      },
+      getActiveYear: function () {
+        return activeYear;
+      }
+    };
+
+
+    /* =========================================================
+       EJECUCIÓN AL CARGAR LA PÁGINA
+       ========================================================= */
+
+    if (
+      document.readyState === 'loading'
+    ) {
+      document.addEventListener(
+        'DOMContentLoaded',
+        initChannelDecadeCatalogue
       );
-
-      renderLoadError();
+    } else {
+      initChannelDecadeCatalogue();
     }
-  }
 
-
-  /* =========================================================
-     INICIALIZAR EL MÓDULO
-     ========================================================= */
-
-  function initChannelDecadeCatalogue() {
-
-    bindCarouselButtons();
-
-    loadCatalogue();
-
-  }
-
-
-  /* =========================================================
-     API PÚBLICA OPCIONAL
-     ========================================================= */
-
-  window.ChannelDecadeCatalogue = {
-    render: renderCatalogue,
-    setYear: setYearFilter,
-    getItems: function () {
-      return allProductions.slice();
-    },
-    getActiveYear: function () {
-      return activeYear;
-    }
-  };
-
-
-  /* =========================================================
-     EJECUCIÓN AL CARGAR LA PÁGINA
-     ========================================================= */
-
-  if (
-    document.readyState === 'loading'
-  ) {
-    document.addEventListener(
-      'DOMContentLoaded',
-      initChannelDecadeCatalogue
-    );
-  } else {
-    initChannelDecadeCatalogue();
-  }
-
-})();
+  }) ();
