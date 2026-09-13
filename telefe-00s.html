@@ -203,8 +203,63 @@
     .channel-decade-nav {
       display: flex;
       flex-wrap: wrap;
-      gap: 10px;
-      margin-top: 22px;
+      gap: 16px;
+      margin-top: 26px;
+    }
+
+    .channel-decade-card {
+      width: 160px;
+      min-height: 126px;
+      padding: 14px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
+      box-sizing: border-box;
+      border: 1px solid #3d4752;
+      border-radius: 16px;
+      background: #202832;
+      color: #ffffff;
+      text-align: center;
+      text-decoration: none;
+      transition:
+        background-color .2s ease,
+        border-color .2s ease,
+        transform .2s ease;
+    }
+
+    .channel-decade-card:hover {
+      border-color: #22b8cf;
+      transform: translateY(-2px);
+    }
+
+    .channel-decade-card.active {
+      border-color: #22b8cf;
+      background: #22b8cf;
+      color: #0f171f;
+    }
+
+    .channel-decade-card-logo {
+      width: 100%;
+      height: 66px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .channel-decade-card-logo img {
+      display: block;
+      width: 100%;
+      max-width: 104px;
+      height: 66px;
+      object-fit: contain;
+    }
+
+    .channel-decade-card-label {
+      font-size: .9rem;
+      line-height: 1.2;
+      font-weight: 700;
     }
 
     .channel-decade-link {
@@ -529,6 +584,30 @@
         min-width: 0;
       }
 
+      .channel-decade-nav {
+        flex-wrap: nowrap;
+        gap: 12px;
+        overflow-x: auto;
+        padding-bottom: 8px;
+        scrollbar-width: none;
+      }
+
+      .channel-decade-nav::-webkit-scrollbar {
+        display: none;
+      }
+
+      .channel-decade-card {
+        width: 138px;
+        min-height: 112px;
+        flex: 0 0 138px;
+        padding: 12px;
+      }
+
+      .channel-decade-card-logo,
+      .channel-decade-card-logo img {
+        height: 56px;
+      }
+
     }
   </style>
 </head>
@@ -569,19 +648,21 @@
 
     <!-- TELEFE EN LOS AÑOS 2000s -->
     <main class="telefe-00s-page channel-decade-page" data-channel="Telefe" data-start-year="2000" data-end-year="2009">
-
       <!-- Encabezado histórico -->
       <section class="page-intro">
+
         <a href="tiras_2000.html" class="back-link">
           &larr; Volver a Tiras 2000
         </a>
 
         <div class="channel-heading">
+
           <div class="channel-heading-logo-wrap">
             <img src="images/logos/telefe-logo-2000s.png" alt="Logo de Telefe" class="channel-heading-logo" />
           </div>
 
           <div class="channel-heading-text">
+
             <h1 class="showcase-heading">
               Telefe en los años 2000
             </h1>
@@ -589,21 +670,54 @@
             <p class="channel-heading-description">
               Ficciones emitidas por Telefe entre 2000 y 2009.
             </p>
+
           </div>
+
+        </div>
+        <div class="channel-decade-nav" role="navigation" aria-label="Explorar Telefe por década">
+
+          <!-- Telefe 90s -->
+          <a href="telefe-90s.html" class="channel-decade-card" title="Ver ficciones de Telefe de los años 90">
+
+            <span class="channel-decade-card-logo">
+              <img src="images/logos/telefe-1990-120x120.png" alt="Telefe años 90">
+            </span>
+
+            <span class="channel-decade-card-label">
+              Telefe 90s
+            </span>
+
+          </a>
+
+          <!-- Telefe 2000–2009reti -->
+          <a href="telefe-00s.html" class="channel-decade-card active" aria-current="page"
+            title="Ficciones de Telefe de 2000 a 2009">
+
+            <span class="channel-decade-card-logo">
+              <img src="images/logos/telefe-logo-2000s.png" alt="Telefe 2000–2009">
+            </span>
+
+            <span class="channel-decade-card-label">
+              Telefe 2000–2009
+            </span>
+
+          </a>
+
+          <!-- Telefe 2010–2026 -->
+          <a href="telefe-10s.html" class="channel-decade-card" title="Ver ficciones de Telefe de 2010 a 2026">
+
+            <span class="channel-decade-card-logo">
+              <img src="images/logos/telefe-logo-120x120.png" alt="Telefe 2010–2026">
+            </span>
+
+            <span class="channel-decade-card-label">
+              Telefe 2010–2026
+            </span>
+
+          </a>
+
         </div>
       </section>
-
-      <nav class="channel-decade-nav" aria-label="Explorar Telefe por década">
-
-        <a href="telefe-90s.html" class="channel-decade-link">
-          Telefe 90s
-        </a>
-
-        <a href="telefe-00s.html" class="channel-decade-link active" aria-current="page">
-          Telefe 2000–2009
-        </a>
-
-      </nav>
 
       <!-- Producciones destacadas -->
       <section id="telefe-destacadas" class="telefe-section">
