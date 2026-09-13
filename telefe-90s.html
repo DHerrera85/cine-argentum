@@ -259,7 +259,7 @@
     .channel-decade-card-label {
       font-size: .9rem;
       line-height: 1.2;
-      font-weight: 600;
+      font-weight: 700;
     }
 
     .telefe-section {
@@ -540,6 +540,30 @@
         width: 100%;
         max-width: none;
         min-width: 0;
+      }
+
+      .channel-decade-nav {
+        flex-wrap: nowrap;
+        gap: 12px;
+        overflow-x: auto;
+        padding-bottom: 8px;
+        scrollbar-width: none;
+      }
+
+      .channel-decade-nav::-webkit-scrollbar {
+        display: none;
+      }
+
+      .channel-decade-card {
+        width: 138px;
+        min-height: 112px;
+        flex: 0 0 138px;
+        padding: 12px;
+      }
+
+      .channel-decade-card-logo,
+      .channel-decade-card-logo img {
+        height: 56px;
       }
 
     }
