@@ -17437,6 +17437,12 @@
           "role": "acquisition"
         }
       ],
+      "air_broadcasts": [
+        {
+          "channel": "Telefe",
+          "tipo_emision": "Tira Diaria"
+        }
+      ],
       "genre": "Drama",
       "actors": [
         "Balthazar Murilio",
@@ -18216,6 +18222,12 @@
         {
           "channel": "Telefe",
           "role": "acquisition"
+        }
+      ],
+      "air_broadcasts": [
+        {
+          "channel": "Telefe",
+          "tipo_emision": "Semanal"
         }
       ],
       "genre": "Thriller",

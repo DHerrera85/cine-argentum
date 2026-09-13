@@ -50,6 +50,7 @@
     featured: '#channel-featured-slider',
     yearContainer: '#channel-year-filters',
     yearFilters: '[data-channel-year]',
+    genreFilters: '[data-channel-genre]',
     categoryFilters: '[data-channel-category]',
     sortFilters: '[data-channel-sort]',
     title: '#channel-catalogue-title',
@@ -60,6 +61,7 @@
 
   var allProductions = [];
   var activeYear = 'all';
+  var activeGenre = 'all';
   var activeCategory = 'all';
   var activeSort = 'rating-desc';
 
@@ -166,6 +168,45 @@
           expectedChannel
         );
       }
+    );
+  }
+
+  /* =========================================================
+   COMPROBAR LA RELACIÓN EDITORIAL CON EL CANAL
+   ========================================================= */
+
+  function hasConfiguredChannelRole(item, role) {
+    if (
+      !item ||
+      !Array.isArray(item.channel_relations)
+    ) {
+      return false;
+    }
+
+    var expectedChannel =
+      normalizeText(CHANNEL_NAME);
+
+    var expectedRole =
+      normalizeText(role);
+
+    return item.channel_relations.some(
+      function (relation) {
+        return Boolean(
+          relation &&
+          normalizeText(relation.channel) ===
+          expectedChannel &&
+          normalizeText(relation.role) ===
+          expectedRole
+        );
+      }
+    );
+  }
+
+
+  function isAcquisition(item) {
+    return hasConfiguredChannelRole(
+      item,
+      'acquisition'
     );
   }
 
@@ -601,7 +642,7 @@
       );
 
     }
-    
+
     var genreText =
       getGenreText(item);
 
@@ -703,7 +744,10 @@
 
     return allProductions.filter(function (item) {
 
-      return getHorizontalImage(item);
+      return Boolean(
+        getHorizontalImage(item) &&
+        !isAcquisition(item)
+      );
 
     });
 
@@ -913,6 +957,12 @@
           activeYear === 'all' ||
           getYear(item) === Number(activeYear);
 
+        var matchesGenre =
+          belongsToCategory(
+            item,
+            activeGenre
+          );
+
         var matchesCategory =
           belongsToCategory(
             item,
@@ -921,6 +971,7 @@
 
         return (
           matchesYear &&
+          matchesGenre &&
           matchesCategory
         );
 
@@ -967,6 +1018,38 @@
         return buildCard(item);
       })
       .join('');
+  }
+
+  /* =========================================================
+   GENERAR LAS TARJETAS DE ADQUISICIONES
+   ========================================================= */
+
+  function renderAcquisitionCards(acquisitions) {
+
+    var gridElement =
+      document.querySelector(
+        '#channel-acquisitions-grid'
+      );
+
+    if (!gridElement) {
+      return;
+    }
+
+    gridElement.innerHTML = '';
+
+    if (
+      !Array.isArray(acquisitions) ||
+      acquisitions.length === 0
+    ) {
+      return;
+    }
+
+    gridElement.innerHTML = acquisitions
+      .map(function (item) {
+        return buildCard(item);
+      })
+      .join('');
+
   }
 
   /* =========================================================
@@ -1042,6 +1125,42 @@
       count !== 0;
   }
 
+  /* =========================================================
+      ACTUALIZAR LA SECCIÓN DE ADQUISICIONES
+   ========================================================= */
+
+  function updateAcquisitionsState(count) {
+
+    var descriptionElement =
+      document.querySelector(
+        '#channel-acquisitions-description'
+      );
+
+    var emptyElement =
+      document.querySelector(
+        '#channel-acquisitions-empty-state'
+      );
+
+    if (descriptionElement) {
+
+      descriptionElement.textContent =
+        count +
+        ' ' +
+        (count === 1
+          ? 'adquisición emitida'
+          : 'adquisiciones emitidas') +
+        ' por ' +
+        CHANNEL_NAME +
+        ' para los filtros seleccionados.';
+
+    }
+
+    if (emptyElement) {
+      emptyElement.hidden =
+        count !== 0;
+    }
+
+  }
 
   /* =========================================================
      MARCAR BOTÓN ACTIVO
@@ -1063,6 +1182,33 @@
 
       var active =
         value === activeYear;
+
+      button.classList.toggle(
+        'active',
+        active
+      );
+
+      button.setAttribute(
+        'aria-pressed',
+        active ? 'true' : 'false'
+      );
+
+    });
+
+    var genreButtons =
+      document.querySelectorAll(
+        SELECTORS.genreFilters
+      );
+
+    genreButtons.forEach(function (button) {
+
+      var value =
+        button.getAttribute(
+          'data-channel-genre'
+        ) || 'all';
+
+      var active =
+        value === activeGenre;
 
       button.classList.toggle(
         'active',
@@ -1139,11 +1285,25 @@
 
   function renderCatalogue() {
 
-    var productions =
+    var visibleItems =
       getVisibleProductions();
+
+    var productions =
+      visibleItems.filter(function (item) {
+        return !isAcquisition(item);
+      });
+
+    var acquisitions =
+      visibleItems.filter(function (item) {
+        return isAcquisition(item);
+      });
 
     renderProductionCards(
       productions
+    );
+
+    renderAcquisitionCards(
+      acquisitions
     );
 
     updateHeading(
@@ -1152,6 +1312,10 @@
 
     updateEmptyState(
       productions.length
+    );
+
+    updateAcquisitionsState(
+      acquisitions.length
     );
 
     updateActiveButtons();
@@ -1268,6 +1432,45 @@
       );
 
       button.dataset.bound = '1';
+
+    });
+
+  }
+
+  /* =========================================================
+   ASIGNAR EVENTOS A LOS FILTROS DE GÉNERO
+   ========================================================= */
+
+  function bindGenreFilters() {
+
+    var buttons =
+      document.querySelectorAll(
+        SELECTORS.genreFilters
+      );
+
+    buttons.forEach(function (button) {
+
+      if (
+        button.dataset.genreBound === '1'
+      ) {
+        return;
+      }
+
+      button.addEventListener(
+        'click',
+        function () {
+
+          activeGenre =
+            button.getAttribute(
+              'data-channel-genre'
+            ) || 'all';
+
+          renderCatalogue();
+
+        }
+      );
+
+      button.dataset.genreBound = '1';
 
     });
 
@@ -1666,6 +1869,8 @@
     renderYearFilters();
 
     bindYearFilters();
+
+    bindGenreFilters();
 
     bindCategoryFilters();
 
