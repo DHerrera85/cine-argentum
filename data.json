@@ -6837,6 +6837,12 @@
         "Camila Mateos",
         "Agustín Suárez"
       ],
+      "channel_relations": [
+        {
+          "channel": "Telefe",
+          "role": "production"
+        }
+      ],
       "orientation": "vertical",
       "image": "images/verticals/2014-aislados-telefe-poster-280x420.png",
       "subtitle": "Webserie juvenil",
@@ -11647,6 +11653,7 @@
       "year": "2022",
       "channel": "Telefe",
       "genre": "Drama",
+      "tipo_emision": "Tira Diaria",
       "actors": [
         "Benjamín Vicuña",
         "Paola Krum",
@@ -11878,6 +11885,12 @@
       ],
       "platforms": [
         "Prime Video"
+      ],
+      "channel_relations": [
+        {
+          "channel": "Telefe",
+          "role": "production"
+        }
       ],
       "genre": "Drama",
       "actors": [
@@ -12128,9 +12141,24 @@
     {
       "id": "V306",
       "title": "Triángulo Amoroso",
+      "type": "serie",
       "year": "2026",
-      "channel": "Telefe",
+      "channel": "Shorta",
+      "platforms": [
+        "Shorta"
+      ],
+      "air_channels": [
+        "Telefe"
+      ],
+      "channel_relations": [
+        {
+          "channel": "Telefe",
+          "role": "production"
+        }
+      ],
       "genre": "Comedia",
+      "content_format": "vertical",
+      "tipo_emision": "Serie",
       "actors": [
         "Wanda Nara",
         "Maxi López",
@@ -12145,6 +12173,7 @@
       "image": "images/verticals/triangulo-amoroso-poster-280x420.png",
       "subtitle": "Comedia",
       "release_date": "11/05/2026",
+      "producer": "Telefe Studios",
       "capitulos": 30,
       "sinopsis": "La historia gira en torno a Wanda y Maxi, quienes aceptan participar de una novela innovadora. Sin embargo, todo cambia cuando descubren una cláusula contractual que los obliga a besarse, generando conflictos inesperados entre ambos.",
       "streaming_row": "ficciones_verticales"
@@ -12717,6 +12746,7 @@
       "title": "Pequeña Victoria",
       "year": "2019",
       "channel": "Telefe",
+      "tipo_emision": "Tira Diaria",
       "air_channels": [
         "Telefe"
       ],
@@ -13241,7 +13271,7 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/2004-culpable-de-este-amor-telefe-poster280x420-v2.webp",
-      "horizontal_image":"images/horizontals-1024x576/2004-culpable-de-este-amor-telefe-poster280x420-v2_1_.webp",
+      "horizontal_image": "images/horizontals-1024x576/2004-culpable-de-este-amor-telefe-poster280x420-v2_1_.webp",
       "tiras_2000_rows": [
         "ficciones-tarde"
       ],
@@ -14030,6 +14060,12 @@
       "cable_channels": [
         "TNT"
       ],
+      "channel_relations": [
+        {
+          "channel": "Telefe",
+          "role": "acquisition"
+        }
+      ],
       "genre": "Juvenil",
       "actors": [
         "Isabel Macedo",
@@ -14300,6 +14336,12 @@
       ],
       "air_channels": [
         "Telefe"
+      ],
+      "channel_relations": [
+        {
+          "channel": "Telefe",
+          "role": "acquisition"
+        }
       ],
       "genre": "Juvenil",
       "actors": [
@@ -14604,6 +14646,15 @@
       "type": "serie",
       "year": "2017",
       "channel": "Nickelodeon",
+      "air_channels": [
+        "Telefe"
+      ],
+      "channel_relations": [
+        {
+          "channel": "Telefe",
+          "role": "acquisition"
+        }
+      ],
       "genre": "Juvenil",
       "actors": [
         "Maia Reficco",
@@ -14658,6 +14709,12 @@
       "channel": "Nickelodeon",
       "air_channels": [
         "Telefe"
+      ],
+      "channel_relations": [
+        {
+          "channel": "Telefe",
+          "role": "acquisition"
+        }
       ],
       "cable_channels": [
         "Nickelodeon"
@@ -17151,6 +17208,12 @@
       "air_channels": [
         "Telefe"
       ],
+      "channel_relations": [
+        {
+          "channel": "Telefe",
+          "role": "acquisition"
+        }
+      ],
       "genre": "Drama",
       "actors": [
         "Juan Minujín",
@@ -17166,6 +17229,7 @@
           "season_number": 1,
           "premiere_date": "27/03/2024",
           "end_date": "28/03/2024",
+          "tipo_emision": "Especial",
           "rating": "9"
         }
       ],
@@ -17364,6 +17428,15 @@
       "title": "Apache: la Vida de Carlos Tévez",
       "year": "2019",
       "channel": "Netflix",
+      "air_channels": [
+        "Telefe"
+      ],
+      "channel_relations": [
+        {
+          "channel": "Telefe",
+          "role": "acquisition"
+        }
+      ],
       "genre": "Drama",
       "actors": [
         "Balthazar Murilio",
@@ -17513,6 +17586,12 @@
       "platforms": [
         "Flow"
       ],
+      "channel_relations": [
+        {
+          "channel": "Telefe",
+          "role": "production"
+        }
+      ],
       "genre": "Thriller",
       "actors": [
         "Cecilia Roth",
@@ -17640,6 +17719,12 @@
       "air_channels": [
         "Telefe"
       ],
+      "channel_relations": [
+        {
+          "channel": "Telefe",
+          "role": "acquisition"
+        }
+      ],
       "platforms": [
         "Flow"
       ],
@@ -17682,6 +17767,12 @@
       "platforms": [
         "Flow",
         "Paramount+"
+      ],
+      "channel_relations": [
+        {
+          "channel": "Telefe",
+          "role": "production"
+        }
       ],
       "platform_releases": [
         {
@@ -17733,7 +17824,14 @@
       "platforms": [
         "Flow"
       ],
+      "channel_relations": [
+        {
+          "channel": "Telefe",
+          "role": "production"
+        }
+      ],
       "genre": "Drama",
+      "tipo_emision": "Semanal",
       "actors": [
         "Tomás Fonzi",
         "Laurita Fernández"
@@ -17828,6 +17926,12 @@
       "platforms": [
         "Flow"
       ],
+      "channel_relations": [
+        {
+          "channel": "Telefe",
+          "role": "production"
+        }
+      ],
       "genre": "Thriller",
       "actors": [
         "Griselda Siciliani",
@@ -17886,6 +17990,12 @@
       ],
       "platforms": [
         "Flow"
+      ],
+      "channel_relations": [
+        {
+          "channel": "Telefe",
+          "role": "production"
+        }
       ],
       "genre": "Thriller",
       "actors": [
@@ -18003,6 +18113,12 @@
       "platforms": [
         "Flow"
       ],
+      "channel_relations": [
+        {
+          "channel": "Telefe",
+          "role": "production"
+        }
+      ],
       "genre": "Thriller",
       "actors": [
         "Peter Lanzani",
@@ -18093,6 +18209,15 @@
       "title": "Monzón",
       "year": "2019",
       "channel": "Space",
+      "air_channels": [
+        "Telefe"
+      ],
+      "channel_relations": [
+        {
+          "channel": "Telefe",
+          "role": "acquisition"
+        }
+      ],
       "genre": "Thriller",
       "actors": [
         "Jorge Román",
