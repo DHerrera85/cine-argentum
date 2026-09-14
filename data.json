@@ -7096,6 +7096,112 @@
       ]
     },
     {
+      "id": "P2072",
+      "title": "Primera Cita",
+      "type": "serie",
+      "year": "2016",
+      "channel": "Telefe",
+      "web_channels": [
+        "Telefe",
+        "Mi Telefe"
+      ],
+      "channel_relations": [
+        {
+          "channel": "Telefe",
+          "role": "production"
+        }
+      ],
+      "genre": "Drama",
+      "actors": [
+        "Diana Amarilla",
+        "Gabriel Epstein",
+        "Nahuel Villarreal"
+      ],
+      "orientation": "vertical",
+      "image": "images/verticals/2016-primera-cita-telefe-poster-280x420.webp",
+      "subtitle": "Drama",
+      "capitulos": 6,
+      "fecha_estreno": "30/08/2016",
+      "sinopsis": "Martina y Diego, dos jóvenes que se conocen por internet, deciden encontrarse personalmente después de entablar una relación a la distancia. Durante su primera cita, ambos deberán enfrentarse a las expectativas, dudas y emociones de ese encuentro mientras descubren si la conexión que nació en el mundo virtual puede convertirse en algo más.",
+      "tipo_emision": "Webserie",
+      "tiras_2010_rows": [
+        "webseries"
+      ]
+    },
+    {
+      "id": "P2073",
+      "title": "Secretarias",
+      "type": "serie",
+      "year": "2017",
+      "channel": "Telefe",
+      "web_channels": [
+        "Telefe",
+        "Mi Telefe"
+      ],
+      "channel_relations": [
+        {
+          "channel": "Telefe",
+          "role": "production"
+        }
+      ],
+      "genre": "Comedia",
+      "actors": [
+        "Mica Suárez",
+        "Luli Torn"
+      ],
+      "orientation": "vertical",
+      "image": "images/verticals/2016-secretarias-telefe-poster-280x420.webp",
+      "subtitle": "Comedia",
+      "capitulos": 10,
+      "fecha_estreno": "01/03/2017",
+      "sinopsis": "Agos y Flor son dos secretarias que comparten sus jornadas en una oficina, donde el trabajo se convierte en escenario de conversaciones, confidencias y situaciones cotidianas. Entre jefes, relaciones amorosas, amistades, salidas, redes sociales y preocupaciones personales, ambas enfrentarán con humor los pequeños conflictos y disparates de la vida diaria.",
+      "tipo_emision": "Webserie",
+      "tiras_2010_rows": [
+        "webseries"
+      ]
+    },
+    {
+      "id": "P2074",
+      "title": "La Otra Cara de Rita",
+      "type": "serie",
+      "year": 2019,
+      "channel": "Telefe",
+      "web_channels": [
+        "Telefe",
+        "Mi Telefe"
+      ],
+      "channel_relations": [
+        {
+          "channel": "Telefe",
+          "role": "production"
+        }
+      ],
+      "genre": "Thriller",
+      "actors": [
+        "Bárbara Amaral",
+        "Rodrigo Guirao Díaz",
+        "Adrián Navarro"
+      ],
+      "orientation": "vertical",
+      "image": "images/verticals/2019-laotracaraderita-telefe-poster280x420.webp",
+      "subtitle": "Thriller",
+      "capitulos": 20,
+      "fecha_estreno": "17/01/2019",
+      "sinopsis": "Rita, seguidora de un culto bumbaísta cuyas enseñanzas heredó de su madre, vive guiada por una espiritualidad que desafía las explicaciones racionales de quienes la rodean. Su camino se cruza con José y con Nelson, un enigmático líder religioso que esconde un oscuro pasado, introduciéndola en una trama de misterio, creencias y secretos vinculada al universo de Campanas en la noche.",
+      "tipo_emision": "Webserie",
+      "tiras_2010_rows": [
+        "webseries"
+      ],
+      "producciones_relacionadas": [
+        {
+          "id": "v14",
+          "title": "Campanas en la Noche",
+          "meta": "Serie original",
+          "image": "images/verticals/campanas-en-la-noche-poster-280x420.png"
+        }
+      ]
+    },
+    {
       "id": "T0001",
       "title": "Amigos son los amigos",
       "year": "1990",
@@ -12426,6 +12532,14 @@
       "capitulos": 80,
       "fecha_estreno": "14/01/2019",
       "sinopsis": "Luis es un hombre acusado injustamente del asesinato de su mujer en la Patagonia que huye con su hija. Años después, con nueva identidad, se enamora de Luciana, una testigo clave de su pasado que vive sometida a Vito, un manipulador peligroso",
+      "producciones_relacionadas": [
+        {
+          "id": "P2074",
+          "title": "La Otra Cara de Rita",
+          "meta": "Spin-off web",
+          "image": "images/verticals/2019-laotracaraderita-telefe-poster280x420.webp"
+        }
+      ],
       "rating": "8,5",
       "productora": "Telefe Contenidos",
       "tipo_emision": "Tira Diaria"
