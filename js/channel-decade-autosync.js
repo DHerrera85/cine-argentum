@@ -615,12 +615,13 @@
     }
 
     /*
- * Tira Diaria y Semanal se clasifican
- * mediante tipo_emision, no mediante genre.
- */
+     * Tira Diaria, Semanal y Webserie se clasifican
+     * mediante tipo_emision, no mediante genre.
+     */
     if (
       category === 'tira-diaria' ||
-      category === 'semanal'
+      category === 'semanal' ||
+      category === 'webserie'
     ) {
 
       var emissionType = normalizeText(
@@ -637,12 +638,31 @@
         );
       }
 
+      if (category === 'semanal') {
+        return (
+          emissionType.indexOf('semanal') !== -1
+        );
+      }
+
       return (
-        emissionType.indexOf('semanal') !== -1
+        emissionType.indexOf('webserie') !== -1 ||
+        emissionType.indexOf('web serie') !== -1
       );
 
     }
 
+    /*
+     * Verticales se clasifica mediante content_format.
+     * orientation describe el formato del póster y no
+     * debe utilizarse para este filtro.
+     */
+    if (category === 'vertical') {
+      return (
+        normalizeText(
+          item && item.content_format
+        ) === 'vertical'
+      );
+    }
     var genreText =
       getGenreText(item);
 

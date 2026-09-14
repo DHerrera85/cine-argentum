@@ -7056,6 +7056,46 @@
       ]
     },
     {
+      "id": "P2071",
+      "title": "La Búsqueda de Laura",
+      "type": "serie",
+      "year": "2017",
+      "channel": "Telefe",
+      "web_channels": [
+        "Telefe",
+        "Mi Telefe"
+      ],
+      "channel_relations": [
+        {
+          "channel": "Telefe",
+          "role": "production"
+        }
+      ],
+      "genre": "Thriller",
+      "actors": [
+        "Manuela Pal",
+        "Michel Noher",
+        "Santiago Pedrero"
+      ],
+      "orientation": "vertical",
+      "image": "images/verticals/2017-la-busqueda-de-laura-telefe-poster-280x420.webp",
+      "subtitle": "Thriller",
+      "capitulos": 18,
+      "sinopsis": "Laura, devastada tras perder su tercer embarazo, comienza a involucrarse en la investigación de la desaparición de Carolina Fazio cuando su esposo, el inspector Godoy, le pide ayuda con el caso. Junto a su amigo Kevin, inicia una pesquisa paralela guiada por su intuición de escritora y vuelca sus hallazgos en un blog, mientras intenta reconstruir una historia de amantes, secretos y una desaparición cada vez más inquietante.",
+      "tipo_emision": "Webserie",
+      "tiras_2010_rows": [
+        "webseries"
+      ],
+      "producciones_relacionadas": [
+        {
+          "id": "v9",
+          "title": "Amar Después de Amar",
+          "meta": "Serie original",
+          "image": "images/verticals/amar-despues-de-amar-poster-280x420.png"
+        }
+      ]
+    },
+    {
       "id": "T0001",
       "title": "Amigos son los amigos",
       "year": "1990",
@@ -11446,6 +11486,14 @@
       "rating": "12,1",
       "productora": "Telefe Contenidos",
       "tipo_emision": "Tira Diaria",
+      "producciones_relacionadas": [
+        {
+          "id": "P2071",
+          "title": "La Búsqueda de Laura",
+          "meta": "Spin-off web",
+          "image": "images/verticals/2017-la-busqueda-de-laura-telefe-poster-280x420.webp"
+        }
+      ],
       "remakes": [
         {
           "title": "Caer en Tentación",
