@@ -12123,7 +12123,7 @@
         "Ana María Picchio"
       ],
       "orientation": "vertical",
-      "image": "images/verticals/panaderia-los-felipe-poster-280x420.png",
+      "image": "images/verticals/2004-panaderia-los-felipe-telefe-poster280x420.webp",
       "subtitle": "Comedia",
       "horario": "13hs",
       "capitulos": 13,
@@ -13384,7 +13384,8 @@
         "Cecilia Dopazo"
       ],
       "orientation": "vertical",
-      "image": "images/verticals/maximo-corazon-poster-280x420.png",
+      "image": "images/verticals/2002-maximo-corazon-telefe-poster280x420.webp",
+      "horizontal_image":"images/horizontals-1024x576/2002-maximo-corazon-telefe-slide1024x576.webp",
       "tiras_2000_rows": [
         "ficciones-tarde"
       ],
@@ -13540,7 +13541,8 @@
         "Millie Stegmann"
       ],
       "orientation": "vertical",
-      "image": "images/verticals/se-dice-amor-poster-280x420.png",
+      "image": "images/verticals/2006-se-dice-amor-telefe-poster280x420.webp",
+      "horizontal_image":"images/horizontals-1024x576/2006-se-dice-amor-telefe-slide1024x576.webp",
       "tiras_2000_rows": [
         "ficciones-tarde"
       ],
@@ -20355,7 +20357,8 @@
         "Sabrina Garciarena"
       ],
       "orientation": "vertical",
-      "image": "images/verticals/la-ley-del-amor-poster-280x420.png",
+      "image": "images/verticals/2007-la-ley-del-amor-telefe-poster280x420.webp",
+      "horizontal_image": "images/horizontals-1024x576/2007-la-ley-del-amor-telefe-slide1024x576.webp",
       "tiras_2000_rows": [
         "ficciones-tarde"
       ],
