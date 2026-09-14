@@ -12385,6 +12385,7 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/graduados-poster-280x420.png",
+      "horizontal_image": "images/horizontals-1024x576/graduados-slide-1024x576.png",
       "subtitle": "Comedia",
       "horario": "21:45hs",
       "capitulos": 179,
@@ -12500,6 +12501,16 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/vidas-robadas-poster-280x420.png",
+            "poster_gallery": [
+        {
+          "image": "images/verticals/vidas-robadas-poster-280x420.png",
+          "label": "Póster principal"
+        },
+        {
+          "image": "images/verticals/2008-vidas-robadas-telefe-poster280x420-v2.webp",
+          "label": "Póster alternativo"
+        }
+      ],
       "horizontal_image": "images/horizontals-1024x576/vidas-robadas-slide-1024x576.png",
       "tiras_2000_rows": [
         "dramas-exitosos",
@@ -13173,6 +13184,7 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/dulce-amor-poster-280x420.png",
+      "horizontal_image": "images/horizontals-1024x576/dulce-amor-slide-1024x576.png",
       "subtitle": "Telenovela",
       "horario": "22:45hs, 23:15hs",
       "capitulos": 301,
@@ -13385,7 +13397,7 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/2002-maximo-corazon-telefe-poster280x420.webp",
-      "horizontal_image":"images/horizontals-1024x576/2002-maximo-corazon-telefe-slide1024x576.webp",
+      "horizontal_image": "images/horizontals-1024x576/2002-maximo-corazon-telefe-slide1024x576.webp",
       "tiras_2000_rows": [
         "ficciones-tarde"
       ],
@@ -13542,7 +13554,7 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/2006-se-dice-amor-telefe-poster280x420.webp",
-      "horizontal_image":"images/horizontals-1024x576/2006-se-dice-amor-telefe-slide1024x576.webp",
+      "horizontal_image": "images/horizontals-1024x576/2006-se-dice-amor-telefe-slide1024x576.webp",
       "tiras_2000_rows": [
         "ficciones-tarde"
       ],
@@ -19169,6 +19181,7 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/el-hombre-de-tu-vida-poster-280x420.png",
+      "horizontal_image": "images/horizontals-1024x576/el-hombre-de-tu-vida-slide-1024x576.png",
       "subtitle": "Comedia",
       "horario": "22hs",
       "capitulos": 24,
