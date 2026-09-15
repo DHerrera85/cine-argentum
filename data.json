@@ -5343,6 +5343,7 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/educando-a-nina-poster-280x420.png",
+      "horizontal_image": "images/horizontals-1024x576/educando-a-nina-1024x576.png",
       "subtitle": "Comedia",
       "horario": "21:30hs",
       "capitulos": 134,
@@ -11818,6 +11819,7 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/el-primero-de-nosotros-poster-280x420.png",
+      "horizontal_image": "images/horizontals-1024x576/el-primero-de-nosotros-slide-1024x576.png",
       "subtitle": "Drama"
     },
     {
@@ -11902,6 +11904,7 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/100-Dias-para-enamorarse-poster-280x420.png",
+      "horizontal_image": "images/horizontals-1024x576/cien-dias-para-enamorarse-1024x576.png",
       "subtitle": "Comedia",
       "horario": "21:45hs",
       "capitulos": 125,
@@ -12501,7 +12504,7 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/vidas-robadas-poster-280x420.png",
-            "poster_gallery": [
+      "poster_gallery": [
         {
           "image": "images/verticals/vidas-robadas-poster-280x420.png",
           "label": "Póster principal"
@@ -13227,6 +13230,7 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/golpe-al-corazon-poster-280x420.png",
+      "horizontal_image": "images/horizontals-1024x576/golpe-al-corazon-slide-1024x576.png",
       "subtitle": "Telenovela",
       "horario": "22hs, 23:15hs",
       "capitulos": 105,
@@ -18312,6 +18316,7 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/un-gallo-para-esculapio-poster-280x420.png",
+      "horizontal_image": "images/horizontals-1024x576/un-gallo-para-esculapio-slide-1024x576.png",
       "subtitle": "Thriller",
       "horario": "miércoles 22:45",
       "capitulos": 15,
@@ -18369,6 +18374,7 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/historia-de-un-clan-poster-280x420.png",
+      "horizontal_image": "images/horizontals-1024x576/historia-de-un-clan-slide-1024x576.png",
       "subtitle": "Thriller",
       "horario": "miércoles 22:45",
       "capitulos": 11,
@@ -18415,6 +18421,7 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/monzon-poster-280x420.png",
+      "horizontal_image": "images/horizontals-1024x576/monzon-slide-1024x576.png",
       "subtitle": "Thriller"
     },
     {
@@ -18621,6 +18628,7 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/hermanos-y-detectives-poster-280x420.png",
+      "horizontal_image": "images/horizontals-1024x576/hermanos-detectives-slide-1024x576.png",
       "subtitle": "Comedia",
       "horario": "23:30hs",
       "capitulos": 10,
@@ -18703,6 +18711,7 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/los-simuladores-poster-280x420.png",
+      "horizontal_image": "images/horizontals-1024x576/los-simuladores-slide-1024x576.png",
       "subtitle": "Thriller",
       "horario": "23hs",
       "capitulos": 24,
@@ -18796,6 +18805,7 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/sandro-la-serie-poster-280x420.png",
+      "horizontal_image": "images/horizontals-1024x576/sandro-la-serie-slide-1024x576.png",
       "subtitle": "Drama",
       "horario": "22:30hs",
       "capitulos": 13,
@@ -19164,7 +19174,7 @@
       "capitulos": 13,
       "fecha_estreno": "10/09/2012",
       "sinopsis": "José, un soltero atractivo que huye de la rutina y fracasa en relaciones duraderas, acepta iniciar una terapia recomendada por su psicólogo. En cada sesión enfrentará una intensa revisión de su vida afectiva y de sus propios miedos al compromiso.",
-      "rating": "16,3",
+      "rating": "12,3",
       "productora": "Resonant TV / Frecuencia Latina International",
       "tipo_emision": "Semanal"
     },
@@ -20134,7 +20144,7 @@
       "capitulos": "-",
       "fecha_estreno": "18/04/2005",
       "sinopsis": "La trama sigue a un ex-futbolista que, buscando una mejor vida para su hija, se convierte en el ama de llaves de una ejecutiva de publicidad adicta al trabajo y de armas tomar.",
-      "rating": "19,7",
+      "rating": "11,7",
       "productora": "Telefe Contenidos",
       "tipo_emision": "Tira Diaria"
     },
@@ -20196,6 +20206,7 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/la-leona-poster-280x420.png",
+      "horizontal_image": "images/horizontals-1024x576/la-leona-slide-1024x576.png",
       "subtitle": "Thriller",
       "horario": "22hs, 23hs",
       "capitulos": 116,

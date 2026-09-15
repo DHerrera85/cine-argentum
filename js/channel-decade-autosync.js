@@ -48,6 +48,7 @@
   var SELECTORS = {
     grid: '#channel-decade-grid',
     featured: '#channel-featured-slider',
+    topRated: '#channel-top-rated-slider',
     yearContainer: '#channel-year-filters',
     yearFilters: '[data-channel-year]',
     genreFilters: '[data-channel-genre]',
@@ -965,6 +966,210 @@
   }
 
   /* =========================================================
+   OBTENER LAS 10 PRODUCCIONES CON MÁS RATING
+   ========================================================= */
+
+  function getTopRatedProductions() {
+
+    return allProductions
+      .filter(function (item) {
+
+        return Boolean(
+          !isAcquisition(item) &&
+          getRating(item) !== null
+        );
+
+      })
+      .sort(function (a, b) {
+
+        var ratingDifference =
+          getRating(b) - getRating(a);
+
+        if (ratingDifference !== 0) {
+          return ratingDifference;
+        }
+
+        /*
+         * En caso de empate, se mantiene primero
+         * la producción más reciente.
+         */
+        return compareByDescendingYear(a, b);
+
+      })
+      .slice(0, 10);
+
+  }
+
+
+  /* =========================================================
+     GENERAR UNA TARJETA DEL TOP 10
+     ========================================================= */
+
+  function buildTopRatedCard(item, index) {
+
+    var itemId =
+      String(item.id || '').trim();
+
+    var itemTitle =
+      String(item.title || 'Sin título').trim();
+
+    var itemYear =
+      getYear(item);
+
+    var horizontalImage =
+      getHorizontalImage(item);
+
+    /*
+     * La falta de imagen horizontal no interviene
+     * en el ranking. Se utiliza el póster vertical
+     * solamente como fallback visual provisional.
+     */
+    var displayImage =
+      horizontalImage ||
+      getPosterImage(item);
+
+    var fallbackClass =
+      horizontalImage
+        ? ''
+        : ' uses-poster-fallback';
+
+    var href =
+      'show.html?id=' +
+      encodeURIComponent(itemId);
+
+    var ranking =
+      index + 1;
+
+    var titleWithYear =
+      itemTitle +
+      (itemYear !== null
+        ? ' (' + itemYear + ')'
+        : '');
+
+    return [
+      '<li class="item-f">',
+
+      '<a',
+      ' href="', escapeHtml(href), '"',
+      ' aria-label="Ver ficha de ',
+      escapeHtml(itemTitle),
+      '">',
+
+      '<div',
+      ' class="showcase-box',
+      fallbackClass,
+      '"',
+      ' data-rank="',
+      escapeHtml(ranking),
+      '">',
+
+      '<img',
+      ' src="',
+      escapeHtml(displayImage),
+      '"',
+      ' alt="',
+      escapeHtml(itemTitle),
+      '"',
+      ' loading="lazy"',
+      '>',
+
+      '</div>',
+
+      '<div class="latest-b-text">',
+
+      '<strong>',
+      escapeHtml(titleWithYear),
+      '</strong>',
+
+      '<p>',
+      'Rating: ',
+      escapeHtml(formatRating(item)),
+      '</p>',
+
+      '</div>',
+
+      '</a>',
+
+      '</li>'
+    ].join('');
+
+  }
+
+
+  /* =========================================================
+     GENERAR EL SLIDER DEL TOP 10
+     ========================================================= */
+
+  function renderTopRatedSlider() {
+
+    var slider =
+      document.querySelector(
+        SELECTORS.topRated
+      );
+
+    if (!slider) {
+      return;
+    }
+
+    var items =
+      getTopRatedProductions();
+
+    slider.innerHTML =
+      items.map(function (item, index) {
+
+        return buildTopRatedCard(
+          item,
+          index
+        );
+
+      }).join('');
+
+    if (
+      window.jQuery &&
+      window.jQuery.fn &&
+      window.jQuery.fn.lightSlider
+    ) {
+
+      window.jQuery(slider).lightSlider({
+        item: 3,
+        autoWidth: false,
+        slideMove: 1,
+        slideMargin: 20,
+        loop: false,
+        pager: false,
+        controls: true,
+        enableTouch: true,
+        enableDrag: true,
+        freeMove: false,
+        responsive: [
+          {
+            breakpoint: 1100,
+            settings: {
+              item: 2,
+              slideMove: 1,
+              slideMargin: 14
+            }
+          },
+          {
+            breakpoint: 768,
+            settings: {
+              item: 1,
+              slideMove: 1,
+              slideMargin: 12
+            }
+          }
+        ]
+      });
+
+      window.jQuery(slider)
+        .removeClass('cs-hidden')
+        .addClass('slider-ready');
+
+    }
+
+  }
+
+  /* =========================================================
      FILTRAR POR AÑO Y CATEGORÍA
      ========================================================= */
 
@@ -1866,6 +2071,8 @@
       bindCategoryFilters();
 
       renderFeaturedSlider();
+
+      renderTopRatedSlider();
 
       renderCatalogue();
 

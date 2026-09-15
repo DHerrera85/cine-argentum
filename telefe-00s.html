@@ -609,6 +609,92 @@
       }
 
     }
+
+    /* ==================================================
+       TOP 10 PRODUCCIONES POR RATING
+    ================================================== */
+
+    #telefe-top-rated .slider-h {
+      margin: 0;
+      padding: 0;
+    }
+
+    #telefe-top-rated .showcase-box {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      overflow: hidden;
+      border-radius: 12px;
+      background: #202832;
+    }
+
+    #telefe-top-rated .showcase-box img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      border-radius: 12px;
+    }
+
+    /*
+     * Fallback provisional para las producciones
+     * que todavía no tienen horizontal_image.
+     */
+    #telefe-top-rated .showcase-box.uses-poster-fallback img {
+      object-position: center top;
+    }
+
+    /*
+     * Numeración con la tipografía del Top 10 de index.html,
+     * ubicada en el margen inferior izquierdo.
+     */
+    #telefe-top-rated .showcase-box::before {
+      content: attr(data-rank);
+      position: absolute;
+      left: 8px;
+      bottom: 8px;
+      z-index: 10;
+      padding: 4px 8px;
+      border-radius: 4px;
+      background:
+        linear-gradient(135deg,
+          rgba(0, 0, 0, 0.75) 0%,
+          rgba(0, 0, 0, 0.5) 100%);
+      color: #ffffff;
+      font-family: Impact, "Arial Black", sans-serif;
+      font-size: 48px;
+      font-weight: 900;
+      line-height: 1;
+      text-shadow:
+        2px 2px 4px rgba(0, 0, 0, 0.9),
+        -1px -1px 2px rgba(0, 0, 0, 0.7);
+      pointer-events: none;
+    }
+
+    #telefe-top-rated .latest-b-text {
+      text-align: center;
+    }
+
+    #telefe-top-rated .latest-b-text strong {
+      display: block;
+      margin-top: 12px;
+      color: #ffffff;
+    }
+
+    #telefe-top-rated .latest-b-text p {
+      margin: 3px 0 0;
+      color: #9ea6b0;
+    }
+
+    @media (max-width: 767px) {
+      #telefe-top-rated .showcase-box::before {
+        left: 7px;
+        bottom: 7px;
+        padding: 3px 7px;
+        font-size: 40px;
+      }
+    }
   </style>
 </head>
 
@@ -725,6 +811,17 @@
         <ul id="channel-featured-slider" class="slider-h cs-hidden" data-skip-auto="true">
         </ul>
 
+      </section>
+
+      <!-- Top 10 por rating -->
+      <section id="telefe-top-rated" class="telefe-section">
+        <h2 class="showcase-heading">
+          Las 10 producciones de Telefe con más rating (2000–2009)
+        </h2>
+
+        <ul id="channel-top-rated-slider" class="slider-h telefe-top10 cs-hidden" data-skip-auto="true"
+          aria-label="Las 10 producciones de Telefe con más rating entre 2000 y 2009">
+        </ul>
       </section>
 
       <!-- Navegación por año: se completará después -->
@@ -885,7 +982,7 @@
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   <script src="js/lightslider.js"></script>
   <script src="js/script.js?v=20260226-1"></script>
-  <script src="js/channel-decade-autosync.js?v=20260912-3"></script>
+  <script src="js/channel-decade-autosync.js?v=20260915-1"></script>
 </body>
 
 </html>
