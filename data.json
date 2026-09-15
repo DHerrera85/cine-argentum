@@ -354,7 +354,15 @@
       "viewers": 525188,
       "producer": "Oscar Kramer S. A., Cuatro Cabezas, Tornasol Films, Mandarin Films, Taxi Films",
       "release_date": "11/5/2000",
-      "director": "Marcelo Piñeyro"
+      "director": "Marcelo Piñeyro",
+      "producciones_relacionadas": [
+        {
+          "id": "V319",
+          "title": "Plata Quemada",
+          "meta": "Nueva adaptación para Netflix",
+          "image": "images/verticals/2027-plata-quemada-serie-netflix-poster280x420.webp"
+        }
+      ]
     },
     {
       "title": "Antigua vida mía",
@@ -6379,6 +6387,104 @@
       "streaming_row": "ficciones_verticales"
     },
     {
+      "id": "V318",
+      "title": "Sangre",
+      "type": "serie",
+      "year": "2027",
+      "channel": "Netflix",
+      "platforms": [
+        "Netflix"
+      ],
+      "genre": "Thriller",
+      "actors": [
+        "Julieta Cardinali",
+        "Pablo Echarri",
+        "Macarena Achaga",
+        "El Purre",
+        "César Troncoso"
+      ],
+      "orientation": "vertical",
+      "image": "images/verticals/2027-sangre-netflix-serie-poster280x420.webp",
+      "subtitle": "Thriller",
+      "release_date": "01/01/2027",
+      "status": "En Producción",
+      "sinopsis": "Una historia de venganza, secretos y amores prohibidos."
+    },
+    {
+      "id": "V319",
+      "title": "Plata Quemada",
+      "type": "serie",
+      "year": "2027",
+      "channel": "Netflix",
+      "platforms": [
+        "Netflix"
+      ],
+      "genre": "Thriller",
+      "actors": [
+        "Agustín Della Corte",
+        "Lautaro Bettoni",
+        "Matías Recalt",
+        "Juan Ingaramo",
+        "Chiara Parravicini",
+        "Diego Cremonesi",
+        "Juana Somoza"
+      ],
+      "orientation": "vertical",
+      "image": "images/verticals/2027-plata-quemada-serie-netflix-poster280x420.webp",
+      "subtitle": "Thriller",
+      "release_date": "01/01/2027",
+      "status": "En Producción",
+      "sinopsis": "Una historia sobre un violento asalto y un amor llevado al límite, basada en la novela de Ricardo Piglia.",
+      "producciones_relacionadas": [
+        {
+          "id": "P1009",
+          "title": "Plata quemada",
+          "meta": "Adaptación cinematográfica",
+          "image": "images/verticals/plata-quemada-2000-poster-280x420.png"
+        }
+      ]
+    },
+    {
+      "id": "V320",
+      "title": "La Torre",
+      "type": "serie",
+      "year": "2027",
+      "channel": "Netflix",
+      "platforms": [
+        "Netflix"
+      ],
+      "genre": "Thriller",
+      "actors": [
+        "Byron Barbieri",
+        "Canela Arregui",
+        "Eleonora Wexler"
+      ],
+      "orientation": "vertical",
+      "image": "images/verticals/2027-la-torre-netflix-serie-poster280x420.webp",
+      "subtitle": "Thriller",
+      "release_date": "01/01/2027",
+      "status": "En Producción",
+      "sinopsis": "Dos jóvenes hermanos se adentran en una aventura criminal que pondrá a prueba su vínculo y los enfrentará a un mundo cada vez más peligroso."
+    },
+    {
+      "id": "V321",
+      "title": "La Ciudad",
+      "type": "serie",
+      "year": "2027",
+      "channel": "Netflix",
+      "platforms": [
+        "Netflix"
+      ],
+      "genre": "Drama",
+      "orientation": "vertical",
+      "image": "images/verticals/2027-la-ciudad-netflix-serie-poster280x420.webp",
+      "subtitle": "Drama",
+      "release_date": "01/01/2027",
+      "status": "En Producción",
+      "sinopsis": "Una nueva serie ambientada en la ciudad de Rosario, Santa Fe, que explora los lazos familiares, la fe en el fútbol y la vida en el barrio La Granada.",
+      "producer": "Pampa Films"
+    },
+    {
       "id": "P2045",
       "title": "Gutiérrez is Mai Nem",
       "type": "serie",
@@ -6582,23 +6688,22 @@
       "title": "El Amor es Otra Cosa",
       "type": "serie",
       "year": "2027",
-      "channel": "Flow",
-      "platform": "Flow",
+      "channel": "Netflix",
+      "platforms": [
+        "Netflix"
+      ],
       "genre": "Drama",
       "actors": [
         "Candela Vetrano",
-        "Luciano Castro",
         "Jimena Barón",
-        "Tomás Fonzi"
+        "Muriel Santa Ana"
       ],
       "orientation": "vertical",
-      "image": "images/verticals/2027-el-amor-es-otra-cosa-flow-280x420.webp",
-      "horizontal_image": "",
-      "capitulos": "",
-      "fecha_estreno": "1/1/2027",
-      "sinopsis": "Historias de amores y desamores entre parejas relacionadas entre sí.",
-      "remakes": [],
-      "productora": "",
+      "image": "images/verticals/2027-el-amor-es-otra-cosa-serie-netflix-poster280x420-v2.webp",
+      "subtitle": "Drama",
+      "release_date": "01/01/2027",
+      "status": "En Producción",
+      "sinopsis": "Tres mujeres que se conocen por un accidente con sus perros terminan descubriendo qué lugar ocupan el amor y la libertad en sus propias vidas.",
       "director": "Daniel Barone"
     },
     {
@@ -7201,6 +7306,48 @@
           "image": "images/verticals/campanas-en-la-noche-poster-280x420.png"
         }
       ]
+    },
+    {
+      "id": "P2075",
+      "title": "Ümana",
+      "type": "pelicula",
+      "year": "2027",
+      "channel": "Netflix",
+      "platforms": [
+        "Netflix"
+      ],
+      "genre": "Romance",
+      "actors": [
+        "Natalia Oreiro",
+        "Alex Pelao"
+      ],
+      "orientation": "vertical",
+      "image": "images/verticals/2027-umana-netflix-pelicula-poster280x420.webp",
+      "subtitle": "Romance",
+      "release_date": "01/01/2027",
+      "status": "En Producción",
+      "sinopsis": "Una escritora bloqueada emocionalmente ve su vida trastocada cuando acepta convivir con un androide de apariencia humana, obligándola a enfrentar nuevamente aquello que más teme: volver a sentir."
+    },
+    {
+      "id": "P2076",
+      "title": "Volver a Brillar",
+      "type": "pelicula",
+      "year": "2027",
+      "channel": "Netflix",
+      "platforms": [
+        "Netflix"
+      ],
+      "genre": "Romance",
+      "actors": [
+        "Adrián Suar",
+        "Dolores Fonzi"
+      ],
+      "orientation": "vertical",
+      "image": "images/verticals/2027-volver-a-brillar-netflix-pelicula-poster280x420.webp",
+      "subtitle": "Comedia",
+      "release_date": "01/01/2027",
+      "status": "En Producción",
+      "sinopsis": "Una comedia romántica que funciona como una carta de amor al oficio de la actuación."
     },
     {
       "id": "T0001",
@@ -12247,16 +12394,16 @@
     {
       "id": "V303",
       "title": "Gordon",
-      "year": "2027",
+      "year": "2026",
       "channel": "Netflix",
-      "genre": "Drama",
+      "genre": "Thriller",
       "actors": [
         "Rodrigo de la Serna"
       ],
       "orientation": "vertical",
       "image": "images/verticals/gordon-poster-280x420.png",
       "subtitle": "Drama",
-      "release_date": "01/01/2027"
+      "release_date": "01/11/2026"
     },
     {
       "id": "V304",
