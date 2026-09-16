@@ -12650,8 +12650,20 @@
         "Soledad Silveyra"
       ],
       "orientation": "vertical",
-      "image": "images/verticals/vidas-robadas-poster-280x420.png",
+      "image": "images/verticals/2008-vidas-robadas-telefe-poster280x420-v3.webp",
+      "horizontal_gallery": [
+        {
+          "image": "images/horizontals-1024x576/2008-vidas-robadas-telefe-slide-1024x576-v2.webp"
+        },
+        {
+          "image": "images/horizontals-1024x576/vidas-robadas-slide-1024x576.png"
+        }
+      ],
       "poster_gallery": [
+        {
+          "image": "images/verticals/2008-vidas-robadas-telefe-poster280x420-v3.webp",
+          "label": "Póster principal"
+        },
         {
           "image": "images/verticals/vidas-robadas-poster-280x420.png",
           "label": "Póster principal"
@@ -12661,7 +12673,6 @@
           "label": "Póster alternativo"
         }
       ],
-      "horizontal_image": "images/horizontals-1024x576/vidas-robadas-slide-1024x576.png",
       "tiras_2000_rows": [
         "dramas-exitosos",
         "thrillers"
