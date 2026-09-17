@@ -11940,6 +11940,7 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/argentina-tierra-de-amor-y-venganza-2019-poster-280x420.png",
+      "horizontal_image": "images/horizontals-1024x576/atav-slide-1024x576.png",
       "subtitle": "Telenovela",
       "horario": "23hs",
       "capitulos": 192,
@@ -12014,6 +12015,7 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/la-1-518-somos-uno-poster-280x420.png",
+      "horizontal_image": "images/horizontals-1024x576/la-1-5-18-slide-1024x576.png",
       "subtitle": "Thriller"
     },
     {
@@ -12032,6 +12034,7 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/buenos-chicos-poster-280x420.png",
+      "horizontal_image": "images/horizontals-1024x576/buenos-chicos-1024x576.png",
       "juveniles_rows": [
         "pol-ka"
       ],
@@ -13216,6 +13219,7 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/malparida-poster-280x420.png",
+      "horizontal_image": "images/horizontals-1024x576/malparida-slide-1024x576.png",
       "subtitle": "Telenovela",
       "horario": "21:30hs",
       "capitulos": "175",
@@ -13250,6 +13254,7 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/los-ricos-no-piden-permiso-poster-280x420.png",
+      "horizontal_image": "images/horizontals-1024x576/los-ricos-no-piden-permiso-slide-1024x576.png",
       "subtitle": "Telenovela",
       "horario": "21:30hs",
       "capitulos": 235,
@@ -13275,6 +13280,7 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/herederos-de-una-venganza-poster-280x420.png",
+      "horizontal_image": "images/horizontals-1024x576/herederos-de-una-venganza-slide-1024x576.png",
       "subtitle": "Telenovela",
       "horario": "22:45hs",
       "capitulos": 219,
@@ -15276,6 +15282,16 @@
       "title": "Violetta",
       "year": "2012",
       "channel": "Disney Channel",
+      "air_channels": [
+        "Canal 13"
+      ],
+      "channel_relations": [
+        {
+          "channel": "Canal 13",
+          "role": "acquisition"
+        }
+      ],
+      "type": "serie",
       "type": "serie",
       "genre": "Juvenil",
       "actors": [
@@ -16443,6 +16459,15 @@
       "orientation": "vertical",
       "image": "images/verticals/el-encargado-temporada-4-poster-280x420.png",
       "release_date": "26/10/2022",
+      "air_channels": [
+        "Canal 13"
+      ],
+      "channel_relations": [
+        {
+          "channel": "Canal 13",
+          "role": "acquisition"
+        }
+      ],
       "air_broadcasts": [
         {
           "channel": "Canal 13",
@@ -16581,6 +16606,15 @@
       "orientation": "vertical",
       "image": "images/verticals/los-protectores-primera temporada-poster-280x420.png",
       "release_date": "09/03/2022",
+      "air_channels": [
+        "Canal 13"
+      ],
+      "channel_relations": [
+        {
+          "channel": "Canal 13",
+          "role": "acquisition"
+        }
+      ],
       "air_broadcasts": [
         {
           "channel": "Canal 13",
@@ -17337,6 +17371,15 @@
       "orientation": "vertical",
       "image": "images/verticals/el-fin-del-amor-primera-temporada-poster-280x420.png",
       "release_date": "04/11/2022",
+      "air_channels": [
+        "Canal 13"
+      ],
+      "channel_relations": [
+        {
+          "channel": "Canal 13",
+          "role": "acquisition"
+        }
+      ],
       "air_broadcasts": [
         {
           "channel": "Canal 13",
@@ -17725,6 +17768,15 @@
       "horizontal_image": "images/horizontals-1024x576/2023-diciembre-2001-disney-slide-1024x576.png",
       "image": "images/verticals/2023-diciembre-2001-disney-poster-280x420.png",
       "release_date": "07/06/2023",
+      "air_channels": [
+        "Canal 13"
+      ],
+      "channel_relations": [
+        {
+          "channel": "Canal 13",
+          "role": "acquisition"
+        }
+      ],
       "air_broadcasts": [
         {
           "channel": "Canal 13",
@@ -17884,6 +17936,15 @@
       "sinopsis": "Tras la muerte de Eva Perón en 1952, su cadáver embalsamado inicia un misterioso derrotero cuando es secuestrado y ocultado por los militares para impedir que se convierta en un símbolo político.\nDurante más de dos décadas, la búsqueda del cuerpo y los esfuerzos por mantenerlo escondido desencadenarán una trama de secretos, obsesiones y disputas de poder alrededor de una de las figuras más importantes de la historia argentina.",
       "capitulos": 7,
       "release_date": "26/07/2022",
+      "air_channels": [
+        "Canal 13"
+      ],
+      "channel_relations": [
+        {
+          "channel": "Canal 13",
+          "role": "acquisition"
+        }
+      ],
       "air_broadcasts": [
         {
           "channel": "Canal 13",
@@ -19837,6 +19898,15 @@
       "capitulos": 22,
       "producer": "Adrián Suar",
       "sinopsis": "Un pueblo de la Patagonia se ve conmocionado por la llegada de Letizia, una mujer extranjera que se prepara para casarse con un poderoso empresario local. Mientras se gana la confianza de todos, pondrá en marcha una sangrienta venganza en un lugar atravesado por secretos y conflictos del pasado.",
+      "air_channels": [
+        "Canal 13"
+      ],
+      "channel_relations": [
+        {
+          "channel": "Canal 13",
+          "role": "acquisition"
+        }
+      ],
       "air_broadcasts": [
         {
           "channel": "Canal 13",
@@ -19861,6 +19931,7 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/atav-2-poster-280x420.png",
+      "horizontal_image": "images/horizontals-1024x576/atav2-slide-1024x576.png",
       "subtitle": "Telenovela"
     },
     {
@@ -20390,6 +20461,7 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/sos-mi-hombre-poster-280x420.png",
+      "horizontal_image": "images/horizontals-1024x576/sos-mi-hombre-slide-1024x576.png",
       "subtitle": "Telenovela",
       "horario": "21:45hs, 23hs",
       "capitulos": 202,
