@@ -20069,7 +20069,18 @@
         "Paola Krum"
       ],
       "orientation": "vertical",
-      "image": "images/verticals/099-central-poster-280x420.png",
+      "horizontal_image":"images/horizontals-1024x576/2002-099-central-canal-13-slide-1024x576.webp",
+      "image": "images/verticals/2002-099-central-canal-13-poster280x420.v2.webp",
+            "poster_gallery": [
+        {
+          "image": "images/verticals/2002-099-central-canal-13-poster280x420.v2.webp",
+          "label": "Póster principal"
+        },
+        {
+          "image": "images/verticals/099-central-poster-280x420.png",
+          "label": "Póster alternativo"
+        }
+      ],
       "tiras_2000_rows": [
         "thrillers"
       ],
