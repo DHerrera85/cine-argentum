@@ -1,7 +1,7 @@
 (function () {
     'use strict';
 
-    var dataVersion = '20260905-2';
+    var dataVersion = '20260917-1';
     var targetYear = 2026;
 
     var verticalItemClasses = [
@@ -468,9 +468,13 @@
             'Sin título';
 
         var image =
+            entry.image ||
             item.juveniles_row_image ||
             item.image ||
             verticalPlaceholder;
+
+        var metaText =
+            entry.meta || '';
         var itemClass =
             verticalItemClasses[
             index % verticalItemClasses.length
@@ -493,7 +497,9 @@
             '<strong>' +
             escapeHtml(title) +
             '</strong>' +
-            '<p></p>' +
+            '<p>' +
+            escapeHtml(metaText) +
+            '</p>' +
             '</div>' +
             '</div>' +
             '</a>' +
@@ -592,6 +598,76 @@
                         { sensitivity: 'base' }
                     );
             });
+
+        list.innerHTML = entries
+            .map(buildVerticalCard)
+            .join('');
+
+        initializeVerticalSlider(list);
+    }
+
+    function renderCableBroadcastsRow(items) {
+        var list = document.getElementById(
+            'juveniles-cable-broadcasts-list'
+        );
+
+        if (!list) return;
+
+        var entries = [];
+
+        items.forEach(function (item) {
+            if (
+                !item ||
+                !item.id ||
+                !isSeries(item) ||
+                !isJuvenilOrInfantil(item) ||
+                !Array.isArray(item.cable_broadcasts)
+            ) {
+                return;
+            }
+
+            item.cable_broadcasts.forEach(
+                function (broadcast) {
+                    if (
+                        !broadcast ||
+                        !broadcast.channel
+                    ) {
+                        return;
+                    }
+
+                    entries.push({
+                        item: item,
+
+                        image:
+                            broadcast.image ||
+                            item.juveniles_row_image ||
+                            item.image ||
+                            verticalPlaceholder,
+
+                        meta:
+                            String(
+                                broadcast.channel
+                            ).trim(),
+
+                        timestamp:
+                            getPrimaryReleaseTimestamp(item)
+                    });
+                }
+            );
+        });
+
+        entries.sort(function (a, b) {
+            if (a.timestamp !== b.timestamp) {
+                return b.timestamp - a.timestamp;
+            }
+
+            return String(a.item.title || '')
+                .localeCompare(
+                    String(b.item.title || ''),
+                    'es',
+                    { sensitivity: 'base' }
+                );
+        });
 
         list.innerHTML = entries
             .map(buildVerticalCard)
@@ -804,6 +880,8 @@
                     'juveniles-hits-2000-list',
                     'hits-2000'
                 );
+
+                renderCableBroadcastsRow(items);
 
                 renderCuratedVerticalRow(
                     items,

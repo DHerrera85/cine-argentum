@@ -6878,6 +6878,14 @@
       "type": "serie",
       "year": "2006",
       "channel": "Telefe",
+      "cable_channels": [
+        "Boomerang"
+      ],
+      "cable_broadcasts": [
+        {
+          "channel": "Boomerang"
+        }
+      ],
       "genre": "Infantil",
       "actors": [
         "Boy Olmi",
@@ -7782,6 +7790,14 @@
       "title": "Chiquititas",
       "year": "1999",
       "channel": "Telefe",
+      "cable_channels": [
+        "Boomerang"
+      ],
+      "cable_broadcasts": [
+        {
+          "channel": "Boomerang"
+        }
+      ],
       "genre": "Infantil",
       "actors": [
         "Grecia Colmenares",
@@ -15458,6 +15474,18 @@
       "type": "serie",
       "year": "2007",
       "channel": "Telefe",
+      "cable_channels": [
+        "Jetix"
+      ],
+      "cable_broadcasts": [
+        {
+          "channel": "Jetix",
+          "season_numbers": [
+            1,
+            2
+          ]
+        }
+      ],
       "genre": "Juvenil",
       "actors": [
         "Nicolás Vázquez",
@@ -15537,6 +15565,14 @@
       "type": "serie",
       "year": "2006",
       "channel": "Telefe",
+      "cable_channels": [
+        "Disney Channel"
+      ],
+      "cable_broadcasts": [
+        {
+          "channel": "Disney Channel"
+        }
+      ],
       "genre": "Infantil",
       "actors": [
         "Jorgelina Aruzzi",
@@ -15580,6 +15616,14 @@
       "type": "serie",
       "year": "2004",
       "channel": "Canal 13",
+      "cable_channels": [
+        "Disney Channel"
+      ],
+      "cable_broadcasts": [
+        {
+          "channel": "Disney Channel"
+        }
+      ],
       "genre": "Juvenil",
       "actors": [
         "Florencia Bertotti",
@@ -15842,6 +15886,14 @@
       "type": "serie",
       "year": "2000",
       "channel": "Telefe",
+      "cable_channels": [
+        "Boomerang"
+      ],
+      "cable_broadcasts": [
+        {
+          "channel": "Boomerang"
+        }
+      ],
       "genre": "Infantil",
       "actors": [
         "Romina Gaetani",
@@ -15988,6 +16040,14 @@
       "title": "Atracción X 4",
       "year": "2008",
       "channel": "Canal 13",
+      "cable_channels": [
+        "Boomerang"
+      ],
+      "cable_broadcasts": [
+        {
+          "channel": "Boomerang"
+        }
+      ],
       "genre": "Juvenil",
       "actors": [
         "Luisana Lopilato",
@@ -16024,6 +16084,14 @@
       "title": "Patito Feo",
       "year": "2007",
       "channel": "Canal 13",
+      "cable_channels": [
+        "Disney Channel"
+      ],
+      "cable_broadcasts": [
+        {
+          "channel": "Disney Channel"
+        }
+      ],
       "genre": "Juvenil",
       "type": "serie",
       "horizontal_image": "images/horizontals-1024x576/patito-feo-slide-1024x576.png",
