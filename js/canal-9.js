@@ -13,6 +13,22 @@ function toArray(value) {
   return [value];
 }
 
+function getCanal9Poster(item) {
+  const broadcast = toArray(item.air_broadcasts).find(entry => {
+    return entry && isCanal9Like(entry.channel);
+  });
+
+  if (
+    broadcast &&
+    broadcast.image &&
+    String(broadcast.image).trim() !== ''
+  ) {
+    return String(broadcast.image).trim();
+  }
+
+  return item.image;
+}
+
 fetch('data.json?v=' + canal9DataVersion, { cache: 'no-store' })
   .then(response => response.json())
   .then(data => {
@@ -122,15 +138,15 @@ function setupFilters(allSeries) {
     renderSeries(filtered);
   }
 
-  select.addEventListener('click', function() {
+  select.addEventListener('click', function () {
     select.classList.toggle('open');
     selectOptions.style.display = select.classList.contains('open') ? 'block' : 'none';
   });
-  select.addEventListener('blur', function() {
+  select.addEventListener('blur', function () {
     select.classList.remove('open');
     selectOptions.style.display = 'none';
   });
-  selectOptions.addEventListener('click', function(e) {
+  selectOptions.addEventListener('click', function (e) {
     if (e.target.tagName === 'LI') {
       selectOptions.querySelectorAll('li').forEach(li => li.classList.remove('selected'));
       e.target.classList.add('selected');

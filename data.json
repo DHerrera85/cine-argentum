@@ -15649,10 +15649,31 @@
       "title": "Rincón de Luz",
       "type": "serie",
       "year": "2003",
-      "channel": "Canal 9/Azul TV",
+      "channel": "Canal 9",
       "air_channels": [
-        "Canal 9/Azul TV",
+        "Canal 9",
         "América"
+      ],
+      "air_broadcasts": [
+        {
+          "channel": "Canal 9",
+          "image": "images/verticals/2003-rincon-de-luz-canal-9-poster280x420.webp",
+          "horizontal_image": "images/horizontals-1024x576/2003-rincon-de-luz-canal-9-slide-1024x576.webp"
+        },
+        {
+          "channel": "América",
+          "image": "images/verticals/2003-rincon-de-luz-america-poster280x420.webp",
+          "horizontal_image": "images/horizontals-1024x576/2003-rincon-de-luz-america-slide-1024x576.webp"
+        }
+      ],
+      "cable_channels": [
+        "Boomerang"
+      ],
+      "cable_broadcasts": [
+        {
+          "channel": "Boomerang",
+          "image": "images/verticals/2003-rincon-de-luz-boomerang-poster280x420.webp"
+        }
       ],
       "genre": "Juvenil",
       "actors": [
@@ -15660,7 +15681,26 @@
         "Soledad"
       ],
       "orientation": "vertical",
-      "image": "images/verticals/rincon-de-luz-poster-280x420.png",
+      "image": "images/verticals/2003-rincon-de-luz-canal-9-poster280x420.webp",
+      "horizontal_image": "images/horizontals-1024x576/2003-rincon-de-luz-canal-9-slide-1024x576.webp",
+      "poster_gallery": [
+        {
+          "image": "images/verticals/rincon-de-luz-poster-canal9-v2-280x420.png",
+          "label": "Póster principal"
+        },
+        {
+          "image": "images/verticals/2003-rincon-de-luz-canal-9-poster280x420.webp",
+          "label": "Emisión por Canal 9"
+        },
+        {
+          "image": "images/verticals/2003-rincon-de-luz-america-poster280x420.webp",
+          "label": "Emisión por América"
+        },
+        {
+          "image": "images/verticals/2003-rincon-de-luz-boomerang-poster280x420.webp",
+          "label": "Emisión por Boomerang"
+        }
+      ],
       "subtitle": "Juvenil",
       "horario": "18hs, 11hs",
       "capitulos": 199,
@@ -20069,9 +20109,9 @@
         "Paola Krum"
       ],
       "orientation": "vertical",
-      "horizontal_image":"images/horizontals-1024x576/2002-099-central-canal-13-slide-1024x576.webp",
+      "horizontal_image": "images/horizontals-1024x576/2002-099-central-canal-13-slide-1024x576.webp",
       "image": "images/verticals/2002-099-central-canal-13-poster280x420.v2.webp",
-            "poster_gallery": [
+      "poster_gallery": [
         {
           "image": "images/verticals/2002-099-central-canal-13-poster280x420.v2.webp",
           "label": "Póster principal"

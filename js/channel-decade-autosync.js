@@ -718,43 +718,109 @@
 
   }
   /* =========================================================
+     OBTENER LA EMISIÓN DEL CANAL CONFIGURADO
+     ========================================================= */
+
+  function getConfiguredAirBroadcast(item) {
+    if (
+      !item ||
+      !Array.isArray(item.air_broadcasts)
+    ) {
+      return null;
+    }
+
+    var expectedChannel =
+      normalizeText(CHANNEL_NAME);
+
+    return item.air_broadcasts.find(
+      function (broadcast) {
+        return Boolean(
+          broadcast &&
+          normalizeText(broadcast.channel) ===
+          expectedChannel
+        );
+      }
+    ) || null;
+  }
+
+
+  /* =========================================================
      OBTENER LA IMAGEN VERTICAL
      ========================================================= */
 
   function getPosterImage(item) {
+    var configuredBroadcast =
+      getConfiguredAirBroadcast(item);
+
+    /*
+     * Si existe una imagen específica para la emisión
+     * del canal de la página, se utiliza esa variante.
+     */
+    if (
+      configuredBroadcast &&
+      configuredBroadcast.image &&
+      String(configuredBroadcast.image).trim() !== ''
+    ) {
+      return String(
+        configuredBroadcast.image
+      ).trim();
+    }
+
+    /*
+     * Si no existe una variante específica,
+     * se conserva la imagen principal de la ficha.
+     */
     if (
       item &&
       item.image &&
       String(item.image).trim() !== ''
     ) {
-      /*
-       * Se utiliza exactamente la ruta almacenada
-       * en data.json.
-       *
-       * No se modifica ni se renombra el archivo.
-       */
       return String(item.image).trim();
     }
 
     return PLACEHOLDER_IMAGE;
   }
 
+
   /* =========================================================
      OBTENER LA IMAGEN HORIZONTAL
      ========================================================= */
 
   function getHorizontalImage(item) {
+    var configuredBroadcast =
+      getConfiguredAirBroadcast(item);
 
+    /*
+     * Primero se busca la imagen horizontal
+     * correspondiente al canal de la página.
+     */
+    if (
+      configuredBroadcast &&
+      configuredBroadcast.horizontal_image &&
+      String(
+        configuredBroadcast.horizontal_image
+      ).trim() !== ''
+    ) {
+      return String(
+        configuredBroadcast.horizontal_image
+      ).trim();
+    }
+
+    /*
+     * Como respaldo se utiliza la imagen horizontal
+     * general de la producción.
+     */
     if (
       item &&
       item.horizontal_image &&
       String(item.horizontal_image).trim() !== ''
     ) {
-      return String(item.horizontal_image).trim();
+      return String(
+        item.horizontal_image
+      ).trim();
     }
 
     return null;
-
   }
 
   /* =========================================================

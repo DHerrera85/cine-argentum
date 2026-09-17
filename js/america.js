@@ -1,13 +1,62 @@
 // js/america.js: Lógica para filtrar y mostrar series de America, basado en canal-9.js
 const americaDataVersion = '20260219-1';
 
+function normalizeChannel(value) {
+  return String(value || '')
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .toLowerCase()
+    .trim();
+}
+
+function toArray(value) {
+  if (Array.isArray(value)) {
+    return value;
+  }
+
+  if (
+    value === undefined ||
+    value === null
+  ) {
+    return [];
+  }
+
+  return [value];
+}
+
+function isAmericaLike(value) {
+  return normalizeChannel(value) === 'america';
+}
+
+function getAmericaPoster(item) {
+  const broadcast = toArray(item.air_broadcasts).find(entry => {
+    return (
+      entry &&
+      isAmericaLike(entry.channel)
+    );
+  });
+
+  if (
+    broadcast &&
+    broadcast.image &&
+    String(broadcast.image).trim() !== ''
+  ) {
+    return String(broadcast.image).trim();
+  }
+
+  return item.image;
+}
+
 fetch('data.json?v=' + americaDataVersion, { cache: 'no-store' })
   .then(response => response.json())
   .then(data => {
     const items = data.items.filter(item => {
-      const channel = (item.channel || '').toLowerCase();
-      if (!channel) return false;
-      return channel.includes('america') || channel.includes('américa');
+      const allChannels = []
+        .concat(toArray(item.channel))
+        .concat(toArray(item.channels))
+        .concat(toArray(item.air_channels));
+
+      return allChannels.some(isAmericaLike);
     });
     renderSeries(items);
     setupFilters(items);
@@ -21,9 +70,10 @@ function renderSeries(series) {
     card.className = 'actor-movie-card';
     const tipoEmision = item.tipo_emision ? item.tipo_emision : '';
     const ratingText = item.rating ? item.rating : '-';
+    const posterImage = getAmericaPoster(item);
     card.innerHTML = `
       <a href="show.html?id=${item.id}">
-        <img src="${item.image}" alt="${item.title}">
+        <img src="${posterImage}" alt="${item.title}">
         <div class="actor-movie-info">
           <div class="actor-movie-title">${item.title}</div>
           <div class="actor-movie-meta">${item.year} · ${item.genre || ''}</div>
@@ -108,15 +158,15 @@ function setupFilters(allSeries) {
     renderSeries(filtered);
   }
 
-  select.addEventListener('click', function() {
+  select.addEventListener('click', function () {
     select.classList.toggle('open');
     selectOptions.style.display = select.classList.contains('open') ? 'block' : 'none';
   });
-  select.addEventListener('blur', function() {
+  select.addEventListener('blur', function () {
     select.classList.remove('open');
     selectOptions.style.display = 'none';
   });
-  selectOptions.addEventListener('click', function(e) {
+  selectOptions.addEventListener('click', function (e) {
     if (e.target.tagName === 'LI') {
       selectOptions.querySelectorAll('li').forEach(li => li.classList.remove('selected'));
       e.target.classList.add('selected');
