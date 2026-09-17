@@ -648,6 +648,36 @@
         }
 
         /*
+ * Imágenes horizontales correspondientes
+ * a emisiones por distintos canales de aire.
+ */
+        if (
+          !heroImages.length &&
+          Array.isArray(item.air_broadcasts)
+        ) {
+          item.air_broadcasts.forEach(function (broadcast) {
+            if (
+              !broadcast ||
+              !hasValue(broadcast.horizontal_image)
+            ) {
+              return;
+            }
+
+            heroImages.push({
+              src: String(broadcast.horizontal_image)
+                .trim()
+                .replace(/ /g, '%20'),
+
+              label:
+                hasValue(broadcast.channel)
+                  ? 'Emisión por ' +
+                  String(broadcast.channel).trim()
+                  : ''
+            });
+          });
+        }
+
+        /*
          * Compatibilidad con fichas que solamente poseen
          * una imagen horizontal general.
          */
