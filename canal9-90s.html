@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -20,11 +21,8 @@
   <link rel="shortcut icon" href="images/fav_icon.png" />
 
   <!-- Font Awesome -->
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-    referrerpolicy="no-referrer"
-  />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    referrerpolicy="no-referrer" />
 
   <style>
     body {
@@ -87,16 +85,16 @@
       top: 8px;
     }
 
-    .menu-btn:checked + .menu-icon .nav-icon {
+    .menu-btn:checked+.menu-icon .nav-icon {
       background: transparent;
     }
 
-    .menu-btn:checked + .menu-icon .nav-icon::before {
+    .menu-btn:checked+.menu-icon .nav-icon::before {
       transform: rotate(45deg);
       top: 0;
     }
 
-    .menu-btn:checked + .menu-icon .nav-icon::after {
+    .menu-btn:checked+.menu-icon .nav-icon::after {
       transform: rotate(-45deg);
       top: 0;
     }
@@ -188,8 +186,8 @@
       box-sizing: border-box;
     }
 
-    .canal9-section > .showcase-heading,
-    .canal9-section > .latest-heading {
+    .canal9-section>.showcase-heading,
+    .canal9-section>.latest-heading {
       margin: 0 0 20px;
       padding: 0;
       color: #ffffff;
@@ -419,12 +417,12 @@
       }
 
       .year-button,
-.category-button {
-    display: inline-block !important;
-    flex: 0 0 auto;
-    text-align: center !important;
-    line-height: normal;
-}
+      .category-button {
+        display: inline-block !important;
+        flex: 0 0 auto;
+        text-align: center !important;
+        line-height: normal;
+      }
 
       .filter-arrow {
         display: inline-flex;
@@ -435,6 +433,14 @@
       .canal9-90s-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 22px 16px;
+      }
+    }
+
+    @media (min-width: 768px) {
+      #canal9-destacadas .showcase-box {
+        width: 100%;
+        margin: 0 0 14px;
+        box-sizing: border-box;
       }
     }
   </style>
@@ -450,12 +456,7 @@
       </a>
 
       <form class="search" role="search" id="headerSearch">
-        <input
-          type="search"
-          name="q"
-          placeholder="Encontrá tu Serie Favorita"
-          aria-label="Buscar series"
-        />
+        <input type="search" name="q" placeholder="Encontrá tu Serie Favorita" aria-label="Buscar series" />
         <button type="submit" class="search-btn" aria-label="Buscar">
           <i class="fas fa-search" aria-hidden="true"></i>
         </button>
@@ -487,11 +488,8 @@
 
         <div class="channel-heading">
           <div class="channel-heading-logo-wrap">
-            <img
-              src="images/logos/canal9-1990-120x120.png"
-              alt="Logo histórico de Canal 9"
-              class="channel-heading-logo"
-            />
+            <img src="images/logos/canal9-1990-120x120.png" alt="Logo histórico de Canal 9"
+              class="channel-heading-logo" />
           </div>
 
           <div class="channel-heading-text">
@@ -510,11 +508,7 @@
       <section id="canal9-destacadas" class="canal9-section">
         <h2 class="showcase-heading">Producciones destacadas</h2>
 
-        <ul
-          id="canal9-featured-slider"
-          class="slider-h cs-hidden"
-          data-skip-auto="true"
-        ></ul>
+        <ul id="canal9-featured-slider" class="slider-h cs-hidden" data-skip-auto="true"></ul>
       </section>
 
       <!-- Explorar por año -->
@@ -522,18 +516,11 @@
         <h2 class="latest-heading">Explorar por año</h2>
 
         <div class="filter-carousel">
-          <button
-            type="button"
-            class="filter-arrow filter-arrow-prev"
-            aria-label="Ver años anteriores"
-          >
+          <button type="button" class="filter-arrow filter-arrow-prev" aria-label="Ver años anteriores">
             <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
           </button>
 
-          <div
-            class="canal9-year-filter filter-scroll"
-            aria-label="Filtrar ficciones por año"
-          >
+          <div class="canal9-year-filter filter-scroll" aria-label="Filtrar ficciones por año">
             <button type="button" class="year-button active" data-canal9-year="all" aria-pressed="true">Todas</button>
             <button type="button" class="year-button" data-canal9-year="1989" aria-pressed="false">1989</button>
             <button type="button" class="year-button" data-canal9-year="1990" aria-pressed="false">1990</button>
@@ -548,11 +535,7 @@
             <button type="button" class="year-button" data-canal9-year="1999" aria-pressed="false">1999</button>
           </div>
 
-          <button
-            type="button"
-            class="filter-arrow filter-arrow-next"
-            aria-label="Ver años siguientes"
-          >
+          <button type="button" class="filter-arrow filter-arrow-next" aria-label="Ver años siguientes">
             <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
           </button>
         </div>
@@ -563,31 +546,26 @@
         <h2 class="latest-heading">Explorar por categoría</h2>
 
         <div class="filter-carousel">
-          <button
-            type="button"
-            class="filter-arrow filter-arrow-prev"
-            aria-label="Ver categorías anteriores"
-          >
+          <button type="button" class="filter-arrow filter-arrow-prev" aria-label="Ver categorías anteriores">
             <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
           </button>
 
-          <div
-            class="canal9-category-filter filter-scroll"
-            aria-label="Filtrar ficciones por categoría"
-          >
-            <button type="button" class="category-button active" data-canal9-category="all" aria-pressed="true">Todas</button>
-            <button type="button" class="category-button" data-canal9-category="telenovela" aria-pressed="false">Telenovela</button>
-            <button type="button" class="category-button" data-canal9-category="comedia" aria-pressed="false">Comedia</button>
-            <button type="button" class="category-button" data-canal9-category="drama" aria-pressed="false">Drama</button>
-            <button type="button" class="category-button" data-canal9-category="thriller" aria-pressed="false">Thriller</button>
-            <button type="button" class="category-button" data-canal9-category="juvenil" aria-pressed="false">Juvenil</button>
+          <div class="canal9-category-filter filter-scroll" aria-label="Filtrar ficciones por categoría">
+            <button type="button" class="category-button active" data-canal9-category="all"
+              aria-pressed="true">Todas</button>
+            <button type="button" class="category-button" data-canal9-category="telenovela"
+              aria-pressed="false">Telenovela</button>
+            <button type="button" class="category-button" data-canal9-category="comedia"
+              aria-pressed="false">Comedia</button>
+            <button type="button" class="category-button" data-canal9-category="drama"
+              aria-pressed="false">Drama</button>
+            <button type="button" class="category-button" data-canal9-category="thriller"
+              aria-pressed="false">Thriller</button>
+            <button type="button" class="category-button" data-canal9-category="juvenil"
+              aria-pressed="false">Juvenil</button>
           </div>
 
-          <button
-            type="button"
-            class="filter-arrow filter-arrow-next"
-            aria-label="Ver categorías siguientes"
-          >
+          <button type="button" class="filter-arrow filter-arrow-next" aria-label="Ver categorías siguientes">
             <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
           </button>
         </div>
@@ -605,11 +583,7 @@
           </p>
         </div>
 
-        <div
-          id="canal9-90s-grid"
-          class="canal9-90s-grid"
-          aria-live="polite"
-        ></div>
+        <div id="canal9-90s-grid" class="canal9-90s-grid" aria-live="polite"></div>
 
         <p id="canal9-empty-state" hidden>
           No se encontraron ficciones de Canal 9 / Azul TV para los filtros seleccionados.
@@ -634,4 +608,5 @@
   <script src="js/script.js?v=20260226-1"></script>
   <script src="js/canal9-90s-autosync.js?v=20260728-1"></script>
 </body>
+
 </html>
