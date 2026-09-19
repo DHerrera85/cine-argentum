@@ -217,8 +217,11 @@
      ========================================================= */
 
   function getYear(item) {
+    var broadcast = getConfiguredAirBroadcast(item);
     var year = Number(
-      item && item.year
+      broadcast && broadcast.year
+        ? broadcast.year
+        : item && item.year
     );
 
     return Number.isFinite(year)
@@ -305,27 +308,30 @@
      ========================================================= */
 
   function getRating(item) {
+    var broadcast = getConfiguredAirBroadcast(item);
+
+    var value =
+      broadcast &&
+        Object.prototype.hasOwnProperty.call(broadcast, 'rating')
+        ? broadcast.rating
+        : item && item.rating;
 
     if (
-      !item ||
-      item.rating === undefined ||
-      item.rating === null ||
-      item.rating === '' ||
-      item.rating === '-'
+      value === undefined ||
+      value === null ||
+      value === '' ||
+      value === '-'
     ) {
       return null;
     }
 
     var rating = parseFloat(
-      String(item.rating)
-        .trim()
-        .replace(',', '.')
+      String(value).trim().replace(',', '.')
     );
 
     return Number.isFinite(rating)
       ? rating
       : null;
-
   }
 
 

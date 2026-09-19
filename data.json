@@ -14839,6 +14839,12 @@
       "air_channels": [
         "América"
       ],
+      "channel_relations": [
+        {
+          "channel": "América",
+          "role": "acquisition"
+        }
+      ],
       "genre": "Juvenil",
       "sinopsis": "Melody, una adolescente que sueña con dedicarse a la música pese a la oposición de su familia, descubre un misterioso cuaderno de poemas que perteneció a su madre y despierta una conexión inexplicable con Layla, la estrella pop que más admira. Mientras Melody lucha por seguir su vocación, Layla comienza a escuchar desde el otro lado del mundo voces en español que parecen provenir de la vida de la joven, iniciando un vínculo mágico que cambiará el destino de ambas.",
       "actors": [
@@ -15768,6 +15774,20 @@
       "type": "serie",
       "year": "2002",
       "channel": "Canal 9",
+      "air_channels": [
+        "Canal 9",
+        "América"
+      ],
+      "air_broadcasts": [
+        {
+          "channel": "Canal 9"
+        },
+        {
+          "channel": "América",
+          "year": "2003",
+          "rating": null
+        }
+      ],
       "genre": "Juvenil",
       "actors": [
         "Luisana Lopilato",
@@ -16053,7 +16073,8 @@
       ],
       "cable_broadcasts": [
         {
-          "channel": "Boomerang"
+          "channel": "Boomerang",
+          "image": "images/verticals/2008-atraccion-x-4-boomerang-poster280x420.webp"
         }
       ],
       "genre": "Juvenil",
@@ -16074,7 +16095,7 @@
           "label": "Póster principal"
         },
         {
-          "image": "images/verticals/atraccion-x-4-poster-280x420.png",
+          "image": "images/verticals/2008-atraccion-x-4-boomerang-poster280x420.webp",
           "label": "Póster alternativo"
         }
       ],
