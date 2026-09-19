@@ -27,6 +27,7 @@
 .juveniles-horizontal-showcase {
   width: calc(100% - 36px);
   margin: 6px 18px 8px;
+  box-sizing: border-box;
   overflow: hidden;
   border: 1px solid rgba(75, 85, 115, 0.12);
   border-radius: 16px;
@@ -47,6 +48,14 @@
 
 .juveniles-horizontal-showcase .slider-h:not(.lightSlider)>li {
   min-width: 0;
+}
+
+@media (min-width: 768px) {
+  .juveniles-horizontal-showcase .showcase-box {
+    width: 100%;
+    margin: 0 0 14px;
+    box-sizing: border-box;
+  }
 }
 
 /* ===============================
@@ -162,6 +171,13 @@
     min-height: 64px;
     padding: 8px 5px 10px;
   }
+}
+
+.juveniles-horizontal-showcase .slider-h .showcase-box {
+  width: 100%;
+  max-width: none;
+  margin: 0 0 14px;
+  box-sizing: border-box;
 }
 
 /*
