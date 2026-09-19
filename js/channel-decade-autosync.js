@@ -495,13 +495,21 @@
   function isValidProduction(item) {
     var year = getYear(item);
 
+    var emittedOnly =
+      pageElement &&
+      pageElement.getAttribute('data-emitted-only') === 'true';
+
+    var inProduction =
+      normalizeText(item && item.status) === 'en produccion';
+
     return Boolean(
       item &&
       item.id &&
       year !== null &&
       year >= START_YEAR &&
       year <= END_YEAR &&
-      belongsToConfiguredChannel(item)
+      belongsToConfiguredChannel(item) &&
+      (!emittedOnly || !inProduction)
     );
   }
 
