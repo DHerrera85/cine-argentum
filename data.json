@@ -11859,8 +11859,26 @@
         "Joaquín Furriel"
       ],
       "orientation": "vertical",
-      "image": "images/verticals/montecristo-poster-280x420.png",
-      "horizontal_image": "images/horizontals-1024x576/montecristo-slide-1024x576.png",
+      "image": "images/verticals/2006-montecristo-telefe-poster-280x420-v2.webp",
+      "horizontal_image": "images/horizontals-1024x576/2006-montecristo-telefe-slide-1024x576-v2.webp",
+      "horizontal_gallery": [
+        {
+          "image": "images/horizontals-1024x576/2006-montecristo-telefe-slide-1024x576-v2.webp"
+        },
+        {
+          "image": "images/horizontals-1024x576/montecristo-slide-1024x576.png"
+        }
+      ],
+      "poster_gallery": [
+        {
+          "image": "images/verticals/2006-montecristo-telefe-poster-280x420-v2.webp",
+          "label": "Póster principal"
+        },
+        {
+          "image": "images/verticals/montecristo-poster-280x420.png",
+          "label": "Póster alternativo"
+        }
+      ],
       "tiras_2000_rows": [
         "dramas-exitosos",
         "telenovelas-estelares"
@@ -12001,7 +12019,15 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/casados-con-hijos-poster-280x420.png",
-      "horizontal_image": "images/horizontals-1024x576/casados-con-hijos-slide-1024x576.png",
+      "horizontal_image": "images/horizontals-1024x576/2005-casados-con-hijos-telefe-slide-1024x576-v1.webp",
+      "horizontal_gallery": [
+        {
+          "image": "images/horizontals-1024x576/2005-casados-con-hijos-telefe-slide-1024x576-v1.webp"
+        },
+        {
+          "image": "images/horizontals-1024x576/casados-con-hijos-slide-1024x576.png"
+        }
+      ],
       "tiras_2000_rows": [
         "comedias-exitosas",
         "sitcoms"
@@ -13546,7 +13572,26 @@
         "Pablo Rago"
       ],
       "orientation": "vertical",
-      "image": "images/verticals/kachorra-poster-280x420.png",
+      "horizontal_image": "images/horizontals-1024x576/2002-kachorra-telefe-slide-1024x576-v1.webp",
+      "image": "images/verticals/2002-kachorra-telefe-poster-280x420.webp",
+      "horizontal_gallery": [
+        {
+          "image": "images/horizontals-1024x576/2002-kachorra-telefe-slide-1024x576-v1.webp"
+        },
+        {
+          "image": "images/horizontals-1024x576/2002-kachorra-telefe-slide-1024x576-v2.webp"
+        }
+      ],
+      "poster_gallery": [
+        {
+          "image": "images/verticals/2002-kachorra-telefe-poster-280x420.webp",
+          "label": "Póster principal"
+        },
+        {
+          "image": "images/verticals/kachorra-poster-280x420.png",
+          "label": "Póster alternativo"
+        }
+      ],
       "tiras_2000_rows": [
         "ficciones-tarde"
       ],
@@ -20552,7 +20597,18 @@
         "Gianella Neyra"
       ],
       "orientation": "vertical",
-      "image": "images/verticals/quien-es-el-jefe-poster-280x420.png",
+      "image": "images/verticals/2005-quien-es-el-jefe-telefe-poster-280x420.webp",
+      "poster_gallery": [
+        {
+          "image": "images/verticals/2005-quien-es-el-jefe-telefe-poster-280x420.webp",
+          "label": "Póster principal"
+        },
+        {
+          "image": "images/verticals/quien-es-el-jefe-poster-280x420.png",
+          "label": "Póster alternativo"
+        }
+      ],
+      "horizontal_image":"images/horizontals-1024x576/2005-quien-es-el-jefe-telefe-slide-1024x576.webp",
       "tiras_2000_rows": [
         "sitcoms"
       ],
@@ -20887,7 +20943,7 @@
         "Arturo Puig"
       ],
       "orientation": "vertical",
-      "image": "images/verticals/secretos-de-amor-poster-280x420.png",
+      "image": "images/verticals/2010-secretos-de-amor-telefe-poster280x420.webp",
       "horizontal_image": "images/horizontals-1024x576/2010-secretos-de-amor-telefe-slide1024x576.webp",
       "subtitle": "Telenovela",
       "horario": "15:30hs",
