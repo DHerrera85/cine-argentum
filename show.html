@@ -264,10 +264,67 @@
     .related-grid,
     .temporadas-grid {
       display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 16px;
+      grid-template-columns: none;
+      grid-auto-flow: column;
+
+      /* Dos tarjetas verticales completas por vista */
+      grid-auto-columns: calc((100% - 12px) / 2);
+
+      gap: 12px;
+      width: 100%;
+      max-width: 100%;
+
+      overflow-x: auto;
+      overflow-y: hidden;
+
+      padding: 2px 0 12px;
+      box-sizing: border-box;
+
+      scroll-behavior: smooth;
+      scroll-snap-type: x mandatory;
+      overscroll-behavior-inline: contain;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .remakes-grid>*,
+    .related-grid>*,
+    .temporadas-grid>* {
       width: 100%;
       min-width: 0;
+      scroll-snap-align: start;
+    }
+
+    .related-grid .remake-card-link,
+    .temporadas-grid .remake-card-link {
+      width: 100%;
+      min-width: 0;
+      height: 100%;
+    }
+
+    .remake-card,
+    .temporada-card {
+      width: 100%;
+      min-width: 0;
+      overflow: hidden;
+      border-radius: 12px;
+    }
+
+    .remake-card img,
+    .temporada-card img {
+      position: relative;
+      z-index: 1;
+      display: block;
+      width: 100%;
+      aspect-ratio: 2 / 3;
+      object-fit: cover;
+      border-radius: 12px;
+    }
+
+    /* Separa visualmente el póster del bloque de texto */
+    .remake-info,
+    .temporada-info {
+      position: relative;
+      margin-top: 4px;
     }
 
     /* Tarjetas generales */
@@ -276,13 +333,8 @@
     .temporada-card {
       width: 100%;
       min-width: 0;
-      height: 100%;
-      overflow: hidden;
-      box-sizing: border-box;
-      background: #f6f7f9;
-      border: 1px solid #e3e6ea;
+      overflow: visible;
       border-radius: 12px;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
     }
 
     .remake-card-link {
