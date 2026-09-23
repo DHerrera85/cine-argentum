@@ -6966,7 +6966,7 @@
         }
       ],
       "orientation": "vertical",
-      "image": "images/verticals/2013-aliados-telefe-poster280x420-v1.webp",
+      "image": "images/verticals/2014-aislados-telefe-poster-280x420.png",
       "subtitle": "Webserie juvenil",
       "capitulos": 39,
       "sinopsis": "María y Juan protagonizan una historia de amor marcada por el aislamiento, en una trama que funciona como precuela del universo de Aliados. A medida que su vínculo se profundiza, ambos deberán atravesar conflictos y emociones que pondrán a prueba sus sentimientos y definirán el rumbo de su relación.",
@@ -6984,7 +6984,7 @@
           "id": "V139",
           "title": "Aliados",
           "meta": "Serie original",
-          "image": "images/verticals/aliados-poster-280x420.png"
+          "image": "images/verticals/2013-aliados-telefe-poster280x420-v1.webp"
         }
       ]
     },
@@ -15714,7 +15714,8 @@
       ],
       "cable_broadcasts": [
         {
-          "channel": "Disney Channel"
+          "channel": "Disney Channel",
+          "image": "images/verticals/2004-floricienta-disney-channel-poster280x420.webp"
         }
       ],
       "genre": "Juvenil",
@@ -15728,6 +15729,16 @@
       "orientation": "vertical",
       "image": "images/verticals/floricienta-poster-280x420.png",
       "horizontal_image": "images/horizontals-1024x576/floricienta-slide-1024x576.png",
+      "poster_gallery": [
+        {
+          "image": "images/verticals/floricienta-poster-280x420.png",
+          "label": "Póster principal"
+        },
+        {
+          "image": "images/verticals/2004-floricienta-disney-channel-poster280x420.webp",
+          "label": "Emisión por cable"
+        }
+      ],
       "subtitle": "Juvenil",
       "horario": "18hs, 19hs",
       "capitulos": 175,
@@ -15895,29 +15906,29 @@
       "horizontal_gallery": [
         {
           "image": "images/horizontals-1024x576/2002-rebelde-way-canal9-slide-1024x576-v1.webp",
-          "label": "Emisión por Canal 9"
+          "label": "Primera Temporada - Canal 9"
         },
         {
           "image": "images/horizontals-1024x576/rebelde-way-slide-1024x576.png",
-          "label": "Segunda imagen de Canal 9"
+          "label": "Segunda imagen - Emisión Canal 9"
         },
         {
           "image": "images/horizontals-1024x576/2003-rebelde-way-america-slide-1024x576-v1.webp",
-          "label": "Emisión por América"
+          "label": "Segunda Temporada - América"
         }
       ],
       "poster_gallery": [
         {
           "image": "images/verticals/2002-rebelde-way-canal9-poster280x420-v1.webp",
-          "label": "Póster principal · Canal 9"
+          "label": "Primera Temporada - Canal 9"
         },
         {
           "image": "images/verticals/rebelde way-poster-280x420.png",
-          "label": "Segundo póster · Canal 9"
+          "label": "Segunda imagen - Emisión Canal 9"
         },
         {
           "image": "images/verticals/2003-rebelde-way-poster280x420-v1.webp",
-          "label": "Emisión por América"
+          "label": "Segunda Temporada - América"
         }
       ],
       "subtitle": "Juvenil",
