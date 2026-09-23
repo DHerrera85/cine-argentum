@@ -145,6 +145,10 @@
       backdrop-filter: blur(2px);
     }
 
+    .mobile-gallery-control {
+      display: none;
+    }
+
     @media (max-width: 600px) {
       .detail-hero-control {
         width: 30px;
@@ -435,6 +439,10 @@
       }
     }
 
+    .mobile-gallery-control {
+      display: none;
+    }
+
     /*
  * Móvil:
  * cada sección se convierte en una única fila horizontal.
@@ -518,6 +526,7 @@
 
       /* Flechas transparentes, mismo lenguaje visual que el hero */
       .mobile-gallery-control {
+        display: block;
         position: absolute;
         top: 42%;
         z-index: 5;
