@@ -6966,7 +6966,7 @@
         }
       ],
       "orientation": "vertical",
-      "image": "images/verticals/2014-aislados-telefe-poster-280x420.png",
+      "image": "images/verticals/2013-aliados-telefe-poster280x420-v1.webp",
       "subtitle": "Webserie juvenil",
       "capitulos": 39,
       "sinopsis": "María y Juan protagonizan una historia de amor marcada por el aislamiento, en una trama que funciona como precuela del universo de Aliados. A medida que su vínculo se profundiza, ambos deberán atravesar conflictos y emociones que pondrán a prueba sus sentimientos y definirán el rumbo de su relación.",
@@ -15455,8 +15455,41 @@
         "Caro Domenech"
       ],
       "orientation": "vertical",
-      "image": "images/verticals/aliados-poster-280x420.png",
-      "horizontal_image": "images/horizontals-1024x576/aliados-slide-1024x576.png",
+      "image": "images/verticals/2013-aliados-telefe-poster280x420-v1.webp",
+      "horizontal_image": "images/horizontals-1024x576/2013-aliados-telefe-slide-1024x576.webp",
+      "horizontal_gallery": [
+        {
+          "image": "images/horizontals-1024x576/2013-aliados-telefe-slide-1024x576.webp",
+          "label": "Aliados · Telefe"
+        },
+        {
+          "image": "images/horizontals-1024x576/aliados-slide-1024x576.png",
+          "label": "Aliados · Imagen alternativa"
+        }
+      ],
+      "poster_gallery": [
+        {
+          "image": "images/verticals/2013-aliados-telefe-poster280x420-v1.webp",
+          "label": "Póster principal · Telefe"
+        },
+        {
+          "image": "images/verticals/aliados-poster-280x420.png",
+          "label": "Póster alternativo · Telefe"
+        },
+        {
+          "image": "images/verticals/2013-aliados-fox-poster280x420.webp",
+          "label": "Emisión por Fox"
+        }
+      ],
+      "cable_channels": [
+        "Fox"
+      ],
+      "cable_broadcasts": [
+        {
+          "channel": "Fox",
+          "image": "images/verticals/2013-aliados-fox-poster280x420.webp"
+        }
+      ],
       "subtitle": "Juvenil",
       "juveniles_rows": [
         "hits-2010",
