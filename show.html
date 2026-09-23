@@ -496,34 +496,81 @@
         border-radius: 12px !important;
       }
 
-      /*
-   * Barra discreta para dejar visible que existe
-   * desplazamiento horizontal.
-   */
+      /* Oculta la barra: el desplazamiento sigue funcionando por touch */
       .remakes-grid,
       .related-grid,
       .temporadas-grid {
-        scrollbar-width: thin;
+        scrollbar-width: none;
       }
 
       .remakes-grid::-webkit-scrollbar,
       .related-grid::-webkit-scrollbar,
       .temporadas-grid::-webkit-scrollbar {
-        height: 5px;
+        display: none;
       }
 
-      .remakes-grid::-webkit-scrollbar-thumb,
-      .related-grid::-webkit-scrollbar-thumb,
-      .temporadas-grid::-webkit-scrollbar-thumb {
-        background: rgba(91, 97, 109, 0.35);
-        border-radius: 999px;
+      /* Contenedor para las flechas de las galerías verticales */
+      .mobile-gallery-wrap {
+        position: relative;
+        width: 100%;
+        min-width: 0;
       }
 
-      .remakes-grid::-webkit-scrollbar-track,
-      .related-grid::-webkit-scrollbar-track,
-      .temporadas-grid::-webkit-scrollbar-track {
-        background: transparent;
+      /* Flechas transparentes, mismo lenguaje visual que el hero */
+      .mobile-gallery-control {
+        position: absolute;
+        top: 42%;
+        z-index: 5;
+
+        width: 30px;
+        height: 30px;
+        padding: 0;
+
+        border: 0;
+        border-radius: 50%;
+
+        color: rgba(255, 255, 255, 0.92);
+        background: rgba(10, 15, 25, 0.22);
+
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.18);
+        backdrop-filter: blur(2px);
+
+        font-size: 0.92rem;
+        line-height: 30px;
+        text-align: center;
+
+        cursor: pointer;
+        opacity: 0.82;
+
+        transform: translateY(-50%);
+
+        transition:
+          opacity 0.2s ease,
+          background-color 0.2s ease,
+          transform 0.2s ease;
       }
+
+      .mobile-gallery-control:hover,
+      .mobile-gallery-control:focus-visible {
+        color: #fff;
+        background: rgba(10, 15, 25, 0.42);
+        opacity: 1;
+        outline: none;
+      }
+
+      .mobile-gallery-prev {
+        left: 5px;
+      }
+
+      .mobile-gallery-next {
+        right: 5px;
+      }
+
+      .mobile-gallery-control:disabled {
+        opacity: 0;
+        pointer-events: none;
+      }
+
     }
   </style>
 </head>
@@ -1623,6 +1670,85 @@
             updateHeroGallery();
           }
         }
+
+        /*
+ * Controles para galerías verticales en móvil.
+ * Conserva el desplazamiento táctil y agrega flechas
+ * transparentes a izquierda y derecha.
+ */
+        var mobileGalleryGrids = document.querySelectorAll(
+          '.remakes-grid, .related-grid, .temporadas-grid'
+        );
+
+        mobileGalleryGrids.forEach(function (grid) {
+          if (!grid || grid.children.length <= 2) return;
+
+          var wrap = document.createElement('div');
+          wrap.className = 'mobile-gallery-wrap';
+
+          grid.parentNode.insertBefore(wrap, grid);
+          wrap.appendChild(grid);
+
+          var prevButton = document.createElement('button');
+          prevButton.type = 'button';
+          prevButton.className =
+            'mobile-gallery-control mobile-gallery-prev';
+          prevButton.setAttribute('aria-label', 'Ver anteriores');
+          prevButton.innerHTML = '&#10094;';
+
+          var nextButton = document.createElement('button');
+          nextButton.type = 'button';
+          nextButton.className =
+            'mobile-gallery-control mobile-gallery-next';
+          nextButton.setAttribute('aria-label', 'Ver siguientes');
+          nextButton.innerHTML = '&#10095;';
+
+          wrap.appendChild(prevButton);
+          wrap.appendChild(nextButton);
+
+          function getScrollAmount() {
+            var firstCard = grid.firstElementChild;
+
+            if (!firstCard) {
+              return grid.clientWidth;
+            }
+
+            var styles = window.getComputedStyle(grid);
+            var gap = parseFloat(styles.columnGap || styles.gap) || 0;
+
+            return (firstCard.getBoundingClientRect().width + gap) * 2;
+          }
+
+          function updateGalleryControls() {
+            var maxScroll = grid.scrollWidth - grid.clientWidth;
+            var currentScroll = grid.scrollLeft;
+
+            prevButton.disabled = currentScroll <= 2;
+            nextButton.disabled = currentScroll >= maxScroll - 2;
+          }
+
+          prevButton.addEventListener('click', function () {
+            grid.scrollBy({
+              left: -getScrollAmount(),
+              behavior: 'smooth'
+            });
+          });
+
+          nextButton.addEventListener('click', function () {
+            grid.scrollBy({
+              left: getScrollAmount(),
+              behavior: 'smooth'
+            });
+          });
+
+          grid.addEventListener('scroll', updateGalleryControls, {
+            passive: true
+          });
+
+          window.addEventListener('resize', updateGalleryControls);
+
+          updateGalleryControls();
+        });
 
       }
 
