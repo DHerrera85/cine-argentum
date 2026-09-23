@@ -194,8 +194,11 @@
     }
 
     .card .poster {
+      position: relative;
       width: 320px;
       flex: 0 0 320px;
+      overflow: hidden;
+      border-radius: 6px;
     }
 
     .card .poster img {
@@ -203,6 +206,83 @@
       height: auto;
       display: block;
       border-radius: 6px;
+    }
+
+    /* Galería vertical principal */
+
+    .poster-gallery-main {
+      position: relative;
+      width: 100%;
+    }
+
+    .poster-gallery-main-image {
+      display: block;
+      width: 100%;
+      height: auto;
+      aspect-ratio: 2 / 3;
+      object-fit: cover;
+    }
+
+    .poster-main-control {
+      position: absolute;
+      top: 50%;
+      z-index: 4;
+
+      width: 32px;
+      height: 32px;
+      padding: 0;
+
+      border: 0;
+      border-radius: 50%;
+
+      color: rgba(255, 255, 255, 0.92);
+      background: rgba(10, 15, 25, 0.22);
+
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.18);
+      backdrop-filter: blur(2px);
+
+      font-size: 1rem;
+      cursor: pointer;
+
+      transform: translateY(-50%);
+      transition:
+        opacity 0.2s ease,
+        background-color 0.2s ease,
+        transform 0.2s ease;
+    }
+
+    .poster-main-control:hover,
+    .poster-main-control:focus-visible {
+      color: #fff;
+      background: rgba(10, 15, 25, 0.42);
+      outline: none;
+      transform: translateY(-50%) scale(1.06);
+    }
+
+    .poster-main-prev {
+      left: 6px;
+    }
+
+    .poster-main-next {
+      right: 6px;
+    }
+
+    .poster-main-counter {
+      position: absolute;
+      right: 8px;
+      bottom: 8px;
+      z-index: 4;
+
+      padding: 3px 7px;
+
+      color: #fff;
+      background: rgba(10, 15, 25, 0.48);
+      border-radius: 999px;
+
+      font-size: 0.7rem;
+      line-height: 1.2;
+
+      pointer-events: none;
     }
 
     .card .meta {
@@ -635,6 +715,77 @@
         // Campos nuevos: horario, capitulos, fecha_estreno, rating, productora
         function hasValue(v) {
           return v !== undefined && v !== null && String(v).trim() !== '' && String(v).trim() !== '-';
+        }
+
+        /*
+ * Galería vertical principal.
+ * Reúne la imagen principal, poster_gallery
+ * y las imágenes verticales de temporadas.
+ */
+        var verticalImages = [];
+
+        function addVerticalImage(src, label) {
+          if (!hasValue(src)) return;
+
+          var normalizedSrc = String(src)
+            .trim()
+            .replace(/ /g, '%20');
+
+          var alreadyExists = verticalImages.some(function (entry) {
+            return entry.src === normalizedSrc;
+          });
+
+          if (alreadyExists) return;
+
+          verticalImages.push({
+            src: normalizedSrc,
+            label: hasValue(label) ? String(label).trim() : ''
+          });
+        }
+
+        /* Imagen principal */
+        addVerticalImage(
+          item.image,
+          'Póster principal'
+        );
+
+        /* Galería editorial de pósters */
+        if (Array.isArray(item.poster_gallery)) {
+          item.poster_gallery.forEach(function (poster, index) {
+            if (!poster) return;
+
+            if (typeof poster === 'string') {
+              addVerticalImage(
+                poster,
+                'Imagen ' + (index + 1)
+              );
+              return;
+            }
+
+            if (
+              typeof poster === 'object' &&
+              hasValue(poster.image)
+            ) {
+              addVerticalImage(
+                poster.image,
+                hasValue(poster.label)
+                  ? poster.label
+                  : 'Imagen ' + (index + 1)
+              );
+            }
+          });
+        }
+
+        /* Imágenes verticales correspondientes a temporadas */
+        if (Array.isArray(item.temporadas)) {
+          item.temporadas.forEach(function (season, index) {
+            if (!season || !hasValue(season.image)) return;
+
+            addVerticalImage(
+              season.image,
+              'Temporada ' + getSeasonIndex(season, index)
+            );
+          });
         }
 
         var heroSection = '';
@@ -1583,7 +1734,29 @@
         extraSections = remakesSection + relatedSection;
         var html = heroSection
           + '<div class="card">'
-          + '<div class="poster"><img src="' + imgSrc + '" alt="' + (item.title || '') + '"></div>'
+          + '<div class="poster">'
+          + '<div class="poster-gallery-main"'
+          + (verticalImages.length > 1 ? ' tabindex="0"' : '')
+          + '>'
+          + '<img class="poster-gallery-main-image" '
+          + 'src="' + imgSrc + '" '
+          + 'alt="' + (item.title || '') + '">'
+          + (
+            verticalImages.length > 1
+              ? '<button type="button" '
+              + 'class="poster-main-control poster-main-prev" '
+              + 'aria-label="Póster anterior">&#10094;</button>'
+              + '<button type="button" '
+              + 'class="poster-main-control poster-main-next" '
+              + 'aria-label="Póster siguiente">&#10095;</button>'
+              + '<div class="poster-main-counter" '
+              + 'aria-live="polite">1 / '
+              + verticalImages.length
+              + '</div>'
+              : ''
+          )
+          + '</div>'
+          + '</div>'
           + '<div class="meta">'
           + '<h1>' + (item.title || '') + '</h1>'
           + '<div class="sub">' + (item.subtitle || '') + '</div>'
@@ -1614,6 +1787,159 @@
           + '</div>'
           + '</div>';
         $('#detail').html(html);
+
+        /*
+ * Navegación de la galería vertical principal.
+ */
+        var posterMainGallery = document.querySelector(
+          '.poster-gallery-main'
+        );
+
+        if (posterMainGallery && verticalImages.length) {
+          var posterMainImage = posterMainGallery.querySelector(
+            '.poster-gallery-main-image'
+          );
+
+          var posterMainPrev = posterMainGallery.querySelector(
+            '.poster-main-prev'
+          );
+
+          var posterMainNext = posterMainGallery.querySelector(
+            '.poster-main-next'
+          );
+
+          var posterMainCounter = posterMainGallery.querySelector(
+            '.poster-main-counter'
+          );
+
+          var posterMainIndex = 0;
+          var posterTouchStartX = null;
+
+          /*
+           * Localiza la posición inicial real de imgSrc
+           * dentro de la galería.
+           */
+          var normalizedInitialPoster = String(imgSrc)
+            .trim()
+            .replace(/ /g, '%20');
+
+          verticalImages.some(function (entry, index) {
+            if (entry.src === normalizedInitialPoster) {
+              posterMainIndex = index;
+              return true;
+            }
+
+            return false;
+          });
+
+          function updatePosterMainGallery() {
+            if (!posterMainImage || !verticalImages[posterMainIndex]) {
+              return;
+            }
+
+            var currentPoster = verticalImages[posterMainIndex];
+
+            posterMainImage.src = currentPoster.src;
+
+            posterMainImage.alt =
+              (item.title || 'Póster') +
+              (
+                hasValue(currentPoster.label)
+                  ? ' - ' + currentPoster.label
+                  : ''
+              );
+
+            if (posterMainCounter) {
+              posterMainCounter.textContent =
+                (posterMainIndex + 1) +
+                ' / ' +
+                verticalImages.length;
+            }
+          }
+
+          function showPreviousPoster() {
+            posterMainIndex =
+              (
+                posterMainIndex -
+                1 +
+                verticalImages.length
+              ) % verticalImages.length;
+
+            updatePosterMainGallery();
+          }
+
+          function showNextPoster() {
+            posterMainIndex =
+              (posterMainIndex + 1) %
+              verticalImages.length;
+
+            updatePosterMainGallery();
+          }
+
+          if (
+            posterMainPrev &&
+            posterMainNext &&
+            verticalImages.length > 1
+          ) {
+            posterMainPrev.addEventListener(
+              'click',
+              showPreviousPoster
+            );
+
+            posterMainNext.addEventListener(
+              'click',
+              showNextPoster
+            );
+
+            posterMainGallery.addEventListener(
+              'keydown',
+              function (event) {
+                if (event.key === 'ArrowLeft') {
+                  showPreviousPoster();
+                }
+
+                if (event.key === 'ArrowRight') {
+                  showNextPoster();
+                }
+              }
+            );
+
+            posterMainGallery.addEventListener(
+              'touchstart',
+              function (event) {
+                posterTouchStartX =
+                  event.changedTouches[0].clientX;
+              },
+              { passive: true }
+            );
+
+            posterMainGallery.addEventListener(
+              'touchend',
+              function (event) {
+                if (posterTouchStartX === null) return;
+
+                var posterTouchEndX =
+                  event.changedTouches[0].clientX;
+
+                var difference =
+                  posterTouchStartX - posterTouchEndX;
+
+                if (Math.abs(difference) >= 45) {
+                  if (difference > 0) {
+                    showNextPoster();
+                  } else {
+                    showPreviousPoster();
+                  }
+                }
+
+                posterTouchStartX = null;
+              },
+              { passive: true }
+            );
+          }
+
+          updatePosterMainGallery();
+        }
 
         var heroGallery = document.querySelector('.detail-hero-gallery');
 
