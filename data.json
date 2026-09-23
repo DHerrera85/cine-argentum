@@ -601,7 +601,15 @@
       "viewers": 342627,
       "producer": "Cris Morena",
       "release_date": "1/7/2004",
-      "director": "Ezequiel Crupnicoff"
+      "director": "Ezequiel Crupnicoff",
+      "producciones_relacionadas": [
+        {
+          "id": "V147",
+          "title": "Rebelde Way",
+          "meta": "Serie original · 2002",
+          "image": "images/verticals/2002-rebelde-way-canal9-poster280x420-v1.webp"
+        }
+      ]
     },
     {
       "title": "Patoruzito",
@@ -15826,11 +15834,16 @@
       ],
       "air_broadcasts": [
         {
-          "channel": "Canal 9"
+          "channel": "Canal 9",
+          "year": "2002",
+          "image": "images/verticals/2002-rebelde-way-canal9-poster280x420-v1.webp",
+          "horizontal_image": "images/horizontals-1024x576/2002-rebelde-way-canal9-slide-1024x576-v1.webp"
         },
         {
           "channel": "América",
           "year": "2003",
+          "image": "images/verticals/2003-rebelde-way-poster280x420-v1.webp",
+          "horizontal_image": "images/horizontals-1024x576/2003-rebelde-way-america-slide-1024x576-v1.webp",
           "rating": null
         }
       ],
@@ -15844,8 +15857,36 @@
         "Fernán Mirás"
       ],
       "orientation": "vertical",
-      "image": "images/verticals/rebelde way-poster-280x420.png",
-      "horizontal_image": "images/horizontals-1024x576/rebelde-way-slide-1024x576.png",
+      "image": "images/verticals/2002-rebelde-way-canal9-poster280x420-v1.webp",
+      "horizontal_image": "images/horizontals-1024x576/2002-rebelde-way-canal9-slide-1024x576-v1.webp",
+      "horizontal_gallery": [
+        {
+          "image": "images/horizontals-1024x576/2002-rebelde-way-canal9-slide-1024x576-v1.webp",
+          "label": "Emisión por Canal 9"
+        },
+        {
+          "image": "images/horizontals-1024x576/rebelde-way-slide-1024x576.png",
+          "label": "Segunda imagen de Canal 9"
+        },
+        {
+          "image": "images/horizontals-1024x576/2003-rebelde-way-america-slide-1024x576-v1.webp",
+          "label": "Emisión por América"
+        }
+      ],
+      "poster_gallery": [
+        {
+          "image": "images/verticals/2002-rebelde-way-canal9-poster280x420-v1.webp",
+          "label": "Póster principal · Canal 9"
+        },
+        {
+          "image": "images/verticals/rebelde way-poster-280x420.png",
+          "label": "Segundo póster · Canal 9"
+        },
+        {
+          "image": "images/verticals/2003-rebelde-way-poster280x420-v1.webp",
+          "label": "Emisión por América"
+        }
+      ],
       "subtitle": "Juvenil",
       "horario": "20hs",
       "capitulos": 139,
@@ -15858,6 +15899,14 @@
       "rating": "14",
       "productora": "Cris Morena Group / RGB Entertainment",
       "tipo_emision": "Tira Diaria",
+      "producciones_relacionadas": [
+        {
+          "id": "P1021",
+          "title": "Erreway: 4 Caminos",
+          "meta": "Película · Familiar · 2004",
+          "image": "images/verticals/erreway-4-caminos-2004-poster-280x420.png"
+        }
+      ],
       "remakes": [
         {
           "title": "Rebelde",
@@ -20608,7 +20657,7 @@
           "label": "Póster alternativo"
         }
       ],
-      "horizontal_image":"images/horizontals-1024x576/2005-quien-es-el-jefe-telefe-slide-1024x576.webp",
+      "horizontal_image": "images/horizontals-1024x576/2005-quien-es-el-jefe-telefe-slide-1024x576.webp",
       "tiras_2000_rows": [
         "sitcoms"
       ],
