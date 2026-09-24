@@ -14605,6 +14605,14 @@
               "periodo": "Jul-Dic 2025",
               "visualizaciones": 500000,
               "ranking_series": 3481
+            },
+            {
+              "report_id": "2026-H1",
+              "periodo": "Ene-Jun 2026",
+              "horas_visualizadas": 2700000,
+              "visualizaciones": 500000,
+              "ranking_series": 3541,
+              "total_ranking_series": 8196
             }
           ]
         },
@@ -14618,6 +14626,14 @@
               "periodo": "Jul-Dic 2025",
               "visualizaciones": 400000,
               "ranking_series": 4014
+            },
+            {
+              "report_id": "2026-H1",
+              "periodo": "Ene-Jun 2026",
+              "horas_visualizadas": 1600000,
+              "visualizaciones": 400000,
+              "ranking_series": 4120,
+              "total_ranking_series": 8196
             }
           ]
         }
@@ -14727,6 +14743,14 @@
               "periodo": "Jul-Dic 2025",
               "visualizaciones": 1100000,
               "ranking_series": 2016
+            },
+            {
+              "report_id": "2026-H1",
+              "periodo": "Ene-Jun 2026",
+              "horas_visualizadas": 10000000,
+              "visualizaciones": 1000000,
+              "ranking_series": 2197,
+              "total_ranking_series": 8196
             }
           ]
         },
@@ -14740,6 +14764,14 @@
               "periodo": "Jul-Dic 2025",
               "visualizaciones": 900000,
               "ranking_series": 2306
+            },
+            {
+              "report_id": "2026-H1",
+              "periodo": "Ene-Jun 2026",
+              "horas_visualizadas": 8100000,
+              "visualizaciones": 800000,
+              "ranking_series": 2594,
+              "total_ranking_series": 8196
             }
           ]
         }
@@ -17041,6 +17073,14 @@
               "periodo": "Jul-Dic 2025",
               "visualizaciones": 3100000,
               "ranking_series": 756
+            },
+            {
+              "report_id": "2026-H1",
+              "periodo": "Ene-Jun 2026",
+              "horas_visualizadas": 1700000,
+              "visualizaciones": 500000,
+              "ranking_series": 3629,
+              "total_ranking_series": 8196
             }
           ]
         },
@@ -17054,6 +17094,14 @@
               "periodo": "Jul-Dic 2025",
               "visualizaciones": 3200000,
               "ranking_series": 715
+            },
+            {
+              "report_id": "2026-H1",
+              "periodo": "Ene-Jun 2026",
+              "horas_visualizadas": 800000,
+              "visualizaciones": 300000,
+              "ranking_series": 4838,
+              "total_ranking_series": 8196
             }
           ]
         }
@@ -17436,6 +17484,14 @@
               "periodo": "Jul-Dic 2025",
               "visualizaciones": 2400000,
               "ranking_series": 1007
+            },
+            {
+              "report_id": "2026-H1",
+              "periodo": "Ene-Jun 2026",
+              "horas_visualizadas": 9600000,
+              "visualizaciones": 1800000,
+              "ranking_series": 1396,
+              "total_ranking_series": 8196
             }
           ]
         }
@@ -17602,6 +17658,14 @@
               "periodo": "Jul-Dic 2025",
               "visualizaciones": 3700000,
               "ranking_series": 591
+            },
+            {
+              "report_id": "2026-H1",
+              "periodo": "Ene-Jun 2026",
+              "horas_visualizadas": 11600000,
+              "visualizaciones": 2100000,
+              "ranking_series": 1216,
+              "total_ranking_series": 8196
             }
           ]
         }
