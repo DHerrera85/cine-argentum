@@ -17248,6 +17248,14 @@
               "periodo": "Jul-Dic 2025",
               "visualizaciones": 1100000,
               "ranking_series": 2014
+            },
+            {
+              "report_id": "2026-H1",
+              "periodo": "Ene-Jun 2026",
+              "horas_visualizadas": 6500000,
+              "visualizaciones": 600000,
+              "ranking_series": 3069,
+              "total_ranking_series": 8196
             }
           ]
         },
@@ -17261,6 +17269,14 @@
               "periodo": "Jul-Dic 2025",
               "visualizaciones": 900000,
               "ranking_series": 2332
+            },
+            {
+              "report_id": "2026-H1",
+              "periodo": "Ene-Jun 2026",
+              "horas_visualizadas": 3800000,
+              "visualizaciones": 500000,
+              "ranking_series": 3451,
+              "total_ranking_series": 8196
             }
           ]
         },
@@ -17274,6 +17290,14 @@
               "periodo": "Jul-Dic 2025",
               "visualizaciones": 800000,
               "ranking_series": 2566
+            },
+            {
+              "report_id": "2026-H1",
+              "periodo": "Ene-Jun 2026",
+              "horas_visualizadas": 3400000,
+              "visualizaciones": 400000,
+              "ranking_series": 3876,
+              "total_ranking_series": 8196
             }
           ]
         },
@@ -17288,6 +17312,14 @@
               "periodo": "Jul-Dic 2025",
               "visualizaciones": 700000,
               "ranking_series": 2800
+            },
+            {
+              "report_id": "2026-H1",
+              "periodo": "Ene-Jun 2026",
+              "horas_visualizadas": 3200000,
+              "visualizaciones": 400000,
+              "ranking_series": 3895,
+              "total_ranking_series": 8196
             }
           ]
         },
@@ -17302,6 +17334,14 @@
               "periodo": "Jul-Dic 2025",
               "visualizaciones": 700000,
               "ranking_series": 2883
+            },
+            {
+              "report_id": "2026-H1",
+              "periodo": "Ene-Jun 2026",
+              "horas_visualizadas": 1800000,
+              "visualizaciones": 400000,
+              "ranking_series": 4084,
+              "total_ranking_series": 8196
             }
           ]
         }
