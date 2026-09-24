@@ -2112,7 +2112,8 @@
           "report_id": "2026-H1",
           "periodo": "Ene-Jun 2026",
           "visualizaciones": 200000,
-          "ranking_peliculas": 5118
+          "ranking_peliculas": 5112,
+          "total_ranking_peliculas": 9180
         }
       ],
       "netflix_aggregates": [
@@ -3148,7 +3149,8 @@
           "report_id": "2026-H1",
           "periodo": "Ene-Jun 2026",
           "visualizaciones": 100000,
-          "ranking_peliculas": 7586
+          "ranking_peliculas": 7580,
+          "total_ranking_peliculas": 9180
         }
       ],
       "netflix_aggregates": [
@@ -3253,7 +3255,8 @@
           "report_id": "2026-H1",
           "periodo": "Ene-Jun 2026",
           "visualizaciones": 200000,
-          "ranking_peliculas": 4966
+          "ranking_peliculas": 4960,
+          "total_ranking_peliculas": 9180
         }
       ],
       "netflix_aggregates": [
@@ -4753,7 +4756,8 @@
           "report_id": "2026-H1",
           "periodo": "Ene-Jun 2026",
           "visualizaciones": 200000,
-          "ranking_peliculas": 4943
+          "ranking_peliculas": 4937,
+          "total_ranking_peliculas": 9180
         }
       ],
       "netflix_aggregates": [
@@ -5326,7 +5330,8 @@
           "report_id": "2026-H1",
           "periodo": "Ene-Jun 2026",
           "visualizaciones": 100000,
-          "ranking_peliculas": 5929
+          "ranking_peliculas": 5923,
+          "total_ranking_peliculas": 9180
         }
       ],
       "netflix_aggregates": [
