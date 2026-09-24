@@ -6120,12 +6120,22 @@
       ],
       "synopsis": "Lucía, una mujer de 40 años que descubre la infidelidad de su pareja, intenta reconstruir su vida tras regresar a su antiguo departamento. Allí conoce a Javier, un joven vecino que acepta hacerse pasar por su hijo, dando inicio a un inesperado romance marcado por la diferencia de edad.",
       "channel": "Cine",
-      "image": "images/verticals/queres-ser-mi-hijo-2026-poster-280x420.png",
+      "image": "images/verticals/2026-queres-ser-mi-hijo-cine-poster280x420.webp",
+      "poster_gallery": [
+        {
+          "image": "images/verticals/2026-queres-ser-mi-hijo-cine-poster280x420.webp",
+          "label": "Póster principal"
+        },
+        {
+          "image": "images/verticals/queres-ser-mi-hijo-2026-poster-280x420.png",
+          "label": "Póster alternativo"
+        }
+      ],
       "orientation": "vertical",
       "viewers": "-",
       "producer": "Zeppelin Studios, Cimarron Cine, Film Suez, IP4, Telefe Studios",
       "director": "Hernán Guerschuny",
-      "release_date": "31/12/2026",
+      "release_date": "22/10/2026",
       "subtitle": "Romance"
     },
     {
