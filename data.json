@@ -12493,7 +12493,24 @@
       "capitulos": 10,
       "sinopsis": "Caro Pardíaco, una influencer llena de energía y diva a tiempo completo, lo tiene todo. Pero, en plena crisis de los treinta, cae en la trampa del amor romántico.",
       "productora": "Olga",
-      "streaming_row": "ficciones_verticales"
+      "streaming_row": "ficciones_verticales",
+      "temporadas": [
+        {
+          "numero": 1,
+          "release_date": "20/05/2026",
+          "image": "images/verticals/carisima-poster-280x420.png",
+          "netflix_reports": [
+            {
+              "report_id": "2026-H1",
+              "periodo": "Ene-Jun 2026",
+              "horas_visualizadas": 2400000,
+              "visualizaciones": 1200000,
+              "ranking_series": 1993,
+              "total_ranking_series": 8196
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "V306",
@@ -16642,6 +16659,14 @@
               "horas_visualizadas": 15000000,
               "visualizaciones": 2400000,
               "ranking_series": 1002
+            },
+            {
+              "report_id": "2026-H1",
+              "periodo": "Ene-Jun 2026",
+              "horas_visualizadas": 12800000,
+              "visualizaciones": 2000000,
+              "ranking_series": 1260,
+              "total_ranking_series": 8196
             }
           ]
         },
@@ -16656,6 +16681,14 @@
               "horas_visualizadas": 10900000,
               "visualizaciones": 2300000,
               "ranking_series": 1067
+            },
+            {
+              "report_id": "2026-H1",
+              "periodo": "Ene-Jun 2026",
+              "horas_visualizadas": 8200000,
+              "visualizaciones": 1700000,
+              "ranking_series": 1479,
+              "total_ranking_series": 8196
             }
           ]
         },
@@ -16670,13 +16703,31 @@
               "horas_visualizadas": 34400000,
               "visualizaciones": 7000000,
               "ranking_series": 250
+            },
+            {
+              "report_id": "2026-H1",
+              "periodo": "Ene-Jun 2026",
+              "horas_visualizadas": 13000000,
+              "visualizaciones": 2700000,
+              "ranking_series": 939,
+              "total_ranking_series": 8196
             }
           ]
         },
         {
           "numero": 4,
           "release_date": "29/04/2026",
-          "image": "images/verticals/envidiosa-temporada-4-poster-280x420.png"
+          "image": "images/verticals/envidiosa-temporada-4-poster-280x420.png",
+          "netflix_reports": [
+            {
+              "report_id": "2026-H1",
+              "periodo": "Ene-Jun 2026",
+              "horas_visualizadas": 30900000,
+              "visualizaciones": 7000000,
+              "ranking_series": 242,
+              "total_ranking_series": 8196
+            }
+          ]
         }
       ],
       "netflix_aggregates": [
@@ -17432,13 +17483,31 @@
               "horas_visualizadas": null,
               "visualizaciones": 16300000,
               "ranking_series": 66
+            },
+            {
+              "report_id": "2026-H1",
+              "periodo": "Ene-Jun 2026",
+              "horas_visualizadas": 31200000,
+              "visualizaciones": 4400000,
+              "ranking_series": 496,
+              "total_ranking_series": 8196
             }
           ]
         },
         {
           "numero": 2,
           "release_date": "13/02/2026",
-          "image": "images/verticals/en-el-barro-temporada-2-poster-280x420.png"
+          "image": "images/verticals/en-el-barro-temporada-2-poster-280x420.png",
+          "netflix_reports": [
+            {
+              "report_id": "2026-H1",
+              "periodo": "Ene-Jun 2026",
+              "horas_visualizadas": 56300000,
+              "visualizaciones": 9900000,
+              "ranking_series": 130,
+              "total_ranking_series": 8196
+            }
+          ]
         }
       ],
       "netflix_aggregates": [
@@ -20255,7 +20324,24 @@
       "release_date": "01/01/2026",
       "capitulos": 6,
       "sinopsis": "Recién salidas de la cárcel, dos mujeres con opciones limitadas dirigen una empresa de fumigación. Hasta que una clienta muy turbia les hace una oferta que no pueden rechazar.",
-      "creador": "Claudia Piñeiro"
+      "creador": "Claudia Piñeiro",
+      "temporadas": [
+        {
+          "numero": 1,
+          "release_date": "01/01/2026",
+          "image": "images/verticals/el-tiempo-de-las-moscas-poster-280x420.png",
+          "netflix_reports": [
+            {
+              "report_id": "2026-H1",
+              "periodo": "Ene-Jun 2026",
+              "horas_visualizadas": 9400000,
+              "visualizaciones": 3000000,
+              "ranking_series": 828,
+              "total_ranking_series": 8196
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "v32",
