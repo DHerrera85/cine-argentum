@@ -1143,60 +1143,7 @@
         var firstSeason = getFirstSeason(item.temporadas);
         var netflixMetricsRow = '';
 
-        if (Array.isArray(item.temporadas) && item.temporadas.length) {
-          var metricLines = item.temporadas.map(function (temp, idx) {
-            if (!temp || typeof temp !== 'object') return '';
-
-            var latestReport = getLatestReport(temp.netflix_reports);
-            if (!latestReport) return '';
-
-            var seasonNumber = getSeasonIndex(temp, idx);
-
-            var period = hasValue(latestReport.periodo)
-              ? latestReport.periodo
-              : (
-                hasValue(latestReport.report_id)
-                  ? latestReport.report_id
-                  : 'Netflix'
-              );
-
-            var rankingData = getNetflixRankingData(latestReport);
-
-            var rankingText = '';
-
-            if (rankingData) {
-              rankingText = '<br>Ranking general: '
-                + formatRankingNumber(rankingData.ranking);
-
-              if (rankingData.total !== null) {
-                rankingText += ' de '
-                  + formatRankingNumber(rankingData.total);
-              }
-            }
-
-            return '<div class="netflix-season-metric">'
-              + '<strong>Temporada ' + seasonNumber + '</strong><br>'
-              + formatViews(latestReport.visualizaciones)
-              + ' visualizaciones'
-              + rankingText
-              + '<br>'
-              + period
-              + '</div>';
-          }).filter(function (line) {
-            return hasValue(line);
-          });
-
-          if (metricLines.length) {
-            netflixMetricsRow =
-              '<dt>Métricas Netflix</dt>'
-              + '<dd>'
-              + metricLines.join('<br>')
-              + '</dd>';
-          }
-        }
-
         if (
-          !netflixMetricsRow &&
           Array.isArray(item.netflix_reports) &&
           item.netflix_reports.length
         ) {
@@ -1462,31 +1409,47 @@
                 Array.isArray(temp.netflix_reports) &&
                 temp.netflix_reports.length
               ) {
-                reportLines = temp.netflix_reports.map(function (report) {
-                  if (!report || typeof report !== 'object') return '';
+                var latestSeasonReport =
+                  getLatestReport(temp.netflix_reports);
 
-                  var period = hasValue(report.periodo)
-                    ? report.periodo
+                if (latestSeasonReport) {
+                  var period = hasValue(latestSeasonReport.periodo)
+                    ? latestSeasonReport.periodo
                     : (
-                      hasValue(report.report_id)
-                        ? report.report_id
+                      hasValue(latestSeasonReport.report_id)
+                        ? latestSeasonReport.report_id
                         : 'Netflix'
                     );
 
-                  var views = formatViews(report.visualizaciones);
-                  var ranking = toNumber(report.ranking_series);
+                  var views =
+                    formatViews(latestSeasonReport.visualizaciones);
 
-                  var rankingText = ranking !== null
-                    ? ' · <strong>Ranking</strong>: #' + ranking
-                    : '';
+                  var rankingData =
+                    getNetflixRankingData(latestSeasonReport);
 
-                  return '<div class="temporada-date">'
-                    + '<strong>' + period + '</strong>: '
+                  var rankingText = '';
+
+                  if (rankingData) {
+                    rankingText =
+                      '<br><strong>Ranking general:</strong> '
+                      + formatRankingNumber(rankingData.ranking);
+
+                    if (rankingData.total !== null) {
+                      rankingText += ' de '
+                        + formatRankingNumber(rankingData.total);
+                    }
+                  }
+
+                  reportLines =
+                    '<div class="temporada-date">'
+                    + '<strong>'
                     + views
-                    + ' visualizaciones'
+                    + ' visualizaciones</strong>'
                     + rankingText
+                    + '<br>'
+                    + period
                     + '</div>';
-                }).join('');
+                }
               }
 
               return '<div class="temporada-card season-poster-card" '
