@@ -438,19 +438,22 @@
     }
 
     /* Miniaturas que controlan la galería vertical principal */
-    .poster-gallery-card {
+    .poster-gallery-card,
+    .season-poster-card {
       cursor: pointer;
       transition:
         transform 0.2s ease,
         box-shadow 0.2s ease;
     }
 
-    .poster-gallery-card:hover {
+    .poster-gallery-card:hover,
+    .season-poster-card:hover {
       transform: translateY(-2px);
       box-shadow: 0 4px 14px rgba(0, 0, 0, 0.14);
     }
 
-    .poster-gallery-card:focus-visible {
+    .poster-gallery-card:focus-visible,
+    .season-poster-card:focus-visible {
       outline: 2px solid #5b616d;
       outline-offset: 2px;
     }
@@ -1376,7 +1379,11 @@
                 }).join('');
               }
 
-              return '<div class="temporada-card">'
+              return '<div class="temporada-card season-poster-card" '
+                + 'data-poster-src="' + imgPath + '" '
+                + 'role="button" '
+                + 'tabindex="0" '
+                + 'aria-label="Ver póster de Temporada ' + n + '">'
                 + '<div class="temporada-image-wrap">'
                 + '<img src="' + imgPath + '" alt="Temporada ' + n + '">'
                 + statusBadge
@@ -1927,7 +1934,8 @@
           }
 
           var posterGalleryCards = document.querySelectorAll(
-            '.poster-gallery-card[data-poster-src]'
+            '.poster-gallery-card[data-poster-src], '
+            + '.season-poster-card[data-poster-src]'
           );
 
           posterGalleryCards.forEach(function (card) {
