@@ -17400,6 +17400,14 @@
               "periodo": "Jul-Dic 2025",
               "visualizaciones": 100000,
               "ranking_series": 6534
+            },
+            {
+              "report_id": "2026-H1",
+              "periodo": "Ene-Jun 2026",
+              "horas_visualizadas": 500000,
+              "visualizaciones": 100000,
+              "ranking_series": 7026,
+              "total_ranking_series": 8196
             }
           ]
         }
@@ -17895,6 +17903,14 @@
               "periodo": "Jul-Dic 2025",
               "visualizaciones": 3100000,
               "ranking_series": 762
+            },
+            {
+              "report_id": "2026-H1",
+              "periodo": "Ene-Jun 2026",
+              "horas_visualizadas": 600000,
+              "visualizaciones": 300000,
+              "ranking_series": 4886,
+              "total_ranking_series": 8196
             }
           ]
         }
@@ -18336,6 +18352,14 @@
               "periodo": "Jul-Dic 2025",
               "visualizaciones": 300000,
               "ranking_series": 4407
+            },
+            {
+              "report_id": "2026-H1",
+              "periodo": "Ene-Jun 2026",
+              "horas_visualizadas": 2000000,
+              "visualizaciones": 300000,
+              "ranking_series": 4535,
+              "total_ranking_series": 8196
             }
           ]
         }
@@ -18671,7 +18695,7 @@
       "actors": [
         "Pablo Echarri",
         "Alexandra Jiménez",
-        "Mónica Antonópulos",
+        "Monna Antonópulos",
         "Agustín Sullivan"
       ],
       "orientation": "vertical",
