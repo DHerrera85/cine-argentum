@@ -339,7 +339,15 @@
       )
       : null;
 
-    var useStreamingLayout = Boolean(streamingSection);
+    var channelSection = ulEl.closest
+      ? ulEl.closest(
+        '.cartelera-2026-section[data-cartelera-content="channel"]'
+      )
+      : null;
+
+    var useStreamingLayout = Boolean(
+      streamingSection || channelSection
+    );
 
     ulEl._carteleraSlider = $ul.lightSlider({
       item: 5,
@@ -514,6 +522,14 @@
      * solo contiene series.
      */
     if (contentMode === 'streaming-series') {
+      return String(count) + ' series';
+    }
+
+    /*
+ * Carteleras específicas de canales:
+ * contienen ficciones seriadas.
+ */
+    if (contentMode === 'channel') {
       return String(count) + ' series';
     }
 
