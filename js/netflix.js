@@ -463,6 +463,294 @@ function formatNetflixPeriodLabel(value) {
     .replace(/Jul-Dic/gi, 'Jul–Dic');
 }
 
+function getNetflixTop10Image(entry) {
+  const item = entry && entry.item ? entry.item : null;
+
+  if (!item) {
+    return getPlaceholderImageSrc();
+  }
+
+  if (entry.kind === 'series' && entry.season && entry.season.image) {
+    return String(entry.season.image).replace(/ /g, '%20');
+  }
+
+  if (item.horizontal_image) {
+    return String(item.horizontal_image).replace(/ /g, '%20');
+  }
+
+  return getItemImageSrc(item);
+}
+
+
+function renderNetflixTop10Card(entry, position) {
+  const li = document.createElement('li');
+
+  const item = entry.item || {};
+  const title = item.title || '';
+  const escapedTitle = escapeAttribute(title);
+
+  const imageSrc = getNetflixTop10Image(entry);
+
+  const usesPosterFallback =
+    !item.horizontal_image &&
+    !(entry.kind === 'series' &&
+      entry.season &&
+      entry.season.image);
+
+  const seasonLabel =
+    entry.kind === 'series'
+      ? 'Temporada ' + entry.seasonNumber
+      : '';
+
+  const viewsLabel =
+    formatNetflixViews(entry.views) +
+    ' visualizaciones';
+
+  const rankingLabel =
+    formatNetflixRanking(entry);
+
+  li.innerHTML = `
+    <a href="show.html?id=${item.id}">
+      <div
+        class="showcase-box${usesPosterFallback ? ' uses-poster-fallback' : ''}"
+        data-rank="${position}"
+      >
+        <img
+          src="${imageSrc}"
+          alt="${escapedTitle}"
+          loading="lazy"
+          onerror="this.onerror=null;this.src='${getPlaceholderImageSrc()}';"
+        >
+      </div>
+
+      <div class="latest-b-text">
+        <strong>${escapedTitle}</strong>
+
+        ${seasonLabel
+      ? `<span class="netflix-top10-meta">${seasonLabel}</span>`
+      : ''
+    }
+
+        <span class="netflix-top10-meta netflix-top10-views">
+          ${viewsLabel}
+        </span>
+
+        ${rankingLabel
+      ? `<span class="netflix-top10-meta">${rankingLabel}</span>`
+      : ''
+    }
+
+        ${entry.isNew
+      ? '<span class="netflix-new-badge">NUEVO</span>'
+      : ''
+    }
+      </div>
+    </a>
+  `;
+
+  return li;
+}
+
+
+function initNetflixTop10Slider(container) {
+  if (
+    !container ||
+    !window.jQuery ||
+    !window.jQuery.fn ||
+    !window.jQuery.fn.lightSlider
+  ) {
+    return;
+  }
+
+  const $container = window.jQuery(container);
+
+  const previousInstance =
+    $container.data('lightSlider');
+
+  if (
+    previousInstance &&
+    typeof previousInstance.destroy === 'function'
+  ) {
+    previousInstance.destroy();
+  }
+
+  $container.data('lightSlider', null);
+
+  $container.lightSlider({
+    item: 5,
+    slideMove: 1,
+    slideMargin: 18,
+    loop: false,
+    pager: false,
+    controls: true,
+    enableTouch: true,
+    enableDrag: true,
+    freeMove: false,
+
+    responsive: [
+      {
+        breakpoint: 1100,
+        settings: {
+          item: 3,
+          slideMove: 1
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          item: 2,
+          slideMove: 1
+        }
+      }
+    ]
+  });
+}
+
+
+function renderNetflixSeriesTop10(
+  items,
+  reportIds,
+  reportId
+) {
+  const container =
+    document.getElementById(
+      'netflix-series-top10-slider'
+    );
+
+  const periodElement =
+    document.getElementById(
+      'netflix-series-top10-period'
+    );
+
+  if (!container) {
+    return;
+  }
+
+  const entries =
+    getNetflixTop10ForReport(
+      items,
+      reportIds,
+      reportId,
+      'series'
+    );
+
+  container.innerHTML = '';
+
+  entries.forEach((entry, index) => {
+    container.appendChild(
+      renderNetflixTop10Card(
+        entry,
+        index + 1
+      )
+    );
+  });
+
+  if (periodElement) {
+    periodElement.textContent =
+      formatNetflixPeriodLabel(
+        getReportPeriodLabel(
+          reportId,
+          items
+        )
+      );
+  }
+
+  initNetflixTop10Slider(container);
+}
+
+function renderNetflixReportTabs(
+  items,
+  reportIds,
+  activeReportId
+) {
+  const tabsContainer =
+    document.getElementById(
+      'netflix-series-report-tabs'
+    );
+
+  if (!tabsContainer) {
+    return;
+  }
+
+  tabsContainer.innerHTML = '';
+
+  reportIds.forEach(reportId => {
+    const button =
+      document.createElement('button');
+
+    button.type = 'button';
+
+    button.className =
+      'netflix-report-tab' +
+      (
+        reportId === activeReportId
+          ? ' active'
+          : ''
+      );
+
+    button.setAttribute(
+      'role',
+      'tab'
+    );
+
+    button.setAttribute(
+      'aria-selected',
+      reportId === activeReportId
+        ? 'true'
+        : 'false'
+    );
+
+    button.dataset.reportId =
+      reportId;
+
+    button.textContent =
+      formatNetflixPeriodLabel(
+        getReportPeriodLabel(
+          reportId,
+          items
+        )
+      );
+
+    button.addEventListener(
+      'click',
+      function () {
+        const selectedReportId =
+          this.dataset.reportId;
+
+        tabsContainer
+          .querySelectorAll(
+            '.netflix-report-tab'
+          )
+          .forEach(tab => {
+            const isActive =
+              tab.dataset.reportId ===
+              selectedReportId;
+
+            tab.classList.toggle(
+              'active',
+              isActive
+            );
+
+            tab.setAttribute(
+              'aria-selected',
+              isActive
+                ? 'true'
+                : 'false'
+            );
+          });
+
+        renderNetflixSeriesTop10(
+          items,
+          reportIds,
+          selectedReportId
+        );
+      }
+    );
+
+    tabsContainer.appendChild(button);
+  });
+}
+
 function formatViews(value) {
   const n = normalizeNumber(value);
   if (n === null) return 'Dato pendiente';
@@ -786,8 +1074,32 @@ function initializeNetflixCarousel() {
       }
 
       if (shouldRenderNetflixPage) {
-        setupSeriesFilters(series);
-        setupMovieFilters(movies);
+        if (shouldRenderNetflixPage) {
+          const reportIds =
+            getNetflixReportIds(
+              netflixItems
+            );
+
+          if (reportIds.length) {
+            const activeReportId =
+              reportIds[0];
+
+            renderNetflixReportTabs(
+              netflixItems,
+              reportIds,
+              activeReportId
+            );
+
+            renderNetflixSeriesTop10(
+              netflixItems,
+              reportIds,
+              activeReportId
+            );
+          }
+
+          setupSeriesFilters(series);
+          setupMovieFilters(movies);
+        }
       }
     })
     .catch(error => {
