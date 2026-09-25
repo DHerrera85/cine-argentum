@@ -6594,9 +6594,9 @@
     },
     {
       "id": "P2049",
-      "title": "NOA",
+      "title": "Mírame Así: el camino de NOA",
       "type": "serie",
-      "year": "2027",
+      "year": "2026",
       "actors": [
         "Agustín Bernasconi",
         "Noa Kirel",
@@ -6605,11 +6605,41 @@
         "Jerónimo Bosia"
       ],
       "channel": "Streaming",
+      "platform": "Prime Video",
+      "platforms": [
+        "Prime Video"
+      ],
+      "air_channels": [
+        "América"
+      ],
+      "channel_relations": [
+        {
+          "channel": "América",
+          "role": "acquisition"
+        }
+      ],
       "genre": "Juvenil",
-      "release_date": "01/01/2027",
-      "image": "images/verticals/2026-noa-poster280x420.png",
+      "release_date": "09/10/2026",
+      "episodes": 24,
+      "image": "images/verticals/2026-mirame-asi-camino-noa-prime-video-poster280x420.webp",
+      "poster_gallery": [
+        {
+          "image": "images/verticals/2026-mirame-asi-camino-noa-prime-video-poster280x420.webp",
+          "label": "Prime Video"
+        },
+        {
+          "image": "images/verticals/2026-mirame-asi-camino-noa-america-poster280x420.webp",
+          "label": "América"
+        },
+        {
+          "image": "images/verticals/2026-noa-poster280x420.png",
+          "label": "Póster alternativo"
+        }
+      ],
       "orientation": "vertical",
-      "subtitle": "Juvenil"
+      "subtitle": "Juvenil",
+      "sinopsis": "Noa, una joven recién llegada a la Argentina, conoce a Tomy, un músico que se alejó de la banda que había formado junto a sus amigos. Ambos atraviesan el dolor de haber sido traicionados por sus respectivas parejas. A partir de ese encuentro nace un romance que los ayudará a reconstruir sus vidas, mientras enfrentan los conflictos, vínculos y tensiones que rodean al grupo de amigos.",
+      "productora": "Yair Dori, Sipur Studios, FAM Contenidos, SWAP"
     },
     {
       "id": "P2050",
