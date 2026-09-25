@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Series y Peliculas de Netflix - Cine Argentum</title>
   <link rel="stylesheet" href="css/style.css?v=2.0">
+  <link rel="stylesheet" href="css/lightslider.css?v=2.0">
   <style>
     .actor-wrap {
       max-width: 1200px;
@@ -309,12 +310,6 @@
       color: #ffffff;
     }
 
-    .netflix-top10-period {
-      margin: 6px 0 0;
-      color: #9ea6b0;
-      font-size: 0.95rem;
-    }
-
     /* Tabs de informes */
 
     .netflix-report-tabs {
@@ -515,9 +510,6 @@
               Las 10 series más vistas
             </h2>
 
-            <p class="netflix-top10-period" id="netflix-series-top10-period">
-              Cargando informe de Netflix...
-            </p>
           </div>
 
           <div id="netflix-series-report-tabs" class="netflix-report-tabs" role="tablist"
@@ -525,7 +517,7 @@
           </div>
         </div>
 
-        <ul id="netflix-series-top10-slider" class="slider-h netflix-top10-slider"
+        <ul id="netflix-series-top10-slider" class="slider-h netflix-top10-slider cs-hidden" data-skip-auto="true"
           aria-label="Las 10 series argentinas más vistas en Netflix">
         </ul>
       </section>

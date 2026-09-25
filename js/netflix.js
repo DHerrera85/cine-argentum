@@ -631,6 +631,8 @@ function renderNetflixTop10Card(entry, position) {
 }
 
 
+let netflixTop10Slider = null;
+
 function initNetflixTop10Slider(container) {
   if (
     !container ||
@@ -643,19 +645,7 @@ function initNetflixTop10Slider(container) {
 
   const $container = window.jQuery(container);
 
-  const previousInstance =
-    $container.data('lightSlider');
-
-  if (
-    previousInstance &&
-    typeof previousInstance.destroy === 'function'
-  ) {
-    previousInstance.destroy();
-  }
-
-  $container.data('lightSlider', null);
-
-  $container.lightSlider({
+  netflixTop10Slider = $container.lightSlider({
     item: 5,
     slideMove: 1,
     slideMargin: 18,
@@ -665,6 +655,9 @@ function initNetflixTop10Slider(container) {
     enableTouch: true,
     enableDrag: true,
     freeMove: false,
+    onSliderLoad: function () {
+      $container.removeClass('cs-hidden');
+    },
 
     responsive: [
       {
@@ -696,11 +689,6 @@ function renderNetflixSeriesTop10(
       'netflix-series-top10-slider'
     );
 
-  const periodElement =
-    document.getElementById(
-      'netflix-series-top10-period'
-    );
-
   if (!container) {
     return;
   }
@@ -713,11 +701,12 @@ function renderNetflixSeriesTop10(
       'series'
     );
 
+  if (netflixTop10Slider && typeof netflixTop10Slider.destroy === 'function') {
+    netflixTop10Slider.destroy();
+    netflixTop10Slider = null;
+  }
+  container.classList.add('cs-hidden');
   container.innerHTML = '';
-  
-  container.style.display = 'block';
-  container.style.visibility = 'visible';
-  container.style.opacity = '1';
 
   entries.forEach((entry, index) => {
     container.appendChild(
@@ -727,16 +716,6 @@ function renderNetflixSeriesTop10(
       )
     );
   });
-
-  if (periodElement) {
-    periodElement.textContent =
-      formatNetflixPeriodLabel(
-        getReportPeriodLabel(
-          reportId,
-          items
-        )
-      );
-  }
 
   initNetflixTop10Slider(container);
 }
