@@ -218,6 +218,59 @@
     });
   }
 
+  /*
+ * Comprueba si una ficción está vinculada con el canal
+ * configurado por la sección.
+ *
+ * Admite:
+ * - channel
+ * - channels
+ * - air_channels
+ * - channel_relations
+ *
+ * De esta forma PRÓXIMAMENTE puede incluir producciones,
+ * coproducciones, adquisiciones y ficciones verticales.
+ */
+  function belongsToCarteleraChannel(item, channelName) {
+    if (!item || !channelName) {
+      return false;
+    }
+
+    var expectedChannel = normalizeText(channelName);
+    var values = [];
+
+    if (item.channel) {
+      values.push(item.channel);
+    }
+
+    if (Array.isArray(item.channels)) {
+      values = values.concat(item.channels);
+    }
+
+    if (Array.isArray(item.air_channels)) {
+      values = values.concat(item.air_channels);
+    }
+
+    var directMatch = values.some(function (value) {
+      return normalizeText(value) === expectedChannel;
+    });
+
+    if (directMatch) {
+      return true;
+    }
+
+    if (Array.isArray(item.channel_relations)) {
+      return item.channel_relations.some(function (relation) {
+        return Boolean(
+          relation &&
+          normalizeText(relation.channel) === expectedChannel
+        );
+      });
+    }
+
+    return false;
+  }
+
   function buildCardHtml(item, isUpcoming) {
     var fallbackYear = (item && item.year) ? String(item.year) : '';
     var releaseLabel = item.releaseDate
@@ -587,6 +640,32 @@
             (
               isStreamingProduction(item) ||
               isVertical
+            )
+          );
+        }
+
+        /*
+ * Carteleras específicas de un canal.
+ *
+ * Ejemplo:
+ * data-cartelera-content="channel"
+ * data-cartelera-channel="América"
+ *
+ * Incluye cualquier serie vinculada con ese canal,
+ * independientemente de que sea producción,
+ * coproducción, adquisición o ficción vertical.
+ */
+        if (contentMode === 'channel') {
+          var carteleraChannel =
+            section.getAttribute(
+              'data-cartelera-channel'
+            ) || '';
+
+          return (
+            itemType === 'serie' &&
+            belongsToCarteleraChannel(
+              item,
+              carteleraChannel
             )
           );
         }
