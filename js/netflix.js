@@ -464,18 +464,29 @@ function formatNetflixPeriodLabel(value) {
 }
 
 function getNetflixTop10Image(entry) {
-  const item = entry && entry.item ? entry.item : null;
+  const item =
+    entry && entry.item
+      ? entry.item
+      : null;
 
   if (!item) {
     return getPlaceholderImageSrc();
   }
 
-  if (entry.kind === 'series' && entry.season && entry.season.image) {
-    return String(entry.season.image).replace(/ /g, '%20');
+  if (item.horizontal_image) {
+    return String(
+      item.horizontal_image
+    ).replace(/ /g, '%20');
   }
 
-  if (item.horizontal_image) {
-    return String(item.horizontal_image).replace(/ /g, '%20');
+  if (
+    entry.kind === 'series' &&
+    entry.season &&
+    entry.season.horizontal_image
+  ) {
+    return String(
+      entry.season.horizontal_image
+    ).replace(/ /g, '%20');
   }
 
   return getItemImageSrc(item);
@@ -493,9 +504,11 @@ function renderNetflixTop10Card(entry, position) {
 
   const usesPosterFallback =
     !item.horizontal_image &&
-    !(entry.kind === 'series' &&
+    !(
+      entry.kind === 'series' &&
       entry.season &&
-      entry.season.image);
+      entry.season.horizontal_image
+    );
 
   const seasonLabel =
     entry.kind === 'series'
@@ -1074,32 +1087,30 @@ function initializeNetflixCarousel() {
       }
 
       if (shouldRenderNetflixPage) {
-        if (shouldRenderNetflixPage) {
-          const reportIds =
-            getNetflixReportIds(
-              netflixItems
-            );
+        const reportIds =
+          getNetflixReportIds(
+            netflixItems
+          );
 
-          if (reportIds.length) {
-            const activeReportId =
-              reportIds[0];
+        if (reportIds.length) {
+          const activeReportId =
+            reportIds[0];
 
-            renderNetflixReportTabs(
-              netflixItems,
-              reportIds,
-              activeReportId
-            );
+          renderNetflixReportTabs(
+            netflixItems,
+            reportIds,
+            activeReportId
+          );
 
-            renderNetflixSeriesTop10(
-              netflixItems,
-              reportIds,
-              activeReportId
-            );
-          }
-
-          setupSeriesFilters(series);
-          setupMovieFilters(movies);
+          renderNetflixSeriesTop10(
+            netflixItems,
+            reportIds,
+            activeReportId
+          );
         }
+
+        setupSeriesFilters(series);
+        setupMovieFilters(movies);
       }
     })
     .catch(error => {
