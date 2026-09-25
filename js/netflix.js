@@ -1547,23 +1547,275 @@ function sortAndFilterMovies(list, sort) {
 }
 
 function setupSeriesFilters(allSeries) {
-  const select = document.getElementById('actorSortCustom');
-  if (!select) return;
+  const select = document.getElementById(
+    'actorSortCustom'
+  );
+
+  const yearContainer = document.getElementById(
+    'netflix-year-filters'
+  );
+
+  const genreContainer = document.getElementById(
+    'netflix-genre-filters'
+  );
 
   let currentSort = 'year';
+  let currentYear = 'all';
+  let currentGenre = 'all';
+
+  function getSeriesGenreValues(item) {
+    const genres = Array.isArray(item.genre)
+      ? item.genre
+      : [item.genre];
+
+    return genres
+      .filter(Boolean)
+      .map(genre => normalizeGenre(genre));
+  }
+
+  function getAvailableYears() {
+    return Array.from(
+      new Set(
+        allSeries
+          .map(item => parseInt(item.year, 10))
+          .filter(Number.isFinite)
+      )
+    ).sort((a, b) => b - a);
+  }
+
+  function getAvailableGenres() {
+    const genreMap = new Map();
+
+    allSeries.forEach(item => {
+      const originalGenres = Array.isArray(item.genre)
+        ? item.genre
+        : [item.genre];
+
+      originalGenres
+        .filter(Boolean)
+        .forEach(genre => {
+          const normalizedGenre =
+            normalizeGenre(genre);
+
+          if (
+            normalizedGenre &&
+            !genreMap.has(normalizedGenre)
+          ) {
+            genreMap.set(
+              normalizedGenre,
+              displayGenre(normalizedGenre)
+            );
+          }
+        });
+    });
+
+    return Array.from(genreMap.entries())
+      .map(([value, label]) => ({
+        value,
+        label
+      }))
+      .sort((a, b) => {
+        return a.label.localeCompare(
+          b.label,
+          'es',
+          {
+            sensitivity: 'base'
+          }
+        );
+      });
+  }
+
+  function updateYearButtons() {
+    if (!yearContainer) {
+      return;
+    }
+
+    yearContainer
+      .querySelectorAll('[data-netflix-year]')
+      .forEach(button => {
+        const value =
+          button.getAttribute(
+            'data-netflix-year'
+          ) || 'all';
+
+        const isActive =
+          value === currentYear;
+
+        button.classList.toggle(
+          'active',
+          isActive
+        );
+
+        button.setAttribute(
+          'aria-pressed',
+          isActive ? 'true' : 'false'
+        );
+      });
+  }
+
+  function updateGenreButtons() {
+    if (!genreContainer) {
+      return;
+    }
+
+    genreContainer
+      .querySelectorAll('[data-netflix-genre]')
+      .forEach(button => {
+        const value =
+          button.getAttribute(
+            'data-netflix-genre'
+          ) || 'all';
+
+        const isActive =
+          value === currentGenre;
+
+        button.classList.toggle(
+          'active',
+          isActive
+        );
+
+        button.setAttribute(
+          'aria-pressed',
+          isActive ? 'true' : 'false'
+        );
+      });
+  }
+
+  function renderYearFilters() {
+    if (!yearContainer) {
+      return;
+    }
+
+    const filters = [
+      {
+        value: 'all',
+        label: 'Todas'
+      },
+      ...getAvailableYears().map(year => ({
+        value: String(year),
+        label: String(year)
+      }))
+    ];
+
+    yearContainer.innerHTML = filters
+      .map(filter => {
+        const isActive =
+          filter.value === currentYear;
+
+        return `
+          <button
+            type="button"
+            class="netflix-filter-button${isActive ? ' active' : ''}"
+            data-netflix-year="${filter.value}"
+            aria-pressed="${isActive ? 'true' : 'false'}"
+          >
+            ${filter.label}
+          </button>
+        `;
+      })
+      .join('');
+
+    yearContainer
+      .querySelectorAll('[data-netflix-year]')
+      .forEach(button => {
+        button.addEventListener(
+          'click',
+          function () {
+            currentYear =
+              button.getAttribute(
+                'data-netflix-year'
+              ) || 'all';
+
+            updateYearButtons();
+            renderFiltered();
+          }
+        );
+      });
+  }
+
+  function renderGenreFilters() {
+    if (!genreContainer) {
+      return;
+    }
+
+    const filters = [
+      {
+        value: 'all',
+        label: 'Todos'
+      },
+      ...getAvailableGenres()
+    ];
+
+    genreContainer.innerHTML = filters
+      .map(filter => {
+        const isActive =
+          filter.value === currentGenre;
+
+        return `
+          <button
+            type="button"
+            class="netflix-filter-button${isActive ? ' active' : ''}"
+            data-netflix-genre="${filter.value}"
+            aria-pressed="${isActive ? 'true' : 'false'}"
+          >
+            ${filter.label}
+          </button>
+        `;
+      })
+      .join('');
+
+    genreContainer
+      .querySelectorAll('[data-netflix-genre]')
+      .forEach(button => {
+        button.addEventListener(
+          'click',
+          function () {
+            currentGenre =
+              button.getAttribute(
+                'data-netflix-genre'
+              ) || 'all';
+
+            updateGenreButtons();
+            renderFiltered();
+          }
+        );
+      });
+  }
 
   function renderFiltered() {
+    let sourceItems = allSeries.filter(item => {
+      const matchesYear =
+        currentYear === 'all' ||
+        parseInt(item.year, 10) ===
+        parseInt(currentYear, 10);
+
+      const matchesGenre =
+        currentGenre === 'all' ||
+        getSeriesGenreValues(item)
+          .includes(currentGenre);
+
+      return matchesYear && matchesGenre;
+    });
+
     const filtered = sortAndFilterSeries(
-      allSeries,
+      sourceItems,
       currentSort
     );
 
     const countElement =
-      document.getElementById('actor-movie-count');
+      document.getElementById(
+        'actor-movie-count'
+      );
 
     if (countElement) {
       countElement.textContent =
-        `${filtered.length} series de Netflix`;
+        filtered.length +
+        ' ' +
+        (
+          filtered.length === 1
+            ? 'serie de Netflix'
+            : 'series de Netflix'
+        );
     }
 
     renderCards(
@@ -1573,13 +1825,18 @@ function setupSeriesFilters(allSeries) {
     );
   }
 
-  setupCustomSelect(
-    'actorSortCustom',
-    function (value) {
-      currentSort = value;
-      renderFiltered();
-    }
-  );
+  renderYearFilters();
+  renderGenreFilters();
+
+  if (select) {
+    setupCustomSelect(
+      'actorSortCustom',
+      function (value) {
+        currentSort = value;
+        renderFiltered();
+      }
+    );
+  }
 
   renderFiltered();
 }
