@@ -14,72 +14,348 @@ function getReportOrder(reportId) {
   return Number(match[1]) * 10 + Number(match[2]);
 }
 
-function getLatestByReport(entries) {
-  if (!Array.isArray(entries) || !entries.length) return null;
-  const sorted = entries.slice().sort((a, b) => {
-    return getReportOrder(b.report_id) - getReportOrder(a.report_id);
-  });
-  return sorted[0] || null;
+function sortReportIdsDesc(reportIds) {
+  return [...new Set(reportIds)]
+    .filter(Boolean)
+    .sort((a, b) => getReportOrder(b) - getReportOrder(a));
 }
 
-function getAggregateFromItem(item) {
-  const aggregate = getLatestByReport(item.netflix_aggregates);
-  if (aggregate && aggregate.report_id) {
-    return {
-      report_id: aggregate.report_id,
-      periodo: aggregate.periodo || aggregate.report_id,
-      visualizaciones_totales: normalizeNumber(aggregate.visualizaciones_totales),
-      temporada_mas_vista: normalizeNumber(aggregate.temporada_mas_vista),
-      visualizaciones_temporada_mas_vista: normalizeNumber(aggregate.visualizaciones_temporada_mas_vista)
-    };
+function getNetflixReportIds(items) {
+  const reportIds = [];
+
+  (items || []).forEach(item => {
+    if (Array.isArray(item.netflix_reports)) {
+      item.netflix_reports.forEach(report => {
+        if (report && report.report_id) {
+          reportIds.push(String(report.report_id));
+        }
+      });
+    }
+
+    if (Array.isArray(item.temporadas)) {
+      item.temporadas.forEach(temp => {
+        if (!temp || !Array.isArray(temp.netflix_reports)) return;
+
+        temp.netflix_reports.forEach(report => {
+          if (report && report.report_id) {
+            reportIds.push(String(report.report_id));
+          }
+        });
+      });
+    }
+  });
+
+  return sortReportIdsDesc(reportIds);
+}
+
+function getPreviousReportId(reportIds, selectedReportId) {
+  const ordered = sortReportIdsDesc(reportIds);
+  const index = ordered.indexOf(selectedReportId);
+
+  if (index === -1 || index === ordered.length - 1) {
+    return null;
   }
 
-  const topLevelReport = getLatestByReport(item.netflix_reports);
-  if (topLevelReport && topLevelReport.report_id) {
-    return {
-      report_id: topLevelReport.report_id,
-      periodo: topLevelReport.periodo || topLevelReport.report_id,
-      visualizaciones_totales: normalizeNumber(topLevelReport.visualizaciones),
-      temporada_mas_vista: null,
-      visualizaciones_temporada_mas_vista: null
-    };
-  }
+  return ordered[index + 1];
+}
 
-  if (!Array.isArray(item.temporadas) || !item.temporadas.length) return null;
+function getReportPeriodLabel(reportId, items) {
+  let label = '';
 
-  const byReport = Object.create(null);
-  item.temporadas.forEach((temp, idx) => {
-    if (!temp || !Array.isArray(temp.netflix_reports)) return;
-    temp.netflix_reports.forEach((report) => {
-      if (!report || !report.report_id) return;
-      const views = normalizeNumber(report.visualizaciones);
-      const key = String(report.report_id);
-      if (!byReport[key]) {
-        byReport[key] = {
-          report_id: key,
-          periodo: report.periodo || key,
-          visualizaciones_totales: 0,
-          temporada_mas_vista: null,
-          visualizaciones_temporada_mas_vista: -1
-        };
+  (items || []).some(item => {
+    const reports = Array.isArray(item.netflix_reports)
+      ? item.netflix_reports
+      : [];
+
+    const report = reports.find(entry =>
+      entry && entry.report_id === reportId
+    );
+
+    if (report) {
+      label = report.periodo || reportId;
+      return true;
+    }
+
+    if (!Array.isArray(item.temporadas)) {
+      return false;
+    }
+
+    return item.temporadas.some(temp => {
+      const seasonReports =
+        temp && Array.isArray(temp.netflix_reports)
+          ? temp.netflix_reports
+          : [];
+
+      const seasonReport = seasonReports.find(entry =>
+        entry && entry.report_id === reportId
+      );
+
+      if (!seasonReport) {
+        return false;
       }
-      if (views === null) return;
-      byReport[key].visualizaciones_totales += views;
-      if (views > byReport[key].visualizaciones_temporada_mas_vista) {
-        byReport[key].visualizaciones_temporada_mas_vista = views;
-        byReport[key].temporada_mas_vista = normalizeNumber(temp.numero) || normalizeNumber(temp.season) || (idx + 1);
-      }
+
+      label = seasonReport.periodo || reportId;
+      return true;
     });
   });
 
-  const entries = Object.values(byReport).sort((a, b) => getReportOrder(b.report_id) - getReportOrder(a.report_id));
-  if (!entries.length) return null;
+  return label || reportId;
+}
 
-  const latest = entries[0];
-  if (latest.visualizaciones_temporada_mas_vista < 0) {
-    latest.visualizaciones_temporada_mas_vista = null;
+function getMovieReportForPeriod(item, reportId) {
+  if (!item || !Array.isArray(item.netflix_reports)) {
+    return null;
   }
-  return latest;
+
+  return item.netflix_reports.find(report =>
+    report &&
+    String(report.report_id) === String(reportId)
+  ) || null;
+}
+
+function getSeriesReportsForPeriod(item, reportId) {
+  if (!item || !Array.isArray(item.temporadas)) {
+    return [];
+  }
+
+  const rows = [];
+
+  item.temporadas.forEach((temp, index) => {
+    if (!temp || !Array.isArray(temp.netflix_reports)) {
+      return;
+    }
+
+    const report = temp.netflix_reports.find(entry =>
+      entry &&
+      String(entry.report_id) === String(reportId)
+    );
+
+    if (!report) {
+      return;
+    }
+
+    const seasonNumber =
+      normalizeNumber(temp.numero) ??
+      normalizeNumber(temp.season) ??
+      (index + 1);
+
+    rows.push({
+      item,
+      season: temp,
+      seasonNumber,
+      report
+    });
+  });
+
+  return rows;
+}
+
+/*
+ * Construye las entradas de series correspondientes
+ * exclusivamente al informe seleccionado.
+ *
+ * Netflix rankea temporadas individualmente:
+ * una misma producción puede tener más de una temporada
+ * dentro del mismo informe.
+ */
+function buildSeriesRankingEntries(items, reportId) {
+  const entries = [];
+
+  (items || []).forEach(item => {
+    if (!item || item.type === 'pelicula') {
+      return;
+    }
+
+    const seasonReports =
+      getSeriesReportsForPeriod(item, reportId);
+
+    seasonReports.forEach(row => {
+      const views =
+        normalizeNumber(row.report.visualizaciones);
+
+      const ranking =
+        normalizeNumber(row.report.ranking_series);
+
+      if (views === null || ranking === null) {
+        return;
+      }
+
+      entries.push({
+        kind: 'series',
+        key:
+          String(item.id) +
+          '::season-' +
+          String(row.seasonNumber),
+        item,
+        season: row.season,
+        seasonNumber: row.seasonNumber,
+        report: row.report,
+        reportId,
+        views,
+        ranking,
+        totalRanking:
+          normalizeNumber(
+            row.report.total_ranking_series
+          )
+      });
+    });
+  });
+
+  return entries.sort((a, b) => {
+    if (a.ranking !== b.ranking) {
+      return a.ranking - b.ranking;
+    }
+
+    if (a.views !== b.views) {
+      return b.views - a.views;
+    }
+
+    return String(a.item.title || '')
+      .localeCompare(
+        String(b.item.title || ''),
+        'es'
+      );
+  });
+}
+
+
+/*
+ * Construye las entradas de películas correspondientes
+ * exclusivamente al informe seleccionado.
+ */
+function buildMovieRankingEntries(items, reportId) {
+  const entries = [];
+
+  (items || []).forEach(item => {
+    if (!item || item.type !== 'pelicula') {
+      return;
+    }
+
+    const report =
+      getMovieReportForPeriod(item, reportId);
+
+    if (!report) {
+      return;
+    }
+
+    const views =
+      normalizeNumber(report.visualizaciones);
+
+    const ranking =
+      normalizeNumber(report.ranking_peliculas);
+
+    if (views === null || ranking === null) {
+      return;
+    }
+
+    entries.push({
+      kind: 'movies',
+      key: String(item.id),
+      item,
+      report,
+      reportId,
+      views,
+      ranking,
+      totalRanking:
+        normalizeNumber(
+          report.total_ranking_peliculas
+        )
+    });
+  });
+
+  return entries.sort((a, b) => {
+    if (a.ranking !== b.ranking) {
+      return a.ranking - b.ranking;
+    }
+
+    if (a.views !== b.views) {
+      return b.views - a.views;
+    }
+
+    return String(a.item.title || '')
+      .localeCompare(
+        String(b.item.title || ''),
+        'es'
+      );
+  });
+}
+
+
+/*
+ * Devuelve solamente las primeras diez posiciones
+ * disponibles en Cine Argentum para el informe.
+ */
+function getNetflixTop10(items, reportId, type) {
+  const entries =
+    type === 'movies'
+      ? buildMovieRankingEntries(items, reportId)
+      : buildSeriesRankingEntries(items, reportId);
+
+  return entries.slice(0, 10);
+}
+
+
+/*
+ * NUEVO no significa estreno de Netflix.
+ *
+ * Una entrada es NUEVO cuando aparece en el Top 10
+ * del informe seleccionado pero no estaba en el Top 10
+ * del informe inmediatamente anterior.
+ */
+function markNewTop10Entries(
+  currentEntries,
+  previousEntries
+) {
+  const previousKeys = new Set(
+    (previousEntries || []).map(entry => entry.key)
+  );
+
+  return (currentEntries || []).map(entry => ({
+    ...entry,
+    isNew: !previousKeys.has(entry.key)
+  }));
+}
+
+
+/*
+ * Obtiene el Top 10 completo de un período y,
+ * si existe un informe anterior, calcula NUEVO.
+ */
+function getNetflixTop10ForReport(
+  items,
+  reportIds,
+  reportId,
+  type
+) {
+  const currentTop10 =
+    getNetflixTop10(items, reportId, type);
+
+  const previousReportId =
+    getPreviousReportId(reportIds, reportId);
+
+  /*
+   * Si no existe informe anterior no marcamos todas
+   * las entradas como NUEVO. No tenemos base
+   * comparativa suficiente.
+   */
+  if (!previousReportId) {
+    return currentTop10.map(entry => ({
+      ...entry,
+      isNew: false
+    }));
+  }
+
+  const previousTop10 =
+    getNetflixTop10(
+      items,
+      previousReportId,
+      type
+    );
+
+  return markNewTop10Entries(
+    currentTop10,
+    previousTop10
+  );
 }
 
 function formatViews(value) {
