@@ -464,6 +464,47 @@
     }
 
     /* ==================================================
+   EMISIONES EN TV
+================================================== */
+
+    .netflix-tv-section {
+      margin-top: 42px;
+      padding-top: 30px;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .netflix-tv-section .netflix-section-title {
+      margin-bottom: 6px;
+    }
+
+    .netflix-tv-section .netflix-section-sub {
+      margin: 0 12px 20px;
+      color: #aeb6c0;
+    }
+
+    .netflix-tv-grid {
+      margin-top: 20px;
+    }
+
+    .netflix-tv-channel {
+      color: #e50914;
+      font-size: 0.9rem;
+      font-weight: 600;
+    }
+
+    @media (max-width: 767px) {
+      .netflix-tv-section {
+        margin-top: 34px;
+        padding-top: 26px;
+      }
+
+      .netflix-tv-section .netflix-section-sub {
+        margin-right: 4px;
+        margin-left: 4px;
+      }
+    }
+
+    /* ==================================================
        TOP 10 NETFLIX
        Base visual: Top 10 de telefe-00s.html
     ================================================== */
@@ -743,6 +784,20 @@
         <!-- Series de Netflix -->
       </div>
 
+      <!-- Series de Netflix emitidas en televisión -->
+      <section id="netflix-tv-broadcasts" class="netflix-tv-section">
+        <h2 class="netflix-section-title">
+          Emisiones en TV
+        </h2>
+
+        <p id="netflix-tv-count" class="netflix-section-sub">
+          Cargando emisiones televisivas...
+        </p>
+
+        <div id="netflix-tv-list" class="actor-movies-grid netflix-tv-grid">
+        </div>
+      </section>
+
       <h2 class="netflix-section-title">Peliculas de Netflix</h2>
       <p class="netflix-section-sub" id="netflix-movie-count">Cargando peliculas...</p>
       <div class="actor-filters filters-inline">
@@ -764,7 +819,7 @@
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   <script src="js/lightslider.js"></script>
   <script src="js/script.js?v=20260219-1"></script>
-  <script src="js/netflix.js?v=20260925-3"></script>
+  <script src="js/netflix.js?v=20260925-4"></script>
 </body>
 
 </html>

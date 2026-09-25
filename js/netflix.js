@@ -1358,6 +1358,7 @@ function initializeNetflixCarousel() {
 
       if (shouldRenderNetflixPage) {
         renderNetflixUpcomingSeries(series);
+        renderNetflixTvSeries(series);
 
         const reportIds =
           getNetflixReportIds(
