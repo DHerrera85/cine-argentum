@@ -358,6 +358,111 @@ function getNetflixTop10ForReport(
   );
 }
 
+/*
+ * Formato compacto para visualizaciones Netflix.
+ *
+ * 9.900.000 -> 9,9 M
+ * 9.000.000 -> 9 M
+ * 800.000   -> 800 mil
+ */
+function formatNetflixViews(value) {
+  const n = normalizeNumber(value);
+
+  if (n === null) {
+    return 'Dato pendiente';
+  }
+
+  if (n >= 1000000) {
+    const millions = n / 1000000;
+
+    return (
+      millions.toLocaleString('es-AR', {
+        minimumFractionDigits: 0,
+        maximumFractionDigits: 1
+      }) + ' M'
+    );
+  }
+
+  if (n >= 1000) {
+    const thousands = n / 1000;
+
+    return (
+      thousands.toLocaleString('es-AR', {
+        minimumFractionDigits: 0,
+        maximumFractionDigits: 1
+      }) + ' mil'
+    );
+  }
+
+  return n.toLocaleString('es-AR');
+}
+
+
+/*
+ * Formato de enteros para rankings.
+ *
+ * 8196 -> 8.196
+ */
+function formatNetflixRankingNumber(value) {
+  const n = normalizeNumber(value);
+
+  if (n === null) {
+    return '';
+  }
+
+  return Math.trunc(n).toLocaleString('es-AR');
+}
+
+
+/*
+ * Texto completo del ranking general.
+ *
+ * Ranking general: 130 de 8.196
+ */
+function formatNetflixRanking(entry) {
+  if (!entry) {
+    return '';
+  }
+
+  const ranking =
+    formatNetflixRankingNumber(entry.ranking);
+
+  const total =
+    formatNetflixRankingNumber(entry.totalRanking);
+
+  if (!ranking) {
+    return '';
+  }
+
+  if (!total) {
+    return 'Ranking general: ' + ranking;
+  }
+
+  return (
+    'Ranking general: ' +
+    ranking +
+    ' de ' +
+    total
+  );
+}
+
+
+/*
+ * Normaliza el nombre visible del período.
+ *
+ * Ene-Jun 2026 -> Ene–Jun 2026
+ * Jul-Dic 2025 -> Jul–Dic 2025
+ */
+function formatNetflixPeriodLabel(value) {
+  if (!value) {
+    return '';
+  }
+
+  return String(value)
+    .replace(/Ene-Jun/gi, 'Ene–Jun')
+    .replace(/Jul-Dic/gi, 'Jul–Dic');
+}
+
 function formatViews(value) {
   const n = normalizeNumber(value);
   if (n === null) return 'Dato pendiente';
