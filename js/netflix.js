@@ -14,6 +14,72 @@ function getReportOrder(reportId) {
   return Number(match[1]) * 10 + Number(match[2]);
 }
 
+function getLatestByReport(entries) {
+  if (!Array.isArray(entries) || !entries.length) return null;
+
+  return entries
+    .slice()
+    .sort((a, b) => getReportOrder(b.report_id) - getReportOrder(a.report_id))[0] || null;
+}
+
+function getAggregateFromItem(item) {
+  const aggregate = getLatestByReport(item && item.netflix_aggregates);
+  if (aggregate && aggregate.report_id) {
+    return {
+      report_id: aggregate.report_id,
+      periodo: aggregate.periodo || aggregate.report_id,
+      visualizaciones_totales: normalizeNumber(aggregate.visualizaciones_totales),
+      temporada_mas_vista: normalizeNumber(aggregate.temporada_mas_vista),
+      visualizaciones_temporada_mas_vista: normalizeNumber(aggregate.visualizaciones_temporada_mas_vista)
+    };
+  }
+
+  if (!item || !Array.isArray(item.temporadas) || !item.temporadas.length) return null;
+
+  const byReport = Object.create(null);
+  item.temporadas.forEach((temp, index) => {
+    if (!temp || !Array.isArray(temp.netflix_reports)) return;
+
+    temp.netflix_reports.forEach(report => {
+      if (!report || !report.report_id) return;
+
+      const reportId = String(report.report_id);
+      const views = normalizeNumber(report.visualizaciones);
+      if (!byReport[reportId]) {
+        byReport[reportId] = {
+          report_id: reportId,
+          periodo: report.periodo || reportId,
+          visualizaciones_totales: 0,
+          temporada_mas_vista: null,
+          visualizaciones_temporada_mas_vista: -1
+        };
+      }
+
+      if (views === null) return;
+
+      byReport[reportId].visualizaciones_totales += views;
+      if (views > byReport[reportId].visualizaciones_temporada_mas_vista) {
+        byReport[reportId].visualizaciones_temporada_mas_vista = views;
+        byReport[reportId].temporada_mas_vista =
+          normalizeNumber(temp.numero) ??
+          normalizeNumber(temp.season) ??
+          (index + 1);
+      }
+    });
+  });
+
+  const entries = Object.values(byReport).sort(
+    (a, b) => getReportOrder(b.report_id) - getReportOrder(a.report_id)
+  );
+  if (!entries.length) return null;
+
+  const latest = entries[0];
+  if (latest.visualizaciones_temporada_mas_vista < 0) {
+    latest.visualizaciones_temporada_mas_vista = null;
+  }
+  return latest;
+}
+
 function sortReportIdsDesc(reportIds) {
   return [...new Set(reportIds)]
     .filter(Boolean)
@@ -648,6 +714,10 @@ function renderNetflixSeriesTop10(
     );
 
   container.innerHTML = '';
+  
+  container.style.display = 'block';
+  container.style.visibility = 'visible';
+  container.style.opacity = '1';
 
   entries.forEach((entry, index) => {
     container.appendChild(
