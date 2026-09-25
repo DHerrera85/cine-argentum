@@ -289,6 +289,102 @@
     }
 
     /* ==================================================
+   PRÓXIMAMENTE EN NETFLIX
+================================================== */
+
+    .netflix-upcoming-section {
+      margin: 12px 4px 42px;
+    }
+
+    .netflix-upcoming-heading {
+      margin-bottom: 20px;
+    }
+
+    .netflix-upcoming-heading .showcase-heading {
+      margin: 0;
+      color: #ffffff;
+    }
+
+    .netflix-upcoming-count {
+      margin: 7px 0 0;
+      color: #aeb6c0;
+      font-size: 0.95rem;
+    }
+
+    .netflix-upcoming-slider {
+      margin: 0;
+      padding: 0;
+    }
+
+    .netflix-upcoming-card {
+      display: block;
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .netflix-upcoming-poster {
+      width: 100%;
+      aspect-ratio: 2 / 3;
+      overflow: hidden;
+      border-radius: 12px;
+      background: #23272f;
+    }
+
+    .netflix-upcoming-poster img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .netflix-upcoming-info {
+      padding: 11px 5px 4px;
+      text-align: center;
+    }
+
+    .netflix-upcoming-title {
+      display: block;
+      color: #ffffff;
+      font-size: 0.96rem;
+      font-weight: 600;
+      line-height: 1.3;
+    }
+
+    .netflix-upcoming-meta {
+      display: block;
+      margin-top: 4px;
+      color: #aeb6c0;
+      font-size: 0.88rem;
+    }
+
+    .netflix-upcoming-status {
+      display: block;
+      margin-top: 3px;
+      color: #e50914;
+      font-size: 0.85rem;
+      font-weight: 600;
+    }
+
+    @media (max-width: 767px) {
+      .netflix-upcoming-section {
+        margin: 26px 4px 34px;
+      }
+
+      .netflix-upcoming-heading {
+        margin-bottom: 16px;
+      }
+
+      .netflix-upcoming-title {
+        font-size: 0.9rem;
+      }
+
+      .netflix-upcoming-meta,
+      .netflix-upcoming-status {
+        font-size: 0.8rem;
+      }
+    }
+
+    /* ==================================================
        TOP 10 NETFLIX
        Base visual: Top 10 de telefe-00s.html
     ================================================== */
@@ -501,6 +597,23 @@
           </div>
         </div>
       </div>
+
+      <!-- Próximamente en Netflix -->
+      <section id="netflix-upcoming" class="netflix-upcoming-section">
+        <div class="netflix-upcoming-heading">
+          <h2 class="showcase-heading">
+            Próximamente en Netflix
+          </h2>
+
+          <p id="netflix-upcoming-count" class="netflix-upcoming-count">
+            Cargando próximas series...
+          </p>
+        </div>
+
+        <ul id="netflix-upcoming-slider" class="slider-v netflix-upcoming-slider cs-hidden" data-skip-auto="true"
+          aria-label="Próximas series argentinas de Netflix">
+        </ul>
+      </section>
 
       <!-- Top 10 series Netflix -->
       <section id="netflix-series-top10" class="netflix-top10-section">

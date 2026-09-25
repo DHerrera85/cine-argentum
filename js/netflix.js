@@ -844,6 +844,227 @@ function isNetflixItem(item) {
   return channel.includes('netflix') || producer.includes('netflix') || platforms.some(p => p.includes('netflix'));
 }
 
+/* =========================================================
+   PRÓXIMAS SERIES DE NETFLIX
+========================================================= */
+
+function isNetflixUpcomingSeries(item) {
+  if (!item || item.type === 'pelicula') {
+    return false;
+  }
+
+  const status = String(item.status || '')
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .toLowerCase()
+    .trim();
+
+  const releaseValue = parseReleaseDateValue(
+    item.release_date ||
+    item.fecha_estreno
+  );
+
+  const today = new Date();
+
+  const todayValue = Date.UTC(
+    today.getFullYear(),
+    today.getMonth(),
+    today.getDate()
+  );
+
+  return (
+    status === 'en produccion' ||
+    (
+      releaseValue !== null &&
+      releaseValue > todayValue
+    )
+  );
+}
+
+function compareNetflixUpcomingSeries(a, b) {
+  const releaseA = parseReleaseDateValue(
+    a.release_date ||
+    a.fecha_estreno
+  );
+
+  const releaseB = parseReleaseDateValue(
+    b.release_date ||
+    b.fecha_estreno
+  );
+
+  if (
+    releaseA !== null &&
+    releaseB !== null &&
+    releaseA !== releaseB
+  ) {
+    return releaseA - releaseB;
+  }
+
+  if (releaseA !== null && releaseB === null) {
+    return -1;
+  }
+
+  if (releaseA === null && releaseB !== null) {
+    return 1;
+  }
+
+  return String(a.title || '').localeCompare(
+    String(b.title || ''),
+    'es',
+    {
+      sensitivity: 'base'
+    }
+  );
+}
+
+function buildNetflixUpcomingCard(item) {
+  const itemId = String(item.id || '').trim();
+  const title = escapeAttribute(
+    item.title || 'Sin título'
+  );
+
+  const image = escapeAttribute(
+    getItemImageSrc(item)
+  );
+
+  const year = escapeAttribute(
+    item.year || ''
+  );
+
+  const genre = escapeAttribute(
+    Array.isArray(item.genre)
+      ? item.genre.join(' · ')
+      : item.genre || ''
+  );
+
+  const status = String(item.status || '')
+    .trim();
+
+  const statusLabel =
+    status || 'Próximamente';
+
+  const meta = [year, genre]
+    .filter(Boolean)
+    .join(' · ');
+
+  return `
+    <li class="netflix-upcoming-item">
+      <a
+        href="show.html?id=${encodeURIComponent(itemId)}"
+        class="netflix-upcoming-card"
+        aria-label="Ver ficha de ${title}"
+      >
+        <div class="netflix-upcoming-poster">
+          <img
+            src="${image}"
+            alt="${title}"
+            loading="lazy"
+            onerror="this.onerror=null;this.src='${getPlaceholderImageSrc()}';"
+          >
+        </div>
+
+        <div class="netflix-upcoming-info">
+          <strong class="netflix-upcoming-title">
+            ${title}
+          </strong>
+
+          <span class="netflix-upcoming-meta">
+            ${meta}
+          </span>
+
+          <span class="netflix-upcoming-status">
+            ${escapeAttribute(statusLabel)}
+          </span>
+        </div>
+      </a>
+    </li>
+  `;
+}
+
+function renderNetflixUpcomingSeries(series) {
+  const section = document.getElementById(
+    'netflix-upcoming'
+  );
+
+  const container = document.getElementById(
+    'netflix-upcoming-slider'
+  );
+
+  const countElement = document.getElementById(
+    'netflix-upcoming-count'
+  );
+
+  if (!section || !container) {
+    return;
+  }
+
+  const upcomingSeries = series
+    .filter(isNetflixUpcomingSeries)
+    .sort(compareNetflixUpcomingSeries);
+
+  if (!upcomingSeries.length) {
+    section.hidden = true;
+    return;
+  }
+
+  section.hidden = false;
+
+  if (countElement) {
+    countElement.textContent =
+      upcomingSeries.length +
+      ' ' +
+      (
+        upcomingSeries.length === 1
+          ? 'serie próxima'
+          : 'series próximas'
+      );
+  }
+
+  container.innerHTML = upcomingSeries
+    .map(buildNetflixUpcomingCard)
+    .join('');
+
+  if (
+    window.jQuery &&
+    window.jQuery.fn &&
+    window.jQuery.fn.lightSlider
+  ) {
+    window.jQuery(container).lightSlider({
+      item: 5,
+      autoWidth: false,
+      slideMove: 1,
+      slideMargin: 18,
+      loop: false,
+      pager: false,
+      controls: true,
+      enableTouch: true,
+      enableDrag: true,
+      freeMove: false,
+      responsive: [
+        {
+          breakpoint: 1100,
+          settings: {
+            item: 4,
+            slideMove: 1,
+            slideMargin: 14
+          }
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            item: 2,
+            slideMove: 1,
+            slideMargin: 10
+          }
+        }
+      ]
+    });
+  }
+
+  container.classList.remove('cs-hidden');
+  container.classList.add('slider-ready');
+}
+
 function normalizeGenre(value) {
   return value ? String(value).trim().toLowerCase() : '';
 }
@@ -1136,6 +1357,8 @@ function initializeNetflixCarousel() {
       }
 
       if (shouldRenderNetflixPage) {
+        renderNetflixUpcomingSeries(series);
+
         const reportIds =
           getNetflixReportIds(
             netflixItems
