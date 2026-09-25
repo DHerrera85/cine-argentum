@@ -1065,6 +1065,103 @@ function renderNetflixUpcomingSeries(series) {
   container.classList.add('slider-ready');
 }
 
+/* =========================================================
+   SERIES DE NETFLIX EMITIDAS EN TV
+========================================================= */
+
+function getNetflixTvChannels(item) {
+  const channels = [];
+
+  if (Array.isArray(item.air_channels)) {
+    channels.push(...item.air_channels);
+  }
+
+  if (Array.isArray(item.air_broadcasts)) {
+    item.air_broadcasts.forEach(broadcast => {
+      if (broadcast && broadcast.channel) {
+        channels.push(broadcast.channel);
+      }
+    });
+  }
+
+  return Array.from(
+    new Set(
+      channels
+        .filter(Boolean)
+        .map(channel => String(channel).trim())
+        .filter(channel => {
+          const normalized = channel.toLowerCase();
+          return normalized && !normalized.includes('netflix');
+        })
+    )
+  );
+}
+
+function buildNetflixTvCard(item) {
+  const itemId = String(item.id || '').trim();
+  const title = escapeAttribute(item.title || 'Sin título');
+  const image = escapeAttribute(getItemImageSrc(item));
+  const year = escapeAttribute(item.year || '');
+  const channels = getNetflixTvChannels(item);
+  const channelLabel = escapeAttribute(channels.join(' · '));
+
+  return `
+    <a
+      href="show.html?id=${encodeURIComponent(itemId)}"
+      class="actor-movie-card"
+      aria-label="Ver ficha de ${title}"
+    >
+      <img
+        src="${image}"
+        alt="${title}"
+        loading="lazy"
+        onerror="this.onerror=null;this.src='${getPlaceholderImageSrc()}';"
+      >
+
+      <h3>${title}</h3>
+
+      ${year ? `<p>${year}</p>` : ''}
+
+      <span class="netflix-tv-channel">
+        ${channelLabel}
+      </span>
+    </a>
+  `;
+}
+
+function renderNetflixTvSeries(series) {
+  const section = document.getElementById('netflix-tv-broadcasts');
+  const container = document.getElementById('netflix-tv-list');
+  const countElement = document.getElementById('netflix-tv-count');
+
+  if (!section || !container) {
+    return;
+  }
+
+  const tvSeries = series
+    .filter(item => getNetflixTvChannels(item).length > 0)
+    .sort(compareSeriesByLatestReleaseDesc);
+
+  if (!tvSeries.length) {
+    section.hidden = true;
+    return;
+  }
+
+  section.hidden = false;
+
+  container.innerHTML = tvSeries
+    .map(buildNetflixTvCard)
+    .join('');
+
+  if (countElement) {
+    countElement.textContent =
+      `${tvSeries.length} ${tvSeries.length === 1
+        ? 'serie emitida en televisión'
+        : 'series emitidas en televisión'
+      }.`;
+  }
+}
+
 function normalizeGenre(value) {
   return value ? String(value).trim().toLowerCase() : '';
 }
