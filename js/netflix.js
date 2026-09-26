@@ -1886,23 +1886,33 @@ if (document.readyState === 'loading') {
 }
 
 /*
- * Obtiene la medición de una película correspondiente
- * al informe Netflix más reciente disponible.
+ * Obtiene la temporada más vista de una serie dentro
+ * del informe Netflix más reciente disponible.
  */
-function getMovieCatalogMetric(item) {
+function getSeriesCatalogMetric(item) {
   const reportIds =
     getNetflixReportIds([item]);
 
   for (const reportId of reportIds) {
     const entries =
-      buildMovieRankingEntries(
+      buildSeriesRankingEntries(
         [item],
         reportId
       );
 
-    if (entries.length) {
-      return entries[0];
+    if (!entries.length) {
+      continue;
     }
+
+    return entries
+      .slice()
+      .sort((a, b) => {
+        if (a.views !== b.views) {
+          return b.views - a.views;
+        }
+
+        return a.ranking - b.ranking;
+      })[0];
   }
 
   return null;
@@ -1932,54 +1942,52 @@ function getMovieCatalogMetric(item) {
 }
 
 function renderCards(items, containerId, type) {
-  const container = document.getElementById(containerId);
-  if (!container) return;
+  const container =
+    document.getElementById(containerId);
+
+  if (!container) {
+    return;
+  }
+
   container.innerHTML = '';
+
   items.forEach(item => {
-    const card = document.createElement('div');
-    card.className = 'actor-movie-card';
-    const tipoEmision = type === 'series' && item.tipo_emision ? item.tipo_emision : '';
-    let imageSrc = getItemImageSrc(item);
-    if (type === 'series' && item.id === 'V180' && Array.isArray(item.temporadas)) {
-      const season5 = item.temporadas.find(t => t && Number(t.numero || t.season) === 5 && t.image);
-      if (season5 && season5.image) {
-        imageSrc = String(season5.image).replace(/ /g, '%20');
-      }
-    }
+    const card =
+      document.createElement('div');
 
-    /*
- * Obtiene la temporada más vista de una serie dentro
- * del informe Netflix más reciente disponible.
- *
- * Mantiene el mismo criterio utilizado por el Top 10:
- * temporada, visualizaciones y ranking pertenecen
- * al mismo informe.
- */
-    function getSeriesCatalogMetric(item) {
-      const reportIds = getNetflixReportIds([item]);
+    card.className =
+      'actor-movie-card';
 
-      for (const reportId of reportIds) {
-        const entries = buildSeriesRankingEntries(
-          [item],
-          reportId
+    const tipoEmision =
+      type === 'series' &&
+        item.tipo_emision
+        ? item.tipo_emision
+        : '';
+
+    let imageSrc =
+      getItemImageSrc(item);
+
+    if (
+      type === 'series' &&
+      item.id === 'V180' &&
+      Array.isArray(item.temporadas)
+    ) {
+      const season5 =
+        item.temporadas.find(
+          season =>
+            season &&
+            Number(
+              season.numero ||
+              season.season
+            ) === 5 &&
+            season.image
         );
 
-        if (!entries.length) {
-          continue;
-        }
-
-        return entries
-          .slice()
-          .sort((a, b) => {
-            if (a.views !== b.views) {
-              return b.views - a.views;
-            }
-
-            return a.ranking - b.ranking;
-          })[0];
+      if (season5 && season5.image) {
+        imageSrc =
+          String(season5.image)
+            .replace(/ /g, '%20');
       }
-
-      return null;
     }
 
     let netflixMetricHtml = '';
@@ -2018,48 +2026,109 @@ function renderCards(items, containerId, type) {
           );
 
         netflixMetricHtml = `
-      <div class="actor-movie-meta netflix-catalog-season">
-        ${seasonAndPeriod}
-      </div>
+          <div class="actor-movie-meta netflix-catalog-season">
+            ${seasonAndPeriod}
+          </div>
 
-      <div class="actor-movie-viewers">
-        ${viewsLabel}
-      </div>
+          <div class="actor-movie-viewers">
+            ${viewsLabel}
+          </div>
 
-      ${rankingLabel
+          ${rankingLabel
             ? `
-            <div class="actor-movie-meta netflix-catalog-ranking">
-              ${rankingLabel}
-            </div>
-          `
+                <div class="actor-movie-meta netflix-catalog-ranking">
+                  ${rankingLabel}
+                </div>
+              `
             : ''
           }
-    `;
+        `;
       }
-    } else if (item.netflix_metric) {
-      const metric = item.netflix_metric;
+    } else if (type === 'movies') {
+      const catalogMetric =
+        getMovieCatalogMetric(item);
 
-      netflixMetricHtml = `
-    <div class="actor-movie-viewers">
-      Visualizaciones (${metric.periodo ||
-        metric.report_id ||
-        'Netflix'
-        }): ${formatViews(metric.visualizaciones_totales)}
-    </div>
-  `;
+      if (catalogMetric) {
+        const periodLabel =
+          formatNetflixPeriodLabel(
+            catalogMetric.report.periodo ||
+            catalogMetric.reportId
+          );
+
+        const viewsLabel =
+          formatNetflixViews(
+            catalogMetric.views
+          ) +
+          ' visualizaciones';
+
+        const rankingLabel =
+          formatNetflixRanking(
+            catalogMetric
+          );
+
+        netflixMetricHtml = `
+          <div class="actor-movie-meta netflix-catalog-period">
+            ${periodLabel}
+          </div>
+
+          <div class="actor-movie-viewers">
+            ${viewsLabel}
+          </div>
+
+          ${rankingLabel
+            ? `
+                <div class="actor-movie-meta netflix-catalog-ranking">
+                  ${rankingLabel}
+                </div>
+              `
+            : ''
+          }
+        `;
+      }
     }
-    const escapedTitle = escapeAttribute(item.title);
+
+    const escapedTitle =
+      escapeAttribute(
+        item.title || ''
+      );
+
+    const genreLabel =
+      Array.isArray(item.genre)
+        ? item.genre.join(' · ')
+        : item.genre || '';
+
     card.innerHTML = `
-      <a href="show.html?id=${item.id}">
-        <img src="${imageSrc}" alt="${escapedTitle}" onerror="this.onerror=null;this.src='${getPlaceholderImageSrc()}';">
+      <a href="show.html?id=${encodeURIComponent(item.id)}">
+        <img
+          src="${imageSrc}"
+          alt="${escapedTitle}"
+          loading="lazy"
+          onerror="this.onerror=null;this.src='${getPlaceholderImageSrc()}';"
+        >
+
         <div class="actor-movie-info">
-          <div class="actor-movie-title">${escapedTitle}</div>
-          <div class="actor-movie-meta">${item.year} · ${item.genre || ''}</div>
-          ${tipoEmision ? '<div class="actor-movie-meta" style="color:#b0b0b0;">' + tipoEmision + '</div>' : ''}
+          <div class="actor-movie-title">
+            ${escapedTitle}
+          </div>
+
+          <div class="actor-movie-meta">
+            ${item.year || ''}${item.year && genreLabel ? ' · ' : ''}${escapeAttribute(genreLabel)}
+          </div>
+
+          ${tipoEmision
+        ? `
+                <div class="actor-movie-meta">
+                  ${escapeAttribute(tipoEmision)}
+                </div>
+              `
+        : ''
+      }
+
           ${netflixMetricHtml}
         </div>
       </a>
     `;
+
     container.appendChild(card);
   });
 }
