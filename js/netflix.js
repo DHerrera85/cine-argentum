@@ -1797,8 +1797,13 @@ function initializeNetflixCarousel() {
       window.netflixDebug.moviesCount = movies.length;
 
       const shouldRenderIndexCarousel = !!indexContainer;
-      const shouldRenderNetflixPage = !!document.getElementById('actorSortCustom') || !!document.getElementById('movieSortCustom');
-
+      const shouldRenderNetflixPage =
+        !!document.getElementById(
+          'actorMoviesList'
+        ) ||
+        !!document.getElementById(
+          'netflixMoviesList'
+        );
       if (shouldRenderIndexCarousel) {
         renderIndexNetflixCarousel(movies);
         window.netflixDebug.renderCalled = true;
@@ -1878,6 +1883,52 @@ if (document.readyState === 'loading') {
   console.log('[Netflix] DOM already loaded, using setTimeout');
   setTimeout(initializeNetflixCarousel, 50);
   window.netflixDebug.strategy = 'setTimeout';
+}
+
+/*
+ * Obtiene la medición de una película correspondiente
+ * al informe Netflix más reciente disponible.
+ */
+function getMovieCatalogMetric(item) {
+  const reportIds =
+    getNetflixReportIds([item]);
+
+  for (const reportId of reportIds) {
+    const entries =
+      buildMovieRankingEntries(
+        [item],
+        reportId
+      );
+
+    if (entries.length) {
+      return entries[0];
+    }
+  }
+
+  return null;
+}
+
+/*
+ * Obtiene la medición de una película correspondiente
+ * al informe Netflix más reciente disponible.
+ */
+function getMovieCatalogMetric(item) {
+  const reportIds =
+    getNetflixReportIds([item]);
+
+  for (const reportId of reportIds) {
+    const entries =
+      buildMovieRankingEntries(
+        [item],
+        reportId
+      );
+
+    if (entries.length) {
+      return entries[0];
+    }
+  }
+
+  return null;
 }
 
 function renderCards(items, containerId, type) {
@@ -2395,34 +2446,275 @@ function setupSeriesFilters(allSeries) {
 }
 
 function setupMovieFilters(allMovies) {
-  const select = document.getElementById('movieSortCustom');
-  if (!select) return;
-  const optionsList = select.querySelector('.custom-select-options');
-  if (!optionsList) return;
+  const yearContainer =
+    document.getElementById(
+      'netflix-movie-year-filters'
+    );
 
-  let currentSort = 'netflix-views-desc';
-  const genreValues = Array.from(new Set(allMovies
-    .map(item => normalizeGenre(item.genre))
-    .filter(Boolean)))
-    .sort((a, b) => a.localeCompare(b, 'es'));
+  const genreContainer =
+    document.getElementById(
+      'netflix-movie-genre-filters'
+    );
 
-  genreValues.forEach((genre) => {
-    const li = document.createElement('li');
-    li.setAttribute('data-value', 'genre:' + genre);
-    li.textContent = displayGenre(genre);
-    optionsList.appendChild(li);
-  });
+  let currentYear = 'all';
+  let currentGenre = 'all';
 
-  function renderFiltered() {
-    const filtered = sortAndFilterMovies(allMovies, currentSort);
-    document.getElementById('netflix-movie-count').textContent = `${filtered.length} peliculas de Netflix`;
-    renderCards(filtered, 'netflixMoviesList', 'movies');
+  function getMovieGenres(item) {
+    const genres = Array.isArray(item.genre)
+      ? item.genre
+      : [item.genre];
+
+    return genres
+      .filter(Boolean)
+      .map(genre =>
+        normalizeGenre(genre)
+      );
   }
 
-  setupCustomSelect('movieSortCustom', function (value) {
-    currentSort = value;
-    renderFiltered();
+  const availableYears =
+    Array.from(
+      new Set(
+        allMovies
+          .map(item =>
+            parseInt(item.year, 10)
+          )
+          .filter(Number.isFinite)
+      )
+    ).sort((a, b) => b - a);
+
+  const genreMap = new Map();
+
+  allMovies.forEach(item => {
+    const genres = Array.isArray(item.genre)
+      ? item.genre
+      : [item.genre];
+
+    genres
+      .filter(Boolean)
+      .forEach(genre => {
+        const normalized =
+          normalizeGenre(genre);
+
+        if (
+          normalized &&
+          !genreMap.has(normalized)
+        ) {
+          genreMap.set(
+            normalized,
+            displayGenre(normalized)
+          );
+        }
+      });
   });
+
+  const availableGenres =
+    Array.from(genreMap.entries())
+      .map(([value, label]) => ({
+        value,
+        label
+      }))
+      .sort((a, b) =>
+        a.label.localeCompare(
+          b.label,
+          'es',
+          {
+            sensitivity: 'base'
+          }
+        )
+      );
+
+  function updateYearButtons() {
+    if (!yearContainer) {
+      return;
+    }
+
+    yearContainer
+      .querySelectorAll(
+        '[data-netflix-movie-year]'
+      )
+      .forEach(button => {
+        const value =
+          button.dataset.netflixMovieYear ||
+          'all';
+
+        const isActive =
+          value === currentYear;
+
+        button.classList.toggle(
+          'active',
+          isActive
+        );
+
+        button.setAttribute(
+          'aria-pressed',
+          isActive ? 'true' : 'false'
+        );
+      });
+  }
+
+  function updateGenreButtons() {
+    if (!genreContainer) {
+      return;
+    }
+
+    genreContainer
+      .querySelectorAll(
+        '[data-netflix-movie-genre]'
+      )
+      .forEach(button => {
+        const value =
+          button.dataset.netflixMovieGenre ||
+          'all';
+
+        const isActive =
+          value === currentGenre;
+
+        button.classList.toggle(
+          'active',
+          isActive
+        );
+
+        button.setAttribute(
+          'aria-pressed',
+          isActive ? 'true' : 'false'
+        );
+      });
+  }
+
+  function renderFiltered() {
+    const sourceItems =
+      allMovies.filter(item => {
+        const matchesYear =
+          currentYear === 'all' ||
+          parseInt(item.year, 10) ===
+          parseInt(currentYear, 10);
+
+        const matchesGenre =
+          currentGenre === 'all' ||
+          getMovieGenres(item)
+            .includes(currentGenre);
+
+        return (
+          matchesYear &&
+          matchesGenre
+        );
+      });
+
+    const filtered =
+      sortAndFilterMovies(
+        sourceItems,
+        'netflix-views-desc'
+      );
+
+    const countElement =
+      document.getElementById(
+        'netflix-movie-count'
+      );
+
+    if (countElement) {
+      countElement.textContent =
+        filtered.length +
+        ' ' +
+        (
+          filtered.length === 1
+            ? 'película de Netflix'
+            : 'películas de Netflix'
+        );
+    }
+
+    renderCards(
+      filtered,
+      'netflixMoviesList',
+      'movies'
+    );
+  }
+
+  if (yearContainer) {
+    const yearFilters = [
+      {
+        value: 'all',
+        label: 'Todas'
+      },
+      ...availableYears.map(year => ({
+        value: String(year),
+        label: String(year)
+      }))
+    ];
+
+    yearContainer.innerHTML =
+      yearFilters
+        .map(filter => `
+          <button
+            type="button"
+            class="netflix-filter-button${filter.value === currentYear ? ' active' : ''}"
+            data-netflix-movie-year="${filter.value}"
+            aria-pressed="${filter.value === currentYear ? 'true' : 'false'}"
+          >
+            ${filter.label}
+          </button>
+        `)
+        .join('');
+
+    yearContainer
+      .querySelectorAll(
+        '[data-netflix-movie-year]'
+      )
+      .forEach(button => {
+        button.addEventListener(
+          'click',
+          function () {
+            currentYear =
+              this.dataset.netflixMovieYear ||
+              'all';
+
+            updateYearButtons();
+            renderFiltered();
+          }
+        );
+      });
+  }
+
+  if (genreContainer) {
+    const genreFilters = [
+      {
+        value: 'all',
+        label: 'Todos'
+      },
+      ...availableGenres
+    ];
+
+    genreContainer.innerHTML =
+      genreFilters
+        .map(filter => `
+          <button
+            type="button"
+            class="netflix-filter-button${filter.value === currentGenre ? ' active' : ''}"
+            data-netflix-movie-genre="${filter.value}"
+            aria-pressed="${filter.value === currentGenre ? 'true' : 'false'}"
+          >
+            ${filter.label}
+          </button>
+        `)
+        .join('');
+
+    genreContainer
+      .querySelectorAll(
+        '[data-netflix-movie-genre]'
+      )
+      .forEach(button => {
+        button.addEventListener(
+          'click',
+          function () {
+            currentGenre =
+              this.dataset.netflixMovieGenre ||
+              'all';
+
+            updateGenreButtons();
+            renderFiltered();
+          }
+        );
+      });
+  }
 
   renderFiltered();
 }
