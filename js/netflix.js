@@ -865,6 +865,8 @@ function isNetflixUpcomingSeries(item) {
   );
 
   const today = new Date();
+  const releaseYear = parseInt(item.year, 10);
+  const currentYear = today.getFullYear();
 
   const todayValue = Date.UTC(
     today.getFullYear(),
@@ -877,6 +879,11 @@ function isNetflixUpcomingSeries(item) {
     (
       releaseValue !== null &&
       releaseValue > todayValue
+    ) ||
+    (
+      releaseValue === null &&
+      Number.isFinite(releaseYear) &&
+      releaseYear > currentYear
     )
   );
 }
@@ -1106,27 +1113,34 @@ function buildNetflixTvCard(item) {
   const channelLabel = escapeAttribute(channels.join(' · '));
 
   return `
-    <a
-      href="show.html?id=${encodeURIComponent(itemId)}"
-      class="actor-movie-card"
-      aria-label="Ver ficha de ${title}"
+  <a
+    href="show.html?id=${encodeURIComponent(itemId)}"
+    class="actor-movie-card"
+    aria-label="Ver ficha de ${title}"
+  >
+    <img
+      src="${image}"
+      alt="${title}"
+      loading="lazy"
+      onerror="this.onerror=null;this.src='${getPlaceholderImageSrc()}';"
     >
-      <img
-        src="${image}"
-        alt="${title}"
-        loading="lazy"
-        onerror="this.onerror=null;this.src='${getPlaceholderImageSrc()}';"
-      >
 
-      <h3>${title}</h3>
+    <div class="actor-movie-info">
+      <div class="actor-movie-title">
+        ${title}
+      </div>
 
-      ${year ? `<p>${year}</p>` : ''}
+      ${year
+      ? `<div class="actor-movie-meta">${year}</div>`
+      : ''
+    }
 
-      <span class="netflix-tv-channel">
+      <div class="netflix-tv-channel">
         ${channelLabel}
-      </span>
-    </a>
-  `;
+      </div>
+    </div>
+  </a>
+`;
 }
 
 function renderNetflixTvSeries(series) {
@@ -1524,24 +1538,107 @@ function renderCards(items, containerId, type) {
       }
     }
 
-    let netflixMetricHtml = '';
-    if (item.netflix_metric) {
-      const m = item.netflix_metric;
-      netflixMetricHtml = '<div class="actor-movie-viewers">'
-        + 'Visualizaciones (' + (m.periodo || m.report_id || 'Netflix') + '): '
-        + formatViews(m.visualizaciones_totales)
-        + '</div>';
+    /*
+ * Obtiene la temporada más vista de una serie dentro
+ * del informe Netflix más reciente disponible.
+ *
+ * Mantiene el mismo criterio utilizado por el Top 10:
+ * temporada, visualizaciones y ranking pertenecen
+ * al mismo informe.
+ */
+    function getSeriesCatalogMetric(item) {
+      const reportIds = getNetflixReportIds([item]);
 
-      if (type === 'series' && normalizeNumber(m.temporada_mas_vista) !== null) {
-        netflixMetricHtml += '<div class="actor-movie-meta" style="color:#9ca3af;">'
-          + 'Temporada mas vista: T' + m.temporada_mas_vista
-          + (normalizeNumber(m.visualizaciones_temporada_mas_vista) !== null
-            ? ' (' + formatViews(m.visualizaciones_temporada_mas_vista) + ')'
-            : '')
-          + '</div>';
+      for (const reportId of reportIds) {
+        const entries = buildSeriesRankingEntries(
+          [item],
+          reportId
+        );
+
+        if (!entries.length) {
+          continue;
+        }
+
+        return entries
+          .slice()
+          .sort((a, b) => {
+            if (a.views !== b.views) {
+              return b.views - a.views;
+            }
+
+            return a.ranking - b.ranking;
+          })[0];
       }
+
+      return null;
     }
 
+    let netflixMetricHtml = '';
+
+    if (type === 'series') {
+      const catalogMetric =
+        getSeriesCatalogMetric(item);
+
+      if (catalogMetric) {
+        const periodLabel =
+          formatNetflixPeriodLabel(
+            catalogMetric.report.periodo ||
+            catalogMetric.reportId
+          );
+
+        const seasonLabel =
+          'Temporada ' +
+          catalogMetric.seasonNumber;
+
+        const seasonAndPeriod = [
+          seasonLabel,
+          periodLabel
+        ]
+          .filter(Boolean)
+          .join(' · ');
+
+        const viewsLabel =
+          formatNetflixViews(
+            catalogMetric.views
+          ) +
+          ' visualizaciones';
+
+        const rankingLabel =
+          formatNetflixRanking(
+            catalogMetric
+          );
+
+        netflixMetricHtml = `
+      <div class="actor-movie-meta netflix-catalog-season">
+        ${seasonAndPeriod}
+      </div>
+
+      <div class="actor-movie-viewers">
+        ${viewsLabel}
+      </div>
+
+      ${rankingLabel
+            ? `
+            <div class="actor-movie-meta netflix-catalog-ranking">
+              ${rankingLabel}
+            </div>
+          `
+            : ''
+          }
+    `;
+      }
+    } else if (item.netflix_metric) {
+      const metric = item.netflix_metric;
+
+      netflixMetricHtml = `
+    <div class="actor-movie-viewers">
+      Visualizaciones (${metric.periodo ||
+        metric.report_id ||
+        'Netflix'
+        }): ${formatViews(metric.visualizaciones_totales)}
+    </div>
+  `;
+    }
     const escapedTitle = escapeAttribute(item.title);
     card.innerHTML = `
       <a href="show.html?id=${item.id}">

@@ -6190,9 +6190,11 @@
     {
       "id": "V309",
       "title": "El Futuro es Nuestro",
+      "type": "serie",
+      "status": "En Producción",
       "year": "2027",
       "channel": "Netflix",
-      "genre": "Drama",
+      "genre": "Thriller",
       "actors": [
         "Delfina Cháves",
         "Emiliano Zurita",
@@ -6203,7 +6205,7 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/el-futuro-es-nuestro-poster-280x420.png",
-      "subtitle": "Drama",
+      "subtitle": "Thriller",
       "sinopsis": "Ambientada en el año 2047, la trama sigue a un oficial de policía que arresta a un joven predicador con la capacidad de predecir el futuro. A partir de este evento, el líder comienza a inspirar una poderosa revolución espiritual en un continente azotado por el cambio climático y un nuevo orden.",
       "producer": "Netflix"
     },
@@ -6211,23 +6213,27 @@
       "id": "V310",
       "title": "El Ruso",
       "year": "2027",
+      "type": "serie",
+      "status": "En Producción",
       "channel": "Netflix",
-      "genre": "Drama",
+      "genre": "Thriller",
       "actors": [
         "Chino Darín"
       ],
       "orientation": "vertical",
       "image": "images/verticals/el-ruso-poster-280x420.png",
-      "subtitle": "Drama",
+      "subtitle": "Thriller",
       "sinopsis": "Narra la historia de \"El Ruso\", un cantante de tango con raíces judías que es engañado por un supuesto cazatalentos y llevado durante la Segunda Guerra Mundial al corazón de la Alemania Nazi bajo una falsa oferta laboral.",
       "producer": "Netflix"
     },
     {
       "id": "V311",
       "title": "Tiempo al Tiempo",
+      "type": "serie",
+      "status": "En Producción",
       "year": "2027",
       "channel": "Netflix",
-      "genre": "Drama",
+      "genre": "Comedia",
       "actors": [
         "Carla Peterson",
         "Jerónimo Bosia",
@@ -6236,7 +6242,7 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/tiempo-al-tiempo-poster-280x420.png",
-      "subtitle": "Drama",
+      "subtitle": "Comedia",
       "sinopsis": "Cuenta la historia de Bruno y Florencia, dos jóvenes de los años 90 que tienen planes para un futuro juntos pero, bajo circunstancias inexplicables, él desaparece repentinamente. 30 años más tarde, Bruno regresa intacto. Para él sólo pasaron unas horas, mientras que para Florencia, 3 décadas.",
       "producer": "Underground"
     },
@@ -12460,6 +12466,8 @@
     {
       "id": "v301",
       "title": "Crimen Desorganizado",
+      "type": "serie",
+      "status": "En Producción",
       "year": "2027",
       "channel": "Netflix",
       "genre": "Thriller",
