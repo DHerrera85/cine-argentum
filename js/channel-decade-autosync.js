@@ -1152,14 +1152,6 @@
         item.title || 'Sin título'
       ).trim();
 
-    var titleClass =
-      title.length > 28
-        ? ' telefe-recent-title--long'
-        : '';
-
-    var year =
-      getYear(item);
-
     var year =
       getYear(item);
 
@@ -1168,9 +1160,6 @@
 
     var type =
       getRecentProductionType(item);
-
-    var image =
-      getPosterImage(item);
 
     var image =
       getPosterImage(item);
@@ -1225,9 +1214,7 @@
 
       '<div class="latest-b-text">',
 
-      '<strong class="telefe-recent-title' +
-      titleClass +
-      '">',
+      '<strong class="telefe-recent-title">',
 
       escapeHtml(title),
 
