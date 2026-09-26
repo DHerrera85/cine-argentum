@@ -1004,28 +1004,82 @@
         </div>
       </section>
 
-      <h2 class="netflix-section-title">Peliculas de Netflix</h2>
-      <p class="netflix-section-sub" id="netflix-movie-count">Cargando peliculas...</p>
-      <div class="actor-filters filters-inline">
-        <label for="movieSortCustom">Ordenar/Filtrar por:</label>
-        <div class="custom-select" id="movieSortCustom" tabindex="0">
-          <span class="custom-select-selected">Visualizaciones Netflix</span>
-          <ul class="custom-select-options">
-            <li data-value="netflix-views-desc" class="selected">Visualizaciones Netflix</li>
-            <li data-value="year">Año (descendente)</li>
-            <li data-value="year-asc">Año (ascendente)</li>
-          </ul>
+      <!-- Próximas películas de Netflix -->
+      <section id="netflix-upcoming-movies" class="netflix-upcoming-section">
+        <div class="netflix-upcoming-heading">
+          <h2 class="showcase-heading">
+            Próximamente en Netflix — Películas
+          </h2>
+
+          <p id="netflix-upcoming-movies-count" class="netflix-upcoming-count">
+            Cargando próximas películas...
+          </p>
         </div>
-      </div>
+
+        <ul id="netflix-upcoming-movies-slider" class="slider-v netflix-upcoming-slider cs-hidden" data-skip-auto="true"
+          aria-label="Próximas películas argentinas de Netflix">
+        </ul>
+      </section>
+
+      <!-- Top 10 películas Netflix -->
+      <section id="netflix-movies-top10" class="netflix-top10-section">
+        <div class="netflix-top10-heading">
+          <div>
+            <h2 class="showcase-heading">
+              Las 10 películas más vistas
+            </h2>
+          </div>
+
+          <div id="netflix-movies-report-tabs" class="netflix-report-tabs" role="tablist"
+            aria-label="Informes de audiencia de películas de Netflix">
+          </div>
+        </div>
+
+        <ul id="netflix-movies-top10-slider" class="slider-h netflix-top10-slider cs-hidden" data-skip-auto="true"
+          aria-label="Las 10 películas argentinas más vistas en Netflix">
+        </ul>
+      </section>
+
+      <!-- Explorar películas por año -->
+      <section id="netflix-movie-years" class="netflix-filter-section">
+        <h2 class="netflix-filter-heading">
+          Explorar películas por año
+        </h2>
+
+        <div id="netflix-movie-year-filters" class="netflix-filter-list" role="group"
+          aria-label="Filtrar películas de Netflix por año">
+        </div>
+      </section>
+
+      <!-- Explorar películas por género -->
+      <section id="netflix-movie-genres" class="netflix-filter-section">
+        <h2 class="netflix-filter-heading">
+          Explorar películas por género
+        </h2>
+
+        <div id="netflix-movie-genre-filters" class="netflix-filter-list" role="group"
+          aria-label="Filtrar películas de Netflix por género">
+        </div>
+      </section>
+
+      <h2 class="netflix-section-title">
+        Todas las películas
+      </h2>
+
+      <p class="netflix-section-sub" id="netflix-movie-count">
+        Cargando películas...
+      </p>
+
       <div class="actor-movies-grid" id="netflixMoviesList">
-        <!-- Peliculas de Netflix -->
+        <!-- Películas de Netflix -->
       </div>
+      
     </main>
   </div>
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   <script src="js/lightslider.js"></script>
   <script src="js/script.js?v=20260219-1"></script>
-  <script src="js/netflix.js?v=20260925-6"></script>
+  <script src="js/netflix.js?v=20260925-8"></script>
 </body>
 
 </html>

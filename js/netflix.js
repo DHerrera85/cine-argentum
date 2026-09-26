@@ -813,6 +813,215 @@ function renderNetflixReportTabs(
   });
 }
 
+/* =========================================================
+   TOP 10 DE PELÍCULAS NETFLIX
+========================================================= */
+
+let netflixMoviesTop10Slider = null;
+
+function initNetflixMoviesTop10Slider(container) {
+  if (
+    !container ||
+    !window.jQuery ||
+    !window.jQuery.fn ||
+    !window.jQuery.fn.lightSlider
+  ) {
+    return;
+  }
+
+  const $container =
+    window.jQuery(container);
+
+  netflixMoviesTop10Slider =
+    $container.lightSlider({
+      item: 5,
+      slideMove: 1,
+      slideMargin: 18,
+      loop: false,
+      pager: false,
+      controls: true,
+      enableTouch: true,
+      enableDrag: true,
+      freeMove: false,
+
+      onSliderLoad: function () {
+        $container.removeClass(
+          'cs-hidden'
+        );
+      },
+
+      responsive: [
+        {
+          breakpoint: 1100,
+          settings: {
+            item: 3,
+            slideMove: 1
+          }
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            item: 2,
+            slideMove: 1
+          }
+        }
+      ]
+    });
+}
+
+function renderNetflixMoviesTop10(
+  movies,
+  reportIds,
+  reportId
+) {
+  const section =
+    document.getElementById(
+      'netflix-movies-top10'
+    );
+
+  const container =
+    document.getElementById(
+      'netflix-movies-top10-slider'
+    );
+
+  if (!section || !container) {
+    return;
+  }
+
+  const entries =
+    getNetflixTop10ForReport(
+      movies,
+      reportIds,
+      reportId,
+      'movies'
+    );
+
+  if (
+    netflixMoviesTop10Slider &&
+    typeof netflixMoviesTop10Slider.destroy ===
+    'function'
+  ) {
+    netflixMoviesTop10Slider.destroy();
+    netflixMoviesTop10Slider = null;
+  }
+
+  container.classList.add('cs-hidden');
+  container.innerHTML = '';
+
+  if (!entries.length) {
+    section.hidden = true;
+    return;
+  }
+
+  section.hidden = false;
+
+  entries.forEach((entry, index) => {
+    container.appendChild(
+      renderNetflixTop10Card(
+        entry,
+        index + 1
+      )
+    );
+  });
+
+  initNetflixMoviesTop10Slider(
+    container
+  );
+}
+
+function renderNetflixMovieReportTabs(
+  movies,
+  reportIds,
+  activeReportId
+) {
+  const tabsContainer =
+    document.getElementById(
+      'netflix-movies-report-tabs'
+    );
+
+  if (!tabsContainer) {
+    return;
+  }
+
+  tabsContainer.innerHTML = '';
+
+  reportIds.forEach(reportId => {
+    const button =
+      document.createElement('button');
+
+    button.type = 'button';
+
+    button.className =
+      'netflix-report-tab' +
+      (
+        reportId === activeReportId
+          ? ' active'
+          : ''
+      );
+
+    button.setAttribute(
+      'role',
+      'tab'
+    );
+
+    button.setAttribute(
+      'aria-selected',
+      reportId === activeReportId
+        ? 'true'
+        : 'false'
+    );
+
+    button.dataset.reportId =
+      reportId;
+
+    button.textContent =
+      formatNetflixPeriodLabel(
+        getReportPeriodLabel(
+          reportId,
+          movies
+        )
+      );
+
+    button.addEventListener(
+      'click',
+      function () {
+        const selectedReportId =
+          this.dataset.reportId;
+
+        tabsContainer
+          .querySelectorAll(
+            '.netflix-report-tab'
+          )
+          .forEach(tab => {
+            const isActive =
+              tab.dataset.reportId ===
+              selectedReportId;
+
+            tab.classList.toggle(
+              'active',
+              isActive
+            );
+
+            tab.setAttribute(
+              'aria-selected',
+              isActive
+                ? 'true'
+                : 'false'
+            );
+          });
+
+        renderNetflixMoviesTop10(
+          movies,
+          reportIds,
+          selectedReportId
+        );
+      }
+    );
+
+    tabsContainer.appendChild(button);
+  });
+}
+
 function formatViews(value) {
   const n = normalizeNumber(value);
   if (n === null) return 'Dato pendiente';
@@ -1176,6 +1385,134 @@ function renderNetflixTvSeries(series) {
   }
 }
 
+/* =========================================================
+   PRÓXIMAS PELÍCULAS DE NETFLIX
+========================================================= */
+
+function isNetflixUpcomingMovie(item) {
+  if (!item || item.type !== 'pelicula') {
+    return false;
+  }
+
+  const status = String(item.status || '')
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .toLowerCase()
+    .trim();
+
+  const releaseValue = parseReleaseDateValue(
+    item.release_date ||
+    item.fecha_estreno
+  );
+
+  const releaseYear = parseInt(item.year, 10);
+  const today = new Date();
+  const currentYear = today.getFullYear();
+
+  const todayValue = Date.UTC(
+    today.getFullYear(),
+    today.getMonth(),
+    today.getDate()
+  );
+
+  return (
+    status === 'en produccion' ||
+    (
+      releaseValue !== null &&
+      releaseValue > todayValue
+    ) ||
+    (
+      releaseValue === null &&
+      Number.isFinite(releaseYear) &&
+      releaseYear > currentYear
+    )
+  );
+}
+
+function renderNetflixUpcomingMovies(movies) {
+  const section = document.getElementById(
+    'netflix-upcoming-movies'
+  );
+
+  const container = document.getElementById(
+    'netflix-upcoming-movies-slider'
+  );
+
+  const countElement = document.getElementById(
+    'netflix-upcoming-movies-count'
+  );
+
+  if (!section || !container) {
+    return;
+  }
+
+  const upcomingMovies = movies
+    .filter(isNetflixUpcomingMovie)
+    .sort(compareNetflixUpcomingSeries);
+
+  if (!upcomingMovies.length) {
+    section.hidden = true;
+    return;
+  }
+
+  section.hidden = false;
+
+  if (countElement) {
+    countElement.textContent =
+      upcomingMovies.length +
+      ' ' +
+      (
+        upcomingMovies.length === 1
+          ? 'película próxima'
+          : 'películas próximas'
+      );
+  }
+
+  container.innerHTML = upcomingMovies
+    .map(buildNetflixUpcomingCard)
+    .join('');
+
+  if (
+    window.jQuery &&
+    window.jQuery.fn &&
+    window.jQuery.fn.lightSlider
+  ) {
+    window.jQuery(container).lightSlider({
+      item: 5,
+      autoWidth: false,
+      slideMove: 1,
+      slideMargin: 18,
+      loop: false,
+      pager: false,
+      controls: true,
+      enableTouch: true,
+      enableDrag: true,
+      freeMove: false,
+      responsive: [
+        {
+          breakpoint: 1100,
+          settings: {
+            item: 4,
+            slideMove: 1,
+            slideMargin: 14
+          }
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            item: 2,
+            slideMove: 1,
+            slideMargin: 10
+          }
+        }
+      ]
+    });
+  }
+
+  container.classList.remove('cs-hidden');
+  container.classList.add('slider-ready');
+}
+
 function normalizeGenre(value) {
   return value ? String(value).trim().toLowerCase() : '';
 }
@@ -1470,6 +1807,7 @@ function initializeNetflixCarousel() {
       if (shouldRenderNetflixPage) {
         renderNetflixUpcomingSeries(series);
         renderNetflixTvSeries(series);
+        renderNetflixUpcomingMovies(movies);
 
         const reportIds =
           getNetflixReportIds(
@@ -1490,6 +1828,26 @@ function initializeNetflixCarousel() {
             netflixItems,
             reportIds,
             activeReportId
+          );
+        }
+
+        const movieReportIds =
+          getNetflixReportIds(movies);
+
+        if (movieReportIds.length) {
+          const activeMovieReportId =
+            movieReportIds[0];
+
+          renderNetflixMovieReportTabs(
+            movies,
+            movieReportIds,
+            activeMovieReportId
+          );
+
+          renderNetflixMoviesTop10(
+            movies,
+            movieReportIds,
+            activeMovieReportId
           );
         }
 
