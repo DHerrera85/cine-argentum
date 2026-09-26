@@ -128,7 +128,7 @@
       "director": "Marcelo Piñeyro"
     },
     {
-      "title": "Dibu la película",
+      "title": "Dibu, la película",
       "genre": "Familiar",
       "year": "1997",
       "actors": [
@@ -624,7 +624,7 @@
       "subtitle": "Animación",
       "id": "P1022",
       "viewers": 1996738,
-      "producer": "Patagonik",
+      "producer": "Patagoni, Telefe",
       "release_date": "8/7/2004",
       "director": "José Luis Massa"
     },
@@ -665,7 +665,7 @@
       "subtitle": "Comedia",
       "id": "P1024",
       "viewers": 1579224,
-      "producer": "Argentina Sono Film",
+      "producer": "Argentina Sono Film, Telefe",
       "release_date": "2/6/2005",
       "director": "Rodolfo Ledo"
     },
@@ -1242,7 +1242,7 @@
       "subtitle": "Comedia",
       "id": "P1053",
       "viewers": 936024,
-      "producer": "Argentina Sono Film",
+      "producer": "Argentina Sono Film, Telefe",
       "release_date": "10/7/2014",
       "director": "Rodolfo Ledo"
     },
@@ -1577,7 +1577,7 @@
       "subtitle": "Comedia",
       "id": "P1063",
       "viewers": 65193,
-      "producer": "BD Cine Telefe",
+      "producer": "BD Cine, Telefe",
       "release_date": "11/2/2016",
       "director": "Daniel Burman"
     },
@@ -1917,7 +1917,7 @@
       "subtitle": "Comedia",
       "id": "P1079",
       "viewers": 229692,
-      "producer": "Patagonik",
+      "producer": "Patagonik, Telefe",
       "release_date": "4/7/2019",
       "director": "Marcos Carnevale"
     },
@@ -2661,7 +2661,7 @@
       "subtitle": "Histórica",
       "id": "P1112",
       "viewers": 2652757,
-      "producer": "Kramer & Sigman Films, El Deseo, Telefé, Fox International Productions",
+      "producer": "Kramer & Sigman Films, El Deseo, Telefe, Fox International Productions",
       "release_date": "13/8/2015",
       "director": "Pablo Trapero"
     },
@@ -2824,7 +2824,7 @@
       "subtitle": "Romance",
       "id": "P1120",
       "viewers": 496357,
-      "producer": "Patagonik",
+      "producer": "Patagonik, Telefe",
       "release_date": "14/8/2003",
       "director": "Eduardo Mignogna"
     },
@@ -3012,7 +3012,7 @@
       "subtitle": "Policial",
       "id": "P1128",
       "viewers": 2085915,
-      "producer": "AZ Films, MarVista Entertainment, Telefé",
+      "producer": "AZ Films, MarVista Entertainment, Telefe",
       "release_date": "16/01/2020",
       "director": "Ariel Winograd"
     },
@@ -3075,7 +3075,7 @@
       "subtitle": "Policial",
       "id": "P1131",
       "viewers": 937735,
-      "producer": "Patagonik",
+      "producer": "Patagonik, Telefe",
       "release_date": "16/09/2004",
       "director": "Raúl Rodríguez Peila"
     },
@@ -3659,7 +3659,7 @@
       "subtitle": "Animación",
       "id": "P1156",
       "viewers": 89257,
-      "producer": "Manos Digitales Animation Studio",
+      "producer": "Manos Digitales Animation Studio, Telefe",
       "release_date": "18/2/2010",
       "director": "Daniel De Felippo"
     },
@@ -4067,7 +4067,7 @@
       "subtitle": "Policial",
       "id": "P1175",
       "viewers": 481617,
-      "producer": "Telefe, Rebolución",
+      "producer": "Telefe, Rebolución, Buena Vista International",
       "release_date": "21/06/2018",
       "director": "Armando Bó"
     },
@@ -5073,7 +5073,7 @@
       "subtitle": "Animación",
       "id": "P1218",
       "viewers": 348665,
-      "producer": "Patagonik Film Group",
+      "producer": "Patagonik Film Group, Telefe",
       "release_date": "29/06/2006",
       "director": "José Luis Massa"
     },
@@ -5297,7 +5297,7 @@
       "subtitle": "Drama",
       "id": "P1228",
       "viewers": 82150,
-      "producer": "Matanza Cine, Macassar Productions, Telefé, Sony",
+      "producer": "Matanza Cine, Macassar Productions, Telefe, Sony",
       "release_date": "30/8/2018",
       "director": "Pablo Trapero"
     },
@@ -12301,6 +12301,7 @@
     {
       "id": "V295",
       "title": "Pequeñas Victorias, Perdidxs en la Tierra",
+      "type": "serie",
       "year": "2021",
       "channel": "Prime Video",
       "air_channels": [

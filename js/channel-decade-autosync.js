@@ -1103,7 +1103,9 @@
     if (
       normalizedType === 'serie' ||
       normalizedType === 'series' ||
-      normalizedEmissionType.indexOf('serie') !== -1
+      normalizedEmissionType.indexOf('serie') !== -1 ||
+      normalizedEmissionType.indexOf('tira diaria') !== -1 ||
+      normalizedEmissionType.indexOf('semanal') !== -1
     ) {
       return {
         label: 'Serie',
@@ -1150,14 +1152,25 @@
         item.title || 'Sin título'
       ).trim();
 
+    var titleClass =
+      title.length > 28
+        ? ' telefe-recent-title--long'
+        : '';
+
+    var year =
+      getYear(item);
+
     var year =
       getYear(item);
 
     var badge =
       getRecentProductionBadge(item);
 
-    var status =
-      getRecentProductionStatus(item);
+    var type =
+      getRecentProductionType(item);
+
+    var image =
+      getPosterImage(item);
 
     var image =
       getPosterImage(item);
@@ -1212,8 +1225,12 @@
 
       '<div class="latest-b-text">',
 
-      '<strong>',
+      '<strong class="telefe-recent-title' +
+      titleClass +
+      '">',
+
       escapeHtml(title),
+
       '</strong>',
 
       '<p>',

@@ -346,7 +346,7 @@
       max-width: none;
       min-width: 0;
       margin: 0;
-      padding-top: 30px;
+      padding-top: 0;
       box-sizing: border-box;
       background: transparent;
       box-shadow: none;
@@ -385,6 +385,52 @@
       font-weight: 600;
     }
 
+    #telefe-recent-productions .telefe-recent-title {
+      display: block;
+      min-height: 2.4em;
+      line-height: 1.2;
+      text-align: center;
+      white-space: normal;
+      overflow: visible;
+    }
+
+    #telefe-recent-productions .latest-details {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: auto;
+      min-height: 76px;
+      padding: 10px 4px 0;
+      box-sizing: border-box;
+      overflow: visible;
+      text-align: center;
+    }
+
+    #telefe-recent-productions .telefe-recent-title {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      width: 100%;
+      min-height: 3.45em;
+      margin: 0;
+      font-size: 0.78rem;
+      line-height: 1.15;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      white-space: normal;
+      overflow: visible;
+      text-align: center;
+    }
+
+    #telefe-recent-productions .telefe-recent-title+p {
+      width: 100%;
+      margin: 4px 0 0;
+      font-size: 0.78rem;
+      line-height: 1.2;
+      color: #aeb6c2;
+      text-align: center;
+    }
+
     #telefe-recent-productions .latest-b-text p {
       margin: 4px 0 0;
       color: #9ea6b0;
@@ -394,19 +440,22 @@
 
     #telefe-recent-productions .telefe-recent-badge {
       position: absolute;
-      top: 0;
-      right: 0;
-      z-index: 2;
+      top: 10px;
+      right: 10px;
+      z-index: 5;
       min-height: 24px;
       padding: 5px 10px;
       box-sizing: border-box;
+      border: 1px solid rgba(255, 255, 255, 0.28);
       border-radius: 999px;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.42);
       font-size: .7rem;
       line-height: 1;
       font-weight: 800;
       letter-spacing: .04em;
       text-transform: uppercase;
       white-space: nowrap;
+      pointer-events: none;
     }
 
     #telefe-recent-productions .telefe-recent-badge--pronto {
@@ -1182,7 +1231,7 @@
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   <script src="js/lightslider.js"></script>
   <script src="js/script.js?v=20260226-1"></script>
-  <script src="js/channel-decade-autosync.js?v=20260917-1"></script>
+  <script src="js/channel-decade-autosync.js?v=20260926-1"></script>
 </body>
 
 </html>
