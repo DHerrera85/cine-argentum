@@ -325,6 +325,116 @@
       color: #9ea6b0;
     }
 
+    /* ==================================================
+   PRODUCCIONES TELEFE Y TELEFE STUDIOS 2020–2026
+================================================== */
+
+    #telefe-recent-productions .slider-v {
+      margin: 0;
+      padding: 0;
+    }
+
+    #telefe-recent-productions .telefe-recent-card {
+      display: block;
+      color: inherit;
+      text-decoration: none;
+    }
+
+    #telefe-recent-productions .latest-box {
+      position: relative;
+      width: 100%;
+      max-width: none;
+      min-width: 0;
+      margin: 0;
+      padding-top: 30px;
+      box-sizing: border-box;
+      background: transparent;
+      box-shadow: none;
+    }
+
+    #telefe-recent-productions .latest-b-img {
+      position: relative;
+      width: 100%;
+      height: auto;
+      aspect-ratio: 2 / 3;
+      overflow: hidden;
+      border-radius: 12px;
+      background: #202832;
+    }
+
+    #telefe-recent-productions .latest-b-img img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      border-radius: 12px;
+    }
+
+    #telefe-recent-productions .latest-b-text {
+      padding: 10px 4px 0;
+      background: transparent;
+      text-align: center;
+    }
+
+    #telefe-recent-productions .latest-b-text strong {
+      display: block;
+      color: #ffffff;
+      font-size: .95rem;
+      line-height: 1.35;
+      font-weight: 600;
+    }
+
+    #telefe-recent-productions .latest-b-text p {
+      margin: 4px 0 0;
+      color: #9ea6b0;
+      font-size: .88rem;
+      line-height: 1.35;
+    }
+
+    #telefe-recent-productions .telefe-recent-badge {
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 2;
+      min-height: 24px;
+      padding: 5px 10px;
+      box-sizing: border-box;
+      border-radius: 999px;
+      font-size: .7rem;
+      line-height: 1;
+      font-weight: 800;
+      letter-spacing: .04em;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+
+    #telefe-recent-productions .telefe-recent-badge--pronto {
+      background: #f4b400;
+      color: #17202a;
+    }
+
+    #telefe-recent-productions .telefe-recent-badge--vertical {
+      background: #8b5cf6;
+      color: #ffffff;
+    }
+
+    #telefe-recent-productions .telefe-recent-badge--serie {
+      background: #22b8cf;
+      color: #0f171f;
+    }
+
+    #telefe-recent-productions .telefe-recent-badge--no-emitido {
+      background: #ef4444;
+      color: #ffffff;
+    }
+
+    #telefe-recent-productions-empty {
+      margin: 0;
+      color: #9ea6b0;
+      font-size: .95rem;
+    }
+
     .telefe-year-filter,
     .telefe-genre-filter,
     .telefe-category-filter,
@@ -812,6 +922,22 @@
 
         </div>
 
+      </section>
+
+      <!-- Producciones recientes de Telefe y Telefe Studios -->
+      <section id="telefe-recent-productions" class="telefe-section telefe-recent-productions"
+        aria-labelledby="telefe-recent-productions-title">
+        <h2 id="telefe-recent-productions-title" class="showcase-heading">
+          Producciones de Telefe y Telefe Studios (2020–2026)
+        </h2>
+
+        <ul id="telefe-recent-productions-slider" class="slider-v cs-hidden" data-skip-auto="true"
+          aria-label="Producciones de Telefe y Telefe Studios entre 2020 y 2026">
+        </ul>
+
+        <p id="telefe-recent-productions-empty" class="telefe-recent-productions-empty" hidden>
+          No hay producciones disponibles para esta selección.
+        </p>
       </section>
 
       <!-- Producciones destacadas -->

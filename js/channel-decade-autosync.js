@@ -49,6 +49,9 @@
     grid: '#channel-decade-grid',
     featured: '#channel-featured-slider',
     topRated: '#channel-top-rated-slider',
+    recentProductions: '#telefe-recent-productions-slider',
+    recentProductionsSection: '#telefe-recent-productions',
+    recentProductionsEmpty: '#telefe-recent-productions-empty',
     yearContainer: '#channel-year-filters',
     yearFilters: '[data-channel-year]',
     genreFilters: '[data-channel-genre]',
@@ -60,6 +63,7 @@
     filterCarousels: '.filter-carousel'
   };
 
+  var sourceItems = [];
   var allProductions = [];
   var activeYear = 'all';
   var activeGenre = 'all';
@@ -667,6 +671,38 @@
     }
 
     /*
+ * No Emitidos se clasifica mediante la fila editorial
+ * tiras_2010_rows. No se deduce por ausencia de fecha.
+ */
+    if (category === 'no-emitidos') {
+
+      var editorialRows =
+        item && Array.isArray(item.tiras_2010_rows)
+          ? item.tiras_2010_rows
+          : (
+            item && item.tiras_2010_rows
+              ? [item.tiras_2010_rows]
+              : []
+          );
+
+      return editorialRows.some(function (row) {
+
+        var normalizedRow =
+          normalizeText(row)
+            .replace(/-/g, ' ')
+            .replace(/\s+/g, ' ')
+            .trim();
+
+        return (
+          normalizedRow === 'no emitidos' ||
+          normalizedRow === 'no emitido'
+        );
+
+      });
+
+    }
+
+    /*
      * Verticales se clasifica mediante content_format.
      * orientation describe el formato del póster y no
      * debe utilizarse para este filtro.
@@ -851,6 +887,445 @@
       );
 
     });
+
+  }
+
+  /* =========================================================
+   PRODUCCIONES DE TELEFE Y TELEFE STUDIOS 2020–2026
+   ========================================================= */
+
+  function getProductionCompanyText(item) {
+
+    if (!item) {
+      return '';
+    }
+
+    var values = [
+      item.producer,
+      item.productora,
+      item.production_company,
+      item.production_companies
+    ];
+
+    return values
+      .reduce(function (result, value) {
+
+        if (Array.isArray(value)) {
+          return result.concat(value);
+        }
+
+        if (
+          value !== undefined &&
+          value !== null &&
+          String(value).trim() !== ''
+        ) {
+          result.push(value);
+        }
+
+        return result;
+
+      }, [])
+      .map(function (value) {
+        return String(value).trim();
+      })
+      .join(' · ');
+
+  }
+
+
+  function hasTelefeStudiosCredit(item) {
+
+    return (
+      normalizeText(
+        getProductionCompanyText(item)
+      ).indexOf('telefe studios') !== -1
+    );
+
+  }
+
+
+  function hasRealPosterImage(item) {
+
+    var configuredBroadcast =
+      getConfiguredAirBroadcast(item);
+
+    if (
+      configuredBroadcast &&
+      configuredBroadcast.image &&
+      String(configuredBroadcast.image).trim() !== ''
+    ) {
+      return true;
+    }
+
+    return Boolean(
+      item &&
+      item.image &&
+      String(item.image).trim() !== ''
+    );
+
+  }
+
+
+  function getRecentTelefeProductions() {
+
+    /*
+     * Esta fila pertenece únicamente a telefe-10s.html.
+     * En las demás páginas el selector no existe.
+     */
+    if (
+      normalizeText(CHANNEL_NAME) !== 'telefe'
+    ) {
+      return [];
+    }
+
+    return sourceItems
+      .filter(function (item) {
+
+        var year = getYear(item);
+
+        var isTelefeProduction = Boolean(
+          belongsToConfiguredChannel(item) ||
+          hasConfiguredChannelRole(
+            item,
+            'production'
+          ) ||
+          hasTelefeStudiosCredit(item)
+        );
+
+        return Boolean(
+          item &&
+          item.id &&
+          year !== null &&
+          year >= 2020 &&
+          year <= 2026 &&
+          hasRealPosterImage(item) &&
+          isTelefeProduction &&
+          !isAcquisition(item)
+        );
+
+      })
+      .sort(function (a, b) {
+
+        var yearDifference =
+          (getYear(b) || 0) -
+          (getYear(a) || 0);
+
+        if (yearDifference !== 0) {
+          return yearDifference;
+        }
+
+        return String(a.title || '')
+          .localeCompare(
+            String(b.title || ''),
+            'es',
+            {
+              sensitivity: 'base'
+            }
+          );
+
+      });
+
+  }
+
+
+  function getRecentProductionBadge(item) {
+
+    /*
+     * Prioridad 1: producción identificada editorialmente
+     * como no emitida.
+     */
+    if (
+      belongsToCategory(
+        item,
+        'no-emitidos'
+      )
+    ) {
+      return {
+        label: 'No emitido',
+        className: 'no-emitido'
+      };
+    }
+
+    /*
+     * Prioridad 2: producción anunciada o todavía
+     * en etapa de producción.
+     */
+    var normalizedStatus =
+      normalizeText(item && item.status);
+
+    var releaseDate =
+      getReleaseDate(item);
+
+    var today =
+      new Date();
+
+    today.setHours(0, 0, 0, 0);
+
+    if (
+      normalizedStatus === 'en produccion' ||
+      normalizedStatus === 'proximamente' ||
+      (
+        releaseDate &&
+        releaseDate.getTime() > today.getTime()
+      )
+    ) {
+      return {
+        label: 'Pronto',
+        className: 'pronto'
+      };
+    }
+
+    /*
+     * Prioridad 3: ficción producida en formato vertical.
+     */
+    if (
+      normalizeText(
+        item && item.content_format
+      ) === 'vertical'
+    ) {
+      return {
+        label: 'Vertical',
+        className: 'vertical'
+      };
+    }
+
+    /*
+     * Prioridad 4: serie convencional.
+     */
+    var normalizedType =
+      normalizeText(item && item.type);
+
+    var normalizedEmissionType =
+      normalizeText(
+        item && item.tipo_emision
+      );
+
+    if (
+      normalizedType === 'serie' ||
+      normalizedType === 'series' ||
+      normalizedEmissionType.indexOf('serie') !== -1
+    ) {
+      return {
+        label: 'Serie',
+        className: 'serie'
+      };
+    }
+
+    return null;
+
+  }
+
+
+  function getRecentProductionType(item) {
+
+    var type =
+      normalizeText(item && item.type);
+
+    if (
+      type === 'pelicula' ||
+      type === 'film'
+    ) {
+      return 'Película';
+    }
+
+    if (
+      type === 'serie' ||
+      type === 'series'
+    ) {
+      return 'Serie';
+    }
+
+    return getSubtitle(item);
+
+  }
+
+
+  function buildRecentProductionCard(item) {
+
+    var itemId =
+      String(item.id || '').trim();
+
+    var title =
+      String(
+        item.title || 'Sin título'
+      ).trim();
+
+    var year =
+      getYear(item);
+
+    var badge =
+      getRecentProductionBadge(item);
+
+    var status =
+      getRecentProductionStatus(item);
+
+    var image =
+      getPosterImage(item);
+
+    var href =
+      'show.html?id=' +
+      encodeURIComponent(itemId);
+
+    var metadata = [
+      year !== null ? year : '',
+      type
+    ]
+      .filter(function (value) {
+        return Boolean(value);
+      })
+      .join(' · ');
+
+    var badgeHtml = badge
+      ? (
+        '<span class="' +
+        'telefe-recent-badge ' +
+        'telefe-recent-badge--' +
+        escapeHtml(badge.className) +
+        '">' +
+        escapeHtml(badge.label) +
+        '</span>'
+      )
+      : '';
+
+    return [
+      '<li class="item-a">',
+
+      '<a',
+      ' class="telefe-recent-card"',
+      ' href="', escapeHtml(href), '"',
+      ' aria-label="Ver ficha de ', escapeHtml(title), '"',
+      '>',
+
+      '<div class="latest-box">',
+
+      badgeHtml,
+
+      '<div class="latest-b-img">',
+
+      '<img',
+      ' src="', escapeHtml(image), '"',
+      ' alt="', escapeHtml(title), '"',
+      ' loading="lazy"',
+      '>',
+
+      '</div>',
+
+      '<div class="latest-b-text">',
+
+      '<strong>',
+      escapeHtml(title),
+      '</strong>',
+
+      '<p>',
+      escapeHtml(metadata),
+      '</p>',
+
+      '</div>',
+
+      '</div>',
+
+      '</a>',
+
+      '</li>'
+    ].join('');
+
+  }
+
+
+  function renderRecentProductionsSlider() {
+
+    var slider =
+      document.querySelector(
+        SELECTORS.recentProductions
+      );
+
+    var section =
+      document.querySelector(
+        SELECTORS.recentProductionsSection
+      );
+
+    var empty =
+      document.querySelector(
+        SELECTORS.recentProductionsEmpty
+      );
+
+    /*
+     * Si la página no contiene esta fila,
+     * no se ejecuta ninguna operación.
+     */
+    if (!slider) {
+      return;
+    }
+
+    var items =
+      getRecentTelefeProductions();
+
+    slider.innerHTML =
+      items.map(
+        buildRecentProductionCard
+      ).join('');
+
+    if (empty) {
+      empty.hidden = items.length > 0;
+    }
+
+    if (section) {
+      section.hidden = false;
+    }
+
+    if (!items.length) {
+      slider.classList.remove('cs-hidden');
+      return;
+    }
+
+    if (
+      window.jQuery &&
+      window.jQuery.fn &&
+      window.jQuery.fn.lightSlider
+    ) {
+
+      window.jQuery(slider).lightSlider({
+        item: 5,
+        autoWidth: false,
+        slideMove: 1,
+        slideMargin: 20,
+        loop: false,
+        pager: false,
+        controls: true,
+        enableTouch: true,
+        enableDrag: true,
+        freeMove: false,
+        responsive: [
+          {
+            breakpoint: 1100,
+            settings: {
+              item: 3,
+              slideMove: 1,
+              slideMargin: 14
+            }
+          },
+          {
+            breakpoint: 768,
+            settings: {
+              item: 2,
+              slideMove: 1,
+              slideMargin: 12
+            }
+          }
+        ]
+      });
+
+      window.jQuery(slider)
+        .removeClass('cs-hidden')
+        .addClass('slider-ready');
+
+      return;
+    }
+
+    /*
+     * Respaldo si LightSlider no estuviera disponible.
+     */
+    slider.classList.remove('cs-hidden');
 
   }
 
@@ -2128,6 +2603,13 @@
           : [];
 
       /*
+* Se conserva una copia de todas las entradas para las
+* filas editoriales que también incluyen películas,
+* plataformas y producciones de Telefe Studios.
+*/
+      sourceItems = items.slice();
+
+      /*
        * Se seleccionan únicamente:
        *
        * - producciones con ID;
@@ -2150,6 +2632,7 @@
       bindYearFilters();
       bindCategoryFilters();
 
+      renderRecentProductionsSlider();
       renderFeaturedSlider();
 
       renderTopRatedSlider();
