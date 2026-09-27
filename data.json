@@ -379,9 +379,18 @@
       "image": "images/verticals/antigua-vida-mia-2001-poster-280x420.png",
       "orientation": "vertical",
       "type": "pelicula",
+      "release_medium": "cine",
       "subtitle": "Drama",
       "id": "P1010",
       "viewers": 54097,
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2001,
+        "viewers": 54097,
+        "national_rank": 7,
+        "overall_rank": 115,
+        "updated_at": "2026-09-25"
+      },
       "producer": "Aries Cinematográfica",
       "release_date": "3/5/2001",
       "director": "Héctor Olivera"
@@ -402,9 +411,18 @@
       "image": "images/verticals/dejala-correr-2001-poster-280x420.png",
       "orientation": "vertical",
       "type": "pelicula",
+      "release_medium": "cine",
       "subtitle": "Comedia",
       "id": "P1011",
       "viewers": 68251,
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2001,
+        "viewers": 68251,
+        "national_rank": 6,
+        "overall_rank": 100,
+        "updated_at": "2026-09-25"
+      },
       "producer": "Pol-Ka",
       "release_date": "4/10/2001",
       "director": "Alberto Lecchi"
@@ -424,8 +442,17 @@
       "image": "images/verticals/chiquititas-rincon-de-luz-2001--poster-280x420.png",
       "orientation": "vertical",
       "type": "pelicula",
+      "release_medium": "cine",
       "subtitle": "Familiar",
       "viewers": 682441,
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2001,
+        "viewers": 682441,
+        "national_rank": 3,
+        "overall_rank": 8,
+        "updated_at": "2026-09-25"
+      },
       "producer": "Telefe",
       "release_date": "2001-07-05",
       "director": "José Luis Massa",
@@ -449,9 +476,18 @@
       "image": "images/verticals/solo-por-hoy-2001-poster-280x420.png",
       "orientation": "vertical",
       "type": "pelicula",
+      "release_medium": "cine",
       "subtitle": "Comedia",
       "id": "P1013",
       "viewers": 26422,
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2001,
+        "viewers": 26422,
+        "national_rank": 8,
+        "overall_rank": 148,
+        "updated_at": "2026-09-25"
+      },
       "producer": "Universidad del Cine",
       "release_date": "7/6/2001",
       "director": "Ariel Rotter"
@@ -469,9 +505,18 @@
       "image": "images/verticals/la-cienaga-2001-poster-280x420.png",
       "orientation": "vertical",
       "type": "pelicula",
+      "release_medium": "cine",
       "subtitle": "Drama",
       "id": "P1015",
       "viewers": 131585,
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2001,
+        "viewers": 131585,
+        "national_rank": 5,
+        "overall_rank": 61,
+        "updated_at": "2026-09-25"
+      },
       "producer": "Lita Stantic",
       "release_date": "12/4/2001",
       "director": "Lucrecia Martel"
@@ -3030,9 +3075,18 @@
       "image": "images/verticals/el-hijo-de-la-novia-2001-poster-280x420.png",
       "orientation": "vertical",
       "type": "pelicula",
+      "release_medium": "cine",
       "subtitle": "Drama",
       "id": "P1129",
       "viewers": 1555626,
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2001,
+        "viewers": 1555626,
+        "national_rank": 1,
+        "overall_rank": 1,
+        "updated_at": "2026-09-25"
+      },
       "producer": "Patagonik",
       "release_date": "16/08/2001",
       "director": "Juan José Campanella"
@@ -4278,9 +4332,18 @@
       "image": "images/verticals/gallito-ciego-2001-poster-280x420.png",
       "orientation": "vertical",
       "type": "pelicula",
+      "release_medium": "cine",
       "subtitle": "Policial",
       "id": "P1184",
       "viewers": 25349,
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2001,
+        "viewers": 25349,
+        "national_rank": 9,
+        "overall_rank": 149,
+        "updated_at": "2026-09-25"
+      },
       "producer": "INCAA",
       "release_date": "22/3/2001",
       "director": "Santiago Carlos Oves"
@@ -4322,9 +4385,18 @@
       "image": "images/verticals/la-fuga-2001-poster-280x420.png",
       "orientation": "vertical",
       "type": "pelicula",
+      "release_medium": "cine",
       "subtitle": "Histórica",
       "id": "P1186",
       "viewers": 784800,
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2001,
+        "viewers": 784800,
+        "national_rank": 2,
+        "overall_rank": 5,
+        "updated_at": "2026-09-25"
+      },
       "producer": "Telefe",
       "release_date": "24/05/2001",
       "director": "Eduardo Mignogna"
@@ -7430,6 +7502,38 @@
       "release_date": "01/01/2027",
       "status": "En Producción",
       "sinopsis": "Una comedia romántica que funciona como una carta de amor al oficio de la actuación."
+    },
+    {
+      "id": "P2077",
+      "title": "Rodrigo, la película",
+      "genre": "Drama",
+      "year": "2001",
+      "actors": [
+        "Agustina Cherri",
+        "Guillermo Pfening",
+        "Sabrina Carballo",
+        "Lucas Crespi",
+        "Rodrigo"
+      ],
+      "synopsis": "Una joven fanática de Rodrigo emprende un viaje para ver a su ídolo, mientras una historia de amor ficticia se entrelaza con imágenes reales de recitales del cantante.",
+      "channel": "",
+      "image": "images/verticals/2001-rodrigo-la-pelicula-pelicula-poster-280x420.webp",
+      "orientation": "vertical",
+      "type": "pelicula",
+      "release_medium": "cine",
+      "subtitle": "Drama",
+      "viewers": 223653,
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2001,
+        "viewers": 223653,
+        "national_rank": 4,
+        "overall_rank": 38,
+        "updated_at": "2026-09-25"
+      },
+      "producer": "Argentina Sono Film, Telefe",
+      "release_date": "12/04/2001",
+      "director": "Juan Pablo Laplace"
     },
     {
       "id": "T0001",
