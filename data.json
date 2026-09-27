@@ -585,10 +585,19 @@
       "image": "images/verticals/un-dia-en-el-paraiso-2003-poster-280x420.png",
       "orientation": "vertical",
       "type": "pelicula",
+      "release_medium": "cine",
       "subtitle": "Romance",
       "id": "P1018",
       "viewers": 296566,
-      "producer": "Patagonik",
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2003,
+        "viewers": 296566,
+        "national_rank": 5,
+        "overall_rank": 28,
+        "updated_at": "2026-09-25"
+      },
+      "producer": "Patagonik, Telefe",
       "release_date": "3/7/2003",
       "director": "Juan Bautista Stagnaro"
     },
@@ -608,9 +617,18 @@
       "image": "images/verticals/vivir-intentando-2003-poster-280x420.png",
       "orientation": "vertical",
       "type": "pelicula",
+      "release_medium": "cine",
       "subtitle": "Familiar",
       "id": "P1019",
       "viewers": 948040,
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2003,
+        "viewers": 948040,
+        "national_rank": 1,
+        "overall_rank": 7,
+        "updated_at": "2026-09-25"
+      },
       "producer": "Patagonik",
       "release_date": "12/6/2003",
       "director": "Tomás Yankelevich"
@@ -628,9 +646,18 @@
       "image": "images/verticals/el-dia-que-me-amen-2003-poster-280x420.png",
       "orientation": "vertical",
       "type": "pelicula",
+      "release_medium": "cine",
       "subtitle": "Romance",
       "id": "P1020",
       "viewers": 524569,
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2003,
+        "viewers": 524569,
+        "national_rank": 2,
+        "overall_rank": 14,
+        "updated_at": "2026-09-25"
+      },
       "producer": "Patagonik",
       "release_date": "12/6/2003",
       "director": "Daniel Barone"
@@ -2875,9 +2902,18 @@
       "image": "images/verticals/cleopatra-2003-poster-280x420.png",
       "orientation": "vertical",
       "type": "pelicula",
+      "release_medium": "cine",
       "subtitle": "Romance",
       "id": "P1120",
       "viewers": 496357,
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2003,
+        "viewers": 496357,
+        "national_rank": 3,
+        "overall_rank": 15,
+        "updated_at": "2026-09-25"
+      },
       "producer": "Patagonik, Telefe",
       "release_date": "14/8/2003",
       "director": "Eduardo Mignogna"
@@ -4188,9 +4224,18 @@
       "image": "images/verticals/un-hijo-genial-2003-poster-280x420.png",
       "orientation": "vertical",
       "type": "pelicula",
+      "release_medium": "cine",
       "subtitle": "Familiar",
       "id": "P1177",
       "viewers": 241645,
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2003,
+        "viewers": 241645,
+        "national_rank": 6,
+        "overall_rank": 42,
+        "updated_at": "2026-09-25"
+      },
       "producer": "Telefe",
       "release_date": "21/12/2003",
       "director": "José Luis Massa"
