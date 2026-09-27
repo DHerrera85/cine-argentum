@@ -556,10 +556,19 @@
       "image": "images/verticals/apasionados-2002-poster-280x420.png",
       "orientation": "vertical",
       "type": "pelicula",
+      "release_medium": "cine",
       "subtitle": "Romance",
       "id": "P1017",
       "viewers": 1054475,
-      "producer": "Patagonik",
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2002,
+        "viewers": 1054475,
+        "national_rank": 1,
+        "overall_rank": 5,
+        "updated_at": "2026-09-25"
+      },
+      "producer": "Patagonik, Telefe",
       "release_date": "6/6/2002",
       "director": "Juan José Jusid"
     },
@@ -3463,9 +3472,18 @@
       "image": "images/verticals/kamchatka-2002-poster-280x420.png",
       "orientation": "vertical",
       "type": "pelicula",
+      "release_medium": "cine",
       "subtitle": "Histórica",
       "id": "P1145",
       "viewers": 408763,
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2002,
+        "viewers": 408763,
+        "national_rank": 2,
+        "overall_rank": 18,
+        "updated_at": "2026-09-25"
+      },
       "producer": "Patagonik",
       "release_date": "17/10/2002",
       "director": "Marcelo Piñeyro"
@@ -3632,10 +3650,19 @@
       "image": "images/verticals/dibu-3-2002-poster-280x420.png",
       "orientation": "vertical",
       "type": "pelicula",
+      "release_medium": "cine",
       "subtitle": "Familiar",
       "id": "P1152",
       "viewers": 238504,
-      "producer": "Patagonik",
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2002,
+        "viewers": 238504,
+        "national_rank": 4,
+        "overall_rank": 33,
+        "updated_at": "2026-09-25"
+      },
+      "producer": "Patagonik, Telefe",
       "release_date": "18/07/2002",
       "director": "Raúl Rodríguez Peila"
     },
@@ -5022,9 +5049,18 @@
       "image": "images/verticals/micaela-2002-poster-280x420.png",
       "orientation": "vertical",
       "type": "pelicula",
+      "release_medium": "cine",
       "subtitle": "Animación",
       "id": "P1213",
       "viewers": 78383,
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2002,
+        "viewers": 78383,
+        "national_rank": 10,
+        "overall_rank": 73,
+        "updated_at": "2026-09-25"
+      },
       "producer": "Juan José Stagnaro",
       "release_date": "28/11/2002",
       "director": "Rosanna Manfredi"
