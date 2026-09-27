@@ -3082,6 +3082,7 @@
       "synopsis": "Luego de un infarto, Rafael deberá replantearse su vida, tensionado entre las exigencias de sus padres, su restaurante y su vida sentimental",
       "channel": "",
       "image": "images/verticals/el-hijo-de-la-novia-2001-poster-280x420.png",
+      "horizontal_image": "images/horizontals-1024x576/2001-el-hijo-de-la-novia-pelicula-slide-1024x576.webp",
       "orientation": "vertical",
       "type": "pelicula",
       "release_medium": "cine",
@@ -4410,6 +4411,17 @@
       "synopsis": "Durante el verano de 1928 un grupo de reclusos encerrados en la Penitenciaría Nacional de Buenos Aires se dan a la fuga.",
       "channel": "",
       "image": "images/verticals/la-fuga-2001-poster-280x420.png",
+      "poster_gallery": [
+        {
+          "image": "images/verticals/la-fuga-2001-poster-280x420.png",
+          "label": "Póster principal"
+        },
+        {
+          "image": "images/verticals/2001-la-fuga-pelicula-poster280x420-v2.webp",
+          "label": "Póster alternativo"
+        }
+      ],
+      "horizontal_image": "images/horizontals-1024x576/2001-la-fuga-poster-horizontal-1024x576.webp",
       "orientation": "vertical",
       "type": "pelicula",
       "release_medium": "cine",
