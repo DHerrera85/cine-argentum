@@ -16950,6 +16950,7 @@
           "numero": 1,
           "release_date": "18/09/2024",
           "image": "images/verticals/envidiosa-temporada-1-poster-280x420.png",
+          "horizontal_image": "images/horizontals-1024x576/2024-envidiosa-temporada-1-netflix-slide-1024x576.webp",
           "netflix_reports": [
             {
               "report_id": "2025-H2",
@@ -16972,6 +16973,7 @@
           "numero": 2,
           "release_date": "05/02/2025",
           "image": "images/verticals/envidiosa-temporada-2-poster-280x420.png",
+          "horizontal_image": "images/horizontals-1024x576/2024-envidiosa-temporada-2-netflix-slide-1024x576.webp",
           "netflix_reports": [
             {
               "report_id": "2025-H2",
@@ -16994,6 +16996,7 @@
           "numero": 3,
           "release_date": "19/11/2025",
           "image": "images/verticals/envidiosa-temporada-3-poster-280x420.png",
+          "horizontal_image": "images/horizontals-1024x576/2024-envidiosa-temporada-3-netflix-slide-1024x576.webp",
           "netflix_reports": [
             {
               "report_id": "2025-H2",
@@ -17016,6 +17019,7 @@
           "numero": 4,
           "release_date": "29/04/2026",
           "image": "images/verticals/envidiosa-temporada-4-poster-280x420.png",
+          "horizontal_image": "images/horizontals-1024x576/2024-envidiosa-temporada-4-netflix-slide-1024x576.webp",
           "netflix_reports": [
             {
               "report_id": "2026-H1",
