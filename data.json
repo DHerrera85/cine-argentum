@@ -17788,6 +17788,7 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/atrapados-poster-280x420.png",
+      "horizontal_image": "images/horizontals-1024x576/2025-atrapados-netflix-slide1024x576.webp",
       "subtitle": "Thriller",
       "release_date": "26/03/2025",
       "capitulos": 6,
@@ -17850,6 +17851,7 @@
           "numero": 1,
           "release_date": "14/08/2025",
           "image": "images/verticals/en-el-barro-temporada-1-poster-280x420.png",
+          "horizontal_image": "images/horizontals-1024x576/2025-en-el-barro-temporada-1-netflix-slide1024x576.webp",
           "netflix_reports": [
             {
               "report_id": "2025-H2",
@@ -17872,6 +17874,7 @@
           "numero": 2,
           "release_date": "13/02/2026",
           "image": "images/verticals/en-el-barro-temporada-2-poster-280x420.png",
+          "horizontal_image": "images/horizontals-1024x576/2026-en-el-barro-temporada-2-netflix-slide1024x576.webp",
           "netflix_reports": [
             {
               "report_id": "2026-H1",
@@ -17963,6 +17966,7 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/el-eternauta-poster-280x420.png",
+      "horizontal_image": "images/horizontals-1024x576/2025-el-eternauta-temporada 1-netflix-slide1024x576.webp",
       "subtitle": "Thriller",
       "release_date": "30/04/2025",
       "capitulos": 6,
@@ -17970,6 +17974,8 @@
       "temporadas": [
         {
           "numero": 1,
+          "image": "images/verticals/el-eternauta-poster-280x420.png",
+          "horizontal_image": "images/horizontals-1024x576/2025-el-eternauta-temporada 1-netflix-slide1024x576.webp",
           "netflix_reports": [
             {
               "report_id": "2025-H2",
@@ -20718,6 +20724,7 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/el-tiempo-de-las-moscas-poster-280x420.png",
+      "horizontal_image": "images/horizontals-1024x576/2026-el-tiempo-de-las-moscas-netflix-slide-1024x576.webp",
       "subtitle": "Thriller",
       "release_date": "01/01/2026",
       "capitulos": 6,
