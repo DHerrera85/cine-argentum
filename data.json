@@ -14865,7 +14865,15 @@
           "numero": 1,
           "release_date": "16/02/2022",
           "image": "images/verticals/cielo-grande-primera temporada-poster-280x420.png",
+          "horizontal_image": "images/horizontals-1024x576/cielo-grande-slide-1024x576.png",
           "netflix_reports": [
+            {
+              "report_id": "2023-H1",
+              "periodo": "Ene-Jun 2023",
+              "horas_visualizadas": 6800000,
+              "ranking_general": 2830,
+              "total_ranking_general": 18214
+            },
             {
               "report_id": "2025-H2",
               "periodo": "Jul-Dic 2025",
@@ -14886,7 +14894,15 @@
           "numero": 2,
           "release_date": "30/12/2022",
           "image": "images/verticals/cielo-grande-segunda temporada-poster-280x420.png",
+          "horizontal_image": "images/horizontals-1024x576/2022-cielo-grande-temporada-2-netflix-slide1024x576.webp",
           "netflix_reports": [
+            {
+              "report_id": "2023-H1",
+              "periodo": "Ene-Jun 2023",
+              "horas_visualizadas": 9100000,
+              "ranking_general": 2220,
+              "total_ranking_general": 18214
+            },
             {
               "report_id": "2025-H2",
               "periodo": "Jul-Dic 2025",
@@ -15003,7 +15019,15 @@
           "numero": 1,
           "release_date": "22/02/2019",
           "image": "images/verticals/go-vive-a-tu-manera-primera temporada-poster-280x420.png",
+          "horizontal_image": "images/horizontals-1024x576/2019-go-vive-a-tu-manera-temporada-1-netflix-slide1024x576.png",
           "netflix_reports": [
+            {
+              "report_id": "2023-H1",
+              "periodo": "Ene-Jun 2023",
+              "horas_visualizadas": 17800000,
+              "ranking_general": 1203,
+              "total_ranking_general": 18214
+            },
             {
               "report_id": "2025-H2",
               "periodo": "Jul-Dic 2025",
@@ -15024,7 +15048,15 @@
           "numero": 2,
           "release_date": "21/06/2019",
           "image": "images/verticals/go-vive-a-tu-manera-segunda temporada-poster-280x420.png",
+          "horizontal_image": "images/horizontals-1024x576/2019-go-vive-a-tu-manera-temporada-2-netflix-slide1024x576.webp",
           "netflix_reports": [
+            {
+              "report_id": "2023-H1",
+              "periodo": "Ene-Jun 2023",
+              "horas_visualizadas": 14400000,
+              "ranking_general": 1453,
+              "total_ranking_general": 18214
+            },
             {
               "report_id": "2025-H2",
               "periodo": "Jul-Dic 2025",
@@ -17337,7 +17369,15 @@
           "numero": 1,
           "release_date": "17/02/2023",
           "image": "images/verticals/division-palermo-primera-temporada-poster-280x420.png",
+          "horizontal_image": "images/horizontals-1024x576/2023-division-palermo-primera-temporada-netflix-slide-1024x576.webp",
           "netflix_reports": [
+            {
+              "report_id": "2023-H1",
+              "periodo": "Ene-Jun 2023",
+              "horas_visualizadas": 12900000,
+              "ranking_general": 1620,
+              "total_ranking_general": 18214
+            },
             {
               "report_id": "2025-H2",
               "periodo": "Jul-Dic 2025",
@@ -17358,6 +17398,7 @@
           "numero": 2,
           "release_date": "17/07/2025",
           "image": "images/verticals/division-palermo-segunda-temporada-poster-280x420.png",
+          "horizontal_image": "images/horizontals-1024x576/2023-division-palermo-segunda-temporada-slide-1024x576.webp",
           "netflix_reports": [
             {
               "report_id": "2025-H2",
@@ -18417,6 +18458,13 @@
           "numero": 1,
           "netflix_reports": [
             {
+              "report_id": "2023-H1",
+              "periodo": "Ene-Jun 2023",
+              "horas_visualizadas": 21000000,
+              "ranking_general": 1019,
+              "total_ranking_general": 18214
+            },
+            {
               "report_id": "2025-H2",
               "periodo": "Jul-Dic 2025",
               "visualizaciones": 100000,
@@ -18461,12 +18509,32 @@
         {
           "numero": 1,
           "release_date": "13/08/2021",
-          "image": "images/verticals/2021-el-reino-primera-temporada-netflix-poster-280x420.png"
+          "image": "images/verticals/2021-el-reino-primera-temporada-netflix-poster-280x420.png",
+          "horizontal_image": "images/horizontals-1024x576/2021-el-reino-netflix-primer-temporada-slide-1024x576.png",
+          "netflix_reports": [
+            {
+              "report_id": "2023-H1",
+              "periodo": "Ene-Jun 2023",
+              "horas_visualizadas": 6400000,
+              "ranking_general": 2967,
+              "total_ranking_general": 18214
+            }
+          ]
         },
         {
           "numero": 2,
           "release_date": "22/03/2023",
-          "image": "images/verticals/2023-el-reino-segunda-temporada-netflix-poster-280x420.png"
+          "image": "images/verticals/2023-el-reino-segunda-temporada-netflix-poster-280x420.png",
+          "horizontal_image": "images/horizontals-1024x576/2021-el-reino-segunda-temporada-netflix-slide1024x576.webp",
+          "netflix_reports": [
+            {
+              "report_id": "2023-H1",
+              "periodo": "Ene-Jun 2023",
+              "horas_visualizadas": 9300000,
+              "ranking_general": 2174,
+              "total_ranking_general": 18214
+            }
+          ]
         }
       ]
     },
