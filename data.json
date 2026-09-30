@@ -12286,6 +12286,9 @@
         "Damián De Santo"
       ],
       "orientation": "vertical",
+      "tiras_2010_rows": [
+        "ultimas"
+      ],
       "image": "images/verticals/el-primero-de-nosotros-poster-280x420.png",
       "horizontal_image": "images/horizontals-1024x576/el-primero-de-nosotros-slide-1024x576.png",
       "subtitle": "Drama"
@@ -12342,6 +12345,9 @@
         "Romina Gaetani"
       ],
       "orientation": "vertical",
+      "tiras_2010_rows": [
+        "ultimas"
+      ],
       "image": "images/verticals/la-1-518-somos-uno-poster-280x420.png",
       "horizontal_image": "images/horizontals-1024x576/la-1-5-18-slide-1024x576.png",
       "subtitle": "Thriller"
@@ -12361,6 +12367,9 @@
         "Gina Mastronicola"
       ],
       "orientation": "vertical",
+      "tiras_2010_rows": [
+        "ultimas"
+      ],
       "image": "images/verticals/buenos-chicos-poster-280x420.png",
       "horizontal_image": "images/horizontals-1024x576/buenos-chicos-1024x576.png",
       "juveniles_rows": [
@@ -20829,6 +20838,9 @@
         "Federico D'Elia"
       ],
       "orientation": "vertical",
+      "tiras_2010_rows": [
+        "ultimas"
+      ],
       "image": "images/verticals/atav-2-poster-280x420.png",
       "horizontal_image": "images/horizontals-1024x576/atav2-slide-1024x576.png",
       "subtitle": "Telenovela"
