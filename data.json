@@ -13683,8 +13683,14 @@
         "Laura Novoa"
       ],
       "orientation": "vertical",
-      "image": "images/verticals/dulce-amor-poster-280x420.png",
-      "horizontal_image": "images/horizontals-1024x576/dulce-amor-slide-1024x576.png",
+      "image": "images/verticals/2012-dulce-amor-telefe-poster280x420.webp",
+      "horizontal_image": "images/horizontals-1024x576/2012-dulce-amor-telefe-slide1024x576.webp",
+      "poster_gallery": [
+        {
+          "image": "images/verticals/2012-dulce-amor-telefe-poster280x420.webp",
+          "label": "Póster principal"
+        }
+      ],
       "subtitle": "Telenovela",
       "horario": "22:45hs, 23:15hs",
       "capitulos": 301,
@@ -14445,7 +14451,28 @@
         "Romina Gaetani"
       ],
       "orientation": "vertical",
-      "image": "images/verticals/soy-gitano-poster-280x420.png",
+      "image": "images/verticals/2003-soy-gitano-canal13-poster280x420-v1.webp",
+      "poster_gallery": [
+        {
+          "image": "images/verticals/2003-soy-gitano-canal13-poster280x420-v1.webp",
+          "label": "Póster principal"
+        },
+        {
+          "image": "images/verticals/2003-soy-gitano-canal-13-poster280x420-v2.webp",
+          "label": "Póster alternativo"
+        }
+      ],
+      "horizontal_image": "images/horizontals-1024x576/2003-soy-gitano-canal13-slide1024x576-v1.webp",
+      "horizontal_gallery": [
+        {
+          "image": "images/horizontals-1024x576/2003-soy-gitano-canal13-slide1024x576-v1.webp",
+          "label": "Imagen principal"
+        },
+        {
+          "image": "images/horizontals-1024x576/2003-soy-gitano-canal13-slide1024x576-v2.webp",
+          "label": "Imagen alternativa"
+        }
+      ],
       "tiras_2000_rows": [
         "telenovelas-estelares"
       ],
@@ -20999,8 +21026,8 @@
         "Millie Stegmann"
       ],
       "orientation": "vertical",
-      "image": "images/verticals/son-amores-poster-280x420.png",
-      "horizontal_image": "images/horizontals-1024x576/son-amores-slide-1024x576.png",
+      "image": "images/verticals/2002-son-amores-canal13-poster280x420.webp",
+      "horizontal_image": "images/horizontals-1024x576/2002-son-amores-canal13-slide1024x576.webp",
       "tiras_2000_rows": [
         "comedias-exitosas",
         "comedias-estelares"
