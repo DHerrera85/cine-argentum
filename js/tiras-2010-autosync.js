@@ -18,16 +18,24 @@
     var HORIZONTAL_ROWS = [
         {
             key: 'ultimas',
+            sectionId: 'tiras-2010-ultimas',
+            containerId: 'tiras-2010-ultimas-list',
+            countId: 'tiras-2010-ultimas-count'
+        },
 
-            sectionId:
-                'tiras-2010-ultimas',
+        {
+            key: 'historias-epoca',
+            sectionId: 'tiras-2010-historias-epoca',
+            containerId: 'tiras-2010-historias-epoca-list',
+            countId: 'tiras-2010-historias-epoca-count'
+        },
 
-            containerId:
-                'tiras-2010-ultimas-list',
-
-            countId:
-                'tiras-2010-ultimas-count'
-        }
+        {
+            key: 'telenovelas-estelares',
+            sectionId: 'tiras-2010-telenovelas-estelares',
+            containerId: 'tiras-2010-telenovelas-estelares-list',
+            countId: 'tiras-2010-telenovelas-estelares-count'
+        },
     ];
 
     var VERTICAL_ROWS = [
@@ -42,6 +50,56 @@
 
             countId:
                 'tiras-2010-comedias-estelares-count'
+        },
+
+        {
+            key: 'thrillers-dramas',
+
+            sectionId:
+                'tiras-2010-thrillers-dramas',
+
+            containerId:
+                'tiras-2010-thrillers-dramas-list',
+
+            countId:
+                'tiras-2010-thrillers-dramas-count'
+        },
+
+        {
+            key: 'para-toda-la-familia',
+
+            sectionId:
+                'tiras-2010-para-toda-la-familia',
+
+            containerId:
+                'tiras-2010-para-toda-la-familia-list',
+
+            countId:
+                'tiras-2010-para-toda-la-familia-count'
+        },
+        {
+            key: 'telenovelas-noche-2010-2022',
+
+            sectionId:
+                'tiras-2010-telenovelas-noche-2010-2022',
+
+            containerId:
+                'tiras-2010-telenovelas-noche-2010-2022-list',
+
+            countId:
+                'tiras-2010-telenovelas-noche-2010-2022-count'
+        },
+        {
+            key: 'telenovelas-tarde-2010-2019',
+
+            sectionId:
+                'tiras-2010-telenovelas-tarde-2010-2019',
+
+            containerId:
+                'tiras-2010-telenovelas-tarde-2010-2019-list',
+
+            countId:
+                'tiras-2010-telenovelas-tarde-2010-2019-count'
         }
     ];
 
