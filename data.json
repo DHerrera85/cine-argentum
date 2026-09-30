@@ -21714,7 +21714,8 @@
         "Muriel Santa Ana"
       ],
       "orientation": "vertical",
-      "image": "images/verticals/una-familia-especial-poster-280x420px.png",
+      "image": "images/verticals/2005-una-familia-especial-canal-13-poster-280x420.webp",
+      "horizontal_image": "images/horizontals-1024x576/2005-una-familia-especial-canal-13-slide-1024x576.webp",
       "tiras_2000_rows": [
         "comedias-estelares"
       ],
@@ -21722,7 +21723,7 @@
       "horario": "21hs",
       "capitulos": 82,
       "fecha_estreno": "28/03/2005",
-      "sinopsis": "La trama se centra en el romance entre Santiago y Selene, explorando el choque cultural y el intento de los extraterrestres por adaptarse y mimetizarse con los humanos",
+      "sinopsis": "La trama se centra en el romance entre Santiago y Selene, explorando el choque cultural y el intento de los extraterrestres por adaptarse y mimetizarse con los humanos.",
       "rating": "11,4",
       "productora": "Pol-Ka",
       "tipo_emision": "Tira Diaria"
