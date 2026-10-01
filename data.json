@@ -7296,6 +7296,9 @@
         "pol-ka",
         "webseries"
       ],
+      "tiras_2010_rows": [
+        "webseries"
+      ],
       "producciones_relacionadas": [
         {
           "id": "v20",
@@ -7452,6 +7455,7 @@
       "image": "images/verticals/2017-la-busqueda-de-laura-telefe-poster-280x420.webp",
       "subtitle": "Thriller",
       "capitulos": 18,
+      "release_date": "26/01/2017",
       "sinopsis": "Laura, devastada tras perder su tercer embarazo, comienza a involucrarse en la investigación de la desaparición de Carolina Fazio cuando su esposo, el inspector Godoy, le pide ayuda con el caso. Junto a su amigo Kevin, inicia una pesquisa paralela guiada por su intuición de escritora y vuelca sus hallazgos en un blog, mientras intenta reconstruir una historia de amantes, secretos y una desaparición cada vez más inquietante.",
       "tipo_emision": "Webserie",
       "tiras_2010_rows": [
@@ -12399,7 +12403,9 @@
       "juveniles_rows": [
         "pol-ka"
       ],
-      "subtitle": "Thriller"
+      "subtitle": "Thriller",
+      "release_date": "11/11/2023",
+      "horario": "21:00hs, 23:00hs"
     },
     {
       "id": "h6",
@@ -13177,8 +13183,7 @@
       "orientation": "vertical",
       "tiras_2010_rows": [
         "thrillers-dramas",
-        "historias-epoca",
-        "telenovelas-noche-2010-2022"
+        "historias-epoca"
       ],
       "image": "images/verticals/cuentame-como-paso-poster-280x420.png",
       "horizontal_image": "images/horizontals-1024x576/cuentame-como-paso-slide-1024x576.png",
@@ -15488,6 +15493,10 @@
       "productora": "Pol-Ka",
       "juveniles_rows": [
         "pol-ka"
+      ],
+      "tiras_2010_rows": [
+        "para-toda-la-familia",
+        "comedias-estelares"
       ],
       "tipo_emision": "Tira Diaria"
     },
@@ -21830,7 +21839,8 @@
       ],
       "orientation": "vertical",
       "tiras_2010_rows": [
-        "para-toda-la-familia"
+        "para-toda-la-familia",
+        "comedias-estelares"
       ],
       "image": "images/verticals/los-unicos-2011-poster-280x420.png",
       "subtitle": "Comedia",
