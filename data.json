@@ -1470,6 +1470,9 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/mi-amor-mi-amor-poster-280x420.png",
+      "tiras_2010_rows": [
+        "comedias-estelares"
+      ],
       "subtitle": "Comedia",
       "horario": "22:30hs",
       "capitulos": 90,
@@ -12305,7 +12308,7 @@
       "orientation": "vertical",
       "tiras_2010_rows": [
         "ultimas",
-        "telenovelas-noche-2010-2022"
+        "thrillers-dramas"
       ],
       "image": "images/verticals/el-primero-de-nosotros-poster-280x420.png",
       "horizontal_image": "images/horizontals-1024x576/el-primero-de-nosotros-slide-1024x576.png",
@@ -12388,7 +12391,8 @@
       ],
       "orientation": "vertical",
       "tiras_2010_rows": [
-        "ultimas"
+        "ultimas",
+        "thrillers-dramas"
       ],
       "image": "images/verticals/buenos-chicos-poster-280x420.png",
       "horizontal_image": "images/horizontals-1024x576/buenos-chicos-1024x576.png",
@@ -12614,6 +12618,9 @@
         "Gastón Soffriti"
       ],
       "orientation": "vertical",
+      "tiras_2010_rows": [
+        "comedias-estelares"
+      ],
       "image": "images/verticals/millennials-poster-280x420.png",
       "subtitle": "Juvenil",
       "horario": "22hs",
@@ -12918,6 +12925,10 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/graduados-poster-280x420.png",
+      "tiras_2000_rows": [
+        "comedias-exitosas",
+        "comedias-estelares"
+      ],
       "horizontal_image": "images/horizontals-1024x576/graduados-slide-1024x576.png",
       "subtitle": "Comedia",
       "horario": "21:45hs",
@@ -13421,6 +13432,9 @@
         "Claribel Medina"
       ],
       "orientation": "vertical",
+      "tiras_2010_rows": [
+        "thrillers-dramas"
+      ],
       "image": "images/verticals/mis-amigos-de-siempre-poster-280x420.png",
       "subtitle": "Telenovela",
       "horario": "22hs, 23hs",
@@ -13478,6 +13492,9 @@
         "Julieta Nair Calvo"
       ],
       "orientation": "vertical",
+      "tiras_2010_rows": [
+        "comedias-estelares"
+      ],
       "image": "images/verticals/las-estrellas-poster-280x420.png",
       "subtitle": "Comedia",
       "horario": "21:30hs",
@@ -13507,6 +13524,9 @@
         "Inés Estévez"
       ],
       "orientation": "vertical",
+      "tiras_2010_rows": [
+        "thrillers-dramas"
+      ],
       "image": "images/verticals/2019-pequena-victoria-telefe-poster-280x420.png",
       "subtitle": "Drama",
       "release_date": "16/09/2019",
@@ -13537,6 +13557,9 @@
         "Dady Brieva"
       ],
       "orientation": "vertical",
+      "tiras_2010_rows": [
+        "comedias-estelares"
+      ],
       "image": "images/verticals/guapas-poster-280x420.png",
       "subtitle": "Comedia",
       "horario": "23hs, 22hs, 21:15hs",
@@ -13563,8 +13586,16 @@
         "Julieta Nair Calvo"
       ],
       "orientation": "vertical",
+      "tiras_2010_rows": [
+        "comedias-estelares"
+      ],
       "image": "images/verticals/separadas-poster-280x420.png",
-      "subtitle": "Comedia"
+      "subtitle": "Comedia",
+      "release_date": "20/01/2020",
+      "air_broadcasts": [
+        "20/01/2020"
+      ],
+      "horario": "22:30HS"
     },
     {
       "id": "v31",
@@ -21495,6 +21526,9 @@
         "Peter Lanzani"
       ],
       "orientation": "vertical",
+      "tiras_2010_rows": [
+        "thrillers-dramas"
+      ],
       "image": "images/verticals/la-leona-poster-280x420.png",
       "horizontal_image": "images/horizontals-1024x576/la-leona-slide-1024x576.png",
       "subtitle": "Thriller",
@@ -21529,7 +21563,7 @@
       "subtitle": "Telenovela",
       "horario": "21:45hs, 23hs",
       "capitulos": 202,
-      "fecha_estreno": "3/1/2005",
+      "fecha_estreno": "21/8/2012",
       "sinopsis": "Ringo, un boxeador retirado, lucha contra problemas económicos, desilusiones y la custodia de su hijo mientras trabaja como bombero voluntario y hace changas para salir adelante. Su vida cambia al cruzarse con Camila, una médica solidaria que encuentra sentido en ayudar a los demás.",
       "rating": "15,9",
       "productora": "Pol-Ka",
