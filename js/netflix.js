@@ -236,6 +236,40 @@ function buildSeriesRankingEntries(items, reportId) {
       getSeriesReportsForPeriod(item, reportId);
 
     seasonReports.forEach(row => {
+      const isNetflixExclusive =
+        String(
+          row.season &&
+            row.season.exclusive_platform
+            ? row.season.exclusive_platform
+            : ''
+        ).trim().toLowerCase() === 'netflix';
+
+      const isNetflixOriginalItem =
+        String(
+          item.channel || ''
+        ).trim().toLowerCase() === 'netflix';
+
+      /*
+       * Una temporada participa del Top 10 editorial si:
+       *
+       * 1. La producción completa es original de Netflix, o
+       * 2. Esa temporada está marcada explícitamente como
+       *    exclusiva de Netflix.
+       *
+       * Esto permite conservar netflix_reports de temporadas
+       * adquiridas/licenciadas sin incorporarlas al ranking.
+       *
+       * Ejemplo:
+       * El Marginal T1-T3 -> quedan fuera.
+       * El Marginal T4-T5 -> entran por exclusive_platform.
+       */
+      if (
+        !isNetflixOriginalItem &&
+        !isNetflixExclusive
+      ) {
+        return;
+      }
+
       const views =
         normalizeNumber(row.report.visualizaciones);
 
@@ -539,12 +573,10 @@ function getNetflixTop10Image(entry) {
     return getPlaceholderImageSrc();
   }
 
-  if (item.horizontal_image) {
-    return String(
-      item.horizontal_image
-    ).replace(/ /g, '%20');
-  }
-
+  /*
+   * En rankings de series priorizamos la imagen
+   * correspondiente a la temporada concreta.
+   */
   if (
     entry.kind === 'series' &&
     entry.season &&
@@ -552,6 +584,17 @@ function getNetflixTop10Image(entry) {
   ) {
     return String(
       entry.season.horizontal_image
+    ).replace(/ /g, '%20');
+  }
+
+  /*
+   * La imagen general queda como fallback para
+   * producciones que todavía no tienen slide
+   * específico por temporada.
+   */
+  if (item.horizontal_image) {
+    return String(
+      item.horizontal_image
     ).replace(/ /g, '%20');
   }
 
