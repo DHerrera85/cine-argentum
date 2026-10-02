@@ -6791,7 +6791,9 @@
         "Noa Kirel",
         "Caro Domenech",
         "Gastón Dalmau",
-        "Jerónimo Bosia"
+        "Jerónimo Bosia",
+        "El Purre",
+        "Mercedes Funes"
       ],
       "channel": "Streaming",
       "platform": "Prime Video",
@@ -6809,6 +6811,7 @@
       ],
       "genre": "Juvenil",
       "release_date": "09/10/2026",
+      "horario": "sábados 19hs",
       "episodes": 24,
       "image": "images/verticals/2026-mirame-asi-camino-noa-prime-video-poster280x420.webp",
       "poster_gallery": [
@@ -18604,7 +18607,7 @@
         },
         {
           "numero": 2,
-          "release_date": "01/10/2026",
+          "release_date": "21/10/2026",
           "image": "images/verticals/2026-coppola-elrepresentante-season2-poster280x420.png"
         }
       ]
