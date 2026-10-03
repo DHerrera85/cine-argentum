@@ -51,39 +51,167 @@
           "data_id": "P1212"
         },
         {
-          "national_rank": 6,
-          "title": "EL PERRO",
+          "id": "P2078",
+          "title": "El perro",
+          "genre": "Drama",
+          "year": "2004",
+          "actors": [
+            "Juan Villegas",
+            "Walter Donado",
+            "Rosa Valsecchi",
+            "Mariela Díaz",
+            "Micol Estévez"
+          ],
+          "synopsis": "Coco, un hombre desempleado de la Patagonia, recibe un dogo argentino como recompensa por ayudar a una mujer. La inesperada compañía del animal abrirá nuevas posibilidades en su vida.",
+          "channel": "",
+          "image": "images/verticals/2004-el-perro-pelicula-poster280x420.webp",
+          "orientation": "vertical",
+          "type": "pelicula",
+          "release_medium": "cine",
+          "subtitle": "Drama",
           "viewers": 211993,
-          "overall_rank": 53,
-          "data_id": null
+          "theatrical_stats": {
+            "source": "INCAA",
+            "year": 2004,
+            "viewers": 211993,
+            "national_rank": 6,
+            "overall_rank": 53,
+            "updated_at": "2026-10-03"
+          },
+          "producer": "Guacamole Films, OK Films, Wanda Visión",
+          "release_date": "23/09/2004",
+          "director": "Carlos Sorín"
         },
         {
-          "national_rank": 7,
-          "title": "EL ABRAZO PARTIDO",
+          "id": "P2079",
+          "title": "El abrazo partido",
+          "genre": "Comedia",
+          "year": "2004",
+          "actors": [
+            "Daniel Hendler",
+            "Sergio Boris",
+            "Adriana Aizemberg",
+            "Jorge D'Elía",
+            "Rosita Londner"
+          ],
+          "synopsis": "Ariel trabaja en una galería comercial del barrio de Once y busca obtener la ciudadanía polaca para emigrar a Europa. El inesperado regreso de su padre lo obliga a revisar su historia familiar y su propia identidad.",
+          "channel": "",
+          "image": "images/verticals/2004-el-abrazo-partido-pelicula-poster280x420.webp",
+          "orientation": "vertical",
+          "type": "pelicula",
+          "release_medium": "cine",
+          "subtitle": "Comedia",
           "viewers": 171914,
-          "overall_rank": 55,
-          "data_id": null
+          "theatrical_stats": {
+            "source": "INCAA",
+            "year": 2004,
+            "viewers": 171914,
+            "national_rank": 7,
+            "overall_rank": 55,
+            "updated_at": "2026-10-03"
+          },
+          "producer": "BD Cine, Wanda Visión, Nirvana Films",
+          "release_date": "25/03/2004",
+          "director": "Daniel Burman"
         },
         {
-          "national_rank": 8,
-          "title": "ROMA",
+          "id": "P2080",
+          "title": "Roma",
+          "genre": "Drama",
+          "year": "2004",
+          "actors": [
+            "José Sacristán",
+            "Juan Diego Botto",
+            "Susú Pecoraro",
+            "Marcela Kloosterboer",
+            "Marina Glezer"
+          ],
+          "synopsis": "Joaquín Góñez, un escritor argentino radicado en España, comienza a reconstruir su vida con la ayuda de un joven asistente. Sus recuerdos lo llevan al Buenos Aires de su juventud y a Roma, su madre, figura central de su historia.",
+          "channel": "",
+          "image": "images/verticals/2004-roma-pelicula-poster280x420.webp",
+          "orientation": "vertical",
+          "type": "pelicula",
+          "release_medium": "cine",
+          "subtitle": "Drama",
           "viewers": 139855,
-          "overall_rank": 61,
-          "data_id": null
+          "theatrical_stats": {
+            "source": "INCAA",
+            "year": 2004,
+            "viewers": 139855,
+            "national_rank": 8,
+            "overall_rank": 61,
+            "updated_at": "2026-10-03"
+          },
+          "producer": "Tesela PC, Aristarain PC",
+          "release_date": "15/04/2004",
+          "director": "Adolfo Aristarain"
         },
         {
-          "national_rank": 9,
-          "title": "AY JUANCITO",
+          "id": "P2081",
+          "title": "Ay, Juancito",
+          "genre": "Drama",
+          "year": "2004",
+          "actors": [
+            "Adrián Navarro",
+            "Inés Estévez",
+            "Leticia Brédice",
+            "Laura Novoa",
+            "Jorge Marrale",
+            "Norma Aleandro",
+            "Alejandro Awada"
+          ],
+          "synopsis": "Juan Ramón Duarte, hermano de Eva Perón, asciende dentro de los círculos de poder durante los primeros gobiernos peronistas. Su vida acompaña el apogeo político de su hermana y desemboca en una rápida caída.",
+          "channel": "",
+          "image": "images/verticals/2004-ay-juancito-pelicula-poster280x420.webp",
+          "orientation": "vertical",
+          "type": "pelicula",
+          "release_medium": "cine",
+          "subtitle": "Drama",
           "viewers": 139031,
-          "overall_rank": 62,
-          "data_id": null
+          "theatrical_stats": {
+            "source": "INCAA",
+            "year": 2004,
+            "viewers": 139031,
+            "national_rank": 9,
+            "overall_rank": 62,
+            "updated_at": "2026-10-03"
+          },
+          "producer": "Aries Cinematográfica Argentina",
+          "release_date": "10/06/2004",
+          "director": "Héctor Olivera"
         },
         {
-          "national_rank": 10,
-          "title": "LA NIÑA SANTA",
+          "id": "P2082",
+          "title": "La niña santa",
+          "genre": "Drama",
+          "year": "2004",
+          "actors": [
+            "María Alché",
+            "Mercedes Morán",
+            "Carlos Belloso",
+            "Alejandro Urdapilleta",
+            "Julieta Zylberberg",
+            "Mía Maestro"
+          ],
+          "synopsis": "Amalia vive con su madre en un hotel de provincia donde se celebra un congreso médico. Tras un perturbador encuentro con uno de los asistentes, interpreta lo sucedido como una misión religiosa y decide intentar redimirlo.",
+          "channel": "",
+          "image": "images/verticals/2004-la-nina-santa-pelicula-poster280x420.webp",
+          "orientation": "vertical",
+          "type": "pelicula",
+          "release_medium": "cine",
+          "subtitle": "Drama",
           "viewers": 112461,
-          "overall_rank": 75,
-          "data_id": null
+          "theatrical_stats": {
+            "source": "INCAA",
+            "year": 2004,
+            "viewers": 112461,
+            "national_rank": 10,
+            "overall_rank": 75,
+            "updated_at": "2026-10-03"
+          },
+          "producer": "Lita Stantic Producciones, El Deseo, Teodora Film, R&C Produzioni, La Pasionaria",
+          "release_date": "06/05/2004",
+          "director": "Lucrecia Martel"
         }
       ]
     },
