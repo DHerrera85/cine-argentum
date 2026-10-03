@@ -2080,6 +2080,14 @@
           "total_ranking_general": 18214
         },
         {
+          "report_id": "2024-H1",
+          "periodo": "Ene-Jun 2024",
+          "visualizaciones": 900000,
+          "horas_visualizadas": 1700000,
+          "ranking_peliculas": 2554,
+          "total_ranking_peliculas": 9360
+        },
+        {
           "report_id": "2025-H2",
           "periodo": "Jul-Dic 2025",
           "visualizaciones": 400000,
@@ -2208,6 +2216,14 @@
           "horas_visualizadas": 5800000,
           "ranking_general": 3202,
           "total_ranking_general": 18214
+        },
+        {
+          "report_id": "2024-H1",
+          "periodo": "Ene-Jun 2024",
+          "visualizaciones": 300000,
+          "horas_visualizadas": 500000,
+          "ranking_peliculas": 4527,
+          "total_ranking_peliculas": 9360
         },
         {
           "report_id": "2025-H2",
@@ -3035,6 +3051,14 @@
           "horas_visualizadas": 3700000,
           "ranking_general": 4342,
           "total_ranking_general": 18214
+        },
+        {
+          "report_id": "2024-H1",
+          "periodo": "Ene-Jun 2024",
+          "visualizaciones": 1000000,
+          "horas_visualizadas": 1700000,
+          "ranking_peliculas": 2439,
+          "total_ranking_peliculas": 9360
         },
         {
           "report_id": "2025-H2",
@@ -4148,6 +4172,14 @@
           "total_ranking_general": 18214
         },
         {
+          "report_id": "2024-H1",
+          "periodo": "Ene-Jun 2024",
+          "visualizaciones": 800000,
+          "horas_visualizadas": 1300000,
+          "ranking_peliculas": 2813,
+          "total_ranking_peliculas": 9360
+        },
+        {
           "report_id": "2025-H2",
           "periodo": "Jul-Dic 2025",
           "visualizaciones": 700000,
@@ -4573,6 +4605,14 @@
           "horas_visualizadas": 1000000,
           "ranking_general": 8006,
           "total_ranking_general": 18214
+        },
+        {
+          "report_id": "2024-H1",
+          "periodo": "Ene-Jun 2024",
+          "visualizaciones": 400000,
+          "horas_visualizadas": 500000,
+          "ranking_peliculas": 4063,
+          "total_ranking_peliculas": 9360
         },
         {
           "report_id": "2025-H2",
@@ -5001,6 +5041,14 @@
           "total_ranking_general": 18214
         },
         {
+          "report_id": "2024-H1",
+          "periodo": "Ene-Jun 2024",
+          "visualizaciones": 1300000,
+          "horas_visualizadas": 2600000,
+          "ranking_peliculas": 2038,
+          "total_ranking_peliculas": 9360
+        },
+        {
           "report_id": "2025-H2",
           "periodo": "Jul-Dic 2025",
           "visualizaciones": 1400000,
@@ -5245,6 +5293,14 @@
           "total_ranking_general": 18214
         },
         {
+          "report_id": "2024-H1",
+          "periodo": "Ene-Jun 2024",
+          "visualizaciones": 900000,
+          "horas_visualizadas": 1700000,
+          "ranking_peliculas": 2547,
+          "total_ranking_peliculas": 9360
+        },
+        {
           "report_id": "2025-H2",
           "periodo": "Jul-Dic 2025",
           "visualizaciones": 800000,
@@ -5427,6 +5483,14 @@
           "horas_visualizadas": 2400000,
           "ranking_general": 5399,
           "total_ranking_general": 18214
+        },
+        {
+          "report_id": "2024-H1",
+          "periodo": "Ene-Jun 2024",
+          "visualizaciones": 1000000,
+          "horas_visualizadas": 1900000,
+          "ranking_peliculas": 2395,
+          "total_ranking_peliculas": 9360
         },
         {
           "report_id": "2025-H2",
