@@ -372,13 +372,70 @@ function buildMovieRankingEntries(items, reportId) {
       return;
     }
 
+    /*
+     * Para películas no alcanza con que hayan estado
+     * disponibles en Netflix.
+     *
+     * Consideramos elegibles las producciones
+     * identificadas como originales/exclusivas de Netflix
+     * mediante channel, producer o exclusive_platform.
+     */
+    const isNetflixOriginal =
+      String(
+        item.channel || ''
+      ).trim().toLowerCase() === 'netflix' ||
+      String(
+        item.exclusive_platform || ''
+      ).trim().toLowerCase() === 'netflix' ||
+      String(
+        item.producer || ''
+      ).toLowerCase().includes('netflix');
+
+    if (!isNetflixOriginal) {
+      return;
+    }
+
     const views =
-      normalizeNumber(report.visualizaciones);
+      normalizeNumber(
+        report.visualizaciones
+      );
+
+    const hours =
+      normalizeNumber(
+        report.horas_visualizadas
+      );
+
+    /*
+     * Los informes recientes utilizan visualizaciones.
+     * 2023-H1 utiliza horas visualizadas.
+     */
+    const usesHours =
+      views === null &&
+      hours !== null;
+
+    const metricValue =
+      usesHours
+        ? hours
+        : views;
 
     const ranking =
-      normalizeNumber(report.ranking_peliculas);
+      normalizeNumber(
+        usesHours
+          ? report.ranking_general
+          : report.ranking_peliculas
+      );
 
-    if (views === null || ranking === null) {
+    const totalRanking =
+      normalizeNumber(
+        usesHours
+          ? report.total_ranking_general
+          : report.total_ranking_peliculas
+      );
+
+    if (
+      metricValue === null ||
+      ranking === null
+    ) {
       return;
     }
 
@@ -389,11 +446,14 @@ function buildMovieRankingEntries(items, reportId) {
       report,
       reportId,
       views,
+      hours,
+      metricValue,
+      metricType:
+        usesHours
+          ? 'hours'
+          : 'views',
       ranking,
-      totalRanking:
-        normalizeNumber(
-          report.total_ranking_peliculas
-        )
+      totalRanking
     });
   });
 
@@ -402,8 +462,8 @@ function buildMovieRankingEntries(items, reportId) {
       return a.ranking - b.ranking;
     }
 
-    if (a.views !== b.views) {
-      return b.views - a.views;
+    if (a.metricValue !== b.metricValue) {
+      return b.metricValue - a.metricValue;
     }
 
     return String(a.item.title || '')
@@ -413,7 +473,6 @@ function buildMovieRankingEntries(items, reportId) {
       );
   });
 }
-
 
 /*
  * Devuelve solamente las primeras diez posiciones

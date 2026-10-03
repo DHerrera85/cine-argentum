@@ -2073,6 +2073,13 @@
       "release_date": "9/9/2020",
       "netflix_reports": [
         {
+          "report_id": "2023-H1",
+          "periodo": "Ene-Jun 2023",
+          "horas_visualizadas": 1600000,
+          "ranking_general": 6599,
+          "total_ranking_general": 18214
+        },
+        {
           "report_id": "2025-H2",
           "periodo": "Jul-Dic 2025",
           "visualizaciones": 400000,
@@ -2195,6 +2202,13 @@
       "director": "Sebastián De Caro",
       "release_date": "7/12/2022",
       "netflix_reports": [
+        {
+          "report_id": "2023-H1",
+          "periodo": "Ene-Jun 2023",
+          "horas_visualizadas": 5800000,
+          "ranking_general": 3202,
+          "total_ranking_general": 18214
+        },
         {
           "report_id": "2025-H2",
           "periodo": "Jul-Dic 2025",
@@ -3015,6 +3029,13 @@
       "release_date": "15/6/2022",
       "director": "Sebastián Schindel",
       "netflix_reports": [
+        {
+          "report_id": "2023-H1",
+          "periodo": "Ene-Jun 2023",
+          "horas_visualizadas": 3700000,
+          "ranking_general": 4342,
+          "total_ranking_general": 18214
+        },
         {
           "report_id": "2025-H2",
           "periodo": "Jul-Dic 2025",
@@ -4120,6 +4141,13 @@
       "director": "Sebastián Schindel",
       "netflix_reports": [
         {
+          "report_id": "2023-H1",
+          "periodo": "Ene-Jun 2023",
+          "horas_visualizadas": 1700000,
+          "ranking_general": 6448,
+          "total_ranking_general": 18214
+        },
+        {
           "report_id": "2025-H2",
           "periodo": "Jul-Dic 2025",
           "visualizaciones": 700000,
@@ -4540,6 +4568,13 @@
       "director": "Carlos Sorín",
       "netflix_reports": [
         {
+          "report_id": "2023-H1",
+          "periodo": "Ene-Jun 2023",
+          "horas_visualizadas": 1000000,
+          "ranking_general": 8006,
+          "total_ranking_general": 18214
+        },
+        {
           "report_id": "2025-H2",
           "periodo": "Jul-Dic 2025",
           "visualizaciones": 400000,
@@ -4959,6 +4994,13 @@
       "director": "Alejandro Montiel",
       "netflix_reports": [
         {
+          "report_id": "2023-H1",
+          "periodo": "Ene-Jun 2023",
+          "horas_visualizadas": 6000000,
+          "ranking_general": 3115,
+          "total_ranking_general": 18214
+        },
+        {
           "report_id": "2025-H2",
           "periodo": "Jul-Dic 2025",
           "visualizaciones": 1400000,
@@ -5196,6 +5238,13 @@
       "director": "Alejandro Montiel",
       "netflix_reports": [
         {
+          "report_id": "2023-H1",
+          "periodo": "Ene-Jun 2023",
+          "horas_visualizadas": 3200000,
+          "ranking_general": 4658,
+          "total_ranking_general": 18214
+        },
+        {
           "report_id": "2025-H2",
           "periodo": "Jul-Dic 2025",
           "visualizaciones": 800000,
@@ -5372,6 +5421,13 @@
       "release_date": "30/03/2022",
       "director": "Marcos Carnevale",
       "netflix_reports": [
+        {
+          "report_id": "2023-H1",
+          "periodo": "Ene-Jun 2023",
+          "horas_visualizadas": 2400000,
+          "ranking_general": 5399,
+          "total_ranking_general": 18214
+        },
         {
           "report_id": "2025-H2",
           "periodo": "Jul-Dic 2025",
