@@ -8025,6 +8025,107 @@
       "director": "Lucrecia Martel"
     },
     {
+      "id": "P2083",
+      "title": "Las manos",
+      "genre": "Drama",
+      "year": "2006",
+      "actors": [
+        "Jorge Marrale",
+        "Graciela Borges",
+        "Duilio Marzio",
+        "Belén Blanco",
+        "Esteban Pérez",
+        "Carlos Portaluppi"
+      ],
+      "synopsis": "Inspirada en la vida del padre Mario Pantaleo, un sacerdote italiano radicado en Argentina a quien se le atribuía el don de diagnosticar y sanar enfermedades mediante la imposición de sus manos.",
+      "channel": "",
+      "image": "images/verticals/2006-las-manos-pelicula-poster280x420.webp",
+      "orientation": "vertical",
+      "type": "pelicula",
+      "release_medium": "cine",
+      "subtitle": "Drama",
+      "viewers": 219391,
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2006,
+        "viewers": 219391,
+        "national_rank": 4,
+        "overall_rank": 38,
+        "updated_at": "2026-10-03"
+      },
+      "producer": "Aleph Media, UNLaM, Corbelli Producciones, Luna Films",
+      "release_date": "10/08/2006",
+      "director": "Alejandro Doria"
+    },
+    {
+      "id": "P2084",
+      "title": "Derecho de familia",
+      "genre": "Comedia",
+      "year": "2006",
+      "actors": [
+        "Daniel Hendler",
+        "Arturo Goetz",
+        "Julieta Díaz",
+        "Adriana Aizemberg",
+        "Eloy Burman",
+        "Damián Dreizik"
+      ],
+      "synopsis": "Ariel Perelman es un joven abogado que intenta construir una identidad propia mientras convive con la influencia de su padre, también abogado. La formación de su propia familia lo lleva a replantearse aquello que heredó y lo que desea cambiar.",
+      "channel": "",
+      "image": "images/verticals/2006-derecho-de-familia-pelicula-poster280x420.webp",
+      "orientation": "vertical",
+      "type": "pelicula",
+      "release_medium": "cine",
+      "subtitle": "Comedia",
+      "viewers": 188675,
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2006,
+        "viewers": 188675,
+        "national_rank": 6,
+        "overall_rank": 44,
+        "updated_at": "2026-10-03"
+      },
+      "producer": "BD Cine, Wanda Visión, Classic, Paradis Films",
+      "release_date": "23/03/2006",
+      "director": "Daniel Burman"
+    },
+    {
+      "id": "P2085",
+      "title": "El método",
+      "genre": "Thriller",
+      "year": "2006",
+      "actors": [
+        "Eduardo Noriega",
+        "Najwa Nimri",
+        "Eduard Fernández",
+        "Pablo Echarri",
+        "Adriana Ozores",
+        "Ernesto Alterio",
+        "Carmelo Gómez",
+        "Natalia Verbeke"
+      ],
+      "synopsis": "Siete aspirantes a un importante puesto ejecutivo son reunidos en una sala para participar de un proceso de selección. Las pruebas del método Grönholm los enfrentan entre sí y ponen a prueba hasta dónde están dispuestos a llegar para conseguir el empleo.",
+      "channel": "",
+      "image": "images/verticals/2006-el-metodo-pelicula-poster280x420.webp",
+      "orientation": "vertical",
+      "type": "pelicula",
+      "release_medium": "cine",
+      "subtitle": "Thriller",
+      "viewers": 139066,
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2006,
+        "viewers": 139066,
+        "national_rank": 7,
+        "overall_rank": 65,
+        "updated_at": "2026-10-03"
+      },
+      "producer": "Alquimia Cinema, Tornasol Films, Arena Films, Cattleya",
+      "release_date": "16/03/2006",
+      "director": "Marcelo Piñeyro"
+    },
+    {
       "id": "T0001",
       "title": "Amigos son los amigos",
       "year": "1990",
