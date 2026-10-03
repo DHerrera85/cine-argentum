@@ -1,0 +1,1829 @@
+{
+  "source": "INCAA / SAF — Tableau Public — Películas estrenadas",
+  "source_snapshot": "Películas.xlsx descargado el 2026-10-03",
+  "scope": "2004-2026",
+  "methodology": {
+    "national_rank": "Origen Pelicula = Nacionales; orden por Entradas descendente dentro del año de estreno.",
+    "overall_rank": "Todas las películas del año ordenadas por Entradas descendente.",
+    "data_id": "ID de Cine Argentum cuando ya fue corroborado; null cuando queda pendiente de enlace."
+  },
+  "years": [
+    {
+      "year": 2004,
+      "total_films": 289,
+      "total_admissions": 44062689,
+      "national_films": 65,
+      "national_admissions": 6117103,
+      "ranking": [
+        {
+          "national_rank": 1,
+          "title": "PATORUZITO",
+          "viewers": 1966738,
+          "overall_rank": 3,
+          "data_id": "P1022"
+        },
+        {
+          "national_rank": 2,
+          "title": "LUNA DE AVELLANEDA",
+          "viewers": 1099044,
+          "overall_rank": 10,
+          "data_id": "P1169"
+        },
+        {
+          "national_rank": 3,
+          "title": "PELIGROSA OBSESION",
+          "viewers": 937735,
+          "overall_rank": 13,
+          "data_id": "P1131"
+        },
+        {
+          "national_rank": 4,
+          "title": "ERREWAY 4 CAMINOS",
+          "viewers": 342627,
+          "overall_rank": 30,
+          "data_id": "P1021"
+        },
+        {
+          "national_rank": 5,
+          "title": "NO SOS VOS SOY YO",
+          "viewers": 220721,
+          "overall_rank": 47,
+          "data_id": null
+        },
+        {
+          "national_rank": 6,
+          "title": "EL PERRO",
+          "viewers": 211993,
+          "overall_rank": 53,
+          "data_id": null
+        },
+        {
+          "national_rank": 7,
+          "title": "EL ABRAZO PARTIDO",
+          "viewers": 171914,
+          "overall_rank": 55,
+          "data_id": null
+        },
+        {
+          "national_rank": 8,
+          "title": "ROMA",
+          "viewers": 139855,
+          "overall_rank": 61,
+          "data_id": null
+        },
+        {
+          "national_rank": 9,
+          "title": "AY JUANCITO",
+          "viewers": 139031,
+          "overall_rank": 62,
+          "data_id": null
+        },
+        {
+          "national_rank": 10,
+          "title": "LA NIÑA SANTA",
+          "viewers": 112461,
+          "overall_rank": 75,
+          "data_id": null
+        }
+      ]
+    },
+    {
+      "year": 2005,
+      "total_films": 294,
+      "total_admissions": 37252333,
+      "national_films": 59,
+      "national_admissions": 4602634,
+      "ranking": [
+        {
+          "national_rank": 1,
+          "title": "PAPA SE VOLVIO LOCO",
+          "viewers": 1579224,
+          "overall_rank": 2,
+          "data_id": null
+        },
+        {
+          "national_rank": 2,
+          "title": "EL AURA",
+          "viewers": 632750,
+          "overall_rank": 17,
+          "data_id": null
+        },
+        {
+          "national_rank": 3,
+          "title": "ELSA Y FRED",
+          "viewers": 574052,
+          "overall_rank": 20,
+          "data_id": null
+        },
+        {
+          "national_rank": 4,
+          "title": "TIEMPO DE VALIENTES",
+          "viewers": 480414,
+          "overall_rank": 24,
+          "data_id": null
+        },
+        {
+          "national_rank": 5,
+          "title": "ILUMINADOS POR EL FUEGO",
+          "viewers": 344281,
+          "overall_rank": 31,
+          "data_id": null
+        },
+        {
+          "national_rank": 6,
+          "title": "WHISKI , ROMEO ZULU",
+          "viewers": 201675,
+          "overall_rank": 51,
+          "data_id": null
+        },
+        {
+          "national_rank": 7,
+          "title": "CAMA ADENTRO",
+          "viewers": 109807,
+          "overall_rank": 74,
+          "data_id": null
+        },
+        {
+          "national_rank": 8,
+          "title": "LA SUERTE ESTA ECHADA",
+          "viewers": 73586,
+          "overall_rank": 90,
+          "data_id": null
+        },
+        {
+          "national_rank": 9,
+          "title": "WHISKY",
+          "viewers": 64056,
+          "overall_rank": 97,
+          "data_id": null
+        },
+        {
+          "national_rank": 10,
+          "title": "EL VIENTO",
+          "viewers": 60788,
+          "overall_rank": 100,
+          "data_id": null
+        }
+      ]
+    },
+    {
+      "year": 2006,
+      "total_films": 330,
+      "total_admissions": 34605279,
+      "national_films": 73,
+      "national_admissions": 4006874,
+      "ranking": [
+        {
+          "national_rank": 1,
+          "title": "BAÑEROS 3, TODOPODEROSOS",
+          "viewers": 1148667,
+          "overall_rank": 6,
+          "data_id": null
+        },
+        {
+          "national_rank": 2,
+          "title": "EL RATON PEREZ",
+          "viewers": 956050,
+          "overall_rank": 8,
+          "data_id": null
+        },
+        {
+          "national_rank": 3,
+          "title": "PATORUZITO 2, LA GRAN AVENTURA",
+          "viewers": 348665,
+          "overall_rank": 24,
+          "data_id": null
+        },
+        {
+          "national_rank": 4,
+          "title": "LAS MANOS",
+          "viewers": 219391,
+          "overall_rank": 38,
+          "data_id": null
+        },
+        {
+          "national_rank": 5,
+          "title": "CRONICAS DE UNA FUGA",
+          "viewers": 203331,
+          "overall_rank": 41,
+          "data_id": null
+        },
+        {
+          "national_rank": 6,
+          "title": "DERECHO DE FAMILIA",
+          "viewers": 188675,
+          "overall_rank": 44,
+          "data_id": null
+        },
+        {
+          "national_rank": 7,
+          "title": "EL METODO",
+          "viewers": 139066,
+          "overall_rank": 65,
+          "data_id": null
+        },
+        {
+          "national_rank": 8,
+          "title": "FUERZA AEREA SOCIEDAD ANONIMA",
+          "viewers": 119284,
+          "overall_rank": 76,
+          "data_id": null
+        },
+        {
+          "national_rank": 9,
+          "title": "CARA DE QUESO",
+          "viewers": 62144,
+          "overall_rank": 101,
+          "data_id": null
+        },
+        {
+          "national_rank": 10,
+          "title": "EL CUSTODIO",
+          "viewers": 57595,
+          "overall_rank": 105,
+          "data_id": null
+        }
+      ]
+    },
+    {
+      "year": 2007,
+      "total_films": 362,
+      "total_admissions": 34584860,
+      "national_films": 100,
+      "national_admissions": 3492991,
+      "ranking": [
+        {
+          "national_rank": 1,
+          "title": "LOS INCORREGIBLES",
+          "viewers": 768755,
+          "overall_rank": 10,
+          "data_id": null
+        },
+        {
+          "national_rank": 2,
+          "title": "QUIEN DICE QUE ES FACIL",
+          "viewers": 421751,
+          "overall_rank": 18,
+          "data_id": null
+        },
+        {
+          "national_rank": 3,
+          "title": "LA SEÑAL",
+          "viewers": 378220,
+          "overall_rank": 23,
+          "data_id": null
+        },
+        {
+          "national_rank": 4,
+          "title": "EL ARCA",
+          "viewers": 340356,
+          "overall_rank": 26,
+          "data_id": null
+        },
+        {
+          "national_rank": 5,
+          "title": "ISIDORO",
+          "viewers": 275235,
+          "overall_rank": 32,
+          "data_id": null
+        },
+        {
+          "national_rank": 6,
+          "title": "XXY",
+          "viewers": 203805,
+          "overall_rank": 42,
+          "data_id": null
+        },
+        {
+          "national_rank": 7,
+          "title": "TOCAR EL CIELO",
+          "viewers": 170503,
+          "overall_rank": 48,
+          "data_id": null
+        },
+        {
+          "national_rank": 8,
+          "title": "MARTIN FIERRO, LA PELICULA",
+          "viewers": 102721,
+          "overall_rank": 71,
+          "data_id": null
+        },
+        {
+          "national_rank": 9,
+          "title": "LUCA",
+          "viewers": 65998,
+          "overall_rank": 98,
+          "data_id": null
+        },
+        {
+          "national_rank": 10,
+          "title": "LUZ DE INVIERNO",
+          "viewers": 48012,
+          "overall_rank": 120,
+          "data_id": null
+        }
+      ]
+    },
+    {
+      "year": 2008,
+      "total_films": 361,
+      "total_admissions": 34246958,
+      "national_films": 73,
+      "national_admissions": 4030530,
+      "ranking": [
+        {
+          "national_rank": 1,
+          "title": "UN NOVIO PARA MI MUJER",
+          "viewers": 1408276,
+          "overall_rank": 3,
+          "data_id": null
+        },
+        {
+          "national_rank": 2,
+          "title": "HIGH SCHOOL: EL DESAFIO",
+          "viewers": 477125,
+          "overall_rank": 18,
+          "data_id": null
+        },
+        {
+          "national_rank": 3,
+          "title": "EL NIDO VACIO",
+          "viewers": 281373,
+          "overall_rank": 30,
+          "data_id": null
+        },
+        {
+          "national_rank": 4,
+          "title": "LOS SUPERAGENTES LA N GENERACION",
+          "viewers": 254262,
+          "overall_rank": 34,
+          "data_id": null
+        },
+        {
+          "national_rank": 5,
+          "title": "100 % LUCHA, LA PELICULA",
+          "viewers": 249918,
+          "overall_rank": 37,
+          "data_id": null
+        },
+        {
+          "national_rank": 6,
+          "title": "BRIGADA EXPLOSIVA, MISION PIRATA",
+          "viewers": 244124,
+          "overall_rank": 38,
+          "data_id": null
+        },
+        {
+          "national_rank": 7,
+          "title": "MOTIVOS PARA NO ENAMORARSE",
+          "viewers": 146988,
+          "overall_rank": 62,
+          "data_id": null
+        },
+        {
+          "national_rank": 8,
+          "title": "LEONERA",
+          "viewers": 142984,
+          "overall_rank": 67,
+          "data_id": null
+        },
+        {
+          "national_rank": 9,
+          "title": "VALENTINA, LA PELICULA",
+          "viewers": 142052,
+          "overall_rank": 68,
+          "data_id": null
+        },
+        {
+          "national_rank": 10,
+          "title": "ANICETO",
+          "viewers": 72905,
+          "overall_rank": 99,
+          "data_id": null
+        }
+      ]
+    },
+    {
+      "year": 2009,
+      "total_films": 366,
+      "total_admissions": 32285742,
+      "national_films": 90,
+      "national_admissions": 5486304,
+      "ranking": [
+        {
+          "national_rank": 1,
+          "title": "EL SECRETO DE SUS OJOS",
+          "viewers": 2457396,
+          "overall_rank": 1,
+          "data_id": null
+        },
+        {
+          "national_rank": 2,
+          "title": "LAS VIUDAS DE LOS JUEVES",
+          "viewers": 541279,
+          "overall_rank": 13,
+          "data_id": null
+        },
+        {
+          "national_rank": 3,
+          "title": "PAPA POR UN DIA",
+          "viewers": 480568,
+          "overall_rank": 19,
+          "data_id": null
+        },
+        {
+          "national_rank": 4,
+          "title": "ESPERANDO LA CARROZA 2",
+          "viewers": 380780,
+          "overall_rank": 23,
+          "data_id": null
+        },
+        {
+          "national_rank": 5,
+          "title": "MUSICA EN ESPERA",
+          "viewers": 241007,
+          "overall_rank": 35,
+          "data_id": null
+        },
+        {
+          "national_rank": 6,
+          "title": "EL RATON PEREZ 2",
+          "viewers": 231610,
+          "overall_rank": 38,
+          "data_id": null
+        },
+        {
+          "national_rank": 7,
+          "title": "CUESTION DE PRINCIPIOS",
+          "viewers": 166523,
+          "overall_rank": 50,
+          "data_id": null
+        },
+        {
+          "national_rank": 8,
+          "title": "FELICITAS",
+          "viewers": 131788,
+          "overall_rank": 62,
+          "data_id": null
+        },
+        {
+          "national_rank": 9,
+          "title": "ANITA",
+          "viewers": 126902,
+          "overall_rank": 64,
+          "data_id": null
+        },
+        {
+          "national_rank": 10,
+          "title": "100 % LUCHA  2, EL AMO DE LOS CLONES",
+          "viewers": 123656,
+          "overall_rank": 65,
+          "data_id": null
+        }
+      ]
+    },
+    {
+      "year": 2010,
+      "total_films": 452,
+      "total_admissions": 39045670,
+      "national_films": 131,
+      "national_admissions": 3716254,
+      "ranking": [
+        {
+          "national_rank": 1,
+          "title": "IGUALITA A MI",
+          "viewers": 849429,
+          "overall_rank": 8,
+          "data_id": null
+        },
+        {
+          "national_rank": 2,
+          "title": "CARANCHO",
+          "viewers": 626251,
+          "overall_rank": 15,
+          "data_id": null
+        },
+        {
+          "national_rank": 3,
+          "title": "DOS HERMANOS",
+          "viewers": 474449,
+          "overall_rank": 22,
+          "data_id": null
+        },
+        {
+          "national_rank": 4,
+          "title": "GATURRO",
+          "viewers": 428949,
+          "overall_rank": 23,
+          "data_id": null
+        },
+        {
+          "national_rank": 5,
+          "title": "CUENTOS DE LA SELVA",
+          "viewers": 155988,
+          "overall_rank": 54,
+          "data_id": null
+        },
+        {
+          "national_rank": 6,
+          "title": "EL HOMBRE DE AL LADO",
+          "viewers": 143977,
+          "overall_rank": 58,
+          "data_id": null
+        },
+        {
+          "national_rank": 7,
+          "title": "PAJAROS VOLANDO",
+          "viewers": 139669,
+          "overall_rank": 61,
+          "data_id": null
+        },
+        {
+          "national_rank": 8,
+          "title": "SIN RETORNO",
+          "viewers": 133444,
+          "overall_rank": 64,
+          "data_id": null
+        },
+        {
+          "national_rank": 9,
+          "title": "NI DIOS, NI PATRON NI MARIDO",
+          "viewers": 123018,
+          "overall_rank": 72,
+          "data_id": null
+        },
+        {
+          "national_rank": 10,
+          "title": "PLUMIFEROS",
+          "viewers": 89257,
+          "overall_rank": 77,
+          "data_id": null
+        }
+      ]
+    },
+    {
+      "year": 2011,
+      "total_films": 436,
+      "total_admissions": 41850384,
+      "national_films": 133,
+      "national_admissions": 3388676,
+      "ranking": [
+        {
+          "national_rank": 1,
+          "title": "UN CUENTO CHINO",
+          "viewers": 917212,
+          "overall_rank": 12,
+          "data_id": null
+        },
+        {
+          "national_rank": 2,
+          "title": "VIUDAS",
+          "viewers": 397131,
+          "overall_rank": 28,
+          "data_id": null
+        },
+        {
+          "national_rank": 3,
+          "title": "REVOLUCION, EL CRUCE DE LOS ANDES",
+          "viewers": 303331,
+          "overall_rank": 33,
+          "data_id": null
+        },
+        {
+          "national_rank": 4,
+          "title": "MI PRIMERA BODA",
+          "viewers": 302088,
+          "overall_rank": 34,
+          "data_id": null
+        },
+        {
+          "national_rank": 5,
+          "title": "LOS MARZIANO",
+          "viewers": 221573,
+          "overall_rank": 40,
+          "data_id": null
+        },
+        {
+          "national_rank": 6,
+          "title": "DON GATO Y SU PANDILLA",
+          "viewers": 116962,
+          "overall_rank": 78,
+          "data_id": null
+        },
+        {
+          "national_rank": 7,
+          "title": "HERMANITOS DEL FIN DEL MUNDO",
+          "viewers": 86455,
+          "overall_rank": 94,
+          "data_id": null
+        },
+        {
+          "national_rank": 8,
+          "title": "SUDOR FRIO",
+          "viewers": 82622,
+          "overall_rank": 97,
+          "data_id": null
+        },
+        {
+          "national_rank": 9,
+          "title": "UN AMOR",
+          "viewers": 69984,
+          "overall_rank": 101,
+          "data_id": null
+        },
+        {
+          "national_rank": 10,
+          "title": "MEDIANERAS",
+          "viewers": 69224,
+          "overall_rank": 102,
+          "data_id": null
+        }
+      ]
+    },
+    {
+      "year": 2012,
+      "total_films": 452,
+      "total_admissions": 46268532,
+      "national_films": 146,
+      "national_admissions": 4637757,
+      "ranking": [
+        {
+          "national_rank": 1,
+          "title": "DOS MAS DOS",
+          "viewers": 1004288,
+          "overall_rank": 9,
+          "data_id": null
+        },
+        {
+          "national_rank": 2,
+          "title": "ELEFANTE BLANCO",
+          "viewers": 773155,
+          "overall_rank": 13,
+          "data_id": null
+        },
+        {
+          "national_rank": 3,
+          "title": "ATRACO",
+          "viewers": 568983,
+          "overall_rank": 23,
+          "data_id": null
+        },
+        {
+          "national_rank": 4,
+          "title": "PETER CAPUSOTTO Y SUS 3 DIMENSIONES",
+          "viewers": 274205,
+          "overall_rank": 41,
+          "data_id": null
+        },
+        {
+          "national_rank": 5,
+          "title": "NESTOR KIRCHNER- LA PELICULA",
+          "viewers": 204954,
+          "overall_rank": 52,
+          "data_id": null
+        },
+        {
+          "national_rank": 6,
+          "title": "INFANCIA CLANDESTINA",
+          "viewers": 201830,
+          "overall_rank": 55,
+          "data_id": null
+        },
+        {
+          "national_rank": 7,
+          "title": "LA SUERTE EN TUS MANOS",
+          "viewers": 193242,
+          "overall_rank": 56,
+          "data_id": null
+        },
+        {
+          "national_rank": 8,
+          "title": "EXTRAÑOS EN LA NOCHE",
+          "viewers": 155485,
+          "overall_rank": 59,
+          "data_id": null
+        },
+        {
+          "national_rank": 9,
+          "title": "TODOS TENEMOS UN PLAN",
+          "viewers": 134173,
+          "overall_rank": 66,
+          "data_id": null
+        },
+        {
+          "national_rank": 10,
+          "title": "LA MAQUINA QUE HACE ESTRELLAS",
+          "viewers": 103541,
+          "overall_rank": 80,
+          "data_id": null
+        }
+      ]
+    },
+    {
+      "year": 2013,
+      "total_films": 546,
+      "total_admissions": 47976016,
+      "national_films": 168,
+      "national_admissions": 7675886,
+      "ranking": [
+        {
+          "national_rank": 1,
+          "title": "METEGOL",
+          "viewers": 2139844,
+          "overall_rank": 4,
+          "data_id": null
+        },
+        {
+          "national_rank": 2,
+          "title": "CORAZON DE LEON",
+          "viewers": 1746547,
+          "overall_rank": 6,
+          "data_id": null
+        },
+        {
+          "national_rank": 3,
+          "title": "TESIS SOBRE UN HOMICIDIO",
+          "viewers": 1047647,
+          "overall_rank": 11,
+          "data_id": null
+        },
+        {
+          "national_rank": 4,
+          "title": "SEPTIMO",
+          "viewers": 972595,
+          "overall_rank": 13,
+          "data_id": null
+        },
+        {
+          "national_rank": 5,
+          "title": "WAKOLDA  2 D",
+          "viewers": 423762,
+          "overall_rank": 31,
+          "data_id": null
+        },
+        {
+          "national_rank": 6,
+          "title": "VINO PARA ROBAR",
+          "viewers": 180007,
+          "overall_rank": 58,
+          "data_id": null
+        },
+        {
+          "national_rank": 7,
+          "title": "PUERTA DE HIERRO, EL EXILIO DE PERON",
+          "viewers": 178463,
+          "overall_rank": 59,
+          "data_id": null
+        },
+        {
+          "national_rank": 8,
+          "title": "LA RECONSTRUCCION",
+          "viewers": 102412,
+          "overall_rank": 76,
+          "data_id": null
+        },
+        {
+          "national_rank": 9,
+          "title": "NK",
+          "viewers": 98104,
+          "overall_rank": 81,
+          "data_id": null
+        },
+        {
+          "national_rank": 10,
+          "title": "CAIDOS DEL MAPA",
+          "viewers": 91639,
+          "overall_rank": 85,
+          "data_id": null
+        }
+      ]
+    },
+    {
+      "year": 2014,
+      "total_films": 565,
+      "total_admissions": 46527072,
+      "national_films": 175,
+      "national_admissions": 8459503,
+      "ranking": [
+        {
+          "national_rank": 1,
+          "title": "RELATOS SALVAJES",
+          "viewers": 4003595,
+          "overall_rank": 1,
+          "data_id": null
+        },
+        {
+          "national_rank": 2,
+          "title": "BAÑEROS 4 LOS ROMPEOLAS",
+          "viewers": 936024,
+          "overall_rank": 10,
+          "data_id": null
+        },
+        {
+          "national_rank": 3,
+          "title": "EL MISTERIO DE LA FELICIDAD",
+          "viewers": 614037,
+          "overall_rank": 21,
+          "data_id": null
+        },
+        {
+          "national_rank": 4,
+          "title": "SOCIOS POR ACCIDENTE",
+          "viewers": 565629,
+          "overall_rank": 23,
+          "data_id": null
+        },
+        {
+          "national_rank": 5,
+          "title": "MUERTE EN BUENOS AIRES",
+          "viewers": 484893,
+          "overall_rank": 26,
+          "data_id": null
+        },
+        {
+          "national_rank": 6,
+          "title": "EL INVENTOR DE JUEGOS",
+          "viewers": 292226,
+          "overall_rank": 44,
+          "data_id": null
+        },
+        {
+          "national_rank": 7,
+          "title": "BETIBU",
+          "viewers": 284773,
+          "overall_rank": 46,
+          "data_id": null
+        },
+        {
+          "national_rank": 8,
+          "title": "VIOLETTA : EL CONCIERTO",
+          "viewers": 120340,
+          "overall_rank": 75,
+          "data_id": null
+        },
+        {
+          "national_rank": 9,
+          "title": "LAS INSOLADAS",
+          "viewers": 107390,
+          "overall_rank": 78,
+          "data_id": null
+        },
+        {
+          "national_rank": 10,
+          "title": "DELIRIUM",
+          "viewers": 97290,
+          "overall_rank": 87,
+          "data_id": null
+        }
+      ]
+    },
+    {
+      "year": 2015,
+      "total_films": 617,
+      "total_admissions": 52228855,
+      "national_films": 186,
+      "national_admissions": 6966734,
+      "ranking": [
+        {
+          "national_rank": 1,
+          "title": "EL CLAN",
+          "viewers": 2652757,
+          "overall_rank": 4,
+          "data_id": null
+        },
+        {
+          "national_rank": 2,
+          "title": "ABZURDAH",
+          "viewers": 809470,
+          "overall_rank": 16,
+          "data_id": null
+        },
+        {
+          "national_rank": 3,
+          "title": "SIN HIJOS",
+          "viewers": 508643,
+          "overall_rank": 23,
+          "data_id": null
+        },
+        {
+          "national_rank": 4,
+          "title": "PAPELES EN EL VIENTO",
+          "viewers": 397744,
+          "overall_rank": 29,
+          "data_id": null
+        },
+        {
+          "national_rank": 5,
+          "title": "TRUMAN",
+          "viewers": 393599,
+          "overall_rank": 30,
+          "data_id": null
+        },
+        {
+          "national_rank": 6,
+          "title": "BOCA JUNIORS 3D",
+          "viewers": 272239,
+          "overall_rank": 44,
+          "data_id": null
+        },
+        {
+          "national_rank": 7,
+          "title": "LOCOS SUELTOS EN EL ZOO",
+          "viewers": 225937,
+          "overall_rank": 47,
+          "data_id": null
+        },
+        {
+          "national_rank": 8,
+          "title": "SOCIOS POR ACCIDENTE 2",
+          "viewers": 177703,
+          "overall_rank": 56,
+          "data_id": null
+        },
+        {
+          "national_rank": 9,
+          "title": "EL ESPEJO DE LOS OTROS",
+          "viewers": 165554,
+          "overall_rank": 59,
+          "data_id": null
+        },
+        {
+          "national_rank": 10,
+          "title": "LA PATOTA",
+          "viewers": 144710,
+          "overall_rank": 68,
+          "data_id": null
+        }
+      ]
+    },
+    {
+      "year": 2016,
+      "total_films": 614,
+      "total_admissions": 49745721,
+      "national_films": 202,
+      "national_admissions": 7283469,
+      "ranking": [
+        {
+          "national_rank": 1,
+          "title": "ME CASÉ CON  UN BOLUDO",
+          "viewers": 2027880,
+          "overall_rank": 4,
+          "data_id": null
+        },
+        {
+          "national_rank": 2,
+          "title": "GILDA, NO ME ARREPIENTO DE ESTE AMOR",
+          "viewers": 955461,
+          "overall_rank": 11,
+          "data_id": null
+        },
+        {
+          "national_rank": 3,
+          "title": "EL HILO ROJO",
+          "viewers": 715265,
+          "overall_rank": 18,
+          "data_id": null
+        },
+        {
+          "national_rank": 4,
+          "title": "EL CIUDADANO ILUSTRE",
+          "viewers": 665007,
+          "overall_rank": 19,
+          "data_id": null
+        },
+        {
+          "national_rank": 5,
+          "title": "INSEPARABLES",
+          "viewers": 363835,
+          "overall_rank": 36,
+          "data_id": null
+        },
+        {
+          "national_rank": 6,
+          "title": "CIEN AÑOS DE PERDÓN",
+          "viewers": 358808,
+          "overall_rank": 38,
+          "data_id": null
+        },
+        {
+          "national_rank": 7,
+          "title": "PERMITIDOS",
+          "viewers": 356348,
+          "overall_rank": 39,
+          "data_id": null
+        },
+        {
+          "national_rank": 8,
+          "title": "KOBLIC",
+          "viewers": 309289,
+          "overall_rank": 44,
+          "data_id": null
+        },
+        {
+          "national_rank": 9,
+          "title": "AL FINAL DEL TÚNEL",
+          "viewers": 283305,
+          "overall_rank": 46,
+          "data_id": null
+        },
+        {
+          "national_rank": 10,
+          "title": "UNA NOCHE DE AMOR",
+          "viewers": 220290,
+          "overall_rank": 52,
+          "data_id": null
+        }
+      ]
+    },
+    {
+      "year": 2017,
+      "total_films": 635,
+      "total_admissions": 49210131,
+      "national_films": 223,
+      "national_admissions": 6473912,
+      "ranking": [
+        {
+          "national_rank": 1,
+          "title": "MAMÁ SE FUE DE VIAJE",
+          "viewers": 1713804,
+          "overall_rank": 5,
+          "data_id": null
+        },
+        {
+          "national_rank": 2,
+          "title": "EL FUTBOL O YO",
+          "viewers": 1097893,
+          "overall_rank": 13,
+          "data_id": null
+        },
+        {
+          "national_rank": 3,
+          "title": "NIEVE NEGRA",
+          "viewers": 714645,
+          "overall_rank": 22,
+          "data_id": null
+        },
+        {
+          "national_rank": 4,
+          "title": "LA CORDILLERA",
+          "viewers": 658082,
+          "overall_rank": 24,
+          "data_id": null
+        },
+        {
+          "national_rank": 5,
+          "title": "LOS PADECIENTES",
+          "viewers": 414318,
+          "overall_rank": 32,
+          "data_id": null
+        },
+        {
+          "national_rank": 6,
+          "title": "LOS QUE AMAN, ODIAN",
+          "viewers": 357716,
+          "overall_rank": 39,
+          "data_id": null
+        },
+        {
+          "national_rank": 7,
+          "title": "CASI LEYENDAS",
+          "viewers": 178260,
+          "overall_rank": 53,
+          "data_id": null
+        },
+        {
+          "national_rank": 8,
+          "title": "ZAMA",
+          "viewers": 99004,
+          "overall_rank": 68,
+          "data_id": null
+        },
+        {
+          "national_rank": 9,
+          "title": "SOLO SE VIVE UNA VEZ",
+          "viewers": 96075,
+          "overall_rank": 70,
+          "data_id": null
+        },
+        {
+          "national_rank": 10,
+          "title": "YO SOY ASI TITA DE BUENOS AIRES",
+          "viewers": 94116,
+          "overall_rank": 75,
+          "data_id": null
+        }
+      ]
+    },
+    {
+      "year": 2018,
+      "total_films": 751,
+      "total_admissions": 46658754,
+      "national_films": 239,
+      "national_admissions": 6842895,
+      "ranking": [
+        {
+          "national_rank": 1,
+          "title": "EL ÁNGEL",
+          "viewers": 1368121,
+          "overall_rank": 7,
+          "data_id": null
+        },
+        {
+          "national_rank": 2,
+          "title": "EL AMOR MENOS PENSADO",
+          "viewers": 787130,
+          "overall_rank": 13,
+          "data_id": null
+        },
+        {
+          "national_rank": 3,
+          "title": "RE LOCA",
+          "viewers": 762184,
+          "overall_rank": 16,
+          "data_id": null
+        },
+        {
+          "national_rank": 4,
+          "title": "MI OBRA MAESTRA",
+          "viewers": 733486,
+          "overall_rank": 17,
+          "data_id": null
+        },
+        {
+          "national_rank": 5,
+          "title": "EL POTRO",
+          "viewers": 548749,
+          "overall_rank": 21,
+          "data_id": null
+        },
+        {
+          "national_rank": 6,
+          "title": "ANIMAL",
+          "viewers": 481617,
+          "overall_rank": 25,
+          "data_id": null
+        },
+        {
+          "national_rank": 7,
+          "title": "ACUSADA",
+          "viewers": 385313,
+          "overall_rank": 30,
+          "data_id": null
+        },
+        {
+          "national_rank": 8,
+          "title": "PERDIDA",
+          "viewers": 274109,
+          "overall_rank": 38,
+          "data_id": null
+        },
+        {
+          "national_rank": 9,
+          "title": "BAÑEROS 5",
+          "viewers": 153218,
+          "overall_rank": 55,
+          "data_id": null
+        },
+        {
+          "national_rank": 10,
+          "title": "LA REINA DEL MIEDO",
+          "viewers": 127179,
+          "overall_rank": 62,
+          "data_id": null
+        }
+      ]
+    },
+    {
+      "year": 2019,
+      "total_films": 666,
+      "total_admissions": 47854546,
+      "national_films": 267,
+      "national_admissions": 4005791,
+      "ranking": [
+        {
+          "national_rank": 1,
+          "title": "LA ODISEA DE LOS GILES",
+          "viewers": 1841886,
+          "overall_rank": 5,
+          "data_id": null
+        },
+        {
+          "national_rank": 2,
+          "title": "EL CUENTO DE LAS COMADREJAS",
+          "viewers": 586483,
+          "overall_rank": 19,
+          "data_id": null
+        },
+        {
+          "national_rank": 3,
+          "title": "4X4",
+          "viewers": 332080,
+          "overall_rank": 28,
+          "data_id": null
+        },
+        {
+          "national_rank": 4,
+          "title": "NO SOY TU MAMI",
+          "viewers": 229692,
+          "overall_rank": 39,
+          "data_id": null
+        },
+        {
+          "national_rank": 5,
+          "title": "LA MISMA SANGRE",
+          "viewers": 92091,
+          "overall_rank": 62,
+          "data_id": null
+        },
+        {
+          "national_rank": 6,
+          "title": "EL HIJO",
+          "viewers": 78450,
+          "overall_rank": 68,
+          "data_id": null
+        },
+        {
+          "national_rank": 7,
+          "title": "RIVER EL MÁS GRANDE SIEMPRE",
+          "viewers": 55547,
+          "overall_rank": 78,
+          "data_id": null
+        },
+        {
+          "national_rank": 8,
+          "title": "EL RETIRO",
+          "viewers": 51415,
+          "overall_rank": 83,
+          "data_id": null
+        },
+        {
+          "national_rank": 9,
+          "title": "BRUJA",
+          "viewers": 43294,
+          "overall_rank": 86,
+          "data_id": null
+        },
+        {
+          "national_rank": 10,
+          "title": "YO, MI MUJER Y MI MUJER MUERTA",
+          "viewers": 31681,
+          "overall_rank": 95,
+          "data_id": null
+        }
+      ]
+    },
+    {
+      "year": 2020,
+      "total_films": 94,
+      "total_admissions": 8542020,
+      "national_films": 28,
+      "national_admissions": 2126741,
+      "ranking": [
+        {
+          "national_rank": 1,
+          "title": "EL ROBO DEL SIGLO",
+          "viewers": 2085915,
+          "overall_rank": 2,
+          "data_id": null
+        },
+        {
+          "national_rank": 2,
+          "title": "LA MUERTE NO EXISTE Y EL AMOR TAMPOCO",
+          "viewers": 16404,
+          "overall_rank": 27,
+          "data_id": null
+        },
+        {
+          "national_rank": 3,
+          "title": "RUMBO AL MAR",
+          "viewers": 6760,
+          "overall_rank": 32,
+          "data_id": null
+        },
+        {
+          "national_rank": 4,
+          "title": "ARAÑA",
+          "viewers": 2987,
+          "overall_rank": 41,
+          "data_id": null
+        },
+        {
+          "national_rank": 5,
+          "title": "LA PROTAGONISTA",
+          "viewers": 2576,
+          "overall_rank": 42,
+          "data_id": null
+        },
+        {
+          "national_rank": 6,
+          "title": "4 LONKOS",
+          "viewers": 1906,
+          "overall_rank": 47,
+          "data_id": null
+        },
+        {
+          "national_rank": 7,
+          "title": "ANDRÉS CARRASCO, CIENCIA DISRUPTIVA",
+          "viewers": 1440,
+          "overall_rank": 48,
+          "data_id": null
+        },
+        {
+          "national_rank": 8,
+          "title": "NIÑA MAMA",
+          "viewers": 1147,
+          "overall_rank": 51,
+          "data_id": null
+        },
+        {
+          "national_rank": 9,
+          "title": "FIN DE SIGLO",
+          "viewers": 1110,
+          "overall_rank": 52,
+          "data_id": null
+        },
+        {
+          "national_rank": 10,
+          "title": "NI HEROE NI TRAIDOR",
+          "viewers": 1052,
+          "overall_rank": 53,
+          "data_id": null
+        }
+      ]
+    },
+    {
+      "year": 2021,
+      "total_films": 420,
+      "total_admissions": 17721624,
+      "national_films": 183,
+      "national_admissions": 311963,
+      "ranking": [
+        {
+          "national_rank": 1,
+          "title": "CATO",
+          "viewers": 65338,
+          "overall_rank": 37,
+          "data_id": null
+        },
+        {
+          "national_rank": 2,
+          "title": "YO NENA YO PRINCESA",
+          "viewers": 47884,
+          "overall_rank": 43,
+          "data_id": null
+        },
+        {
+          "national_rank": 3,
+          "title": "EX CASADOS",
+          "viewers": 29137,
+          "overall_rank": 57,
+          "data_id": null
+        },
+        {
+          "national_rank": 4,
+          "title": "LA NOCHE MAGICA",
+          "viewers": 26156,
+          "overall_rank": 58,
+          "data_id": null
+        },
+        {
+          "national_rank": 5,
+          "title": "EL PROFUGO",
+          "viewers": 24917,
+          "overall_rank": 61,
+          "data_id": null
+        },
+        {
+          "national_rank": 6,
+          "title": "EL PERRO QUE NO CALLA",
+          "viewers": 6310,
+          "overall_rank": 101,
+          "data_id": null
+        },
+        {
+          "national_rank": 7,
+          "title": "LA PANELISTA",
+          "viewers": 5714,
+          "overall_rank": 105,
+          "data_id": null
+        },
+        {
+          "national_rank": 8,
+          "title": "EL SECRETO DE MARO",
+          "viewers": 5496,
+          "overall_rank": 108,
+          "data_id": null
+        },
+        {
+          "national_rank": 9,
+          "title": "EL CUENTO DEL TIO",
+          "viewers": 3838,
+          "overall_rank": 117,
+          "data_id": null
+        },
+        {
+          "national_rank": 10,
+          "title": "ERRANTE CORAZON",
+          "viewers": 3630,
+          "overall_rank": 121,
+          "data_id": null
+        }
+      ]
+    },
+    {
+      "year": 2022,
+      "total_films": 602,
+      "total_admissions": 34762947,
+      "national_films": 230,
+      "national_admissions": 2862421,
+      "ranking": [
+        {
+          "national_rank": 1,
+          "title": "ARGENTINA, 1985",
+          "viewers": 1160067,
+          "overall_rank": 9,
+          "data_id": null
+        },
+        {
+          "national_rank": 2,
+          "title": "30 NOCHES CON MI EX",
+          "viewers": 811569,
+          "overall_rank": 12,
+          "data_id": null
+        },
+        {
+          "national_rank": 3,
+          "title": "LA GALLINA TURULECA",
+          "viewers": 135158,
+          "overall_rank": 29,
+          "data_id": null
+        },
+        {
+          "national_rank": 4,
+          "title": "MÁS RESPETO QUE SOY TU MADRE",
+          "viewers": 121666,
+          "overall_rank": 34,
+          "data_id": null
+        },
+        {
+          "national_rank": 5,
+          "title": "ECOS DE UN CRIMEN",
+          "viewers": 102482,
+          "overall_rank": 41,
+          "data_id": null
+        },
+        {
+          "national_rank": 6,
+          "title": "UN CRIMEN ARGENTINO",
+          "viewers": 77322,
+          "overall_rank": 49,
+          "data_id": null
+        },
+        {
+          "national_rank": 7,
+          "title": "HOY SE ARREGLA EL MUNDO",
+          "viewers": 72032,
+          "overall_rank": 50,
+          "data_id": null
+        },
+        {
+          "national_rank": 8,
+          "title": "EN LA MIRA",
+          "viewers": 57692,
+          "overall_rank": 56,
+          "data_id": null
+        },
+        {
+          "national_rank": 9,
+          "title": "EL SUPLENTE",
+          "viewers": 25421,
+          "overall_rank": 84,
+          "data_id": null
+        },
+        {
+          "national_rank": 10,
+          "title": "LAS ROJAS",
+          "viewers": 15776,
+          "overall_rank": 96,
+          "data_id": null
+        }
+      ]
+    },
+    {
+      "year": 2023,
+      "total_films": 663,
+      "total_admissions": 40296293,
+      "national_films": 241,
+      "national_admissions": 3484077,
+      "ranking": [
+        {
+          "national_rank": 1,
+          "title": "MUCHACHOS. LA PELICULA DE LA GENTE",
+          "viewers": 1145881,
+          "overall_rank": 10,
+          "data_id": null
+        },
+        {
+          "national_rank": 2,
+          "title": "LA EXTORSION",
+          "viewers": 547917,
+          "overall_rank": 19,
+          "data_id": null
+        },
+        {
+          "national_rank": 3,
+          "title": "ELIJO CREER",
+          "viewers": 481586,
+          "overall_rank": 22,
+          "data_id": null
+        },
+        {
+          "national_rank": 4,
+          "title": "CUANDO ACECHA LA MALDAD",
+          "viewers": 314471,
+          "overall_rank": 35,
+          "data_id": null
+        },
+        {
+          "national_rank": 5,
+          "title": "CASI MUERTA",
+          "viewers": 154028,
+          "overall_rank": 48,
+          "data_id": null
+        },
+        {
+          "national_rank": 6,
+          "title": "PUAN",
+          "viewers": 141115,
+          "overall_rank": 50,
+          "data_id": null
+        },
+        {
+          "national_rank": 7,
+          "title": "NO ME ROMPAN",
+          "viewers": 96152,
+          "overall_rank": 57,
+          "data_id": null
+        },
+        {
+          "national_rank": 8,
+          "title": "BLONDI",
+          "viewers": 72612,
+          "overall_rank": 63,
+          "data_id": null
+        },
+        {
+          "national_rank": 9,
+          "title": "EL METODO TANGALANGA",
+          "viewers": 43129,
+          "overall_rank": 75,
+          "data_id": null
+        },
+        {
+          "national_rank": 10,
+          "title": "LA URUGUAYA",
+          "viewers": 40188,
+          "overall_rank": 78,
+          "data_id": null
+        }
+      ]
+    },
+    {
+      "year": 2024,
+      "total_films": 687,
+      "total_admissions": 36415369,
+      "national_films": 235,
+      "national_admissions": 803299,
+      "ranking": [
+        {
+          "national_rank": 1,
+          "title": "EL JOCKEY",
+          "viewers": 132702,
+          "overall_rank": 42,
+          "data_id": null
+        },
+        {
+          "national_rank": 2,
+          "title": "CULPA CERO",
+          "viewers": 74191,
+          "overall_rank": 52,
+          "data_id": null
+        },
+        {
+          "national_rank": 3,
+          "title": "JAQUE MATE",
+          "viewers": 63372,
+          "overall_rank": 61,
+          "data_id": null
+        },
+        {
+          "national_rank": 4,
+          "title": "LA RENGA: TOTALMENTE POSEIDOS",
+          "viewers": 38426,
+          "overall_rank": 77,
+          "data_id": null
+        },
+        {
+          "national_rank": 5,
+          "title": "GIGANTES",
+          "viewers": 35551,
+          "overall_rank": 85,
+          "data_id": null
+        },
+        {
+          "national_rank": 6,
+          "title": "LINDA",
+          "viewers": 31105,
+          "overall_rank": 88,
+          "data_id": null
+        },
+        {
+          "national_rank": 7,
+          "title": "EL APOCALIPSIS DE SAN JUAN, LOS 4 JINETES Y LAS CALAMIDADES",
+          "viewers": 23303,
+          "overall_rank": 98,
+          "data_id": null
+        },
+        {
+          "national_rank": 8,
+          "title": "ALEMANIA",
+          "viewers": 20668,
+          "overall_rank": 103,
+          "data_id": null
+        },
+        {
+          "national_rank": 9,
+          "title": "EL AROMA DEL PASTO RECIEN CORTADO",
+          "viewers": 19213,
+          "overall_rank": 109,
+          "data_id": null
+        },
+        {
+          "national_rank": 10,
+          "title": "LAS CORREDORAS",
+          "viewers": 15029,
+          "overall_rank": 119,
+          "data_id": null
+        }
+      ]
+    },
+    {
+      "year": 2025,
+      "total_films": 708,
+      "total_admissions": 33659488,
+      "national_films": 245,
+      "national_admissions": 2871721,
+      "ranking": [
+        {
+          "national_rank": 1,
+          "title": "HOMO ARGENTUM",
+          "viewers": 1833178,
+          "overall_rank": 4,
+          "data_id": null
+        },
+        {
+          "national_rank": 2,
+          "title": "MAZEL TOV",
+          "viewers": 368046,
+          "overall_rank": 22,
+          "data_id": null
+        },
+        {
+          "national_rank": 3,
+          "title": "BELEN",
+          "viewers": 147928,
+          "overall_rank": 34,
+          "data_id": null
+        },
+        {
+          "national_rank": 4,
+          "title": "EL NOVIO DE MAMÁ",
+          "viewers": 78946,
+          "overall_rank": 52,
+          "data_id": null
+        },
+        {
+          "national_rank": 5,
+          "title": "UNA MUERTE SILENCIOSA",
+          "viewers": 48427,
+          "overall_rank": 73,
+          "data_id": null
+        },
+        {
+          "national_rank": 6,
+          "title": "LA MUJER DE LA FILA",
+          "viewers": 32754,
+          "overall_rank": 86,
+          "data_id": null
+        },
+        {
+          "national_rank": 7,
+          "title": "TESIS SOBRE UNA DOMESTICACION",
+          "viewers": 24898,
+          "overall_rank": 97,
+          "data_id": null
+        },
+        {
+          "national_rank": 8,
+          "title": "1978",
+          "viewers": 24367,
+          "overall_rank": 98,
+          "data_id": null
+        },
+        {
+          "national_rank": 9,
+          "title": "LA MUERTE DE UN COMEDIANTE",
+          "viewers": 23076,
+          "overall_rank": 104,
+          "data_id": null
+        },
+        {
+          "national_rank": 10,
+          "title": "MENSAJE EN UNA BOTELLA",
+          "viewers": 17034,
+          "overall_rank": 114,
+          "data_id": null
+        }
+      ]
+    },
+    {
+      "year": 2026,
+      "total_films": 571,
+      "total_admissions": 25807006,
+      "national_films": 180,
+      "national_admissions": 1161674,
+      "ranking": [
+        {
+          "national_rank": 1,
+          "title": "YO, NARCISO",
+          "viewers": 588758,
+          "overall_rank": 11,
+          "data_id": null
+        },
+        {
+          "national_rank": 2,
+          "title": "PEPITA, LA PISTOLERA",
+          "viewers": 100578,
+          "overall_rank": 35,
+          "data_id": null
+        },
+        {
+          "national_rank": 3,
+          "title": "LA VIRGEN DE LA TOSQUERA",
+          "viewers": 90584,
+          "overall_rank": 37,
+          "data_id": null
+        },
+        {
+          "national_rank": 4,
+          "title": "PLAYA DE LOBOS",
+          "viewers": 67217,
+          "overall_rank": 44,
+          "data_id": null
+        },
+        {
+          "national_rank": 5,
+          "title": "EL PARTIDO",
+          "viewers": 45974,
+          "overall_rank": 54,
+          "data_id": null
+        },
+        {
+          "national_rank": 6,
+          "title": "NUESTRA TIERRA",
+          "viewers": 45493,
+          "overall_rank": 55,
+          "data_id": null
+        },
+        {
+          "national_rank": 7,
+          "title": "RISA Y LA CABINA DEL VIENTO",
+          "viewers": 28240,
+          "overall_rank": 69,
+          "data_id": null
+        },
+        {
+          "national_rank": 8,
+          "title": "CANELONES",
+          "viewers": 17413,
+          "overall_rank": 83,
+          "data_id": null
+        },
+        {
+          "national_rank": 9,
+          "title": "PARQUE LEZAMA",
+          "viewers": 16837,
+          "overall_rank": 86,
+          "data_id": null
+        },
+        {
+          "national_rank": 10,
+          "title": "NADA ENTRE LOS DOS",
+          "viewers": 16427,
+          "overall_rank": 87,
+          "data_id": null
+        }
+      ]
+    }
+  ]
+}
