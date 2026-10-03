@@ -15174,6 +15174,14 @@
               "total_ranking_series": 6801
             },
             {
+              "report_id": "2025-H1",
+              "periodo": "Ene-Jun 2025",
+              "visualizaciones": 600000,
+              "horas_visualizadas": 3600000,
+              "ranking_series": 3018,
+              "total_ranking_series": 7507
+            },
+            {
               "report_id": "2025-H2",
               "periodo": "Jul-Dic 2025",
               "visualizaciones": 500000,
@@ -15209,6 +15217,14 @@
               "horas_visualizadas": 2700000,
               "ranking_series": 2973,
               "total_ranking_series": 6801
+            },
+            {
+              "report_id": "2025-H1",
+              "periodo": "Ene-Jun 2025",
+              "visualizaciones": 500000,
+              "horas_visualizadas": 2200000,
+              "ranking_series": 3427,
+              "total_ranking_series": 7507
             },
             {
               "report_id": "2025-H2",
@@ -15344,6 +15360,14 @@
               "total_ranking_series": 6801
             },
             {
+              "report_id": "2025-H1",
+              "periodo": "Ene-Jun 2025",
+              "visualizaciones": 1700000,
+              "horas_visualizadas": 17300000,
+              "ranking_series": 1393,
+              "total_ranking_series": 7507
+            },
+            {
               "report_id": "2025-H2",
               "periodo": "Jul-Dic 2025",
               "visualizaciones": 1100000,
@@ -15379,6 +15403,14 @@
               "horas_visualizadas": 15600000,
               "ranking_series": 1532,
               "total_ranking_series": 6801
+            },
+            {
+              "report_id": "2025-H1",
+              "periodo": "Ene-Jun 2025",
+              "visualizaciones": 1400000,
+              "horas_visualizadas": 13900000,
+              "ranking_series": 1630,
+              "total_ranking_series": 7507
             },
             {
               "report_id": "2025-H2",
@@ -17316,6 +17348,14 @@
           "horizontal_image": "images/horizontals-1024x576/2024-envidiosa-temporada-1-netflix-slide-1024x576.webp",
           "netflix_reports": [
             {
+              "report_id": "2025-H1",
+              "periodo": "Ene-Jun 2025",
+              "visualizaciones": 4400000,
+              "horas_visualizadas": 27600000,
+              "ranking_series": 485,
+              "total_ranking_series": 7507
+            },
+            {
               "report_id": "2025-H2",
               "periodo": "Jul-Dic 2025",
               "horas_visualizadas": 15000000,
@@ -17338,6 +17378,14 @@
           "image": "images/verticals/envidiosa-temporada-2-poster-280x420.png",
           "horizontal_image": "images/horizontals-1024x576/2024-envidiosa-temporada-2-netflix-slide-1024x576.webp",
           "netflix_reports": [
+            {
+              "report_id": "2025-H1",
+              "periodo": "Ene-Jun 2025",
+              "visualizaciones": 9600000,
+              "horas_visualizadas": 45500000,
+              "ranking_series": 143,
+              "total_ranking_series": 7507
+            },
             {
               "report_id": "2025-H2",
               "periodo": "Jul-Dic 2025",
@@ -17718,6 +17766,14 @@
               "total_ranking_series": 6801
             },
             {
+              "report_id": "2025-H1",
+              "periodo": "Ene-Jun 2025",
+              "visualizaciones": 100000,
+              "horas_visualizadas": 500000,
+              "ranking_series": 6428,
+              "total_ranking_series": 7507
+            },
+            {
               "report_id": "2025-H2",
               "periodo": "Jul-Dic 2025",
               "visualizaciones": 3100000,
@@ -17902,6 +17958,14 @@
               "total_ranking_series": 6801
             },
             {
+              "report_id": "2025-H1",
+              "periodo": "Ene-Jun 2025",
+              "visualizaciones": 500000,
+              "horas_visualizadas": 5600000,
+              "ranking_series": 3229,
+              "total_ranking_series": 7507
+            },
+            {
               "report_id": "2025-H2",
               "periodo": "Jul-Dic 2025",
               "visualizaciones": 1100000,
@@ -17931,6 +17995,14 @@
               "total_ranking_series": 6801
             },
             {
+              "report_id": "2025-H1",
+              "periodo": "Ene-Jun 2025",
+              "visualizaciones": 400000,
+              "horas_visualizadas": 3400000,
+              "ranking_series": 3681,
+              "total_ranking_series": 7507
+            },
+            {
               "report_id": "2025-H2",
               "periodo": "Jul-Dic 2025",
               "visualizaciones": 900000,
@@ -17958,6 +18030,14 @@
               "horas_visualizadas": 4100000,
               "ranking_series": 3184,
               "total_ranking_series": 6801
+            },
+            {
+              "report_id": "2025-H1",
+              "periodo": "Ene-Jun 2025",
+              "visualizaciones": 400000,
+              "horas_visualizadas": 3100000,
+              "ranking_series": 3696,
+              "total_ranking_series": 7507
             },
             {
               "report_id": "2025-H2",
@@ -17990,6 +18070,14 @@
               "total_ranking_series": 6801
             },
             {
+              "report_id": "2025-H1",
+              "periodo": "Ene-Jun 2025",
+              "visualizaciones": 400000,
+              "horas_visualizadas": 3000000,
+              "ranking_series": 3702,
+              "total_ranking_series": 7507
+            },
+            {
               "report_id": "2025-H2",
               "periodo": "Jul-Dic 2025",
               "visualizaciones": 700000,
@@ -18018,6 +18106,14 @@
               "horas_visualizadas": 2400000,
               "ranking_series": 3255,
               "total_ranking_series": 6801
+            },
+            {
+              "report_id": "2025-H1",
+              "periodo": "Ene-Jun 2025",
+              "visualizaciones": 400000,
+              "horas_visualizadas": 1800000,
+              "ranking_series": 3808,
+              "total_ranking_series": 7507
             },
             {
               "report_id": "2025-H2",
@@ -18092,6 +18188,14 @@
               "horas_visualizadas": 700000,
               "ranking_series": 5704,
               "total_ranking_series": 6801
+            },
+            {
+              "report_id": "2025-H1",
+              "periodo": "Ene-Jun 2025",
+              "visualizaciones": 100000,
+              "horas_visualizadas": 500000,
+              "ranking_series": 6512,
+              "total_ranking_series": 7507
             },
             {
               "report_id": "2025-H2",
@@ -18406,6 +18510,14 @@
           "horizontal_image": "images/horizontals-1024x576/2025-el-eternauta-temporada 1-netflix-slide1024x576.webp",
           "netflix_reports": [
             {
+              "report_id": "2025-H1",
+              "periodo": "Ene-Jun 2025",
+              "visualizaciones": 29000000,
+              "horas_visualizadas": 156600000,
+              "ranking_series": 29,
+              "total_ranking_series": 7507
+            },
+            {
               "report_id": "2025-H2",
               "periodo": "Jul-Dic 2025",
               "visualizaciones": 3700000,
@@ -18493,6 +18605,14 @@
               "horas_visualizadas": 500000,
               "ranking_series": 5886,
               "total_ranking_series": 6801
+            },
+            {
+              "report_id": "2025-H1",
+              "periodo": "Ene-Jun 2025",
+              "visualizaciones": 100000,
+              "horas_visualizadas": 400000,
+              "ranking_series": 6622,
+              "total_ranking_series": 7507
             },
             {
               "report_id": "2025-H2",
@@ -18868,6 +18988,14 @@
               "total_ranking_series": 6801
             },
             {
+              "report_id": "2025-H1",
+              "periodo": "Ene-Jun 2025",
+              "visualizaciones": 100000,
+              "horas_visualizadas": 300000,
+              "ranking_series": 6906,
+              "total_ranking_series": 7507
+            },
+            {
               "report_id": "2025-H2",
               "periodo": "Jul-Dic 2025",
               "visualizaciones": 100000,
@@ -19101,6 +19229,14 @@
               "horas_visualizadas": 6700000,
               "ranking_series": 1990,
               "total_ranking_series": 6801
+            },
+            {
+              "report_id": "2025-H1",
+              "periodo": "Ene-Jun 2025",
+              "visualizaciones": 400000,
+              "horas_visualizadas": 2500000,
+              "ranking_series": 3731,
+              "total_ranking_series": 7507
             },
             {
               "report_id": "2025-H2",
