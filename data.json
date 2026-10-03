@@ -2088,6 +2088,14 @@
           "total_ranking_peliculas": 9360
         },
         {
+          "report_id": "2025-H1",
+          "periodo": "Ene-Jun 2025",
+          "visualizaciones": 1000000,
+          "horas_visualizadas": 1800000,
+          "ranking_peliculas": 2213,
+          "total_ranking_peliculas": 8673
+        },
+        {
           "report_id": "2025-H2",
           "periodo": "Jul-Dic 2025",
           "visualizaciones": 400000,
@@ -2224,6 +2232,14 @@
           "horas_visualizadas": 500000,
           "ranking_peliculas": 4527,
           "total_ranking_peliculas": 9360
+        },
+        {
+          "report_id": "2025-H1",
+          "periodo": "Ene-Jun 2025",
+          "visualizaciones": 300000,
+          "horas_visualizadas": 500000,
+          "ranking_peliculas": 4255,
+          "total_ranking_peliculas": 8673
         },
         {
           "report_id": "2025-H2",
@@ -2413,6 +2429,14 @@
       "release_date": "6/12/2024",
       "director": "Martino Zaidelis",
       "netflix_reports": [
+        {
+          "report_id": "2025-H1",
+          "periodo": "Ene-Jun 2025",
+          "visualizaciones": 5900000,
+          "horas_visualizadas": 9400000,
+          "ranking_peliculas": 506,
+          "total_ranking_peliculas": 8673
+        },
         {
           "report_id": "2025-H2",
           "periodo": "Jul-Dic 2025",
@@ -3059,6 +3083,14 @@
           "horas_visualizadas": 1700000,
           "ranking_peliculas": 2439,
           "total_ranking_peliculas": 9360
+        },
+        {
+          "report_id": "2025-H1",
+          "periodo": "Ene-Jun 2025",
+          "visualizaciones": 1600000,
+          "horas_visualizadas": 2600000,
+          "ranking_peliculas": 1675,
+          "total_ranking_peliculas": 8673
         },
         {
           "report_id": "2025-H2",
@@ -4180,6 +4212,14 @@
           "total_ranking_peliculas": 9360
         },
         {
+          "report_id": "2025-H1",
+          "periodo": "Ene-Jun 2025",
+          "visualizaciones": 600000,
+          "horas_visualizadas": 1000000,
+          "ranking_peliculas": 2989,
+          "total_ranking_peliculas": 8673
+        },
+        {
           "report_id": "2025-H2",
           "periodo": "Jul-Dic 2025",
           "visualizaciones": 700000,
@@ -4333,6 +4373,14 @@
       "release_date": "21/3/2024",
       "director": "Sebastián Borensztein",
       "netflix_reports": [
+        {
+          "report_id": "2025-H1",
+          "periodo": "Ene-Jun 2025",
+          "visualizaciones": 1900000,
+          "horas_visualizadas": 3300000,
+          "ranking_peliculas": 1464,
+          "total_ranking_peliculas": 8673
+        },
         {
           "report_id": "2025-H2",
           "periodo": "Jul-Dic 2025",
@@ -4613,6 +4661,14 @@
           "horas_visualizadas": 500000,
           "ranking_peliculas": 4063,
           "total_ranking_peliculas": 9360
+        },
+        {
+          "report_id": "2025-H1",
+          "periodo": "Ene-Jun 2025",
+          "visualizaciones": 400000,
+          "horas_visualizadas": 600000,
+          "ranking_peliculas": 3736,
+          "total_ranking_peliculas": 8673
         },
         {
           "report_id": "2025-H2",
@@ -4990,6 +5046,14 @@
       "director": "Marcos Carnevale",
       "netflix_reports": [
         {
+          "report_id": "2025-H1",
+          "periodo": "Ene-Jun 2025",
+          "visualizaciones": 1400000,
+          "horas_visualizadas": 2500000,
+          "ranking_peliculas": 1795,
+          "total_ranking_peliculas": 8673
+        },
+        {
           "report_id": "2025-H2",
           "periodo": "Jul-Dic 2025",
           "visualizaciones": 1200000,
@@ -5047,6 +5111,14 @@
           "horas_visualizadas": 2600000,
           "ranking_peliculas": 2038,
           "total_ranking_peliculas": 9360
+        },
+        {
+          "report_id": "2025-H1",
+          "periodo": "Ene-Jun 2025",
+          "visualizaciones": 1200000,
+          "horas_visualizadas": 2400000,
+          "ranking_peliculas": 1954,
+          "total_ranking_peliculas": 8673
         },
         {
           "report_id": "2025-H2",
@@ -5301,6 +5373,14 @@
           "total_ranking_peliculas": 9360
         },
         {
+          "report_id": "2025-H1",
+          "periodo": "Ene-Jun 2025",
+          "visualizaciones": 500000,
+          "horas_visualizadas": 1000000,
+          "ranking_peliculas": 3136,
+          "total_ranking_peliculas": 8673
+        },
+        {
           "report_id": "2025-H2",
           "periodo": "Jul-Dic 2025",
           "visualizaciones": 800000,
@@ -5491,6 +5571,14 @@
           "horas_visualizadas": 1900000,
           "ranking_peliculas": 2395,
           "total_ranking_peliculas": 9360
+        },
+        {
+          "report_id": "2025-H1",
+          "periodo": "Ene-Jun 2025",
+          "visualizaciones": 500000,
+          "horas_visualizadas": 900000,
+          "ranking_peliculas": 3164,
+          "total_ranking_peliculas": 8673
         },
         {
           "report_id": "2025-H2",
