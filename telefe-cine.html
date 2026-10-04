@@ -126,12 +126,29 @@
         <div id="telefe-cine-period-rankings"></div>
       </section>
       <section id="telefe-cine-catalogue" class="telefe-cine-section" aria-labelledby="telefe-cine-catalogue-title"
-        hidden>
+        aria-busy="true">
+
         <h2 id="telefe-cine-catalogue-title" class="showcase-heading">Todas las películas</h2>
-        <div id="telefe-cine-filters"></div>
-        <p id="telefe-cine-count" role="status"></p>
+
+        <div id="telefe-cine-filters" hidden></div>
+
+        <p id="telefe-cine-count" role="status">
+          Cargando películas…
+        </p>
+
         <div id="telefe-cine-grid"></div>
-        <p id="telefe-cine-empty" hidden>No se encontraron películas para esta selección.</p>
+
+        <p id="telefe-cine-empty" hidden>
+          No se encontraron películas para esta selección.
+        </p>
+
+        <p id="telefe-cine-error" role="alert" hidden>
+          No se pudo cargar el catálogo. Probá recargar la página.
+        </p>
+
+        <noscript>
+          Activá JavaScript para consultar el catálogo de Telefe Cine.
+        </noscript>
       </section>
     </main>
     <!-- footer -->
