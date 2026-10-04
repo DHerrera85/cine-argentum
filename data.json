@@ -3425,8 +3425,13 @@
       "producer": "Telefe",
       "release_date": "16/7/2009",
       "director": "Pablo Parés",
-      "related_productions": [
-        "P2087"
+      "producciones_relacionadas": [
+        {
+          "id": "P2087",
+          "title": "100% Lucha, la película",
+          "meta": "Película original",
+          "image": "images/verticals/2008-100-lucha-pelicula-poster-280x420.webp"
+        }
       ]
     },
     {
@@ -4654,7 +4659,13 @@
       ],
       "synopsis": "Un superagente de ACUARIO termina formando equipo con dos novatos tras fallar en su primera misión. Juntos deberán rescatar a una mujer secuestrada y enfrentar a una peligrosa banda criminal, fortaleciendo su amistad en el proceso.",
       "channel": "",
-      "image": "images/verticals/los-superagentes-nueva-generacion-2008-poster-280x420.png",
+      "image": "images/verticals/2008-los-super-agentes-la-nueva-generacion-pelicula-poster280x420-v1.webp",
+      "poster_gallery": [
+        {
+          "image": "images/verticals/2008-los-super-agentes-la-nueva-generacion-pelicula-poster280x420-v2.webp",
+          "label": "Póster alternativo"
+        }
+      ],
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Comedia",
@@ -8191,7 +8202,7 @@
       ],
       "synopsis": "Leonardo y Martha deben enfrentarse a una nueva etapa de su matrimonio cuando sus hijos abandonan el hogar. El silencio de la casa deja al descubierto conflictos y deseos que durante años habían quedado ocultos por la vida familiar.",
       "channel": "",
-      "image": "images/verticals/2008-el-nido-vacio-pelicula-poster280x420.png",
+      "image": "images/verticals/2008-el-nido-vacio-pelicula-poster280x420.webp",
       "orientation": "vertical",
       "type": "pelicula",
       "release_medium": "cine",
@@ -8227,7 +8238,7 @@
       ],
       "synopsis": "Los luchadores de 100% Lucha deben enfrentarse a Koshe Plostenko, un mafioso que dirige un circuito clandestino y planea secuestrar a las principales figuras del programa para obligarlas a combatir.",
       "channel": "",
-      "image": "images/verticals/2008-100-lucha-pelicula-poster-280x420.png",
+      "image": "images/verticals/2008-100-lucha-pelicula-poster-280x420.webp",
       "orientation": "vertical",
       "type": "pelicula",
       "release_medium": "cine",
@@ -8244,8 +8255,13 @@
       "producer": "Adart Producciones, Telefe",
       "release_date": "10/07/2008",
       "director": "Juan Iribas",
-      "related_productions": [
-        "P1136"
+      "producciones_relacionadas": [
+        {
+          "id": "P1136",
+          "title": "100% lucha: el amo de los clones",
+          "meta": "Secuela",
+          "image": "images/verticals/100-lucha-amo-clones-2009-poster-280x420.png"
+        }
       ]
     },
     {
@@ -8264,7 +8280,7 @@
       ],
       "synopsis": "Una disparatada brigada se ve envuelta en una nueva aventura relacionada con piratas y un peligroso plan, dando lugar a persecuciones, equívocos y situaciones de humor.",
       "channel": "",
-      "image": "images/verticals/2008-brigada-explosiva-mision-pirata-pelicula-poster280x420.png",
+      "image": "images/verticals/2008-brigada-explosiva-mision-pirata-pelicula-poster280x420.webp",
       "orientation": "vertical",
       "type": "pelicula",
       "release_medium": "cine",
@@ -8280,7 +8296,15 @@
       },
       "producer": "Argentina Sono Film, Telefe Cine",
       "release_date": "31/01/2008",
-      "director": "Rodolfo Ledo"
+      "director": "Rodolfo Ledo",
+      "producciones_relacionadas": [
+        {
+          "id": "T0007",
+          "title": "Brigada Cola",
+          "meta": "Serie relacionada",
+          "image": "images/verticals/1992-brigadacola-telefe-poster-280x420.png"
+        }
+      ]
     },
     {
       "id": "P2089",
@@ -8297,7 +8321,7 @@
       ],
       "synopsis": "Aniceto vive solo con su gallo en un pequeño pueblo. Su relación con Francisca parece abrirle una nueva vida, hasta que la aparición de Lucía transforma el romance en un triángulo que lo conduce hacia su propia destrucción.",
       "channel": "",
-      "image": "images/verticals/2008-aniceto-pelicula-poster-280x420.png",
+      "image": "images/verticals/2008-aniceto-pelicula-poster-280x420.webp",
       "orientation": "vertical",
       "type": "pelicula",
       "release_medium": "cine",
@@ -12301,7 +12325,15 @@
         }
       ],
       "remakes": [],
-      "productora": "Telefe, Argentina Sono Film"
+      "productora": "Telefe, Argentina Sono Film",
+      "producciones_relacionadas": [
+        {
+          "id": "P2088",
+          "title": "Brigada Explosiva: Misión Pirata",
+          "meta": "Película relacionada",
+          "image": "images/verticals/2008-brigada-explosiva-mision-pirata-pelicula-poster280x420.webp"
+        }
+      ]
     },
     {
       "id": "T0008",
