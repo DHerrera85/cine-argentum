@@ -257,6 +257,113 @@
       outline-offset: 4px;
     }
 
+    /* Filtros y catálogo */
+    .telefe-cine-page .telefe-cine-filter-group {
+      margin-bottom: 18px;
+    }
+
+    .telefe-cine-page .telefe-cine-filter-heading {
+      margin: 0 0 8px;
+      color: #b8bec6;
+      font-size: .9rem;
+      font-weight: 600;
+    }
+
+    .telefe-cine-page .telefe-cine-filter-list {
+      display: flex;
+      gap: 8px;
+      overflow-x: auto;
+      padding: 3px 3px 10px;
+    }
+
+    .telefe-cine-page .telefe-cine-filter-button {
+      flex-shrink: 0;
+      padding: 8px 14px;
+      border: 1px solid #3d4752;
+      border-radius: 20px;
+      background: #202832;
+      color: #fff;
+      font: inherit;
+      font-size: .85rem;
+      cursor: pointer;
+    }
+
+    .telefe-cine-page .telefe-cine-filter-button[aria-pressed="true"] {
+      border-color: #22b8cf;
+      background: #22b8cf;
+      color: #0f171f;
+    }
+
+    .telefe-cine-page .telefe-cine-filter-button:focus-visible {
+      outline: 3px solid #fff;
+      outline-offset: 2px;
+    }
+
+    .telefe-cine-page #telefe-cine-count {
+      margin: 22px 0 18px;
+      color: #b8bec6;
+    }
+
+    .telefe-cine-page #telefe-cine-grid {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 28px 20px;
+    }
+
+    .telefe-cine-page .telefe-cine-card {
+      min-width: 0;
+    }
+
+    .telefe-cine-page .telefe-cine-card a {
+      display: block;
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .telefe-cine-page .telefe-cine-card img {
+      display: block;
+      width: 100%;
+      height: auto;
+      aspect-ratio: 280 / 420;
+      object-fit: cover;
+      border-radius: 12px;
+    }
+
+    .telefe-cine-page .telefe-cine-card-text {
+      padding-top: 10px;
+      text-align: center;
+    }
+
+    .telefe-cine-page .telefe-cine-card-title {
+      margin: 0;
+      font-size: 1rem;
+      line-height: 1.4;
+    }
+
+    .telefe-cine-page .telefe-cine-card-meta {
+      margin: 6px 0 0;
+      color: #b8bec6;
+      font-size: .8rem;
+    }
+
+    .telefe-cine-page .telefe-cine-card-viewers {
+      margin: 6px 0 0;
+      color: #22b8cf;
+      font-size: .8rem;
+    }
+
+    @media (min-width: 768px) {
+      .telefe-cine-body .menu-icon {
+        display: none;
+      }
+    }
+
+    @media (min-width: 768px) and (max-width: 1100px) {
+      .telefe-cine-page #telefe-cine-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+    }
+
     @media (max-width: 767px) {
       .telefe-cine-page {
         padding: 20px 0 32px;
