@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Telefe Cine | Cine Argentum</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css?v=2.0" />
+  <link rel="stylesheet" href="css/lightslider.css?v=2.0" />
+
+  <!-- Fuente -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins&display=swap" />
+
+  <!-- Favicons para todos los dispositivos -->
+  <link rel="icon" type="image/png" sizes="32x32" href="images/fav_icon.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="images/fav_icon.png" />
+  <link rel="shortcut icon" href="images/fav_icon.png" />
+
+  <!-- Apple Touch Icons (iOS/iPad) -->
+  <link rel="apple-touch-icon" sizes="180x180" href="images/fav_icon.png" />
+  <link rel="apple-touch-icon" sizes="152x152" href="images/fav_icon.png" />
+  <link rel="apple-touch-icon" sizes="120x120" href="images/fav_icon.png" />
+  <link rel="apple-touch-icon" sizes="76x76" href="images/fav_icon.png" />
+
+  <!-- Android Chrome -->
+  <link rel="icon" type="image/png" sizes="192x192" href="images/fav_icon.png" />
+  <link rel="icon" type="image/png" sizes="512x512" href="images/fav_icon.png" />
+
+  <!-- Meta tags para PWA y móviles -->
+  <meta name="theme-color" content="#141a21" />
+  <meta name="msapplication-TileColor" content="#141a21" />
+  <meta name="msapplication-TileImage" content="images/fav_icon.png" />
+
+  <!-- Font Awesome (CSS) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    referrerpolicy="no-referrer" />
+
+  <!-- Estilos propios de Telefe Cine -->
+  <link rel="stylesheet" href="css/telefe-cine.css?v=20261004-1" />
+</head>
+
+<body class="telefe-cine-body">
+  <div class="main-wrap">
+    <nav class="sa-nav">
+      <a href="index.html" class="logo" aria-label="Argentina Content">
+        <img src="images/logos/argentina-content-logo.PNG" alt="Argentina Content">
+      </a>
+
+      <!-- Buscador -->
+      <form class="search" role="search" id="headerSearch">
+        <input type="search" name="q" placeholder="Encontrá tu película o serie"
+          aria-label="Buscar películas y series" />
+        <button type="submit" class="search-btn" aria-label="Buscar">
+          <i class="fas fa-search" aria-hidden="true"></i>
+        </button>
+      </form>
+
+      <!-- Toggle móvil -->
+      <input class="menu-btn" type="checkbox" id="menu-btn" aria-hidden="true" />
+      <label class="menu-icon" for="menu-btn" aria-label="Abrir menú">
+        <span class="nav-icon" aria-hidden="true"></span>
+      </label>
+
+      <!-- Menú -->
+      <ul class="menu nav-options">
+        <li><a href="streaming.html">Streaming</a></li>
+        <li><a href="tv-90s.html">TV 90s</a></li>
+        <li><a href="tiras_2000.html">Tiras 2000</a></li>
+        <li><a href="tiras_2010.html">Tiras 2010</a></li>
+        <li><a href="juveniles.html">Juveniles</a></li>
+        <li><a href="unitarios.html">Unitarios</a></li>
+      </ul>
+    </nav>
+
+    <main class="telefe-cine-page">
+      <section class="page-intro" aria-labelledby="telefe-cine-title">
+        <a href="all-peliculas.html" class="back-link">&larr; Volver a películas</a>
+        <div class="channel-heading">
+          <div class="channel-heading-logo-wrap">
+            <img src="images/logos/telefe-logo-120x120.png" alt="Telefe" class="channel-heading-logo" width="120"
+              height="120" />
+          </div>
+          <div class="channel-heading-text">
+            <h1 id="telefe-cine-title" class="showcase-heading">Telefe Cine</h1>
+            <p class="channel-heading-description">Películas vinculadas históricamente con Telefe, Telefe Cine y Telefe
+              Studios.</p>
+          </div>
+        </div>
+        <div class="channel-decade-nav" role="navigation" aria-label="Explorar el universo Telefe">
+          <a href="telefe-cine.html" class="channel-decade-card active" aria-current="page">
+            <span class="channel-decade-card-logo"><img src="images/logos/telefe-logo-120x120.png" alt="" /></span>
+            <span class="channel-decade-card-label">Telefe Cine</span>
+          </a>
+          <a href="telefe-90s.html" class="channel-decade-card">
+            <span class="channel-decade-card-logo"><img src="images/logos/telefe-1990-120x120.png" alt="" /></span>
+            <span class="channel-decade-card-label">Telefe 90s</span>
+          </a>
+          <a href="telefe-00s.html" class="channel-decade-card">
+            <span class="channel-decade-card-logo"><img src="images/logos/telefe-logo-2000s.png" alt="" /></span>
+            <span class="channel-decade-card-label">Telefe 2000–2009</span>
+          </a>
+          <a href="telefe-10s.html" class="channel-decade-card">
+            <span class="channel-decade-card-logo"><img src="images/logos/telefe-logo-120x120.png" alt="" /></span>
+            <span class="channel-decade-card-label">Telefe 2010–2026</span>
+          </a>
+        </div>
+      </section>
+
+      <!-- Bloques siguientes: permanecen ocultos hasta conectar datos reales. -->
+      <section id="telefe-cine-featured" class="telefe-cine-section" aria-labelledby="telefe-cine-featured-title"
+        hidden>
+        <h2 id="telefe-cine-featured-title" class="showcase-heading">Producciones destacadas</h2>
+        <ul id="telefe-cine-featured-slider" class="slider-h cs-hidden" data-skip-auto="true"></ul>
+      </section>
+      <section id="telefe-cine-historical" class="telefe-cine-section" aria-labelledby="telefe-cine-historical-title"
+        hidden>
+        <h2 id="telefe-cine-historical-title" class="showcase-heading">Las películas más vistas en cines de Argentina
+        </h2>
+        <ul id="telefe-cine-historical-slider" class="slider-h cs-hidden" data-skip-auto="true"></ul>
+      </section>
+      <section id="telefe-cine-periods" class="telefe-cine-section" aria-labelledby="telefe-cine-periods-title" hidden>
+        <h2 id="telefe-cine-periods-title" class="showcase-heading">Las más vistas por década</h2>
+        <div id="telefe-cine-period-rankings"></div>
+      </section>
+      <section id="telefe-cine-catalogue" class="telefe-cine-section" aria-labelledby="telefe-cine-catalogue-title"
+        hidden>
+        <h2 id="telefe-cine-catalogue-title" class="showcase-heading">Todas las películas</h2>
+        <div id="telefe-cine-filters"></div>
+        <p id="telefe-cine-count" role="status"></p>
+        <div id="telefe-cine-grid"></div>
+        <p id="telefe-cine-empty" hidden>No se encontraron películas para esta selección.</p>
+      </section>
+    </main>
+    <!-- footer -->
+    <footer>
+      <p>Argentina Content</p>
+      <p>Copyright 2026 by Dherrera - <a href="tercer-canal.html" title="Series de Tercer Canal">3C</a></p>
+    </footer>
+  </div>
+
+  <!-- JS: jQuery → LightSlider → init -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="js/lightslider.js"></script>
+  <script src="js/script.js?v=20260226-1"></script>
+  <script src="js/telefe-cine.js?v=20261004-1"></script>
+</body>
+
+</html>
