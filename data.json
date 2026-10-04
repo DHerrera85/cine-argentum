@@ -903,7 +903,21 @@
       "viewers": 231610,
       "producer": "Patagonik",
       "release_date": "12/12/2008",
-      "director": "Andrés G. Schaer"
+      "director": "Andrés G. Schaer",
+      "producciones_relacionadas": [
+        {
+          "id": "P1104",
+          "title": "El Ratón Pérez",
+          "meta": "Película original",
+          "image": "images/verticals/2006-el-raton-perez-pelicula-poster280x420.webp"
+        },
+        {
+          "id": "P2030",
+          "title": "El Ratón Pérez y los Guardianes del Libro Mágico",
+          "meta": "Película relacionada",
+          "image": "images/verticals/el-raton-perez-guardianes-libro-magico-2019-poster-280x420.png"
+        }
+      ]
     },
     {
       "title": "Papá por un día",
@@ -2619,7 +2633,7 @@
       ],
       "synopsis": "Tres fleteros obtienen superpoderes y se convierten en bañeros de un balneario controlado por delincuentes de Hong Kong. Allí descubren que los criminales esconden un barco con perros de los que extraen un gen capaz de manipular la voluntad humana.",
       "channel": "",
-      "image": "images/verticals/baneros-3-2006-poster-280x420.png",
+      "image": "images/verticals/2006-baneros-3-superpoderosos-pelicula-poster280x420.webp",
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Comedia",
@@ -2642,7 +2656,13 @@
       ],
       "synopsis": "Lucía pierde su primer diente y, al no recibir la moneda prometida, decide buscar al Ratón Pérez junto a su primo Ramiro. Pronto descubre que Pérez ha sido secuestrado por un ratón rival, lo que los lleva a una aventura para rescatarlo y restablecer la magia.",
       "channel": "",
-      "image": "images/verticals/el-raton-perez-2006-poster-280x420.png",
+      "image": "images/verticals/2006-el-raton-perez-pelicula-poster280x420.webp",
+      "poster_gallery": [
+        {
+          "image": "images/verticals/el-raton-perez-2006-poster-280x420.png",
+          "label": "Póster alternativo"
+        }
+      ],
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Familiar",
@@ -2650,7 +2670,21 @@
       "viewers": 956050,
       "producer": "Patagonik Film Group",
       "release_date": "13/07/2006",
-      "director": "Juan Pablo Buscarini"
+      "director": "Juan Pablo Buscarini",
+      "producciones_relacionadas": [
+        {
+          "id": "P1032",
+          "title": "El ratón Perez 2",
+          "meta": "Secuela",
+          "image": "images/verticals/el-raton-perez-2-2008-poster-280x420.png"
+        },
+        {
+          "id": "P2030",
+          "title": "El Ratón Pérez y los Guardianes del Libro Mágico",
+          "meta": "Película relacionada",
+          "image": "images/verticals/el-raton-perez-guardianes-libro-magico-2019-poster-280x420.png"
+        }
+      ]
     },
     {
       "title": "La Señal",
@@ -6217,7 +6251,21 @@
       "producer": "Televisión Española (TVE), Calendula Films A.I.E., Tandem Films, Enrique Cerezo P.C., Pampa Films, Mediabyte",
       "director": "Juan Pablo Buscarini",
       "release_date": "30/5/2019",
-      "subtitle": "Familiar"
+      "subtitle": "Familiar",
+      "producciones_relacionadas": [
+        {
+          "id": "P1104",
+          "title": "El Ratón Pérez",
+          "meta": "Película original",
+          "image": "images/verticals/2006-el-raton-perez-pelicula-poster280x420.webp"
+        },
+        {
+          "id": "P1032",
+          "title": "El ratón Perez 2",
+          "meta": "Secuela",
+          "image": "images/verticals/el-raton-perez-2-2008-poster-280x420.png"
+        }
+      ]
     },
     {
       "id": "P2031",
