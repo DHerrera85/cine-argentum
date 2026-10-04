@@ -3390,7 +3390,10 @@
       "viewers": 123656,
       "producer": "Telefe",
       "release_date": "16/7/2009",
-      "director": "Pablo Parés"
+      "director": "Pablo Parés",
+      "related_productions": [
+        "P2087"
+      ]
     },
     {
       "title": "Dos más dos",
@@ -8124,6 +8127,145 @@
       "producer": "Alquimia Cinema, Tornasol Films, Arena Films, Cattleya",
       "release_date": "16/03/2006",
       "director": "Marcelo Piñeyro"
+    },
+    {
+      "id": "P2086",
+      "title": "El nido vacío",
+      "genre": "Drama",
+      "year": "2008",
+      "actors": [
+        "Oscar Martínez",
+        "Cecilia Roth",
+        "Inés Efron",
+        "Arturo Goetz",
+        "Jean Pierre Noher",
+        "Carlos Bermejo"
+      ],
+      "synopsis": "Leonardo y Martha deben enfrentarse a una nueva etapa de su matrimonio cuando sus hijos abandonan el hogar. El silencio de la casa deja al descubierto conflictos y deseos que durante años habían quedado ocultos por la vida familiar.",
+      "channel": "",
+      "image": "images/verticals/2008-el-nido-vacio-pelicula-poster280x420.png",
+      "orientation": "vertical",
+      "type": "pelicula",
+      "release_medium": "cine",
+      "subtitle": "Drama",
+      "viewers": 281373,
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2008,
+        "viewers": 281373,
+        "national_rank": 3,
+        "overall_rank": 30,
+        "updated_at": "2026-10-03"
+      },
+      "producer": "BD Cine, Classic Film",
+      "release_date": "24/04/2008",
+      "director": "Daniel Burman"
+    },
+    {
+      "id": "P2087",
+      "title": "100% Lucha, la película",
+      "genre": "Familiar",
+      "year": "2008",
+      "actors": [
+        "Vicente Viloni",
+        "La Masa",
+        "Carlos Kaspar",
+        "María Fernanda Neil",
+        "Cecilia Bonelli",
+        "Naim Sibara",
+        "Leo Montero",
+        "Eduardo Husni",
+        "Osvaldo Príncipi"
+      ],
+      "synopsis": "Los luchadores de 100% Lucha deben enfrentarse a Koshe Plostenko, un mafioso que dirige un circuito clandestino y planea secuestrar a las principales figuras del programa para obligarlas a combatir.",
+      "channel": "",
+      "image": "images/verticals/2008-100-lucha-pelicula-poster-280x420.png",
+      "orientation": "vertical",
+      "type": "pelicula",
+      "release_medium": "cine",
+      "subtitle": "Familiar",
+      "viewers": 249918,
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2008,
+        "viewers": 249918,
+        "national_rank": 5,
+        "overall_rank": 37,
+        "updated_at": "2026-10-03"
+      },
+      "producer": "Adart Producciones, Telefe",
+      "release_date": "10/07/2008",
+      "director": "Juan Iribas",
+      "related_productions": [
+        "P1136"
+      ]
+    },
+    {
+      "id": "P2088",
+      "title": "Brigada Explosiva: Misión Pirata",
+      "genre": "Comedia",
+      "year": "2008",
+      "actors": [
+        "Emilio Disi",
+        "Luciana Salazar",
+        "Gino Renni",
+        "Toti Ciliberto",
+        "Bicho Gómez",
+        "Noemí Berroa",
+        "Rodrigo Barrios"
+      ],
+      "synopsis": "Una disparatada brigada se ve envuelta en una nueva aventura relacionada con piratas y un peligroso plan, dando lugar a persecuciones, equívocos y situaciones de humor.",
+      "channel": "",
+      "image": "images/verticals/2008-brigada-explosiva-mision-pirata-pelicula-poster280x420.png",
+      "orientation": "vertical",
+      "type": "pelicula",
+      "release_medium": "cine",
+      "subtitle": "Comedia",
+      "viewers": 244124,
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2008,
+        "viewers": 244124,
+        "national_rank": 6,
+        "overall_rank": 38,
+        "updated_at": "2026-10-03"
+      },
+      "producer": "Argentina Sono Film, Telefe Cine",
+      "release_date": "31/01/2008",
+      "director": "Rodolfo Ledo"
+    },
+    {
+      "id": "P2089",
+      "title": "Aniceto",
+      "genre": "Drama",
+      "year": "2008",
+      "actors": [
+        "Hernán Piquín",
+        "Natalia Pelayo",
+        "Alejandra Baldoni",
+        "Jorge Torres",
+        "Luis Mazzeo",
+        "Matías García"
+      ],
+      "synopsis": "Aniceto vive solo con su gallo en un pequeño pueblo. Su relación con Francisca parece abrirle una nueva vida, hasta que la aparición de Lucía transforma el romance en un triángulo que lo conduce hacia su propia destrucción.",
+      "channel": "",
+      "image": "images/verticals/2008-aniceto-pelicula-poster-280x420.png",
+      "orientation": "vertical",
+      "type": "pelicula",
+      "release_medium": "cine",
+      "subtitle": "Drama",
+      "viewers": 72905,
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2008,
+        "viewers": 72905,
+        "national_rank": 10,
+        "overall_rank": 99,
+        "updated_at": "2026-10-03"
+      },
+      "producer": "INCAA",
+      "release_date": "12/06/2008",
+      "director": "Leonardo Favio"
     },
     {
       "id": "T0001",
