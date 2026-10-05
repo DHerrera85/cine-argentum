@@ -6772,7 +6772,18 @@
         "Evitta Luna"
       ],
       "orientation": "vertical",
-      "image": "images/verticals/cautiva-2026-poster-280x420.png",
+      "image": "images/verticals/2026-cautiva-serie-flow-tnt-poster280x420-v2.webp",
+      "poster_gallery": [
+        {
+          "image": "images/verticals/2026-cautiva-serie-flow-tnt-poster280x420-v2.webp",
+          "label": "Póster principal"
+        },
+        {
+          "image": "images/verticals/cautiva-2026-poster-280x420.png",
+          "label": "Póster alternativo"
+        }
+      ],
+      "horizontal_image": "images/horizontals-1024x576/2026-cautiva-serie-flow-tnt-slider1024x576.webp",
       "subtitle": "Thriller",
       "capitulos": 6,
       "sinopsis": "Clara ingresa a un convento de clausura sin imaginar que quedará sometida al régimen abusivo y cruel impuesto por la madre superiora Cecilia. Quince años después logra escapar y emprende una difícil reconstrucción personal mientras lucha por obtener justicia.",
@@ -13492,7 +13503,18 @@
         "Dolores Fonzi"
       ],
       "orientation": "vertical",
-      "image": "images/verticals/mis-muertos-tristes-poster-280x420.png",
+      "image": "images/verticals/2026-mis-muertos-tristes-serie-netflix-poster280x420.webp",
+      "poster_gallery": [
+        {
+          "image": "images/verticals/2026-mis-muertos-tristes-serie-netflix-poster280x420.webp",
+          "label": "Póster principal"
+        },
+        {
+          "image": "images/verticals/mis-muertos-tristes-poster-280x420.png",
+          "label": "Póster alternativo"
+        }
+      ],
+      "horizontal_image": "images/horizontals-1024x576/2026-mis-muertos-tristes-serie-netflix-slide1024x576.webp",
       "subtitle": "Drama",
       "release_date": "24/09/2026",
       "capitulos": 4,
