@@ -7137,20 +7137,34 @@
       "year": "2026",
       "channel": "Disney+",
       "platform": "Disney+",
+      "platforms": [
+        "Disney+"
+      ],
       "genre": "Comedia",
       "actors": [
         "Martín Bossi",
-        "Eleonora Wexler"
+        "Jorgelina Aruzzi",
+        "Eleonora Wexler",
+        "Osvaldo Santoro",
+        "Patricia Palmer",
+        "Lula Rosenthal",
+        "Karina Hernández",
+        "Julieta Cardinali",
+        "Betiana Blum"
       ],
       "orientation": "vertical",
       "image": "images/verticals/2026-amores-inesperados-disney-poster280x420.png",
-      "horizontal_image": "",
+      "horizontal_image": "images/horizontals-1024x576/2026-amores-inesperados-disney-hulu-serie-horizontal1024x576.webp",
       "subtitle": "Comedia",
+      "temporadas": 1,
       "capitulos": 6,
-      "fecha_estreno": "16/9/2026",
-      "sinopsis": "",
-      "remakes": [],
-      "productora": "Laflia"
+      "duracion": "35–46 minutos",
+      "fecha_estreno": "16/09/2026",
+      "sinopsis": "En cada episodio se desarrolla una historia de amor independiente, protagonizada por personajes que enfrentan situaciones imprevistas y muestran distintas formas de construir y vivir los vínculos afectivos.",
+      "productora": "LaFlia Contenidos, Non Stop",
+      "director": "Marcos Carnevale",
+      "guionista": "Marcos Carnevale",
+      "remakes": []
     },
     {
       "id": "P2051",
