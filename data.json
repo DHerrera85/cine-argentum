@@ -901,6 +901,14 @@
       "subtitle": "Familiar",
       "id": "P1032",
       "viewers": 231610,
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2009,
+        "viewers": 231610,
+        "national_rank": 6,
+        "overall_rank": 38,
+        "updated_at": "2026-10-08"
+      },
       "producer": "Patagonik",
       "release_date": "12/12/2008",
       "director": "Andrés G. Schaer",
@@ -930,14 +938,23 @@
       ],
       "synopsis": "Federico, entrenador de hockey y próximo a casarse, ve su vida alterada cuando debe hacerse cargo de una hermana pequeña a la que no conoce tras el infarto de su padre. La situación se vuelve aún más compleja cuando conoce a Julieta y sus emociones entran en conflicto.",
       "channel": "",
-      "image": "images/verticals/papa-por-un-dia-2009-poster-280x420.png",
+      "image": "images/verticals/2009-papa-por-un-dia-pelicula-poster280x420.webp",
+      "horizontal_image": "images/horizontals-1024x576/2009-pampa-films-pelicula-horizontal-1024x576.webp",
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Familiar",
       "id": "P1033",
       "viewers": 480568,
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2009,
+        "viewers": 480568,
+        "national_rank": 3,
+        "overall_rank": 19,
+        "updated_at": "2026-10-08"
+      },
       "producer": "Telefe, INCAA, Pampa Films, Royal Cinema Group, Runa Films",
-      "release_date": "9/12/2009",
+      "release_date": "06/08/2009",
       "director": "Raúl Rodríguez Peila"
     },
     {
@@ -953,11 +970,20 @@
       "synopsis": "En un exclusivo barrio privado, la aparente tranquilidad se quiebra cuando aparecen tres cadáveres en una piscina. Aunque los vecinos intentan verlo como un accidente, la investigación revela indicios de un crimen.",
       "channel": "",
       "image": "images/verticals/las-viudas-de-los-jueves-2009-poster-280x420.png",
+      "horizontal_image": "images/horizontals-1024x576/2009-las-viudas-de-los-jueves-pelicula-horizontal1024x576.webp",
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Policial",
       "id": "P1034",
       "viewers": 541279,
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2009,
+        "viewers": 541279,
+        "national_rank": 2,
+        "overall_rank": 13,
+        "updated_at": "2026-10-08"
+      },
       "producer": "Tornasol",
       "release_date": "10/9/2009",
       "director": "Marcelo Piñeyro"
@@ -978,6 +1004,14 @@
       "subtitle": "Romance",
       "id": "P1035",
       "viewers": 131788,
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2009,
+        "viewers": 131788,
+        "national_rank": 8,
+        "overall_rank": 62,
+        "updated_at": "2026-10-08"
+      },
       "producer": "Buenos Aires Producciones",
       "release_date": "11/6/2009",
       "director": "María Teresa Costantini"
@@ -2817,11 +2851,20 @@
       "synopsis": "Benjamín Espósito, un ex funcionario judicial, decide escribir una novela sobre un asesinato que lo marcó décadas atrás. Al revisitar el caso, también revive un amor silenciado que ha perdurado a lo largo de los años.",
       "channel": "",
       "image": "images/verticals/el-secreto-de-sus-ojos-2009-poster-280x420.png",
+      "horizontal_image": "images/horizontals-1024x576/2009-el-secreto-de-sus-ojos-pelicula-horizontal-1024x576.webp",
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Policial",
       "id": "P1111",
       "viewers": 2457396,
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2009,
+        "viewers": 2457396,
+        "national_rank": 1,
+        "overall_rank": 1,
+        "updated_at": "2026-10-08"
+      },
       "producer": "Haddock Films, Tornasol Films, 100 Bares, Telefe, Televisión Española (TVE), Canal+",
       "release_date": "13/8/2009",
       "director": "Juan José Campanella"
@@ -4050,6 +4093,14 @@
       "subtitle": "Romance",
       "id": "P1163",
       "viewers": 241007,
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2009,
+        "viewers": 241007,
+        "national_rank": 5,
+        "overall_rank": 35,
+        "updated_at": "2026-10-08"
+      },
       "producer": "INCAA",
       "release_date": "19/3/2009",
       "director": "Hernán Goldfrid"
@@ -8246,46 +8297,39 @@
       "director": "Daniel Burman"
     },
     {
-      "id": "P2087",
-      "title": "100% Lucha, la película",
+      "title": "100% lucha: el amo de los clones",
       "genre": "Familiar",
-      "year": "2008",
+      "year": "2009",
       "actors": [
-        "Vicente Viloni",
-        "La Masa",
-        "Carlos Kaspar",
-        "María Fernanda Neil",
-        "Cecilia Bonelli",
-        "Naim Sibara",
-        "Leo Montero",
-        "Eduardo Husni",
-        "Osvaldo Príncipi"
+        "Daniel Casablanca",
+        "Pablo Rago",
+        "Norberto Adrián Fernández"
       ],
-      "synopsis": "Los luchadores de 100% Lucha deben enfrentarse a Koshe Plostenko, un mafioso que dirige un circuito clandestino y planea secuestrar a las principales figuras del programa para obligarlas a combatir.",
+      "synopsis": "Damián, celoso del luchador Viloni, crea clones idénticos de las estrellas de 100% Lucha para vengarse. Ante la amenaza, Viloni deberá unirse a sus rivales para detener al científico y salvar el espectáculo.",
       "channel": "",
-      "image": "images/verticals/2008-100-lucha-pelicula-poster-280x420.webp",
+      "image": "images/verticals/100-lucha-amo-clones-2009-poster-280x420.png",
       "orientation": "vertical",
       "type": "pelicula",
-      "release_medium": "cine",
       "subtitle": "Familiar",
-      "viewers": 249918,
+      "id": "P1136",
+      "viewers": 123656,
       "theatrical_stats": {
         "source": "INCAA",
-        "year": 2008,
-        "viewers": 249918,
-        "national_rank": 5,
-        "overall_rank": 37,
-        "updated_at": "2026-10-03"
+        "year": 2009,
+        "viewers": 123656,
+        "national_rank": 10,
+        "overall_rank": 65,
+        "updated_at": "2026-10-08"
       },
-      "producer": "Adart Producciones, Telefe",
-      "release_date": "10/07/2008",
-      "director": "Juan Iribas",
+      "producer": "Telefe",
+      "release_date": "16/7/2009",
+      "director": "Pablo Parés",
       "producciones_relacionadas": [
         {
-          "id": "P1136",
-          "title": "100% lucha: el amo de los clones",
-          "meta": "Secuela",
-          "image": "images/verticals/100-lucha-amo-clones-2009-poster-280x420.png"
+          "id": "P2087",
+          "title": "100% Lucha, la película",
+          "meta": "Película original",
+          "image": "images/verticals/2008-100-lucha-pelicula-poster-280x420.webp"
         }
       ]
     },
