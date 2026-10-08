@@ -4777,7 +4777,7 @@
       "subtitle": "Animación",
       "id": "P1190",
       "viewers": 142052,
-      "producer": "Telefe",
+      "producer": "Illusion Studios",
       "release_date": "24/7/2008",
       "director": "Eduardo Gondell"
     },
@@ -8363,6 +8363,76 @@
       "producer": "INCAA",
       "release_date": "12/06/2008",
       "director": "Leonardo Favio"
+    },
+    {
+      "id": "P2090",
+      "title": "Esperando la carroza 2",
+      "genre": "Comedia",
+      "year": "2009",
+      "actors": [
+        "Luis Brandoni",
+        "Betiana Blum",
+        "Juan Manuel Tenuta",
+        "Roberto Carnaghi",
+        "Mónica Villa",
+        "Lidia Catalano",
+        "Andrea Tenuta",
+        "Facundo Espinosa"
+      ],
+      "synopsis": "Nora y Antonio Musicardi organizan una gran fiesta para celebrar sus 25 años de matrimonio. La llegada de sus familiares, con sus conflictos y diferencias sociales, convierte la celebración en una sucesión de situaciones disparatadas.",
+      "channel": "",
+      "image": "images/verticals/2009-esperando-la-carroza-2-pelicula-poster-280x420.webp",
+      "orientation": "vertical",
+      "type": "pelicula",
+      "release_medium": "cine",
+      "subtitle": "Comedia",
+      "viewers": 380780,
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2009,
+        "viewers": 380780,
+        "national_rank": 4,
+        "overall_rank": 23,
+        "updated_at": "2026-10-08"
+      },
+      "producer": "Adrián Serantoni",
+      "release_date": "02/04/2009",
+      "director": "Gabriel Condron"
+    },
+    {
+      "id": "P2091",
+      "title": "Cuestión de principios",
+      "genre": "Comedia",
+      "year": "2009",
+      "actors": [
+        "Federico Luppi",
+        "Norma Aleandro",
+        "Pablo Echarri",
+        "María Carámbula",
+        "Pepe Novoa",
+        "Monna Antonópulos",
+        "Oscar Núñez",
+        "Oscar Alegre"
+      ],
+      "synopsis": "Adalberto Castilla, un empleado portuario próximo a jubilarse, descubre que posee el único ejemplar de una revista que le falta a su nuevo jefe para completar su colección. Su negativa a venderlo desencadena un enfrentamiento que pone a prueba sus principios y las relaciones familiares.",
+      "channel": "",
+      "image": "images/verticals/2009-cuestion-de-principios-pelicula-poster280x420.webp",
+      "orientation": "vertical",
+      "type": "pelicula",
+      "release_medium": "cine",
+      "subtitle": "Comedia",
+      "viewers": 166523,
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2009,
+        "viewers": 166523,
+        "national_rank": 7,
+        "overall_rank": 50,
+        "updated_at": "2026-10-08"
+      },
+      "producer": "Línea de Tres Producciones",
+      "release_date": "24/09/2009",
+      "director": "Rodrigo Grande"
     },
     {
       "id": "T0001",
@@ -15184,6 +15254,7 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/ph-propiedad-horizontal-poster-280x420.png",
+      "horizontal_image": "images/horizontals-1024x576/2001-PH-azul-tv-horizontal-slide-1024x576.webp",
       "tiras_2000_rows": [
         "comedias-estelares"
       ],
@@ -23205,7 +23276,7 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/amor-latino-280x420.png",
-      "horizontal_image":"images/horizontals-1024x576/2000-amor-latino-azul-tv-slide-1024x576.webp",
+      "horizontal_image": "images/horizontals-1024x576/2000-amor-latino-azul-tv-slide-1024x576.webp",
       "tiras_2000_rows": [
         "ficciones-tarde",
         "protagonistas-latinoamerica"
