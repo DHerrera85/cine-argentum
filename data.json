@@ -1032,6 +1032,14 @@
       "subtitle": "Comedia",
       "id": "P1036",
       "viewers": 474449,
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2010,
+        "viewers": 474449,
+        "national_rank": 3,
+        "overall_rank": 22,
+        "updated_at": "2026-10-09"
+      },
       "producer": "Patagonik",
       "release_date": "1/4/2010",
       "director": "Daniel Burman"
@@ -1053,6 +1061,14 @@
       "subtitle": "Familiar",
       "id": "P1037",
       "viewers": 49325,
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2010,
+        "viewers": 49325,
+        "national_rank": null,
+        "overall_rank": null,
+        "updated_at": "2026-10-09"
+      },
       "producer": "Oriental Films, Royal Cinema Group, CoolShot Films",
       "release_date": "1/7/2010",
       "director": "Martín Sastre"
@@ -1074,6 +1090,14 @@
       "subtitle": "Comedia",
       "id": "P1038",
       "viewers": 139669,
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2010,
+        "viewers": 139669,
+        "national_rank": 7,
+        "overall_rank": 61,
+        "updated_at": "2026-10-09"
+      },
       "producer": "INCAA",
       "release_date": "5/8/2010",
       "director": "Néstor Montalbano"
@@ -1094,6 +1118,14 @@
       "subtitle": "Policial",
       "id": "P1039",
       "viewers": 626251,
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2010,
+        "viewers": 626251,
+        "national_rank": 2,
+        "overall_rank": 15,
+        "updated_at": "2026-10-09"
+      },
       "producer": "Patagonik",
       "release_date": "6/5/2010",
       "director": "Pablo Trapero"
@@ -1111,9 +1143,17 @@
       "subtitle": "Animación",
       "id": "P1040",
       "viewers": 428949,
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2010,
+        "viewers": 428949,
+        "national_rank": 4,
+        "overall_rank": 23,
+        "updated_at": "2026-10-09"
+      },
       "producer": "Illusion Studios, Toonz Entertainment, Ánima Estudios",
       "release_date": "7/7/2010",
-      "director": "Cristian Dzwonik"
+      "director": "Gustavo Cova"
     },
     {
       "title": "Igualita a mí",
@@ -1131,6 +1171,14 @@
       "subtitle": "Comedia",
       "id": "P1041",
       "viewers": 849429,
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2010,
+        "viewers": 849429,
+        "national_rank": 1,
+        "overall_rank": 8,
+        "updated_at": "2026-10-09"
+      },
       "producer": "Patagonik Film Group",
       "release_date": "12/10/2010",
       "director": "Diego Kaplan"
@@ -3381,8 +3429,17 @@
       "subtitle": "Animación",
       "id": "P1133",
       "viewers": 155988,
-      "release_date": "16/11/2010",
-      "director": "Norman Ruíz"
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2010,
+        "viewers": 155988,
+        "national_rank": 5,
+        "overall_rank": 54,
+        "updated_at": "2026-10-09"
+      },
+      "producer": "Aleph Media, DTV Producciones, Cinema Uno, Cooperativa de Trabajo Felei",
+      "release_date": "22/07/2010",
+      "director": "Norman Ruiz, Liliana Romero"
     },
     {
       "title": "Elena Sabe",
@@ -3966,6 +4023,14 @@
       "subtitle": "Animación",
       "id": "P1156",
       "viewers": 89257,
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2010,
+        "viewers": 89257,
+        "national_rank": 10,
+        "overall_rank": 77,
+        "updated_at": "2026-10-09"
+      },
       "producer": "Manos Digitales Animation Studio, Telefe",
       "release_date": "18/2/2010",
       "director": "Daniel De Felippo"
