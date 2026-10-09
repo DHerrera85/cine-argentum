@@ -3449,31 +3449,46 @@
       "director": "Pablo Trapero"
     },
     {
-      "title": "100% lucha: el amo de los clones",
+      "id": "P2087",
+      "title": "100% Lucha, la película",
       "genre": "Familiar",
-      "year": "2009",
+      "year": "2008",
       "actors": [
-        "Daniel Casablanca",
-        "Pablo Rago",
-        "Norberto Adrián Fernández"
+        "Vicente Viloni",
+        "La Masa",
+        "Carlos Kaspar",
+        "María Fernanda Neil",
+        "Cecilia Bonelli",
+        "Naim Sibara",
+        "Leo Montero",
+        "Eduardo Husni",
+        "Osvaldo Príncipi"
       ],
-      "synopsis": "Damián, celoso del luchador Viloni, crea clones idénticos de las estrellas de 100% Lucha para vengarse. Ante la amenaza, Viloni deberá unirse a sus rivales para detener al científico y salvar el espectáculo.",
+      "synopsis": "Los luchadores de 100% Lucha deben enfrentarse a Koshe Plostenko, un mafioso que dirige un circuito clandestino y planea secuestrar a las principales figuras del programa para obligarlas a combatir.",
       "channel": "",
-      "image": "images/verticals/100-lucha-amo-clones-2009-poster-280x420.png",
+      "image": "images/verticals/2008-100-lucha-pelicula-poster-280x420.webp",
       "orientation": "vertical",
       "type": "pelicula",
+      "release_medium": "cine",
       "subtitle": "Familiar",
-      "id": "P1136",
-      "viewers": 123656,
-      "producer": "Telefe",
-      "release_date": "16/7/2009",
-      "director": "Pablo Parés",
+      "viewers": 249918,
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2008,
+        "viewers": 249918,
+        "national_rank": 5,
+        "overall_rank": 37,
+        "updated_at": "2026-10-03"
+      },
+      "producer": "Adart Producciones, Telefe",
+      "release_date": "10/07/2008",
+      "director": "Juan Iribas",
       "producciones_relacionadas": [
         {
-          "id": "P2087",
-          "title": "100% Lucha, la película",
-          "meta": "Película original",
-          "image": "images/verticals/2008-100-lucha-pelicula-poster-280x420.webp"
+          "id": "P1136",
+          "title": "100% lucha: el amo de los clones",
+          "meta": "Secuela",
+          "image": "images/verticals/100-lucha-amo-clones-2009-poster-280x420.png"
         }
       ]
     },
