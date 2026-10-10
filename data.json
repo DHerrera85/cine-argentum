@@ -8750,6 +8750,58 @@
       }
     },
     {
+      "id": "P2093",
+      "title": "Finderland: Tierra de Buscadores",
+      "type": "serie",
+      "year": 2016,
+      "channel": "Telefe",
+      "genre": "Drama",
+      "actors": [
+        "Nicolás Repetto",
+        "Eugenia Suárez",
+        "Benjamín Vicuña",
+        "Natalia Lobo",
+        "Benjamín Amadeo"
+      ],
+      "orientation": "vertical",
+      "image": "images/verticals/2016-finderland-cris-morena-group-telefe-unaired-pilot-poster280x420.webp",
+      "subtitle": "No Emitidos",
+      "release_date": null,
+      "fecha_estreno": null,
+      "production_status": "no-emitidos",
+      "channel_relation": "Emisión prevista",
+      "productora": "Cris Morena Group",
+      "tipo_emision": "No Emitidos",
+      "sinopsis": "Proyecto de ficción sobre los vínculos afectivos en la era digital. A través de una aplicación llamada Finder, distintas historias de amor, desamor y soledad exploran las dificultades de conectar con otras personas en un mundo cada vez más comunicado. Desarrollado por Cris Morena Group para Telefe, no llegó a estrenarse.",
+      "tiras_2010_rows": []
+    },
+    {
+      "id": "P2094",
+      "title": "Otro Mundo",
+      "type": "serie",
+      "year": 2018,
+      "genre": "Juvenil",
+      "actors": [
+        "Caro Domenech",
+        "Giuliano Montepaone",
+        "Fran Yan",
+        "Jerónimo Bosia"
+      ],
+      "orientation": "vertical",
+      "image": "images/verticals/2018-otro-mundo-cris-morena-group-unaired-pilot-poster280x420.webp",
+      "subtitle": "No Emitidos",
+      "release_date": null,
+      "fecha_estreno": null,
+      "production_status": "no-emitidos",
+      "productora": "Cris Morena Group",
+      "tipo_emision": "No Emitidos",
+      "sinopsis": "Lola, una joven de 15 años criada entre los lujos de una poderosa familia empresaria, es una artista sensible y espiritual que comienza a cuestionar el mundo al que pertenece. Juan Gris, un poeta urbano de 17 años marcado por la violencia y las carencias, encuentra en la poesía una forma de transformar su realidad. Ella representa el yin; él, el yang. Una tarde de lluvia, sus mundos opuestos chocarán y cambiarán sus vidas para siempre.",
+      "juveniles_rows": [
+        "no-emitidos"
+      ],
+      "tiras_2010_rows": []
+    },
+    {
       "id": "T0001",
       "title": "Amigos son los amigos",
       "year": "1990",

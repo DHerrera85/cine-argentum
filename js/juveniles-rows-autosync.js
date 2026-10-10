@@ -772,7 +772,10 @@
                     year >= 2000 &&
                     year <= 2019 &&
                     matchesResidualGenre(item, genreKey) &&
+                    !belongsToJuvenilesRow(item, 'no-emitidos') &&
+                    normalizeText(item.production_status) !== 'no-emitidos' &&
                     !wasShownBeforeResidualRows(item)
+
                 );
             })
             .map(function (item) {
@@ -882,6 +885,14 @@
                 );
 
                 renderCableBroadcastsRow(items);
+
+
+                renderCuratedVerticalRow(
+                    items,
+                    'juveniles-no-emitidos-list',
+                    'no-emitidos'
+                );
+
 
                 renderCuratedVerticalRow(
                     items,
