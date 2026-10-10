@@ -828,7 +828,7 @@
             var dx = Math.abs(event.touches[0].clientX - startX);
             var dy = Math.abs(event.touches[0].clientY - startY);
 
-            if (dx > 10 && dx > dy) {
+            if (dx >= 40 && dx > dy) {
                 moved = true;
             }
         }, { passive: true });
@@ -841,7 +841,7 @@
             var dy = Math.abs(touch.clientY - startY);
             var link = touchedLink;
 
-            if (dx > 10 || dy > 10) {
+            if (dx >= 40 && dx > dy) {
                 moved = true;
             }
 
