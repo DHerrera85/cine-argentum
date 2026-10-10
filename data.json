@@ -2840,6 +2840,14 @@
       "subtitle": "Animación",
       "id": "P1401",
       "viewers": 116962,
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2011,
+        "viewers": 116962,
+        "national_rank": 6,
+        "overall_rank": 78,
+        "updated_at": "2026-10-09"
+      },
       "producer": "Ánima Estudios, Illusion Studios",
       "release_date": "13/10/2011",
       "director": "Alberto Mar"
@@ -3075,7 +3083,7 @@
       "director": "Lucía Puenzo"
     },
     {
-      "title": "Hermanitos del fin del mundo",
+      "title": "Hermanitos del Fin del Mundo",
       "genre": "Familiar",
       "year": "2011",
       "actors": [
@@ -3091,6 +3099,14 @@
       "subtitle": "Familiar",
       "id": "P1119",
       "viewers": 86455,
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2011,
+        "viewers": 86455,
+        "national_rank": 7,
+        "overall_rank": 94,
+        "updated_at": "2026-10-09"
+      },
       "producer": "Argentina Sono Film",
       "release_date": "14/7/2011",
       "director": "Julio Midú"
@@ -4757,7 +4773,15 @@
       "subtitle": "Histórica",
       "id": "P1185",
       "viewers": 40598,
-      "producer": "INCAA",
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2011,
+        "viewers": 40598,
+        "national_rank": null,
+        "overall_rank": null,
+        "updated_at": "2026-10-09"
+      },
+      "producer": "Boya Films, INCAA",
       "release_date": "23/6/2011",
       "director": "Fernando Spiner"
     },
