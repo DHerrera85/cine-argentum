@@ -2072,9 +2072,21 @@
     var visibleItems =
       getVisibleProductions();
 
+
     var productions =
       visibleItems.filter(function (item) {
-        return !isAcquisition(item);
+        return (
+          !isAcquisition(item) &&
+          !belongsToCategory(item, 'no-emitidos')
+        );
+      });
+
+    var noEmitidos =
+      visibleItems.filter(function (item) {
+        return (
+          !isAcquisition(item) &&
+          belongsToCategory(item, 'no-emitidos')
+        );
       });
 
     var acquisitions =
@@ -2082,9 +2094,29 @@
         return isAcquisition(item);
       });
 
+
     renderProductionCards(
       productions
     );
+
+
+    var noEmitidosGrid =
+      document.querySelector('#channel-no-emitidos-grid');
+
+    if (noEmitidosGrid) {
+      noEmitidosGrid.innerHTML =
+        noEmitidos.map(function (item) {
+          return buildCard(item);
+        }).join('');
+    }
+
+    var noEmitidosSection =
+      document.querySelector('#telefe-no-emitidos');
+
+    if (noEmitidosSection) {
+      noEmitidosSection.hidden = noEmitidos.length === 0;
+    }
+
 
     renderAcquisitionCards(
       acquisitions

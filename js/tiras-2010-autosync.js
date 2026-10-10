@@ -101,11 +101,18 @@
             countId:
                 'tiras-2010-telenovelas-tarde-2010-2019-count'
         },
+
         {
             key: 'webseries',
             sectionId: 'tiras-2010-webseries',
             containerId: 'tiras-2010-webseries-list',
             countId: 'tiras-2010-webseries-count'
+        },
+        {
+            key: 'no-emitidos',
+            sectionId: 'tiras-2010-no-emitidos',
+            containerId: 'tiras-2010-no-emitidos-list',
+            countId: 'tiras-2010-no-emitidos-count'
         }
     ];
 
