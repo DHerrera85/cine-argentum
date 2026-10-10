@@ -1200,6 +1200,14 @@
       "subtitle": "Comedia",
       "id": "P1042",
       "viewers": 302088,
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2011,
+        "viewers": 302088,
+        "national_rank": 4,
+        "overall_rank": 34,
+        "updated_at": "2026-10-09"
+      },
       "producer": "Buena Vista Internacional",
       "release_date": "1/9/2011",
       "director": "Ariel Winograd"
@@ -1221,6 +1229,14 @@
       "subtitle": "Histórica",
       "id": "P1043",
       "viewers": 303331,
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2011,
+        "viewers": 303331,
+        "national_rank": 3,
+        "overall_rank": 33,
+        "updated_at": "2026-10-09"
+      },
       "producer": "INCAA",
       "release_date": "7/4/2011",
       "director": "Leandro Ipiña"
@@ -1356,7 +1372,7 @@
       "subtitle": "Policial",
       "id": "P1050",
       "viewers": 972595,
-      "producer": "Telefe Contenidos, Telecinco Cinema, Hugo Sigman (K&S Films)",
+      "producer": "Telefe, Telecinco Cinema, Hugo Sigman (K&S Films)",
       "release_date": "5/9/2013",
       "director": "Patxi Amezcúa"
     },
@@ -1665,7 +1681,7 @@
       "director": "Juan Pablo Buscarini"
     },
     {
-      "title": "100 años de perdón",
+      "title": "Cien años de perdón",
       "genre": "Policial",
       "year": "2016",
       "actors": [
@@ -1683,7 +1699,7 @@
       "subtitle": "Policial",
       "id": "P1059",
       "viewers": 358808,
-      "producer": "Morena Films, Telecinco Cinema, K&S Films, Telefónica Studios",
+      "producer": "Morena Films, Telecinco Cinema, K&S Films, Telefe, Telefónica Studios",
       "release_date": "3/3/2016",
       "director": "Daniel Calparsoro"
     },
@@ -1787,7 +1803,7 @@
       "subtitle": "Drama",
       "id": "P1064",
       "viewers": 363835,
-      "producer": "Argentina Sono Film",
+      "producer": "Argentina Sono Film, Telefe",
       "release_date": "11/8/2016",
       "director": "Marcos Carnevale"
     },
@@ -1914,7 +1930,7 @@
       "director": "Nicanor Loreti"
     },
     {
-      "title": "El Potro: lo mejor del amor",
+      "title": "El Potro: lo mejor del Amor",
       "genre": "Biográficas",
       "year": "2018",
       "actors": [
@@ -2047,7 +2063,7 @@
       "director": "Rodolfo Ledo"
     },
     {
-      "title": "El cuento de las comadrejas",
+      "title": "El Cuento de las Comadrejas",
       "genre": "Comedia",
       "year": "2019",
       "actors": [
@@ -2090,7 +2106,7 @@
       "director": "Mariano Cohn"
     },
     {
-      "title": "No soy tu mami",
+      "title": "No soy tu Mami",
       "genre": "Comedia",
       "year": "2019",
       "actors": [
@@ -2229,7 +2245,7 @@
       "subtitle": "Comedia",
       "id": "P1084",
       "viewers": 29137,
-      "producer": "Zoelle Producciones, RGB Entertainment",
+      "producer": "Zoelle Producciones, RGB Entertainment, Telefe",
       "release_date": "2/12/2021",
       "director": "Sabrina Farji"
     },
@@ -2807,7 +2823,7 @@
       "subtitle": "Policial",
       "id": "P1200",
       "viewers": 385313,
-      "producer": "K&S Films, Piano, Rei Cine",
+      "producer": "K&S Films, Piano, Rei Cine, Telefe",
       "release_date": "13/09/2018",
       "director": "Gonzalo Tobal"
     },
@@ -2918,7 +2934,7 @@
       "director": "Juan José Campanella"
     },
     {
-      "title": "El clan",
+      "title": "El Clan",
       "genre": "Histórica",
       "year": "2015",
       "actors": [
@@ -3126,12 +3142,12 @@
       "subtitle": "Policial",
       "id": "P1121",
       "viewers": 714645,
-      "producer": "Patagonik, Morena Films",
+      "producer": "Patagonik, Morena Films, Telefe",
       "release_date": "14/9/2017",
       "director": "Martín Hodara"
     },
     {
-      "title": "La odisea de los giles",
+      "title": "La Odisea de los Giles",
       "genre": "Comedia",
       "year": "2019",
       "actors": [
@@ -3147,7 +3163,7 @@
       "subtitle": "Comedia",
       "id": "P1122",
       "viewers": 1841886,
-      "producer": "Mod Producciones, K&S Films, Kenya Films",
+      "producer": "Mod Producciones, K&S Films, Kenya Films, Telefe",
       "release_date": "15/08/2019",
       "director": "Sebastián Borensztein"
     },
@@ -3169,7 +3185,7 @@
       "subtitle": "Policial",
       "id": "P1123",
       "viewers": 96075,
-      "producer": "Pampa Films",
+      "producer": "Pampa Films, Telefe",
       "release_date": "15/6/2017",
       "director": "Federico Cueva"
     },
@@ -3296,12 +3312,12 @@
       "subtitle": "Biográficas",
       "id": "P1127",
       "viewers": 955298,
-      "producer": "Habitación 1520, Smilehood, INCAA",
+      "producer": "Habitación 1520, Smilehood, INCAA, Telefe",
       "release_date": "15/9/2016",
       "director": "Lorena Muñoz"
     },
     {
-      "title": "El robo del siglo",
+      "title": "El Robo del Siglo",
       "genre": "Policial",
       "year": "2020",
       "actors": [
@@ -3409,7 +3425,7 @@
       "subtitle": "Drama",
       "id": "P1132",
       "viewers": 614037,
-      "producer": "Cirko Film",
+      "producer": "Cirko Film, Telefe",
       "release_date": "16/1/2014",
       "director": "Daniel Burman"
     },
@@ -3898,7 +3914,7 @@
       "director": "Fabián Forte"
     },
     {
-      "title": "La cordillera",
+      "title": "La Cordillera",
       "genre": "Policial",
       "year": "2017",
       "actors": [
@@ -4120,7 +4136,8 @@
       "year": "2011",
       "actors": [
         "Graciela Borges",
-        "Valeria Bertuccelli"
+        "Valeria Bertuccelli",
+        "Martín Bossi"
       ],
       "synopsis": "Elena descubre la infidelidad de su marido al conocer a Adela, su amante, justo antes de su muerte. En medio del duelo y el dolor, deberá enfrentar la presencia de esa joven y redefinir su propia vida.",
       "channel": "",
@@ -4130,6 +4147,14 @@
       "subtitle": "Drama",
       "id": "P1161",
       "viewers": 397131,
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2011,
+        "viewers": 397131,
+        "national_rank": 2,
+        "overall_rank": 28,
+        "updated_at": "2026-10-09"
+      },
       "producer": "Aleph Media",
       "release_date": "18/8/2011",
       "director": "Marcos Carnevale"
@@ -4577,7 +4602,7 @@
       ]
     },
     {
-      "title": "Al final del túnel",
+      "title": "Al Final del Túnel",
       "genre": "Policial",
       "year": "2016",
       "actors": [
@@ -4888,7 +4913,15 @@
       "subtitle": "Comedia",
       "id": "P1189",
       "viewers": 917212,
-      "producer": "Buena Vista International, Pampa Films, Tornasol Films",
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2011,
+        "viewers": 917212,
+        "national_rank": 1,
+        "overall_rank": 12,
+        "updated_at": "2026-10-09"
+      },
+      "producer": "Buena Vista International, Pampa Films, Telefe, Tornasol Films",
       "release_date": "24/3/2011",
       "director": "Sebastián Borensztein"
     },
