@@ -16346,6 +16346,14 @@
               "total_ranking_general": 18214
             },
             {
+              "report_id": "2023-H2",
+              "periodo": "Jul-Dic 2023",
+              "visualizaciones": 800000,
+              "horas_visualizadas": 4300000,
+              "ranking_series": 2411,
+              "total_ranking_series": 6599
+            },
+            {
               "report_id": "2024-H1",
               "periodo": "Ene-Jun 2024",
               "visualizaciones": 800000,
@@ -16397,6 +16405,14 @@
               "horas_visualizadas": 9100000,
               "ranking_general": 2220,
               "total_ranking_general": 18214
+            },
+            {
+              "report_id": "2023-H2",
+              "periodo": "Jul-Dic 2023",
+              "visualizaciones": 600000,
+              "horas_visualizadas": 2700000,
+              "ranking_series": 2900,
+              "total_ranking_series": 6599
             },
             {
               "report_id": "2024-H1",
@@ -16548,6 +16564,14 @@
               "total_ranking_general": 18214
             },
             {
+              "report_id": "2023-H2",
+              "periodo": "Jul-Dic 2023",
+              "visualizaciones": 1600000,
+              "horas_visualizadas": 16000000,
+              "ranking_series": 1445,
+              "total_ranking_series": 6599
+            },
+            {
               "report_id": "2024-H1",
               "periodo": "Ene-Jun 2024",
               "visualizaciones": 2000000,
@@ -16599,6 +16623,14 @@
               "horas_visualizadas": 14400000,
               "ranking_general": 1453,
               "total_ranking_general": 18214
+            },
+            {
+              "report_id": "2023-H2",
+              "periodo": "Jul-Dic 2023",
+              "visualizaciones": 1300000,
+              "horas_visualizadas": 13000000,
+              "ranking_series": 1672,
+              "total_ranking_series": 6599
             },
             {
               "report_id": "2024-H1",
@@ -18978,6 +19010,14 @@
               "total_ranking_general": 18214
             },
             {
+              "report_id": "2023-H2",
+              "periodo": "Jul-Dic 2023",
+              "visualizaciones": 200000,
+              "horas_visualizadas": 800000,
+              "ranking_series": 4773,
+              "total_ranking_series": 6599
+            },
+            {
               "report_id": "2024-H1",
               "periodo": "Ene-Jun 2024",
               "visualizaciones": 100000,
@@ -19290,6 +19330,14 @@
           "exclusive_platform": "Netflix",
           "netflix_reports": [
             {
+              "report_id": "2023-H2",
+              "periodo": "Jul-Dic 2023",
+              "visualizaciones": 500000,
+              "horas_visualizadas": 3600000,
+              "ranking_series": 3120,
+              "total_ranking_series": 6599
+            },
+            {
               "report_id": "2024-H1",
               "periodo": "Ene-Jun 2024",
               "visualizaciones": 500000,
@@ -19327,6 +19375,14 @@
           "image": "images/verticals/el-marginal-temporada-5-poster-280x420.png",
           "exclusive_platform": "Netflix",
           "netflix_reports": [
+            {
+              "report_id": "2023-H2",
+              "periodo": "Jul-Dic 2023",
+              "visualizaciones": 500000,
+              "horas_visualizadas": 2300000,
+              "ranking_series": 3213,
+              "total_ranking_series": 6599
+            },
             {
               "report_id": "2024-H1",
               "periodo": "Ene-Jun 2024",
@@ -19409,6 +19465,14 @@
         {
           "numero": 1,
           "netflix_reports": [
+            {
+              "report_id": "2023-H2",
+              "periodo": "Jul-Dic 2023",
+              "visualizaciones": 200000,
+              "horas_visualizadas": 1200000,
+              "ranking_series": 4607,
+              "total_ranking_series": 6599
+            },
             {
               "report_id": "2024-H1",
               "periodo": "Ene-Jun 2024",
@@ -19835,6 +19899,14 @@
           "numero": 1,
           "netflix_reports": [
             {
+              "report_id": "2023-H2",
+              "periodo": "Jul-Dic 2023",
+              "visualizaciones": 300000,
+              "horas_visualizadas": 1700000,
+              "ranking_series": 3925,
+              "total_ranking_series": 6599
+            },
+            {
               "report_id": "2024-H1",
               "periodo": "Ene-Jun 2024",
               "visualizaciones": 100000,
@@ -20216,6 +20288,14 @@
               "total_ranking_general": 18214
             },
             {
+              "report_id": "2023-H2",
+              "periodo": "Jul-Dic 2023",
+              "visualizaciones": 300000,
+              "horas_visualizadas": 1600000,
+              "ranking_series": 3958,
+              "total_ranking_series": 6599
+            },
+            {
               "report_id": "2024-H1",
               "periodo": "Ene-Jun 2024",
               "visualizaciones": 100000,
@@ -20293,6 +20373,14 @@
               "horas_visualizadas": 6400000,
               "ranking_general": 2967,
               "total_ranking_general": 18214
+            },
+            {
+              "report_id": "2023-H2",
+              "periodo": "Jul-Dic 2023",
+              "visualizaciones": 100000,
+              "horas_visualizadas": 800000,
+              "ranking_series": 5535,
+              "total_ranking_series": 6599
             }
           ]
         },
@@ -20308,6 +20396,14 @@
               "horas_visualizadas": 9300000,
               "ranking_general": 2174,
               "total_ranking_general": 18214
+            },
+            {
+              "report_id": "2023-H2",
+              "periodo": "Jul-Dic 2023",
+              "visualizaciones": 100000,
+              "horas_visualizadas": 600000,
+              "ranking_series": 5736,
+              "total_ranking_series": 6599
             }
           ]
         }
@@ -20466,6 +20562,14 @@
         {
           "numero": 1,
           "netflix_reports": [
+            {
+              "report_id": "2023-H2",
+              "periodo": "Jul-Dic 2023",
+              "visualizaciones": 500000,
+              "horas_visualizadas": 3400000,
+              "ranking_series": 3131,
+              "total_ranking_series": 6599
+            },
             {
               "report_id": "2024-H1",
               "periodo": "Ene-Jun 2024",
