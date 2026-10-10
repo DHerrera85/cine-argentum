@@ -1256,10 +1256,18 @@
       "viewers": 58832,
       "producer": "Patagonik Film Group, Cineanimadores",
       "release_date": "2/2/2012",
-      "director": "Walter Tournier"
+      "director": "Walter Tournier",
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2012,
+        "viewers": 58832,
+        "national_rank": null,
+        "overall_rank": null,
+        "updated_at": "2026-10-09"
+      }
     },
     {
-      "title": "Extraños en la noche",
+      "title": "Extraños en la Noche",
       "genre": "Comedia",
       "year": "2012",
       "actors": [
@@ -1277,7 +1285,15 @@
       "viewers": 155485,
       "producer": "MyS Producción",
       "release_date": "5/4/2012",
-      "director": "Alejandro Montiel"
+      "director": "Alejandro Montiel",
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2012,
+        "viewers": 155485,
+        "national_rank": 8,
+        "overall_rank": 59,
+        "updated_at": "2026-10-09"
+      }
     },
     {
       "title": "La pelea de mi vida",
@@ -1298,7 +1314,15 @@
       "viewers": 83509,
       "producer": "Argentina Sono Film",
       "release_date": "6/9/2012",
-      "director": "Jorge Nisco"
+      "director": "Jorge Nisco",
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2012,
+        "viewers": 83509,
+        "national_rank": null,
+        "overall_rank": null,
+        "updated_at": "2026-10-09"
+      }
     },
     {
       "title": "Rodencia y el diente de la princesa",
@@ -1334,7 +1358,15 @@
       "viewers": 72019,
       "producer": "San Luis Cine",
       "release_date": "12/7/2012",
-      "director": "Manuel García Ferré"
+      "director": "Manuel García Ferré",
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2012,
+        "viewers": 72019,
+        "national_rank": null,
+        "overall_rank": null,
+        "updated_at": "2026-10-09"
+      }
     },
     {
       "title": "Vino para robar",
@@ -3517,7 +3549,7 @@
       ]
     },
     {
-      "title": "Elefante blanco",
+      "title": "Elefante Blanco",
       "genre": "Policial",
       "year": "2012",
       "actors": [
@@ -3535,7 +3567,15 @@
       "viewers": 773155,
       "producer": "INCAA, Patagonik Film Group, Televisión Española (TVE)",
       "release_date": "16/5/2012",
-      "director": "Pablo Trapero"
+      "director": "Pablo Trapero",
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2012,
+        "viewers": 773155,
+        "national_rank": 2,
+        "overall_rank": 13,
+        "updated_at": "2026-10-09"
+      }
     },
     {
       "id": "P2087",
@@ -3582,7 +3622,7 @@
       ]
     },
     {
-      "title": "Dos más dos",
+      "title": "Dos más Dos",
       "genre": "Comedia",
       "year": "2012",
       "actors": [
@@ -3602,7 +3642,15 @@
       "viewers": 1004288,
       "producer": "Pol-ka Producciones, Patagonik Film Group",
       "release_date": "16/8/2012",
-      "director": "Diego Kaplan"
+      "director": "Diego Kaplan",
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2012,
+        "viewers": 1004288,
+        "national_rank": 1,
+        "overall_rank": 9,
+        "updated_at": "2026-10-09"
+      }
     },
     {
       "title": "No Puedo Vivir Sin Ti",
@@ -3684,7 +3732,15 @@
       "viewers": 201830,
       "producer": "INCAA",
       "release_date": "16/9/2012",
-      "director": "Benjamín Ávila"
+      "director": "Benjamín Ávila",
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2012,
+        "viewers": 201830,
+        "national_rank": 6,
+        "overall_rank": 55,
+        "updated_at": "2026-10-09"
+      }
     },
     {
       "title": "Mazel Tov",
@@ -4195,7 +4251,15 @@
       "viewers": 568983,
       "producer": "Argentina Sono Film, Tornasol Films",
       "release_date": "19/10/2012",
-      "director": "Eduard Cortés"
+      "director": "Eduard Cortés",
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2012,
+        "viewers": 568983,
+        "national_rank": 3,
+        "overall_rank": 23,
+        "updated_at": "2026-10-09"
+      }
     },
     {
       "title": "Música en espera",
@@ -5092,7 +5156,15 @@
       "viewers": 88476,
       "producer": "Anonymous Content, Kramer & Sigman Films",
       "release_date": "25/4/2012",
-      "director": "Armando Bó"
+      "director": "Armando Bó",
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2012,
+        "viewers": 88476,
+        "national_rank": null,
+        "overall_rank": null,
+        "updated_at": "2026-10-09"
+      }
     },
     {
       "title": "El Jockey",
@@ -5130,7 +5202,15 @@
       "id": "P1198",
       "viewers": 274205,
       "release_date": "26/1/2012",
-      "director": "Pedro Saborido"
+      "director": "Pedro Saborido",
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2012,
+        "viewers": 274205,
+        "national_rank": 4,
+        "overall_rank": 41,
+        "updated_at": "2026-10-09"
+      }
     },
     {
       "title": "Casi leyendas",
@@ -5194,7 +5274,15 @@
       "viewers": 93365,
       "producer": "Patagonik Film Group, Sudestada Cine",
       "release_date": "26/9/2012",
-      "director": "Gabriel Nesci"
+      "director": "Gabriel Nesci",
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2012,
+        "viewers": 93365,
+        "national_rank": null,
+        "overall_rank": null,
+        "updated_at": "2026-10-09"
+      }
     },
     {
       "title": "Ecos de un Crimen",
@@ -5693,7 +5781,7 @@
       "director": "Diego Lucero"
     },
     {
-      "title": "La suerte en tus manos",
+      "title": "La Suerte en tus Manos",
       "genre": "Romance",
       "year": "2012",
       "actors": [
@@ -5709,7 +5797,15 @@
       "id": "P1220",
       "viewers": 193242,
       "release_date": "29/3/2012",
-      "director": "Daniel Burman"
+      "director": "Daniel Burman",
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2012,
+        "viewers": 193242,
+        "national_rank": 7,
+        "overall_rank": 56,
+        "updated_at": "2026-10-09"
+      }
     },
     {
       "title": "El desafío",
@@ -5897,7 +5993,15 @@
       "viewers": 134173,
       "producer": "Telefe, Tornasol Films",
       "release_date": "30/8/2012",
-      "director": "Ana Piterbarg"
+      "director": "Ana Piterbarg",
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2012,
+        "viewers": 134173,
+        "national_rank": 9,
+        "overall_rank": 66,
+        "updated_at": "2026-10-09"
+      }
     },
     {
       "title": "La Quietud",
@@ -8614,6 +8718,36 @@
       "producer": "Línea de Tres Producciones",
       "release_date": "24/09/2009",
       "director": "Rodrigo Grande"
+    },
+    {
+      "title": "La máquina que hace estrellas",
+      "genre": "Animación",
+      "year": "2012",
+      "actors": [
+        "Lucila Gómez",
+        "Pablo Gandolfo",
+        "Marcelo Armand",
+        "Victoria Ramos"
+      ],
+      "synopsis": "Pilo es un niño extraterrestre que vive con su madre en un asteroide. Fascinado por la leyenda de una máquina que crea las estrellas cada noche, sueña con acompañar a su abuelo a repararla. Cuando las estrellas desaparecen, deberá emprender solo una aventura espacial para devolverle la luz al universo.",
+      "channel": "",
+      "image": "images/verticals/la-maquina-que-hace-estrellas-2013-poster-280x420.png",
+      "orientation": "vertical",
+      "type": "pelicula",
+      "subtitle": "Animación",
+      "id": "P2092",
+      "viewers": 103541,
+      "producer": "Aleph Media, Nuts Studios",
+      "release_date": "30/8/2012",
+      "director": "Esteban Echeverría",
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2012,
+        "viewers": 103541,
+        "national_rank": 10,
+        "overall_rank": 80,
+        "updated_at": "2026-10-09"
+      }
     },
     {
       "id": "T0001",
