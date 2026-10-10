@@ -806,14 +806,20 @@
         var startY = 0;
         var moved = false;
         var touchActive = false;
+        var touchedLink = null;
 
         list.addEventListener('touchstart', function (event) {
-            if (!event.touches.length) return;
+            if (event.touches.length !== 1) {
+                touchActive = false;
+                touchedLink = null;
+                return;
+            }
 
             startX = event.touches[0].clientX;
             startY = event.touches[0].clientY;
             moved = false;
             touchActive = true;
+            touchedLink = event.target.closest('a[href]');
         }, { passive: true });
 
         list.addEventListener('touchmove', function (event) {
@@ -827,29 +833,33 @@
             }
         }, { passive: true });
 
-        list.addEventListener('touchend', function () {
+        list.addEventListener('touchend', function (event) {
+            if (!touchActive) return;
+
+            var touch = event.changedTouches[0];
+            var dx = Math.abs(touch.clientX - startX);
+            var dy = Math.abs(touch.clientY - startY);
+            var link = touchedLink;
+
+            if (dx > 10 || dy > 10) {
+                moved = true;
+            }
+
             touchActive = false;
+            touchedLink = null;
+
+            if (!moved && link && list.contains(link)) {
+                window.location.assign(link.href);
+            }
+
+            moved = false;
         }, { passive: true });
 
         list.addEventListener('touchcancel', function () {
             moved = true;
             touchActive = false;
+            touchedLink = null;
         }, { passive: true });
-
-        list.addEventListener('click', function (event) {
-            var link = event.target.closest('a[href]');
-
-            if (!link || !list.contains(link)) return;
-
-            if (moved) {
-                moved = false;
-                return;
-            }
-
-            if (event.defaultPrevented) return;
-
-            window.location.assign(link.href);
-        }, true);
     }
 
 
