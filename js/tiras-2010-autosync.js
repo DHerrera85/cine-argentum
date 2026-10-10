@@ -822,7 +822,7 @@
             var dx = Math.abs(event.touches[0].clientX - startX);
             var dy = Math.abs(event.touches[0].clientY - startY);
 
-            if (dx > 10 || dy > 10) {
+            if (dx > 10 && dx > dy) {
                 moved = true;
             }
         }, { passive: true });
