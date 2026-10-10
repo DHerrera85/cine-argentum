@@ -507,6 +507,65 @@
         );
     }
 
+    // Navegación móvil para pilotos no emitidos.
+    // Distingue un toque breve de un desplazamiento horizontal.
+    function enableUnairedPilotNavigation(list) {
+        if (!list || list.dataset.pilotNavigationReady === 'true') {
+            return;
+        }
+
+        list.dataset.pilotNavigationReady = 'true';
+
+        var startX = 0;
+        var startY = 0;
+        var moved = false;
+        var touchActive = false;
+
+        list.addEventListener('touchstart', function (event) {
+            if (!event.touches.length) return;
+
+            startX = event.touches[0].clientX;
+            startY = event.touches[0].clientY;
+            moved = false;
+            touchActive = true;
+        }, { passive: true });
+
+        list.addEventListener('touchmove', function (event) {
+            if (!touchActive || !event.touches.length) return;
+
+            var dx = Math.abs(event.touches[0].clientX - startX);
+            var dy = Math.abs(event.touches[0].clientY - startY);
+
+            if (dx > 10 || dy > 10) {
+                moved = true;
+            }
+        }, { passive: true });
+
+        list.addEventListener('touchend', function () {
+            touchActive = false;
+        }, { passive: true });
+
+        list.addEventListener('touchcancel', function () {
+            moved = true;
+            touchActive = false;
+        }, { passive: true });
+
+        list.addEventListener('click', function (event) {
+            var link = event.target.closest('a[href]');
+
+            if (!link || !list.contains(link)) return;
+
+            if (moved) {
+                moved = false;
+                return;
+            }
+
+            if (event.defaultPrevented) return;
+
+            window.location.assign(link.href);
+        }, true);
+    }
+
     function initializeVerticalSlider(list) {
         list.classList.remove('cs-hidden');
 
@@ -602,6 +661,10 @@
         list.innerHTML = entries
             .map(buildVerticalCard)
             .join('');
+
+        if (containerId === 'juveniles-no-emitidos-list') {
+            enableUnairedPilotNavigation(list);
+        }
 
         initializeVerticalSlider(list);
     }
