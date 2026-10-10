@@ -1917,6 +1917,20 @@
       "id": "P1068",
       "viewers": 274109,
       "producer": "INCAA, MyS Producción, Telefe, Tondero Producciones",
+      "producciones_relacionadas": [
+        {
+          "id": "P1216",
+          "title": "La Corazonada",
+          "meta": "Segunda película",
+          "image": "images/verticals/la-corazonada-2020-poster-280x420.png"
+        },
+        {
+          "id": "P1206",
+          "title": "Pipa",
+          "meta": "Tercera película",
+          "image": "images/verticals/pipa-2022-poster-280x420.png"
+        }
+      ],
       "release_date": "1/8/2018",
       "director": "Alejandro Montiel"
     },
@@ -2232,6 +2246,14 @@
           "total_ranking_peliculas": 9360
         },
         {
+          "report_id": "2024-H2",
+          "periodo": "Jul-Dic 2024",
+          "visualizaciones": 700000,
+          "horas_visualizadas": 1300000,
+          "ranking_peliculas": 2779,
+          "total_ranking_peliculas": 8680
+        },
+        {
           "report_id": "2025-H1",
           "periodo": "Ene-Jun 2025",
           "visualizaciones": 1000000,
@@ -2376,6 +2398,14 @@
           "horas_visualizadas": 500000,
           "ranking_peliculas": 4527,
           "total_ranking_peliculas": 9360
+        },
+        {
+          "report_id": "2024-H2",
+          "periodo": "Jul-Dic 2024",
+          "visualizaciones": 200000,
+          "horas_visualizadas": 300000,
+          "ranking_peliculas": 4829,
+          "total_ranking_peliculas": 8680
         },
         {
           "report_id": "2025-H1",
@@ -2573,6 +2603,14 @@
       "release_date": "6/12/2024",
       "director": "Martino Zaidelis",
       "netflix_reports": [
+        {
+          "report_id": "2024-H2",
+          "periodo": "Jul-Dic 2024",
+          "visualizaciones": 9800000,
+          "horas_visualizadas": 15600000,
+          "ranking_peliculas": 302,
+          "total_ranking_peliculas": 8680
+        },
         {
           "report_id": "2025-H1",
           "periodo": "Ene-Jun 2025",
@@ -3272,6 +3310,14 @@
           "horas_visualizadas": 1700000,
           "ranking_peliculas": 2439,
           "total_ranking_peliculas": 9360
+        },
+        {
+          "report_id": "2024-H2",
+          "periodo": "Jul-Dic 2024",
+          "visualizaciones": 700000,
+          "horas_visualizadas": 1200000,
+          "ranking_peliculas": 2868,
+          "total_ranking_peliculas": 8680
         },
         {
           "report_id": "2025-H1",
@@ -4490,6 +4536,14 @@
           "total_ranking_peliculas": 9360
         },
         {
+          "report_id": "2024-H2",
+          "periodo": "Jul-Dic 2024",
+          "visualizaciones": 200000,
+          "horas_visualizadas": 300000,
+          "ranking_peliculas": 4813,
+          "total_ranking_peliculas": 8680
+        },
+        {
           "report_id": "2025-H1",
           "periodo": "Ene-Jun 2025",
           "visualizaciones": 600000,
@@ -4651,6 +4705,14 @@
       "release_date": "21/3/2024",
       "director": "Sebastián Borensztein",
       "netflix_reports": [
+        {
+          "report_id": "2024-H2",
+          "periodo": "Jul-Dic 2024",
+          "visualizaciones": 3700000,
+          "horas_visualizadas": 6600000,
+          "ranking_peliculas": 905,
+          "total_ranking_peliculas": 8680
+        },
         {
           "report_id": "2025-H1",
           "periodo": "Ene-Jun 2025",
@@ -4953,6 +5015,14 @@
           "horas_visualizadas": 500000,
           "ranking_peliculas": 4063,
           "total_ranking_peliculas": 9360
+        },
+        {
+          "report_id": "2024-H2",
+          "periodo": "Jul-Dic 2024",
+          "visualizaciones": 100000,
+          "horas_visualizadas": 200000,
+          "ranking_peliculas": 6198,
+          "total_ranking_peliculas": 8680
         },
         {
           "report_id": "2025-H1",
@@ -5370,6 +5440,14 @@
       "director": "Marcos Carnevale",
       "netflix_reports": [
         {
+          "report_id": "2024-H2",
+          "periodo": "Jul-Dic 2024",
+          "visualizaciones": 15100000,
+          "horas_visualizadas": 27200000,
+          "ranking_peliculas": 159,
+          "total_ranking_peliculas": 8680
+        },
+        {
           "report_id": "2025-H1",
           "periodo": "Ene-Jun 2025",
           "visualizaciones": 1400000,
@@ -5418,6 +5496,20 @@
       "subtitle": "Policial",
       "id": "P1206",
       "producer": "Netflix",
+      "producciones_relacionadas": [
+        {
+          "id": "P1068",
+          "title": "Perdida",
+          "meta": "Primera película",
+          "image": "images/verticals/perdida-2018-poster-280x420.png"
+        },
+        {
+          "id": "P1216",
+          "title": "La Corazonada",
+          "meta": "Segunda película",
+          "image": "images/verticals/la-corazonada-2020-poster-280x420.png"
+        }
+      ],
       "release_date": "27/7/2022",
       "director": "Alejandro Montiel",
       "netflix_reports": [
@@ -5435,6 +5527,14 @@
           "horas_visualizadas": 2600000,
           "ranking_peliculas": 2038,
           "total_ranking_peliculas": 9360
+        },
+        {
+          "report_id": "2024-H2",
+          "periodo": "Jul-Dic 2024",
+          "visualizaciones": 600000,
+          "horas_visualizadas": 1200000,
+          "ranking_peliculas": 2980,
+          "total_ranking_peliculas": 8680
         },
         {
           "report_id": "2025-H1",
@@ -5678,6 +5778,20 @@
       "subtitle": "Policial",
       "id": "P1216",
       "producer": "Netflix",
+      "producciones_relacionadas": [
+        {
+          "id": "P1068",
+          "title": "Perdida",
+          "meta": "Primera película",
+          "image": "images/verticals/perdida-2018-poster-280x420.png"
+        },
+        {
+          "id": "P1206",
+          "title": "Pipa",
+          "meta": "Tercera película",
+          "image": "images/verticals/pipa-2022-poster-280x420.png"
+        }
+      ],
       "release_date": "28/5/2020",
       "director": "Alejandro Montiel",
       "netflix_reports": [
@@ -5687,6 +5801,14 @@
           "horas_visualizadas": 3200000,
           "ranking_general": 4658,
           "total_ranking_general": 18214
+        },
+        {
+          "report_id": "2024-H2",
+          "periodo": "Jul-Dic 2024",
+          "visualizaciones": 400000,
+          "horas_visualizadas": 800000,
+          "ranking_peliculas": 3633,
+          "total_ranking_peliculas": 8680
         },
         {
           "report_id": "2024-H1",
@@ -5903,6 +6025,14 @@
           "horas_visualizadas": 1900000,
           "ranking_peliculas": 2395,
           "total_ranking_peliculas": 9360
+        },
+        {
+          "report_id": "2024-H2",
+          "periodo": "Jul-Dic 2024",
+          "visualizaciones": 500000,
+          "horas_visualizadas": 900000,
+          "ranking_peliculas": 3247,
+          "total_ranking_peliculas": 8680
         },
         {
           "report_id": "2025-H1",
