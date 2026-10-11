@@ -7517,6 +7517,7 @@
       "horario": "sábados 19hs",
       "episodes": 24,
       "image": "images/verticals/2026-mirame-asi-camino-noa-prime-video-poster280x420.webp",
+      "horizontal_image": "images/horizontals-1024x576/2026-mirame-asi-camino-noa-prime-video-yair-dori-america-slide-1024x576.webp",
       "poster_gallery": [
         {
           "image": "images/verticals/2026-mirame-asi-camino-noa-prime-video-poster280x420.webp",
@@ -8928,6 +8929,53 @@
       "productora": "Cris Morena Group",
       "tipo_emision": "No Emitidos",
       "sinopsis": "Lola, una joven de 15 años criada entre los lujos de una poderosa familia empresaria, es una artista sensible y espiritual que comienza a cuestionar el mundo al que pertenece. Juan Gris, un poeta urbano de 17 años marcado por la violencia y las carencias, encuentra en la poesía una forma de transformar su realidad. Ella representa el yin; él, el yang. Una tarde de lluvia, sus mundos opuestos chocarán y cambiarán sus vidas para siempre.",
+      "juveniles_rows": [
+        "no-emitidos"
+      ],
+      "tiras_2010_rows": []
+    },
+    {
+      "id": "P2095",
+      "title": "Mía, Mi Amiga Invisible",
+      "type": "serie",
+      "year": 2010,
+      "genre": "Juvenil",
+      "actors": [
+        "Brenda Asnicar",
+        "Lucía Pecrul",
+        "Laura Novoa",
+        "Pepe Soriano",
+        "Eva De Dominici",
+        "Chino Darín",
+        "María Carámbula",
+        "Juan Darthés"
+      ],
+      "orientation": "vertical",
+      "image": "images/verticals/2010-mia-mi-amiga-invisible-dori-media-group-unaired-pilot-poster280x420-v2.webp",
+      "horizontal_image": "images/horizontals-1024x576/2010-mia-mi-amiga-invisible-dori-media-group-unaired-pilot-slide1024x576.webp",
+      "subtitle": "No Emitidos",
+      "release_date": null,
+      "fecha_estreno": null,
+      "production_status": "no-emitidos",
+      "channel_relation": "Emisión negociada con Canal 7, no concretada",
+      "productora": "Dori Media Group",
+      "producer": "Alejandro Stoessel",
+      "creators": [
+        "Daniel Di Conza",
+        "Alejandro Stoessel"
+      ],
+      "tipo_emision": "No Emitidos",
+      "poster_gallery": [
+        {
+          "image": "images/verticals/2010-mia-mi-amiga-invisible-dori-media-group-unaired-pilot-poster280x420-v2.webp",
+          "label": "Póster principal"
+        },
+        {
+          "image": "images/verticals/2010-mia-mi-amiga-invisible-dori-media-group-unaired-pilot-poster280x420.webp",
+          "label": "Póster alternativo"
+        }
+      ],
+      "sinopsis": "Mía es una amiga invisible que, por arte de magia, se transforma en una adolescente de carne y hueso para ayudar a una niña que ha perdido la esperanza. Enfrentada a fuerzas malignas que amenazan su misión, deberá protegerla y devolverle la ilusión, mientras descubre el amor y enfrenta los desafíos de vivir en el mundo real.",
       "juveniles_rows": [
         "no-emitidos"
       ],
