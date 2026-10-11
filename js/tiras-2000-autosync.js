@@ -1015,7 +1015,7 @@
             enableUnairedPilotNavigation(list);
         }
 
-        initializeVerticalSlider(list);
+        initializeHorizontalSlider(list);
     }
 
     function renderVerticalRow(
