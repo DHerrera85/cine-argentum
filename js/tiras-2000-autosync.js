@@ -803,45 +803,40 @@
        LIGHTSLIDER
        ========================================================= */
 
+
     function initializeHorizontalSlider(list) {
-        list.classList.remove('cs-hidden');
+        if (
+            !list ||
+            typeof window.jQuery !== 'function' ||
+            typeof window.jQuery.fn.lightSlider !== 'function'
+        ) {
+            if (list) {
+                list.classList.remove('cs-hidden');
+            }
+            return null;
+        }
 
         if (
-            !window.jQuery ||
-            !window.jQuery.fn ||
-            !window.jQuery.fn.lightSlider
+            list._tiras2000HorizontalSlider &&
+            typeof list._tiras2000HorizontalSlider.destroy === 'function'
         ) {
-            return;
+            list._tiras2000HorizontalSlider.destroy();
+            list._tiras2000HorizontalSlider = null;
         }
 
-        var $list = window.jQuery(list);
+        list.classList.remove('cs-hidden');
 
-        if ($list.hasClass('lightSlider')) {
-            var instance =
-                $list.data('lightSlider');
-
-            if (
-                instance &&
-                typeof instance.refresh === 'function'
-            ) {
-                instance.refresh();
-            }
-
-            return;
-        }
-
-        $list.lightSlider({
+        var slider = window.jQuery(list).lightSlider({
             item: 3,
             autoWidth: false,
             slideMove: 1,
             slideMargin: 20,
             loop: false,
-            pager: false,
             controls: true,
+            pager: false,
             enableTouch: true,
             enableDrag: true,
             freeMove: false,
-
             responsive: [
                 {
                     breakpoint: 1100,
@@ -861,11 +856,12 @@
                 }
             ]
         });
+
+        list._tiras2000HorizontalSlider = slider;
+
+        return slider;
     }
 
-    if (rowConfig.key === 'no-emitidos') {
-        enableUnairedPilotNavigation(list);
-    }
 
     function initializeVerticalSlider(list) {
         list.classList.remove('cs-hidden');
@@ -1015,7 +1011,11 @@
             productions.length
         );
 
-        initializeHorizontalSlider(list);
+        if (rowConfig.key === 'no-emitidos') {
+            enableUnairedPilotNavigation(list);
+        }
+
+        initializeVerticalSlider(list);
     }
 
     function renderVerticalRow(
