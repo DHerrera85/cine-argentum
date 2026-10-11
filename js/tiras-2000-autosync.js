@@ -6,7 +6,7 @@
        ========================================================= */
 
     var DATA_URL =
-        'data.json?v=20260908-tiras2000-3';
+        'data.json?v=20261011-tiras2000-4';
 
     var HORIZONTAL_ROWS = [
         {
@@ -937,6 +937,79 @@
         return instance;
     }
 
+    function enableUnairedPilotNavigation(list) {
+        if (!list || list.dataset.pilotNavigationReady === 'true') {
+            return;
+        }
+
+        list.dataset.pilotNavigationReady = 'true';
+
+        var startX = 0;
+        var startY = 0;
+        var moved = false;
+        var touchActive = false;
+        var touchedLink = null;
+
+        list.addEventListener('touchstart', function (event) {
+            if (event.touches.length !== 1) {
+                touchActive = false;
+                touchedLink = null;
+                return;
+            }
+
+            startX = event.touches[0].clientX;
+            startY = event.touches[0].clientY;
+            moved = false;
+            touchActive = true;
+            touchedLink = event.target.closest('a[href]');
+        }, { passive: true });
+
+        list.addEventListener('touchmove', function (event) {
+            if (!touchActive || !event.touches.length) {
+                return;
+            }
+
+            var dx = Math.abs(event.touches[0].clientX - startX);
+            var dy = Math.abs(event.touches[0].clientY - startY);
+
+            if (dx >= 40 && dx > dy) {
+                moved = true;
+            }
+        }, { passive: true });
+
+        list.addEventListener('touchend', function (event) {
+            if (!touchActive || !event.changedTouches.length) {
+                return;
+            }
+
+            var touch = event.changedTouches[0];
+            var dx = Math.abs(touch.clientX - startX);
+            var dy = Math.abs(touch.clientY - startY);
+            var link = touchedLink;
+
+            touchActive = false;
+            touchedLink = null;
+
+            if (
+                !moved &&
+                link &&
+                list.contains(link) &&
+                !(dx >= 40 && dx > dy)
+            ) {
+                window.location.assign(link.href);
+            }
+
+            moved = false;
+        }, { passive: true });
+
+        list.addEventListener('touchcancel', function () {
+            touchActive = false;
+            moved = true;
+            touchedLink = null;
+        }, { passive: true });
+    }
+
+
     function destroyVerticalSlider(list) {
         if (!list) {
             return;
@@ -1044,6 +1117,10 @@
             rowConfig,
             productions.length
         );
+
+        if (rowConfig.key === 'no-emitidos') {
+            enableUnairedPilotNavigation(list);
+        }
 
         initializeVerticalSlider(list);
     }
