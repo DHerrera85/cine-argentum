@@ -9017,6 +9017,40 @@
       ]
     },
     {
+      "id": "P2097",
+      "title": "Amor Infiel",
+      "type": "serie",
+      "year": 2009,
+      "genre": "Telenovela",
+      "actors": [
+        "Juan Darthés",
+        "Laura Esquivel",
+        "Soledad Fandiño",
+        "Fabián Mazzei",
+        "Luciana Salazar",
+        "Marisol Romero"
+      ],
+      "orientation": "vertical",
+      "image": "images/verticals/2009-amor-infiel-star-park-unaired-pilot-poster280x420.webp",
+      "poster_gallery": [
+        {
+          "image": "images/verticals/2009-amor-infiel-star-park-unaired-pilot-poster280x420.webp",
+          "label": "Póster principal"
+        }
+      ],
+      "subtitle": "No Emitidos",
+      "release_date": null,
+      "fecha_estreno": null,
+      "production_status": "no-emitidos",
+      "productora": "Star Park",
+      "producer": "Raúl Lecouna",
+      "tipo_emision": "No Emitidos",
+      "sinopsis": "Proyecto de telenovela familiar con elementos de comedia, desarrollado por el productor Raúl Lecouna. Protagonizado por Juan Darthés y Laura Esquivel, junto a Soledad Fandiño, Fabián Mazzei, Luciana Salazar y Marisol Romero, contó con un capítulo piloto presentado durante 2009. La propuesta combinaba los conflictos familiares con situaciones humorísticas y fue ofrecida para su distribución internacional durante MIPCOM. Aunque se proyectaba iniciar las grabaciones de la serie en 2010, no se ha confirmado su estreno televisivo.",
+      "juveniles_rows": [],
+      "tiras_2010_rows": [],
+      "tiras_2000_rows": ["no-emitidos"]
+    },
+    {
       "id": "T0001",
       "title": "Amigos son los amigos",
       "year": "1990",

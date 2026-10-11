@@ -106,6 +106,13 @@
                 'tiras-2000-webseries-list',
             countId:
                 'tiras-2000-webseries-count'
+        },
+        {
+            key: 'no-emitidos',
+            minYear: 2000,
+            maxYear: 2009,
+            containerId: 'tiras-2000-no-emitidos-list',
+            countId: 'tiras-2000-no-emitidos-count'
         }
     ];
 
@@ -854,6 +861,10 @@
                 }
             ]
         });
+    }
+
+    if (rowConfig.key === 'no-emitidos') {
+        enableUnairedPilotNavigation(list);
     }
 
     function initializeVerticalSlider(list) {
