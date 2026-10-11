@@ -8982,6 +8982,41 @@
       "tiras_2010_rows": []
     },
     {
+      "id": "P2096",
+      "title": "Prisionero de Tu Amor",
+      "type": "serie",
+      "year": 2011,
+      "channel": "Telefe",
+      "genre": "Drama",
+      "actors": [
+        "Sebastián Estevanez",
+        "Sabrina Garciarena",
+        "Arturo Bonín",
+        "Marita Ballesteros",
+        "Natalie Pérez"
+      ],
+      "orientation": "vertical",
+      "image": "images/verticals/2011-prisionero-de-tu-amor-lca-producciones-telefe-unaired-pilot-poster280x420.webp",
+      "poster_gallery": [
+        {
+          "image": "images/verticals/2011-prisionero-de-tu-amor-lca-producciones-telefe-unaired-pilot-poster280x420.webp",
+          "label": "Póster principal"
+        }
+      ],
+      "subtitle": "No Emitidos",
+      "release_date": null,
+      "fecha_estreno": null,
+      "production_status": "no-emitidos",
+      "channel_relation": "Emisión prevista",
+      "productora": "LCA Producciones",
+      "tipo_emision": "No Emitidos",
+      "sinopsis": "Lucho Manetti (Sebastián Estevanez) es un hombre noble, albañil de profesión, condenado por un crimen que no cometió. Después de seis años en prisión, obtiene el beneficio de las salidas laborales por buena conducta y consigue trabajo en la remodelación de un prestigioso hotel. Allí conoce a Agustina (Sabrina Garciarena), la joven gerente e hija del dueño. Cuando Lucho salva la vida del hermano de Agustina, nace entre ellos una historia de amor apasionada e imposible. Ella está a punto de casarse con un abogado inescrupuloso, mientras que Lucho descubre, dentro de su familia, pistas que podrían demostrar su inocencia. Para esclarecer el crimen deberá desenmascarar una trama siniestra que amenaza con destruir la vida de Agustina y enfrentarse a una decisión dolorosa: recuperar su libertad y arriesgarse a perder a la mujer que ama, o preservar ese amor aun a costa de regresar a prisión.",
+      "juveniles_rows": [],
+      "tiras_2010_rows": [
+        "no-emitidos"
+      ]
+    },
+    {
       "id": "T0001",
       "title": "Amigos son los amigos",
       "year": "1990",
