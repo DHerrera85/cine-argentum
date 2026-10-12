@@ -7,7 +7,7 @@
   <title>Series de Disney+ - Cine Argentum</title>
   <link rel="stylesheet" href="css/style.css?v=2.0">
   <link rel="stylesheet" href="css/lightslider.css?v=2.0">
-  <link rel="stylesheet" href="css/disney-plus.css?v=20261012-b4">
+  <link rel="stylesheet" href="css/disney-plus.css?v=20261012-b5">
 
 </head>
 
@@ -23,11 +23,14 @@
           <p id="actor-movie-count">Cargando series...</p>
         </div>
       </header>
-      <!-- B1: contenedores preparados; se activarán cuando B2 implemente sus datos y carruseles. -->
       <section class="disney-section disney-future-section" id="disney-upcoming-section"
         aria-labelledby="disney-upcoming-title" hidden>
-        <h2 class="disney-section-title" id="disney-upcoming-title">Próximos estrenos</h2>
-        <div id="disney-upcoming-list" class="disney-upcoming-track"></div>
+        <div class="disney-upcoming-heading">
+          <h2 class="disney-section-title" id="disney-upcoming-title">Próximos estrenos</h2>
+          <p id="disney-upcoming-count" class="disney-upcoming-count"></p>
+        </div>
+        <ul id="disney-upcoming-list" class="disney-upcoming-track" data-skip-auto="true"
+          aria-label="Próximos estrenos de Disney+"></ul>
       </section>
       <section class="disney-section disney-future-section" id="disney-featured-section"
         aria-labelledby="disney-featured-title" hidden>
@@ -73,7 +76,7 @@
   <script src="js/lightslider.js"></script>
   <script src="js/script.js?v=20260219-1"></script>
   <script src="js/disney-plus-catalog.js?v=20261012-b3"></script>
-  <script src="js/disney-plus-b2.js?v=20261011-b2"></script>
+  <script src="js/disney-plus-b2.js?v=20261012-b3"></script>
 </body>
 
 </html>

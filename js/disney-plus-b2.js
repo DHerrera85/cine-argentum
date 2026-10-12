@@ -7,6 +7,7 @@
   const upcomingSection = document.getElementById('disney-upcoming-section');
   const featuredSection = document.getElementById('disney-featured-section');
   const upcomingTrack = document.getElementById('disney-upcoming-list');
+  const upcomingCount = document.getElementById('disney-upcoming-count');
   const featuredSlider = document.getElementById('disney-featured-slider');
   if (!upcomingSection || !featuredSection || !upcomingTrack || !featuredSlider) return;
 
@@ -60,7 +61,7 @@
       .sort((a, b) => releaseDate(a) - releaseDate(b));
 
     for (const item of upcoming) {
-      const card = document.createElement('article');
+      const card = document.createElement('li');
       card.className = 'disney-upcoming-card';
       const a = link(item);
       a.append(poster(item, item.image), text('h3', item.title || '', 'disney-card-name'));
@@ -70,7 +71,41 @@
       upcomingTrack.append(card);
     }
 
+    if (upcomingCount) {
+      upcomingCount.textContent =
+        `${upcoming.length} ${upcoming.length === 1 ? 'estreno próximo' : 'estrenos próximos'}`;
+    }
+
     upcomingSection.hidden = upcoming.length === 0;
+
+    if (
+      upcoming.length &&
+      window.jQuery &&
+      typeof window.jQuery.fn.lightSlider === 'function'
+    ) {
+      window.jQuery(upcomingTrack).lightSlider({
+        item: 5,
+        autoWidth: false,
+        slideMove: 1,
+        slideMargin: 18,
+        loop: false,
+        controls: true,
+        pager: false,
+        enableTouch: true,
+        enableDrag: true,
+        freeMove: false,
+        responsive: [
+          {
+            breakpoint: 1100,
+            settings: { item: 4, slideMove: 1, slideMargin: 14 }
+          },
+          {
+            breakpoint: 768,
+            settings: { item: 2, slideMove: 1, slideMargin: 10 }
+          }
+        ]
+      });
+    }
   }
 
 
@@ -155,9 +190,9 @@
       typeof window.jQuery.fn.lightSlider === 'function'
     ) {
       window.jQuery(featuredSlider).lightSlider({
-        item: 3,
+        item: 5,
         slideMove: 1,
-        slideMargin: 14,
+        slideMargin: 18,
         loop: false,
         controls: true,
         pager: false,
@@ -165,12 +200,12 @@
         enableDrag: true,
         responsive: [
           {
-            breakpoint: 900,
-            settings: { item: 2, slideMove: 1, slideMargin: 12 }
+            breakpoint: 1100,
+            settings: { item: 3, slideMove: 1, slideMargin: 14 }
           },
           {
-            breakpoint: 600,
-            settings: { item: 1, slideMove: 1, slideMargin: 10 }
+            breakpoint: 768,
+            settings: { item: 2, slideMove: 1, slideMargin: 10 }
           }
         ]
       });
