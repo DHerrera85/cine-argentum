@@ -1,50 +1,433 @@
 /* Cine Argentum — Disney+ | Etapa B1 */
-body.disney-page { background: #181d23; color: #e5e5e5; }
-.disney-page .actor-wrap { max-width: 1200px; margin: 28px auto; padding: 20px; }
-.disney-page .back-link { display: inline-block; margin-bottom: 16px; color: #67b3ff; text-decoration: none; font-weight: 600; }
-.disney-page .actor-header { display: flex; align-items: center; gap: 16px; margin-bottom: 32px; }
-.disney-page .actor-badge { width: 80px; height: 80px; flex: 0 0 80px; border-radius: 12px; background: linear-gradient(135deg,#fff,#f2f2f2); display:flex; align-items:center; justify-content:center; box-shadow:0 4px 12px #0005; }
-.disney-page .disney-logo { width:60px; height:60px; object-fit:contain; }
-.disney-page .actor-info h1 { margin:0 0 6px; font-size:28px; color:#fff; }
-.disney-page .actor-info p { margin:0; color:#b0b0b0; }
-.disney-page .disney-section { margin: 30px 0; }
-.disney-page .disney-section-title { margin: 0 12px 8px; font-size:1.5rem; color:#fff; }
-.disney-page .disney-section-sub { margin:0 12px 12px; color:#b0b0b0; }
-.disney-page .disney-future-section[hidden] { display:none; }
-.disney-page .actor-movies-grid { display:grid; grid-template-columns:repeat(5,minmax(0,1fr)); gap:28px 18px; margin:32px 0 40px; padding:0 12px; }
-.disney-page .actor-movie-card { background:#23272f; border-radius:16px; box-shadow:0 2px 12px #0002; overflow:hidden; display:flex; flex-direction:column; transition:transform .18s; }
-.disney-page .actor-movie-card:hover { transform:translateY(-4px); }
-.disney-page .actor-movie-card a { color:inherit; text-decoration:none; }
-.disney-page .actor-movie-card img { display:block; width:100%; aspect-ratio:2/3; object-fit:cover; background:#181d23; border-radius:0 0 22px 22px; }
-.disney-page .actor-movie-info { padding:14px 12px 12px; display:flex; flex-direction:column; gap:4px; }
-.disney-page .actor-movie-title { font-size:1.08rem; font-weight:600; color:#fff; line-height:1.18; }
-.disney-page .actor-movie-meta { font-size:.97rem; color:#b0b0b0; }
-.disney-page .actor-filters { display:flex; align-items:center; gap:10px; margin:0 0 10px; padding:0 12px; }
-.disney-page .actor-filters label { font-size:1rem; color:#b0b0b0; }
-.disney-page .disney-header-filters { margin-bottom:0; margin-left:auto; }
-.disney-page .custom-select { position:relative; min-width:210px; background:#23272f; border-radius:6px; cursor:pointer; user-select:none; border:1px solid #333; }
-.disney-page .custom-select.open,.disney-page .custom-select:focus { border-color:#67b3ff; z-index:20; }
-.disney-page .custom-select-selected { display:block; padding:8px 36px 8px 14px; color:#e5e5e5; position:relative; }
-.disney-page .custom-select-selected:after { content:''; position:absolute; right:14px; top:50%; border-left:6px solid transparent; border-right:6px solid transparent; border-top:7px solid #67b3ff; transform:translateY(-50%); }
-.disney-page .custom-select-options { position:absolute; left:0; right:0; top:100%; display:none; background:#23272f; border:1px solid #333; border-top:0; border-radius:0 0 6px 6px; margin:0; padding:0; z-index:30; list-style:none; }
-.disney-page .custom-select-options li { padding:12px 16px; color:#e5e5e5; cursor:pointer; }
-.disney-page .custom-select-options li.selected,.disney-page .custom-select-options li:hover { background:#67b3ff; color:#23272f; }
-@media(max-width:900px) { .disney-page .actor-movies-grid { grid-template-columns:repeat(3,minmax(0,1fr)); } }
-@media(max-width:768px) { .disney-page .actor-header { flex-direction:column; align-items:flex-start; } .disney-page .actor-info h1 { font-size:22px; } .disney-page .disney-header-filters { margin-left:0; } }
-@media(max-width:600px) { .disney-page .actor-movies-grid { grid-template-columns:repeat(2,minmax(0,1fr)); gap:18px 8px; margin:18px 0 24px; padding:0 4px; } .disney-page .actor-filters { flex-direction:column; align-items:stretch; gap:6px; } .disney-page .custom-select { min-width:100%; width:100%; } .disney-page .custom-select-selected { font-size:1.08rem; padding:12px 36px 12px 14px; } .disney-page .custom-select-options li { font-size:1.08rem; padding:16px 18px; } }
+body.disney-page {
+    background: #181d23;
+    color: #e5e5e5;
+}
+
+.disney-page .actor-wrap {
+    max-width: 1200px;
+    margin: 28px auto;
+    padding: 20px;
+}
+
+.disney-page .back-link {
+    display: inline-block;
+    margin-bottom: 16px;
+    color: #67b3ff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.disney-page .actor-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 32px;
+}
+
+.disney-page .actor-badge {
+    width: 80px;
+    height: 80px;
+    flex: 0 0 80px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #fff, #f2f2f2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px #0005;
+}
+
+.disney-page .disney-logo {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+.disney-page .actor-info h1 {
+    margin: 0 0 6px;
+    font-size: 28px;
+    color: #fff;
+}
+
+.disney-page .actor-info p {
+    margin: 0;
+    color: #b0b0b0;
+}
+
+.disney-page .disney-section {
+    margin: 30px 0;
+}
+
+.disney-page .disney-section-title {
+    margin: 0 12px 8px;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.disney-page .disney-section-sub {
+    margin: 0 12px 12px;
+    color: #b0b0b0;
+}
+
+.disney-page .disney-future-section[hidden] {
+    display: none;
+}
+
+.disney-page .actor-movies-grid {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 28px 18px;
+    margin: 32px 0 40px;
+    padding: 0 12px;
+}
+
+.disney-page .actor-movie-card {
+    background: #23272f;
+    border-radius: 16px;
+    box-shadow: 0 2px 12px #0002;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform .18s;
+}
+
+.disney-page .actor-movie-card:hover {
+    transform: translateY(-4px);
+}
+
+.disney-page .actor-movie-card a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.disney-page .actor-movie-card img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 2/3;
+    object-fit: cover;
+    background: #181d23;
+    border-radius: 0 0 22px 22px;
+}
+
+.disney-page .actor-movie-info {
+    padding: 14px 12px 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.disney-page .actor-movie-title {
+    font-size: 1.08rem;
+    font-weight: 600;
+    color: #fff;
+    line-height: 1.18;
+}
+
+.disney-page .actor-movie-meta {
+    font-size: .97rem;
+    color: #b0b0b0;
+}
+
+.disney-page .actor-filters {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0 0 10px;
+    padding: 0 12px;
+}
+
+.disney-page .actor-filters label {
+    font-size: 1rem;
+    color: #b0b0b0;
+}
+
+.disney-page .disney-header-filters {
+    margin-bottom: 0;
+    margin-left: auto;
+}
+
+.disney-page .custom-select {
+    position: relative;
+    min-width: 210px;
+    background: #23272f;
+    border-radius: 6px;
+    cursor: pointer;
+    user-select: none;
+    border: 1px solid #333;
+}
+
+.disney-page .custom-select.open,
+.disney-page .custom-select:focus {
+    border-color: #67b3ff;
+    z-index: 20;
+}
+
+.disney-page .custom-select-selected {
+    display: block;
+    padding: 8px 36px 8px 14px;
+    color: #e5e5e5;
+    position: relative;
+}
+
+.disney-page .custom-select-selected:after {
+    content: '';
+    position: absolute;
+    right: 14px;
+    top: 50%;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 7px solid #67b3ff;
+    transform: translateY(-50%);
+}
+
+.disney-page .custom-select-options {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    display: none;
+    background: #23272f;
+    border: 1px solid #333;
+    border-top: 0;
+    border-radius: 0 0 6px 6px;
+    margin: 0;
+    padding: 0;
+    z-index: 30;
+    list-style: none;
+}
+
+.disney-page .custom-select-options li {
+    padding: 12px 16px;
+    color: #e5e5e5;
+    cursor: pointer;
+}
+
+.disney-page .custom-select-options li.selected,
+.disney-page .custom-select-options li:hover {
+    background: #67b3ff;
+    color: #23272f;
+}
+
+@media(max-width:900px) {
+    .disney-page .actor-movies-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+@media(max-width:768px) {
+    .disney-page .actor-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .disney-page .actor-info h1 {
+        font-size: 22px;
+    }
+
+    .disney-page .disney-header-filters {
+        margin-left: 0;
+    }
+}
+
+@media(max-width:600px) {
+    .disney-page .actor-movies-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px 8px;
+        margin: 18px 0 24px;
+        padding: 0 4px;
+    }
+
+    .disney-page .actor-filters {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 6px;
+    }
+
+    .disney-page .custom-select {
+        min-width: 100%;
+        width: 100%;
+    }
+
+    .disney-page .custom-select-selected {
+        font-size: 1.08rem;
+        padding: 12px 36px 12px 14px;
+    }
+
+    .disney-page .custom-select-options li {
+        font-size: 1.08rem;
+        padding: 16px 18px;
+    }
+}
 
 /* B2 — Carruseles Disney+ */
-.disney-page .disney-upcoming-track { display:flex; gap:16px; overflow-x:auto; scroll-snap-type:x mandatory; padding:10px 12px 18px; scrollbar-width:thin; }
-.disney-page .disney-upcoming-card { flex:0 0 185px; scroll-snap-align:start; min-width:0; }
-.disney-page .disney-upcoming-card a,.disney-page .disney-featured-card a { color:inherit; text-decoration:none; display:block; }
-.disney-page .disney-upcoming-card img { width:100%; aspect-ratio:2/3; object-fit:cover; display:block; border-radius:12px; background:#23272f; }
-.disney-page .disney-card-name { font-weight:600; margin:9px 0 4px; font-size:.98rem; line-height:1.3; }
-.disney-page .disney-card-detail { color:#b0b0b0; font-size:.87rem; margin:0; }
-.disney-page #disney-featured-slider { padding:0; margin:0; list-style:none; }
-.disney-page #disney-featured-slider:not(.lightSlider) { display:flex; overflow-x:auto; gap:16px; scroll-snap-type:x mandatory; }
-.disney-page #disney-featured-slider:not(.lightSlider) > li { flex:0 0 min(76vw,420px); scroll-snap-align:start; }
-.disney-page .disney-featured-card img { display:block; width:100%; aspect-ratio:16/9; object-fit:cover; border-radius:12px; background:#23272f; }
-.disney-page .disney-featured-card { padding:4px; }
-.disney-page .lSSlideOuter { margin:12px 0 0; }
-.disney-page .lSAction > a { opacity:.95; }
-@media(max-width:600px) { .disney-page .disney-upcoming-card { flex-basis:145px; } .disney-page .disney-section-title { font-size:1.28rem; } }
+.disney-page .disney-upcoming-track {
+    display: flex;
+    gap: 16px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding: 10px 12px 18px;
+    scrollbar-width: thin;
+}
+
+.disney-page .disney-upcoming-card {
+    flex: 0 0 185px;
+    scroll-snap-align: start;
+    min-width: 0;
+}
+
+.disney-page .disney-upcoming-card a,
+.disney-page .disney-featured-card a {
+    color: inherit;
+    text-decoration: none;
+    display: block;
+}
+
+.disney-page .disney-upcoming-card img {
+    width: 100%;
+    aspect-ratio: 2/3;
+    object-fit: cover;
+    display: block;
+    border-radius: 12px;
+    background: #23272f;
+}
+
+.disney-page .disney-card-name {
+    font-weight: 600;
+    margin: 9px 0 4px;
+    font-size: .98rem;
+    line-height: 1.3;
+}
+
+.disney-page .disney-card-detail {
+    color: #b0b0b0;
+    font-size: .87rem;
+    margin: 0;
+}
+
+.disney-page #disney-featured-slider {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.disney-page #disney-featured-slider:not(.lightSlider) {
+    display: flex;
+    overflow-x: auto;
+    gap: 16px;
+    scroll-snap-type: x mandatory;
+}
+
+.disney-page #disney-featured-slider:not(.lightSlider)>li {
+    flex: 0 0 min(76vw, 420px);
+    scroll-snap-align: start;
+}
+
+.disney-page .disney-featured-card img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    border-radius: 12px;
+    background: #23272f;
+}
+
+.disney-page .disney-featured-card {
+    padding: 4px;
+}
+
+.disney-page .lSSlideOuter {
+    margin: 12px 0 0;
+}
+
+.disney-page .lSAction>a {
+    opacity: .95;
+}
+
+@media(max-width:600px) {
+    .disney-page .disney-upcoming-card {
+        flex-basis: 145px;
+    }
+
+    .disney-page .disney-section-title {
+        font-size: 1.28rem;
+    }
+}
+
+
+
+/* B3 — Filtros por año y género, estilo Netflix */
+
+.disney-page .disney-filter-section {
+  margin: 32px 4px 38px;
+}
+
+.disney-page .disney-filter-heading {
+  margin: 0 0 18px;
+  color: #ffffff;
+  font-size: 1.35rem;
+  line-height: 1.3;
+  text-transform: uppercase;
+}
+
+.disney-page .disney-filter-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.disney-page .disney-filter-button {
+  min-width: 70px;
+  padding: 10px 16px;
+  border: 1px solid #414851;
+  border-radius: 999px;
+  background: #23272f;
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.disney-page .disney-filter-button:hover {
+  border-color: #e50914;
+  transform: translateY(-1px);
+}
+
+.disney-page .disney-filter-button.active {
+  border-color: #e50914;
+  background: #e50914;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+@media (max-width: 767px) {
+  .disney-page .disney-filter-section {
+    margin: 26px 4px 32px;
+  }
+
+  .disney-page .disney-filter-heading {
+    margin-bottom: 15px;
+    font-size: 1.15rem;
+  }
+
+  .disney-page .disney-filter-list {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding: 2px 0 8px;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .disney-page .disney-filter-list::-webkit-scrollbar {
+    display: none;
+  }
+
+  .disney-page .disney-filter-button {
+    flex: 0 0 auto;
+  }
+}

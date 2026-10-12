@@ -65,7 +65,7 @@
       const a = link(item);
       a.append(poster(item, item.image), text('h3', item.title || '', 'disney-card-name'));
       const d = releaseDate(item);
-      a.append(text('p', d.toLocaleDateString('es-AR', { day:'numeric', month:'long', year:'numeric' }), 'disney-card-detail'));
+      a.append(text('p', d.toLocaleDateString('es-AR', { day: 'numeric', month: 'long', year: 'numeric' }), 'disney-card-detail'));
       card.append(a);
       upcomingTrack.append(card);
     }
@@ -73,23 +73,87 @@
     upcomingSection.hidden = upcoming.length === 0;
   }
 
-  function buildFeatured(items) {
-    // Orden editorial reproducible: alfabético. No representa popularidad ni visualizaciones.
-    const featured = items.filter(item => item.horizontal_image && item.id && item.title)
-      .sort((a, b) => a.title.localeCompare(b.title, 'es'));
 
-    for (const item of featured) {
+  function buildFeatured(items) {
+    // Selección editorial: únicamente series con múltiples temporadas.
+    const featured = items
+      .filter(item =>
+        item.id &&
+        item.title &&
+        Array.isArray(item.temporadas) &&
+        item.temporadas.length >= 2
+      )
+      .map(item => {
+        const seasons = [...item.temporadas]
+          .sort((a, b) => Number(b.numero) - Number(a.numero));
+
+        // Priorizar la horizontal de la temporada más reciente.
+        const latestSeason = seasons[0];
+        const horizontalImage =
+          latestSeason?.horizontal_image || item.horizontal_image;
+
+        return {
+          item,
+          latestSeason,
+          horizontalImage,
+          seasonCount: seasons.length
+        };
+      })
+      .filter(entry => entry.horizontalImage)
+      .sort((a, b) => {
+        // Prioridades editoriales acordadas.
+        const priority = {
+          V204: 1, // Coppola, el Representante
+          V171: 2  // El Encargado
+        };
+
+        const rankA = priority[a.item.id] ?? 99;
+        const rankB = priority[b.item.id] ?? 99;
+
+        if (rankA !== rankB) return rankA - rankB;
+
+        // Después, más temporadas primero.
+        if (a.seasonCount !== b.seasonCount) {
+          return b.seasonCount - a.seasonCount;
+        }
+
+        // Desempate: estreno más reciente de temporada.
+        const dateA = releaseDate(a.latestSeason)?.getTime() ?? 0;
+        const dateB = releaseDate(b.latestSeason)?.getTime() ?? 0;
+
+        if (dateA !== dateB) return dateB - dateA;
+
+        return a.item.title.localeCompare(b.item.title, 'es');
+      });
+
+    for (const entry of featured) {
+      const { item, latestSeason, horizontalImage, seasonCount } = entry;
+
       const li = document.createElement('li');
       li.className = 'disney-featured-card';
+
       const a = link(item);
-      a.append(poster(item, item.horizontal_image), text('h3', item.title, 'disney-card-name'));
+      a.append(
+        poster(item, horizontalImage),
+        text('h3', item.title, 'disney-card-name'),
+        text(
+          'p',
+          `${seasonCount} temporadas · Última: T${latestSeason.numero}`,
+          'disney-card-detail'
+        )
+      );
+
       li.append(a);
       featuredSlider.append(li);
     }
 
     featuredSection.hidden = featured.length === 0;
 
-    if (featured.length && window.jQuery && typeof window.jQuery.fn.lightSlider === 'function') {
+    if (
+      featured.length &&
+      window.jQuery &&
+      typeof window.jQuery.fn.lightSlider === 'function'
+    ) {
       window.jQuery(featuredSlider).lightSlider({
         item: 3,
         slideMove: 1,
@@ -100,12 +164,19 @@
         enableTouch: true,
         enableDrag: true,
         responsive: [
-          { breakpoint: 900, settings: { item: 2, slideMove: 1, slideMargin: 12 } },
-          { breakpoint: 600, settings: { item: 1, slideMove: 1, slideMargin: 10 } }
+          {
+            breakpoint: 900,
+            settings: { item: 2, slideMove: 1, slideMargin: 12 }
+          },
+          {
+            breakpoint: 600,
+            settings: { item: 1, slideMove: 1, slideMargin: 10 }
+          }
         ]
       });
     }
   }
+
 
   fetch(dataUrl, { cache: 'no-store' })
     .then(response => {
