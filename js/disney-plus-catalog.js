@@ -122,10 +122,6 @@
       card.append(a);
       grid.append(card);
     }
-
-    if (count) {
-      count.textContent = `${items.length} series encontradas`;
-    }
   }
 
 
@@ -246,6 +242,6 @@
     })
     .catch(error => {
       console.error('Disney+ B3: error al cargar catálogo', error);
-      if (count) count.textContent = 'No se pudo cargar el catálogo.';
+      console.error('No se pudo cargar el catálogo de Disney+.');
     });
 })();
