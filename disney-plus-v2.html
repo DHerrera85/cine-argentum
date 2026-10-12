@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Series de Disney+ - Cine Argentum</title>
+  <link rel="stylesheet" href="css/style.css?v=2.0">
+  <link rel="stylesheet" href="css/lightslider.css?v=2.0">
+  <link rel="stylesheet" href="css/disney-plus.css?v=20261011-2">
+</head>
+
+<body class="disney-page">
+  <div class="actor-wrap">
+    <main>
+      <a href="javascript:history.back()" class="back-link" aria-label="Volver a la página anterior">&larr; Volver</a>
+      <header class="actor-header">
+        <div class="actor-badge"><img class="disney-logo" src="images/logos/disney+-logo-120x120.png" alt="Disney+">
+        </div>
+        <div class="actor-info">
+          <h1>Series de Disney+</h1>
+          <p id="actor-movie-count">Cargando series...</p>
+        </div>
+        <div class="actor-filters disney-header-filters">
+          <label for="actorSortCustom">Ordenar/Filtrar por:</label>
+          <div class="custom-select" id="actorSortCustom" tabindex="0">
+            <span class="custom-select-selected">Año (descendente)</span>
+            <ul class="custom-select-options">
+              <li data-value="year" class="selected">Año (descendente)</li>
+              <li data-value="year-asc">Año (ascendente)</li>
+              <li data-value="comedias">Comedias</li>
+              <li data-value="telenovelas">Telenovelas</li>
+              <li data-value="juveniles">Juveniles</li>
+              <li data-value="sitcoms">Sitcoms</li>
+              <li data-value="policiales">Thrillers</li>
+              <li data-value="unitarios">Unitarios</li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <!-- B1: contenedores preparados; se activarán cuando B2 implemente sus datos y carruseles. -->
+      <section class="disney-section disney-future-section" id="disney-upcoming-section"
+        aria-labelledby="disney-upcoming-title" hidden>
+        <h2 class="disney-section-title" id="disney-upcoming-title">Próximos estrenos</h2>
+        <div id="disney-upcoming-list" class="disney-upcoming-track"></div>
+      </section>
+      <section class="disney-section disney-future-section" id="disney-featured-section"
+        aria-labelledby="disney-featured-title" hidden>
+        <h2 class="disney-section-title" id="disney-featured-title">Series destacadas</h2>
+        <p class="disney-section-sub">Selección editorial de producciones argentinas.</p>
+        <ul id="disney-featured-slider" data-skip-auto="true"></ul>
+      </section>
+      <section class="disney-section disney-future-section" id="disney-seasons-section"
+        aria-labelledby="disney-seasons-title" hidden>
+        <h2 class="disney-section-title" id="disney-seasons-title">Series con múltiples temporadas</h2>
+        <ul id="disney-seasons-slider"></ul>
+      </section>
+      <section class="disney-section" id="disney-catalog-section" aria-labelledby="disney-catalog-title">
+        <h2 class="disney-section-title" id="disney-catalog-title">Todas las series</h2>
+        <div class="actor-movies-grid" id="actorMoviesList"><!-- Series de Disney+ --></div>
+      </section>
+    </main>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="js/lightslider.js"></script>
+  <script src="js/script.js?v=20260219-1"></script>
+  <script src="js/disney+.js?v=20260604-1"></script>
+  <script src="js/disney-plus-b2.js?v=20261011-b2"></script>
+</body>
+
+</html>

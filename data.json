@@ -16678,7 +16678,8 @@
         "Manuela Menéndez"
       ],
       "orientation": "vertical",
-      "image": "images/verticals/entrelazados-primera-temporada-poster-280x420.png",
+      "image": "images/verticals/entrelazados-segunda-temporada-poster-280x420.png",
+      "horizontal_image": "images/horizontals-1024x576/2021-entrelazados-temporada2-disney-slide-1024x576.webp",
       "subtitle": "Juvenil",
       "release_date": "12/11/2021",
       "capitulos": 17,
@@ -16688,12 +16689,14 @@
         {
           "numero": 1,
           "release_date": "12/11/2021",
-          "image": "images/verticals/entrelazados-primera-temporada-poster-280x420.png"
+          "image": "images/verticals/entrelazados-primera-temporada-poster-280x420.png",
+          "horizontal_image": "images/horizontals-1024x576/entrelazados-temporada-1-disney+-slide-1024x576.png"
         },
         {
           "numero": 2,
           "release_date": "24/05/2023",
-          "image": "images/verticals/entrelazados-segunda-temporada-poster-280x420.png"
+          "image": "images/verticals/entrelazados-segunda-temporada-poster-280x420.png",
+          "horizontal_image": "images/horizontals-1024x576/2021-entrelazados-temporada2-disney-slide-1024x576.webp"
         }
       ]
     },
@@ -18946,9 +18949,6 @@
       "orientation": "vertical",
       "image": "images/verticals/el-encargado-temporada-4-poster-280x420.png",
       "release_date": "26/10/2022",
-      "air_channels": [
-        "Canal 13"
-      ],
       "channel_relations": [
         {
           "channel": "Canal 13",
@@ -18986,22 +18986,26 @@
         {
           "numero": 1,
           "release_date": "26/10/2022",
-          "image": "images/verticals/el-encargado-temporada-1-poster-280x420.png"
+          "image": "images/verticals/el-encargado-temporada-1-poster-280x420.png",
+          "horizontal_image": "images/horizontals-1024x576/2022-el-encargado-temporada-1-star-slide-1024x576.webp"
         },
         {
           "numero": 2,
           "release_date": "29/11/2023",
-          "image": "images/verticals/el-encargado-temporada-2-poster-280x420.png"
+          "image": "images/verticals/el-encargado-temporada-2-poster-280x420.png",
+          "horizontal_image": "images/horizontals-1024x576/2022-el-encargado-temporada-2-disney-slide-1024x576.webp"
         },
         {
           "numero": 3,
           "release_date": "19/07/2024",
-          "image": "images/verticals/el-encargado-temporada-3-poster-280x420.png"
+          "image": "images/verticals/el-encargado-temporada-3-poster-280x420.png",
+          "horizontal_image": "images/horizontals-1024x576/2022-el-encargado-temporada-3-star-slide-1024x576.webp"
         },
         {
           "numero": 4,
           "release_date": "30/04/2026",
-          "image": "images/verticals/el-encargado-temporada-4-poster-280x420.png"
+          "image": "images/verticals/el-encargado-temporada-4-poster-280x420.png",
+          "horizontal_image": "images/horizontals-1024x576/2022-el-encargado-temporada-4-slide-1024x576.webp"
         }
       ],
       "producciones_relacionadas": [
@@ -20433,7 +20437,7 @@
         }
       ],
       "image": "images/verticals/2026-coppola-elrepresentante-season2-poster280x420.png",
-      "horizontal_image": "images/horizontals-1024x576/2024-coppola-disney-slide-1024x576.png",
+      "horizontal_image": "images/horizontals-1024x576/2024-coppola-segunda-temporada-disney-slide-1024x576.webp",
       "subtitle": "Drama",
       "streaming_row": "bioseries",
       "sinopsis": "La trama sigue la vertiginosa vida y los momentos más polémicos de Guillermo Coppola, el célebre mánager de Diego Armando Maradona, mientras intenta equilibrar su agitada vida personal con las locas consecuencias de las acciones del astro del fútbol.",
@@ -20441,12 +20445,14 @@
         {
           "numero": 1,
           "release_date": "15/03/2024",
-          "image": "images/verticals/2024-coppola-elrepresentante-season1-poster-280x420.png"
+          "image": "images/verticals/2024-coppola-elrepresentante-season1-poster-280x420.png",
+          "horizontal_image": "images/horizontals-1024x576/2024-coppola-primera-temporada-disney-slide-1024x576.png"
         },
         {
           "numero": 2,
           "release_date": "21/10/2026",
-          "image": "images/verticals/2026-coppola-elrepresentante-season2-poster280x420.png"
+          "image": "images/verticals/2026-coppola-elrepresentante-season2-poster280x420.png",
+          "horizontal_image": "images/horizontals-1024x576/2024-coppola-segunda-temporada-disney-slide-1024x576.webp"
         }
       ]
     },
