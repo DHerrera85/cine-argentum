@@ -351,7 +351,6 @@
 
 .juveniles-partner-tabs .juveniles-partner-tab {
   --partner-accent: 116, 103, 217;
-  --partner-logo-scale: 1;
 
   position: relative;
   display: flex !important;
@@ -416,12 +415,12 @@
   display: block;
   width: auto;
   max-width: 150px;
-  height: 52px;
+  height: 54px;
   object-fit: contain;
 
   opacity: 1;
   filter: drop-shadow(0 2px 3px rgba(48, 65, 88, 0.18));
-  transform: scale(var(--partner-logo-scale));
+  transform: scale(var(--partner-logo-scale, 1));
 
   transition:
     opacity 0.25s ease,
@@ -448,7 +447,7 @@
   opacity: 1;
   filter: drop-shadow(0 3px 4px rgba(48, 65, 88, 0.22));
   transform:
-    scale(var(--partner-logo-scale)) translateY(-1px);
+    scale(var(--partner-logo-scale, 1)) translateY(-1px);
 }
 
 .partner-disney .juveniles-partner-logo,
@@ -476,27 +475,27 @@
 
 .partner-netflix {
   --partner-accent: 229, 9, 20;
-  --partner-logo-scale: 1;
+  --partner-logo-scale: 1.45;
 }
 
 .partner-disney {
   --partner-accent: 71, 105, 220;
-  --partner-logo-scale: 1.48;
+  --partner-logo-scale: 1.55;
 }
 
 .partner-prime {
   --partner-accent: 0, 150, 210;
-  --partner-logo-scale: 1;
+  --partner-logo-scale: 1.18;
 }
 
 .partner-flow {
   --partner-accent: 0, 190, 220;
-  --partner-logo-scale: 1;
+  --partner-logo-scale: 1.55;
 }
 
 .partner-hbo {
   --partner-accent: 125, 75, 215;
-  --partner-logo-scale: 0.82;
+  --partner-logo-scale: 0.86;
 }
 
 .partner-disney-channel {
@@ -566,5 +565,17 @@
     left: 14%;
     right: 14%;
     height: 2px;
+  }
+}
+
+@media (max-width: 480px) {
+  .juveniles-partner-tabs .juveniles-partner-tab {
+    height: 68px !important;
+    padding: 9px 12px;
+  }
+
+  .juveniles-partner-logo {
+    max-width: 100px;
+    height: 36px;
   }
 }

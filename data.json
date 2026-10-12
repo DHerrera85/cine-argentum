@@ -9048,7 +9048,84 @@
       "sinopsis": "Proyecto de telenovela familiar con elementos de comedia, desarrollado por el productor Raúl Lecouna. Protagonizado por Juan Darthés y Laura Esquivel, junto a Soledad Fandiño, Fabián Mazzei, Luciana Salazar y Marisol Romero, contó con un capítulo piloto presentado durante 2009. La propuesta combinaba los conflictos familiares con situaciones humorísticas y fue ofrecida para su distribución internacional durante MIPCOM. Aunque se proyectaba iniciar las grabaciones de la serie en 2010, no se ha confirmado su estreno televisivo.",
       "juveniles_rows": [],
       "tiras_2010_rows": [],
-      "tiras_2000_rows": ["no-emitidos"]
+      "tiras_2000_rows": [
+        "no-emitidos"
+      ]
+    },
+    {
+      "id": "P2098",
+      "title": "Una Razón para Vivir",
+      "type": "serie",
+      "year": 2018,
+      "channel": "Telefe",
+      "genre": "Drama",
+      "actors": [
+        "Nico Furtado",
+        "Victorio D'Alessandro",
+        "Jorge Marrale",
+        "Carola Reyna",
+        "Violeta Urtizberea",
+        "Candela Vetrano",
+        "Carlos Belloso",
+        "Federico D'Elía"
+      ],
+      "orientation": "vertical",
+      "image": "images/verticals/2018-una-razon-vivir-unaired-pilot-poster280x420.webp",
+      "poster_gallery": [
+        {
+          "image": "images/verticals/2018-una-razon-vivir-unaired-pilot-poster280x420.webp",
+          "label": "Póster principal"
+        }
+      ],
+      "subtitle": "No Emitidos",
+      "release_date": null,
+      "fecha_estreno": null,
+      "production_status": "no-emitidos",
+      "channel_relation": "Emisión prevista",
+      "productora": "LCA Producciones",
+      "director": "Alejandro Maci",
+      "guion": [
+        "Lily Ann Martin",
+        "Marcelo Cabrera"
+      ],
+      "tipo_emision": "No Emitidos",
+      "sinopsis": "Dos hermanos enfrentados por una rivalidad imposible de superar protagonizan una historia atravesada por los sueños, los demonios y las pasiones humanas. Uno de ellos, interpretado por Nico Furtado, es un hombre seductor e inescrupuloso, enfrentado al personaje de Victorio D'Alessandro. Proyecto de miniserie de LCA Producciones, dirigido por Alejandro Maci y concebido para rodarse íntegramente en exteriores.",
+      "tiras_2010_rows": [
+        "no-emitidos"
+      ]
+    },
+    {
+      "id": "P2099",
+      "title": "Ladronas",
+      "type": "serie",
+      "year": 2009,
+      "genre": "Comedia",
+      "episodes": 13,
+      "actors": [
+        "Eugenia Tobal",
+        "Romina Ricci",
+        "Pablo Rago",
+        "Vanessa González",
+        "Mirtha Busnelli"
+      ],
+      "orientation": "vertical",
+      "image": "images/verticals/2009-ladronas-dori-media-group-unaired-pilot-poster280x420.webp",
+      "poster_gallery": [
+        {
+          "image": "images/verticals/2009-ladronas-dori-media-group-unaired-pilot-poster280x420.webp",
+          "label": "Póster principal"
+        }
+      ],
+      "subtitle": "No Emitidos",
+      "release_date": null,
+      "fecha_estreno": null,
+      "production_status": "no-emitidos",
+      "productora": "Dori Media Group",
+      "tipo_emision": "No Emitidos",
+      "sinopsis": "Tras enviudar, Emma Blinder descubre que su esposo, un prestigioso juez, llevaba una vida marcada por la corrupción y los favores a empresarios y funcionarios influyentes. Desilusionada por la complicidad de sus allegados y la indiferencia de las autoridades, decide tomar la justicia por sus propias manos. Para ello reúne a tres ladronas con habilidades diferentes, con quienes emprende arriesgados robos contra los corruptos para reparar los daños sufridos por sus víctimas.",
+      "tiras_2000_rows": [
+        "no-emitidos"
+      ]
     },
     {
       "id": "T0001",
