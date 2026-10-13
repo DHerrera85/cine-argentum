@@ -7415,6 +7415,85 @@
       "producer": "Pampa Films"
     },
     {
+      "id": "V322",
+      "title": "Verdades Sumergidas",
+      "type": "serie",
+      "year": "2026",
+      "channel": "Telefe",
+      "platforms": [
+        "Flow"
+      ],
+      "genre": "Thriller",
+      "actors": [
+        "Soledad Villamil",
+        "Candela Vetrano",
+        "Violeta Urtizberea",
+        "Joaquín Ferreira",
+        "Martín Slipak",
+        "María Abadi",
+        "Moro Anghileri"
+      ],
+      "orientation": "vertical",
+      "image": "images/verticals/2026-verdades-sumergidas-telefe-flow-poster-280x420.webp",
+      "horizontal_image": "images/horizontals-1024x576/2026-verdades-sumergidas-telefe-flow-slide-1024x576.webp",
+      "subtitle": "Thriller",
+      "release_date": "01/11/2026",
+      "capitulos": 8,
+      "producer": "Telefe Studios",
+      "director": "Martín Mariani",
+      "status": "Próximamente",
+      "sinopsis": "Tras un fin de semana con amigos, Florencia aparece asesinada en las playas de Las Rocas. La fiscal Guerrero investiga a los integrantes del grupo, mientras distintas versiones de los hechos revelan secretos y contradicciones que dificultan descubrir al culpable."
+    },
+    {
+      "id": "V323",
+      "title": "Inadaptada",
+      "type": "serie",
+      "year": "2022",
+      "channel": "Telefe",
+      "platforms": [
+        "Paramount+"
+      ],
+      "genre": "Drama",
+      "capitulos": 10,
+      "actors": [
+        "Maite Lanata",
+        "Monna Antonópulos",
+        "El Purre",
+        "Ornella D'Elía",
+        "Santiago Achaga",
+        "Malena Villa",
+        "Diego Cremonesi",
+        "Guillermo Arengo",
+        "Carola Reyna",
+        "Antonio Birabent",
+        "Juan Ingaramo"
+      ],
+      "orientation": "vertical",
+      "image": "images/verticals/2026-inadaptada-telefe-unaired-pilot-poster-280x420.webp",
+      "horizontal_image": "images/horizontals-1024x576/2026-inadaptada-telefe-unaired-pilot-slide-1024x576.webp",
+      "poster_gallery": [
+        {
+          "image": "images/verticals/2026-inadaptada-telefe-unaired-pilot-poster-280x420.webp",
+          "label": "Póster principal"
+        }
+      ],
+      "subtitle": "No Emitidos",
+      "release_date": null,
+      "fecha_estreno": null,
+      "production_status": "no-emitidos",
+      "channel_relation": "Emisión prevista",
+      "productora": "Paramount Television International Studios",
+      "director": [
+        "Agustín Alberdi",
+        "Matías Moltrasio"
+      ],
+      "tipo_emision": "No Emitidos",
+      "sinopsis": "Lisa, una adolescente a punto de cumplir 18 años, es encontrada caminando por las vías de un tren en circunstancias misteriosas y termina internada en una clínica de salud mental. Durante su internación, emprende un viaje de introspección para descubrir qué la llevó a aquella situación, mientras intenta reconstruir sus recuerdos, enfrentar sus conflictos y comprender su propia identidad.",
+      "tiras_2010_rows": [
+        "no-emitidos"
+      ]
+    },
+    {
       "id": "P2045",
       "title": "Gutiérrez is Mai Nem",
       "type": "serie",
