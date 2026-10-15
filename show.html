@@ -1870,32 +1870,6 @@
 
         var plataformaRow = '';
 
-        if (plataformaValues.length) {
-          var plataformasConLogo = plataformaValues.map(function (nombre) {
-            var logo = obtenerLogoCanal(nombre, {
-              year: item.year
-            });
-
-            var nombreSeguro = escapeDetailText(nombre);
-
-            if (!logo) {
-              return '<span>' + nombreSeguro + '</span>';
-            }
-
-            return '<span class="plataforma-con-logo">' +
-              '<img src="' + encodeURI(logo) + '"' +
-              ' alt="" class="canal-logo" loading="lazy">' +
-              '<span>' + nombreSeguro + '</span>' +
-              '</span>';
-          }).join('');
-
-          plataformaRow =
-            '<dt>Plataforma</dt>' +
-            '<dd class="plataformas-lista">' +
-            plataformasConLogo +
-            '</dd>';
-        }
-
         /*
  * Galería de pósters verticales.
  * Utiliza la misma distribución visual que Temporadas.
@@ -2252,6 +2226,10 @@
         }
 
         function obtenerAnioEmision(emision) {
+          if (!emision || typeof emision !== 'object' || Array.isArray(emision)) {
+            return null;
+          }
+
           var fecha = String(emision.premiere_date || '').trim();
           var partes = fecha.match(/(?:19|20)\d{2}/);
 
@@ -2289,6 +2267,31 @@
           return variante ? 'images/logos/' + variante.archivo : '';
         }
 
+        if (plataformaValues.length) {
+          var plataformasConLogo = plataformaValues.map(function (nombre) {
+            var logo = obtenerLogoCanal(nombre, {
+              year: item.year
+            });
+
+            var nombreSeguro = escapeDetailText(nombre);
+
+            if (!logo) {
+              return '<span>' + nombreSeguro + '</span>';
+            }
+
+            return '<span class="plataforma-con-logo">' +
+              '<img src="' + encodeURI(logo) + '"' +
+              ' alt="" class="canal-logo" loading="lazy">' +
+              '<span>' + nombreSeguro + '</span>' +
+              '</span>';
+          }).join('');
+
+          plataformaRow =
+            '<dt>Plataforma</dt>' +
+            '<dd class="plataformas-lista">' +
+            plataformasConLogo +
+            '</dd>';
+        }
 
         // Construcción de las tarjetas de producciones relacionadas.
         if (related.length) {
@@ -2849,7 +2852,9 @@
       if (!id) { renderNotFound(); return; }
 
       fetch('data.json?v=' + showDataVersion, { cache: 'no-store' }).then(function (r) {
-        if (!r.ok) throw new Error('no data');
+        if (!r.ok) {
+          throw new Error('No se pudo cargar data.json (HTTP ' + r.status + ')');
+        }
         return r.json();
       }).then(function (data) {
         window.__ficcionesFilters = (data && data.ficciones_filters) || {};
@@ -2857,10 +2862,27 @@
         var item = items.find(function (it) { return it && it.id === id; });
         // fallback: buscar por title si id no coincide
         if (!item) item = items.find(function (it) { return it && it.title && it.title.toLowerCase() === decodeURIComponent(id).toLowerCase(); });
-        renderItem(item, items);
-      }).catch(function () {
-        // fallback si no hay data.json
-        renderNotFound();
+        if (!item) {
+          renderNotFound();
+          return;
+        }
+
+        try {
+          renderItem(item, items);
+        } catch (error) {
+          console.error('[show.html] Error al renderizar la ficha:', error);
+          $('#detail').html(
+            '<p>No se pudo mostrar la ficha por un error de renderizado. ' +
+            'Revisá la consola del navegador para ver el error.</p>'
+          );
+        }
+
+      }).catch(function (error) {
+        console.error('[show.html] Error al cargar data.json:', error);
+        $('#detail').html(
+          '<p>No se pudieron cargar los datos de las producciones. ' +
+          'Revisá la consola del navegador para ver el error.</p>'
+        );
       });
     })();
   </script>
