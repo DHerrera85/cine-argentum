@@ -826,10 +826,58 @@
 
         // Soporte para sinopsis en español o inglés
         var synopsis = (item.synopsis && String(item.synopsis).trim()) ? item.synopsis : ((item.sinopsis && String(item.sinopsis).trim()) ? item.sinopsis : 'Próximamente');
+
+        // Estadísticas cinematográficas.
+        // Prioriza theatrical_stats y conserva compatibilidad con viewers.
         var viewersRow = '';
-        if (item.viewers) {
-          var viewersFormatted = item.viewers.toLocaleString('es-AR');
-          viewersRow = '<dt>Cantidad de Espectadores</dt><dd>' + viewersFormatted + '</dd>';
+        var theatricalStats = item.theatrical_stats;
+
+        function formatCinemaNumber(value) {
+          var number = Number(value);
+          return value !== null &&
+            value !== undefined &&
+            String(value).trim() !== '' &&
+            Number.isFinite(number)
+            ? number.toLocaleString('es-AR')
+            : '';
+        }
+
+        if (theatricalStats && typeof theatricalStats === 'object' &&
+          !Array.isArray(theatricalStats)) {
+
+          var cinemaViewers = formatCinemaNumber(theatricalStats.viewers);
+          var nationalRank = formatCinemaNumber(theatricalStats.national_rank);
+          var overallRank = formatCinemaNumber(theatricalStats.overall_rank);
+
+          if (cinemaViewers) {
+            viewersRow += '<dt>Espectadores en cines</dt><dd>' +
+              cinemaViewers + '</dd>';
+          }
+
+          if (nationalRank) {
+            viewersRow += '<dt>Ranking nacional</dt><dd>' +
+              nationalRank + '° puesto</dd>';
+          }
+
+          if (overallRank) {
+            viewersRow += '<dt>Ranking general</dt><dd>' +
+              overallRank + '° puesto</dd>';
+          }
+
+          if (theatricalStats.source === 'INCAA') {
+            viewersRow += '<dt>Fuente de estadísticas</dt><dd>INCAA</dd>';
+          }
+
+        } else if (item.viewers !== undefined &&
+          item.viewers !== null &&
+          String(item.viewers).trim() !== '') {
+
+          var viewersFormatted = formatCinemaNumber(item.viewers);
+
+          if (viewersFormatted) {
+            viewersRow = '<dt>Cantidad de Espectadores</dt><dd>' +
+              viewersFormatted + '</dd>';
+          }
         }
         var producerRow = '';
         if (item.producer) {
@@ -1982,118 +2030,89 @@
           relatedTitle = 'Producciones relacionadas';
         }
 
-        if (related.length) {
-          var relatedCards = related.map(function (rel) {
-            if (!rel || typeof rel !== 'object') return '';
-
-            var relTitle = rel.title || 'Producción relacionada';
-
-            var relImage = (
-              rel.image &&
-              String(rel.image).trim()
-            )
-              ? String(rel.image).replace(/ /g, '%20')
-              : placeholderV;
-
-            var relHref = rel.id
-              ? 'show.html?id=' + encodeURIComponent(rel.id)
-              : '#';
-
-            /*
-             * Para las producciones detectadas automáticamente,
-             * se muestra solamente el año, sin etiquetas de rol.
-             *
-             * En las relaciones manuales antiguas se conserva rel.meta.
-             */
-            var relMeta = hasValue(rel.meta)
-              ? rel.meta
-              : (hasValue(rel.year) ? rel.year : '');
-
-            return '<a class="remake-card-link" href="' + relHref + '">'
-              + '<div class="remake-card">'
-              + '<img src="' + relImage + '" alt="' + relTitle + '">'
-              + '<div class="remake-info">'
-              + '<div class="remake-title">' + relTitle + '</div>'
-              + (
-                hasValue(relMeta)
-                  ? '<div class="remake-meta">' + relMeta + '</div>'
-                  : ''
-              )
-              + '</div>'
-              + '</div>'
-              + '</a>';
-          }).join('');
-
-          relatedSection =
-            '<div class="related-section">'
-            + '<div class="related-title">' + relatedTitle + '</div>'
-            + '<div class="related-grid">' + relatedCards + '</div>'
-            + '</div>';
-        }
-
-
-        // Emisiones televisivas registradas en data.json.
+        // Emisiones de televisión abierta y cable registradas en data.json.
         var emisionesTVSection = '';
 
-        if (Array.isArray(item.air_broadcasts)) {
-          var emisionesTV = item.air_broadcasts.map(function (emision) {
-            if (!emision || typeof emision !== 'object') return '';
+        function renderEmisionTV(emision, tipoSenal) {
+          if (!emision || typeof emision !== 'object') return '';
 
-            var campos = [
-              ['Canal', emision.channel],
-              ['Temporada', emision.season_number],
-              ['Primera emisión', emision.premiere_date],
-              ['Última emisión', emision.end_date],
-              ['Año', emision.year],
-              ['Horario', emision.horario],
-              ['Tipo de emisión', emision.tipo_emision],
-              ['Rating', emision.rating]
-            ];
+          var campos = [
+            ['Señal', tipoSenal],
+            ['Canal', emision.channel],
+            ['Temporada', emision.season_number],
+            ['Temporadas', Array.isArray(emision.season_numbers)
+              ? emision.season_numbers.join(', ')
+              : emision.season_numbers],
+            ['Primera emisión', emision.premiere_date],
+            ['Última emisión', emision.end_date],
+            ['Año', emision.year],
+            ['Horario', emision.horario],
+            ['Tipo de emisión', emision.tipo_emision],
+            ['Episodios por emisión', emision.episodios_por_emision],
+            ['Rating', emision.rating]
+          ];
 
-            var detalles = campos.filter(function (campo) {
-              return hasValue(campo[1]);
-            }).map(function (campo) {
-              var valor = String(campo[1]);
-              if (campo[0] === 'Rating') valor += ' puntos';
+          var detalles = campos.filter(function (campo) {
+            return hasValue(campo[1]);
+          }).map(function (campo) {
+            var valor = String(campo[1]);
 
-              return '<dt>' + campo[0] + '</dt>'
-                + '<dd>' + escapeDetailText(valor) + '</dd>';
-            }).join('');
-
-            // Horarios que cambiaron durante la emisión.
-            var periodos = Array.isArray(emision.schedule_periods)
-              ? emision.schedule_periods.map(function (periodo) {
-                if (!periodo || !hasValue(periodo.horario)) return '';
-
-                var desde = periodo.start_date || periodo.year || '';
-                return '<li>'
-                  + (hasValue(desde)
-                    ? escapeDetailText(desde) + ': '
-                    : '')
-                  + escapeDetailText(periodo.horario)
-                  + '</li>';
-              }).filter(Boolean).join('')
-              : '';
-
-            if (periodos) {
-              detalles += '<dt>Historial de horarios</dt>'
-                + '<dd><ul>' + periodos + '</ul></dd>';
+            if (campo[0] === 'Rating') {
+              valor += ' puntos';
             }
 
-            if (!detalles) return '';
+            return '<dt>' + campo[0] + '</dt>' +
+              '<dd>' + escapeDetailText(valor) + '</dd>';
+          }).join('');
 
-            return '<div class="emision-tv-item"><dl>'
-              + detalles
-              + '</dl></div>';
-          }).filter(Boolean).join('');
+          // Historial de cambios de horario.
+          var periodos = Array.isArray(emision.schedule_periods)
+            ? emision.schedule_periods.map(function (periodo) {
+              if (!periodo || !hasValue(periodo.horario)) return '';
 
-          if (emisionesTV) {
-            emisionesTVSection =
-              '<section class="emisiones-tv-section">'
-              + '<h2>Emisiones en televisión</h2>'
-              + emisionesTV
-              + '</section>';
+              var desde = periodo.start_date || periodo.year || '';
+
+              return '<li>' +
+                (hasValue(desde)
+                  ? escapeDetailText(desde) + ': '
+                  : '') +
+                escapeDetailText(periodo.horario) +
+                '</li>';
+            }).filter(Boolean).join('')
+            : '';
+
+          if (periodos) {
+            detalles += '<dt>Historial de horarios</dt>' +
+              '<dd><ul>' + periodos + '</ul></dd>';
           }
+
+          if (!detalles) return '';
+
+          return '<div class="emision-tv-item"><dl>' +
+            detalles +
+            '</dl></div>';
+        }
+
+        var emisionesTV = '';
+
+        if (Array.isArray(item.air_broadcasts)) {
+          emisionesTV += item.air_broadcasts.map(function (emision) {
+            return renderEmisionTV(emision, 'Televisión abierta');
+          }).filter(Boolean).join('');
+        }
+
+        if (Array.isArray(item.cable_broadcasts)) {
+          emisionesTV += item.cable_broadcasts.map(function (emision) {
+            return renderEmisionTV(emision, 'Televisión por cable');
+          }).filter(Boolean).join('');
+        }
+
+        if (emisionesTV) {
+          emisionesTVSection =
+            '<section class="emisiones-tv-section">' +
+            '<h2>Emisiones en televisión</h2>' +
+            emisionesTV +
+            '</section>';
         }
 
         var extraSections = '';
