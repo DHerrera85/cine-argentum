@@ -748,6 +748,35 @@
       color: #2a2f38;
     }
 
+
+    .canal-con-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .canal-logo {
+      width: 48px;
+      height: 48px;
+      object-fit: contain;
+      flex-shrink: 0;
+    }
+
+
+    .plataformas-lista {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 10px 18px;
+    }
+
+    .plataforma-con-logo {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      min-width: 0;
+    }
+
     .emision-tv-item {
       margin-bottom: 12px;
       padding: 14px 18px;
@@ -1838,7 +1867,35 @@
         var hideCanalAire = itemType === 'pelicula' && onlyCineAir;
         var canalAireRow = (!hideCanalAire && airValues.length) ? '<dt>Canal de aire</dt><dd>' + airValues.join(', ') + '</dd>' : '';
         var canalCableRow = cableValues.length ? '<dt>Canal de cable</dt><dd>' + cableValues.join(', ') + '</dd>' : '';
-        var plataformaRow = plataformaValues.length ? '<dt>Plataforma</dt><dd>' + plataformaValues.join(', ') + '</dd>' : '';
+
+        var plataformaRow = '';
+
+        if (plataformaValues.length) {
+          var plataformasConLogo = plataformaValues.map(function (nombre) {
+            var logo = obtenerLogoCanal(nombre, {
+              year: item.year
+            });
+
+            var nombreSeguro = escapeDetailText(nombre);
+
+            if (!logo) {
+              return '<span>' + nombreSeguro + '</span>';
+            }
+
+            return '<span class="plataforma-con-logo">' +
+              '<img src="' + encodeURI(logo) + '"' +
+              ' alt="" class="canal-logo" loading="lazy">' +
+              '<span>' + nombreSeguro + '</span>' +
+              '</span>';
+          }).join('');
+
+          plataformaRow =
+            '<dt>Plataforma</dt>' +
+            '<dd class="plataformas-lista">' +
+            plataformasConLogo +
+            '</dd>';
+        }
+
         /*
  * Galería de pósters verticales.
  * Utiliza la misma distribución visual que Temporadas.
@@ -1948,13 +2005,16 @@
             + '</div>'
             + '</div>';
         }
-        var related = [];
-        if (item.producciones_relacionadas && item.producciones_relacionadas.length) {
-          related = item.producciones_relacionadas;
-        }
+
         var related = [];
         var relatedTitle = 'Producciones relacionadas';
 
+        if (
+          Array.isArray(item.producciones_relacionadas) &&
+          item.producciones_relacionadas.length
+        ) {
+          related = item.producciones_relacionadas;
+        }
         allItems = Array.isArray(allItems) ? allItems : [];
 
         /*
@@ -2030,6 +2090,245 @@
           relatedTitle = 'Producciones relacionadas';
         }
 
+
+        // Catálogo de logos históricos de televisión.
+        var logosCanales = {
+          telefe: [
+            { desde: 1990, hasta: 1999, archivo: 'telefe-1990-120x120.png' },
+            { desde: 2000, hasta: 2009, archivo: 'telefe-logo-2000s.png' },
+            { desde: 2010, hasta: 9999, archivo: 'telefe-logo-2010-present.png' }
+          ],
+          'canal 13': [
+            { desde: 1990, hasta: 1999, archivo: 'canal13-1990-120x120.png' },
+            { desde: 2000, hasta: 2009, archivo: 'canal-trece-logo-2000.png' },
+            { desde: 2010, hasta: 9999, archivo: 'canal-13-logo-2010-present.png' }
+          ],
+          'canal 9': [
+            { desde: 1990, hasta: 1998, archivo: 'canal9-1990-120x120.png' },
+            { desde: 2002, hasta: 2003, archivo: 'Canal_9_Argentina_2002-2003.webp' },
+            { desde: 2004, hasta: 2006, archivo: 'canal-9-logo-120x120 - 2004-2006.png' },
+            { desde: 2007, hasta: 2017, archivo: 'Canal_9_Argentina_2007-2017.webp' },
+            { desde: 2018, hasta: 9999, archivo: 'canal-9-logo-2018-present.png' }
+          ],
+          'azul tv': [
+            { desde: 1999, hasta: 2002, archivo: 'azul-tv-logo-transparent.png' }
+          ],
+          america: [
+            { desde: 1990, hasta: 1999, archivo: 'america-1990-120x120px.png' },
+            { desde: 2020, hasta: 9999, archivo: 'america-2020-logo-white-transparent.png' }
+          ],
+          'tv publica': [
+            { desde: 1990, hasta: 1999, archivo: 'ATC_logo_120x120_transparente.png' },
+            { desde: 2000, hasta: 2002, archivo: 'Logotipo_de_Canal_7_Argentina_(2000-2002).png' },
+            { desde: 2009, hasta: 2015, archivo: 'tv-publica-color-2009-2015.png' },
+            { desde: 2016, hasta: 9999, archivo: 'television-argentina-2016-color-logo.png' }
+          ],
+
+          // Señales de televisión por cable.
+          'tnt': [
+            { desde: 1990, hasta: 9999, archivo: 'TNT-Logo.png' }
+          ],
+          'boomerang': [
+            { desde: 2006, hasta: 2008, archivo: 'Boomerang_2006-2008_logo.svg' }
+          ],
+          'disney channel': [
+            { desde: 1990, hasta: 9999, archivo: 'disney-channel-logo-transparent.png' }
+          ],
+          'jetix': [
+            { desde: 2004, hasta: 2009, archivo: 'Jetix-logo.webp' }
+          ],
+          'nickelodeon': [
+            { desde: 1990, hasta: 9999, archivo: 'Nickelodeon_logo.webp' }
+          ],
+          'cartoon network': [
+            { desde: 1990, hasta: 9999, archivo: 'Cartoon_Network_logo.webp' }
+          ],
+          'pakapaka': [
+            { desde: 2010, hasta: 9999, archivo: 'Pakapaka2010.webp' }
+          ],
+          'encuentro': [
+            { desde: 2007, hasta: 9999, archivo: 'Encuentro2007.webp' }
+          ],
+          'volver': [
+            { desde: 1994, hasta: 9999, archivo: 'volver-logo-white-transparent.png' }
+          ],
+          'space': [
+            { desde: 2008, hasta: 9999, archivo: 'Space_2008.webp' }
+          ],
+          'hbo': [
+            { desde: 1990, hasta: 9999, archivo: 'HBO.webp' }
+          ],
+          'universal tv': [
+            { desde: 1990, hasta: 9999, archivo: 'Universal_TV_logo.svg' }
+          ],
+          'paramount channel': [
+            { desde: 1990, hasta: 9999, archivo: 'Paramount_Channel.webp' }
+          ],
+          'fox premium': [
+            { desde: 2018, hasta: 2021, archivo: 'FOXPremium2018-orange.png' }
+          ],
+          'cosmopolitan tv': [
+            { desde: 1990, hasta: 9999, archivo: 'cosmopolitan-transparent.png' }
+          ],
+          'fox': [
+            { desde: 1990, hasta: 2021, archivo: 'FOX_logo_orange_Latin_America-transparent-preview.png' }
+          ],
+          'sony channel': [
+            { desde: 1990, hasta: 9999, archivo: 'sonychannel-logo.png' }
+          ],
+          'star channel': [
+            { desde: 2023, hasta: 9999, archivo: 'Star_Channel_2023.webp' }
+          ],
+          'disney xd': [
+            { desde: 2009, hasta: 2022, archivo: 'disney-xd-logo.png' }
+          ],
+          'tbs': [
+            { desde: 1990, hasta: 9999, archivo: 'tbs-yellow-logo.png' }
+          ],
+
+          // Plataformas de streaming.
+          'netflix': [
+            { desde: 2011, hasta: 9999, archivo: 'netflix-logo-normalized.png' }
+          ],
+          'disney+': [
+            { desde: 2020, hasta: 9999, archivo: 'disney-plus-logo.png' }
+          ],
+          'prime video': [
+            { desde: 2016, hasta: 9999, archivo: 'primevideo-logo-blue-transparent.png' }
+          ],
+          'flow': [
+            { desde: 2016, hasta: 9999, archivo: 'flow-logo-normalized.png' }
+          ],
+          'hulu': [
+            { desde: 2007, hasta: 9999, archivo: 'hulu-color-transparent.png' }
+          ],
+          'star+': [
+            { desde: 2021, hasta: 2024, archivo: 'star-plus-white-transparent.png' }
+          ],
+          'hbo max': [
+            { desde: 2020, hasta: 9999, archivo: 'HBO-Max-logo-120x120.png' }
+          ],
+          'paramount+': [
+            { desde: 2021, hasta: 9999, archivo: 'Paramount-mas-logo.webp' }
+          ]
+
+        };
+
+
+
+        var aliasCanales = {
+          'el trece': 'canal 13',
+          'eltrece': 'canal 13',
+          'canal trece': 'canal 13',
+          'azul television': 'azul tv',
+          'america tv': 'america',
+          'america 2': 'america',
+          'canal 7': 'tv publica',
+          'television publica': 'tv publica',
+          'atc': 'tv publica',
+
+          'fox latinoamerica': 'fox',
+          'fox latinoamérica': 'fox',
+          'fox premium series': 'fox premium',
+          'sony': 'sony channel',
+          'canal sony': 'sony channel',
+          'cosmopolitan': 'cosmopolitan tv',
+          'cosmo': 'cosmopolitan tv',
+          'universal channel': 'universal tv',
+          'paramount': 'paramount channel',
+          'disney xd latinoamerica': 'disney xd',
+          'tv encuentro': 'encuentro',
+          'paka paka': 'pakapaka'
+        };
+
+        function normalizarCanal(nombre) {
+          var clave = String(nombre || '')
+            .trim()
+            .toLowerCase()
+            .normalize('NFD')
+            .replace(/[\u0300-\u036f]/g, '');
+
+          return aliasCanales[clave] || clave;
+        }
+
+        function obtenerAnioEmision(emision) {
+          var fecha = String(emision.premiere_date || '').trim();
+          var partes = fecha.match(/(?:19|20)\d{2}/);
+
+          if (partes) return Number(partes[0]);
+
+          var anio = Number(emision.year);
+          return Number.isInteger(anio) && anio >= 1900 ? anio : null;
+        }
+
+        function obtenerLogoCanal(nombre, emision) {
+          var clave = normalizarCanal(nombre);
+          var variantes = logosCanales[clave];
+
+          if (!variantes) return '';
+
+
+          var anio = obtenerAnioEmision(emision);
+
+          // Para emisiones sin fecha, utilizar el año de estreno
+          // de la producción únicamente como referencia provisional.
+          if (anio === null && item && item.year) {
+            var anioProduccion = parseInt(item.year, 10);
+
+            if (Number.isInteger(anioProduccion) && anioProduccion >= 1900) {
+              anio = anioProduccion;
+            }
+          }
+
+          if (anio === null) return '';
+
+          var variante = variantes.find(function (logo) {
+            return anio >= logo.desde && anio <= logo.hasta;
+          });
+
+          return variante ? 'images/logos/' + variante.archivo : '';
+        }
+
+
+        // Construcción de las tarjetas de producciones relacionadas.
+        if (related.length) {
+          var relatedCards = related.map(function (produccion) {
+            if (!produccion || typeof produccion !== 'object') return '';
+
+            var titulo = produccion.title || 'Producción relacionada';
+            var anio = produccion.year || '';
+            var imagen = produccion.image || produccion.poster || placeholderV;
+            var enlace = produccion.id
+              ? 'show.html?id=' + encodeURIComponent(produccion.id)
+              : '';
+
+            return '<div class="remake-card">' +
+              (enlace ? '<a href="' + enlace + '">' : '') +
+              '<img src="' + escapeDetailText(imagen) + '" alt="' +
+              escapeDetailText(titulo) + '" loading="lazy">' +
+              '<div class="remake-info">' +
+              '<div class="remake-title">' + escapeDetailText(titulo) + '</div>' +
+              (anio
+                ? '<div class="related-meta">' + escapeDetailText(anio) + '</div>'
+                : '') +
+              '</div>' +
+              (enlace ? '</a>' : '') +
+              '</div>';
+          }).filter(Boolean).join('');
+
+          if (relatedCards) {
+            relatedSection =
+              '<div class="related-section">' +
+              '<div class="related-title">' +
+              escapeDetailText(relatedTitle) +
+              '</div>' +
+              '<div class="related-grid">' +
+              relatedCards +
+              '</div>' +
+              '</div>';
+          }
+        }
+
         // Emisiones de televisión abierta y cable registradas en data.json.
         var emisionesTVSection = '';
 
@@ -2061,8 +2360,23 @@
               valor += ' puntos';
             }
 
+
+            if (campo[0] === 'Canal') {
+              var logoCanal = obtenerLogoCanal(valor, emision);
+
+              if (logoCanal) {
+                return '<dt>Canal</dt>' +
+                  '<dd class="canal-con-logo">' +
+                  '<img src="' + encodeURI(logoCanal) + '"' +
+                  ' alt="" class="canal-logo" loading="lazy">' +
+                  '<span>' + escapeDetailText(valor) + '</span>' +
+                  '</dd>';
+              }
+            }
+
             return '<dt>' + campo[0] + '</dt>' +
               '<dd>' + escapeDetailText(valor) + '</dd>';
+
           }).join('');
 
           // Historial de cambios de horario.
