@@ -1476,7 +1476,35 @@
                     + '</div>'
                     : ''
                 )
+
                 + reportLines
+                + (
+                  hasValue(temp.sinopsis)
+                    ? '<div class="temporada-sinopsis">'
+                    + '<strong>Sinopsis:</strong> '
+                    + escapeDetailText(temp.sinopsis)
+                    + '</div>'
+                    : ''
+                )
+                + (
+                  hasValue(temp.fuente) &&
+                    hasValue(temp.fuente_url) &&
+                    /^https?:\/\//i.test(String(temp.fuente_url).trim())
+                    ? '<div class="temporada-fuente">'
+                    + '<strong>Fuente:</strong> '
+                    + '<a href="' + escapeDetailText(temp.fuente_url)
+                    + '" target="_blank" rel="noopener noreferrer">'
+                    + escapeDetailText(temp.fuente)
+                    + '</a>'
+                    + '</div>'
+                    : (
+                      hasValue(temp.fuente)
+                        ? '<div class="temporada-fuente"><strong>Fuente:</strong> '
+                        + escapeDetailText(temp.fuente)
+                        + '</div>'
+                        : ''
+                    )
+                )
                 + '</div>'
                 + '</div>';
             }).join('');
@@ -1534,6 +1562,38 @@
         if (item.productora) {
           productoraRow = '<dt>Productora</dt><dd>' + item.productora + '</dd>';
         }
+
+        + reportLines
+          + (
+            hasValue(temp.sinopsis)
+              ? '<div class="temporada-sinopsis">'
+              + '<strong>Sinopsis:</strong> '
+              + escapeDetailText(temp.sinopsis)
+              + '</div>'
+              : ''
+          )
+          + (
+            hasValue(temp.fuente) &&
+              hasValue(temp.fuente_url) &&
+              /^https?:\/\//i.test(String(temp.fuente_url).trim())
+              ? '<div class="temporada-fuente">'
+              + '<strong>Fuente:</strong> '
+              + '<a href="' + escapeDetailText(temp.fuente_url)
+              + '" target="_blank" rel="noopener noreferrer">'
+              + escapeDetailText(temp.fuente)
+              + '</a>'
+              + '</div>'
+              : (
+                hasValue(temp.fuente)
+                  ? '<div class="temporada-fuente"><strong>Fuente:</strong> '
+                  + escapeDetailText(temp.fuente)
+                  + '</div>'
+                  : ''
+              )
+          )
+          + '</div>'
+          + '</div>';
+
         function toArray(value) {
           if (Array.isArray(value)) {
             return value.filter(function (v) { return hasValue(v); }).map(function (v) { return String(v).trim(); });
@@ -1882,6 +1942,9 @@
           + viewersRow
           + producerRow
           + directorRow
+          + creadoresRow
+          + showrunnerRow
+          + guionRow
           + '</dl>'
           + temporadasSection
           + posterGallerySection

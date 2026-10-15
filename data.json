@@ -20571,7 +20571,14 @@
         "Juan Minujín",
         "Monna Antonópulos",
         "Joaquín Ferreira",
-        "Agustín Sullivan"
+        "Agustín Sullivan",
+        "Macarena Achaga",
+        "Jorgelina Aruzzi",
+        "María Marull",
+        "Anna Favella",
+        "Rodrigo Noya",
+        "Marina Bellati",
+        "Alan Sabbagh"
       ],
       "orientation": "vertical",
       "release_date": "15/03/2024",
@@ -20585,11 +20592,33 @@
           "rating": "9"
         }
       ],
-      "image": "images/verticals/2026-coppola-elrepresentante-season2-poster280x420.png",
-      "horizontal_image": "images/horizontals-1024x576/2024-coppola-segunda-temporada-disney-slide-1024x576.webp",
+      "image": "images/verticals/2024-coppola-el-representante-segunda-temporada-disney-hulu-poster280x420.webp",
+      "horizontal_image": "images/horizontals-1024x576/2024-coppola-el-representante-segunda-temporada-disney-hulu-slide1024x576.webp",
+      "poster_gallery": [
+        {
+          "image": "images/verticals/2024-coppola-el-representante-segunda-temporada-disney-hulu-poster280x420.webp",
+          "label": "Segunda temporada — Póster principal"
+        },
+        {
+          "image": "images/verticals/2026-coppola-elrepresentante-season2-poster280x420.png",
+          "label": "Segunda temporada — Póster alternativo"
+        },
+        {
+          "image": "images/verticals/2024-coppola-elrepresentante-season1-poster-280x420.png",
+          "label": "Primera temporada"
+        }
+      ],
       "subtitle": "Drama",
       "streaming_row": "bioseries",
       "sinopsis": "La trama sigue la vertiginosa vida y los momentos más polémicos de Guillermo Coppola, el célebre mánager de Diego Armando Maradona, mientras intenta equilibrar su agitada vida personal con las locas consecuencias de las acciones del astro del fútbol.",
+      "creadores": [
+        "Mariano Cohn",
+        "Gastón Duprat"
+      ],
+      "director": "Ariel Winograd",
+      "showrunner": "Ariel Winograd",
+      "guion": "Emanuel Diez",
+      "productora": "Pampa Films y Gloriamundi Producciones",
       "temporadas": [
         {
           "numero": 1,
@@ -20599,9 +20628,12 @@
         },
         {
           "numero": 2,
-          "release_date": "21/10/2026",
-          "image": "images/verticals/2026-coppola-elrepresentante-season2-poster280x420.png",
-          "horizontal_image": "images/horizontals-1024x576/2024-coppola-segunda-temporada-disney-slide-1024x576.webp"
+          "release_date": "23/10/2026",
+          "image": "images/verticals/2024-coppola-el-representante-segunda-temporada-disney-hulu-poster280x420.webp",
+          "horizontal_image": "images/horizontals-1024x576/2024-coppola-el-representante-segunda-temporada-disney-hulu-slide1024x576.webp",
+          "sinopsis": "Guillermo Coppola rememora su agitada trayectoria como representante de Diego Maradona, desde sus comienzos junto al ídolo en 1984 hasta su caída y posterior reconstrucción. Entre el éxito, los excesos y el glamour, revive anécdotas sorprendentes y encuentros con figuras influyentes, revelando nuevas versiones de una vida extraordinaria.",
+          "fuente": "Disney Latinoamérica — Comunicado oficial, 12/10/2026",
+          "fuente_url": "https://prensa.disneylatino.com/novedades/coppola-el-representante-regresa-con-su-segunda-temporada-el-23-de-octubre-en-disney+"
         }
       ]
     },
