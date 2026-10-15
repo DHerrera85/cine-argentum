@@ -1865,8 +1865,9 @@
         var itemType = String(item.type || '').toLowerCase().trim();
         var onlyCineAir = airValues.length === 1 && String(airValues[0] || '').toLowerCase().trim() === 'cine';
         var hideCanalAire = itemType === 'pelicula' && onlyCineAir;
-        var canalAireRow = (!hideCanalAire && airValues.length) ? '<dt>Canal de aire</dt><dd>' + airValues.join(', ') + '</dd>' : '';
-        var canalCableRow = cableValues.length ? '<dt>Canal de cable</dt><dd>' + cableValues.join(', ') + '</dd>' : '';
+        var canalAireRow = '';
+        var canalCableRow = '';
+        var canalPrincipalRow = '';
 
         var plataformaRow = '';
 
@@ -2267,6 +2268,71 @@
           return variante ? 'images/logos/' + variante.archivo : '';
         }
 
+        var canalPrincipal = hasValue(item.channel)
+          ? String(item.channel).trim()
+          : '';
+        var canalPrincipalKey = canalPrincipal
+          ? normalizarCanal(canalPrincipal)
+          : '';
+        var canalPrincipalEnEmisiones = [item.air_broadcasts, item.cable_broadcasts]
+          .some(function (emisiones) {
+            return Array.isArray(emisiones) && emisiones.some(function (emision) {
+              return emision &&
+                typeof emision === 'object' &&
+                !Array.isArray(emision) &&
+                hasValue(emision.channel) &&
+                normalizarCanal(emision.channel) === canalPrincipalKey;
+            });
+          });
+        var canalPrincipalEnPlataformas = plataformaValues.some(function (plataforma) {
+          return normalizarCanal(plataforma) === canalPrincipalKey;
+        });
+        var logoCanalPrincipal = canalPrincipal
+          ? obtenerLogoCanal(canalPrincipal, { year: item.year })
+          : '';
+        var mostrarLogoCanalPrincipal = !!logoCanalPrincipal &&
+          !canalPrincipalEnEmisiones &&
+          !canalPrincipalEnPlataformas;
+        var canalPrincipalEnFilas = airValues.concat(cableValues).some(function (canal) {
+          return normalizarCanal(canal) === canalPrincipalKey;
+        });
+
+        function renderCanalEnFila(canal) {
+          if (
+            mostrarLogoCanalPrincipal &&
+            normalizarCanal(canal) === canalPrincipalKey
+          ) {
+            return '<span class="canal-con-logo">' +
+              '<img src="' + encodeURI(logoCanalPrincipal) +
+              '" alt="" class="canal-logo" loading="lazy">' +
+              '<span>' + escapeDetailText(canal) + '</span>' +
+              '</span>';
+          }
+
+          return escapeDetailText(canal);
+        }
+
+        canalAireRow = (!hideCanalAire && airValues.length)
+          ? '<dt>Canal de aire</dt><dd>' +
+          airValues.map(renderCanalEnFila).join(', ') + '</dd>'
+          : '';
+        canalCableRow = cableValues.length
+          ? '<dt>Canal de cable</dt><dd>' +
+          cableValues.map(renderCanalEnFila).join(', ') + '</dd>'
+          : '';
+
+        if (
+          mostrarLogoCanalPrincipal &&
+          !canalPrincipalEnFilas
+        ) {
+          canalPrincipalRow = '<dt>Canal principal</dt>' +
+            '<dd class="canal-con-logo">' +
+            '<img src="' + encodeURI(logoCanalPrincipal) +
+            '" alt="" class="canal-logo" loading="lazy">' +
+            '<span>' + escapeDetailText(canalPrincipal) + '</span>' +
+            '</dd>';
+        }
+
         if (plataformaValues.length) {
           var plataformasConLogo = plataformaValues.map(function (nombre) {
             var logo = obtenerLogoCanal(nombre, {
@@ -2467,6 +2533,7 @@
           + '<dt>Año</dt><dd>' + (item.year || '') + '</dd>'
           + canalAireRow
           + canalCableRow
+          + canalPrincipalRow
           + plataformaRow
           + '<dt>Género</dt><dd>' + (item.genre || '') + '</dd>'
           + '<dt>Actores</dt><dd>' + actors + '</dd>'
