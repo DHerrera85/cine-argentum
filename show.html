@@ -682,6 +682,112 @@
       }
 
     }
+
+
+    /* Descripciones de temporadas, separadas de los pósteres */
+    .temporadas-descripciones {
+      width: 100%;
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .temporada-descripcion {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 18px 20px;
+      background: #f6f7f9;
+      border: 1px solid #e3e6ea;
+      border-radius: 12px;
+    }
+
+    .temporada-descripcion h3 {
+      margin: 0 0 10px;
+      font-size: 1rem;
+      color: #2a2f38;
+    }
+
+    .temporada-descripcion p {
+      margin: 0;
+      line-height: 1.6;
+      font-size: 0.95rem;
+      color: #333;
+    }
+
+    .temporada-fuente {
+      margin-top: 12px;
+      font-size: 0.82rem;
+      line-height: 1.5;
+      color: #606875;
+    }
+
+    .temporada-fuente a {
+      color: #2365a5;
+      text-decoration: underline;
+      text-underline-offset: 2px;
+      overflow-wrap: anywhere;
+    }
+
+    @media (max-width: 600px) {
+      .temporada-descripcion {
+        padding: 14px;
+      }
+    }
+
+
+    /* Emisiones televisivas */
+    .emisiones-tv-section {
+      width: 100%;
+      margin: 22px 0;
+    }
+
+    .emisiones-tv-section h2 {
+      margin: 0 0 12px;
+      font-size: 1.02rem;
+      color: #2a2f38;
+    }
+
+    .emision-tv-item {
+      margin-bottom: 12px;
+      padding: 14px 18px;
+      background: #f6f7f9;
+      border: 1px solid #e3e6ea;
+      border-radius: 12px;
+    }
+
+    .emision-tv-item dl {
+      display: grid;
+      grid-template-columns: minmax(120px, 35%) 1fr;
+      gap: 7px 12px;
+      margin: 0;
+    }
+
+    .emision-tv-item dt {
+      font-weight: 600;
+      color: #555;
+    }
+
+    .emision-tv-item dd {
+      margin: 0;
+      overflow-wrap: anywhere;
+    }
+
+    .emision-tv-item ul {
+      margin: 0;
+      padding-left: 18px;
+    }
+
+    @media (max-width: 600px) {
+      .emision-tv-item {
+        padding: 12px;
+      }
+
+      .emision-tv-item dl {
+        grid-template-columns: minmax(100px, 40%) 1fr;
+        gap: 6px 10px;
+      }
+    }
   </style>
 </head>
 
@@ -1478,34 +1584,57 @@
                 )
 
                 + reportLines
+                + '</div>'
+                + '</div>';
+            }).join('');
+
+
+            // Sinopsis y fuentes independientes de las tarjetas.
+            var seasonDescriptions = item.temporadas.map(function (temp, idx) {
+              if (!temp || typeof temp !== 'object') return '';
+
+              var hasSynopsis = hasValue(temp.sinopsis);
+              var hasSource = hasValue(temp.fuente);
+
+              if (!hasSynopsis && !hasSource) return '';
+
+              var n = getSeasonIndex(temp, idx);
+              var sourceHtml = '';
+
+              if (hasSource) {
+                var sourceLabel = escapeDetailText(temp.fuente);
+                var sourceUrl = hasValue(temp.fuente_url)
+                  ? String(temp.fuente_url).trim()
+                  : '';
+
+                if (/^https?:\/\//i.test(sourceUrl)) {
+                  sourceHtml =
+                    '<div class="temporada-fuente">'
+                    + '<strong>Fuente:</strong> '
+                    + '<a href="' + escapeDetailText(sourceUrl)
+                    + '" target="_blank" rel="noopener noreferrer">'
+                    + sourceLabel
+                    + '</a>'
+                    + '</div>';
+                } else {
+                  sourceHtml =
+                    '<div class="temporada-fuente">'
+                    + '<strong>Fuente:</strong> '
+                    + sourceLabel
+                    + '</div>';
+                }
+              }
+
+              return '<div class="temporada-descripcion">'
+                + '<h3>Temporada ' + n + '</h3>'
                 + (
-                  hasValue(temp.sinopsis)
-                    ? '<div class="temporada-sinopsis">'
-                    + '<strong>Sinopsis:</strong> '
+                  hasSynopsis
+                    ? '<p><strong>Sinopsis:</strong> '
                     + escapeDetailText(temp.sinopsis)
-                    + '</div>'
+                    + '</p>'
                     : ''
                 )
-                + (
-                  hasValue(temp.fuente) &&
-                    hasValue(temp.fuente_url) &&
-                    /^https?:\/\//i.test(String(temp.fuente_url).trim())
-                    ? '<div class="temporada-fuente">'
-                    + '<strong>Fuente:</strong> '
-                    + '<a href="' + escapeDetailText(temp.fuente_url)
-                    + '" target="_blank" rel="noopener noreferrer">'
-                    + escapeDetailText(temp.fuente)
-                    + '</a>'
-                    + '</div>'
-                    : (
-                      hasValue(temp.fuente)
-                        ? '<div class="temporada-fuente"><strong>Fuente:</strong> '
-                        + escapeDetailText(temp.fuente)
-                        + '</div>'
-                        : ''
-                    )
-                )
-                + '</div>'
+                + sourceHtml
                 + '</div>';
             }).join('');
 
@@ -1515,6 +1644,13 @@
               + '<div class="temporadas-grid">'
               + tempCards
               + '</div>'
+              + (
+                seasonDescriptions
+                  ? '<div class="temporadas-descripciones">'
+                  + seasonDescriptions
+                  + '</div>'
+                  : ''
+              )
               + '</div>';
 
           } else {
@@ -1563,36 +1699,38 @@
           productoraRow = '<dt>Productora</dt><dd>' + item.productora + '</dd>';
         }
 
-        + reportLines
-          + (
-            hasValue(temp.sinopsis)
-              ? '<div class="temporada-sinopsis">'
-              + '<strong>Sinopsis:</strong> '
-              + escapeDetailText(temp.sinopsis)
-              + '</div>'
-              : ''
-          )
-          + (
-            hasValue(temp.fuente) &&
-              hasValue(temp.fuente_url) &&
-              /^https?:\/\//i.test(String(temp.fuente_url).trim())
-              ? '<div class="temporada-fuente">'
-              + '<strong>Fuente:</strong> '
-              + '<a href="' + escapeDetailText(temp.fuente_url)
-              + '" target="_blank" rel="noopener noreferrer">'
-              + escapeDetailText(temp.fuente)
-              + '</a>'
-              + '</div>'
-              : (
-                hasValue(temp.fuente)
-                  ? '<div class="temporada-fuente"><strong>Fuente:</strong> '
-                  + escapeDetailText(temp.fuente)
-                  + '</div>'
-                  : ''
-              )
-          )
-          + '</div>'
-          + '</div>';
+
+        // Campos opcionales de equipo creativo.
+        function escapeDetailText(value) {
+          return String(value == null ? '' : value).replace(/[&<>"']/g, function (char) {
+            return {
+              '&': '&amp;',
+              '<': '&lt;',
+              '>': '&gt;',
+              '"': '&quot;',
+              "'": '&#39;'
+            }[char];
+          });
+        }
+
+        function detailList(value) {
+          return (Array.isArray(value) ? value : [value])
+            .filter(hasValue)
+            .map(escapeDetailText)
+            .join(', ');
+        }
+
+        var creadoresRow = detailList(item.creadores)
+          ? '<dt>Creadores</dt><dd>' + detailList(item.creadores) + '</dd>'
+          : '';
+
+        var showrunnerRow = detailList(item.showrunner)
+          ? '<dt>Showrunner</dt><dd>' + detailList(item.showrunner) + '</dd>'
+          : '';
+
+        var guionRow = detailList(item.guion)
+          ? '<dt>Guion</dt><dd>' + detailList(item.guion) + '</dd>'
+          : '';
 
         function toArray(value) {
           if (Array.isArray(value)) {
@@ -1892,6 +2030,72 @@
             + '<div class="related-grid">' + relatedCards + '</div>'
             + '</div>';
         }
+
+
+        // Emisiones televisivas registradas en data.json.
+        var emisionesTVSection = '';
+
+        if (Array.isArray(item.air_broadcasts)) {
+          var emisionesTV = item.air_broadcasts.map(function (emision) {
+            if (!emision || typeof emision !== 'object') return '';
+
+            var campos = [
+              ['Canal', emision.channel],
+              ['Temporada', emision.season_number],
+              ['Primera emisión', emision.premiere_date],
+              ['Última emisión', emision.end_date],
+              ['Año', emision.year],
+              ['Horario', emision.horario],
+              ['Tipo de emisión', emision.tipo_emision],
+              ['Rating', emision.rating]
+            ];
+
+            var detalles = campos.filter(function (campo) {
+              return hasValue(campo[1]);
+            }).map(function (campo) {
+              var valor = String(campo[1]);
+              if (campo[0] === 'Rating') valor += ' puntos';
+
+              return '<dt>' + campo[0] + '</dt>'
+                + '<dd>' + escapeDetailText(valor) + '</dd>';
+            }).join('');
+
+            // Horarios que cambiaron durante la emisión.
+            var periodos = Array.isArray(emision.schedule_periods)
+              ? emision.schedule_periods.map(function (periodo) {
+                if (!periodo || !hasValue(periodo.horario)) return '';
+
+                var desde = periodo.start_date || periodo.year || '';
+                return '<li>'
+                  + (hasValue(desde)
+                    ? escapeDetailText(desde) + ': '
+                    : '')
+                  + escapeDetailText(periodo.horario)
+                  + '</li>';
+              }).filter(Boolean).join('')
+              : '';
+
+            if (periodos) {
+              detalles += '<dt>Historial de horarios</dt>'
+                + '<dd><ul>' + periodos + '</ul></dd>';
+            }
+
+            if (!detalles) return '';
+
+            return '<div class="emision-tv-item"><dl>'
+              + detalles
+              + '</dl></div>';
+          }).filter(Boolean).join('');
+
+          if (emisionesTV) {
+            emisionesTVSection =
+              '<section class="emisiones-tv-section">'
+              + '<h2>Emisiones en televisión</h2>'
+              + emisionesTV
+              + '</section>';
+          }
+        }
+
         var extraSections = '';
         extraSections = remakesSection + relatedSection;
         var html = heroSection
@@ -1946,6 +2150,7 @@
           + showrunnerRow
           + guionRow
           + '</dl>'
+          + emisionesTVSection
           + temporadasSection
           + posterGallerySection
           + extraSections
