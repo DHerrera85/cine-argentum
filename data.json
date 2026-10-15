@@ -9207,6 +9207,70 @@
       ]
     },
     {
+      "id": "P2100",
+      "title": "Teo Scratch",
+      "type": "serie",
+      "year": 2011,
+      "genre": "Juvenil",
+      "actors": [
+        "Gastón Soffritti",
+        "Brian Vainberg",
+        "Santiago Talledo"
+      ],
+      "orientation": "vertical",
+      "image": "images/verticals/2011-teo-scratch-ilusion-studios-unaired-pilot-poster280x420.webp",
+      "poster_gallery": [
+        {
+          "image": "images/verticals/2011-teo-scratch-ilusion-studios-unaired-pilot-poster280x420.webp",
+          "label": "Póster principal"
+        }
+      ],
+      "subtitle": "No Emitidos",
+      "release_date": null,
+      "fecha_estreno": null,
+      "production_status": "no-emitidos",
+      "productora": "Illusion Studios",
+      "capitulos": 52,
+      "duracion": 30,
+      "tipo_emision": "No Emitidos",
+      "sinopsis": "Teo es un adolescente criado en una familia dedicada a la música clásica que intenta imponerle sus gustos. Decidido a seguir su propio camino, crea una radio clandestina, se convierte en DJ y forma una banda de rock llamada Distorsión Binaria, desafiando las expectativas familiares para encontrar su propia identidad musical.",
+      "juveniles_rows": [
+        "no-emitidos"
+      ],
+      "tiras_2010_rows": []
+    },
+    {
+      "id": "P2101",
+      "title": "Frank & Tony",
+      "type": "serie",
+      "year": 2011,
+      "genre": "Juvenil",
+      "actors": [
+        "Valentín Villafañe",
+        "Santiago Ramundo"
+      ],
+      "orientation": "vertical",
+      "image": "images/verticals/2011-frank-tony-illusion-studios-unaired-pilot-poster280x420.webp",
+      "poster_gallery": [
+        {
+          "image": "images/verticals/2011-frank-tony-illusion-studios-unaired-pilot-poster280x420.webp",
+          "label": "Póster principal"
+        }
+      ],
+      "subtitle": "No Emitidos",
+      "release_date": null,
+      "fecha_estreno": null,
+      "production_status": "no-emitidos",
+      "productora": "Illusion Studios",
+      "capitulos": 52,
+      "tipo_emision": "No Emitidos",
+      "sinopsis": "Frank y Tony son dos jóvenes que se infiltran habitualmente en un colegio para investigar y resolver situaciones que las autoridades disciplinarias no consiguen abordar. Juntos intervienen en casos de acoso escolar, discriminación y otros conflictos que afectan a los estudiantes.",
+      "juveniles_rows": [
+        "no-emitidos"
+      ],
+      "tiras_2010_rows": []
+    },
+    {
       "id": "T0001",
       "title": "Amigos son los amigos",
       "year": "1990",
