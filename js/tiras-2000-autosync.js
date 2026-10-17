@@ -756,14 +756,6 @@
             '<div class="latest-b-img ',
             'tiras-2000-premiere-image">',
 
-            '<span class="',
-            'tiras-2000-premiere-badge',
-            '">',
-
-            escapeHtml(formatLabel),
-
-            '</span>',
-
             '<img',
             ' src="',
             escapeHtml(image),
@@ -777,6 +769,12 @@
             '</div>',
 
             '<div class="latest-b-text">',
+
+            '<span class="tiras-2000-format-label tiras-2000-format-label--',
+            escapeHtml(formatLabel.toLowerCase()),
+            '">',
+            escapeHtml(formatLabel),
+            '</span>',
 
             '<strong>',
             escapeHtml(title),
