@@ -8,7 +8,8 @@
 
   <!-- CSS -->
   <link rel="stylesheet" href="css/style.css?v=2.0" />
-  <link rel="stylesheet" href="css/tiras-2000-catalog.css?v=1.8" />
+  <link rel="stylesheet" href="css/tiras-2000-catalog.css?v=1.9" />
+  <link rel="stylesheet" href="css/streaming-catalog.css?v=1.16" />
   <link rel="stylesheet" href="css/lightslider.css?v=2.0" />
 
   <!-- Fuente -->
@@ -137,6 +138,27 @@
       /* ← AGREGAR ESTA LÍNEA */
       padding-top: 8px;
       margin-top: -18px;
+    }
+
+
+    /* Barra de canales de los 2010 */
+
+    #tiras-2010-channels .tiras-2010-channel-tabs {
+      margin: 0 !important;
+      padding: 0 0 12px !important;
+    }
+
+    #tiras-2010-channels .streaming-platform-tab {
+      box-sizing: border-box;
+      min-width: 0;
+    }
+
+    #tiras-2010-channels .streaming-platform-logo {
+      max-width: 150px;
+      max-height: 90px;
+      width: auto;
+      height: 70px;
+      object-fit: contain;
     }
   </style>
 </head>
@@ -681,6 +703,40 @@
 
       </section>
 
+
+      <!-- Canales de TV de los 2010 -->
+      <section id="tiras-2010-channels" class="streaming-platforms-section"
+        aria-labelledby="tiras-2010-channels-heading">
+
+        <h2 id="tiras-2010-channels-heading" class="latest-heading">
+          Canales de TV de los 2010
+        </h2>
+
+        <div class="slider-genres streaming-platform-tabs tiras-2010-channel-tabs" role="navigation"
+          aria-label="Canales de televisión de los años 2010">
+
+          <a class="streaming-platform-tab" href="telefe-10s.html" aria-label="Telefe">
+            <img src="images/logos/telefe-logo-120x120.png" alt="Telefe" class="streaming-platform-logo">
+          </a>
+
+          <a class="streaming-platform-tab" href="canal13-10s.html" aria-label="Canal 13">
+            <img src="images/logos/canal-13-logo-120x120.png" alt="Canal 13" class="streaming-platform-logo">
+          </a>
+
+          <a class="streaming-platform-tab" href="canal9-2000-2026.html" aria-label="Canal 9">
+            <img src="images/logos/elnueve-ls83-tv-canal-9-whitefont.png" alt="Canal 9" class="streaming-platform-logo">
+          </a>
+
+          <a class="streaming-platform-tab" href="america-1990-2026.html" aria-label="América">
+            <img src="images/logos/america-logo-120x120.png" alt="América" class="streaming-platform-logo">
+          </a>
+
+          <a class="streaming-platform-tab" href="canal7.html" aria-label="TV Pública">
+            <img src="images/logos/television-argentina-2017-white-logo-transparent-preview.png" alt="TV Pública" class="streaming-platform-logo">
+          </a>
+
+        </div>
+      </section>
 
     </main>
 
