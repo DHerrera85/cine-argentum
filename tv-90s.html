@@ -9,6 +9,7 @@
   <!-- CSS -->
   <link rel="stylesheet" href="css/style.css?v=2.0" />
   <link rel="stylesheet" href="css/main-wrap.css?v=1.0" />
+  <link rel="stylesheet" href="css/streaming-catalog.css?v=1.16" />
   <link rel="stylesheet" href="css/lightslider.css?v=2.0" />
 
   <!-- Fuente -->
@@ -808,6 +809,35 @@
       }
 
     }
+
+
+
+
+    /* TV 90s: ajustes visuales del carrusel LightSlider */
+
+    #tv90s-channels .tv90s-channel-tabs {
+      margin: 0 !important;
+      padding: 0 0 12px !important;
+    }
+
+    #tv90s-channels .tv90s-channel-tabs .streaming-platform-tab {
+      box-sizing: border-box;
+      min-width: 0;
+    }
+
+    #tv90s-channels .tv90s-special-tab {
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    #tv90s-channels .tv90s-special-tab span {
+      display: block;
+      max-width: 100%;
+      white-space: normal;
+      overflow-wrap: normal;
+      text-align: center;
+      line-height: 1.3;
+    }
   </style>
 </head>
 
@@ -1005,92 +1035,56 @@
       </section>
 
 
-      <!-- Explorar por canal -->
-      <section id="tv90s-channels" class="tv90s-section">
-        <h2 class="latest-heading">
-          Explorar por canal
+
+      <!-- Canales de TV de los años 90 -->
+      <section id="tv90s-channels" class="streaming-platforms-section tv90s-channel-strip"
+        aria-labelledby="tv90s-channels-heading">
+
+        <h2 id="tv90s-channels-heading" class="latest-heading">
+          Canales de TV de los 90
         </h2>
 
-        <div class="tv90s-channel-grid">
+        <div class="slider-genres streaming-platform-tabs tv90s-channel-tabs" role="navigation"
+          aria-label="Canales de televisión de los años 90">
 
-          <!-- Telefe: página propia -->
-          <a href="telefe-90s.html" class="tv90s-channel-card tv90s-channel-link"
-            title="Ver ficciones de Telefe en los años 90">
-            <div class="tv90s-channel-logo telefe-channel">
-              <img src="images/logos/telefe-1990-120x120.png" alt="Telefe" />
-            </div>
-
-            <strong>Telefe</strong>
-            <span>Ver catálogo</span>
+          <a class="streaming-platform-tab" href="telefe-90s.html" aria-label="Telefe">
+            <img src="images/logos/telefe-1990-120x120.png" alt="Telefe" class="streaming-platform-logo">
           </a>
 
-
-          <!-- Canal 13: página propia -->
-          <a href="canal13-90s.html" class="tv90s-channel-card tv90s-channel-link"
-            title="Ver ficciones de Canal 13 en los años 90">
-            <div class="tv90s-channel-logo canal13-channel">
-              <img src="images/logos/canal13-1990-120x120.png" alt="Canal 13" />
-            </div>
-
-            <strong>Canal 13</strong>
-            <span>Ver catálogo</span>
+          <a class="streaming-platform-tab" href="canal13-90s.html" aria-label="Canal 13">
+            <img src="images/logos/canal13-1990-120x120.png" alt="Canal 13" class="streaming-platform-logo">
           </a>
 
-
-          <!-- Canal 9: página propia -->
-          <a href="canal9-90s.html" class="tv90s-channel-card tv90s-channel-link"
-            title="Ver ficciones de Canal 9 y Azul TV en los años 90">
-            <div class="tv90s-channel-logo canal9-channel">
-              <img src="images/logos/canal9-1990-120x120.png" alt="Canal 9 y Azul TV" />
-            </div>
-
-            <strong>Canal 9 / Azul TV</strong>
-            <span>Ver catálogo</span>
+          <a class="streaming-platform-tab" href="canal9-90s.html" aria-label="Canal 9 / Azul TV">
+            <img src="images/logos/canal9-1990-120x120.png" alt="Canal 9 / Azul TV" class="streaming-platform-logo">
           </a>
 
-
-          <!-- América: catálogo filtrado -->
-          <a href="tv-90s-catalogo.html?channel=america" class="tv90s-channel-card tv90s-channel-link"
-            title="Ver ficciones de América en los años 90">
-            <div class="tv90s-channel-logo america-channel">
-              <img src="images/logos/america-1990-120x120px.png" alt="América" />
-            </div>
-
-            <strong>América</strong>
-            <span>Ver catálogo</span>
+          <a class="streaming-platform-tab" href="tv-90s-catalogo.html?channel=america" aria-label="América">
+            <img src="images/logos/america-1990-120x120px.png" alt="América" class="streaming-platform-logo">
           </a>
 
-          <!-- ATC / Canal 7: catálogo filtrado -->
-          <a href="tv-90s-catalogo.html?channel=atc" class="tv90s-channel-card tv90s-channel-link"
-            title="Ver ficciones de ATC y Canal 7 en los años 90">
-            <div class="tv90s-channel-logo atc-channel">
-              <img src="images/logos/ATC_logo_120x120_transparente.png" alt="ATC y Canal 7" />
-            </div>
-
-            <strong>ATC / Canal 7</strong>
-            <span>Ver catálogo</span>
+          <a class="streaming-platform-tab" href="tv-90s-catalogo.html?channel=atc" aria-label="ATC / Canal 7">
+            <img src="images/logos/ATC_logo_120x120_transparente.png" alt="ATC / Canal 7"
+              class="streaming-platform-logo">
           </a>
+
 
           <!-- Catálogo completo -->
-          <a href="tv-90s-catalogo.html" class="tv90s-channel-card tv90s-channel-link"
-            title="Explorar el catálogo completo de ficciones de los años 90">
-            <div class="tv90s-channel-logo catalogue-channel">
-              <i class="fa-solid fa-layer-group" aria-hidden="true"></i>
-            </div>
-
-            <strong>Catálogo</strong>
-            <span>Ver todas las ficciones</span>
+          <a class="streaming-platform-tab tv90s-special-tab" href="tv-90s-catalogo.html"
+            aria-label="Catálogo completo de los años 90">
+            <i class="fa-solid fa-layer-group" aria-hidden="true"></i>
+            <span>Catálogo completo</span>
           </a>
 
+          <!-- Programación Histórica -->
+          <a class="streaming-platform-tab tv90s-special-tab" href="schedules.html" aria-label="Programación Histórica">
+            <i class="fa-solid fa-tv" aria-hidden="true"></i>
+            <span>Programación Histórica</span>
+          </a>
         </div>
       </section>
 
     </main>
-
-    <!-- acceso provisorio a programación histórica -->
-    <div class="schedule-temp-link">
-      <a href="schedules.html">Programación Histórica</a>
-    </div>
 
     <!-- footer -->
     <footer>
