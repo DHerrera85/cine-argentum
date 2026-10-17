@@ -9,6 +9,7 @@
   <!-- CSS -->
   <link rel="stylesheet" href="css/style.css?v=2.0" />
   <link rel="stylesheet" href="css/main-wrap.css?v=1.0" />
+  <link rel="stylesheet" href="css/tiras-2000-catalog.css?v=1.8" />
   <link rel="stylesheet" href="css/streaming-catalog.css?v=1.16" />
   <link rel="stylesheet" href="css/lightslider.css?v=2.0" />
 
@@ -332,6 +333,42 @@
         margin-top: 8px;
       }
     }
+
+
+    /* Etiquetas de estrenos TV 90s */
+
+    #tv90s-historical-premieres .tv90s-premiere-label {
+      display: inline-block;
+      align-self: center;
+      width: fit-content;
+      margin: 10px auto 6px;
+      padding: 4px 12px;
+      border-radius: 6px;
+      font-size: 11px;
+      font-weight: 700;
+      line-height: 1.4;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      color: #fff;
+      background: #687487;
+    }
+
+    #tv90s-historical-premieres .tv90s-premiere-label--tira {
+      background: #c97334;
+    }
+
+    #tv90s-historical-premieres .tv90s-premiere-label--semanal {
+      background: #326fa5;
+    }
+
+    #tv90s-historical-premieres .tv90s-premiere-label--unitario {
+      background: #7357a6;
+    }
+
+    #tv90s-historical-premieres .tv90s-premiere-label--miniserie {
+      background: #267c74;
+    }
+
 
     /* ==================================================
    ANIMACIÓN SUAVE DE SECCIONES TV 90s
@@ -825,6 +862,14 @@
       min-width: 0;
     }
 
+    #tv90s-channels .streaming-platform-logo {
+      max-width: 150px;
+      max-height: 90px;
+      width: auto;
+      height: 70px;
+      object-fit: contain;
+    }
+
     #tv90s-channels .tv90s-special-tab {
       flex-direction: column;
       gap: 8px;
@@ -878,24 +923,72 @@
     <!-- TV ARGENTINA EN LOS AÑOS 90 -->
     <main class="tv90s-page">
 
-      <!-- Encabezado general -->
-      <section class="tv90s-intro">
 
-        <div class="tv90s-heading">
+      <!-- Estrenos 1990–1999 -->
+      <section id="tv90s-historical-premieres"
+        class="tiras-2000-section tiras-2000-calendar-section tiras-2000-vertical-showcase" hidden>
 
-          <div class="tv90s-heading-text">
-            <h1 class="showcase-heading">
-              TV Argentina en los años 90
-            </h1>
+        <h1 class="tiras-2000-calendar-title">
+          Estrenos 1990–1999
+        </h1>
 
-            <p class="tv90s-heading-description">
-              Ficciones emitidas por los principales canales de aire
-              argentinos entre 1990 y 1999.
-            </p>
+        <div class="tiras-2000-calendar-controls">
+          <div class="tiras-2000-month-navigation">
+
+            <button id="tv90s-months-previous" type="button"
+              class="tiras-2000-month-arrow tiras-2000-month-arrow-previous" aria-label="Ver meses anteriores">
+              <i class="fas fa-chevron-left" aria-hidden="true"></i>
+            </button>
+
+            <div id="tv90s-historical-month-tabs" class="tiras-2000-month-tabs" role="tablist"
+              aria-label="Seleccionar mes de estreno">
+
+              <button type="button" class="tiras-2000-month-tab" role="tab" data-month="0"
+                aria-selected="false">Enero</button>
+              <button type="button" class="tiras-2000-month-tab" role="tab" data-month="1"
+                aria-selected="false">Febrero</button>
+              <button type="button" class="tiras-2000-month-tab" role="tab" data-month="2"
+                aria-selected="false">Marzo</button>
+              <button type="button" class="tiras-2000-month-tab" role="tab" data-month="3"
+                aria-selected="false">Abril</button>
+              <button type="button" class="tiras-2000-month-tab" role="tab" data-month="4"
+                aria-selected="false">Mayo</button>
+              <button type="button" class="tiras-2000-month-tab" role="tab" data-month="5"
+                aria-selected="false">Junio</button>
+              <button type="button" class="tiras-2000-month-tab" role="tab" data-month="6"
+                aria-selected="false">Julio</button>
+              <button type="button" class="tiras-2000-month-tab" role="tab" data-month="7"
+                aria-selected="false">Agosto</button>
+              <button type="button" class="tiras-2000-month-tab" role="tab" data-month="8"
+                aria-selected="false">Septiembre</button>
+              <button type="button" class="tiras-2000-month-tab" role="tab" data-month="9"
+                aria-selected="false">Octubre</button>
+              <button type="button" class="tiras-2000-month-tab" role="tab" data-month="10"
+                aria-selected="false">Noviembre</button>
+              <button type="button" class="tiras-2000-month-tab" role="tab" data-month="11"
+                aria-selected="false">Diciembre</button>
+
+            </div>
+
+            <button id="tv90s-months-next" type="button" class="tiras-2000-month-arrow tiras-2000-month-arrow-next"
+              aria-label="Ver meses siguientes">
+              <i class="fas fa-chevron-right" aria-hidden="true"></i>
+            </button>
+
           </div>
+
+          <span id="tv90s-historical-premieres-count" class="tiras-2000-count" aria-live="polite" hidden></span>
         </div>
 
+        <ul id="tv90s-historical-premieres-list" class="slider-v cs-hidden" data-skip-auto="true"
+          aria-label="Estrenos de ficciones argentinas entre 1990 y 1999">
+        </ul>
+
+        <p id="tv90s-historical-premieres-empty" class="tiras-2000-calendar-empty" role="status" hidden>
+          No hay estrenos registrados para este mes.
+        </p>
       </section>
+
 
       <!-- Grandes Éxitos de Telenovelas -->
       <section id="tv90s-telenovelas" class="tv90s-section tv90s-genre-showcase showcase-accent showcase-tone-indigo">
@@ -1098,6 +1191,7 @@
   <script src="js/lightslider.js"></script>
   <script src="js/script.js?v=20260226-1"></script>
   <script src="js/tv-90s-autosync.js?v=20260804-4"></script>
+  <script src="js/tv-90s-premieres.js?v=1"></script>
 </body>
 
 </html>
