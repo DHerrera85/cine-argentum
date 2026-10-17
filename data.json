@@ -14095,7 +14095,10 @@
       "sinopsis": "A partir de enero de 2013, el ciclo comienza a emitir, los días martes, un ciclo de unitarios ficcionales propio, escrito por importantes autores argentinos, con un elenco rotativo",
       "rating": "7,8",
       "productora": "Telefe Contenidos",
-      "tipo_emision": "Semanal"
+      "tipo_emision": "Semanal",
+      "unitarios_rows": [
+        "elencos-rotativos"
+      ]
     },
     {
       "id": "V292",
@@ -19524,7 +19527,11 @@
           "exclusive_platform": "Flow"
         }
       ],
-      "subtitle": "Thriller"
+      "subtitle": "Thriller",
+      "tipo_emision": "Semanal",
+      "unitarios_rows": [
+        "tv-streaming"
+      ]
     },
     {
       "id": "V180",
@@ -19558,6 +19565,9 @@
       "rating": "7,3",
       "productora": "Underground Contenidos, Dori Media",
       "tipo_emision": "Semanal",
+      "unitarios_rows": [
+        "tv-streaming"
+      ],
       "temporadas": [
         {
           "numero": 1,
@@ -21342,7 +21352,11 @@
       "capitulos": 10,
       "productora": "Viacom International Studios, Telecom Argentina, Paramount Television",
       "sinopsis": "Juan Robles, conocido en el pasado como “El Gato”, ha dejado atrás su vida como ladrón para construir una nueva identidad y formar una familia. Cuando una serie de robos con su inconfundible estilo comienza a sacudir Buenos Aires, deberá regresar al mundo del delito para descubrir quién está utilizando su nombre y proteger la vida que logró reconstruir.",
-      "subtitle": "Comedia"
+      "subtitle": "Comedia",
+      "tipo_emision": "Semanal",
+      "unitarios_rows": [
+        "tv-streaming"
+      ]
     },
     {
       "id": "V220",
@@ -21366,6 +21380,9 @@
       ],
       "genre": "Drama",
       "tipo_emision": "Semanal",
+      "unitarios_rows": [
+        "tv-streaming"
+      ],
       "actors": [
         "Tomás Fonzi",
         "Laurita Fernández"
@@ -21401,7 +21418,11 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/el-tigre-veron-poster-280x420.png",
-      "subtitle": "Thriller"
+      "subtitle": "Thriller",
+      "tipo_emision": "Semanal",
+      "unitarios_rows": [
+        "tv-streaming"
+      ]
     },
     {
       "id": "V222",
@@ -21425,7 +21446,11 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/tu-parte-del-trato-poster-280x420.png",
-      "subtitle": "Thriller"
+      "subtitle": "Thriller",
+      "tipo_emision": "Semanal",
+      "unitarios_rows": [
+        "tv-streaming"
+      ]
     },
     {
       "id": "V223",
@@ -21447,7 +21472,12 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/otros-pecados-poster-280x420.png",
-      "subtitle": "Thriller"
+      "subtitle": "Thriller",
+      "tipo_emision": "Semanal",
+      "unitarios_rows": [
+        "elencos-rotativos",
+        "tv-streaming"
+      ]
     },
     {
       "id": "V224",
@@ -21478,6 +21508,9 @@
       "capitulos": 12,
       "fecha_estreno": "17/10/2018",
       "tipo_emision": "Semanal",
+      "unitarios_rows": [
+        "tv-streaming"
+      ],
       "sinopsis": "Helena, una abogada exitosa diagnosticada con una enfermedad terminal, quien se involucra con Juan, un seductor que asesina a pacientes terminales, explorando el límite entre el amor romántico y la muerte",
       "rating": "3,3",
       "productora": "LCA Producciones, Viacom, Cablevisión Flow"
@@ -21510,6 +21543,9 @@
       "capitulos": 10,
       "fecha_estreno": "30/05/2018",
       "tipo_emision": "Semanal",
+      "unitarios_rows": [
+        "tv-streaming"
+      ],
       "sinopsis": "Matías Franco es un influyente lobista conocido por operar en las sombras para favorecer a empresas y corporaciones. Su habilidad y su aparente impunidad lo convierten en una figura temida dentro del mundo del poder.",
       "rating": "6",
       "productora": "Pol-ka Producciones, Turner International Argentina, Cablevisión"
@@ -21542,6 +21578,10 @@
       "capitulos": 21,
       "fecha_estreno": "6/7/2018",
       "tipo_emision": "Semanal",
+      "unitarios_rows": [
+        "elencos-rotativos",
+        "tv-streaming"
+      ],
       "sinopsis": "Cada episodio narra historias intensas ambientadas en habitaciones de hotel, donde se revelan pasiones, secretos y crímenes. Con un elenco rotativo y tramas autoconclusivas, las historias exploran los límites y ambigüedades de las relaciones modernas.",
       "rating": "8,5",
       "productora": "Kuarzo, Cablevisión"
@@ -21574,6 +21614,9 @@
       "capitulos": 12,
       "fecha_estreno": "13/09/2017",
       "tipo_emision": "Semanal",
+      "unitarios_rows": [
+        "tv-streaming"
+      ],
       "sinopsis": "Prat es un bailarín retirado. Alejado de los escenarios, el glamour y las instituciones en las que se dirimen los destinos de quienes eligen dedicarse al a danza profesionalmente, pasa sus días dando clases en una escuela de danza de barrio.",
       "rating": "9,3",
       "productora": "Pol-ka Producciones, Turner International Argentina, Cablevisión"
@@ -21605,6 +21648,9 @@
       "capitulos": 8,
       "fecha_estreno": "07/06/2017",
       "tipo_emision": "Semanal",
+      "unitarios_rows": [
+        "tv-streaming"
+      ],
       "sinopsis": "La periodista Verónica Rosenthal comienza a investigar la muerte de un maquinista, pero se enfrenta al hermetismo del mundo ferroviario.",
       "rating": "10",
       "productora": "Pol-ka Producciones, Turner International Argentina, Cablevisión"
@@ -21629,6 +21675,9 @@
       "capitulos": 13,
       "fecha_estreno": "04/04/2017",
       "tipo_emision": "Semanal",
+      "unitarios_rows": [
+        "tv-streaming"
+      ],
       "sinopsis": "Un productor decide realizar un reality show extremo en una antigua prisión de máxima seguridad cerrada tras una masacre en los años 90. Ocho participantes con vidas en crisis ingresan al lugar para competir y encontrar una salida a sus problemas.",
       "rating": "0,7",
       "productora": "Mediaset España, Televisión Azteca, Televisión Pública Argentina, Teledoce, Central Globo de Produção"
@@ -21670,6 +21719,9 @@
       "capitulos": 15,
       "fecha_estreno": "16/08/2017",
       "tipo_emision": "Semanal",
+      "unitarios_rows": [
+        "tv-streaming"
+      ],
       "sinopsis": "Nelson, un joven de Misiones, viaja a Buenos Aires para llevarle un gallo de riña a su hermano Roque. Al no encontrarlo emprende una búsqueda por el conurbano bonaerense que lo llevará a vincularse con el jefe de una banda de piratas del asfalto.",
       "rating": "9,9",
       "productora": "Underground Contenidos, INCAA, Cablevisión, Turner International Argentina"
@@ -21698,6 +21750,9 @@
       "capitulos": 16,
       "fecha_estreno": "02/09/2015",
       "tipo_emision": "Semanal",
+      "unitarios_rows": [
+        "tv-streaming"
+      ],
       "sinopsis": "Antonio Cruz, un médico de pueblo, emprende una venganza macabra tras la muerte de su madre, asesinando a víctimas según su signo zodiacal. Su propia hermana, policía, seguirá su rastro sin imaginar el vínculo que los une.",
       "rating": "11,1",
       "productora": "Pol-Ka"
@@ -21728,6 +21783,9 @@
       "capitulos": 11,
       "fecha_estreno": "09/09/2015",
       "tipo_emision": "Semanal",
+      "unitarios_rows": [
+        "tv-streaming"
+      ],
       "sinopsis": "Los Puccio aparentan ser una familia común, pero el patriarca Arquímedes organiza desde su casa una red criminal con la ayuda de sus hijos. Basada en hechos reales, la historia revela la organización familiar del delito y el contraste entre su fachada y la violencia oculta.",
       "rating": "11,8",
       "productora": "Underground Contenidos, INCAA",
@@ -22842,7 +22900,10 @@
       "sinopsis": "Manuel Levín es un terapeuta que guía las historias de sus pacientes desde el consultorio. En su vida privada, enfrenta el conflicto con su hija, que lo culpa por la muerte de su madre, y el intento de su nueva esposa por recomponer la familia.",
       "rating": "5,2",
       "productora": "Yair Dori",
-      "tipo_emision": "Semanal"
+      "tipo_emision": "Semanal",
+      "unitarios_rows": [
+        "elencos-rotativos"
+      ]
     },
     {
       "id": "V275",
@@ -22864,7 +22925,10 @@
       "sinopsis": "Los protagonistas de Al Límite viven con intensidad y sin medir consecuencias, moviéndose en los márgenes de la ley y la moral. Entre corrupción, crímenes, pasiones extremas y luchas de poder, cada historia explora hasta dónde se puede llegar por ambición o deseo",
       "rating": "15",
       "productora": "Endemol",
-      "tipo_emision": "Semanal"
+      "tipo_emision": "Semanal",
+      "unitarios_rows": [
+        "elencos-rotativos"
+      ]
     },
     {
       "id": "V276",
@@ -22884,7 +22948,10 @@
       "sinopsis": "Este unitario policial producido por Pol-ka Producciones para Canal 13, recreó famosos casos reales de robos, estafas y desfalcos en Argentina. Con un elenco rotativo de primer nivel y un tono de suspenso, la serie exploró la psicología de los delincuentes y los detalles de los atracos más recordados.",
       "rating": "12,7",
       "productora": "Pol-ka",
-      "tipo_emision": "Semanal"
+      "tipo_emision": "Semanal",
+      "unitarios_rows": [
+        "elencos-rotativos"
+      ]
     },
     {
       "id": "V277",
@@ -22905,6 +22972,9 @@
       "rating": "20,4",
       "productora": "Pol-ka",
       "tipo_emision": "Semanal",
+      "unitarios_rows": [
+        "elencos-rotativos"
+      ],
       "remakes": [
         {
           "title": "Mujeres Asesinas",
@@ -22956,7 +23026,10 @@
       "sinopsis": "Serie de televisión de antología y drama argentina, cuya primera temporada se emitió por Telefe en 2002, mientras que la segunda se emitió por Canal 9. La trama gira en torno a diferentes personas que relataban a una cámara de vídeo sus historias de infidelidades.",
       "rating": "-",
       "productora": "Estevanez Producciones",
-      "tipo_emision": "Semanal"
+      "tipo_emision": "Semanal",
+      "unitarios_rows": [
+        "elencos-rotativos"
+      ]
     },
     {
       "id": "V279",
@@ -22984,7 +23057,10 @@
           "image": "images/verticals/tiempo-final-colombia-2007.png"
         }
       ],
-      "tipo_emision": "Semanal"
+      "tipo_emision": "Semanal",
+      "unitarios_rows": [
+        "elencos-rotativos"
+      ]
     },
     {
       "id": "V281",
