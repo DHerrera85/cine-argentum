@@ -389,6 +389,7 @@
     }
 
 
+
     function formatEditorialDate(item) {
         var date = getItemReleaseDate(item);
 
@@ -396,18 +397,20 @@
             return '';
         }
 
-        var day = date.getDate();
-        var month = MONTH_NAMES[
-            date.getMonth()
-        ];
-        var year = date.getFullYear();
+        var day = String(
+            date.getDate()
+        ).padStart(2, '0');
+
+        var month = String(
+            date.getMonth() + 1
+        ).padStart(2, '0');
 
         return (
             day +
-            ' de ' +
+            '/' +
             month +
-            ' de ' +
-            year
+            '/' +
+            date.getFullYear()
         );
     }
 
@@ -681,22 +684,24 @@
             '"',
             '>',
 
-            format
-                ? '<span class="tiras-2000-format-badge">' +
-                escapeHtml(format) +
-                '</span>'
-                : '',
-
             '</div>',
 
             '<div class="latest-b-text">',
+
+            format
+                ? '<span class="tiras-2000-format-label tiras-2000-format-label--' +
+                escapeHtml(format.toLowerCase().replace(/\s+/g, '-')) +
+                '">' +
+                escapeHtml(format) +
+                '</span>'
+                : '',
 
             '<strong>',
             escapeHtml(title),
             '</strong>',
 
             date
-                ? '<span class="year">' +
+                ? '<span class="tiras-2000-premiere-date">' +
                 escapeHtml(date) +
                 '</span>'
                 : '',

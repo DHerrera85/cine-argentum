@@ -19557,6 +19557,7 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/el-marginal-temporada-1-poster-280x420.png",
+      "horizontal_gallery": [],
       "subtitle": "Thriller",
       "horario": "martes 22hs",
       "capitulos": 43,
@@ -19573,6 +19574,7 @@
           "numero": 1,
           "release_date": "02/07/2016",
           "image": "images/verticals/el-marginal-temporada-1-poster-280x420.png",
+          "horizontal_image": "images/horizontals-1024x576/el-marginal-slide-1024x576.png",
           "netflix_reports": [
             {
               "report_id": "2024-H1",
@@ -21418,6 +21420,7 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/el-tigre-veron-poster-280x420.png",
+      "horizontal_image": "images/horizontals-1024x576/el-tigre-veron-slide-1024x576.png",
       "subtitle": "Thriller",
       "tipo_emision": "Semanal",
       "unitarios_rows": [
@@ -21828,6 +21831,10 @@
       "orientation": "vertical",
       "image": "images/verticals/monzon-poster-280x420.png",
       "horizontal_image": "images/horizontals-1024x576/monzon-slide-1024x576.png",
+      "tipo_emision": "Semanal",
+      "unitarios_rows": [
+        "lanzamientos-cable"
+      ],
       "subtitle": "Thriller"
     },
     {
@@ -21845,7 +21852,11 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/el-host-poster-280x420.png",
-      "subtitle": "Comedia"
+      "subtitle": "Comedia",
+      "tipo_emision": "Semanal",
+      "unitarios_rows": [
+        "lanzamientos-cable"
+      ]
     },
     {
       "id": "V234",
@@ -21862,7 +21873,11 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/psiconautas-poster-280x420.png",
-      "subtitle": "Comedia"
+      "subtitle": "Comedia",
+      "tipo_emision": "Semanal",
+      "unitarios_rows": [
+        "lanzamientos-cable"
+      ]
     },
     {
       "id": "V235",
@@ -21884,7 +21899,10 @@
       "sinopsis": "Un exfutbolista venido a menos y un estudiante obsesivo compiten por un trabajo en una empresa de vigilancia que los somete a pruebas absurdas y humillantes bajo el mando de Lombardi. Sin saberlo, forman parte de un experimento secreto de manipulación psicológica llamado “Proyecto Vigilantes”.",
       "rating": "-",
       "productora": "Winter Channel / INCAA",
-      "tipo_emision": "Semanal"
+      "tipo_emision": "Semanal",
+      "unitarios_rows": [
+        "lanzamientos-cable"
+      ]
     },
     {
       "id": "V236",
@@ -21907,7 +21925,10 @@
       "sinopsis": "La banda del Nafta Súper vuelve a reunirse tras diez meses cuando viejos enemigos y un nuevo traficante amenazan su territorio. Con la policía tras sus pasos y uno de los suyos acusado de asesinato, necesitan que regrese su líder desaparecido para evitar la venganza.",
       "rating": "-",
       "productora": "Turner Broadcasting System Latin America",
-      "tipo_emision": "Semanal"
+      "tipo_emision": "Semanal",
+      "unitarios_rows": [
+        "lanzamientos-cable"
+      ]
     },
     {
       "id": "V237",
@@ -21929,7 +21950,10 @@
       "sinopsis": "Leni cancela un viaje con su novio Lucas para iniciar una rehabilitación física. En el proceso, deberá convivir y forjar un vínculo inesperado con su kinesiólogo, Julián.",
       "rating": "-",
       "productora": "Illusion Studios",
-      "tipo_emision": "Semanal"
+      "tipo_emision": "Semanal",
+      "unitarios_rows": [
+        "lanzamientos-cable"
+      ]
     },
     {
       "id": "V238",
@@ -21950,7 +21974,10 @@
       "sinopsis": "El Pardo es un veterano estafador que, desde la cárcel, recluta a Vicky para liderar una banda, obligándola a convencer a Álex de volver al crimen",
       "rating": "-",
       "productora": "Torneos y Competencias",
-      "tipo_emision": "Semanal"
+      "tipo_emision": "Semanal",
+      "unitarios_rows": [
+        "lanzamientos-cable"
+      ]
     },
     {
       "id": "V239",
@@ -21966,6 +21993,7 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/epitafios-poster-280x420.png",
+      "horizontal_image":"images/horizontals-1024x576/epitafios-slide-1024x576.png",
       "subtitle": "Thriller",
       "horario": "22hs",
       "capitulos": 26,
@@ -21973,7 +22001,10 @@
       "sinopsis": "Narra la cacería de un asesino en serie brillante que anticipa sus crímenes con epitafios, obligando a un policía retirado y a una psiquiatra a enfrentar un pasado traumático",
       "rating": "-",
       "productora": "Pol-Ka",
-      "tipo_emision": "Semanal"
+      "tipo_emision": "Semanal",
+      "unitarios_rows": [
+        "lanzamientos-cable"
+      ]
     },
     {
       "id": "V240",
@@ -22964,6 +22995,7 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/mujeres-asesinas-poster-280x420.png",
+      "horizontal_image": "images/horizontals-1024x576/mujeres-asesinas-slide-1024x576.png",
       "subtitle": "Thriller",
       "horario": "23hs",
       "capitulos": 78,
@@ -23042,6 +23074,7 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/tiempo-final-poster-280x420.png",
+      "horizontal_image": "images/horizontals-1024x576/tiempo-final-slide-1024x576.png",
       "subtitle": "Thriller",
       "horario": "23hs",
       "capitulos": 69,
@@ -24387,6 +24420,10 @@
       "image": "images/verticals/el-jardin-de-bronce-primera temporada-poster-280x420.png",
       "orientation": "vertical",
       "release_date": "25/06/2017",
+      "tipo_emision": "Semanal",
+      "unitarios_rows": [
+        "lanzamientos-cable"
+      ],
       "seasons": 3,
       "producer": "Pol-ka",
       "director": "Hernán Goldfrid",
@@ -24404,7 +24441,8 @@
         {
           "numero": 3,
           "release_date": "02/07/2023",
-          "image": "images/verticals/el-jardin-de-bronce-tercera temporada-poster-280x420.png"
+          "image": "images/verticals/el-jardin-de-bronce-tercera temporada-poster-280x420.png",
+          "horizontal_image": "images/horizontals-1024x576/el-jardin-de-bronce-slide-1024x576.png"
         }
       ]
     }

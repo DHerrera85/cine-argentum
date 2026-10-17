@@ -20,6 +20,15 @@
         'V226', 'V227', 'V228', 'V229',
         'V230', 'V180', 'V231', 'V232'
       ]
+    },
+    {
+      id: 'unitarios-lanzamientos-cable',
+      category: 'lanzamientos-cable',
+      order: [
+        'V280', 'V233', 'S1001', 'V234',
+        'V235', 'V236', 'V237', 'V238',
+        'V239'
+      ]
     }
   ];
 
@@ -103,77 +112,77 @@
   }
 
 
-async function init() {
-  var activeRows = ROWS.filter(function (row) {
-    return document.getElementById(row.id);
-  });
-
-  if (!activeRows.length) return;
-
-  try {
-    var response = await fetch('data.json', {
-      cache: 'no-store'
+  async function init() {
+    var activeRows = ROWS.filter(function (row) {
+      return document.getElementById(row.id);
     });
 
-    if (!response.ok) {
-      throw new Error('No se pudo cargar data.json');
-    }
+    if (!activeRows.length) return;
 
-    var data = await response.json();
-    var items = Array.isArray(data.items)
-      ? data.items
-      : [];
+    try {
+      var response = await fetch('data.json', {
+        cache: 'no-store'
+      });
 
-    var catalog = new Map();
-
-    items.forEach(function (item) {
-      if (item && item.id) {
-        catalog.set(item.id, item);
+      if (!response.ok) {
+        throw new Error('No se pudo cargar data.json');
       }
-    });
 
-    activeRows.forEach(function (row) {
-      var slider = document.getElementById(row.id);
-      var fragment = document.createDocumentFragment();
+      var data = await response.json();
+      var items = Array.isArray(data.items)
+        ? data.items
+        : [];
 
-      row.order.forEach(function (id) {
-        var item = catalog.get(id);
+      var catalog = new Map();
 
-        if (
-          item &&
-          Array.isArray(item.unitarios_rows) &&
-          item.unitarios_rows.includes(row.category) &&
-          item.image &&
-          item.title
-        ) {
-          fragment.appendChild(createCard(item));
-        } else {
-          console.warn(
-            'Unitarios: entrada faltante o sin clasificar:',
-            row.category,
-            id
-          );
+      items.forEach(function (item) {
+        if (item && item.id) {
+          catalog.set(item.id, item);
         }
       });
 
-      if (!fragment.childNodes.length) {
-        console.warn(
-          'Unitarios: galería sin producciones:',
-          row.category
-        );
-        return;
-      }
+      activeRows.forEach(function (row) {
+        var slider = document.getElementById(row.id);
+        var fragment = document.createDocumentFragment();
 
-      slider.replaceChildren(fragment);
-      initializeSlider(slider);
-    });
-  } catch (error) {
-    console.error(
-      'Error al cargar galerías de Unitarios:',
-      error
-    );
+        row.order.forEach(function (id) {
+          var item = catalog.get(id);
+
+          if (
+            item &&
+            Array.isArray(item.unitarios_rows) &&
+            item.unitarios_rows.includes(row.category) &&
+            item.image &&
+            item.title
+          ) {
+            fragment.appendChild(createCard(item));
+          } else {
+            console.warn(
+              'Unitarios: entrada faltante o sin clasificar:',
+              row.category,
+              id
+            );
+          }
+        });
+
+        if (!fragment.childNodes.length) {
+          console.warn(
+            'Unitarios: galería sin producciones:',
+            row.category
+          );
+          return;
+        }
+
+        slider.replaceChildren(fragment);
+        initializeSlider(slider);
+      });
+    } catch (error) {
+      console.error(
+        'Error al cargar galerías de Unitarios:',
+        error
+      );
+    }
   }
-}
 
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', init);
