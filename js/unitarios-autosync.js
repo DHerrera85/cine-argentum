@@ -47,6 +47,15 @@
         'V251', 'V242', 'V245', 'V324',
         'V247', 'V279', 'V260'
       ]
+    },
+
+    {
+      id: 'unitarios-suspenso-crimen',
+      category: 'suspenso-crimen',
+      order: [
+        'V293', 'V240', 'V241', 'V242',
+        'V243', 'V244', 'V324', 'V245'
+      ]
     }
   ];
 

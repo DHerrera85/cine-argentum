@@ -7519,7 +7519,8 @@
       "productora": "Ideas del Sur",
       "tipo_emision": "Semanal",
       "unitarios_rows": [
-        "exitos-2000"
+        "exitos-2000",
+        "suspenso-crimen"
       ]
     },
     {
@@ -14174,7 +14175,10 @@
       "sinopsis": "Sofía Ponte, una exitosa y fría empresaria de cosméticos,  desconfía de sus herederos y trama un complot para evaluar sus verdaderas intenciones, mientras su nieta Amparo se enamora de Félix, quien investiga en secreto un accidente aéreo familiar",
       "rating": "18",
       "productora": "Endemol",
-      "tipo_emision": "Semanal"
+      "tipo_emision": "Semanal",
+      "unitarios_rows": [
+        "suspenso-crimen"
+      ]
     },
     {
       "id": "V294",
@@ -22063,7 +22067,8 @@
       "productora": "Pol-Ka",
       "tipo_emision": "Semanal",
       "unitarios_rows": [
-        "ultimas-unitarios"
+        "ultimas-unitarios",
+        "suspenso-crimen"
       ]
     },
     {
@@ -22087,7 +22092,10 @@
       "sinopsis": "Elmer Van Hess, gerente de sistemas y a punto de casarse, es acusado falsamente de planear el asesinato del presidente y enviado a prisión. Allí es traicionado por un médico que finge ayudarlo a escapar, pero en realidad lo somete a peligrosos experimentos.",
       "rating": "20",
       "productora": "Pol-Ka",
-      "tipo_emision": "Semanal"
+      "tipo_emision": "Semanal",
+      "unitarios_rows": [
+        "suspenso-crimen"
+      ]
     },
     {
       "id": "V242",
@@ -22112,7 +22120,8 @@
       "productora": "Telefe Contenidos",
       "tipo_emision": "Semanal",
       "unitarios_rows": [
-        "exitos-2000"
+        "exitos-2000",
+        "suspenso-crimen"
       ],
       "remakes": [
         {
@@ -22149,7 +22158,10 @@
       "sinopsis": "La trama sigue a Alejandro Ruiz, un remisero que, traumatizado tras el asesinato de su padre, se convierte en un asesino justiciero obsesionado con limpiar la sociedad, siendo perseguido por una implacable fiscal",
       "rating": "-",
       "productora": "Ideas del Sur, Sebastián Ortega",
-      "tipo_emision": "Semanal"
+      "tipo_emision": "Semanal",
+      "unitarios_rows": [
+        "suspenso-crimen"
+      ]
     },
     {
       "id": "V244",
@@ -22172,7 +22184,10 @@
       "sinopsis": "La trama sigue a un grupo de estudiantes universitarios que se encierran en una sede remota para un concurso, donde comienzan a sufrir sucesos escalofriantes, desapariciones y la persecución de una misteriosa figura relacionada con una leyenda local, marcada por el terror psicológico y apariciones",
       "rating": "18,3",
       "productora": "Ideas del Sur, Sebastián Ortega",
-      "tipo_emision": "Semanal"
+      "tipo_emision": "Semanal",
+      "unitarios_rows": [
+        "suspenso-crimen"
+      ]
     },
     {
       "id": "V245",
@@ -22198,7 +22213,8 @@
       "productora": "Telefe Contenidos, Damián Szifrón",
       "tipo_emision": "Semanal",
       "unitarios_rows": [
-        "exitos-2000"
+        "exitos-2000",
+        "suspenso-crimen"
       ],
       "remakes": [
         {
