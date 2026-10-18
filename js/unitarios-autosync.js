@@ -3,6 +3,15 @@
 
   var ROWS = [
     {
+      id: 'unitarios-ultimas',
+      category: 'ultimas-unitarios',
+      horizontal: true,
+      order: [
+        'V221', 'V280', 'V248', 'S1001',
+        'V180', 'V232', 'V240', 'V264'
+      ]
+    },
+    {
       id: 'unitarios-elencos-rotativos',
       category: 'elencos-rotativos',
       order: [

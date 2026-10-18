@@ -19586,7 +19586,7 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/el-marginal-temporada-1-poster-280x420.png",
-      "horizontal_gallery": [],
+      "horizontal_image": "images/horizontals-1024x576/el-marginal-slide-1024x576.png",
       "subtitle": "Thriller",
       "horario": "martes 22hs",
       "capitulos": 43,
@@ -19596,7 +19596,8 @@
       "productora": "Underground Contenidos, Dori Media",
       "tipo_emision": "Semanal",
       "unitarios_rows": [
-        "tv-streaming"
+        "tv-streaming",
+        "ultimas-unitarios"
       ],
       "temporadas": [
         {
@@ -21453,7 +21454,8 @@
       "subtitle": "Thriller",
       "tipo_emision": "Semanal",
       "unitarios_rows": [
-        "tv-streaming"
+        "tv-streaming",
+        "ultimas-unitarios"
       ]
     },
     {
@@ -21816,7 +21818,8 @@
       "fecha_estreno": "09/09/2015",
       "tipo_emision": "Semanal",
       "unitarios_rows": [
-        "tv-streaming"
+        "tv-streaming",
+        "ultimas-unitarios"
       ],
       "sinopsis": "Los Puccio aparentan ser una familia común, pero el patriarca Arquímedes organiza desde su casa una red criminal con la ayuda de sus hijos. Basada en hechos reales, la historia revela la organización familiar del delito y el contraste entre su fachada y la violencia oculta.",
       "rating": "11,8",
@@ -21862,7 +21865,8 @@
       "horizontal_image": "images/horizontals-1024x576/monzon-slide-1024x576.png",
       "tipo_emision": "Semanal",
       "unitarios_rows": [
-        "lanzamientos-cable"
+        "lanzamientos-cable",
+        "ultimas-unitarios"
       ],
       "subtitle": "Thriller"
     },
@@ -22049,6 +22053,7 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/el-puntero-poster-280x420.png",
+      "horizontal_image": "images/horizontals-1024x576/el-puntero-slide-1024x576.png",
       "subtitle": "Thriller",
       "horario": "23hs",
       "capitulos": 39,
@@ -22056,7 +22061,10 @@
       "sinopsis": "Pablo “Gitano” Perotti es un puntero barrial que intermedia las necesidades de su comunidad en un barrio humilde de Buenos Aires. Entre la asistencia social y la corrupción política, se mueve en una zona gris donde el poder tiene su propio precio.",
       "rating": "19,1",
       "productora": "Pol-Ka",
-      "tipo_emision": "Semanal"
+      "tipo_emision": "Semanal",
+      "unitarios_rows": [
+        "ultimas-unitarios"
+      ]
     },
     {
       "id": "V241",
@@ -22289,7 +22297,10 @@
       "sinopsis": "Roberto Sánchez inicia su camino desde sus humildes orígenes en Valentín Alsina hasta convertirse en el ídolo musical conocido como “El Gitano”. La historia recorre su ascenso a la fama, sus romances y su lucha final contra graves enfermedades pulmonares.",
       "rating": "14,7",
       "productora": "The Magic Eye",
-      "tipo_emision": "Tira Diaria"
+      "tipo_emision": "Tira Diaria",
+      "unitarios_rows": [
+        "ultimas-unitarios"
+      ]
     },
     {
       "id": "V249",
@@ -22689,6 +22700,9 @@
       "sinopsis": "Hugo, un hombre trabajador y desencantado, comienza a trabajar en la agencia de citas de su prima haciéndose pasar por el “hombre ideal”. En el proceso, redescubre sus emociones y enfrenta su pasado para volver a creer en el amor.",
       "rating": "20,6",
       "tipo_emision": "Semanal",
+      "unitarios_rows": [
+        "ultimas-unitarios"
+      ],
       "productora": "100 Bares",
       "remakes": [
         {
@@ -24466,11 +24480,13 @@
         "HBO Max"
       ],
       "image": "images/verticals/el-jardin-de-bronce-primera temporada-poster-280x420.png",
+      "horizontal_image": "images/horizontals-1024x576/el-jardin-de-bronce-slide-1024x576.png",
       "orientation": "vertical",
       "release_date": "25/06/2017",
       "tipo_emision": "Semanal",
       "unitarios_rows": [
-        "lanzamientos-cable"
+        "lanzamientos-cable",
+        "ultimas-unitarios"
       ],
       "seasons": 3,
       "producer": "Pol-ka",
