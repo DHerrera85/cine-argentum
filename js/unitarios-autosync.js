@@ -88,8 +88,8 @@
     textBox.appendChild(titleLink);
 
     if (horizontal) {
-      // Mantener la imagen como hija directa de showcase-box.
-      box.appendChild(img);
+      link.appendChild(img);
+      box.appendChild(link);
       li.appendChild(box);
       li.appendChild(textBox);
     } else {
