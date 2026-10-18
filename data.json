@@ -7494,6 +7494,35 @@
       ]
     },
     {
+      "id": "V324",
+      "title": "Tumberos",
+      "year": "2002",
+      "channel": "América",
+      "genre": "Thriller",
+      "actors": [
+        "Germán Palacios",
+        "Belén Blanco",
+        "Carlos Belloso",
+        "Roly Serrano",
+        "Diego Alonso Gómez",
+        "Alejandro Fiore"
+      ],
+      "orientation": "vertical",
+      "image": "images/verticals/2002-tumberos-america-ideas-del-sur-poster280x420.webp",
+      "horizontal_image": "images/horizontals-1024x576/2002-tumberos-america-ideas-del-sur-slide-1024x576.webp",
+      "subtitle": "Drama",
+      "horario": "23hs",
+      "capitulos": 11,
+      "fecha_estreno": "14/10/2002",
+      "sinopsis": "Ulises Parodi, un abogado condenado injustamente por asesinato, ingresa a una cárcel donde deberá adaptarse a un mundo dominado por la violencia y las disputas de poder. Mientras intenta sobrevivir, su abogada busca demostrar su inocencia.",
+      "rating": "10,7",
+      "productora": "Ideas del Sur",
+      "tipo_emision": "Semanal",
+      "unitarios_rows": [
+        "exitos-2000"
+      ]
+    },
+    {
       "id": "P2045",
       "title": "Gutiérrez is Mai Nem",
       "type": "serie",
@@ -21993,7 +22022,7 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/epitafios-poster-280x420.png",
-      "horizontal_image":"images/horizontals-1024x576/epitafios-slide-1024x576.png",
+      "horizontal_image": "images/horizontals-1024x576/epitafios-slide-1024x576.png",
       "subtitle": "Thriller",
       "horario": "22hs",
       "capitulos": 26,
@@ -22074,6 +22103,9 @@
       "rating": "24",
       "productora": "Telefe Contenidos",
       "tipo_emision": "Semanal",
+      "unitarios_rows": [
+        "exitos-2000"
+      ],
       "remakes": [
         {
           "title": "Hermanos y Detectives",
@@ -22157,6 +22189,9 @@
       "rating": "23,9",
       "productora": "Telefe Contenidos, Damián Szifrón",
       "tipo_emision": "Semanal",
+      "unitarios_rows": [
+        "exitos-2000"
+      ],
       "remakes": [
         {
           "title": "Los Simuladores",
@@ -22220,6 +22255,7 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/okupas-poster-280x420.png",
+      "horizontal_image": "images/horizontals-1024x576/okupas-slide-1024x576.png",
       "subtitle": "Thriller",
       "horario": "23hs",
       "capitulos": 11,
@@ -22227,7 +22263,10 @@
       "sinopsis": "Narra el descenso social de Ricardo, un joven de clase media que, al cuidar una casona antigua en Buenos Aires para evitar su ocupación ilegal, se interna en un mundo marginal de drogas, delincuencia y amistad entrañable. Junto a sus amigos El Pollo, Walter y Chiqui, experimenta la crudeza de la supervivencia urbana en medio de la crisis argentina",
       "rating": "3,5",
       "productora": "Ideas del Sur",
-      "tipo_emision": "Semanal"
+      "tipo_emision": "Semanal",
+      "unitarios_rows": [
+        "exitos-2000"
+      ]
     },
     {
       "id": "V248",
@@ -22314,6 +22353,7 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/para-vestir-santos-poster-280x420.png",
+      "horizontal_image": "images/horizontals-1024x576/para-vestir-santos-slide-1024x576.png",
       "subtitle": "Drama",
       "horario": "23hs",
       "capitulos": 36,
@@ -22321,7 +22361,10 @@
       "sinopsis": "Tras la muerte de su madre autoritaria, Susana, Virginia y Malena creen alcanzar la libertad, pero pronto enfrentan nuevas frustraciones. Entre fracasos amorosos y la pérdida de su hogar a manos de su media hermana, deberán reconstruir sus vidas juntas.",
       "rating": "16",
       "productora": "Pol-Ka",
-      "tipo_emision": "Semanal"
+      "tipo_emision": "Semanal",
+      "unitarios_rows": [
+        "exitos-2000"
+      ]
     },
     {
       "id": "V252",
@@ -22531,6 +22574,7 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/vulnerables-poster-280x420.png",
+      "horizontal_image": "images/horizontals-1024x576/vulnerables-slide-1024x576.png",
       "subtitle": "Drama",
       "horario": "23hs",
       "capitulos": 77,
@@ -22546,7 +22590,10 @@
           "image": "images/verticals/el-grupo-españa-2000.png"
         }
       ],
-      "tipo_emision": "Semanal"
+      "tipo_emision": "Semanal",
+      "unitarios_rows": [
+        "exitos-2000"
+      ]
     },
     {
       "id": "V261",
@@ -23092,7 +23139,8 @@
       ],
       "tipo_emision": "Semanal",
       "unitarios_rows": [
-        "elencos-rotativos"
+        "elencos-rotativos",
+        "exitos-2000"
       ]
     },
     {

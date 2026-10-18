@@ -29,29 +29,33 @@
         'V235', 'V236', 'V237', 'V238',
         'V239'
       ]
+    },
+    {
+      id: 'unitarios-exitos-2000',
+      category: 'exitos-2000',
+      horizontal: true,
+      order: [
+        'V251', 'V242', 'V245', 'V324',
+        'V247', 'V279', 'V260'
+      ]
     }
   ];
 
-  function createCard(item) {
+
+  function createCard(item, horizontal) {
     var li = document.createElement('li');
-    li.className = 'item-d';
+    li.className = horizontal ? 'item-b' : 'item-d';
 
     var box = document.createElement('div');
-    box.className = 'latest-box';
-
-    var imageBox = document.createElement('div');
-    imageBox.className = 'latest-b-img';
+    box.className = horizontal ? 'showcase-box' : 'latest-box';
 
     var link = document.createElement('a');
     link.href = 'show.html?id=' + encodeURIComponent(item.id);
 
     var img = document.createElement('img');
-    img.src = item.image;
+    img.src = horizontal ? item.horizontal_image : item.image;
     img.alt = item.title;
     img.loading = 'lazy';
-
-    link.appendChild(img);
-    imageBox.appendChild(link);
 
     var textBox = document.createElement('div');
     textBox.className = 'latest-b-text';
@@ -65,14 +69,28 @@
     titleLink.appendChild(title);
     textBox.appendChild(titleLink);
 
-    box.appendChild(imageBox);
-    box.appendChild(textBox);
-    li.appendChild(box);
+    if (horizontal) {
+      // Mantener la imagen como hija directa de showcase-box.
+      box.appendChild(img);
+      li.appendChild(box);
+      li.appendChild(textBox);
+    } else {
+      // Conservar la estructura original de las tarjetas verticales.
+      var imageBox = document.createElement('div');
+      imageBox.className = 'latest-b-img';
+
+      link.appendChild(img);
+      imageBox.appendChild(link);
+
+      box.appendChild(imageBox);
+      box.appendChild(textBox);
+      li.appendChild(box);
+    }
 
     return li;
   }
 
-  function initializeSlider(element) {
+  function initializeSlider(element, horizontal) {
     if (!window.jQuery ||
       !window.jQuery.fn.lightSlider) {
       console.warn('LightSlider no está disponible');
@@ -86,7 +104,7 @@
     }
 
     $slider.lightSlider({
-      item: 5,
+      item: horizontal ? 3 : 5,
       slideMove: 1,
       slideMargin: 12,
       loop: false,
@@ -95,22 +113,32 @@
       enableTouch: true,
       enableDrag: true,
       freeMove: false,
-      responsive: [
-        {
-          breakpoint: 1100,
-          settings: { item: 4, slideMove: 1 }
-        },
-        {
-          breakpoint: 768,
-          settings: { item: 2, slideMove: 1 }
-        }
-      ],
+      responsive: horizontal
+        ? [
+          {
+            breakpoint: 1100,
+            settings: { item: 2, slideMove: 1 }
+          },
+          {
+            breakpoint: 768,
+            settings: { item: 1, slideMove: 1 }
+          }
+        ]
+        : [
+          {
+            breakpoint: 1100,
+            settings: { item: 4, slideMove: 1 }
+          },
+          {
+            breakpoint: 768,
+            settings: { item: 2, slideMove: 1 }
+          }
+        ],
       onSliderLoad: function () {
         $slider.removeClass('cs-hidden');
       }
     });
   }
-
 
   async function init() {
     var activeRows = ROWS.filter(function (row) {
@@ -152,10 +180,10 @@
             item &&
             Array.isArray(item.unitarios_rows) &&
             item.unitarios_rows.includes(row.category) &&
-            item.image &&
+            (row.horizontal ? item.horizontal_image : item.image) &&
             item.title
           ) {
-            fragment.appendChild(createCard(item));
+            fragment.appendChild(createCard(item, row.horizontal));
           } else {
             console.warn(
               'Unitarios: entrada faltante o sin clasificar:',
@@ -174,7 +202,7 @@
         }
 
         slider.replaceChildren(fragment);
-        initializeSlider(slider);
+        initializeSlider(slider, row.horizontal);
       });
     } catch (error) {
       console.error(
