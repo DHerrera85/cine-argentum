@@ -1541,7 +1541,10 @@
       "sinopsis": "Narra dos historias paralelas: la de José Olaya, un joven minero asturiano que se ve obligado a emigrar a Argentina en el año 1934; y la de su hijo, Ernesto Olaya, un arquitecto argentino que emigra a España en 2001, en busca de una salida a los problemas económicos que acucian a su familia.",
       "rating": "11,4",
       "productora": "Pol-Ka",
-      "tipo_emision": "Semanal"
+      "tipo_emision": "Semanal",
+      "unitarios_rows": [
+        "dramas-unitarios"
+      ]
     },
     {
       "id": "V287",
@@ -22315,7 +22318,8 @@
       "productora": "The Magic Eye",
       "tipo_emision": "Tira Diaria",
       "unitarios_rows": [
-        "ultimas-unitarios"
+        "ultimas-unitarios",
+        "dramas-unitarios"
       ]
     },
     {
@@ -22339,7 +22343,10 @@
       "sinopsis": "Dicky y Lorna son un matrimonio que alcanzó el éxito en los años 80 dentro de la industria pornográfica. Décadas después, enfrentan la decadencia profesional y personal, con su relación al borde del divorcio.",
       "rating": "13,8",
       "productora": "Pol-Ka",
-      "tipo_emision": "Semanal"
+      "tipo_emision": "Semanal",
+      "unitarios_rows": [
+        "dramas-unitarios"
+      ]
     },
     {
       "id": "V250",
@@ -22363,7 +22370,10 @@
       "sinopsis": "La serie transcurre en un espacio terapéutico donde un grupo de pacientes con severas compulsiones enfrenta sus trastornos en sesiones grupales guiadas por el Dr. Ricardo Buso y su equipo. Mientras intentan ayudarlos, los propios terapeutas también deberán confrontar sus miedos y obsesiones.",
       "rating": "8,4",
       "productora": "Pol-Ka",
-      "tipo_emision": "Semanal"
+      "tipo_emision": "Semanal",
+      "unitarios_rows": [
+        "dramas-unitarios"
+      ]
     },
     {
       "id": "V251",
@@ -22390,7 +22400,8 @@
       "productora": "Pol-Ka",
       "tipo_emision": "Semanal",
       "unitarios_rows": [
-        "exitos-2000"
+        "ultimas-unitarios",
+        "dramas-unitarios"
       ]
     },
     {
@@ -22412,7 +22423,10 @@
       "sinopsis": "Tras 22 años juntos, José y Sofía enfrentan una crisis matrimonial mientras él lidia con la quiebra de la juguetería familiar y ella cuestiona su propia vida profesional. Deciden iniciar terapia de pareja para intentar salvar su relación y redefinir su futuro.",
       "rating": "16",
       "productora": "Pol-Ka",
-      "tipo_emision": "Semanal"
+      "tipo_emision": "Semanal",
+      "unitarios_rows": [
+        "dramas-unitarios"
+      ]
     },
     {
       "id": "V253",
@@ -22433,7 +22447,10 @@
       "sinopsis": "\"Martín Montesalvo, un exitoso operador de bolsa, ve derrumbarse su vida al descubrir la infidelidad de su esposa Paula. Sumido en la crisis, se obsesiona con fantasías del pasado para intentar recuperar el sentido de su existencia.\"",
       "rating": "-",
       "productora": "Rosstoc",
-      "tipo_emision": "Semanal"
+      "tipo_emision": "Semanal",
+      "unitarios_rows": [
+        "dramas-unitarios"
+      ]
     },
     {
       "id": "V254",
@@ -22456,7 +22473,10 @@
       "sinopsis": "Las ambiciones de Lucrecia, Fernando y Marga revelarán la feroz lucha interna de una familia por el control definitivo de la empresa que poseen, y cómo el poder los lleva a exhibir su odio.",
       "rating": "-",
       "productora": "Telefe Contenidos",
-      "tipo_emision": "Semanal"
+      "tipo_emision": "Semanal",
+      "unitarios_rows": [
+        "dramas-unitarios"
+      ]
     },
     {
       "id": "V255",
@@ -22481,6 +22501,9 @@
       "rating": "15,7",
       "productora": "Pol-Ka",
       "tipo_emision": "Semanal",
+      "unitarios_rows": [
+        "dramas-unitarios"
+      ],
       "remakes": [
         {
           "title": "Locas de Amor",
@@ -22511,7 +22534,10 @@
       "sinopsis": "La serie explora los conflictos íntimos, deseos y frustraciones de Diego, Sandra, Gastón y Carla, cuatro adultos cuyas vidas se entrelazan a través de la infidelidad y la búsqueda de placer en la vida cotidiana. La trama profundiza en cómo sus secretos sexuales afectan sus vínculos afectivos y la estabilidad de sus relaciones de pareja",
       "rating": "18",
       "productora": "Endemol",
-      "tipo_emision": "Semanal"
+      "tipo_emision": "Semanal",
+      "unitarios_rows": [
+        "dramas-unitarios"
+      ]
     },
     {
       "id": "V257",
@@ -22535,7 +22561,10 @@
       "sinopsis": "La trama sigue a Amelia (Mirta Busnelli), una madama experimentada, y a las mujeres que trabajan con ella, mostrando sus conflictos personales, económicos y sociales con un tono crudo. ",
       "rating": "-",
       "productora": "Ideas del Sur, Sebastián Ortega",
-      "tipo_emision": "Semanal"
+      "tipo_emision": "Semanal",
+      "unitarios_rows": [
+        "dramas-unitarios"
+      ]
     },
     {
       "id": "V258",
@@ -22560,7 +22589,10 @@
       "sinopsis": "La trama se basa en tres parejas de amigos y una mujer recién separada que enfrentan problemas cotidianos, laborales y amorosos: Aníbal y Daniela lidian con una crisis de pareja; Claudio y Adriana enfrentan dificultades económicas y el desempleo de él; Perla intenta rehacer su vida tras sufrir maltrato.",
       "rating": "-",
       "productora": "Pol-Ka",
-      "tipo_emision": "Semanal"
+      "tipo_emision": "Semanal",
+      "unitarios_rows": [
+        "dramas-unitarios"
+      ]
     },
     {
       "id": "V259",
@@ -22583,7 +22615,10 @@
       "sinopsis": "Cuatro amigas de entre 30 y 40 años renuevan cada semana un pacto de confianza para compartir sin filtros sus conflictos, deseos y reproches. Con el correr del tiempo, sus charlas derivan cada vez más en reflexiones abiertas sobre los hombres y la sexualidad.",
       "rating": "-",
       "productora": "Ideas del Sur",
-      "tipo_emision": "Semanal"
+      "tipo_emision": "Semanal",
+      "unitarios_rows": [
+        "dramas-unitarios"
+      ]
     },
     {
       "id": "V260",
@@ -22619,7 +22654,8 @@
       ],
       "tipo_emision": "Semanal",
       "unitarios_rows": [
-        "exitos-2000"
+        "ultimas-unitarios",
+        "dramas-unitarios"
       ]
     },
     {
