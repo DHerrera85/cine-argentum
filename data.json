@@ -18852,6 +18852,9 @@
         "comedias-estelares",
         "para-toda-la-familia"
       ],
+      "unitarios_rows": [
+        "comedias-unitarios"
+      ],
       "image": "images/verticals/qitapenas-poster-280x420.png",
       "subtitle": "Comedia",
       "horario": "martes y jueves 21hs, sábados 10:45hs",
@@ -22678,7 +22681,10 @@
       "sinopsis": "Miguel y Elisa Diamante, casados hace veinte años y con tres hijos, ven resquebrajarse su vida conservadora con la llegada de Fabiana. Su presencia desata un triángulo amoroso que expone secretos y tensiones largamente ocultas.",
       "rating": "10",
       "productora": "Pol-Ka",
-      "tipo_emision": "Semanal"
+      "tipo_emision": "Semanal",
+      "unitarios_rows": [
+        "comedias-unitarios"
+      ]
     },
     {
       "id": "V262",
@@ -22696,6 +22702,9 @@
       "subtitle": "Comedia",
       "tiras_2010_rows": [
         "comedias-estelares"
+      ],
+      "unitarios_rows": [
+        "comedias-unitarios"
       ],
       "horario": "22:30hs, 00:15hs",
       "capitulos": 13,
@@ -22720,6 +22729,9 @@
       "orientation": "vertical",
       "tiras_2010_rows": [
         "comedias-estelares"
+      ],
+      "unitarios_rows": [
+        "comedias-unitarios"
       ],
       "image": "images/verticals/mi-problema-con-las-mujeres-poster-280x420.png",
       "subtitle": "Comedia",
@@ -22753,7 +22765,8 @@
       "rating": "20,6",
       "tipo_emision": "Semanal",
       "unitarios_rows": [
-        "ultimas-unitarios"
+        "ultimas-unitarios",
+        "comedias-unitarios"
       ],
       "productora": "100 Bares",
       "remakes": [
@@ -22792,7 +22805,10 @@
       "sinopsis": "Cuatro hombres, incluyendo a un profesor de filosofía y un ex futbolista, se convierten en acompañantes de mujeres solitarias, terminando envueltos en situaciones ilegales y enredos cómicos al buscar solucionar sus problemas",
       "rating": "-",
       "productora": "Endemol",
-      "tipo_emision": "Semanal"
+      "tipo_emision": "Semanal",
+      "unitarios_rows": [
+        "comedias-unitarios"
+      ]
     },
     {
       "id": "P1402",
@@ -22837,6 +22853,9 @@
       "rating": "3,3",
       "productora": "Rosstoc/Farfán/Fox Television Studios",
       "tipo_emision": "Semanal",
+      "unitarios_rows": [
+        "comedias-unitarios"
+      ],
       "remakes": [
         {
           "title": "Chico Reality",
@@ -22867,6 +22886,9 @@
       "rating": "15,1",
       "productora": "Pol-Ka",
       "tipo_emision": "Semanal",
+      "unitarios_rows": [
+        "comedias-unitarios"
+      ],
       "remakes": [
         {
           "title": "Socias",
@@ -22896,6 +22918,9 @@
       "rating": "-",
       "productora": "-",
       "tipo_emision": "Semanal",
+      "unitarios_rows": [
+        "comedias-unitarios"
+      ],
       "remakes": [
         {
           "title": "Soy Tu Fan",
@@ -22927,7 +22952,10 @@
       "sinopsis": "La misteriosa muerte de Alicia Oviedo sacude al barrio Manzanares y expone secretos ocultos tras la vida aparentemente perfecta de sus vecinas. Cuatro amas de casa enfrentan crisis familiares, pasiones y rivalidades mientras el enigma detrás de la muerte comienza a revelarse.",
       "rating": "18,7",
       "productora": "Pol-Ka",
-      "tipo_emision": "Semanal"
+      "tipo_emision": "Semanal",
+      "unitarios_rows": [
+        "comedias-unitarios"
+      ]
     },
     {
       "id": "V270",
@@ -22949,7 +22977,10 @@
       "sinopsis": "Los detectives Melchor Mosca y Carlos Smith son dos policías del barrio de Once, que deben resolver un caso vinculado a su jurisdicción en cada episodio, y que responden a un fiscal con ambiciones mediáticas que sueña con convertir al barrio en la Nueva York de Giuliani.",
       "rating": "-",
       "productora": "Telefe Contenidos",
-      "tipo_emision": "Semanal"
+      "tipo_emision": "Semanal",
+      "unitarios_rows": [
+        "comedias-unitarios"
+      ]
     },
     {
       "id": "V271",
@@ -22971,6 +23002,9 @@
       "sinopsis": "Tres hombres divorciados—Miguel, Marcelo y Guillermo — enfrentan la crianza de sus hijos, las relaciones con sus exmujeres y la búsqueda de nuevos vínculos",
       "rating": "-",
       "productora": "Telefe Contenidos",
+      "unitarios_rows": [
+        "comedias-unitarios"
+      ],
       "tipo_emision": "Semanal"
     },
     {
@@ -22993,6 +23027,9 @@
       "rating": "9,7",
       "productora": "Pol-ka",
       "tipo_emision": "Semanal",
+      "unitarios_rows": [
+        "comedias-unitarios"
+      ],
       "remakes": [
         {
           "title": "Durmiendo con mi Jefe",
@@ -23023,7 +23060,10 @@
       "sinopsis": "La miniserie retrata la forzosa convivencia entre Roberto, un hombre descolocado tras ser abandonado por su esposa, y Alejandro, un licenciado en filosofía gay que se instala en el mismo departamento. ",
       "rating": "-",
       "productora": "Martín Seefeld, Federico D'Elía",
-      "tipo_emision": "Semanal"
+      "tipo_emision": "Semanal",
+      "unitarios_rows": [
+        "comedias-unitarios"
+      ]
     },
     {
       "id": "V274",
