@@ -8,7 +8,8 @@
 
   <!-- CSS -->
   <link rel="stylesheet" href="css/style.css?v=2.0" />
-  <link rel="stylesheet" href="css/main-wrap.css?v=1.0" />
+  <link rel="stylesheet" href="css/tiras-2000-catalog.css?v=1.9" />
+  <link rel="stylesheet" href="css/streaming-catalog.css?v=1.16" />
   <link rel="stylesheet" href="css/lightslider.css?v=2.0" />
 
   <!-- Fuente -->
@@ -39,9 +40,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     referrerpolicy="no-referrer" />
 
-  <!-- Tipografía base segura + hamburguesa + fondo púrpura-azul oscuro para unitarios -->
+  <!-- Tipografía base segura + hamburguesa + fondo azul para Unitarios -->
   <style>
-    /* IMPORTANTE: Fondo púrpura-azul oscuro para toda la página unitarios.html */
     body,
     html {
       font-family: Poppins, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
@@ -57,9 +57,8 @@
     }
 
     /* Asegurar que todas las secciones mantengan el fondo transparente */
-    section,
-    #main,
-    #latest {
+    .tiras-2000-page,
+    .tiras-2000-featured-block {
       background: transparent !important;
       background-image: none !important;
     }
@@ -71,38 +70,48 @@
       box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
     }
 
-    /* Mejorar contraste de headings sobre fondo púrpura-azul oscuro */
+    /* Mejorar contraste de headings sobre fondo azul oscuro */
     .showcase-heading,
     .latest-heading {
       color: #e3e6ff !important;
       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
     }
 
-    /* Texto claro en sliders HORIZONTALES */
-    .slider-h .latest-b-text strong {
+    .tiras-2000-page {
+      color: #ffffff;
+    }
+
+    .tiras-2000-featured-block {
+      padding-top: 92px;
+    }
+
+    /* Texto claro en las tarjetas sobre el fondo azul */
+    .tiras-2000-section .latest-b-text strong,
+    .tiras-2000-section .latest-b-text .year,
+    .tiras-2000-section .latest-b-text p {
       color: #e3e6ff !important;
     }
 
-    .slider-h .latest-b-text p {
+    .tiras-2000-section .latest-b-text .year {
       color: #b8bfde !important;
     }
 
-    /* Hacer transparente el fondo completo de sliders verticales */
-    .slider-v .latest-box {
-      background: transparent !important;
-      box-shadow: none !important;
+    #unitarios-channels .tiras-2010-channel-tabs {
+      margin: 0 !important;
+      padding: 0 0 12px !important;
     }
 
-    .slider-v .latest-b-text {
-      background: transparent !important;
+    #unitarios-channels .streaming-platform-tab {
+      box-sizing: border-box;
+      min-width: 0;
     }
 
-    .slider-v .latest-b-text strong {
-      color: #e3e6ff !important;
-    }
-
-    .slider-v .latest-b-text p {
-      color: #b8bfde !important;
+    #unitarios-channels .streaming-platform-logo {
+      max-width: 150px;
+      max-height: 90px;
+      width: auto;
+      height: 70px;
+      object-fit: contain;
     }
 
     img {
@@ -216,62 +225,158 @@
       </ul>
     </nav>
 
-    <!-- Destacadas (H) -->
-    <section id="main">
-      <h1 class="showcase-heading">ÚLTIMAS</h1>
+    <!-- Estrenos históricos -->
+    <div class="tiras-2000-featured-block">
+      <section id="unitarios-historical-premieres"
+        class="tiras-2000-section tiras-2000-calendar-section tiras-2000-vertical-showcase" hidden>
+        <h1 class="tiras-2000-calendar-title">Estrenos de Unitarios</h1>
+        <div class="tiras-2000-calendar-controls">
+          <div class="tiras-2000-month-navigation">
+            <button id="unitarios-months-previous" type="button"
+              class="tiras-2000-month-arrow tiras-2000-month-arrow-previous" aria-label="Ver meses anteriores">
+              <i class="fas fa-chevron-left" aria-hidden="true"></i>
+            </button>
+            <div id="unitarios-historical-month-tabs" class="tiras-2000-month-tabs" role="tablist"
+              aria-label="Seleccionar mes de estreno">
+              <button type="button" class="tiras-2000-month-tab" role="tab" data-month="0" aria-selected="false"
+                aria-controls="unitarios-historical-premieres-list">Enero</button>
+              <button type="button" class="tiras-2000-month-tab" role="tab" data-month="1" aria-selected="false"
+                aria-controls="unitarios-historical-premieres-list">Febrero</button>
+              <button type="button" class="tiras-2000-month-tab" role="tab" data-month="2" aria-selected="false"
+                aria-controls="unitarios-historical-premieres-list">Marzo</button>
+              <button type="button" class="tiras-2000-month-tab" role="tab" data-month="3" aria-selected="false"
+                aria-controls="unitarios-historical-premieres-list">Abril</button>
+              <button type="button" class="tiras-2000-month-tab" role="tab" data-month="4" aria-selected="false"
+                aria-controls="unitarios-historical-premieres-list">Mayo</button>
+              <button type="button" class="tiras-2000-month-tab" role="tab" data-month="5" aria-selected="false"
+                aria-controls="unitarios-historical-premieres-list">Junio</button>
+              <button type="button" class="tiras-2000-month-tab" role="tab" data-month="6" aria-selected="false"
+                aria-controls="unitarios-historical-premieres-list">Julio</button>
+              <button type="button" class="tiras-2000-month-tab" role="tab" data-month="7" aria-selected="false"
+                aria-controls="unitarios-historical-premieres-list">Agosto</button>
+              <button type="button" class="tiras-2000-month-tab" role="tab" data-month="8" aria-selected="false"
+                aria-controls="unitarios-historical-premieres-list">Septiembre</button>
+              <button type="button" class="tiras-2000-month-tab" role="tab" data-month="9" aria-selected="false"
+                aria-controls="unitarios-historical-premieres-list">Octubre</button>
+              <button type="button" class="tiras-2000-month-tab" role="tab" data-month="10" aria-selected="false"
+                aria-controls="unitarios-historical-premieres-list">Noviembre</button>
+              <button type="button" class="tiras-2000-month-tab" role="tab" data-month="11" aria-selected="false"
+                aria-controls="unitarios-historical-premieres-list">Diciembre</button>
+            </div>
+            <button id="unitarios-months-next" type="button"
+              class="tiras-2000-month-arrow tiras-2000-month-arrow-next" aria-label="Ver meses siguientes">
+              <i class="fas fa-chevron-right" aria-hidden="true"></i>
+            </button>
+          </div>
+          <span id="unitarios-historical-premieres-count" class="tiras-2000-count" aria-live="polite" hidden></span>
+        </div>
+        <ul id="unitarios-historical-premieres-list" class="slider-v cs-hidden" data-skip-auto="true"
+          aria-label="Estrenos de unitarios argentinos"></ul>
+        <p id="unitarios-historical-premieres-empty" class="tiras-2000-calendar-empty" role="status" hidden>
+          No hay estrenos registrados para este mes.
+        </p>
+      </section>
+    </div>
 
-      <ul id="unitarios-ultimas" class="slider-h cs-hidden" data-skip-auto="true">
-      </ul>
+    <main class="tiras-2000-page">
+      <!-- Destacadas (H) -->
+      <section id="unitarios-ultimas-section" class="tiras-2000-section tiras-2000-horizontal-showcase">
+        <div class="tiras-2000-section-heading">
+          <h1 class="showcase-heading">ÚLTIMAS</h1>
+          <span id="unitarios-ultimas-count" class="tiras-2000-count" aria-live="polite" hidden></span>
+        </div>
+        <ul id="unitarios-ultimas" class="slider-h cs-hidden" data-skip-auto="true"></ul>
+      </section>
 
-    </section>
+      <!-- De la TV al streaming (V) -->
+      <section id="unitarios-tv-streaming-section" class="tiras-2000-section tiras-2000-vertical-showcase">
+        <div class="tiras-2000-section-heading">
+          <h2 class="latest-heading">De la TV al streaming</h2>
+          <span id="unitarios-tv-streaming-count" class="tiras-2000-count" aria-live="polite" hidden></span>
+        </div>
+        <ul id="unitarios-tv-streaming" class="slider-v cs-hidden" data-skip-auto="true"></ul>
+      </section>
 
-    <!-- De la TV al streaming (V) -->
-    <section id="latest">
-      <h2 class="latest-heading">De la TV al streaming</h2>
-      <ul id="unitarios-tv-streaming" class="slider-v cs-hidden" data-skip-auto="true">
-      </ul>
-    </section>
+      <!-- Lanzamientos del cable (V) -->
+      <section id="unitarios-lanzamientos-cable-section" class="tiras-2000-section tiras-2000-vertical-showcase">
+        <div class="tiras-2000-section-heading">
+          <h2 class="latest-heading">Lanzamientos del cable</h2>
+          <span id="unitarios-lanzamientos-cable-count" class="tiras-2000-count" aria-live="polite" hidden></span>
+        </div>
+        <ul id="unitarios-lanzamientos-cable" class="slider-v cs-hidden" data-skip-auto="true"></ul>
+      </section>
 
-    <!-- Lanzamientos del cable (V) -->
-    <section id="latest">
-      <h2 class="latest-heading">Lanzamientos del cable</h2>
-      <ul id="unitarios-lanzamientos-cable" class="slider-v cs-hidden" data-skip-auto="true">
-      </ul>
-    </section>
+      <!-- Grandes Éxitos (H) -->
+      <section id="unitarios-exitos-2000-section" class="tiras-2000-section tiras-2000-horizontal-showcase">
+        <div class="tiras-2000-section-heading">
+          <h1 class="showcase-heading">Exitos del 2000</h1>
+          <span id="unitarios-exitos-2000-count" class="tiras-2000-count" aria-live="polite" hidden></span>
+        </div>
+        <ul id="unitarios-exitos-2000" class="slider-h cs-hidden" data-skip-auto="true"></ul>
+      </section>
 
-    <!-- Grandes Éxitos (H) -->
-    <section id="main">
-      <h1 class="showcase-heading">Exitos del 2000</h1>
+      <!-- Suspenso y crimen -->
+      <section id="unitarios-suspenso-crimen-section" class="tiras-2000-section tiras-2000-vertical-showcase">
+        <div class="tiras-2000-section-heading">
+          <h2 class="latest-heading">Suspenso/Crimen</h2>
+          <span id="unitarios-suspenso-crimen-count" class="tiras-2000-count" aria-live="polite" hidden></span>
+        </div>
+        <ul id="unitarios-suspenso-crimen" class="slider-v cs-hidden" data-skip-auto="true"></ul>
+      </section>
 
-      <ul id="unitarios-exitos-2000" class="slider-h cs-hidden" data-skip-auto="true">
-      </ul>
-    </section>
+      <!-- Dramas -->
+      <section id="unitarios-dramas-section" class="tiras-2000-section tiras-2000-vertical-showcase">
+        <div class="tiras-2000-section-heading">
+          <h2 class="latest-heading">Dramas</h2>
+          <span id="unitarios-dramas-count" class="tiras-2000-count" aria-live="polite" hidden></span>
+        </div>
+        <ul id="unitarios-dramas" class="slider-v cs-hidden" data-skip-auto="true"></ul>
+      </section>
 
-    <!-- Dramas (V) -->
-    <section id="latest">
-      <h2 class="latest-heading">Suspenso/Crimen</h2>
+      <!-- Comedias -->
+      <section id="unitarios-comedias-section" class="tiras-2000-section tiras-2000-vertical-showcase">
+        <div class="tiras-2000-section-heading">
+          <h2 class="latest-heading">Comedias</h2>
+          <span id="unitarios-comedias-count" class="tiras-2000-count" aria-live="polite" hidden></span>
+        </div>
+        <ul id="unitarios-comedias" class="slider-v cs-hidden" data-skip-auto="true"></ul>
+      </section>
 
-      <ul id="unitarios-suspenso-crimen" class="slider-v cs-hidden" data-skip-auto="true"></ul>
-    </section>
+      <!-- Elencos Rotativos -->
+      <section id="unitarios-elencos-rotativos-section" class="tiras-2000-section tiras-2000-vertical-showcase">
+        <div class="tiras-2000-section-heading">
+          <h2 class="latest-heading">Elencos Rotativos</h2>
+          <span id="unitarios-elencos-rotativos-count" class="tiras-2000-count" aria-live="polite" hidden></span>
+        </div>
+        <ul id="unitarios-elencos-rotativos" class="slider-v cs-hidden" data-skip-auto="true"></ul>
+      </section>
 
-    <!-- Miniseries -->
-    <section id="latest">
-      <h2 class="latest-heading">Dramas</h2>
-      <ul id="unitarios-dramas" class="slider-v cs-hidden" data-skip-auto="true"></ul>
-    </section>
+      <!-- Canales de TV -->
+      <section id="unitarios-channels" class="streaming-platforms-section"
+        aria-labelledby="unitarios-channels-heading">
+        <h2 id="unitarios-channels-heading" class="latest-heading">Canales de Unitarios</h2>
+        <div class="slider-genres streaming-platform-tabs tiras-2010-channel-tabs" role="navigation"
+          aria-label="Canales de televisión con unitarios argentinos">
+          <a class="streaming-platform-tab" href="telefe.html" aria-label="Telefe">
+            <img src="images/logos/telefe-logo-120x120.png" alt="Telefe" class="streaming-platform-logo">
+          </a>
+          <a class="streaming-platform-tab" href="canal-13.html" aria-label="Canal 13">
+            <img src="images/logos/canal-13-logo-120x120.png" alt="Canal 13" class="streaming-platform-logo">
+          </a>
+          <a class="streaming-platform-tab" href="canal-9.html" aria-label="Canal 9">
+            <img src="images/logos/elnueve-ls83-tv-canal-9-whitefont.png" alt="Canal 9" class="streaming-platform-logo">
+          </a>
+          <a class="streaming-platform-tab" href="america.html" aria-label="América">
+            <img src="images/logos/america-logo-120x120.png" alt="América" class="streaming-platform-logo">
+          </a>
+          <a class="streaming-platform-tab" href="canal7.html" aria-label="TV Pública">
+            <img src="images/logos/television-argentina-2017-white-logo-transparent-preview.png" alt="TV Pública"
+              class="streaming-platform-logo">
+          </a>
+        </div>
+      </section>
 
-    <!-- Comedias -->
-    <section id="latest">
-      <h2 class="latest-heading">Comedias</h2>
-      <ul id="unitarios-comedias" class="slider-v cs-hidden" data-skip-auto="true"></ul>
-    </section>
-
-    <!-- Elencos Rotativos -->
-    <section id="latest">
-      <h2 class="latest-heading">Elencos Rotativos</h2>
-      <ul id="unitarios-elencos-rotativos" class="slider-v cs-hidden" data-skip-auto="true">
-      </ul>
-    </section>
+    </main>
 
     <!-- footer -->
     <footer>
@@ -284,7 +389,7 @@
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   <script src="js/lightslider.js"></script>
   <script src="js/script.js?v=20260226-1"></script>
-  <script src="js/unitarios-autosync.js?v=5"></script>
+  <script src="js/unitarios-autosync.js?v=6"></script>
 </body>
 
 </html>
