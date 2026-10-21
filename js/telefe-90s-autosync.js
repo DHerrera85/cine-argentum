@@ -674,7 +674,7 @@ function renderFeaturedSlider() {
     window.jQuery.fn.lightSlider
   ) {
     window.jQuery(slider).lightSlider({
-      item: 3,
+      item: 2,
       autoWidth: false,
       slideMove: 1,
       slideMargin: 20,

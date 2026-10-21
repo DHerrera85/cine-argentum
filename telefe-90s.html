@@ -161,43 +161,194 @@
       text-decoration: underline;
     }
 
-    .channel-heading {
-      display: flex;
+
+    /* Cabecera Telefe 90s */
+
+    .telefe-hero {
+      display: grid;
+      grid-template-columns: minmax(260px, 30%) minmax(0, 1fr);
       align-items: center;
-      gap: 22px;
+      gap: 28px;
+      width: 100%;
+      position: relative;
+      isolation: isolate;
+      padding: 32px 28px;
+      box-sizing: border-box;
+      border-radius: 22px;
+      overflow: hidden;
+
+      background:
+        radial-gradient(circle at 18% 45%,
+          rgba(24, 91, 164, .58) 0%,
+          transparent 32%),
+        radial-gradient(circle at 52% 40%,
+          rgba(25, 135, 78, .38) 0%,
+          transparent 35%),
+        radial-gradient(circle at 88% 42%,
+          rgba(170, 35, 67, .40) 0%,
+          transparent 32%),
+        linear-gradient(135deg,
+          #17283e 0%,
+          #152630 52%,
+          #261b2d 100%);
+
+      border: 1px solid rgba(255, 255, 255, .10);
+      box-shadow: 0 12px 32px rgba(0, 0, 0, .20);
     }
 
-    .channel-heading-logo-wrap {
-      width: 112px;
-      height: 112px;
-      flex: 0 0 112px;
+    .telefe-hero::before {
+      content: "";
+      position: absolute;
+      inset: 0 0 auto;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, .32), transparent);
+      pointer-events: none;
+    }
+
+    .telefe-hero-brand {
+      min-width: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      gap: 18px;
+    }
+
+
+    .telefe-hero-logo {
+      width: 100%;
+      max-width: 340px;
+      min-height: 220px;
       display: flex;
       align-items: center;
       justify-content: center;
-      padding: 10px;
-      box-sizing: border-box;
-      border-radius: 18px;
-      background: linear-gradient(135deg, #00b5c8 0%, #008da3 100%);
+      background: transparent;
     }
 
-    .channel-heading-text {
-      min-width: 0;
+    .telefe-hero-logo img {
+      display: block;
+      width: 85%;
+      height: auto;
+      max-width: 300px;
+      object-fit: contain;
     }
 
-    .channel-heading-text .showcase-heading {
+    .telefe-hero-text .telefe-hero-eyebrow {
+      margin: 0 0 8px;
+      color: #a9c6db;
+      font-size: .72rem;
+      font-weight: 600;
+      letter-spacing: .14em;
+      line-height: 1.4;
+      text-transform: uppercase;
+    }
+
+    .telefe-hero-text h1 {
       margin: 0;
-      padding: 0;
-      color: #ffffff;
-      font-size: clamp(1.7rem, 3vw, 2.6rem);
-      line-height: 1.15;
-      text-transform: none;
+      color: #fff;
+      font-size: clamp(1.5rem, 2vw, 2.2rem);
+      font-weight: 700;
+      letter-spacing: -.035em;
+      line-height: 1.2;
+      text-wrap: balance;
     }
 
-    .channel-heading-description {
+    .telefe-hero-text p {
       margin: 10px 0 0;
       color: #b8bec6;
-      font-size: 1.05rem;
+      font-size: .95rem;
       line-height: 1.6;
+      text-wrap: balance;
+    }
+
+    .telefe-hero-featured {
+      min-width: 0;
+      width: 100%;
+    }
+
+    .telefe-hero-featured>.showcase-heading {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin: 0 0 18px;
+      color: #fff;
+      font-size: 1.05rem;
+      letter-spacing: .08em;
+      line-height: 1.3;
+      text-transform: uppercase;
+    }
+
+    .telefe-hero-featured>.showcase-heading::after {
+      content: "";
+      flex: 1;
+      height: 1px;
+      background: linear-gradient(90deg, rgba(255, 255, 255, .32), transparent);
+    }
+
+    .telefe-hero-featured .showcase-box {
+      width: 100%;
+      max-width: 100%;
+      margin: 0 0 14px;
+      box-sizing: border-box;
+    }
+
+    #telefe-destacadas a:focus-visible {
+      outline: 2px solid #8de4ee;
+      outline-offset: 4px;
+      border-radius: 14px;
+    }
+
+
+    @media (max-width: 767px) {
+      .telefe-hero {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 22px;
+        padding: 24px 16px;
+        border-radius: 18px;
+      }
+
+      .telefe-hero-brand {
+        width: 100%;
+        gap: 12px;
+      }
+
+      .telefe-hero-logo {
+        max-width: 260px;
+        min-height: 160px;
+      }
+
+      .telefe-hero-logo img {
+        width: 85%;
+      }
+
+      .telefe-hero-text .telefe-hero-eyebrow {
+        font-size: .66rem;
+      }
+
+      .telefe-hero-text h1 {
+        font-size: 1.6rem;
+      }
+
+      .telefe-hero-text p {
+        font-size: .9rem;
+        line-height: 1.5;
+      }
+
+      .telefe-hero-featured {
+        width: 100%;
+        min-width: 0;
+      }
+
+      .telefe-hero-featured>.showcase-heading {
+        margin-bottom: 14px;
+        font-size: 1rem;
+      }
+    }
+
+    #telefe-destacadas .slider-h {
+      margin: 0;
+      padding: 0;
     }
 
     .channel-decade-nav {
@@ -568,13 +719,6 @@
 
     }
 
-    @media (min-width: 768px) {
-      #telefe-destacadas .showcase-box {
-        width: 100%;
-        margin: 0 0 14px;
-        box-sizing: border-box;
-      }
-    }
   </style>
 </head>
 
@@ -621,70 +765,60 @@
           &larr; Volver a TV 90s
         </a>
 
-        <div class="channel-heading">
-          <div class="channel-heading-logo-wrap">
-            <img src="images/logos/telefe-1990-120x120.png" alt="Logo histórico de Telefe"
-              class="channel-heading-logo" />
+
+
+        <div class="telefe-hero">
+
+          <!-- Identidad visual fija de Telefe -->
+          <div class="telefe-hero-brand">
+            <div class="telefe-hero-logo">
+              <img src="images/logos/Telefe_1990_2.webp" alt="Telefe años 90" />
+            </div>
+
+            <div class="telefe-hero-text">
+              <p class="telefe-hero-eyebrow">Archivo Telefe · 1990–1999</p>
+              <h1>Telefe en los años 90</h1>
+              <p>Ficciones de Telefe entre 1990 y 1999.</p>
+            </div>
           </div>
 
-          <div class="channel-heading-text">
-            <h1 class="showcase-heading">Telefe en los años 90</h1>
-            <p class="channel-heading-description">
-              Ficciones de Telefe entre 1990 y 1999.
-            </p>
-          </div>
+          <!-- Carrusel dinámico existente -->
+          <section id="telefe-destacadas" class="telefe-hero-featured" aria-label="Producciones destacadas de Telefe">
+
+            <h2 class="showcase-heading">Producciones destacadas</h2>
+
+            <ul id="telefe-featured-slider" class="slider-h cs-hidden" data-skip-auto="true">
+            </ul>
+
+          </section>
+
         </div>
+
 
         <div class="channel-decade-nav" role="navigation" aria-label="Explorar Telefe por década">
 
-          <!-- Telefe 90s -->
-          <a href="telefe-90s.html" class="channel-decade-card active" aria-current="page"
-            title="Ficciones de Telefe de los años 90">
-
+          <a href="telefe-90s.html" class="channel-decade-card active" aria-current="page">
             <span class="channel-decade-card-logo">
               <img src="images/logos/telefe-1990-120x120.png" alt="Telefe años 90">
             </span>
-
-            <span class="channel-decade-card-label">
-              Telefe 90s
-            </span>
-
+            <span class="channel-decade-card-label">Telefe 90s</span>
           </a>
 
-          <!-- Telefe 2000–2009 -->
-          <a href="telefe-00s.html" class="channel-decade-card" title="Ver ficciones de Telefe de 2000 a 2009">
-
+          <a href="telefe-00s.html" class="channel-decade-card">
             <span class="channel-decade-card-logo">
               <img src="images/logos/telefe-logo-2000s.png" alt="Telefe años 2000">
             </span>
-
-            <span class="channel-decade-card-label">
-              Telefe 2000–2009
-            </span>
-
+            <span class="channel-decade-card-label">Telefe 2000–2009</span>
           </a>
 
-          <!-- Telefe 2010–2026 -->
-          <a href="telefe-10s.html" class="channel-decade-card" title="Ver ficciones de Telefe de 2010 a 2026">
-
+          <a href="telefe-10s.html" class="channel-decade-card">
             <span class="channel-decade-card-logo">
               <img src="images/logos/telefe-logo-120x120.png" alt="Telefe 2010–2026">
             </span>
-
-            <span class="channel-decade-card-label">
-              Telefe 2010–2026
-            </span>
-
+            <span class="channel-decade-card-label">Telefe 2010–2026</span>
           </a>
 
         </div>
-      </section>
-
-      <!-- Producciones destacadas -->
-      <section id="telefe-destacadas" class="telefe-section">
-        <h2 class="showcase-heading">Producciones destacadas</h2>
-        <ul id="telefe-featured-slider" class="slider-h cs-hidden" data-skip-auto="true">
-        </ul>
 
       </section>
 
