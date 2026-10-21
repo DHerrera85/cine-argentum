@@ -582,7 +582,7 @@ body.disney-page {
   width: 100%;
   aspect-ratio: 2 / 3;
   object-fit: cover;
-  border-radius: 12px 12px 0 0;
+  border-radius: 14px;
 }
 
 .disney-page #actorMoviesList .actor-movie-info {
