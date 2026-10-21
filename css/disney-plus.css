@@ -634,3 +634,119 @@ body.disney-page {
     font-size: .8rem;
   }
 }
+/* B5 — Disney+: Emisiones en TV */
+
+.disney-page .disney-tv-section {
+  margin-top: 42px;
+  padding-top: 30px;
+  border-top: 1px solid rgba(255, 255, 255, .08);
+}
+
+.disney-page .disney-tv-section .disney-section-title {
+  margin: 0 12px 6px;
+}
+
+.disney-page .disney-tv-section .disney-section-sub {
+  margin: 0 12px 20px;
+  color: #aeb6c0;
+  font-size: .95rem;
+}
+
+.disney-page #disney-tv-list {
+  margin-top: 20px;
+}
+
+/* Tarjetas con el diseño de Netflix */
+
+.disney-page #disney-tv-list .actor-movie-card {
+  min-width: 0;
+  overflow: visible;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.disney-page #disney-tv-list .actor-movie-card:hover {
+  transform: translateY(-4px);
+  box-shadow: none;
+}
+
+.disney-page #disney-tv-list .actor-movie-card a {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  color: inherit;
+  text-decoration: none;
+}
+
+.disney-page #disney-tv-list .actor-movie-card img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 2 / 3;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.disney-page #disney-tv-list .actor-movie-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  padding: 12px 4px 0;
+  text-align: center;
+}
+
+.disney-page #disney-tv-list .actor-movie-title {
+  margin: 0;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.3;
+  text-align: center;
+}
+
+.disney-page #disney-tv-list .actor-movie-meta {
+  margin: 0;
+  color: #aeb6c0;
+  font-size: .9rem;
+  text-align: center;
+}
+
+/* Identidad Disney+: canal en turquesa */
+
+.disney-page #disney-tv-list .disney-tv-channel {
+  margin-top: 2px;
+  color: #35d3e6;
+  font-size: .9rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  .disney-page .disney-tv-section {
+    margin-top: 34px;
+    padding-top: 26px;
+  }
+
+  .disney-page .disney-tv-section .disney-section-sub {
+    margin-right: 4px;
+    margin-left: 4px;
+  }
+}
+
+@media (max-width: 600px) {
+  .disney-page #disney-tv-list .actor-movie-info {
+    gap: 3px;
+    padding: 10px 1px 0;
+  }
+
+  .disney-page #disney-tv-list .actor-movie-title {
+    font-size: .92rem;
+  }
+
+  .disney-page #disney-tv-list .actor-movie-meta,
+  .disney-page #disney-tv-list .disney-tv-channel {
+    font-size: .82rem;
+  }
+}

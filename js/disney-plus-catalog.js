@@ -10,6 +10,10 @@
   const count = document.getElementById('disney-catalog-count');
   const totalCount = document.getElementById('actor-movie-count');
 
+  const tvSection = document.getElementById('disney-tv-broadcasts');
+  const tvGrid = document.getElementById('disney-tv-list');
+  const tvCount = document.getElementById('disney-tv-count');
+
   if (!grid || !yearContainer || !genreContainer) return;
 
   function isDisney(item) {
@@ -124,6 +128,74 @@
     }
   }
 
+  function renderTvBroadcasts(items) {
+    if (!tvSection || !tvGrid) return;
+
+    const televised = items
+      .filter(item =>
+        Array.isArray(item.air_broadcasts) &&
+        item.air_broadcasts.length > 0
+      )
+      .map(item => {
+        const broadcasts = item.air_broadcasts
+          .filter(b => b && b.channel)
+          .sort((a, b) =>
+            (parseDate(b.premiere_date) ?? 0) -
+            (parseDate(a.premiere_date) ?? 0)
+          );
+
+        return { item, broadcast: broadcasts[0] };
+      })
+      .filter(entry => entry.broadcast)
+      .sort((a, b) =>
+        (parseDate(b.broadcast.premiere_date) ?? 0) -
+        (parseDate(a.broadcast.premiere_date) ?? 0)
+      );
+
+    tvGrid.replaceChildren();
+
+    for (const { item, broadcast } of televised) {
+      const card = document.createElement('div');
+      card.className = 'actor-movie-card';
+
+      const link = document.createElement('a');
+      link.href = 'show.html?id=' + encodeURIComponent(item.id);
+
+      const image = document.createElement('img');
+      image.src = item.image || '';
+      image.alt = item.title || '';
+      image.loading = 'lazy';
+
+      const info = document.createElement('div');
+      info.className = 'actor-movie-info';
+
+      const title = document.createElement('div');
+      title.className = 'actor-movie-title';
+      title.textContent = item.title || '';
+
+      const meta = document.createElement('div');
+      meta.className = 'actor-movie-meta';
+      meta.textContent = String(item.year || '');
+
+      const channel = document.createElement('div');
+      channel.className = 'disney-tv-channel';
+      channel.textContent = broadcast.channel;
+
+      info.append(title, meta, channel);
+      link.append(image, info);
+      card.append(link);
+      tvGrid.append(card);
+    }
+
+    if (tvCount) {
+      tvCount.textContent =
+        `${televised.length} ${televised.length === 1
+          ? 'serie emitida'
+          : 'series emitidas'} en televisión`;
+    }
+
+    tvSection.hidden = televised.length === 0;
+  }
 
   function setup(items) {
     const years = [...new Set(
@@ -164,6 +236,7 @@
       });
 
       container.append(button);
+      renderTvBroadcasts(items);
     }
 
     function updateButtons() {
