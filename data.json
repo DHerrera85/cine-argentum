@@ -9099,7 +9099,7 @@
       "type": "serie",
       "year": 2011,
       "channel": "Telefe",
-      "genre": "Drama",
+      "genre": "Telenovela",
       "actors": [
         "Sebastián Estevanez",
         "Sabrina Garciarena",
@@ -9302,6 +9302,131 @@
         "no-emitidos"
       ],
       "tiras_2010_rows": []
+    },
+    {
+      "id": "P2102",
+      "title": "El Infierno de Eva",
+      "type": "serie",
+      "year": 2018,
+      "channel": "Telefe",
+      "genre": "Telenovela",
+      "actors": [
+        "Vanessa Restrepo",
+        "David Chocarro",
+        "Carlos Mata",
+        "Joselyn Gallardo",
+        "Roberto Manrique",
+        "Jonathan Estrada",
+        "Érika Vélez",
+        "Santiago Carpio",
+        "Dayanara Peralta"
+      ],
+      "orientation": "vertical",
+      "image": "images/verticals/2018-el-infierno-de-eva-ecuavisa-telefe-coproduction-unaired-pilot-poster-280x420.webp",
+      "poster_gallery": [
+        {
+          "image": "images/verticals/2018-el-infierno-de-eva-ecuavisa-telefe-coproduction-unaired-pilot-poster-280x420.webp",
+          "label": "Póster principal"
+        }
+      ],
+      "subtitle": "No Emitidos",
+      "release_date": null,
+      "fecha_estreno": null,
+      "production_status": "no-emitidos",
+      "productora": "Telefe y Ecuavisa",
+      "director": "Pablo Vásquez",
+      "capitulos": 60,
+      "tipo_emision": "No Emitidos",
+      "sinopsis": "Eva lleva una vida feliz junto a su hijo hasta que decide emprender un viaje con su hermana. Lo que parecía una experiencia paradisíaca se convierte en una pesadilla cuando desaparece misteriosamente y comienza a vivir un verdadero infierno.",
+      "fuente": "PRODU — El Infierno de Eva",
+      "fuente_url": "https://www.produ.com/programa/el-infierno-de-eva/",
+      "tiras_2010_rows": [
+        "no-emitidos",
+        "coproducciones"
+      ]
+    },
+    {
+      "id": "P2103",
+      "title": "12 Segundos",
+      "type": "serie",
+      "year": 2019,
+      "channel": "Telefe",
+      "genre": "Telenovela",
+      "actors": [
+        "Gianella Neyra",
+        "Roberto Manrique",
+        "Juan Pablo Llano"
+      ],
+      "orientation": "vertical",
+      "image": "images/verticals/2019-doce-segundos-mega-america-telefe-coproduction-unaired-pilot-poster-280x420.webp",
+      "poster_gallery": [
+        {
+          "image": "images/verticals/2019-doce-segundos-mega-america-telefe-coproduction-unaired-pilot-poster-280x420.webp",
+          "label": "Póster principal"
+        }
+      ],
+      "subtitle": "No Emitidos",
+      "release_date": null,
+      "fecha_estreno": null,
+      "production_status": "no-emitidos",
+      "productora": "Viacom International Studios",
+      "coproductoras": [
+        "Telefe (Argentina)",
+        "América TV (Perú)",
+        "Mega (Chile)",
+        "Imagen Televisión (México)"
+      ],
+      "capitulos": 60,
+      "tipo_emision": "No Emitidos",
+      "guion": [
+        "Bruno Luciani",
+        "Germán Loza",
+        "Paula Manzone",
+        "Natalia Cornes",
+        "Aldana Cal"
+      ],
+      "sinopsis": "Una prestigiosa médica es obligada a tratar al hijo enfermo de un poderoso empresario y a probar en él un medicamento prohibido. Con su propia hija secuestrada, deberá conseguir que el tratamiento funcione para salvarle la vida.",
+      "fuente": "TVenserio — 22/01/2019",
+      "fuente_url": "https://tvenserio.com/2019/01/22/12-segundos-la-super-serie-internacional-que-unira-a-viacom-imagen-tv-y-mega/",
+      "tiras_2010_rows": [
+        "no-emitidos",
+        "coproducciones"
+      ]
+    },
+    {
+      "id": "P2104",
+      "title": "Oro Negro",
+      "type": "serie",
+      "year": 2017,
+      "channel": "Telefe",
+      "genre": "Telenovela",
+      "actors": [],
+      "orientation": "vertical",
+      "image": "images/verticals/2017-oro-negro-america-telefe-coproduction-unaired-pilot-poster-280x420.webp",
+      "poster_gallery": [
+        {
+          "image": "images/verticals/2017-oro-negro-america-telefe-coproduction-unaired-pilot-poster-280x420.webp",
+          "label": "Póster principal"
+        }
+      ],
+      "subtitle": "No Emitidos",
+      "release_date": null,
+      "fecha_estreno": null,
+      "production_status": "no-emitidos",
+      "productora": "Telefe y América TV (Perú)",
+      "coproductoras": [
+        "Telefe (Argentina)",
+        "América TV (Perú)"
+      ],
+      "capitulos": null,
+      "tipo_emision": "No Emitidos",
+      "sinopsis": "Thriller anunciado como una coproducción entre Telefe de Argentina y América TV de Perú, en continuidad con la alianza que dio origen a El regreso de Lucas. Su producción estaba prevista para comienzos de 2018, pero el proyecto no llegó a estrenarse.",
+      "fuente": "PRODU — NATPE: Éric Jürgensen de América TV",
+      "fuente_url": "https://www.produ.com/television/noticias/natpe-eric-jurgensen-de-america-tv-12-segundos-y-oro-negro-seran-los-proximos-titulos-que-coproduciremos-con-telefe/",
+      "tiras_2010_rows": [
+        "no-emitidos",
+        "coproducciones"
+      ]
     },
     {
       "id": "T0001",
