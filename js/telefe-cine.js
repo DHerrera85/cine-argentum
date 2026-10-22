@@ -117,7 +117,7 @@
   function getViewers(movie) {
     const raw =
       movie.theatrical_stats &&
-      movie.theatrical_stats.viewers != null
+        movie.theatrical_stats.viewers != null
         ? movie.theatrical_stats.viewers
         : movie.viewers;
 
@@ -231,6 +231,54 @@
     return card;
   }
 
+  function renderFeatured() {
+    const section = document.getElementById('telefe-cine-featured');
+    const slider = document.getElementById('telefe-cine-featured-slider');
+
+    if (!section || !slider) {
+      return;
+    }
+
+    const featured = movies.filter(movie =>
+      typeof movie.horizontal_image === 'string' &&
+      movie.horizontal_image.trim() !== ''
+    );
+
+    if (!featured.length) {
+      return;
+    }
+
+    const fragment = document.createDocumentFragment();
+
+    featured.forEach(movie => {
+      const item = document.createElement('li');
+      item.className = 'telefe-cine-featured-item';
+
+      const link = document.createElement('a');
+      link.href = 'show.html?id=' + encodeURIComponent(movie.id);
+
+      const image = document.createElement('img');
+      image.src = movie.horizontal_image;
+      image.alt = movie.title;
+      image.loading = 'lazy';
+      image.decoding = 'async';
+      image.width = 1024;
+      image.height = 576;
+
+      const title = document.createElement('span');
+      title.className = 'telefe-cine-featured-title';
+      title.textContent = movie.title;
+
+      link.append(image, title);
+      item.appendChild(link);
+      fragment.appendChild(item);
+    });
+
+    slider.replaceChildren(fragment);
+    slider.classList.remove('cs-hidden');
+    section.hidden = false;
+  }
+
   function renderCatalogue() {
     const visible = movies
       .filter(movie => {
@@ -264,8 +312,8 @@
     elements.count.textContent =
       visible.length === movies.length
         ? movies.length + (
-            movies.length === 1 ? ' película' : ' películas'
-          )
+          movies.length === 1 ? ' película' : ' películas'
+        )
         : visible.length + ' de ' + movies.length + ' películas';
 
     elements.empty.hidden = visible.length !== 0;
@@ -320,7 +368,7 @@
             return (
               state.decade === 'all' ||
               Math.floor(getYear(movie) / 10) * 10 ===
-                Number(state.decade)
+              Number(state.decade)
             );
           })
           .map(getYear)
@@ -346,7 +394,7 @@
           'aria-pressed',
           String(
             state[button.dataset.filter] ===
-              button.dataset.value
+            button.dataset.value
           )
         );
       });
@@ -485,6 +533,7 @@
 
       renderFilters();
       renderCatalogue();
+      renderFeatured();
 
       elements.filters.addEventListener('click', event => {
         const button = event.target.closest(

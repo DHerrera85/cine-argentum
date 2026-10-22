@@ -261,6 +261,65 @@
       outline-offset: 4px;
     }
 
+    /* Telefe Cine: producciones destacadas */
+    .telefe-cine-page #telefe-cine-featured-slider {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 20px;
+      margin: 20px 0 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .telefe-cine-page .telefe-cine-featured-item {
+      flex: 0 0 calc((100% - 40px) / 3);
+      min-width: 0;
+      scroll-snap-align: start;
+    }
+
+    .telefe-cine-page .telefe-cine-featured-item a {
+      display: block;
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .telefe-cine-page .telefe-cine-featured-item img {
+      display: block;
+      width: 100%;
+      height: auto;
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+      border-radius: 14px;
+    }
+
+    .telefe-cine-page .telefe-cine-featured-title {
+      display: block;
+      margin-top: 10px;
+      font-size: 1rem;
+      font-weight: 600;
+      text-align: center;
+    }
+
+    @media (max-width: 767px) {
+      .telefe-cine-page #telefe-cine-featured-slider {
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 20px;
+        margin: 20px 0 0;
+        padding: 0 0 12px;
+        list-style: none;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        overscroll-behavior-x: contain;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .telefe-cine-page .telefe-cine-featured-item {
+        flex: 0 0 85%;
+        scroll-snap-align: start;
+      }
+    }
+
     /* Filtros y catálogo */
     .telefe-cine-page .telefe-cine-filter-group {
       margin-bottom: 18px;
