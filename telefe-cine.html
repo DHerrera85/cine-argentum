@@ -143,7 +143,7 @@
     .telefe-cine-page .channel-heading {
       display: flex;
       align-items: center;
-      gap: 22px;
+      gap: 28px;
     }
 
     .telefe-cine-page .channel-heading-logo-wrap {
@@ -153,10 +153,8 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      padding: 10px;
+      padding: 0;
       box-sizing: border-box;
-      border-radius: 18px;
-      background: linear-gradient(135deg, #00b5c8, #008da3);
     }
 
     .telefe-cine-page .channel-heading-logo {
@@ -167,6 +165,10 @@
 
     .telefe-cine-page .channel-heading-text {
       min-width: 0;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     }
 
     .telefe-cine-page .channel-heading-text .showcase-heading {
@@ -179,10 +181,11 @@
     }
 
     .telefe-cine-page .channel-heading-description {
-      margin: 10px 0 0;
+      margin: 8px 0 0;
       color: #b8bec6;
-      font-size: 1.05rem;
-      line-height: 1.6;
+      font-size: 1rem;
+      line-height: 1.5;
+      max-width: 720px;
     }
 
     .telefe-cine-page .channel-decade-nav {
@@ -190,6 +193,7 @@
       flex-wrap: wrap;
       gap: 16px;
       margin-top: 26px;
+      max-width: 1100px;
     }
 
     .telefe-cine-page .channel-decade-card {
@@ -389,12 +393,20 @@
       }
 
       .telefe-cine-page .channel-decade-nav {
+        flex-wrap: nowrap;
         gap: 12px;
+        overflow-x: auto;
+        overscroll-behavior-x: contain;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        padding-bottom: 12px;
       }
 
       .telefe-cine-page .channel-decade-card {
-        width: calc((100% - 12px) / 2);
+        flex: 0 0 160px;
+        width: calc((100% - 48px) / 4);
         min-height: 116px;
+        scroll-snap-align: start;
       }
 
       .telefe-cine-page .telefe-cine-section {
@@ -448,7 +460,7 @@
 
     <main class="telefe-cine-page">
       <section class="page-intro" aria-labelledby="telefe-cine-title">
-        <a href="all-peliculas.html" class="back-link">&larr; Volver a películas</a>
+        <a href="javascript:history.back()" class="back-link">&larr; Volver atrás</a>
         <div class="channel-heading">
           <div class="channel-heading-logo-wrap">
             <img src="images/logos/telefe-logo-120x120.png" alt="Telefe" class="channel-heading-logo" width="120"
@@ -456,8 +468,7 @@
           </div>
           <div class="channel-heading-text">
             <h1 id="telefe-cine-title" class="showcase-heading">Telefe Cine</h1>
-            <p class="channel-heading-description">Películas vinculadas históricamente con Telefe, Telefe Cine y Telefe
-              Studios.</p>
+            <p class="channel-heading-description">Películas producidas o coproducidas por Telefe</p>
           </div>
         </div>
         <div class="channel-decade-nav" role="navigation" aria-label="Explorar el universo Telefe">
