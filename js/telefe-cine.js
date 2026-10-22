@@ -256,6 +256,7 @@
 
       const link = document.createElement('a');
       link.href = 'show.html?id=' + encodeURIComponent(movie.id);
+      link.draggable = false;
 
       const image = document.createElement('img');
       image.src = movie.horizontal_image;
@@ -264,6 +265,7 @@
       image.decoding = 'async';
       image.width = 1024;
       image.height = 576;
+      image.draggable = false;
 
       const title = document.createElement('span');
       title.className = 'telefe-cine-featured-title';
@@ -277,6 +279,104 @@
     slider.replaceChildren(fragment);
     slider.classList.remove('cs-hidden');
     section.hidden = false;
+
+    const previousButton = document.getElementById('telefe-cine-featured-prev');
+    const nextButton = document.getElementById('telefe-cine-featured-next');
+
+    if (!previousButton || !nextButton) {
+      return;
+    }
+
+    const updateControls = () => {
+      const maxScrollLeft = slider.scrollWidth - slider.clientWidth;
+      previousButton.disabled = slider.scrollLeft <= 1;
+      nextButton.disabled = slider.scrollLeft >= maxScrollLeft - 1;
+    };
+
+    const scrollByCard = direction => {
+      const firstItem = slider.querySelector('.telefe-cine-featured-item');
+
+      if (!firstItem) {
+        return;
+      }
+
+      const gap = Number.parseFloat(getComputedStyle(slider).columnGap) || 0;
+      slider.scrollBy({
+        left: direction * (firstItem.getBoundingClientRect().width + gap),
+        behavior: 'smooth'
+      });
+    };
+
+    previousButton.addEventListener('click', () => scrollByCard(-1));
+    nextButton.addEventListener('click', () => scrollByCard(1));
+    slider.addEventListener('scroll', updateControls, { passive: true });
+    window.addEventListener('resize', updateControls);
+
+    let dragPointerId = null;
+    let dragStartX = 0;
+    let dragStartScrollLeft = 0;
+    let didDrag = false;
+    let suppressClickTimeout;
+
+    slider.addEventListener('pointerdown', event => {
+      if (event.pointerType !== 'mouse' || event.button !== 0) {
+        return;
+      }
+
+      dragPointerId = event.pointerId;
+      dragStartX = event.clientX;
+      dragStartScrollLeft = slider.scrollLeft;
+      didDrag = false;
+    });
+
+    window.addEventListener('pointermove', event => {
+      if (event.pointerId !== dragPointerId) {
+        return;
+      }
+
+      const distance = event.clientX - dragStartX;
+
+      if (!didDrag && Math.abs(distance) > 5) {
+        didDrag = true;
+        slider.classList.add('is-dragging');
+      }
+
+      if (didDrag) {
+        slider.scrollLeft = dragStartScrollLeft - distance;
+        event.preventDefault();
+      }
+    }, { passive: false });
+
+    window.addEventListener('pointerup', finishDrag);
+    window.addEventListener('pointercancel', finishDrag);
+
+    slider.addEventListener('click', event => {
+      if (!didDrag) {
+        return;
+      }
+
+      event.preventDefault();
+      event.stopPropagation();
+      didDrag = false;
+    }, true);
+
+    updateControls();
+
+    function finishDrag(event) {
+      if (event.pointerId !== dragPointerId) {
+        return;
+      }
+
+      dragPointerId = null;
+      slider.classList.remove('is-dragging');
+
+      if (didDrag) {
+        clearTimeout(suppressClickTimeout);
+        suppressClickTimeout = setTimeout(() => {
+          didDrag = false;
+        }, 300);
+      }
+    }
   }
 
   function renderCatalogue() {

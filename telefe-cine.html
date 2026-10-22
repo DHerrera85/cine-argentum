@@ -140,52 +140,98 @@
       text-decoration: underline;
     }
 
-    .telefe-cine-page .channel-heading {
-      display: flex;
+    .telefe-cine-page .telefe-cine-hero {
+      display: grid;
+      grid-template-columns: minmax(260px, 30%) minmax(0, 1fr);
       align-items: center;
       gap: 28px;
+      width: 100%;
+      position: relative;
+      isolation: isolate;
+      padding: 32px 28px;
+      box-sizing: border-box;
+      border: 1px solid rgba(255, 255, 255, .10);
+      border-radius: 22px;
+      overflow: hidden;
+      background:
+        radial-gradient(circle at 18% 45%,
+          rgba(24, 91, 164, .58) 0%,
+          transparent 32%),
+        radial-gradient(circle at 52% 40%,
+          rgba(25, 135, 78, .38) 0%,
+          transparent 35%),
+        radial-gradient(circle at 88% 42%,
+          rgba(170, 35, 67, .40) 0%,
+          transparent 32%),
+        linear-gradient(135deg,
+          #17283e 0%,
+          #152630 52%,
+          #261b2d 100%);
+      box-shadow: 0 12px 32px rgba(0, 0, 0, .20);
     }
 
-    .telefe-cine-page .channel-heading-logo-wrap {
-      width: 112px;
-      height: 112px;
-      flex: 0 0 112px;
+    .telefe-cine-page .telefe-cine-hero::before {
+      content: "";
+      position: absolute;
+      inset: 0 0 auto;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, .32), transparent);
+      pointer-events: none;
+    }
+
+    .telefe-cine-page .telefe-cine-hero-brand {
+      min-width: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      gap: 18px;
+    }
+
+    .telefe-cine-page .telefe-cine-hero-logo {
+      width: 100%;
+      max-width: 340px;
+      min-height: 220px;
       display: flex;
       align-items: center;
       justify-content: center;
-      padding: 0;
-      box-sizing: border-box;
     }
 
-    .telefe-cine-page .channel-heading-logo {
+    .telefe-cine-page .telefe-cine-hero-logo img {
       display: block;
-      width: 100%;
+      width: 85%;
       height: auto;
+      max-width: 300px;
+      object-fit: contain;
     }
 
-    .telefe-cine-page .channel-heading-text {
-      min-width: 0;
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
+    .telefe-cine-page .telefe-cine-hero-text .telefe-cine-hero-eyebrow {
+      margin: 0 0 8px;
+      color: #a9c6db;
+      font-size: .72rem;
+      font-weight: 600;
+      letter-spacing: .14em;
+      line-height: 1.4;
+      text-transform: uppercase;
     }
 
-    .telefe-cine-page .channel-heading-text .showcase-heading {
+    .telefe-cine-page .telefe-cine-hero-text h1 {
       margin: 0;
-      padding: 0;
       color: #fff;
-      font-size: clamp(1.7rem, 3vw, 2.6rem);
-      line-height: 1.15;
-      text-transform: none;
+      font-size: clamp(1.5rem, 2vw, 2.2rem);
+      font-weight: 700;
+      letter-spacing: -.035em;
+      line-height: 1.2;
+      text-wrap: balance;
     }
 
-    .telefe-cine-page .channel-heading-description {
-      margin: 8px 0 0;
+    .telefe-cine-page .telefe-cine-hero-text p {
+      margin: 10px 0 0;
       color: #b8bec6;
-      font-size: 1rem;
-      line-height: 1.5;
-      max-width: 720px;
+      font-size: .95rem;
+      line-height: 1.6;
+      text-wrap: balance;
     }
 
     .telefe-cine-page .channel-decade-nav {
@@ -261,18 +307,119 @@
       outline-offset: 4px;
     }
 
-    /* Telefe Cine: producciones destacadas */
+    .telefe-cine-page .telefe-cine-hero-featured {
+      min-width: 0;
+      width: 100%;
+      position: relative;
+    }
+
+    .telefe-cine-page .telefe-cine-featured-header {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin: 0 0 18px;
+    }
+
+    .telefe-cine-page .telefe-cine-featured-header>.showcase-heading {
+      display: flex;
+      align-items: center;
+      flex: 1;
+      gap: 14px;
+      min-width: 0;
+      margin: 0;
+      color: #fff;
+      font-size: 1.05rem;
+      letter-spacing: .08em;
+      line-height: 1.3;
+      text-transform: uppercase;
+    }
+
+    .telefe-cine-page .telefe-cine-featured-header>.showcase-heading::after {
+      content: "";
+      flex: 1;
+      height: 1px;
+      background: linear-gradient(90deg, rgba(255, 255, 255, .32), transparent);
+    }
+
+    .telefe-cine-page .telefe-cine-featured-controls {
+      position: absolute;
+      top: 54px;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: 5;
+      pointer-events: none;
+    }
+
+    .telefe-cine-page .telefe-cine-featured-controls button {
+      position: absolute;
+      top: 45%;
+      display: block;
+      width: 44px;
+      height: 44px;
+      padding: 0;
+      border: 0;
+      border-radius: 50%;
+      background: transparent;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, .15);
+      color: #333;
+      cursor: pointer;
+      opacity: 1;
+      pointer-events: auto;
+      transform: translateY(-50%);
+      transition: opacity .35s linear;
+    }
+
+    .telefe-cine-page .telefe-cine-featured-prev {
+      left: 10px;
+    }
+
+    .telefe-cine-page .telefe-cine-featured-next {
+      right: 10px;
+    }
+
+    .telefe-cine-page .telefe-cine-featured-controls button:focus-visible {
+      outline: 2px solid #8de4ee;
+      outline-offset: 3px;
+    }
+
+    .telefe-cine-page .telefe-cine-featured-controls i {
+      font-size: 18px;
+    }
+
     .telefe-cine-page #telefe-cine-featured-slider {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
+      display: flex;
+      flex-wrap: nowrap;
       gap: 20px;
-      margin: 20px 0 0;
+      margin: 0;
       padding: 0;
       list-style: none;
+      overflow-x: auto;
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+      scroll-snap-type: x mandatory;
+      overscroll-behavior-x: contain;
+      cursor: grab;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .telefe-cine-page #telefe-cine-featured-slider.is-dragging {
+      cursor: grabbing;
+      scroll-snap-type: none;
+      user-select: none;
+    }
+
+    .telefe-cine-page #telefe-cine-featured-slider img {
+      -webkit-user-drag: none;
+      user-select: none;
+    }
+
+    .telefe-cine-page #telefe-cine-featured-slider::-webkit-scrollbar {
+      display: none;
     }
 
     .telefe-cine-page .telefe-cine-featured-item {
-      flex: 0 0 calc((100% - 40px) / 3);
+      flex: 0 0 calc((100% - 20px) / 2);
       min-width: 0;
       scroll-snap-align: start;
     }
@@ -290,6 +437,7 @@
       aspect-ratio: 16 / 9;
       object-fit: cover;
       border-radius: 14px;
+      transition: transform .2s ease;
     }
 
     .telefe-cine-page .telefe-cine-featured-title {
@@ -300,23 +448,15 @@
       text-align: center;
     }
 
-    @media (max-width: 767px) {
-      .telefe-cine-page #telefe-cine-featured-slider {
-        display: flex;
-        flex-wrap: nowrap;
-        gap: 20px;
-        margin: 20px 0 0;
-        padding: 0 0 12px;
-        list-style: none;
-        overflow-x: auto;
-        scroll-snap-type: x mandatory;
-        overscroll-behavior-x: contain;
-        -webkit-overflow-scrolling: touch;
-      }
+    .telefe-cine-page .telefe-cine-hero-featured a:focus-visible {
+      outline: 2px solid #8de4ee;
+      outline-offset: 4px;
+      border-radius: 14px;
+    }
 
-      .telefe-cine-page .telefe-cine-featured-item {
-        flex: 0 0 85%;
-        scroll-snap-align: start;
+    @media (hover: hover) {
+      .telefe-cine-page .telefe-cine-featured-item a:hover img {
+        transform: scale(1.015);
       }
     }
 
@@ -381,6 +521,19 @@
       display: block;
       color: #fff;
       text-decoration: none;
+      transition: transform .2s ease;
+    }
+
+    @media (hover: hover) {
+      .telefe-cine-page .telefe-cine-card a:hover {
+        transform: translateY(-5px);
+      }
+    }
+
+    .telefe-cine-page .telefe-cine-card a:focus-visible {
+      outline: 2px solid #22b8cf;
+      outline-offset: 5px;
+      border-radius: 12px;
     }
 
     .telefe-cine-page .telefe-cine-card img {
@@ -437,18 +590,55 @@
         margin-top: 0;
       }
 
-      .telefe-cine-page .channel-heading {
-        gap: 14px;
+      .telefe-cine-page .telefe-cine-hero {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 22px;
+        padding: 24px 16px;
+        border-radius: 18px;
       }
 
-      .telefe-cine-page .channel-heading-logo-wrap {
-        width: 80px;
-        height: 80px;
-        flex-basis: 80px;
+      .telefe-cine-page .telefe-cine-hero-brand {
+        width: 100%;
+        gap: 12px;
       }
 
-      .telefe-cine-page .channel-heading-description {
-        font-size: .95rem;
+      .telefe-cine-page .telefe-cine-hero-logo {
+        max-width: 260px;
+        min-height: 160px;
+      }
+
+      .telefe-cine-page .telefe-cine-hero-text .telefe-cine-hero-eyebrow {
+        font-size: .66rem;
+      }
+
+      .telefe-cine-page .telefe-cine-hero-text h1 {
+        font-size: 1.6rem;
+      }
+
+      .telefe-cine-page .telefe-cine-hero-text p {
+        font-size: .9rem;
+        line-height: 1.5;
+      }
+
+      .telefe-cine-page .telefe-cine-hero-featured {
+        width: 100%;
+        min-width: 0;
+      }
+
+      .telefe-cine-page .telefe-cine-featured-header {
+        margin-bottom: 14px;
+      }
+
+      .telefe-cine-page .telefe-cine-featured-header>.showcase-heading {
+        font-size: 1rem;
+      }
+
+      .telefe-cine-page .telefe-cine-featured-controls {
+        top: 46px;
+      }
+
+      .telefe-cine-page .telefe-cine-featured-item {
+        flex-basis: 85%;
       }
 
       .telefe-cine-page .channel-decade-nav {
@@ -520,15 +710,35 @@
     <main class="telefe-cine-page">
       <section class="page-intro" aria-labelledby="telefe-cine-title">
         <a href="javascript:history.back()" class="back-link">&larr; Volver atrás</a>
-        <div class="channel-heading">
-          <div class="channel-heading-logo-wrap">
-            <img src="images/logos/telefe-logo-120x120.png" alt="Telefe" class="channel-heading-logo" width="120"
-              height="120" />
+        <div class="telefe-cine-hero">
+          <div class="telefe-cine-hero-brand">
+            <div class="telefe-cine-hero-logo">
+              <img src="images/logos/telefe-logo-white-transparent.png" alt="Telefe" />
+            </div>
+            <div class="telefe-cine-hero-text">
+              <p class="telefe-cine-hero-eyebrow">Producciones cinematográficas</p>
+              <h1 id="telefe-cine-title">Telefe Cine</h1>
+              <p>Películas producidas o coproducidas por Telefe</p>
+            </div>
           </div>
-          <div class="channel-heading-text">
-            <h1 id="telefe-cine-title" class="showcase-heading">Telefe Cine</h1>
-            <p class="channel-heading-description">Películas producidas o coproducidas por Telefe</p>
-          </div>
+          <section id="telefe-cine-featured" class="telefe-cine-hero-featured"
+            aria-labelledby="telefe-cine-featured-title">
+            <div class="telefe-cine-featured-header">
+              <h2 id="telefe-cine-featured-title" class="showcase-heading">Producciones destacadas</h2>
+              <div class="telefe-cine-featured-controls" aria-label="Controles del carrusel">
+                <button id="telefe-cine-featured-prev" class="telefe-cine-featured-prev" type="button"
+                  aria-label="Ver producciones anteriores"
+                  disabled>
+                  <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
+                </button>
+                <button id="telefe-cine-featured-next" class="telefe-cine-featured-next" type="button"
+                  aria-label="Ver más producciones">
+                  <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+            <ul id="telefe-cine-featured-slider" class="slider-h cs-hidden" data-skip-auto="true"></ul>
+          </section>
         </div>
         <div class="channel-decade-nav" role="navigation" aria-label="Explorar el universo Telefe">
           <a href="telefe-cine.html" class="channel-decade-card active" aria-current="page">
@@ -551,11 +761,6 @@
       </section>
 
       <!-- Bloques siguientes: permanecen ocultos hasta conectar datos reales. -->
-      <section id="telefe-cine-featured" class="telefe-cine-section" aria-labelledby="telefe-cine-featured-title"
-        hidden>
-        <h2 id="telefe-cine-featured-title" class="showcase-heading">Producciones destacadas</h2>
-        <ul id="telefe-cine-featured-slider" class="slider-h cs-hidden" data-skip-auto="true"></ul>
-      </section>
       <section id="telefe-cine-historical" class="telefe-cine-section" aria-labelledby="telefe-cine-historical-title"
         hidden>
         <h2 id="telefe-cine-historical-title" class="showcase-heading">Las películas más vistas en cines de Argentina
@@ -603,7 +808,7 @@
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   <script src="js/lightslider.js"></script>
   <script src="js/script.js?v=20260226-1"></script>
-  <script src="js/telefe-cine.js?v=20261004-1"></script>
+  <script src="js/telefe-cine.js?v=20261022-2"></script>
 </body>
 
 </html>
