@@ -7426,6 +7426,17 @@
       "platforms": [
         "Flow"
       ],
+      "air_channels": [
+        "Telefe"
+      ],
+      "air_broadcasts": [
+        {
+          "channel": "Telefe",
+          "premiere_date": "24/10/2026",
+          "horario": "Sábados 00:00hs",
+          "tipo_emision": "Semanal"
+        }
+      ],
       "genre": "Thriller",
       "actors": [
         "Soledad Villamil",
@@ -7440,11 +7451,10 @@
       "image": "images/verticals/2026-verdades-sumergidas-telefe-flow-poster-280x420.webp",
       "horizontal_image": "images/horizontals-1024x576/2026-verdades-sumergidas-telefe-flow-slide-1024x576.webp",
       "subtitle": "Thriller",
-      "release_date": "01/11/2026",
+      "release_date": "22/10/2026",
       "capitulos": 8,
       "producer": "Telefe Studios",
       "director": "Martín Mariani",
-      "status": "Próximamente",
       "sinopsis": "Tras un fin de semana con amigos, Florencia aparece asesinada en las playas de Las Rocas. La fiscal Guerrero investiga a los integrantes del grupo, mientras distintas versiones de los hechos revelan secretos y contradicciones que dificultan descubrir al culpable."
     },
     {
