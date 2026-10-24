@@ -6918,6 +6918,7 @@
       "synopsis": "Un psicoanalista pragmático pierde la fe en los métodos tradicionales y comienza a sobrepasar los límites con sus pacientes. Todo parece funcionar hasta que un escritor con un bloqueo creativo llega a su consulta.",
       "channel": "Netflix",
       "image": "images/verticals/2026-lo-dejamos-aca-netflix-280x420.webp",
+      "horizontal_image": "images/horizontals-1024x576/2026-lo-dejamos-aca-pelicula-netflix.webp",
       "orientation": "vertical",
       "viewers": "-",
       "producer": "Netflix",
@@ -7534,6 +7535,436 @@
       "unitarios_rows": [
         "exitos-2000",
         "suspenso-crimen"
+      ]
+    },
+    {
+      "id": "V325",
+      "title": "El Pacto",
+      "type": "serie",
+      "year": "2011",
+      "channel": "América",
+      "air_channels": [
+        "América"
+      ],
+      "air_broadcasts": [
+        {
+          "channel": "América",
+          "premiere_date": "03/11/2011",
+          "horario": "Jueves 23:00hs",
+          "tipo_emision": "Semanal"
+        }
+      ],
+      "platforms": [
+        "Contar"
+      ],
+      "genre": "Thriller",
+      "actors": [
+        "Cecilia Roth",
+        "Federico Luppi",
+        "Mike Amigorena",
+        "Eusebio Poncela",
+        "Luis Ziembrowski",
+        "Cristina Banegas",
+        "Rafael Ferro",
+        "Violeta Urtizberea",
+        "Mercedes Scápola",
+        "Dalma Maradona"
+      ],
+      "orientation": "vertical",
+      "image": "images/verticals/2011-el-pacto-america-contar-poster280x420.webp",
+      "subtitle": "Thriller",
+      "capitulos": 13,
+      "fecha_estreno": "03/11/2011",
+      "sinopsis": "Lucía Córdova, una abogada especializada en delitos económicos, investiga la liquidación de una empresa y descubre una trama de complicidades empresariales vinculadas con la última dictadura militar argentina.",
+      "productora": "Tostaki / Oruga Cine",
+      "director": "Pablo Fischerman",
+      "horario": "Jueves 23hs",
+      "tipo_emision": "Semanal",
+      "unitarios_rows": [
+        "ficciones-contar"
+      ]
+    },
+    {
+      "id": "V326",
+      "title": "Historias de la primera vez",
+      "type": "serie",
+      "year": "2011",
+      "channel": "América",
+      "air_channels": [
+        "América"
+      ],
+      "air_broadcasts": [
+        {
+          "channel": "América",
+          "premiere_date": "27/09/2011",
+          "horario": "Martes 23:00hs",
+          "tipo_emision": "Semanal"
+        }
+      ],
+      "platforms": [
+        "Contar"
+      ],
+      "genre": "Drama",
+      "actors": [
+        "Mónica Scapparone",
+        "Luis Machín",
+        "Malena Solda",
+        "Hilda Bernard",
+        "Sofía Gala",
+        "Nicolás Pauls",
+        "Rafael Ferro",
+        "Graciela Borges",
+        "Joaquín Furriel",
+        "Alejandro Awada",
+        "Georgina Barbarossa",
+        "Fabián Vena",
+        "Miguel Ángel Rodríguez"
+      ],
+      "orientation": "vertical",
+      "image": "images/verticals/2011-historias-de-la-primera-vez-america-contar-poster280x420.webp",
+      "subtitle": "Drama",
+      "capitulos": 13,
+      "fecha_estreno": "27/09/2011",
+      "sinopsis": "Una serie de historias independientes que exploran las primeras experiencias que transforman la vida de las personas. A través de distintos personajes y conflictos, cada episodio aborda situaciones relacionadas con el amor, la familia, la identidad y las decisiones personales.",
+      "productora": "Illusion Studios",
+      "director": [
+        "Eduardo Gondell",
+        "José Luis Massa"
+      ],
+      "horario": "Martes 23hs",
+      "tipo_emision": "Semanal",
+      "unitarios_rows": [
+        "ficciones-contar"
+      ],
+      "fuentes": [
+        {
+          "nombre": "PRODU",
+          "url": "https://www.produ.com/television/noticias/america-estrena-nuevo-unitario-de-illusion-studios/",
+          "tipo": "Anuncio de estreno"
+        }
+      ]
+    },
+    {
+      "id": "V327",
+      "title": "Los Sónicos",
+      "type": "serie",
+      "year": "2011",
+      "channel": "Canal 9",
+      "air_channels": [
+        "Canal 9"
+      ],
+      "air_broadcasts": [
+        {
+          "channel": "Canal 9",
+          "premiere_date": "16/10/2011",
+          "horario": "Domingos 22:00hs",
+          "tipo_emision": "Semanal"
+        },
+        {
+          "channel": "TV Pública",
+          "premiere_date": "01/04/2016",
+          "tipo_emision": "Semanal"
+        }
+      ],
+      "platforms": [
+        "Contar"
+      ],
+      "genre": "Comedia",
+      "actors": [
+        "Hugo Arana",
+        "Norman Briski",
+        "Roberto Carnaghi",
+        "Mario Alarcón",
+        "Federico Luppi",
+        "Nazareno Casero",
+        "Martín Slipak",
+        "Juan Greppi",
+        "Santiago Pedrero",
+        "Lucas Ferraro",
+        "Marina Glezer",
+        "Chunchuna Villafañe"
+      ],
+      "orientation": "vertical",
+      "image": "images/verticals/2011-los-sonicos-canal9-contar-poster280x420.webp",
+      "subtitle": "Comedia dramática",
+      "capitulos": 13,
+      "fecha_estreno": "16/10/2011",
+      "sinopsis": "Tras permanecer 43 años en coma, el líder de una banda de rock de los años sesenta despierta convertido en un hombre de 70 años. Decidido a recuperar el tiempo perdido, reúne a sus antiguos compañeros para volver a tocar y reencontrarse con su pasado.",
+      "productora": "GP Media / BBC Worldwide",
+      "director": "Gastón Portal",
+      "horario": "Domingos 22hs",
+      "tipo_emision": "Semanal",
+      "unitarios_rows": [
+        "ficciones-contar"
+      ],
+      "fuentes": [
+        {
+          "nombre": "PRODU",
+          "url": "https://www.produ.com/television/noticias/demo-de-los-sonicos-serie-realizada-por-gp-media-para-bbc-worldwide/",
+          "tipo": "Producción y estreno"
+        }
+      ]
+    },
+    {
+      "id": "V328",
+      "title": "Maltratadas",
+      "type": "serie",
+      "year": "2011",
+      "channel": "América",
+      "air_channels": [
+        "América"
+      ],
+      "air_broadcasts": [
+        {
+          "channel": "América",
+          "premiere_date": "26/09/2011",
+          "horario": "Lunes 23:00hs",
+          "tipo_emision": "Semanal"
+        }
+      ],
+      "platforms": [
+        "Contar"
+      ],
+      "genre": "Drama",
+      "actors": [
+        "Sabrina Garciarena",
+        "Rafael Ferro",
+        "Vanesa González",
+        "Adrián Navarro",
+        "Carolina Papaleo",
+        "Andrea Politti",
+        "Alejandro Awada",
+        "Eleonora Wexler",
+        "Violeta Urtizberea",
+        "Luis Machín",
+        "Esther Goris",
+        "Víctor Laplace",
+        "Gloria Carrá",
+        "Patricio Contreras",
+        "Fabián Vena",
+        "Laura Novoa",
+        "Soledad Fandiño",
+        "Gonzalo Valenzuela",
+        "Luisana Lopilato",
+        "Juan Gil Navarro"
+      ],
+      "orientation": "vertical",
+      "image": "images/verticals/2011-maltratadas-america-contar-poster280x420.webp",
+      "subtitle": "Drama",
+      "capitulos": 13,
+      "fecha_estreno": "26/09/2011",
+      "sinopsis": "A través de historias independientes y elencos rotativos, la serie retrata distintas formas de violencia contra las mujeres, desde el maltrato físico y psicológico hasta el abuso sexual, el acoso laboral y la violencia económica.",
+      "productora": "Torneos y Competencias",
+      "director": "Alberto Lecchi",
+      "horario": "Lunes 23hs",
+      "tipo_emision": "Semanal",
+      "unitarios_rows": [
+        "ficciones-contar"
+      ],
+      "fuentes": [
+        {
+          "nombre": "LA NACION",
+          "url": "https://www.lanacion.com.ar/espectaculos/television/maltratadas-nid1411261/",
+          "tipo": "Estreno y horario de emisión"
+        }
+      ]
+    },
+    {
+      "id": "V329",
+      "title": "Proyecto Aluvión",
+      "type": "serie",
+      "year": "2011",
+      "channel": "Canal 9",
+      "air_channels": [
+        "Canal 9"
+      ],
+      "air_broadcasts": [
+        {
+          "channel": "Canal 9",
+          "premiere_date": "07/10/2011",
+          "horario": "Viernes 23:30hs",
+          "tipo_emision": "Semanal"
+        }
+      ],
+      "platforms": [
+        "Contar"
+      ],
+      "genre": "Drama",
+      "actors": [
+        "Julieta Cardinali",
+        "Alejandra Flechner",
+        "Antonio Birabent",
+        "Lautaro Delgado",
+        "Nicolás Pauls",
+        "Juan Palomino",
+        "Víctor Hugo Morales",
+        "Gino Renni",
+        "Patricia Echegoyen",
+        "Osqui Guzmán",
+        "Julieta Nair Calvo",
+        "Gabriel Goity",
+        "María Abadi",
+        "Michel Noher",
+        "Valeria Lorca",
+        "Sergio Surraco",
+        "Valentina Bassi",
+        "Gonzalo Urtizberea",
+        "Mimi Ardú",
+        "Lorenzo Quinteros",
+        "Diego Alonso",
+        "Gabo Correa"
+      ],
+      "orientation": "vertical",
+      "image": "images/verticals/2011-proyecto-aluvion-canal9-contar-poster280x420.webp",
+      "subtitle": "Drama histórico",
+      "capitulos": 8,
+      "fecha_estreno": "07/10/2011",
+      "sinopsis": "A través de historias independientes ambientadas en distintos momentos de la historia argentina, la serie explora mitos, conflictos y leyendas vinculados con el peronismo, retratando las tensiones políticas y sociales que marcaron al país.",
+      "productora": "MC Producciones",
+      "director": "Francis Estrada",
+      "horario": "Viernes 23:30hs",
+      "tipo_emision": "Semanal",
+      "unitarios_rows": [
+        "ficciones-contar"
+      ],
+      "fuentes": [
+        {
+          "nombre": "LA NACION",
+          "url": "https://www.lanacion.com.ar/espectaculos/television/proyecto-aluvion-nid1431245/",
+          "tipo": "Crítica y horario de emisión"
+        }
+      ]
+    },
+    {
+      "id": "V330",
+      "title": "Tiempo de pensar",
+      "type": "serie",
+      "year": "2011",
+      "channel": "TV Pública",
+      "air_channels": [
+        "TV Pública"
+      ],
+      "air_broadcasts": [
+        {
+          "channel": "TV Pública",
+          "premiere_date": "24/09/2011",
+          "horario": "Sábados 22:00hs",
+          "tipo_emision": "Semanal"
+        }
+      ],
+      "platforms": [
+        "Contar"
+      ],
+      "genre": "Drama",
+      "actors": [
+        "Andrea del Boca",
+        "Roberto Carnaghi",
+        "Darío Grandinetti",
+        "Victoria Carreras",
+        "Raúl Rizzo",
+        "Coco Sily",
+        "Esteban Prol",
+        "Fernando Dente",
+        "María Concepción César",
+        "Héctor Calori",
+        "Roberto Antier",
+        "Gabriel Corrado",
+        "Fabián Mazzei",
+        "Juan Palomino",
+        "Rita Cortese",
+        "Silvina Bosco"
+      ],
+      "orientation": "vertical",
+      "image": "images/verticals/2011-tiempo-de-pensar-tv-publica-contar-poster280x420.webp",
+      "subtitle": "Drama",
+      "capitulos": 13,
+      "fecha_estreno": "24/09/2011",
+      "sinopsis": "A través de historias independientes y elencos rotativos, Andrea del Boca protagoniza situaciones que abordan conflictos familiares, sociales y personales, como la discriminación, la violencia de género, la adopción y las relaciones entre generaciones.",
+      "productora": "a + A Group",
+      "director": [
+        "Eduardo Pinto",
+        "Oscar Bertea"
+      ],
+      "horario": "Sábados 22hs",
+      "tipo_emision": "Semanal",
+      "unitarios_rows": [
+        "ficciones-contar"
+      ],
+      "fuentes": [
+        {
+          "nombre": "LA NACION",
+          "url": "https://www.lanacion.com.ar/espectaculos/television/andrea-del-boca-en-tiempo-de-pensar-nid1408765/",
+          "tipo": "Estreno y horario de emisión"
+        }
+      ]
+    },
+    {
+      "id": "V331",
+      "title": "Víndica",
+      "type": "serie",
+      "year": "2011",
+      "channel": "América",
+      "air_channels": [
+        "América"
+      ],
+      "air_broadcasts": [
+        {
+          "channel": "América",
+          "premiere_date": "29/09/2011",
+          "horario": "Jueves 23:00hs; desde el 04/11/2011, viernes 23:00hs",
+          "tipo_emision": "Semanal"
+        }
+      ],
+      "platforms": [
+        "Contar"
+      ],
+      "genre": "Thriller",
+      "actors": [
+        "Alejandro Fiore",
+        "Anabel Cherubito",
+        "Raúl Rizzo",
+        "Arturo Bonín",
+        "Juan Palomino",
+        "Patricio Contreras",
+        "Esteban Prol",
+        "Humberto Serrano",
+        "Facundo Espinosa",
+        "Emilia Mazer",
+        "Héctor Bidonde",
+        "Alejandro Müller",
+        "Malena Solda",
+        "Luisina Brando",
+        "Norma Pons",
+        "Nicolás Scarpino",
+        "Coco Sily",
+        "Jorge Sassi",
+        "Gustavo Garzón",
+        "Manuel Wirzt"
+      ],
+      "orientation": "vertical",
+      "image": "images/verticals/2011-vindica-america-contar-poster280x420.webp",
+      "subtitle": "Suspenso",
+      "capitulos": 13,
+      "fecha_estreno": "29/09/2011",
+      "sinopsis": "A través de historias independientes, la serie explora situaciones de injusticia y las consecuencias de los actos del pasado. Sus protagonistas enfrentan conflictos donde la venganza, el azar y el destino terminan revelando que toda acción puede tener consecuencias inesperadas.",
+      "productora": "Promofilm",
+      "director": [
+        "Ezequiel Crupnicoff",
+        "Juan Manuel Jiménez",
+        "Juan Pablo Laplace",
+        "Nicolás Parodi"
+      ],
+      "horario": "Jueves 23hs; desde noviembre, viernes 23hs",
+      "tipo_emision": "Semanal",
+      "unitarios_rows": [
+        "ficciones-contar"
+      ],
+      "fuentes": [
+        {
+          "nombre": "Página/12",
+          "url": "https://www.pagina12.com.ar/diario/suplementos/espectaculos/8-23433-2011-11-07.html",
+          "tipo": "Horario efectivo de emisión"
+        }
       ]
     },
     {
