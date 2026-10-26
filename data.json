@@ -7968,6 +7968,695 @@
       ]
     },
     {
+      "id": "V332",
+      "title": "El Paraíso",
+      "type": "serie",
+      "year": "2011",
+      "channel": "TV Pública",
+      "air_channels": [
+        "TV Pública"
+      ],
+      "air_broadcasts": [
+        {
+          "channel": "TV Pública",
+          "premiere_date": "19/12/2011",
+          "horario": "Lunes a viernes 22:30hs",
+          "tipo_emision": "Tira diaria"
+        }
+      ],
+      "platforms": [
+        "Contar"
+      ],
+      "genre": "Drama",
+      "actors": [
+        "Agustina Cherri",
+        "Alejandro Awada",
+        "Graciela Stéfani",
+        "Mariano Torre"
+      ],
+      "orientation": "vertical",
+      "image": "images/verticals/2011-el-paraiso-tv-publica-contar-poster280x420.webp",
+      "subtitle": "Drama médico",
+      "capitulos": 13,
+      "fecha_estreno": "19/12/2011",
+      "sinopsis": "Un equipo médico trabaja en un centro de atención primaria del conurbano bonaerense, enfrentando la falta de recursos y diversas problemáticas sociales. Entre conflictos personales y profesionales, sus integrantes intentan sostener su vocación y brindar atención a quienes más lo necesitan.",
+      "productora": "Zoelle Producciones",
+      "director": [
+        "Sabrina Farji"
+      ],
+      "horario": "Lunes a viernes 22:30hs",
+      "tipo_emision": "Tira diaria",
+      "unitarios_rows": [
+        "ficciones-contar"
+      ],
+      "fuentes": [
+        {
+          "nombre": "Wikipedia",
+          "url": "https://es.wikipedia.org/wiki/El_para%C3%ADso_(serie_de_televisi%C3%B3n)",
+          "tipo": "Ficha técnica y datos de emisión"
+        }
+      ]
+    },
+    {
+      "id": "V333",
+      "title": "La defensora",
+      "type": "serie",
+      "year": "2012",
+      "channel": "TV Pública",
+      "air_channels": [
+        "TV Pública"
+      ],
+      "air_broadcasts": [
+        {
+          "channel": "TV Pública",
+          "premiere_date": "06/03/2012",
+          "horario": "22:30hs (a verificar)",
+          "tipo_emision": "Tira diaria"
+        }
+      ],
+      "platforms": [
+        "Contar"
+      ],
+      "genre": "Drama",
+      "actors": [
+        "Virginia Innocenti",
+        "Luis Machín",
+        "Adrián Navarro",
+        "Magela Zanotta",
+        "Rodrigo Noya",
+        "Iván Espeche",
+        "Juan Vitali",
+        "Juan Palomino",
+        "Nicolás Goldschmidt",
+        "Néstor Zacco"
+      ],
+      "orientation": "vertical",
+      "image": "images/verticals/2012-la-defensora-tv-publica-contar-poster280x420.webp",
+      "subtitle": "Drama judicial",
+      "capitulos": 13,
+      "fecha_estreno": "06/03/2012",
+      "sinopsis": "Sofía Méndez es una defensora de menores e incapaces que interviene en casos de vulnerabilidad social, maltrato y abandono. Mientras protege los derechos de niños y adolescentes, enfrenta conflictos judiciales y personales que ponen a prueba su compromiso con la justicia.",
+      "productora": "Aries Cinematográfica Argentina",
+      "director": [
+        "Alberto Lecchi"
+      ],
+      "horario": "22:30hs (a verificar)",
+      "tipo_emision": "Tira diaria",
+      "unitarios_rows": [
+        "ficciones-contar"
+      ],
+      "fuentes": [
+        {
+          "nombre": "Wikipedia",
+          "url": "https://es.wikipedia.org/wiki/La_defensora",
+          "tipo": "Ficha técnica, elenco y datos de emisión"
+        }
+      ]
+    },
+    {
+      "id": "V334",
+      "title": "La viuda de Rafael",
+      "type": "serie",
+      "year": "2012",
+      "channel": "TV Pública",
+      "air_channels": [
+        "TV Pública"
+      ],
+      "air_broadcasts": [
+        {
+          "channel": "TV Pública",
+          "premiere_date": "13/11/2012",
+          "horario": "Martes a jueves 22:30hs",
+          "tipo_emision": "Semanal"
+        }
+      ],
+      "platforms": [
+        "Contar"
+      ],
+      "genre": "Drama",
+      "actors": [
+        "Camila Sosa Villada",
+        "Rita Cortese",
+        "Luis Machín",
+        "Fabián Gianola",
+        "Lucas Crespi",
+        "Alejo García Pintos",
+        "Maiamar Abrodos",
+        "Jorgelina Vera",
+        "Gustavo Moro",
+        "Gimena Riestra",
+        "Guadalupe Docampo",
+        "Héctor Díaz",
+        "Salo Pasik",
+        "Emilio Bardi",
+        "Joaquín Berthold",
+        "Héctor Calori",
+        "Ernesto Claudio",
+        "Natacha Córdoba",
+        "Tamara Garzón"
+      ],
+      "orientation": "vertical",
+      "image": "images/verticals/2012-la-viuda-de-rafael-tv-publica-contar-poster280x420.webp",
+      "subtitle": "Drama social",
+      "capitulos": 13,
+      "fecha_estreno": "13/11/2012",
+      "sinopsis": "Tras la muerte de Rafael, Nina, una mujer trans, debe enfrentar a la familia de su pareja para conseguir el reconocimiento de sus derechos como viuda. Con el apoyo de sus amigas, lucha contra los prejuicios y la discriminación para defender su identidad y el amor que compartió durante años.",
+      "productora": "Atuel Producciones",
+      "director": [
+        "Estela Cristiani"
+      ],
+      "horario": "Martes a jueves 22:30hs",
+      "tipo_emision": "Semanal",
+      "unitarios_rows": [
+        "ficciones-contar"
+      ],
+      "fuentes": [
+        {
+          "nombre": "LT10 / Télam",
+          "url": "https://www.lt10.com.ar/noticia/67119--La-televisi%C3%B3n-p%C3%BAblica-estrena-La-viuda-de-Rafael",
+          "tipo": "Estreno, horario, productora y ficha técnica"
+        }
+      ]
+    },
+    {
+      "id": "V335",
+      "title": "Las huellas del secretario",
+      "type": "serie",
+      "year": "2013",
+      "channel": "TV Pública",
+      "air_channels": [
+        "TV Pública"
+      ],
+      "air_broadcasts": [
+        {
+          "channel": "TV Pública",
+          "premiere_date": "06/03/2013",
+          "horario": "22:30hs; inicialmente martes a jueves, con emisiones los lunes durante la etapa final",
+          "tipo_emision": "Semanal"
+        }
+      ],
+      "platforms": [
+        "Contar"
+      ],
+      "genre": "Thriller",
+      "actors": [
+        "Peto Menahem",
+        "Malena Solda",
+        "Luis Machín",
+        "Osmar Núñez",
+        "Manuela Pal",
+        "Duilio Orso",
+        "Giselle Bonaffino",
+        "Salo Pasik",
+        "Beatriz Dellacasa",
+        "Cecilia Cósero",
+        "Ernesto Claudio",
+        "Horacio Roca",
+        "Walter Jakob",
+        "Rafael Spregelburd",
+        "Darío Levy",
+        "Jorge Aníbal Román"
+      ],
+      "orientation": "vertical",
+      "image": "images/verticals/2013-las-huellas-del-secretario-tv-publica-contar-poster280x420.webp",
+      "subtitle": "Thriller histórico",
+      "capitulos": 13,
+      "fecha_estreno": "06/03/2013",
+      "sinopsis": "Un documento secreto redactado por Mariano Moreno en 1810 desaparece misteriosamente y su custodia pasa de generación en generación. En el presente, sus protagonistas se ven involucrados en una peligrosa investigación que podría revelar aspectos ocultos de la historia argentina.",
+      "productora": "Lagarto Cine",
+      "director": [
+        "Matías Bertilotti"
+      ],
+      "horario": "22:30hs; martes a jueves, con emisiones los lunes durante la etapa final",
+      "tipo_emision": "Semanal",
+      "unitarios_rows": [
+        "ficciones-contar"
+      ],
+      "fuentes": [
+        {
+          "nombre": "Wikipedia",
+          "url": "https://es.wikipedia.org/wiki/Las_huellas_del_secretario",
+          "tipo": "Fecha de estreno, emisiones, elenco y ficha técnica"
+        }
+      ]
+    },
+    {
+      "id": "V336",
+      "title": "Perfidia",
+      "type": "serie",
+      "year": "2012",
+      "channel": "TV Pública",
+      "air_channels": [
+        "TV Pública"
+      ],
+      "air_broadcasts": [
+        {
+          "channel": "TV Pública",
+          "premiere_date": "06/02/2012",
+          "horario": "Lunes a jueves 22:30hs",
+          "tipo_emision": "Tira diaria"
+        }
+      ],
+      "platforms": [
+        "Contar"
+      ],
+      "genre": "Thriller",
+      "actors": [
+        "Juan Gil Navarro",
+        "Antonio Birabent",
+        "Gloria Carrá",
+        "Romina Ricci",
+        "Carlos Portaluppi",
+        "Lucas Akoskin",
+        "Leonardo Saggese",
+        "Alejandro Fiore",
+        "Osqui Guzmán",
+        "Paula Canals",
+        "Tadeo Goldstein",
+        "Iván Espeche",
+        "Gustavo Chantada",
+        "Jorge Crivelli"
+      ],
+      "orientation": "vertical",
+      "image": "images/verticals/2012-perfidia-tv-publica-contar-poster280x420.webp",
+      "subtitle": "Suspenso",
+      "capitulos": 8,
+      "fecha_estreno": "06/02/2012",
+      "sinopsis": "Manuel regresa a Buenos Aires después de diez años en Europa y se reencuentra con antiguos compañeros del secundario. Junto a Mariano, un amigo que atraviesa dificultades económicas, organiza una estafa millonaria que desencadena una peligrosa trama de ambición, celos y traiciones.",
+      "productora": "Cisne Films",
+      "director": [
+        "Juan Pablo Laplace"
+      ],
+      "horario": "Lunes a jueves 22:30hs",
+      "tipo_emision": "Tira diaria",
+      "unitarios_rows": [
+        "ficciones-contar"
+      ],
+      "fuentes": [
+        {
+          "nombre": "Página/12",
+          "url": "https://www.pagina12.com.ar/diario/suplementos/espectaculos/2-24226-2012-01-30.html",
+          "tipo": "Estreno, horario, argumento y cantidad de capítulos"
+        }
+      ]
+    },
+    {
+      "id": "V337",
+      "title": "Presentes",
+      "type": "serie",
+      "year": "2012",
+      "channel": "Encuentro",
+      "air_channels": [
+        "Encuentro"
+      ],
+      "air_broadcasts": [
+        {
+          "channel": "Encuentro",
+          "premiere_date": "05/10/2012",
+          "horario": "Viernes 20:00hs",
+          "tipo_emision": "Semanal"
+        }
+      ],
+      "platforms": [
+        "Contar"
+      ],
+      "genre": "Juvenil",
+      "actors": [
+        "Ailín Salas",
+        "Vera Spinetta",
+        "Dalma Maradona",
+        "Martina Juncadella",
+        "Julián Serrano",
+        "Nicolás Condito",
+        "Nicolás Goldschmidt",
+        "Emanero",
+        "Malena Sánchez",
+        "Rocío Quiroz",
+        "Matías Marmorato",
+        "Leonel Arancibia",
+        "Lucas Castelnuovo"
+      ],
+      "orientation": "vertical",
+      "image": "images/verticals/2012-presentes-encuentro-contar-poster280x420.webp",
+      "subtitle": "Drama juvenil",
+      "capitulos": 20,
+      "fecha_estreno": "05/10/2012",
+      "sinopsis": "Un grupo de estudiantes secundarios del conurbano bonaerense atraviesa los desafíos de la adolescencia mientras intenta definir su identidad y su futuro. Entre amistades, amores y conflictos familiares, los jóvenes enfrentan situaciones de discriminación, dificultades escolares y compromiso social.",
+      "productora": "Mulata Films",
+      "director": [
+        "Pablo Destito",
+        "Luz López Mañe",
+        "Pablo Giles"
+      ],
+      "horario": "Viernes 20hs",
+      "tipo_emision": "Semanal",
+      "unitarios_rows": [
+        "ficciones-contar"
+      ],
+      "juveniles_rows": [
+        "ficciones-infanto-juveniles-contar"
+      ],
+      "fuentes": [
+        {
+          "nombre": "Educ.ar",
+          "url": "https://www.educ.ar/recursos/ver?rec_id=112213",
+          "tipo": "Estreno, horario, producción, elenco y primera temporada"
+        }
+      ]
+    },
+    {
+      "id": "V338",
+      "title": "¿Quién mató al Bebe Uriarte?",
+      "type": "serie",
+      "year": "2014",
+      "channel": "TV Pública",
+      "air_channels": [
+        "TV Pública"
+      ],
+      "air_broadcasts": [
+        {
+          "channel": "TV Pública",
+          "premiere_date": "11/03/2014",
+          "horario": "Martes 22:30hs; último capítulo emitido el lunes 09/06/2014",
+          "tipo_emision": "Semanal"
+        }
+      ],
+      "platforms": [
+        "Contar"
+      ],
+      "genre": "Thriller",
+      "actors": [
+        "Adrián Navarro",
+        "Miguel Ángel Solá",
+        "Federico Luppi",
+        "Leonora Balcarce",
+        "Juan Palomino",
+        "Alberto Benegas",
+        "Victoria Onetto",
+        "Martina Bompard",
+        "Raúl Kreig",
+        "Julio Di Santi",
+        "Adrián Airala",
+        "Querelle Delage",
+        "Rubén Von Der Thusen",
+        "Fabián Fiori",
+        "Alejandro Zilli",
+        "Valentín Panigutti",
+        "María Eugenia Bianchi"
+      ],
+      "orientation": "vertical",
+      "image": "images/verticals/2014-quien-mato-bebe-uriarte-tv-publica-contar-poster280x420.webp",
+      "subtitle": "Policial",
+      "capitulos": 13,
+      "fecha_estreno": "11/03/2014",
+      "sinopsis": "El asesinato de Esteban «Bebe» Uriarte, un influyente empresario de la noche santafesina, desencadena una investigación que involucra al fotógrafo Juan Moya. Mientras intenta descubrir al responsable, se enfrenta a una trama de secretos, intereses ocultos y personajes vinculados al poder local.",
+      "productora": "Universidad Nacional del Litoral / Arcadia Consultora / El Triángulo Producciones",
+      "director": [
+        "Gastón del Porto",
+        "Juan Pablo Arroyo",
+        "Alejandro Carreras"
+      ],
+      "horario": "Martes 22:30hs",
+      "tipo_emision": "Semanal",
+      "unitarios_rows": [
+        "ficciones-contar"
+      ],
+      "fuentes": [
+        {
+          "nombre": "Wikipedia",
+          "url": "https://es.wikipedia.org/wiki/¿Quién_mató_al_Bebe_Uriarte?",
+          "tipo": "Estreno, horario, episodios, elenco y ficha técnica"
+        }
+      ]
+    },
+    {
+      "id": "V339",
+      "title": "Ruta misteriosa",
+      "type": "serie",
+      "year": "2012",
+      "channel": "TV Pública",
+      "air_channels": [
+        "TV Pública"
+      ],
+      "air_broadcasts": [
+        {
+          "channel": "TV Pública",
+          "premiere_date": "19/12/2012",
+          "horario": "Martes a jueves 22:30hs (horario habitual)",
+          "tipo_emision": "Semanal"
+        }
+      ],
+      "platforms": [
+        "Contar"
+      ],
+      "genre": "Thriller",
+      "actors": [
+        "Vanesa González",
+        "Ezequiel Díaz",
+        "Lorenzo Quinteros",
+        "Manuel Vicente",
+        "Marta Haller",
+        "Héctor Bidonde",
+        "Germán Rodríguez",
+        "Edgardo Castro",
+        "Laura Paredes",
+        "Gonzalo Martínez",
+        "Valeria Lois",
+        "Miguel Ángel Martínez",
+        "Jimena Anganuzzi",
+        "Ariel Pérez de María",
+        "Alejandro Barratelli",
+        "Estela Garelli",
+        "Stella Galazzi",
+        "Guido Grispo",
+        "Luciano Grispo",
+        "Martín Kahn"
+      ],
+      "orientation": "vertical",
+      "image": "images/verticals/2012-ruta-misteriosa-tv-publica-contar-poster280x420.webp",
+      "subtitle": "Terror y misterio",
+      "capitulos": 8,
+      "fecha_estreno": "19/12/2012",
+      "sinopsis": "Ñata comienza a trabajar durante las noches en una estación de servicio ubicada junto a una antigua ruta provincial. Allí conoce a viajeros misteriosos y experimenta sucesos inexplicables vinculados con mitos y leyendas populares, mientras descubre los peligros que esconde aquel lugar.",
+      "productora": "Banda/Aparte",
+      "director": [
+        "Emanuel Flax",
+        "Néstor Mazzini"
+      ],
+      "horario": "Martes a jueves 22:30hs (horario habitual)",
+      "tipo_emision": "Semanal",
+      "unitarios_rows": [
+        "ficciones-contar"
+      ],
+      "fuentes": [
+        {
+          "nombre": "Wikipedia",
+          "url": "https://es.wikipedia.org/wiki/Ruta_misteriosa",
+          "tipo": "Estreno, horario, episodios, elenco y ficha técnica"
+        }
+      ]
+    },
+    {
+      "id": "V340",
+      "title": "Siete vuelos",
+      "type": "serie",
+      "year": "2017",
+      "channel": "TV Pública",
+      "air_channels": [
+        "TV Pública"
+      ],
+      "air_broadcasts": [
+        {
+          "channel": "TV Pública",
+          "premiere_date": "21/03/2017",
+          "horario": "Martes a viernes 21:00hs (horario anunciado)",
+          "tipo_emision": "Semanal"
+        }
+      ],
+      "platforms": [
+        "Contar"
+      ],
+      "genre": "Drama",
+      "actors": [
+        "Sabrina Garciarena",
+        "Víctor Laplace",
+        "Andrea Pietra",
+        "Lito Cruz",
+        "José María Barrios Hermosa",
+        "Carlos Álvarez-Novoa",
+        "Daniel Valenzuela",
+        "Omar Holz",
+        "Karin Scholler",
+        "Luis Andrada",
+        "Jorge Centeno",
+        "Elcida Villagra",
+        "Muriel Morgestern",
+        "Isabella Caminos Bragatto"
+      ],
+      "orientation": "vertical",
+      "image": "images/verticals/2012-siete-vuelos-tv-publica-contar-poster280x420.webp",
+      "subtitle": "Drama familiar",
+      "capitulos": 8,
+      "fecha_estreno": "21/03/2017",
+      "sinopsis": "Clara, una joven científica, descubre que el hombre que la crió no es su padre biológico. Decidida a conocer sus orígenes, viaja a Misiones, donde encuentra un cuaderno que la invita a conocer a siete personas fundamentales en la vida de su verdadero padre antes de encontrarse con él.",
+      "productora": "Detrás del Sol",
+      "director": [
+        "Gastón Gularte"
+      ],
+      "horario": "Martes a viernes 21:00hs (horario anunciado)",
+      "tipo_emision": "Semanal",
+      "unitarios_rows": [
+        "ficciones-contar"
+      ],
+      "fuentes": [
+        {
+          "nombre": "Wikipedia",
+          "url": "https://es.wikipedia.org/wiki/Siete_vuelos",
+          "tipo": "Estreno, episodios, elenco, productora y ficha técnica"
+        }
+      ]
+    },
+    {
+      "id": "V341",
+      "title": "Viento Sur",
+      "type": "serie",
+      "year": "2012",
+      "channel": "Canal 7 de Chubut",
+      "air_channels": [
+        "Canal 7 de Chubut",
+        "América"
+      ],
+      "air_broadcasts": [
+        {
+          "channel": "Canal 7 de Chubut",
+          "premiere_date": "08/11/2012",
+          "horario": "22:00hs",
+          "tipo_emision": "Semanal"
+        },
+        {
+          "channel": "América",
+          "premiere_date": "16/01/2014",
+          "horario": "Jueves 23:45hs",
+          "tipo_emision": "Semanal"
+        }
+      ],
+      "platforms": [
+        "Contar"
+      ],
+      "genre": "Thriller",
+      "actors": [
+        "Gabriel Corrado",
+        "Emilia Attias",
+        "Maite Zumelzú",
+        "Pablo Rago",
+        "Mike Amigorena",
+        "Damián De Santo",
+        "Juan Palomino",
+        "Tomás Fonzi",
+        "Naim Sibara",
+        "Roberto Vallejos",
+        "Claudio Rissi",
+        "Daniel Aráoz",
+        "Horacio Fontova",
+        "Oscar Alegre",
+        "Daniel Campomenosi",
+        "Aymará Rovera",
+        "Marcela Ruiz",
+        "Fabián Minelli"
+      ],
+      "orientation": "vertical",
+      "image": "images/verticals/2014-viento-sur-america-contar-poster280x420.webp",
+      "subtitle": "Suspenso histórico",
+      "capitulos": 8,
+      "fecha_estreno": "08/11/2012",
+      "sinopsis": "En la Patagonia de las décadas de 1930 y 1940, distintas historias de amor, traición, violencia y misterio reflejan el encuentro entre pueblos originarios e inmigrantes. A través de relatos independientes, la serie explora los secretos y conflictos de una región marcada por el aislamiento y las adversidades.",
+      "productora": "Azteka Films",
+      "director": [
+        "Sergio Cento Docato"
+      ],
+      "horario": "Jueves 23:45hs (América, 2014)",
+      "tipo_emision": "Semanal",
+      "unitarios_rows": [
+        "ficciones-contar"
+      ],
+      "fuentes": [
+        {
+          "nombre": "El Chubut",
+          "url": "https://www.elchubut.com.ar/regionales/2012-11-8-la-serie-viento-sur-comienza-a-emitirse-por-la-television-publica",
+          "tipo": "Antecedente de emisión en Canal 7 de Chubut en 2012"
+        },
+        {
+          "nombre": "El Popular",
+          "url": "https://www.elpopularhoy.com/con-un-olavarriense-en-el-guion--comienza--viento-sur-_a64eb21c6ddd2c423af2c827c",
+          "tipo": "Estreno en América, horario, elenco y producción"
+        }
+      ]
+    },
+    {
+      "id": "V342",
+      "title": "Volver a nacer",
+      "type": "serie",
+      "year": "2012",
+      "channel": "TV Pública",
+      "air_channels": [
+        "TV Pública"
+      ],
+      "air_broadcasts": [
+        {
+          "channel": "TV Pública",
+          "premiere_date": "03/04/2012",
+          "horario": "Lunes a jueves 22:30hs",
+          "tipo_emision": "Tira diaria"
+        }
+      ],
+      "platforms": [
+        "Contar"
+      ],
+      "genre": "Drama",
+      "actors": [
+        "Melina Petriella",
+        "Julieta Petriella",
+        "Federico D'Elía",
+        "Daniel Fanego",
+        "Rita Cortese",
+        "Alicia Zanca",
+        "Alejo García Pintos",
+        "Fabio Di Tomaso",
+        "Héctor Calori",
+        "Lucas Crespi",
+        "Manuel Vicente",
+        "Florencia Ortiz",
+        "Alejo Ortiz",
+        "Guadalupe Docampo",
+        "Ramiro Agüero",
+        "Beatriz Dellacasa",
+        "Silvana Sosto",
+        "Adela Gleijer"
+      ],
+      "orientation": "vertical",
+      "image": "images/verticals/2012-volver-a-nacer-tv-publica-contar-poster280x420.webp",
+      "subtitle": "Drama histórico",
+      "capitulos": 13,
+      "fecha_estreno": "03/04/2012",
+      "sinopsis": "Soledad y Pilar son dos hermanas gemelas, hijas de desaparecidos, que fueron separadas al nacer durante la última dictadura militar. Más de treinta años después, emprenden una búsqueda para reconstruir su pasado, descubrir la verdad sobre sus orígenes y recuperar su identidad.",
+      "productora": "Astro Films / Atuel Producciones",
+      "director": [
+        "Daniel De Felippo"
+      ],
+      "horario": "Lunes a jueves 22:30hs",
+      "tipo_emision": "Tira diaria",
+      "unitarios_rows": [
+        "ficciones-contar"
+      ],
+      "fuentes": [
+        {
+          "nombre": "LA NACION",
+          "url": "https://www.lanacion.com.ar/espectaculos/television/volver-a-nacer-por-canal-7-nid1461747/",
+          "tipo": "Estreno, horario, argumento y protagonistas"
+        }
+      ]
+    },
+    {
       "id": "P2045",
       "title": "Gutiérrez is Mai Nem",
       "type": "serie",
