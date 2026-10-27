@@ -1384,6 +1384,14 @@
       "subtitle": "Comedia",
       "id": "P1049",
       "viewers": 180007,
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2013,
+        "viewers": 180007,
+        "national_rank": 6,
+        "overall_rank": 58,
+        "updated_at": "2026-10-26"
+      },
       "producer": "Patagonik, Cine Ar",
       "release_date": "1/8/2013",
       "director": "Ariel Winograd"
@@ -1404,6 +1412,14 @@
       "subtitle": "Policial",
       "id": "P1050",
       "viewers": 972595,
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2013,
+        "viewers": 972595,
+        "national_rank": 4,
+        "overall_rank": 13,
+        "updated_at": "2026-10-26"
+      },
       "producer": "Telefe, Telecinco Cinema, Hugo Sigman (K&S Films)",
       "release_date": "5/9/2013",
       "director": "Patxi Amezcúa"
@@ -3370,7 +3386,15 @@
       "viewers": 1746547,
       "producer": "Argentina Sono Film, Telefe, Patagonik Film Group",
       "release_date": "15/8/2013",
-      "director": "Marcos Carnevale"
+      "director": "Marcos Carnevale",
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2013,
+        "viewers": 1746547,
+        "national_rank": 2,
+        "overall_rank": 6,
+        "updated_at": "2026-10-26"
+      }
     },
     {
       "title": "El Aura",
@@ -3876,7 +3900,15 @@
       "viewers": 1047647,
       "producer": "Telefe, Haddock Films, Tornasol Films, INCAA",
       "release_date": "17/1/2013",
-      "director": "Hernán Goldfrid"
+      "director": "Hernán Goldfrid",
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2013,
+        "viewers": 1047647,
+        "national_rank": 3,
+        "overall_rank": 11,
+        "updated_at": "2026-10-26"
+      }
     },
     {
       "title": "Kamchatka",
@@ -4209,6 +4241,14 @@
       "subtitle": "Familiar",
       "id": "P1158",
       "viewers": 91639,
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2013,
+        "viewers": 91639,
+        "national_rank": 10,
+        "overall_rank": 85,
+        "updated_at": "2026-10-26"
+      },
       "producer": "INCAA",
       "release_date": "18/5/2013",
       "director": "Leandro Mark"
@@ -4249,7 +4289,15 @@
       "viewers": 2139844,
       "producer": "100 Bares, Antena 3 Films, Mundoloco CGI Animation Studios, Telefe, Canal+",
       "release_date": "18/7/2013",
-      "director": "Juan José Campanella"
+      "director": "Juan José Campanella",
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2013,
+        "viewers": 2139844,
+        "national_rank": 1,
+        "overall_rank": 4,
+        "updated_at": "2026-10-26"
+      }
     },
     {
       "title": "Viudas",
@@ -4356,8 +4404,16 @@
       "subtitle": "Histórica",
       "id": "P1164",
       "viewers": 423762,
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2013,
+        "viewers": 423762,
+        "national_rank": 5,
+        "overall_rank": 31,
+        "updated_at": "2026-10-26"
+      },
       "producer": "Pyramide Productions, Wanda Films, Telefe",
-      "release_date": "19/5/2013",
+      "release_date": "19/9/2013",
       "director": "Lucía Puenzo"
     },
     {
