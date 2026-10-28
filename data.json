@@ -1441,6 +1441,14 @@
       "subtitle": "Familiar",
       "id": "P1051",
       "viewers": 292226,
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2014,
+        "viewers": 292226,
+        "national_rank": 6,
+        "overall_rank": 44,
+        "updated_at": "2026-10-27"
+      },
       "producer": "Buena Vista International, Pampa Films, Benteveo Producciones, Telefe",
       "release_date": "3/7/2014",
       "director": "Juan Pablo Buscarini"
@@ -1461,6 +1469,14 @@
       "subtitle": "Policial",
       "id": "P1052",
       "viewers": 484893,
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2014,
+        "viewers": 484893,
+        "national_rank": 5,
+        "overall_rank": 26,
+        "updated_at": "2026-10-27"
+      },
       "producer": "Distribution Company",
       "release_date": "5/5/2014",
       "director": "Natalia Meta"
@@ -1477,12 +1493,21 @@
       ],
       "synopsis": "Los nuevos bañeros llegan a Mar del Plata con gags, inventos y trampas en la playa. Con ayuda de los animales marinos, enfrentarán a un empresario malvado en un final divertido.",
       "channel": "",
-      "image": "images/verticals/bañeros-4-los-rompeolas-2014-poster-280x420.png",
+      "horizontal_image":"images/horizontals-1024x576/2014-baneros-4-rompeolas-pelicula-slide1024x576.webp",
+      "image": "images/verticals/2014-baneros-4-rompeolas-pelicula-poster280x420.webp",
       "orientation": "vertical",
       "type": "pelicula",
       "subtitle": "Comedia",
       "id": "P1053",
       "viewers": 936024,
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2014,
+        "viewers": 936024,
+        "national_rank": 2,
+        "overall_rank": 10,
+        "updated_at": "2026-10-27"
+      },
       "producer": "Argentina Sono Film, Telefe",
       "release_date": "10/7/2014",
       "director": "Rodolfo Ledo"
@@ -3546,6 +3571,14 @@
       "subtitle": "Drama",
       "id": "P1132",
       "viewers": 614037,
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2014,
+        "viewers": 614037,
+        "national_rank": 3,
+        "overall_rank": 21,
+        "updated_at": "2026-10-27"
+      },
       "producer": "Cirko Film, Telefe",
       "release_date": "16/1/2014",
       "director": "Daniel Burman"
@@ -4062,6 +4095,14 @@
       "subtitle": "Comedia",
       "id": "P1150",
       "viewers": 565629,
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2014,
+        "viewers": 565629,
+        "national_rank": 4,
+        "overall_rank": 23,
+        "updated_at": "2026-10-27"
+      },
       "producer": "Cinemagroup",
       "release_date": "17/7/2014",
       "director": "Fabián Forte"
@@ -4864,7 +4905,15 @@
       "type": "pelicula",
       "subtitle": "Policial",
       "id": "P1181",
-      "viewers": 4003395,
+      "viewers": 4003595,
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2014,
+        "viewers": 4003595,
+        "national_rank": 1,
+        "overall_rank": 1,
+        "updated_at": "2026-10-27"
+      },
       "producer": "Kramer & Sigman Films, El Deseo, Telefe",
       "release_date": "21/8/2014",
       "director": "Damián Szifron"
@@ -11042,6 +11091,71 @@
         "no-emitidos",
         "coproducciones"
       ]
+    },
+    {
+      "id": "P2105",
+      "title": "Betibú",
+      "genre": "Policial",
+      "year": "2014",
+      "actors": [
+        "Mercedes Morán",
+        "Daniel Fanego",
+        "Alberto Ammann",
+        "José Coronado"
+      ],
+      "synopsis": "Tras el asesinato de un poderoso empresario en un exclusivo barrio privado, la escritora de novelas policiales Nurit Iscar, conocida como Betibú, regresa al periodismo para investigar el caso junto a dos periodistas. Pronto descubren una serie de muertes vinculadas con un oscuro pasado.",
+      "channel": "",
+      "image": "images/verticals/2014-betibu-pelicula-telefe-tornasol-poster280x420.webp",
+      "horizontal_image": "images/horizontals-1024x576/2014-betibu-pelicula-telefe-tornasol-horizontal1024x576.webp",
+      "orientation": "vertical",
+      "type": "pelicula",
+      "subtitle": "Policial",
+      "viewers": 284773,
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2014,
+        "viewers": 284773,
+        "national_rank": 7,
+        "overall_rank": 46,
+        "updated_at": "2026-10-27"
+      },
+      "producer": "Haddock Films, Tornasol Films, Telefe, INCAA",
+      "release_date": "3/4/2014",
+      "director": "Miguel Cohan"
+    },
+    {
+      "id": "P2106",
+      "title": "Violetta: en concierto",
+      "genre": "Documental Musical",
+      "year": "2014",
+      "actors": [
+        "Martina Stoessel",
+        "Jorge Blanco",
+        "Diego Domínguez",
+        "Mercedes Lambre",
+        "Lodovica Comello",
+        "Facundo Gambandé",
+        "Candelaria Molfese"
+      ],
+      "synopsis": "Martina Stoessel y el elenco de Violetta llevan a la pantalla grande su gira internacional, con imágenes del concierto en Milán, actuaciones musicales y momentos inéditos detrás de escena.",
+      "channel": "",
+      "image": "",
+      "horizontal_image": "",
+      "orientation": "vertical",
+      "type": "pelicula",
+      "subtitle": "Documental Musical",
+      "viewers": 120340,
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2014,
+        "viewers": 120340,
+        "national_rank": 8,
+        "overall_rank": 75,
+        "updated_at": "2026-10-27"
+      },
+      "producer": "The Walt Disney Company, Whizz Kid Entertainment",
+      "release_date": "3/4/2014",
+      "director": "Matthew Amos, Diego Bliffeld, Ariel Del Mastro"
     },
     {
       "id": "T0001",
