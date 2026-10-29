@@ -1493,7 +1493,7 @@
       ],
       "synopsis": "Los nuevos bañeros llegan a Mar del Plata con gags, inventos y trampas en la playa. Con ayuda de los animales marinos, enfrentarán a un empresario malvado en un final divertido.",
       "channel": "",
-      "horizontal_image":"images/horizontals-1024x576/2014-baneros-4-rompeolas-pelicula-slide1024x576.webp",
+      "horizontal_image": "images/horizontals-1024x576/2014-baneros-4-rompeolas-pelicula-slide1024x576.webp",
       "image": "images/verticals/2014-baneros-4-rompeolas-pelicula-poster280x420.webp",
       "orientation": "vertical",
       "type": "pelicula",
@@ -15861,6 +15861,12 @@
         "comedias-exitosas",
         "sitcoms"
       ],
+      "temporadas": [
+        {
+          "numero": 2,
+          "image": "images/verticals/2005-casados-con-hijos-segunda-temporada-telefe-sony-poster280x420.webp"
+        }
+      ],
       "subtitle": "Sitcom",
       "horario": "22:30hs",
       "capitulos": 212,
@@ -26261,6 +26267,17 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/valentino-el-argentino-280x420.png",
+      "horizontal_image":"images/horizontals-1024x576/2008-valentino-el-argentino-canal-trece-canal-rcn-slide-1024x576.webp",
+      "poster_gallery": [
+        {
+          "image": "images/verticals/valentino-el-argentino-280x420.png",
+          "label": "Póster principal"
+        },
+        {
+          "image": "images/verticals/2008-valentino-el-argentino-canal-trece-canal-rcn-poster-280x420-v1.webp",
+          "label": "Póster alternativo"
+        }
+      ],
       "tiras_2000_rows": [
         "ficciones-tarde",
         "protagonistas-latinoamerica"
