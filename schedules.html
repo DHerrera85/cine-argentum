@@ -357,12 +357,12 @@
             display: grid;
 
             grid-template-columns:
-                90px repeat(3, minmax(220px, 1fr));
+                90px repeat(var(--schedule-channel-count, 3), minmax(220px, 1fr));
 
             gap: 1px;
 
             width: 100%;
-            overflow-x: auto;
+            min-width: max-content;
 
             background: #2a333d;
 
@@ -372,7 +372,8 @@
 
         .schedule-competition-image {
             width: 88%;
-            max-height: 82px;
+            aspect-ratio: 16 / 9;
+            max-height: 110px;
             margin: 8px auto 10px;
 
             display: block;

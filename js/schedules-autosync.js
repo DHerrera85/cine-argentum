@@ -117,7 +117,17 @@
             return '';
         }
 
+        // Miniaturas específicas para la programación histórica
+        const scheduleThumbnails = {
+            T0040: 'images/schedules-thumbnails/1996-mi-familia-es-un-dibujo.webp',
+            T0009: 'images/schedules-thumbnails/1996-mi-cunado.webp',
+            T0020: 'images/schedules-thumbnails/1996-chiquititas.webp',
+            T0068: 'images/schedules-thumbnails/1996-por-siempre-mujercitas.webp',
+            T0024: 'images/schedules-thumbnails/1996-zingara.webp'
+        };
+
         return (
+            scheduleThumbnails[production.id] ||
             production.horizontal_image ||
             production.image ||
             ''
@@ -488,11 +498,13 @@
             'viernes'
         ];
 
-        var channelNames = [
-            'Telefe',
-            'Canal 13',
-            'Canal 9'
-        ];
+        var channelNames = schedule.channels
+            .map(function (channel) {
+                return channel.channel;
+            })
+            .filter(function (name) {
+                return Boolean(name);
+            });
 
         var allEntries = [];
 
@@ -599,7 +611,9 @@
             '</div>' +
 
             '<div class="schedule-competition-grid" ' +
-            'style="grid-template-rows: auto repeat(' +
+            'style="--schedule-channel-count: ' +
+            channelNames.length +
+            '; grid-template-rows: auto repeat(' +
             rowCount +
             ', 74px);">' +
 
@@ -898,7 +912,10 @@
         if (periodSelect) {
             periodSelect.addEventListener(
                 'change',
-                renderCurrentView
+                function () {
+                    populateChannelSelector();
+                    renderCurrentView();
+                }
             );
         }
 
@@ -949,6 +966,70 @@
         );
     }
 
+    function populatePeriodSelector() {
+        var select = getElement(SELECTORS.period);
+
+        if (!select) {
+            return;
+        }
+
+        var selectedId = select.value;
+
+        select.innerHTML = '';
+
+        schedulesData.forEach(function (schedule) {
+            var option = document.createElement('option');
+
+            option.value = schedule.id;
+            option.textContent = schedule.label;
+
+            select.appendChild(option);
+        });
+
+        if (schedulesData.some(function (schedule) {
+            return schedule.id === selectedId;
+        })) {
+            select.value = selectedId;
+        }
+    }
+
+    function populateChannelSelector() {
+        var select = getElement(SELECTORS.channel);
+
+        if (!select) {
+            return;
+        }
+
+        var selectedChannel = select.value;
+        var schedule = findScheduleById(getSelectedPeriodId());
+
+        if (!schedule || !Array.isArray(schedule.channels)) {
+            return;
+        }
+
+        select.innerHTML = '';
+
+        schedule.channels.forEach(function (channel) {
+            var channelName = channel.channel;
+
+            if (!channelName) {
+                return;
+            }
+
+            var option = document.createElement('option');
+            option.value = channelName;
+            option.textContent = channelName;
+
+            select.appendChild(option);
+        });
+
+        // Conservar el canal si existe en ambos períodos.
+        if (schedule.channels.some(function (channel) {
+            return channel.channel === selectedChannel;
+        })) {
+            select.value = selectedChannel;
+        }
+    }
 
     function loadData() {
         Promise.all([
@@ -988,6 +1069,8 @@
                         ? dataJson.items
                         : [];
 
+                populatePeriodSelector();
+                populateChannelSelector();
                 bindControls();
                 renderCurrentView();
             })
