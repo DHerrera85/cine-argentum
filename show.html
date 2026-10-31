@@ -1809,6 +1809,29 @@
           ? '<dt>Guion</dt><dd>' + detailList(item.guion) + '</dd>'
           : '';
 
+        var fuenteRow = '';
+
+        if (hasValue(item.fuente)) {
+          var fuenteLabel = escapeDetailText(item.fuente);
+          var fuenteUrl = hasValue(item.fuente_url)
+            ? String(item.fuente_url).trim()
+            : '';
+
+          fuenteRow = '<dt>Fuente</dt><dd>';
+
+          if (/^https?:\/\//i.test(fuenteUrl)) {
+            fuenteRow +=
+              '<a href="' + escapeDetailText(fuenteUrl) + '" ' +
+              'target="_blank" rel="noopener noreferrer">' +
+              fuenteLabel +
+              '</a>';
+          } else {
+            fuenteRow += fuenteLabel;
+          }
+
+          fuenteRow += '</dd>';
+        }
+
         function toArray(value) {
           if (Array.isArray(value)) {
             return value.filter(function (v) { return hasValue(v); }).map(function (v) { return String(v).trim(); });
@@ -2552,6 +2575,7 @@
           + creadoresRow
           + showrunnerRow
           + guionRow
+          + fuenteRow
           + '</dl>'
           + emisionesTVSection
           + temporadasSection

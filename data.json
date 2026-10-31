@@ -13433,7 +13433,7 @@
     },
     {
       "id": "T0145",
-      "title": "El Árbol Azul",
+      "title": "El Arbol Azul",
       "year": "1993",
       "channel": "América",
       "genre": "Infantil",
@@ -16300,16 +16300,59 @@
     {
       "id": "V303",
       "title": "Gordon",
+      "type": "serie",
       "year": "2026",
       "channel": "Netflix",
+      "platform": "Netflix",
+      "platforms": [
+        "Netflix"
+      ],
       "genre": "Thriller",
       "actors": [
-        "Rodrigo de la Serna"
+        "Rodrigo de la Serna",
+        "Matías Recalt",
+        "Camila Peralta",
+        "Fiorella Bottaioli",
+        "Agustín Pardella",
+        "Fernando Contigiani",
+        "Agustina Muñoz",
+        "Matías Mayer"
       ],
       "orientation": "vertical",
-      "image": "images/verticals/gordon-poster-280x420.png",
-      "subtitle": "Drama",
-      "release_date": "01/11/2026"
+      "image": "images/verticals/gordon-poster-280x420-v2.webp",
+      "poster_gallery": [
+        {
+          "image": "images/verticals/gordon-poster-280x420-v2.webp",
+          "label": "Póster principal"
+        },
+        {
+          "image": "images/verticals/gordon-poster-280x420.webp",
+          "label": "Póster alternativo"
+        }
+      ],
+      "horizontal_image": "images/horizontals-1024x576/2026-gordon-netflix-horizontal-slide-1024x576-v1.webp",
+      "horizontal_gallery": [
+        {
+          "image": "images/horizontals-1024x576/2026-gordon-netflix-horizontal-slide-1024x576-v1.webp",
+          "label": "Imagen principal"
+        },
+        {
+          "image": "images/horizontals-1024x576/2026-gordon-netflix-horizontal-slide-1024x576-v2.webp",
+          "label": "Imagen alternativa"
+        }
+      ],
+      "subtitle": "Thriller",
+      "release_date": "18/11/2026",
+      "capitulos": 7,
+      "sinopsis": "Inspirado en hechos reales, este thriller sigue la transformación de Aníbal Gordon, un delincuente común que, sin abandonar el crimen, se convirtió en un implacable agente paraestatal durante la violencia política de la Argentina de los años setenta.",
+      "productora": "Preludio Producciones",
+      "director": "Pablo Trapero y Pablo Fendrik",
+      "showrunner": "Pablo Trapero",
+      "guionista": "Marcos Osorio Vidal y Pablo Trapero, con la colaboración de Marcelo Larraquy",
+      "basada_en": "Gordon y Gordon, el aniquilador, de Marcelo Larraquy",
+      "fuente": "Netflix — Gordon llega el 18 de noviembre",
+      "fuente_url": "https://about.netflix.com/es/news/gordon-llega-a-netflix-el-18-de-noviembre",
+      "status": "Próximamente"
     },
     {
       "id": "V304",
@@ -26267,7 +26310,7 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/valentino-el-argentino-280x420.png",
-      "horizontal_image":"images/horizontals-1024x576/2008-valentino-el-argentino-canal-trece-canal-rcn-slide-1024x576.webp",
+      "horizontal_image": "images/horizontals-1024x576/2008-valentino-el-argentino-canal-trece-canal-rcn-slide-1024x576.webp",
       "poster_gallery": [
         {
           "image": "images/verticals/valentino-el-argentino-280x420.png",
