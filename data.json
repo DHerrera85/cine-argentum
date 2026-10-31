@@ -15811,27 +15811,77 @@
     {
       "id": "h2",
       "title": "El Primero de Nosotros",
+      "type": "serie",
       "year": "2022",
-      "release_date": "21/03/2022",
       "channel": "Telefe",
+      "platform": "Paramount+",
+      "platforms": [
+        "Paramount+"
+      ],
       "genre": "Drama",
-      "tipo_emision": "Tira Diaria",
       "actors": [
         "Benjamín Vicuña",
         "Paola Krum",
         "Luciano Castro",
-        "Mercedes Funes",
         "Jorgelina Aruzzi",
-        "Damián De Santo"
+        "Damián De Santo",
+        "Mercedes Funes"
       ],
       "orientation": "vertical",
+      "image": "images/verticals/2022-el-primero-de-nosotros-telefe-paramount-poster-280x420-v1.webp",
+      "poster_gallery": [
+        {
+          "image": "images/verticals/2022-el-primero-de-nosotros-telefe-paramount-poster-280x420-v1.webp",
+          "label": "Póster principal — Telefe y Paramount+"
+        },
+        {
+          "image": "images/verticals/2022-el-primero-de-nosotros-telefe-paramount-poster-280x420-v2.webp",
+          "label": "Póster alternativo"
+        }
+      ],
+      "horizontal_image": "images/horizontals-1024x576/2022-el-primero-de-nosotros-telefe-paramount-slide-1024x576-v1.webp",
+      "horizontal_gallery": [
+        {
+          "image": "images/horizontals-1024x576/2022-el-primero-de-nosotros-telefe-paramount-slide-1024x576-v1.webp",
+          "label": "Imagen principal"
+        },
+        {
+          "image": "images/horizontals-1024x576/2022-el-primero-de-nosotros-telefe-paramount-slide-1024x576-v2.webp",
+          "label": "Imagen alternativa"
+        }
+      ],
       "tiras_2010_rows": [
         "ultimas",
         "thrillers-dramas"
       ],
-      "image": "images/verticals/el-primero-de-nosotros-poster-280x420.png",
-      "horizontal_image": "images/horizontals-1024x576/el-primero-de-nosotros-slide-1024x576.png",
-      "subtitle": "Drama"
+      "subtitle": "Comedia dramática",
+      "tipo_emision": "Tira Diaria",
+      "capitulos": 59,
+      "release_date": "21/03/2022",
+      "fecha_final": "30/06/2022",
+      "sinopsis": "Un grupo de amigos que atraviesa los 40 años recibe una noticia que cambia sus vidas: Santiago padece una enfermedad terminal. La cercanía de la muerte los impulsa a revisar sus vínculos, deseos y decisiones, mientras intentan acompañarlo y aprender a valorar el tiempo compartido.",
+      "rating": "11,0",
+      "productora": "Viacom International Studios",
+      "director": [
+        "Pablo Vásquez",
+        "Pablo Ambrosino"
+      ],
+      "guion": [
+        "Ernesto Korovsky",
+        "Romina Moretto",
+        "Micaela Libson",
+        "Juan Ciuffo"
+      ],
+      "remakes": [
+        {
+          "title": "Ο πρώτος από εμάς",
+          "country": "Grecia",
+          "year": "2023",
+          "image": ""
+        }
+      ],
+      "fuente": "Wikipedia — El primero de nosotros",
+      "fuente_url": "https://es.wikipedia.org/wiki/El_primero_de_nosotros"
     },
     {
       "id": "h3",
