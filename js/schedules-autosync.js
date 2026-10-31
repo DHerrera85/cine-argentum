@@ -175,7 +175,12 @@
             }
 
             if (end !== null) {
-                ends.push(end);
+                // Normalizar finales posteriores a medianoche.
+                if (start !== null && end < start) {
+                    ends.push(end + 24 * 60);
+                } else {
+                    ends.push(end);
+                }
             } else if (start !== null) {
                 ends.push(start + 30);
             }
@@ -234,7 +239,13 @@
         var duration =
             end - start;
 
-        if (duration <= 0) {
+        // Si termina a medianoche o al d?a siguiente,
+        // continuar el c?lculo despu?s de las 24:00.
+        if (duration < 0) {
+            duration += 24 * 60;
+        }
+
+        if (duration === 0) {
             return 1;
         }
 

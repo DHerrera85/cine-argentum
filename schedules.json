@@ -16,11 +16,12 @@
               "days": [
                 "lunes",
                 "martes",
-                "mi?rcoles",
+                "miércoles",
                 "jueves",
                 "viernes"
               ],
-              "start": "11:30"
+              "start": "11:30",
+              "end": "13:00"
             },
             {
               "type": "program",
@@ -28,11 +29,12 @@
               "days": [
                 "lunes",
                 "martes",
-                "mi?rcoles",
+                "miércoles",
                 "jueves",
                 "viernes"
               ],
-              "start": "13:00"
+              "start": "13:00",
+              "end": "14:00"
             },
             {
               "type": "program",
@@ -40,11 +42,12 @@
               "days": [
                 "lunes",
                 "martes",
-                "mi?rcoles",
+                "miércoles",
                 "jueves",
                 "viernes"
               ],
-              "start": "14:00"
+              "start": "14:00",
+              "end": "16:00"
             },
             {
               "type": "program",
@@ -52,11 +55,12 @@
               "days": [
                 "lunes",
                 "martes",
-                "mi?rcoles",
+                "miércoles",
                 "jueves",
                 "viernes"
               ],
-              "start": "16:00"
+              "start": "16:00",
+              "end": "17:00"
             },
             {
               "type": "program",
@@ -64,11 +68,12 @@
               "days": [
                 "lunes",
                 "martes",
-                "mi?rcoles",
+                "miércoles",
                 "jueves",
                 "viernes"
               ],
-              "start": "17:00"
+              "start": "17:00",
+              "end": "18:00"
             },
             {
               "type": "program",
@@ -76,11 +81,12 @@
               "days": [
                 "lunes",
                 "martes",
-                "mi?rcoles",
+                "miércoles",
                 "jueves",
                 "viernes"
               ],
-              "start": "18:00"
+              "start": "18:00",
+              "end": "19:00"
             },
             {
               "type": "program",
@@ -88,11 +94,12 @@
               "days": [
                 "lunes",
                 "martes",
-                "mi?rcoles",
+                "miércoles",
                 "jueves",
                 "viernes"
               ],
-              "start": "19:00"
+              "start": "19:00",
+              "end": "20:00"
             },
             {
               "type": "production",
@@ -100,52 +107,60 @@
               "days": [
                 "lunes",
                 "martes",
-                "mi?rcoles",
+                "miércoles",
                 "jueves",
                 "viernes"
               ],
               "start": "20:00",
-              "production_id": "T0001"
+              "production_id": "T0001",
+              "end": "21:00"
             },
             {
               "type": "program",
-              "title": "Corky, la Fuerza del Cari?o",
-              "days": [
-                "jueves"
-              ],
-              "start": "21:00"
-            },
-            {
-              "type": "program",
-              "title": "Una Picara So?adora",
+              "title": "Una Pícara Soñadora",
               "days": [
                 "lunes"
               ],
-              "start": "21:00"
+              "start": "21:00",
+              "end": "22:00"
             },
             {
-              "type": "program",
+              "type": "production",
               "title": "Dos al Toque",
               "days": [
                 "martes"
               ],
-              "start": "21:00"
+              "start": "21:00",
+              "production_id": "T0011",
+              "end": "22:00"
             },
             {
               "type": "program",
               "title": "Documental - Vientos de Vida",
               "days": [
-                "mi?rcoles"
+                "miércoles"
               ],
-              "start": "21:00"
+              "start": "21:00",
+              "end": "22:00"
             },
             {
               "type": "program",
+              "title": "Corky, la Fuerza del Cariño",
+              "days": [
+                "jueves"
+              ],
+              "start": "21:00",
+              "end": "22:00"
+            },
+            {
+              "type": "production",
               "title": "Buena Pata",
               "days": [
                 "viernes"
               ],
-              "start": "21:00"
+              "start": "21:00",
+              "production_id": "T0012",
+              "end": "22:00"
             },
             {
               "type": "program",
@@ -153,7 +168,20 @@
               "days": [
                 "lunes"
               ],
-              "start": "22:00"
+              "start": "22:00",
+              "end": "00:00"
+            },
+            {
+              "type": "program",
+              "title": "Cine",
+              "days": [
+                "martes",
+                "miércoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "22:00",
+              "end": "00:00"
             }
           ]
         },
@@ -166,11 +194,12 @@
               "days": [
                 "lunes",
                 "martes",
-                "mi?rcoles",
+                "miércoles",
                 "jueves",
                 "viernes"
               ],
-              "start": "12:30"
+              "start": "12:30",
+              "end": "13:00"
             },
             {
               "type": "program",
@@ -178,23 +207,26 @@
               "days": [
                 "lunes",
                 "martes",
-                "mi?rcoles",
+                "miércoles",
                 "jueves",
                 "viernes"
               ],
-              "start": "13:00"
+              "start": "13:00",
+              "end": "15:00"
             },
             {
-              "type": "program",
+              "type": "production",
               "title": "Antonella",
               "days": [
                 "lunes",
                 "martes",
-                "mi?rcoles",
+                "miércoles",
                 "jueves",
                 "viernes"
               ],
-              "start": "15:00"
+              "start": "15:00",
+              "end": "16:00",
+              "production_id": "T0095"
             },
             {
               "type": "program",
@@ -202,23 +234,25 @@
               "days": [
                 "lunes",
                 "martes",
-                "mi?rcoles",
+                "miércoles",
                 "jueves",
                 "viernes"
               ],
-              "start": "16:00"
+              "start": "16:00",
+              "end": "17:00"
             },
             {
               "type": "program",
-              "title": "Mar?a de Nadie",
+              "title": "María de Nadie",
               "days": [
                 "lunes",
                 "martes",
-                "mi?rcoles",
+                "miércoles",
                 "jueves",
                 "viernes"
               ],
-              "start": "17:00"
+              "start": "17:00",
+              "end": "18:00"
             },
             {
               "type": "program",
@@ -226,11 +260,12 @@
               "days": [
                 "lunes",
                 "martes",
-                "mi?rcoles",
+                "miércoles",
                 "jueves",
                 "viernes"
               ],
-              "start": "18:00"
+              "start": "18:00",
+              "end": "19:00"
             },
             {
               "type": "program",
@@ -238,11 +273,12 @@
               "days": [
                 "lunes",
                 "martes",
-                "mi?rcoles",
+                "miércoles",
                 "jueves",
                 "viernes"
               ],
-              "start": "19:00"
+              "start": "19:00",
+              "end": "20:00"
             },
             {
               "type": "program",
@@ -250,19 +286,12 @@
               "days": [
                 "lunes",
                 "martes",
-                "mi?rcoles",
+                "miércoles",
                 "jueves",
                 "viernes"
               ],
-              "start": "20:00"
-            },
-            {
-              "type": "program",
-              "title": "Tarzan",
-              "days": [
-                "jueves"
-              ],
-              "start": "21:00"
+              "start": "20:00",
+              "end": "21:00"
             },
             {
               "type": "program",
@@ -270,7 +299,8 @@
               "days": [
                 "lunes"
               ],
-              "start": "21:00"
+              "start": "21:00",
+              "end": "22:00"
             },
             {
               "type": "program",
@@ -278,35 +308,48 @@
               "days": [
                 "martes"
               ],
-              "start": "21:00"
+              "start": "21:00",
+              "end": "22:00"
             },
             {
               "type": "program",
               "title": "Vivo con un Fantasma",
               "days": [
-                "mi?rcoles"
+                "miércoles"
               ],
-              "start": "21:00"
+              "start": "21:00",
+              "end": "22:00"
             },
             {
               "type": "program",
-              "title": "Uno M?s Uno",
+              "title": "Tarzan",
+              "days": [
+                "jueves"
+              ],
+              "start": "21:00",
+              "end": "22:00"
+            },
+            {
+              "type": "program",
+              "title": "Uno Más Uno",
               "days": [
                 "viernes"
               ],
-              "start": "21:00"
+              "start": "21:00",
+              "end": "22:00"
             },
             {
               "type": "program",
-              "title": "El mundo del espect?culo",
+              "title": "El mundo del espectáculo",
               "days": [
                 "lunes",
                 "martes",
-                "mi?rcoles",
+                "miércoles",
                 "jueves",
                 "viernes"
               ],
-              "start": "22:00"
+              "start": "22:00",
+              "end": "00:00"
             }
           ]
         },
@@ -319,11 +362,12 @@
               "days": [
                 "lunes",
                 "martes",
-                "mi?rcoles",
+                "miércoles",
                 "jueves",
                 "viernes"
               ],
-              "start": "12:00"
+              "start": "12:00",
+              "end": "13:00"
             },
             {
               "type": "program",
@@ -331,11 +375,12 @@
               "days": [
                 "lunes",
                 "martes",
-                "mi?rcoles",
+                "miércoles",
                 "jueves",
                 "viernes"
               ],
-              "start": "13:00"
+              "start": "13:00",
+              "end": "15:00"
             },
             {
               "type": "program",
@@ -343,35 +388,38 @@
               "days": [
                 "lunes",
                 "martes",
-                "mi?rcoles",
+                "miércoles",
                 "jueves",
                 "viernes"
               ],
-              "start": "15:00"
+              "start": "15:00",
+              "end": "16:00"
             },
             {
               "type": "program",
-              "title": "Yo me quiero casar? ?y usted?",
+              "title": "Yo me quiero casar… ¿y usted?",
               "days": [
                 "lunes",
                 "martes",
-                "mi?rcoles",
+                "miércoles",
                 "jueves",
                 "viernes"
               ],
-              "start": "16:00"
+              "start": "16:00",
+              "end": "17:00"
             },
             {
               "type": "program",
-              "title": "Los ricos tambi?n lloran",
+              "title": "Los ricos también lloran",
               "days": [
                 "lunes",
                 "martes",
-                "mi?rcoles",
+                "miércoles",
                 "jueves",
                 "viernes"
               ],
-              "start": "17:00"
+              "start": "17:00",
+              "end": "18:00"
             },
             {
               "type": "production",
@@ -379,24 +427,27 @@
               "days": [
                 "lunes",
                 "martes",
-                "mi?rcoles",
+                "miércoles",
                 "jueves",
                 "viernes"
               ],
               "start": "18:00",
-              "production_id": "T0056"
+              "production_id": "T0056",
+              "end": "19:00"
             },
             {
-              "type": "program",
+              "type": "production",
               "title": "El Club de las Babysitters",
               "days": [
                 "lunes",
                 "martes",
-                "mi?rcoles",
+                "miércoles",
                 "jueves",
                 "viernes"
               ],
-              "start": "19:00"
+              "start": "19:00",
+              "end": "20:00",
+              "production_id": "T0060"
             },
             {
               "type": "program",
@@ -404,51 +455,70 @@
               "days": [
                 "lunes",
                 "martes",
-                "mi?rcoles",
+                "miércoles",
                 "jueves",
                 "viernes"
               ],
-              "start": "20:00"
+              "start": "20:00",
+              "end": "21:00"
             },
             {
               "type": "program",
-              "title": "?Dale Loly!",
-              "days": [
-                "jueves"
-              ],
-              "start": "21:00"
-            },
-            {
-              "type": "program",
-              "title": "Aquellos D?as Felices",
+              "title": "Aquellos Días Felices",
               "days": [
                 "lunes"
               ],
-              "start": "21:00"
+              "start": "21:00",
+              "end": "22:00"
             },
             {
-              "type": "program",
-              "title": "Mi, Mujer y Tu Marido: ?Que Pareja!",
+              "type": "production",
+              "title": "Mi Mujer, Tu Marido, ¡Qué Pareja!",
               "days": [
                 "martes"
               ],
-              "start": "21:00"
+              "start": "21:00",
+              "end": "22:00",
+              "production_id": "T0106"
             },
             {
               "type": "program",
-              "title": "La Pel?cula Disney",
+              "title": "La Película Disney",
               "days": [
-                "mi?rcoles"
+                "miércoles"
               ],
-              "start": "21:00"
+              "start": "21:00",
+              "end": "23:00"
             },
             {
-              "type": "program",
+              "type": "production",
+              "title": "¡Dale Loly!",
+              "days": [
+                "jueves"
+              ],
+              "start": "21:00",
+              "end": "22:00",
+              "production_id": "T0105"
+            },
+            {
+              "type": "production",
               "title": "Los Libonatti",
               "days": [
                 "viernes"
               ],
-              "start": "21:00"
+              "start": "21:00",
+              "end": "22:00",
+              "production_id": "T0108"
+            },
+            {
+              "type": "production",
+              "title": "Cosecharás tu Siembra",
+              "days": [
+                "lunes"
+              ],
+              "start": "22:00",
+              "end": "23:00",
+              "production_id": "T0050"
             },
             {
               "type": "program",
@@ -456,15 +526,8 @@
               "days": [
                 "jueves"
               ],
-              "start": "22:00"
-            },
-            {
-              "type": "program",
-              "title": "Cosechar?s tu Siempre",
-              "days": [
-                "lunes"
-              ],
-              "start": "22:00"
+              "start": "22:00",
+              "end": "23:00"
             },
             {
               "type": "program",
@@ -472,16 +535,35 @@
               "days": [
                 "lunes",
                 "martes",
-                "mi?rcoles",
+                "miércoles",
                 "jueves",
                 "viernes"
               ],
-              "start": "23:00"
+              "start": "23:00",
+              "end": "00:00"
+            },
+            {
+              "title": "Cine",
+              "type": "program",
+              "start": "22:00",
+              "end": "00:00",
+              "days": [
+                "martes"
+              ]
+            },
+            {
+              "title": "Cine",
+              "type": "program",
+              "start": "22:00",
+              "end": "00:00",
+              "days": [
+                "viernes"
+              ]
             }
           ]
         },
         {
-          "channel": "Am?rica",
+          "channel": "América",
           "entries": [
             {
               "type": "program",
@@ -489,23 +571,25 @@
               "days": [
                 "lunes",
                 "martes",
-                "mi?rcoles",
+                "miércoles",
                 "jueves",
                 "viernes"
               ],
-              "start": "12:00"
+              "start": "12:00",
+              "end": "13:00"
             },
             {
               "type": "program",
-              "title": "Am?rica Noticias",
+              "title": "América Noticias",
               "days": [
                 "lunes",
                 "martes",
-                "mi?rcoles",
+                "miércoles",
                 "jueves",
                 "viernes"
               ],
-              "start": "13:00"
+              "start": "13:00",
+              "end": "14:00"
             },
             {
               "type": "program",
@@ -513,11 +597,12 @@
               "days": [
                 "lunes",
                 "martes",
-                "mi?rcoles",
+                "miércoles",
                 "jueves",
                 "viernes"
               ],
-              "start": "14:00"
+              "start": "14:00",
+              "end": "15:00"
             },
             {
               "type": "program",
@@ -525,11 +610,12 @@
               "days": [
                 "lunes",
                 "martes",
-                "mi?rcoles",
+                "miércoles",
                 "jueves",
                 "viernes"
               ],
-              "start": "15:00"
+              "start": "15:00",
+              "end": "17:00"
             },
             {
               "type": "program",
@@ -537,36 +623,39 @@
               "days": [
                 "lunes",
                 "martes",
-                "mi?rcoles",
+                "miércoles",
                 "jueves",
                 "viernes"
               ],
-              "start": "17:00"
+              "start": "17:00",
+              "end": "18:00"
             },
             {
               "type": "production",
-              "title": "El ?rbol Azul",
+              "title": "El Árbol Azul",
               "days": [
                 "lunes",
                 "martes",
-                "mi?rcoles",
+                "miércoles",
                 "jueves",
                 "viernes"
               ],
               "start": "18:00",
-              "production_id": "T0145"
+              "production_id": "T0145",
+              "end": "19:00"
             },
             {
               "type": "program",
-              "title": "Ocurri? As?",
+              "title": "Ocurrió Así",
               "days": [
                 "lunes",
                 "martes",
-                "mi?rcoles",
+                "miércoles",
                 "jueves",
                 "viernes"
               ],
-              "start": "19:00"
+              "start": "19:00",
+              "end": "20:00"
             },
             {
               "type": "program",
@@ -574,23 +663,25 @@
               "days": [
                 "lunes",
                 "martes",
-                "mi?rcoles",
+                "miércoles",
                 "jueves",
                 "viernes"
               ],
-              "start": "20:00"
+              "start": "20:00",
+              "end": "21:00"
             },
             {
               "type": "program",
-              "title": "Am?rica Noticias",
+              "title": "América Noticias",
               "days": [
                 "lunes",
                 "martes",
-                "mi?rcoles",
+                "miércoles",
                 "jueves",
                 "viernes"
               ],
-              "start": "21:00"
+              "start": "21:00",
+              "end": "22:00"
             },
             {
               "type": "program",
@@ -598,17 +689,14 @@
               "days": [
                 "lunes",
                 "martes",
-                "mi?rcoles",
+                "miércoles",
                 "jueves",
                 "viernes"
               ],
-              "start": "22:00"
+              "start": "22:00",
+              "end": "00:00"
             }
           ]
-        },
-        {
-          "channel": "ATC",
-          "entries": []
         }
       ]
     },
