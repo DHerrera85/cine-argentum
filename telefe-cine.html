@@ -298,6 +298,97 @@
       padding: 24px 38px;
     }
 
+    .telefe-cine-page .telefe-section {
+      width: 100%;
+      padding: 24px 38px;
+      box-sizing: border-box;
+    }
+
+    .telefe-cine-page .telefe-section>.latest-heading {
+      margin: 0 0 20px;
+      padding: 0;
+      color: #ffffff;
+    }
+
+    .telefe-cine-page .filter-carousel {
+      position: relative;
+      width: 100%;
+    }
+
+    .telefe-cine-page .filter-scroll {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      scroll-behavior: smooth;
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+    }
+
+    .telefe-cine-page .filter-scroll::-webkit-scrollbar {
+      display: none;
+    }
+
+    .telefe-cine-page .filter-arrow {
+      display: none;
+      position: absolute;
+      top: 50%;
+      z-index: 5;
+      width: 38px;
+      height: 38px;
+      padding: 0;
+      border: 0;
+      background: transparent;
+      color: rgba(255, 255, 255, .38);
+      cursor: pointer;
+      transform: translateY(-50%);
+    }
+
+    .telefe-cine-page .filter-arrow:hover {
+      color: rgba(255, 255, 255, .65);
+    }
+
+    .telefe-cine-page .filter-arrow-prev {
+      left: 2px;
+    }
+
+    .telefe-cine-page .filter-arrow-next {
+      right: 2px;
+    }
+
+    .telefe-cine-page .filter-arrow:disabled {
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .telefe-cine-page .year-button,
+    .telefe-cine-page .category-button {
+      flex-shrink: 0;
+      min-width: 70px;
+      padding: 10px 16px;
+      border: 1px solid #3d4752;
+      border-radius: 999px;
+      background: #202832;
+      color: #ffffff;
+      font-family: inherit;
+      font-size: .9rem;
+      cursor: pointer;
+      transition: background-color .2s ease, border-color .2s ease, transform .2s ease;
+    }
+
+    .telefe-cine-page .year-button:hover,
+    .telefe-cine-page .category-button:hover {
+      border-color: #22b8cf;
+      transform: translateY(-1px);
+    }
+
+    .telefe-cine-page .year-button.active,
+    .telefe-cine-page .category-button.active {
+      border-color: #22b8cf;
+      background: #22b8cf;
+      color: #0f171f;
+      font-weight: 700;
+    }
+
     .telefe-cine-page [hidden] {
       display: none;
     }
@@ -513,6 +604,10 @@
       gap: 28px 20px;
     }
 
+    .telefe-cine-page #telefe-cine-grid.telefe-90s-grid {
+      gap: 28px 22px;
+    }
+
     .telefe-cine-page .telefe-cine-card {
       min-width: 0;
     }
@@ -638,7 +733,7 @@
       }
 
       .telefe-cine-page .telefe-cine-featured-item {
-        flex-basis: 85%;
+        flex-basis: 100%;
       }
 
       .telefe-cine-page .channel-decade-nav {
@@ -649,6 +744,11 @@
         scroll-snap-type: x mandatory;
         -webkit-overflow-scrolling: touch;
         padding-bottom: 12px;
+        scrollbar-width: none;
+      }
+
+      .telefe-cine-page .channel-decade-nav::-webkit-scrollbar {
+        display: none;
       }
 
       .telefe-cine-page .channel-decade-card {
@@ -660,6 +760,26 @@
 
       .telefe-cine-page .telefe-cine-section {
         padding: 20px 18px;
+      }
+
+      .telefe-cine-page .telefe-section {
+        padding: 20px 18px;
+      }
+
+      .telefe-cine-page .filter-scroll {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        padding: 2px 0 8px;
+      }
+
+      .telefe-cine-page .telefe-cine-filter-list {
+        flex-wrap: nowrap;
+      }
+
+      .telefe-cine-page .filter-arrow {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
       }
 
       .telefe-cine-body {
@@ -727,8 +847,7 @@
               <h2 id="telefe-cine-featured-title" class="showcase-heading">Producciones destacadas</h2>
               <div class="telefe-cine-featured-controls" aria-label="Controles del carrusel">
                 <button id="telefe-cine-featured-prev" class="telefe-cine-featured-prev" type="button"
-                  aria-label="Ver producciones anteriores"
-                  disabled>
+                  aria-label="Ver producciones anteriores" disabled>
                   <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
                 </button>
                 <button id="telefe-cine-featured-next" class="telefe-cine-featured-next" type="button"
@@ -771,18 +890,16 @@
         <h2 id="telefe-cine-periods-title" class="showcase-heading">Las más vistas por década</h2>
         <div id="telefe-cine-period-rankings"></div>
       </section>
-      <section id="telefe-cine-catalogue" class="telefe-cine-section" aria-labelledby="telefe-cine-catalogue-title"
-        aria-busy="true">
+      <div id="telefe-cine-filters" hidden></div>
 
-        <h2 id="telefe-cine-catalogue-title" class="showcase-heading">Todas las películas</h2>
+      <section id="telefe-cine-catalogue" class="telefe-section telefe-cine-section telefe-catalogue"
+        aria-labelledby="telefe-cine-catalogue-title" aria-busy="true">
+        <div class="catalogue-header">
+          <h2 id="telefe-cine-catalogue-title" class="latest-heading">Todas las películas</h2>
+          <p id="telefe-cine-count" role="status">Cargando películas…</p>
+        </div>
 
-        <div id="telefe-cine-filters" hidden></div>
-
-        <p id="telefe-cine-count" role="status">
-          Cargando películas…
-        </p>
-
-        <div id="telefe-cine-grid"></div>
+        <div id="telefe-cine-grid" class="telefe-90s-grid" aria-live="polite"></div>
 
         <p id="telefe-cine-empty" hidden>
           No se encontraron películas para esta selección.
@@ -808,7 +925,7 @@
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   <script src="js/lightslider.js"></script>
   <script src="js/script.js?v=20260226-1"></script>
-  <script src="js/telefe-cine.js?v=20261022-2"></script>
+  <script src="js/telefe-cine.js?v=20261031-1"></script>
 </body>
 
 </html>

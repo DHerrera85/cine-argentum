@@ -1,0 +1,555 @@
+{
+  "id": "schedule-1993-05",
+  "year": 1993,
+  "month": 5,
+  "label": "Mayo 1993",
+  "country": "Argentina",
+  "channels": [
+    {
+      "channel": "Telefe",
+      "entries": [
+        {
+          "type": "program",
+          "title": "Telefe Noticias",
+          "days": [
+            "lunes",
+            "martes",
+            "miércoles",
+            "jueves",
+            "viernes"
+          ],
+          "start": "12:00",
+          "end": "13:00"
+        },
+        {
+          "type": "program",
+          "title": "El desprecio",
+          "days": [
+            "lunes",
+            "martes",
+            "miércoles",
+            "jueves",
+            "viernes"
+          ],
+          "start": "13:00",
+          "end": "14:00"
+        },
+        {
+          "type": "program",
+          "title": "Hola Susana.. Te estamos llamando",
+          "days": [
+            "lunes",
+            "martes",
+            "miércoles",
+            "jueves",
+            "viernes"
+          ],
+          "start": "14:00",
+          "end": "15:00"
+        },
+        {
+          "type": "program",
+          "title": "Utilísima",
+          "days": [
+            "lunes",
+            "martes",
+            "miércoles",
+            "jueves",
+            "viernes"
+          ],
+          "start": "15:00",
+          "end": "16:00"
+        },
+        {
+          "type": "program",
+          "title": "El Show de los pitufos",
+          "days": [
+            "lunes",
+            "martes",
+            "miércoles",
+            "jueves",
+            "viernes"
+          ],
+          "start": "16:00",
+          "end": "17:00"
+        },
+        {
+          "type": "program",
+          "title": "El mundo de Disney",
+          "days": [
+            "lunes",
+            "martes",
+            "miércoles",
+            "jueves",
+            "viernes"
+          ],
+          "start": "17:00",
+          "end": "18:00"
+        },
+        {
+          "type": "program",
+          "title": "Jugate conmigo",
+          "days": [
+            "lunes",
+            "martes",
+            "miércoles",
+            "jueves",
+            "viernes"
+          ],
+          "start": "18:00",
+          "end": "19:00"
+        },
+        {
+          "type": "program",
+          "title": "Telefe Noticias",
+          "days": [
+            "lunes",
+            "martes",
+            "miércoles",
+            "jueves",
+            "viernes"
+          ],
+          "start": "19:00",
+          "end": "20:00"
+        },
+        {
+          "type": "program",
+          "title": "Amigos son los Amigos",
+          "days": [
+            "lunes",
+            "martes",
+            "miércoles",
+            "jueves",
+            "viernes"
+          ],
+          "start": "20:00",
+          "end": "21:00"
+        },
+        {
+          "type": "program",
+          "title": "Brigada Cola",
+          "days": [
+            "lunes"
+          ],
+          "start": "21:00",
+          "end": "22:00"
+        },
+        {
+          "type": "program",
+          "title": "Good Show",
+          "days": [
+            "lunes"
+          ],
+          "start": "22:00",
+          "end": "22:30"
+        }
+      ]
+    },
+    {
+      "channel": "Canal 13",
+      "entries": [
+        {
+          "type": "program",
+          "title": "El agujerito sin fin",
+          "days": [
+            "lunes",
+            "martes",
+            "miércoles",
+            "jueves",
+            "viernes"
+          ],
+          "start": "12:00",
+          "end": "13:00"
+        },
+        {
+          "type": "program",
+          "title": "360 todo para ver",
+          "days": [
+            "lunes",
+            "martes",
+            "miércoles",
+            "jueves",
+            "viernes"
+          ],
+          "start": "13:00",
+          "end": "15:00"
+        },
+        {
+          "type": "program",
+          "title": "Casi todo, casi nada",
+          "days": [
+            "lunes",
+            "martes",
+            "miércoles",
+            "jueves",
+            "viernes"
+          ],
+          "start": "15:00",
+          "end": "16:00"
+        },
+        {
+          "type": "program",
+          "title": "La traidora",
+          "days": [
+            "lunes",
+            "martes",
+            "miércoles",
+            "jueves",
+            "viernes"
+          ],
+          "start": "16:00",
+          "end": "17:00"
+        },
+        {
+          "type": "program",
+          "title": "El show de Xuxa",
+          "days": [
+            "lunes",
+            "martes",
+            "miércoles",
+            "jueves",
+            "viernes"
+          ],
+          "start": "17:00",
+          "end": "18:00"
+        },
+        {
+          "type": "program",
+          "title": "Apasionada",
+          "days": [
+            "lunes",
+            "martes",
+            "miércoles",
+            "jueves",
+            "viernes"
+          ],
+          "start": "18:00",
+          "end": "19:00"
+        },
+        {
+          "type": "program",
+          "title": "MacGyver",
+          "days": [
+            "lunes",
+            "martes",
+            "miércoles",
+            "jueves",
+            "viernes"
+          ],
+          "start": "19:00",
+          "end": "20:00"
+        },
+        {
+          "type": "program",
+          "title": "Telenoche",
+          "days": [
+            "lunes",
+            "martes",
+            "miércoles",
+            "jueves",
+            "viernes"
+          ],
+          "start": "20:00",
+          "end": "21:00"
+        },
+        {
+          "type": "program",
+          "title": "La aventura del hombre",
+          "days": [
+            "lunes"
+          ],
+          "start": "21:00",
+          "end": "22:00"
+        },
+        {
+          "type": "program",
+          "title": "El mundo del espectáculo",
+          "days": [
+            "lunes",
+            "martes",
+            "miércoles",
+            "jueves",
+            "viernes"
+          ],
+          "start": "22:00",
+          "end": "22:30"
+        }
+      ]
+    },
+    {
+      "channel": "Canal 9",
+      "entries": [
+        {
+          "type": "program",
+          "title": "Nuevediario",
+          "days": [
+            "lunes",
+            "martes",
+            "miércoles",
+            "jueves",
+            "viernes"
+          ],
+          "start": "12:00",
+          "end": "13:00"
+        },
+        {
+          "type": "program",
+          "title": "Almorzando con Mirtha Legrand",
+          "days": [
+            "lunes",
+            "martes",
+            "miércoles",
+            "jueves",
+            "viernes"
+          ],
+          "start": "13:00",
+          "end": "15:00"
+        },
+        {
+          "type": "program",
+          "title": "Indiscreciones",
+          "days": [
+            "lunes",
+            "martes",
+            "miércoles",
+            "jueves",
+            "viernes"
+          ],
+          "start": "15:00",
+          "end": "16:00"
+        },
+        {
+          "type": "program",
+          "title": "Yo me quiero casar… ¿y usted?",
+          "days": [
+            "lunes",
+            "martes",
+            "miércoles",
+            "jueves",
+            "viernes"
+          ],
+          "start": "16:00",
+          "end": "17:00"
+        },
+        {
+          "type": "program",
+          "title": "Los ricos también lloran",
+          "days": [
+            "lunes",
+            "martes",
+            "miércoles",
+            "jueves",
+            "viernes"
+          ],
+          "start": "17:00",
+          "end": "18:00"
+        },
+        {
+          "type": "program",
+          "title": "Primer amor",
+          "days": [
+            "lunes",
+            "martes",
+            "miércoles",
+            "jueves",
+            "viernes"
+          ],
+          "start": "18:00",
+          "end": "19:00"
+        },
+        {
+          "type": "program",
+          "title": "Piel",
+          "days": [
+            "lunes",
+            "martes",
+            "miércoles",
+            "jueves",
+            "viernes"
+          ],
+          "start": "19:00",
+          "end": "20:00"
+        },
+        {
+          "type": "program",
+          "title": "Nuevediario",
+          "days": [
+            "lunes",
+            "martes",
+            "miércoles",
+            "jueves",
+            "viernes"
+          ],
+          "start": "20:00",
+          "end": "21:00"
+        },
+        {
+          "type": "program",
+          "title": "María Sol",
+          "days": [
+            "lunes"
+          ],
+          "start": "21:00",
+          "end": "22:00"
+        },
+        {
+          "type": "program",
+          "title": "Con pecado concebidas",
+          "days": [
+            "lunes"
+          ],
+          "start": "22:00",
+          "end": "23:00"
+        },
+        {
+          "type": "program",
+          "title": "La TV Ataca",
+          "days": [
+            "lunes",
+            "martes",
+            "miércoles",
+            "jueves",
+            "viernes"
+          ],
+          "start": "23:00",
+          "end": "23:30"
+        }
+      ]
+    },
+    {
+      "channel": "América",
+      "entries": [
+        {
+          "type": "program",
+          "title": "Yo Quiero a Lucy",
+          "days": [
+            "lunes",
+            "martes",
+            "miércoles",
+            "jueves",
+            "viernes"
+          ],
+          "start": "12:00",
+          "end": "13:00"
+        },
+        {
+          "type": "program",
+          "title": "América Noticias",
+          "days": [
+            "lunes",
+            "martes",
+            "miércoles",
+            "jueves",
+            "viernes"
+          ],
+          "start": "13:00",
+          "end": "14:00"
+        },
+        {
+          "type": "program",
+          "title": "Sin Vueltas",
+          "days": [
+            "lunes",
+            "martes",
+            "miércoles",
+            "jueves",
+            "viernes"
+          ],
+          "start": "14:00",
+          "end": "15:00"
+        },
+        {
+          "type": "program",
+          "title": "Dibujitos continuados",
+          "days": [
+            "lunes",
+            "martes",
+            "miércoles",
+            "jueves",
+            "viernes"
+          ],
+          "start": "15:00",
+          "end": "17:00"
+        },
+        {
+          "type": "program",
+          "title": "Festilindo",
+          "days": [
+            "lunes",
+            "martes",
+            "miércoles",
+            "jueves",
+            "viernes"
+          ],
+          "start": "17:00",
+          "end": "18:00"
+        },
+        {
+          "type": "program",
+          "title": "El Árbol Azul",
+          "days": [
+            "lunes",
+            "martes",
+            "miércoles",
+            "jueves",
+            "viernes"
+          ],
+          "start": "18:00",
+          "end": "19:00"
+        },
+        {
+          "type": "program",
+          "title": "Ocurrió Así",
+          "days": [
+            "lunes",
+            "martes",
+            "miércoles",
+            "jueves",
+            "viernes"
+          ],
+          "start": "19:00",
+          "end": "20:00"
+        },
+        {
+          "type": "program",
+          "title": "El Periscopio",
+          "days": [
+            "lunes",
+            "martes",
+            "miércoles",
+            "jueves",
+            "viernes"
+          ],
+          "start": "20:00",
+          "end": "21:00"
+        },
+        {
+          "type": "program",
+          "title": "América Noticias",
+          "days": [
+            "lunes",
+            "martes",
+            "miércoles",
+            "jueves",
+            "viernes"
+          ],
+          "start": "21:00",
+          "end": "22:00"
+        },
+        {
+          "type": "program",
+          "title": "Hadad & Longobardi",
+          "days": [
+            "lunes",
+            "martes",
+            "miércoles",
+            "jueves",
+            "viernes"
+          ],
+          "start": "22:00",
+          "end": "22:30"
+        }
+      ]
+    }
+  ]
+}

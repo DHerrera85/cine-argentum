@@ -1,0 +1,649 @@
+{
+    "schedules": [
+        {
+            "id": "schedule-1996-04",
+            "year": 1996,
+            "month": 4,
+            "label": "Abril 1996",
+            "country": "Argentina",
+            "channels": [
+                {
+                    "channel": "Telefe",
+                    "entries": [
+                        {
+                            "type": "program",
+                            "title": "Aquí está tu Hit",
+                            "days": [
+                                "lunes",
+                                "martes",
+                                "miércoles",
+                                "jueves",
+                                "viernes"
+                            ],
+                            "start": "11:30",
+                            "end": "12:00"
+                        },
+                        {
+                            "type": "program",
+                            "title": "Telefé Noticias",
+                            "days": [
+                                "lunes",
+                                "martes",
+                                "miércoles",
+                                "jueves",
+                                "viernes"
+                            ],
+                            "start": "12:00",
+                            "end": "13:00"
+                        },
+                        {
+                            "type": "program",
+                            "title": "Decime cuál es tu Nombre",
+                            "days": [
+                                "lunes",
+                                "martes",
+                                "miércoles",
+                                "jueves",
+                                "viernes"
+                            ],
+                            "start": "13:00",
+                            "end": "15:00"
+                        },
+                        {
+                            "type": "production",
+                            "production_id": "T0024",
+                            "days": [
+                                "lunes",
+                                "martes",
+                                "miércoles",
+                                "jueves",
+                                "viernes"
+                            ],
+                            "start": "15:00",
+                            "end": "16:00"
+                        },
+                        {
+                            "type": "program",
+                            "title": "Alf",
+                            "days": [
+                                "lunes",
+                                "martes",
+                                "miércoles",
+                                "jueves",
+                                "viernes"
+                            ],
+                            "start": "16:00",
+                            "end": "17:00"
+                        },
+                        {
+                            "type": "program",
+                            "title": "Blanco y Negro",
+                            "days": [
+                                "lunes",
+                                "martes",
+                                "miércoles",
+                                "jueves",
+                                "viernes"
+                            ],
+                            "start": "17:00",
+                            "end": "18:00"
+                        },
+                        {
+                            "type": "production",
+                            "production_id": "T0020",
+                            "days": [
+                                "lunes",
+                                "martes",
+                                "miércoles",
+                                "jueves",
+                                "viernes"
+                            ],
+                            "start": "18:00",
+                            "end": "19:00"
+                        },
+                        {
+                            "type": "program",
+                            "title": "Telefé Noticias",
+                            "days": [
+                                "lunes",
+                                "martes",
+                                "miércoles",
+                                "jueves",
+                                "viernes"
+                            ],
+                            "start": "19:00",
+                            "end": "20:00"
+                        },
+                        {
+                            "type": "program",
+                            "title": "Hola Susana",
+                            "days": [
+                                "lunes",
+                                "martes",
+                                "miércoles",
+                                "jueves",
+                                "viernes"
+                            ],
+                            "start": "20:00",
+                            "end": "21:00"
+                        },
+                        {
+                            "type": "program",
+                            "title": "El Show de Videomatch",
+                            "days": [
+                                "lunes"
+                            ],
+                            "start": "21:00",
+                            "end": "23:59"
+                        },
+                        {
+                            "type": "production",
+                            "production_id": "T0040",
+                            "days": [
+                                "martes"
+                            ],
+                            "start": "21:00",
+                            "end": "22:00"
+                        },
+                        {
+                            "type": "production",
+                            "production_id": "T0025",
+                            "days": [
+                                "miércoles"
+                            ],
+                            "start": "21:00",
+                            "end": "22:00"
+                        },
+                        {
+                            "type": "production",
+                            "production_id": "T0009",
+                            "days": [
+                                "jueves"
+                            ],
+                            "start": "21:00",
+                            "end": "22:00"
+                        },
+                        {
+                            "type": "program",
+                            "title": "El Negro y Minguito",
+                            "days": [
+                                "viernes"
+                            ],
+                            "start": "21:00",
+                            "end": "22:00"
+                        },
+                        {
+                            "type": "production",
+                            "production_id": "T0015",
+                            "days": [
+                                "sábado"
+                            ],
+                            "start": "21:00"
+                        },
+                        {
+                            "type": "program",
+                            "title": "Tiempo Nuevo",
+                            "days": [
+                                "martes"
+                            ],
+                            "start": "22:00",
+                            "end": "23:00"
+                        },
+                        {
+                            "type": "program",
+                            "title": "Cine",
+                            "days": [
+                                "miércoles"
+                            ],
+                            "start": "22:00",
+                            "end": "23:59"
+                        },
+                        {
+                            "type": "program",
+                            "title": "Videomatch",
+                            "days": [
+                                "jueves"
+                            ],
+                            "start": "22:00",
+                            "end": "23:59"
+                        },
+                                                {
+                            "type": "program",
+                            "title": "Cine",
+                            "days": [
+                                "viernes"
+                            ],
+                            "start": "22:00",
+                            "end": "23:59"
+                        },
+                        {
+                            "type": "program",
+                            "title": "Trucholandia",
+                            "days": [
+                                "martes"
+                            ],
+                            "start": "23:00",
+                            "end": "23:59"
+                        }
+                    ]
+                },
+                {
+                    "channel": "Canal 13",
+                    "entries": [
+                        {
+                            "type": "program",
+                            "title": "El Zorro",
+                            "days": [
+                                "lunes",
+                                "martes",
+                                "miércoles",
+                                "jueves",
+                                "viernes"
+                            ],
+                            "start": "12:00",
+                            "end": "13:00"
+                        },
+                        {
+                            "type": "production",
+                            "production_id": "T0126",
+                            "title": "Como Pan Caliente",
+                            "days": [
+                                "lunes",
+                                "martes",
+                                "miércoles",
+                                "jueves",
+                                "viernes"
+                            ],
+                            "start": "13:00",
+                            "end": "14:00"
+                        },
+                        {
+                            "type": "program",
+                            "title": "Teleshow",
+                            "days": [
+                                "lunes",
+                                "martes",
+                                "miércoles",
+                                "jueves",
+                                "viernes"
+                            ],
+                            "start": "14:00",
+                            "end": "15:00"
+                        },
+                        {
+                            "type": "program",
+                            "title": "Alondra",
+                            "days": [
+                                "lunes",
+                                "martes",
+                                "miércoles",
+                                "jueves",
+                                "viernes"
+                            ],
+                            "start": "15:00",
+                            "end": "16:00"
+                        },
+                        {
+                            "type": "program",
+                            "title": "Causa Común",
+                            "days": [
+                                "lunes",
+                                "martes",
+                                "miércoles",
+                                "jueves",
+                                "viernes"
+                            ],
+                            "start": "16:00",
+                            "end": "17:00"
+                        },
+                        {
+                            "type": "program",
+                            "title": "Acapulco, Cuerpo y Alma",
+                            "days": [
+                                "lunes",
+                                "martes",
+                                "miércoles",
+                                "jueves",
+                                "viernes"
+                            ],
+                            "start": "17:00",
+                            "end": "18:00"
+                        },
+                        {
+                            "type": "production",
+                            "production_id": "T0144",
+                            "days": [
+                                "lunes",
+                                "martes",
+                                "miércoles",
+                                "jueves",
+                                "viernes"
+                            ],
+                            "start": "18:00",
+                            "end": "19:00"
+                        },
+                        {
+                            "type": "production",
+                            "production_id": "T0123",
+                            "days": [
+                                "lunes",
+                                "martes",
+                                "miércoles",
+                                "jueves",
+                                "viernes"
+                            ],
+                            "start": "19:00",
+                            "end": "20:00"
+                        },
+                        {
+                            "type": "program",
+                            "title": "Telenoche 13",
+                            "days": [
+                                "lunes",
+                                "martes",
+                                "miércoles",
+                                "jueves",
+                                "viernes"
+                            ],
+                            "start": "20:00",
+                            "end": "21:00"
+                        },
+                        {
+                            "type": "program",
+                            "title": "La Aventura del Hombre",
+                            "days": [
+                                "lunes"
+                            ],
+                            "start": "21:00",
+                            "end": "22:00"
+                        },
+                        {
+                            "type": "production",
+                            "production_id": "T0120",
+                            "days": [
+                                "martes"
+                            ],
+                            "start": "21:00",
+                            "end": "22:00"
+                        },
+                        {
+                            "type": "program",
+                            "title": "Chicago Hope",
+                            "days": [
+                                "miércoles"
+                            ],
+                            "start": "21:00",
+                            "end": "22:00"
+                        },
+                        {
+                            "type": "production",
+                            "production_id": "T0121",
+                            "days": [
+                                "jueves"
+                            ],
+                            "start": "21:00",
+                            "end": "22:00"
+                        },
+                        {
+                            "type": "production",
+                            "production_id": "T0155",
+                            "days": [
+                                "viernes"
+                            ],
+                            "start": "21:00",
+                            "end": "22:00"
+                        },
+                        {
+                            "type": "program",
+                            "title": "Cine",
+                            "days": [
+                                "lunes"
+                            ],
+                            "start": "22:00",
+                            "end": "23:59"
+                        },
+                        {
+                            "type": "production",
+                            "production_id": "T0154",
+                            "days": [
+                                "martes"
+                            ],
+                            "start": "22:00",
+                            "end": "23:00"
+                        },
+                        {
+                            "type": "program",
+                            "title": "Cine",
+                            "days": [
+                                "miércoles"
+                            ],
+                            "start": "22:00",
+                            "end": "23:59"
+                        },
+                        {
+                            "type": "program",
+                            "title": "Cine",
+                            "days": [
+                                "jueves"
+                            ],
+                            "start": "22:00",
+                            "end": "23:59"
+                        },
+                        {
+                            "type": "program",
+                            "title": "El Palacio de la Risa",
+                            "days": [
+                                "viernes"
+                            ],
+                            "start": "22:00",
+                            "end": "23:59"
+                        },
+                        {
+                            "type": "production",
+                            "production_id": "T0127",
+                            "days": [
+                                "martes"
+                            ],
+                            "start": "23:00",
+                            "end": "23:59"
+                        }
+                    ]
+                },
+                {
+                    "channel": "Canal 9",
+                    "entries": [
+                        {
+                            "type": "program",
+                            "title": "Yo me Quiero Casar, ¿Y Usted?",
+                            "days": [
+                                "lunes",
+                                "martes",
+                                "miércoles",
+                                "jueves",
+                                "viernes"
+                            ],
+                            "start": "11:00",
+                            "end": "12:00"
+                        },
+                        {
+                            "type": "program",
+                            "title": "Nuevediario",
+                            "days": [
+                                "lunes",
+                                "martes",
+                                "miércoles",
+                                "jueves",
+                                "viernes"
+                            ],
+                            "start": "12:00",
+                            "end": "12:30"
+                        },
+                        {
+                            "type": "program",
+                            "title": "Almorzando con Mirtha Legrand",
+                            "days": [
+                                "lunes",
+                                "martes",
+                                "miércoles",
+                                "jueves",
+                                "viernes"
+                            ],
+                            "start": "12:30",
+                            "end": "14:00"
+                        },
+                        {
+                            "type": "program",
+                            "title": "Marielena",
+                            "days": [
+                                "lunes",
+                                "martes",
+                                "miércoles",
+                                "jueves",
+                                "viernes"
+                            ],
+                            "start": "14:00",
+                            "end": "15:00"
+                        },
+                        {
+                            "type": "program",
+                            "title": "Indiscreciones",
+                            "days": [
+                                "lunes",
+                                "martes",
+                                "miércoles",
+                                "jueves",
+                                "viernes"
+                            ],
+                            "start": "15:00",
+                            "end": "16:00"
+                        },
+                        {
+                            "type": "program",
+                            "title": "Utilísima",
+                            "days": [
+                                "lunes",
+                                "martes",
+                                "miércoles",
+                                "jueves",
+                                "viernes"
+                            ],
+                            "start": "16:00",
+                            "end": "17:00"
+                        },
+                        {
+                            "type": "program",
+                            "title": "El Paparazi, increíble pero Rial",
+                            "days": [
+                                "lunes",
+                                "martes",
+                                "miércoles",
+                                "jueves",
+                                "viernes"
+                            ],
+                            "start": "17:00",
+                            "end": "18:00"
+                        },
+                        {
+                            "type": "production",
+                            "production_id": "T0071",
+                            "days": [
+                                "lunes",
+                                "martes",
+                                "miércoles",
+                                "jueves",
+                                "viernes"
+                            ],
+                            "start": "18:00",
+                            "end": "19:00"
+                        },
+                        {
+                            "type": "production",
+                            "production_id": "T0073",
+                            "days": [
+                                "lunes",
+                                "martes",
+                                "miércoles",
+                                "jueves",
+                                "viernes"
+                            ],
+                            "start": "19:00",
+                            "end": "20:00"
+                        },
+                        {
+                            "type": "program",
+                            "title": "Nuevediario",
+                            "days": [
+                                "lunes",
+                                "martes",
+                                "miércoles",
+                                "jueves",
+                                "viernes"
+                            ],
+                            "start": "20:00",
+                            "end": "21:00"
+                        },
+                        {
+                            "type": "production",
+                            "production_id": "T0068",
+                            "days": [
+                                "lunes",
+                                "martes",
+                                "miércoles",
+                                "jueves",
+                                "viernes"
+                            ],
+                            "start": "21:00",
+                            "end": "22:00"
+                        },
+                        {
+                            "type": "production",
+                            "title": "Sin Condena",
+                             "production_id": "T0063",
+                            "days": [
+                                "lunes"
+                            ],
+                            "start": "22:00",
+                            "end": "23:00"
+                        },
+                        {
+                            "type": "program",
+                            "title": "PNP",
+                            "days": [
+                                "martes"
+                            ],
+                            "start": "22:00",
+                            "end": "23:00"
+                        },
+                        {
+                            "type": "program",
+                            "title": "Memoria",
+                            "days": [
+                                "miércoles"
+                            ],
+                            "start": "22:00",
+                            "end": "23:59"
+                        },
+                        {
+                            "type": "program",
+                            "title": "Hora Clave",
+                            "days": [
+                                "jueves"
+                            ],
+                            "start": "22:00",
+                            "end": "23:59"
+                        },
+                        {
+                            "type": "production",
+                            "production_id": "T0069",
+                            "days": [
+                                "martes"
+                            ],
+                            "start": "23:00",
+                            "end": "23:59"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -6,9 +6,6 @@
   // https://www.mitelefe.com/entretenimientos/cine--series/wanda-nara-protagonizara-su-primera-pelicula-de-la-mano-de-telefe-studios-pid2546092
   //
   // También se incluyen vínculos históricos revisados.
-  // Valentina (P1190): vínculo promocional documentado;
-  // no se atribuye coproducción.
-  // https://www.otroscines.com/nota-1475-anuncian-tres-films-animados-valentina-boogie-y-gaturro
   //
   // Estos IDs hacen referencia a fichas existentes.
   const SELECTION = [
@@ -81,7 +78,6 @@
     { id: 'P1167', basis: 'fuente-complementaria' },
     { id: 'P1180', basis: 'fuente-complementaria' },
     { id: 'P1186', basis: 'fuente-complementaria' },
-    { id: 'P1190', basis: 'vinculo-promocional' },
     { id: 'P1221', basis: 'fuente-complementaria' },
     { id: 'P2042', basis: 'fuente-complementaria' },
     { id: 'P2077', basis: 'fuente-complementaria' },
@@ -174,7 +170,7 @@
 
   function createCard(movie) {
     const card = document.createElement('article');
-    card.className = 'telefe-cine-card';
+    card.className = 'telefe-cine-card telefe-card';
     card.dataset.movieId = movie.id;
 
     const link = document.createElement('a');
@@ -421,25 +417,37 @@
 
   function createFilterGroup(key, label, options) {
     const group = document.createElement('div');
-    group.className = 'telefe-cine-filter-group';
+    group.className = 'telefe-cine-filter-group telefe-section';
 
     const heading = createText(
       'h3',
-      'telefe-cine-filter-heading',
+      'telefe-cine-filter-heading latest-heading',
       label
     );
 
     heading.id = 'telefe-cine-filter-' + key;
 
+    const carousel = document.createElement('div');
+    carousel.className = 'filter-carousel';
+
+    const previous = document.createElement('button');
+    previous.type = 'button';
+    previous.className = 'filter-arrow filter-arrow-prev';
+    previous.setAttribute('aria-label', 'Ver opciones anteriores');
+    previous.innerHTML = '<i class="fa-solid fa-chevron-left" aria-hidden="true"></i>';
+
     const list = document.createElement('div');
-    list.className = 'telefe-cine-filter-list';
+    const isYearGroup = key === 'decade' || key === 'year';
+    list.className = 'telefe-cine-filter-list filter-scroll ' +
+      (isYearGroup ? 'telefe-year-filter' : 'telefe-category-filter');
     list.setAttribute('role', 'group');
     list.setAttribute('aria-labelledby', heading.id);
 
     options.forEach(option => {
       const button = createText(
         'button',
-        'telefe-cine-filter-button',
+        'telefe-cine-filter-button ' +
+        (isYearGroup ? 'year-button' : 'category-button'),
         option.label
       );
 
@@ -451,11 +459,22 @@
         'aria-pressed',
         String(state[key] === String(option.value))
       );
+      button.classList.toggle(
+        'active',
+        state[key] === String(option.value)
+      );
 
       list.appendChild(button);
     });
 
-    group.append(heading, list);
+    const next = document.createElement('button');
+    next.type = 'button';
+    next.className = 'filter-arrow filter-arrow-next';
+    next.setAttribute('aria-label', 'Ver opciones siguientes');
+    next.innerHTML = '<i class="fa-solid fa-chevron-right" aria-hidden="true"></i>';
+
+    carousel.append(previous, list, next);
+    group.append(heading, carousel);
 
     return group;
   }
@@ -490,14 +509,48 @@
     elements.filters
       .querySelectorAll('button[data-filter]')
       .forEach(button => {
-        button.setAttribute(
-          'aria-pressed',
-          String(
-            state[button.dataset.filter] ===
-            button.dataset.value
-          )
-        );
+        const active =
+          state[button.dataset.filter] === button.dataset.value;
+        button.setAttribute('aria-pressed', String(active));
+        button.classList.toggle('active', active);
       });
+  }
+
+  function bindFilterCarousels() {
+    elements.filters.querySelectorAll('.filter-carousel').forEach(carousel => {
+      const scrollArea = carousel.querySelector('.filter-scroll');
+      const previous = carousel.querySelector('.filter-arrow-prev');
+      const next = carousel.querySelector('.filter-arrow-next');
+
+      if (!scrollArea || !previous || !next) {
+        return;
+      }
+
+      const refresh = () => {
+        previous.disabled = scrollArea.scrollLeft <= 2;
+        next.disabled =
+          scrollArea.scrollLeft + scrollArea.clientWidth >=
+          scrollArea.scrollWidth - 2;
+      };
+
+      previous.addEventListener('click', () => {
+        scrollArea.scrollBy({
+          left: -Math.max(180, Math.round(scrollArea.clientWidth * .65)),
+          behavior: 'smooth'
+        });
+      });
+
+      next.addEventListener('click', () => {
+        scrollArea.scrollBy({
+          left: Math.max(180, Math.round(scrollArea.clientWidth * .65)),
+          behavior: 'smooth'
+        });
+      });
+
+      scrollArea.addEventListener('scroll', refresh, { passive: true });
+      window.addEventListener('resize', refresh);
+      refresh();
+    });
   }
 
   function renderFilters() {
@@ -571,6 +624,7 @@
     );
 
     elements.filters.hidden = false;
+    bindFilterCarousels();
   }
 
   async function init() {
@@ -660,6 +714,7 @@
               yearOptions()
             )
           );
+          bindFilterCarousels();
         }
 
         updateButtons();
