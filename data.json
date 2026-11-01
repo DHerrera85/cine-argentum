@@ -1933,8 +1933,7 @@
       "viewers": 357716,
       "producer": "Patagonik",
       "release_date": "5/10/2017",
-      "director": "Alejandro Maci"
-    ,
+      "director": "Alejandro Maci",
       "theatrical_stats": {
         "source": "INCAA",
         "year": 2017,
@@ -1962,8 +1961,7 @@
       "viewers": 1713804,
       "producer": "Patagonik",
       "release_date": "6/7/2017",
-      "director": "Ariel Winograd"
-    ,
+      "director": "Ariel Winograd",
       "theatrical_stats": {
         "source": "INCAA",
         "year": 2017,
@@ -1991,8 +1989,7 @@
       "viewers": 1097893,
       "producer": "Patagonik, Lihuen Andina S.A., Creative Andina",
       "release_date": "10/8/2017",
-      "director": "Marcos Carnevale"
-    ,
+      "director": "Marcos Carnevale",
       "theatrical_stats": {
         "source": "INCAA",
         "year": 2017,
@@ -3341,8 +3338,7 @@
       "viewers": 714645,
       "producer": "Patagonik, Morena Films, Telefe",
       "release_date": "14/9/2017",
-      "director": "Martín Hodara"
-    ,
+      "director": "Martín Hodara",
       "theatrical_stats": {
         "source": "INCAA",
         "year": 2017,
@@ -3393,8 +3389,7 @@
       "viewers": 96075,
       "producer": "Pampa Films, Telefe",
       "release_date": "15/6/2017",
-      "director": "Federico Cueva"
-    ,
+      "director": "Federico Cueva",
       "theatrical_stats": {
         "source": "INCAA",
         "year": 2017,
@@ -4227,8 +4222,7 @@
       "viewers": 658082,
       "producer": "K&S Films, Haddock Films, Telefe",
       "release_date": "17/8/2017",
-      "director": "Santiago Mitre"
-    ,
+      "director": "Santiago Mitre",
       "theatrical_stats": {
         "source": "INCAA",
         "year": 2017,
@@ -5543,8 +5537,7 @@
       "viewers": 178260,
       "producer": "Pampa Films",
       "release_date": "26/10/2017",
-      "director": "Gabriel Nesci"
-    ,
+      "director": "Gabriel Nesci",
       "theatrical_stats": {
         "source": "INCAA",
         "year": 2017,
@@ -5666,8 +5659,7 @@
       "viewers": 414318,
       "producer": "Jempsa, Fox International Productions",
       "release_date": "27/4/2017",
-      "director": "Nicolás Tuozzo"
-    ,
+      "director": "Nicolás Tuozzo",
       "theatrical_stats": {
         "source": "INCAA",
         "year": 2017,
@@ -5908,8 +5900,7 @@
       "viewers": 94116,
       "producer": "Habano Films, Patagonik",
       "release_date": "28/09/2017",
-      "director": "Teresa Costantini"
-    ,
+      "director": "Teresa Costantini",
       "theatrical_stats": {
         "source": "INCAA",
         "year": 2017,
@@ -7418,25 +7409,77 @@
     {
       "id": "V313",
       "title": "Somos Así: La Serie de Nadie Dice Nada",
+      "type": "serie",
       "year": "2026",
       "channel": "Disney+",
       "platform": "Disney+",
+      "platforms": [
+        "Disney+"
+      ],
       "genre": "Comedia",
       "actors": [
         "Nico Occhiato",
         "Flor Jazmín Peña",
         "Momi Giardina",
         "Santi Talledo",
-        "Martín Garabal"
+        "Martín Garabal",
+        "Oscar Martínez",
+        "Graciela Stefani",
+        "Maite Lanata",
+        "Sofi Morandi",
+        "Olivia Nuss",
+        "Andrés Gil",
+        "Juli Poggio",
+        "Diego Castro",
+        "Evitta Luna",
+        "Marcos Giles",
+        "Marixa Balli",
+        "Lucas Spadafora",
+        "Marina Bellati"
       ],
       "orientation": "vertical",
-      "image": "images/verticals/2026-somos-asi-nadie-dice-nada-disney-poster280x420.webp",
+      "image": "images/verticals/2026-somos-asi-nadie-dice-nada-disney-poster280x420-v1.webp",
+      "poster_gallery": [
+        {
+          "image": "images/verticals/2026-somos-asi-nadie-dice-nada-disney-poster280x420-v1.webp",
+          "label": "Póster principal"
+        },
+        {
+          "image": "images/verticals/2026-somos-asi-nadie-dice-nada-disney-poster280x420.webp",
+          "label": "Póster alternativo"
+        }
+      ],
+      "horizontal_image": "images/horizontals-1024x576/2026-somos-asi-nadie-dice-nada-disney-horizontal-1024x576-v1.webp",
       "subtitle": "Comedia",
+      "tipo_emision": "Serie",
       "capitulos": 8,
-      "sinopsis": "Próximamente",
-      "producer": "Luzu",
+      "duracion": "20 minutos",
       "release_date": "18/11/2026",
-      "tipo_emision": "Serie"
+      "status": "Próximamente",
+      "sinopsis": "Un grupo de amigos atraviesa un momento en el que todo parece desajustarse al mismo tiempo. Trabajos que tambalean, vínculos que se redefinen, citas fallidas y secretos que salen a la luz los llevan a preguntarse quiénes son y qué están dispuestos a sostener, mientras enfrentan situaciones delirantes y descubren que crecer no vino con un manual de instrucciones.",
+      "productora": "Pampa Films",
+      "director": [
+        "Nick Silbert",
+        "Lalo Mark"
+      ],
+      "creadores": [
+        "Santi Talledo",
+        "Diego Vago"
+      ],
+      "showrunner": [
+        "Santi Talledo",
+        "Diego Vago"
+      ],
+      "guion": [
+        "Santi Talledo",
+        "Diego Vago",
+        "Andrés Pascaner",
+        "Ramiro Tevez",
+        "Sofía González Gil",
+        "Lucía Miranda"
+      ],
+      "fuente": "Disney Prensa Latinoamérica — Galería de Somos Así",
+      "fuente_url": "https://prensa.disneylatino.com/imagenes/somos-as%C3%AD"
     },
     {
       "id": "V314",
