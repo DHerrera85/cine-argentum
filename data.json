@@ -18950,22 +18950,55 @@
       "actors": [
         "Natalia Oreiro",
         "Soledad Silveyra",
+        "Daniel Fanego",
         "Daniel Kuzniecka",
-        "Claudio Quinteros"
+        "Claudio Quinteros",
+        "Alicia Bruzzo",
+        "Luis Luque"
       ],
       "orientation": "vertical",
       "image": "images/verticals/el-deseo-poster-280x420.png",
+      "horizontal_image": "images/horizontals-1024x576/2004-el-deseo-telefe-slide-1024x576.webp",
       "tiras_2000_rows": [
         "thrillers"
       ],
-      "subtitle": "Thriller",
-      "horario": "22:30hs",
-      "capitulos": "90",
+      "subtitle": "Telenovela de suspenso",
+      "horario": "22:30hs; desde el 04/08, miércoles 23:30hs",
+      "capitulos": 68,
+      "seasons": 1,
       "fecha_estreno": "19/04/2004",
-      "sinopsis": "El Deseo es un pequeño pueblo de aguas termales donde pasiones, secretos y tensiones giran alrededor de la poderosa familia Bernal y su spa. La llegada de Javier y Carmen altera el frágil equilibrio: los misterios salen a la luz y nada vuelve a ser igual.",
+      "fecha_final": "29/09/2004",
+      "sinopsis": "El Deseo es un pequeño pueblo de aguas termales donde pasiones, secretos y tensiones giran alrededor de la poderosa familia Bernal y su hotel. La llegada de Javier y Carmen altera el frágil equilibrio del lugar: antiguos misterios comienzan a salir a la luz y nada vuelve a ser igual.",
       "rating": "14,4",
+      "rating_debut": "27,1",
       "productora": "Telefe Contenidos",
-      "tipo_emision": "Tira Diaria"
+      "director": [
+        "Carlos «Negro» Luna",
+        "Miguel Colom",
+        "Pablo Ambrosini"
+      ],
+      "guion": [
+        "Gustavo Belatti",
+        "Mario Segade"
+      ],
+      "tipo_emision": "Tira Diaria",
+      "historial_emision": [
+        {
+          "desde": "19/04/2004",
+          "hasta": "03/08/2004",
+          "tipo_emision": "Tira Diaria",
+          "horario": "22:30hs"
+        },
+        {
+          "desde": "04/08/2004",
+          "hasta": "29/09/2004",
+          "tipo_emision": "Semanal",
+          "horario": "Miércoles 23:30hs"
+        }
+      ],
+      "historia_emision": "El Deseo fue una telenovela emitida por Telefe en 2004 que prometía convertirse en uno de los grandes éxitos del canal. Se estrenó el 19 de abril a las 22:30 y su primer capítulo alcanzó 27,1 puntos de rating. Sin embargo, dos semanas después oscilaba entre los 13 y los 15 puntos y dejó de competir con Canal 13. El 4 de agosto pasó de emitirse diariamente a una frecuencia semanal, los miércoles a las 23:30. Finalizó el 29 de septiembre, después de 68 capítulos.",
+      "fuente": "Teleadíctos argentinos — El Deseo, Telefe 2004",
+      "fuente_url": "https://tele-adictos.blogspot.com/2009/07/el-deseo-pueblo-chico-telefe-2004.html?m=1"
     },
     {
       "id": "v102",

@@ -1775,6 +1775,17 @@
         if (hasValue(item.rating)) {
           ratingRow = '<dt>Rating</dt><dd>' + item.rating + '</dd>';
         }
+        var ratingDebutRow = '';
+        if (hasValue(item.rating_debut)) {
+          ratingDebutRow = '<dt>Rating del debut</dt><dd>' +
+            String(item.rating_debut)
+              .replace(/&/g, '&amp;')
+              .replace(/</g, '&lt;')
+              .replace(/>/g, '&gt;')
+              .replace(/"/g, '&quot;')
+              .replace(/'/g, '&#39;') +
+            '</dd>';
+        }
         var productoraRow = '';
         if (item.productora) {
           productoraRow = '<dt>Productora</dt><dd>' + item.productora + '</dd>';
@@ -2425,6 +2436,47 @@
           }
         }
 
+        // Historia de emisión: descripción y períodos históricos.
+        var historiaEmisionSection = '';
+
+        var tieneHistoria = hasValue(item.historia_emision);
+        var periodosHistoria = Array.isArray(item.historial_emision)
+          ? item.historial_emision.filter(function (periodo) {
+            return periodo && typeof periodo === 'object';
+          })
+          : [];
+
+        if (tieneHistoria || periodosHistoria.length) {
+          var historiaTexto = tieneHistoria
+            ? '<p>' + escapeDetailText(item.historia_emision) + '</p>'
+            : '';
+
+          var periodosHTML = periodosHistoria.map(function (periodo) {
+            var campos = [
+              ['Desde', periodo.desde],
+              ['Hasta', periodo.hasta],
+              ['Tipo de emisión', periodo.tipo_emision],
+              ['Horario', periodo.horario]
+            ].filter(function (campo) {
+              return hasValue(campo[1]);
+            }).map(function (campo) {
+              return '<dt>' + campo[0] + '</dt><dd>' +
+                escapeDetailText(campo[1]) + '</dd>';
+            }).join('');
+
+            return campos
+              ? '<div class="emision-tv-item"><dl>' + campos + '</dl></div>'
+              : '';
+          }).filter(Boolean).join('');
+
+          historiaEmisionSection =
+            '<section class="emisiones-tv-section">' +
+            '<h2>Historia de emisión</h2>' +
+            historiaTexto +
+            periodosHTML +
+            '</section>';
+        }
+
         // Emisiones de televisión abierta y cable registradas en data.json.
         var emisionesTVSection = '';
 
@@ -2572,6 +2624,7 @@
           + fechaEstrenoRow
           + fechasTemporadasRow
           + ratingRow
+          + ratingDebutRow
           + productoraRow
           + viewersRow
           + producerRow
@@ -2581,6 +2634,7 @@
           + guionRow
           + fuenteRow
           + '</dl>'
+          + historiaEmisionSection
           + emisionesTVSection
           + temporadasSection
           + posterGallerySection
