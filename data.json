@@ -4370,7 +4370,7 @@
       "director": "Diego Rafecas"
     },
     {
-      "title": "Caídos del mapa",
+      "title": "Caídos del mapa - La Película",
       "genre": "Familiar",
       "year": "2013",
       "actors": [
@@ -8103,7 +8103,7 @@
         "Julieta Cardinali",
         "Alejandra Flechner",
         "Antonio Birabent",
-        "Lautaro Delgado",
+        "Lautaro Delgado Tymruk",
         "Nicolás Pauls",
         "Juan Palomino",
         "Víctor Hugo Morales",
@@ -9077,7 +9077,7 @@
         "Ignacio Rogers",
         "Valentina Bassi",
         "Sergio Surraco",
-        "Lautaro Delgado",
+        "Lautaro Delgado Tymruk",
         "Roberto Vallejos",
         "Sofía Elliot",
         "Nicolás Goldschmidt",
@@ -9391,6 +9391,227 @@
           "nombre": "Catálogo audiovisual del MERCOSUR",
           "url": "https://www.recam.org/_files/documents/cat2012_1_.pdf",
           "tipo": "Cantidad de capítulos, dirección, guion y producción"
+        }
+      ]
+    },
+    {
+      "id": "V349",
+      "title": "Área 23",
+      "type": "serie",
+      "year": "2013",
+      "channel": "TEC TV",
+      "air_channels": [
+        "TEC TV",
+        "TV Pública"
+      ],
+      "air_broadcasts": [
+        {
+          "channel": "TEC TV",
+          "tipo_emision": "Estreno original"
+        },
+        {
+          "channel": "TV Pública",
+          "premiere_date": "19/08/2013",
+          "horario": "Lunes a jueves 22:30hs",
+          "tipo_emision": "Semanal"
+        }
+      ],
+      "platforms": [
+        "Contar"
+      ],
+      "genre": "Drama",
+      "actors": [
+        "Carolina Peleíta",
+        "Luis Capazo",
+        "Fabián Carrasco",
+        "César Eloy Erran Salsamendi",
+        "Eduardo Icono",
+        "María Andrea Schmidt"
+      ],
+      "orientation": "vertical",
+      "image": "images/verticals/2013-area-23-TEC-contar-poster280x420.webp",
+      "subtitle": "Drama científico",
+      "unitarios_rows": [
+        "ficciones-contar"
+      ],
+      "horario": "Lunes a jueves 22:30hs",
+      "capitulos": 13,
+      "fecha_estreno": "19/08/2013",
+      "fecha_finalizacion": "09/09/2013",
+      "sinopsis": "Eugenia Simone, una científica argentina especializada en biología molecular, regresa al país después de diez años en el exterior para incorporarse a un banco genético de alta complejidad. Cuando inesperadamente debe asumir la conducción del instituto, enfrenta junto a su equipo distintos casos vinculados con la genética, la medicina y el medioambiente, mientras intenta superar las diferencias personales y profesionales de sus integrantes.",
+      "productora": "Tecnópolis TV / Mulata Films",
+      "guion": "Natalia Tito",
+      "duracion": "30 minutos",
+      "rating": "3,8",
+      "tipo_emision": "Semanal",
+      "fuentes": [
+        {
+          "nombre": "Wikipedia",
+          "url": "https://es.wikipedia.org/wiki/Área_23",
+          "tipo": "Ficha técnica, argumento, elenco y emisiones"
+        }
+      ]
+    },
+    {
+      "id": "V350",
+      "title": "Caídos del mapa",
+      "type": "serie",
+      "year": "2014",
+      "channel": "Paka Paka",
+      "air_channels": [
+        "Paka Paka"
+      ],
+      "cable_broadcasts": [
+        {
+          "channel": "Paka Paka",
+          "premiere_date": "07/04/2014",
+          "horario": "Lunes a viernes 18:00hs",
+          "tipo_emision": "Diaria"
+        }
+      ],
+      "platforms": [
+        "Contar"
+      ],
+      "genre": "Infantil",
+      "actors": [
+        "Felipe Corrado",
+        "Sofía Calzetti",
+        "Ailén Caffieri",
+        "Tomás Carullo Lizzio",
+        "Brenda Marks Cobas",
+        "Karina K.",
+        "Tina Serrano",
+        "Atilio Pozzobón",
+        "Silvina Bosco",
+        "Eugenia Alonso",
+        "Alejandro Paker",
+        "Marcelo Savignone",
+        "Osqui Guzmán"
+      ],
+      "orientation": "vertical",
+      "image": "images/verticals/2014-caidos-del-mapa-serie-paka-paka-contar-poster280x420.webp",
+      "subtitle": "Ficción infantil",
+      "unitarios_rows": [
+        "ficciones-contar"
+      ],
+      "juveniles_rows": [
+        "infantiles-2000-2019",
+        "ficciones-infanto-juveniles-contar"
+      ],
+      "horario": "Lunes a viernes 18:00hs",
+      "capitulos": 13,
+      "duracion": "26 minutos",
+      "fecha_estreno": "07/04/2014",
+      "sinopsis": "Federico, Graciela, Fabián y Paula son cuatro compañeros de séptimo grado que deciden escaparse de clase y esconderse en el sótano de su escuela. Allí viven aventuras, conflictos, amistades y primeros amores. La situación se complica cuando Miriam descubre su escondite y amenaza con delatarlos si no la dejan participar. Mientras tanto, la directora, la maestra y los padres intentan averiguar qué ocurrió con los chicos.",
+      "productora": "Pakapaka / Pensa & Rocca Producciones",
+      "director": [
+        "Leandro Mark"
+      ],
+      "tipo_emision": "Diaria",
+      "related": [
+        "P1158"
+      ],
+      "fuentes": [
+        {
+          "nombre": "La Nueva",
+          "url": "https://www.lanueva.com/nota/2014-4-7-0-21-0--caidos-del-mapa-la-ficcion-de-pakapaka",
+          "tipo": "Estreno, argumento y emisión"
+        },
+        {
+          "nombre": "La Capital",
+          "url": "https://www.lacapital.com.ar/zoom/caidos-del-mapa-serie-propia-n464696.html",
+          "tipo": "Fecha de estreno, capítulos y duración"
+        },
+        {
+          "nombre": "FULLTV",
+          "url": "https://www.fulltv.com.ar/ver/tv-caidos-del-mapa-1536359256.html",
+          "tipo": "Elenco y dirección"
+        }
+      ]
+    },
+    {
+      "id": "V351",
+      "title": "Combatientes",
+      "type": "serie",
+      "year": "2013",
+      "channel": "TV Pública",
+      "air_channels": [
+        "TV Pública"
+      ],
+      "air_broadcasts": [
+        {
+          "channel": "TV Pública",
+          "premiere_date": "02/04/2013",
+          "horario": "Martes a jueves 22:30hs",
+          "tipo_emision": "Semanal"
+        }
+      ],
+      "platforms": [
+        "Contar"
+      ],
+      "genre": "Drama",
+      "actors": [
+        "Lucas Ferraro",
+        "Lautaro Delgado Tymruk",
+        "Lucas Escariz",
+        "Eliseo Barrionuevo",
+        "Facundo Livio Mejías",
+        "Ramiro Archain",
+        "Victoria Raposo",
+        "Mailén González Perrín",
+        "Julia Calvo",
+        "Jorge Nolasco",
+        "Roly Serrano",
+        "Lili Popovich",
+        "Luz Palazón",
+        "Mónica Lairana",
+        "Tony Lestingi",
+        "Darío Levy",
+        "Manuel Vicente",
+        "Marcelo D'Andrea"
+      ],
+      "orientation": "vertical",
+      "image": "images/verticals/2013-combatientes-tv-publica-contar-poster280x420.webp",
+      "subtitle": "Drama histórico y bélico",
+      "unitarios_rows": [
+        "ficciones-contar"
+      ],
+      "horario": "Martes a jueves 22:30hs",
+      "capitulos": 13,
+      "duracion": "26 minutos",
+      "fecha_estreno": "02/04/2013",
+      "fecha_finalizacion": "25/04/2013",
+      "sinopsis": "Durante la guerra de Malvinas, Gustavo Rivero, un joven operario de un taller mecánico, es convocado para combatir en las islas. En los últimos días del conflicto recibe un disparo en la cabeza que le provoca la pérdida de parte de su memoria. Cinco años después, intenta reencontrarse con sus antiguos compañeros para reconstruir lo sucedido. A través de sus recuerdos, la miniserie retrata las experiencias de seis soldados antes, durante y después de la guerra, así como las consecuencias personales y sociales que dejó el conflicto.",
+      "productora": "Universidad Nacional de San Martín (UNSAM) / Fomento TDA",
+      "director": [
+        "Jerónimo Paz Clemente",
+        "Tomás de las Heras"
+      ],
+      "guion": "Jerónimo Paz Clemente y Tomás de las Heras",
+      "produccion_general": "María Sol Inzillo",
+      "produccion_ejecutiva": "Adrián Kaminker",
+      "rating": "1,9",
+      "tipo_emision": "Semanal",
+      "fuentes": [
+        {
+          "nombre": "BAFILMA",
+          "url": "https://bafilma.gba.gob.ar/audiovisuales/series/combatientes",
+          "tipo": "Producción, dirección, argumento y capítulos"
+        },
+        {
+          "nombre": "Wikipedia",
+          "url": "https://es.wikipedia.org/wiki/Combatientes_(serie_de_televisión)",
+          "tipo": "Elenco, emisiones y ficha técnica"
+        },
+        {
+          "nombre": "Observatorio de Ficción Televisiva - UNQ",
+          "url": "https://observatorioficcion.web.unq.edu.ar/tag/c/",
+          "tipo": "Fechas, audiencia, duración y producción"
+        },
+        {
+          "nombre": "TV Pública",
+          "url": "https://www.tvpublica.com.ar/programa/combatientes/",
+          "tipo": "Sinopsis y antecedentes de producción"
         }
       ]
     },
