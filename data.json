@@ -1777,7 +1777,15 @@
       "viewers": 358808,
       "producer": "Morena Films, Telecinco Cinema, K&S Films, Telefe, Telefónica Studios",
       "release_date": "3/3/2016",
-      "director": "Daniel Calparsoro"
+      "director": "Daniel Calparsoro",
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2016,
+        "viewers": 358808,
+        "national_rank": 6,
+        "overall_rank": 38,
+        "updated_at": "2026-10-31"
+      }
     },
     {
       "title": "Permitidos",
@@ -1798,7 +1806,15 @@
       "viewers": 356348,
       "producer": "Tresplanos Cine, Patagonik Film Group, INCAA",
       "release_date": "4/8/2016",
-      "director": "Ariel Winograd"
+      "director": "Ariel Winograd",
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2016,
+        "viewers": 356348,
+        "national_rank": 7,
+        "overall_rank": 39,
+        "updated_at": "2026-10-31"
+      }
     },
     {
       "title": "La última fiesta",
@@ -1840,7 +1856,15 @@
       "viewers": 665007,
       "producer": "Aleph Media, Magma Cine",
       "release_date": "8/9/2016",
-      "director": "Gastón Duprat, Mariano Cohn"
+      "director": "Gastón Duprat, Mariano Cohn",
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2016,
+        "viewers": 665007,
+        "national_rank": 4,
+        "overall_rank": 19,
+        "updated_at": "2026-10-31"
+      }
     },
     {
       "title": "El rey del Once",
@@ -1881,7 +1905,15 @@
       "viewers": 363835,
       "producer": "Argentina Sono Film, Telefe",
       "release_date": "11/8/2016",
-      "director": "Marcos Carnevale"
+      "director": "Marcos Carnevale",
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2016,
+        "viewers": 363835,
+        "national_rank": 5,
+        "overall_rank": 36,
+        "updated_at": "2026-10-31"
+      }
     },
     {
       "title": "Los que aman, odian",
@@ -3153,7 +3185,15 @@
       "viewers": 309289,
       "producer": "Pampa Films, Telefe, Endemol Shine Argentina, DirecTV, INCAA",
       "release_date": "14/4/2016",
-      "director": "Sebastián Borensztein"
+      "director": "Sebastián Borensztein",
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2016,
+        "viewers": 309289,
+        "national_rank": 8,
+        "overall_rank": 44,
+        "updated_at": "2026-10-31"
+      }
     },
     {
       "title": "Sin hijos",
@@ -3457,7 +3497,15 @@
       "type": "pelicula",
       "subtitle": "Biográficas",
       "id": "P1127",
-      "viewers": 955298,
+      "viewers": 955461,
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2016,
+        "viewers": 955461,
+        "national_rank": 2,
+        "overall_rank": 11,
+        "updated_at": "2026-10-31"
+      },
       "producer": "Habitación 1520, Smilehood, INCAA, Telefe",
       "release_date": "15/9/2016",
       "director": "Lorena Muñoz"
@@ -4034,7 +4082,15 @@
       "viewers": 2027880,
       "producer": "Patagonik Film Group",
       "release_date": "17/3/2016",
-      "director": "Juan Taratuto"
+      "director": "Juan Taratuto",
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2016,
+        "viewers": 2027880,
+        "national_rank": 1,
+        "overall_rank": 4,
+        "updated_at": "2026-10-31"
+      }
     },
     {
       "title": "Papá es un ídolo",
@@ -4476,7 +4532,15 @@
       "viewers": 715265,
       "producer": "MyS Producción, Telefe",
       "release_date": "19/5/2016",
-      "director": "Daniela Goggi"
+      "director": "Daniela Goggi",
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2016,
+        "viewers": 715265,
+        "national_rank": 3,
+        "overall_rank": 18,
+        "updated_at": "2026-10-31"
+      }
     },
     {
       "title": "Comodines",
@@ -4864,7 +4928,15 @@
       "viewers": 283305,
       "producer": "Haddock Films, Televisión Española, Telefe, Tornasol Films",
       "release_date": "21/4/2016",
-      "director": "Rodrigo Grande"
+      "director": "Rodrigo Grande",
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2016,
+        "viewers": 283305,
+        "national_rank": 9,
+        "overall_rank": 46,
+        "updated_at": "2026-10-31"
+      }
     },
     {
       "title": "Un argentino en Nueva York",
@@ -5314,7 +5386,15 @@
       "viewers": 220290,
       "producer": "HC Films, MyS Producción, Patagonik Film Group",
       "release_date": "25/2/2016",
-      "director": "Hernán Guerschuny"
+      "director": "Hernán Guerschuny",
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2016,
+        "viewers": 220290,
+        "national_rank": 10,
+        "overall_rank": 52,
+        "updated_at": "2026-10-31"
+      }
     },
     {
       "title": "El último Elvis",
