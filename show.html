@@ -914,7 +914,11 @@
         }
         var directorRow = '';
         if (item.director) {
-          directorRow = '<dt>Director</dt><dd>' + item.director + '</dd>';
+          var directores = String(item.director)
+            .replace(/\s*,\s*/g, ', ')
+            .trim();
+
+          directorRow = '<dt>Director</dt><dd>' + directores + '</dd>';
         }
         // Campos nuevos: horario, capitulos, fecha_estreno, rating, productora
         function hasValue(v) {
