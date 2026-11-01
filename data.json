@@ -21310,6 +21310,7 @@
     {
       "id": "V160",
       "title": "Paraíso Rock",
+      "type": "serie",
       "year": "2005",
       "channel": "Canal 9",
       "genre": "Juvenil",
@@ -21317,18 +21318,60 @@
         "Laura Azcurra",
         "Nazareno Casero",
         "Ludovico Di Santo",
-        "Arturo Frutos"
+        "Arturo Frutos",
+        "Florencia Otero",
+        "Germán Kraus",
+        "Natalia Lobo",
+        "Juan Palomino"
       ],
       "orientation": "vertical",
       "image": "images/verticals/paraiso-rock-poster-280x420.png",
+      "horizontal_image": "images/horizontals-1024x576/2005-paraiso-rock-canal9-slide-1024x576.webp",
       "subtitle": "Juvenil",
-      "horario": "19hs, 18hs",
-      "capitulos": 60,
+      "horario": "19hs; luego 18hs",
+      "capitulos": 24,
+      "capitulos_internacionales": 60,
+      "seasons": 1,
       "fecha_estreno": "21/03/2005",
-      "sinopsis": "Paraíso Rock narra la historia de cuatro jóvenes —Carmela, Ludovico, Napo y Javier— que descubren que son medio hermanos tras la muerte de su padre. Heredan a partes iguales un bar y deben aprender a convivir y administrarlo juntos para cumplir su último deseo.",
-      "rating": "5",
+      "fecha_final": "22/04/2005",
+      "sinopsis": "Carmela, Ludovico, Napo y Javier son cuatro jóvenes de personalidades y orígenes muy diferentes que descubren que son medio hermanos después de la muerte de su padre. Como herencia reciben partes iguales de un bar y deberán aprender a convivir y administrarlo juntos durante un año para cumplir su último deseo.",
+      "rating": "4,5",
+      "rating_debut": "8,5",
       "productora": "Red Lojo",
-      "tipo_emision": "Tira Diaria"
+      "director": "Mariano Ardanaz",
+      "creadores": [
+        "Claudio Lacelli"
+      ],
+      "guion": [
+        "Claudio Lacelli",
+        "Marcelo Cabrera",
+        "Victoria Crespo",
+        "Marcela Satz"
+      ],
+      "tipo_emision": "Tira Diaria",
+      "historial_emision": [
+        {
+          "desde": "21/03/2005",
+          "hasta": "03/04/2005",
+          "tipo_emision": "Tira Diaria",
+          "horario": "19hs"
+        },
+        {
+          "desde": "04/04/2005",
+          "hasta": "22/04/2005",
+          "tipo_emision": "Tira Diaria",
+          "horario": "18hs"
+        },
+        {
+          "desde": "Después del 22/04/2005",
+          "hasta": "",
+          "tipo_emision": "Reposición de fin de semana",
+          "horario": "Sábados y domingos 11hs"
+        }
+      ],
+      "historia_emision": "Paraíso Rock se estrenó el 21 de marzo de 2005 por Canal 9 y su primer capítulo alcanzó 8,5 puntos de rating. La audiencia descendió rápidamente y la producción obtuvo un promedio de 4,5 puntos durante los 24 episodios emitidos originalmente en Argentina. Tras comenzar a las 19:00, fue adelantada a las 18:00 para evitar la competencia directa con Floricienta. El 22 de abril dejó de emitirse diariamente y posteriormente volvió a comenzar los sábados y domingos a las 11:00 para completar la historia. Para su comercialización internacional se preparó una versión de 60 episodios.",
+      "fuente": "Teleadíctos argentinos — Paraíso Rock, Canal 9 2005",
+      "fuente_url": "https://tele-adictos.blogspot.com/2009/07/paraiso-rock-canal-9-2005.html?m=1"
     },
     {
       "id": "V161",
@@ -25398,28 +25441,54 @@
     {
       "id": "V265",
       "title": "Acompañantes",
+      "type": "serie",
       "year": "2009",
+      "production_year": "2006",
       "channel": "Telefe",
       "genre": "Comedia",
       "actors": [
         "Jorge Marrale",
+        "Fabián Gianola",
         "Pablo Rago",
         "Nicolás Pauls",
-        "Fabián Gianola"
+        "Tina Serrano",
+        "Mónica Antonópulos",
+        "Rubén Szuchmacher",
+        "Mirta Wons",
+        "Nicolás Torcanowsky",
+        "Camila Toker",
+        "José Luis Gioia",
+        "María Ucedo"
       ],
       "orientation": "vertical",
       "image": "images/verticals/acompanantes-poster-280x420.png",
+      "horizontal_image": "images/horizontals-1024x576/2009-acompanantes-telefe-slide-1024x576.webp",
       "subtitle": "Comedia",
-      "horario": "23hs",
+      "horario": "Lunes 23:30hs",
       "capitulos": 4,
+      "capitulos_grabados": 13,
+      "duracion": "40 minutos",
       "fecha_estreno": "09/03/2009",
-      "sinopsis": "Cuatro hombres, incluyendo a un profesor de filosofía y un ex futbolista, se convierten en acompañantes de mujeres solitarias, terminando envueltos en situaciones ilegales y enredos cómicos al buscar solucionar sus problemas",
-      "rating": "-",
-      "productora": "Endemol",
+      "fecha_final": "30/03/2009",
+      "sinopsis": "Norberto, Marcelo, Patricio y Kende son cuatro hombres golpeados por la crisis que deciden crear una improvisada agencia de acompañantes. La vida personal de cada uno y las situaciones provocadas por sus clientas los arrastrarán a enredos disparatados, problemas legales y experiencias que pondrán a prueba sus prejuicios y su amistad.",
+      "rating": "",
+      "rating_debut": "19,0",
+      "productora": "Endemol Argentina",
       "tipo_emision": "Semanal",
+      "historial_emision": [
+        {
+          "desde": "09/03/2009",
+          "hasta": "30/03/2009",
+          "tipo_emision": "Semanal",
+          "horario": "Lunes 23:30hs"
+        }
+      ],
+      "historia_emision": "Acompañantes fue grabada en 2006 por Endemol Argentina para Telefe, pero su estreno fue postergado durante varios años. Aunque se produjeron 13 episodios, el canal emitió en 2009 una versión condensada de cuatro capítulos de 40 minutos. El primer episodio se estrenó el 9 de marzo a las 23:30 y alcanzó 19 puntos de rating. La audiencia descendió con el transcurso de las emisiones y el unitario finalizó el 30 de marzo de 2009.",
       "unitarios_rows": [
         "comedias-unitarios"
-      ]
+      ],
+      "fuente": "Teleadíctos argentinos — Acompañantes, Telefe",
+      "fuente_url": "https://tele-adictos.blogspot.com/2009/06/acompanantes-telefe-2006.html?m=1"
     },
     {
       "id": "P1402",
