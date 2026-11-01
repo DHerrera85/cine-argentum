@@ -1934,6 +1934,15 @@
       "producer": "Patagonik",
       "release_date": "5/10/2017",
       "director": "Alejandro Maci"
+    ,
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2017,
+        "viewers": 357716,
+        "national_rank": 6,
+        "overall_rank": 39,
+        "updated_at": "2026-10-31"
+      }
     },
     {
       "title": "Mamá se fue de viaje",
@@ -1954,6 +1963,15 @@
       "producer": "Patagonik",
       "release_date": "6/7/2017",
       "director": "Ariel Winograd"
+    ,
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2017,
+        "viewers": 1713804,
+        "national_rank": 1,
+        "overall_rank": 5,
+        "updated_at": "2026-10-31"
+      }
     },
     {
       "title": "El fútbol o yo",
@@ -1974,6 +1992,15 @@
       "producer": "Patagonik, Lihuen Andina S.A., Creative Andina",
       "release_date": "10/8/2017",
       "director": "Marcos Carnevale"
+    ,
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2017,
+        "viewers": 1097893,
+        "national_rank": 2,
+        "overall_rank": 13,
+        "updated_at": "2026-10-31"
+      }
     },
     {
       "title": "Perdida",
@@ -3315,6 +3342,15 @@
       "producer": "Patagonik, Morena Films, Telefe",
       "release_date": "14/9/2017",
       "director": "Martín Hodara"
+    ,
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2017,
+        "viewers": 714645,
+        "national_rank": 3,
+        "overall_rank": 22,
+        "updated_at": "2026-10-31"
+      }
     },
     {
       "title": "La Odisea de los Giles",
@@ -3358,6 +3394,15 @@
       "producer": "Pampa Films, Telefe",
       "release_date": "15/6/2017",
       "director": "Federico Cueva"
+    ,
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2017,
+        "viewers": 96075,
+        "national_rank": 9,
+        "overall_rank": 70,
+        "updated_at": "2026-10-31"
+      }
     },
     {
       "title": "La Ira de Dios",
@@ -4183,6 +4228,15 @@
       "producer": "K&S Films, Haddock Films, Telefe",
       "release_date": "17/8/2017",
       "director": "Santiago Mitre"
+    ,
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2017,
+        "viewers": 658082,
+        "national_rank": 4,
+        "overall_rank": 24,
+        "updated_at": "2026-10-31"
+      }
     },
     {
       "title": "Dibu 3",
@@ -5490,6 +5544,15 @@
       "producer": "Pampa Films",
       "release_date": "26/10/2017",
       "director": "Gabriel Nesci"
+    ,
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2017,
+        "viewers": 178260,
+        "national_rank": 7,
+        "overall_rank": 53,
+        "updated_at": "2026-10-31"
+      }
     },
     {
       "title": "El Rapto",
@@ -5604,6 +5667,15 @@
       "producer": "Jempsa, Fox International Productions",
       "release_date": "27/4/2017",
       "director": "Nicolás Tuozzo"
+    ,
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2017,
+        "viewers": 414318,
+        "national_rank": 5,
+        "overall_rank": 32,
+        "updated_at": "2026-10-31"
+      }
     },
     {
       "title": "Goyo",
@@ -5837,6 +5909,15 @@
       "producer": "Habano Films, Patagonik",
       "release_date": "28/09/2017",
       "director": "Teresa Costantini"
+    ,
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2017,
+        "viewers": 94116,
+        "national_rank": 10,
+        "overall_rank": 75,
+        "updated_at": "2026-10-31"
+      }
     },
     {
       "title": "Una Flor en el Barro",
@@ -11567,6 +11648,37 @@
         "viewers": 177703,
         "national_rank": 8,
         "overall_rank": 56,
+        "updated_at": "2026-10-31"
+      }
+    },
+    {
+      "id": "P2119",
+      "title": "Zama",
+      "genre": "Drama",
+      "year": "2017",
+      "actors": [
+        "Daniel Giménez Cacho",
+        "Lola Dueñas",
+        "Matheus Nachtergaele",
+        "Juan Minujín"
+      ],
+      "synopsis": "A fines del siglo XVIII, Don Diego de Zama, funcionario de la Corona española destinado en una región remota de Sudamérica, espera un traslado que nunca llega. La espera y el aislamiento transforman progresivamente su vida.",
+      "channel": "",
+      "image": "",
+      "horizontal_image": "",
+      "orientation": "vertical",
+      "type": "pelicula",
+      "subtitle": "Drama",
+      "viewers": 99004,
+      "producer": "",
+      "release_date": "",
+      "director": "Lucrecia Martel",
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2017,
+        "viewers": 99004,
+        "national_rank": 8,
+        "overall_rank": 68,
         "updated_at": "2026-10-31"
       }
     },
