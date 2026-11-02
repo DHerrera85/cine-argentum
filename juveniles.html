@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 
 <head>
@@ -10,7 +10,8 @@
   <link rel="stylesheet" href="css/style.css?v=2.0" />
   <link rel="stylesheet" href="css/main-wrap.css?v=1.0" />
   <link rel="stylesheet" href="css/lightslider.css?v=2.0" />
-  <link rel="stylesheet" href="css/juveniles-catalog.css?v=2.1">
+  <link rel="stylesheet" href="css/tiras-2000-catalog.css?v=20261101-1" />
+  <link rel="stylesheet" href="css/juveniles-catalog.css?v=20261102-2">
   <!-- Fuente -->
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins&display=swap" />
@@ -217,6 +218,48 @@
     </nav>
 
     <main class="juveniles-page">
+
+      <!-- Estrenos 2000–actualidad -->
+      <section class="tiras-2000-section tiras-2000-calendar-section juveniles-calendar"
+        id="juveniles-premieres" aria-labelledby="juveniles-premieres-heading">
+        <h1 class="tiras-2000-calendar-title" id="juveniles-premieres-heading">Estrenos 2000–Actualidad</h1>
+        <div class="tiras-2000-calendar-controls">
+          <div class="tiras-2000-month-navigation">
+            <button id="juveniles-premieres-months-previous" type="button"
+              class="tiras-2000-month-arrow tiras-2000-month-arrow-previous" aria-label="Ver meses anteriores">
+              <i class="fas fa-chevron-left" aria-hidden="true"></i>
+            </button>
+            <div id="juveniles-premieres-months" class="tiras-2000-month-tabs" role="tablist"
+              aria-label="Seleccionar mes de estreno">
+              <button type="button" class="tiras-2000-month-tab" role="tab" data-month="0" aria-selected="false">Enero</button>
+              <button type="button" class="tiras-2000-month-tab" role="tab" data-month="1" aria-selected="false">Febrero</button>
+              <button type="button" class="tiras-2000-month-tab" role="tab" data-month="2" aria-selected="false">Marzo</button>
+              <button type="button" class="tiras-2000-month-tab" role="tab" data-month="3" aria-selected="false">Abril</button>
+              <button type="button" class="tiras-2000-month-tab" role="tab" data-month="4" aria-selected="false">Mayo</button>
+              <button type="button" class="tiras-2000-month-tab" role="tab" data-month="5" aria-selected="false">Junio</button>
+              <button type="button" class="tiras-2000-month-tab" role="tab" data-month="6" aria-selected="false">Julio</button>
+              <button type="button" class="tiras-2000-month-tab" role="tab" data-month="7" aria-selected="false">Agosto</button>
+              <button type="button" class="tiras-2000-month-tab" role="tab" data-month="8" aria-selected="false">Septiembre</button>
+              <button type="button" class="tiras-2000-month-tab" role="tab" data-month="9" aria-selected="false">Octubre</button>
+              <button type="button" class="tiras-2000-month-tab" role="tab" data-month="10" aria-selected="false">Noviembre</button>
+              <button type="button" class="tiras-2000-month-tab" role="tab" data-month="11" aria-selected="false">Diciembre</button>
+            </div>
+            <button id="juveniles-premieres-months-next" type="button"
+              class="tiras-2000-month-arrow tiras-2000-month-arrow-next" aria-label="Ver meses siguientes">
+              <i class="fas fa-chevron-right" aria-hidden="true"></i>
+            </button>
+          </div>
+          <label class="juveniles-calendar-year-label" for="juveniles-premieres-year">Año
+            <select id="juveniles-premieres-year"><option value="all">Todos los años</option></select>
+          </label>
+          <span id="juveniles-premieres-count" class="tiras-2000-count" aria-live="polite"></span>
+        </div>
+        <ul id="juveniles-premieres-list" class="slider-v cs-hidden" data-skip-auto="true"
+          aria-label="Estrenos juveniles e infantiles filtrados"></ul>
+        <p id="juveniles-premieres-empty" class="tiras-2000-calendar-empty" role="status" hidden>
+          No hay estrenos registrados para este mes.
+        </p>
+      </section>
 
       <!-- Lanzamientos del 2026 -->
       <section class="juveniles-section juveniles-horizontal-showcase juveniles-showcase-streaming">
@@ -426,7 +469,7 @@
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   <script src="js/lightslider.js"></script>
   <script src="js/juveniles-platforms-autosync.js?v=20260830-1"></script>
-  <script src="js/juveniles-rows-autosync.js?v=20261010-2"></script>
+  <script src="js/juveniles-rows-autosync.js?v=20261101-5"></script>
   <script src="js/script.js?v=20260903-1"></script>
   <script src="js/juveniles-ui.js?v=20260829-1"></script>
 </body>

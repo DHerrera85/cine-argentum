@@ -579,3 +579,242 @@
     height: 36px;
   }
 }
+
+/* Calendario de estrenos: meses y año */
+.juveniles-calendar {
+  padding: 26px 32px 20px;
+}
+
+.juveniles-calendar-controls {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin: 14px 0 20px;
+}
+
+.juveniles-calendar-months {
+  display: flex;
+  gap: 7px;
+  flex: 1 1 650px;
+  overflow-x: auto;
+  padding: 4px 2px 12px;
+  scrollbar-width: thin;
+}
+
+.juveniles-calendar-month {
+  flex: 0 0 auto;
+  cursor: pointer;
+  border: 1px solid #dfbdd7;
+  border-radius: 999px;
+  padding: 9px 14px;
+  background: rgba(255, 255, 255, .74);
+  color: #35455a;
+  font: inherit;
+  font-size: 13px;
+}
+
+.juveniles-calendar-month:hover,
+.juveniles-calendar-month.is-active {
+  background: #7655ad;
+  border-color: #7655ad;
+  color: white;
+}
+
+.juveniles-calendar-year-label {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  font-weight: 600;
+  color: #35455a;
+}
+
+#juveniles-premieres-year {
+  border: 1px solid #dfbdd7;
+  border-radius: 12px;
+  background: white;
+  color: #35455a;
+  padding: 9px;
+  font: inherit;
+}
+
+.juveniles-calendar-empty {
+  color: #35455a;
+  padding: 10px 0 22px;
+}
+
+.juveniles-calendar [hidden] {
+  display: none !important;
+}
+
+@media(max-width:768px) {
+  .juveniles-calendar {
+    padding: 18px 14px;
+  }
+
+  .juveniles-calendar-controls {
+    gap: 10px;
+  }
+}
+
+/* Diseño editorial compartido con Estrenos 1990–1999 */
+.juveniles-calendar {
+  --tiras-2000-accent: 118, 85, 173;
+  background: transparent;
+}
+
+.juveniles-calendar .tiras-2000-calendar-title {
+  color: #2c3e50;
+}
+
+.juveniles-calendar .tiras-2000-month-arrow {
+  color: #35455a;
+  background: rgba(255, 255, 255, 0.76);
+  border-color: rgba(118, 85, 173, 0.24);
+}
+
+.juveniles-calendar .tiras-2000-month-tab {
+  color: #35455a;
+  background: rgba(255, 255, 255, 0.76);
+  border-color: rgba(118, 85, 173, 0.24);
+}
+
+.juveniles-calendar .tiras-2000-month-tab:hover {
+  color: #4f397a;
+}
+
+.juveniles-calendar .tiras-2000-month-tab.is-active {
+  color: #ffffff;
+}
+
+.juveniles-calendar .tiras-2000-calendar-controls {
+  grid-template-columns: minmax(0, 1fr) auto auto;
+}
+
+.juveniles-calendar-year-label {
+  flex: 0 0 auto;
+}
+
+.juveniles-calendar .tiras-2000-count {
+  flex: 0 0 auto;
+  color: #4f397a;
+  border-radius: 999px;
+  border: 1px solid rgba(118, 85, 173, 0.28);
+  background: rgba(255, 255, 255, 0.72);
+  padding: 9px 14px;
+  font-size: 0.84rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.juveniles-calendar .latest-b-img {
+  width: 100%;
+  aspect-ratio: 2 / 3;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.juveniles-calendar .lightSlider,
+.juveniles-calendar .lSSlide,
+.juveniles-calendar .lSSlideOuter,
+.juveniles-calendar .lSSlideWrapper {
+  height: auto !important;
+}
+
+.juveniles-calendar .slider-v li a {
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.juveniles-calendar .latest-box {
+  width: 220px;
+  max-width: 220px;
+  min-width: 220px;
+  box-sizing: border-box;
+  margin: 10px auto;
+}
+
+.juveniles-calendar .latest-b-img img {
+  width: 100%;
+  height: 100%;
+  max-height: none;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+}
+
+.juveniles-calendar .latest-b-text {
+  background: transparent !important;
+}
+
+.juveniles-calendar .latest-b-text strong {
+  color: #2c3e50;
+}
+
+.juveniles-calendar .latest-b-text p {
+  color: #66758a;
+  font-size: 0.84rem;
+  font-weight: 600;
+}
+
+.juveniles-calendar .tiras-2000-calendar-empty {
+  color: #35455a;
+  background: rgba(255, 255, 255, 0.58);
+  border-color: rgba(118, 85, 173, 0.16);
+}
+
+@media (max-width: 900px) {
+  .juveniles-calendar .tiras-2000-calendar-controls {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .juveniles-calendar-year-label,
+  .juveniles-calendar .tiras-2000-count {
+    justify-self: start;
+  }
+}
+
+@media (max-width: 768px) {
+  .juveniles-calendar .latest-box {
+    width: 100%;
+    max-width: 220px;
+    min-width: 0;
+    margin: 8px auto;
+  }
+}
+
+/* Encabezado del calendario: evitar superposiciones en móviles */
+@media (max-width: 600px) {
+  .juveniles-calendar .tiras-2000-calendar-title {
+    grid-column: 1;
+    grid-row: 1;
+    min-width: 0;
+    margin: 0;
+    padding-right: 0;
+    font-size: clamp(0.82rem, 4vw, 1rem);
+    letter-spacing: 0.25px;
+    white-space: nowrap;
+    overflow-wrap: break-word;
+  }
+
+  .juveniles-calendar .tiras-2000-count {
+    grid-column: 2;
+    grid-row: 1;
+    justify-self: end;
+    align-self: start;
+    margin: 0;
+  }
+
+  .juveniles-calendar .tiras-2000-month-navigation {
+    grid-column: 1 / -1;
+    grid-row: 2;
+  }
+
+  .juveniles-calendar-year-label {
+    grid-column: 1 / -1;
+    grid-row: 3;
+    justify-self: start;
+    margin-bottom: 12px;
+  }
+}

@@ -597,7 +597,7 @@
             item: 5,
             autoWidth: false,
             slideMove: 1,
-            slideMargin: 12,
+            slideMargin: 18,
             loop: false,
             pager: false,
             controls: true,
@@ -611,7 +611,7 @@
                     settings: {
                         item: 4,
                         slideMove: 1,
-                        slideMargin: 10
+                        slideMargin: 18
                     }
                 },
                 {
@@ -619,7 +619,7 @@
                     settings: {
                         item: 2,
                         slideMove: 1,
-                        slideMargin: 8
+                        slideMargin: 18
                     }
                 }
             ],
@@ -925,6 +925,150 @@
         initializeVerticalSlider(list);
     }
 
+    function renderJuvenilesPremiereCalendar(items) {
+        var section = document.getElementById('juveniles-premieres');
+        if (!section) return;
+        var months = document.getElementById('juveniles-premieres-months');
+        var yearSelect = document.getElementById('juveniles-premieres-year');
+        var list = document.getElementById('juveniles-premieres-list');
+        var count = document.getElementById('juveniles-premieres-count');
+        var empty = document.getElementById('juveniles-premieres-empty');
+        var previous = document.getElementById('juveniles-premieres-months-previous');
+        var next = document.getElementById('juveniles-premieres-months-next');
+        if (!months || !yearSelect || !list) return;
+
+        var currentYear = new Date().getFullYear();
+        var today = new Date();
+        today.setHours(23, 59, 59, 999);
+        var sliderInstance = null;
+
+        // Incorporar la opción general sin cambiar la navegación de meses.
+        var allButton = months.querySelector('[data-month="all"]');
+        if (!allButton) {
+            allButton = document.createElement('button');
+            allButton.type = 'button';
+            allButton.className = 'juveniles-calendar-month';
+            allButton.setAttribute('data-month', 'all');
+            allButton.textContent = 'Todos los meses';
+            months.insertBefore(allButton, months.firstChild);
+        }
+
+        var entries = items.filter(function (item) {
+            return item && item.id && item.title &&
+                isSeries(item) &&
+                (isJuvenilOrInfantil(item) ||
+                    (Array.isArray(item.juveniles_rows) && item.juveniles_rows.length > 0)) &&
+                !belongsToJuvenilesRow(item, 'no-emitidos') &&
+                normalizeText(item.production_status) !== 'no-emitidos';
+        }).map(function (item) {
+            var date = parseDate(
+                item.release_date ||
+                item.fecha_estreno ||
+                item.premiere_date
+            );
+            return date && date.getFullYear() >= 2000 &&
+                date.getFullYear() <= currentYear && date <= today
+                ? { item: item, date: date }
+                : null;
+        }).filter(Boolean).sort(function (a, b) {
+            return b.date - a.date || String(a.item.title).localeCompare(String(b.item.title), 'es');
+        });
+
+        var years = Array.from({ length: currentYear - 1999 }, function (_, i) {
+            return currentYear - i;
+        });
+        yearSelect.querySelectorAll('option:not([value="all"])').forEach(function (option) {
+            option.remove();
+        });
+        years.forEach(function (year) {
+            var option = document.createElement('option');
+            option.value = String(year);
+            option.textContent = String(year);
+            yearSelect.appendChild(option);
+        });
+        var selectedMonth = 'all';
+
+        function updateArrows() {
+            var maximum = Math.max(0, months.scrollWidth - months.clientWidth);
+            if (previous) previous.disabled = months.scrollLeft <= 4;
+            if (next) next.disabled = months.scrollLeft >= maximum - 4;
+        }
+
+        function update(animate) {
+            var year = yearSelect.value;
+            var filtered = entries.filter(function (entry) {
+                return (selectedMonth === 'all' || entry.date.getMonth() === Number(selectedMonth)) &&
+                    (year === 'all' || entry.date.getFullYear() === Number(year));
+            });
+            // Destruir la instancia real antes de reemplazar el contenido.
+            if (sliderInstance && typeof sliderInstance.destroy === 'function') {
+                sliderInstance.destroy();
+                sliderInstance = null;
+            }
+            list.innerHTML = filtered.map(function (entry, index) {
+                var date = entry.date;
+                var formatted = String(date.getDate()).padStart(2, '0') + '/' +
+                    String(date.getMonth() + 1).padStart(2, '0') + '/' + date.getFullYear();
+                return buildVerticalCard({ item: entry.item, meta: formatted }, index);
+            }).join('');
+            count.textContent = filtered.length === 1 ? '1 estreno' : filtered.length + ' estrenos';
+            empty.hidden = filtered.length > 0;
+            list.hidden = filtered.length === 0;
+            if (filtered.length) {
+                list.classList.remove('cs-hidden');
+                if (window.jQuery && window.jQuery.fn && window.jQuery.fn.lightSlider) {
+                    sliderInstance = window.jQuery(list).lightSlider({
+                        item: 5, autoWidth: false, slideMove: 1, slideMargin: 12,
+                        loop: false, pager: false, controls: true,
+                        enableTouch: true, enableDrag: true, freeMove: false,
+                        responsive: [
+                            { breakpoint: 1100, settings: { item: 4, slideMargin: 10 } },
+                            { breakpoint: 768, settings: { item: 2, slideMargin: 8 } }
+                        ]
+                    });
+                }
+            }
+
+            months.querySelectorAll('[data-month]').forEach(function (button) {
+                var active = button.getAttribute('data-month') === String(selectedMonth);
+                button.classList.toggle('is-active', active);
+                button.setAttribute('aria-selected', String(active));
+                button.tabIndex = active ? 0 : -1;
+                if (active) {
+                    button.scrollIntoView({
+                        behavior: animate ? 'smooth' : 'auto',
+                        block: 'nearest',
+                        inline: 'center'
+                    });
+                }
+            });
+            updateArrows();
+        }
+        months.addEventListener('click', function (event) {
+            var button = event.target.closest('button[data-month]');
+            if (!button) return;
+            selectedMonth = button.getAttribute('data-month');
+            update(true);
+        });
+        yearSelect.addEventListener('change', function () { update(true); });
+        months.addEventListener('scroll', updateArrows);
+        window.addEventListener('resize', updateArrows);
+        if (previous) previous.addEventListener('click', function () {
+            months.scrollBy({
+                left: -Math.max(240, months.clientWidth * 0.7),
+                behavior: 'smooth'
+            });
+        });
+        if (next) next.addEventListener('click', function () {
+            months.scrollBy({
+                left: Math.max(240, months.clientWidth * 0.7),
+                behavior: 'smooth'
+            });
+        });
+        update(false);
+        requestAnimationFrame(updateArrows);
+    }
+
     function loadJuvenilesRows() {
         fetch(
             'data.json?v=' + dataVersion,
@@ -943,6 +1087,7 @@
                         ? data.items
                         : [];
 
+                renderJuvenilesPremiereCalendar(items);
                 renderLaunches2026(items);
 
                 renderCuratedHorizontalRow(
