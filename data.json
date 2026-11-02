@@ -2266,6 +2266,14 @@
       "subtitle": "Comedia",
       "id": "P1077",
       "viewers": 586483,
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2019,
+        "viewers": 586483,
+        "national_rank": 2,
+        "overall_rank": 19,
+        "updated_at": "2026-11-02"
+      },
       "producer": "100 Bares, Telefe, Tornasol Films, INCAA",
       "release_date": "2/5/2019",
       "director": "Juan José Campanella"
@@ -2287,6 +2295,14 @@
       "subtitle": "Policial",
       "id": "P1078",
       "viewers": 332080,
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2019,
+        "viewers": 332080,
+        "national_rank": 3,
+        "overall_rank": 28,
+        "updated_at": "2026-11-02"
+      },
       "producer": "MediaPro",
       "release_date": "4/4/2019",
       "director": "Mariano Cohn"
@@ -2308,6 +2324,14 @@
       "subtitle": "Comedia",
       "id": "P1079",
       "viewers": 229692,
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2019,
+        "viewers": 229692,
+        "national_rank": 4,
+        "overall_rank": 39,
+        "updated_at": "2026-11-02"
+      },
       "producer": "Patagonik, Telefe",
       "release_date": "4/7/2019",
       "director": "Marcos Carnevale"
@@ -3413,6 +3437,14 @@
       "subtitle": "Comedia",
       "id": "P1122",
       "viewers": 1841886,
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2019,
+        "viewers": 1841886,
+        "national_rank": 1,
+        "overall_rank": 5,
+        "updated_at": "2026-11-02"
+      },
       "producer": "Mod Producciones, K&S Films, Kenya Films, Telefe",
       "release_date": "15/08/2019",
       "director": "Sebastián Borensztein"
@@ -6076,6 +6108,14 @@
       "subtitle": "Drama",
       "id": "P1214",
       "viewers": 92091,
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2019,
+        "viewers": 92091,
+        "national_rank": 5,
+        "overall_rank": 62,
+        "updated_at": "2026-11-02"
+      },
       "producer": "Patagonik, AZ Films, Wildhorse Studios, Cimarrón, Rizoma Films",
       "release_date": "28/2/2019",
       "director": "Miguel Cohan"
@@ -27590,6 +27630,165 @@
           "horizontal_image": "images/horizontals-1024x576/el-jardin-de-bronce-slide-1024x576.png"
         }
       ]
+    },
+    {
+      "id": "P2120",
+      "title": "El hijo",
+      "genre": "Thriller",
+      "year": "2019",
+      "actors": [
+        "Joaquín Furriel",
+        "Martina Gusmán",
+        "Luciano Cáceres",
+        "Heidi Toini",
+        "Regina Lamm"
+      ],
+      "synopsis": "Lorenzo espera un hijo con su nueva esposa, Sigrid. Durante el embarazo y tras el nacimiento, las decisiones de ella y la presencia de una partera generan conflictos que lo sumergen en una creciente desconfianza.",
+      "channel": "",
+      "image": "",
+      "horizontal_image": "",
+      "orientation": "vertical",
+      "type": "pelicula",
+      "subtitle": "Thriller",
+      "viewers": 78450,
+      "producer": "",
+      "release_date": "02/05/2019",
+      "director": "Sebastián Schindel",
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2019,
+        "viewers": 78450,
+        "national_rank": 6,
+        "overall_rank": 68,
+        "updated_at": "2026-11-02"
+      }
+    },
+    {
+      "id": "P2121",
+      "title": "River, el más grande siempre",
+      "genre": "Documental",
+      "year": "2019",
+      "actors": [
+        "Amadeo Carrizo",
+        "Daniel Onega",
+        "Ariel Ortega"
+      ],
+      "synopsis": "Documental sobre la historia de River Plate, sus figuras y sus principales conquistas deportivas, reconstruidas mediante testimonios e imágenes de archivo.",
+      "channel": "",
+      "image": "",
+      "horizontal_image": "",
+      "orientation": "vertical",
+      "type": "pelicula",
+      "subtitle": "Documental deportivo",
+      "viewers": 55547,
+      "producer": "",
+      "release_date": "02/05/2019",
+      "director": "Marcelo Altmark, Luis Alberto Scalella, Mariano Mucci",
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2019,
+        "viewers": 55547,
+        "national_rank": 7,
+        "overall_rank": 78,
+        "updated_at": "2026-11-02"
+      }
+    },
+    {
+      "id": "P2122",
+      "title": "El retiro",
+      "genre": "Comedia",
+      "year": "2019",
+      "actors": [
+        "Luis Brandoni",
+        "Nancy Dupláa",
+        "Gabriel Goity",
+        "Soledad Silveyra",
+        "Marcos Da Cruz",
+        "Eugenia Ruiz"
+      ],
+      "synopsis": "Un médico viudo recién jubilado queda a cargo del hijo de su empleada doméstica. La llegada de su propia hija transforma esa convivencia en una oportunidad para revisar antiguos conflictos familiares.",
+      "channel": "",
+      "image": "",
+      "horizontal_image": "",
+      "orientation": "vertical",
+      "type": "pelicula",
+      "subtitle": "Comedia",
+      "viewers": 51415,
+      "producer": "",
+      "release_date": "05/09/2019",
+      "director": "Ricardo Díaz Iacoponi",
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2019,
+        "viewers": 51415,
+        "national_rank": 8,
+        "overall_rank": 83,
+        "updated_at": "2026-11-02"
+      }
+    },
+    {
+      "id": "P2123",
+      "title": "Bruja",
+      "genre": "Thriller",
+      "year": "2019",
+      "actors": [
+        "Érica Rivas",
+        "Leticia Brédice",
+        "Pablo Rago",
+        "Rita Cortese",
+        "Miranda de la Serna",
+        "Juan Grandinetti"
+      ],
+      "synopsis": "Selena vive con su hija en las afueras de un pueblo y posee conocimientos de magia negra. Cuando la joven es secuestrada por una red de trata, recurre a sus poderes para intentar recuperarla.",
+      "channel": "",
+      "image": "",
+      "horizontal_image": "",
+      "orientation": "vertical",
+      "type": "pelicula",
+      "subtitle": "Thriller",
+      "viewers": 43294,
+      "producer": "",
+      "release_date": "12/09/2019",
+      "director": "Marcelo Páez-Cubells",
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2019,
+        "viewers": 43294,
+        "national_rank": 9,
+        "overall_rank": 86,
+        "updated_at": "2026-11-02"
+      }
+    },
+    {
+      "id": "P2124",
+      "title": "Yo, mi mujer y mi mujer muerta",
+      "genre": "Comedia",
+      "year": "2019",
+      "actors": [
+        "Oscar Martínez",
+        "Carlos Areces",
+        "Ingrid García-Jonsson",
+        "Malena Solda"
+      ],
+      "synopsis": "Tras la muerte de su esposa y la profanación de su tumba, Bernardo viaja a España para esparcir sus cenizas en la Costa del Sol. El viaje lo enfrenta con aspectos desconocidos de la vida de su mujer.",
+      "channel": "",
+      "image": "",
+      "horizontal_image": "",
+      "orientation": "vertical",
+      "type": "pelicula",
+      "subtitle": "Comedia",
+      "viewers": 31681,
+      "producer": "",
+      "release_date": "21/03/2019",
+      "director": "Santi Amodeo",
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2019,
+        "viewers": 31681,
+        "national_rank": 10,
+        "overall_rank": 95,
+        "updated_at": "2026-11-02"
+      }
     }
   ]
 }
