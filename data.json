@@ -2016,6 +2016,14 @@
       "subtitle": "Policial",
       "id": "P1068",
       "viewers": 274109,
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2018,
+        "viewers": 274109,
+        "national_rank": 8,
+        "overall_rank": 38,
+        "updated_at": "2026-11-02"
+      },
       "producer": "INCAA, MyS Producción, Telefe, Tondero Producciones",
       "producciones_relacionadas": [
         {
@@ -2094,6 +2102,14 @@
       "subtitle": "Biográficas",
       "id": "P1071",
       "viewers": 548749,
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2018,
+        "viewers": 548749,
+        "national_rank": 5,
+        "overall_rank": 21,
+        "updated_at": "2026-11-02"
+      },
       "producer": "FAM Contenidos, Telefe, DirecTV, INCAA",
       "release_date": "4/10/2018",
       "director": "Lorena Muñoz"
@@ -2114,6 +2130,14 @@
       "subtitle": "Comedia",
       "id": "P1072",
       "viewers": 762184,
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2018,
+        "viewers": 762184,
+        "national_rank": 3,
+        "overall_rank": 16,
+        "updated_at": "2026-11-02"
+      },
       "producer": "Aeroplano, Telefe, INCAA",
       "release_date": "5/7/2018",
       "director": "Martino Zaidelis"
@@ -2181,7 +2205,15 @@
       "type": "pelicula",
       "subtitle": "Histórica",
       "id": "P1075",
-      "viewers": 1367803,
+      "viewers": 1368121,
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2018,
+        "viewers": 1368121,
+        "national_rank": 1,
+        "overall_rank": 7,
+        "updated_at": "2026-11-02"
+      },
       "producer": "K&S Films, Underground, Telefe",
       "release_date": "9/8/2018",
       "director": "Luis Ortega"
@@ -2204,6 +2236,14 @@
       "subtitle": "Comedia",
       "id": "P1076",
       "viewers": 153218,
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2018,
+        "viewers": 153218,
+        "national_rank": 9,
+        "overall_rank": 55,
+        "updated_at": "2026-11-02"
+      },
       "producer": "Argentina Sono Film",
       "release_date": "12/7/2018",
       "director": "Rodolfo Ledo"
@@ -2993,6 +3033,14 @@
       "subtitle": "Policial",
       "id": "P1200",
       "viewers": 385313,
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2018,
+        "viewers": 385313,
+        "national_rank": 7,
+        "overall_rank": 30,
+        "updated_at": "2026-11-02"
+      },
       "producer": "K&S Films, Piano, Rei Cine, Telefe",
       "release_date": "13/09/2018",
       "director": "Gonzalo Tobal"
@@ -3617,6 +3665,14 @@
       "subtitle": "Comedia",
       "id": "P1130",
       "viewers": 733486,
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2018,
+        "viewers": 733486,
+        "national_rank": 4,
+        "overall_rank": 17,
+        "updated_at": "2026-11-02"
+      },
       "producer": "Televisión Abierta, Arco Libre, Mediapro",
       "release_date": "16/08/2018",
       "director": "Gastón Duprat"
@@ -4301,6 +4357,14 @@
       "subtitle": "Drama",
       "id": "P1154",
       "viewers": 127179,
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2018,
+        "viewers": 127179,
+        "national_rank": 10,
+        "overall_rank": 62,
+        "updated_at": "2026-11-02"
+      },
       "producer": "Pampa Films",
       "release_date": "18/10/2018",
       "director": "Valeria Bertuccelli, Fabiana Tiscornia"
@@ -4841,6 +4905,14 @@
       "subtitle": "Policial",
       "id": "P1175",
       "viewers": 481617,
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2018,
+        "viewers": 481617,
+        "national_rank": 6,
+        "overall_rank": 25,
+        "updated_at": "2026-11-02"
+      },
       "producer": "Telefe, Rebolución, Buena Vista International",
       "release_date": "21/06/2018",
       "director": "Armando Bó"
@@ -5834,6 +5906,14 @@
       "subtitle": "Drama",
       "id": "P1207",
       "viewers": 787130,
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2018,
+        "viewers": 787130,
+        "national_rank": 2,
+        "overall_rank": 13,
+        "updated_at": "2026-11-02"
+      },
       "producer": "Patagonik",
       "release_date": "27/9/2018",
       "director": "Juan Vera"
