@@ -3646,6 +3646,14 @@
       "subtitle": "Policial",
       "id": "P1128",
       "viewers": 2085915,
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2020,
+        "viewers": 2085915,
+        "national_rank": 1,
+        "overall_rank": 2,
+        "updated_at": "2026-11-02"
+      },
       "producer": "AZ Films, MarVista Entertainment, Telefe",
       "release_date": "16/01/2020",
       "director": "Ariel Winograd"
@@ -27787,6 +27795,273 @@
         "viewers": 31681,
         "national_rank": 10,
         "overall_rank": 95,
+        "updated_at": "2026-11-02"
+      }
+    },
+    {
+      "id": "P2125",
+      "title": "La muerte no existe y el amor tampoco",
+      "genre": "Drama",
+      "year": "2020",
+      "actors": [
+        "Antonella Saldicco",
+        "Justina Bustos",
+        "Agustín Sullivan"
+      ],
+      "synopsis": "Emilia regresa a su pueblo natal en la Patagonia para esparcir las cenizas de su mejor amiga. El viaje la reencuentra con su pasado y con su primer amor.",
+      "channel": "",
+      "image": "",
+      "horizontal_image": "",
+      "orientation": "vertical",
+      "type": "pelicula",
+      "subtitle": "Drama",
+      "viewers": 16404,
+      "producer": "",
+      "release_date": "09/01/2020",
+      "director": "Fernando Salem",
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2020,
+        "viewers": 16404,
+        "national_rank": 2,
+        "overall_rank": 27,
+        "updated_at": "2026-11-02"
+      }
+    },
+    {
+      "id": "P2126",
+      "title": "Rumbo al mar",
+      "genre": "Drama",
+      "year": "2020",
+      "actors": [
+        "Federico Bal",
+        "Santiago Bal",
+        "Anita Martínez",
+        "Zulma Faiad",
+        "Laura Laprida"
+      ],
+      "synopsis": "Un hombre al que le queda poco tiempo de vida emprende con su hijo un viaje en moto para conocer el mar.",
+      "channel": "",
+      "image": "",
+      "horizontal_image": "",
+      "orientation": "vertical",
+      "type": "pelicula",
+      "subtitle": "Drama",
+      "viewers": 6760,
+      "producer": "",
+      "release_date": "30/01/2020",
+      "director": "Nacho Garassino",
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2020,
+        "viewers": 6760,
+        "national_rank": 3,
+        "overall_rank": 32,
+        "updated_at": "2026-11-02"
+      }
+    },
+    {
+      "id": "P2127",
+      "title": "Araña",
+      "genre": "Thriller",
+      "year": "2020",
+      "actors": [
+        "Mercedes Morán",
+        "Marcelo Alonso",
+        "María Valverde"
+      ],
+      "synopsis": "El regreso de un antiguo integrante de un grupo paramilitar chileno amenaza con revelar el pasado de una empresaria y de su marido.",
+      "channel": "",
+      "image": "",
+      "horizontal_image": "",
+      "orientation": "vertical",
+      "type": "pelicula",
+      "subtitle": "Thriller",
+      "viewers": 2987,
+      "producer": "",
+      "release_date": "20/02/2020",
+      "director": "Andrés Wood",
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2020,
+        "viewers": 2987,
+        "national_rank": 4,
+        "overall_rank": 41,
+        "updated_at": "2026-11-02"
+      }
+    },
+    {
+      "id": "P2128",
+      "title": "La protagonista",
+      "genre": "Drama",
+      "year": "2020",
+      "actors": [
+        "Rosario Varela",
+        "Macarena Suárez",
+        "Ignacio Rogers",
+        "Manuel Vignau"
+      ],
+      "synopsis": "Paula, una actriz con pocos trabajos, impide un robo y alcanza una breve notoriedad. Cuando la atención desaparece, intenta encontrar su lugar.",
+      "channel": "",
+      "image": "",
+      "horizontal_image": "",
+      "orientation": "vertical",
+      "type": "pelicula",
+      "subtitle": "Drama",
+      "viewers": 2576,
+      "producer": "",
+      "release_date": "09/01/2020",
+      "director": "Clara Picasso",
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2020,
+        "viewers": 2576,
+        "national_rank": 5,
+        "overall_rank": 42,
+        "updated_at": "2026-11-02"
+      }
+    },
+    {
+      "id": "P2129",
+      "title": "4 lonkos",
+      "genre": "Documental",
+      "year": "2020",
+      "actors": [
+        "Osvaldo Bayer",
+        "Marcelo Valko",
+        "Carlos Sarasola"
+      ],
+      "synopsis": "Documental sobre Mariano Rosas, Cipriano Catriel, Juan Calfucurá y Vicente Pincén, sus historias y el trato recibido por sus cuerpos e imágenes tras las campañas militares.",
+      "channel": "",
+      "image": "",
+      "horizontal_image": "",
+      "orientation": "vertical",
+      "type": "pelicula",
+      "subtitle": "Documental",
+      "viewers": 1906,
+      "producer": "",
+      "release_date": "09/01/2020",
+      "director": "Sebastián Díaz",
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2020,
+        "viewers": 1906,
+        "national_rank": 6,
+        "overall_rank": 47,
+        "updated_at": "2026-11-02"
+      }
+    },
+    {
+      "id": "P2130",
+      "title": "Andrés Carrasco: ciencia disruptiva",
+      "genre": "Documental",
+      "year": "2020",
+      "actors": [],
+      "synopsis": "Documental sobre el científico Andrés Carrasco, sus investigaciones sobre agrotóxicos y su vínculo con comunidades afectadas.",
+      "channel": "",
+      "image": "",
+      "horizontal_image": "",
+      "orientation": "vertical",
+      "type": "pelicula",
+      "subtitle": "Documental",
+      "viewers": 1440,
+      "producer": "",
+      "release_date": "06/02/2020",
+      "director": "Valeria Tucci",
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2020,
+        "viewers": 1440,
+        "national_rank": 7,
+        "overall_rank": 48,
+        "updated_at": "2026-11-02"
+      }
+    },
+    {
+      "id": "P2131",
+      "title": "Niña mamá",
+      "genre": "Documental",
+      "year": "2020",
+      "actors": [],
+      "synopsis": "En hospitales públicos del Gran Buenos Aires, adolescentes conversan con trabajadoras sociales sobre embarazos, maternidad y decisiones reproductivas.",
+      "channel": "",
+      "image": "",
+      "horizontal_image": "",
+      "orientation": "vertical",
+      "type": "pelicula",
+      "subtitle": "Documental",
+      "viewers": 1147,
+      "producer": "",
+      "release_date": "05/03/2020",
+      "director": "Andrea Testa",
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2020,
+        "viewers": 1147,
+        "national_rank": 8,
+        "overall_rank": 51,
+        "updated_at": "2026-11-02"
+      }
+    },
+    {
+      "id": "P2132",
+      "title": "Fin de siglo",
+      "genre": "Drama",
+      "year": "2020",
+      "actors": [
+        "Juan Barberini",
+        "Ramón Pujol",
+        "Mía Maestro"
+      ],
+      "synopsis": "Dos hombres se conocen en Barcelona y comparten un encuentro que abre preguntas sobre sus recuerdos, sus decisiones y una posible historia en común.",
+      "channel": "",
+      "image": "",
+      "horizontal_image": "",
+      "orientation": "vertical",
+      "type": "pelicula",
+      "subtitle": "Drama",
+      "viewers": 1110,
+      "producer": "",
+      "release_date": "06/02/2020",
+      "director": "Lucio Castro",
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2020,
+        "viewers": 1110,
+        "national_rank": 9,
+        "overall_rank": 52,
+        "updated_at": "2026-11-02"
+      }
+    },
+    {
+      "id": "P2133",
+      "title": "Ni héroe ni traidor",
+      "genre": "Drama",
+      "year": "2020",
+      "actors": [
+        "Juan Grandinetti",
+        "Inés Estévez",
+        "Rafael Spregelburd",
+        "Agustín Daulte",
+        "Gastón Cocchiarale"
+      ],
+      "synopsis": "En 1982, Matías planea viajar a España para estudiar música. La convocatoria a la guerra de Malvinas lo obliga a enfrentar sus deseos con las expectativas de su entorno.",
+      "channel": "",
+      "image": "",
+      "horizontal_image": "",
+      "orientation": "vertical",
+      "type": "pelicula",
+      "subtitle": "Drama",
+      "viewers": 1052,
+      "producer": "",
+      "release_date": "12/03/2020",
+      "director": "Nicolás Savignone",
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2020,
+        "viewers": 1052,
+        "national_rank": 10,
+        "overall_rank": 53,
         "updated_at": "2026-11-02"
       }
     }
