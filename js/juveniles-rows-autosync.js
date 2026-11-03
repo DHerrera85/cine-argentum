@@ -1075,7 +1075,6 @@
             }, true);
         }
 
-
         function update(animate) {
             var year = selectedYear;
             var filtered = entries.filter(function (entry) {
@@ -1098,13 +1097,14 @@
             list.hidden = filtered.length === 0;
             if (filtered.length) {
                 list.classList.remove('cs-hidden');
-                if (
-                    window.innerWidth <= 768
-                ) {
-                    list.classList.remove('lightSlider', 'lSSlide');
+                if (window.innerWidth <= 768) {
+                    list.classList.remove('lightSlider', 'lSSlide', 'lsGrab');
+                    list.style.display = 'flex';
                 } else if (window.jQuery && window.jQuery.fn && window.jQuery.fn.lightSlider) {
+                    list.style.removeProperty('display');
+                    var visibleItems = window.innerWidth <= 768 ? 2 : 5;
                     sliderInstance = window.jQuery(list).lightSlider({
-                        item: 5, autoWidth: false, slideMove: 1, slideMargin: 16,
+                        item: visibleItems, autoWidth: false, slideMove: 1, slideMargin: 12,
                         loop: false, pager: false, controls: true,
                         enableTouch: true, enableDrag: true, freeMove: false,
                         responsive: [

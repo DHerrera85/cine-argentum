@@ -728,12 +728,10 @@
 }
 
 .juveniles-calendar .latest-box {
-  width: 220px;
-  max-width: calc(100% - 16px);
+  width: 100%;
+  max-width: none;
   min-width: 0;
-  box-sizing: border-box;
-  margin: 10px 8px;
-  justify-self: center;
+  margin: 8px auto;
 }
 
 .juveniles-calendar .latest-b-img img {
@@ -790,7 +788,7 @@
 
 @media (max-width: 768px) {
   .juveniles-calendar .latest-box {
-    width: 100%;
+    width: min(44vw, 180px);
     max-width: 180px;
     min-width: 0;
     margin: 8px auto;
@@ -821,18 +819,54 @@
     max-width: 100% !important;
   }
 
+  #juveniles-premieres .lSSlideOuter,
+  #juveniles-premieres .lSSlideWrapper,
+  #juveniles-premieres-list.lightSlider {
+    width: 350px !important;
+    max-width: 350px !important;
+    min-width: 0 !important;
+  }
+
+  #juveniles-premieres>.lSSlideOuter,
+  #juveniles-premieres>.lSSlideWrapper {
+    grid-column: 1 / -1 !important;
+    grid-row: 4 !important;
+  }
+
+  #juveniles-premieres-list.lightSlider > li {
+    width: calc((350px - 12px) / 2) !important;
+    max-width: calc((100vw - 55px) / 2) !important;
+  }
+
+  #juveniles-premieres-list.lightSlider .latest-box {
+    width: 100% !important;
+    max-width: 180px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
   #juveniles-premieres-list:not(.lightSlider) {
     width: 100% !important;
     max-width: 100% !important;
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    display: flex !important;
+    overflow-x: auto;
+    overflow-y: hidden;
     gap: 12px;
-    overflow: visible;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    overscroll-behavior-inline: contain;
+    -webkit-overflow-scrolling: touch;
+    touch-action: pan-x pan-y;
   }
 
   #juveniles-premieres-list:not(.lightSlider)>li {
-    width: 100% !important;
+    width: min(44vw, 180px) !important;
+    flex: 0 0 min(44vw, 180px);
     min-width: 0;
+    white-space: normal;
+    vertical-align: top;
+    margin-right: 12px;
+    scroll-snap-align: start;
   }
 
   #juveniles-premieres-list:not(.lightSlider) .latest-box {
@@ -847,6 +881,23 @@
 
   #juveniles-premieres .juveniles-calendar-year-navigation .tiras-2000-month-arrow {
     display: inline-flex;
+  }
+
+  #juveniles-premieres .juveniles-premieres-mobile-arrows {
+    display: none !important;
+  }
+
+  #juveniles-premieres .juveniles-premieres-mobile-arrows[hidden] {
+    display: none !important;
+  }
+
+  #juveniles-premieres .juveniles-premieres-mobile-arrows button {
+    width: 38px;
+    height: 38px;
+    border: 1px solid rgba(118, 85, 173, 0.24);
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.76);
+    color: #35455a;
   }
 }
 
@@ -1070,5 +1121,42 @@
 
   #juveniles-premieres .juveniles-calendar-years {
     gap: 7px;
+  }
+}
+
+
+/* Calendario Juveniles: restaurar carrusel horizontal en móvil */
+@media (max-width: 768px) {
+  #juveniles-premieres .lSSlideOuter,
+  #juveniles-premieres .lSSlideWrapper {
+    width: 100%;
+    min-width: 0;
+  }
+
+  #juveniles-premieres-list.lightSlider {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    align-items: flex-start;
+    width: max-content !important;
+    min-width: 100%;
+  }
+
+  #juveniles-premieres-list.lightSlider > li {
+    flex: 0 0 auto !important;
+    float: none !important;
+    box-sizing: border-box;
+  }
+
+  #juveniles-premieres-list.lightSlider .latest-box {
+    width: 100%;
+    max-width: none;
+    margin: 8px auto;
+  }
+
+  #juveniles-premieres-list.lightSlider .latest-b-img {
+    width: 100%;
+    aspect-ratio: 2 / 3;
+    border-radius: 12px;
+    overflow: hidden;
   }
 }
