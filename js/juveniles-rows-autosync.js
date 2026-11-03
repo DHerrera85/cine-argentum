@@ -1041,9 +1041,6 @@
                 startScrollLeft = container.scrollLeft;
                 moved = false;
                 container.classList.add('is-dragging');
-                if (container.setPointerCapture) {
-                    container.setPointerCapture(pointerId);
-                }
             });
 
             container.addEventListener('pointermove', function (event) {
@@ -1056,9 +1053,14 @@
             function finishDrag(event) {
                 if (event.pointerId !== pointerId) return;
                 container.classList.remove('is-dragging');
-                if (container.releasePointerCapture && container.hasPointerCapture &&
-                    container.hasPointerCapture(pointerId)) {
-                    container.releasePointerCapture(pointerId);
+                if (!moved) {
+                    var button = event.target.closest(
+                        'button[data-month], button[data-year]'
+                    );
+                    if (button && container.contains(button)) {
+                        moved = true;
+                        button.click();
+                    }
                 }
                 pointerId = null;
             }
@@ -1096,14 +1098,18 @@
             list.hidden = filtered.length === 0;
             if (filtered.length) {
                 list.classList.remove('cs-hidden');
-                if (window.jQuery && window.jQuery.fn && window.jQuery.fn.lightSlider) {
+                if (
+                    window.innerWidth <= 768
+                ) {
+                    list.classList.remove('lightSlider', 'lSSlide');
+                } else if (window.jQuery && window.jQuery.fn && window.jQuery.fn.lightSlider) {
                     sliderInstance = window.jQuery(list).lightSlider({
-                        item: 5, autoWidth: false, slideMove: 1, slideMargin: 12,
+                        item: 5, autoWidth: false, slideMove: 1, slideMargin: 16,
                         loop: false, pager: false, controls: true,
                         enableTouch: true, enableDrag: true, freeMove: false,
                         responsive: [
-                            { breakpoint: 1100, settings: { item: 4, slideMargin: 10 } },
-                            { breakpoint: 768, settings: { item: 2, slideMargin: 8 } }
+                            { breakpoint: 1100, settings: { item: 4, slideMargin: 14 } },
+                            { breakpoint: 768, settings: { item: 2, slideMargin: 12 } }
                         ]
                     });
                 }
@@ -1164,8 +1170,12 @@
 
         months.addEventListener('scroll', updateArrows);
         window.addEventListener('resize', updateArrows);
-        enableHorizontalDrag(months);
-        enableHorizontalDrag(yearTabs);
+        window.addEventListener('resize', function () {
+            window.clearTimeout(window._juvenilesCalendarResizeTimer);
+            window._juvenilesCalendarResizeTimer = window.setTimeout(function () {
+                update(false);
+            }, 150);
+        });
         if (previous) previous.addEventListener('click', function () {
             months.scrollBy({
                 left: -Math.max(240, months.clientWidth * 0.7),

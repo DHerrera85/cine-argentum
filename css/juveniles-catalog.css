@@ -729,10 +729,11 @@
 
 .juveniles-calendar .latest-box {
   width: 220px;
-  max-width: 220px;
-  min-width: 220px;
+  max-width: calc(100% - 16px);
+  min-width: 0;
   box-sizing: border-box;
-  margin: 10px auto;
+  margin: 10px 8px;
+  justify-self: center;
 }
 
 .juveniles-calendar .latest-b-img img {
@@ -790,9 +791,62 @@
 @media (max-width: 768px) {
   .juveniles-calendar .latest-box {
     width: 100%;
-    max-width: 220px;
+    max-width: 180px;
     min-width: 0;
     margin: 8px auto;
+  }
+
+  #juveniles-premieres {
+    grid-template-columns: minmax(0, 1fr) auto !important;
+  }
+
+  #juveniles-premieres-list {
+    grid-column: 1 / -1 !important;
+    grid-row: 4 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    box-sizing: border-box;
+  }
+
+  #juveniles-premieres .juveniles-calendar-controls,
+  #juveniles-premieres .tiras-2000-calendar-controls {
+    width: 100%;
+    min-width: 0;
+  }
+
+  #juveniles-premieres > .lSSlideOuter,
+  #juveniles-premieres > .lSSlideWrapper {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  #juveniles-premieres-list:not(.lightSlider) {
+    width: 100% !important;
+    max-width: 100% !important;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+    overflow: visible;
+  }
+
+  #juveniles-premieres-list:not(.lightSlider)>li {
+    width: 100% !important;
+    min-width: 0;
+  }
+
+  #juveniles-premieres-list:not(.lightSlider) .latest-box {
+    width: 100%;
+    max-width: 180px;
+    margin: 0 auto;
+  }
+
+  #juveniles-premieres-list:not(.lightSlider) .latest-b-img {
+    width: 100%;
+  }
+
+  #juveniles-premieres .juveniles-calendar-year-navigation .tiras-2000-month-arrow {
+    display: inline-flex;
   }
 }
 
