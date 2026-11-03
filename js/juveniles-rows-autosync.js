@@ -929,13 +929,22 @@
         var section = document.getElementById('juveniles-premieres');
         if (!section) return;
         var months = document.getElementById('juveniles-premieres-months');
-        var yearSelect = document.getElementById('juveniles-premieres-year');
+        var yearTabs = document.getElementById('juveniles-premieres-years');
         var list = document.getElementById('juveniles-premieres-list');
         var count = document.getElementById('juveniles-premieres-count');
         var empty = document.getElementById('juveniles-premieres-empty');
         var previous = document.getElementById('juveniles-premieres-months-previous');
         var next = document.getElementById('juveniles-premieres-months-next');
-        if (!months || !yearSelect || !list) return;
+        if (!months || !yearTabs || !list) return;
+
+
+        var yearsPrevious = document.getElementById(
+            'juveniles-premieres-years-previous'
+        );
+        var yearsNext = document.getElementById(
+            'juveniles-premieres-years-next'
+        );
+
 
         var currentYear = new Date().getFullYear();
         var today = new Date();
@@ -974,18 +983,26 @@
             return b.date - a.date || String(a.item.title).localeCompare(String(b.item.title), 'es');
         });
 
+
         var years = Array.from({ length: currentYear - 1999 }, function (_, i) {
             return currentYear - i;
         });
-        yearSelect.querySelectorAll('option:not([value="all"])').forEach(function (option) {
-            option.remove();
+
+        var selectedMonth = 'all';
+        var selectedYear = 'all';
+
+        yearTabs.innerHTML = '';
+
+        ['all'].concat(years).forEach(function (year) {
+            var button = document.createElement('button');
+            button.type = 'button';
+            button.className = 'juveniles-calendar-year-tab';
+            button.setAttribute('data-year', String(year));
+            button.setAttribute('aria-pressed', String(year === 'all'));
+            button.textContent = year === 'all' ? 'Todos' : String(year);
+            yearTabs.appendChild(button);
         });
-        years.forEach(function (year) {
-            var option = document.createElement('option');
-            option.value = String(year);
-            option.textContent = String(year);
-            yearSelect.appendChild(option);
-        });
+
         var selectedMonth = 'all';
 
         function updateArrows() {
@@ -994,8 +1011,71 @@
             if (next) next.disabled = months.scrollLeft >= maximum - 4;
         }
 
+
+        function updateYearArrows() {
+            var maximum = Math.max(
+                0,
+                yearTabs.scrollWidth - yearTabs.clientWidth
+            );
+            if (yearsPrevious) {
+                yearsPrevious.disabled = yearTabs.scrollLeft <= 4;
+            }
+
+            if (yearsNext) {
+                yearsNext.disabled =
+                    yearTabs.scrollLeft >= maximum - 4;
+            }
+        }
+
+        function enableHorizontalDrag(container) {
+            if (!container || !window.PointerEvent) return;
+            var pointerId = null;
+            var startX = 0;
+            var startScrollLeft = 0;
+            var moved = false;
+
+            container.addEventListener('pointerdown', function (event) {
+                if (event.pointerType === 'mouse' && event.button !== 0) return;
+                pointerId = event.pointerId;
+                startX = event.clientX;
+                startScrollLeft = container.scrollLeft;
+                moved = false;
+                container.classList.add('is-dragging');
+                if (container.setPointerCapture) {
+                    container.setPointerCapture(pointerId);
+                }
+            });
+
+            container.addEventListener('pointermove', function (event) {
+                if (event.pointerId !== pointerId) return;
+                var distance = event.clientX - startX;
+                if (Math.abs(distance) > 3) moved = true;
+                container.scrollLeft = startScrollLeft - distance;
+            });
+
+            function finishDrag(event) {
+                if (event.pointerId !== pointerId) return;
+                container.classList.remove('is-dragging');
+                if (container.releasePointerCapture && container.hasPointerCapture &&
+                    container.hasPointerCapture(pointerId)) {
+                    container.releasePointerCapture(pointerId);
+                }
+                pointerId = null;
+            }
+
+            container.addEventListener('pointerup', finishDrag);
+            container.addEventListener('pointercancel', finishDrag);
+            container.addEventListener('click', function (event) {
+                if (!moved) return;
+                event.preventDefault();
+                event.stopPropagation();
+                moved = false;
+            }, true);
+        }
+
+
         function update(animate) {
-            var year = yearSelect.value;
+            var year = selectedYear;
             var filtered = entries.filter(function (entry) {
                 return (selectedMonth === 'all' || entry.date.getMonth() === Number(selectedMonth)) &&
                     (year === 'all' || entry.date.getFullYear() === Number(year));
@@ -1042,7 +1122,23 @@
                     });
                 }
             });
+
+            yearTabs.querySelectorAll('[data-year]').forEach(function (button) {
+                var active = button.getAttribute('data-year') === selectedYear;
+
+                button.classList.toggle('is-active', active);
+                button.setAttribute('aria-pressed', String(active));
+                if (active) {
+                    var left = button.offsetLeft - (yearTabs.clientWidth - button.offsetWidth) / 2;
+                    yearTabs.scrollTo({
+                        left: Math.max(0, left),
+                        behavior: animate ? 'smooth' : 'auto'
+                    });
+                }
+            });
+
             updateArrows();
+            requestAnimationFrame(updateYearArrows);
         }
         months.addEventListener('click', function (event) {
             var button = event.target.closest('button[data-month]');
@@ -1050,9 +1146,26 @@
             selectedMonth = button.getAttribute('data-month');
             update(true);
         });
-        yearSelect.addEventListener('change', function () { update(true); });
+
+        yearTabs.addEventListener('click', function (event) {
+            var button = event.target.closest('button[data-year]');
+            if (!button || !yearTabs.contains(button)) return;
+
+            selectedYear = button.getAttribute('data-year');
+
+            update(true);
+
+            button.scrollIntoView({
+                behavior: 'smooth',
+                block: 'nearest',
+                inline: 'nearest'
+            });
+        });
+
         months.addEventListener('scroll', updateArrows);
         window.addEventListener('resize', updateArrows);
+        enableHorizontalDrag(months);
+        enableHorizontalDrag(yearTabs);
         if (previous) previous.addEventListener('click', function () {
             months.scrollBy({
                 left: -Math.max(240, months.clientWidth * 0.7),
@@ -1065,6 +1178,31 @@
                 behavior: 'smooth'
             });
         });
+
+        yearTabs.addEventListener('scroll', updateYearArrows);
+        window.addEventListener('resize', updateYearArrows);
+
+        if (yearsPrevious) {
+            yearsPrevious.addEventListener('click', function () {
+                yearTabs.scrollBy({
+                    left: -Math.max(240, yearTabs.clientWidth * 0.7),
+                    behavior: 'smooth'
+                });
+            });
+        }
+
+        if (yearsNext) {
+            yearsNext.addEventListener('click', function () {
+                yearTabs.scrollBy({
+                    left: Math.max(240, yearTabs.clientWidth * 0.7),
+                    behavior: 'smooth'
+                });
+            });
+        }
+
+        requestAnimationFrame(updateYearArrows);
+
+
         update(false);
         requestAnimationFrame(updateArrows);
     }
