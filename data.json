@@ -28064,6 +28064,32 @@
         "overall_rank": 53,
         "updated_at": "2026-11-02"
       }
+    },
+    {
+      "id": "P2134",
+      "title": "Ficción con Natalia Oreiro",
+      "type": "serie",
+      "year": 2023,
+      "channel": "Telefe",
+      "genre": "Comedia",
+      "actors": [
+        "Natalia Oreiro"
+      ],
+      "orientation": "vertical",
+      "image": "images/verticals/2023-ficcion-natalia-oreiro-telefe-poster280x420.webp",
+      "subtitle": "Proyecto no emitido",
+      "release_date": null,
+      "fecha_estreno": null,
+      "production_status": "no-emitidos",
+      "productora": "Telefe",
+      "capitulos": null,
+      "tipo_emision": "No Emitidos",
+      "sinopsis": "Proyecto de comedia televisiva protagonizado por Natalia Oreiro, desarrollado durante aproximadamente dos años y anunciado para estrenarse por Telefe en 2023. La ficción estaba prevista para el segundo semestre de ese año, pero fue cancelada por razones presupuestarias antes de concretarse su producción.",
+      "fuente": "NewsDigitales (09/11/2022); LA NACION (16/12/2022); Infobae (22/04/2023); Diario Crónica (26/04/2023)",
+      "fuente_url": "https://www.newsdigitales.com/nota/204693/natalia-oreiro-desembarca-en-telefe-con-una-nueva-novela-para-el-2023/",
+      "tiras_2010_rows": [
+        "no-emitidos"
+      ]
     }
   ]
 }
