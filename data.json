@@ -28090,6 +28090,43 @@
       "tiras_2010_rows": [
         "no-emitidos"
       ]
+    },
+    {
+      "id": "P2135",
+      "title": "Grisel",
+      "type": "serie",
+      "year": 2018,
+      "channel": "Telefe",
+      "genre": "Thriller",
+      "actors": [
+        "Natalia Oreiro",
+        "Agustín Sullivan",
+        "Germán Palacios",
+        "Ana María Picchio",
+        "Marcelo Mazzarello",
+        "Vera Spinetta",
+        "María Eugenia Rigón"
+      ],
+      "orientation": "vertical",
+      "image": "images/verticals/2018-grisel-telefe-vis-proyecto-poster280x420.webp",
+      "horizontal_image": "images/horizontals-1024x576/2018-grisel-telefe-vis-proyecto-slide1024x576.webp",
+      "subtitle": "Proyecto no emitido",
+      "release_date": null,
+      "fecha_estreno": null,
+      "production_status": "no-emitidos",
+      "productora": "Viacom International Studios / Telefe",
+      "director": "Claudio Divella",
+      "productores_artisticos": [
+        "Natalia Oreiro"
+      ],
+      "capitulos": 10,
+      "tipo_emision": "No Emitidos",
+      "sinopsis": "Ambientada en la Argentina de los años veinte, Grisel es una joven criada en un cabaret que sueña con convertirse en una gran cantante de tango. En un mundo marcado por las mafias, la violencia y los prejuicios sociales, deberá luchar por su libertad y por un amor secreto.",
+      "fuente": "PRODU (20/04/2018 y 18/05/2018); TV Latina (21/05/2018)",
+      "fuente_url": "https://www.produ.com/television/noticias/natalia-oreiro-protagonizara-ficcion-de-telefe-viacom/",
+      "tiras_2010_rows": [
+        "no-emitidos"
+      ]
     }
   ]
 }
