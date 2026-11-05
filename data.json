@@ -9966,7 +9966,7 @@
       "id": "P2054",
       "title": "Juan se Alquila",
       "type": "serie",
-      "year": "2027",
+      "year": "2026",
       "channel": "Flow",
       "platform": "Flow",
       "genre": "Comedia",
@@ -9978,17 +9978,41 @@
         "Luis Machín",
         "Liz Solari",
         "Sebastián Presta",
+        "Agustina (Papry) Suásquita",
+        "Mike Chouhy",
+        "Camila Rojas",
+        "Paula Rubinsztein",
+        "Carlos Kaspar",
+        "Fran Vázquez",
+        "Valentina Cerati",
         "Ezequiel Rodríguez"
       ],
       "orientation": "vertical",
-      "image": "images/verticals/2027-juan-se-alquila-poster280x420-flow.webp",
-      "horizontal_image": "",
-      "subtitle": "Comedia",
-      "capitulos": "8",
-      "fecha_estreno": "1/1/2027",
-      "sinopsis": "Juan se alquila relata la vida de un actor frustrado por la falta de trabajo que encuentra una insólita salida laboral: alquilar sus dotes actorales para resolver dilemas ajenos en el mundo real. Contratado para interpretar personajes a medida, Juan navega situaciones absurdas y vínculos emotivos, descubriendo que el papel más complejo de representar es su propia vida.",
+      "image": "images/verticals/2026-juan-se-alquila-poster280x420-flow-v2.webp",
+      "horizontal_image": "images/horizontals-1024x576/2026-juan-se-alquila-flow-horizontal-1024x576.webp",
+      "poster_gallery": [
+        {
+          "image": "images/verticals/2026-juan-se-alquila-poster280x420-flow-v1.webp",
+          "label": "Póster alternativo"
+        }
+      ],
+      "subtitle": "Comedia dramática",
+      "capitulos": "7",
+      "fecha_estreno": "12/11/2026",
+      "sinopsis": "Juan Acevedo es un actor que atraviesa una crisis profesional ante la falta de oportunidades laborales. Para ganarse la vida, comienza a alquilar sus habilidades actorales y a interpretar personajes creados a medida para resolver los problemas de otras personas. Entre situaciones absurdas, conflictos inesperados y vínculos emotivos, descubrirá que el papel más difícil de interpretar es el de su propia vida.",
       "remakes": [],
-      "productora": "Frame, Susana Cardozo y Pablo Lago"
+      "productora": "FRAME / Flow",
+      "director": "Fernando Alcalde",
+      "productores_ejecutivos": [
+        "Hernán Pellegrini",
+        "Pablo Flores"
+      ],
+      "idea_original": [
+        "Susana Cardozo",
+        "Pablo Lago"
+      ],
+      "fuente": "TTV News (05/11/2026); PRODU (04/11/2026)",
+      "fuente_url": "https://todotvnews.com/personal-presenta-la-nueva-serie-original-de-flow-juan-se-alquila/"
     },
     {
       "id": "P2055",
