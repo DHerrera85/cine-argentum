@@ -10016,6 +10016,286 @@
       ]
     },
     {
+      "id": "V352",
+      "title": "Decisiones de vida",
+      "type": "serie",
+      "year": "2011",
+      "channel": "Canal 9",
+      "air_channels": [
+        "Canal 9",
+        "TV Pública"
+      ],
+      "air_broadcasts": [
+        {
+          "channel": "Canal 9",
+          "premiere_date": "03/10/2011",
+          "horario": "Lunes 23:30hs",
+          "tipo_emision": "Semanal"
+        }
+      ],
+      "platforms": [
+        "Contar"
+      ],
+      "genre": "Drama",
+      "actors": [
+        "Georgina Barbarossa",
+        "Juan Gil Navarro",
+        "Osvaldo Santoro",
+        "Laura Novoa",
+        "Villanueva Cosse",
+        "Juan Palomino",
+        "Laura Azcurra",
+        "Pepe Novoa",
+        "Raúl Rizzo",
+        "Vanesa González",
+        "María Valenzuela",
+        "Mariano Torre",
+        "Graciela Pal",
+        "Esteban Prol",
+        "Lidia Catalano",
+        "Ana Celentano",
+        "Alejandro Awada",
+        "Eleonora Wexler",
+        "Facundo Espinosa",
+        "Hilda Bernard",
+        "Damián de Santo",
+        "Claudia Lapacó",
+        "Virginia Lago"
+      ],
+      "orientation": "vertical",
+      "image": "images/verticals/2011-decisiones-de-vida-canal-9-contar-poster280x420.webp",
+      "subtitle": "Unitario dramático de elenco rotativo",
+      "unitarios_rows": [
+        "ficciones-contar"
+      ],
+      "horario": "Lunes 23:30hs",
+      "capitulos": 13,
+      "duracion": "45 minutos",
+      "fecha_estreno": "03/10/2011",
+      "fecha_finalizacion": "02/01/2012",
+      "sinopsis": "Unitario de ficción compuesto por trece historias independientes que abordan conflictos personales, familiares y sociales. En cada episodio, distintos protagonistas enfrentan situaciones que los obligan a tomar decisiones trascendentales para sus vidas. Con un elenco rotativo, la serie explora las relaciones humanas, los prejuicios, los vínculos afectivos y los dilemas éticos.",
+      "productora": "LC Acción / INCAA",
+      "director": [
+        "Federico Palazzo"
+      ],
+      "guion": "Gabriela Fiore, María de las Mercedes Hernando y Walter Ferreyra Ramos",
+      "idea_original": "Enrique Estevanez",
+      "tipo_emision": "Semanal",
+      "fuentes": [
+        {
+          "nombre": "La Nación",
+          "url": "https://www.lanacion.com.ar/espectaculos/television/canal-9-incorpora-ficciones-nacionales-nid1410999/",
+          "tipo": "Estreno, horario, argumento y elenco"
+        },
+        {
+          "nombre": "Federico Palazzo",
+          "url": "https://www.federicopalazzo.com.ar/tv.html",
+          "tipo": "Dirección, elenco, guion y producción"
+        },
+        {
+          "nombre": "Observatorio de Ficción Televisiva - UNQ",
+          "url": "https://observatorioficcion.web.unq.edu.ar/tag/d/",
+          "tipo": "Formato, duración, capítulos y emisiones"
+        }
+      ]
+    },
+    {
+      "id": "V353",
+      "title": "Germán, últimas viñetas",
+      "type": "serie",
+      "year": "2013",
+      "channel": "TV Pública",
+      "air_channels": [
+        "TV Pública"
+      ],
+      "air_broadcasts": [
+        {
+          "channel": "TV Pública",
+          "premiere_date": "30/04/2013",
+          "horario": "Martes a jueves 22:30hs",
+          "tipo_emision": "Semanal"
+        }
+      ],
+      "platforms": [
+        "Contar"
+      ],
+      "genre": "Drama",
+      "actors": [
+        "Miguel Ángel Solá",
+        "Claudio Rissi",
+        "Paula Reca",
+        "Gustavo Pardi",
+        "Ezequiel Tronconi",
+        "Enzo Ordeig",
+        "Walter Cornás",
+        "Javier Pedersoli",
+        "Gabriel Fernández",
+        "Rubén Poncetta",
+        "Beatriz Spelzini",
+        "Darío Levy"
+      ],
+      "orientation": "vertical",
+      "image": "images/verticals/2013-german-ultimas-vinetas-tv-publica-contar-poster280x420.webp",
+      "subtitle": "Drama biográfico sobre Héctor Germán Oesterheld",
+      "unitarios_rows": [
+        "ficciones-contar"
+      ],
+      "horario": "Martes a jueves 22:30hs",
+      "capitulos": 13,
+      "duracion": "26 minutos",
+      "fecha_estreno": "30/04/2013",
+      "fecha_finalizacion": "23/05/2013",
+      "sinopsis": "Ambientada durante los años previos a la última dictadura militar argentina, la miniserie reconstruye desde la ficción una etapa de la vida de Héctor Germán Oesterheld, creador de El Eternauta. En medio de dificultades económicas, el historietista comienza a trabajar para una editorial cuyas posiciones ideológicas contrastan con sus convicciones. Su llegada transforma las relaciones entre escritores y dibujantes, mientras el creciente clima de persecución política amenaza su vida y su trabajo.",
+      "productora": "Syrah Producciones / 16:9 Cine / Fomento TDA",
+      "director": [
+        "Cristian Bernard",
+        "Flavio Nardini",
+        "Federico Sosa"
+      ],
+      "guion": "Luciano Saracino",
+      "produccion_ejecutiva": "Carlos Silva y Roberta Estela Sánchez",
+      "tipo_emision": "Semanal",
+      "fuentes": [
+        {
+          "nombre": "TV Pública",
+          "url": "https://www.tvpublica.com.ar/programa/german-ultimas-vinetas/",
+          "tipo": "Sinopsis, elenco, dirección y producción"
+        },
+        {
+          "nombre": "Observatorio de Ficción Televisiva - UNQ",
+          "url": "https://observatorioficcion.web.unq.edu.ar/2015/02/page/2/",
+          "tipo": "Fechas de emisión, capítulos, duración y ficha técnica"
+        },
+        {
+          "nombre": "Página/12",
+          "url": "https://www.pagina12.com.ar/diario/suplementos/espectaculos/8-28518-2013-04-30.html",
+          "tipo": "Estreno, horario y contexto histórico"
+        },
+        {
+          "nombre": "169 Cine",
+          "url": "https://www.169cine.com/german-ultimas-vi%C3%B1etas",
+          "tipo": "Producción, equipo técnico y elenco"
+        }
+      ]
+    },
+    {
+      "id": "V354",
+      "title": "Historia clínica",
+      "type": "serie",
+      "year": "2013",
+      "channel": "Telefe",
+      "air_channels": [
+        "Telefe",
+        "América",
+        "TV Pública"
+      ],
+      "air_broadcasts": [
+        {
+          "channel": "Telefe",
+          "premiere_date": "26/01/2013",
+          "horario": "Sábados 23:30hs",
+          "tipo_emision": "Semanal"
+        },
+        {
+          "channel": "América",
+          "premiere_date": "14/01/2014",
+          "horario": "Martes 23:45hs",
+          "tipo_emision": "Semanal"
+        }
+      ],
+      "platforms": [
+        "Contar"
+      ],
+      "genre": "Drama",
+      "actors": [
+        "Felipe Pigna",
+        "Daniel López Rosetti",
+        "Eleonora Wexler",
+        "Pablo Rago",
+        "Adrián Navarro",
+        "Julieta Díaz",
+        "Claudia Lapacó",
+        "Sofía Gala Castiglione",
+        "Jorge Suárez",
+        "Osmar Núñez",
+        "Luis Machín",
+        "Cecilia Dopazo",
+        "Gerardo Romano",
+        "Marcelo Mazzarello",
+        "Guillermo Pfening",
+        "Mike Amigorena",
+        "Michel Noher",
+        "María Canale",
+        "Esteban Meloni",
+        "Virginia Innocenti",
+        "Federico D'Elía",
+        "Gastón Pauls",
+        "Tomás Fonzi",
+        "Mariano Torre",
+        "Carlos Belloso",
+        "Julia Calvo",
+        "Fernando Dente",
+        "Florencia Raggi",
+        "Carola Reyna",
+        "Silvina Bosco",
+        "Carlos Portaluppi"
+      ],
+      "orientation": "vertical",
+      "image": "images/verticals/2013-historia-clinica-telefe-contar-poster280x420.webp",
+      "poster_gallery": [
+        {
+          "image": "images/verticals/2013-historia-clinica-telefe-contar-poster280x420.webp",
+          "label": "Póster principal"
+        },
+        {
+          "image": "images/verticals/2013-historia-clinica-telefe-contar-poster280x420-v2.webp",
+          "label": "Póster alternativo"
+        }
+      ],
+      "subtitle": "Docuficción histórica de elenco rotativo",
+      "unitarios_rows": [
+        "ficciones-contar"
+      ],
+      "horario": "Sábados 23:30hs",
+      "capitulos": 13,
+      "duracion": "60 minutos",
+      "fecha_estreno": "26/01/2013",
+      "fecha_finalizacion": "23/03/2013",
+      "sinopsis": "Ciclo de docuficción que reconstruye las enfermedades y los padecimientos de destacadas personalidades de la historia argentina. A través de dramatizaciones protagonizadas por un elenco rotativo y de los aportes del historiador Felipe Pigna y el médico Daniel López Rosetti, cada episodio examina cómo las condiciones de salud influyeron en la vida personal, familiar y pública de figuras como Eva Perón, José de San Martín, Manuel Belgrano, Ernesto Che Guevara, Alfonsina Storni y Tita Merello.",
+      "productora": "Underground Producciones / Grupo Crónica",
+      "director": [
+        "Pablo Faro"
+      ],
+      "guion": "Jorge Maestro, Javier Van de Couter y Federico Bareinboim",
+      "produccion_general": "Pablo Culell",
+      "creador": "Sebastián Ortega",
+      "asesoramiento_historico": "Felipe Pigna",
+      "asesoramiento_medico": "Daniel López Rosetti",
+      "tipo_emision": "Semanal",
+      "fuentes": [
+        {
+          "nombre": "Underground Producciones",
+          "url": "https://undergroundproducciones.com/es/productions/historia-clinica-es/",
+          "tipo": "Sinopsis, dirección, elenco y producción"
+        },
+        {
+          "nombre": "Televisión.com.ar",
+          "url": "https://television.com.ar/noticias/producciones/historia-clinica/",
+          "tipo": "Formato, elenco y emisiones"
+        },
+        {
+          "nombre": "Diario Popular",
+          "url": "https://www.diariopopular.com.ar/espectaculos/historia-clinica-arranca-su-repaso-eva-peron-n144404",
+          "tipo": "Estreno de Telefe y argumento"
+        },
+        {
+          "nombre": "Observatorio de Ficción Televisiva - UNQ",
+          "url": "https://observatorioficcion.web.unq.edu.ar/category/genero-docuficcion/",
+          "tipo": "Ficha técnica y exhibición en TV Pública"
+        }
+      ]
+    },
+    {
       "id": "P2045",
       "title": "Gutiérrez is Mai Nem",
       "type": "serie",
