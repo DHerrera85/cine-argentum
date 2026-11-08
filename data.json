@@ -2463,6 +2463,14 @@
       "subtitle": "Comedia",
       "id": "P1084",
       "viewers": 29137,
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2021,
+        "viewers": 29137,
+        "national_rank": 3,
+        "overall_rank": 57,
+        "updated_at": "2026-11-07"
+      },
       "producer": "Zoelle Producciones, RGB Entertainment, Telefe",
       "release_date": "2/12/2021",
       "director": "Sabrina Farji"
@@ -2484,6 +2492,14 @@
       "subtitle": "Drama",
       "id": "P1085",
       "viewers": 3630,
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2021,
+        "viewers": 3630,
+        "national_rank": 10,
+        "overall_rank": 121,
+        "updated_at": "2026-11-07"
+      },
       "producer": "Cinetren, HBO Max",
       "release_date": "6/5/2021",
       "director": "Leonardo Brzezicki"
@@ -2525,6 +2541,14 @@
       "subtitle": "Comedia",
       "id": "P1087",
       "viewers": 26156,
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2021,
+        "viewers": 26156,
+        "national_rank": 4,
+        "overall_rank": 58,
+        "updated_at": "2026-11-07"
+      },
       "producer": "Buena Vista International",
       "release_date": "11/3/2021",
       "director": "Gastón Portal"
@@ -28151,6 +28175,229 @@
       "tiras_2010_rows": [
         "no-emitidos"
       ]
+    },
+    {
+      "id": "P2136",
+      "title": "Cato",
+      "genre": "Drama",
+      "year": "2021",
+      "actors": [
+        "Tiago PZK",
+        "Alberto Ajaka",
+        "Magela Zanotta",
+        "Daniel Aráoz",
+        "Rocío Hernández",
+        "Azul Fernández"
+      ],
+      "synopsis": "Un joven del conurbano bonaerense busca abrirse camino en el trap. Una tragedia familiar altera sus planes, mientras una improvisación grabada le ofrece una nueva oportunidad.",
+      "channel": "",
+      "image": "",
+      "horizontal_image": "",
+      "orientation": "vertical",
+      "type": "pelicula",
+      "subtitle": "Drama",
+      "viewers": 65338,
+      "producer": "",
+      "release_date": "14/10/2021",
+      "director": "Peta Rivero y Hornos",
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2021,
+        "viewers": 65338,
+        "national_rank": 1,
+        "overall_rank": 37,
+        "updated_at": "2026-11-07"
+      }
+    },
+    {
+      "id": "P2137",
+      "title": "Yo nena, yo princesa",
+      "genre": "Drama",
+      "year": "2021",
+      "actors": [
+        "Eleonora Wexler",
+        "Juan Palomino",
+        "Isabella G. C.",
+        "Valentino Vena",
+        "Valentina Bassi",
+        "Lidia Catalano"
+      ],
+      "synopsis": "Gabriela acompaña a su hija Luana en el reconocimiento de su identidad de género y enfrenta las resistencias familiares, sociales e institucionales. Basada en el libro de Gabriela Mansilla.",
+      "channel": "",
+      "image": "",
+      "horizontal_image": "",
+      "orientation": "vertical",
+      "type": "pelicula",
+      "subtitle": "Drama",
+      "viewers": 47884,
+      "producer": "",
+      "release_date": "28/10/2021",
+      "director": "Federico Palazzo",
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2021,
+        "viewers": 47884,
+        "national_rank": 2,
+        "overall_rank": 43,
+        "updated_at": "2026-11-07"
+      }
+    },
+    {
+      "id": "P2138",
+      "title": "El prófugo",
+      "genre": "Thriller",
+      "year": "2021",
+      "actors": [
+        "Érica Rivas",
+        "Nahuel Pérez Biscayart",
+        "Daniel Hendler"
+      ],
+      "synopsis": "Tras una experiencia traumática, una actriz de doblaje y cantante comienza a percibir sonidos inexplicables. Sus pesadillas y su trabajo con la voz se entrelazan de manera inquietante.",
+      "channel": "",
+      "image": "",
+      "horizontal_image": "",
+      "orientation": "vertical",
+      "type": "pelicula",
+      "subtitle": "Thriller",
+      "viewers": 24917,
+      "producer": "",
+      "release_date": "14/10/2021",
+      "director": "Natalia Meta",
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2021,
+        "viewers": 24917,
+        "national_rank": 5,
+        "overall_rank": 61,
+        "updated_at": "2026-11-07"
+      }
+    },
+    {
+      "id": "P2139",
+      "title": "El perro que no calla",
+      "genre": "Drama",
+      "year": "2021",
+      "actors": [
+        "Daniel Katz"
+      ],
+      "synopsis": "Sebastián deja su empleo ante la imposibilidad de conciliarlo con el cuidado de su perra. Comienza un recorrido de trabajos, encuentros y cambios que transforman su vida.",
+      "channel": "",
+      "image": "",
+      "horizontal_image": "",
+      "orientation": "vertical",
+      "type": "pelicula",
+      "subtitle": "Drama",
+      "viewers": 6310,
+      "producer": "",
+      "release_date": "25/11/2021",
+      "director": "Ana Katz",
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2021,
+        "viewers": 6310,
+        "national_rank": 6,
+        "overall_rank": 101,
+        "updated_at": "2026-11-07"
+      }
+    },
+    {
+      "id": "P2140",
+      "title": "La panelista",
+      "genre": "Comedia",
+      "year": "2021",
+      "actors": [
+        "Florencia Peña",
+        "Favio Posca",
+        "Campi",
+        "Gonzalo Valenzuela",
+        "Laura Cymer",
+        "Diego Reinhold"
+      ],
+      "synopsis": "Una panelista de espectáculos cuyo puesto está en riesgo descubre un secreto sobre un galán. Su intento de aprovechar la noticia desencadena un enfrentamiento dentro del programa.",
+      "channel": "",
+      "image": "",
+      "horizontal_image": "",
+      "orientation": "vertical",
+      "type": "pelicula",
+      "subtitle": "Comedia",
+      "viewers": 5714,
+      "producer": "",
+      "release_date": "05/08/2021",
+      "director": "Maximiliano Gutiérrez",
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2021,
+        "viewers": 5714,
+        "national_rank": 7,
+        "overall_rank": 105,
+        "updated_at": "2026-11-07"
+      }
+    },
+    {
+      "id": "P2141",
+      "title": "El secreto de Maró",
+      "genre": "Drama",
+      "year": "2021",
+      "actors": [
+        "Norma Aleandro",
+        "Lidia Catalano",
+        "Analía Malvido",
+        "Manuel Callau",
+        "César Bordón",
+        "Florencia Raggi"
+      ],
+      "synopsis": "La historia de Maró aborda la memoria, el desarraigo y la posibilidad de reconstruir la vida después del dolor, con la cocina y el reencuentro como nexos.",
+      "channel": "",
+      "image": "",
+      "horizontal_image": "",
+      "orientation": "vertical",
+      "type": "pelicula",
+      "subtitle": "Drama",
+      "viewers": 5496,
+      "producer": "",
+      "release_date": "28/10/2021",
+      "director": "Alejandro Magnone",
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2021,
+        "viewers": 5496,
+        "national_rank": 8,
+        "overall_rank": 108,
+        "updated_at": "2026-11-07"
+      }
+    },
+    {
+      "id": "P2142",
+      "title": "El cuento del tío",
+      "genre": "Comedia",
+      "year": "2021",
+      "actors": [
+        "Luis Ziembrowski",
+        "Alejandra Flechner",
+        "Mónica Villa",
+        "Martín Slipak",
+        "Silvia Pérez",
+        "Jorge D'Elía"
+      ],
+      "synopsis": "Un tío millonario muere durante la cena navideña. La llegada de una mujer que se presenta como su esposa amenaza la herencia y lleva a la familia a idear un falso secuestro.",
+      "channel": "",
+      "image": "",
+      "horizontal_image": "",
+      "orientation": "vertical",
+      "type": "pelicula",
+      "subtitle": "Comedia",
+      "viewers": 3838,
+      "producer": "",
+      "release_date": "09/12/2021",
+      "director": "Nacho Guggiari",
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2021,
+        "viewers": 3838,
+        "national_rank": 9,
+        "overall_rank": 117,
+        "updated_at": "2026-11-07"
+      }
     }
   ]
 }
