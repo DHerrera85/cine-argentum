@@ -2351,6 +2351,14 @@
       "subtitle": "Animación",
       "id": "P1081",
       "viewers": 135158,
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2022,
+        "viewers": 135158,
+        "national_rank": 3,
+        "overall_rank": 29,
+        "updated_at": "2026-11-07"
+      },
       "release_date": "10/11/2019",
       "director": "Eduardo Gondell"
     },
@@ -2640,7 +2648,15 @@
       "type": "pelicula",
       "subtitle": "Comedia",
       "id": "P1089",
-      "viewers": 121166,
+      "viewers": 121666,
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2022,
+        "viewers": 121666,
+        "national_rank": 4,
+        "overall_rank": 34,
+        "updated_at": "2026-11-07"
+      },
       "producer": "Pampa Films, Gloriamundi Producciones, Star Distribution",
       "release_date": "8/9/2022",
       "director": "Marcos Carnevale"
@@ -2661,6 +2677,14 @@
       "subtitle": "Comedia",
       "id": "P1090",
       "viewers": 811569,
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2022,
+        "viewers": 811569,
+        "national_rank": 2,
+        "overall_rank": 12,
+        "updated_at": "2026-11-07"
+      },
       "producer": "Patagonik, Star Distribution",
       "release_date": "11/8/2022",
       "director": "Adrián Suar"
@@ -2972,6 +2996,14 @@
       "subtitle": "Drama",
       "id": "P1102",
       "viewers": 72032,
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2022,
+        "viewers": 72032,
+        "national_rank": 7,
+        "overall_rank": 50,
+        "updated_at": "2026-11-07"
+      },
       "producer": "Buena Vista International, Patagonik Film Group",
       "release_date": "13/01/2022",
       "director": "Ariel Winograd"
@@ -5526,6 +5558,14 @@
       "subtitle": "Policial",
       "id": "P1193",
       "viewers": 77322,
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2022,
+        "viewers": 77322,
+        "national_rank": 6,
+        "overall_rank": 49,
+        "updated_at": "2026-11-07"
+      },
       "producer": "Pampa Films, Particular Crowd HBO Max",
       "release_date": "25/08/2022",
       "director": "Lucas Combina"
@@ -5752,6 +5792,14 @@
       "subtitle": "Policial",
       "id": "P1202",
       "viewers": 102482,
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2022,
+        "viewers": 102482,
+        "national_rank": 5,
+        "overall_rank": 41,
+        "updated_at": "2026-11-07"
+      },
       "producer": "Particular Crowd, Tieless Media, HBO Max",
       "release_date": "27/01/2022",
       "director": "Cristian Bernard"
@@ -6022,6 +6070,14 @@
       "subtitle": "Policial",
       "id": "P1209",
       "viewers": 57692,
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2022,
+        "viewers": 57692,
+        "national_rank": 8,
+        "overall_rank": 56,
+        "updated_at": "2026-11-07"
+      },
       "producer": "AZ Films HBO Max, Cimarrón Cine, MarVista Entertainment",
       "release_date": "28/04/2022",
       "director": "Ricardo Hornos, Carlos Gil"
@@ -6398,6 +6454,14 @@
       "subtitle": "Histórica",
       "id": "P1223",
       "viewers": 1160067,
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2022,
+        "viewers": 1160067,
+        "national_rank": 1,
+        "overall_rank": 9,
+        "updated_at": "2026-11-07"
+      },
       "producer": "La Unión de los Ríos, Kenya Films, Infinity Hill Amazon",
       "release_date": "29/9/2022",
       "director": "Santiago Mitre"
@@ -28396,6 +28460,70 @@
         "viewers": 3838,
         "national_rank": 9,
         "overall_rank": 117,
+        "updated_at": "2026-11-07"
+      }
+    },
+    {
+      "id": "P2143",
+      "title": "El suplente",
+      "genre": "Drama",
+      "year": "2022",
+      "actors": [
+        "Juan Minujín",
+        "Alfredo Castro",
+        "Bárbara Lennie",
+        "María Merlino",
+        "Lucas Arrua",
+        "Renata Lerman"
+      ],
+      "synopsis": "Un profesor de literatura acepta una suplencia en una escuela del conurbano bonaerense. El encuentro con sus estudiantes lo enfrenta con los conflictos del barrio y con el sentido de su propia tarea.",
+      "channel": "",
+      "image": "",
+      "horizontal_image": "",
+      "orientation": "vertical",
+      "type": "pelicula",
+      "subtitle": "Drama",
+      "viewers": 25421,
+      "producer": "",
+      "release_date": "08/12/2022",
+      "director": "Diego Lerman",
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2022,
+        "viewers": 25421,
+        "national_rank": 9,
+        "overall_rank": 84,
+        "updated_at": "2026-11-07"
+      }
+    },
+    {
+      "id": "P2144",
+      "title": "Las rojas",
+      "genre": "Thriller",
+      "year": "2022",
+      "actors": [
+        "Mercedes Morán",
+        "Natalia Oreiro",
+        "Diego Velázquez",
+        "Alberto Leiva"
+      ],
+      "synopsis": "Una paleontóloga custodia un hallazgo en un campamento aislado en las montañas. La llegada de una colega enviada a supervisarla y de un rival con otros intereses transforma las tensiones en una disputa por el territorio.",
+      "channel": "",
+      "image": "",
+      "horizontal_image": "",
+      "orientation": "vertical",
+      "type": "pelicula",
+      "subtitle": "Thriller",
+      "viewers": 15776,
+      "producer": "",
+      "release_date": "",
+      "director": "Matías Lucchesi",
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2022,
+        "viewers": 15776,
+        "national_rank": 10,
+        "overall_rank": 96,
         "updated_at": "2026-11-07"
       }
     }
