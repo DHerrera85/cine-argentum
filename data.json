@@ -2910,6 +2910,14 @@
       "subtitle": "Comedia",
       "id": "P1097",
       "viewers": 74191,
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2024,
+        "viewers": 74191,
+        "national_rank": 2,
+        "overall_rank": 52,
+        "updated_at": "2026-11-08"
+      },
       "producer": "Pampa Films, Star Distribution",
       "release_date": "8/8/2024",
       "director": "Valeria Bertuccelli"
@@ -2930,6 +2938,14 @@
       "subtitle": "Animación",
       "id": "P1098",
       "viewers": 35551,
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2024,
+        "viewers": 35551,
+        "national_rank": 5,
+        "overall_rank": 85,
+        "updated_at": "2026-11-08"
+      },
       "producer": "Studio Isar Animation, 3Doubles Producciones",
       "release_date": "8/8/2024",
       "director": "Gonzalo Gutiérrez"
@@ -4845,6 +4861,14 @@
       "subtitle": "Drama",
       "id": "P1168",
       "viewers": 31105,
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2024,
+        "viewers": 31105,
+        "national_rank": 6,
+        "overall_rank": 88,
+        "updated_at": "2026-11-08"
+      },
       "producer": "Pampa Films, Star Distribution, Gloriamundi Producciones",
       "release_date": "19/9/2024",
       "director": "Mariana Wainstein"
@@ -5636,6 +5660,14 @@
       "subtitle": "Policial",
       "id": "P1194",
       "viewers": 63372,
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2024,
+        "viewers": 63372,
+        "national_rank": 3,
+        "overall_rank": 61,
+        "updated_at": "2026-11-08"
+      },
       "producer": "Patagonik, Amazon Studios",
       "release_date": "25/1/2024",
       "director": "Jorge Nisco"
@@ -5711,7 +5743,15 @@
       "type": "pelicula",
       "subtitle": "Drama",
       "id": "P1197",
-      "viewers": 132430,
+      "viewers": 132702,
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2024,
+        "viewers": 132702,
+        "national_rank": 1,
+        "overall_rank": 42,
+        "updated_at": "2026-11-08"
+      },
       "producer": "Caramel Films",
       "release_date": "26/09/2024",
       "director": "Luis Ortega"
@@ -28693,6 +28733,161 @@
         "national_rank": 10,
         "overall_rank": 78,
         "updated_at": "2026-11-07"
+      }
+    },
+    {
+      "id": "P2149",
+      "title": "La Renga: totalmente poseídos",
+      "genre": "Documental",
+      "year": "2024",
+      "actors": [
+        "Chizzo Napoli",
+        "Gabriel Iglesias",
+        "Jorge Iglesias",
+        "Manuel Varela"
+      ],
+      "synopsis": "Documental que acompaña a La Renga durante su regreso a los escenarios en 2022. La gira del disco Alejado de la red se entrelaza con viajes en moto y la vida compartida por sus integrantes.",
+      "channel": "",
+      "image": "",
+      "horizontal_image": "",
+      "orientation": "vertical",
+      "type": "pelicula",
+      "subtitle": "Documental musical",
+      "viewers": 38426,
+      "producer": "",
+      "release_date": "07/03/2024",
+      "director": "Chizzo Napoli, Diego Stokelj",
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2024,
+        "viewers": 38426,
+        "national_rank": 4,
+        "overall_rank": 77,
+        "updated_at": "2026-11-08"
+      }
+    },
+    {
+      "id": "P2150",
+      "title": "El apocalipsis de San Juan, los 4 jinetes y las calamidades",
+      "genre": "Documental",
+      "year": "2024",
+      "actors": [],
+      "synopsis": "Una aproximación al libro del Apocalipsis mediante recreaciones y explicaciones de sus visiones y símbolos, desde una perspectiva religiosa.",
+      "channel": "",
+      "image": "",
+      "horizontal_image": "",
+      "orientation": "vertical",
+      "type": "pelicula",
+      "subtitle": "Documental",
+      "viewers": 23303,
+      "producer": "",
+      "release_date": "17/10/2024",
+      "director": "Simón Delacre, Patricio Dondo",
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2024,
+        "viewers": 23303,
+        "national_rank": 7,
+        "overall_rank": 98,
+        "updated_at": "2026-11-08"
+      }
+    },
+    {
+      "id": "P2151",
+      "title": "Alemania",
+      "genre": "Drama",
+      "year": "2024",
+      "actors": [
+        "Maite Aguilar",
+        "Miranda de la Serna",
+        "María Ucedo",
+        "Walter Jakob",
+        "Vicky Peña"
+      ],
+      "synopsis": "Lola, de dieciséis años, quiere estudiar un semestre en Alemania. La posibilidad de viajar se enfrenta con las dificultades que atraviesa su familia y con su propia búsqueda de independencia.",
+      "channel": "",
+      "image": "",
+      "horizontal_image": "",
+      "orientation": "vertical",
+      "type": "pelicula",
+      "subtitle": "Drama",
+      "viewers": 20668,
+      "producer": "",
+      "release_date": "11/04/2024",
+      "director": "María Zanetti",
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2024,
+        "viewers": 20668,
+        "national_rank": 8,
+        "overall_rank": 103,
+        "updated_at": "2026-11-08"
+      }
+    },
+    {
+      "id": "P2152",
+      "title": "El aroma del pasto recién cortado",
+      "genre": "Drama",
+      "year": "2024",
+      "actors": [
+        "Joaquín Furriel",
+        "Marina de Tavira",
+        "Romina Peluffo",
+        "Emanuel Parga",
+        "Verónica Gerez",
+        "Alfonso Tort"
+      ],
+      "synopsis": "Dos docentes universitarios, que no se conocen entre sí, atraviesan crisis personales y comienzan relaciones clandestinas con estudiantes. Sus historias avanzan en paralelo y exponen distintas tensiones.",
+      "channel": "",
+      "image": "",
+      "horizontal_image": "",
+      "orientation": "vertical",
+      "type": "pelicula",
+      "subtitle": "Drama",
+      "viewers": 19213,
+      "producer": "",
+      "release_date": "19/09/2024",
+      "director": "Celina Murga",
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2024,
+        "viewers": 19213,
+        "national_rank": 9,
+        "overall_rank": 109,
+        "updated_at": "2026-11-08"
+      }
+    },
+    {
+      "id": "P2153",
+      "title": "Las corredoras",
+      "genre": "Comedia",
+      "year": "2024",
+      "actors": [
+        "Diego Capusotto",
+        "Carola Reyna",
+        "Alejandra Flechner",
+        "Eduardo Calvo",
+        "Norman Briski",
+        "Alejandro Müller"
+      ],
+      "synopsis": "En 1959, una empleada de un ministerio viaja a una estancia para conseguir la firma de un contrato de tierras. La ausencia del propietario y los extraños habitantes del lugar despiertan sus sospechas.",
+      "channel": "",
+      "image": "",
+      "horizontal_image": "",
+      "orientation": "vertical",
+      "type": "pelicula",
+      "subtitle": "Comedia",
+      "viewers": 15029,
+      "producer": "",
+      "release_date": "23/05/2024",
+      "director": "Néstor Montalbano",
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2024,
+        "viewers": 15029,
+        "national_rank": 10,
+        "overall_rank": 119,
+        "updated_at": "2026-11-08"
       }
     }
   ]
