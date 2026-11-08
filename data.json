@@ -2707,6 +2707,14 @@
       "subtitle": "Comedia",
       "id": "P1091",
       "viewers": 72612,
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2023,
+        "viewers": 72612,
+        "national_rank": 8,
+        "overall_rank": 63,
+        "updated_at": "2026-11-07"
+      },
       "producer": "Amazon Studios, Gran Via Productions, La Unión de los Ríos, Setembro Cine",
       "release_date": "1/6/2023",
       "director": "Dolores Fonzi"
@@ -2727,6 +2735,14 @@
       "subtitle": "Comedia",
       "id": "P1092",
       "viewers": 141115,
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2023,
+        "viewers": 141115,
+        "national_rank": 6,
+        "overall_rank": 50,
+        "updated_at": "2026-11-07"
+      },
       "producer": "Pasto Cine, Pucara Cine, Infinity Hill",
       "release_date": "5/10/2023",
       "director": "María Alché, Benjamín Naishtat"
@@ -2749,6 +2765,14 @@
       "subtitle": "Policial",
       "id": "P1093",
       "viewers": 547917,
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2023,
+        "viewers": 547917,
+        "national_rank": 2,
+        "overall_rank": 19,
+        "updated_at": "2026-11-07"
+      },
       "producer": "100 Bares, Cimarrón Cine, Infinity Hill, Particular Crowd HBO Max",
       "release_date": "6/4/2023",
       "director": "Martino Zaidelis"
@@ -2770,6 +2794,14 @@
       "subtitle": "Comedia",
       "id": "P1094",
       "viewers": 154028,
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2023,
+        "viewers": 154028,
+        "national_rank": 5,
+        "overall_rank": 48,
+        "updated_at": "2026-11-07"
+      },
       "producer": "Cinema 7 Films, Non Stop, Particular Crowd, HBO Max",
       "release_date": "6/7/2023",
       "director": "Fernán Mirás"
@@ -2789,7 +2821,15 @@
       "type": "pelicula",
       "subtitle": "Terror",
       "id": "P1095",
-      "viewers": 314467,
+      "viewers": 314471,
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2023,
+        "viewers": 314471,
+        "national_rank": 4,
+        "overall_rank": 35,
+        "updated_at": "2026-11-07"
+      },
       "producer": "Machaco Films",
       "release_date": "9/11/2023",
       "director": "Demián Rugna"
@@ -5031,6 +5071,14 @@
       "subtitle": "Comedia",
       "id": "P1176",
       "viewers": 96152,
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2023,
+        "viewers": 96152,
+        "national_rank": 7,
+        "overall_rank": 57,
+        "updated_at": "2026-11-07"
+      },
       "producer": "Habitación 1520, Pan Contenidos",
       "release_date": "21/09/2023",
       "director": "Azul Lombardía"
@@ -28524,6 +28572,126 @@
         "viewers": 15776,
         "national_rank": 10,
         "overall_rank": 96,
+        "updated_at": "2026-11-07"
+      }
+    },
+    {
+      "id": "P2145",
+      "title": "Muchachos, la película de la gente",
+      "genre": "Documental",
+      "year": "2023",
+      "actors": [
+        "Guillermo Francella"
+      ],
+      "synopsis": "Documental narrado por Guillermo Francella que reconstruye la experiencia de los hinchas argentinos durante el Mundial de Qatar 2022 y los festejos por la conquista del campeonato.",
+      "channel": "",
+      "image": "",
+      "horizontal_image": "",
+      "orientation": "vertical",
+      "type": "pelicula",
+      "subtitle": "Documental deportivo",
+      "viewers": 1145881,
+      "producer": "",
+      "release_date": "07/12/2023",
+      "director": "Jesús Braceras",
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2023,
+        "viewers": 1145881,
+        "national_rank": 1,
+        "overall_rank": 10,
+        "updated_at": "2026-11-07"
+      }
+    },
+    {
+      "id": "P2146",
+      "title": "Elijo creer",
+      "genre": "Documental",
+      "year": "2023",
+      "actors": [
+        "Ricardo Darín"
+      ],
+      "synopsis": "Documental oficial de la selección argentina, narrado por Ricardo Darín, que recorre el camino al título en Qatar 2022 mediante testimonios e imágenes de los protagonistas.",
+      "channel": "",
+      "image": "",
+      "horizontal_image": "",
+      "orientation": "vertical",
+      "type": "pelicula",
+      "subtitle": "Documental deportivo",
+      "viewers": 481586,
+      "producer": "",
+      "release_date": "",
+      "director": "Gonzalo Arias, Martín Méndez",
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2023,
+        "viewers": 481586,
+        "national_rank": 3,
+        "overall_rank": 22,
+        "updated_at": "2026-11-07"
+      }
+    },
+    {
+      "id": "P2147",
+      "title": "El método Tangalanga",
+      "genre": "Comedia",
+      "year": "2023",
+      "actors": [
+        "Martín Piroyansky",
+        "Julieta Zylberberg",
+        "Alan Sabbagh",
+        "Rafael Ferro",
+        "Luis Machín",
+        "Luis Rubio"
+      ],
+      "synopsis": "Un hombre tímido descubre una personalidad desinhibida tras una sesión de hipnosis. Sus llamadas telefónicas para animar a un amigo y acercarse a una mujer terminan convirtiéndose en bromas imprevisibles.",
+      "channel": "",
+      "image": "",
+      "horizontal_image": "",
+      "orientation": "vertical",
+      "type": "pelicula",
+      "subtitle": "Comedia",
+      "viewers": 43129,
+      "producer": "",
+      "release_date": "19/01/2023",
+      "director": "Mateo Bendesky",
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2023,
+        "viewers": 43129,
+        "national_rank": 9,
+        "overall_rank": 75,
+        "updated_at": "2026-11-07"
+      }
+    },
+    {
+      "id": "P2148",
+      "title": "La uruguaya",
+      "genre": "Drama",
+      "year": "2023",
+      "actors": [
+        "Sebastián Arzeno",
+        "Fiorella Bottaioli",
+        "Jazmín Stuart",
+        "Gustavo Garzón"
+      ],
+      "synopsis": "Un escritor argentino viaja a Montevideo para cobrar un adelanto editorial y reencontrarse con una joven uruguaya. Sus expectativas chocan con los acontecimientos de una jornada que transforma sus planes.",
+      "channel": "",
+      "image": "",
+      "horizontal_image": "",
+      "orientation": "vertical",
+      "type": "pelicula",
+      "subtitle": "Drama",
+      "viewers": 40188,
+      "producer": "",
+      "release_date": "17/08/2023",
+      "director": "Ana García Blaya",
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2023,
+        "viewers": 40188,
+        "national_rank": 10,
+        "overall_rank": 78,
         "updated_at": "2026-11-07"
       }
     }
