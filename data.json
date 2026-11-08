@@ -3007,7 +3007,15 @@
       "type": "pelicula",
       "subtitle": "Drama",
       "id": "P1101",
-      "viewers": 32605,
+      "viewers": 32754,
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2025,
+        "viewers": 32754,
+        "national_rank": 6,
+        "overall_rank": 86,
+        "updated_at": "2026-11-08"
+      },
       "producer": "Netflix",
       "director": "Benjamín Ávila",
       "release_date": "4/9/2025",
@@ -3369,7 +3377,15 @@
       "type": "pelicula",
       "subtitle": "Comedia",
       "id": "P1115",
-      "viewers": 1829245,
+      "viewers": 1833178,
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2025,
+        "viewers": 1833178,
+        "national_rank": 1,
+        "overall_rank": 4,
+        "updated_at": "2026-11-08"
+      },
       "producer": "Pampa Films",
       "release_date": "14/08/2025",
       "director": "Mariano Cohn, Gastón Duprat"
@@ -4161,7 +4177,15 @@
       "type": "pelicula",
       "subtitle": "Comedia",
       "id": "P1141",
-      "viewers": 368009,
+      "viewers": 368046,
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2025,
+        "viewers": 368046,
+        "national_rank": 2,
+        "overall_rank": 22,
+        "updated_at": "2026-11-08"
+      },
       "producer": "Star Distribution",
       "release_date": "17/04/2025",
       "director": "Adrián Suar"
@@ -4206,6 +4230,14 @@
       "subtitle": "Familiar",
       "id": "P1143",
       "viewers": 78946,
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2025,
+        "viewers": 78946,
+        "national_rank": 4,
+        "overall_rank": 52,
+        "updated_at": "2026-11-08"
+      },
       "producer": "Star Distribution",
       "release_date": "17/07/2025",
       "director": "Nicolás Silbert, Leandro Mark"
@@ -4488,7 +4520,15 @@
       "type": "pelicula",
       "subtitle": "Drama",
       "id": "P1153",
-      "viewers": 147468,
+      "viewers": 147928,
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2025,
+        "viewers": 147928,
+        "national_rank": 3,
+        "overall_rank": 34,
+        "updated_at": "2026-11-08"
+      },
       "producer": "Amazon MGM Studios",
       "release_date": "18/09/2025",
       "director": "Dolores Fonzi"
@@ -7180,6 +7220,14 @@
       "image": "images/verticals/una-muerte-silenciosa-2025-poster-280x420.png",
       "orientation": "vertical",
       "viewers": 48427,
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2025,
+        "viewers": 48427,
+        "national_rank": 5,
+        "overall_rank": 73,
+        "updated_at": "2026-11-08"
+      },
       "producer": "Content Studios, Pampa Films, Star Distribution",
       "director": "Sebastián Schindel",
       "release_date": "9/1/2025",
@@ -16624,6 +16672,14 @@
       "image": "images/verticals/mensaje-en-una-botella-2025-poster-280x420.png",
       "orientation": "vertical",
       "viewers": 17034,
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2025,
+        "viewers": 17034,
+        "national_rank": 10,
+        "overall_rank": 114,
+        "updated_at": "2026-11-08"
+      },
       "producer": "Kuarzo International Films, Amazon MGM Studios",
       "director": "Gabriel Nesci",
       "release_date": "1/5/2025",
@@ -28887,6 +28943,103 @@
         "viewers": 15029,
         "national_rank": 10,
         "overall_rank": 119,
+        "updated_at": "2026-11-08"
+      }
+    },
+    {
+      "id": "P2154",
+      "title": "Tesis sobre una domesticación",
+      "genre": "Drama",
+      "year": "2025",
+      "actors": [
+        "Camila Sosa Villada",
+        "Alfonso Herrera",
+        "Carlos Cano",
+        "Adriana Ferrer",
+        "Susana Varela"
+      ],
+      "synopsis": "Una actriz travesti reconocida construye una vida familiar junto a su pareja y un hijo adoptado. El regreso del pasado pone en tensión sus deseos, su libertad y la estabilidad que ha alcanzado.",
+      "channel": "",
+      "image": "",
+      "horizontal_image": "",
+      "orientation": "vertical",
+      "type": "pelicula",
+      "subtitle": "Drama",
+      "viewers": 24898,
+      "producer": "",
+      "release_date": "",
+      "director": "Javier van de Couter",
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2025,
+        "viewers": 24898,
+        "national_rank": 7,
+        "overall_rank": 97,
+        "updated_at": "2026-11-08"
+      }
+    },
+    {
+      "id": "P2155",
+      "title": "1978",
+      "genre": "Terror",
+      "year": "2025",
+      "actors": [
+        "Agustín Pardella",
+        "Carlos Portaluppi",
+        "Mario Alarcón",
+        "Agustín Olcese",
+        "Jorge Lorenzo",
+        "Santiago Ríos"
+      ],
+      "synopsis": "Durante la final del Mundial de 1978, un grupo de tareas secuestra a varios jóvenes y los lleva a un centro clandestino de detención. Los represores descubren que sus víctimas están vinculadas con un culto y fuerzas sobrenaturales.",
+      "channel": "",
+      "image": "",
+      "horizontal_image": "",
+      "orientation": "vertical",
+      "type": "pelicula",
+      "subtitle": "Terror",
+      "viewers": 24367,
+      "producer": "",
+      "release_date": "06/03/2025",
+      "director": "Luciano Onetti, Nicolás Onetti",
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2025,
+        "viewers": 24367,
+        "national_rank": 8,
+        "overall_rank": 98,
+        "updated_at": "2026-11-08"
+      }
+    },
+    {
+      "id": "P2156",
+      "title": "La muerte de un comediante",
+      "genre": "Drama",
+      "year": "2025",
+      "actors": [
+        "Diego Peretti",
+        "Malena Villa",
+        "Chuck Hargrove",
+        "Haneul Kim",
+        "Marioska Fabián Núñez"
+      ],
+      "synopsis": "Un actor de televisión recibe un diagnóstico terminal y viaja a Bruselas. Allí conoce a tres jóvenes que lo involucran en un conflicto peligroso y lo enfrentan con el heroísmo que interpretó durante su carrera.",
+      "channel": "",
+      "image": "",
+      "horizontal_image": "",
+      "orientation": "vertical",
+      "type": "pelicula",
+      "subtitle": "Drama",
+      "viewers": 23076,
+      "producer": "",
+      "release_date": "20/11/2025",
+      "director": "Diego Peretti, Javier Beltramino",
+      "theatrical_stats": {
+        "source": "INCAA",
+        "year": 2025,
+        "viewers": 23076,
+        "national_rank": 9,
+        "overall_rank": 104,
         "updated_at": "2026-11-08"
       }
     }
