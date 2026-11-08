@@ -119,6 +119,19 @@
 
         // Miniaturas específicas para la programación histórica
         const scheduleThumbnails = {
+            T0007: 'images/schedules-thumbnails/1992-brigada-cola.webp',
+            T0001: 'images/schedules-thumbnails/1992-amigos-son-los-amigos.webp',
+            T0004: 'images/schedules-thumbnails/1992-grande-pa.webp',
+            T0006: 'images/schedules-thumbnails/1992-el-gordo-y-el-flaco.webp',
+            T0008: 'images/schedules-thumbnails/1992-amores.webp',
+            T0097: 'images/schedules-thumbnails/1992-soy-gina.webp',
+            T0093: 'images/schedules-thumbnails/1992-la-banda-del-golden-rocket.webp',
+            T0098: 'images/schedules-thumbnails/1992-zona-de-riesgo.webp',
+            T0096: 'images/schedules-thumbnails/1992-son-de-diez.webp',
+            T0055: 'images/schedules-thumbnails/1992-princesa.webp',
+            T0054: 'images/schedules-thumbnails/1992-flavia-corazon-de-tiza.webp',
+            T0108: 'images/schedules-thumbnails/1992-los-libonatti.webp',
+            T0151: 'images/schedules-thumbnails/1992-corazones-de-fuego.webp',
             T0040: 'images/schedules-thumbnails/1996-mi-familia-es-un-dibujo.webp',
             T0009: 'images/schedules-thumbnails/1996-mi-cunado.webp',
             T0020: 'images/schedules-thumbnails/1996-chiquititas.webp',
@@ -159,13 +172,24 @@
     }
 
 
+    function getTimelineStart(time) {
+        var minutes = timeToMinutes(time);
+
+        if (minutes !== null && minutes < 360) {
+            return minutes + (24 * 60);
+        }
+
+        return minutes;
+    }
+
+
     function getScheduleBounds(entries) {
         var starts = [];
         var ends = [];
 
         entries.forEach(function (entry) {
             var start =
-                timeToMinutes(entry.start);
+                getTimelineStart(entry.start);
 
             var end =
                 timeToMinutes(entry.end);
@@ -207,11 +231,14 @@
 
 
     function minutesToTime(minutes) {
+        var normalized =
+            ((minutes % 1440) + 1440) % 1440;
+
         var hours =
-            Math.floor(minutes / 60);
+            Math.floor(normalized / 60);
 
         var mins =
-            minutes % 60;
+            normalized % 60;
 
         return (
             String(hours).padStart(2, '0') +
@@ -381,9 +408,7 @@
             function (entry) {
 
                 var startMinutes =
-                    timeToMinutes(
-                        entry.start
-                    );
+                    getTimelineStart(entry.start);
 
                 if (startMinutes === null) {
                     return;
@@ -710,9 +735,7 @@
 
 
                         var startMinutes =
-                            timeToMinutes(
-                                entry.start
-                            );
+                            getTimelineStart(entry.start);
 
                         if (
                             startMinutes === null
