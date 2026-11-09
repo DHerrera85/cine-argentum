@@ -29956,6 +29956,32 @@
         "overall_rank": 83,
         "updated_at": "2026-11-08"
       }
+    },
+    {
+      "id": "P2160",
+      "title": "Madrastras",
+      "type": "serie",
+      "year": 2018,
+      "channel": "Telefe",
+      "genre": "Telenovela",
+      "actors": [
+        "Natalie Pérez"
+      ],
+      "orientation": "vertical",
+      "image": "images/verticals/2018-madrastras-pilot-telefe-poster280x420.webp",
+      "horizontal_image": "",
+      "subtitle": "Proyecto no emitido",
+      "release_date": null,
+      "fecha_estreno": null,
+      "production_status": "no-emitidos",
+      "productora": "Corner",
+      "tipo_emision": "No Emitidos",
+      "sinopsis": "Proyecto de telenovela anunciado en 2018 para Telefe, con Natalie Pérez prevista como protagonista y producción de Corner. La ficción fue considerada para la programación posterior a 100 días para enamorarse, pero no llegó a estrenarse.",
+      "fuente": "DiarioShow / Crónica - La Pavada (23/10/2018)",
+      "fuente_url": "https://www.cronica.com.ar/diarioshow/la-pavada/La-novela-que-reemplazara-a-100-dias-20181023-0001.html",
+      "tiras_2010_rows": [
+        "no-emitidos"
+      ]
     }
   ]
 }
