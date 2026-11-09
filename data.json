@@ -10296,6 +10296,491 @@
       ]
     },
     {
+      "id": "V355",
+      "title": "Inconsciente colectivo",
+      "type": "serie",
+      "year": "2013",
+      "channel": "TV Pública",
+      "air_channels": [
+        "TV Pública"
+      ],
+      "air_broadcasts": [
+        {
+          "channel": "TV Pública",
+          "premiere_date": "01/10/2013",
+          "horario": "Martes a jueves 22:30hs",
+          "tipo_emision": "Semanal"
+        }
+      ],
+      "platforms": [
+        "Contar"
+      ],
+      "genre": "Thriller",
+      "actors": [
+        "Nicolás Pauls",
+        "Boy Olmi",
+        "Felipe Colombo",
+        "Adrián Navarro",
+        "Osvaldo Laport",
+        "Gustavo Garzón",
+        "Guadalupe Docampo",
+        "Pasta Dioguardi",
+        "Cristina Fridman",
+        "Daniel Valenzuela",
+        "Guido Botto Fiora",
+        "Jorge Booth"
+      ],
+      "orientation": "vertical",
+      "image": "images/verticals/2013-inconsciente-colectiva-tv-publica-contar-poster280x420.webp",
+      "subtitle": "Thriller psicológico y policial",
+      "unitarios_rows": [
+        "ficciones-contar"
+      ],
+      "horario": "Martes a jueves 22:30hs",
+      "capitulos": 8,
+      "duracion": "26 minutos",
+      "fecha_estreno": "01/10/2013",
+      "fecha_finalizacion": "16/10/2013",
+      "sinopsis": "En un colegio privado del Gran Buenos Aires, tres estudiantes se han quitado la vida durante los últimos seis meses. Ante la preocupación de la comunidad educativa, el rector Guillermo Reyes convoca al prestigioso psicoanalista Francisco Villegas para investigar lo sucedido. Acompañado por su ayudante, Villegas comienza a descubrir una trama oscura detrás de las muertes, enfrentándose a secretos, conflictos y situaciones que ponen en peligro a los alumnos.",
+      "productora": "Idealismo Contenidos / INCAA / TV Pública",
+      "director": [
+        "Mariano Hueter"
+      ],
+      "guion": "Mariano Hueter, Ezequiel Goldstein y Diego Flores",
+      "produccion_ejecutiva": "Mariano Hueter y Carolina Cordero",
+      "tipo_emision": "Semanal",
+      "fuentes": [
+        {
+          "nombre": "Observatorio de Ficción Televisiva - UNQ",
+          "url": "https://observatorioficcion.web.unq.edu.ar/2015/02/page/2/",
+          "tipo": "Estreno, finalización, capítulos, elenco y producción"
+        },
+        {
+          "nombre": "Wikipedia",
+          "url": "https://es.wikipedia.org/wiki/Inconsciente_colectivo_(serie_de_televisión)",
+          "tipo": "Elenco, personajes, dirección y producción"
+        },
+        {
+          "nombre": "La Capital",
+          "url": "https://www.lacapital.com.ar/edicion-impresa/la-television-publica-estrena-esta-noche-su-nueva-propuesta-inconsciente-colectivo-n592131.html",
+          "tipo": "Estreno, horario, género y argumento"
+        },
+        {
+          "nombre": "El Día",
+          "url": "https://www.eldia.com/nota/2013-8-8-se-estrena-la-serie-inconsciente-colectivo",
+          "tipo": "Estreno previo en CDA y señales regionales"
+        }
+      ]
+    },
+    {
+      "id": "V356",
+      "title": "Los anillos de Newton",
+      "type": "serie",
+      "year": "2013",
+      "channel": "TV Pública",
+      "air_channels": [
+        "TV Pública"
+      ],
+      "air_broadcasts": [
+        {
+          "channel": "TV Pública",
+          "premiere_date": "27/08/2013",
+          "horario": "Lunes a jueves 23:30hs",
+          "tipo_emision": "Diaria"
+        }
+      ],
+      "platforms": [
+        "Contar"
+      ],
+      "genre": "Drama",
+      "actors": [
+        "Marcelo Cioffi",
+        "Natalia Aparicio",
+        "Cristina Sánchez",
+        "Adrián Abonizio"
+      ],
+      "orientation": "vertical",
+      "image": "images/verticals/2013-los-anillos-newton-tv-publica-contar-poster280x420.webp",
+      "subtitle": "Comedia dramática ambientada en Salta",
+      "unitarios_rows": [
+        "ficciones-contar"
+      ],
+      "horario": "Lunes a jueves 23:30hs",
+      "capitulos": 13,
+      "duracion": "26 minutos",
+      "fecha_estreno": "27/08/2013",
+      "fecha_finalizacion": "17/09/2013",
+      "sinopsis": "Capuchino es un psicólogo salteño de cuarenta años que pierde su matrícula profesional tras verse involucrado injustamente en un caso de corrupción. Obligado a trabajar como remisero, convierte su vehículo en una especie de consultorio ambulante donde escucha y acompaña a sus pasajeros. Mientras intenta reconstruir sus vínculos familiares, atraviesa situaciones que reflejan las distintas realidades sociales y culturales de Salta.",
+      "productora": "Producción independiente de Salta / Fomento INCAA",
+      "director": [
+        "Rolando Pardo",
+        "José Issa"
+      ],
+      "guion": "Rolando Pardo y José Issa",
+      "produccion_general": "Rolando Pardo",
+      "produccion_ejecutiva": "Fernando Musa",
+      "tipo_emision": "Diaria",
+      "fuentes": [
+        {
+          "nombre": "Cine.ar",
+          "url": "https://play.cine.ar/INCAA/produccion/9113",
+          "tipo": "Sinopsis, protagonistas, dirección y equipo técnico"
+        },
+        {
+          "nombre": "Observatorio de Ficción Televisiva - UNQ",
+          "url": "https://observatorioficcion.web.unq.edu.ar/2015/02/page/2/",
+          "tipo": "Estreno, finalización, capítulos y duración"
+        },
+        {
+          "nombre": "La Capital",
+          "url": "https://www.lacapital.com.ar/zoom/nuevas-ficciones-canal-siete-n438837.html",
+          "tipo": "Horario, argumento y contexto del estreno"
+        },
+        {
+          "nombre": "Argentina.gob.ar - INCAA",
+          "url": "https://www.argentina.gob.ar/noticias/estrenos-y-novedades-en-las-pantallas-del-incaa-30",
+          "tipo": "Producción, año y cantidad de capítulos"
+        }
+      ]
+    },
+    {
+      "id": "V357",
+      "title": "Rescatistas: Brigada de montaña",
+      "type": "serie",
+      "year": "2013",
+      "channel": "TV Pública",
+      "air_channels": [
+        "TV Pública"
+      ],
+      "air_broadcasts": [
+        {
+          "channel": "TV Pública",
+          "premiere_date": "28/05/2013",
+          "horario": "Martes a jueves 22:30hs",
+          "tipo_emision": "Semanal"
+        }
+      ],
+      "platforms": [
+        "Contar"
+      ],
+      "genre": "Drama",
+      "actors": [
+        "Ivo Cutzarida",
+        "Gastón Ricaud",
+        "Leonardo Proverbio",
+        "Cecilia Clemens",
+        "Claudio Millalonco"
+      ],
+      "orientation": "vertical",
+      "image": "images/verticals/2013-rescatistas-brigada-montana-tv-publica-contar-poster280x420.webp",
+      "subtitle": "Drama de aventuras ambientado en la Patagonia",
+      "unitarios_rows": [
+        "ficciones-contar"
+      ],
+      "horario": "Martes a jueves 22:30hs",
+      "capitulos": 8,
+      "duracion": "26 minutos",
+      "fecha_estreno": "28/05/2013",
+      "fecha_finalizacion": "13/06/2013",
+      "sinopsis": "En El Chaltén, provincia de Santa Cruz, César Vásquez lidera una brigada voluntaria de rescate de alta montaña. Junto con sus compañeros, enfrenta peligrosas misiones para auxiliar a turistas, escaladores y habitantes de la región que sufren accidentes en la cordillera patagónica. Mientras arriesgan sus vidas para salvar a otros, los rescatistas deben afrontar conflictos personales y la presión de quienes pretenden reemplazar el servicio voluntario por una empresa privada. Basada en hechos reales, la serie retrata la solidaridad, los vínculos humanos y los desafíos de vivir en contacto permanente con la naturaleza.",
+      "productora": "aonekFILMS / Fomento TDA - INCAA",
+      "director": [
+        "Martín Subirá"
+      ],
+      "produccion": [
+        "Ernesto Arcieri",
+        "Damián Rud",
+        "Carolina Aguer",
+        "Lorena Echeverri",
+        "Laura Gagliesi"
+      ],
+      "direccion_fotografia": "Pablo González Galetto",
+      "montaje": "Martín Subirá",
+      "tipo_emision": "Semanal",
+      "fuentes": [
+        {
+          "nombre": "Observatorio de Ficción Televisiva - UNQ",
+          "url": "https://observatorioficcion.web.unq.edu.ar/2015/02/04/rescatistas/",
+          "tipo": "Estreno, finalización, capítulos, elenco y dirección"
+        },
+        {
+          "nombre": "La Nación",
+          "url": "https://www.lanacion.com.ar/espectaculos/television/al-rescate-en-medio-de-la-cordillera-nid1586034/",
+          "tipo": "Estreno, horario, protagonistas y argumento"
+        },
+        {
+          "nombre": "Página/12",
+          "url": "https://www.pagina12.com.ar/diario/suplementos/espectaculos/8-28775-2013-05-28.html",
+          "tipo": "Producción federal, argumento y emisiones"
+        },
+        {
+          "nombre": "MisionesOnline",
+          "url": "https://misionesonline.net/2013/05/27/rescatistas-la-nueva-miniserie-de-fomento-tda-por-la-tv-p-blica/",
+          "tipo": "Ficha técnica, elenco y equipo de producción"
+        }
+      ]
+    },
+    {
+      "id": "V358",
+      "title": "Santos y pecadores: Televisión por la justicia",
+      "type": "serie",
+      "year": "2013",
+      "channel": "Canal 9",
+      "air_channels": [
+        "Canal 9"
+      ],
+      "air_broadcasts": [
+        {
+          "channel": "Canal 9",
+          "premiere_date": "06/11/2013",
+          "horario": "Miércoles 23:00hs",
+          "tipo_emision": "Semanal"
+        }
+      ],
+      "platforms": [
+        "Contar"
+      ],
+      "genre": "Drama",
+      "actors": [
+        "Pablo Rago",
+        "Valentina Bassi",
+        "Guillermo Pfening",
+        "Enrique Liporace",
+        "Raúl Rizzo",
+        "Alejandra Flechner",
+        "Adrián Navarro",
+        "Juan Leyrado",
+        "Darío Grandinetti",
+        "Romina Gaetani",
+        "Fabián Vena",
+        "Carolina Peleritti",
+        "María Onetto",
+        "Gastón Pauls",
+        "Cristina Banegas",
+        "Beatriz Spelzini",
+        "Marilú Marini",
+        "Lito Cruz",
+        "Marcelo Mazzarello",
+        "Antonella Costa"
+      ],
+      "orientation": "vertical",
+      "image": "images/verticals/2013-santos-pecadores-canal-9-contar-poster280x420.webp",
+      "subtitle": "Unitario dramático de temática judicial y elenco rotativo",
+      "unitarios_rows": [
+        "ficciones-contar"
+      ],
+      "horario": "Miércoles 23:00hs",
+      "capitulos": 13,
+      "duracion": "60 minutos",
+      "fecha_estreno": "06/11/2013",
+      "sinopsis": "Ciclo de trece historias independientes inspiradas en situaciones reales que exponen las injusticias y las deficiencias del sistema judicial argentino. Cada episodio presenta conflictos vinculados con condenas injustas, corrupción policial, abusos de poder, investigaciones irregulares y víctimas desprotegidas. Con un elenco rotativo, la producción completa la trilogía iniciada con Televisión por la identidad y continuada por Televisión por la inclusión.",
+      "productora": "On TV Llorente & Villarruel Contenidos / Universidad Nacional de Villa María",
+      "director": [
+        "Rodolfo Cela"
+      ],
+      "guion": "Guillermo Salmerón y Silvina Olschansky",
+      "creador": "Claudio Villarruel y Bernarda Llorente",
+      "produccion_general": "Gonzalo Otálora",
+      "tipo_emision": "Semanal",
+      "fuentes": [
+        {
+          "nombre": "PRODU",
+          "url": "https://www.produ.com/television/noticias/santos-y-pecadores-television-x-la-justicia-de-on-tv-debuta-el-6-noviembre-en-canal-9-de-argentina/",
+          "tipo": "Estreno y producción"
+        },
+        {
+          "nombre": "Prensario",
+          "url": "https://www.prensario.net/Argentina-se-estrena-emSantos-y-Pecadoresem--6683.note.aspx",
+          "tipo": "Horario, capítulos, argumento y equipo creativo"
+        },
+        {
+          "nombre": "La Nación",
+          "url": "https://www.lanacion.com.ar/espectaculos/la-justicia-en-camiseta-nid1643676/",
+          "tipo": "Elenco, dirección y análisis de la producción"
+        },
+        {
+          "nombre": "FilmAffinity",
+          "url": "https://www.filmaffinity.com/es/film421764.html",
+          "tipo": "Elenco, duración y sinopsis"
+        }
+      ]
+    },
+    {
+      "id": "V359",
+      "title": "Televisión x la inclusión",
+      "type": "serie",
+      "year": "2011",
+      "channel": "Canal 9",
+      "air_channels": [
+        "Canal 9"
+      ],
+      "air_broadcasts": [
+        {
+          "channel": "Canal 9",
+          "premiere_date": "12/10/2011",
+          "horario": "Miércoles 23:00hs",
+          "tipo_emision": "Semanal"
+        }
+      ],
+      "platforms": [
+        "Contar"
+      ],
+      "genre": "Drama",
+      "actors": [
+        "Darío Grandinetti",
+        "Leonardo Sbaraglia",
+        "Selva Alemán",
+        "Eleonora Wexler",
+        "Rafael Spregelburd",
+        "Vera Spinetta",
+        "Daniel Hendler",
+        "Alejandra Flechner",
+        "María Onetto",
+        "Cristina Banegas",
+        "Ailín Salas",
+        "Patricio Contreras",
+        "Valentina Bassi",
+        "Guillermo Pfening",
+        "Mirta Busnelli",
+        "Soledad Fandiño",
+        "Gloria Carrá",
+        "Enrique Liporace",
+        "Luis Machín",
+        "Mariano Argento",
+        "Lito Cruz",
+        "Beatriz Spelzini"
+      ],
+      "orientation": "vertical",
+      "image": "images/verticals/2011-television-x-la-inclusion-america-contar-poster280x420.webp",
+      "subtitle": "Unitario dramático sobre la inclusión social y la discriminación",
+      "unitarios_rows": [
+        "ficciones-contar"
+      ],
+      "horario": "Miércoles 23:00hs",
+      "capitulos": 13,
+      "duracion": "48 minutos",
+      "fecha_estreno": "12/10/2011",
+      "fecha_finalizacion": "04/01/2012",
+      "sinopsis": "Ciclo de trece historias de ficción independientes que abordan diferentes formas de discriminación y exclusión social en la Argentina. A través de relatos protagonizados por elencos rotativos, la serie explora problemáticas como la xenofobia, los prejuicios, la violencia, el acoso laboral, el trabajo infantil y la desigualdad de oportunidades. Cada episodio propone una reflexión sobre la convivencia, la solidaridad, el respeto por las diferencias y la construcción de una sociedad más inclusiva.",
+      "productora": "ON TV Llorente & Villarruel Contenidos",
+      "director": [
+        "Alejandro Maci"
+      ],
+      "guion": "Silvina Olschansky y Gabriel Cela",
+      "creador": "Bernarda Llorente y Claudio Villarruel",
+      "produccion_general": "Gonzalo Otálora",
+      "tipo_emision": "Semanal",
+      "fuentes": [
+        {
+          "nombre": "PRODU",
+          "url": "https://www.produ.com/television/noticias/television-x-la-inclusion-de-on-tv-debuta-en-canal-9-de-argentina/",
+          "tipo": "Estreno, canal, horario, capítulos y producción"
+        },
+        {
+          "nombre": "Página/12",
+          "url": "https://www.pagina12.com.ar/diario/suplementos/espectaculos/8-23170-2011-10-12.html",
+          "tipo": "Estreno, argumento y elenco"
+        },
+        {
+          "nombre": "PRODU - Rodaje",
+          "url": "https://www.produ.com/television/noticias/ver-jornada-de-rodaje-de-television-por-la-inclusion-de-on-tv-contenidos/",
+          "tipo": "Dirección, guion y producción general"
+        },
+        {
+          "nombre": "RECAM - Catálogo audiovisual",
+          "url": "https://www.recam.org/_files/documents/cat2012_1_.pdf",
+          "tipo": "Ficha técnica, duración y equipo creativo"
+        },
+        {
+          "nombre": "Wikipedia",
+          "url": "https://es.wikipedia.org/wiki/Televisión_x_la_inclusión",
+          "tipo": "Elenco y fecha de finalización"
+        }
+      ]
+    },
+    {
+      "id": "V360",
+      "title": "Coma, el amor te despierta",
+      "type": "serie",
+      "year": "2014",
+      "channel": "Canal Acequia",
+      "air_channels": [
+        "Canal Acequia"
+      ],
+      "air_broadcasts": [
+        {
+          "channel": "Canal Acequia",
+          "premiere_date": "01/09/2014",
+          "horario": "Lunes 22:30hs",
+          "tipo_emision": "Semanal"
+        }
+      ],
+      "platforms": [
+        "Contar"
+      ],
+      "genre": "Juvenil",
+      "actors": [
+        "Mariano Torre",
+        "Luz Cipriota",
+        "Guadalupe Docampo",
+        "Claudio Rissi",
+        "Pepe Monje",
+        "Jorgelina Vera",
+        "Lucas Crespi",
+        "Mónica Gonzaga",
+        "Melina Petriella"
+      ],
+      "orientation": "vertical",
+      "image": "images/verticals/2014-coma-el-amor-te-despierta-contar-poster280x420.webp",
+      "subtitle": "Drama romántico y fantástico inspirado en La bella durmiente",
+      "unitarios_rows": [
+        "ficciones-contar"
+      ],
+      "juveniles_rows": [
+        "ficciones-infanto-juveniles-contar"
+      ],
+      "horario": "Lunes 22:30hs",
+      "capitulos": 13,
+      "duracion": "45-48 minutos",
+      "fecha_estreno": "01/09/2014",
+      "fecha_finalizacion": "24/11/2014",
+      "sinopsis": "En el pueblo de Grimlohr, un niño llamado Felipe salva a una bebé, Aurora, de un automóvil en llamas. Sin embargo, la pequeña queda sumida en un profundo coma. Veinticinco años después, Aurora despierta y descubre un mundo completamente diferente del que conocía. Al reencontrarse con Felipe, ahora adulto, comienza una historia de amor marcada por secretos familiares, identidades ocultas y situaciones fantásticas. La serie propone una reinterpretación contemporánea y adulta de los cuentos clásicos La bella durmiente y Blancanieves.",
+      "productora": "Atuel Producciones / Fomento TDA - INCAA",
+      "director": [
+        "Mariano Ardanaz"
+      ],
+      "guion": "Pablo Arosio",
+      "produccion": [
+        "Melina Petriella",
+        "Julieta Petriella"
+      ],
+      "produccion_ejecutiva": "Julián Hernández",
+      "musica": "Gaby Goldman",
+      "tipo_emision": "Semanal",
+      "fuentes": [
+        {
+          "nombre": "Consejo Interuniversitario Nacional",
+          "url": "https://www.cin.edu.ar/nuevos-estrenos-del-concurso-prime-time/",
+          "tipo": "Estreno, canal y cantidad de capítulos"
+        },
+        {
+          "nombre": "Los Andes",
+          "url": "https://www.losandes.com.ar/-agustin-roswald-vs-richmond-y-coma-mendoza-en-serie",
+          "tipo": "Horario, elenco, dirección y producción"
+        },
+        {
+          "nombre": "FilmAffinity",
+          "url": "https://www.filmaffinity.com/es/film615515.html",
+          "tipo": "Dirección, guion, elenco y sinopsis"
+        },
+        {
+          "nombre": "Wikipedia",
+          "url": "https://es.wikipedia.org/wiki/Coma%2C_el_amor_te_despierta",
+          "tipo": "Ficha técnica, episodios y finalización"
+        }
+      ]
+    },
+    {
       "id": "P2045",
       "title": "Gutiérrez is Mai Nem",
       "type": "serie",
