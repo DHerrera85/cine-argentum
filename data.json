@@ -28608,7 +28608,26 @@
         "Segundo Cernadas"
       ],
       "orientation": "vertical",
-      "image": "images/verticals/dr-amor-280x420.png",
+      "image": "images/verticals/2003-dr-amor-canal-trece-tc-ecuador-poster280x420.webp",
+      "horizontal_image": "images/horizontals-1024x576/2003-dr-amor-canal-trece-tc-ecuador-slide-1024x576.webp",
+      "horizontal_gallery": [
+        {
+          "image": "images/horizontals-1024x576/2003-dr-amor-canal-trece-tc-ecuador-slide-1024x576-v2.webp"
+        },
+        {
+          "image": "images/horizontals-1024x576/2003-dr-amor-canal-trece-tc-ecuador-slide-1024x576.webp"
+        }
+      ],
+      "poster_gallery": [
+        {
+          "image": "images/verticals/2003-dr-amor-canal-trece-tc-ecuador-poster280x420.webp",
+          "label": "Póster principal"
+        },
+        {
+          "image": "images/verticals/dr-amor-280x420.webp",
+          "label": "Póster alternativo"
+        }
+      ],
       "tiras_2000_rows": [
         "ficciones-tarde",
         "protagonistas-latinoamerica"
