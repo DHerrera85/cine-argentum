@@ -8000,9 +8000,9 @@
       "id": "V317",
       "title": "La Escena Prohibida",
       "type": "serie",
-      "year": "2026",
+      "year": "2027",
       "channel": "Shorta",
-      "release_date": "01/01/2027",
+      "release_date": null,
       "platforms": [
         "Shorta"
       ],
@@ -8022,11 +8022,28 @@
         "Guadalupe Benante"
       ],
       "orientation": "vertical",
-      "image": "images/verticals/2026-la-escena-prohibida-shorta-poster280x420.webp",
+      "image": "images/verticals/2027-la-escena-prohibida-shorta-poster280x420-v1.webp",
+      "poster_gallery": [
+        {
+          "image": "images/verticals/2026-la-escena-prohibida-shorta-poster280x420.webp",
+          "label": "Póster anterior"
+        }
+      ],
+      "horizontal_image": "images/horizontals-1024x576/2027-la-escena-prohibida-shorta-america-horizontal-1204x576.webp",
       "subtitle": "Thriller, misterio y drama",
-      "status": "En producción",
+      "status": "Próximo estreno",
+      "production_status": "Rodaje finalizado",
+      "episodes": 38,
       "sinopsis": "Miranda borró de su memoria un recuerdo capaz de destruir a su familia y poner en riesgo la empresa por la que su madre dio la vida. Cuando alguien comienza a devolverle fragmentos de ese pasado, deberá enfrentarse a una verdad que puede cambiarlo todo.",
       "productora": "The Eleven Hub, SDO Entertainment",
+      "fuente": "Televisión.com.ar; TTV News",
+      "fuente_url": "https://television.com.ar/noticias/tv-aire/america-presentara-el-afiche-oficial-de-ila-escena-prohibida-i-la-nueva-ficcion-vertical-con-marcela-kloosterboer/",
+      "fuentes_adicionales": [
+        {
+          "medio": "TTV News",
+          "url": "https://www.todotvnews.com/america-tv-anticipa-su-nueva-ficcion-vertical-la-escena-prohibida/"
+        }
+      ],
       "streaming_row": "ficciones_verticales"
     },
     {
@@ -29998,6 +30015,48 @@
       "sinopsis": "Proyecto de telenovela anunciado en 2018 para Telefe, con Natalie Pérez prevista como protagonista y producción de Corner. La ficción fue considerada para la programación posterior a 100 días para enamorarse, pero no llegó a estrenarse.",
       "fuente": "DiarioShow / Crónica - La Pavada (23/10/2018)",
       "fuente_url": "https://www.cronica.com.ar/diarioshow/la-pavada/La-novela-que-reemplazara-a-100-dias-20181023-0001.html",
+      "tiras_2010_rows": [
+        "no-emitidos"
+      ]
+    },
+    {
+      "id": "P2164",
+      "title": "Volver a empezar",
+      "type": "serie",
+      "year": 2019,
+      "channel": "Telefe",
+      "genre": "Comedia dramática",
+      "actors": [
+        "Juan Minujín",
+        "Carla Peterson",
+        "Verónica Llinás",
+        "Pilar Gamboa",
+        "Marco Antonio Caponi",
+        "Paola Barrientos"
+      ],
+      "orientation": "vertical",
+      "image": "images/verticals/2019-volver-a-empezar-underground-telefe-pilot-poster280x420.webp",
+      "horizontal_image": "",
+      "subtitle": "Proyecto no emitido",
+      "release_date": null,
+      "fecha_estreno": null,
+      "production_status": "no-emitidos",
+      "productora": "Underground",
+      "tipo_emision": "No Emitidos",
+      "sinopsis": "Proyecto de comedia diaria desarrollado por Underground para Telefe en 2019. Ambientada en una Argentina atravesada por una crisis, la historia gira en torno a una persona que regresa al país después de vivir veinte años en el exterior y debe reencontrarse con sus afectos, sus raíces y las contradicciones de la sociedad argentina. La ficción exploraría los desafíos de volver a empezar, recuperar lo mejor del pasado y transformar aquello que necesita cambiar. Juan Minujín y Carla Peterson estaban previstos como protagonistas, mientras que otros intérpretes se encontraban entre los convocados para integrar el elenco. El proyecto no llegó a estrenarse.",
+      "fuente": "Infobae - Teleshow (10/05/2019); DiarioShow / Crónica (21/05/2019); Mía FM",
+      "fuente_url": "https://www.infobae.com/teleshow/infoshow/2019/05/10/carla-peterson-y-juan-minujin-volveran-a-ser-pareja-en-la-ficcion-como-sera-su-novela-para-el-primer-time-de-telefe/",
+      "fuentes_adicionales": [
+        {
+          "medio": "DiarioShow / Crónica",
+          "fecha": "2019-05-21",
+          "url": "https://www.cronica.com.ar/diarioshow/la-pavada/Underground-prepara-su-nueva-comedia-20190521-0001.html"
+        },
+        {
+          "medio": "Mía FM",
+          "url": "https://miafm.cienradios.com/sebastian-ortega-pareja-novela/"
+        }
+      ],
       "tiras_2010_rows": [
         "no-emitidos"
       ]
