@@ -129,9 +129,259 @@
       }
     }
   </style>
+
+  <style id="index-layout-unified">
+    /* Index: medidas de tarjetas alineadas con las paginas de catalogo. */
+    body.index-cine-page > section[id="latest"],
+    body.index-cine-page > section[id="main"] {
+      width: 100%;
+      margin: 0;
+      padding: 24px 32px;
+      box-sizing: border-box;
+    }
+
+    body.index-cine-page > section:first-of-type {
+      padding-top: 116px;
+    }
+
+    body.index-cine-page > section > .latest-heading,
+    body.index-cine-page > section > .showcase-heading {
+      margin: 0 0 20px;
+      padding: 0;
+    }
+
+    body.index-cine-page .cartelera-production-heading {
+      margin: 0 0 20px;
+    }
+
+    body.index-cine-page .cartelera-production-heading .latest-heading {
+      margin: 0;
+    }
+
+    body.index-cine-page .cartelera-2026-controls {
+      margin: 0 0 20px;
+    }
+
+    body.index-cine-page .slider-v,
+    body.index-cine-page .slider-h {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+
+    body.index-cine-page .slider-v .latest-box {
+      width: 100%;
+      max-width: none;
+      min-width: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      position: relative;
+      border-radius: 12px;
+      background: transparent;
+      box-shadow: none;
+    }
+
+    body.index-cine-page .slider-v .latest-b-img {
+      width: 100%;
+      aspect-ratio: 2 / 3;
+      overflow: hidden;
+      border-radius: 12px;
+      background: #202832;
+    }
+
+    body.index-cine-page .slider-v .latest-b-img img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center top;
+      border-radius: inherit;
+    }
+
+    body.index-cine-page .slider-v .latest-b-text {
+      width: 100%;
+      min-height: 78px;
+      margin: 0;
+      padding: 12px 8px 8px;
+      text-align: center;
+      background: transparent;
+      border-radius: 0;
+      box-sizing: border-box;
+    }
+
+    body.index-cine-page .slider-v .latest-b-text strong {
+      display: block;
+      font-size: .95rem;
+      font-weight: 600;
+      line-height: 1.35;
+      white-space: normal;
+    }
+
+    body.index-cine-page .slider-h .showcase-box {
+      width: 100%;
+      max-width: none;
+      min-width: 0;
+      margin: 0 0 14px;
+      aspect-ratio: 16 / 9;
+      overflow: hidden;
+      border-radius: 12px;
+      background: #202832;
+      box-shadow: none;
+    }
+
+    body.index-cine-page .slider-h .showcase-box img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      aspect-ratio: auto;
+      object-fit: cover;
+      border-radius: inherit;
+    }
+
+    body.index-cine-page .slider-h .latest-b-text {
+      width: 100%;
+      min-height: 48px;
+      margin: 0;
+      padding: 0 8px 4px;
+      text-align: center;
+      background: transparent;
+      box-sizing: border-box;
+    }
+
+    body.index-cine-page .slider-h .latest-b-text strong {
+      display: block;
+      font-weight: 600;
+      line-height: 1.35;
+    }
+
+    @media (max-width: 1100px) {
+      body.index-cine-page > section[id="latest"],
+      body.index-cine-page > section[id="main"] {
+        padding: 22px 20px;
+      }
+
+      body.index-cine-page > section:first-of-type {
+        padding-top: 108px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      body.index-cine-page > section[id="latest"],
+      body.index-cine-page > section[id="main"] {
+        padding: 20px 16px;
+      }
+
+      body.index-cine-page > section:first-of-type {
+        padding-top: 92px;
+      }
+
+      body.index-cine-page > section > .latest-heading,
+      body.index-cine-page > section > .showcase-heading,
+      body.index-cine-page .cartelera-production-heading {
+        margin-bottom: 14px;
+      }
+
+      body.index-cine-page .slider-v .latest-b-text {
+        min-height: 84px;
+        padding: 10px 5px 8px;
+      }
+
+      body.index-cine-page .slider-v .latest-b-text strong {
+        font-size: .88rem;
+        line-height: 1.3;
+      }
+
+      body.index-cine-page .slider-h .showcase-box {
+        margin-bottom: 12px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      body.index-cine-page > section[id="latest"],
+      body.index-cine-page > section[id="main"] {
+        padding-right: 12px;
+        padding-left: 12px;
+      }
+
+      body.index-cine-page .slider-v .latest-b-text {
+        min-height: 88px;
+      }
+    }
+  </style>
+
+<style id="index-movies-top10-style">
+  #index-movies-top10 {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  #index-movies-top10 > li > a {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+  }
+  #index-movies-top10 .index-top10-card {
+    width: 100%;
+    min-width: 0;
+    margin: 0;
+    background: transparent;
+  }
+  #index-movies-top10 .index-top10-image {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    border-radius: 12px;
+    background: #202832;
+  }
+  #index-movies-top10 .index-top10-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  #index-movies-top10 .index-top10-image::before {
+    content: attr(data-rank);
+    position: absolute;
+    left: 8px;
+    bottom: 8px;
+    z-index: 2;
+    padding: 4px 8px;
+    border-radius: 4px;
+    background: rgba(0, 0, 0, .72);
+    color: #fff;
+    font-family: Impact, "Arial Black", sans-serif;
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 1;
+    text-shadow: 2px 2px 3px #000;
+    pointer-events: none;
+  }
+  #index-movies-top10 .index-top10-text {
+    padding: 12px 4px 8px;
+    text-align: center;
+  }
+  #index-movies-top10 .index-top10-text strong {
+    display: block;
+    color: #fff;
+  }
+  #index-movies-top10 .index-top10-text p {
+    margin: 5px 0 0;
+    color: #9ea6b0;
+  }
+  @media (max-width: 768px) {
+    #index-movies-top10 .index-top10-image::before {
+      left: 7px;
+      bottom: 7px;
+      font-size: 40px;
+    }
+  }
+</style>
 </head>
 
-<body>
+<body class="index-cine-page">
 
   <!-- NAV -->
   <nav class="sa-nav">
@@ -199,93 +449,93 @@
   <!-- Las 10 Películas con más espectadoras (2001-2025) (V) -->
   <section id="latest">
     <h2 class="latest-heading">Las 10 Películas con más espectadores (2001-2025)</h2>
-    <ul class="slider-v top10 cs-hidden">
+    <ul id="index-movies-top10" class="cs-hidden" data-skip-auto="true">
       <li class="item-b"><a href="show.html?id=P1181">
-          <div class="latest-box" data-rank="1">
-            <div class="latest-b-img"><img src="images/verticals/relatos-salvajes-2014-poster-280x420.png"
+          <div class="index-top10-card">
+            <div class="index-top10-image" data-rank="1"><img src="images/horizontals-1024x576/relatos-salvajes-2014-slide-1024x576.png"
                 loading="lazy" alt="Relatos Salvajes"></div>
-            <div class="latest-b-text"><strong>Relatos Salvajes (2014)</strong>
+            <div class="index-top10-text"><strong>Relatos Salvajes (2014)</strong>
               <p>4.003.595 espectadores</p>
             </div>
           </div>
         </a></li>
       <li class="item-d"><a href="show.html?id=P1112">
-          <div class="latest-box" data-rank="2">
-            <div class="latest-b-img"><img src="images/verticals/el-clan-2015-poster-280x420.png" loading="lazy"
+          <div class="index-top10-card">
+            <div class="index-top10-image" data-rank="2"><img src="images/horizontals-1024x576/el-clan-2015-slide-1024x576.png" loading="lazy"
                 alt="El Clan"></div>
-            <div class="latest-b-text"><strong>El Clan (2015)</strong>
+            <div class="index-top10-text"><strong>El Clan (2015)</strong>
               <p>2.652.757 espectadores</p>
             </div>
           </div>
         </a></li>
       <li class="item-a"><a href="show.html?id=P1111">
-          <div class="latest-box" data-rank="3">
-            <div class="latest-b-img"><img src="images/verticals/el-secreto-de-sus-ojos-2009-poster-280x420.png"
+          <div class="index-top10-card">
+            <div class="index-top10-image" data-rank="3"><img src="images/horizontals-1024x576/el-secreto-de-sus-ojos-2009-slide-1024x576.png"
                 loading="lazy" alt="El Secreto de sus Ojos"></div>
-            <div class="latest-b-text"><strong>El Secreto de sus Ojos (2009)</strong>
+            <div class="index-top10-text"><strong>El Secreto de sus Ojos (2009)</strong>
               <p>2.457.396 espectadores</p>
             </div>
           </div>
         </a></li>
       <li class="item-d"><a href="show.html?id=P1160">
-          <div class="latest-box" data-rank="4">
-            <div class="latest-b-img"><img src="images/verticals/metegol-2013-poster-280x420.png" loading="lazy"
+          <div class="index-top10-card">
+            <div class="index-top10-image" data-rank="4"><img src="images/horizontals-1024x576/metegol-2013-slide-1024x576.png" loading="lazy"
                 alt="Metegol"></div>
-            <div class="latest-b-text"><strong>Metegol (2013)</strong>
+            <div class="index-top10-text"><strong>Metegol (2013)</strong>
               <p>2.139.844 espectadores</p>
             </div>
           </div>
         </a></li>
       <li class="item-a"><a href="show.html?id=P1128">
-          <div class="latest-box" data-rank="5">
-            <div class="latest-b-img"><img src="images/verticals/el-robo-del-siglo-2020-poster-280x420.png"
+          <div class="index-top10-card">
+            <div class="index-top10-image" data-rank="5"><img src="images/horizontals-1024x576/el-robo-del-siglo-2020-slide-1024x576.png"
                 loading="lazy" alt="El Robo del Siglo"></div>
-            <div class="latest-b-text"><strong>El Robo del Siglo (2020)</strong>
+            <div class="index-top10-text"><strong>El Robo del Siglo (2020)</strong>
               <p>2.085.915 espectadores</p>
             </div>
           </div>
         </a></li>
       <li class="item-a"><a href="show.html?id=P1147">
-          <div class="latest-box" data-rank="6">
-            <div class="latest-b-img"><img src="images/verticals/me-case-con-un-boludo-2016-poster-280x420.png"
+          <div class="index-top10-card">
+            <div class="index-top10-image" data-rank="6"><img src="images/horizontals-1024x576/me-case-con-un-boludo-2016-slide-1024x576.png"
                 loading="lazy" alt="Me Casé con un Boludo"></div>
-            <div class="latest-b-text"><strong>Me Casé con un Boludo (2016)</strong>
+            <div class="index-top10-text"><strong>Me Casé con un Boludo (2016)</strong>
               <p>2.027.880 espectadores</p>
             </div>
           </div>
         </a></li>
       <li class="item-e"><a href="show.html?id=P1022">
-          <div class="latest-box" data-rank="7">
-            <div class="latest-b-img"><img src="images/verticals/patoruzito-2004-poster-280x420.png" loading="lazy"
+          <div class="index-top10-card">
+            <div class="index-top10-image" data-rank="7"><img src="images/horizontals-1024x576/patoruzito-2004-slide-1024x576.png" loading="lazy"
                 alt="Patoruzito"></div>
-            <div class="latest-b-text"><strong>Patoruzito (2004)</strong>
+            <div class="index-top10-text"><strong>Patoruzito (2004)</strong>
               <p>1.966.738 espectadores</p>
             </div>
           </div>
         </a></li>
       <li class="item-e"><a href="show.html?id=P1122">
-          <div class="latest-box" data-rank="8">
-            <div class="latest-b-img"><img src="images/verticals/la-odisea-de-los-giles-2019-poster-280x420.png"
+          <div class="index-top10-card">
+            <div class="index-top10-image" data-rank="8"><img src="images/horizontals-1024x576/la-odisea-de-los-giles-2019-slide-1024x576.png"
                 loading="lazy" alt="La Odisea de los Giles"></div>
-            <div class="latest-b-text"><strong>La Odisea de los Giles (2019)</strong>
+            <div class="index-top10-text"><strong>La Odisea de los Giles (2019)</strong>
               <p>1.841.886 espectadores</p>
             </div>
           </div>
         </a></li>
       <li class="item-g"><a href="show.html?id=P1115">
-          <div class="latest-box" data-rank="9">
-            <div class="latest-b-img"><img src="images/verticals/homo-argentum-2025-poster-280x420.png" loading="lazy"
+          <div class="index-top10-card">
+            <div class="index-top10-image" data-rank="9"><img src="images/horizontals-1024x576/homo-argentum-2025-slide-1024x576.png" loading="lazy"
                 alt="Homo Argentum"></div>
-            <div class="latest-b-text"><strong>Homo Argentum (2025)</strong>
+            <div class="index-top10-text"><strong>Homo Argentum (2025)</strong>
               <p>1.827.144 espectadores</p>
             </div>
           </div>
         </a></li>
       <li class="item-g"><a href="show.html?id=P1125">
-          <div class="latest-box" data-rank="10">
-            <div class="latest-b-img"><img src="images/verticals/corazon-de-leon-2013-poster-280x420.png" loading="lazy"
+          <div class="index-top10-card">
+            <div class="index-top10-image" data-rank="10"><img src="images/horizontals-1024x576/corazon-de-leon-2013-slide-1024x576.png" loading="lazy"
                 alt="Corazón de León"></div>
-            <div class="latest-b-text"><strong>Corazón de León (2013)</strong>
+            <div class="index-top10-text"><strong>Corazón de León (2013)</strong>
               <p>1.746.547 espectadores</p>
             </div>
           </div>
@@ -1042,6 +1292,32 @@ Thrillers Políticos (H)
         });
     })();
   </script>
+<script id="index-movies-top10-init">
+  jQuery(function ($) {
+    var $list = $("#index-movies-top10");
+    if (!$list.length || $list.hasClass("lightSlider")) return;
+    $list.lightSlider({
+      item: 5,
+      slideMove: 1,
+      slideMargin: 18,
+      autoWidth: false,
+      auto: false,
+      loop: false,
+      pager: false,
+      controls: true,
+      enableTouch: true,
+      enableDrag: true,
+      freeMove: false,
+      responsive: [
+        { breakpoint: 1100, settings: { item: 3, slideMove: 1 } },
+        { breakpoint: 768, settings: { item: 2, slideMove: 1 } }
+      ],
+      onSliderLoad: function () {
+        $list.removeClass("cs-hidden");
+      }
+    });
+  });
+</script>
 </body>
 
 </html>
