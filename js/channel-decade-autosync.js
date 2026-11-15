@@ -676,35 +676,35 @@
  */
     if (category === 'no-emitidos') {
 
-      var editorialRows =
-        item && Array.isArray(item.tiras_2010_rows)
-          ? item.tiras_2010_rows
-          : (
-            item && item.tiras_2010_rows
-              ? [item.tiras_2010_rows]
-              : []
-          );
+      var editorialRows = [];
+
+      ['tiras_2010_rows', 'tiras_2000_rows'].forEach(function (field) {
+        var rows = item && item[field];
+
+        if (Array.isArray(rows)) {
+          editorialRows = editorialRows.concat(rows);
+        } else if (rows) {
+          editorialRows.push(rows);
+        }
+      });
 
       return editorialRows.some(function (row) {
-
-        var normalizedRow =
-          normalizeText(row)
-            .replace(/-/g, ' ')
-            .replace(/\s+/g, ' ')
-            .trim();
+        var normalizedRow = normalizeText(row)
+          .replace(/-/g, ' ')
+          .replace(/\s+/g, ' ')
+          .trim();
 
         return (
           normalizedRow === 'no emitidos' ||
           normalizedRow === 'no emitido'
         );
-
       });
 
     }
 
     /*
      * Verticales se clasifica mediante content_format.
-     * orientation describe el formato del póster y no
+     * orientation describe el formato del p?ster y no
      * debe utilizarse para este filtro.
      */
     if (category === 'vertical') {

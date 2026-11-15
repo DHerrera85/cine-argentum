@@ -30060,6 +30060,47 @@
       "tiras_2010_rows": [
         "no-emitidos"
       ]
+    },
+    {
+      "id": "P2165",
+      "title": "Bendita Vida",
+      "type": "serie",
+      "year": 2005,
+      "channel": "Canal 9",
+      "genre": "Telenovela",
+      "actors": [
+        "Araceli González",
+        "Norman Briski",
+        "Leonor Manso",
+        "Carolina Fal"
+      ],
+      "orientation": "vertical",
+      "image": "images/verticals/2005-bendita-vida-canal-9-pilot-poster280x420.webp",
+      "poster_gallery": [
+        {
+          "image": "images/verticals/2005-bendita-vida-canal-9-pilot-poster280x420.webp",
+          "label": "Póster principal"
+        }
+      ],
+      "subtitle": "No Emitidos",
+      "release_date": null,
+      "fecha_estreno": null,
+      "production_status": "no-emitidos",
+      "tipo_emision": "No Emitidos",
+      "sinopsis": "Proyecto de telenovela previsto para Canal 9 durante 2005, protagonizado por Araceli González, Norman Briski, Leonor Manso y Carolina Fal. La producción había sido anunciada públicamente, pero fue cancelada antes de su estreno televisivo. La Asociación Argentina de Actores cuestionó la decisión, que vinculó con el ingreso de Marcelo Tinelli como nuevo socio accionista del canal, y solicitó que se reconsiderara la suspensión del proyecto. Bendita Vida no llegó a emitirse.",
+      "fuente": "La Voz del Interior / Agencia Télam",
+      "fuente_url": "https://archivo.lavoz.com.ar/2005/0126/verano/nota300354_1.htm",
+      "fuentes_adicionales": [
+        {
+          "medio": "IMDb",
+          "url": "https://www.imdb.com/es/title/tt0451486/"
+        }
+      ],
+      "juveniles_rows": [],
+      "tiras_2010_rows": [],
+      "tiras_2000_rows": [
+        "no-emitidos"
+      ]
     }
   ]
 }
