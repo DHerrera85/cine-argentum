@@ -113,16 +113,6 @@
       top: 0;
     }
 
-    /* Hacer transparente el fondo completo de sliders verticales */
-    .slider-v .latest-box {
-      background: transparent !important;
-      box-shadow: none !important;
-    }
-
-    .slider-v .latest-b-text {
-      background: transparent !important;
-    }
-
     @media (min-width: 768px) {
       .menu-icon {
         display: none;
@@ -130,255 +120,7 @@
     }
   </style>
 
-  <style id="index-layout-unified">
-    /* Index: medidas de tarjetas alineadas con las paginas de catalogo. */
-    body.index-cine-page > section[id="latest"],
-    body.index-cine-page > section[id="main"] {
-      width: 100%;
-      margin: 0;
-      padding: 24px 32px;
-      box-sizing: border-box;
-    }
-
-    body.index-cine-page > section:first-of-type {
-      padding-top: 116px;
-    }
-
-    body.index-cine-page > section > .latest-heading,
-    body.index-cine-page > section > .showcase-heading {
-      margin: 0 0 20px;
-      padding: 0;
-    }
-
-    body.index-cine-page .cartelera-production-heading {
-      margin: 0 0 20px;
-    }
-
-    body.index-cine-page .cartelera-production-heading .latest-heading {
-      margin: 0;
-    }
-
-    body.index-cine-page .cartelera-2026-controls {
-      margin: 0 0 20px;
-    }
-
-    body.index-cine-page .slider-v,
-    body.index-cine-page .slider-h {
-      padding: 0;
-      margin: 0;
-      list-style: none;
-    }
-
-    body.index-cine-page .slider-v .latest-box {
-      width: 100%;
-      max-width: none;
-      min-width: 0;
-      margin: 0;
-      display: flex;
-      flex-direction: column;
-      align-items: stretch;
-      position: relative;
-      border-radius: 12px;
-      background: transparent;
-      box-shadow: none;
-    }
-
-    body.index-cine-page .slider-v .latest-b-img {
-      width: 100%;
-      aspect-ratio: 2 / 3;
-      overflow: hidden;
-      border-radius: 12px;
-      background: #202832;
-    }
-
-    body.index-cine-page .slider-v .latest-b-img img {
-      display: block;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: center top;
-      border-radius: inherit;
-    }
-
-    body.index-cine-page .slider-v .latest-b-text {
-      width: 100%;
-      min-height: 78px;
-      margin: 0;
-      padding: 12px 8px 8px;
-      text-align: center;
-      background: transparent;
-      border-radius: 0;
-      box-sizing: border-box;
-    }
-
-    body.index-cine-page .slider-v .latest-b-text strong {
-      display: block;
-      font-size: .95rem;
-      font-weight: 600;
-      line-height: 1.35;
-      white-space: normal;
-    }
-
-    body.index-cine-page .slider-h .showcase-box {
-      width: 100%;
-      max-width: none;
-      min-width: 0;
-      margin: 0 0 14px;
-      aspect-ratio: 16 / 9;
-      overflow: hidden;
-      border-radius: 12px;
-      background: #202832;
-      box-shadow: none;
-    }
-
-    body.index-cine-page .slider-h .showcase-box img {
-      display: block;
-      width: 100%;
-      height: 100%;
-      aspect-ratio: auto;
-      object-fit: cover;
-      border-radius: inherit;
-    }
-
-    body.index-cine-page .slider-h .latest-b-text {
-      width: 100%;
-      min-height: 48px;
-      margin: 0;
-      padding: 0 8px 4px;
-      text-align: center;
-      background: transparent;
-      box-sizing: border-box;
-    }
-
-    body.index-cine-page .slider-h .latest-b-text strong {
-      display: block;
-      font-weight: 600;
-      line-height: 1.35;
-    }
-
-    @media (max-width: 1100px) {
-      body.index-cine-page > section[id="latest"],
-      body.index-cine-page > section[id="main"] {
-        padding: 22px 20px;
-      }
-
-      body.index-cine-page > section:first-of-type {
-        padding-top: 108px;
-      }
-    }
-
-    @media (max-width: 768px) {
-      body.index-cine-page > section[id="latest"],
-      body.index-cine-page > section[id="main"] {
-        padding: 20px 16px;
-      }
-
-      body.index-cine-page > section:first-of-type {
-        padding-top: 92px;
-      }
-
-      body.index-cine-page > section > .latest-heading,
-      body.index-cine-page > section > .showcase-heading,
-      body.index-cine-page .cartelera-production-heading {
-        margin-bottom: 14px;
-      }
-
-      body.index-cine-page .slider-v .latest-b-text {
-        min-height: 84px;
-        padding: 10px 5px 8px;
-      }
-
-      body.index-cine-page .slider-v .latest-b-text strong {
-        font-size: .88rem;
-        line-height: 1.3;
-      }
-
-      body.index-cine-page .slider-h .showcase-box {
-        margin-bottom: 12px;
-      }
-    }
-
-    @media (max-width: 480px) {
-      body.index-cine-page > section[id="latest"],
-      body.index-cine-page > section[id="main"] {
-        padding-right: 12px;
-        padding-left: 12px;
-      }
-
-      body.index-cine-page .slider-v .latest-b-text {
-        min-height: 88px;
-      }
-    }
-  </style>
-
-<style id="index-movies-top10-style">
-  #index-movies-top10 {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
-  #index-movies-top10 > li > a {
-    display: block;
-    color: inherit;
-    text-decoration: none;
-  }
-  #index-movies-top10 .index-top10-card {
-    width: 100%;
-    min-width: 0;
-    margin: 0;
-    background: transparent;
-  }
-  #index-movies-top10 .index-top10-image {
-    position: relative;
-    width: 100%;
-    aspect-ratio: 16 / 9;
-    overflow: hidden;
-    border-radius: 12px;
-    background: #202832;
-  }
-  #index-movies-top10 .index-top10-image img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  #index-movies-top10 .index-top10-image::before {
-    content: attr(data-rank);
-    position: absolute;
-    left: 8px;
-    bottom: 8px;
-    z-index: 2;
-    padding: 4px 8px;
-    border-radius: 4px;
-    background: rgba(0, 0, 0, .72);
-    color: #fff;
-    font-family: Impact, "Arial Black", sans-serif;
-    font-size: 48px;
-    font-weight: 900;
-    line-height: 1;
-    text-shadow: 2px 2px 3px #000;
-    pointer-events: none;
-  }
-  #index-movies-top10 .index-top10-text {
-    padding: 12px 4px 8px;
-    text-align: center;
-  }
-  #index-movies-top10 .index-top10-text strong {
-    display: block;
-    color: #fff;
-  }
-  #index-movies-top10 .index-top10-text p {
-    margin: 5px 0 0;
-    color: #9ea6b0;
-  }
-  @media (max-width: 768px) {
-    #index-movies-top10 .index-top10-image::before {
-      left: 7px;
-      bottom: 7px;
-      font-size: 40px;
-    }
-  }
-</style>
+  <link rel="stylesheet" href="css/index-catalog.css?v=20261115-1" />
 </head>
 
 <body class="index-cine-page">
@@ -415,7 +157,7 @@
   </nav>
 
   <!-- Cartelera 2026 (V) -->
-  <section id="latest" class="cartelera-2026-section" data-year="2026">
+  <section class="index-catalog-section index-catalog-section--vertical cartelera-2026-section" data-year="2026">
     <h2 class="latest-heading">CINE Y SERIES 2026</h2>
     <div class="cartelera-2026-controls" role="group" aria-label="Cartelera 2026 controles">
       <div class="cartelera-filters" role="group" aria-label="Filtrar por tipo">
@@ -431,7 +173,7 @@
   </section>
 
   <!-- En Produccion (V) -->
-  <section id="latest" class="cartelera-2026-section" data-cartelera-mode="upcoming" data-years="2026,2027">
+  <section class="index-catalog-section index-catalog-section--vertical cartelera-2026-section" data-cartelera-mode="upcoming" data-years="2026,2027">
     <h2 class="latest-heading">EN PRODUCCION</h2>
     <div class="cartelera-2026-controls" role="group" aria-label="En produccion controles">
       <div class="cartelera-filters" role="group" aria-label="Filtrar en produccion por tipo">
@@ -447,7 +189,7 @@
   </section>
 
   <!-- Las 10 Películas con más espectadoras (2001-2025) (V) -->
-  <section id="latest">
+  <section class="index-catalog-section index-catalog-section--top10">
     <h2 class="latest-heading">Las 10 Películas con más espectadores (2001-2025)</h2>
     <ul id="index-movies-top10" class="cs-hidden" data-skip-auto="true">
       <li class="item-b"><a href="show.html?id=P1181">
@@ -546,21 +288,21 @@
   <!-- Thrillers y Policiales (V) -->
 
   <!-- Películas originales de Netflix (V) -->
-  <section id="latest">
+  <section class="index-catalog-section index-catalog-section--vertical">
     <h2 class="latest-heading">Películas originales de Netflix</h2>
-    <ul class="slider-v cs-hidden" id="indexNetflixMoviesList"></ul>
+    <ul class="slider-v cs-hidden" id="indexNetflixMoviesList" data-skip-auto="true"></ul>
   </section>
 
 
   <!-- Películas de Acción (H) -->
-  <section id="main">
+  <section class="index-catalog-section index-catalog-section--horizontal">
     <h1 class="showcase-heading">Películas de Acción</h1>
     <ul class="slider-h cs-hidden" id="actionMoviesList" data-skip-auto="true"></ul>
   </section>
 
 
   <!-- Películas disponibles en Disney+ (V) -->
-  <section id="latest">
+  <section class="index-catalog-section index-catalog-section--vertical">
     <h2 class="latest-heading">Películas disponibles en Disney+</h2>
     <ul class="slider-v cs-hidden">
       <li class="item-dp"><a href="show.html?id=P1141">
@@ -731,12 +473,13 @@
   </section>
 
   <!-- Películas exclusivas de Amazon Prime Video (V) -->
-  <section id="latest" class="prime-video-movies-section">
+  <section class="index-catalog-section index-catalog-section--vertical prime-video-movies-section">
     <h2 class="latest-heading">
       Películas exclusivas de Amazon Prime Video
     </h2>
 
-    <ul class="slider-v cs-hidden" id="indexPrimeMoviesList" aria-label="Películas exclusivas de Amazon Prime Video">
+    <ul class="slider-v cs-hidden" id="indexPrimeMoviesList" data-skip-auto="true"
+      aria-label="Películas exclusivas de Amazon Prime Video">
       <li class="cartelera-placeholder"></li>
     </ul>
   </section>
@@ -758,7 +501,7 @@ Thrillers Políticos (H)
 -->
 
   <!-- Cine Animado Argentino -->
-  <section id="latest">
+  <section class="index-catalog-section index-catalog-section--vertical">
     <h2 class="latest-heading">Cine Animado Argentino</h2>
     <ul class="slider-v cs-hidden">
       <li class="item-d"><a href="show.html?id=P1098">
@@ -1028,7 +771,7 @@ Thrillers Políticos (H)
   </section>
 
   <!-- Actores Destacados (Circular Gallery) -->
-  <section id="latest">
+  <section class="index-catalog-section index-catalog-section--actors">
     <h2 class="latest-heading">Actores Destacados</h2>
     <ul class="slider-actors cs-hidden">
       <li><a href="actor-ricardo-darin.html">
@@ -1133,7 +876,7 @@ Thrillers Políticos (H)
   </section>
 
   <!-- Explora películas por género -->
-  <section id="latest">
+  <section class="index-catalog-section index-catalog-section--genres">
     <h2 class="latest-heading">Explora películas por género</h2>
     <ul class="slider-genres cs-hidden">
       <li><a href="genero-comedia.html">
