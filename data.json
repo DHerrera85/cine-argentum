@@ -30020,6 +30020,108 @@
       ]
     },
     {
+      "id": "P2161",
+      "title": "Sí o no",
+      "type": "serie",
+      "year": 2015,
+      "channel": "Telefe",
+      "genre": "Comedia",
+      "actors": [],
+      "orientation": "vertical",
+      "image": "images/verticals/2015-si-o-no-telefe-pilot-poster280x420.webp",
+      "horizontal_image": "",
+      "subtitle": "Piloto no emitido",
+      "release_date": null,
+      "fecha_estreno": null,
+      "production_status": "no-emitidos",
+      "tipo_emision": "No Emitidos",
+      "productora": "Telefe",
+      "sinopsis": "Sí o no es un formato de ficción interactivo íntegramente producido por Telefe donde los televidentes definen, en tiempo real, el curso de la historia votando desde sus tablets y smartphones. Dos guionistas antagónicos discuten si conviene tomar el camino del sí o el camino del no. La última palabra la tiene el público.",
+      "fuente": "PRODU - Formatos destacados de Telefe para NATPE 2015",
+      "fuente_url": "https://www.produ.com/television/noticias/formatos-si-o-no-y-el-emprendedor-del-millon-y-el-documental-papa-francisco-son-los-destacados-de-telefe-para-natpe-2015/",
+      "tiras_2010_rows": [
+        "no-emitidos"
+      ]
+    },
+    {
+      "id": "P2162",
+      "title": "La suerte de Loli",
+      "type": "serie",
+      "year": 2019,
+      "channel": "Piloto",
+      "genre": "Telenovela",
+      "actors": [
+        "Monna Antonópulos",
+        "Carolina Ibarra"
+      ],
+      "orientation": "vertical",
+      "image": "images/verticals/2019-la-suerte-de-loli-pilot-poster-280x420.webp",
+      "horizontal_image": "",
+      "subtitle": "Piloto argentino no emitido",
+      "release_date": null,
+      "fecha_estreno": null,
+      "production_status": "no-emitidos",
+      "tipo_emision": "No Emitidos",
+      "sinopsis": "Loli y Mariana son dos amigas completamente opuestas. Mariana trabaja en un banco y es madre de dos hijos, un adolescente y un niño. Loli, en cambio, es una mujer independiente, de espíritu libre, que decidió no ser madre. Cuando Mariana fallece inesperadamente, le deja a Loli toda su herencia y, especialmente, el cuidado de sus hijos. A partir de entonces, Loli deberá enfrentarse a una vida que nunca imaginó.",
+      "enlaces": [
+        {
+          "titulo": "Detrás de La suerte de Loli, el formato argentino adquirido por Telemundo",
+          "url": "https://www.todotvnews.com/detras-de-la-suerte-de-loli-el-formato-argentino-adquirido-por-telemundo/"
+        }
+      ],
+      "remakes": [
+        {
+          "title": "La suerte de Loli",
+          "country": "Estados Unidos",
+          "year": "2021",
+          "image": "thumbnail"
+        }
+      ],
+      "tiras_2010_rows": [
+        "no-emitidos"
+      ]
+    },
+    {
+      "id": "P2163",
+      "title": "Club de Hombres",
+      "type": "serie",
+      "year": 2011,
+      "channel": "América",
+      "genre": "Comedia",
+      "actors": [
+        "Mike Amigorena",
+        "Araceli González",
+        "Diego Ramos",
+        "Turco Naím",
+        "Fenna Della Maggiora",
+        "Luis Ziembrowski",
+        "María Eugenia Ritó",
+        "María Carámbula",
+        "Lola Fernández Viale"
+      ],
+      "orientation": "vertical",
+      "image": "images/verticals/2011-club-de-hombres-pilot-america-poster280x420.webp",
+      "horizontal_image": "",
+      "subtitle": "Unitario de comedia no emitido",
+      "release_date": null,
+      "fecha_estreno": null,
+      "production_status": "no-emitidos",
+      "tipo_emision": "No Emitidos",
+      "capitulos": 31,
+      "productora": "Pablo Bossi, Alejandro Kahanoff",
+      "director": "Raúl Rodríguez Peilá",
+      "sinopsis": "Proyecto de unitario de comedia centrado en un grupo de hombres integrado por los personajes interpretados por Mike Amigorena, Diego Ramos, el Turco Naím, Fenna Della Maggiora y Luis Ziembrowski. La ficción, encabezada por Amigorena y Araceli González, estaba prevista para incorporarse a la programación de América en 2011, con una temporada de 31 capítulos, pero no llegó a estrenarse.",
+      "enlaces": [
+        {
+          "titulo": "Mike Amigorena y Araceli juntos — Infobae (28/03/2011)",
+          "url": "https://www.infobae.com/2011/03/28/572304-mike-amigorena-y-araceli-juntos/"
+        }
+      ],
+      "tiras_2010_rows": [
+        "no-emitidos"
+      ]
+    },
+    {
       "id": "P2164",
       "title": "Volver a empezar",
       "type": "serie",

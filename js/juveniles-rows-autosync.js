@@ -988,7 +988,7 @@
             return currentYear - i;
         });
 
-        var selectedMonth = 'all';
+        var selectedMonth = String(new Date().getMonth());
         var selectedYear = 'all';
 
         yearTabs.innerHTML = '';
@@ -1002,8 +1002,6 @@
             button.textContent = year === 'all' ? 'Todos' : String(year);
             yearTabs.appendChild(button);
         });
-
-        var selectedMonth = 'all';
 
         function updateArrows() {
             var maximum = Math.max(0, months.scrollWidth - months.clientWidth);
@@ -1121,10 +1119,13 @@
                 button.setAttribute('aria-selected', String(active));
                 button.tabIndex = active ? 0 : -1;
                 if (active) {
-                    button.scrollIntoView({
-                        behavior: animate ? 'smooth' : 'auto',
-                        block: 'nearest',
-                        inline: 'center'
+                    var buttonRect = button.getBoundingClientRect();
+                    var monthsRect = months.getBoundingClientRect();
+                    var left = months.scrollLeft + buttonRect.left - monthsRect.left -
+                        (months.clientWidth - buttonRect.width) / 2;
+                    months.scrollTo({
+                        left: Math.max(0, left),
+                        behavior: animate ? 'smooth' : 'auto'
                     });
                 }
             });
@@ -1160,12 +1161,6 @@
             selectedYear = button.getAttribute('data-year');
 
             update(true);
-
-            button.scrollIntoView({
-                behavior: 'smooth',
-                block: 'nearest',
-                inline: 'nearest'
-            });
         });
 
         months.addEventListener('scroll', updateArrows);
