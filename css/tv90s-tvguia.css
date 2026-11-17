@@ -1,0 +1,369 @@
+#tv90s-tv-guia { color:#fff; }
+#tv90s-tv-guia .tvguia-header {
+  display:flex; justify-content:space-between;
+  align-items:center; flex-wrap:wrap; gap:14px;
+  margin-bottom:22px;
+}
+#tv90s-tv-guia .tvguia-header h2 { margin:0; }
+#tv90s-tv-guia .tvguia-controls {
+  display:flex; align-items:center; flex-wrap:wrap;
+  gap:9px; color:#b8c2cc; font-size:14px;
+}
+#tv90s-tv-guia select, #tv90s-tv-guia input {
+  background:#202832; color:white;
+  border:1px solid #465361; border-radius:7px;
+  padding:7px; font:inherit;
+}
+#tv90s-tv-guia .tvguia-list {
+  display:flex; gap:18px; overflow-x:auto;
+  scroll-snap-type:x mandatory;
+  scrollbar-width:thin;
+  padding:4px 0 14px;
+}
+#tv90s-tv-guia .tvguia-card {
+  flex:0 0 calc((100% - 72px)/5);
+  min-width:0; scroll-snap-align:start;
+}
+#tv90s-tv-guia .tvguia-picture {
+  aspect-ratio:16/9; border-radius:12px;
+  overflow:hidden; background:#202832;
+}
+#tv90s-tv-guia .tvguia-picture img {
+  width:100%; height:100%;
+  display:block; object-fit:contain;
+}
+#tv90s-tv-guia .tvguia-fallback {
+  width:100%; height:100%;
+  display:flex; align-items:center; justify-content:center;
+  background:linear-gradient(135deg,#243b50,#101e2b);
+}
+#tv90s-tv-guia .tvguia-fallback img {
+  width:45%; height:65%; object-fit:contain;
+}
+#tv90s-tv-guia .tvguia-info {
+  display:flex; gap:9px; align-items:flex-start;
+  padding:11px 2px 0; text-align:left;
+}
+#tv90s-tv-guia .tvguia-logo {
+  width:35px; height:35px; object-fit:contain;
+  flex-shrink:0;
+}
+#tv90s-tv-guia .tvguia-title {
+  font-size:14px; line-height:1.35;
+  font-weight:600; color:white;
+}
+#tv90s-tv-guia .tvguia-hours {
+  display:block; margin-top:4px;
+  color:#aeb6c0; font-size:12px;
+}
+#tv90s-tv-guia .tvguia-more {
+  display:inline-block; margin-top:10px;
+  color:#8fbce6; font-size:13px;
+}
+#tv90s-tv-guia #tvguia-status {
+  color:#aeb6c0; font-size:13px;
+}
+@media(max-width:767px) {
+  #tv90s-tv-guia .tvguia-list { gap:12px; }
+  #tv90s-tv-guia .tvguia-card {
+    flex-basis:calc((100% - 12px)/2);
+  }
+  #tv90s-tv-guia .tvguia-logo {
+    width:27px; height:27px;
+  }
+  #tv90s-tv-guia .tvguia-title { font-size:12px; }
+  #tv90s-tv-guia .tvguia-hours { font-size:11px; }
+}
+
+/* TV Guia: navegacion horaria */
+#tv90s-tv-guia .tvguia-time-navigation {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+}
+
+#tv90s-tv-guia .tvguia-time-navigation button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 38px;
+  padding: 0;
+  border: 1px solid #465361;
+  border-radius: 8px;
+  background: #202832;
+  color: #ffffff;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+#tv90s-tv-guia .tvguia-time-navigation button:hover {
+  background: #34495d;
+  border-color: #8fbce6;
+}
+
+#tv90s-tv-guia .tvguia-time-navigation button:focus-visible {
+  outline: 2px solid #8fbce6;
+  outline-offset: 2px;
+}
+
+/* TV Guia - tarjeta contenedora */
+#tv90s-tv-guia {
+  margin: 10px 18px 18px;
+  width: calc(100% - 36px);
+  padding: 24px 20px;
+  border: 1px solid rgba(21,119,139,.25);
+  border-radius: 16px;
+  background: linear-gradient(135deg,#192b36,#17232e 55%,#141a21);
+  box-shadow: 0 8px 26px rgba(0,0,0,.15);
+}
+
+#tv90s-tv-guia .tvguia-carousel-shell {
+  position: relative;
+}
+
+#tv90s-tv-guia .tvguia-list {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  padding-bottom: 8px;
+}
+
+#tv90s-tv-guia .tvguia-list::-webkit-scrollbar {
+  display: none;
+}
+
+#tv90s-tv-guia .tvguia-scroll-arrow {
+  position: absolute;
+  top: 34%;
+  z-index: 5;
+  width: 36px;
+  height: 42px;
+  border: 0;
+  border-radius: 8px;
+  background: rgba(12,22,32,.78);
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+#tv90s-tv-guia .tvguia-scroll-prev { left: 4px; }
+#tv90s-tv-guia .tvguia-scroll-next { right: 4px; }
+
+#tv90s-tv-guia .tvguia-scroll-arrow:disabled {
+  opacity: .2;
+  cursor: default;
+}
+
+#tv90s-tv-guia .tvguia-scroll-arrow:focus-visible {
+  outline: 2px solid #8fbce6;
+}
+
+@media(max-width:767px) {
+  #tv90s-tv-guia {
+    margin: 8px 10px 14px;
+    width: calc(100% - 20px);
+    padding: 18px 12px;
+  }
+
+  #tv90s-tv-guia .tvguia-header {
+    display: block;
+  }
+
+  #tv90s-tv-guia .tvguia-header h2 {
+    margin-bottom: 14px;
+  }
+
+  #tv90s-tv-guia .tvguia-controls {
+    justify-content: flex-start;
+    gap: 8px;
+  }
+
+  #tv90s-tv-guia .tvguia-scroll-arrow {
+    width: 30px;
+    height: 38px;
+    font-size: 18px;
+  }
+}
+
+/* tvguia-mobile-refinement-v1 */
+
+#tv90s-tv-guia .tvguia-title {
+  min-height: 2.7em;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+#tv90s-tv-guia .tvguia-scroll-arrow {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@media (max-width: 767px) {
+  #tv90s-tv-guia .tvguia-controls {
+    display: grid;
+    grid-template-columns: auto auto minmax(0,1fr);
+    align-items: center;
+    justify-content: start;
+    column-gap: 9px;
+    row-gap: 10px;
+  }
+
+  #tv90s-tv-guia .tvguia-controls > span {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  #tv90s-tv-guia .tvguia-controls > label[for="tvguia-day"] {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  #tv90s-tv-guia #tvguia-day {
+    grid-column: 3;
+    grid-row: 1;
+    justify-self: start;
+  }
+
+  #tv90s-tv-guia .tvguia-controls > label[for="tvguia-time"] {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  #tv90s-tv-guia .tvguia-time-navigation {
+    grid-column: 2 / 4;
+    grid-row: 2;
+  }
+
+  #tv90s-tv-guia .tvguia-scroll-arrow {
+    top: 50%;
+  }
+
+  #tv90s-tv-guia .tvguia-info {
+    align-items: flex-start;
+  }
+
+  #tv90s-tv-guia .tvguia-title {
+    min-height: 2.7em;
+  }
+}
+
+/* tvguia-compact-v1 */
+#tv90s-tv-guia .tvguia-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+#tv90s-tv-guia .tvguia-header h2 {
+  white-space: nowrap;
+}
+
+#tv90s-tv-guia .tvguia-controls {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 8px;
+}
+
+@media(max-width:767px) {
+  #tv90s-tv-guia .tvguia-header {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 16px;
+  }
+
+  #tv90s-tv-guia .tvguia-header h2 {
+    font-size: 12px;
+    margin: 0;
+    flex-shrink: 0;
+  }
+
+  #tv90s-tv-guia .tvguia-controls {
+    display: flex;
+    flex: 1 1 auto;
+    min-width: 0;
+    flex-wrap: nowrap;
+    gap: 3px;
+  }
+
+  #tv90s-tv-guia .tvguia-control-label {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
+
+  #tv90s-tv-guia #tvguia-period {
+    width: 58px;
+    min-width: 0;
+    padding: 5px 2px;
+    font-size: 11px;
+  }
+
+  #tv90s-tv-guia #tvguia-day {
+    width: 53px;
+    min-width: 0;
+    padding: 5px 2px;
+    font-size: 11px;
+  }
+
+  #tv90s-tv-guia .tvguia-time-navigation {
+    display: inline-flex;
+    min-width: 0;
+    flex-shrink: 0;
+    gap: 2px;
+  }
+
+  #tv90s-tv-guia .tvguia-time-navigation button {
+    width: 23px;
+    height: 30px;
+    padding: 0;
+    font-size: 13px;
+    border-radius: 6px;
+  }
+
+  #tv90s-tv-guia #tvguia-time {
+    width: 68px;
+    min-width: 0;
+    padding: 4px 1px;
+    font-size: 11px;
+  }
+}
+
+/* tvguia-final-visual-v1 */
+
+/* Fondo azul petroleo */
+#tv90s-tv-guia {
+  background: linear-gradient(
+    135deg,
+    #15303c 0%,
+    #102631 55%,
+    #0e202a 100%
+  );
+  border-color: rgba(63,145,164,.35);
+}
+
+/* Cuatro tarjetas visibles en escritorio */
+@media (min-width: 768px) {
+  #tv90s-tv-guia .tvguia-card {
+    flex: 0 0 calc((100% - 54px) / 4);
+  }
+
+  #tv90s-tv-guia .tvguia-scroll-arrow {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+/* Dos tarjetas visibles en movil */
+@media (max-width: 767px) {
+  #tv90s-tv-guia .tvguia-card {
+    flex: 0 0 calc((100% - 12px) / 2);
+  }
+}

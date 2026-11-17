@@ -884,6 +884,7 @@
       line-height: 1.3;
     }
   </style>
+  <link rel="stylesheet" href="css/tv90s-tvguia.css?v=5">
 </head>
 
 <body>
@@ -997,6 +998,39 @@
         </h2>
 
         <ul id="tv90s-telenovelas-slider" class="slider-h cs-hidden" data-skip-auto="true"></ul>
+      </section>
+
+
+      <!-- TV Guia - 1990s: prueba experimental -->
+      <section id="tv90s-tv-guia" class="tv90s-section tv90s-genre-showcase">
+        <div class="tvguia-header">
+          <h2 class="latest-heading">TV GUÍA</h2>
+          <div class="tvguia-controls">
+            <select id="tvguia-period" aria-label="Periodo historico"><option value="schedule-1992-07">Jul 92</option></select>
+            <label class="tvguia-control-label" for="tvguia-day">Día</label>
+            <select id="tvguia-day"></select>
+            <label class="tvguia-control-label" for="tvguia-time">Hora</label>
+            <div class="tvguia-time-navigation">
+              <button type="button" id="tvguia-prev-hour" aria-label="Retroceder una hora">&#10094;</button>
+              <input id="tvguia-time" type="time" step="1800">
+              <button type="button" id="tvguia-next-hour" aria-label="Avanzar una hora">&#10095;</button>
+            </div>
+          </div>
+        </div>
+        <div class="tvguia-carousel-shell">
+  <button type="button" id="tvguia-scroll-prev"
+    class="tvguia-scroll-arrow tvguia-scroll-prev"
+    aria-label="Canales anteriores">&#10094;</button>
+  <div id="tvguia-list" class="tvguia-list"
+    aria-label="Programas en competencia"></div>
+  <button type="button" id="tvguia-scroll-next"
+    class="tvguia-scroll-arrow tvguia-scroll-next"
+    aria-label="Canales siguientes">&#10095;</button>
+</div>
+        <p id="tvguia-status" role="status"></p>
+        <a class="tvguia-more" href="schedules.html">
+          Ver programación histórica completa
+        </a>
       </section>
 
       <!-- Telenovelas de la Noche -->
@@ -1192,6 +1226,7 @@
   <script src="js/script.js?v=20260226-1"></script>
   <script src="js/tv-90s-autosync.js?v=20260804-4"></script>
   <script src="js/tv-90s-premieres.js?v=1"></script>
+  <script src="js/tv90s-tvguia.js?v=6"></script>
 </body>
 
 </html>
