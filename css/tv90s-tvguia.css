@@ -432,3 +432,44 @@
     font-size: 15px;
   }
 }
+
+
+/* tvguia-historical-logo-sizing-v1 */
+#tv90s-tv-guia .tvguia-fallback img[src*="canal-13-logo-1992-variante.webp"],
+#tv90s-tv-guia .tvguia-fallback img[src*="america-te-ve-logo-1992.webp"] {
+  width: 64%;
+  height: 64%;
+  max-width: 160px;
+  max-height: 125px;
+  object-fit: contain;
+}
+
+
+/* tvguia-logo-sizing-refinement-v2 */
+
+/* Telefe: reduccion leve */
+#tv90s-tv-guia .tvguia-fallback img[src*="telefe-1990-120x120.png"] {
+  transform: scale(0.85);
+  transform-origin: center;
+}
+
+/* America Te Ve: reduccion adicional */
+#tv90s-tv-guia .tvguia-fallback img[src*="america-te-ve-logo-1992.webp"] {
+  transform: scale(0.80);
+  transform-origin: center;
+}
+
+
+/* tvguia-canal13-sizing-v3 */
+
+/* Logo principal de Canal 13 */
+#tv90s-tv-guia .tvguia-fallback img[src*="canal-13-logo-1992-variante.webp"] {
+  transform: scale(0.85);
+  transform-origin: center;
+}
+
+/* Logo pequeno junto al nombre del programa */
+#tv90s-tv-guia img[src*="canal-13-logo-1992-variante.webp"]:not(.tvguia-fallback img) {
+  transform: scale(0.85);
+  transform-origin: center;
+}

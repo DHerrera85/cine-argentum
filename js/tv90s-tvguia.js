@@ -11,24 +11,57 @@ const list = document.getElementById('tvguia-list');
 const prevHour = document.getElementById('tvguia-prev-hour');
 const nextHour = document.getElementById('tvguia-next-hour');
 
+/* tvguia-smart-navigation-v1 */
+let navigationChannels = [];
+
+function availableStarts(channels, day) {
+  const starts = new Set();
+
+  channels.forEach(channel => {
+    channel.entries.forEach(entry => {
+      if (
+        !Array.isArray(entry.days) ||
+        !entry.days.includes(day) ||
+        !entry.start
+      ) return;
+
+      const value = minutes(entry.start);
+
+      if (
+        Number.isFinite(value) &&
+        value >= 0 &&
+        value < 1440
+      ) {
+        starts.add(value);
+      }
+    });
+  });
+
+  return Array.from(starts).sort((a, b) => a - b);
+}
+
 function changeHour(delta) {
-  const parts = timeInput.value.split(':').map(Number);
-  if (parts.length !== 2 || parts.some(Number.isNaN)) return;
+  if (!navigationChannels.length) return;
 
-  const current = parts[0] * 60 + parts[1];
-  let next;
+  const current = minutes(timeInput.value);
+  if (!Number.isFinite(current)) return;
 
-  if (delta > 0) {
-    next = (Math.floor(current / 60) + 1) * 60;
-  } else {
-    next = (Math.ceil(current / 60) - 1) * 60;
-  }
+  const starts = availableStarts(
+    navigationChannels,
+    daySelect.value
+  );
 
-  if (next < 0 || next >= 1440) return;
+  const next = delta > 0
+    ? starts.find(value => value > current)
+    : starts.slice().reverse().find(value => value < current);
 
-  const hour = Math.floor(next / 60);
+  if (next === undefined) return;
 
-  timeInput.value = String(hour).padStart(2, '0') + ':00';
+  const hour = String(Math.floor(next / 60)).padStart(2, '0');
+  const minute = String(next % 60).padStart(2, '0');
+
+  timeInput.value = hour + ':' + minute;
+
   timeInput.dispatchEvent(
     new Event('change', { bubbles: true })
   );
@@ -81,9 +114,9 @@ const days = [
 
 const logos = {
   'Telefe':'telefe-1990-120x120.png',
-  'Canal 13':'canal13-1990-120x120.png',
+  'Canal 13':'canal-13-logo-1992-variante.webp',
   'Canal 9':'canal9-1990-120x120.png',
-  'Am\u00e9rica':'america-1990-120x120px.png',
+  'Am\u00e9rica':'america-te-ve-logo-1992.webp',
   'ATC':'ATC_logo_120x120_transparente.png'
 };
 
@@ -260,6 +293,7 @@ Promise.all([
     p => p.id === 'schedule-1992-07'
   );
   if (!period) throw new Error('Falta julio de 1992');
+  navigationChannels = period.channels;
   const update = () => render(period.channels);
   daySelect.addEventListener('change',update);
   timeInput.addEventListener('change',update);
