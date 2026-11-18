@@ -28268,7 +28268,7 @@
         "Natalia Lobo"
       ],
       "orientation": "vertical",
-      "image": "images/verticals/herencia-de-amor-poster-280x420.png",
+      "image": "images/verticals/herencia-de-amor-poster-280x420.webp",
       "tiras_2000_rows": [
         "ficciones-tarde"
       ],
@@ -28286,6 +28286,23 @@
           "country": "México",
           "year": "2020",
           "image": "images/verticals/quererlo-todo-mexico-2020.png"
+        }
+      ],
+      "horizontal_image": "images/horizontals-1024x576/2009-herencia-de-amor-telefe-slide-1024x576-v2.webp",
+      "poster_gallery": [
+        {
+          "image": "images/verticals/herencia-de-amor-poster-280x420.webp",
+          "label": "P?ster principal"
+        }
+      ],
+      "horizontal_gallery": [
+        {
+          "image": "images/horizontals-1024x576/2009-herencia-de-amor-telefe-slide-1024x576-v2.webp",
+          "label": "Imagen horizontal principal"
+        },
+        {
+          "image": "images/horizontals-1024x576/2009-herencia-de-amor-telefe-slide-1024x576.webp",
+          "label": "Imagen horizontal alternativa"
         }
       ]
     },
