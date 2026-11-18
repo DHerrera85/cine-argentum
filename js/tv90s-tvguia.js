@@ -24,7 +24,7 @@ function changeHour(delta) {
     next = (Math.ceil(current / 60) - 1) * 60;
   }
 
-  if (next < 720 || next > 1380) return;
+  if (next < 0 || next >= 1440) return;
 
   const hour = Math.floor(next / 60);
 
@@ -123,6 +123,27 @@ function el(tag, cls, value) {
   return n;
 }
 
+
+function nextStart(channel, day, now) {
+  const starts = channel.entries
+    .filter(entry =>
+      Array.isArray(entry.days) &&
+      entry.days.includes(day)
+    )
+    .map(entry => minutes(entry.start))
+    .filter(value => Number.isFinite(value))
+    .sort((a, b) => a - b);
+
+  const upcoming = starts.find(value => value > now);
+
+  if (upcoming === undefined) return null;
+
+  const hour = String(Math.floor(upcoming / 60)).padStart(2, '0');
+  const minute = String(upcoming % 60).padStart(2, '0');
+
+  return hour + ':' + minute;
+}
+
 function render(channels) {
   list.replaceChildren();
   const day = daySelect.value;
@@ -170,7 +191,14 @@ function render(channels) {
 
     const details = el('div');
     details.append(el('div','tvguia-title',
-      entry ? entry.title : 'Sin programaci\u00f3n registrada'
+      entry
+        ? entry.title
+        : (() => {
+            const start = nextStart(channel, day, now);
+            return start
+              ? 'La programaci\u00f3n empieza a las ' + start + ' hs'
+              : 'Sin programaci\u00f3n registrada';
+          })()
     ));
 
     if (entry) {
