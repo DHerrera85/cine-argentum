@@ -1648,7 +1648,7 @@
         {
           "id": "P2166",
           "title": "En Terapia",
-          "meta": "Nueva versi?n (2027)",
+          "meta": "Nueva versión (2027)",
           "image": "images/verticals/2027-en-terapia-canal-13-prime-video-poster280x420.webp"
         }
       ]
@@ -30231,9 +30231,42 @@
     },
     {
       "id": "P2166",
-      "title": "En Terapia (2027)",
-      "meta": "Nueva versión (2027)",
-      "image": "images/verticals/2027-en-terapia-canal-13-prime-video-poster280x420.webp"
+      "title": "En Terapia",
+      "image": "images/verticals/2027-en-terapia-canal-13-prime-video-poster280x420.webp",
+      "type": "serie",
+      "year": 2027,
+      "channel": "Canal 13",
+      "genre": "Drama",
+      "actors": [
+        "Joaquín Furriel",
+        "Paola Barrientos",
+        "Luis Machín"
+      ],
+      "orientation": "vertical",
+      "poster_gallery": [
+        {
+          "image": "images/verticals/2027-en-terapia-canal-13-prime-video-poster280x420.webp",
+          "label": "P?ster principal"
+        }
+      ],
+      "episodes": 28,
+      "capitulos": 28,
+      "tipo_emision": "Tira Diaria",
+      "subtitle": "Próximo estreno",
+      "productora": "Kapow, Kuarzo, Amazon",
+      "director": "Daniela Goggi",
+      "guionista": "Mario Segade",
+      "sinopsis": "Nueva versión de En Terapia, prevista para marzo de 2027 por Canal 13. Protagonizada por Joaquín Furriel, Paola Barrientos y Luis Machín, la ficción retoma el universo de las sesiones de psicoterapia y los conflictos personales de sus protagonistas. Contará con 28 capítulos de emisión diaria.",
+      "fuente": "Laura Ubfal",
+      "fuente_url": "https://laubfal.com/vuelve-la-ficcion-a-la-tele-abierta-con-joaquin-furriel/",
+      "producciones_relacionadas": [
+        {
+          "id": "V288",
+          "title": "En Terapia",
+          "meta": "Serie original",
+          "image": "images/verticals/en-terapia-poster-280x420.png"
+        }
+      ]
     }
   ]
 }
