@@ -1641,6 +1641,14 @@
       "capitulos": 113,
       "fecha_estreno": "14/05/2012",
       "sinopsis": "Cada episodio muestra al psicólogo Guillermo Montes atendiendo a un paciente distinto en sesión. Los viernes, él mismo se convierte en paciente al supervisar sus casos con su mentora Lucía Aranda.",
+      "producciones_relacionadas": [
+        {
+          "id": "P2166",
+          "title": "En Terapia (2027)",
+          "meta": "Nueva versión (2027)",
+          "image": "images/verticals/2027-en-terapia-canal-13-prime-video-poster280x420.webp"
+        }
+      ],
       "rating": "3",
       "productora": "Dori Media",
       "tipo_emision": "Tira Diaria"
@@ -28269,6 +28277,7 @@
       ],
       "orientation": "vertical",
       "image": "images/verticals/herencia-de-amor-poster-280x420.webp",
+      "horizontal_image": "images/horizontals-1024x576/2009-herencia-de-amor-telefe-slide-1024x576-v2.webp",
       "tiras_2000_rows": [
         "ficciones-tarde"
       ],
@@ -28288,7 +28297,6 @@
           "image": "images/verticals/quererlo-todo-mexico-2020.png"
         }
       ],
-      "horizontal_image": "images/horizontals-1024x576/2009-herencia-de-amor-telefe-slide-1024x576-v2.webp",
       "poster_gallery": [
         {
           "image": "images/verticals/herencia-de-amor-poster-280x420.webp",
@@ -30220,6 +30228,50 @@
       "tiras_2000_rows": [
         "no-emitidos"
       ]
+    },
+    {
+      "id": "P2166",
+      "title": "En Terapia",
+      "type": "serie",
+      "year": 2027,
+      "channel": "Canal 13",
+      "genre": "Drama",
+      "actors": [
+        "Joaquín Furriel",
+        "Paola Barrientos",
+        "Luis Machín"
+      ],
+      "orientation": "vertical",
+      "image": "images/verticals/2027-en-terapia-canal-13-prime-video-poster280x420.webp",
+      "poster_gallery": [
+        {
+          "image": "images/verticals/2027-en-terapia-canal-13-prime-video-poster280x420.webp",
+          "label": "Póster principal"
+        }
+      ],
+      "subtitle": "Nueva versión de En Terapia",
+      "release_date": null,
+      "fecha_estreno": null,
+      "episodes": 28,
+      "tipo_emision": "Tira diaria",
+      "status": "Próximo estreno",
+      "productora": "Kapow, Kuarzo, Amazon",
+      "director": "Daniela Goggi",
+      "guionista": "Mario Segade",
+      "platforms": [
+        "Prime Video"
+      ],
+      "sinopsis": "Nueva versión argentina del formato israelí que dio origen a En Terapia. La ficción retoma el universo de las sesiones de psicoterapia y los conflictos personales de sus protagonistas, con Joaquín Furriel, Paola Barrientos y Luis Machín. Producida por Amazon, Kapow y Kuarzo para su emisión por Canal 13, está prevista para marzo de 2027 con un total de 28 capítulos.",
+      "producciones_relacionadas": [
+        {
+          "id": "V288",
+          "title": "En Terapia",
+          "meta": "Serie original",
+          "image": "images/verticals/en-terapia-poster-280x420.png"
+        }
+      ],
+      "fuente": "Laura Ubfal",
+      "fuente_url": "https://laubfal.com/vuelve-la-ficcion-a-la-tele-abierta-con-joaquin-furriel/"
     }
   ]
 }
