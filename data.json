@@ -1643,7 +1643,15 @@
       "sinopsis": "Cada episodio muestra al psicólogo Guillermo Montes atendiendo a un paciente distinto en sesión. Los viernes, él mismo se convierte en paciente al supervisar sus casos con su mentora Lucía Aranda.",
       "rating": "3",
       "productora": "Dori Media",
-      "tipo_emision": "Tira Diaria"
+      "tipo_emision": "Tira Diaria",
+      "producciones_relacionadas": [
+        {
+          "id": "P2166",
+          "title": "En Terapia",
+          "meta": "Nueva versi?n (2027)",
+          "image": "images/verticals/2027-en-terapia-canal-13-prime-video-poster280x420.webp"
+        }
+      ]
     },
     {
       "id": "V290",
@@ -30220,6 +30228,12 @@
       "tiras_2000_rows": [
         "no-emitidos"
       ]
+    },
+    {
+      "id": "P2166",
+      "title": "En Terapia (2027)",
+      "meta": "Nueva versión (2027)",
+      "image": "images/verticals/2027-en-terapia-canal-13-prime-video-poster280x420.webp"
     }
   ]
 }
