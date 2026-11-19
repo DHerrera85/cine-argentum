@@ -7,6 +7,8 @@ if (!root) return;
 const daySelect = document.getElementById('tvguia-day');
 const timeInput = document.getElementById('tvguia-time');
 const list = document.getElementById('tvguia-list');
+const periodSelect = document.getElementById('tvguia-period');
+let currentPeriod = null;
 
 const prevHour = document.getElementById('tvguia-prev-hour');
 const nextHour = document.getElementById('tvguia-next-hour');
@@ -112,12 +114,43 @@ const days = [
   ['jueves','Jueves'], ['viernes','Viernes']
 ];
 
-const logos = {
-  'Telefe':'telefe-1990-120x120.png',
-  'Canal 13':'canal-13-logo-1992-variante.webp',
-  'Canal 9':'canal9-1990-120x120.png',
-  'Am\u00e9rica':'america-te-ve-logo-1992.webp',
-  'ATC':'ATC_logo_120x120_transparente.png'
+const logosByPeriod = {
+  'schedule-1992-07': {
+    'Telefe': 'telefe-1990-120x120.png',
+    'Canal 13': 'canal-13-logo-1992-variante.webp',
+    'Canal 9': 'canal9-1990-120x120.png',
+    'América': 'america-te-ve-logo-1992.webp',
+    'ATC': 'ATC_logo_120x120_transparente.png'
+  },
+  'schedule-1993-02': {
+    'Telefe': 'telefe-1990-120x120.png',
+    'Canal 13': 'canal13-1990-120x120.png',
+    'Canal 9': 'canal9-1990-120x120.png',
+    'América': 'america-2-1993-logo.webp'
+  },
+  'schedule-1993-05': {
+    'Telefe': 'telefe-1990-120x120.png',
+    'Canal 13': 'canal13-1990-120x120.png',
+    'Canal 9': 'canal9-1990-120x120.png',
+    'América': 'america-2-1993-logo.webp'
+  },
+  'schedule-1996-04': {
+    'Telefe': 'telefe-1990-120x120.png',
+    'Canal 13': 'canal13-1990-120x120.png',
+    'Canal 9': 'canal9-1990-120x120.png'
+  },
+  'schedule-1996-08': {
+    'Telefe': 'telefe-1990-120x120.png',
+    'Canal 13': 'canal13-1990-120x120.png',
+    'Canal 9': 'canal9-1990-120x120.png',
+    'América': 'america-2-1993-logo.webp'
+  },
+  'schedule-1999-04': {
+    'Telefe': 'telefe-1999-logo.webp',
+    'Canal 13': 'canal13-1990-120x120.png',
+    'Azul TV': 'azul-tv-logo-transparent.png',
+    'América': 'america-1990-120x120px.png'
+  }
 };
 
 const thumbs = {
@@ -133,12 +166,23 @@ const thumbs = {
   T0055:'1992-princesa.webp',
   T0054:'1992-flavia-corazon-de-tiza.webp',
   T0108:'1992-los-libonatti.webp',
-  T0151:'1992-corazones-de-fuego.webp'
+  T0151:'1992-corazones-de-fuego.webp',
+  T0009:'1996-mi-cunado.webp',
+  T0020:'1996-chiquititas.webp',
+  T0024:'1996-zingara.webp',
+  T0040:'1996-mi-familia-es-un-dibujo.webp',
+  T0068:'1996-por-siempre-mujercitas.webp'
 };
+
+let productionTitles = new Map();
 
 function minutes(value) {
   const parts = value.split(':').map(Number);
   return parts[0] * 60 + parts[1];
+}
+
+function titleFor(entry) {
+  return entry.title || productionTitles.get(entry.production_id) || '';
 }
 
 function active(entry, now) {
@@ -190,7 +234,8 @@ function render(channels) {
 
     const card = el('article','tvguia-card');
     const picture = el('div','tvguia-picture');
-    const logoName = logos[channel.channel];
+    const periodLogos = logosByPeriod[currentPeriod.id] || {};
+    const logoName = periodLogos[channel.channel];
     const logoPath = logoName
       ? 'images/logos/' + logoName : '';
 
@@ -198,7 +243,7 @@ function render(channels) {
     if (file) {
       const img = el('img');
       img.src = 'images/schedules-thumbnails/' + file;
-      img.alt = entry.title;
+      img.alt = titleFor(entry);
       img.loading = 'lazy';
       picture.append(img);
     } else {
@@ -225,7 +270,7 @@ function render(channels) {
     const details = el('div');
     details.append(el('div','tvguia-title',
       entry
-        ? entry.title
+        ? titleFor(entry)
         : (() => {
             const start = nextStart(channel, day, now);
             return start
@@ -246,7 +291,7 @@ function render(channels) {
   });
 
   status.textContent =
-    'Programaci\u00f3n de julio de 1992 \u00b7 ' +
+    '\u0050rogramaci\u00f3n de ' + currentPeriod.label + ' \u00b7 ' +
     days.find(d => d[0] === day)[1] +
     ' \u00b7 ' + timeInput.value + ' hs';
 }
@@ -287,17 +332,42 @@ Promise.all([
   fetch('schedules.json').then(r => {
     if (!r.ok) throw new Error('No se pudo cargar schedules.json');
     return r.json();
+  }),
+  fetch('data.json').then(r => {
+    if (!r.ok) throw new Error('No se pudo cargar data.json');
+    return r.json();
   })
-]).then(([data]) => {
-  const period = data.schedules.find(
-    p => p.id === 'schedule-1992-07'
+]).then(([scheduleData, productionData]) => {
+  productionTitles = new Map(
+    productionData.items.map(item => [item.id, item.title])
   );
-  if (!period) throw new Error('Falta julio de 1992');
-  navigationChannels = period.channels;
-  const update = () => render(period.channels);
-  daySelect.addEventListener('change',update);
-  timeInput.addEventListener('change',update);
-  update();
+  const periods = scheduleData.schedules;
+  periodSelect.replaceChildren();
+
+  periods.forEach(period => {
+    const option = el('option', '', period.label);
+    option.value = period.id;
+    periodSelect.append(option);
+  });
+
+  function selectPeriod() {
+    currentPeriod = periods.find(
+      period => period.id === periodSelect.value
+    );
+
+    if (!currentPeriod) return;
+
+    navigationChannels = currentPeriod.channels;
+    render(currentPeriod.channels);
+  }
+
+  periodSelect.value = 'schedule-1992-07';
+
+  periodSelect.addEventListener('change', selectPeriod);
+  daySelect.addEventListener('change', selectPeriod);
+  timeInput.addEventListener('change', selectPeriod);
+
+  selectPeriod();
 }).catch(error => {
   status.textContent = error.message;
 });

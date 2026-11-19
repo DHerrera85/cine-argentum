@@ -3888,6 +3888,676 @@
           ]
         }
       ]
+    },
+    {
+      "id": "schedule-1999-04",
+      "year": 1999,
+      "month": 4,
+      "label": "Abril 1999",
+      "country": "Argentina",
+      "channels": [
+        {
+          "channel": "Telefe",
+          "entries": [
+            {
+              "type": "program",
+              "title": "Supermatch",
+              "days": [
+                "lunes",
+                "martes",
+                "mi?rcoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "11:00",
+              "end": "12:00",
+              "end_inferred": true
+            },
+            {
+              "type": "program",
+              "title": "Telefe Noticias",
+              "days": [
+                "lunes",
+                "martes",
+                "mi?rcoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "12:00",
+              "end": "13:00",
+              "end_inferred": true
+            },
+            {
+              "type": "program",
+              "title": "Muñeca Brava",
+              "days": [
+                "lunes",
+                "martes",
+                "mi?rcoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "13:00",
+              "end": "14:00",
+              "production_id": "T0035",
+              "end_inferred": true
+            },
+            {
+              "type": "program",
+              "title": "El Show del Chavo",
+              "days": [
+                "lunes",
+                "martes",
+                "mi?rcoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "14:00",
+              "end": "15:00",
+              "end_inferred": true
+            },
+            {
+              "type": "program",
+              "title": "Corazón Salvaje",
+              "days": [
+                "lunes",
+                "martes",
+                "mi?rcoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "15:00",
+              "end": "16:00",
+              "end_inferred": true
+            },
+            {
+              "type": "program",
+              "title": "La Niñera",
+              "days": [
+                "lunes",
+                "martes",
+                "mi?rcoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "16:00",
+              "end": "17:00",
+              "end_inferred": true
+            },
+            {
+              "type": "program",
+              "title": "Los Simpsons",
+              "days": [
+                "lunes",
+                "martes",
+                "mi?rcoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "17:00",
+              "end": "18:00",
+              "end_inferred": true
+            },
+            {
+              "type": "program",
+              "title": "Chiquititas",
+              "days": [
+                "lunes",
+                "martes",
+                "mi?rcoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "18:00",
+              "end": "19:00",
+              "production_id": "T0023",
+              "end_inferred": true
+            },
+            {
+              "type": "program",
+              "title": "Trillizos, Dijo la Partera!",
+              "days": [
+                "lunes",
+                "martes",
+                "mi?rcoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "19:00",
+              "end": "20:00",
+              "production_id": "T0036",
+              "end_inferred": true
+            },
+            {
+              "type": "program",
+              "title": "Susana Giménez",
+              "days": [
+                "lunes",
+                "martes",
+                "mi?rcoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "20:00",
+              "end": "21:00",
+              "end_inferred": true
+            },
+            {
+              "type": "program",
+              "title": "Videomatch",
+              "days": [
+                "lunes",
+                "martes",
+                "mi?rcoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "21:00",
+              "end": "22:00",
+              "end_inferred": true
+            },
+            {
+              "type": "program",
+              "title": "Verano del '98 - Segunda Temporada",
+              "days": [
+                "lunes",
+                "martes",
+                "mi?rcoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "22:00",
+              "end": "23:00",
+              "production_id": "T0042"
+            }
+          ]
+        },
+        {
+          "channel": "Canal 13",
+          "entries": [
+            {
+              "type": "program",
+              "title": "Los Tres Chiflados",
+              "days": [
+                "lunes",
+                "martes",
+                "mi?rcoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "12:00",
+              "end": "12:30",
+              "end_inferred": true
+            },
+            {
+              "type": "program",
+              "title": "Karlos Arguiñano en tu Cocina",
+              "days": [
+                "lunes",
+                "martes",
+                "mi?rcoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "12:30",
+              "end": "13:00",
+              "end_inferred": true
+            },
+            {
+              "type": "program",
+              "title": "El Noticiero de Santo",
+              "days": [
+                "lunes",
+                "martes",
+                "mi?rcoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "13:00",
+              "end": "14:00",
+              "end_inferred": true
+            },
+            {
+              "type": "program",
+              "title": "Antonella",
+              "days": [
+                "lunes",
+                "martes",
+                "mi?rcoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "14:00",
+              "end": "15:00",
+              "production_id": "T0095",
+              "end_inferred": true
+            },
+            {
+              "type": "program",
+              "title": "Como Vos y Yo",
+              "days": [
+                "lunes",
+                "martes",
+                "mi?rcoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "15:00",
+              "end": "16:00",
+              "production_id": "T0139",
+              "end_inferred": true
+            },
+            {
+              "type": "program",
+              "title": "Leonela",
+              "days": [
+                "lunes",
+                "martes",
+                "mi?rcoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "16:00",
+              "end": "17:00",
+              "end_inferred": true
+            },
+            {
+              "type": "program",
+              "title": "Amigovios (repetición)",
+              "days": [
+                "lunes",
+                "martes",
+                "mi?rcoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "17:00",
+              "end": "18:00",
+              "production_id": "T0118",
+              "end_inferred": true
+            },
+            {
+              "type": "program",
+              "title": "Caramelito y Vos",
+              "days": [
+                "lunes",
+                "martes",
+                "mi?rcoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "18:00",
+              "end": "19:00",
+              "end_inferred": true
+            },
+            {
+              "type": "program",
+              "title": "Causa Común",
+              "days": [
+                "lunes",
+                "martes",
+                "mi?rcoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "19:00",
+              "end": "20:00",
+              "end_inferred": true
+            },
+            {
+              "type": "program",
+              "title": "Telenoche",
+              "days": [
+                "lunes",
+                "martes",
+                "mi?rcoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "20:00",
+              "end": "21:00",
+              "end_inferred": true
+            },
+            {
+              "type": "program",
+              "title": "Gasoleros",
+              "days": [
+                "lunes",
+                "martes",
+                "mi?rcoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "21:00",
+              "end": "22:00",
+              "production_id": "T0135",
+              "end_inferred": true
+            },
+            {
+              "type": "program",
+              "title": "Campeones de la Vida",
+              "days": [
+                "lunes",
+                "martes",
+                "mi?rcoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "22:00",
+              "end": "23:00",
+              "production_id": "V148"
+            },
+            {
+              "type": "program",
+              "title": "Por el Nombre de Dios",
+              "days": [
+                "lunes"
+              ],
+              "start": "23:00",
+              "end": "00:00",
+              "production_id": "T0142"
+            }
+          ]
+        },
+        {
+          "channel": "Azul TV",
+          "entries": [
+            {
+              "type": "program",
+              "title": "Mi Ex",
+              "days": [
+                "lunes",
+                "martes",
+                "mi?rcoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "11:00",
+              "end": "12:00",
+              "production_id": "T0089",
+              "end_inferred": true
+            },
+            {
+              "type": "program",
+              "title": "Azul Noticias",
+              "days": [
+                "lunes",
+                "martes",
+                "mi?rcoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "12:00",
+              "end": "13:00",
+              "end_inferred": true
+            },
+            {
+              "type": "program",
+              "title": "El Precio Justo",
+              "days": [
+                "lunes",
+                "martes",
+                "mi?rcoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "13:00",
+              "end": "14:00",
+              "end_inferred": true
+            },
+            {
+              "type": "program",
+              "title": "Volver a Empezar",
+              "days": [
+                "lunes",
+                "martes",
+                "mi?rcoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "14:00",
+              "end": "15:00",
+              "end_inferred": true
+            },
+            {
+              "type": "program",
+              "title": "Dos Mujeres, un Camino",
+              "days": [
+                "lunes",
+                "martes",
+                "mi?rcoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "15:00",
+              "end": "16:00",
+              "end_inferred": true
+            },
+            {
+              "type": "program",
+              "title": "Claramente Lía",
+              "days": [
+                "lunes",
+                "martes",
+                "mi?rcoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "16:00",
+              "end": "17:00",
+              "end_inferred": true
+            },
+            {
+              "type": "program",
+              "title": "Angela",
+              "days": [
+                "lunes",
+                "martes",
+                "mi?rcoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "17:00",
+              "end": "18:00",
+              "end_inferred": true
+            },
+            {
+              "type": "program",
+              "title": "Baywatch",
+              "days": [
+                "lunes",
+                "martes",
+                "mi?rcoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "18:00",
+              "end": "19:00",
+              "end_inferred": true
+            },
+            {
+              "type": "program",
+              "title": "Mamitas",
+              "days": [
+                "lunes",
+                "martes",
+                "mi?rcoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "19:00",
+              "end": "20:00",
+              "production_id": "T0091",
+              "end_inferred": true
+            },
+            {
+              "type": "program",
+              "title": "Salvajes",
+              "days": [
+                "lunes",
+                "martes",
+                "mi?rcoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "20:00",
+              "end": "21:00",
+              "production_id": "T0090",
+              "end_inferred": true
+            },
+            {
+              "type": "program",
+              "title": "El Rey del Ganado",
+              "days": [
+                "lunes",
+                "martes",
+                "mi?rcoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "21:00",
+              "end": "22:00",
+              "end_inferred": true
+            },
+            {
+              "type": "program",
+              "title": "Memoria",
+              "days": [
+                "lunes"
+              ],
+              "start": "22:00",
+              "end": "00:00"
+            }
+          ]
+        },
+        {
+          "channel": "América",
+          "entries": [
+            {
+              "type": "program",
+              "title": "América Noticias",
+              "days": [
+                "lunes",
+                "martes",
+                "mi?rcoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "12:00",
+              "end": "14:00",
+              "end_inferred": true
+            },
+            {
+              "type": "program",
+              "title": "Rumores",
+              "days": [
+                "lunes",
+                "martes",
+                "mi?rcoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "14:00",
+              "end": "15:30",
+              "end_inferred": true
+            },
+            {
+              "type": "program",
+              "title": "Movete",
+              "days": [
+                "lunes",
+                "martes",
+                "mi?rcoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "15:30",
+              "end": "17:00",
+              "end_inferred": true
+            },
+            {
+              "type": "program",
+              "title": "Cosas de la Vida",
+              "days": [
+                "lunes",
+                "martes",
+                "mi?rcoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "17:00",
+              "end": "18:00",
+              "end_inferred": true
+            },
+            {
+              "type": "program",
+              "title": "Gente que Busca Gente",
+              "days": [
+                "lunes",
+                "martes",
+                "mi?rcoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "18:00",
+              "end": "19:00",
+              "end_inferred": true
+            },
+            {
+              "type": "program",
+              "title": "América Noticias",
+              "days": [
+                "lunes",
+                "martes",
+                "mi?rcoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "19:00",
+              "end": "20:00",
+              "end_inferred": true
+            },
+            {
+              "type": "program",
+              "title": "Margaritas",
+              "days": [
+                "lunes",
+                "martes",
+                "mi?rcoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "20:00",
+              "end": "21:00",
+              "production_id": "T0146",
+              "end_inferred": true
+            },
+            {
+              "type": "program",
+              "title": "América Noticias",
+              "days": [
+                "lunes",
+                "martes",
+                "mi?rcoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "21:00",
+              "end": "22:00",
+              "end_inferred": true
+            },
+            {
+              "type": "program",
+              "title": "Cine",
+              "days": [
+                "lunes"
+              ],
+              "start": "22:00",
+              "end": "00:00"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
