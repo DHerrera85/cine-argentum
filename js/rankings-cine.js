@@ -41,7 +41,7 @@
     if (new Set(years.map(y => String(y.year))).size !== years.length) {
       throw new Error("Hay anios duplicados");
     }
-    document.getElementById("ranking-snapshot").textContent = rankings.source_snapshot || "";
+    document.getElementById("ranking-snapshot").hidden = true;
     for (const year of years) {
       const option = node("option", "", String(year.year) + (Number(year.year) === 2026 ? " (parcial)" : ""));
       option.value = String(year.year);
