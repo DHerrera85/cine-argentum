@@ -240,3 +240,35 @@ body.index-cine-page .index-catalog-section--top10 .index-top10-text p {
     font-size: 40px;
   }
 }
+
+/* Top 10: tipografia y espacio para titulos completos */
+body.index-cine-page .index-catalog-section--top10 .index-top10-text {
+  padding: 10px 4px 12px;
+}
+
+body.index-cine-page .index-catalog-section--top10 .index-top10-text strong {
+  display: block;
+  min-height: 2.7em;
+  font-size: .95rem;
+  font-weight: 600;
+  line-height: 1.35;
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+
+body.index-cine-page .index-catalog-section--top10 .index-top10-text p {
+  margin: 5px 0 0;
+  font-size: .85rem;
+  line-height: 1.4;
+  white-space: normal;
+}
+
+@media (max-width: 768px) {
+  body.index-cine-page .index-catalog-section--top10 .index-top10-text strong {
+    font-size: .82rem;
+  }
+
+  body.index-cine-page .index-catalog-section--top10 .index-top10-text p {
+    font-size: .75rem;
+  }
+}
