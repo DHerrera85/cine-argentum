@@ -90,6 +90,18 @@
           }
           poster.append(node("span", "ranking-number", String(row.rank)));
           content.append(poster, node("h3", "", item ? item.title : row.title));
+          const release = (item && item.release_date) || row.embedded.release_date;
+          if (typeof release === "string" && release.trim() && release.trim() !== "-") {
+            const raw = release.trim();
+            const iso = raw.match(/^(\d{4})-(\d{2})-(\d{2})$/);
+            const local = raw.match(/^(\d{1,2})\/(\d{1,2})\/(\d{4})$/);
+            const dateText = iso
+              ? iso[3] + "/" + iso[2] + "/" + iso[1]
+              : local
+                ? local[1].padStart(2, "0") + "/" + local[2].padStart(2, "0") + "/" + local[3]
+                : raw;
+            content.append(node("p", "ranking-release-date", dateText));
+          }
           content.append(node("p", "ranking-viewers", format.format(row.viewers) + " espectadores"));
           if (row.overall !== null && row.overall !== undefined) {
             content.append(node("p", "", "Posicion general: " + row.overall));
