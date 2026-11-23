@@ -18775,7 +18775,8 @@
       "sinopsis": "Juliana es secuestrada por una red de trata, lo que desata la desesperada búsqueda de su familia. Mientras tanto, el antropólogo forense Bautista Amaya se involucra en la lucha contra la mafia, impulsado por el amor a Ana y la justicia.",
       "rating": "16",
       "productora": "Telefe Contenidos",
-      "tipo_emision": "Tira Diaria"
+      "tipo_emision": "Tira Diaria",
+      "horizontal_image": "images/horizontals-1024x576/2008-vidas-robadas-telefe-slide-1024x576-v2.webp"
     },
     {
       "id": "v14",
@@ -22859,7 +22860,7 @@
         "Celeste Cid"
       ],
       "orientation": "vertical",
-      "image": "images/verticals/enamorarte-poster-280x420.png",
+      "image": "images/verticals/2001-enamorarte-telefe-poster280x420-v2.png",
       "subtitle": "Juvenil",
       "horario": "19hs",
       "capitulos": 130,
@@ -22867,6 +22868,7 @@
       "sinopsis": "Santiago vuelve a Buenos Aires para enfrentar la fría relación con su padre y el hostigamiento de su ambiciosa madrastra. En paralelo, Celeste, una joven humilde que sueña con bailar, lucha por su futuro entre el amor y las desigualdades sociales.",
       "rating": "13,7",
       "productora": "Telefe Contenidos, Sebastián Ortega",
+      "horizontal_image": "images/horizontals-1024x576/2001-enamorarte-telefe-slide-1024x576.webp",
       "tipo_emision": "Tira Diaria",
       "remakes": [
         {
@@ -22875,6 +22877,12 @@
           "year": "2003",
           "image": "images/verticals/enamorate-2003-mexico.png"
         }
+      ],
+      "poster_gallery": [
+        "images/verticals/enamorarte-poster-280x420.png"
+      ],
+      "horizontal_gallery": [
+        "images/horizontals-1024x576/2001-enamorarte-telefe-slide-1024x576.webp"
       ]
     },
     {

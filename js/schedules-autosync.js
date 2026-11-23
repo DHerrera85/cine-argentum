@@ -100,11 +100,15 @@
 
 
     function getEntryImage(entry) {
-        if (
-            !entry ||
-            entry.type !== 'production' ||
-            !entry.production_id
-        ) {
+        if (!entry) {
+            return '';
+        }
+
+        if (entry.image) {
+            return entry.image;
+        }
+
+        if (!entry.production_id) {
             return '';
         }
 
@@ -140,8 +144,8 @@
         };
 
         return (
-            scheduleThumbnails[production.id] ||
             production.horizontal_image ||
+            scheduleThumbnails[production.id] ||
             production.image ||
             ''
         );

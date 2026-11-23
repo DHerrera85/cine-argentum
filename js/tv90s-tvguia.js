@@ -181,6 +181,7 @@
   };
 
   let productionTitles = new Map();
+  let productionImages = new Map();
 
   function minutes(value) {
     const parts = value.split(':').map(Number);
@@ -246,9 +247,14 @@
         ? 'images/logos/' + logoName : '';
 
       const file = entry && thumbs[entry.production_id];
-      if (file) {
+      const directImage = entry && entry.image;
+      const catalogImage = entry && productionImages.get(entry.production_id);
+      const imagePath = directImage || catalogImage ||
+        (file ? 'images/schedules-thumbnails/' + file : '');
+
+      if (imagePath) {
         const img = el('img');
-        img.src = 'images/schedules-thumbnails/' + file;
+        img.src = imagePath;
         img.alt = titleFor(entry);
         img.loading = 'lazy';
         picture.append(img);
@@ -347,7 +353,14 @@
     productionTitles = new Map(
       productionData.items.map(item => [item.id, item.title])
     );
-    const periods = scheduleData.schedules;
+    productionImages = new Map(
+      productionData.items
+        .filter(item => item.horizontal_image)
+        .map(item => [item.id, item.horizontal_image])
+    );
+    const periods = scheduleData.schedules.filter(period =>
+    period.year >= 1990 && period.year <= 1999
+  );
     periodSelect.replaceChildren();
 
     periods.forEach(period => {

@@ -9,6 +9,7 @@
   <!-- CSS -->
   <link rel="stylesheet" href="css/style.css?v=2.0">
   <link rel="stylesheet" href="css/tiras-2000-catalog.css?v=1.9">
+  <link rel="stylesheet" href="css/tv2000-tvguia.css?v=3">
   <link rel="stylesheet" href="css/streaming-catalog.css?v=1.16">
   <link rel="stylesheet" href="css/lightslider.css?v=2.0">
 
@@ -292,6 +293,40 @@
         </ul>
       </section>
 
+      <!-- TV GUIA HISTORICA 2000-2009 -->
+      <section id="tv2000-tv-guia" class="tiras-2000-section tv90s-genre-showcase">
+        <div class="tvguia-header">
+          <h2 class="latest-heading">TV GUÍA</h2>
+          <div class="tvguia-controls">
+            <select id="tv2000-guia-period" aria-label="Período histórico"></select>
+            <label class="tvguia-control-label" for="tv2000-guia-day">Día</label>
+            <select id="tv2000-guia-day"></select>
+            <label class="tvguia-control-label" for="tv2000-guia-time">Hora</label>
+            <div class="tvguia-time-navigation">
+              <button type="button" id="tv2000-guia-prev-hour" aria-label="Retroceder una hora">&#10094;</button>
+              <input id="tv2000-guia-time" type="time" step="1800">
+              <button type="button" id="tv2000-guia-next-hour" aria-label="Avanzar una hora">&#10095;</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="tvguia-carousel-shell">
+          <button type="button" id="tv2000-guia-scroll-prev"
+            class="tvguia-scroll-arrow tvguia-scroll-prev"
+            aria-label="Canales anteriores">&#10094;</button>
+          <div id="tv2000-guia-list" class="tvguia-list"
+            aria-label="Programas en competencia"></div>
+          <button type="button" id="tv2000-guia-scroll-next"
+            class="tvguia-scroll-arrow tvguia-scroll-next"
+            aria-label="Canales siguientes">&#10095;</button>
+        </div>
+
+        <p id="tv2000-guia-status" role="status"></p>
+        <a class="tvguia-more" href="schedules.html">
+          Ver programación histórica completa
+        </a>
+      </section>
+
       <!-- Comedias Estelares 2005-09 (V) -->
       <section id="tiras-2000-comedias-estelares-2005-09" class="tiras-2000-section tiras-2000-vertical-showcase">
 
@@ -515,6 +550,7 @@
   <script src="js/lightslider.js"></script>
   <script src="js/script.js?v=20260226-1"></script>
   <script src="js/tiras-2000-autosync.js?v=20261011-4"></script>
+  <script src="js/tv2000-tvguia.js?v=2"></script>
 </body>
 
 </html>

@@ -372,8 +372,9 @@
   }
 
   #tv90s-tv-guia #tvguia-period {
-    width: 58px;
-    min-width: 0;
+    width: 95px;
+    min-width: 95px;
+    box-sizing: border-box;
     padding: 5px 2px;
     font-size: 11px;
   }
@@ -554,11 +555,48 @@
 }
 
 /* TV GUÍA: logo pequeño junto al programa */
-#tv90s-tv-guia img[src*="Canal_9_Argentina_1995-1998.webp"]:not(.tvguia-fallback img) {
+#tv90s-tv-guia .tvguia-info > .tvguia-logo[src*="Canal_9_Argentina_1995-1998.webp"] {
     width: 36px !important;
     height: 36px !important;
     max-width: 36px !important;
     max-height: 36px !important;
     object-fit: contain;
     flex-shrink: 0;
+}
+
+/* tvguia-canal9-mobile-logo-v1 */
+@media (max-width: 767px) {
+  #tv90s-tv-guia .tvguia-fallback img[src$="canal9-1990-120x120.png"] {
+    width: 42px;
+    height: 42px;
+    max-width: 42px;
+    max-height: 42px;
+    object-fit: contain;
+  }
+}
+
+
+/* tvguia-canal9-1995-mobile-fix */
+@media (max-width: 767px) {
+  #tv90s-tv-guia .tvguia-fallback img[src*="Canal_9_Argentina_1995-1998.webp"] {
+    width: 42px !important;
+    height: 42px !important;
+    max-width: 42px !important;
+    max-height: 42px !important;
+    object-fit: contain;
+  }
+
+  #tv90s-tv-guia .tvguia-info > .tvguia-logo[src*="Canal_9_Argentina_1995-1998.webp"] {
+    width: 9px !important;
+    height: 9px !important;
+    max-width: 9px !important;
+    max-height: 9px !important;
+    flex-shrink: 0;
+    object-fit: contain;
+  }
+
+  #tv90s-tv-guia .tvguia-info > div {
+    flex: 1 1 0;
+    min-width: 0;
+  }
 }
