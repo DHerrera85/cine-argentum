@@ -5160,6 +5160,722 @@
       ]
     },
     {
+      "id": "schedule-2001-10",
+      "year": 2001,
+      "month": 10,
+      "label": "Octubre 2001",
+      "country": "Argentina",
+      "channels": [
+        {
+          "channel": "Telefe",
+          "entries": [
+            {
+              "type": "program",
+              "title": "Gran Hermano",
+              "days": [
+                "lunes",
+                "martes",
+                "miércoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "11:30",
+              "end": "12:00"
+            },
+            {
+              "type": "program",
+              "title": "Telefe Noticias",
+              "days": [
+                "lunes",
+                "martes",
+                "miércoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "12:00",
+              "end": "13:00"
+            },
+            {
+              "type": "program",
+              "title": "Yago, pasión morena",
+              "days": [
+                "lunes",
+                "martes",
+                "miércoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "13:00",
+              "end": "14:00",
+              "production_id": "v63"
+            },
+            {
+              "type": "program",
+              "title": "Maru a la tarde",
+              "days": [
+                "lunes",
+                "martes",
+                "miércoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "14:00",
+              "end": "16:00"
+            },
+            {
+              "type": "program",
+              "title": "Terra Nostra",
+              "days": [
+                "lunes",
+                "martes",
+                "miércoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "16:00",
+              "end": "17:00"
+            },
+            {
+              "type": "program",
+              "title": "La Niñera",
+              "days": [
+                "lunes",
+                "martes",
+                "miércoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "17:00",
+              "end": "17:30"
+            },
+            {
+              "type": "program",
+              "title": "Megatrix",
+              "days": [
+                "lunes",
+                "martes",
+                "miércoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "17:30",
+              "end": "18:00",
+              "image": "images/horizontals-1024x576/2001-megatrix-telefe-antena3-non-scripted-slide1024x576.webp"
+            },
+            {
+              "type": "program",
+              "title": "Chiquititas, la historia",
+              "days": [
+                "lunes",
+                "martes",
+                "miércoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "18:00",
+              "end": "18:30",
+              "production_id": "T0019"
+            },
+            {
+              "type": "program",
+              "title": "Enamorarte",
+              "days": [
+                "lunes",
+                "martes",
+                "miércoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "18:30",
+              "end": "19:30",
+              "production_id": "V162"
+            },
+            {
+              "type": "program",
+              "title": "Provócame",
+              "days": [
+                "lunes",
+                "martes",
+                "miércoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "19:30",
+              "end": "20:30",
+              "production_id": "v64"
+            },
+            {
+              "type": "program",
+              "title": "Gran Hermano",
+              "days": [
+                "lunes",
+                "martes",
+                "miércoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "20:30",
+              "end": "21:00"
+            },
+            {
+              "type": "program",
+              "title": "Videomatch",
+              "days": [
+                "lunes",
+                "jueves"
+              ],
+              "start": "21:00",
+              "end": "23:00"
+            },
+            {
+              "type": "program",
+              "title": "Susana Giménez",
+              "days": [
+                "martes"
+              ],
+              "start": "21:00",
+              "end": "23:00"
+            },
+            {
+              "type": "program",
+              "title": "Poné a Francella",
+              "days": [
+                "miércoles"
+              ],
+              "start": "21:00",
+              "end": "22:00"
+            },
+            {
+              "type": "program",
+              "title": "El Hacker",
+              "days": [
+                "miércoles"
+              ],
+              "start": "22:00",
+              "end": "23:00",
+              "production_id": "V246"
+            },
+            {
+              "type": "program",
+              "title": "Gran Hermano, el debate",
+              "days": [
+                "lunes",
+                "martes",
+                "miércoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "23:00",
+              "end": "00:00"
+            }
+          ]
+        },
+        {
+          "channel": "Canal 13",
+          "entries": [
+            {
+              "type": "program",
+              "title": "Brigada A",
+              "days": [
+                "lunes",
+                "martes",
+                "miércoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "11:30",
+              "end": "12:30"
+            },
+            {
+              "type": "program",
+              "title": "Rodolfo Ranni en su salsa",
+              "days": [
+                "lunes",
+                "martes",
+                "miércoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "12:30",
+              "end": "13:00"
+            },
+            {
+              "type": "program",
+              "title": "El noticiero de Santo",
+              "days": [
+                "lunes",
+                "martes",
+                "miércoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "13:00",
+              "end": "14:00"
+            },
+            {
+              "type": "program",
+              "title": "El buscador",
+              "days": [
+                "lunes",
+                "martes",
+                "miércoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "14:00",
+              "end": "14:30"
+            },
+            {
+              "type": "program",
+              "title": "Vos elegís",
+              "days": [
+                "lunes",
+                "martes",
+                "miércoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "14:30",
+              "end": "15:00"
+            },
+            {
+              "type": "program",
+              "title": "¿A dónde va Soledad?",
+              "days": [
+                "lunes",
+                "martes",
+                "miércoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "15:00",
+              "end": "16:00"
+            },
+            {
+              "type": "program",
+              "title": "Tres mujeres",
+              "days": [
+                "lunes",
+                "martes",
+                "miércoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "16:00",
+              "end": "17:00"
+            },
+            {
+              "type": "program",
+              "title": "Telepasillo",
+              "days": [
+                "lunes",
+                "martes",
+                "miércoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "17:00",
+              "end": "18:00"
+            },
+            {
+              "type": "program",
+              "title": "Siempre Listos",
+              "days": [
+                "lunes",
+                "martes",
+                "miércoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "18:00",
+              "end": "20:00"
+            },
+            {
+              "type": "program",
+              "title": "Telenoche",
+              "days": [
+                "lunes",
+                "martes",
+                "miércoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "20:00",
+              "end": "21:00"
+            },
+            {
+              "type": "program",
+              "title": "El Sodero de mi vida",
+              "days": [
+                "lunes",
+                "martes",
+                "miércoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "21:00",
+              "end": "22:00",
+              "production_id": "v92"
+            },
+            {
+              "type": "program",
+              "title": "22, el loco",
+              "days": [
+                "lunes",
+                "martes",
+                "miércoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "22:00",
+              "end": "23:00",
+              "production_id": "v35"
+            },
+            {
+              "type": "program",
+              "title": "Expedición Robinson",
+              "days": [
+                "lunes",
+                "jueves"
+              ],
+              "start": "23:00",
+              "end": "00:00"
+            },
+            {
+              "type": "program",
+              "title": "Culpables",
+              "days": [
+                "martes"
+              ],
+              "start": "23:00",
+              "end": "00:00",
+              "production_id": "V258"
+            },
+            {
+              "type": "program",
+              "title": "¿Quién quiere ser millonario?",
+              "days": [
+                "miércoles",
+                "viernes"
+              ],
+              "start": "23:00",
+              "end": "00:00"
+            }
+          ]
+        },
+        {
+          "channel": "Azul TV",
+          "entries": [
+            {
+              "type": "program",
+              "title": "Azul Toon",
+              "days": [
+                "lunes",
+                "martes",
+                "miércoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "10:30",
+              "end": "11:30"
+            },
+            {
+              "type": "program",
+              "title": "Siempre María",
+              "days": [
+                "lunes",
+                "martes",
+                "miércoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "11:30",
+              "end": "12:00"
+            },
+            {
+              "type": "program",
+              "title": "Azul Noticias",
+              "days": [
+                "lunes",
+                "martes",
+                "miércoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "12:00",
+              "end": "13:00"
+            },
+            {
+              "type": "program",
+              "title": "Rumores",
+              "days": [
+                "lunes",
+                "martes",
+                "miércoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "13:00",
+              "end": "15:00"
+            },
+            {
+              "type": "program",
+              "title": "Nominados",
+              "days": [
+                "lunes",
+                "martes",
+                "miércoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "15:00",
+              "end": "16:00"
+            },
+            {
+              "type": "program",
+              "title": "Venite con Georgina",
+              "days": [
+                "lunes",
+                "martes",
+                "miércoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "16:00",
+              "end": "18:00"
+            },
+            {
+              "type": "program",
+              "title": "Hablemos con Lía",
+              "days": [
+                "lunes",
+                "martes",
+                "miércoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "18:00",
+              "end": "19:00"
+            },
+            {
+              "type": "program",
+              "title": "Azul Noticias",
+              "days": [
+                "lunes",
+                "martes",
+                "miércoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "19:00",
+              "end": "20:30"
+            },
+            {
+              "type": "program",
+              "title": "Memoria",
+              "days": [
+                "lunes",
+                "martes",
+                "miércoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "20:30",
+              "end": "21:00"
+            },
+            {
+              "type": "program",
+              "title": "Popstars",
+              "days": [
+                "lunes",
+                "martes",
+                "miércoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "21:00",
+              "end": "22:30",
+              "image": "images/horizontals-1024x576/2001-popstars-azultv-disney-channel-non-scripted-horizontal1024x576.webp"
+            },
+            {
+              "type": "program",
+              "title": "Reality, reality",
+              "days": [
+                "lunes",
+                "martes",
+                "miércoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "22:30",
+              "end": "23:30"
+            },
+            {
+              "type": "program",
+              "title": "Azul Noticias",
+              "days": [
+                "lunes",
+                "martes",
+                "miércoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "23:30",
+              "end": "00:00"
+            }
+          ]
+        },
+        {
+          "channel": "América",
+          "entries": [
+            {
+              "type": "program",
+              "title": "Impacto a las 12",
+              "days": [
+                "lunes",
+                "martes",
+                "miércoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "12:00",
+              "end": "13:00"
+            },
+            {
+              "type": "program",
+              "title": "El Bar II",
+              "days": [
+                "lunes",
+                "martes",
+                "miércoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "13:30",
+              "end": "14:00"
+            },
+            {
+              "type": "program",
+              "title": "Intrusos en el espectáculo",
+              "days": [
+                "lunes",
+                "martes",
+                "miércoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "14:00",
+              "end": "16:00"
+            },
+            {
+              "type": "program",
+              "title": "Entre Moria y vos",
+              "days": [
+                "lunes",
+                "martes",
+                "miércoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "16:00",
+              "end": "17:00"
+            },
+            {
+              "type": "program",
+              "title": "El Bar II",
+              "days": [
+                "lunes",
+                "martes",
+                "miércoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "17:00",
+              "end": "17:30"
+            },
+            {
+              "type": "program",
+              "title": "Movete",
+              "days": [
+                "lunes",
+                "martes",
+                "miércoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "17:30",
+              "end": "19:00"
+            },
+            {
+              "type": "program",
+              "title": "América Noticias",
+              "days": [
+                "lunes",
+                "martes",
+                "miércoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "19:00",
+              "end": "20:00"
+            },
+            {
+              "type": "program",
+              "title": "Indomables",
+              "days": [
+                "lunes",
+                "martes",
+                "miércoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "20:00",
+              "end": "21:00"
+            },
+            {
+              "type": "program",
+              "title": "Detrás de las noticias",
+              "days": [
+                "lunes",
+                "martes",
+                "miércoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "21:00",
+              "end": "22:00"
+            },
+            {
+              "type": "program",
+              "title": "La biblia y el calefón",
+              "days": [
+                "lunes",
+                "martes",
+                "miércoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "22:00",
+              "end": "23:00"
+            },
+            {
+              "type": "program",
+              "title": "El Bar II",
+              "days": [
+                "lunes",
+                "martes",
+                "miércoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "23:00",
+              "end": "00:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "schedule-2008-10",
       "year": 2008,
       "month": 10,

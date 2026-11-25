@@ -114,6 +114,13 @@
   ];
 
   const logosByPeriod = {
+    'schedule-2001-10': {
+      'Telefe': 'Telefe2001_2.webp',
+      'Canal 13': 'LogoC13_2000.webp',
+      'Azul TV': 'Azul_Televisi%3Fn_2001.webp',
+      'Am\u00e9rica': 'Am%3Frica_Canal_2_1999.webp',
+      'Canal 7': 'Logotipo_de_Canal_7_Argentina_(2000-2002).png'
+    },
     'schedule-2008-10': {
       'Telefe': 'telefe-logo-2000s.png',
       'Canal 13': 'canal-13-logo-120x120.png',
@@ -251,7 +258,7 @@
       const name = channelName(channel.channel);
       const logoName = periodLogos[name];
       const logoPath = logoName
-        ? 'images/logos/' + logoName : '';
+        ? 'images/logos/' + encodeURIComponent(logoName) : '';
 
       const file = entry && thumbs[entry.production_id];
       const directImage = entry && entry.image;
