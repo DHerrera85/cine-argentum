@@ -823,11 +823,10 @@
                         clearInterval(interval);
                     });
                     $slide.on('touchmove', function (e) {
-                        if (w < elSize) {
-                            if (w !== 0) {
-                                return false;
-                            }
+                        if (w < elSize && w !== 0) {
+                            return;
                         }
+
                         var orig = e.originalEvent;
                         endCoords = orig.targetTouches[0];
                         var xMovement = Math.abs(endCoords.pageX - startCoords.pageX);
@@ -848,7 +847,7 @@
                     $slide.on('touchend', function () {
                         if (w < elSize) {
                             if (w !== 0) {
-                                return false;
+                                return;
                             }
                         }
                         var distance;
