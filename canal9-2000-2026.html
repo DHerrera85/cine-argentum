@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Canal 9 2000–2026 | Argentina Content</title>
+  <title>Canal 9 2000–Actualidad | Argentina Content</title>
 
   <!-- CSS -->
   <link rel="stylesheet" href="css/style.css?v=2.0" />
@@ -126,7 +126,7 @@
     }
 
     /* ==================================================
-   CANAL 9 2000-2026
+   CANAL 9 2000-ACTUALIDAD
 ================================================== */
 
     .canal9-2000-2026-page {
@@ -702,6 +702,47 @@
         font-size: 40px;
       }
     }
+
+    #canal9-proximamente {
+      position: relative;
+      width: 100%;
+      margin: 0;
+      padding: 24px 32px;
+      box-sizing: border-box;
+    }
+
+    #canal9-proximamente .cartelera-production-heading {
+      margin: 0 0 18px;
+    }
+
+    #canal9-proximamente .slider-v {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    #canal9-proximamente .latest-box {
+      width: 100%;
+      max-width: none;
+      min-width: 0;
+      margin: 0;
+    }
+
+    @media (max-width: 1100px) {
+      #canal9-proximamente {
+        padding: 22px 20px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      #canal9-proximamente {
+        padding: 20px 16px;
+      }
+
+      #canal9-proximamente .cartelera-production-heading {
+        margin-bottom: 14px;
+      }
+    }
   </style>
 </head>
 
@@ -739,9 +780,9 @@
       </ul>
     </nav>
 
-    <!-- CANAL 9 2000–2026 -->
+    <!-- CANAL 9 2000–Actualidad -->
     <main class="canal9-2000-2026-page channel-decade-page" data-channel="Canal 9" data-start-year="2000"
-      data-end-year="2026">
+      data-end-year="dynamic">
       <!-- Encabezado histórico -->
       <section class="page-intro">
 
@@ -758,11 +799,11 @@
           <div class="channel-heading-text">
 
             <h1 class="showcase-heading">
-              Canal 9 2000–2026
+              Canal 9 2000–Actualidad
             </h1>
 
             <p class="channel-heading-description">
-              Ficciones de Canal 9 entre 2000 y 2026.
+              Ficciones de Canal 9 entre 2000 y la actualidad.
             </p>
 
           </div>
@@ -782,19 +823,35 @@
             </span>
           </a>
 
-          <!-- Canal 9 2000–2026 -->
+          <!-- Canal 9 2000–Actualidad -->
           <a href="canal9-2000-2026.html" class="channel-decade-card active" aria-current="page"
-            title="Ficciones de Canal 9 de 2000 a 2026">
+            title="Ficciones de Canal 9 de 2000 a la actualidad">
             <span class="channel-decade-card-logo">
-              <img src="images/logos/canal-9-logo-120x120.png" alt="Canal 9 2000–2026">
+              <img src="images/logos/canal-9-logo-120x120.png" alt="Canal 9 2000–Actualidad">
             </span>
 
             <span class="channel-decade-card-label">
-              Canal 9 2000–2026
+              Canal 9 2000–Actualidad
             </span>
           </a>
 
         </div>
+
+      </section>
+
+      <!-- Próximamente en Canal 9 -->
+      <section id="canal9-proximamente" class="cartelera-2026-section cartelera-channel-upcoming"
+        data-cartelera-mode="upcoming" data-cartelera-content="channel" data-cartelera-channel="Canal 9"
+        data-years="dynamic" hidden>
+
+        <div class="cartelera-production-heading">
+          <h2 class="latest-heading">PRÓXIMAMENTE</h2>
+          <div class="cartelera-count" aria-live="polite">0 ficciones</div>
+        </div>
+
+        <ul class="slider-v cs-hidden" data-cartelera-list="all">
+          <li class="cartelera-placeholder"></li>
+        </ul>
 
       </section>
 
@@ -815,11 +872,11 @@
       <section id="telefe-top-rated" class="telefe-section">
 
         <h2 class="showcase-heading">
-          Las 10 producciones de Canal 9 con más rating (2000–2026)
+          Las 10 producciones de Canal 9 con más rating (2000–Actualidad)
         </h2>
 
         <ul id="channel-top-rated-slider" class="slider-h telefe-top10 cs-hidden" data-skip-auto="true"
-          aria-label="Las 10 producciones de Canal 9 con más rating entre 2000 y 2026">
+          aria-label="Las 10 producciones de Canal 9 con más rating entre 2000 y la actualidad">
         </ul>
 
       </section>
@@ -1084,7 +1141,8 @@
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   <script src="js/lightslider.js"></script>
   <script src="js/script.js?v=20260226-1"></script>
-  <script src="js/channel-decade-autosync.js?v=20261125-1"></script>
+  <script src="js/cartelera-2026.js?v=20261125-1"></script>
+  <script src="js/channel-decade-autosync.js?v=20261125-2"></script>
 </body>
 
 </html>

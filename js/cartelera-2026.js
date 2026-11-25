@@ -111,6 +111,10 @@
 
   function getSectionYears(section) {
     var yearsAttr = section.getAttribute('data-years');
+    if (normalizeText(yearsAttr) === 'dynamic') {
+      return [];
+    }
+
     if (yearsAttr) {
       return String(yearsAttr)
         .split(',')
@@ -145,6 +149,124 @@
       .toLowerCase()
       .trim();
   }
+
+  function normalizeYear(value) {
+    if (
+      value === undefined ||
+      value === null ||
+      String(value).trim() === ''
+    ) {
+      return null;
+    }
+
+    var year = Number(value);
+    return Number.isInteger(year) && year > 0
+      ? year
+      : null;
+  }
+
+  function parseTimelineDate(value) {
+    var text = String(value == null ? '' : value).trim();
+
+    if (/^\d{4}-\d{2}-\d{2}$/.test(text)) {
+      var parts = text.split('-');
+      var date = new Date(
+        Number(parts[0]),
+        Number(parts[1]) - 1,
+        Number(parts[2])
+      );
+
+      return Number.isNaN(date.getTime())
+        ? null
+        : date;
+    }
+
+    return parseReleaseDate(text);
+  }
+
+  function isNoEmitidos(item) {
+    var statusValues = [
+      item && item.status,
+      item && item.production_status,
+      item && item.tipo_emision
+    ];
+
+    if (statusValues.some(function (value) {
+      return normalizeText(value).replace(/-/g, ' ') === 'no emitidos';
+    })) {
+      return true;
+    }
+
+    return Object.keys(item || {}).some(function (key) {
+      if (!/_rows$/.test(key)) return false;
+
+      var rows = Array.isArray(item[key])
+        ? item[key]
+        : [item[key]];
+
+      return rows.some(function (row) {
+        return normalizeText(row).replace(/-/g, ' ') === 'no emitidos';
+      });
+    });
+  }
+
+  function isUpcomingProduction(item, yearValue) {
+    if (!item || isNoEmitidos(item)) {
+      return false;
+    }
+
+    var releaseDate = parseTimelineDate(
+      item.fecha_estreno ||
+      item.release_date ||
+      item.premiere_date
+    );
+
+    if (releaseDate) {
+      var today = new Date();
+      today.setHours(0, 0, 0, 0);
+      return releaseDate.getTime() > today.getTime();
+    }
+
+    var year = normalizeYear(
+      yearValue !== undefined ? yearValue : item.year
+    );
+
+    if (year !== null && year > new Date().getFullYear()) {
+      return true;
+    }
+
+    var markers = [
+      'proximamente',
+      'proximo estreno',
+      'proxima a estrenarse',
+      'estreno pendiente',
+      'por estrenarse',
+      'en produccion',
+      'preproduccion',
+      'en preproduccion',
+      'en rodaje',
+      'rodaje finalizado',
+      'en desarrollo',
+      'postproduccion'
+    ];
+
+    return [
+      item.status,
+      item.production_status,
+      item.subtitle
+    ].some(function (value) {
+      var text = normalizeText(value);
+
+      return markers.some(function (marker) {
+        return text.indexOf(marker) !== -1;
+      });
+    });
+  }
+
+  window.CineArgentumTimeline =
+    window.CineArgentumTimeline || {};
+  window.CineArgentumTimeline.isUpcomingProduction =
+    isUpcomingProduction;
 
   function isStreamingProduction(item) {
     var streamingPlatforms = [
@@ -593,9 +715,6 @@
   }
 
   function mountSection(section, items) {
-    var years = getSectionYears(section);
-    var primaryYear = years[0] || '2026';
-
     var mode = String(
       section.getAttribute('data-cartelera-mode') || 'released'
     ).toLowerCase();
@@ -603,6 +722,19 @@
     var contentMode = String(
       section.getAttribute('data-cartelera-content') || 'all'
     ).toLowerCase();
+
+    var years = getSectionYears(section);
+    var dynamicChannelUpcoming =
+      mode === 'upcoming' &&
+      contentMode === 'channel' &&
+      normalizeText(section.getAttribute('data-years')) === 'dynamic';
+    var primaryYear =
+      years[0] ||
+      (
+        dynamicChannelUpcoming
+          ? String(new Date().getFullYear())
+          : '2026'
+      );
 
     var listEl = section.querySelector(
       'ul[data-cartelera-list="all"]'
@@ -619,6 +751,18 @@
       .filter(function (item) {
         if (!item || !item.id) {
           return false;
+        }
+
+        if (dynamicChannelUpcoming) {
+          var dynamicType = normalizeType(item.type, item);
+          var dynamicChannel =
+            section.getAttribute('data-cartelera-channel') || '';
+
+          return (
+            dynamicType === 'serie' &&
+            belongsToCarteleraChannel(item, dynamicChannel) &&
+            isUpcomingProduction(item)
+          );
         }
 
         var best = getBestReleaseForYears(item, years);
@@ -708,6 +852,25 @@
           item,
           years
         );
+
+        if (dynamicChannelUpcoming && !best) {
+          var timelineDate = parseTimelineDate(
+            item.fecha_estreno ||
+            item.release_date ||
+            item.premiere_date
+          );
+
+          if (timelineDate) {
+            best = {
+              label: String(
+                item.fecha_estreno ||
+                item.release_date ||
+                item.premiere_date
+              ),
+              date: timelineDate
+            };
+          }
+        }
 
         var releaseDateValue =
           best ? best.label : '';
@@ -853,6 +1016,9 @@
         });
 
     section._carteleraRows = rows;
+    if (dynamicChannelUpcoming) {
+      section.hidden = rows.length === 0;
+    }
 
     var defaultType = 'all';
 

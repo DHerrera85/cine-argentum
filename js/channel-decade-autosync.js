@@ -15,6 +15,21 @@
       '.channel-decade-page'
     );
 
+  var CURRENT_YEAR =
+    new Date().getFullYear();
+
+  var configuredEndYear =
+    pageElement
+      ? String(
+        pageElement.getAttribute(
+          'data-end-year'
+        ) || ''
+      ).trim().toLowerCase()
+      : '';
+
+  var DYNAMIC_END_YEAR =
+    configuredEndYear === 'dynamic';
+
   var CHANNEL_NAME =
     pageElement
       ? String(
@@ -35,10 +50,10 @@
 
   var END_YEAR =
     pageElement
-      ? Number(
-        pageElement.getAttribute(
-          'data-end-year'
-        )
+      ? (
+        DYNAMIC_END_YEAR
+          ? CURRENT_YEAR
+          : Number(configuredEndYear)
       )
       : null;
 
@@ -235,15 +250,43 @@
 
   function getYear(item) {
     var broadcast = getConfiguredAirBroadcast(item);
-    var year = Number(
-      broadcast && broadcast.year
-        ? broadcast.year
-        : item && item.year
-    );
+    var rawYear = broadcast && broadcast.year;
 
-    return Number.isFinite(year)
+    if (
+      rawYear === undefined ||
+      rawYear === null ||
+      String(rawYear).trim() === ''
+    ) {
+      rawYear = item && item.year;
+    }
+
+    if (
+      rawYear === undefined ||
+      rawYear === null ||
+      String(rawYear).trim() === ''
+    ) {
+      return null;
+    }
+
+    var year = Number(rawYear);
+
+    return Number.isInteger(year) && year > 0
       ? year
       : null;
+  }
+
+
+  function isUpcomingProduction(item) {
+    var timeline = window.CineArgentumTimeline;
+
+    return Boolean(
+      timeline &&
+      typeof timeline.isUpcomingProduction === 'function' &&
+      timeline.isUpcomingProduction(
+        item,
+        getYear(item)
+      )
+    );
   }
 
 
@@ -532,6 +575,7 @@
       year >= START_YEAR &&
       year <= END_YEAR &&
       belongsToConfiguredChannel(item) &&
+      (!DYNAMIC_END_YEAR || !isUpcomingProduction(item)) &&
       (!emittedOnly || !inProduction)
     );
   }
@@ -1015,9 +1059,10 @@
           item.id &&
           year !== null &&
           year >= 2020 &&
-          year <= 2026 &&
+          year <= CURRENT_YEAR &&
           hasRealPosterImage(item) &&
           isTelefeProduction &&
+          !isUpcomingProduction(item) &&
           !isContarFiction(item) &&
           !isAcquisition(item)
         );
@@ -1889,7 +1934,11 @@
           ' emitidas por ' + CHANNEL_NAME + ' entre ' +
           START_YEAR +
           ' y ' +
-          END_YEAR +
+          (
+            DYNAMIC_END_YEAR
+              ? 'la actualidad (' + CURRENT_YEAR + ')'
+              : END_YEAR
+          ) +
           '.';
 
       } else {

@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Telefe 2010–2026 | Argentina Content</title>
+  <title>Telefe 2010–Actualidad | Argentina Content</title>
 
   <!-- CSS -->
   <link rel="stylesheet" href="css/style.css?v=2.0" />
@@ -326,7 +326,7 @@
     }
 
     /* ==================================================
-   PRODUCCIONES TELEFE Y TELEFE STUDIOS 2020–2026
+   PRODUCCIONES TELEFE Y TELEFE STUDIOS 2020–ACTUALIDAD
 ================================================== */
 
     #telefe-recent-productions .slider-v {
@@ -840,6 +840,47 @@
         font-size: 40px;
       }
     }
+
+    #telefe-proximamente {
+      position: relative;
+      width: 100%;
+      margin: 0;
+      padding: 24px 32px;
+      box-sizing: border-box;
+    }
+
+    #telefe-proximamente .cartelera-production-heading {
+      margin: 0 0 18px;
+    }
+
+    #telefe-proximamente .slider-v {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    #telefe-proximamente .latest-box {
+      width: 100%;
+      max-width: none;
+      min-width: 0;
+      margin: 0;
+    }
+
+    @media (max-width: 1100px) {
+      #telefe-proximamente {
+        padding: 22px 20px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      #telefe-proximamente {
+        padding: 20px 16px;
+      }
+
+      #telefe-proximamente .cartelera-production-heading {
+        margin-bottom: 14px;
+      }
+    }
   </style>
 </head>
 
@@ -877,8 +918,9 @@
       </ul>
     </nav>
 
-    <!-- TELEFE 2010–2026 -->
-    <main class="telefe-10s-page channel-decade-page" data-channel="Telefe" data-start-year="2010" data-end-year="2026">
+    <!-- TELEFE 2010–Actualidad -->
+    <main class="telefe-10s-page channel-decade-page" data-channel="Telefe" data-start-year="2010"
+      data-end-year="dynamic">
       <!-- Encabezado histórico -->
       <section class="page-intro">
 
@@ -895,11 +937,11 @@
           <div class="channel-heading-text">
 
             <h1 class="showcase-heading">
-              Telefe 2010–2026
+              Telefe 2010–Actualidad
             </h1>
 
             <p class="channel-heading-description">
-              Ficciones de Telefe entre 2010 y 2026.
+              Ficciones de Telefe entre 2010 y la actualidad.
             </p>
 
           </div>
@@ -934,16 +976,16 @@
 
           </a>
 
-          <!-- Telefe 2010–2026 -->
+          <!-- Telefe 2010–Actualidad -->
           <a href="telefe-10s.html" class="channel-decade-card active" aria-current="page"
-            title="Ficciones de Telefe de 2010 a 2026">
+            title="Ficciones de Telefe de 2010 a la actualidad">
 
             <span class="channel-decade-card-logo">
-              <img src="images/logos/telefe-logo-120x120.png" alt="Telefe 2010–2026">
+              <img src="images/logos/telefe-logo-120x120.png" alt="Telefe 2010–Actualidad">
             </span>
 
             <span class="channel-decade-card-label">
-              Telefe 2010–2026
+              Telefe 2010–Actualidad
             </span>
 
           </a>
@@ -952,15 +994,31 @@
 
       </section>
 
+      <!-- Próximamente en Telefe -->
+      <section id="telefe-proximamente" class="cartelera-2026-section cartelera-channel-upcoming"
+        data-cartelera-mode="upcoming" data-cartelera-content="channel" data-cartelera-channel="Telefe"
+        data-years="dynamic" hidden>
+
+        <div class="cartelera-production-heading">
+          <h2 class="latest-heading">PRÓXIMAMENTE</h2>
+          <div class="cartelera-count" aria-live="polite">0 ficciones</div>
+        </div>
+
+        <ul class="slider-v cs-hidden" data-cartelera-list="all">
+          <li class="cartelera-placeholder"></li>
+        </ul>
+
+      </section>
+
       <!-- Producciones recientes de Telefe y Telefe Studios -->
       <section id="telefe-recent-productions" class="telefe-section telefe-recent-productions"
         aria-labelledby="telefe-recent-productions-title">
         <h2 id="telefe-recent-productions-title" class="showcase-heading">
-          Producciones de Telefe y Telefe Studios (2020–2026)
+          Producciones de Telefe y Telefe Studios (2020–Actualidad)
         </h2>
 
         <ul id="telefe-recent-productions-slider" class="slider-v cs-hidden" data-skip-auto="true"
-          aria-label="Producciones de Telefe y Telefe Studios entre 2020 y 2026">
+          aria-label="Producciones de Telefe y Telefe Studios entre 2020 y la actualidad">
         </ul>
 
         <p id="telefe-recent-productions-empty" class="telefe-recent-productions-empty" hidden>
@@ -979,7 +1037,7 @@
       <!-- Top 10 por rating -->
       <section id="telefe-top-rated" class="telefe-section">
         <h2 class="showcase-heading">
-          Las 10 producciones de Telefe con más rating (2010–2026)
+          Las 10 producciones de Telefe con más rating (2010–Actualidad)
         </h2>
 
         <ul id="channel-top-rated-slider" class="slider-h telefe-top10 cs-hidden" data-skip-auto="true"
@@ -1255,7 +1313,8 @@
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   <script src="js/lightslider.js"></script>
   <script src="js/script.js?v=20260226-1"></script>
-  <script src="js/channel-decade-autosync.js?v=20261125-1"></script>
+  <script src="js/cartelera-2026.js?v=20261125-1"></script>
+  <script src="js/channel-decade-autosync.js?v=20261125-2"></script>
 </body>
 
 </html>
