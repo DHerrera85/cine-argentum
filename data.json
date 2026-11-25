@@ -22538,7 +22538,7 @@
         "Tomás De las Heras"
       ],
       "orientation": "vertical",
-      "image": "images/verticals/champs-12-poster-280x420.png",
+      "image": "images/verticals/2009-champs-12-america-dori-media-poster280x420.png",
       "subtitle": "Juvenil",
       "horario": "20hs, 23:15hs, 9:15hs",
       "capitulos": "125",
@@ -22546,7 +22546,11 @@
       "sinopsis": "Charlotte, una joven adinerada que regresa a Buenos Aires para vengarse de Gonzalo, el futbolista que la humilló de niña por su sobrepeso. Convertida en una bella joven, ella compra el club de fútbol de él, pero la venganza se transforma en romance",
       "rating": "-",
       "productora": "Dori Media",
-      "tipo_emision": "Tira Diaria"
+      "tipo_emision": "Tira Diaria",
+      "horizontal_image": "images/horizontals-1024x576/2009-champs-12-america-dori-media-slide-1024x576.png",
+      "poster_gallery": [
+        "images/verticals/champs-12-poster-280x420.png"
+      ]
     },
     {
       "id": "V153",
