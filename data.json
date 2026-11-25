@@ -7809,7 +7809,7 @@
       "image": "images/verticals/sanamente-2026-poster-280x420.png",
       "subtitle": "Comedia",
       "capitulos": 8,
-      "release_date": "01/12/2026",
+      "release_date": "01/02/2027",
       "sinopsis": "Sanamente sigue a un grupo de personas con distintos problemas de salud mental que terminan conviviendo bajo un mismo techo. Juntos intentan construir una red de apoyo mientras enfrentan sus conflictos personales, los prejuicios sociales y la búsqueda de bienestar.",
       "producer": "Adrián Suar",
       "tipo_emision": "Serie"
@@ -10870,10 +10870,60 @@
       "channel": "Disney+",
       "platform": "Disney+",
       "genre": "Juvenil",
-      "release_date": "31/12/2026",
-      "image": "images/verticals/2026-mejoresenemigas-poster-280x420.png",
+      "release_date": "02/12/2026",
+      "image": "images/verticals/2026-mejoresenemigas-disney-poster-280x420-v2.webp",
       "orientation": "vertical",
-      "subtitle": "Juvenil"
+      "subtitle": "Juvenil",
+      "platforms": [
+        "Disney+"
+      ],
+      "status": "Próximamente",
+      "tipo_emision": "Serie",
+      "capitulos": 20,
+      "duracion": "25 minutos",
+      "poster_gallery": [
+        {
+          "image": "images/verticals/2026-mejoresenemigas-disney-poster-280x420-v2.webp",
+          "label": "Póster principal"
+        },
+        {
+          "image": "images/verticals/2026-mejoresenemigas-poster-280x420.png",
+          "label": "Póster alternativo"
+        }
+      ],
+      "horizontal_image": "images/horizontals-1024x576/2026-mejores-enemigas-disney+-slide1024x576.webp",
+      "actors": [
+        "Milagros Esquivel",
+        "Camila Rojas",
+        "Pedro Maurizi",
+        "Fran Vázquez",
+        "Manu Dons",
+        "Manuel Pérez Erramouspe",
+        "Cecilia Sangiovanni",
+        "Mía Saguier Marcuzzi",
+        "Tadeo Masó",
+        "Teo D’Elía",
+        "Sergio Gonal",
+        "Verónica Varano",
+        "Muni",
+        "Rodrigo Pedreira",
+        "Alejandro Gibeli",
+        "Josefina Scaglione"
+      ],
+      "sinopsis": "Río y Olivia tienen quince años, son tía y sobrina y mantienen una fuerte rivalidad. Obligadas a compartir el colegio, la familia y el equipo de baile, descubren un secreto relacionado con la prohibición de bailar en el Colegio Miralagos. Mientras se preparan para competir en Free Five, deberán superar sus diferencias y trabajar juntas para descubrir la verdad.",
+      "productora": "PEGSA",
+      "director": [
+        "Martín Saban",
+        "Diego Peskins"
+      ],
+      "guion": [
+        "María Clara Torres",
+        "Romina Ballester",
+        "Esteban Del Campo",
+        "Ana María Parra"
+      ],
+      "fuente": "Disney Prensa Latinoamérica",
+      "fuente_url": "https://prensa.disneylatino.com/novedades/el-baile-urbano-llega-a-disney+-el-2-de-diciembre-con-mejores-enemigas"
     },
     {
       "id": "P2049",
@@ -11068,7 +11118,7 @@
       ],
       "subtitle": "Comedia dramática",
       "capitulos": "7",
-      "fecha_estreno": "29/11/2026",
+      "fecha_estreno": "27/11/2026",
       "sinopsis": "Juan Acevedo es un actor que atraviesa una crisis profesional ante la falta de oportunidades laborales. Para ganarse la vida, comienza a alquilar sus habilidades actorales y a interpretar personajes creados a medida para resolver los problemas de otras personas. Entre situaciones absurdas, conflictos inesperados y vínculos emotivos, descubrirá que el papel más difícil de interpretar es el de su propia vida.",
       "remakes": [],
       "productora": "FRAME / Flow",
@@ -18035,7 +18085,7 @@
         "pol-ka"
       ],
       "subtitle": "Thriller",
-      "release_date": "11/11/2023",
+      "release_date": "11/09/2023",
       "horario": "21:00hs, 23:00hs"
     },
     {
