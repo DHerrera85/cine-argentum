@@ -208,6 +208,19 @@
   }
 
 
+  function isContarFiction(item) {
+    var rows = item && item.unitarios_rows;
+
+    if (!Array.isArray(rows)) {
+      rows = rows ? [rows] : [];
+    }
+
+    return rows.some(function (row) {
+      return normalizeText(row) === 'ficciones-contar';
+    });
+  }
+
+
   function isAcquisition(item) {
     return hasConfiguredChannelRole(
       item,
@@ -626,6 +639,10 @@
 
   function belongsToCategory(item, category) {
 
+    if (category === 'ficciones-contar') {
+      return isContarFiction(item);
+    }
+
     if (
       !category ||
       category === 'all'
@@ -883,7 +900,8 @@
 
       return Boolean(
         getHorizontalImage(item) &&
-        !isAcquisition(item)
+        !isContarFiction(item) &&
+          !isAcquisition(item)
       );
 
     });
@@ -1000,6 +1018,7 @@
           year <= 2026 &&
           hasRealPosterImage(item) &&
           isTelefeProduction &&
+          !isContarFiction(item) &&
           !isAcquisition(item)
         );
 
@@ -1534,6 +1553,7 @@
       .filter(function (item) {
 
         return Boolean(
+          !isContarFiction(item) &&
           !isAcquisition(item) &&
           getRating(item) !== null
         );
@@ -2076,6 +2096,7 @@
     var productions =
       visibleItems.filter(function (item) {
         return (
+          !isContarFiction(item) &&
           !isAcquisition(item) &&
           !belongsToCategory(item, 'no-emitidos')
         );
@@ -2084,6 +2105,7 @@
     var noEmitidos =
       visibleItems.filter(function (item) {
         return (
+          !isContarFiction(item) &&
           !isAcquisition(item) &&
           belongsToCategory(item, 'no-emitidos')
         );
@@ -2091,7 +2113,12 @@
 
     var acquisitions =
       visibleItems.filter(function (item) {
-        return isAcquisition(item);
+        return !isContarFiction(item) && isAcquisition(item);
+      });
+
+    var contarFictions =
+      visibleItems.filter(function (item) {
+        return isContarFiction(item);
       });
 
 
@@ -2118,6 +2145,24 @@
     }
 
 
+    var contarGrid =
+      document.querySelector('#channel-contar-grid');
+
+    if (contarGrid) {
+      contarGrid.innerHTML =
+        contarFictions.map(function (item) {
+          return buildCard(item);
+        }).join('');
+    }
+
+    var contarSection =
+      document.querySelector('#telefe-contar');
+
+    if (contarSection) {
+      contarSection.hidden = contarFictions.length === 0;
+    }
+
+
     renderAcquisitionCards(
       acquisitions
     );
@@ -2133,6 +2178,43 @@
     updateAcquisitionsState(
       acquisitions.length
     );
+
+    var isContarSelected =
+      activeCategory === 'ficciones-contar';
+
+    var catalogueSection =
+      document.querySelector('#telefe-catalogue');
+
+    var acquisitionsSection =
+      document.querySelector('#telefe-acquisitions');
+
+    var contarDescription =
+      document.querySelector('#channel-contar-description');
+
+    if (catalogueSection) {
+      catalogueSection.hidden = isContarSelected;
+    }
+
+    if (acquisitionsSection) {
+      acquisitionsSection.hidden = isContarSelected;
+    }
+
+    if (contarSection) {
+      contarSection.hidden =
+        !isContarSelected && contarFictions.length === 0;
+    }
+
+    if (contarDescription) {
+      contarDescription.textContent =
+        contarFictions.length === 0
+          ? 'No se encontraron ficciones de Contar para los filtros seleccionados.'
+          : contarFictions.length +
+            (contarFictions.length === 1
+              ? ' ficción emitida por '
+              : ' ficciones emitidas por ') +
+            CHANNEL_NAME +
+            ' e incorporadas al catálogo de Contar.';
+    }
 
     updateActiveButtons();
 
