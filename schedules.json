@@ -6623,6 +6623,732 @@
           "entries": []
         }
       ]
+    },
+    {
+      "id": "schedule-2009-06",
+      "year": 2009,
+      "month": 6,
+      "label": "Junio 2009",
+      "country": "Argentina",
+      "channels": [
+        {
+          "channel": "Telefe",
+          "entries": [
+            {
+              "type": "program",
+              "title": "Los Tres Chiflados",
+              "days": [
+                "lunes",
+                "martes",
+                "miércoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "07:30",
+              "end": "08:00"
+            },
+            {
+              "type": "program",
+              "title": "Los Jóvenes Titanes",
+              "days": [
+                "lunes",
+                "martes",
+                "miércoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "08:00",
+              "end": "08:30"
+            },
+            {
+              "type": "program",
+              "title": "Créase o No",
+              "days": [
+                "lunes",
+                "martes",
+                "miércoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "08:30",
+              "end": "09:30"
+            },
+            {
+              "type": "program",
+              "title": "AM",
+              "days": [
+                "lunes",
+                "martes",
+                "miércoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "09:30",
+              "end": "11:30"
+            },
+            {
+              "type": "program",
+              "title": "Sabor a Mí",
+              "days": [
+                "lunes",
+                "martes",
+                "miércoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "11:30",
+              "end": "13:00"
+            },
+            {
+              "type": "program",
+              "title": "Telefe Noticias",
+              "days": [
+                "lunes",
+                "martes",
+                "miércoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "13:00",
+              "end": "14:00"
+            },
+            {
+              "type": "program",
+              "title": "Casados con Hijos",
+              "days": [
+                "lunes",
+                "martes",
+                "miércoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "14:00",
+              "end": "15:00",
+              "production_id": "h3"
+            },
+            {
+              "type": "program",
+              "title": "Herencia de Amor",
+              "days": [
+                "lunes",
+                "martes",
+                "miércoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "15:00",
+              "end": "16:00",
+              "production_id": "v53"
+            },
+            {
+              "type": "program",
+              "title": "Doña Bárbara",
+              "days": [
+                "lunes",
+                "martes",
+                "miércoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "16:00",
+              "end": "17:00"
+            },
+            {
+              "type": "program",
+              "title": "Enamorarte (Repetición)",
+              "days": [
+                "lunes",
+                "martes",
+                "miércoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "17:00",
+              "end": "18:00",
+              "production_id": "V162"
+            },
+            {
+              "type": "program",
+              "title": "Los Simpsons",
+              "days": [
+                "lunes",
+                "martes",
+                "miércoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "18:00",
+              "end": "19:00"
+            },
+            {
+              "type": "program",
+              "title": "Casi Ángeles",
+              "days": [
+                "lunes",
+                "martes",
+                "miércoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "19:00",
+              "end": "20:00",
+              "production_id": "V142"
+            },
+            {
+              "type": "program",
+              "title": "Telefe Noticias",
+              "days": [
+                "lunes",
+                "martes",
+                "miércoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "20:00",
+              "end": "21:30"
+            },
+            {
+              "type": "program",
+              "title": "Justo a Tiempo",
+              "days": [
+                "lunes",
+                "martes",
+                "miércoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "21:30",
+              "end": "22:30"
+            },
+            {
+              "type": "program",
+              "title": "Los Exitosos Pells",
+              "days": [
+                "lunes",
+                "martes",
+                "miércoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "22:30",
+              "end": "00:00",
+              "production_id": "v4"
+            }
+          ]
+        },
+        {
+          "channel": "Canal 13",
+          "entries": [
+            {
+              "type": "program",
+              "title": "Arriba Argentinos",
+              "days": [
+                "lunes",
+                "martes",
+                "miércoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "07:00",
+              "end": "09:30"
+            },
+            {
+              "type": "program",
+              "title": "La Mañana del Trece",
+              "days": [
+                "lunes",
+                "martes",
+                "miércoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "09:30",
+              "end": "11:00"
+            },
+            {
+              "type": "program",
+              "title": "El Zorro",
+              "days": [
+                "lunes",
+                "martes",
+                "miércoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "11:00",
+              "end": "12:00"
+            },
+            {
+              "type": "program",
+              "title": "Duro de Almorzar",
+              "days": [
+                "lunes",
+                "martes",
+                "miércoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "12:00",
+              "end": "13:00"
+            },
+            {
+              "type": "program",
+              "title": "El Noticiero del Trece",
+              "days": [
+                "lunes",
+                "martes",
+                "miércoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "13:00",
+              "end": "14:30"
+            },
+            {
+              "type": "program",
+              "title": "Canta Conmigo Argentina",
+              "days": [
+                "lunes",
+                "martes",
+                "miércoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "14:30",
+              "end": "16:30",
+              "image": "images/horizontals-1024x576/2009-canta-conmigo-argentina-canal13-non-scripted-slide1024x576.webp"
+            },
+            {
+              "type": "program",
+              "title": "Mi Gorda Bella",
+              "days": [
+                "lunes",
+                "martes",
+                "miércoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "16:30",
+              "end": "17:00"
+            },
+            {
+              "type": "program",
+              "title": "Patito Feo (Repetición)",
+              "days": [
+                "lunes",
+                "martes",
+                "miércoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "17:00",
+              "end": "18:00",
+              "production_id": "V155"
+            },
+            {
+              "type": "program",
+              "title": "Enséñame a Vivir",
+              "days": [
+                "lunes",
+                "martes",
+                "miércoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "18:00",
+              "end": "19:00",
+              "production_id": "V124"
+            },
+            {
+              "type": "program",
+              "title": "Detrás de la Magia",
+              "days": [
+                "lunes",
+                "martes",
+                "miércoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "19:00",
+              "end": "20:00"
+            },
+            {
+              "type": "program",
+              "title": "Telenoche",
+              "days": [
+                "lunes",
+                "martes",
+                "miércoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "20:00",
+              "end": "21:30"
+            },
+            {
+              "type": "program",
+              "title": "Valientes",
+              "days": [
+                "lunes",
+                "martes",
+                "miércoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "21:30",
+              "end": "22:30",
+              "production_id": "v70"
+            },
+            {
+              "type": "program",
+              "title": "Showmatch",
+              "days": [
+                "lunes",
+                "martes",
+                "jueves",
+                "viernes"
+              ],
+              "start": "22:30",
+              "end": "00:30"
+            },
+            {
+              "type": "program",
+              "title": "Tratame Bien",
+              "days": [
+                "miércoles"
+              ],
+              "start": "22:30",
+              "end": "00:30",
+              "production_id": "V252"
+            },
+            {
+              "type": "program",
+              "title": "Duro de Domar",
+              "days": [
+                "lunes",
+                "martes",
+                "miércoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "00:30",
+              "end": "01:30"
+            }
+          ]
+        },
+        {
+          "channel": "Canal 9",
+          "entries": [
+            {
+              "type": "program",
+              "title": "Telenueve al Amanecer",
+              "days": [
+                "lunes",
+                "martes",
+                "miércoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "07:00",
+              "end": "10:00"
+            },
+            {
+              "type": "program",
+              "title": "Nunca Te Olvidaré",
+              "days": [
+                "lunes",
+                "martes",
+                "miércoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "10:00",
+              "end": "11:00"
+            },
+            {
+              "type": "program",
+              "title": "Madre Luna",
+              "days": [
+                "lunes",
+                "martes",
+                "miércoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "11:00",
+              "end": "12:00"
+            },
+            {
+              "type": "program",
+              "title": "Telenueve",
+              "days": [
+                "lunes",
+                "martes",
+                "miércoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "12:00",
+              "end": "13:00"
+            },
+            {
+              "type": "program",
+              "title": "En Nombre del Amor",
+              "days": [
+                "lunes",
+                "martes",
+                "miércoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "13:00",
+              "end": "14:00"
+            },
+            {
+              "type": "program",
+              "title": "El Rostro de Analía",
+              "days": [
+                "lunes",
+                "martes",
+                "miércoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "14:00",
+              "end": "15:00"
+            },
+            {
+              "type": "program",
+              "title": "El Rey del Ganado",
+              "days": [
+                "lunes",
+                "martes",
+                "miércoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "15:00",
+              "end": "16:00"
+            },
+            {
+              "type": "program",
+              "title": "Las Tontas no van al Cielo",
+              "days": [
+                "lunes",
+                "martes",
+                "miércoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "16:00",
+              "end": "17:00"
+            },
+            {
+              "type": "program",
+              "title": "Los Profesionales de Siempre",
+              "days": [
+                "lunes",
+                "martes",
+                "miércoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "17:00",
+              "end": "19:00",
+              "image": "images/horizontals-1024x576/los-profesionales-de-siempre-canal9-non-scripted-slide1024x576.webp"
+            },
+            {
+              "type": "program",
+              "title": "Telenueve",
+              "days": [
+                "lunes",
+                "martes",
+                "miércoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "19:00",
+              "end": "20:00"
+            },
+            {
+              "type": "program",
+              "title": "El Profeta",
+              "days": [
+                "lunes",
+                "martes",
+                "miércoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "20:00",
+              "end": "21:00"
+            },
+            {
+              "type": "program",
+              "title": "Bendita TV",
+              "days": [
+                "lunes",
+                "martes",
+                "miércoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "21:00",
+              "end": "22:00",
+              "image": "images/horizontals-1024x576/bendita-tv-canal9-non-scripted-slide-1024x576.webp"
+            },
+            {
+              "type": "program",
+              "title": "Xica Da Silva",
+              "days": [
+                "lunes",
+                "martes",
+                "miércoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "22:00",
+              "end": "23:00"
+            },
+            {
+              "type": "program",
+              "title": "Cine",
+              "days": [
+                "lunes",
+                "martes",
+                "miércoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "23:00",
+              "end": "00:00"
+            }
+          ]
+        },
+        {
+          "channel": "América",
+          "entries": [
+            {
+              "type": "program",
+              "title": "Mañaneras",
+              "days": [
+                "lunes",
+                "martes",
+                "miércoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "09:00",
+              "end": "12:00"
+            },
+            {
+              "type": "program",
+              "title": "América Noticias",
+              "days": [
+                "lunes",
+                "martes",
+                "miércoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "12:00",
+              "end": "13:30"
+            },
+            {
+              "type": "program",
+              "title": "Almorzando con Mirtha Legrand",
+              "days": [
+                "lunes",
+                "martes",
+                "miércoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "13:30",
+              "end": "15:00"
+            },
+            {
+              "type": "program",
+              "title": "Intrusos en el Espectáculo",
+              "days": [
+                "lunes",
+                "martes",
+                "miércoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "15:00",
+              "end": "17:30"
+            },
+            {
+              "type": "program",
+              "title": "Infama",
+              "days": [
+                "lunes",
+                "martes",
+                "miércoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "17:30",
+              "end": "19:00"
+            },
+            {
+              "type": "program",
+              "title": "América Noticias",
+              "days": [
+                "lunes",
+                "martes",
+                "miércoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "19:00",
+              "end": "20:30"
+            },
+            {
+              "type": "program",
+              "title": "RSM",
+              "days": [
+                "lunes",
+                "martes",
+                "miércoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "20:30",
+              "end": "22:30"
+            },
+            {
+              "type": "program",
+              "title": "Documentos América",
+              "days": [
+                "lunes",
+                "martes",
+                "miércoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "22:30",
+              "end": "23:00"
+            },
+            {
+              "type": "program",
+              "title": "Champs 12",
+              "days": [
+                "lunes",
+                "martes",
+                "miércoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "23:00",
+              "end": "00:00",
+              "production_id": "V152"
+            }
+          ]
+        }
+      ]
     }
   ]
 }

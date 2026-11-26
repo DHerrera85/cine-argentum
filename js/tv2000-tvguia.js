@@ -127,6 +127,12 @@
       'Canal 9': 'Canal_9_Argentina_2007-2017.webp',
       'Am\u00e9rica': 'america-logo-120x120.png',
       'Canal 7': 'tv-publica-logo-120x120.png'
+    },
+    'schedule-2009-06': {
+      'Telefe': 'telefe-logo-2000s.png',
+      'Canal 13': 'canal-13-logo-120x120.png',
+      'Canal 9': 'Canal_9_Argentina_2007-2017.webp',
+      'Am\u00e9rica': 'america-logo-120x120.png'
     }
   };
 
