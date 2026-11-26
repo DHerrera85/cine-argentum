@@ -43,8 +43,19 @@
 
 
     function findScheduleById(scheduleId) {
-        return schedulesData.find(function (schedule) {
+        var schedule = schedulesData.find(function (schedule) {
             return schedule.id === scheduleId;
+        });
+
+        if (!schedule || !Array.isArray(schedule.channels)) {
+            return schedule;
+        }
+
+        return Object.assign({}, schedule, {
+            channels: schedule.channels.filter(function (channel) {
+                return Array.isArray(channel.entries) &&
+                    channel.entries.length > 0;
+            })
         });
     }
 

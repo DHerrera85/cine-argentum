@@ -389,8 +389,12 @@
 
       if (!currentPeriod) return;
 
-      navigationChannels = currentPeriod.channels;
-      render(currentPeriod.channels);
+      navigationChannels = currentPeriod.channels.filter(channel =>
+        Array.isArray(channel.entries) &&
+        channel.entries.length > 0
+      );
+
+      render(navigationChannels);
     }
 
     periodSelect.value = 'schedule-2008-10';
