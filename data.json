@@ -10806,6 +10806,153 @@
       ]
     },
     {
+      "id": "V361",
+      "title": "El asesor",
+      "type": "serie",
+      "year": "2015",
+      "channel": "360TV",
+      "air_channels": [
+        "360TV",
+        "TV Pública"
+      ],
+      "platforms": [
+        "Contar"
+      ],
+      "genre": "Drama",
+      "actors": [
+        "Enrique Pinti",
+        "Gerardo Romano",
+        "Valentina Bassi",
+        "Adrián Navarro",
+        "Norberto Gonzalo",
+        "Marina Glezer",
+        "Jorge Booth",
+        "Gustavo Bonfigli",
+        "Alejandro Piar",
+        "Victoria Almeida",
+        "María Zamarbide",
+        "Marisa Viotti",
+        "Daniel Cinelli",
+        "Máximo Corti",
+        "Malena Rizzone",
+        "Diego Crevacuore"
+      ],
+      "orientation": "vertical",
+      "image": "images/verticals/2015-el-asesor-tv-publica-contar-poster280x420.webp",
+      "subtitle": "Drama político",
+      "capitulos": 13,
+      "tipo_emision": "Semanal",
+      "director": [
+        "Roberto Brandana"
+      ],
+      "productora": "Coruya Cine, Buenos Vientos Producciones",
+      "sinopsis": "A pocos días de las elecciones presidenciales argentinas, cuatro candidatos se enfrentan en un debate televisivo. Washington Hernández, asesor de imagen de uno de ellos, utiliza su influencia para manipular el desarrollo del debate y favorecer a su candidato, enfrentándose a los intereses de El Círculo, una organización integrada por figuras poderosas del país.",
+      "unitarios_rows": [
+        "ficciones-contar"
+      ],
+      "air_broadcasts": [
+        {
+          "channel": "360TV",
+          "premiere_date": "13/10/2015",
+          "horario": "Martes 22:00hs",
+          "tipo_emision": "Semanal"
+        },
+        {
+          "channel": "TV Pública"
+        }
+      ],
+      "fecha_estreno": "13/10/2015",
+      "fecha_finalizacion": "05/01/2016",
+      "horario": "Martes 22:00hs",
+      "duracion": "24-27 minutos",
+      "guion": "Daniel Cinelli y Alejandro Piar",
+      "produccion": [
+        "Daniel Cinelli",
+        "Javier D?az"
+      ],
+      "musica": "Juan Pablo de Mendon?a",
+      "fuentes": [
+        {
+          "nombre": "Wikipedia",
+          "url": "https://es.wikipedia.org/wiki/El_asesor",
+          "tipo": "Estreno original, canal, elenco, sinopsis y ficha t?cnica"
+        }
+      ]
+    },
+    {
+      "id": "V362",
+      "title": "Las 13 esposas de Wilson Fernández",
+      "type": "serie",
+      "year": "2014",
+      "channel": "TV Pública",
+      "air_channels": [
+        "TV Pública"
+      ],
+      "air_broadcasts": [
+        {
+          "channel": "TV Pública",
+          "premiere_date": "23/07/2014",
+          "horario": "Miércoles 23:00hs",
+          "tipo_emision": "Semanal"
+        }
+      ],
+      "platforms": [
+        "Contar"
+      ],
+      "genre": "Comedia",
+      "actors": [
+        "Mex Urtizberea",
+        "Manuel Callau",
+        "Alberto Ajaka",
+        "Monna Antonópulos",
+        "Mike Amigorena",
+        "Jazmín Stuart",
+        "Esther Goris",
+        "Agustín Rittano",
+        "Natalia D'Alena",
+        "Martina Gusmán",
+        "Belén Persello",
+        "Inés Palombo",
+        "Carla Quevedo",
+        "Belén Chavanne",
+        "Marina Glezer",
+        "María Zamarbide",
+        "Santiago Pedrero",
+        "Juana Viale",
+        "Moro Anghileri",
+        "Eugenia Tobal"
+      ],
+      "orientation": "vertical",
+      "image": "images/verticals/2014-las-trece-esposas-wilson-fernandez-tv-publica-contar-poster280x420.webp",
+      "subtitle": "Comedia negra",
+      "unitarios_rows": [
+        "ficciones-contar"
+      ],
+      "horario": "Miércoles 23:00hs",
+      "capitulos": 13,
+      "duracion": "45 minutos",
+      "fecha_estreno": "23/07/2014",
+      "fecha_finalizacion": "22/10/2014",
+      "sinopsis": "Wilson Fernández, un pianista que ha atravesado trece matrimonios fallidos, es contratado para amenizar una celebración navideña en el Club Atlético Brillant. Sin saber que el establecimiento encubre una organización criminal, comienza a relatar sus experiencias amorosas. A través de sus recuerdos, la serie recorre diferentes épocas de la historia argentina, combinando humor negro, romance y situaciones absurdas.",
+      "productora": "GP Media",
+      "director": [
+        "Gastón Portal"
+      ],
+      "guion": "Gastón Portal y Javier Castro Albano",
+      "creador": "Gastón Portal",
+      "produccion_ejecutiva": "Betina Brewda",
+      "musica": "Omar Giammarco",
+      "tipo_emision": "Semanal",
+      "remakes": [
+        {
+          "title": "Las 13 esposas de Wilson Fernández",
+          "country": "México",
+          "year": "2017",
+          "image": ""
+        }
+      ]
+    },
+    {
       "id": "P2045",
       "title": "Gutiérrez is Mai Nem",
       "type": "serie",
