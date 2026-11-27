@@ -140,6 +140,12 @@
       'Canal 9': 'canal9-1990-120x120.png',
       'América': 'america-2-1993-logo.webp'
     },
+    'schedule-1995-05': {
+      'Telefe': 'telefe-1990-120x120.png',
+      'Canal 13': 'canal13-1990-120x120.png',
+      'Canal 9': 'Canal_9_Argentina_1995-1998.webp',
+      'América': 'america-2-1993-logo.webp'
+    },
     'schedule-1996-04': {
       'Telefe': 'telefe-1990-120x120.png',
       'Canal 13': 'canal13-1990-120x120.png',

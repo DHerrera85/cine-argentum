@@ -3026,6 +3026,770 @@
       ]
     },
     {
+      "id": "schedule-1995-05",
+      "year": 1995,
+      "month": 5,
+      "label": "Mayo 1995",
+      "country": "Argentina",
+      "channels": [
+        {
+          "channel": "Telefe",
+          "entries": [
+            {
+              "type": "program",
+              "title": "Utilisima",
+              "days": [
+                "lunes",
+                "martes",
+                "miércoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "11:00",
+              "end": "12:00"
+            },
+            {
+              "type": "program",
+              "title": "Telefé Noticias",
+              "days": [
+                "lunes",
+                "martes",
+                "miércoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "12:00",
+              "end": "13:00"
+            },
+            {
+              "type": "program",
+              "title": "Nico",
+              "days": [
+                "lunes",
+                "martes",
+                "miércoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "13:00",
+              "end": "15:00"
+            },
+            {
+              "type": "program",
+              "title": "El Show del Chavo",
+              "days": [
+                "lunes",
+                "martes",
+                "miércoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "15:00",
+              "end": "16:00"
+            },
+            {
+              "type": "program",
+              "title": "Biker Mice",
+              "days": [
+                "lunes",
+                "martes",
+                "miércoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "16:00",
+              "end": "16:30"
+            },
+            {
+              "type": "program",
+              "title": "X-Men",
+              "days": [
+                "lunes",
+                "martes",
+                "miércoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "16:30",
+              "end": "17:00"
+            },
+            {
+              "type": "program",
+              "title": "Grande, Pá! (Repetición)",
+              "days": [
+                "lunes",
+                "martes",
+                "miércoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "17:00",
+              "end": "18:00",
+              "production_id": "T0004"
+            },
+            {
+              "type": "program",
+              "title": "El Paparazzi",
+              "days": [
+                "lunes",
+                "martes",
+                "miércoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "18:00",
+              "end": "19:00"
+            },
+            {
+              "type": "program",
+              "title": "Telefé Noticias",
+              "days": [
+                "lunes",
+                "martes",
+                "miércoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "19:00",
+              "end": "20:00"
+            },
+            {
+              "type": "program",
+              "title": "Hola Susana",
+              "days": [
+                "lunes",
+                "martes",
+                "miércoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "20:00",
+              "end": "21:00"
+            },
+            {
+              "type": "program",
+              "title": "Perla Negra",
+              "days": [
+                "lunes",
+                "martes",
+                "miércoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "21:00",
+              "end": "22:00",
+              "production_id": "T0018"
+            },
+            {
+              "type": "program",
+              "title": "Cine",
+              "days": [
+                "lunes",
+                "viernes"
+              ],
+              "start": "22:00",
+              "end": "00:00"
+            },
+            {
+              "type": "program",
+              "title": "Tiempo Nuevo",
+              "days": [
+                "martes"
+              ],
+              "start": "22:00",
+              "end": "00:00"
+            },
+            {
+              "type": "program",
+              "title": "Siglo XX Cambalache",
+              "days": [
+                "miércoles"
+              ],
+              "start": "22:00",
+              "end": "00:00"
+            },
+            {
+              "type": "program",
+              "title": "El Show de Videomatch",
+              "days": [
+                "jueves"
+              ],
+              "start": "22:00",
+              "end": "00:00"
+            }
+          ]
+        },
+        {
+          "channel": "Canal 13",
+          "entries": [
+            {
+              "type": "program",
+              "title": "Los Tres Chiflados",
+              "days": [
+                "lunes",
+                "martes",
+                "miércoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "12:00",
+              "end": "12:30"
+            },
+            {
+              "type": "program",
+              "title": "Hijitus",
+              "days": [
+                "lunes",
+                "martes",
+                "miércoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "12:30",
+              "end": "13:00"
+            },
+            {
+              "type": "program",
+              "title": "3-60, Todo para Ver",
+              "days": [
+                "lunes",
+                "martes",
+                "miércoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "13:00",
+              "end": "15:00"
+            },
+            {
+              "type": "program",
+              "title": "El Día Que me Quieras",
+              "days": [
+                "lunes",
+                "martes",
+                "miércoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "15:00",
+              "end": "16:00",
+              "production_id": "T0117"
+            },
+            {
+              "type": "program",
+              "title": "Causa Común",
+              "days": [
+                "lunes",
+                "martes",
+                "miércoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "16:00",
+              "end": "17:00"
+            },
+            {
+              "type": "program",
+              "title": "La Familia Ingalls",
+              "days": [
+                "lunes",
+                "martes",
+                "miércoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "17:00",
+              "end": "18:00"
+            },
+            {
+              "type": "program",
+              "title": "Amigovios",
+              "days": [
+                "lunes",
+                "martes",
+                "miércoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "18:00",
+              "end": "19:00",
+              "production_id": "T0118"
+            },
+            {
+              "type": "program",
+              "title": "Montaña Rusa",
+              "days": [
+                "lunes",
+                "martes",
+                "miércoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "19:00",
+              "end": "20:00",
+              "production_id": "T0114"
+            },
+            {
+              "type": "program",
+              "title": "Telenoche 13",
+              "days": [
+                "lunes",
+                "martes",
+                "miércoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "20:00",
+              "end": "21:00"
+            },
+            {
+              "type": "program",
+              "title": "La Aventura del Hombre",
+              "days": [
+                "lunes"
+              ],
+              "start": "21:00",
+              "end": "22:00"
+            },
+            {
+              "type": "program",
+              "title": "Gerente de Familia",
+              "days": [
+                "martes"
+              ],
+              "start": "21:00",
+              "end": "22:00",
+              "production_id": "T0099"
+            },
+            {
+              "type": "program",
+              "title": "Poliladron",
+              "days": [
+                "miércoles"
+              ],
+              "start": "21:00",
+              "end": "22:00",
+              "production_id": "T0121"
+            },
+            {
+              "type": "program",
+              "title": "Son de Diez",
+              "days": [
+                "jueves"
+              ],
+              "start": "21:00",
+              "end": "22:00",
+              "production_id": "T0096"
+            },
+            {
+              "type": "program",
+              "title": "Walker",
+              "days": [
+                "viernes"
+              ],
+              "start": "21:00",
+              "end": "22:00"
+            },
+            {
+              "type": "program",
+              "title": "Cine",
+              "days": [
+                "lunes",
+                "miércoles",
+                "jueves"
+              ],
+              "start": "22:00",
+              "end": "00:00"
+            },
+            {
+              "type": "program",
+              "title": "Nueve Lunas",
+              "days": [
+                "martes"
+              ],
+              "start": "22:00",
+              "end": "23:00"
+            },
+            {
+              "type": "program",
+              "title": "El Palacio de la Risa",
+              "days": [
+                "viernes"
+              ],
+              "start": "22:00",
+              "end": "00:00"
+            },
+            {
+              "type": "program",
+              "title": "Machos",
+              "days": [
+                "martes"
+              ],
+              "start": "23:00",
+              "end": "00:00",
+              "production_id": "T0110"
+            }
+          ]
+        },
+        {
+          "channel": "Canal 9",
+          "entries": [
+            {
+              "type": "program",
+              "title": "Cuna de Lobos",
+              "days": [
+                "lunes",
+                "martes",
+                "miércoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "11:30",
+              "end": "12:00"
+            },
+            {
+              "type": "program",
+              "title": "Nuevediario",
+              "days": [
+                "lunes",
+                "martes",
+                "miércoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "12:00",
+              "end": "13:00"
+            },
+            {
+              "type": "program",
+              "title": "Almorzando con Mirtha Legrand",
+              "days": [
+                "lunes",
+                "martes",
+                "miércoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "13:00",
+              "end": "15:00"
+            },
+            {
+              "type": "program",
+              "title": "Indiscreciones",
+              "days": [
+                "lunes",
+                "martes",
+                "miércoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "15:00",
+              "end": "16:00"
+            },
+            {
+              "type": "program",
+              "title": "Yo me Quiero Casar, ¿Y usted?",
+              "days": [
+                "lunes",
+                "martes",
+                "miércoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "16:00",
+              "end": "17:00"
+            },
+            {
+              "type": "program",
+              "title": "La Hermana Mayor",
+              "days": [
+                "lunes",
+                "martes",
+                "miércoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "17:00",
+              "end": "18:00",
+              "production_id": "T0067"
+            },
+            {
+              "type": "program",
+              "title": "Para Siempre",
+              "days": [
+                "lunes",
+                "martes",
+                "miércoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "18:00",
+              "end": "19:00"
+            },
+            {
+              "type": "program",
+              "title": "Chance",
+              "days": [
+                "lunes",
+                "martes",
+                "miércoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "19:00",
+              "end": "20:00"
+            },
+            {
+              "type": "program",
+              "title": "Nuevediario",
+              "days": [
+                "lunes",
+                "martes",
+                "miércoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "20:00",
+              "end": "21:00"
+            },
+            {
+              "type": "program",
+              "title": "Moria Banana",
+              "days": [
+                "lunes",
+                "martes",
+                "miércoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "21:00",
+              "end": "22:00"
+            },
+            {
+              "type": "program",
+              "title": "Sin Condena",
+              "days": [
+                "lunes"
+              ],
+              "start": "22:00",
+              "end": "00:00",
+              "production_id": "T0063"
+            },
+            {
+              "type": "program",
+              "title": "Rompenueces",
+              "days": [
+                "martes"
+              ],
+              "start": "22:00",
+              "end": "23:00"
+            },
+            {
+              "type": "program",
+              "title": "Memoria",
+              "days": [
+                "miércoles"
+              ],
+              "start": "22:00",
+              "end": "00:00"
+            },
+            {
+              "type": "program",
+              "title": "Hora Clave",
+              "days": [
+                "jueves"
+              ],
+              "start": "22:00",
+              "end": "00:00"
+            },
+            {
+              "type": "program",
+              "title": "Cine",
+              "days": [
+                "viernes"
+              ],
+              "start": "22:00",
+              "end": "00:00"
+            },
+            {
+              "type": "program",
+              "title": "Leandro Leiva, un Soñador",
+              "days": [
+                "martes"
+              ],
+              "start": "23:00",
+              "end": "00:00",
+              "production_id": "T0069"
+            }
+          ]
+        },
+        {
+          "channel": "América",
+          "entries": [
+            {
+              "type": "program",
+              "title": "Vivir Mejor",
+              "days": [
+                "lunes",
+                "martes",
+                "miércoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "12:00",
+              "end": "13:00"
+            },
+            {
+              "type": "program",
+              "title": "América Noticias",
+              "days": [
+                "lunes",
+                "martes",
+                "miércoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "13:00",
+              "end": "14:00"
+            },
+            {
+              "type": "program",
+              "title": "La Punta del Ovillo",
+              "days": [
+                "lunes",
+                "martes",
+                "miércoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "14:00",
+              "end": "15:00"
+            },
+            {
+              "type": "program",
+              "title": "Donna",
+              "days": [
+                "lunes",
+                "martes",
+                "miércoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "15:00",
+              "end": "16:00"
+            },
+            {
+              "type": "program",
+              "title": "Fuerte el Aplauso",
+              "days": [
+                "lunes",
+                "martes",
+                "miércoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "16:00",
+              "end": "18:00"
+            },
+            {
+              "type": "program",
+              "title": "Sin Vueltas",
+              "days": [
+                "lunes",
+                "martes",
+                "miércoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "18:00",
+              "end": "19:00"
+            },
+            {
+              "type": "program",
+              "title": "El Periscopio",
+              "days": [
+                "lunes",
+                "martes",
+                "miércoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "19:00",
+              "end": "20:00"
+            },
+            {
+              "type": "program",
+              "title": "Pin Ball",
+              "days": [
+                "lunes",
+                "martes",
+                "miércoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "20:00",
+              "end": "21:00"
+            },
+            {
+              "type": "program",
+              "title": "América Noticias",
+              "days": [
+                "lunes",
+                "martes",
+                "miércoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "21:00",
+              "end": "22:00"
+            },
+            {
+              "type": "program",
+              "title": "Periodístico",
+              "days": [
+                "lunes",
+                "martes",
+                "miércoles",
+                "jueves",
+                "viernes"
+              ],
+              "start": "22:00",
+              "end": "23:00"
+            },
+            {
+              "type": "program",
+              "title": "Periodistico",
+              "days": [
+                "lunes",
+                "jueves",
+                "viernes"
+              ],
+              "start": "23:00",
+              "end": "00:00"
+            },
+            {
+              "type": "program",
+              "title": "Caiga quien Caiga",
+              "days": [
+                "martes"
+              ],
+              "start": "23:00",
+              "end": "00:00"
+            },
+            {
+              "type": "program",
+              "title": "El Rayo",
+              "days": [
+                "miércoles"
+              ],
+              "start": "23:00",
+              "end": "00:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "schedule-1996-04",
       "year": 1996,
       "month": 4,
